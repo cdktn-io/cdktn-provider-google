@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface DataGoogleSiteVerificationTokenConfig extends cdktf.TerraformMetaArguments {
+export interface DataGoogleSiteVerificationTokenConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/data-sources/site_verification_token#id DataGoogleSiteVerificationToken#id}
   *
@@ -53,25 +53,25 @@ export interface DataGoogleSiteVerificationTokenTimeouts {
   readonly read?: string;
 }
 
-export function dataGoogleSiteVerificationTokenTimeoutsToTerraform(struct?: DataGoogleSiteVerificationTokenTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function dataGoogleSiteVerificationTokenTimeoutsToTerraform(struct?: DataGoogleSiteVerificationTokenTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    read: cdktf.stringToTerraform(struct!.read),
+    read: cdktn.stringToTerraform(struct!.read),
   }
 }
 
 
-export function dataGoogleSiteVerificationTokenTimeoutsToHclTerraform(struct?: DataGoogleSiteVerificationTokenTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function dataGoogleSiteVerificationTokenTimeoutsToHclTerraform(struct?: DataGoogleSiteVerificationTokenTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     read: {
-      value: cdktf.stringToHclTerraform(struct!.read),
+      value: cdktn.stringToHclTerraform(struct!.read),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -82,19 +82,19 @@ export function dataGoogleSiteVerificationTokenTimeoutsToHclTerraform(struct?: D
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class DataGoogleSiteVerificationTokenTimeoutsOutputReference extends cdktf.ComplexObject {
+export class DataGoogleSiteVerificationTokenTimeoutsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): DataGoogleSiteVerificationTokenTimeouts | cdktf.IResolvable | undefined {
+  public get internalValue(): DataGoogleSiteVerificationTokenTimeouts | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -107,13 +107,13 @@ export class DataGoogleSiteVerificationTokenTimeoutsOutputReference extends cdkt
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: DataGoogleSiteVerificationTokenTimeouts | cdktf.IResolvable | undefined) {
+  public set internalValue(value: DataGoogleSiteVerificationTokenTimeouts | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._read = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -144,7 +144,7 @@ export class DataGoogleSiteVerificationTokenTimeoutsOutputReference extends cdkt
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/data-sources/site_verification_token google_site_verification_token}
 */
-export class DataGoogleSiteVerificationToken extends cdktf.TerraformDataSource {
+export class DataGoogleSiteVerificationToken extends cdktn.TerraformDataSource {
 
   // =================
   // STATIC PROPERTIES
@@ -155,14 +155,14 @@ export class DataGoogleSiteVerificationToken extends cdktf.TerraformDataSource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a DataGoogleSiteVerificationToken resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a DataGoogleSiteVerificationToken resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataGoogleSiteVerificationToken to import
   * @param importFromId The id of the existing DataGoogleSiteVerificationToken that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/data-sources/site_verification_token#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataGoogleSiteVerificationToken to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "google_site_verification_token", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "google_site_verification_token", importId: importFromId, provider });
       }
 
   // ===========
@@ -285,10 +285,10 @@ export class DataGoogleSiteVerificationToken extends cdktf.TerraformDataSource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      id: cdktf.stringToTerraform(this._id),
-      identifier: cdktf.stringToTerraform(this._identifier),
-      type: cdktf.stringToTerraform(this._type),
-      verification_method: cdktf.stringToTerraform(this._verificationMethod),
+      id: cdktn.stringToTerraform(this._id),
+      identifier: cdktn.stringToTerraform(this._identifier),
+      type: cdktn.stringToTerraform(this._type),
+      verification_method: cdktn.stringToTerraform(this._verificationMethod),
       timeouts: dataGoogleSiteVerificationTokenTimeoutsToTerraform(this._timeouts.internalValue),
     };
   }
@@ -296,25 +296,25 @@ export class DataGoogleSiteVerificationToken extends cdktf.TerraformDataSource {
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       identifier: {
-        value: cdktf.stringToHclTerraform(this._identifier),
+        value: cdktn.stringToHclTerraform(this._identifier),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       type: {
-        value: cdktf.stringToHclTerraform(this._type),
+        value: cdktn.stringToHclTerraform(this._type),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       verification_method: {
-        value: cdktf.stringToHclTerraform(this._verificationMethod),
+        value: cdktn.stringToHclTerraform(this._verificationMethod),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

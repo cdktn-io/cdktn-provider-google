@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface Cloudbuildv2ConnectionConfig extends cdktf.TerraformMetaArguments {
+export interface Cloudbuildv2ConnectionConfig extends cdktn.TerraformMetaArguments {
   /**
   * Allows clients to store small amounts of arbitrary data.
   * 
@@ -26,7 +26,7 @@ export interface Cloudbuildv2ConnectionConfig extends cdktf.TerraformMetaArgumen
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/cloudbuildv2_connection#disabled Cloudbuildv2Connection#disabled}
   */
-  readonly disabled?: boolean | cdktf.IResolvable;
+  readonly disabled?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/cloudbuildv2_connection#id Cloudbuildv2Connection#id}
   *
@@ -91,8 +91,8 @@ export interface Cloudbuildv2ConnectionInstallationState {
 }
 
 export function cloudbuildv2ConnectionInstallationStateToTerraform(struct?: Cloudbuildv2ConnectionInstallationState): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -101,8 +101,8 @@ export function cloudbuildv2ConnectionInstallationStateToTerraform(struct?: Clou
 
 
 export function cloudbuildv2ConnectionInstallationStateToHclTerraform(struct?: Cloudbuildv2ConnectionInstallationState): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -110,7 +110,7 @@ export function cloudbuildv2ConnectionInstallationStateToHclTerraform(struct?: C
   return attrs;
 }
 
-export class Cloudbuildv2ConnectionInstallationStateOutputReference extends cdktf.ComplexObject {
+export class Cloudbuildv2ConnectionInstallationStateOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -119,7 +119,7 @@ export class Cloudbuildv2ConnectionInstallationStateOutputReference extends cdkt
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -154,14 +154,14 @@ export class Cloudbuildv2ConnectionInstallationStateOutputReference extends cdkt
   }
 }
 
-export class Cloudbuildv2ConnectionInstallationStateList extends cdktf.ComplexList {
+export class Cloudbuildv2ConnectionInstallationStateList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -184,24 +184,24 @@ export interface Cloudbuildv2ConnectionBitbucketCloudConfigAuthorizerCredential 
 }
 
 export function cloudbuildv2ConnectionBitbucketCloudConfigAuthorizerCredentialToTerraform(struct?: Cloudbuildv2ConnectionBitbucketCloudConfigAuthorizerCredentialOutputReference | Cloudbuildv2ConnectionBitbucketCloudConfigAuthorizerCredential): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    user_token_secret_version: cdktf.stringToTerraform(struct!.userTokenSecretVersion),
+    user_token_secret_version: cdktn.stringToTerraform(struct!.userTokenSecretVersion),
   }
 }
 
 
 export function cloudbuildv2ConnectionBitbucketCloudConfigAuthorizerCredentialToHclTerraform(struct?: Cloudbuildv2ConnectionBitbucketCloudConfigAuthorizerCredentialOutputReference | Cloudbuildv2ConnectionBitbucketCloudConfigAuthorizerCredential): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     user_token_secret_version: {
-      value: cdktf.stringToHclTerraform(struct!.userTokenSecretVersion),
+      value: cdktn.stringToHclTerraform(struct!.userTokenSecretVersion),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -212,14 +212,14 @@ export function cloudbuildv2ConnectionBitbucketCloudConfigAuthorizerCredentialTo
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class Cloudbuildv2ConnectionBitbucketCloudConfigAuthorizerCredentialOutputReference extends cdktf.ComplexObject {
+export class Cloudbuildv2ConnectionBitbucketCloudConfigAuthorizerCredentialOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -274,24 +274,24 @@ export interface Cloudbuildv2ConnectionBitbucketCloudConfigReadAuthorizerCredent
 }
 
 export function cloudbuildv2ConnectionBitbucketCloudConfigReadAuthorizerCredentialToTerraform(struct?: Cloudbuildv2ConnectionBitbucketCloudConfigReadAuthorizerCredentialOutputReference | Cloudbuildv2ConnectionBitbucketCloudConfigReadAuthorizerCredential): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    user_token_secret_version: cdktf.stringToTerraform(struct!.userTokenSecretVersion),
+    user_token_secret_version: cdktn.stringToTerraform(struct!.userTokenSecretVersion),
   }
 }
 
 
 export function cloudbuildv2ConnectionBitbucketCloudConfigReadAuthorizerCredentialToHclTerraform(struct?: Cloudbuildv2ConnectionBitbucketCloudConfigReadAuthorizerCredentialOutputReference | Cloudbuildv2ConnectionBitbucketCloudConfigReadAuthorizerCredential): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     user_token_secret_version: {
-      value: cdktf.stringToHclTerraform(struct!.userTokenSecretVersion),
+      value: cdktn.stringToHclTerraform(struct!.userTokenSecretVersion),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -302,14 +302,14 @@ export function cloudbuildv2ConnectionBitbucketCloudConfigReadAuthorizerCredenti
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class Cloudbuildv2ConnectionBitbucketCloudConfigReadAuthorizerCredentialOutputReference extends cdktf.ComplexObject {
+export class Cloudbuildv2ConnectionBitbucketCloudConfigReadAuthorizerCredentialOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -382,13 +382,13 @@ export interface Cloudbuildv2ConnectionBitbucketCloudConfig {
 }
 
 export function cloudbuildv2ConnectionBitbucketCloudConfigToTerraform(struct?: Cloudbuildv2ConnectionBitbucketCloudConfigOutputReference | Cloudbuildv2ConnectionBitbucketCloudConfig): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    webhook_secret_secret_version: cdktf.stringToTerraform(struct!.webhookSecretSecretVersion),
-    workspace: cdktf.stringToTerraform(struct!.workspace),
+    webhook_secret_secret_version: cdktn.stringToTerraform(struct!.webhookSecretSecretVersion),
+    workspace: cdktn.stringToTerraform(struct!.workspace),
     authorizer_credential: cloudbuildv2ConnectionBitbucketCloudConfigAuthorizerCredentialToTerraform(struct!.authorizerCredential),
     read_authorizer_credential: cloudbuildv2ConnectionBitbucketCloudConfigReadAuthorizerCredentialToTerraform(struct!.readAuthorizerCredential),
   }
@@ -396,19 +396,19 @@ export function cloudbuildv2ConnectionBitbucketCloudConfigToTerraform(struct?: C
 
 
 export function cloudbuildv2ConnectionBitbucketCloudConfigToHclTerraform(struct?: Cloudbuildv2ConnectionBitbucketCloudConfigOutputReference | Cloudbuildv2ConnectionBitbucketCloudConfig): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     webhook_secret_secret_version: {
-      value: cdktf.stringToHclTerraform(struct!.webhookSecretSecretVersion),
+      value: cdktn.stringToHclTerraform(struct!.webhookSecretSecretVersion),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     workspace: {
-      value: cdktf.stringToHclTerraform(struct!.workspace),
+      value: cdktn.stringToHclTerraform(struct!.workspace),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -431,14 +431,14 @@ export function cloudbuildv2ConnectionBitbucketCloudConfigToHclTerraform(struct?
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class Cloudbuildv2ConnectionBitbucketCloudConfigOutputReference extends cdktf.ComplexObject {
+export class Cloudbuildv2ConnectionBitbucketCloudConfigOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -545,24 +545,24 @@ export interface Cloudbuildv2ConnectionBitbucketDataCenterConfigAuthorizerCreden
 }
 
 export function cloudbuildv2ConnectionBitbucketDataCenterConfigAuthorizerCredentialToTerraform(struct?: Cloudbuildv2ConnectionBitbucketDataCenterConfigAuthorizerCredentialOutputReference | Cloudbuildv2ConnectionBitbucketDataCenterConfigAuthorizerCredential): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    user_token_secret_version: cdktf.stringToTerraform(struct!.userTokenSecretVersion),
+    user_token_secret_version: cdktn.stringToTerraform(struct!.userTokenSecretVersion),
   }
 }
 
 
 export function cloudbuildv2ConnectionBitbucketDataCenterConfigAuthorizerCredentialToHclTerraform(struct?: Cloudbuildv2ConnectionBitbucketDataCenterConfigAuthorizerCredentialOutputReference | Cloudbuildv2ConnectionBitbucketDataCenterConfigAuthorizerCredential): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     user_token_secret_version: {
-      value: cdktf.stringToHclTerraform(struct!.userTokenSecretVersion),
+      value: cdktn.stringToHclTerraform(struct!.userTokenSecretVersion),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -573,14 +573,14 @@ export function cloudbuildv2ConnectionBitbucketDataCenterConfigAuthorizerCredent
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class Cloudbuildv2ConnectionBitbucketDataCenterConfigAuthorizerCredentialOutputReference extends cdktf.ComplexObject {
+export class Cloudbuildv2ConnectionBitbucketDataCenterConfigAuthorizerCredentialOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -635,24 +635,24 @@ export interface Cloudbuildv2ConnectionBitbucketDataCenterConfigReadAuthorizerCr
 }
 
 export function cloudbuildv2ConnectionBitbucketDataCenterConfigReadAuthorizerCredentialToTerraform(struct?: Cloudbuildv2ConnectionBitbucketDataCenterConfigReadAuthorizerCredentialOutputReference | Cloudbuildv2ConnectionBitbucketDataCenterConfigReadAuthorizerCredential): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    user_token_secret_version: cdktf.stringToTerraform(struct!.userTokenSecretVersion),
+    user_token_secret_version: cdktn.stringToTerraform(struct!.userTokenSecretVersion),
   }
 }
 
 
 export function cloudbuildv2ConnectionBitbucketDataCenterConfigReadAuthorizerCredentialToHclTerraform(struct?: Cloudbuildv2ConnectionBitbucketDataCenterConfigReadAuthorizerCredentialOutputReference | Cloudbuildv2ConnectionBitbucketDataCenterConfigReadAuthorizerCredential): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     user_token_secret_version: {
-      value: cdktf.stringToHclTerraform(struct!.userTokenSecretVersion),
+      value: cdktn.stringToHclTerraform(struct!.userTokenSecretVersion),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -663,14 +663,14 @@ export function cloudbuildv2ConnectionBitbucketDataCenterConfigReadAuthorizerCre
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class Cloudbuildv2ConnectionBitbucketDataCenterConfigReadAuthorizerCredentialOutputReference extends cdktf.ComplexObject {
+export class Cloudbuildv2ConnectionBitbucketDataCenterConfigReadAuthorizerCredentialOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -723,24 +723,24 @@ export interface Cloudbuildv2ConnectionBitbucketDataCenterConfigServiceDirectory
 }
 
 export function cloudbuildv2ConnectionBitbucketDataCenterConfigServiceDirectoryConfigToTerraform(struct?: Cloudbuildv2ConnectionBitbucketDataCenterConfigServiceDirectoryConfigOutputReference | Cloudbuildv2ConnectionBitbucketDataCenterConfigServiceDirectoryConfig): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    service: cdktf.stringToTerraform(struct!.service),
+    service: cdktn.stringToTerraform(struct!.service),
   }
 }
 
 
 export function cloudbuildv2ConnectionBitbucketDataCenterConfigServiceDirectoryConfigToHclTerraform(struct?: Cloudbuildv2ConnectionBitbucketDataCenterConfigServiceDirectoryConfigOutputReference | Cloudbuildv2ConnectionBitbucketDataCenterConfigServiceDirectoryConfig): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     service: {
-      value: cdktf.stringToHclTerraform(struct!.service),
+      value: cdktn.stringToHclTerraform(struct!.service),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -751,14 +751,14 @@ export function cloudbuildv2ConnectionBitbucketDataCenterConfigServiceDirectoryC
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class Cloudbuildv2ConnectionBitbucketDataCenterConfigServiceDirectoryConfigOutputReference extends cdktf.ComplexObject {
+export class Cloudbuildv2ConnectionBitbucketDataCenterConfigServiceDirectoryConfigOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -838,14 +838,14 @@ export interface Cloudbuildv2ConnectionBitbucketDataCenterConfig {
 }
 
 export function cloudbuildv2ConnectionBitbucketDataCenterConfigToTerraform(struct?: Cloudbuildv2ConnectionBitbucketDataCenterConfigOutputReference | Cloudbuildv2ConnectionBitbucketDataCenterConfig): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    host_uri: cdktf.stringToTerraform(struct!.hostUri),
-    ssl_ca: cdktf.stringToTerraform(struct!.sslCa),
-    webhook_secret_secret_version: cdktf.stringToTerraform(struct!.webhookSecretSecretVersion),
+    host_uri: cdktn.stringToTerraform(struct!.hostUri),
+    ssl_ca: cdktn.stringToTerraform(struct!.sslCa),
+    webhook_secret_secret_version: cdktn.stringToTerraform(struct!.webhookSecretSecretVersion),
     authorizer_credential: cloudbuildv2ConnectionBitbucketDataCenterConfigAuthorizerCredentialToTerraform(struct!.authorizerCredential),
     read_authorizer_credential: cloudbuildv2ConnectionBitbucketDataCenterConfigReadAuthorizerCredentialToTerraform(struct!.readAuthorizerCredential),
     service_directory_config: cloudbuildv2ConnectionBitbucketDataCenterConfigServiceDirectoryConfigToTerraform(struct!.serviceDirectoryConfig),
@@ -854,25 +854,25 @@ export function cloudbuildv2ConnectionBitbucketDataCenterConfigToTerraform(struc
 
 
 export function cloudbuildv2ConnectionBitbucketDataCenterConfigToHclTerraform(struct?: Cloudbuildv2ConnectionBitbucketDataCenterConfigOutputReference | Cloudbuildv2ConnectionBitbucketDataCenterConfig): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     host_uri: {
-      value: cdktf.stringToHclTerraform(struct!.hostUri),
+      value: cdktn.stringToHclTerraform(struct!.hostUri),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     ssl_ca: {
-      value: cdktf.stringToHclTerraform(struct!.sslCa),
+      value: cdktn.stringToHclTerraform(struct!.sslCa),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     webhook_secret_secret_version: {
-      value: cdktf.stringToHclTerraform(struct!.webhookSecretSecretVersion),
+      value: cdktn.stringToHclTerraform(struct!.webhookSecretSecretVersion),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -901,14 +901,14 @@ export function cloudbuildv2ConnectionBitbucketDataCenterConfigToHclTerraform(st
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class Cloudbuildv2ConnectionBitbucketDataCenterConfigOutputReference extends cdktf.ComplexObject {
+export class Cloudbuildv2ConnectionBitbucketDataCenterConfigOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -1064,24 +1064,24 @@ export interface Cloudbuildv2ConnectionGithubConfigAuthorizerCredential {
 }
 
 export function cloudbuildv2ConnectionGithubConfigAuthorizerCredentialToTerraform(struct?: Cloudbuildv2ConnectionGithubConfigAuthorizerCredentialOutputReference | Cloudbuildv2ConnectionGithubConfigAuthorizerCredential): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    oauth_token_secret_version: cdktf.stringToTerraform(struct!.oauthTokenSecretVersion),
+    oauth_token_secret_version: cdktn.stringToTerraform(struct!.oauthTokenSecretVersion),
   }
 }
 
 
 export function cloudbuildv2ConnectionGithubConfigAuthorizerCredentialToHclTerraform(struct?: Cloudbuildv2ConnectionGithubConfigAuthorizerCredentialOutputReference | Cloudbuildv2ConnectionGithubConfigAuthorizerCredential): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     oauth_token_secret_version: {
-      value: cdktf.stringToHclTerraform(struct!.oauthTokenSecretVersion),
+      value: cdktn.stringToHclTerraform(struct!.oauthTokenSecretVersion),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -1092,14 +1092,14 @@ export function cloudbuildv2ConnectionGithubConfigAuthorizerCredentialToHclTerra
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class Cloudbuildv2ConnectionGithubConfigAuthorizerCredentialOutputReference extends cdktf.ComplexObject {
+export class Cloudbuildv2ConnectionGithubConfigAuthorizerCredentialOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -1161,25 +1161,25 @@ export interface Cloudbuildv2ConnectionGithubConfig {
 }
 
 export function cloudbuildv2ConnectionGithubConfigToTerraform(struct?: Cloudbuildv2ConnectionGithubConfigOutputReference | Cloudbuildv2ConnectionGithubConfig): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    app_installation_id: cdktf.numberToTerraform(struct!.appInstallationId),
+    app_installation_id: cdktn.numberToTerraform(struct!.appInstallationId),
     authorizer_credential: cloudbuildv2ConnectionGithubConfigAuthorizerCredentialToTerraform(struct!.authorizerCredential),
   }
 }
 
 
 export function cloudbuildv2ConnectionGithubConfigToHclTerraform(struct?: Cloudbuildv2ConnectionGithubConfigOutputReference | Cloudbuildv2ConnectionGithubConfig): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     app_installation_id: {
-      value: cdktf.numberToHclTerraform(struct!.appInstallationId),
+      value: cdktn.numberToHclTerraform(struct!.appInstallationId),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
@@ -1196,14 +1196,14 @@ export function cloudbuildv2ConnectionGithubConfigToHclTerraform(struct?: Cloudb
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class Cloudbuildv2ConnectionGithubConfigOutputReference extends cdktf.ComplexObject {
+export class Cloudbuildv2ConnectionGithubConfigOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -1276,24 +1276,24 @@ export interface Cloudbuildv2ConnectionGithubEnterpriseConfigServiceDirectoryCon
 }
 
 export function cloudbuildv2ConnectionGithubEnterpriseConfigServiceDirectoryConfigToTerraform(struct?: Cloudbuildv2ConnectionGithubEnterpriseConfigServiceDirectoryConfigOutputReference | Cloudbuildv2ConnectionGithubEnterpriseConfigServiceDirectoryConfig): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    service: cdktf.stringToTerraform(struct!.service),
+    service: cdktn.stringToTerraform(struct!.service),
   }
 }
 
 
 export function cloudbuildv2ConnectionGithubEnterpriseConfigServiceDirectoryConfigToHclTerraform(struct?: Cloudbuildv2ConnectionGithubEnterpriseConfigServiceDirectoryConfigOutputReference | Cloudbuildv2ConnectionGithubEnterpriseConfigServiceDirectoryConfig): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     service: {
-      value: cdktf.stringToHclTerraform(struct!.service),
+      value: cdktn.stringToHclTerraform(struct!.service),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -1304,14 +1304,14 @@ export function cloudbuildv2ConnectionGithubEnterpriseConfigServiceDirectoryConf
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class Cloudbuildv2ConnectionGithubEnterpriseConfigServiceDirectoryConfigOutputReference extends cdktf.ComplexObject {
+export class Cloudbuildv2ConnectionGithubEnterpriseConfigServiceDirectoryConfigOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -1405,67 +1405,67 @@ export interface Cloudbuildv2ConnectionGithubEnterpriseConfig {
 }
 
 export function cloudbuildv2ConnectionGithubEnterpriseConfigToTerraform(struct?: Cloudbuildv2ConnectionGithubEnterpriseConfigOutputReference | Cloudbuildv2ConnectionGithubEnterpriseConfig): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    app_id: cdktf.numberToTerraform(struct!.appId),
-    app_installation_id: cdktf.numberToTerraform(struct!.appInstallationId),
-    app_slug: cdktf.stringToTerraform(struct!.appSlug),
-    host_uri: cdktf.stringToTerraform(struct!.hostUri),
-    private_key_secret_version: cdktf.stringToTerraform(struct!.privateKeySecretVersion),
-    ssl_ca: cdktf.stringToTerraform(struct!.sslCa),
-    webhook_secret_secret_version: cdktf.stringToTerraform(struct!.webhookSecretSecretVersion),
+    app_id: cdktn.numberToTerraform(struct!.appId),
+    app_installation_id: cdktn.numberToTerraform(struct!.appInstallationId),
+    app_slug: cdktn.stringToTerraform(struct!.appSlug),
+    host_uri: cdktn.stringToTerraform(struct!.hostUri),
+    private_key_secret_version: cdktn.stringToTerraform(struct!.privateKeySecretVersion),
+    ssl_ca: cdktn.stringToTerraform(struct!.sslCa),
+    webhook_secret_secret_version: cdktn.stringToTerraform(struct!.webhookSecretSecretVersion),
     service_directory_config: cloudbuildv2ConnectionGithubEnterpriseConfigServiceDirectoryConfigToTerraform(struct!.serviceDirectoryConfig),
   }
 }
 
 
 export function cloudbuildv2ConnectionGithubEnterpriseConfigToHclTerraform(struct?: Cloudbuildv2ConnectionGithubEnterpriseConfigOutputReference | Cloudbuildv2ConnectionGithubEnterpriseConfig): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     app_id: {
-      value: cdktf.numberToHclTerraform(struct!.appId),
+      value: cdktn.numberToHclTerraform(struct!.appId),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     app_installation_id: {
-      value: cdktf.numberToHclTerraform(struct!.appInstallationId),
+      value: cdktn.numberToHclTerraform(struct!.appInstallationId),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     app_slug: {
-      value: cdktf.stringToHclTerraform(struct!.appSlug),
+      value: cdktn.stringToHclTerraform(struct!.appSlug),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     host_uri: {
-      value: cdktf.stringToHclTerraform(struct!.hostUri),
+      value: cdktn.stringToHclTerraform(struct!.hostUri),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     private_key_secret_version: {
-      value: cdktf.stringToHclTerraform(struct!.privateKeySecretVersion),
+      value: cdktn.stringToHclTerraform(struct!.privateKeySecretVersion),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     ssl_ca: {
-      value: cdktf.stringToHclTerraform(struct!.sslCa),
+      value: cdktn.stringToHclTerraform(struct!.sslCa),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     webhook_secret_secret_version: {
-      value: cdktf.stringToHclTerraform(struct!.webhookSecretSecretVersion),
+      value: cdktn.stringToHclTerraform(struct!.webhookSecretSecretVersion),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -1482,14 +1482,14 @@ export function cloudbuildv2ConnectionGithubEnterpriseConfigToHclTerraform(struc
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class Cloudbuildv2ConnectionGithubEnterpriseConfigOutputReference extends cdktf.ComplexObject {
+export class Cloudbuildv2ConnectionGithubEnterpriseConfigOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -1693,24 +1693,24 @@ export interface Cloudbuildv2ConnectionGitlabConfigAuthorizerCredential {
 }
 
 export function cloudbuildv2ConnectionGitlabConfigAuthorizerCredentialToTerraform(struct?: Cloudbuildv2ConnectionGitlabConfigAuthorizerCredentialOutputReference | Cloudbuildv2ConnectionGitlabConfigAuthorizerCredential): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    user_token_secret_version: cdktf.stringToTerraform(struct!.userTokenSecretVersion),
+    user_token_secret_version: cdktn.stringToTerraform(struct!.userTokenSecretVersion),
   }
 }
 
 
 export function cloudbuildv2ConnectionGitlabConfigAuthorizerCredentialToHclTerraform(struct?: Cloudbuildv2ConnectionGitlabConfigAuthorizerCredentialOutputReference | Cloudbuildv2ConnectionGitlabConfigAuthorizerCredential): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     user_token_secret_version: {
-      value: cdktf.stringToHclTerraform(struct!.userTokenSecretVersion),
+      value: cdktn.stringToHclTerraform(struct!.userTokenSecretVersion),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -1721,14 +1721,14 @@ export function cloudbuildv2ConnectionGitlabConfigAuthorizerCredentialToHclTerra
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class Cloudbuildv2ConnectionGitlabConfigAuthorizerCredentialOutputReference extends cdktf.ComplexObject {
+export class Cloudbuildv2ConnectionGitlabConfigAuthorizerCredentialOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -1783,24 +1783,24 @@ export interface Cloudbuildv2ConnectionGitlabConfigReadAuthorizerCredential {
 }
 
 export function cloudbuildv2ConnectionGitlabConfigReadAuthorizerCredentialToTerraform(struct?: Cloudbuildv2ConnectionGitlabConfigReadAuthorizerCredentialOutputReference | Cloudbuildv2ConnectionGitlabConfigReadAuthorizerCredential): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    user_token_secret_version: cdktf.stringToTerraform(struct!.userTokenSecretVersion),
+    user_token_secret_version: cdktn.stringToTerraform(struct!.userTokenSecretVersion),
   }
 }
 
 
 export function cloudbuildv2ConnectionGitlabConfigReadAuthorizerCredentialToHclTerraform(struct?: Cloudbuildv2ConnectionGitlabConfigReadAuthorizerCredentialOutputReference | Cloudbuildv2ConnectionGitlabConfigReadAuthorizerCredential): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     user_token_secret_version: {
-      value: cdktf.stringToHclTerraform(struct!.userTokenSecretVersion),
+      value: cdktn.stringToHclTerraform(struct!.userTokenSecretVersion),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -1811,14 +1811,14 @@ export function cloudbuildv2ConnectionGitlabConfigReadAuthorizerCredentialToHclT
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class Cloudbuildv2ConnectionGitlabConfigReadAuthorizerCredentialOutputReference extends cdktf.ComplexObject {
+export class Cloudbuildv2ConnectionGitlabConfigReadAuthorizerCredentialOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -1871,24 +1871,24 @@ export interface Cloudbuildv2ConnectionGitlabConfigServiceDirectoryConfig {
 }
 
 export function cloudbuildv2ConnectionGitlabConfigServiceDirectoryConfigToTerraform(struct?: Cloudbuildv2ConnectionGitlabConfigServiceDirectoryConfigOutputReference | Cloudbuildv2ConnectionGitlabConfigServiceDirectoryConfig): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    service: cdktf.stringToTerraform(struct!.service),
+    service: cdktn.stringToTerraform(struct!.service),
   }
 }
 
 
 export function cloudbuildv2ConnectionGitlabConfigServiceDirectoryConfigToHclTerraform(struct?: Cloudbuildv2ConnectionGitlabConfigServiceDirectoryConfigOutputReference | Cloudbuildv2ConnectionGitlabConfigServiceDirectoryConfig): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     service: {
-      value: cdktf.stringToHclTerraform(struct!.service),
+      value: cdktn.stringToHclTerraform(struct!.service),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -1899,14 +1899,14 @@ export function cloudbuildv2ConnectionGitlabConfigServiceDirectoryConfigToHclTer
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class Cloudbuildv2ConnectionGitlabConfigServiceDirectoryConfigOutputReference extends cdktf.ComplexObject {
+export class Cloudbuildv2ConnectionGitlabConfigServiceDirectoryConfigOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -1986,14 +1986,14 @@ export interface Cloudbuildv2ConnectionGitlabConfig {
 }
 
 export function cloudbuildv2ConnectionGitlabConfigToTerraform(struct?: Cloudbuildv2ConnectionGitlabConfigOutputReference | Cloudbuildv2ConnectionGitlabConfig): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    host_uri: cdktf.stringToTerraform(struct!.hostUri),
-    ssl_ca: cdktf.stringToTerraform(struct!.sslCa),
-    webhook_secret_secret_version: cdktf.stringToTerraform(struct!.webhookSecretSecretVersion),
+    host_uri: cdktn.stringToTerraform(struct!.hostUri),
+    ssl_ca: cdktn.stringToTerraform(struct!.sslCa),
+    webhook_secret_secret_version: cdktn.stringToTerraform(struct!.webhookSecretSecretVersion),
     authorizer_credential: cloudbuildv2ConnectionGitlabConfigAuthorizerCredentialToTerraform(struct!.authorizerCredential),
     read_authorizer_credential: cloudbuildv2ConnectionGitlabConfigReadAuthorizerCredentialToTerraform(struct!.readAuthorizerCredential),
     service_directory_config: cloudbuildv2ConnectionGitlabConfigServiceDirectoryConfigToTerraform(struct!.serviceDirectoryConfig),
@@ -2002,25 +2002,25 @@ export function cloudbuildv2ConnectionGitlabConfigToTerraform(struct?: Cloudbuil
 
 
 export function cloudbuildv2ConnectionGitlabConfigToHclTerraform(struct?: Cloudbuildv2ConnectionGitlabConfigOutputReference | Cloudbuildv2ConnectionGitlabConfig): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     host_uri: {
-      value: cdktf.stringToHclTerraform(struct!.hostUri),
+      value: cdktn.stringToHclTerraform(struct!.hostUri),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     ssl_ca: {
-      value: cdktf.stringToHclTerraform(struct!.sslCa),
+      value: cdktn.stringToHclTerraform(struct!.sslCa),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     webhook_secret_secret_version: {
-      value: cdktf.stringToHclTerraform(struct!.webhookSecretSecretVersion),
+      value: cdktn.stringToHclTerraform(struct!.webhookSecretSecretVersion),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -2049,14 +2049,14 @@ export function cloudbuildv2ConnectionGitlabConfigToHclTerraform(struct?: Cloudb
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class Cloudbuildv2ConnectionGitlabConfigOutputReference extends cdktf.ComplexObject {
+export class Cloudbuildv2ConnectionGitlabConfigOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -2218,39 +2218,39 @@ export interface Cloudbuildv2ConnectionTimeouts {
   readonly update?: string;
 }
 
-export function cloudbuildv2ConnectionTimeoutsToTerraform(struct?: Cloudbuildv2ConnectionTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function cloudbuildv2ConnectionTimeoutsToTerraform(struct?: Cloudbuildv2ConnectionTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    create: cdktf.stringToTerraform(struct!.create),
-    delete: cdktf.stringToTerraform(struct!.delete),
-    update: cdktf.stringToTerraform(struct!.update),
+    create: cdktn.stringToTerraform(struct!.create),
+    delete: cdktn.stringToTerraform(struct!.delete),
+    update: cdktn.stringToTerraform(struct!.update),
   }
 }
 
 
-export function cloudbuildv2ConnectionTimeoutsToHclTerraform(struct?: Cloudbuildv2ConnectionTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function cloudbuildv2ConnectionTimeoutsToHclTerraform(struct?: Cloudbuildv2ConnectionTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     create: {
-      value: cdktf.stringToHclTerraform(struct!.create),
+      value: cdktn.stringToHclTerraform(struct!.create),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     delete: {
-      value: cdktf.stringToHclTerraform(struct!.delete),
+      value: cdktn.stringToHclTerraform(struct!.delete),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     update: {
-      value: cdktf.stringToHclTerraform(struct!.update),
+      value: cdktn.stringToHclTerraform(struct!.update),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -2261,19 +2261,19 @@ export function cloudbuildv2ConnectionTimeoutsToHclTerraform(struct?: Cloudbuild
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class Cloudbuildv2ConnectionTimeoutsOutputReference extends cdktf.ComplexObject {
+export class Cloudbuildv2ConnectionTimeoutsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): Cloudbuildv2ConnectionTimeouts | cdktf.IResolvable | undefined {
+  public get internalValue(): Cloudbuildv2ConnectionTimeouts | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -2294,7 +2294,7 @@ export class Cloudbuildv2ConnectionTimeoutsOutputReference extends cdktf.Complex
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: Cloudbuildv2ConnectionTimeouts | cdktf.IResolvable | undefined) {
+  public set internalValue(value: Cloudbuildv2ConnectionTimeouts | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -2302,7 +2302,7 @@ export class Cloudbuildv2ConnectionTimeoutsOutputReference extends cdktf.Complex
       this._delete = undefined;
       this._update = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -2367,7 +2367,7 @@ export class Cloudbuildv2ConnectionTimeoutsOutputReference extends cdktf.Complex
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/cloudbuildv2_connection google_cloudbuildv2_connection}
 */
-export class Cloudbuildv2Connection extends cdktf.TerraformResource {
+export class Cloudbuildv2Connection extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -2378,14 +2378,14 @@ export class Cloudbuildv2Connection extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a Cloudbuildv2Connection resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a Cloudbuildv2Connection resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the Cloudbuildv2Connection to import
   * @param importFromId The id of the existing Cloudbuildv2Connection that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/cloudbuildv2_connection#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the Cloudbuildv2Connection to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "google_cloudbuildv2_connection", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "google_cloudbuildv2_connection", importId: importFromId, provider });
       }
 
   // ===========
@@ -2455,11 +2455,11 @@ export class Cloudbuildv2Connection extends cdktf.TerraformResource {
   }
 
   // disabled - computed: false, optional: true, required: false
-  private _disabled?: boolean | cdktf.IResolvable; 
+  private _disabled?: boolean | cdktn.IResolvable; 
   public get disabled() {
     return this.getBooleanAttribute('disabled');
   }
-  public set disabled(value: boolean | cdktf.IResolvable) {
+  public set disabled(value: boolean | cdktn.IResolvable) {
     this._disabled = value;
   }
   public resetDisabled() {
@@ -2471,7 +2471,7 @@ export class Cloudbuildv2Connection extends cdktf.TerraformResource {
   }
 
   // effective_annotations - computed: true, optional: false, required: false
-  private _effectiveAnnotations = new cdktf.StringMap(this, "effective_annotations");
+  private _effectiveAnnotations = new cdktn.StringMap(this, "effective_annotations");
   public get effectiveAnnotations() {
     return this._effectiveAnnotations;
   }
@@ -2657,12 +2657,12 @@ export class Cloudbuildv2Connection extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      annotations: cdktf.hashMapper(cdktf.stringToTerraform)(this._annotations),
-      disabled: cdktf.booleanToTerraform(this._disabled),
-      id: cdktf.stringToTerraform(this._id),
-      location: cdktf.stringToTerraform(this._location),
-      name: cdktf.stringToTerraform(this._name),
-      project: cdktf.stringToTerraform(this._project),
+      annotations: cdktn.hashMapper(cdktn.stringToTerraform)(this._annotations),
+      disabled: cdktn.booleanToTerraform(this._disabled),
+      id: cdktn.stringToTerraform(this._id),
+      location: cdktn.stringToTerraform(this._location),
+      name: cdktn.stringToTerraform(this._name),
+      project: cdktn.stringToTerraform(this._project),
       bitbucket_cloud_config: cloudbuildv2ConnectionBitbucketCloudConfigToTerraform(this._bitbucketCloudConfig.internalValue),
       bitbucket_data_center_config: cloudbuildv2ConnectionBitbucketDataCenterConfigToTerraform(this._bitbucketDataCenterConfig.internalValue),
       github_config: cloudbuildv2ConnectionGithubConfigToTerraform(this._githubConfig.internalValue),
@@ -2675,37 +2675,37 @@ export class Cloudbuildv2Connection extends cdktf.TerraformResource {
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       annotations: {
-        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._annotations),
+        value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(this._annotations),
         isBlock: false,
         type: "map",
         storageClassType: "stringMap",
       },
       disabled: {
-        value: cdktf.booleanToHclTerraform(this._disabled),
+        value: cdktn.booleanToHclTerraform(this._disabled),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       location: {
-        value: cdktf.stringToHclTerraform(this._location),
+        value: cdktn.stringToHclTerraform(this._location),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       name: {
-        value: cdktf.stringToHclTerraform(this._name),
+        value: cdktn.stringToHclTerraform(this._name),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       project: {
-        value: cdktf.stringToHclTerraform(this._project),
+        value: cdktn.stringToHclTerraform(this._project),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

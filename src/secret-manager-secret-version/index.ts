@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface SecretManagerSecretVersionConfig extends cdktf.TerraformMetaArguments {
+export interface SecretManagerSecretVersionConfig extends cdktn.TerraformMetaArguments {
   /**
   * The deletion policy for the secret version. Setting 'ABANDON' allows the resource
   * to be abandoned rather than deleted. Setting 'DISABLE' allows the resource to be
@@ -28,7 +28,7 @@ export interface SecretManagerSecretVersionConfig extends cdktf.TerraformMetaArg
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/secret_manager_secret_version#enabled SecretManagerSecretVersion#enabled}
   */
-  readonly enabled?: boolean | cdktf.IResolvable;
+  readonly enabled?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/secret_manager_secret_version#id SecretManagerSecretVersion#id}
   *
@@ -41,7 +41,7 @@ export interface SecretManagerSecretVersionConfig extends cdktf.TerraformMetaArg
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/secret_manager_secret_version#is_secret_data_base64 SecretManagerSecretVersion#is_secret_data_base64}
   */
-  readonly isSecretDataBase64?: boolean | cdktf.IResolvable;
+  readonly isSecretDataBase64?: boolean | cdktn.IResolvable;
   /**
   * Secret Manager secret resource
   *
@@ -88,39 +88,39 @@ export interface SecretManagerSecretVersionTimeouts {
   readonly update?: string;
 }
 
-export function secretManagerSecretVersionTimeoutsToTerraform(struct?: SecretManagerSecretVersionTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function secretManagerSecretVersionTimeoutsToTerraform(struct?: SecretManagerSecretVersionTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    create: cdktf.stringToTerraform(struct!.create),
-    delete: cdktf.stringToTerraform(struct!.delete),
-    update: cdktf.stringToTerraform(struct!.update),
+    create: cdktn.stringToTerraform(struct!.create),
+    delete: cdktn.stringToTerraform(struct!.delete),
+    update: cdktn.stringToTerraform(struct!.update),
   }
 }
 
 
-export function secretManagerSecretVersionTimeoutsToHclTerraform(struct?: SecretManagerSecretVersionTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function secretManagerSecretVersionTimeoutsToHclTerraform(struct?: SecretManagerSecretVersionTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     create: {
-      value: cdktf.stringToHclTerraform(struct!.create),
+      value: cdktn.stringToHclTerraform(struct!.create),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     delete: {
-      value: cdktf.stringToHclTerraform(struct!.delete),
+      value: cdktn.stringToHclTerraform(struct!.delete),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     update: {
-      value: cdktf.stringToHclTerraform(struct!.update),
+      value: cdktn.stringToHclTerraform(struct!.update),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -131,19 +131,19 @@ export function secretManagerSecretVersionTimeoutsToHclTerraform(struct?: Secret
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class SecretManagerSecretVersionTimeoutsOutputReference extends cdktf.ComplexObject {
+export class SecretManagerSecretVersionTimeoutsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): SecretManagerSecretVersionTimeouts | cdktf.IResolvable | undefined {
+  public get internalValue(): SecretManagerSecretVersionTimeouts | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -164,7 +164,7 @@ export class SecretManagerSecretVersionTimeoutsOutputReference extends cdktf.Com
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: SecretManagerSecretVersionTimeouts | cdktf.IResolvable | undefined) {
+  public set internalValue(value: SecretManagerSecretVersionTimeouts | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -172,7 +172,7 @@ export class SecretManagerSecretVersionTimeoutsOutputReference extends cdktf.Com
       this._delete = undefined;
       this._update = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -237,7 +237,7 @@ export class SecretManagerSecretVersionTimeoutsOutputReference extends cdktf.Com
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/secret_manager_secret_version google_secret_manager_secret_version}
 */
-export class SecretManagerSecretVersion extends cdktf.TerraformResource {
+export class SecretManagerSecretVersion extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -248,14 +248,14 @@ export class SecretManagerSecretVersion extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a SecretManagerSecretVersion resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a SecretManagerSecretVersion resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the SecretManagerSecretVersion to import
   * @param importFromId The id of the existing SecretManagerSecretVersion that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/secret_manager_secret_version#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the SecretManagerSecretVersion to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "google_secret_manager_secret_version", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "google_secret_manager_secret_version", importId: importFromId, provider });
       }
 
   // ===========
@@ -327,11 +327,11 @@ export class SecretManagerSecretVersion extends cdktf.TerraformResource {
   }
 
   // enabled - computed: false, optional: true, required: false
-  private _enabled?: boolean | cdktf.IResolvable; 
+  private _enabled?: boolean | cdktn.IResolvable; 
   public get enabled() {
     return this.getBooleanAttribute('enabled');
   }
-  public set enabled(value: boolean | cdktf.IResolvable) {
+  public set enabled(value: boolean | cdktn.IResolvable) {
     this._enabled = value;
   }
   public resetEnabled() {
@@ -359,11 +359,11 @@ export class SecretManagerSecretVersion extends cdktf.TerraformResource {
   }
 
   // is_secret_data_base64 - computed: false, optional: true, required: false
-  private _isSecretDataBase64?: boolean | cdktf.IResolvable; 
+  private _isSecretDataBase64?: boolean | cdktn.IResolvable; 
   public get isSecretDataBase64() {
     return this.getBooleanAttribute('is_secret_data_base64');
   }
-  public set isSecretDataBase64(value: boolean | cdktf.IResolvable) {
+  public set isSecretDataBase64(value: boolean | cdktn.IResolvable) {
     this._isSecretDataBase64 = value;
   }
   public resetIsSecretDataBase64() {
@@ -467,14 +467,14 @@ export class SecretManagerSecretVersion extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      deletion_policy: cdktf.stringToTerraform(this._deletionPolicy),
-      enabled: cdktf.booleanToTerraform(this._enabled),
-      id: cdktf.stringToTerraform(this._id),
-      is_secret_data_base64: cdktf.booleanToTerraform(this._isSecretDataBase64),
-      secret: cdktf.stringToTerraform(this._secret),
-      secret_data: cdktf.stringToTerraform(this._secretData),
-      secret_data_wo: cdktf.stringToTerraform(this._secretDataWo),
-      secret_data_wo_version: cdktf.numberToTerraform(this._secretDataWoVersion),
+      deletion_policy: cdktn.stringToTerraform(this._deletionPolicy),
+      enabled: cdktn.booleanToTerraform(this._enabled),
+      id: cdktn.stringToTerraform(this._id),
+      is_secret_data_base64: cdktn.booleanToTerraform(this._isSecretDataBase64),
+      secret: cdktn.stringToTerraform(this._secret),
+      secret_data: cdktn.stringToTerraform(this._secretData),
+      secret_data_wo: cdktn.stringToTerraform(this._secretDataWo),
+      secret_data_wo_version: cdktn.numberToTerraform(this._secretDataWoVersion),
       timeouts: secretManagerSecretVersionTimeoutsToTerraform(this._timeouts.internalValue),
     };
   }
@@ -482,49 +482,49 @@ export class SecretManagerSecretVersion extends cdktf.TerraformResource {
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       deletion_policy: {
-        value: cdktf.stringToHclTerraform(this._deletionPolicy),
+        value: cdktn.stringToHclTerraform(this._deletionPolicy),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       enabled: {
-        value: cdktf.booleanToHclTerraform(this._enabled),
+        value: cdktn.booleanToHclTerraform(this._enabled),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       is_secret_data_base64: {
-        value: cdktf.booleanToHclTerraform(this._isSecretDataBase64),
+        value: cdktn.booleanToHclTerraform(this._isSecretDataBase64),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       secret: {
-        value: cdktf.stringToHclTerraform(this._secret),
+        value: cdktn.stringToHclTerraform(this._secret),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       secret_data: {
-        value: cdktf.stringToHclTerraform(this._secretData),
+        value: cdktn.stringToHclTerraform(this._secretData),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       secret_data_wo: {
-        value: cdktf.stringToHclTerraform(this._secretDataWo),
+        value: cdktn.stringToHclTerraform(this._secretDataWo),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       secret_data_wo_version: {
-        value: cdktf.numberToHclTerraform(this._secretDataWoVersion),
+        value: cdktn.numberToHclTerraform(this._secretDataWoVersion),
         isBlock: false,
         type: "simple",
         storageClassType: "number",

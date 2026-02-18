@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface BigqueryDatapolicyDataPolicyIamMemberConfig extends cdktf.TerraformMetaArguments {
+export interface BigqueryDatapolicyDataPolicyIamMemberConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/bigquery_datapolicy_data_policy_iam_member#data_policy_id BigqueryDatapolicyDataPolicyIamMember#data_policy_id}
   */
@@ -62,38 +62,38 @@ export interface BigqueryDatapolicyDataPolicyIamMemberCondition {
 }
 
 export function bigqueryDatapolicyDataPolicyIamMemberConditionToTerraform(struct?: BigqueryDatapolicyDataPolicyIamMemberConditionOutputReference | BigqueryDatapolicyDataPolicyIamMemberCondition): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    description: cdktf.stringToTerraform(struct!.description),
-    expression: cdktf.stringToTerraform(struct!.expression),
-    title: cdktf.stringToTerraform(struct!.title),
+    description: cdktn.stringToTerraform(struct!.description),
+    expression: cdktn.stringToTerraform(struct!.expression),
+    title: cdktn.stringToTerraform(struct!.title),
   }
 }
 
 
 export function bigqueryDatapolicyDataPolicyIamMemberConditionToHclTerraform(struct?: BigqueryDatapolicyDataPolicyIamMemberConditionOutputReference | BigqueryDatapolicyDataPolicyIamMemberCondition): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     description: {
-      value: cdktf.stringToHclTerraform(struct!.description),
+      value: cdktn.stringToHclTerraform(struct!.description),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     expression: {
-      value: cdktf.stringToHclTerraform(struct!.expression),
+      value: cdktn.stringToHclTerraform(struct!.expression),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     title: {
-      value: cdktf.stringToHclTerraform(struct!.title),
+      value: cdktn.stringToHclTerraform(struct!.title),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -104,14 +104,14 @@ export function bigqueryDatapolicyDataPolicyIamMemberConditionToHclTerraform(str
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class BigqueryDatapolicyDataPolicyIamMemberConditionOutputReference extends cdktf.ComplexObject {
+export class BigqueryDatapolicyDataPolicyIamMemberConditionOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -194,7 +194,7 @@ export class BigqueryDatapolicyDataPolicyIamMemberConditionOutputReference exten
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/bigquery_datapolicy_data_policy_iam_member google_bigquery_datapolicy_data_policy_iam_member}
 */
-export class BigqueryDatapolicyDataPolicyIamMember extends cdktf.TerraformResource {
+export class BigqueryDatapolicyDataPolicyIamMember extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -205,14 +205,14 @@ export class BigqueryDatapolicyDataPolicyIamMember extends cdktf.TerraformResour
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a BigqueryDatapolicyDataPolicyIamMember resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a BigqueryDatapolicyDataPolicyIamMember resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the BigqueryDatapolicyDataPolicyIamMember to import
   * @param importFromId The id of the existing BigqueryDatapolicyDataPolicyIamMember that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/bigquery_datapolicy_data_policy_iam_member#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the BigqueryDatapolicyDataPolicyIamMember to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "google_bigquery_datapolicy_data_policy_iam_member", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "google_bigquery_datapolicy_data_policy_iam_member", importId: importFromId, provider });
       }
 
   // ===========
@@ -369,12 +369,12 @@ export class BigqueryDatapolicyDataPolicyIamMember extends cdktf.TerraformResour
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      data_policy_id: cdktf.stringToTerraform(this._dataPolicyId),
-      id: cdktf.stringToTerraform(this._id),
-      location: cdktf.stringToTerraform(this._location),
-      member: cdktf.stringToTerraform(this._member),
-      project: cdktf.stringToTerraform(this._project),
-      role: cdktf.stringToTerraform(this._role),
+      data_policy_id: cdktn.stringToTerraform(this._dataPolicyId),
+      id: cdktn.stringToTerraform(this._id),
+      location: cdktn.stringToTerraform(this._location),
+      member: cdktn.stringToTerraform(this._member),
+      project: cdktn.stringToTerraform(this._project),
+      role: cdktn.stringToTerraform(this._role),
       condition: bigqueryDatapolicyDataPolicyIamMemberConditionToTerraform(this._condition.internalValue),
     };
   }
@@ -382,37 +382,37 @@ export class BigqueryDatapolicyDataPolicyIamMember extends cdktf.TerraformResour
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       data_policy_id: {
-        value: cdktf.stringToHclTerraform(this._dataPolicyId),
+        value: cdktn.stringToHclTerraform(this._dataPolicyId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       location: {
-        value: cdktf.stringToHclTerraform(this._location),
+        value: cdktn.stringToHclTerraform(this._location),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       member: {
-        value: cdktf.stringToHclTerraform(this._member),
+        value: cdktn.stringToHclTerraform(this._member),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       project: {
-        value: cdktf.stringToHclTerraform(this._project),
+        value: cdktn.stringToHclTerraform(this._project),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       role: {
-        value: cdktf.stringToHclTerraform(this._role),
+        value: cdktn.stringToHclTerraform(this._role),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

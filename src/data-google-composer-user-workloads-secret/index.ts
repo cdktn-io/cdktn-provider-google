@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface DataGoogleComposerUserWorkloadsSecretConfig extends cdktf.TerraformMetaArguments {
+export interface DataGoogleComposerUserWorkloadsSecretConfig extends cdktn.TerraformMetaArguments {
   /**
   * Name of the environment.
   *
@@ -48,7 +48,7 @@ export interface DataGoogleComposerUserWorkloadsSecretConfig extends cdktf.Terra
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/data-sources/composer_user_workloads_secret google_composer_user_workloads_secret}
 */
-export class DataGoogleComposerUserWorkloadsSecret extends cdktf.TerraformDataSource {
+export class DataGoogleComposerUserWorkloadsSecret extends cdktn.TerraformDataSource {
 
   // =================
   // STATIC PROPERTIES
@@ -59,14 +59,14 @@ export class DataGoogleComposerUserWorkloadsSecret extends cdktf.TerraformDataSo
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a DataGoogleComposerUserWorkloadsSecret resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a DataGoogleComposerUserWorkloadsSecret resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataGoogleComposerUserWorkloadsSecret to import
   * @param importFromId The id of the existing DataGoogleComposerUserWorkloadsSecret that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/data-sources/composer_user_workloads_secret#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataGoogleComposerUserWorkloadsSecret to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "google_composer_user_workloads_secret", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "google_composer_user_workloads_secret", importId: importFromId, provider });
       }
 
   // ===========
@@ -108,7 +108,7 @@ export class DataGoogleComposerUserWorkloadsSecret extends cdktf.TerraformDataSo
   // ==========
 
   // data - computed: true, optional: false, required: false
-  private _data = new cdktf.StringMap(this, "data");
+  private _data = new cdktn.StringMap(this, "data");
   public get data() {
     return this._data;
   }
@@ -193,42 +193,42 @@ export class DataGoogleComposerUserWorkloadsSecret extends cdktf.TerraformDataSo
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      environment: cdktf.stringToTerraform(this._environment),
-      id: cdktf.stringToTerraform(this._id),
-      name: cdktf.stringToTerraform(this._name),
-      project: cdktf.stringToTerraform(this._project),
-      region: cdktf.stringToTerraform(this._region),
+      environment: cdktn.stringToTerraform(this._environment),
+      id: cdktn.stringToTerraform(this._id),
+      name: cdktn.stringToTerraform(this._name),
+      project: cdktn.stringToTerraform(this._project),
+      region: cdktn.stringToTerraform(this._region),
     };
   }
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       environment: {
-        value: cdktf.stringToHclTerraform(this._environment),
+        value: cdktn.stringToHclTerraform(this._environment),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       name: {
-        value: cdktf.stringToHclTerraform(this._name),
+        value: cdktn.stringToHclTerraform(this._name),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       project: {
-        value: cdktf.stringToHclTerraform(this._project),
+        value: cdktn.stringToHclTerraform(this._project),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       region: {
-        value: cdktf.stringToHclTerraform(this._region),
+        value: cdktn.stringToHclTerraform(this._region),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

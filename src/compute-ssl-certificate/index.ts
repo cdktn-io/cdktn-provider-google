@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface ComputeSslCertificateConfig extends cdktf.TerraformMetaArguments {
+export interface ComputeSslCertificateConfig extends cdktn.TerraformMetaArguments {
   /**
   * The certificate in PEM format.
   * The certificate chain must be no greater than 5 certs long.
@@ -81,32 +81,32 @@ export interface ComputeSslCertificateTimeouts {
   readonly delete?: string;
 }
 
-export function computeSslCertificateTimeoutsToTerraform(struct?: ComputeSslCertificateTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function computeSslCertificateTimeoutsToTerraform(struct?: ComputeSslCertificateTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    create: cdktf.stringToTerraform(struct!.create),
-    delete: cdktf.stringToTerraform(struct!.delete),
+    create: cdktn.stringToTerraform(struct!.create),
+    delete: cdktn.stringToTerraform(struct!.delete),
   }
 }
 
 
-export function computeSslCertificateTimeoutsToHclTerraform(struct?: ComputeSslCertificateTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function computeSslCertificateTimeoutsToHclTerraform(struct?: ComputeSslCertificateTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     create: {
-      value: cdktf.stringToHclTerraform(struct!.create),
+      value: cdktn.stringToHclTerraform(struct!.create),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     delete: {
-      value: cdktf.stringToHclTerraform(struct!.delete),
+      value: cdktn.stringToHclTerraform(struct!.delete),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -117,19 +117,19 @@ export function computeSslCertificateTimeoutsToHclTerraform(struct?: ComputeSslC
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class ComputeSslCertificateTimeoutsOutputReference extends cdktf.ComplexObject {
+export class ComputeSslCertificateTimeoutsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): ComputeSslCertificateTimeouts | cdktf.IResolvable | undefined {
+  public get internalValue(): ComputeSslCertificateTimeouts | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -146,14 +146,14 @@ export class ComputeSslCertificateTimeoutsOutputReference extends cdktf.ComplexO
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: ComputeSslCertificateTimeouts | cdktf.IResolvable | undefined) {
+  public set internalValue(value: ComputeSslCertificateTimeouts | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._create = undefined;
       this._delete = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -201,7 +201,7 @@ export class ComputeSslCertificateTimeoutsOutputReference extends cdktf.ComplexO
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_ssl_certificate google_compute_ssl_certificate}
 */
-export class ComputeSslCertificate extends cdktf.TerraformResource {
+export class ComputeSslCertificate extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -212,14 +212,14 @@ export class ComputeSslCertificate extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a ComputeSslCertificate resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a ComputeSslCertificate resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the ComputeSslCertificate to import
   * @param importFromId The id of the existing ComputeSslCertificate that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_ssl_certificate#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the ComputeSslCertificate to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "google_compute_ssl_certificate", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "google_compute_ssl_certificate", importId: importFromId, provider });
       }
 
   // ===========
@@ -411,13 +411,13 @@ export class ComputeSslCertificate extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      certificate: cdktf.stringToTerraform(this._certificate),
-      description: cdktf.stringToTerraform(this._description),
-      id: cdktf.stringToTerraform(this._id),
-      name: cdktf.stringToTerraform(this._name),
-      name_prefix: cdktf.stringToTerraform(this._namePrefix),
-      private_key: cdktf.stringToTerraform(this._privateKey),
-      project: cdktf.stringToTerraform(this._project),
+      certificate: cdktn.stringToTerraform(this._certificate),
+      description: cdktn.stringToTerraform(this._description),
+      id: cdktn.stringToTerraform(this._id),
+      name: cdktn.stringToTerraform(this._name),
+      name_prefix: cdktn.stringToTerraform(this._namePrefix),
+      private_key: cdktn.stringToTerraform(this._privateKey),
+      project: cdktn.stringToTerraform(this._project),
       timeouts: computeSslCertificateTimeoutsToTerraform(this._timeouts.internalValue),
     };
   }
@@ -425,43 +425,43 @@ export class ComputeSslCertificate extends cdktf.TerraformResource {
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       certificate: {
-        value: cdktf.stringToHclTerraform(this._certificate),
+        value: cdktn.stringToHclTerraform(this._certificate),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       description: {
-        value: cdktf.stringToHclTerraform(this._description),
+        value: cdktn.stringToHclTerraform(this._description),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       name: {
-        value: cdktf.stringToHclTerraform(this._name),
+        value: cdktn.stringToHclTerraform(this._name),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       name_prefix: {
-        value: cdktf.stringToHclTerraform(this._namePrefix),
+        value: cdktn.stringToHclTerraform(this._namePrefix),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       private_key: {
-        value: cdktf.stringToHclTerraform(this._privateKey),
+        value: cdktn.stringToHclTerraform(this._privateKey),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       project: {
-        value: cdktf.stringToHclTerraform(this._project),
+        value: cdktn.stringToHclTerraform(this._project),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

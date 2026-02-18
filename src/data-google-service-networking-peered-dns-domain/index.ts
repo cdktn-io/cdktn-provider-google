@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface DataGoogleServiceNetworkingPeeredDnsDomainConfig extends cdktf.TerraformMetaArguments {
+export interface DataGoogleServiceNetworkingPeeredDnsDomainConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/data-sources/service_networking_peered_dns_domain#id DataGoogleServiceNetworkingPeeredDnsDomain#id}
   *
@@ -40,7 +40,7 @@ export interface DataGoogleServiceNetworkingPeeredDnsDomainConfig extends cdktf.
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/data-sources/service_networking_peered_dns_domain google_service_networking_peered_dns_domain}
 */
-export class DataGoogleServiceNetworkingPeeredDnsDomain extends cdktf.TerraformDataSource {
+export class DataGoogleServiceNetworkingPeeredDnsDomain extends cdktn.TerraformDataSource {
 
   // =================
   // STATIC PROPERTIES
@@ -51,14 +51,14 @@ export class DataGoogleServiceNetworkingPeeredDnsDomain extends cdktf.TerraformD
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a DataGoogleServiceNetworkingPeeredDnsDomain resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a DataGoogleServiceNetworkingPeeredDnsDomain resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataGoogleServiceNetworkingPeeredDnsDomain to import
   * @param importFromId The id of the existing DataGoogleServiceNetworkingPeeredDnsDomain that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/data-sources/service_networking_peered_dns_domain#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataGoogleServiceNetworkingPeeredDnsDomain to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "google_service_networking_peered_dns_domain", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "google_service_networking_peered_dns_domain", importId: importFromId, provider });
       }
 
   // ===========
@@ -183,42 +183,42 @@ export class DataGoogleServiceNetworkingPeeredDnsDomain extends cdktf.TerraformD
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      id: cdktf.stringToTerraform(this._id),
-      name: cdktf.stringToTerraform(this._name),
-      network: cdktf.stringToTerraform(this._network),
-      project: cdktf.stringToTerraform(this._project),
-      service: cdktf.stringToTerraform(this._service),
+      id: cdktn.stringToTerraform(this._id),
+      name: cdktn.stringToTerraform(this._name),
+      network: cdktn.stringToTerraform(this._network),
+      project: cdktn.stringToTerraform(this._project),
+      service: cdktn.stringToTerraform(this._service),
     };
   }
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       name: {
-        value: cdktf.stringToHclTerraform(this._name),
+        value: cdktn.stringToHclTerraform(this._name),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       network: {
-        value: cdktf.stringToHclTerraform(this._network),
+        value: cdktn.stringToHclTerraform(this._network),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       project: {
-        value: cdktf.stringToHclTerraform(this._project),
+        value: cdktn.stringToHclTerraform(this._project),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       service: {
-        value: cdktf.stringToHclTerraform(this._service),
+        value: cdktn.stringToHclTerraform(this._service),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

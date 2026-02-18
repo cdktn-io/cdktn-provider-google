@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface ApihubPluginConfig extends cdktf.TerraformMetaArguments {
+export interface ApihubPluginConfig extends cdktn.TerraformMetaArguments {
   /**
   * The plugin description. Max length is 2000 characters (Unicode code
   * points).
@@ -75,7 +75,7 @@ export interface ApihubPluginConfig extends cdktf.TerraformMetaArguments {
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/apihub_plugin#actions_config ApihubPlugin#actions_config}
   */
-  readonly actionsConfig?: ApihubPluginActionsConfig[] | cdktf.IResolvable;
+  readonly actionsConfig?: ApihubPluginActionsConfig[] | cdktn.IResolvable;
   /**
   * config_template block
   *
@@ -136,46 +136,46 @@ export interface ApihubPluginActionsConfig {
   readonly triggerMode: string;
 }
 
-export function apihubPluginActionsConfigToTerraform(struct?: ApihubPluginActionsConfig | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function apihubPluginActionsConfigToTerraform(struct?: ApihubPluginActionsConfig | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    description: cdktf.stringToTerraform(struct!.description),
-    display_name: cdktf.stringToTerraform(struct!.displayName),
-    id: cdktf.stringToTerraform(struct!.id),
-    trigger_mode: cdktf.stringToTerraform(struct!.triggerMode),
+    description: cdktn.stringToTerraform(struct!.description),
+    display_name: cdktn.stringToTerraform(struct!.displayName),
+    id: cdktn.stringToTerraform(struct!.id),
+    trigger_mode: cdktn.stringToTerraform(struct!.triggerMode),
   }
 }
 
 
-export function apihubPluginActionsConfigToHclTerraform(struct?: ApihubPluginActionsConfig | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function apihubPluginActionsConfigToHclTerraform(struct?: ApihubPluginActionsConfig | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     description: {
-      value: cdktf.stringToHclTerraform(struct!.description),
+      value: cdktn.stringToHclTerraform(struct!.description),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     display_name: {
-      value: cdktf.stringToHclTerraform(struct!.displayName),
+      value: cdktn.stringToHclTerraform(struct!.displayName),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     id: {
-      value: cdktf.stringToHclTerraform(struct!.id),
+      value: cdktn.stringToHclTerraform(struct!.id),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     trigger_mode: {
-      value: cdktf.stringToHclTerraform(struct!.triggerMode),
+      value: cdktn.stringToHclTerraform(struct!.triggerMode),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -186,9 +186,9 @@ export function apihubPluginActionsConfigToHclTerraform(struct?: ApihubPluginAct
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class ApihubPluginActionsConfigOutputReference extends cdktf.ComplexObject {
+export class ApihubPluginActionsConfigOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -196,11 +196,11 @@ export class ApihubPluginActionsConfigOutputReference extends cdktf.ComplexObjec
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): ApihubPluginActionsConfig | cdktf.IResolvable | undefined {
+  public get internalValue(): ApihubPluginActionsConfig | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -225,7 +225,7 @@ export class ApihubPluginActionsConfigOutputReference extends cdktf.ComplexObjec
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: ApihubPluginActionsConfig | cdktf.IResolvable | undefined) {
+  public set internalValue(value: ApihubPluginActionsConfig | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -234,7 +234,7 @@ export class ApihubPluginActionsConfigOutputReference extends cdktf.ComplexObjec
       this._id = undefined;
       this._triggerMode = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -301,15 +301,15 @@ export class ApihubPluginActionsConfigOutputReference extends cdktf.ComplexObjec
   }
 }
 
-export class ApihubPluginActionsConfigList extends cdktf.ComplexList {
-  public internalValue? : ApihubPluginActionsConfig[] | cdktf.IResolvable
+export class ApihubPluginActionsConfigList extends cdktn.ComplexList {
+  public internalValue? : ApihubPluginActionsConfig[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -344,39 +344,39 @@ export interface ApihubPluginConfigTemplateAdditionalConfigTemplateEnumOptions {
   readonly id: string;
 }
 
-export function apihubPluginConfigTemplateAdditionalConfigTemplateEnumOptionsToTerraform(struct?: ApihubPluginConfigTemplateAdditionalConfigTemplateEnumOptions | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function apihubPluginConfigTemplateAdditionalConfigTemplateEnumOptionsToTerraform(struct?: ApihubPluginConfigTemplateAdditionalConfigTemplateEnumOptions | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    description: cdktf.stringToTerraform(struct!.description),
-    display_name: cdktf.stringToTerraform(struct!.displayName),
-    id: cdktf.stringToTerraform(struct!.id),
+    description: cdktn.stringToTerraform(struct!.description),
+    display_name: cdktn.stringToTerraform(struct!.displayName),
+    id: cdktn.stringToTerraform(struct!.id),
   }
 }
 
 
-export function apihubPluginConfigTemplateAdditionalConfigTemplateEnumOptionsToHclTerraform(struct?: ApihubPluginConfigTemplateAdditionalConfigTemplateEnumOptions | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function apihubPluginConfigTemplateAdditionalConfigTemplateEnumOptionsToHclTerraform(struct?: ApihubPluginConfigTemplateAdditionalConfigTemplateEnumOptions | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     description: {
-      value: cdktf.stringToHclTerraform(struct!.description),
+      value: cdktn.stringToHclTerraform(struct!.description),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     display_name: {
-      value: cdktf.stringToHclTerraform(struct!.displayName),
+      value: cdktn.stringToHclTerraform(struct!.displayName),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     id: {
-      value: cdktf.stringToHclTerraform(struct!.id),
+      value: cdktn.stringToHclTerraform(struct!.id),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -387,9 +387,9 @@ export function apihubPluginConfigTemplateAdditionalConfigTemplateEnumOptionsToH
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class ApihubPluginConfigTemplateAdditionalConfigTemplateEnumOptionsOutputReference extends cdktf.ComplexObject {
+export class ApihubPluginConfigTemplateAdditionalConfigTemplateEnumOptionsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -397,11 +397,11 @@ export class ApihubPluginConfigTemplateAdditionalConfigTemplateEnumOptionsOutput
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): ApihubPluginConfigTemplateAdditionalConfigTemplateEnumOptions | cdktf.IResolvable | undefined {
+  public get internalValue(): ApihubPluginConfigTemplateAdditionalConfigTemplateEnumOptions | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -422,7 +422,7 @@ export class ApihubPluginConfigTemplateAdditionalConfigTemplateEnumOptionsOutput
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: ApihubPluginConfigTemplateAdditionalConfigTemplateEnumOptions | cdktf.IResolvable | undefined) {
+  public set internalValue(value: ApihubPluginConfigTemplateAdditionalConfigTemplateEnumOptions | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -430,7 +430,7 @@ export class ApihubPluginConfigTemplateAdditionalConfigTemplateEnumOptionsOutput
       this._displayName = undefined;
       this._id = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -486,15 +486,15 @@ export class ApihubPluginConfigTemplateAdditionalConfigTemplateEnumOptionsOutput
   }
 }
 
-export class ApihubPluginConfigTemplateAdditionalConfigTemplateEnumOptionsList extends cdktf.ComplexList {
-  public internalValue? : ApihubPluginConfigTemplateAdditionalConfigTemplateEnumOptions[] | cdktf.IResolvable
+export class ApihubPluginConfigTemplateAdditionalConfigTemplateEnumOptionsList extends cdktn.ComplexList {
+  public internalValue? : ApihubPluginConfigTemplateAdditionalConfigTemplateEnumOptions[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -529,39 +529,39 @@ export interface ApihubPluginConfigTemplateAdditionalConfigTemplateMultiSelectOp
   readonly id: string;
 }
 
-export function apihubPluginConfigTemplateAdditionalConfigTemplateMultiSelectOptionsToTerraform(struct?: ApihubPluginConfigTemplateAdditionalConfigTemplateMultiSelectOptions | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function apihubPluginConfigTemplateAdditionalConfigTemplateMultiSelectOptionsToTerraform(struct?: ApihubPluginConfigTemplateAdditionalConfigTemplateMultiSelectOptions | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    description: cdktf.stringToTerraform(struct!.description),
-    display_name: cdktf.stringToTerraform(struct!.displayName),
-    id: cdktf.stringToTerraform(struct!.id),
+    description: cdktn.stringToTerraform(struct!.description),
+    display_name: cdktn.stringToTerraform(struct!.displayName),
+    id: cdktn.stringToTerraform(struct!.id),
   }
 }
 
 
-export function apihubPluginConfigTemplateAdditionalConfigTemplateMultiSelectOptionsToHclTerraform(struct?: ApihubPluginConfigTemplateAdditionalConfigTemplateMultiSelectOptions | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function apihubPluginConfigTemplateAdditionalConfigTemplateMultiSelectOptionsToHclTerraform(struct?: ApihubPluginConfigTemplateAdditionalConfigTemplateMultiSelectOptions | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     description: {
-      value: cdktf.stringToHclTerraform(struct!.description),
+      value: cdktn.stringToHclTerraform(struct!.description),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     display_name: {
-      value: cdktf.stringToHclTerraform(struct!.displayName),
+      value: cdktn.stringToHclTerraform(struct!.displayName),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     id: {
-      value: cdktf.stringToHclTerraform(struct!.id),
+      value: cdktn.stringToHclTerraform(struct!.id),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -572,9 +572,9 @@ export function apihubPluginConfigTemplateAdditionalConfigTemplateMultiSelectOpt
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class ApihubPluginConfigTemplateAdditionalConfigTemplateMultiSelectOptionsOutputReference extends cdktf.ComplexObject {
+export class ApihubPluginConfigTemplateAdditionalConfigTemplateMultiSelectOptionsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -582,11 +582,11 @@ export class ApihubPluginConfigTemplateAdditionalConfigTemplateMultiSelectOption
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): ApihubPluginConfigTemplateAdditionalConfigTemplateMultiSelectOptions | cdktf.IResolvable | undefined {
+  public get internalValue(): ApihubPluginConfigTemplateAdditionalConfigTemplateMultiSelectOptions | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -607,7 +607,7 @@ export class ApihubPluginConfigTemplateAdditionalConfigTemplateMultiSelectOption
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: ApihubPluginConfigTemplateAdditionalConfigTemplateMultiSelectOptions | cdktf.IResolvable | undefined) {
+  public set internalValue(value: ApihubPluginConfigTemplateAdditionalConfigTemplateMultiSelectOptions | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -615,7 +615,7 @@ export class ApihubPluginConfigTemplateAdditionalConfigTemplateMultiSelectOption
       this._displayName = undefined;
       this._id = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -671,15 +671,15 @@ export class ApihubPluginConfigTemplateAdditionalConfigTemplateMultiSelectOption
   }
 }
 
-export class ApihubPluginConfigTemplateAdditionalConfigTemplateMultiSelectOptionsList extends cdktf.ComplexList {
-  public internalValue? : ApihubPluginConfigTemplateAdditionalConfigTemplateMultiSelectOptions[] | cdktf.IResolvable
+export class ApihubPluginConfigTemplateAdditionalConfigTemplateMultiSelectOptionsList extends cdktn.ComplexList {
+  public internalValue? : ApihubPluginConfigTemplateAdditionalConfigTemplateMultiSelectOptions[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -712,7 +712,7 @@ export interface ApihubPluginConfigTemplateAdditionalConfigTemplate {
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/apihub_plugin#required ApihubPlugin#required}
   */
-  readonly required?: boolean | cdktf.IResolvable;
+  readonly required?: boolean | cdktn.IResolvable;
   /**
   * Regular expression in RE2 syntax used for validating the 'value' of a
   * 'ConfigVariable'.
@@ -741,76 +741,76 @@ export interface ApihubPluginConfigTemplateAdditionalConfigTemplate {
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/apihub_plugin#enum_options ApihubPlugin#enum_options}
   */
-  readonly enumOptions?: ApihubPluginConfigTemplateAdditionalConfigTemplateEnumOptions[] | cdktf.IResolvable;
+  readonly enumOptions?: ApihubPluginConfigTemplateAdditionalConfigTemplateEnumOptions[] | cdktn.IResolvable;
   /**
   * multi_select_options block
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/apihub_plugin#multi_select_options ApihubPlugin#multi_select_options}
   */
-  readonly multiSelectOptions?: ApihubPluginConfigTemplateAdditionalConfigTemplateMultiSelectOptions[] | cdktf.IResolvable;
+  readonly multiSelectOptions?: ApihubPluginConfigTemplateAdditionalConfigTemplateMultiSelectOptions[] | cdktn.IResolvable;
 }
 
-export function apihubPluginConfigTemplateAdditionalConfigTemplateToTerraform(struct?: ApihubPluginConfigTemplateAdditionalConfigTemplate | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function apihubPluginConfigTemplateAdditionalConfigTemplateToTerraform(struct?: ApihubPluginConfigTemplateAdditionalConfigTemplate | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    description: cdktf.stringToTerraform(struct!.description),
-    id: cdktf.stringToTerraform(struct!.id),
-    required: cdktf.booleanToTerraform(struct!.required),
-    validation_regex: cdktf.stringToTerraform(struct!.validationRegex),
-    value_type: cdktf.stringToTerraform(struct!.valueType),
-    enum_options: cdktf.listMapper(apihubPluginConfigTemplateAdditionalConfigTemplateEnumOptionsToTerraform, true)(struct!.enumOptions),
-    multi_select_options: cdktf.listMapper(apihubPluginConfigTemplateAdditionalConfigTemplateMultiSelectOptionsToTerraform, true)(struct!.multiSelectOptions),
+    description: cdktn.stringToTerraform(struct!.description),
+    id: cdktn.stringToTerraform(struct!.id),
+    required: cdktn.booleanToTerraform(struct!.required),
+    validation_regex: cdktn.stringToTerraform(struct!.validationRegex),
+    value_type: cdktn.stringToTerraform(struct!.valueType),
+    enum_options: cdktn.listMapper(apihubPluginConfigTemplateAdditionalConfigTemplateEnumOptionsToTerraform, true)(struct!.enumOptions),
+    multi_select_options: cdktn.listMapper(apihubPluginConfigTemplateAdditionalConfigTemplateMultiSelectOptionsToTerraform, true)(struct!.multiSelectOptions),
   }
 }
 
 
-export function apihubPluginConfigTemplateAdditionalConfigTemplateToHclTerraform(struct?: ApihubPluginConfigTemplateAdditionalConfigTemplate | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function apihubPluginConfigTemplateAdditionalConfigTemplateToHclTerraform(struct?: ApihubPluginConfigTemplateAdditionalConfigTemplate | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     description: {
-      value: cdktf.stringToHclTerraform(struct!.description),
+      value: cdktn.stringToHclTerraform(struct!.description),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     id: {
-      value: cdktf.stringToHclTerraform(struct!.id),
+      value: cdktn.stringToHclTerraform(struct!.id),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     required: {
-      value: cdktf.booleanToHclTerraform(struct!.required),
+      value: cdktn.booleanToHclTerraform(struct!.required),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     validation_regex: {
-      value: cdktf.stringToHclTerraform(struct!.validationRegex),
+      value: cdktn.stringToHclTerraform(struct!.validationRegex),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     value_type: {
-      value: cdktf.stringToHclTerraform(struct!.valueType),
+      value: cdktn.stringToHclTerraform(struct!.valueType),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     enum_options: {
-      value: cdktf.listMapperHcl(apihubPluginConfigTemplateAdditionalConfigTemplateEnumOptionsToHclTerraform, true)(struct!.enumOptions),
+      value: cdktn.listMapperHcl(apihubPluginConfigTemplateAdditionalConfigTemplateEnumOptionsToHclTerraform, true)(struct!.enumOptions),
       isBlock: true,
       type: "list",
       storageClassType: "ApihubPluginConfigTemplateAdditionalConfigTemplateEnumOptionsList",
     },
     multi_select_options: {
-      value: cdktf.listMapperHcl(apihubPluginConfigTemplateAdditionalConfigTemplateMultiSelectOptionsToHclTerraform, true)(struct!.multiSelectOptions),
+      value: cdktn.listMapperHcl(apihubPluginConfigTemplateAdditionalConfigTemplateMultiSelectOptionsToHclTerraform, true)(struct!.multiSelectOptions),
       isBlock: true,
       type: "list",
       storageClassType: "ApihubPluginConfigTemplateAdditionalConfigTemplateMultiSelectOptionsList",
@@ -821,9 +821,9 @@ export function apihubPluginConfigTemplateAdditionalConfigTemplateToHclTerraform
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class ApihubPluginConfigTemplateAdditionalConfigTemplateOutputReference extends cdktf.ComplexObject {
+export class ApihubPluginConfigTemplateAdditionalConfigTemplateOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -831,11 +831,11 @@ export class ApihubPluginConfigTemplateAdditionalConfigTemplateOutputReference e
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): ApihubPluginConfigTemplateAdditionalConfigTemplate | cdktf.IResolvable | undefined {
+  public get internalValue(): ApihubPluginConfigTemplateAdditionalConfigTemplate | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -872,7 +872,7 @@ export class ApihubPluginConfigTemplateAdditionalConfigTemplateOutputReference e
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: ApihubPluginConfigTemplateAdditionalConfigTemplate | cdktf.IResolvable | undefined) {
+  public set internalValue(value: ApihubPluginConfigTemplateAdditionalConfigTemplate | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -884,7 +884,7 @@ export class ApihubPluginConfigTemplateAdditionalConfigTemplateOutputReference e
       this._enumOptions.internalValue = undefined;
       this._multiSelectOptions.internalValue = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -931,11 +931,11 @@ export class ApihubPluginConfigTemplateAdditionalConfigTemplateOutputReference e
   }
 
   // required - computed: false, optional: true, required: false
-  private _required?: boolean | cdktf.IResolvable; 
+  private _required?: boolean | cdktn.IResolvable; 
   public get required() {
     return this.getBooleanAttribute('required');
   }
-  public set required(value: boolean | cdktf.IResolvable) {
+  public set required(value: boolean | cdktn.IResolvable) {
     this._required = value;
   }
   public resetRequired() {
@@ -980,7 +980,7 @@ export class ApihubPluginConfigTemplateAdditionalConfigTemplateOutputReference e
   public get enumOptions() {
     return this._enumOptions;
   }
-  public putEnumOptions(value: ApihubPluginConfigTemplateAdditionalConfigTemplateEnumOptions[] | cdktf.IResolvable) {
+  public putEnumOptions(value: ApihubPluginConfigTemplateAdditionalConfigTemplateEnumOptions[] | cdktn.IResolvable) {
     this._enumOptions.internalValue = value;
   }
   public resetEnumOptions() {
@@ -996,7 +996,7 @@ export class ApihubPluginConfigTemplateAdditionalConfigTemplateOutputReference e
   public get multiSelectOptions() {
     return this._multiSelectOptions;
   }
-  public putMultiSelectOptions(value: ApihubPluginConfigTemplateAdditionalConfigTemplateMultiSelectOptions[] | cdktf.IResolvable) {
+  public putMultiSelectOptions(value: ApihubPluginConfigTemplateAdditionalConfigTemplateMultiSelectOptions[] | cdktn.IResolvable) {
     this._multiSelectOptions.internalValue = value;
   }
   public resetMultiSelectOptions() {
@@ -1008,15 +1008,15 @@ export class ApihubPluginConfigTemplateAdditionalConfigTemplateOutputReference e
   }
 }
 
-export class ApihubPluginConfigTemplateAdditionalConfigTemplateList extends cdktf.ComplexList {
-  public internalValue? : ApihubPluginConfigTemplateAdditionalConfigTemplate[] | cdktf.IResolvable
+export class ApihubPluginConfigTemplateAdditionalConfigTemplateList extends cdktn.ComplexList {
+  public internalValue? : ApihubPluginConfigTemplateAdditionalConfigTemplate[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -1040,24 +1040,24 @@ export interface ApihubPluginConfigTemplateAuthConfigTemplateServiceAccount {
 }
 
 export function apihubPluginConfigTemplateAuthConfigTemplateServiceAccountToTerraform(struct?: ApihubPluginConfigTemplateAuthConfigTemplateServiceAccountOutputReference | ApihubPluginConfigTemplateAuthConfigTemplateServiceAccount): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    service_account: cdktf.stringToTerraform(struct!.serviceAccount),
+    service_account: cdktn.stringToTerraform(struct!.serviceAccount),
   }
 }
 
 
 export function apihubPluginConfigTemplateAuthConfigTemplateServiceAccountToHclTerraform(struct?: ApihubPluginConfigTemplateAuthConfigTemplateServiceAccountOutputReference | ApihubPluginConfigTemplateAuthConfigTemplateServiceAccount): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     service_account: {
-      value: cdktf.stringToHclTerraform(struct!.serviceAccount),
+      value: cdktn.stringToHclTerraform(struct!.serviceAccount),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -1068,14 +1068,14 @@ export function apihubPluginConfigTemplateAuthConfigTemplateServiceAccountToHclT
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class ApihubPluginConfigTemplateAuthConfigTemplateServiceAccountOutputReference extends cdktf.ComplexObject {
+export class ApihubPluginConfigTemplateAuthConfigTemplateServiceAccountOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -1129,25 +1129,25 @@ export interface ApihubPluginConfigTemplateAuthConfigTemplate {
 }
 
 export function apihubPluginConfigTemplateAuthConfigTemplateToTerraform(struct?: ApihubPluginConfigTemplateAuthConfigTemplateOutputReference | ApihubPluginConfigTemplateAuthConfigTemplate): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    supported_auth_types: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.supportedAuthTypes),
+    supported_auth_types: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.supportedAuthTypes),
     service_account: apihubPluginConfigTemplateAuthConfigTemplateServiceAccountToTerraform(struct!.serviceAccount),
   }
 }
 
 
 export function apihubPluginConfigTemplateAuthConfigTemplateToHclTerraform(struct?: ApihubPluginConfigTemplateAuthConfigTemplateOutputReference | ApihubPluginConfigTemplateAuthConfigTemplate): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     supported_auth_types: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.supportedAuthTypes),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.supportedAuthTypes),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
@@ -1164,14 +1164,14 @@ export function apihubPluginConfigTemplateAuthConfigTemplateToHclTerraform(struc
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class ApihubPluginConfigTemplateAuthConfigTemplateOutputReference extends cdktf.ComplexObject {
+export class ApihubPluginConfigTemplateAuthConfigTemplateOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -1237,7 +1237,7 @@ export interface ApihubPluginConfigTemplate {
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/apihub_plugin#additional_config_template ApihubPlugin#additional_config_template}
   */
-  readonly additionalConfigTemplate?: ApihubPluginConfigTemplateAdditionalConfigTemplate[] | cdktf.IResolvable;
+  readonly additionalConfigTemplate?: ApihubPluginConfigTemplateAdditionalConfigTemplate[] | cdktn.IResolvable;
   /**
   * auth_config_template block
   *
@@ -1247,25 +1247,25 @@ export interface ApihubPluginConfigTemplate {
 }
 
 export function apihubPluginConfigTemplateToTerraform(struct?: ApihubPluginConfigTemplateOutputReference | ApihubPluginConfigTemplate): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    additional_config_template: cdktf.listMapper(apihubPluginConfigTemplateAdditionalConfigTemplateToTerraform, true)(struct!.additionalConfigTemplate),
+    additional_config_template: cdktn.listMapper(apihubPluginConfigTemplateAdditionalConfigTemplateToTerraform, true)(struct!.additionalConfigTemplate),
     auth_config_template: apihubPluginConfigTemplateAuthConfigTemplateToTerraform(struct!.authConfigTemplate),
   }
 }
 
 
 export function apihubPluginConfigTemplateToHclTerraform(struct?: ApihubPluginConfigTemplateOutputReference | ApihubPluginConfigTemplate): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     additional_config_template: {
-      value: cdktf.listMapperHcl(apihubPluginConfigTemplateAdditionalConfigTemplateToHclTerraform, true)(struct!.additionalConfigTemplate),
+      value: cdktn.listMapperHcl(apihubPluginConfigTemplateAdditionalConfigTemplateToHclTerraform, true)(struct!.additionalConfigTemplate),
       isBlock: true,
       type: "list",
       storageClassType: "ApihubPluginConfigTemplateAdditionalConfigTemplateList",
@@ -1282,14 +1282,14 @@ export function apihubPluginConfigTemplateToHclTerraform(struct?: ApihubPluginCo
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class ApihubPluginConfigTemplateOutputReference extends cdktf.ComplexObject {
+export class ApihubPluginConfigTemplateOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -1325,7 +1325,7 @@ export class ApihubPluginConfigTemplateOutputReference extends cdktf.ComplexObje
   public get additionalConfigTemplate() {
     return this._additionalConfigTemplate;
   }
-  public putAdditionalConfigTemplate(value: ApihubPluginConfigTemplateAdditionalConfigTemplate[] | cdktf.IResolvable) {
+  public putAdditionalConfigTemplate(value: ApihubPluginConfigTemplateAdditionalConfigTemplate[] | cdktn.IResolvable) {
     this._additionalConfigTemplate.internalValue = value;
   }
   public resetAdditionalConfigTemplate() {
@@ -1362,24 +1362,24 @@ export interface ApihubPluginDocumentation {
 }
 
 export function apihubPluginDocumentationToTerraform(struct?: ApihubPluginDocumentationOutputReference | ApihubPluginDocumentation): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    external_uri: cdktf.stringToTerraform(struct!.externalUri),
+    external_uri: cdktn.stringToTerraform(struct!.externalUri),
   }
 }
 
 
 export function apihubPluginDocumentationToHclTerraform(struct?: ApihubPluginDocumentationOutputReference | ApihubPluginDocumentation): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     external_uri: {
-      value: cdktf.stringToHclTerraform(struct!.externalUri),
+      value: cdktn.stringToHclTerraform(struct!.externalUri),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -1390,14 +1390,14 @@ export function apihubPluginDocumentationToHclTerraform(struct?: ApihubPluginDoc
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class ApihubPluginDocumentationOutputReference extends cdktf.ComplexObject {
+export class ApihubPluginDocumentationOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -1450,24 +1450,24 @@ export interface ApihubPluginHostingService {
 }
 
 export function apihubPluginHostingServiceToTerraform(struct?: ApihubPluginHostingServiceOutputReference | ApihubPluginHostingService): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    service_uri: cdktf.stringToTerraform(struct!.serviceUri),
+    service_uri: cdktn.stringToTerraform(struct!.serviceUri),
   }
 }
 
 
 export function apihubPluginHostingServiceToHclTerraform(struct?: ApihubPluginHostingServiceOutputReference | ApihubPluginHostingService): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     service_uri: {
-      value: cdktf.stringToHclTerraform(struct!.serviceUri),
+      value: cdktn.stringToHclTerraform(struct!.serviceUri),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -1478,14 +1478,14 @@ export function apihubPluginHostingServiceToHclTerraform(struct?: ApihubPluginHo
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class ApihubPluginHostingServiceOutputReference extends cdktf.ComplexObject {
+export class ApihubPluginHostingServiceOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -1537,32 +1537,32 @@ export interface ApihubPluginTimeouts {
   readonly delete?: string;
 }
 
-export function apihubPluginTimeoutsToTerraform(struct?: ApihubPluginTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function apihubPluginTimeoutsToTerraform(struct?: ApihubPluginTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    create: cdktf.stringToTerraform(struct!.create),
-    delete: cdktf.stringToTerraform(struct!.delete),
+    create: cdktn.stringToTerraform(struct!.create),
+    delete: cdktn.stringToTerraform(struct!.delete),
   }
 }
 
 
-export function apihubPluginTimeoutsToHclTerraform(struct?: ApihubPluginTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function apihubPluginTimeoutsToHclTerraform(struct?: ApihubPluginTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     create: {
-      value: cdktf.stringToHclTerraform(struct!.create),
+      value: cdktn.stringToHclTerraform(struct!.create),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     delete: {
-      value: cdktf.stringToHclTerraform(struct!.delete),
+      value: cdktn.stringToHclTerraform(struct!.delete),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -1573,19 +1573,19 @@ export function apihubPluginTimeoutsToHclTerraform(struct?: ApihubPluginTimeouts
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class ApihubPluginTimeoutsOutputReference extends cdktf.ComplexObject {
+export class ApihubPluginTimeoutsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): ApihubPluginTimeouts | cdktf.IResolvable | undefined {
+  public get internalValue(): ApihubPluginTimeouts | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -1602,14 +1602,14 @@ export class ApihubPluginTimeoutsOutputReference extends cdktf.ComplexObject {
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: ApihubPluginTimeouts | cdktf.IResolvable | undefined) {
+  public set internalValue(value: ApihubPluginTimeouts | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._create = undefined;
       this._delete = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -1657,7 +1657,7 @@ export class ApihubPluginTimeoutsOutputReference extends cdktf.ComplexObject {
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/apihub_plugin google_apihub_plugin}
 */
-export class ApihubPlugin extends cdktf.TerraformResource {
+export class ApihubPlugin extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -1668,14 +1668,14 @@ export class ApihubPlugin extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a ApihubPlugin resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a ApihubPlugin resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the ApihubPlugin to import
   * @param importFromId The id of the existing ApihubPlugin that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/apihub_plugin#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the ApihubPlugin to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "google_apihub_plugin", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "google_apihub_plugin", importId: importFromId, provider });
       }
 
   // ===========
@@ -1856,7 +1856,7 @@ export class ApihubPlugin extends cdktf.TerraformResource {
   public get actionsConfig() {
     return this._actionsConfig;
   }
-  public putActionsConfig(value: ApihubPluginActionsConfig[] | cdktf.IResolvable) {
+  public putActionsConfig(value: ApihubPluginActionsConfig[] | cdktn.IResolvable) {
     this._actionsConfig.internalValue = value;
   }
   public resetActionsConfig() {
@@ -1937,14 +1937,14 @@ export class ApihubPlugin extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      description: cdktf.stringToTerraform(this._description),
-      display_name: cdktf.stringToTerraform(this._displayName),
-      id: cdktf.stringToTerraform(this._id),
-      location: cdktf.stringToTerraform(this._location),
-      plugin_category: cdktf.stringToTerraform(this._pluginCategory),
-      plugin_id: cdktf.stringToTerraform(this._pluginId),
-      project: cdktf.stringToTerraform(this._project),
-      actions_config: cdktf.listMapper(apihubPluginActionsConfigToTerraform, true)(this._actionsConfig.internalValue),
+      description: cdktn.stringToTerraform(this._description),
+      display_name: cdktn.stringToTerraform(this._displayName),
+      id: cdktn.stringToTerraform(this._id),
+      location: cdktn.stringToTerraform(this._location),
+      plugin_category: cdktn.stringToTerraform(this._pluginCategory),
+      plugin_id: cdktn.stringToTerraform(this._pluginId),
+      project: cdktn.stringToTerraform(this._project),
+      actions_config: cdktn.listMapper(apihubPluginActionsConfigToTerraform, true)(this._actionsConfig.internalValue),
       config_template: apihubPluginConfigTemplateToTerraform(this._configTemplate.internalValue),
       documentation: apihubPluginDocumentationToTerraform(this._documentation.internalValue),
       hosting_service: apihubPluginHostingServiceToTerraform(this._hostingService.internalValue),
@@ -1955,49 +1955,49 @@ export class ApihubPlugin extends cdktf.TerraformResource {
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       description: {
-        value: cdktf.stringToHclTerraform(this._description),
+        value: cdktn.stringToHclTerraform(this._description),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       display_name: {
-        value: cdktf.stringToHclTerraform(this._displayName),
+        value: cdktn.stringToHclTerraform(this._displayName),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       location: {
-        value: cdktf.stringToHclTerraform(this._location),
+        value: cdktn.stringToHclTerraform(this._location),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       plugin_category: {
-        value: cdktf.stringToHclTerraform(this._pluginCategory),
+        value: cdktn.stringToHclTerraform(this._pluginCategory),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       plugin_id: {
-        value: cdktf.stringToHclTerraform(this._pluginId),
+        value: cdktn.stringToHclTerraform(this._pluginId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       project: {
-        value: cdktf.stringToHclTerraform(this._project),
+        value: cdktn.stringToHclTerraform(this._project),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       actions_config: {
-        value: cdktf.listMapperHcl(apihubPluginActionsConfigToHclTerraform, true)(this._actionsConfig.internalValue),
+        value: cdktn.listMapperHcl(apihubPluginActionsConfigToHclTerraform, true)(this._actionsConfig.internalValue),
         isBlock: true,
         type: "list",
         storageClassType: "ApihubPluginActionsConfigList",

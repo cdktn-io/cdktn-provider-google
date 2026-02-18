@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface DialogflowAgentConfig extends cdktf.TerraformMetaArguments {
+export interface DialogflowAgentConfig extends cdktn.TerraformMetaArguments {
   /**
   * API version displayed in Dialogflow console. If not specified, V2 API is assumed. Clients are free to query
   * different service endpoints for different API versions. However, bots connectors and webhook calls will follow
@@ -65,7 +65,7 @@ export interface DialogflowAgentConfig extends cdktf.TerraformMetaArguments {
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/dialogflow_agent#enable_logging DialogflowAgent#enable_logging}
   */
-  readonly enableLogging?: boolean | cdktf.IResolvable;
+  readonly enableLogging?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/dialogflow_agent#id DialogflowAgent#id}
   *
@@ -133,39 +133,39 @@ export interface DialogflowAgentTimeouts {
   readonly update?: string;
 }
 
-export function dialogflowAgentTimeoutsToTerraform(struct?: DialogflowAgentTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function dialogflowAgentTimeoutsToTerraform(struct?: DialogflowAgentTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    create: cdktf.stringToTerraform(struct!.create),
-    delete: cdktf.stringToTerraform(struct!.delete),
-    update: cdktf.stringToTerraform(struct!.update),
+    create: cdktn.stringToTerraform(struct!.create),
+    delete: cdktn.stringToTerraform(struct!.delete),
+    update: cdktn.stringToTerraform(struct!.update),
   }
 }
 
 
-export function dialogflowAgentTimeoutsToHclTerraform(struct?: DialogflowAgentTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function dialogflowAgentTimeoutsToHclTerraform(struct?: DialogflowAgentTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     create: {
-      value: cdktf.stringToHclTerraform(struct!.create),
+      value: cdktn.stringToHclTerraform(struct!.create),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     delete: {
-      value: cdktf.stringToHclTerraform(struct!.delete),
+      value: cdktn.stringToHclTerraform(struct!.delete),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     update: {
-      value: cdktf.stringToHclTerraform(struct!.update),
+      value: cdktn.stringToHclTerraform(struct!.update),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -176,19 +176,19 @@ export function dialogflowAgentTimeoutsToHclTerraform(struct?: DialogflowAgentTi
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class DialogflowAgentTimeoutsOutputReference extends cdktf.ComplexObject {
+export class DialogflowAgentTimeoutsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): DialogflowAgentTimeouts | cdktf.IResolvable | undefined {
+  public get internalValue(): DialogflowAgentTimeouts | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -209,7 +209,7 @@ export class DialogflowAgentTimeoutsOutputReference extends cdktf.ComplexObject 
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: DialogflowAgentTimeouts | cdktf.IResolvable | undefined) {
+  public set internalValue(value: DialogflowAgentTimeouts | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -217,7 +217,7 @@ export class DialogflowAgentTimeoutsOutputReference extends cdktf.ComplexObject 
       this._delete = undefined;
       this._update = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -282,7 +282,7 @@ export class DialogflowAgentTimeoutsOutputReference extends cdktf.ComplexObject 
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/dialogflow_agent google_dialogflow_agent}
 */
-export class DialogflowAgent extends cdktf.TerraformResource {
+export class DialogflowAgent extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -293,14 +293,14 @@ export class DialogflowAgent extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a DialogflowAgent resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a DialogflowAgent resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DialogflowAgent to import
   * @param importFromId The id of the existing DialogflowAgent that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/dialogflow_agent#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DialogflowAgent to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "google_dialogflow_agent", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "google_dialogflow_agent", importId: importFromId, provider });
       }
 
   // ===========
@@ -446,11 +446,11 @@ export class DialogflowAgent extends cdktf.TerraformResource {
   }
 
   // enable_logging - computed: false, optional: true, required: false
-  private _enableLogging?: boolean | cdktf.IResolvable; 
+  private _enableLogging?: boolean | cdktn.IResolvable; 
   public get enableLogging() {
     return this.getBooleanAttribute('enable_logging');
   }
-  public set enableLogging(value: boolean | cdktf.IResolvable) {
+  public set enableLogging(value: boolean | cdktn.IResolvable) {
     this._enableLogging = value;
   }
   public resetEnableLogging() {
@@ -576,19 +576,19 @@ export class DialogflowAgent extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      api_version: cdktf.stringToTerraform(this._apiVersion),
-      avatar_uri: cdktf.stringToTerraform(this._avatarUri),
-      classification_threshold: cdktf.numberToTerraform(this._classificationThreshold),
-      default_language_code: cdktf.stringToTerraform(this._defaultLanguageCode),
-      description: cdktf.stringToTerraform(this._description),
-      display_name: cdktf.stringToTerraform(this._displayName),
-      enable_logging: cdktf.booleanToTerraform(this._enableLogging),
-      id: cdktf.stringToTerraform(this._id),
-      match_mode: cdktf.stringToTerraform(this._matchMode),
-      project: cdktf.stringToTerraform(this._project),
-      supported_language_codes: cdktf.listMapper(cdktf.stringToTerraform, false)(this._supportedLanguageCodes),
-      tier: cdktf.stringToTerraform(this._tier),
-      time_zone: cdktf.stringToTerraform(this._timeZone),
+      api_version: cdktn.stringToTerraform(this._apiVersion),
+      avatar_uri: cdktn.stringToTerraform(this._avatarUri),
+      classification_threshold: cdktn.numberToTerraform(this._classificationThreshold),
+      default_language_code: cdktn.stringToTerraform(this._defaultLanguageCode),
+      description: cdktn.stringToTerraform(this._description),
+      display_name: cdktn.stringToTerraform(this._displayName),
+      enable_logging: cdktn.booleanToTerraform(this._enableLogging),
+      id: cdktn.stringToTerraform(this._id),
+      match_mode: cdktn.stringToTerraform(this._matchMode),
+      project: cdktn.stringToTerraform(this._project),
+      supported_language_codes: cdktn.listMapper(cdktn.stringToTerraform, false)(this._supportedLanguageCodes),
+      tier: cdktn.stringToTerraform(this._tier),
+      time_zone: cdktn.stringToTerraform(this._timeZone),
       timeouts: dialogflowAgentTimeoutsToTerraform(this._timeouts.internalValue),
     };
   }
@@ -596,79 +596,79 @@ export class DialogflowAgent extends cdktf.TerraformResource {
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       api_version: {
-        value: cdktf.stringToHclTerraform(this._apiVersion),
+        value: cdktn.stringToHclTerraform(this._apiVersion),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       avatar_uri: {
-        value: cdktf.stringToHclTerraform(this._avatarUri),
+        value: cdktn.stringToHclTerraform(this._avatarUri),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       classification_threshold: {
-        value: cdktf.numberToHclTerraform(this._classificationThreshold),
+        value: cdktn.numberToHclTerraform(this._classificationThreshold),
         isBlock: false,
         type: "simple",
         storageClassType: "number",
       },
       default_language_code: {
-        value: cdktf.stringToHclTerraform(this._defaultLanguageCode),
+        value: cdktn.stringToHclTerraform(this._defaultLanguageCode),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       description: {
-        value: cdktf.stringToHclTerraform(this._description),
+        value: cdktn.stringToHclTerraform(this._description),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       display_name: {
-        value: cdktf.stringToHclTerraform(this._displayName),
+        value: cdktn.stringToHclTerraform(this._displayName),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       enable_logging: {
-        value: cdktf.booleanToHclTerraform(this._enableLogging),
+        value: cdktn.booleanToHclTerraform(this._enableLogging),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       match_mode: {
-        value: cdktf.stringToHclTerraform(this._matchMode),
+        value: cdktn.stringToHclTerraform(this._matchMode),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       project: {
-        value: cdktf.stringToHclTerraform(this._project),
+        value: cdktn.stringToHclTerraform(this._project),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       supported_language_codes: {
-        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._supportedLanguageCodes),
+        value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(this._supportedLanguageCodes),
         isBlock: false,
         type: "list",
         storageClassType: "stringList",
       },
       tier: {
-        value: cdktf.stringToHclTerraform(this._tier),
+        value: cdktn.stringToHclTerraform(this._tier),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       time_zone: {
-        value: cdktf.stringToHclTerraform(this._timeZone),
+        value: cdktn.stringToHclTerraform(this._timeZone),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

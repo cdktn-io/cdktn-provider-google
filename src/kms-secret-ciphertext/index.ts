@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface KmsSecretCiphertextConfig extends cdktf.TerraformMetaArguments {
+export interface KmsSecretCiphertextConfig extends cdktn.TerraformMetaArguments {
   /**
   * The additional authenticated data used for integrity checks during encryption and decryption.
   *
@@ -56,32 +56,32 @@ export interface KmsSecretCiphertextTimeouts {
   readonly delete?: string;
 }
 
-export function kmsSecretCiphertextTimeoutsToTerraform(struct?: KmsSecretCiphertextTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function kmsSecretCiphertextTimeoutsToTerraform(struct?: KmsSecretCiphertextTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    create: cdktf.stringToTerraform(struct!.create),
-    delete: cdktf.stringToTerraform(struct!.delete),
+    create: cdktn.stringToTerraform(struct!.create),
+    delete: cdktn.stringToTerraform(struct!.delete),
   }
 }
 
 
-export function kmsSecretCiphertextTimeoutsToHclTerraform(struct?: KmsSecretCiphertextTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function kmsSecretCiphertextTimeoutsToHclTerraform(struct?: KmsSecretCiphertextTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     create: {
-      value: cdktf.stringToHclTerraform(struct!.create),
+      value: cdktn.stringToHclTerraform(struct!.create),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     delete: {
-      value: cdktf.stringToHclTerraform(struct!.delete),
+      value: cdktn.stringToHclTerraform(struct!.delete),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -92,19 +92,19 @@ export function kmsSecretCiphertextTimeoutsToHclTerraform(struct?: KmsSecretCiph
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class KmsSecretCiphertextTimeoutsOutputReference extends cdktf.ComplexObject {
+export class KmsSecretCiphertextTimeoutsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): KmsSecretCiphertextTimeouts | cdktf.IResolvable | undefined {
+  public get internalValue(): KmsSecretCiphertextTimeouts | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -121,14 +121,14 @@ export class KmsSecretCiphertextTimeoutsOutputReference extends cdktf.ComplexObj
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: KmsSecretCiphertextTimeouts | cdktf.IResolvable | undefined) {
+  public set internalValue(value: KmsSecretCiphertextTimeouts | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._create = undefined;
       this._delete = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -176,7 +176,7 @@ export class KmsSecretCiphertextTimeoutsOutputReference extends cdktf.ComplexObj
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/kms_secret_ciphertext google_kms_secret_ciphertext}
 */
-export class KmsSecretCiphertext extends cdktf.TerraformResource {
+export class KmsSecretCiphertext extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -187,14 +187,14 @@ export class KmsSecretCiphertext extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a KmsSecretCiphertext resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a KmsSecretCiphertext resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the KmsSecretCiphertext to import
   * @param importFromId The id of the existing KmsSecretCiphertext that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/kms_secret_ciphertext#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the KmsSecretCiphertext to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "google_kms_secret_ciphertext", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "google_kms_secret_ciphertext", importId: importFromId, provider });
       }
 
   // ===========
@@ -320,10 +320,10 @@ export class KmsSecretCiphertext extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      additional_authenticated_data: cdktf.stringToTerraform(this._additionalAuthenticatedData),
-      crypto_key: cdktf.stringToTerraform(this._cryptoKey),
-      id: cdktf.stringToTerraform(this._id),
-      plaintext: cdktf.stringToTerraform(this._plaintext),
+      additional_authenticated_data: cdktn.stringToTerraform(this._additionalAuthenticatedData),
+      crypto_key: cdktn.stringToTerraform(this._cryptoKey),
+      id: cdktn.stringToTerraform(this._id),
+      plaintext: cdktn.stringToTerraform(this._plaintext),
       timeouts: kmsSecretCiphertextTimeoutsToTerraform(this._timeouts.internalValue),
     };
   }
@@ -331,25 +331,25 @@ export class KmsSecretCiphertext extends cdktf.TerraformResource {
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       additional_authenticated_data: {
-        value: cdktf.stringToHclTerraform(this._additionalAuthenticatedData),
+        value: cdktn.stringToHclTerraform(this._additionalAuthenticatedData),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       crypto_key: {
-        value: cdktf.stringToHclTerraform(this._cryptoKey),
+        value: cdktn.stringToHclTerraform(this._cryptoKey),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       plaintext: {
-        value: cdktf.stringToHclTerraform(this._plaintext),
+        value: cdktn.stringToHclTerraform(this._plaintext),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

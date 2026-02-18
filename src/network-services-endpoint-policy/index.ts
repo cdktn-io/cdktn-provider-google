@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface NetworkServicesEndpointPolicyConfig extends cdktf.TerraformMetaArguments {
+export interface NetworkServicesEndpointPolicyConfig extends cdktn.TerraformMetaArguments {
   /**
   * This field specifies the URL of AuthorizationPolicy resource that applies authorization policies to the inbound traffic at the matched endpoints.
   *
@@ -102,32 +102,32 @@ export interface NetworkServicesEndpointPolicyEndpointMatcherMetadataLabelMatche
   readonly labelValue: string;
 }
 
-export function networkServicesEndpointPolicyEndpointMatcherMetadataLabelMatcherMetadataLabelsToTerraform(struct?: NetworkServicesEndpointPolicyEndpointMatcherMetadataLabelMatcherMetadataLabels | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function networkServicesEndpointPolicyEndpointMatcherMetadataLabelMatcherMetadataLabelsToTerraform(struct?: NetworkServicesEndpointPolicyEndpointMatcherMetadataLabelMatcherMetadataLabels | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    label_name: cdktf.stringToTerraform(struct!.labelName),
-    label_value: cdktf.stringToTerraform(struct!.labelValue),
+    label_name: cdktn.stringToTerraform(struct!.labelName),
+    label_value: cdktn.stringToTerraform(struct!.labelValue),
   }
 }
 
 
-export function networkServicesEndpointPolicyEndpointMatcherMetadataLabelMatcherMetadataLabelsToHclTerraform(struct?: NetworkServicesEndpointPolicyEndpointMatcherMetadataLabelMatcherMetadataLabels | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function networkServicesEndpointPolicyEndpointMatcherMetadataLabelMatcherMetadataLabelsToHclTerraform(struct?: NetworkServicesEndpointPolicyEndpointMatcherMetadataLabelMatcherMetadataLabels | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     label_name: {
-      value: cdktf.stringToHclTerraform(struct!.labelName),
+      value: cdktn.stringToHclTerraform(struct!.labelName),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     label_value: {
-      value: cdktf.stringToHclTerraform(struct!.labelValue),
+      value: cdktn.stringToHclTerraform(struct!.labelValue),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -138,9 +138,9 @@ export function networkServicesEndpointPolicyEndpointMatcherMetadataLabelMatcher
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class NetworkServicesEndpointPolicyEndpointMatcherMetadataLabelMatcherMetadataLabelsOutputReference extends cdktf.ComplexObject {
+export class NetworkServicesEndpointPolicyEndpointMatcherMetadataLabelMatcherMetadataLabelsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -148,11 +148,11 @@ export class NetworkServicesEndpointPolicyEndpointMatcherMetadataLabelMatcherMet
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): NetworkServicesEndpointPolicyEndpointMatcherMetadataLabelMatcherMetadataLabels | cdktf.IResolvable | undefined {
+  public get internalValue(): NetworkServicesEndpointPolicyEndpointMatcherMetadataLabelMatcherMetadataLabels | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -169,14 +169,14 @@ export class NetworkServicesEndpointPolicyEndpointMatcherMetadataLabelMatcherMet
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: NetworkServicesEndpointPolicyEndpointMatcherMetadataLabelMatcherMetadataLabels | cdktf.IResolvable | undefined) {
+  public set internalValue(value: NetworkServicesEndpointPolicyEndpointMatcherMetadataLabelMatcherMetadataLabels | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._labelName = undefined;
       this._labelValue = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -215,15 +215,15 @@ export class NetworkServicesEndpointPolicyEndpointMatcherMetadataLabelMatcherMet
   }
 }
 
-export class NetworkServicesEndpointPolicyEndpointMatcherMetadataLabelMatcherMetadataLabelsList extends cdktf.ComplexList {
-  public internalValue? : NetworkServicesEndpointPolicyEndpointMatcherMetadataLabelMatcherMetadataLabels[] | cdktf.IResolvable
+export class NetworkServicesEndpointPolicyEndpointMatcherMetadataLabelMatcherMetadataLabelsList extends cdktn.ComplexList {
+  public internalValue? : NetworkServicesEndpointPolicyEndpointMatcherMetadataLabelMatcherMetadataLabels[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -246,35 +246,35 @@ export interface NetworkServicesEndpointPolicyEndpointMatcherMetadataLabelMatche
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/network_services_endpoint_policy#metadata_labels NetworkServicesEndpointPolicy#metadata_labels}
   */
-  readonly metadataLabels?: NetworkServicesEndpointPolicyEndpointMatcherMetadataLabelMatcherMetadataLabels[] | cdktf.IResolvable;
+  readonly metadataLabels?: NetworkServicesEndpointPolicyEndpointMatcherMetadataLabelMatcherMetadataLabels[] | cdktn.IResolvable;
 }
 
 export function networkServicesEndpointPolicyEndpointMatcherMetadataLabelMatcherToTerraform(struct?: NetworkServicesEndpointPolicyEndpointMatcherMetadataLabelMatcherOutputReference | NetworkServicesEndpointPolicyEndpointMatcherMetadataLabelMatcher): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    metadata_label_match_criteria: cdktf.stringToTerraform(struct!.metadataLabelMatchCriteria),
-    metadata_labels: cdktf.listMapper(networkServicesEndpointPolicyEndpointMatcherMetadataLabelMatcherMetadataLabelsToTerraform, true)(struct!.metadataLabels),
+    metadata_label_match_criteria: cdktn.stringToTerraform(struct!.metadataLabelMatchCriteria),
+    metadata_labels: cdktn.listMapper(networkServicesEndpointPolicyEndpointMatcherMetadataLabelMatcherMetadataLabelsToTerraform, true)(struct!.metadataLabels),
   }
 }
 
 
 export function networkServicesEndpointPolicyEndpointMatcherMetadataLabelMatcherToHclTerraform(struct?: NetworkServicesEndpointPolicyEndpointMatcherMetadataLabelMatcherOutputReference | NetworkServicesEndpointPolicyEndpointMatcherMetadataLabelMatcher): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     metadata_label_match_criteria: {
-      value: cdktf.stringToHclTerraform(struct!.metadataLabelMatchCriteria),
+      value: cdktn.stringToHclTerraform(struct!.metadataLabelMatchCriteria),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     metadata_labels: {
-      value: cdktf.listMapperHcl(networkServicesEndpointPolicyEndpointMatcherMetadataLabelMatcherMetadataLabelsToHclTerraform, true)(struct!.metadataLabels),
+      value: cdktn.listMapperHcl(networkServicesEndpointPolicyEndpointMatcherMetadataLabelMatcherMetadataLabelsToHclTerraform, true)(struct!.metadataLabels),
       isBlock: true,
       type: "list",
       storageClassType: "NetworkServicesEndpointPolicyEndpointMatcherMetadataLabelMatcherMetadataLabelsList",
@@ -285,14 +285,14 @@ export function networkServicesEndpointPolicyEndpointMatcherMetadataLabelMatcher
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class NetworkServicesEndpointPolicyEndpointMatcherMetadataLabelMatcherOutputReference extends cdktf.ComplexObject {
+export class NetworkServicesEndpointPolicyEndpointMatcherMetadataLabelMatcherOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -341,7 +341,7 @@ export class NetworkServicesEndpointPolicyEndpointMatcherMetadataLabelMatcherOut
   public get metadataLabels() {
     return this._metadataLabels;
   }
-  public putMetadataLabels(value: NetworkServicesEndpointPolicyEndpointMatcherMetadataLabelMatcherMetadataLabels[] | cdktf.IResolvable) {
+  public putMetadataLabels(value: NetworkServicesEndpointPolicyEndpointMatcherMetadataLabelMatcherMetadataLabels[] | cdktn.IResolvable) {
     this._metadataLabels.internalValue = value;
   }
   public resetMetadataLabels() {
@@ -362,8 +362,8 @@ export interface NetworkServicesEndpointPolicyEndpointMatcher {
 }
 
 export function networkServicesEndpointPolicyEndpointMatcherToTerraform(struct?: NetworkServicesEndpointPolicyEndpointMatcherOutputReference | NetworkServicesEndpointPolicyEndpointMatcher): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -373,8 +373,8 @@ export function networkServicesEndpointPolicyEndpointMatcherToTerraform(struct?:
 
 
 export function networkServicesEndpointPolicyEndpointMatcherToHclTerraform(struct?: NetworkServicesEndpointPolicyEndpointMatcherOutputReference | NetworkServicesEndpointPolicyEndpointMatcher): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -390,14 +390,14 @@ export function networkServicesEndpointPolicyEndpointMatcherToHclTerraform(struc
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class NetworkServicesEndpointPolicyEndpointMatcherOutputReference extends cdktf.ComplexObject {
+export class NetworkServicesEndpointPolicyEndpointMatcherOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -450,39 +450,39 @@ export interface NetworkServicesEndpointPolicyTimeouts {
   readonly update?: string;
 }
 
-export function networkServicesEndpointPolicyTimeoutsToTerraform(struct?: NetworkServicesEndpointPolicyTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function networkServicesEndpointPolicyTimeoutsToTerraform(struct?: NetworkServicesEndpointPolicyTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    create: cdktf.stringToTerraform(struct!.create),
-    delete: cdktf.stringToTerraform(struct!.delete),
-    update: cdktf.stringToTerraform(struct!.update),
+    create: cdktn.stringToTerraform(struct!.create),
+    delete: cdktn.stringToTerraform(struct!.delete),
+    update: cdktn.stringToTerraform(struct!.update),
   }
 }
 
 
-export function networkServicesEndpointPolicyTimeoutsToHclTerraform(struct?: NetworkServicesEndpointPolicyTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function networkServicesEndpointPolicyTimeoutsToHclTerraform(struct?: NetworkServicesEndpointPolicyTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     create: {
-      value: cdktf.stringToHclTerraform(struct!.create),
+      value: cdktn.stringToHclTerraform(struct!.create),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     delete: {
-      value: cdktf.stringToHclTerraform(struct!.delete),
+      value: cdktn.stringToHclTerraform(struct!.delete),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     update: {
-      value: cdktf.stringToHclTerraform(struct!.update),
+      value: cdktn.stringToHclTerraform(struct!.update),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -493,19 +493,19 @@ export function networkServicesEndpointPolicyTimeoutsToHclTerraform(struct?: Net
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class NetworkServicesEndpointPolicyTimeoutsOutputReference extends cdktf.ComplexObject {
+export class NetworkServicesEndpointPolicyTimeoutsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): NetworkServicesEndpointPolicyTimeouts | cdktf.IResolvable | undefined {
+  public get internalValue(): NetworkServicesEndpointPolicyTimeouts | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -526,7 +526,7 @@ export class NetworkServicesEndpointPolicyTimeoutsOutputReference extends cdktf.
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: NetworkServicesEndpointPolicyTimeouts | cdktf.IResolvable | undefined) {
+  public set internalValue(value: NetworkServicesEndpointPolicyTimeouts | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -534,7 +534,7 @@ export class NetworkServicesEndpointPolicyTimeoutsOutputReference extends cdktf.
       this._delete = undefined;
       this._update = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -605,24 +605,24 @@ export interface NetworkServicesEndpointPolicyTrafficPortSelector {
 }
 
 export function networkServicesEndpointPolicyTrafficPortSelectorToTerraform(struct?: NetworkServicesEndpointPolicyTrafficPortSelectorOutputReference | NetworkServicesEndpointPolicyTrafficPortSelector): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    ports: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.ports),
+    ports: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.ports),
   }
 }
 
 
 export function networkServicesEndpointPolicyTrafficPortSelectorToHclTerraform(struct?: NetworkServicesEndpointPolicyTrafficPortSelectorOutputReference | NetworkServicesEndpointPolicyTrafficPortSelector): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     ports: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.ports),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.ports),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
@@ -633,14 +633,14 @@ export function networkServicesEndpointPolicyTrafficPortSelectorToHclTerraform(s
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class NetworkServicesEndpointPolicyTrafficPortSelectorOutputReference extends cdktf.ComplexObject {
+export class NetworkServicesEndpointPolicyTrafficPortSelectorOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -682,7 +682,7 @@ export class NetworkServicesEndpointPolicyTrafficPortSelectorOutputReference ext
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/network_services_endpoint_policy google_network_services_endpoint_policy}
 */
-export class NetworkServicesEndpointPolicy extends cdktf.TerraformResource {
+export class NetworkServicesEndpointPolicy extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -693,14 +693,14 @@ export class NetworkServicesEndpointPolicy extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a NetworkServicesEndpointPolicy resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a NetworkServicesEndpointPolicy resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the NetworkServicesEndpointPolicy to import
   * @param importFromId The id of the existing NetworkServicesEndpointPolicy that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/network_services_endpoint_policy#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the NetworkServicesEndpointPolicy to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "google_network_services_endpoint_policy", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "google_network_services_endpoint_policy", importId: importFromId, provider });
       }
 
   // ===========
@@ -802,7 +802,7 @@ export class NetworkServicesEndpointPolicy extends cdktf.TerraformResource {
   }
 
   // effective_labels - computed: true, optional: false, required: false
-  private _effectiveLabels = new cdktf.StringMap(this, "effective_labels");
+  private _effectiveLabels = new cdktn.StringMap(this, "effective_labels");
   public get effectiveLabels() {
     return this._effectiveLabels;
   }
@@ -885,7 +885,7 @@ export class NetworkServicesEndpointPolicy extends cdktf.TerraformResource {
   }
 
   // terraform_labels - computed: true, optional: false, required: false
-  private _terraformLabels = new cdktf.StringMap(this, "terraform_labels");
+  private _terraformLabels = new cdktn.StringMap(this, "terraform_labels");
   public get terraformLabels() {
     return this._terraformLabels;
   }
@@ -959,15 +959,15 @@ export class NetworkServicesEndpointPolicy extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      authorization_policy: cdktf.stringToTerraform(this._authorizationPolicy),
-      client_tls_policy: cdktf.stringToTerraform(this._clientTlsPolicy),
-      description: cdktf.stringToTerraform(this._description),
-      id: cdktf.stringToTerraform(this._id),
-      labels: cdktf.hashMapper(cdktf.stringToTerraform)(this._labels),
-      name: cdktf.stringToTerraform(this._name),
-      project: cdktf.stringToTerraform(this._project),
-      server_tls_policy: cdktf.stringToTerraform(this._serverTlsPolicy),
-      type: cdktf.stringToTerraform(this._type),
+      authorization_policy: cdktn.stringToTerraform(this._authorizationPolicy),
+      client_tls_policy: cdktn.stringToTerraform(this._clientTlsPolicy),
+      description: cdktn.stringToTerraform(this._description),
+      id: cdktn.stringToTerraform(this._id),
+      labels: cdktn.hashMapper(cdktn.stringToTerraform)(this._labels),
+      name: cdktn.stringToTerraform(this._name),
+      project: cdktn.stringToTerraform(this._project),
+      server_tls_policy: cdktn.stringToTerraform(this._serverTlsPolicy),
+      type: cdktn.stringToTerraform(this._type),
       endpoint_matcher: networkServicesEndpointPolicyEndpointMatcherToTerraform(this._endpointMatcher.internalValue),
       timeouts: networkServicesEndpointPolicyTimeoutsToTerraform(this._timeouts.internalValue),
       traffic_port_selector: networkServicesEndpointPolicyTrafficPortSelectorToTerraform(this._trafficPortSelector.internalValue),
@@ -977,55 +977,55 @@ export class NetworkServicesEndpointPolicy extends cdktf.TerraformResource {
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       authorization_policy: {
-        value: cdktf.stringToHclTerraform(this._authorizationPolicy),
+        value: cdktn.stringToHclTerraform(this._authorizationPolicy),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       client_tls_policy: {
-        value: cdktf.stringToHclTerraform(this._clientTlsPolicy),
+        value: cdktn.stringToHclTerraform(this._clientTlsPolicy),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       description: {
-        value: cdktf.stringToHclTerraform(this._description),
+        value: cdktn.stringToHclTerraform(this._description),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       labels: {
-        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._labels),
+        value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(this._labels),
         isBlock: false,
         type: "map",
         storageClassType: "stringMap",
       },
       name: {
-        value: cdktf.stringToHclTerraform(this._name),
+        value: cdktn.stringToHclTerraform(this._name),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       project: {
-        value: cdktf.stringToHclTerraform(this._project),
+        value: cdktn.stringToHclTerraform(this._project),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       server_tls_policy: {
-        value: cdktf.stringToHclTerraform(this._serverTlsPolicy),
+        value: cdktn.stringToHclTerraform(this._serverTlsPolicy),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       type: {
-        value: cdktf.stringToHclTerraform(this._type),
+        value: cdktn.stringToHclTerraform(this._type),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

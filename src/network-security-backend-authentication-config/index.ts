@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface NetworkSecurityBackendAuthenticationConfigConfig extends cdktf.TerraformMetaArguments {
+export interface NetworkSecurityBackendAuthenticationConfigConfig extends cdktn.TerraformMetaArguments {
   /**
   * Reference to a Certificate resource from the certificatemanager.googleapis.com namespace.
   * Used by a BackendService to negotiate mTLS when the backend connection uses TLS and the backend requests a client certificate. Must have a CLIENT_AUTH scope.
@@ -95,39 +95,39 @@ export interface NetworkSecurityBackendAuthenticationConfigTimeouts {
   readonly update?: string;
 }
 
-export function networkSecurityBackendAuthenticationConfigTimeoutsToTerraform(struct?: NetworkSecurityBackendAuthenticationConfigTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function networkSecurityBackendAuthenticationConfigTimeoutsToTerraform(struct?: NetworkSecurityBackendAuthenticationConfigTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    create: cdktf.stringToTerraform(struct!.create),
-    delete: cdktf.stringToTerraform(struct!.delete),
-    update: cdktf.stringToTerraform(struct!.update),
+    create: cdktn.stringToTerraform(struct!.create),
+    delete: cdktn.stringToTerraform(struct!.delete),
+    update: cdktn.stringToTerraform(struct!.update),
   }
 }
 
 
-export function networkSecurityBackendAuthenticationConfigTimeoutsToHclTerraform(struct?: NetworkSecurityBackendAuthenticationConfigTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function networkSecurityBackendAuthenticationConfigTimeoutsToHclTerraform(struct?: NetworkSecurityBackendAuthenticationConfigTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     create: {
-      value: cdktf.stringToHclTerraform(struct!.create),
+      value: cdktn.stringToHclTerraform(struct!.create),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     delete: {
-      value: cdktf.stringToHclTerraform(struct!.delete),
+      value: cdktn.stringToHclTerraform(struct!.delete),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     update: {
-      value: cdktf.stringToHclTerraform(struct!.update),
+      value: cdktn.stringToHclTerraform(struct!.update),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -138,19 +138,19 @@ export function networkSecurityBackendAuthenticationConfigTimeoutsToHclTerraform
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class NetworkSecurityBackendAuthenticationConfigTimeoutsOutputReference extends cdktf.ComplexObject {
+export class NetworkSecurityBackendAuthenticationConfigTimeoutsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): NetworkSecurityBackendAuthenticationConfigTimeouts | cdktf.IResolvable | undefined {
+  public get internalValue(): NetworkSecurityBackendAuthenticationConfigTimeouts | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -171,7 +171,7 @@ export class NetworkSecurityBackendAuthenticationConfigTimeoutsOutputReference e
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: NetworkSecurityBackendAuthenticationConfigTimeouts | cdktf.IResolvable | undefined) {
+  public set internalValue(value: NetworkSecurityBackendAuthenticationConfigTimeouts | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -179,7 +179,7 @@ export class NetworkSecurityBackendAuthenticationConfigTimeoutsOutputReference e
       this._delete = undefined;
       this._update = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -244,7 +244,7 @@ export class NetworkSecurityBackendAuthenticationConfigTimeoutsOutputReference e
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/network_security_backend_authentication_config google_network_security_backend_authentication_config}
 */
-export class NetworkSecurityBackendAuthenticationConfig extends cdktf.TerraformResource {
+export class NetworkSecurityBackendAuthenticationConfig extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -255,14 +255,14 @@ export class NetworkSecurityBackendAuthenticationConfig extends cdktf.TerraformR
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a NetworkSecurityBackendAuthenticationConfig resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a NetworkSecurityBackendAuthenticationConfig resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the NetworkSecurityBackendAuthenticationConfig to import
   * @param importFromId The id of the existing NetworkSecurityBackendAuthenticationConfig that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/network_security_backend_authentication_config#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the NetworkSecurityBackendAuthenticationConfig to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "google_network_security_backend_authentication_config", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "google_network_security_backend_authentication_config", importId: importFromId, provider });
       }
 
   // ===========
@@ -346,7 +346,7 @@ export class NetworkSecurityBackendAuthenticationConfig extends cdktf.TerraformR
   }
 
   // effective_labels - computed: true, optional: false, required: false
-  private _effectiveLabels = new cdktf.StringMap(this, "effective_labels");
+  private _effectiveLabels = new cdktn.StringMap(this, "effective_labels");
   public get effectiveLabels() {
     return this._effectiveLabels;
   }
@@ -429,7 +429,7 @@ export class NetworkSecurityBackendAuthenticationConfig extends cdktf.TerraformR
   }
 
   // terraform_labels - computed: true, optional: false, required: false
-  private _terraformLabels = new cdktf.StringMap(this, "terraform_labels");
+  private _terraformLabels = new cdktn.StringMap(this, "terraform_labels");
   public get terraformLabels() {
     return this._terraformLabels;
   }
@@ -493,15 +493,15 @@ export class NetworkSecurityBackendAuthenticationConfig extends cdktf.TerraformR
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      client_certificate: cdktf.stringToTerraform(this._clientCertificate),
-      description: cdktf.stringToTerraform(this._description),
-      id: cdktf.stringToTerraform(this._id),
-      labels: cdktf.hashMapper(cdktf.stringToTerraform)(this._labels),
-      location: cdktf.stringToTerraform(this._location),
-      name: cdktf.stringToTerraform(this._name),
-      project: cdktf.stringToTerraform(this._project),
-      trust_config: cdktf.stringToTerraform(this._trustConfig),
-      well_known_roots: cdktf.stringToTerraform(this._wellKnownRoots),
+      client_certificate: cdktn.stringToTerraform(this._clientCertificate),
+      description: cdktn.stringToTerraform(this._description),
+      id: cdktn.stringToTerraform(this._id),
+      labels: cdktn.hashMapper(cdktn.stringToTerraform)(this._labels),
+      location: cdktn.stringToTerraform(this._location),
+      name: cdktn.stringToTerraform(this._name),
+      project: cdktn.stringToTerraform(this._project),
+      trust_config: cdktn.stringToTerraform(this._trustConfig),
+      well_known_roots: cdktn.stringToTerraform(this._wellKnownRoots),
       timeouts: networkSecurityBackendAuthenticationConfigTimeoutsToTerraform(this._timeouts.internalValue),
     };
   }
@@ -509,55 +509,55 @@ export class NetworkSecurityBackendAuthenticationConfig extends cdktf.TerraformR
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       client_certificate: {
-        value: cdktf.stringToHclTerraform(this._clientCertificate),
+        value: cdktn.stringToHclTerraform(this._clientCertificate),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       description: {
-        value: cdktf.stringToHclTerraform(this._description),
+        value: cdktn.stringToHclTerraform(this._description),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       labels: {
-        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._labels),
+        value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(this._labels),
         isBlock: false,
         type: "map",
         storageClassType: "stringMap",
       },
       location: {
-        value: cdktf.stringToHclTerraform(this._location),
+        value: cdktn.stringToHclTerraform(this._location),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       name: {
-        value: cdktf.stringToHclTerraform(this._name),
+        value: cdktn.stringToHclTerraform(this._name),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       project: {
-        value: cdktf.stringToHclTerraform(this._project),
+        value: cdktn.stringToHclTerraform(this._project),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       trust_config: {
-        value: cdktf.stringToHclTerraform(this._trustConfig),
+        value: cdktn.stringToHclTerraform(this._trustConfig),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       well_known_roots: {
-        value: cdktf.stringToHclTerraform(this._wellKnownRoots),
+        value: cdktn.stringToHclTerraform(this._wellKnownRoots),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

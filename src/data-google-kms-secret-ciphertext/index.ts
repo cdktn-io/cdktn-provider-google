@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface DataGoogleKmsSecretCiphertextConfig extends cdktf.TerraformMetaArguments {
+export interface DataGoogleKmsSecretCiphertextConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/data-sources/kms_secret_ciphertext#crypto_key DataGoogleKmsSecretCiphertext#crypto_key}
   */
@@ -32,7 +32,7 @@ export interface DataGoogleKmsSecretCiphertextConfig extends cdktf.TerraformMeta
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/data-sources/kms_secret_ciphertext google_kms_secret_ciphertext}
 */
-export class DataGoogleKmsSecretCiphertext extends cdktf.TerraformDataSource {
+export class DataGoogleKmsSecretCiphertext extends cdktn.TerraformDataSource {
 
   // =================
   // STATIC PROPERTIES
@@ -43,14 +43,14 @@ export class DataGoogleKmsSecretCiphertext extends cdktf.TerraformDataSource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a DataGoogleKmsSecretCiphertext resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a DataGoogleKmsSecretCiphertext resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataGoogleKmsSecretCiphertext to import
   * @param importFromId The id of the existing DataGoogleKmsSecretCiphertext that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/data-sources/kms_secret_ciphertext#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataGoogleKmsSecretCiphertext to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "google_kms_secret_ciphertext", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "google_kms_secret_ciphertext", importId: importFromId, provider });
       }
 
   // ===========
@@ -142,28 +142,28 @@ export class DataGoogleKmsSecretCiphertext extends cdktf.TerraformDataSource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      crypto_key: cdktf.stringToTerraform(this._cryptoKey),
-      id: cdktf.stringToTerraform(this._id),
-      plaintext: cdktf.stringToTerraform(this._plaintext),
+      crypto_key: cdktn.stringToTerraform(this._cryptoKey),
+      id: cdktn.stringToTerraform(this._id),
+      plaintext: cdktn.stringToTerraform(this._plaintext),
     };
   }
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       crypto_key: {
-        value: cdktf.stringToHclTerraform(this._cryptoKey),
+        value: cdktn.stringToHclTerraform(this._cryptoKey),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       plaintext: {
-        value: cdktf.stringToHclTerraform(this._plaintext),
+        value: cdktn.stringToHclTerraform(this._plaintext),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

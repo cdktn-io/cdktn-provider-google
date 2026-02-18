@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface DataGoogleSccV2OrganizationSourceIamPolicyConfig extends cdktf.TerraformMetaArguments {
+export interface DataGoogleSccV2OrganizationSourceIamPolicyConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/data-sources/scc_v2_organization_source_iam_policy#id DataGoogleSccV2OrganizationSourceIamPolicy#id}
   *
@@ -32,7 +32,7 @@ export interface DataGoogleSccV2OrganizationSourceIamPolicyConfig extends cdktf.
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/data-sources/scc_v2_organization_source_iam_policy google_scc_v2_organization_source_iam_policy}
 */
-export class DataGoogleSccV2OrganizationSourceIamPolicy extends cdktf.TerraformDataSource {
+export class DataGoogleSccV2OrganizationSourceIamPolicy extends cdktn.TerraformDataSource {
 
   // =================
   // STATIC PROPERTIES
@@ -43,14 +43,14 @@ export class DataGoogleSccV2OrganizationSourceIamPolicy extends cdktf.TerraformD
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a DataGoogleSccV2OrganizationSourceIamPolicy resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a DataGoogleSccV2OrganizationSourceIamPolicy resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataGoogleSccV2OrganizationSourceIamPolicy to import
   * @param importFromId The id of the existing DataGoogleSccV2OrganizationSourceIamPolicy that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/data-sources/scc_v2_organization_source_iam_policy#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataGoogleSccV2OrganizationSourceIamPolicy to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "google_scc_v2_organization_source_iam_policy", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "google_scc_v2_organization_source_iam_policy", importId: importFromId, provider });
       }
 
   // ===========
@@ -147,28 +147,28 @@ export class DataGoogleSccV2OrganizationSourceIamPolicy extends cdktf.TerraformD
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      id: cdktf.stringToTerraform(this._id),
-      organization: cdktf.stringToTerraform(this._organization),
-      source: cdktf.stringToTerraform(this._source),
+      id: cdktn.stringToTerraform(this._id),
+      organization: cdktn.stringToTerraform(this._organization),
+      source: cdktn.stringToTerraform(this._source),
     };
   }
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       organization: {
-        value: cdktf.stringToHclTerraform(this._organization),
+        value: cdktn.stringToHclTerraform(this._organization),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       source: {
-        value: cdktf.stringToHclTerraform(this._source),
+        value: cdktn.stringToHclTerraform(this._source),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

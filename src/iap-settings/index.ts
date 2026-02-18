@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface IapSettingsConfig extends cdktf.TerraformMetaArguments {
+export interface IapSettingsConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/iap_settings#id IapSettings#id}
   *
@@ -67,35 +67,35 @@ export interface IapSettingsAccessSettingsAllowedDomainsSettings {
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/iap_settings#enable IapSettings#enable}
   */
-  readonly enable?: boolean | cdktf.IResolvable;
+  readonly enable?: boolean | cdktn.IResolvable;
 }
 
 export function iapSettingsAccessSettingsAllowedDomainsSettingsToTerraform(struct?: IapSettingsAccessSettingsAllowedDomainsSettingsOutputReference | IapSettingsAccessSettingsAllowedDomainsSettings): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    domains: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.domains),
-    enable: cdktf.booleanToTerraform(struct!.enable),
+    domains: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.domains),
+    enable: cdktn.booleanToTerraform(struct!.enable),
   }
 }
 
 
 export function iapSettingsAccessSettingsAllowedDomainsSettingsToHclTerraform(struct?: IapSettingsAccessSettingsAllowedDomainsSettingsOutputReference | IapSettingsAccessSettingsAllowedDomainsSettings): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     domains: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.domains),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.domains),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
     },
     enable: {
-      value: cdktf.booleanToHclTerraform(struct!.enable),
+      value: cdktn.booleanToHclTerraform(struct!.enable),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
@@ -106,14 +106,14 @@ export function iapSettingsAccessSettingsAllowedDomainsSettingsToHclTerraform(st
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class IapSettingsAccessSettingsAllowedDomainsSettingsOutputReference extends cdktf.ComplexObject {
+export class IapSettingsAccessSettingsAllowedDomainsSettingsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -161,11 +161,11 @@ export class IapSettingsAccessSettingsAllowedDomainsSettingsOutputReference exte
   }
 
   // enable - computed: false, optional: true, required: false
-  private _enable?: boolean | cdktf.IResolvable; 
+  private _enable?: boolean | cdktn.IResolvable; 
   public get enable() {
     return this.getBooleanAttribute('enable');
   }
-  public set enable(value: boolean | cdktf.IResolvable) {
+  public set enable(value: boolean | cdktn.IResolvable) {
     this._enable = value;
   }
   public resetEnable() {
@@ -183,28 +183,28 @@ export interface IapSettingsAccessSettingsCorsSettings {
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/iap_settings#allow_http_options IapSettings#allow_http_options}
   */
-  readonly allowHttpOptions?: boolean | cdktf.IResolvable;
+  readonly allowHttpOptions?: boolean | cdktn.IResolvable;
 }
 
 export function iapSettingsAccessSettingsCorsSettingsToTerraform(struct?: IapSettingsAccessSettingsCorsSettingsOutputReference | IapSettingsAccessSettingsCorsSettings): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    allow_http_options: cdktf.booleanToTerraform(struct!.allowHttpOptions),
+    allow_http_options: cdktn.booleanToTerraform(struct!.allowHttpOptions),
   }
 }
 
 
 export function iapSettingsAccessSettingsCorsSettingsToHclTerraform(struct?: IapSettingsAccessSettingsCorsSettingsOutputReference | IapSettingsAccessSettingsCorsSettings): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     allow_http_options: {
-      value: cdktf.booleanToHclTerraform(struct!.allowHttpOptions),
+      value: cdktn.booleanToHclTerraform(struct!.allowHttpOptions),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
@@ -215,14 +215,14 @@ export function iapSettingsAccessSettingsCorsSettingsToHclTerraform(struct?: Iap
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class IapSettingsAccessSettingsCorsSettingsOutputReference extends cdktf.ComplexObject {
+export class IapSettingsAccessSettingsCorsSettingsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -248,11 +248,11 @@ export class IapSettingsAccessSettingsCorsSettingsOutputReference extends cdktf.
   }
 
   // allow_http_options - computed: false, optional: true, required: false
-  private _allowHttpOptions?: boolean | cdktf.IResolvable; 
+  private _allowHttpOptions?: boolean | cdktn.IResolvable; 
   public get allowHttpOptions() {
     return this.getBooleanAttribute('allow_http_options');
   }
-  public set allowHttpOptions(value: boolean | cdktf.IResolvable) {
+  public set allowHttpOptions(value: boolean | cdktn.IResolvable) {
     this._allowHttpOptions = value;
   }
   public resetAllowHttpOptions() {
@@ -285,31 +285,31 @@ export interface IapSettingsAccessSettingsGcipSettings {
 }
 
 export function iapSettingsAccessSettingsGcipSettingsToTerraform(struct?: IapSettingsAccessSettingsGcipSettingsOutputReference | IapSettingsAccessSettingsGcipSettings): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    login_page_uri: cdktf.stringToTerraform(struct!.loginPageUri),
-    tenant_ids: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.tenantIds),
+    login_page_uri: cdktn.stringToTerraform(struct!.loginPageUri),
+    tenant_ids: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.tenantIds),
   }
 }
 
 
 export function iapSettingsAccessSettingsGcipSettingsToHclTerraform(struct?: IapSettingsAccessSettingsGcipSettingsOutputReference | IapSettingsAccessSettingsGcipSettings): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     login_page_uri: {
-      value: cdktf.stringToHclTerraform(struct!.loginPageUri),
+      value: cdktn.stringToHclTerraform(struct!.loginPageUri),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     tenant_ids: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.tenantIds),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.tenantIds),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
@@ -320,14 +320,14 @@ export function iapSettingsAccessSettingsGcipSettingsToHclTerraform(struct?: Iap
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class IapSettingsAccessSettingsGcipSettingsOutputReference extends cdktf.ComplexObject {
+export class IapSettingsAccessSettingsGcipSettingsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -411,31 +411,31 @@ export interface IapSettingsAccessSettingsOauthSettings {
 }
 
 export function iapSettingsAccessSettingsOauthSettingsToTerraform(struct?: IapSettingsAccessSettingsOauthSettingsOutputReference | IapSettingsAccessSettingsOauthSettings): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    login_hint: cdktf.stringToTerraform(struct!.loginHint),
-    programmatic_clients: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.programmaticClients),
+    login_hint: cdktn.stringToTerraform(struct!.loginHint),
+    programmatic_clients: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.programmaticClients),
   }
 }
 
 
 export function iapSettingsAccessSettingsOauthSettingsToHclTerraform(struct?: IapSettingsAccessSettingsOauthSettingsOutputReference | IapSettingsAccessSettingsOauthSettings): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     login_hint: {
-      value: cdktf.stringToHclTerraform(struct!.loginHint),
+      value: cdktn.stringToHclTerraform(struct!.loginHint),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     programmatic_clients: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.programmaticClients),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.programmaticClients),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
@@ -446,14 +446,14 @@ export function iapSettingsAccessSettingsOauthSettingsToHclTerraform(struct?: Ia
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class IapSettingsAccessSettingsOauthSettingsOutputReference extends cdktf.ComplexObject {
+export class IapSettingsAccessSettingsOauthSettingsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -550,38 +550,38 @@ export interface IapSettingsAccessSettingsReauthSettings {
 }
 
 export function iapSettingsAccessSettingsReauthSettingsToTerraform(struct?: IapSettingsAccessSettingsReauthSettingsOutputReference | IapSettingsAccessSettingsReauthSettings): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    max_age: cdktf.stringToTerraform(struct!.maxAge),
-    method: cdktf.stringToTerraform(struct!.method),
-    policy_type: cdktf.stringToTerraform(struct!.policyType),
+    max_age: cdktn.stringToTerraform(struct!.maxAge),
+    method: cdktn.stringToTerraform(struct!.method),
+    policy_type: cdktn.stringToTerraform(struct!.policyType),
   }
 }
 
 
 export function iapSettingsAccessSettingsReauthSettingsToHclTerraform(struct?: IapSettingsAccessSettingsReauthSettingsOutputReference | IapSettingsAccessSettingsReauthSettings): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     max_age: {
-      value: cdktf.stringToHclTerraform(struct!.maxAge),
+      value: cdktn.stringToHclTerraform(struct!.maxAge),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     method: {
-      value: cdktf.stringToHclTerraform(struct!.method),
+      value: cdktn.stringToHclTerraform(struct!.method),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     policy_type: {
-      value: cdktf.stringToHclTerraform(struct!.policyType),
+      value: cdktn.stringToHclTerraform(struct!.policyType),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -592,14 +592,14 @@ export function iapSettingsAccessSettingsReauthSettingsToHclTerraform(struct?: I
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class IapSettingsAccessSettingsReauthSettingsOutputReference extends cdktf.ComplexObject {
+export class IapSettingsAccessSettingsReauthSettingsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -693,31 +693,31 @@ export interface IapSettingsAccessSettingsWorkforceIdentitySettingsOauth2 {
 }
 
 export function iapSettingsAccessSettingsWorkforceIdentitySettingsOauth2ToTerraform(struct?: IapSettingsAccessSettingsWorkforceIdentitySettingsOauth2OutputReference | IapSettingsAccessSettingsWorkforceIdentitySettingsOauth2): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    client_id: cdktf.stringToTerraform(struct!.clientId),
-    client_secret: cdktf.stringToTerraform(struct!.clientSecret),
+    client_id: cdktn.stringToTerraform(struct!.clientId),
+    client_secret: cdktn.stringToTerraform(struct!.clientSecret),
   }
 }
 
 
 export function iapSettingsAccessSettingsWorkforceIdentitySettingsOauth2ToHclTerraform(struct?: IapSettingsAccessSettingsWorkforceIdentitySettingsOauth2OutputReference | IapSettingsAccessSettingsWorkforceIdentitySettingsOauth2): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     client_id: {
-      value: cdktf.stringToHclTerraform(struct!.clientId),
+      value: cdktn.stringToHclTerraform(struct!.clientId),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     client_secret: {
-      value: cdktf.stringToHclTerraform(struct!.clientSecret),
+      value: cdktn.stringToHclTerraform(struct!.clientSecret),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -728,14 +728,14 @@ export function iapSettingsAccessSettingsWorkforceIdentitySettingsOauth2ToHclTer
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class IapSettingsAccessSettingsWorkforceIdentitySettingsOauth2OutputReference extends cdktf.ComplexObject {
+export class IapSettingsAccessSettingsWorkforceIdentitySettingsOauth2OutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -819,25 +819,25 @@ export interface IapSettingsAccessSettingsWorkforceIdentitySettings {
 }
 
 export function iapSettingsAccessSettingsWorkforceIdentitySettingsToTerraform(struct?: IapSettingsAccessSettingsWorkforceIdentitySettingsOutputReference | IapSettingsAccessSettingsWorkforceIdentitySettings): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    workforce_pools: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.workforcePools),
+    workforce_pools: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.workforcePools),
     oauth2: iapSettingsAccessSettingsWorkforceIdentitySettingsOauth2ToTerraform(struct!.oauth2),
   }
 }
 
 
 export function iapSettingsAccessSettingsWorkforceIdentitySettingsToHclTerraform(struct?: IapSettingsAccessSettingsWorkforceIdentitySettingsOutputReference | IapSettingsAccessSettingsWorkforceIdentitySettings): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     workforce_pools: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.workforcePools),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.workforcePools),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
@@ -854,14 +854,14 @@ export function iapSettingsAccessSettingsWorkforceIdentitySettingsToHclTerraform
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class IapSettingsAccessSettingsWorkforceIdentitySettingsOutputReference extends cdktf.ComplexObject {
+export class IapSettingsAccessSettingsWorkforceIdentitySettingsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -974,12 +974,12 @@ export interface IapSettingsAccessSettings {
 }
 
 export function iapSettingsAccessSettingsToTerraform(struct?: IapSettingsAccessSettingsOutputReference | IapSettingsAccessSettings): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    identity_sources: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.identitySources),
+    identity_sources: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.identitySources),
     allowed_domains_settings: iapSettingsAccessSettingsAllowedDomainsSettingsToTerraform(struct!.allowedDomainsSettings),
     cors_settings: iapSettingsAccessSettingsCorsSettingsToTerraform(struct!.corsSettings),
     gcip_settings: iapSettingsAccessSettingsGcipSettingsToTerraform(struct!.gcipSettings),
@@ -991,13 +991,13 @@ export function iapSettingsAccessSettingsToTerraform(struct?: IapSettingsAccessS
 
 
 export function iapSettingsAccessSettingsToHclTerraform(struct?: IapSettingsAccessSettingsOutputReference | IapSettingsAccessSettings): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     identity_sources: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.identitySources),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.identitySources),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
@@ -1044,14 +1044,14 @@ export function iapSettingsAccessSettingsToHclTerraform(struct?: IapSettingsAcce
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class IapSettingsAccessSettingsOutputReference extends cdktf.ComplexObject {
+export class IapSettingsAccessSettingsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -1236,48 +1236,48 @@ export interface IapSettingsApplicationSettingsAccessDeniedPageSettings {
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/iap_settings#generate_troubleshooting_uri IapSettings#generate_troubleshooting_uri}
   */
-  readonly generateTroubleshootingUri?: boolean | cdktf.IResolvable;
+  readonly generateTroubleshootingUri?: boolean | cdktn.IResolvable;
   /**
   * Whether to generate remediation token on access denied events to this application.
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/iap_settings#remediation_token_generation_enabled IapSettings#remediation_token_generation_enabled}
   */
-  readonly remediationTokenGenerationEnabled?: boolean | cdktf.IResolvable;
+  readonly remediationTokenGenerationEnabled?: boolean | cdktn.IResolvable;
 }
 
 export function iapSettingsApplicationSettingsAccessDeniedPageSettingsToTerraform(struct?: IapSettingsApplicationSettingsAccessDeniedPageSettingsOutputReference | IapSettingsApplicationSettingsAccessDeniedPageSettings): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    access_denied_page_uri: cdktf.stringToTerraform(struct!.accessDeniedPageUri),
-    generate_troubleshooting_uri: cdktf.booleanToTerraform(struct!.generateTroubleshootingUri),
-    remediation_token_generation_enabled: cdktf.booleanToTerraform(struct!.remediationTokenGenerationEnabled),
+    access_denied_page_uri: cdktn.stringToTerraform(struct!.accessDeniedPageUri),
+    generate_troubleshooting_uri: cdktn.booleanToTerraform(struct!.generateTroubleshootingUri),
+    remediation_token_generation_enabled: cdktn.booleanToTerraform(struct!.remediationTokenGenerationEnabled),
   }
 }
 
 
 export function iapSettingsApplicationSettingsAccessDeniedPageSettingsToHclTerraform(struct?: IapSettingsApplicationSettingsAccessDeniedPageSettingsOutputReference | IapSettingsApplicationSettingsAccessDeniedPageSettings): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     access_denied_page_uri: {
-      value: cdktf.stringToHclTerraform(struct!.accessDeniedPageUri),
+      value: cdktn.stringToHclTerraform(struct!.accessDeniedPageUri),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     generate_troubleshooting_uri: {
-      value: cdktf.booleanToHclTerraform(struct!.generateTroubleshootingUri),
+      value: cdktn.booleanToHclTerraform(struct!.generateTroubleshootingUri),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     remediation_token_generation_enabled: {
-      value: cdktf.booleanToHclTerraform(struct!.remediationTokenGenerationEnabled),
+      value: cdktn.booleanToHclTerraform(struct!.remediationTokenGenerationEnabled),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
@@ -1288,14 +1288,14 @@ export function iapSettingsApplicationSettingsAccessDeniedPageSettingsToHclTerra
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class IapSettingsApplicationSettingsAccessDeniedPageSettingsOutputReference extends cdktf.ComplexObject {
+export class IapSettingsApplicationSettingsAccessDeniedPageSettingsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -1349,11 +1349,11 @@ export class IapSettingsApplicationSettingsAccessDeniedPageSettingsOutputReferen
   }
 
   // generate_troubleshooting_uri - computed: false, optional: true, required: false
-  private _generateTroubleshootingUri?: boolean | cdktf.IResolvable; 
+  private _generateTroubleshootingUri?: boolean | cdktn.IResolvable; 
   public get generateTroubleshootingUri() {
     return this.getBooleanAttribute('generate_troubleshooting_uri');
   }
-  public set generateTroubleshootingUri(value: boolean | cdktf.IResolvable) {
+  public set generateTroubleshootingUri(value: boolean | cdktn.IResolvable) {
     this._generateTroubleshootingUri = value;
   }
   public resetGenerateTroubleshootingUri() {
@@ -1365,11 +1365,11 @@ export class IapSettingsApplicationSettingsAccessDeniedPageSettingsOutputReferen
   }
 
   // remediation_token_generation_enabled - computed: false, optional: true, required: false
-  private _remediationTokenGenerationEnabled?: boolean | cdktf.IResolvable; 
+  private _remediationTokenGenerationEnabled?: boolean | cdktn.IResolvable; 
   public get remediationTokenGenerationEnabled() {
     return this.getBooleanAttribute('remediation_token_generation_enabled');
   }
-  public set remediationTokenGenerationEnabled(value: boolean | cdktf.IResolvable) {
+  public set remediationTokenGenerationEnabled(value: boolean | cdktn.IResolvable) {
     this._remediationTokenGenerationEnabled = value;
   }
   public resetRemediationTokenGenerationEnabled() {
@@ -1387,7 +1387,7 @@ export interface IapSettingsApplicationSettingsAttributePropagationSettings {
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/iap_settings#enable IapSettings#enable}
   */
-  readonly enable?: boolean | cdktf.IResolvable;
+  readonly enable?: boolean | cdktn.IResolvable;
   /**
   * Raw string CEL expression. Must return a list of attributes. A maximum of 45 attributes can
   * be selected. Expressions can select different attribute types from attributes:
@@ -1413,38 +1413,38 @@ export interface IapSettingsApplicationSettingsAttributePropagationSettings {
 }
 
 export function iapSettingsApplicationSettingsAttributePropagationSettingsToTerraform(struct?: IapSettingsApplicationSettingsAttributePropagationSettingsOutputReference | IapSettingsApplicationSettingsAttributePropagationSettings): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    enable: cdktf.booleanToTerraform(struct!.enable),
-    expression: cdktf.stringToTerraform(struct!.expression),
-    output_credentials: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.outputCredentials),
+    enable: cdktn.booleanToTerraform(struct!.enable),
+    expression: cdktn.stringToTerraform(struct!.expression),
+    output_credentials: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.outputCredentials),
   }
 }
 
 
 export function iapSettingsApplicationSettingsAttributePropagationSettingsToHclTerraform(struct?: IapSettingsApplicationSettingsAttributePropagationSettingsOutputReference | IapSettingsApplicationSettingsAttributePropagationSettings): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     enable: {
-      value: cdktf.booleanToHclTerraform(struct!.enable),
+      value: cdktn.booleanToHclTerraform(struct!.enable),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     expression: {
-      value: cdktf.stringToHclTerraform(struct!.expression),
+      value: cdktn.stringToHclTerraform(struct!.expression),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     output_credentials: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.outputCredentials),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.outputCredentials),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
@@ -1455,14 +1455,14 @@ export function iapSettingsApplicationSettingsAttributePropagationSettingsToHclT
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class IapSettingsApplicationSettingsAttributePropagationSettingsOutputReference extends cdktf.ComplexObject {
+export class IapSettingsApplicationSettingsAttributePropagationSettingsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -1500,11 +1500,11 @@ export class IapSettingsApplicationSettingsAttributePropagationSettingsOutputRef
   }
 
   // enable - computed: false, optional: true, required: false
-  private _enable?: boolean | cdktf.IResolvable; 
+  private _enable?: boolean | cdktn.IResolvable; 
   public get enable() {
     return this.getBooleanAttribute('enable');
   }
-  public set enable(value: boolean | cdktf.IResolvable) {
+  public set enable(value: boolean | cdktn.IResolvable) {
     this._enable = value;
   }
   public resetEnable() {
@@ -1557,24 +1557,24 @@ export interface IapSettingsApplicationSettingsCsmSettings {
 }
 
 export function iapSettingsApplicationSettingsCsmSettingsToTerraform(struct?: IapSettingsApplicationSettingsCsmSettingsOutputReference | IapSettingsApplicationSettingsCsmSettings): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    rctoken_aud: cdktf.stringToTerraform(struct!.rctokenAud),
+    rctoken_aud: cdktn.stringToTerraform(struct!.rctokenAud),
   }
 }
 
 
 export function iapSettingsApplicationSettingsCsmSettingsToHclTerraform(struct?: IapSettingsApplicationSettingsCsmSettingsOutputReference | IapSettingsApplicationSettingsCsmSettings): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     rctoken_aud: {
-      value: cdktf.stringToHclTerraform(struct!.rctokenAud),
+      value: cdktn.stringToHclTerraform(struct!.rctokenAud),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -1585,14 +1585,14 @@ export function iapSettingsApplicationSettingsCsmSettingsToHclTerraform(struct?:
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class IapSettingsApplicationSettingsCsmSettingsOutputReference extends cdktf.ComplexObject {
+export class IapSettingsApplicationSettingsCsmSettingsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -1662,12 +1662,12 @@ export interface IapSettingsApplicationSettings {
 }
 
 export function iapSettingsApplicationSettingsToTerraform(struct?: IapSettingsApplicationSettingsOutputReference | IapSettingsApplicationSettings): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    cookie_domain: cdktf.stringToTerraform(struct!.cookieDomain),
+    cookie_domain: cdktn.stringToTerraform(struct!.cookieDomain),
     access_denied_page_settings: iapSettingsApplicationSettingsAccessDeniedPageSettingsToTerraform(struct!.accessDeniedPageSettings),
     attribute_propagation_settings: iapSettingsApplicationSettingsAttributePropagationSettingsToTerraform(struct!.attributePropagationSettings),
     csm_settings: iapSettingsApplicationSettingsCsmSettingsToTerraform(struct!.csmSettings),
@@ -1676,13 +1676,13 @@ export function iapSettingsApplicationSettingsToTerraform(struct?: IapSettingsAp
 
 
 export function iapSettingsApplicationSettingsToHclTerraform(struct?: IapSettingsApplicationSettingsOutputReference | IapSettingsApplicationSettings): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     cookie_domain: {
-      value: cdktf.stringToHclTerraform(struct!.cookieDomain),
+      value: cdktn.stringToHclTerraform(struct!.cookieDomain),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -1711,14 +1711,14 @@ export function iapSettingsApplicationSettingsToHclTerraform(struct?: IapSetting
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class IapSettingsApplicationSettingsOutputReference extends cdktf.ComplexObject {
+export class IapSettingsApplicationSettingsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -1840,39 +1840,39 @@ export interface IapSettingsTimeouts {
   readonly update?: string;
 }
 
-export function iapSettingsTimeoutsToTerraform(struct?: IapSettingsTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function iapSettingsTimeoutsToTerraform(struct?: IapSettingsTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    create: cdktf.stringToTerraform(struct!.create),
-    delete: cdktf.stringToTerraform(struct!.delete),
-    update: cdktf.stringToTerraform(struct!.update),
+    create: cdktn.stringToTerraform(struct!.create),
+    delete: cdktn.stringToTerraform(struct!.delete),
+    update: cdktn.stringToTerraform(struct!.update),
   }
 }
 
 
-export function iapSettingsTimeoutsToHclTerraform(struct?: IapSettingsTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function iapSettingsTimeoutsToHclTerraform(struct?: IapSettingsTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     create: {
-      value: cdktf.stringToHclTerraform(struct!.create),
+      value: cdktn.stringToHclTerraform(struct!.create),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     delete: {
-      value: cdktf.stringToHclTerraform(struct!.delete),
+      value: cdktn.stringToHclTerraform(struct!.delete),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     update: {
-      value: cdktf.stringToHclTerraform(struct!.update),
+      value: cdktn.stringToHclTerraform(struct!.update),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -1883,19 +1883,19 @@ export function iapSettingsTimeoutsToHclTerraform(struct?: IapSettingsTimeouts |
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class IapSettingsTimeoutsOutputReference extends cdktf.ComplexObject {
+export class IapSettingsTimeoutsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): IapSettingsTimeouts | cdktf.IResolvable | undefined {
+  public get internalValue(): IapSettingsTimeouts | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -1916,7 +1916,7 @@ export class IapSettingsTimeoutsOutputReference extends cdktf.ComplexObject {
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: IapSettingsTimeouts | cdktf.IResolvable | undefined) {
+  public set internalValue(value: IapSettingsTimeouts | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -1924,7 +1924,7 @@ export class IapSettingsTimeoutsOutputReference extends cdktf.ComplexObject {
       this._delete = undefined;
       this._update = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -1989,7 +1989,7 @@ export class IapSettingsTimeoutsOutputReference extends cdktf.ComplexObject {
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/iap_settings google_iap_settings}
 */
-export class IapSettings extends cdktf.TerraformResource {
+export class IapSettings extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -2000,14 +2000,14 @@ export class IapSettings extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a IapSettings resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a IapSettings resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the IapSettings to import
   * @param importFromId The id of the existing IapSettings that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/iap_settings#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the IapSettings to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "google_iap_settings", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "google_iap_settings", importId: importFromId, provider });
       }
 
   // ===========
@@ -2131,8 +2131,8 @@ export class IapSettings extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      id: cdktf.stringToTerraform(this._id),
-      name: cdktf.stringToTerraform(this._name),
+      id: cdktn.stringToTerraform(this._id),
+      name: cdktn.stringToTerraform(this._name),
       access_settings: iapSettingsAccessSettingsToTerraform(this._accessSettings.internalValue),
       application_settings: iapSettingsApplicationSettingsToTerraform(this._applicationSettings.internalValue),
       timeouts: iapSettingsTimeoutsToTerraform(this._timeouts.internalValue),
@@ -2142,13 +2142,13 @@ export class IapSettings extends cdktf.TerraformResource {
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       name: {
-        value: cdktf.stringToHclTerraform(this._name),
+        value: cdktn.stringToHclTerraform(this._name),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

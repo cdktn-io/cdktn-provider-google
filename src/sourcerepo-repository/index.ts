@@ -7,17 +7,17 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface SourcerepoRepositoryConfig extends cdktf.TerraformMetaArguments {
+export interface SourcerepoRepositoryConfig extends cdktn.TerraformMetaArguments {
   /**
   * If set to true, skip repository creation if a repository with the same name already exists.
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/sourcerepo_repository#create_ignore_already_exists SourcerepoRepository#create_ignore_already_exists}
   */
-  readonly createIgnoreAlreadyExists?: boolean | cdktf.IResolvable;
+  readonly createIgnoreAlreadyExists?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/sourcerepo_repository#id SourcerepoRepository#id}
   *
@@ -41,7 +41,7 @@ export interface SourcerepoRepositoryConfig extends cdktf.TerraformMetaArguments
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/sourcerepo_repository#pubsub_configs SourcerepoRepository#pubsub_configs}
   */
-  readonly pubsubConfigs?: SourcerepoRepositoryPubsubConfigs[] | cdktf.IResolvable;
+  readonly pubsubConfigs?: SourcerepoRepositoryPubsubConfigs[] | cdktn.IResolvable;
   /**
   * timeouts block
   *
@@ -73,39 +73,39 @@ export interface SourcerepoRepositoryPubsubConfigs {
   readonly topic: string;
 }
 
-export function sourcerepoRepositoryPubsubConfigsToTerraform(struct?: SourcerepoRepositoryPubsubConfigs | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function sourcerepoRepositoryPubsubConfigsToTerraform(struct?: SourcerepoRepositoryPubsubConfigs | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    message_format: cdktf.stringToTerraform(struct!.messageFormat),
-    service_account_email: cdktf.stringToTerraform(struct!.serviceAccountEmail),
-    topic: cdktf.stringToTerraform(struct!.topic),
+    message_format: cdktn.stringToTerraform(struct!.messageFormat),
+    service_account_email: cdktn.stringToTerraform(struct!.serviceAccountEmail),
+    topic: cdktn.stringToTerraform(struct!.topic),
   }
 }
 
 
-export function sourcerepoRepositoryPubsubConfigsToHclTerraform(struct?: SourcerepoRepositoryPubsubConfigs | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function sourcerepoRepositoryPubsubConfigsToHclTerraform(struct?: SourcerepoRepositoryPubsubConfigs | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     message_format: {
-      value: cdktf.stringToHclTerraform(struct!.messageFormat),
+      value: cdktn.stringToHclTerraform(struct!.messageFormat),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     service_account_email: {
-      value: cdktf.stringToHclTerraform(struct!.serviceAccountEmail),
+      value: cdktn.stringToHclTerraform(struct!.serviceAccountEmail),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     topic: {
-      value: cdktf.stringToHclTerraform(struct!.topic),
+      value: cdktn.stringToHclTerraform(struct!.topic),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -116,9 +116,9 @@ export function sourcerepoRepositoryPubsubConfigsToHclTerraform(struct?: Sourcer
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class SourcerepoRepositoryPubsubConfigsOutputReference extends cdktf.ComplexObject {
+export class SourcerepoRepositoryPubsubConfigsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -126,11 +126,11 @@ export class SourcerepoRepositoryPubsubConfigsOutputReference extends cdktf.Comp
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): SourcerepoRepositoryPubsubConfigs | cdktf.IResolvable | undefined {
+  public get internalValue(): SourcerepoRepositoryPubsubConfigs | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -151,7 +151,7 @@ export class SourcerepoRepositoryPubsubConfigsOutputReference extends cdktf.Comp
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: SourcerepoRepositoryPubsubConfigs | cdktf.IResolvable | undefined) {
+  public set internalValue(value: SourcerepoRepositoryPubsubConfigs | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -159,7 +159,7 @@ export class SourcerepoRepositoryPubsubConfigsOutputReference extends cdktf.Comp
       this._serviceAccountEmail = undefined;
       this._topic = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -215,15 +215,15 @@ export class SourcerepoRepositoryPubsubConfigsOutputReference extends cdktf.Comp
   }
 }
 
-export class SourcerepoRepositoryPubsubConfigsList extends cdktf.ComplexList {
-  public internalValue? : SourcerepoRepositoryPubsubConfigs[] | cdktf.IResolvable
+export class SourcerepoRepositoryPubsubConfigsList extends cdktn.ComplexList {
+  public internalValue? : SourcerepoRepositoryPubsubConfigs[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -249,39 +249,39 @@ export interface SourcerepoRepositoryTimeouts {
   readonly update?: string;
 }
 
-export function sourcerepoRepositoryTimeoutsToTerraform(struct?: SourcerepoRepositoryTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function sourcerepoRepositoryTimeoutsToTerraform(struct?: SourcerepoRepositoryTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    create: cdktf.stringToTerraform(struct!.create),
-    delete: cdktf.stringToTerraform(struct!.delete),
-    update: cdktf.stringToTerraform(struct!.update),
+    create: cdktn.stringToTerraform(struct!.create),
+    delete: cdktn.stringToTerraform(struct!.delete),
+    update: cdktn.stringToTerraform(struct!.update),
   }
 }
 
 
-export function sourcerepoRepositoryTimeoutsToHclTerraform(struct?: SourcerepoRepositoryTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function sourcerepoRepositoryTimeoutsToHclTerraform(struct?: SourcerepoRepositoryTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     create: {
-      value: cdktf.stringToHclTerraform(struct!.create),
+      value: cdktn.stringToHclTerraform(struct!.create),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     delete: {
-      value: cdktf.stringToHclTerraform(struct!.delete),
+      value: cdktn.stringToHclTerraform(struct!.delete),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     update: {
-      value: cdktf.stringToHclTerraform(struct!.update),
+      value: cdktn.stringToHclTerraform(struct!.update),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -292,19 +292,19 @@ export function sourcerepoRepositoryTimeoutsToHclTerraform(struct?: SourcerepoRe
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class SourcerepoRepositoryTimeoutsOutputReference extends cdktf.ComplexObject {
+export class SourcerepoRepositoryTimeoutsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): SourcerepoRepositoryTimeouts | cdktf.IResolvable | undefined {
+  public get internalValue(): SourcerepoRepositoryTimeouts | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -325,7 +325,7 @@ export class SourcerepoRepositoryTimeoutsOutputReference extends cdktf.ComplexOb
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: SourcerepoRepositoryTimeouts | cdktf.IResolvable | undefined) {
+  public set internalValue(value: SourcerepoRepositoryTimeouts | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -333,7 +333,7 @@ export class SourcerepoRepositoryTimeoutsOutputReference extends cdktf.ComplexOb
       this._delete = undefined;
       this._update = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -398,7 +398,7 @@ export class SourcerepoRepositoryTimeoutsOutputReference extends cdktf.ComplexOb
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/sourcerepo_repository google_sourcerepo_repository}
 */
-export class SourcerepoRepository extends cdktf.TerraformResource {
+export class SourcerepoRepository extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -409,14 +409,14 @@ export class SourcerepoRepository extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a SourcerepoRepository resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a SourcerepoRepository resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the SourcerepoRepository to import
   * @param importFromId The id of the existing SourcerepoRepository that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/sourcerepo_repository#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the SourcerepoRepository to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "google_sourcerepo_repository", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "google_sourcerepo_repository", importId: importFromId, provider });
       }
 
   // ===========
@@ -459,11 +459,11 @@ export class SourcerepoRepository extends cdktf.TerraformResource {
   // ==========
 
   // create_ignore_already_exists - computed: false, optional: true, required: false
-  private _createIgnoreAlreadyExists?: boolean | cdktf.IResolvable; 
+  private _createIgnoreAlreadyExists?: boolean | cdktn.IResolvable; 
   public get createIgnoreAlreadyExists() {
     return this.getBooleanAttribute('create_ignore_already_exists');
   }
-  public set createIgnoreAlreadyExists(value: boolean | cdktf.IResolvable) {
+  public set createIgnoreAlreadyExists(value: boolean | cdktn.IResolvable) {
     this._createIgnoreAlreadyExists = value;
   }
   public resetCreateIgnoreAlreadyExists() {
@@ -534,7 +534,7 @@ export class SourcerepoRepository extends cdktf.TerraformResource {
   public get pubsubConfigs() {
     return this._pubsubConfigs;
   }
-  public putPubsubConfigs(value: SourcerepoRepositoryPubsubConfigs[] | cdktf.IResolvable) {
+  public putPubsubConfigs(value: SourcerepoRepositoryPubsubConfigs[] | cdktn.IResolvable) {
     this._pubsubConfigs.internalValue = value;
   }
   public resetPubsubConfigs() {
@@ -567,11 +567,11 @@ export class SourcerepoRepository extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      create_ignore_already_exists: cdktf.booleanToTerraform(this._createIgnoreAlreadyExists),
-      id: cdktf.stringToTerraform(this._id),
-      name: cdktf.stringToTerraform(this._name),
-      project: cdktf.stringToTerraform(this._project),
-      pubsub_configs: cdktf.listMapper(sourcerepoRepositoryPubsubConfigsToTerraform, true)(this._pubsubConfigs.internalValue),
+      create_ignore_already_exists: cdktn.booleanToTerraform(this._createIgnoreAlreadyExists),
+      id: cdktn.stringToTerraform(this._id),
+      name: cdktn.stringToTerraform(this._name),
+      project: cdktn.stringToTerraform(this._project),
+      pubsub_configs: cdktn.listMapper(sourcerepoRepositoryPubsubConfigsToTerraform, true)(this._pubsubConfigs.internalValue),
       timeouts: sourcerepoRepositoryTimeoutsToTerraform(this._timeouts.internalValue),
     };
   }
@@ -579,31 +579,31 @@ export class SourcerepoRepository extends cdktf.TerraformResource {
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       create_ignore_already_exists: {
-        value: cdktf.booleanToHclTerraform(this._createIgnoreAlreadyExists),
+        value: cdktn.booleanToHclTerraform(this._createIgnoreAlreadyExists),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       name: {
-        value: cdktf.stringToHclTerraform(this._name),
+        value: cdktn.stringToHclTerraform(this._name),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       project: {
-        value: cdktf.stringToHclTerraform(this._project),
+        value: cdktn.stringToHclTerraform(this._project),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       pubsub_configs: {
-        value: cdktf.listMapperHcl(sourcerepoRepositoryPubsubConfigsToHclTerraform, true)(this._pubsubConfigs.internalValue),
+        value: cdktn.listMapperHcl(sourcerepoRepositoryPubsubConfigsToHclTerraform, true)(this._pubsubConfigs.internalValue),
         isBlock: true,
         type: "set",
         storageClassType: "SourcerepoRepositoryPubsubConfigsList",

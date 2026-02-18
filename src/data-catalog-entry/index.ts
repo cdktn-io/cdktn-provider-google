@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface DataCatalogEntryConfig extends cdktf.TerraformMetaArguments {
+export interface DataCatalogEntryConfig extends cdktn.TerraformMetaArguments {
   /**
   * Entry description, which can consist of several sentences or paragraphs that describe entry contents.
   *
@@ -106,8 +106,8 @@ export interface DataCatalogEntryBigqueryDateShardedSpec {
 }
 
 export function dataCatalogEntryBigqueryDateShardedSpecToTerraform(struct?: DataCatalogEntryBigqueryDateShardedSpec): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -116,8 +116,8 @@ export function dataCatalogEntryBigqueryDateShardedSpecToTerraform(struct?: Data
 
 
 export function dataCatalogEntryBigqueryDateShardedSpecToHclTerraform(struct?: DataCatalogEntryBigqueryDateShardedSpec): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -125,7 +125,7 @@ export function dataCatalogEntryBigqueryDateShardedSpecToHclTerraform(struct?: D
   return attrs;
 }
 
-export class DataCatalogEntryBigqueryDateShardedSpecOutputReference extends cdktf.ComplexObject {
+export class DataCatalogEntryBigqueryDateShardedSpecOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -134,7 +134,7 @@ export class DataCatalogEntryBigqueryDateShardedSpecOutputReference extends cdkt
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -169,14 +169,14 @@ export class DataCatalogEntryBigqueryDateShardedSpecOutputReference extends cdkt
   }
 }
 
-export class DataCatalogEntryBigqueryDateShardedSpecList extends cdktf.ComplexList {
+export class DataCatalogEntryBigqueryDateShardedSpecList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -191,8 +191,8 @@ export interface DataCatalogEntryBigqueryTableSpecTableSpec {
 }
 
 export function dataCatalogEntryBigqueryTableSpecTableSpecToTerraform(struct?: DataCatalogEntryBigqueryTableSpecTableSpec): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -201,8 +201,8 @@ export function dataCatalogEntryBigqueryTableSpecTableSpecToTerraform(struct?: D
 
 
 export function dataCatalogEntryBigqueryTableSpecTableSpecToHclTerraform(struct?: DataCatalogEntryBigqueryTableSpecTableSpec): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -210,7 +210,7 @@ export function dataCatalogEntryBigqueryTableSpecTableSpecToHclTerraform(struct?
   return attrs;
 }
 
-export class DataCatalogEntryBigqueryTableSpecTableSpecOutputReference extends cdktf.ComplexObject {
+export class DataCatalogEntryBigqueryTableSpecTableSpecOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -219,7 +219,7 @@ export class DataCatalogEntryBigqueryTableSpecTableSpecOutputReference extends c
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -244,14 +244,14 @@ export class DataCatalogEntryBigqueryTableSpecTableSpecOutputReference extends c
   }
 }
 
-export class DataCatalogEntryBigqueryTableSpecTableSpecList extends cdktf.ComplexList {
+export class DataCatalogEntryBigqueryTableSpecTableSpecList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -266,8 +266,8 @@ export interface DataCatalogEntryBigqueryTableSpecViewSpec {
 }
 
 export function dataCatalogEntryBigqueryTableSpecViewSpecToTerraform(struct?: DataCatalogEntryBigqueryTableSpecViewSpec): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -276,8 +276,8 @@ export function dataCatalogEntryBigqueryTableSpecViewSpecToTerraform(struct?: Da
 
 
 export function dataCatalogEntryBigqueryTableSpecViewSpecToHclTerraform(struct?: DataCatalogEntryBigqueryTableSpecViewSpec): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -285,7 +285,7 @@ export function dataCatalogEntryBigqueryTableSpecViewSpecToHclTerraform(struct?:
   return attrs;
 }
 
-export class DataCatalogEntryBigqueryTableSpecViewSpecOutputReference extends cdktf.ComplexObject {
+export class DataCatalogEntryBigqueryTableSpecViewSpecOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -294,7 +294,7 @@ export class DataCatalogEntryBigqueryTableSpecViewSpecOutputReference extends cd
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -319,14 +319,14 @@ export class DataCatalogEntryBigqueryTableSpecViewSpecOutputReference extends cd
   }
 }
 
-export class DataCatalogEntryBigqueryTableSpecViewSpecList extends cdktf.ComplexList {
+export class DataCatalogEntryBigqueryTableSpecViewSpecList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -341,8 +341,8 @@ export interface DataCatalogEntryBigqueryTableSpec {
 }
 
 export function dataCatalogEntryBigqueryTableSpecToTerraform(struct?: DataCatalogEntryBigqueryTableSpec): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -351,8 +351,8 @@ export function dataCatalogEntryBigqueryTableSpecToTerraform(struct?: DataCatalo
 
 
 export function dataCatalogEntryBigqueryTableSpecToHclTerraform(struct?: DataCatalogEntryBigqueryTableSpec): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -360,7 +360,7 @@ export function dataCatalogEntryBigqueryTableSpecToHclTerraform(struct?: DataCat
   return attrs;
 }
 
-export class DataCatalogEntryBigqueryTableSpecOutputReference extends cdktf.ComplexObject {
+export class DataCatalogEntryBigqueryTableSpecOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -369,7 +369,7 @@ export class DataCatalogEntryBigqueryTableSpecOutputReference extends cdktf.Comp
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -406,14 +406,14 @@ export class DataCatalogEntryBigqueryTableSpecOutputReference extends cdktf.Comp
   }
 }
 
-export class DataCatalogEntryBigqueryTableSpecList extends cdktf.ComplexList {
+export class DataCatalogEntryBigqueryTableSpecList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -428,8 +428,8 @@ export interface DataCatalogEntryGcsFilesetSpecSampleGcsFileSpecs {
 }
 
 export function dataCatalogEntryGcsFilesetSpecSampleGcsFileSpecsToTerraform(struct?: DataCatalogEntryGcsFilesetSpecSampleGcsFileSpecs): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -438,8 +438,8 @@ export function dataCatalogEntryGcsFilesetSpecSampleGcsFileSpecsToTerraform(stru
 
 
 export function dataCatalogEntryGcsFilesetSpecSampleGcsFileSpecsToHclTerraform(struct?: DataCatalogEntryGcsFilesetSpecSampleGcsFileSpecs): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -447,7 +447,7 @@ export function dataCatalogEntryGcsFilesetSpecSampleGcsFileSpecsToHclTerraform(s
   return attrs;
 }
 
-export class DataCatalogEntryGcsFilesetSpecSampleGcsFileSpecsOutputReference extends cdktf.ComplexObject {
+export class DataCatalogEntryGcsFilesetSpecSampleGcsFileSpecsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -456,7 +456,7 @@ export class DataCatalogEntryGcsFilesetSpecSampleGcsFileSpecsOutputReference ext
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -486,14 +486,14 @@ export class DataCatalogEntryGcsFilesetSpecSampleGcsFileSpecsOutputReference ext
   }
 }
 
-export class DataCatalogEntryGcsFilesetSpecSampleGcsFileSpecsList extends cdktf.ComplexList {
+export class DataCatalogEntryGcsFilesetSpecSampleGcsFileSpecsList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -527,24 +527,24 @@ export interface DataCatalogEntryGcsFilesetSpec {
 }
 
 export function dataCatalogEntryGcsFilesetSpecToTerraform(struct?: DataCatalogEntryGcsFilesetSpecOutputReference | DataCatalogEntryGcsFilesetSpec): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    file_patterns: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.filePatterns),
+    file_patterns: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.filePatterns),
   }
 }
 
 
 export function dataCatalogEntryGcsFilesetSpecToHclTerraform(struct?: DataCatalogEntryGcsFilesetSpecOutputReference | DataCatalogEntryGcsFilesetSpec): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     file_patterns: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.filePatterns),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.filePatterns),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
@@ -555,14 +555,14 @@ export function dataCatalogEntryGcsFilesetSpecToHclTerraform(struct?: DataCatalo
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class DataCatalogEntryGcsFilesetSpecOutputReference extends cdktf.ComplexObject {
+export class DataCatalogEntryGcsFilesetSpecOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -621,39 +621,39 @@ export interface DataCatalogEntryTimeouts {
   readonly update?: string;
 }
 
-export function dataCatalogEntryTimeoutsToTerraform(struct?: DataCatalogEntryTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function dataCatalogEntryTimeoutsToTerraform(struct?: DataCatalogEntryTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    create: cdktf.stringToTerraform(struct!.create),
-    delete: cdktf.stringToTerraform(struct!.delete),
-    update: cdktf.stringToTerraform(struct!.update),
+    create: cdktn.stringToTerraform(struct!.create),
+    delete: cdktn.stringToTerraform(struct!.delete),
+    update: cdktn.stringToTerraform(struct!.update),
   }
 }
 
 
-export function dataCatalogEntryTimeoutsToHclTerraform(struct?: DataCatalogEntryTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function dataCatalogEntryTimeoutsToHclTerraform(struct?: DataCatalogEntryTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     create: {
-      value: cdktf.stringToHclTerraform(struct!.create),
+      value: cdktn.stringToHclTerraform(struct!.create),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     delete: {
-      value: cdktf.stringToHclTerraform(struct!.delete),
+      value: cdktn.stringToHclTerraform(struct!.delete),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     update: {
-      value: cdktf.stringToHclTerraform(struct!.update),
+      value: cdktn.stringToHclTerraform(struct!.update),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -664,19 +664,19 @@ export function dataCatalogEntryTimeoutsToHclTerraform(struct?: DataCatalogEntry
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class DataCatalogEntryTimeoutsOutputReference extends cdktf.ComplexObject {
+export class DataCatalogEntryTimeoutsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): DataCatalogEntryTimeouts | cdktf.IResolvable | undefined {
+  public get internalValue(): DataCatalogEntryTimeouts | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -697,7 +697,7 @@ export class DataCatalogEntryTimeoutsOutputReference extends cdktf.ComplexObject
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: DataCatalogEntryTimeouts | cdktf.IResolvable | undefined) {
+  public set internalValue(value: DataCatalogEntryTimeouts | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -705,7 +705,7 @@ export class DataCatalogEntryTimeoutsOutputReference extends cdktf.ComplexObject
       this._delete = undefined;
       this._update = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -770,7 +770,7 @@ export class DataCatalogEntryTimeoutsOutputReference extends cdktf.ComplexObject
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/data_catalog_entry google_data_catalog_entry}
 */
-export class DataCatalogEntry extends cdktf.TerraformResource {
+export class DataCatalogEntry extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -781,14 +781,14 @@ export class DataCatalogEntry extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a DataCatalogEntry resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a DataCatalogEntry resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataCatalogEntry to import
   * @param importFromId The id of the existing DataCatalogEntry that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/data_catalog_entry#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataCatalogEntry to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "google_data_catalog_entry", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "google_data_catalog_entry", importId: importFromId, provider });
       }
 
   // ===========
@@ -1050,16 +1050,16 @@ export class DataCatalogEntry extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      description: cdktf.stringToTerraform(this._description),
-      display_name: cdktf.stringToTerraform(this._displayName),
-      entry_group: cdktf.stringToTerraform(this._entryGroup),
-      entry_id: cdktf.stringToTerraform(this._entryId),
-      id: cdktf.stringToTerraform(this._id),
-      linked_resource: cdktf.stringToTerraform(this._linkedResource),
-      schema: cdktf.stringToTerraform(this._schema),
-      type: cdktf.stringToTerraform(this._type),
-      user_specified_system: cdktf.stringToTerraform(this._userSpecifiedSystem),
-      user_specified_type: cdktf.stringToTerraform(this._userSpecifiedType),
+      description: cdktn.stringToTerraform(this._description),
+      display_name: cdktn.stringToTerraform(this._displayName),
+      entry_group: cdktn.stringToTerraform(this._entryGroup),
+      entry_id: cdktn.stringToTerraform(this._entryId),
+      id: cdktn.stringToTerraform(this._id),
+      linked_resource: cdktn.stringToTerraform(this._linkedResource),
+      schema: cdktn.stringToTerraform(this._schema),
+      type: cdktn.stringToTerraform(this._type),
+      user_specified_system: cdktn.stringToTerraform(this._userSpecifiedSystem),
+      user_specified_type: cdktn.stringToTerraform(this._userSpecifiedType),
       gcs_fileset_spec: dataCatalogEntryGcsFilesetSpecToTerraform(this._gcsFilesetSpec.internalValue),
       timeouts: dataCatalogEntryTimeoutsToTerraform(this._timeouts.internalValue),
     };
@@ -1068,61 +1068,61 @@ export class DataCatalogEntry extends cdktf.TerraformResource {
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       description: {
-        value: cdktf.stringToHclTerraform(this._description),
+        value: cdktn.stringToHclTerraform(this._description),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       display_name: {
-        value: cdktf.stringToHclTerraform(this._displayName),
+        value: cdktn.stringToHclTerraform(this._displayName),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       entry_group: {
-        value: cdktf.stringToHclTerraform(this._entryGroup),
+        value: cdktn.stringToHclTerraform(this._entryGroup),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       entry_id: {
-        value: cdktf.stringToHclTerraform(this._entryId),
+        value: cdktn.stringToHclTerraform(this._entryId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       linked_resource: {
-        value: cdktf.stringToHclTerraform(this._linkedResource),
+        value: cdktn.stringToHclTerraform(this._linkedResource),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       schema: {
-        value: cdktf.stringToHclTerraform(this._schema),
+        value: cdktn.stringToHclTerraform(this._schema),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       type: {
-        value: cdktf.stringToHclTerraform(this._type),
+        value: cdktn.stringToHclTerraform(this._type),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       user_specified_system: {
-        value: cdktf.stringToHclTerraform(this._userSpecifiedSystem),
+        value: cdktn.stringToHclTerraform(this._userSpecifiedSystem),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       user_specified_type: {
-        value: cdktf.stringToHclTerraform(this._userSpecifiedType),
+        value: cdktn.stringToHclTerraform(this._userSpecifiedType),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

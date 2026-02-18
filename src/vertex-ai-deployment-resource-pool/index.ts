@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface VertexAiDeploymentResourcePoolConfig extends cdktf.TerraformMetaArguments {
+export interface VertexAiDeploymentResourcePoolConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/vertex_ai_deployment_resource_pool#id VertexAiDeploymentResourcePool#id}
   *
@@ -63,32 +63,32 @@ export interface VertexAiDeploymentResourcePoolDedicatedResourcesAutoscalingMetr
   readonly target?: number;
 }
 
-export function vertexAiDeploymentResourcePoolDedicatedResourcesAutoscalingMetricSpecsToTerraform(struct?: VertexAiDeploymentResourcePoolDedicatedResourcesAutoscalingMetricSpecs | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function vertexAiDeploymentResourcePoolDedicatedResourcesAutoscalingMetricSpecsToTerraform(struct?: VertexAiDeploymentResourcePoolDedicatedResourcesAutoscalingMetricSpecs | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    metric_name: cdktf.stringToTerraform(struct!.metricName),
-    target: cdktf.numberToTerraform(struct!.target),
+    metric_name: cdktn.stringToTerraform(struct!.metricName),
+    target: cdktn.numberToTerraform(struct!.target),
   }
 }
 
 
-export function vertexAiDeploymentResourcePoolDedicatedResourcesAutoscalingMetricSpecsToHclTerraform(struct?: VertexAiDeploymentResourcePoolDedicatedResourcesAutoscalingMetricSpecs | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function vertexAiDeploymentResourcePoolDedicatedResourcesAutoscalingMetricSpecsToHclTerraform(struct?: VertexAiDeploymentResourcePoolDedicatedResourcesAutoscalingMetricSpecs | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     metric_name: {
-      value: cdktf.stringToHclTerraform(struct!.metricName),
+      value: cdktn.stringToHclTerraform(struct!.metricName),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     target: {
-      value: cdktf.numberToHclTerraform(struct!.target),
+      value: cdktn.numberToHclTerraform(struct!.target),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
@@ -99,9 +99,9 @@ export function vertexAiDeploymentResourcePoolDedicatedResourcesAutoscalingMetri
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class VertexAiDeploymentResourcePoolDedicatedResourcesAutoscalingMetricSpecsOutputReference extends cdktf.ComplexObject {
+export class VertexAiDeploymentResourcePoolDedicatedResourcesAutoscalingMetricSpecsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -109,11 +109,11 @@ export class VertexAiDeploymentResourcePoolDedicatedResourcesAutoscalingMetricSp
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): VertexAiDeploymentResourcePoolDedicatedResourcesAutoscalingMetricSpecs | cdktf.IResolvable | undefined {
+  public get internalValue(): VertexAiDeploymentResourcePoolDedicatedResourcesAutoscalingMetricSpecs | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -130,14 +130,14 @@ export class VertexAiDeploymentResourcePoolDedicatedResourcesAutoscalingMetricSp
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: VertexAiDeploymentResourcePoolDedicatedResourcesAutoscalingMetricSpecs | cdktf.IResolvable | undefined) {
+  public set internalValue(value: VertexAiDeploymentResourcePoolDedicatedResourcesAutoscalingMetricSpecs | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._metricName = undefined;
       this._target = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -179,15 +179,15 @@ export class VertexAiDeploymentResourcePoolDedicatedResourcesAutoscalingMetricSp
   }
 }
 
-export class VertexAiDeploymentResourcePoolDedicatedResourcesAutoscalingMetricSpecsList extends cdktf.ComplexList {
-  public internalValue? : VertexAiDeploymentResourcePoolDedicatedResourcesAutoscalingMetricSpecs[] | cdktf.IResolvable
+export class VertexAiDeploymentResourcePoolDedicatedResourcesAutoscalingMetricSpecsList extends cdktn.ComplexList {
+  public internalValue? : VertexAiDeploymentResourcePoolDedicatedResourcesAutoscalingMetricSpecs[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -220,38 +220,38 @@ export interface VertexAiDeploymentResourcePoolDedicatedResourcesMachineSpec {
 }
 
 export function vertexAiDeploymentResourcePoolDedicatedResourcesMachineSpecToTerraform(struct?: VertexAiDeploymentResourcePoolDedicatedResourcesMachineSpecOutputReference | VertexAiDeploymentResourcePoolDedicatedResourcesMachineSpec): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    accelerator_count: cdktf.numberToTerraform(struct!.acceleratorCount),
-    accelerator_type: cdktf.stringToTerraform(struct!.acceleratorType),
-    machine_type: cdktf.stringToTerraform(struct!.machineType),
+    accelerator_count: cdktn.numberToTerraform(struct!.acceleratorCount),
+    accelerator_type: cdktn.stringToTerraform(struct!.acceleratorType),
+    machine_type: cdktn.stringToTerraform(struct!.machineType),
   }
 }
 
 
 export function vertexAiDeploymentResourcePoolDedicatedResourcesMachineSpecToHclTerraform(struct?: VertexAiDeploymentResourcePoolDedicatedResourcesMachineSpecOutputReference | VertexAiDeploymentResourcePoolDedicatedResourcesMachineSpec): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     accelerator_count: {
-      value: cdktf.numberToHclTerraform(struct!.acceleratorCount),
+      value: cdktn.numberToHclTerraform(struct!.acceleratorCount),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     accelerator_type: {
-      value: cdktf.stringToHclTerraform(struct!.acceleratorType),
+      value: cdktn.stringToHclTerraform(struct!.acceleratorType),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     machine_type: {
-      value: cdktf.stringToHclTerraform(struct!.machineType),
+      value: cdktn.stringToHclTerraform(struct!.machineType),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -262,14 +262,14 @@ export function vertexAiDeploymentResourcePoolDedicatedResourcesMachineSpecToHcl
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class VertexAiDeploymentResourcePoolDedicatedResourcesMachineSpecOutputReference extends cdktf.ComplexObject {
+export class VertexAiDeploymentResourcePoolDedicatedResourcesMachineSpecOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -372,7 +372,7 @@ export interface VertexAiDeploymentResourcePoolDedicatedResources {
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/vertex_ai_deployment_resource_pool#autoscaling_metric_specs VertexAiDeploymentResourcePool#autoscaling_metric_specs}
   */
-  readonly autoscalingMetricSpecs?: VertexAiDeploymentResourcePoolDedicatedResourcesAutoscalingMetricSpecs[] | cdktf.IResolvable;
+  readonly autoscalingMetricSpecs?: VertexAiDeploymentResourcePoolDedicatedResourcesAutoscalingMetricSpecs[] | cdktn.IResolvable;
   /**
   * machine_spec block
   *
@@ -382,39 +382,39 @@ export interface VertexAiDeploymentResourcePoolDedicatedResources {
 }
 
 export function vertexAiDeploymentResourcePoolDedicatedResourcesToTerraform(struct?: VertexAiDeploymentResourcePoolDedicatedResourcesOutputReference | VertexAiDeploymentResourcePoolDedicatedResources): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    max_replica_count: cdktf.numberToTerraform(struct!.maxReplicaCount),
-    min_replica_count: cdktf.numberToTerraform(struct!.minReplicaCount),
-    autoscaling_metric_specs: cdktf.listMapper(vertexAiDeploymentResourcePoolDedicatedResourcesAutoscalingMetricSpecsToTerraform, true)(struct!.autoscalingMetricSpecs),
+    max_replica_count: cdktn.numberToTerraform(struct!.maxReplicaCount),
+    min_replica_count: cdktn.numberToTerraform(struct!.minReplicaCount),
+    autoscaling_metric_specs: cdktn.listMapper(vertexAiDeploymentResourcePoolDedicatedResourcesAutoscalingMetricSpecsToTerraform, true)(struct!.autoscalingMetricSpecs),
     machine_spec: vertexAiDeploymentResourcePoolDedicatedResourcesMachineSpecToTerraform(struct!.machineSpec),
   }
 }
 
 
 export function vertexAiDeploymentResourcePoolDedicatedResourcesToHclTerraform(struct?: VertexAiDeploymentResourcePoolDedicatedResourcesOutputReference | VertexAiDeploymentResourcePoolDedicatedResources): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     max_replica_count: {
-      value: cdktf.numberToHclTerraform(struct!.maxReplicaCount),
+      value: cdktn.numberToHclTerraform(struct!.maxReplicaCount),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     min_replica_count: {
-      value: cdktf.numberToHclTerraform(struct!.minReplicaCount),
+      value: cdktn.numberToHclTerraform(struct!.minReplicaCount),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     autoscaling_metric_specs: {
-      value: cdktf.listMapperHcl(vertexAiDeploymentResourcePoolDedicatedResourcesAutoscalingMetricSpecsToHclTerraform, true)(struct!.autoscalingMetricSpecs),
+      value: cdktn.listMapperHcl(vertexAiDeploymentResourcePoolDedicatedResourcesAutoscalingMetricSpecsToHclTerraform, true)(struct!.autoscalingMetricSpecs),
       isBlock: true,
       type: "list",
       storageClassType: "VertexAiDeploymentResourcePoolDedicatedResourcesAutoscalingMetricSpecsList",
@@ -431,14 +431,14 @@ export function vertexAiDeploymentResourcePoolDedicatedResourcesToHclTerraform(s
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class VertexAiDeploymentResourcePoolDedicatedResourcesOutputReference extends cdktf.ComplexObject {
+export class VertexAiDeploymentResourcePoolDedicatedResourcesOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -515,7 +515,7 @@ export class VertexAiDeploymentResourcePoolDedicatedResourcesOutputReference ext
   public get autoscalingMetricSpecs() {
     return this._autoscalingMetricSpecs;
   }
-  public putAutoscalingMetricSpecs(value: VertexAiDeploymentResourcePoolDedicatedResourcesAutoscalingMetricSpecs[] | cdktf.IResolvable) {
+  public putAutoscalingMetricSpecs(value: VertexAiDeploymentResourcePoolDedicatedResourcesAutoscalingMetricSpecs[] | cdktn.IResolvable) {
     this._autoscalingMetricSpecs.internalValue = value;
   }
   public resetAutoscalingMetricSpecs() {
@@ -550,32 +550,32 @@ export interface VertexAiDeploymentResourcePoolTimeouts {
   readonly delete?: string;
 }
 
-export function vertexAiDeploymentResourcePoolTimeoutsToTerraform(struct?: VertexAiDeploymentResourcePoolTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function vertexAiDeploymentResourcePoolTimeoutsToTerraform(struct?: VertexAiDeploymentResourcePoolTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    create: cdktf.stringToTerraform(struct!.create),
-    delete: cdktf.stringToTerraform(struct!.delete),
+    create: cdktn.stringToTerraform(struct!.create),
+    delete: cdktn.stringToTerraform(struct!.delete),
   }
 }
 
 
-export function vertexAiDeploymentResourcePoolTimeoutsToHclTerraform(struct?: VertexAiDeploymentResourcePoolTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function vertexAiDeploymentResourcePoolTimeoutsToHclTerraform(struct?: VertexAiDeploymentResourcePoolTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     create: {
-      value: cdktf.stringToHclTerraform(struct!.create),
+      value: cdktn.stringToHclTerraform(struct!.create),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     delete: {
-      value: cdktf.stringToHclTerraform(struct!.delete),
+      value: cdktn.stringToHclTerraform(struct!.delete),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -586,19 +586,19 @@ export function vertexAiDeploymentResourcePoolTimeoutsToHclTerraform(struct?: Ve
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class VertexAiDeploymentResourcePoolTimeoutsOutputReference extends cdktf.ComplexObject {
+export class VertexAiDeploymentResourcePoolTimeoutsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): VertexAiDeploymentResourcePoolTimeouts | cdktf.IResolvable | undefined {
+  public get internalValue(): VertexAiDeploymentResourcePoolTimeouts | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -615,14 +615,14 @@ export class VertexAiDeploymentResourcePoolTimeoutsOutputReference extends cdktf
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: VertexAiDeploymentResourcePoolTimeouts | cdktf.IResolvable | undefined) {
+  public set internalValue(value: VertexAiDeploymentResourcePoolTimeouts | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._create = undefined;
       this._delete = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -670,7 +670,7 @@ export class VertexAiDeploymentResourcePoolTimeoutsOutputReference extends cdktf
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/vertex_ai_deployment_resource_pool google_vertex_ai_deployment_resource_pool}
 */
-export class VertexAiDeploymentResourcePool extends cdktf.TerraformResource {
+export class VertexAiDeploymentResourcePool extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -681,14 +681,14 @@ export class VertexAiDeploymentResourcePool extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a VertexAiDeploymentResourcePool resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a VertexAiDeploymentResourcePool resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the VertexAiDeploymentResourcePool to import
   * @param importFromId The id of the existing VertexAiDeploymentResourcePool that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/vertex_ai_deployment_resource_pool#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the VertexAiDeploymentResourcePool to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "google_vertex_ai_deployment_resource_pool", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "google_vertex_ai_deployment_resource_pool", importId: importFromId, provider });
       }
 
   // ===========
@@ -834,10 +834,10 @@ export class VertexAiDeploymentResourcePool extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      id: cdktf.stringToTerraform(this._id),
-      name: cdktf.stringToTerraform(this._name),
-      project: cdktf.stringToTerraform(this._project),
-      region: cdktf.stringToTerraform(this._region),
+      id: cdktn.stringToTerraform(this._id),
+      name: cdktn.stringToTerraform(this._name),
+      project: cdktn.stringToTerraform(this._project),
+      region: cdktn.stringToTerraform(this._region),
       dedicated_resources: vertexAiDeploymentResourcePoolDedicatedResourcesToTerraform(this._dedicatedResources.internalValue),
       timeouts: vertexAiDeploymentResourcePoolTimeoutsToTerraform(this._timeouts.internalValue),
     };
@@ -846,25 +846,25 @@ export class VertexAiDeploymentResourcePool extends cdktf.TerraformResource {
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       name: {
-        value: cdktf.stringToHclTerraform(this._name),
+        value: cdktn.stringToHclTerraform(this._name),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       project: {
-        value: cdktf.stringToHclTerraform(this._project),
+        value: cdktn.stringToHclTerraform(this._project),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       region: {
-        value: cdktf.stringToHclTerraform(this._region),
+        value: cdktn.stringToHclTerraform(this._region),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

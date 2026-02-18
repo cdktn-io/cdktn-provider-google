@@ -7,17 +7,17 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface ApigeeFlowhookConfig extends cdktf.TerraformMetaArguments {
+export interface ApigeeFlowhookConfig extends cdktn.TerraformMetaArguments {
   /**
   * Flag that specifies whether execution should continue if the flow hook throws an exception. Set to true to continue execution. Set to false to stop execution if the flow hook throws an exception. Defaults to true.
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/apigee_flowhook#continue_on_error ApigeeFlowhook#continue_on_error}
   */
-  readonly continueOnError?: boolean | cdktf.IResolvable;
+  readonly continueOnError?: boolean | cdktn.IResolvable;
   /**
   * Description of the flow hook.
   *
@@ -73,32 +73,32 @@ export interface ApigeeFlowhookTimeouts {
   readonly delete?: string;
 }
 
-export function apigeeFlowhookTimeoutsToTerraform(struct?: ApigeeFlowhookTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function apigeeFlowhookTimeoutsToTerraform(struct?: ApigeeFlowhookTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    create: cdktf.stringToTerraform(struct!.create),
-    delete: cdktf.stringToTerraform(struct!.delete),
+    create: cdktn.stringToTerraform(struct!.create),
+    delete: cdktn.stringToTerraform(struct!.delete),
   }
 }
 
 
-export function apigeeFlowhookTimeoutsToHclTerraform(struct?: ApigeeFlowhookTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function apigeeFlowhookTimeoutsToHclTerraform(struct?: ApigeeFlowhookTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     create: {
-      value: cdktf.stringToHclTerraform(struct!.create),
+      value: cdktn.stringToHclTerraform(struct!.create),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     delete: {
-      value: cdktf.stringToHclTerraform(struct!.delete),
+      value: cdktn.stringToHclTerraform(struct!.delete),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -109,19 +109,19 @@ export function apigeeFlowhookTimeoutsToHclTerraform(struct?: ApigeeFlowhookTime
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class ApigeeFlowhookTimeoutsOutputReference extends cdktf.ComplexObject {
+export class ApigeeFlowhookTimeoutsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): ApigeeFlowhookTimeouts | cdktf.IResolvable | undefined {
+  public get internalValue(): ApigeeFlowhookTimeouts | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -138,14 +138,14 @@ export class ApigeeFlowhookTimeoutsOutputReference extends cdktf.ComplexObject {
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: ApigeeFlowhookTimeouts | cdktf.IResolvable | undefined) {
+  public set internalValue(value: ApigeeFlowhookTimeouts | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._create = undefined;
       this._delete = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -193,7 +193,7 @@ export class ApigeeFlowhookTimeoutsOutputReference extends cdktf.ComplexObject {
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/apigee_flowhook google_apigee_flowhook}
 */
-export class ApigeeFlowhook extends cdktf.TerraformResource {
+export class ApigeeFlowhook extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -204,14 +204,14 @@ export class ApigeeFlowhook extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a ApigeeFlowhook resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a ApigeeFlowhook resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the ApigeeFlowhook to import
   * @param importFromId The id of the existing ApigeeFlowhook that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/apigee_flowhook#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the ApigeeFlowhook to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "google_apigee_flowhook", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "google_apigee_flowhook", importId: importFromId, provider });
       }
 
   // ===========
@@ -256,11 +256,11 @@ export class ApigeeFlowhook extends cdktf.TerraformResource {
   // ==========
 
   // continue_on_error - computed: false, optional: true, required: false
-  private _continueOnError?: boolean | cdktf.IResolvable; 
+  private _continueOnError?: boolean | cdktn.IResolvable; 
   public get continueOnError() {
     return this.getBooleanAttribute('continue_on_error');
   }
-  public set continueOnError(value: boolean | cdktf.IResolvable) {
+  public set continueOnError(value: boolean | cdktn.IResolvable) {
     this._continueOnError = value;
   }
   public resetContinueOnError() {
@@ -377,13 +377,13 @@ export class ApigeeFlowhook extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      continue_on_error: cdktf.booleanToTerraform(this._continueOnError),
-      description: cdktf.stringToTerraform(this._description),
-      environment: cdktf.stringToTerraform(this._environment),
-      flow_hook_point: cdktf.stringToTerraform(this._flowHookPoint),
-      id: cdktf.stringToTerraform(this._id),
-      org_id: cdktf.stringToTerraform(this._orgId),
-      sharedflow: cdktf.stringToTerraform(this._sharedflow),
+      continue_on_error: cdktn.booleanToTerraform(this._continueOnError),
+      description: cdktn.stringToTerraform(this._description),
+      environment: cdktn.stringToTerraform(this._environment),
+      flow_hook_point: cdktn.stringToTerraform(this._flowHookPoint),
+      id: cdktn.stringToTerraform(this._id),
+      org_id: cdktn.stringToTerraform(this._orgId),
+      sharedflow: cdktn.stringToTerraform(this._sharedflow),
       timeouts: apigeeFlowhookTimeoutsToTerraform(this._timeouts.internalValue),
     };
   }
@@ -391,43 +391,43 @@ export class ApigeeFlowhook extends cdktf.TerraformResource {
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       continue_on_error: {
-        value: cdktf.booleanToHclTerraform(this._continueOnError),
+        value: cdktn.booleanToHclTerraform(this._continueOnError),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       description: {
-        value: cdktf.stringToHclTerraform(this._description),
+        value: cdktn.stringToHclTerraform(this._description),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       environment: {
-        value: cdktf.stringToHclTerraform(this._environment),
+        value: cdktn.stringToHclTerraform(this._environment),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       flow_hook_point: {
-        value: cdktf.stringToHclTerraform(this._flowHookPoint),
+        value: cdktn.stringToHclTerraform(this._flowHookPoint),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       org_id: {
-        value: cdktf.stringToHclTerraform(this._orgId),
+        value: cdktn.stringToHclTerraform(this._orgId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       sharedflow: {
-        value: cdktf.stringToHclTerraform(this._sharedflow),
+        value: cdktn.stringToHclTerraform(this._sharedflow),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

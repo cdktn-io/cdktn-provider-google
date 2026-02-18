@@ -7,17 +7,17 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface LoggingFolderSettingsConfig extends cdktf.TerraformMetaArguments {
+export interface LoggingFolderSettingsConfig extends cdktn.TerraformMetaArguments {
   /**
   * If set to true, the _Default sink in newly created projects and folders will created in a disabled state. This can be used to automatically disable log storage if there is already an aggregated sink configured in the hierarchy. The _Default sink can be re-enabled manually if needed.
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/logging_folder_settings#disable_default_sink LoggingFolderSettings#disable_default_sink}
   */
-  readonly disableDefaultSink?: boolean | cdktf.IResolvable;
+  readonly disableDefaultSink?: boolean | cdktn.IResolvable;
   /**
   * The folder for which to retrieve settings.
   *
@@ -65,39 +65,39 @@ export interface LoggingFolderSettingsTimeouts {
   readonly update?: string;
 }
 
-export function loggingFolderSettingsTimeoutsToTerraform(struct?: LoggingFolderSettingsTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function loggingFolderSettingsTimeoutsToTerraform(struct?: LoggingFolderSettingsTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    create: cdktf.stringToTerraform(struct!.create),
-    delete: cdktf.stringToTerraform(struct!.delete),
-    update: cdktf.stringToTerraform(struct!.update),
+    create: cdktn.stringToTerraform(struct!.create),
+    delete: cdktn.stringToTerraform(struct!.delete),
+    update: cdktn.stringToTerraform(struct!.update),
   }
 }
 
 
-export function loggingFolderSettingsTimeoutsToHclTerraform(struct?: LoggingFolderSettingsTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function loggingFolderSettingsTimeoutsToHclTerraform(struct?: LoggingFolderSettingsTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     create: {
-      value: cdktf.stringToHclTerraform(struct!.create),
+      value: cdktn.stringToHclTerraform(struct!.create),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     delete: {
-      value: cdktf.stringToHclTerraform(struct!.delete),
+      value: cdktn.stringToHclTerraform(struct!.delete),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     update: {
-      value: cdktf.stringToHclTerraform(struct!.update),
+      value: cdktn.stringToHclTerraform(struct!.update),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -108,19 +108,19 @@ export function loggingFolderSettingsTimeoutsToHclTerraform(struct?: LoggingFold
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class LoggingFolderSettingsTimeoutsOutputReference extends cdktf.ComplexObject {
+export class LoggingFolderSettingsTimeoutsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): LoggingFolderSettingsTimeouts | cdktf.IResolvable | undefined {
+  public get internalValue(): LoggingFolderSettingsTimeouts | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -141,7 +141,7 @@ export class LoggingFolderSettingsTimeoutsOutputReference extends cdktf.ComplexO
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: LoggingFolderSettingsTimeouts | cdktf.IResolvable | undefined) {
+  public set internalValue(value: LoggingFolderSettingsTimeouts | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -149,7 +149,7 @@ export class LoggingFolderSettingsTimeoutsOutputReference extends cdktf.ComplexO
       this._delete = undefined;
       this._update = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -214,7 +214,7 @@ export class LoggingFolderSettingsTimeoutsOutputReference extends cdktf.ComplexO
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/logging_folder_settings google_logging_folder_settings}
 */
-export class LoggingFolderSettings extends cdktf.TerraformResource {
+export class LoggingFolderSettings extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -225,14 +225,14 @@ export class LoggingFolderSettings extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a LoggingFolderSettings resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a LoggingFolderSettings resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the LoggingFolderSettings to import
   * @param importFromId The id of the existing LoggingFolderSettings that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/logging_folder_settings#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the LoggingFolderSettings to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "google_logging_folder_settings", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "google_logging_folder_settings", importId: importFromId, provider });
       }
 
   // ===========
@@ -275,11 +275,11 @@ export class LoggingFolderSettings extends cdktf.TerraformResource {
   // ==========
 
   // disable_default_sink - computed: true, optional: true, required: false
-  private _disableDefaultSink?: boolean | cdktf.IResolvable; 
+  private _disableDefaultSink?: boolean | cdktn.IResolvable; 
   public get disableDefaultSink() {
     return this.getBooleanAttribute('disable_default_sink');
   }
-  public set disableDefaultSink(value: boolean | cdktf.IResolvable) {
+  public set disableDefaultSink(value: boolean | cdktn.IResolvable) {
     this._disableDefaultSink = value;
   }
   public resetDisableDefaultSink() {
@@ -388,11 +388,11 @@ export class LoggingFolderSettings extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      disable_default_sink: cdktf.booleanToTerraform(this._disableDefaultSink),
-      folder: cdktf.stringToTerraform(this._folder),
-      id: cdktf.stringToTerraform(this._id),
-      kms_key_name: cdktf.stringToTerraform(this._kmsKeyName),
-      storage_location: cdktf.stringToTerraform(this._storageLocation),
+      disable_default_sink: cdktn.booleanToTerraform(this._disableDefaultSink),
+      folder: cdktn.stringToTerraform(this._folder),
+      id: cdktn.stringToTerraform(this._id),
+      kms_key_name: cdktn.stringToTerraform(this._kmsKeyName),
+      storage_location: cdktn.stringToTerraform(this._storageLocation),
       timeouts: loggingFolderSettingsTimeoutsToTerraform(this._timeouts.internalValue),
     };
   }
@@ -400,31 +400,31 @@ export class LoggingFolderSettings extends cdktf.TerraformResource {
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       disable_default_sink: {
-        value: cdktf.booleanToHclTerraform(this._disableDefaultSink),
+        value: cdktn.booleanToHclTerraform(this._disableDefaultSink),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       folder: {
-        value: cdktf.stringToHclTerraform(this._folder),
+        value: cdktn.stringToHclTerraform(this._folder),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       kms_key_name: {
-        value: cdktf.stringToHclTerraform(this._kmsKeyName),
+        value: cdktn.stringToHclTerraform(this._kmsKeyName),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       storage_location: {
-        value: cdktf.stringToHclTerraform(this._storageLocation),
+        value: cdktn.stringToHclTerraform(this._storageLocation),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

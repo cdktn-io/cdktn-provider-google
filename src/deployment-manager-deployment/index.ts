@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface DeploymentManagerDeploymentConfig extends cdktf.TerraformMetaArguments {
+export interface DeploymentManagerDeploymentConfig extends cdktn.TerraformMetaArguments {
   /**
   * Set the policy to use for creating new resources. Only used on
   * create and update. Valid values are 'CREATE_OR_ACQUIRE' (default) or
@@ -64,7 +64,7 @@ export interface DeploymentManagerDeploymentConfig extends cdktf.TerraformMetaAr
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/deployment_manager_deployment#preview DeploymentManagerDeployment#preview}
   */
-  readonly preview?: boolean | cdktf.IResolvable;
+  readonly preview?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/deployment_manager_deployment#project DeploymentManagerDeployment#project}
   */
@@ -74,7 +74,7 @@ export interface DeploymentManagerDeploymentConfig extends cdktf.TerraformMetaAr
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/deployment_manager_deployment#labels DeploymentManagerDeployment#labels}
   */
-  readonly labels?: DeploymentManagerDeploymentLabels[] | cdktf.IResolvable;
+  readonly labels?: DeploymentManagerDeploymentLabels[] | cdktn.IResolvable;
   /**
   * target block
   *
@@ -103,32 +103,32 @@ export interface DeploymentManagerDeploymentLabels {
   readonly value?: string;
 }
 
-export function deploymentManagerDeploymentLabelsToTerraform(struct?: DeploymentManagerDeploymentLabels | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function deploymentManagerDeploymentLabelsToTerraform(struct?: DeploymentManagerDeploymentLabels | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    key: cdktf.stringToTerraform(struct!.key),
-    value: cdktf.stringToTerraform(struct!.value),
+    key: cdktn.stringToTerraform(struct!.key),
+    value: cdktn.stringToTerraform(struct!.value),
   }
 }
 
 
-export function deploymentManagerDeploymentLabelsToHclTerraform(struct?: DeploymentManagerDeploymentLabels | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function deploymentManagerDeploymentLabelsToHclTerraform(struct?: DeploymentManagerDeploymentLabels | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     key: {
-      value: cdktf.stringToHclTerraform(struct!.key),
+      value: cdktn.stringToHclTerraform(struct!.key),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     value: {
-      value: cdktf.stringToHclTerraform(struct!.value),
+      value: cdktn.stringToHclTerraform(struct!.value),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -139,9 +139,9 @@ export function deploymentManagerDeploymentLabelsToHclTerraform(struct?: Deploym
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class DeploymentManagerDeploymentLabelsOutputReference extends cdktf.ComplexObject {
+export class DeploymentManagerDeploymentLabelsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -149,11 +149,11 @@ export class DeploymentManagerDeploymentLabelsOutputReference extends cdktf.Comp
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): DeploymentManagerDeploymentLabels | cdktf.IResolvable | undefined {
+  public get internalValue(): DeploymentManagerDeploymentLabels | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -170,14 +170,14 @@ export class DeploymentManagerDeploymentLabelsOutputReference extends cdktf.Comp
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: DeploymentManagerDeploymentLabels | cdktf.IResolvable | undefined) {
+  public set internalValue(value: DeploymentManagerDeploymentLabels | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._key = undefined;
       this._value = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -222,15 +222,15 @@ export class DeploymentManagerDeploymentLabelsOutputReference extends cdktf.Comp
   }
 }
 
-export class DeploymentManagerDeploymentLabelsList extends cdktf.ComplexList {
-  public internalValue? : DeploymentManagerDeploymentLabels[] | cdktf.IResolvable
+export class DeploymentManagerDeploymentLabelsList extends cdktn.ComplexList {
+  public internalValue? : DeploymentManagerDeploymentLabels[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -251,24 +251,24 @@ export interface DeploymentManagerDeploymentTargetConfig {
 }
 
 export function deploymentManagerDeploymentTargetConfigToTerraform(struct?: DeploymentManagerDeploymentTargetConfigOutputReference | DeploymentManagerDeploymentTargetConfig): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    content: cdktf.stringToTerraform(struct!.content),
+    content: cdktn.stringToTerraform(struct!.content),
   }
 }
 
 
 export function deploymentManagerDeploymentTargetConfigToHclTerraform(struct?: DeploymentManagerDeploymentTargetConfigOutputReference | DeploymentManagerDeploymentTargetConfig): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     content: {
-      value: cdktf.stringToHclTerraform(struct!.content),
+      value: cdktn.stringToHclTerraform(struct!.content),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -279,14 +279,14 @@ export function deploymentManagerDeploymentTargetConfigToHclTerraform(struct?: D
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class DeploymentManagerDeploymentTargetConfigOutputReference extends cdktf.ComplexObject {
+export class DeploymentManagerDeploymentTargetConfigOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -340,32 +340,32 @@ export interface DeploymentManagerDeploymentTargetImports {
   readonly name?: string;
 }
 
-export function deploymentManagerDeploymentTargetImportsToTerraform(struct?: DeploymentManagerDeploymentTargetImports | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function deploymentManagerDeploymentTargetImportsToTerraform(struct?: DeploymentManagerDeploymentTargetImports | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    content: cdktf.stringToTerraform(struct!.content),
-    name: cdktf.stringToTerraform(struct!.name),
+    content: cdktn.stringToTerraform(struct!.content),
+    name: cdktn.stringToTerraform(struct!.name),
   }
 }
 
 
-export function deploymentManagerDeploymentTargetImportsToHclTerraform(struct?: DeploymentManagerDeploymentTargetImports | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function deploymentManagerDeploymentTargetImportsToHclTerraform(struct?: DeploymentManagerDeploymentTargetImports | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     content: {
-      value: cdktf.stringToHclTerraform(struct!.content),
+      value: cdktn.stringToHclTerraform(struct!.content),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     name: {
-      value: cdktf.stringToHclTerraform(struct!.name),
+      value: cdktn.stringToHclTerraform(struct!.name),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -376,9 +376,9 @@ export function deploymentManagerDeploymentTargetImportsToHclTerraform(struct?: 
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class DeploymentManagerDeploymentTargetImportsOutputReference extends cdktf.ComplexObject {
+export class DeploymentManagerDeploymentTargetImportsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -386,11 +386,11 @@ export class DeploymentManagerDeploymentTargetImportsOutputReference extends cdk
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): DeploymentManagerDeploymentTargetImports | cdktf.IResolvable | undefined {
+  public get internalValue(): DeploymentManagerDeploymentTargetImports | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -407,14 +407,14 @@ export class DeploymentManagerDeploymentTargetImportsOutputReference extends cdk
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: DeploymentManagerDeploymentTargetImports | cdktf.IResolvable | undefined) {
+  public set internalValue(value: DeploymentManagerDeploymentTargetImports | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._content = undefined;
       this._name = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -459,15 +459,15 @@ export class DeploymentManagerDeploymentTargetImportsOutputReference extends cdk
   }
 }
 
-export class DeploymentManagerDeploymentTargetImportsList extends cdktf.ComplexList {
-  public internalValue? : DeploymentManagerDeploymentTargetImports[] | cdktf.IResolvable
+export class DeploymentManagerDeploymentTargetImportsList extends cdktn.ComplexList {
+  public internalValue? : DeploymentManagerDeploymentTargetImports[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -490,24 +490,24 @@ export interface DeploymentManagerDeploymentTarget {
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/deployment_manager_deployment#imports DeploymentManagerDeployment#imports}
   */
-  readonly imports?: DeploymentManagerDeploymentTargetImports[] | cdktf.IResolvable;
+  readonly imports?: DeploymentManagerDeploymentTargetImports[] | cdktn.IResolvable;
 }
 
 export function deploymentManagerDeploymentTargetToTerraform(struct?: DeploymentManagerDeploymentTargetOutputReference | DeploymentManagerDeploymentTarget): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
     config: deploymentManagerDeploymentTargetConfigToTerraform(struct!.config),
-    imports: cdktf.listMapper(deploymentManagerDeploymentTargetImportsToTerraform, true)(struct!.imports),
+    imports: cdktn.listMapper(deploymentManagerDeploymentTargetImportsToTerraform, true)(struct!.imports),
   }
 }
 
 
 export function deploymentManagerDeploymentTargetToHclTerraform(struct?: DeploymentManagerDeploymentTargetOutputReference | DeploymentManagerDeploymentTarget): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -518,7 +518,7 @@ export function deploymentManagerDeploymentTargetToHclTerraform(struct?: Deploym
       storageClassType: "DeploymentManagerDeploymentTargetConfigList",
     },
     imports: {
-      value: cdktf.listMapperHcl(deploymentManagerDeploymentTargetImportsToHclTerraform, true)(struct!.imports),
+      value: cdktn.listMapperHcl(deploymentManagerDeploymentTargetImportsToHclTerraform, true)(struct!.imports),
       isBlock: true,
       type: "list",
       storageClassType: "DeploymentManagerDeploymentTargetImportsList",
@@ -529,14 +529,14 @@ export function deploymentManagerDeploymentTargetToHclTerraform(struct?: Deploym
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class DeploymentManagerDeploymentTargetOutputReference extends cdktf.ComplexObject {
+export class DeploymentManagerDeploymentTargetOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -585,7 +585,7 @@ export class DeploymentManagerDeploymentTargetOutputReference extends cdktf.Comp
   public get imports() {
     return this._imports;
   }
-  public putImports(value: DeploymentManagerDeploymentTargetImports[] | cdktf.IResolvable) {
+  public putImports(value: DeploymentManagerDeploymentTargetImports[] | cdktn.IResolvable) {
     this._imports.internalValue = value;
   }
   public resetImports() {
@@ -611,39 +611,39 @@ export interface DeploymentManagerDeploymentTimeouts {
   readonly update?: string;
 }
 
-export function deploymentManagerDeploymentTimeoutsToTerraform(struct?: DeploymentManagerDeploymentTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function deploymentManagerDeploymentTimeoutsToTerraform(struct?: DeploymentManagerDeploymentTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    create: cdktf.stringToTerraform(struct!.create),
-    delete: cdktf.stringToTerraform(struct!.delete),
-    update: cdktf.stringToTerraform(struct!.update),
+    create: cdktn.stringToTerraform(struct!.create),
+    delete: cdktn.stringToTerraform(struct!.delete),
+    update: cdktn.stringToTerraform(struct!.update),
   }
 }
 
 
-export function deploymentManagerDeploymentTimeoutsToHclTerraform(struct?: DeploymentManagerDeploymentTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function deploymentManagerDeploymentTimeoutsToHclTerraform(struct?: DeploymentManagerDeploymentTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     create: {
-      value: cdktf.stringToHclTerraform(struct!.create),
+      value: cdktn.stringToHclTerraform(struct!.create),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     delete: {
-      value: cdktf.stringToHclTerraform(struct!.delete),
+      value: cdktn.stringToHclTerraform(struct!.delete),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     update: {
-      value: cdktf.stringToHclTerraform(struct!.update),
+      value: cdktn.stringToHclTerraform(struct!.update),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -654,19 +654,19 @@ export function deploymentManagerDeploymentTimeoutsToHclTerraform(struct?: Deplo
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class DeploymentManagerDeploymentTimeoutsOutputReference extends cdktf.ComplexObject {
+export class DeploymentManagerDeploymentTimeoutsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): DeploymentManagerDeploymentTimeouts | cdktf.IResolvable | undefined {
+  public get internalValue(): DeploymentManagerDeploymentTimeouts | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -687,7 +687,7 @@ export class DeploymentManagerDeploymentTimeoutsOutputReference extends cdktf.Co
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: DeploymentManagerDeploymentTimeouts | cdktf.IResolvable | undefined) {
+  public set internalValue(value: DeploymentManagerDeploymentTimeouts | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -695,7 +695,7 @@ export class DeploymentManagerDeploymentTimeoutsOutputReference extends cdktf.Co
       this._delete = undefined;
       this._update = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -760,7 +760,7 @@ export class DeploymentManagerDeploymentTimeoutsOutputReference extends cdktf.Co
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/deployment_manager_deployment google_deployment_manager_deployment}
 */
-export class DeploymentManagerDeployment extends cdktf.TerraformResource {
+export class DeploymentManagerDeployment extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -771,14 +771,14 @@ export class DeploymentManagerDeployment extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a DeploymentManagerDeployment resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a DeploymentManagerDeployment resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DeploymentManagerDeployment to import
   * @param importFromId The id of the existing DeploymentManagerDeployment that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/deployment_manager_deployment#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DeploymentManagerDeployment to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "google_deployment_manager_deployment", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "google_deployment_manager_deployment", importId: importFromId, provider });
       }
 
   // ===========
@@ -912,11 +912,11 @@ export class DeploymentManagerDeployment extends cdktf.TerraformResource {
   }
 
   // preview - computed: false, optional: true, required: false
-  private _preview?: boolean | cdktf.IResolvable; 
+  private _preview?: boolean | cdktn.IResolvable; 
   public get preview() {
     return this.getBooleanAttribute('preview');
   }
-  public set preview(value: boolean | cdktf.IResolvable) {
+  public set preview(value: boolean | cdktn.IResolvable) {
     this._preview = value;
   }
   public resetPreview() {
@@ -953,7 +953,7 @@ export class DeploymentManagerDeployment extends cdktf.TerraformResource {
   public get labels() {
     return this._labels;
   }
-  public putLabels(value: DeploymentManagerDeploymentLabels[] | cdktf.IResolvable) {
+  public putLabels(value: DeploymentManagerDeploymentLabels[] | cdktn.IResolvable) {
     this._labels.internalValue = value;
   }
   public resetLabels() {
@@ -999,14 +999,14 @@ export class DeploymentManagerDeployment extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      create_policy: cdktf.stringToTerraform(this._createPolicy),
-      delete_policy: cdktf.stringToTerraform(this._deletePolicy),
-      description: cdktf.stringToTerraform(this._description),
-      id: cdktf.stringToTerraform(this._id),
-      name: cdktf.stringToTerraform(this._name),
-      preview: cdktf.booleanToTerraform(this._preview),
-      project: cdktf.stringToTerraform(this._project),
-      labels: cdktf.listMapper(deploymentManagerDeploymentLabelsToTerraform, true)(this._labels.internalValue),
+      create_policy: cdktn.stringToTerraform(this._createPolicy),
+      delete_policy: cdktn.stringToTerraform(this._deletePolicy),
+      description: cdktn.stringToTerraform(this._description),
+      id: cdktn.stringToTerraform(this._id),
+      name: cdktn.stringToTerraform(this._name),
+      preview: cdktn.booleanToTerraform(this._preview),
+      project: cdktn.stringToTerraform(this._project),
+      labels: cdktn.listMapper(deploymentManagerDeploymentLabelsToTerraform, true)(this._labels.internalValue),
       target: deploymentManagerDeploymentTargetToTerraform(this._target.internalValue),
       timeouts: deploymentManagerDeploymentTimeoutsToTerraform(this._timeouts.internalValue),
     };
@@ -1015,49 +1015,49 @@ export class DeploymentManagerDeployment extends cdktf.TerraformResource {
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       create_policy: {
-        value: cdktf.stringToHclTerraform(this._createPolicy),
+        value: cdktn.stringToHclTerraform(this._createPolicy),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       delete_policy: {
-        value: cdktf.stringToHclTerraform(this._deletePolicy),
+        value: cdktn.stringToHclTerraform(this._deletePolicy),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       description: {
-        value: cdktf.stringToHclTerraform(this._description),
+        value: cdktn.stringToHclTerraform(this._description),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       name: {
-        value: cdktf.stringToHclTerraform(this._name),
+        value: cdktn.stringToHclTerraform(this._name),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       preview: {
-        value: cdktf.booleanToHclTerraform(this._preview),
+        value: cdktn.booleanToHclTerraform(this._preview),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       project: {
-        value: cdktf.stringToHclTerraform(this._project),
+        value: cdktn.stringToHclTerraform(this._project),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       labels: {
-        value: cdktf.listMapperHcl(deploymentManagerDeploymentLabelsToHclTerraform, true)(this._labels.internalValue),
+        value: cdktn.listMapperHcl(deploymentManagerDeploymentLabelsToHclTerraform, true)(this._labels.internalValue),
         isBlock: true,
         type: "set",
         storageClassType: "DeploymentManagerDeploymentLabelsList",

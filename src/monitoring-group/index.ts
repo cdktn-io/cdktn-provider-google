@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface MonitoringGroupConfig extends cdktf.TerraformMetaArguments {
+export interface MonitoringGroupConfig extends cdktn.TerraformMetaArguments {
   /**
   * A user-assigned name for this group, used only for display
   * purposes.
@@ -40,7 +40,7 @@ export interface MonitoringGroupConfig extends cdktf.TerraformMetaArguments {
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/monitoring_group#is_cluster MonitoringGroup#is_cluster}
   */
-  readonly isCluster?: boolean | cdktf.IResolvable;
+  readonly isCluster?: boolean | cdktn.IResolvable;
   /**
   * The name of the group's parent, if it has one. The format is
   * "projects/{project_id_or_number}/groups/{group_id}". For
@@ -75,39 +75,39 @@ export interface MonitoringGroupTimeouts {
   readonly update?: string;
 }
 
-export function monitoringGroupTimeoutsToTerraform(struct?: MonitoringGroupTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function monitoringGroupTimeoutsToTerraform(struct?: MonitoringGroupTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    create: cdktf.stringToTerraform(struct!.create),
-    delete: cdktf.stringToTerraform(struct!.delete),
-    update: cdktf.stringToTerraform(struct!.update),
+    create: cdktn.stringToTerraform(struct!.create),
+    delete: cdktn.stringToTerraform(struct!.delete),
+    update: cdktn.stringToTerraform(struct!.update),
   }
 }
 
 
-export function monitoringGroupTimeoutsToHclTerraform(struct?: MonitoringGroupTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function monitoringGroupTimeoutsToHclTerraform(struct?: MonitoringGroupTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     create: {
-      value: cdktf.stringToHclTerraform(struct!.create),
+      value: cdktn.stringToHclTerraform(struct!.create),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     delete: {
-      value: cdktf.stringToHclTerraform(struct!.delete),
+      value: cdktn.stringToHclTerraform(struct!.delete),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     update: {
-      value: cdktf.stringToHclTerraform(struct!.update),
+      value: cdktn.stringToHclTerraform(struct!.update),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -118,19 +118,19 @@ export function monitoringGroupTimeoutsToHclTerraform(struct?: MonitoringGroupTi
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class MonitoringGroupTimeoutsOutputReference extends cdktf.ComplexObject {
+export class MonitoringGroupTimeoutsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): MonitoringGroupTimeouts | cdktf.IResolvable | undefined {
+  public get internalValue(): MonitoringGroupTimeouts | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -151,7 +151,7 @@ export class MonitoringGroupTimeoutsOutputReference extends cdktf.ComplexObject 
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: MonitoringGroupTimeouts | cdktf.IResolvable | undefined) {
+  public set internalValue(value: MonitoringGroupTimeouts | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -159,7 +159,7 @@ export class MonitoringGroupTimeoutsOutputReference extends cdktf.ComplexObject 
       this._delete = undefined;
       this._update = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -224,7 +224,7 @@ export class MonitoringGroupTimeoutsOutputReference extends cdktf.ComplexObject 
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/monitoring_group google_monitoring_group}
 */
-export class MonitoringGroup extends cdktf.TerraformResource {
+export class MonitoringGroup extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -235,14 +235,14 @@ export class MonitoringGroup extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a MonitoringGroup resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a MonitoringGroup resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the MonitoringGroup to import
   * @param importFromId The id of the existing MonitoringGroup that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/monitoring_group#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the MonitoringGroup to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "google_monitoring_group", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "google_monitoring_group", importId: importFromId, provider });
       }
 
   // ===========
@@ -328,11 +328,11 @@ export class MonitoringGroup extends cdktf.TerraformResource {
   }
 
   // is_cluster - computed: false, optional: true, required: false
-  private _isCluster?: boolean | cdktf.IResolvable; 
+  private _isCluster?: boolean | cdktn.IResolvable; 
   public get isCluster() {
     return this.getBooleanAttribute('is_cluster');
   }
-  public set isCluster(value: boolean | cdktf.IResolvable) {
+  public set isCluster(value: boolean | cdktn.IResolvable) {
     this._isCluster = value;
   }
   public resetIsCluster() {
@@ -402,12 +402,12 @@ export class MonitoringGroup extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      display_name: cdktf.stringToTerraform(this._displayName),
-      filter: cdktf.stringToTerraform(this._filter),
-      id: cdktf.stringToTerraform(this._id),
-      is_cluster: cdktf.booleanToTerraform(this._isCluster),
-      parent_name: cdktf.stringToTerraform(this._parentName),
-      project: cdktf.stringToTerraform(this._project),
+      display_name: cdktn.stringToTerraform(this._displayName),
+      filter: cdktn.stringToTerraform(this._filter),
+      id: cdktn.stringToTerraform(this._id),
+      is_cluster: cdktn.booleanToTerraform(this._isCluster),
+      parent_name: cdktn.stringToTerraform(this._parentName),
+      project: cdktn.stringToTerraform(this._project),
       timeouts: monitoringGroupTimeoutsToTerraform(this._timeouts.internalValue),
     };
   }
@@ -415,37 +415,37 @@ export class MonitoringGroup extends cdktf.TerraformResource {
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       display_name: {
-        value: cdktf.stringToHclTerraform(this._displayName),
+        value: cdktn.stringToHclTerraform(this._displayName),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       filter: {
-        value: cdktf.stringToHclTerraform(this._filter),
+        value: cdktn.stringToHclTerraform(this._filter),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       is_cluster: {
-        value: cdktf.booleanToHclTerraform(this._isCluster),
+        value: cdktn.booleanToHclTerraform(this._isCluster),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       parent_name: {
-        value: cdktf.stringToHclTerraform(this._parentName),
+        value: cdktn.stringToHclTerraform(this._parentName),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       project: {
-        value: cdktf.stringToHclTerraform(this._project),
+        value: cdktn.stringToHclTerraform(this._project),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

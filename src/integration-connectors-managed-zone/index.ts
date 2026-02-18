@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface IntegrationConnectorsManagedZoneConfig extends cdktf.TerraformMetaArguments {
+export interface IntegrationConnectorsManagedZoneConfig extends cdktn.TerraformMetaArguments {
   /**
   * Description of the resource.
   *
@@ -85,39 +85,39 @@ export interface IntegrationConnectorsManagedZoneTimeouts {
   readonly update?: string;
 }
 
-export function integrationConnectorsManagedZoneTimeoutsToTerraform(struct?: IntegrationConnectorsManagedZoneTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function integrationConnectorsManagedZoneTimeoutsToTerraform(struct?: IntegrationConnectorsManagedZoneTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    create: cdktf.stringToTerraform(struct!.create),
-    delete: cdktf.stringToTerraform(struct!.delete),
-    update: cdktf.stringToTerraform(struct!.update),
+    create: cdktn.stringToTerraform(struct!.create),
+    delete: cdktn.stringToTerraform(struct!.delete),
+    update: cdktn.stringToTerraform(struct!.update),
   }
 }
 
 
-export function integrationConnectorsManagedZoneTimeoutsToHclTerraform(struct?: IntegrationConnectorsManagedZoneTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function integrationConnectorsManagedZoneTimeoutsToHclTerraform(struct?: IntegrationConnectorsManagedZoneTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     create: {
-      value: cdktf.stringToHclTerraform(struct!.create),
+      value: cdktn.stringToHclTerraform(struct!.create),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     delete: {
-      value: cdktf.stringToHclTerraform(struct!.delete),
+      value: cdktn.stringToHclTerraform(struct!.delete),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     update: {
-      value: cdktf.stringToHclTerraform(struct!.update),
+      value: cdktn.stringToHclTerraform(struct!.update),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -128,19 +128,19 @@ export function integrationConnectorsManagedZoneTimeoutsToHclTerraform(struct?: 
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class IntegrationConnectorsManagedZoneTimeoutsOutputReference extends cdktf.ComplexObject {
+export class IntegrationConnectorsManagedZoneTimeoutsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): IntegrationConnectorsManagedZoneTimeouts | cdktf.IResolvable | undefined {
+  public get internalValue(): IntegrationConnectorsManagedZoneTimeouts | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -161,7 +161,7 @@ export class IntegrationConnectorsManagedZoneTimeoutsOutputReference extends cdk
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: IntegrationConnectorsManagedZoneTimeouts | cdktf.IResolvable | undefined) {
+  public set internalValue(value: IntegrationConnectorsManagedZoneTimeouts | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -169,7 +169,7 @@ export class IntegrationConnectorsManagedZoneTimeoutsOutputReference extends cdk
       this._delete = undefined;
       this._update = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -234,7 +234,7 @@ export class IntegrationConnectorsManagedZoneTimeoutsOutputReference extends cdk
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/integration_connectors_managed_zone google_integration_connectors_managed_zone}
 */
-export class IntegrationConnectorsManagedZone extends cdktf.TerraformResource {
+export class IntegrationConnectorsManagedZone extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -245,14 +245,14 @@ export class IntegrationConnectorsManagedZone extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a IntegrationConnectorsManagedZone resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a IntegrationConnectorsManagedZone resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the IntegrationConnectorsManagedZone to import
   * @param importFromId The id of the existing IntegrationConnectorsManagedZone that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/integration_connectors_managed_zone#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the IntegrationConnectorsManagedZone to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "google_integration_connectors_managed_zone", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "google_integration_connectors_managed_zone", importId: importFromId, provider });
       }
 
   // ===========
@@ -332,7 +332,7 @@ export class IntegrationConnectorsManagedZone extends cdktf.TerraformResource {
   }
 
   // effective_labels - computed: true, optional: false, required: false
-  private _effectiveLabels = new cdktf.StringMap(this, "effective_labels");
+  private _effectiveLabels = new cdktn.StringMap(this, "effective_labels");
   public get effectiveLabels() {
     return this._effectiveLabels;
   }
@@ -425,7 +425,7 @@ export class IntegrationConnectorsManagedZone extends cdktf.TerraformResource {
   }
 
   // terraform_labels - computed: true, optional: false, required: false
-  private _terraformLabels = new cdktf.StringMap(this, "terraform_labels");
+  private _terraformLabels = new cdktn.StringMap(this, "terraform_labels");
   public get terraformLabels() {
     return this._terraformLabels;
   }
@@ -457,14 +457,14 @@ export class IntegrationConnectorsManagedZone extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      description: cdktf.stringToTerraform(this._description),
-      dns: cdktf.stringToTerraform(this._dns),
-      id: cdktf.stringToTerraform(this._id),
-      labels: cdktf.hashMapper(cdktf.stringToTerraform)(this._labels),
-      name: cdktf.stringToTerraform(this._name),
-      project: cdktf.stringToTerraform(this._project),
-      target_project: cdktf.stringToTerraform(this._targetProject),
-      target_vpc: cdktf.stringToTerraform(this._targetVpc),
+      description: cdktn.stringToTerraform(this._description),
+      dns: cdktn.stringToTerraform(this._dns),
+      id: cdktn.stringToTerraform(this._id),
+      labels: cdktn.hashMapper(cdktn.stringToTerraform)(this._labels),
+      name: cdktn.stringToTerraform(this._name),
+      project: cdktn.stringToTerraform(this._project),
+      target_project: cdktn.stringToTerraform(this._targetProject),
+      target_vpc: cdktn.stringToTerraform(this._targetVpc),
       timeouts: integrationConnectorsManagedZoneTimeoutsToTerraform(this._timeouts.internalValue),
     };
   }
@@ -472,49 +472,49 @@ export class IntegrationConnectorsManagedZone extends cdktf.TerraformResource {
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       description: {
-        value: cdktf.stringToHclTerraform(this._description),
+        value: cdktn.stringToHclTerraform(this._description),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       dns: {
-        value: cdktf.stringToHclTerraform(this._dns),
+        value: cdktn.stringToHclTerraform(this._dns),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       labels: {
-        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._labels),
+        value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(this._labels),
         isBlock: false,
         type: "map",
         storageClassType: "stringMap",
       },
       name: {
-        value: cdktf.stringToHclTerraform(this._name),
+        value: cdktn.stringToHclTerraform(this._name),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       project: {
-        value: cdktf.stringToHclTerraform(this._project),
+        value: cdktn.stringToHclTerraform(this._project),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       target_project: {
-        value: cdktf.stringToHclTerraform(this._targetProject),
+        value: cdktn.stringToHclTerraform(this._targetProject),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       target_vpc: {
-        value: cdktf.stringToHclTerraform(this._targetVpc),
+        value: cdktn.stringToHclTerraform(this._targetVpc),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

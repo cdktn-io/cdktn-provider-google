@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface DataGoogleCertificateManagerCertificatesConfig extends cdktf.TerraformMetaArguments {
+export interface DataGoogleCertificateManagerCertificatesConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/data-sources/certificate_manager_certificates#filter DataGoogleCertificateManagerCertificates#filter}
   */
@@ -32,8 +32,8 @@ export interface DataGoogleCertificateManagerCertificatesCertificatesManagedAuth
 }
 
 export function dataGoogleCertificateManagerCertificatesCertificatesManagedAuthorizationAttemptInfoToTerraform(struct?: DataGoogleCertificateManagerCertificatesCertificatesManagedAuthorizationAttemptInfo): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -42,8 +42,8 @@ export function dataGoogleCertificateManagerCertificatesCertificatesManagedAutho
 
 
 export function dataGoogleCertificateManagerCertificatesCertificatesManagedAuthorizationAttemptInfoToHclTerraform(struct?: DataGoogleCertificateManagerCertificatesCertificatesManagedAuthorizationAttemptInfo): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -51,7 +51,7 @@ export function dataGoogleCertificateManagerCertificatesCertificatesManagedAutho
   return attrs;
 }
 
-export class DataGoogleCertificateManagerCertificatesCertificatesManagedAuthorizationAttemptInfoOutputReference extends cdktf.ComplexObject {
+export class DataGoogleCertificateManagerCertificatesCertificatesManagedAuthorizationAttemptInfoOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -60,7 +60,7 @@ export class DataGoogleCertificateManagerCertificatesCertificatesManagedAuthoriz
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -100,14 +100,14 @@ export class DataGoogleCertificateManagerCertificatesCertificatesManagedAuthoriz
   }
 }
 
-export class DataGoogleCertificateManagerCertificatesCertificatesManagedAuthorizationAttemptInfoList extends cdktf.ComplexList {
+export class DataGoogleCertificateManagerCertificatesCertificatesManagedAuthorizationAttemptInfoList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -122,8 +122,8 @@ export interface DataGoogleCertificateManagerCertificatesCertificatesManagedProv
 }
 
 export function dataGoogleCertificateManagerCertificatesCertificatesManagedProvisioningIssueToTerraform(struct?: DataGoogleCertificateManagerCertificatesCertificatesManagedProvisioningIssue): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -132,8 +132,8 @@ export function dataGoogleCertificateManagerCertificatesCertificatesManagedProvi
 
 
 export function dataGoogleCertificateManagerCertificatesCertificatesManagedProvisioningIssueToHclTerraform(struct?: DataGoogleCertificateManagerCertificatesCertificatesManagedProvisioningIssue): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -141,7 +141,7 @@ export function dataGoogleCertificateManagerCertificatesCertificatesManagedProvi
   return attrs;
 }
 
-export class DataGoogleCertificateManagerCertificatesCertificatesManagedProvisioningIssueOutputReference extends cdktf.ComplexObject {
+export class DataGoogleCertificateManagerCertificatesCertificatesManagedProvisioningIssueOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -150,7 +150,7 @@ export class DataGoogleCertificateManagerCertificatesCertificatesManagedProvisio
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -180,14 +180,14 @@ export class DataGoogleCertificateManagerCertificatesCertificatesManagedProvisio
   }
 }
 
-export class DataGoogleCertificateManagerCertificatesCertificatesManagedProvisioningIssueList extends cdktf.ComplexList {
+export class DataGoogleCertificateManagerCertificatesCertificatesManagedProvisioningIssueList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -202,8 +202,8 @@ export interface DataGoogleCertificateManagerCertificatesCertificatesManaged {
 }
 
 export function dataGoogleCertificateManagerCertificatesCertificatesManagedToTerraform(struct?: DataGoogleCertificateManagerCertificatesCertificatesManaged): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -212,8 +212,8 @@ export function dataGoogleCertificateManagerCertificatesCertificatesManagedToTer
 
 
 export function dataGoogleCertificateManagerCertificatesCertificatesManagedToHclTerraform(struct?: DataGoogleCertificateManagerCertificatesCertificatesManaged): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -221,7 +221,7 @@ export function dataGoogleCertificateManagerCertificatesCertificatesManagedToHcl
   return attrs;
 }
 
-export class DataGoogleCertificateManagerCertificatesCertificatesManagedOutputReference extends cdktf.ComplexObject {
+export class DataGoogleCertificateManagerCertificatesCertificatesManagedOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -230,7 +230,7 @@ export class DataGoogleCertificateManagerCertificatesCertificatesManagedOutputRe
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -282,14 +282,14 @@ export class DataGoogleCertificateManagerCertificatesCertificatesManagedOutputRe
   }
 }
 
-export class DataGoogleCertificateManagerCertificatesCertificatesManagedList extends cdktf.ComplexList {
+export class DataGoogleCertificateManagerCertificatesCertificatesManagedList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -304,8 +304,8 @@ export interface DataGoogleCertificateManagerCertificatesCertificates {
 }
 
 export function dataGoogleCertificateManagerCertificatesCertificatesToTerraform(struct?: DataGoogleCertificateManagerCertificatesCertificates): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -314,8 +314,8 @@ export function dataGoogleCertificateManagerCertificatesCertificatesToTerraform(
 
 
 export function dataGoogleCertificateManagerCertificatesCertificatesToHclTerraform(struct?: DataGoogleCertificateManagerCertificatesCertificates): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -323,7 +323,7 @@ export function dataGoogleCertificateManagerCertificatesCertificatesToHclTerrafo
   return attrs;
 }
 
-export class DataGoogleCertificateManagerCertificatesCertificatesOutputReference extends cdktf.ComplexObject {
+export class DataGoogleCertificateManagerCertificatesCertificatesOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -332,7 +332,7 @@ export class DataGoogleCertificateManagerCertificatesCertificatesOutputReference
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -357,13 +357,13 @@ export class DataGoogleCertificateManagerCertificatesCertificatesOutputReference
   }
 
   // effective_labels - computed: true, optional: false, required: false
-  private _effectiveLabels = new cdktf.StringMap(this, "effective_labels");
+  private _effectiveLabels = new cdktn.StringMap(this, "effective_labels");
   public get effectiveLabels() {
     return this._effectiveLabels;
   }
 
   // labels - computed: true, optional: false, required: false
-  private _labels = new cdktf.StringMap(this, "labels");
+  private _labels = new cdktn.StringMap(this, "labels");
   public get labels() {
     return this._labels;
   }
@@ -400,20 +400,20 @@ export class DataGoogleCertificateManagerCertificatesCertificatesOutputReference
   }
 
   // terraform_labels - computed: true, optional: false, required: false
-  private _terraformLabels = new cdktf.StringMap(this, "terraform_labels");
+  private _terraformLabels = new cdktn.StringMap(this, "terraform_labels");
   public get terraformLabels() {
     return this._terraformLabels;
   }
 }
 
-export class DataGoogleCertificateManagerCertificatesCertificatesList extends cdktf.ComplexList {
+export class DataGoogleCertificateManagerCertificatesCertificatesList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -428,7 +428,7 @@ export class DataGoogleCertificateManagerCertificatesCertificatesList extends cd
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/data-sources/certificate_manager_certificates google_certificate_manager_certificates}
 */
-export class DataGoogleCertificateManagerCertificates extends cdktf.TerraformDataSource {
+export class DataGoogleCertificateManagerCertificates extends cdktn.TerraformDataSource {
 
   // =================
   // STATIC PROPERTIES
@@ -439,14 +439,14 @@ export class DataGoogleCertificateManagerCertificates extends cdktf.TerraformDat
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a DataGoogleCertificateManagerCertificates resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a DataGoogleCertificateManagerCertificates resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataGoogleCertificateManagerCertificates to import
   * @param importFromId The id of the existing DataGoogleCertificateManagerCertificates that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/data-sources/certificate_manager_certificates#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataGoogleCertificateManagerCertificates to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "google_certificate_manager_certificates", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "google_certificate_manager_certificates", importId: importFromId, provider });
       }
 
   // ===========
@@ -545,28 +545,28 @@ export class DataGoogleCertificateManagerCertificates extends cdktf.TerraformDat
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      filter: cdktf.stringToTerraform(this._filter),
-      id: cdktf.stringToTerraform(this._id),
-      region: cdktf.stringToTerraform(this._region),
+      filter: cdktn.stringToTerraform(this._filter),
+      id: cdktn.stringToTerraform(this._id),
+      region: cdktn.stringToTerraform(this._region),
     };
   }
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       filter: {
-        value: cdktf.stringToHclTerraform(this._filter),
+        value: cdktn.stringToHclTerraform(this._filter),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       region: {
-        value: cdktf.stringToHclTerraform(this._region),
+        value: cdktn.stringToHclTerraform(this._region),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

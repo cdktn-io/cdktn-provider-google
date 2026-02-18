@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface DataGoogleActiveFolderConfig extends cdktf.TerraformMetaArguments {
+export interface DataGoogleActiveFolderConfig extends cdktn.TerraformMetaArguments {
   /**
   * Provides the REST method through which to find the folder. LIST is recommended as it is strongly consistent.
   *
@@ -38,7 +38,7 @@ export interface DataGoogleActiveFolderConfig extends cdktf.TerraformMetaArgumen
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/data-sources/active_folder google_active_folder}
 */
-export class DataGoogleActiveFolder extends cdktf.TerraformDataSource {
+export class DataGoogleActiveFolder extends cdktn.TerraformDataSource {
 
   // =================
   // STATIC PROPERTIES
@@ -49,14 +49,14 @@ export class DataGoogleActiveFolder extends cdktf.TerraformDataSource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a DataGoogleActiveFolder resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a DataGoogleActiveFolder resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataGoogleActiveFolder to import
   * @param importFromId The id of the existing DataGoogleActiveFolder that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/data-sources/active_folder#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataGoogleActiveFolder to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "google_active_folder", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "google_active_folder", importId: importFromId, provider });
       }
 
   // ===========
@@ -165,35 +165,35 @@ export class DataGoogleActiveFolder extends cdktf.TerraformDataSource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      api_method: cdktf.stringToTerraform(this._apiMethod),
-      display_name: cdktf.stringToTerraform(this._displayName),
-      id: cdktf.stringToTerraform(this._id),
-      parent: cdktf.stringToTerraform(this._parent),
+      api_method: cdktn.stringToTerraform(this._apiMethod),
+      display_name: cdktn.stringToTerraform(this._displayName),
+      id: cdktn.stringToTerraform(this._id),
+      parent: cdktn.stringToTerraform(this._parent),
     };
   }
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       api_method: {
-        value: cdktf.stringToHclTerraform(this._apiMethod),
+        value: cdktn.stringToHclTerraform(this._apiMethod),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       display_name: {
-        value: cdktf.stringToHclTerraform(this._displayName),
+        value: cdktn.stringToHclTerraform(this._displayName),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       parent: {
-        value: cdktf.stringToHclTerraform(this._parent),
+        value: cdktn.stringToHclTerraform(this._parent),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

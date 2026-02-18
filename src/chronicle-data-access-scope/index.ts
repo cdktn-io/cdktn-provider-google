@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface ChronicleDataAccessScopeConfig extends cdktf.TerraformMetaArguments {
+export interface ChronicleDataAccessScopeConfig extends cdktn.TerraformMetaArguments {
   /**
   * Optional. Whether or not the scope allows all labels, allow_all and
   * allowed_data_access_labels are mutually exclusive and one of them must be
@@ -24,7 +24,7 @@ export interface ChronicleDataAccessScopeConfig extends cdktf.TerraformMetaArgum
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/chronicle_data_access_scope#allow_all ChronicleDataAccessScope#allow_all}
   */
-  readonly allowAll?: boolean | cdktf.IResolvable;
+  readonly allowAll?: boolean | cdktn.IResolvable;
   /**
   * Required. The user provided scope id which will become the last part of the name
   * of the scope resource.
@@ -67,13 +67,13 @@ export interface ChronicleDataAccessScopeConfig extends cdktf.TerraformMetaArgum
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/chronicle_data_access_scope#allowed_data_access_labels ChronicleDataAccessScope#allowed_data_access_labels}
   */
-  readonly allowedDataAccessLabels?: ChronicleDataAccessScopeAllowedDataAccessLabels[] | cdktf.IResolvable;
+  readonly allowedDataAccessLabels?: ChronicleDataAccessScopeAllowedDataAccessLabels[] | cdktn.IResolvable;
   /**
   * denied_data_access_labels block
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/chronicle_data_access_scope#denied_data_access_labels ChronicleDataAccessScope#denied_data_access_labels}
   */
-  readonly deniedDataAccessLabels?: ChronicleDataAccessScopeDeniedDataAccessLabels[] | cdktf.IResolvable;
+  readonly deniedDataAccessLabels?: ChronicleDataAccessScopeDeniedDataAccessLabels[] | cdktn.IResolvable;
   /**
   * timeouts block
   *
@@ -99,31 +99,31 @@ export interface ChronicleDataAccessScopeAllowedDataAccessLabelsIngestionLabel {
 }
 
 export function chronicleDataAccessScopeAllowedDataAccessLabelsIngestionLabelToTerraform(struct?: ChronicleDataAccessScopeAllowedDataAccessLabelsIngestionLabelOutputReference | ChronicleDataAccessScopeAllowedDataAccessLabelsIngestionLabel): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    ingestion_label_key: cdktf.stringToTerraform(struct!.ingestionLabelKey),
-    ingestion_label_value: cdktf.stringToTerraform(struct!.ingestionLabelValue),
+    ingestion_label_key: cdktn.stringToTerraform(struct!.ingestionLabelKey),
+    ingestion_label_value: cdktn.stringToTerraform(struct!.ingestionLabelValue),
   }
 }
 
 
 export function chronicleDataAccessScopeAllowedDataAccessLabelsIngestionLabelToHclTerraform(struct?: ChronicleDataAccessScopeAllowedDataAccessLabelsIngestionLabelOutputReference | ChronicleDataAccessScopeAllowedDataAccessLabelsIngestionLabel): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     ingestion_label_key: {
-      value: cdktf.stringToHclTerraform(struct!.ingestionLabelKey),
+      value: cdktn.stringToHclTerraform(struct!.ingestionLabelKey),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     ingestion_label_value: {
-      value: cdktf.stringToHclTerraform(struct!.ingestionLabelValue),
+      value: cdktn.stringToHclTerraform(struct!.ingestionLabelValue),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -134,14 +134,14 @@ export function chronicleDataAccessScopeAllowedDataAccessLabelsIngestionLabelToH
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class ChronicleDataAccessScopeAllowedDataAccessLabelsIngestionLabelOutputReference extends cdktf.ComplexObject {
+export class ChronicleDataAccessScopeAllowedDataAccessLabelsIngestionLabelOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -229,40 +229,40 @@ export interface ChronicleDataAccessScopeAllowedDataAccessLabels {
   readonly ingestionLabel?: ChronicleDataAccessScopeAllowedDataAccessLabelsIngestionLabel;
 }
 
-export function chronicleDataAccessScopeAllowedDataAccessLabelsToTerraform(struct?: ChronicleDataAccessScopeAllowedDataAccessLabels | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function chronicleDataAccessScopeAllowedDataAccessLabelsToTerraform(struct?: ChronicleDataAccessScopeAllowedDataAccessLabels | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    asset_namespace: cdktf.stringToTerraform(struct!.assetNamespace),
-    data_access_label: cdktf.stringToTerraform(struct!.dataAccessLabel),
-    log_type: cdktf.stringToTerraform(struct!.logType),
+    asset_namespace: cdktn.stringToTerraform(struct!.assetNamespace),
+    data_access_label: cdktn.stringToTerraform(struct!.dataAccessLabel),
+    log_type: cdktn.stringToTerraform(struct!.logType),
     ingestion_label: chronicleDataAccessScopeAllowedDataAccessLabelsIngestionLabelToTerraform(struct!.ingestionLabel),
   }
 }
 
 
-export function chronicleDataAccessScopeAllowedDataAccessLabelsToHclTerraform(struct?: ChronicleDataAccessScopeAllowedDataAccessLabels | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function chronicleDataAccessScopeAllowedDataAccessLabelsToHclTerraform(struct?: ChronicleDataAccessScopeAllowedDataAccessLabels | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     asset_namespace: {
-      value: cdktf.stringToHclTerraform(struct!.assetNamespace),
+      value: cdktn.stringToHclTerraform(struct!.assetNamespace),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     data_access_label: {
-      value: cdktf.stringToHclTerraform(struct!.dataAccessLabel),
+      value: cdktn.stringToHclTerraform(struct!.dataAccessLabel),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     log_type: {
-      value: cdktf.stringToHclTerraform(struct!.logType),
+      value: cdktn.stringToHclTerraform(struct!.logType),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -279,9 +279,9 @@ export function chronicleDataAccessScopeAllowedDataAccessLabelsToHclTerraform(st
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class ChronicleDataAccessScopeAllowedDataAccessLabelsOutputReference extends cdktf.ComplexObject {
+export class ChronicleDataAccessScopeAllowedDataAccessLabelsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -289,11 +289,11 @@ export class ChronicleDataAccessScopeAllowedDataAccessLabelsOutputReference exte
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): ChronicleDataAccessScopeAllowedDataAccessLabels | cdktf.IResolvable | undefined {
+  public get internalValue(): ChronicleDataAccessScopeAllowedDataAccessLabels | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -318,7 +318,7 @@ export class ChronicleDataAccessScopeAllowedDataAccessLabelsOutputReference exte
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: ChronicleDataAccessScopeAllowedDataAccessLabels | cdktf.IResolvable | undefined) {
+  public set internalValue(value: ChronicleDataAccessScopeAllowedDataAccessLabels | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -327,7 +327,7 @@ export class ChronicleDataAccessScopeAllowedDataAccessLabelsOutputReference exte
       this._logType = undefined;
       this._ingestionLabel.internalValue = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -411,15 +411,15 @@ export class ChronicleDataAccessScopeAllowedDataAccessLabelsOutputReference exte
   }
 }
 
-export class ChronicleDataAccessScopeAllowedDataAccessLabelsList extends cdktf.ComplexList {
-  public internalValue? : ChronicleDataAccessScopeAllowedDataAccessLabels[] | cdktf.IResolvable
+export class ChronicleDataAccessScopeAllowedDataAccessLabelsList extends cdktn.ComplexList {
+  public internalValue? : ChronicleDataAccessScopeAllowedDataAccessLabels[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -448,31 +448,31 @@ export interface ChronicleDataAccessScopeDeniedDataAccessLabelsIngestionLabel {
 }
 
 export function chronicleDataAccessScopeDeniedDataAccessLabelsIngestionLabelToTerraform(struct?: ChronicleDataAccessScopeDeniedDataAccessLabelsIngestionLabelOutputReference | ChronicleDataAccessScopeDeniedDataAccessLabelsIngestionLabel): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    ingestion_label_key: cdktf.stringToTerraform(struct!.ingestionLabelKey),
-    ingestion_label_value: cdktf.stringToTerraform(struct!.ingestionLabelValue),
+    ingestion_label_key: cdktn.stringToTerraform(struct!.ingestionLabelKey),
+    ingestion_label_value: cdktn.stringToTerraform(struct!.ingestionLabelValue),
   }
 }
 
 
 export function chronicleDataAccessScopeDeniedDataAccessLabelsIngestionLabelToHclTerraform(struct?: ChronicleDataAccessScopeDeniedDataAccessLabelsIngestionLabelOutputReference | ChronicleDataAccessScopeDeniedDataAccessLabelsIngestionLabel): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     ingestion_label_key: {
-      value: cdktf.stringToHclTerraform(struct!.ingestionLabelKey),
+      value: cdktn.stringToHclTerraform(struct!.ingestionLabelKey),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     ingestion_label_value: {
-      value: cdktf.stringToHclTerraform(struct!.ingestionLabelValue),
+      value: cdktn.stringToHclTerraform(struct!.ingestionLabelValue),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -483,14 +483,14 @@ export function chronicleDataAccessScopeDeniedDataAccessLabelsIngestionLabelToHc
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class ChronicleDataAccessScopeDeniedDataAccessLabelsIngestionLabelOutputReference extends cdktf.ComplexObject {
+export class ChronicleDataAccessScopeDeniedDataAccessLabelsIngestionLabelOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -578,40 +578,40 @@ export interface ChronicleDataAccessScopeDeniedDataAccessLabels {
   readonly ingestionLabel?: ChronicleDataAccessScopeDeniedDataAccessLabelsIngestionLabel;
 }
 
-export function chronicleDataAccessScopeDeniedDataAccessLabelsToTerraform(struct?: ChronicleDataAccessScopeDeniedDataAccessLabels | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function chronicleDataAccessScopeDeniedDataAccessLabelsToTerraform(struct?: ChronicleDataAccessScopeDeniedDataAccessLabels | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    asset_namespace: cdktf.stringToTerraform(struct!.assetNamespace),
-    data_access_label: cdktf.stringToTerraform(struct!.dataAccessLabel),
-    log_type: cdktf.stringToTerraform(struct!.logType),
+    asset_namespace: cdktn.stringToTerraform(struct!.assetNamespace),
+    data_access_label: cdktn.stringToTerraform(struct!.dataAccessLabel),
+    log_type: cdktn.stringToTerraform(struct!.logType),
     ingestion_label: chronicleDataAccessScopeDeniedDataAccessLabelsIngestionLabelToTerraform(struct!.ingestionLabel),
   }
 }
 
 
-export function chronicleDataAccessScopeDeniedDataAccessLabelsToHclTerraform(struct?: ChronicleDataAccessScopeDeniedDataAccessLabels | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function chronicleDataAccessScopeDeniedDataAccessLabelsToHclTerraform(struct?: ChronicleDataAccessScopeDeniedDataAccessLabels | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     asset_namespace: {
-      value: cdktf.stringToHclTerraform(struct!.assetNamespace),
+      value: cdktn.stringToHclTerraform(struct!.assetNamespace),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     data_access_label: {
-      value: cdktf.stringToHclTerraform(struct!.dataAccessLabel),
+      value: cdktn.stringToHclTerraform(struct!.dataAccessLabel),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     log_type: {
-      value: cdktf.stringToHclTerraform(struct!.logType),
+      value: cdktn.stringToHclTerraform(struct!.logType),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -628,9 +628,9 @@ export function chronicleDataAccessScopeDeniedDataAccessLabelsToHclTerraform(str
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class ChronicleDataAccessScopeDeniedDataAccessLabelsOutputReference extends cdktf.ComplexObject {
+export class ChronicleDataAccessScopeDeniedDataAccessLabelsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -638,11 +638,11 @@ export class ChronicleDataAccessScopeDeniedDataAccessLabelsOutputReference exten
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): ChronicleDataAccessScopeDeniedDataAccessLabels | cdktf.IResolvable | undefined {
+  public get internalValue(): ChronicleDataAccessScopeDeniedDataAccessLabels | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -667,7 +667,7 @@ export class ChronicleDataAccessScopeDeniedDataAccessLabelsOutputReference exten
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: ChronicleDataAccessScopeDeniedDataAccessLabels | cdktf.IResolvable | undefined) {
+  public set internalValue(value: ChronicleDataAccessScopeDeniedDataAccessLabels | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -676,7 +676,7 @@ export class ChronicleDataAccessScopeDeniedDataAccessLabelsOutputReference exten
       this._logType = undefined;
       this._ingestionLabel.internalValue = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -760,15 +760,15 @@ export class ChronicleDataAccessScopeDeniedDataAccessLabelsOutputReference exten
   }
 }
 
-export class ChronicleDataAccessScopeDeniedDataAccessLabelsList extends cdktf.ComplexList {
-  public internalValue? : ChronicleDataAccessScopeDeniedDataAccessLabels[] | cdktf.IResolvable
+export class ChronicleDataAccessScopeDeniedDataAccessLabelsList extends cdktn.ComplexList {
+  public internalValue? : ChronicleDataAccessScopeDeniedDataAccessLabels[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -794,39 +794,39 @@ export interface ChronicleDataAccessScopeTimeouts {
   readonly update?: string;
 }
 
-export function chronicleDataAccessScopeTimeoutsToTerraform(struct?: ChronicleDataAccessScopeTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function chronicleDataAccessScopeTimeoutsToTerraform(struct?: ChronicleDataAccessScopeTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    create: cdktf.stringToTerraform(struct!.create),
-    delete: cdktf.stringToTerraform(struct!.delete),
-    update: cdktf.stringToTerraform(struct!.update),
+    create: cdktn.stringToTerraform(struct!.create),
+    delete: cdktn.stringToTerraform(struct!.delete),
+    update: cdktn.stringToTerraform(struct!.update),
   }
 }
 
 
-export function chronicleDataAccessScopeTimeoutsToHclTerraform(struct?: ChronicleDataAccessScopeTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function chronicleDataAccessScopeTimeoutsToHclTerraform(struct?: ChronicleDataAccessScopeTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     create: {
-      value: cdktf.stringToHclTerraform(struct!.create),
+      value: cdktn.stringToHclTerraform(struct!.create),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     delete: {
-      value: cdktf.stringToHclTerraform(struct!.delete),
+      value: cdktn.stringToHclTerraform(struct!.delete),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     update: {
-      value: cdktf.stringToHclTerraform(struct!.update),
+      value: cdktn.stringToHclTerraform(struct!.update),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -837,19 +837,19 @@ export function chronicleDataAccessScopeTimeoutsToHclTerraform(struct?: Chronicl
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class ChronicleDataAccessScopeTimeoutsOutputReference extends cdktf.ComplexObject {
+export class ChronicleDataAccessScopeTimeoutsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): ChronicleDataAccessScopeTimeouts | cdktf.IResolvable | undefined {
+  public get internalValue(): ChronicleDataAccessScopeTimeouts | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -870,7 +870,7 @@ export class ChronicleDataAccessScopeTimeoutsOutputReference extends cdktf.Compl
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: ChronicleDataAccessScopeTimeouts | cdktf.IResolvable | undefined) {
+  public set internalValue(value: ChronicleDataAccessScopeTimeouts | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -878,7 +878,7 @@ export class ChronicleDataAccessScopeTimeoutsOutputReference extends cdktf.Compl
       this._delete = undefined;
       this._update = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -943,7 +943,7 @@ export class ChronicleDataAccessScopeTimeoutsOutputReference extends cdktf.Compl
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/chronicle_data_access_scope google_chronicle_data_access_scope}
 */
-export class ChronicleDataAccessScope extends cdktf.TerraformResource {
+export class ChronicleDataAccessScope extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -954,14 +954,14 @@ export class ChronicleDataAccessScope extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a ChronicleDataAccessScope resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a ChronicleDataAccessScope resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the ChronicleDataAccessScope to import
   * @param importFromId The id of the existing ChronicleDataAccessScope that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/chronicle_data_access_scope#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the ChronicleDataAccessScope to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "google_chronicle_data_access_scope", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "google_chronicle_data_access_scope", importId: importFromId, provider });
       }
 
   // ===========
@@ -1008,11 +1008,11 @@ export class ChronicleDataAccessScope extends cdktf.TerraformResource {
   // ==========
 
   // allow_all - computed: false, optional: true, required: false
-  private _allowAll?: boolean | cdktf.IResolvable; 
+  private _allowAll?: boolean | cdktn.IResolvable; 
   public get allowAll() {
     return this.getBooleanAttribute('allow_all');
   }
-  public set allowAll(value: boolean | cdktf.IResolvable) {
+  public set allowAll(value: boolean | cdktn.IResolvable) {
     this._allowAll = value;
   }
   public resetAllowAll() {
@@ -1145,7 +1145,7 @@ export class ChronicleDataAccessScope extends cdktf.TerraformResource {
   public get allowedDataAccessLabels() {
     return this._allowedDataAccessLabels;
   }
-  public putAllowedDataAccessLabels(value: ChronicleDataAccessScopeAllowedDataAccessLabels[] | cdktf.IResolvable) {
+  public putAllowedDataAccessLabels(value: ChronicleDataAccessScopeAllowedDataAccessLabels[] | cdktn.IResolvable) {
     this._allowedDataAccessLabels.internalValue = value;
   }
   public resetAllowedDataAccessLabels() {
@@ -1161,7 +1161,7 @@ export class ChronicleDataAccessScope extends cdktf.TerraformResource {
   public get deniedDataAccessLabels() {
     return this._deniedDataAccessLabels;
   }
-  public putDeniedDataAccessLabels(value: ChronicleDataAccessScopeDeniedDataAccessLabels[] | cdktf.IResolvable) {
+  public putDeniedDataAccessLabels(value: ChronicleDataAccessScopeDeniedDataAccessLabels[] | cdktn.IResolvable) {
     this._deniedDataAccessLabels.internalValue = value;
   }
   public resetDeniedDataAccessLabels() {
@@ -1194,15 +1194,15 @@ export class ChronicleDataAccessScope extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      allow_all: cdktf.booleanToTerraform(this._allowAll),
-      data_access_scope_id: cdktf.stringToTerraform(this._dataAccessScopeId),
-      description: cdktf.stringToTerraform(this._description),
-      id: cdktf.stringToTerraform(this._id),
-      instance: cdktf.stringToTerraform(this._instance),
-      location: cdktf.stringToTerraform(this._location),
-      project: cdktf.stringToTerraform(this._project),
-      allowed_data_access_labels: cdktf.listMapper(chronicleDataAccessScopeAllowedDataAccessLabelsToTerraform, true)(this._allowedDataAccessLabels.internalValue),
-      denied_data_access_labels: cdktf.listMapper(chronicleDataAccessScopeDeniedDataAccessLabelsToTerraform, true)(this._deniedDataAccessLabels.internalValue),
+      allow_all: cdktn.booleanToTerraform(this._allowAll),
+      data_access_scope_id: cdktn.stringToTerraform(this._dataAccessScopeId),
+      description: cdktn.stringToTerraform(this._description),
+      id: cdktn.stringToTerraform(this._id),
+      instance: cdktn.stringToTerraform(this._instance),
+      location: cdktn.stringToTerraform(this._location),
+      project: cdktn.stringToTerraform(this._project),
+      allowed_data_access_labels: cdktn.listMapper(chronicleDataAccessScopeAllowedDataAccessLabelsToTerraform, true)(this._allowedDataAccessLabels.internalValue),
+      denied_data_access_labels: cdktn.listMapper(chronicleDataAccessScopeDeniedDataAccessLabelsToTerraform, true)(this._deniedDataAccessLabels.internalValue),
       timeouts: chronicleDataAccessScopeTimeoutsToTerraform(this._timeouts.internalValue),
     };
   }
@@ -1210,55 +1210,55 @@ export class ChronicleDataAccessScope extends cdktf.TerraformResource {
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       allow_all: {
-        value: cdktf.booleanToHclTerraform(this._allowAll),
+        value: cdktn.booleanToHclTerraform(this._allowAll),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       data_access_scope_id: {
-        value: cdktf.stringToHclTerraform(this._dataAccessScopeId),
+        value: cdktn.stringToHclTerraform(this._dataAccessScopeId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       description: {
-        value: cdktf.stringToHclTerraform(this._description),
+        value: cdktn.stringToHclTerraform(this._description),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       instance: {
-        value: cdktf.stringToHclTerraform(this._instance),
+        value: cdktn.stringToHclTerraform(this._instance),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       location: {
-        value: cdktf.stringToHclTerraform(this._location),
+        value: cdktn.stringToHclTerraform(this._location),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       project: {
-        value: cdktf.stringToHclTerraform(this._project),
+        value: cdktn.stringToHclTerraform(this._project),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       allowed_data_access_labels: {
-        value: cdktf.listMapperHcl(chronicleDataAccessScopeAllowedDataAccessLabelsToHclTerraform, true)(this._allowedDataAccessLabels.internalValue),
+        value: cdktn.listMapperHcl(chronicleDataAccessScopeAllowedDataAccessLabelsToHclTerraform, true)(this._allowedDataAccessLabels.internalValue),
         isBlock: true,
         type: "list",
         storageClassType: "ChronicleDataAccessScopeAllowedDataAccessLabelsList",
       },
       denied_data_access_labels: {
-        value: cdktf.listMapperHcl(chronicleDataAccessScopeDeniedDataAccessLabelsToHclTerraform, true)(this._deniedDataAccessLabels.internalValue),
+        value: cdktn.listMapperHcl(chronicleDataAccessScopeDeniedDataAccessLabelsToHclTerraform, true)(this._deniedDataAccessLabels.internalValue),
         isBlock: true,
         type: "list",
         storageClassType: "ChronicleDataAccessScopeDeniedDataAccessLabelsList",

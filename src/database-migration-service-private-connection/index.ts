@@ -7,17 +7,17 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface DatabaseMigrationServicePrivateConnectionConfig extends cdktf.TerraformMetaArguments {
+export interface DatabaseMigrationServicePrivateConnectionConfig extends cdktn.TerraformMetaArguments {
   /**
   * If set to true, will skip validations.
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/database_migration_service_private_connection#create_without_validation DatabaseMigrationServicePrivateConnection#create_without_validation}
   */
-  readonly createWithoutValidation?: boolean | cdktf.IResolvable;
+  readonly createWithoutValidation?: boolean | cdktn.IResolvable;
   /**
   * Display name.
   *
@@ -73,8 +73,8 @@ export interface DatabaseMigrationServicePrivateConnectionError {
 }
 
 export function databaseMigrationServicePrivateConnectionErrorToTerraform(struct?: DatabaseMigrationServicePrivateConnectionError): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -83,8 +83,8 @@ export function databaseMigrationServicePrivateConnectionErrorToTerraform(struct
 
 
 export function databaseMigrationServicePrivateConnectionErrorToHclTerraform(struct?: DatabaseMigrationServicePrivateConnectionError): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -92,7 +92,7 @@ export function databaseMigrationServicePrivateConnectionErrorToHclTerraform(str
   return attrs;
 }
 
-export class DatabaseMigrationServicePrivateConnectionErrorOutputReference extends cdktf.ComplexObject {
+export class DatabaseMigrationServicePrivateConnectionErrorOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -101,7 +101,7 @@ export class DatabaseMigrationServicePrivateConnectionErrorOutputReference exten
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -121,7 +121,7 @@ export class DatabaseMigrationServicePrivateConnectionErrorOutputReference exten
   }
 
   // details - computed: true, optional: false, required: false
-  private _details = new cdktf.StringMap(this, "details");
+  private _details = new cdktn.StringMap(this, "details");
   public get details() {
     return this._details;
   }
@@ -132,14 +132,14 @@ export class DatabaseMigrationServicePrivateConnectionErrorOutputReference exten
   }
 }
 
-export class DatabaseMigrationServicePrivateConnectionErrorList extends cdktf.ComplexList {
+export class DatabaseMigrationServicePrivateConnectionErrorList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -165,39 +165,39 @@ export interface DatabaseMigrationServicePrivateConnectionTimeouts {
   readonly update?: string;
 }
 
-export function databaseMigrationServicePrivateConnectionTimeoutsToTerraform(struct?: DatabaseMigrationServicePrivateConnectionTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function databaseMigrationServicePrivateConnectionTimeoutsToTerraform(struct?: DatabaseMigrationServicePrivateConnectionTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    create: cdktf.stringToTerraform(struct!.create),
-    delete: cdktf.stringToTerraform(struct!.delete),
-    update: cdktf.stringToTerraform(struct!.update),
+    create: cdktn.stringToTerraform(struct!.create),
+    delete: cdktn.stringToTerraform(struct!.delete),
+    update: cdktn.stringToTerraform(struct!.update),
   }
 }
 
 
-export function databaseMigrationServicePrivateConnectionTimeoutsToHclTerraform(struct?: DatabaseMigrationServicePrivateConnectionTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function databaseMigrationServicePrivateConnectionTimeoutsToHclTerraform(struct?: DatabaseMigrationServicePrivateConnectionTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     create: {
-      value: cdktf.stringToHclTerraform(struct!.create),
+      value: cdktn.stringToHclTerraform(struct!.create),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     delete: {
-      value: cdktf.stringToHclTerraform(struct!.delete),
+      value: cdktn.stringToHclTerraform(struct!.delete),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     update: {
-      value: cdktf.stringToHclTerraform(struct!.update),
+      value: cdktn.stringToHclTerraform(struct!.update),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -208,19 +208,19 @@ export function databaseMigrationServicePrivateConnectionTimeoutsToHclTerraform(
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class DatabaseMigrationServicePrivateConnectionTimeoutsOutputReference extends cdktf.ComplexObject {
+export class DatabaseMigrationServicePrivateConnectionTimeoutsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): DatabaseMigrationServicePrivateConnectionTimeouts | cdktf.IResolvable | undefined {
+  public get internalValue(): DatabaseMigrationServicePrivateConnectionTimeouts | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -241,7 +241,7 @@ export class DatabaseMigrationServicePrivateConnectionTimeoutsOutputReference ex
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: DatabaseMigrationServicePrivateConnectionTimeouts | cdktf.IResolvable | undefined) {
+  public set internalValue(value: DatabaseMigrationServicePrivateConnectionTimeouts | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -249,7 +249,7 @@ export class DatabaseMigrationServicePrivateConnectionTimeoutsOutputReference ex
       this._delete = undefined;
       this._update = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -327,31 +327,31 @@ export interface DatabaseMigrationServicePrivateConnectionVpcPeeringConfig {
 }
 
 export function databaseMigrationServicePrivateConnectionVpcPeeringConfigToTerraform(struct?: DatabaseMigrationServicePrivateConnectionVpcPeeringConfigOutputReference | DatabaseMigrationServicePrivateConnectionVpcPeeringConfig): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    subnet: cdktf.stringToTerraform(struct!.subnet),
-    vpc_name: cdktf.stringToTerraform(struct!.vpcName),
+    subnet: cdktn.stringToTerraform(struct!.subnet),
+    vpc_name: cdktn.stringToTerraform(struct!.vpcName),
   }
 }
 
 
 export function databaseMigrationServicePrivateConnectionVpcPeeringConfigToHclTerraform(struct?: DatabaseMigrationServicePrivateConnectionVpcPeeringConfigOutputReference | DatabaseMigrationServicePrivateConnectionVpcPeeringConfig): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     subnet: {
-      value: cdktf.stringToHclTerraform(struct!.subnet),
+      value: cdktn.stringToHclTerraform(struct!.subnet),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     vpc_name: {
-      value: cdktf.stringToHclTerraform(struct!.vpcName),
+      value: cdktn.stringToHclTerraform(struct!.vpcName),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -362,14 +362,14 @@ export function databaseMigrationServicePrivateConnectionVpcPeeringConfigToHclTe
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class DatabaseMigrationServicePrivateConnectionVpcPeeringConfigOutputReference extends cdktf.ComplexObject {
+export class DatabaseMigrationServicePrivateConnectionVpcPeeringConfigOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -430,7 +430,7 @@ export class DatabaseMigrationServicePrivateConnectionVpcPeeringConfigOutputRefe
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/database_migration_service_private_connection google_database_migration_service_private_connection}
 */
-export class DatabaseMigrationServicePrivateConnection extends cdktf.TerraformResource {
+export class DatabaseMigrationServicePrivateConnection extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -441,14 +441,14 @@ export class DatabaseMigrationServicePrivateConnection extends cdktf.TerraformRe
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a DatabaseMigrationServicePrivateConnection resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a DatabaseMigrationServicePrivateConnection resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DatabaseMigrationServicePrivateConnection to import
   * @param importFromId The id of the existing DatabaseMigrationServicePrivateConnection that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/database_migration_service_private_connection#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DatabaseMigrationServicePrivateConnection to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "google_database_migration_service_private_connection", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "google_database_migration_service_private_connection", importId: importFromId, provider });
       }
 
   // ===========
@@ -494,11 +494,11 @@ export class DatabaseMigrationServicePrivateConnection extends cdktf.TerraformRe
   // ==========
 
   // create_without_validation - computed: false, optional: true, required: false
-  private _createWithoutValidation?: boolean | cdktf.IResolvable; 
+  private _createWithoutValidation?: boolean | cdktn.IResolvable; 
   public get createWithoutValidation() {
     return this.getBooleanAttribute('create_without_validation');
   }
-  public set createWithoutValidation(value: boolean | cdktf.IResolvable) {
+  public set createWithoutValidation(value: boolean | cdktn.IResolvable) {
     this._createWithoutValidation = value;
   }
   public resetCreateWithoutValidation() {
@@ -526,7 +526,7 @@ export class DatabaseMigrationServicePrivateConnection extends cdktf.TerraformRe
   }
 
   // effective_labels - computed: true, optional: false, required: false
-  private _effectiveLabels = new cdktf.StringMap(this, "effective_labels");
+  private _effectiveLabels = new cdktn.StringMap(this, "effective_labels");
   public get effectiveLabels() {
     return this._effectiveLabels;
   }
@@ -622,7 +622,7 @@ export class DatabaseMigrationServicePrivateConnection extends cdktf.TerraformRe
   }
 
   // terraform_labels - computed: true, optional: false, required: false
-  private _terraformLabels = new cdktf.StringMap(this, "terraform_labels");
+  private _terraformLabels = new cdktn.StringMap(this, "terraform_labels");
   public get terraformLabels() {
     return this._terraformLabels;
   }
@@ -662,13 +662,13 @@ export class DatabaseMigrationServicePrivateConnection extends cdktf.TerraformRe
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      create_without_validation: cdktf.booleanToTerraform(this._createWithoutValidation),
-      display_name: cdktf.stringToTerraform(this._displayName),
-      id: cdktf.stringToTerraform(this._id),
-      labels: cdktf.hashMapper(cdktf.stringToTerraform)(this._labels),
-      location: cdktf.stringToTerraform(this._location),
-      private_connection_id: cdktf.stringToTerraform(this._privateConnectionId),
-      project: cdktf.stringToTerraform(this._project),
+      create_without_validation: cdktn.booleanToTerraform(this._createWithoutValidation),
+      display_name: cdktn.stringToTerraform(this._displayName),
+      id: cdktn.stringToTerraform(this._id),
+      labels: cdktn.hashMapper(cdktn.stringToTerraform)(this._labels),
+      location: cdktn.stringToTerraform(this._location),
+      private_connection_id: cdktn.stringToTerraform(this._privateConnectionId),
+      project: cdktn.stringToTerraform(this._project),
       timeouts: databaseMigrationServicePrivateConnectionTimeoutsToTerraform(this._timeouts.internalValue),
       vpc_peering_config: databaseMigrationServicePrivateConnectionVpcPeeringConfigToTerraform(this._vpcPeeringConfig.internalValue),
     };
@@ -677,43 +677,43 @@ export class DatabaseMigrationServicePrivateConnection extends cdktf.TerraformRe
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       create_without_validation: {
-        value: cdktf.booleanToHclTerraform(this._createWithoutValidation),
+        value: cdktn.booleanToHclTerraform(this._createWithoutValidation),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       display_name: {
-        value: cdktf.stringToHclTerraform(this._displayName),
+        value: cdktn.stringToHclTerraform(this._displayName),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       labels: {
-        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._labels),
+        value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(this._labels),
         isBlock: false,
         type: "map",
         storageClassType: "stringMap",
       },
       location: {
-        value: cdktf.stringToHclTerraform(this._location),
+        value: cdktn.stringToHclTerraform(this._location),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       private_connection_id: {
-        value: cdktf.stringToHclTerraform(this._privateConnectionId),
+        value: cdktn.stringToHclTerraform(this._privateConnectionId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       project: {
-        value: cdktf.stringToHclTerraform(this._project),
+        value: cdktn.stringToHclTerraform(this._project),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

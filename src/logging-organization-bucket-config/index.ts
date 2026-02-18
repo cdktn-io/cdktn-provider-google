@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface LoggingOrganizationBucketConfigConfig extends cdktf.TerraformMetaArguments {
+export interface LoggingOrganizationBucketConfigConfig extends cdktn.TerraformMetaArguments {
   /**
   * The name of the logging bucket. Logging automatically creates two log buckets: _Required and _Default.
   *
@@ -60,7 +60,7 @@ export interface LoggingOrganizationBucketConfigConfig extends cdktf.TerraformMe
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/logging_organization_bucket_config#index_configs LoggingOrganizationBucketConfig#index_configs}
   */
-  readonly indexConfigs?: LoggingOrganizationBucketConfigIndexConfigs[] | cdktf.IResolvable;
+  readonly indexConfigs?: LoggingOrganizationBucketConfigIndexConfigs[] | cdktn.IResolvable;
 }
 export interface LoggingOrganizationBucketConfigCmekSettings {
   /**
@@ -77,24 +77,24 @@ export interface LoggingOrganizationBucketConfigCmekSettings {
 }
 
 export function loggingOrganizationBucketConfigCmekSettingsToTerraform(struct?: LoggingOrganizationBucketConfigCmekSettingsOutputReference | LoggingOrganizationBucketConfigCmekSettings): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    kms_key_name: cdktf.stringToTerraform(struct!.kmsKeyName),
+    kms_key_name: cdktn.stringToTerraform(struct!.kmsKeyName),
   }
 }
 
 
 export function loggingOrganizationBucketConfigCmekSettingsToHclTerraform(struct?: LoggingOrganizationBucketConfigCmekSettingsOutputReference | LoggingOrganizationBucketConfigCmekSettings): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     kms_key_name: {
-      value: cdktf.stringToHclTerraform(struct!.kmsKeyName),
+      value: cdktn.stringToHclTerraform(struct!.kmsKeyName),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -105,14 +105,14 @@ export function loggingOrganizationBucketConfigCmekSettingsToHclTerraform(struct
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class LoggingOrganizationBucketConfigCmekSettingsOutputReference extends cdktf.ComplexObject {
+export class LoggingOrganizationBucketConfigCmekSettingsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -182,32 +182,32 @@ export interface LoggingOrganizationBucketConfigIndexConfigs {
   readonly type: string;
 }
 
-export function loggingOrganizationBucketConfigIndexConfigsToTerraform(struct?: LoggingOrganizationBucketConfigIndexConfigs | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function loggingOrganizationBucketConfigIndexConfigsToTerraform(struct?: LoggingOrganizationBucketConfigIndexConfigs | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    field_path: cdktf.stringToTerraform(struct!.fieldPath),
-    type: cdktf.stringToTerraform(struct!.type),
+    field_path: cdktn.stringToTerraform(struct!.fieldPath),
+    type: cdktn.stringToTerraform(struct!.type),
   }
 }
 
 
-export function loggingOrganizationBucketConfigIndexConfigsToHclTerraform(struct?: LoggingOrganizationBucketConfigIndexConfigs | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function loggingOrganizationBucketConfigIndexConfigsToHclTerraform(struct?: LoggingOrganizationBucketConfigIndexConfigs | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     field_path: {
-      value: cdktf.stringToHclTerraform(struct!.fieldPath),
+      value: cdktn.stringToHclTerraform(struct!.fieldPath),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     type: {
-      value: cdktf.stringToHclTerraform(struct!.type),
+      value: cdktn.stringToHclTerraform(struct!.type),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -218,9 +218,9 @@ export function loggingOrganizationBucketConfigIndexConfigsToHclTerraform(struct
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class LoggingOrganizationBucketConfigIndexConfigsOutputReference extends cdktf.ComplexObject {
+export class LoggingOrganizationBucketConfigIndexConfigsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -228,11 +228,11 @@ export class LoggingOrganizationBucketConfigIndexConfigsOutputReference extends 
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): LoggingOrganizationBucketConfigIndexConfigs | cdktf.IResolvable | undefined {
+  public get internalValue(): LoggingOrganizationBucketConfigIndexConfigs | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -249,14 +249,14 @@ export class LoggingOrganizationBucketConfigIndexConfigsOutputReference extends 
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: LoggingOrganizationBucketConfigIndexConfigs | cdktf.IResolvable | undefined) {
+  public set internalValue(value: LoggingOrganizationBucketConfigIndexConfigs | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._fieldPath = undefined;
       this._type = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -295,15 +295,15 @@ export class LoggingOrganizationBucketConfigIndexConfigsOutputReference extends 
   }
 }
 
-export class LoggingOrganizationBucketConfigIndexConfigsList extends cdktf.ComplexList {
-  public internalValue? : LoggingOrganizationBucketConfigIndexConfigs[] | cdktf.IResolvable
+export class LoggingOrganizationBucketConfigIndexConfigsList extends cdktn.ComplexList {
+  public internalValue? : LoggingOrganizationBucketConfigIndexConfigs[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -318,7 +318,7 @@ export class LoggingOrganizationBucketConfigIndexConfigsList extends cdktf.Compl
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/logging_organization_bucket_config google_logging_organization_bucket_config}
 */
-export class LoggingOrganizationBucketConfig extends cdktf.TerraformResource {
+export class LoggingOrganizationBucketConfig extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -329,14 +329,14 @@ export class LoggingOrganizationBucketConfig extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a LoggingOrganizationBucketConfig resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a LoggingOrganizationBucketConfig resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the LoggingOrganizationBucketConfig to import
   * @param importFromId The id of the existing LoggingOrganizationBucketConfig that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/logging_organization_bucket_config#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the LoggingOrganizationBucketConfig to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "google_logging_organization_bucket_config", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "google_logging_organization_bucket_config", importId: importFromId, provider });
       }
 
   // ===========
@@ -498,7 +498,7 @@ export class LoggingOrganizationBucketConfig extends cdktf.TerraformResource {
   public get indexConfigs() {
     return this._indexConfigs;
   }
-  public putIndexConfigs(value: LoggingOrganizationBucketConfigIndexConfigs[] | cdktf.IResolvable) {
+  public putIndexConfigs(value: LoggingOrganizationBucketConfigIndexConfigs[] | cdktn.IResolvable) {
     this._indexConfigs.internalValue = value;
   }
   public resetIndexConfigs() {
@@ -515,51 +515,51 @@ export class LoggingOrganizationBucketConfig extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      bucket_id: cdktf.stringToTerraform(this._bucketId),
-      description: cdktf.stringToTerraform(this._description),
-      id: cdktf.stringToTerraform(this._id),
-      location: cdktf.stringToTerraform(this._location),
-      organization: cdktf.stringToTerraform(this._organization),
-      retention_days: cdktf.numberToTerraform(this._retentionDays),
+      bucket_id: cdktn.stringToTerraform(this._bucketId),
+      description: cdktn.stringToTerraform(this._description),
+      id: cdktn.stringToTerraform(this._id),
+      location: cdktn.stringToTerraform(this._location),
+      organization: cdktn.stringToTerraform(this._organization),
+      retention_days: cdktn.numberToTerraform(this._retentionDays),
       cmek_settings: loggingOrganizationBucketConfigCmekSettingsToTerraform(this._cmekSettings.internalValue),
-      index_configs: cdktf.listMapper(loggingOrganizationBucketConfigIndexConfigsToTerraform, true)(this._indexConfigs.internalValue),
+      index_configs: cdktn.listMapper(loggingOrganizationBucketConfigIndexConfigsToTerraform, true)(this._indexConfigs.internalValue),
     };
   }
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       bucket_id: {
-        value: cdktf.stringToHclTerraform(this._bucketId),
+        value: cdktn.stringToHclTerraform(this._bucketId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       description: {
-        value: cdktf.stringToHclTerraform(this._description),
+        value: cdktn.stringToHclTerraform(this._description),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       location: {
-        value: cdktf.stringToHclTerraform(this._location),
+        value: cdktn.stringToHclTerraform(this._location),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       organization: {
-        value: cdktf.stringToHclTerraform(this._organization),
+        value: cdktn.stringToHclTerraform(this._organization),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       retention_days: {
-        value: cdktf.numberToHclTerraform(this._retentionDays),
+        value: cdktn.numberToHclTerraform(this._retentionDays),
         isBlock: false,
         type: "simple",
         storageClassType: "number",
@@ -571,7 +571,7 @@ export class LoggingOrganizationBucketConfig extends cdktf.TerraformResource {
         storageClassType: "LoggingOrganizationBucketConfigCmekSettingsList",
       },
       index_configs: {
-        value: cdktf.listMapperHcl(loggingOrganizationBucketConfigIndexConfigsToHclTerraform, true)(this._indexConfigs.internalValue),
+        value: cdktn.listMapperHcl(loggingOrganizationBucketConfigIndexConfigsToHclTerraform, true)(this._indexConfigs.internalValue),
         isBlock: true,
         type: "set",
         storageClassType: "LoggingOrganizationBucketConfigIndexConfigsList",

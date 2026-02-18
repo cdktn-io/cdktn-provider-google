@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface ChronicleRetrohuntConfig extends cdktf.TerraformMetaArguments {
+export interface ChronicleRetrohuntConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/chronicle_retrohunt#id ChronicleRetrohunt#id}
   *
@@ -64,8 +64,8 @@ export interface ChronicleRetrohuntExecutionInterval {
 }
 
 export function chronicleRetrohuntExecutionIntervalToTerraform(struct?: ChronicleRetrohuntExecutionInterval): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -74,8 +74,8 @@ export function chronicleRetrohuntExecutionIntervalToTerraform(struct?: Chronicl
 
 
 export function chronicleRetrohuntExecutionIntervalToHclTerraform(struct?: ChronicleRetrohuntExecutionInterval): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -83,7 +83,7 @@ export function chronicleRetrohuntExecutionIntervalToHclTerraform(struct?: Chron
   return attrs;
 }
 
-export class ChronicleRetrohuntExecutionIntervalOutputReference extends cdktf.ComplexObject {
+export class ChronicleRetrohuntExecutionIntervalOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -92,7 +92,7 @@ export class ChronicleRetrohuntExecutionIntervalOutputReference extends cdktf.Co
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -122,14 +122,14 @@ export class ChronicleRetrohuntExecutionIntervalOutputReference extends cdktf.Co
   }
 }
 
-export class ChronicleRetrohuntExecutionIntervalList extends cdktf.ComplexList {
+export class ChronicleRetrohuntExecutionIntervalList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -156,31 +156,31 @@ export interface ChronicleRetrohuntProcessInterval {
 }
 
 export function chronicleRetrohuntProcessIntervalToTerraform(struct?: ChronicleRetrohuntProcessIntervalOutputReference | ChronicleRetrohuntProcessInterval): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    end_time: cdktf.stringToTerraform(struct!.endTime),
-    start_time: cdktf.stringToTerraform(struct!.startTime),
+    end_time: cdktn.stringToTerraform(struct!.endTime),
+    start_time: cdktn.stringToTerraform(struct!.startTime),
   }
 }
 
 
 export function chronicleRetrohuntProcessIntervalToHclTerraform(struct?: ChronicleRetrohuntProcessIntervalOutputReference | ChronicleRetrohuntProcessInterval): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     end_time: {
-      value: cdktf.stringToHclTerraform(struct!.endTime),
+      value: cdktn.stringToHclTerraform(struct!.endTime),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     start_time: {
-      value: cdktf.stringToHclTerraform(struct!.startTime),
+      value: cdktn.stringToHclTerraform(struct!.startTime),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -191,14 +191,14 @@ export function chronicleRetrohuntProcessIntervalToHclTerraform(struct?: Chronic
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class ChronicleRetrohuntProcessIntervalOutputReference extends cdktf.ComplexObject {
+export class ChronicleRetrohuntProcessIntervalOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -266,32 +266,32 @@ export interface ChronicleRetrohuntTimeouts {
   readonly delete?: string;
 }
 
-export function chronicleRetrohuntTimeoutsToTerraform(struct?: ChronicleRetrohuntTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function chronicleRetrohuntTimeoutsToTerraform(struct?: ChronicleRetrohuntTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    create: cdktf.stringToTerraform(struct!.create),
-    delete: cdktf.stringToTerraform(struct!.delete),
+    create: cdktn.stringToTerraform(struct!.create),
+    delete: cdktn.stringToTerraform(struct!.delete),
   }
 }
 
 
-export function chronicleRetrohuntTimeoutsToHclTerraform(struct?: ChronicleRetrohuntTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function chronicleRetrohuntTimeoutsToHclTerraform(struct?: ChronicleRetrohuntTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     create: {
-      value: cdktf.stringToHclTerraform(struct!.create),
+      value: cdktn.stringToHclTerraform(struct!.create),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     delete: {
-      value: cdktf.stringToHclTerraform(struct!.delete),
+      value: cdktn.stringToHclTerraform(struct!.delete),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -302,19 +302,19 @@ export function chronicleRetrohuntTimeoutsToHclTerraform(struct?: ChronicleRetro
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class ChronicleRetrohuntTimeoutsOutputReference extends cdktf.ComplexObject {
+export class ChronicleRetrohuntTimeoutsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): ChronicleRetrohuntTimeouts | cdktf.IResolvable | undefined {
+  public get internalValue(): ChronicleRetrohuntTimeouts | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -331,14 +331,14 @@ export class ChronicleRetrohuntTimeoutsOutputReference extends cdktf.ComplexObje
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: ChronicleRetrohuntTimeouts | cdktf.IResolvable | undefined) {
+  public set internalValue(value: ChronicleRetrohuntTimeouts | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._create = undefined;
       this._delete = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -386,7 +386,7 @@ export class ChronicleRetrohuntTimeoutsOutputReference extends cdktf.ComplexObje
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/chronicle_retrohunt google_chronicle_retrohunt}
 */
-export class ChronicleRetrohunt extends cdktf.TerraformResource {
+export class ChronicleRetrohunt extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -397,14 +397,14 @@ export class ChronicleRetrohunt extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a ChronicleRetrohunt resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a ChronicleRetrohunt resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the ChronicleRetrohunt to import
   * @param importFromId The id of the existing ChronicleRetrohunt that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/chronicle_retrohunt#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the ChronicleRetrohunt to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "google_chronicle_retrohunt", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "google_chronicle_retrohunt", importId: importFromId, provider });
       }
 
   // ===========
@@ -591,12 +591,12 @@ export class ChronicleRetrohunt extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      id: cdktf.stringToTerraform(this._id),
-      instance: cdktf.stringToTerraform(this._instance),
-      location: cdktf.stringToTerraform(this._location),
-      project: cdktf.stringToTerraform(this._project),
-      retrohunt: cdktf.stringToTerraform(this._retrohunt),
-      rule: cdktf.stringToTerraform(this._rule),
+      id: cdktn.stringToTerraform(this._id),
+      instance: cdktn.stringToTerraform(this._instance),
+      location: cdktn.stringToTerraform(this._location),
+      project: cdktn.stringToTerraform(this._project),
+      retrohunt: cdktn.stringToTerraform(this._retrohunt),
+      rule: cdktn.stringToTerraform(this._rule),
       process_interval: chronicleRetrohuntProcessIntervalToTerraform(this._processInterval.internalValue),
       timeouts: chronicleRetrohuntTimeoutsToTerraform(this._timeouts.internalValue),
     };
@@ -605,37 +605,37 @@ export class ChronicleRetrohunt extends cdktf.TerraformResource {
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       instance: {
-        value: cdktf.stringToHclTerraform(this._instance),
+        value: cdktn.stringToHclTerraform(this._instance),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       location: {
-        value: cdktf.stringToHclTerraform(this._location),
+        value: cdktn.stringToHclTerraform(this._location),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       project: {
-        value: cdktf.stringToHclTerraform(this._project),
+        value: cdktn.stringToHclTerraform(this._project),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       retrohunt: {
-        value: cdktf.stringToHclTerraform(this._retrohunt),
+        value: cdktn.stringToHclTerraform(this._retrohunt),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       rule: {
-        value: cdktf.stringToHclTerraform(this._rule),
+        value: cdktn.stringToHclTerraform(this._rule),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

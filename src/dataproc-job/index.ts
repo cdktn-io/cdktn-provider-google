@@ -7,17 +7,17 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface DataprocJobConfig extends cdktf.TerraformMetaArguments {
+export interface DataprocJobConfig extends cdktn.TerraformMetaArguments {
   /**
   * By default, you can only delete inactive jobs within Dataproc. Setting this to true, and calling destroy, will ensure that the job is first cancelled before issuing the delete.
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/dataproc_job#force_delete DataprocJob#force_delete}
   */
-  readonly forceDelete?: boolean | cdktf.IResolvable;
+  readonly forceDelete?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/dataproc_job#id DataprocJob#id}
   *
@@ -117,8 +117,8 @@ export interface DataprocJobStatus {
 }
 
 export function dataprocJobStatusToTerraform(struct?: DataprocJobStatus): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -127,8 +127,8 @@ export function dataprocJobStatusToTerraform(struct?: DataprocJobStatus): any {
 
 
 export function dataprocJobStatusToHclTerraform(struct?: DataprocJobStatus): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -136,7 +136,7 @@ export function dataprocJobStatusToHclTerraform(struct?: DataprocJobStatus): any
   return attrs;
 }
 
-export class DataprocJobStatusOutputReference extends cdktf.ComplexObject {
+export class DataprocJobStatusOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -145,7 +145,7 @@ export class DataprocJobStatusOutputReference extends cdktf.ComplexObject {
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -185,14 +185,14 @@ export class DataprocJobStatusOutputReference extends cdktf.ComplexObject {
   }
 }
 
-export class DataprocJobStatusList extends cdktf.ComplexList {
+export class DataprocJobStatusList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -213,24 +213,24 @@ export interface DataprocJobHadoopConfigLoggingConfig {
 }
 
 export function dataprocJobHadoopConfigLoggingConfigToTerraform(struct?: DataprocJobHadoopConfigLoggingConfigOutputReference | DataprocJobHadoopConfigLoggingConfig): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    driver_log_levels: cdktf.hashMapper(cdktf.stringToTerraform)(struct!.driverLogLevels),
+    driver_log_levels: cdktn.hashMapper(cdktn.stringToTerraform)(struct!.driverLogLevels),
   }
 }
 
 
 export function dataprocJobHadoopConfigLoggingConfigToHclTerraform(struct?: DataprocJobHadoopConfigLoggingConfigOutputReference | DataprocJobHadoopConfigLoggingConfig): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     driver_log_levels: {
-      value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(struct!.driverLogLevels),
+      value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(struct!.driverLogLevels),
       isBlock: false,
       type: "map",
       storageClassType: "stringMap",
@@ -241,14 +241,14 @@ export function dataprocJobHadoopConfigLoggingConfigToHclTerraform(struct?: Data
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class DataprocJobHadoopConfigLoggingConfigOutputReference extends cdktf.ComplexObject {
+export class DataprocJobHadoopConfigLoggingConfigOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -338,67 +338,67 @@ export interface DataprocJobHadoopConfig {
 }
 
 export function dataprocJobHadoopConfigToTerraform(struct?: DataprocJobHadoopConfigOutputReference | DataprocJobHadoopConfig): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    archive_uris: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.archiveUris),
-    args: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.args),
-    file_uris: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.fileUris),
-    jar_file_uris: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.jarFileUris),
-    main_class: cdktf.stringToTerraform(struct!.mainClass),
-    main_jar_file_uri: cdktf.stringToTerraform(struct!.mainJarFileUri),
-    properties: cdktf.hashMapper(cdktf.stringToTerraform)(struct!.properties),
+    archive_uris: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.archiveUris),
+    args: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.args),
+    file_uris: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.fileUris),
+    jar_file_uris: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.jarFileUris),
+    main_class: cdktn.stringToTerraform(struct!.mainClass),
+    main_jar_file_uri: cdktn.stringToTerraform(struct!.mainJarFileUri),
+    properties: cdktn.hashMapper(cdktn.stringToTerraform)(struct!.properties),
     logging_config: dataprocJobHadoopConfigLoggingConfigToTerraform(struct!.loggingConfig),
   }
 }
 
 
 export function dataprocJobHadoopConfigToHclTerraform(struct?: DataprocJobHadoopConfigOutputReference | DataprocJobHadoopConfig): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     archive_uris: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.archiveUris),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.archiveUris),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
     },
     args: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.args),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.args),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
     },
     file_uris: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.fileUris),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.fileUris),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
     },
     jar_file_uris: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.jarFileUris),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.jarFileUris),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
     },
     main_class: {
-      value: cdktf.stringToHclTerraform(struct!.mainClass),
+      value: cdktn.stringToHclTerraform(struct!.mainClass),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     main_jar_file_uri: {
-      value: cdktf.stringToHclTerraform(struct!.mainJarFileUri),
+      value: cdktn.stringToHclTerraform(struct!.mainJarFileUri),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     properties: {
-      value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(struct!.properties),
+      value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(struct!.properties),
       isBlock: false,
       type: "map",
       storageClassType: "stringMap",
@@ -415,14 +415,14 @@ export function dataprocJobHadoopConfigToHclTerraform(struct?: DataprocJobHadoop
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class DataprocJobHadoopConfigOutputReference extends cdktf.ComplexObject {
+export class DataprocJobHadoopConfigOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -623,7 +623,7 @@ export interface DataprocJobHiveConfig {
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/dataproc_job#continue_on_failure DataprocJob#continue_on_failure}
   */
-  readonly continueOnFailure?: boolean | cdktf.IResolvable;
+  readonly continueOnFailure?: boolean | cdktn.IResolvable;
   /**
   * HCFS URIs of jar files to add to the CLASSPATH of the Hive server and Hadoop MapReduce (MR) tasks. Can contain Hive SerDes and UDFs.
   *
@@ -657,59 +657,59 @@ export interface DataprocJobHiveConfig {
 }
 
 export function dataprocJobHiveConfigToTerraform(struct?: DataprocJobHiveConfigOutputReference | DataprocJobHiveConfig): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    continue_on_failure: cdktf.booleanToTerraform(struct!.continueOnFailure),
-    jar_file_uris: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.jarFileUris),
-    properties: cdktf.hashMapper(cdktf.stringToTerraform)(struct!.properties),
-    query_file_uri: cdktf.stringToTerraform(struct!.queryFileUri),
-    query_list: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.queryList),
-    script_variables: cdktf.hashMapper(cdktf.stringToTerraform)(struct!.scriptVariables),
+    continue_on_failure: cdktn.booleanToTerraform(struct!.continueOnFailure),
+    jar_file_uris: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.jarFileUris),
+    properties: cdktn.hashMapper(cdktn.stringToTerraform)(struct!.properties),
+    query_file_uri: cdktn.stringToTerraform(struct!.queryFileUri),
+    query_list: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.queryList),
+    script_variables: cdktn.hashMapper(cdktn.stringToTerraform)(struct!.scriptVariables),
   }
 }
 
 
 export function dataprocJobHiveConfigToHclTerraform(struct?: DataprocJobHiveConfigOutputReference | DataprocJobHiveConfig): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     continue_on_failure: {
-      value: cdktf.booleanToHclTerraform(struct!.continueOnFailure),
+      value: cdktn.booleanToHclTerraform(struct!.continueOnFailure),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     jar_file_uris: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.jarFileUris),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.jarFileUris),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
     },
     properties: {
-      value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(struct!.properties),
+      value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(struct!.properties),
       isBlock: false,
       type: "map",
       storageClassType: "stringMap",
     },
     query_file_uri: {
-      value: cdktf.stringToHclTerraform(struct!.queryFileUri),
+      value: cdktn.stringToHclTerraform(struct!.queryFileUri),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     query_list: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.queryList),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.queryList),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
     },
     script_variables: {
-      value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(struct!.scriptVariables),
+      value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(struct!.scriptVariables),
       isBlock: false,
       type: "map",
       storageClassType: "stringMap",
@@ -720,14 +720,14 @@ export function dataprocJobHiveConfigToHclTerraform(struct?: DataprocJobHiveConf
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class DataprocJobHiveConfigOutputReference extends cdktf.ComplexObject {
+export class DataprocJobHiveConfigOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -783,11 +783,11 @@ export class DataprocJobHiveConfigOutputReference extends cdktf.ComplexObject {
   }
 
   // continue_on_failure - computed: false, optional: true, required: false
-  private _continueOnFailure?: boolean | cdktf.IResolvable; 
+  private _continueOnFailure?: boolean | cdktn.IResolvable; 
   public get continueOnFailure() {
     return this.getBooleanAttribute('continue_on_failure');
   }
-  public set continueOnFailure(value: boolean | cdktf.IResolvable) {
+  public set continueOnFailure(value: boolean | cdktn.IResolvable) {
     this._continueOnFailure = value;
   }
   public resetContinueOnFailure() {
@@ -888,24 +888,24 @@ export interface DataprocJobPigConfigLoggingConfig {
 }
 
 export function dataprocJobPigConfigLoggingConfigToTerraform(struct?: DataprocJobPigConfigLoggingConfigOutputReference | DataprocJobPigConfigLoggingConfig): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    driver_log_levels: cdktf.hashMapper(cdktf.stringToTerraform)(struct!.driverLogLevels),
+    driver_log_levels: cdktn.hashMapper(cdktn.stringToTerraform)(struct!.driverLogLevels),
   }
 }
 
 
 export function dataprocJobPigConfigLoggingConfigToHclTerraform(struct?: DataprocJobPigConfigLoggingConfigOutputReference | DataprocJobPigConfigLoggingConfig): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     driver_log_levels: {
-      value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(struct!.driverLogLevels),
+      value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(struct!.driverLogLevels),
       isBlock: false,
       type: "map",
       storageClassType: "stringMap",
@@ -916,14 +916,14 @@ export function dataprocJobPigConfigLoggingConfigToHclTerraform(struct?: Datapro
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class DataprocJobPigConfigLoggingConfigOutputReference extends cdktf.ComplexObject {
+export class DataprocJobPigConfigLoggingConfigOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -967,7 +967,7 @@ export interface DataprocJobPigConfig {
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/dataproc_job#continue_on_failure DataprocJob#continue_on_failure}
   */
-  readonly continueOnFailure?: boolean | cdktf.IResolvable;
+  readonly continueOnFailure?: boolean | cdktn.IResolvable;
   /**
   * HCFS URIs of jar files to add to the CLASSPATH of the Pig Client and Hadoop MapReduce (MR) tasks. Can contain Pig UDFs.
   *
@@ -1007,60 +1007,60 @@ export interface DataprocJobPigConfig {
 }
 
 export function dataprocJobPigConfigToTerraform(struct?: DataprocJobPigConfigOutputReference | DataprocJobPigConfig): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    continue_on_failure: cdktf.booleanToTerraform(struct!.continueOnFailure),
-    jar_file_uris: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.jarFileUris),
-    properties: cdktf.hashMapper(cdktf.stringToTerraform)(struct!.properties),
-    query_file_uri: cdktf.stringToTerraform(struct!.queryFileUri),
-    query_list: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.queryList),
-    script_variables: cdktf.hashMapper(cdktf.stringToTerraform)(struct!.scriptVariables),
+    continue_on_failure: cdktn.booleanToTerraform(struct!.continueOnFailure),
+    jar_file_uris: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.jarFileUris),
+    properties: cdktn.hashMapper(cdktn.stringToTerraform)(struct!.properties),
+    query_file_uri: cdktn.stringToTerraform(struct!.queryFileUri),
+    query_list: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.queryList),
+    script_variables: cdktn.hashMapper(cdktn.stringToTerraform)(struct!.scriptVariables),
     logging_config: dataprocJobPigConfigLoggingConfigToTerraform(struct!.loggingConfig),
   }
 }
 
 
 export function dataprocJobPigConfigToHclTerraform(struct?: DataprocJobPigConfigOutputReference | DataprocJobPigConfig): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     continue_on_failure: {
-      value: cdktf.booleanToHclTerraform(struct!.continueOnFailure),
+      value: cdktn.booleanToHclTerraform(struct!.continueOnFailure),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     jar_file_uris: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.jarFileUris),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.jarFileUris),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
     },
     properties: {
-      value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(struct!.properties),
+      value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(struct!.properties),
       isBlock: false,
       type: "map",
       storageClassType: "stringMap",
     },
     query_file_uri: {
-      value: cdktf.stringToHclTerraform(struct!.queryFileUri),
+      value: cdktn.stringToHclTerraform(struct!.queryFileUri),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     query_list: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.queryList),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.queryList),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
     },
     script_variables: {
-      value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(struct!.scriptVariables),
+      value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(struct!.scriptVariables),
       isBlock: false,
       type: "map",
       storageClassType: "stringMap",
@@ -1077,14 +1077,14 @@ export function dataprocJobPigConfigToHclTerraform(struct?: DataprocJobPigConfig
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class DataprocJobPigConfigOutputReference extends cdktf.ComplexObject {
+export class DataprocJobPigConfigOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -1146,11 +1146,11 @@ export class DataprocJobPigConfigOutputReference extends cdktf.ComplexObject {
   }
 
   // continue_on_failure - computed: false, optional: true, required: false
-  private _continueOnFailure?: boolean | cdktf.IResolvable; 
+  private _continueOnFailure?: boolean | cdktn.IResolvable; 
   public get continueOnFailure() {
     return this.getBooleanAttribute('continue_on_failure');
   }
-  public set continueOnFailure(value: boolean | cdktf.IResolvable) {
+  public set continueOnFailure(value: boolean | cdktn.IResolvable) {
     this._continueOnFailure = value;
   }
   public resetContinueOnFailure() {
@@ -1267,24 +1267,24 @@ export interface DataprocJobPlacement {
 }
 
 export function dataprocJobPlacementToTerraform(struct?: DataprocJobPlacementOutputReference | DataprocJobPlacement): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    cluster_name: cdktf.stringToTerraform(struct!.clusterName),
+    cluster_name: cdktn.stringToTerraform(struct!.clusterName),
   }
 }
 
 
 export function dataprocJobPlacementToHclTerraform(struct?: DataprocJobPlacementOutputReference | DataprocJobPlacement): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     cluster_name: {
-      value: cdktf.stringToHclTerraform(struct!.clusterName),
+      value: cdktn.stringToHclTerraform(struct!.clusterName),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -1295,14 +1295,14 @@ export function dataprocJobPlacementToHclTerraform(struct?: DataprocJobPlacement
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class DataprocJobPlacementOutputReference extends cdktf.ComplexObject {
+export class DataprocJobPlacementOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -1355,24 +1355,24 @@ export interface DataprocJobPrestoConfigLoggingConfig {
 }
 
 export function dataprocJobPrestoConfigLoggingConfigToTerraform(struct?: DataprocJobPrestoConfigLoggingConfigOutputReference | DataprocJobPrestoConfigLoggingConfig): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    driver_log_levels: cdktf.hashMapper(cdktf.stringToTerraform)(struct!.driverLogLevels),
+    driver_log_levels: cdktn.hashMapper(cdktn.stringToTerraform)(struct!.driverLogLevels),
   }
 }
 
 
 export function dataprocJobPrestoConfigLoggingConfigToHclTerraform(struct?: DataprocJobPrestoConfigLoggingConfigOutputReference | DataprocJobPrestoConfigLoggingConfig): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     driver_log_levels: {
-      value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(struct!.driverLogLevels),
+      value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(struct!.driverLogLevels),
       isBlock: false,
       type: "map",
       storageClassType: "stringMap",
@@ -1383,14 +1383,14 @@ export function dataprocJobPrestoConfigLoggingConfigToHclTerraform(struct?: Data
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class DataprocJobPrestoConfigLoggingConfigOutputReference extends cdktf.ComplexObject {
+export class DataprocJobPrestoConfigLoggingConfigOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -1440,7 +1440,7 @@ export interface DataprocJobPrestoConfig {
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/dataproc_job#continue_on_failure DataprocJob#continue_on_failure}
   */
-  readonly continueOnFailure?: boolean | cdktf.IResolvable;
+  readonly continueOnFailure?: boolean | cdktn.IResolvable;
   /**
   * The format in which query output will be displayed. See the Presto documentation for supported output formats.
   *
@@ -1474,60 +1474,60 @@ export interface DataprocJobPrestoConfig {
 }
 
 export function dataprocJobPrestoConfigToTerraform(struct?: DataprocJobPrestoConfigOutputReference | DataprocJobPrestoConfig): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    client_tags: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.clientTags),
-    continue_on_failure: cdktf.booleanToTerraform(struct!.continueOnFailure),
-    output_format: cdktf.stringToTerraform(struct!.outputFormat),
-    properties: cdktf.hashMapper(cdktf.stringToTerraform)(struct!.properties),
-    query_file_uri: cdktf.stringToTerraform(struct!.queryFileUri),
-    query_list: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.queryList),
+    client_tags: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.clientTags),
+    continue_on_failure: cdktn.booleanToTerraform(struct!.continueOnFailure),
+    output_format: cdktn.stringToTerraform(struct!.outputFormat),
+    properties: cdktn.hashMapper(cdktn.stringToTerraform)(struct!.properties),
+    query_file_uri: cdktn.stringToTerraform(struct!.queryFileUri),
+    query_list: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.queryList),
     logging_config: dataprocJobPrestoConfigLoggingConfigToTerraform(struct!.loggingConfig),
   }
 }
 
 
 export function dataprocJobPrestoConfigToHclTerraform(struct?: DataprocJobPrestoConfigOutputReference | DataprocJobPrestoConfig): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     client_tags: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.clientTags),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.clientTags),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
     },
     continue_on_failure: {
-      value: cdktf.booleanToHclTerraform(struct!.continueOnFailure),
+      value: cdktn.booleanToHclTerraform(struct!.continueOnFailure),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     output_format: {
-      value: cdktf.stringToHclTerraform(struct!.outputFormat),
+      value: cdktn.stringToHclTerraform(struct!.outputFormat),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     properties: {
-      value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(struct!.properties),
+      value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(struct!.properties),
       isBlock: false,
       type: "map",
       storageClassType: "stringMap",
     },
     query_file_uri: {
-      value: cdktf.stringToHclTerraform(struct!.queryFileUri),
+      value: cdktn.stringToHclTerraform(struct!.queryFileUri),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     query_list: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.queryList),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.queryList),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
@@ -1544,14 +1544,14 @@ export function dataprocJobPrestoConfigToHclTerraform(struct?: DataprocJobPresto
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class DataprocJobPrestoConfigOutputReference extends cdktf.ComplexObject {
+export class DataprocJobPrestoConfigOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -1629,11 +1629,11 @@ export class DataprocJobPrestoConfigOutputReference extends cdktf.ComplexObject 
   }
 
   // continue_on_failure - computed: false, optional: true, required: false
-  private _continueOnFailure?: boolean | cdktf.IResolvable; 
+  private _continueOnFailure?: boolean | cdktn.IResolvable; 
   public get continueOnFailure() {
     return this.getBooleanAttribute('continue_on_failure');
   }
-  public set continueOnFailure(value: boolean | cdktf.IResolvable) {
+  public set continueOnFailure(value: boolean | cdktn.IResolvable) {
     this._continueOnFailure = value;
   }
   public resetContinueOnFailure() {
@@ -1734,24 +1734,24 @@ export interface DataprocJobPysparkConfigLoggingConfig {
 }
 
 export function dataprocJobPysparkConfigLoggingConfigToTerraform(struct?: DataprocJobPysparkConfigLoggingConfigOutputReference | DataprocJobPysparkConfigLoggingConfig): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    driver_log_levels: cdktf.hashMapper(cdktf.stringToTerraform)(struct!.driverLogLevels),
+    driver_log_levels: cdktn.hashMapper(cdktn.stringToTerraform)(struct!.driverLogLevels),
   }
 }
 
 
 export function dataprocJobPysparkConfigLoggingConfigToHclTerraform(struct?: DataprocJobPysparkConfigLoggingConfigOutputReference | DataprocJobPysparkConfigLoggingConfig): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     driver_log_levels: {
-      value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(struct!.driverLogLevels),
+      value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(struct!.driverLogLevels),
       isBlock: false,
       type: "map",
       storageClassType: "stringMap",
@@ -1762,14 +1762,14 @@ export function dataprocJobPysparkConfigLoggingConfigToHclTerraform(struct?: Dat
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class DataprocJobPysparkConfigLoggingConfigOutputReference extends cdktf.ComplexObject {
+export class DataprocJobPysparkConfigLoggingConfigOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -1859,67 +1859,67 @@ export interface DataprocJobPysparkConfig {
 }
 
 export function dataprocJobPysparkConfigToTerraform(struct?: DataprocJobPysparkConfigOutputReference | DataprocJobPysparkConfig): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    archive_uris: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.archiveUris),
-    args: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.args),
-    file_uris: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.fileUris),
-    jar_file_uris: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.jarFileUris),
-    main_python_file_uri: cdktf.stringToTerraform(struct!.mainPythonFileUri),
-    properties: cdktf.hashMapper(cdktf.stringToTerraform)(struct!.properties),
-    python_file_uris: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.pythonFileUris),
+    archive_uris: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.archiveUris),
+    args: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.args),
+    file_uris: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.fileUris),
+    jar_file_uris: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.jarFileUris),
+    main_python_file_uri: cdktn.stringToTerraform(struct!.mainPythonFileUri),
+    properties: cdktn.hashMapper(cdktn.stringToTerraform)(struct!.properties),
+    python_file_uris: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.pythonFileUris),
     logging_config: dataprocJobPysparkConfigLoggingConfigToTerraform(struct!.loggingConfig),
   }
 }
 
 
 export function dataprocJobPysparkConfigToHclTerraform(struct?: DataprocJobPysparkConfigOutputReference | DataprocJobPysparkConfig): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     archive_uris: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.archiveUris),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.archiveUris),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
     },
     args: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.args),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.args),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
     },
     file_uris: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.fileUris),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.fileUris),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
     },
     jar_file_uris: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.jarFileUris),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.jarFileUris),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
     },
     main_python_file_uri: {
-      value: cdktf.stringToHclTerraform(struct!.mainPythonFileUri),
+      value: cdktn.stringToHclTerraform(struct!.mainPythonFileUri),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     properties: {
-      value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(struct!.properties),
+      value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(struct!.properties),
       isBlock: false,
       type: "map",
       storageClassType: "stringMap",
     },
     python_file_uris: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.pythonFileUris),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.pythonFileUris),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
@@ -1936,14 +1936,14 @@ export function dataprocJobPysparkConfigToHclTerraform(struct?: DataprocJobPyspa
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class DataprocJobPysparkConfigOutputReference extends cdktf.ComplexObject {
+export class DataprocJobPysparkConfigOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -2145,24 +2145,24 @@ export interface DataprocJobReference {
 }
 
 export function dataprocJobReferenceToTerraform(struct?: DataprocJobReferenceOutputReference | DataprocJobReference): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    job_id: cdktf.stringToTerraform(struct!.jobId),
+    job_id: cdktn.stringToTerraform(struct!.jobId),
   }
 }
 
 
 export function dataprocJobReferenceToHclTerraform(struct?: DataprocJobReferenceOutputReference | DataprocJobReference): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     job_id: {
-      value: cdktf.stringToHclTerraform(struct!.jobId),
+      value: cdktn.stringToHclTerraform(struct!.jobId),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -2173,14 +2173,14 @@ export function dataprocJobReferenceToHclTerraform(struct?: DataprocJobReference
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class DataprocJobReferenceOutputReference extends cdktf.ComplexObject {
+export class DataprocJobReferenceOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -2237,31 +2237,31 @@ export interface DataprocJobScheduling {
 }
 
 export function dataprocJobSchedulingToTerraform(struct?: DataprocJobSchedulingOutputReference | DataprocJobScheduling): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    max_failures_per_hour: cdktf.numberToTerraform(struct!.maxFailuresPerHour),
-    max_failures_total: cdktf.numberToTerraform(struct!.maxFailuresTotal),
+    max_failures_per_hour: cdktn.numberToTerraform(struct!.maxFailuresPerHour),
+    max_failures_total: cdktn.numberToTerraform(struct!.maxFailuresTotal),
   }
 }
 
 
 export function dataprocJobSchedulingToHclTerraform(struct?: DataprocJobSchedulingOutputReference | DataprocJobScheduling): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     max_failures_per_hour: {
-      value: cdktf.numberToHclTerraform(struct!.maxFailuresPerHour),
+      value: cdktn.numberToHclTerraform(struct!.maxFailuresPerHour),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     max_failures_total: {
-      value: cdktf.numberToHclTerraform(struct!.maxFailuresTotal),
+      value: cdktn.numberToHclTerraform(struct!.maxFailuresTotal),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
@@ -2272,14 +2272,14 @@ export function dataprocJobSchedulingToHclTerraform(struct?: DataprocJobScheduli
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class DataprocJobSchedulingOutputReference extends cdktf.ComplexObject {
+export class DataprocJobSchedulingOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -2346,24 +2346,24 @@ export interface DataprocJobSparkConfigLoggingConfig {
 }
 
 export function dataprocJobSparkConfigLoggingConfigToTerraform(struct?: DataprocJobSparkConfigLoggingConfigOutputReference | DataprocJobSparkConfigLoggingConfig): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    driver_log_levels: cdktf.hashMapper(cdktf.stringToTerraform)(struct!.driverLogLevels),
+    driver_log_levels: cdktn.hashMapper(cdktn.stringToTerraform)(struct!.driverLogLevels),
   }
 }
 
 
 export function dataprocJobSparkConfigLoggingConfigToHclTerraform(struct?: DataprocJobSparkConfigLoggingConfigOutputReference | DataprocJobSparkConfigLoggingConfig): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     driver_log_levels: {
-      value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(struct!.driverLogLevels),
+      value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(struct!.driverLogLevels),
       isBlock: false,
       type: "map",
       storageClassType: "stringMap",
@@ -2374,14 +2374,14 @@ export function dataprocJobSparkConfigLoggingConfigToHclTerraform(struct?: Datap
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class DataprocJobSparkConfigLoggingConfigOutputReference extends cdktf.ComplexObject {
+export class DataprocJobSparkConfigLoggingConfigOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -2471,67 +2471,67 @@ export interface DataprocJobSparkConfig {
 }
 
 export function dataprocJobSparkConfigToTerraform(struct?: DataprocJobSparkConfigOutputReference | DataprocJobSparkConfig): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    archive_uris: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.archiveUris),
-    args: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.args),
-    file_uris: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.fileUris),
-    jar_file_uris: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.jarFileUris),
-    main_class: cdktf.stringToTerraform(struct!.mainClass),
-    main_jar_file_uri: cdktf.stringToTerraform(struct!.mainJarFileUri),
-    properties: cdktf.hashMapper(cdktf.stringToTerraform)(struct!.properties),
+    archive_uris: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.archiveUris),
+    args: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.args),
+    file_uris: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.fileUris),
+    jar_file_uris: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.jarFileUris),
+    main_class: cdktn.stringToTerraform(struct!.mainClass),
+    main_jar_file_uri: cdktn.stringToTerraform(struct!.mainJarFileUri),
+    properties: cdktn.hashMapper(cdktn.stringToTerraform)(struct!.properties),
     logging_config: dataprocJobSparkConfigLoggingConfigToTerraform(struct!.loggingConfig),
   }
 }
 
 
 export function dataprocJobSparkConfigToHclTerraform(struct?: DataprocJobSparkConfigOutputReference | DataprocJobSparkConfig): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     archive_uris: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.archiveUris),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.archiveUris),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
     },
     args: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.args),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.args),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
     },
     file_uris: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.fileUris),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.fileUris),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
     },
     jar_file_uris: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.jarFileUris),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.jarFileUris),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
     },
     main_class: {
-      value: cdktf.stringToHclTerraform(struct!.mainClass),
+      value: cdktn.stringToHclTerraform(struct!.mainClass),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     main_jar_file_uri: {
-      value: cdktf.stringToHclTerraform(struct!.mainJarFileUri),
+      value: cdktn.stringToHclTerraform(struct!.mainJarFileUri),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     properties: {
-      value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(struct!.properties),
+      value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(struct!.properties),
       isBlock: false,
       type: "map",
       storageClassType: "stringMap",
@@ -2548,14 +2548,14 @@ export function dataprocJobSparkConfigToHclTerraform(struct?: DataprocJobSparkCo
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class DataprocJobSparkConfigOutputReference extends cdktf.ComplexObject {
+export class DataprocJobSparkConfigOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -2760,24 +2760,24 @@ export interface DataprocJobSparksqlConfigLoggingConfig {
 }
 
 export function dataprocJobSparksqlConfigLoggingConfigToTerraform(struct?: DataprocJobSparksqlConfigLoggingConfigOutputReference | DataprocJobSparksqlConfigLoggingConfig): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    driver_log_levels: cdktf.hashMapper(cdktf.stringToTerraform)(struct!.driverLogLevels),
+    driver_log_levels: cdktn.hashMapper(cdktn.stringToTerraform)(struct!.driverLogLevels),
   }
 }
 
 
 export function dataprocJobSparksqlConfigLoggingConfigToHclTerraform(struct?: DataprocJobSparksqlConfigLoggingConfigOutputReference | DataprocJobSparksqlConfigLoggingConfig): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     driver_log_levels: {
-      value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(struct!.driverLogLevels),
+      value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(struct!.driverLogLevels),
       isBlock: false,
       type: "map",
       storageClassType: "stringMap",
@@ -2788,14 +2788,14 @@ export function dataprocJobSparksqlConfigLoggingConfigToHclTerraform(struct?: Da
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class DataprocJobSparksqlConfigLoggingConfigOutputReference extends cdktf.ComplexObject {
+export class DataprocJobSparksqlConfigLoggingConfigOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -2873,53 +2873,53 @@ export interface DataprocJobSparksqlConfig {
 }
 
 export function dataprocJobSparksqlConfigToTerraform(struct?: DataprocJobSparksqlConfigOutputReference | DataprocJobSparksqlConfig): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    jar_file_uris: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.jarFileUris),
-    properties: cdktf.hashMapper(cdktf.stringToTerraform)(struct!.properties),
-    query_file_uri: cdktf.stringToTerraform(struct!.queryFileUri),
-    query_list: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.queryList),
-    script_variables: cdktf.hashMapper(cdktf.stringToTerraform)(struct!.scriptVariables),
+    jar_file_uris: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.jarFileUris),
+    properties: cdktn.hashMapper(cdktn.stringToTerraform)(struct!.properties),
+    query_file_uri: cdktn.stringToTerraform(struct!.queryFileUri),
+    query_list: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.queryList),
+    script_variables: cdktn.hashMapper(cdktn.stringToTerraform)(struct!.scriptVariables),
     logging_config: dataprocJobSparksqlConfigLoggingConfigToTerraform(struct!.loggingConfig),
   }
 }
 
 
 export function dataprocJobSparksqlConfigToHclTerraform(struct?: DataprocJobSparksqlConfigOutputReference | DataprocJobSparksqlConfig): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     jar_file_uris: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.jarFileUris),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.jarFileUris),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
     },
     properties: {
-      value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(struct!.properties),
+      value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(struct!.properties),
       isBlock: false,
       type: "map",
       storageClassType: "stringMap",
     },
     query_file_uri: {
-      value: cdktf.stringToHclTerraform(struct!.queryFileUri),
+      value: cdktn.stringToHclTerraform(struct!.queryFileUri),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     query_list: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.queryList),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.queryList),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
     },
     script_variables: {
-      value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(struct!.scriptVariables),
+      value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(struct!.scriptVariables),
       isBlock: false,
       type: "map",
       storageClassType: "stringMap",
@@ -2936,14 +2936,14 @@ export function dataprocJobSparksqlConfigToHclTerraform(struct?: DataprocJobSpar
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class DataprocJobSparksqlConfigOutputReference extends cdktf.ComplexObject {
+export class DataprocJobSparksqlConfigOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -3105,32 +3105,32 @@ export interface DataprocJobTimeouts {
   readonly delete?: string;
 }
 
-export function dataprocJobTimeoutsToTerraform(struct?: DataprocJobTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function dataprocJobTimeoutsToTerraform(struct?: DataprocJobTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    create: cdktf.stringToTerraform(struct!.create),
-    delete: cdktf.stringToTerraform(struct!.delete),
+    create: cdktn.stringToTerraform(struct!.create),
+    delete: cdktn.stringToTerraform(struct!.delete),
   }
 }
 
 
-export function dataprocJobTimeoutsToHclTerraform(struct?: DataprocJobTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function dataprocJobTimeoutsToHclTerraform(struct?: DataprocJobTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     create: {
-      value: cdktf.stringToHclTerraform(struct!.create),
+      value: cdktn.stringToHclTerraform(struct!.create),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     delete: {
-      value: cdktf.stringToHclTerraform(struct!.delete),
+      value: cdktn.stringToHclTerraform(struct!.delete),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -3141,19 +3141,19 @@ export function dataprocJobTimeoutsToHclTerraform(struct?: DataprocJobTimeouts |
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class DataprocJobTimeoutsOutputReference extends cdktf.ComplexObject {
+export class DataprocJobTimeoutsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): DataprocJobTimeouts | cdktf.IResolvable | undefined {
+  public get internalValue(): DataprocJobTimeouts | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -3170,14 +3170,14 @@ export class DataprocJobTimeoutsOutputReference extends cdktf.ComplexObject {
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: DataprocJobTimeouts | cdktf.IResolvable | undefined) {
+  public set internalValue(value: DataprocJobTimeouts | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._create = undefined;
       this._delete = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -3225,7 +3225,7 @@ export class DataprocJobTimeoutsOutputReference extends cdktf.ComplexObject {
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/dataproc_job google_dataproc_job}
 */
-export class DataprocJob extends cdktf.TerraformResource {
+export class DataprocJob extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -3236,14 +3236,14 @@ export class DataprocJob extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a DataprocJob resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a DataprocJob resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataprocJob to import
   * @param importFromId The id of the existing DataprocJob that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/dataproc_job#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataprocJob to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "google_dataproc_job", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "google_dataproc_job", importId: importFromId, provider });
       }
 
   // ===========
@@ -3306,17 +3306,17 @@ export class DataprocJob extends cdktf.TerraformResource {
   }
 
   // effective_labels - computed: true, optional: false, required: false
-  private _effectiveLabels = new cdktf.StringMap(this, "effective_labels");
+  private _effectiveLabels = new cdktn.StringMap(this, "effective_labels");
   public get effectiveLabels() {
     return this._effectiveLabels;
   }
 
   // force_delete - computed: false, optional: true, required: false
-  private _forceDelete?: boolean | cdktf.IResolvable; 
+  private _forceDelete?: boolean | cdktn.IResolvable; 
   public get forceDelete() {
     return this.getBooleanAttribute('force_delete');
   }
-  public set forceDelete(value: boolean | cdktf.IResolvable) {
+  public set forceDelete(value: boolean | cdktn.IResolvable) {
     this._forceDelete = value;
   }
   public resetForceDelete() {
@@ -3398,7 +3398,7 @@ export class DataprocJob extends cdktf.TerraformResource {
   }
 
   // terraform_labels - computed: true, optional: false, required: false
-  private _terraformLabels = new cdktf.StringMap(this, "terraform_labels");
+  private _terraformLabels = new cdktn.StringMap(this, "terraform_labels");
   public get terraformLabels() {
     return this._terraformLabels;
   }
@@ -3582,11 +3582,11 @@ export class DataprocJob extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      force_delete: cdktf.booleanToTerraform(this._forceDelete),
-      id: cdktf.stringToTerraform(this._id),
-      labels: cdktf.hashMapper(cdktf.stringToTerraform)(this._labels),
-      project: cdktf.stringToTerraform(this._project),
-      region: cdktf.stringToTerraform(this._region),
+      force_delete: cdktn.booleanToTerraform(this._forceDelete),
+      id: cdktn.stringToTerraform(this._id),
+      labels: cdktn.hashMapper(cdktn.stringToTerraform)(this._labels),
+      project: cdktn.stringToTerraform(this._project),
+      region: cdktn.stringToTerraform(this._region),
       hadoop_config: dataprocJobHadoopConfigToTerraform(this._hadoopConfig.internalValue),
       hive_config: dataprocJobHiveConfigToTerraform(this._hiveConfig.internalValue),
       pig_config: dataprocJobPigConfigToTerraform(this._pigConfig.internalValue),
@@ -3604,31 +3604,31 @@ export class DataprocJob extends cdktf.TerraformResource {
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       force_delete: {
-        value: cdktf.booleanToHclTerraform(this._forceDelete),
+        value: cdktn.booleanToHclTerraform(this._forceDelete),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       labels: {
-        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._labels),
+        value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(this._labels),
         isBlock: false,
         type: "map",
         storageClassType: "stringMap",
       },
       project: {
-        value: cdktf.stringToHclTerraform(this._project),
+        value: cdktn.stringToHclTerraform(this._project),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       region: {
-        value: cdktf.stringToHclTerraform(this._region),
+        value: cdktn.stringToHclTerraform(this._region),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

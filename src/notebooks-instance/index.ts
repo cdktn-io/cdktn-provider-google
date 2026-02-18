@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface NotebooksInstanceConfig extends cdktf.TerraformMetaArguments {
+export interface NotebooksInstanceConfig extends cdktn.TerraformMetaArguments {
   /**
   * The size of the boot disk in GB attached to this instance,
   * up to a maximum of 64000 GB (64 TB). The minimum recommended value is 100 GB.
@@ -80,7 +80,7 @@ export interface NotebooksInstanceConfig extends cdktf.TerraformMetaArguments {
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/notebooks_instance#install_gpu_driver NotebooksInstance#install_gpu_driver}
   */
-  readonly installGpuDriver?: boolean | cdktf.IResolvable;
+  readonly installGpuDriver?: boolean | cdktn.IResolvable;
   /**
   * The list of owners of this instance after creation.
   * Format: alias@example.com.
@@ -152,19 +152,19 @@ export interface NotebooksInstanceConfig extends cdktf.TerraformMetaArguments {
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/notebooks_instance#no_proxy_access NotebooksInstance#no_proxy_access}
   */
-  readonly noProxyAccess?: boolean | cdktf.IResolvable;
+  readonly noProxyAccess?: boolean | cdktn.IResolvable;
   /**
   * No public IP will be assigned to this instance.
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/notebooks_instance#no_public_ip NotebooksInstance#no_public_ip}
   */
-  readonly noPublicIp?: boolean | cdktf.IResolvable;
+  readonly noPublicIp?: boolean | cdktn.IResolvable;
   /**
   * If true, the data disk will not be auto deleted when deleting the instance.
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/notebooks_instance#no_remove_data_disk NotebooksInstance#no_remove_data_disk}
   */
-  readonly noRemoveDataDisk?: boolean | cdktf.IResolvable;
+  readonly noRemoveDataDisk?: boolean | cdktn.IResolvable;
   /**
   * Path to a Bash script that automatically runs after a
   * notebook instance fully boots up. The path must be a URL
@@ -268,31 +268,31 @@ export interface NotebooksInstanceAcceleratorConfig {
 }
 
 export function notebooksInstanceAcceleratorConfigToTerraform(struct?: NotebooksInstanceAcceleratorConfigOutputReference | NotebooksInstanceAcceleratorConfig): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    core_count: cdktf.numberToTerraform(struct!.coreCount),
-    type: cdktf.stringToTerraform(struct!.type),
+    core_count: cdktn.numberToTerraform(struct!.coreCount),
+    type: cdktn.stringToTerraform(struct!.type),
   }
 }
 
 
 export function notebooksInstanceAcceleratorConfigToHclTerraform(struct?: NotebooksInstanceAcceleratorConfigOutputReference | NotebooksInstanceAcceleratorConfig): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     core_count: {
-      value: cdktf.numberToHclTerraform(struct!.coreCount),
+      value: cdktn.numberToHclTerraform(struct!.coreCount),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     type: {
-      value: cdktf.stringToHclTerraform(struct!.type),
+      value: cdktn.stringToHclTerraform(struct!.type),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -303,14 +303,14 @@ export function notebooksInstanceAcceleratorConfigToHclTerraform(struct?: Notebo
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class NotebooksInstanceAcceleratorConfigOutputReference extends cdktf.ComplexObject {
+export class NotebooksInstanceAcceleratorConfigOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -384,31 +384,31 @@ export interface NotebooksInstanceContainerImage {
 }
 
 export function notebooksInstanceContainerImageToTerraform(struct?: NotebooksInstanceContainerImageOutputReference | NotebooksInstanceContainerImage): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    repository: cdktf.stringToTerraform(struct!.repository),
-    tag: cdktf.stringToTerraform(struct!.tag),
+    repository: cdktn.stringToTerraform(struct!.repository),
+    tag: cdktn.stringToTerraform(struct!.tag),
   }
 }
 
 
 export function notebooksInstanceContainerImageToHclTerraform(struct?: NotebooksInstanceContainerImageOutputReference | NotebooksInstanceContainerImage): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     repository: {
-      value: cdktf.stringToHclTerraform(struct!.repository),
+      value: cdktn.stringToHclTerraform(struct!.repository),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     tag: {
-      value: cdktf.stringToHclTerraform(struct!.tag),
+      value: cdktn.stringToHclTerraform(struct!.tag),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -419,14 +419,14 @@ export function notebooksInstanceContainerImageToHclTerraform(struct?: Notebooks
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class NotebooksInstanceContainerImageOutputReference extends cdktf.ComplexObject {
+export class NotebooksInstanceContainerImageOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -508,38 +508,38 @@ export interface NotebooksInstanceReservationAffinity {
 }
 
 export function notebooksInstanceReservationAffinityToTerraform(struct?: NotebooksInstanceReservationAffinityOutputReference | NotebooksInstanceReservationAffinity): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    consume_reservation_type: cdktf.stringToTerraform(struct!.consumeReservationType),
-    key: cdktf.stringToTerraform(struct!.key),
-    values: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.values),
+    consume_reservation_type: cdktn.stringToTerraform(struct!.consumeReservationType),
+    key: cdktn.stringToTerraform(struct!.key),
+    values: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.values),
   }
 }
 
 
 export function notebooksInstanceReservationAffinityToHclTerraform(struct?: NotebooksInstanceReservationAffinityOutputReference | NotebooksInstanceReservationAffinity): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     consume_reservation_type: {
-      value: cdktf.stringToHclTerraform(struct!.consumeReservationType),
+      value: cdktn.stringToHclTerraform(struct!.consumeReservationType),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     key: {
-      value: cdktf.stringToHclTerraform(struct!.key),
+      value: cdktn.stringToHclTerraform(struct!.key),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     values: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.values),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.values),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
@@ -550,14 +550,14 @@ export function notebooksInstanceReservationAffinityToHclTerraform(struct?: Note
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class NotebooksInstanceReservationAffinityOutputReference extends cdktf.ComplexObject {
+export class NotebooksInstanceReservationAffinityOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -648,7 +648,7 @@ export interface NotebooksInstanceShieldedInstanceConfig {
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/notebooks_instance#enable_integrity_monitoring NotebooksInstance#enable_integrity_monitoring}
   */
-  readonly enableIntegrityMonitoring?: boolean | cdktf.IResolvable;
+  readonly enableIntegrityMonitoring?: boolean | cdktn.IResolvable;
   /**
   * Defines whether the instance has Secure Boot enabled. Secure Boot helps ensure that the system only runs
   * authentic software by verifying the digital signature of all boot components, and halting the boot process
@@ -657,49 +657,49 @@ export interface NotebooksInstanceShieldedInstanceConfig {
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/notebooks_instance#enable_secure_boot NotebooksInstance#enable_secure_boot}
   */
-  readonly enableSecureBoot?: boolean | cdktf.IResolvable;
+  readonly enableSecureBoot?: boolean | cdktn.IResolvable;
   /**
   * Defines whether the instance has the vTPM enabled.
   * Enabled by default.
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/notebooks_instance#enable_vtpm NotebooksInstance#enable_vtpm}
   */
-  readonly enableVtpm?: boolean | cdktf.IResolvable;
+  readonly enableVtpm?: boolean | cdktn.IResolvable;
 }
 
 export function notebooksInstanceShieldedInstanceConfigToTerraform(struct?: NotebooksInstanceShieldedInstanceConfigOutputReference | NotebooksInstanceShieldedInstanceConfig): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    enable_integrity_monitoring: cdktf.booleanToTerraform(struct!.enableIntegrityMonitoring),
-    enable_secure_boot: cdktf.booleanToTerraform(struct!.enableSecureBoot),
-    enable_vtpm: cdktf.booleanToTerraform(struct!.enableVtpm),
+    enable_integrity_monitoring: cdktn.booleanToTerraform(struct!.enableIntegrityMonitoring),
+    enable_secure_boot: cdktn.booleanToTerraform(struct!.enableSecureBoot),
+    enable_vtpm: cdktn.booleanToTerraform(struct!.enableVtpm),
   }
 }
 
 
 export function notebooksInstanceShieldedInstanceConfigToHclTerraform(struct?: NotebooksInstanceShieldedInstanceConfigOutputReference | NotebooksInstanceShieldedInstanceConfig): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     enable_integrity_monitoring: {
-      value: cdktf.booleanToHclTerraform(struct!.enableIntegrityMonitoring),
+      value: cdktn.booleanToHclTerraform(struct!.enableIntegrityMonitoring),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     enable_secure_boot: {
-      value: cdktf.booleanToHclTerraform(struct!.enableSecureBoot),
+      value: cdktn.booleanToHclTerraform(struct!.enableSecureBoot),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     enable_vtpm: {
-      value: cdktf.booleanToHclTerraform(struct!.enableVtpm),
+      value: cdktn.booleanToHclTerraform(struct!.enableVtpm),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
@@ -710,14 +710,14 @@ export function notebooksInstanceShieldedInstanceConfigToHclTerraform(struct?: N
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class NotebooksInstanceShieldedInstanceConfigOutputReference extends cdktf.ComplexObject {
+export class NotebooksInstanceShieldedInstanceConfigOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -755,11 +755,11 @@ export class NotebooksInstanceShieldedInstanceConfigOutputReference extends cdkt
   }
 
   // enable_integrity_monitoring - computed: false, optional: true, required: false
-  private _enableIntegrityMonitoring?: boolean | cdktf.IResolvable; 
+  private _enableIntegrityMonitoring?: boolean | cdktn.IResolvable; 
   public get enableIntegrityMonitoring() {
     return this.getBooleanAttribute('enable_integrity_monitoring');
   }
-  public set enableIntegrityMonitoring(value: boolean | cdktf.IResolvable) {
+  public set enableIntegrityMonitoring(value: boolean | cdktn.IResolvable) {
     this._enableIntegrityMonitoring = value;
   }
   public resetEnableIntegrityMonitoring() {
@@ -771,11 +771,11 @@ export class NotebooksInstanceShieldedInstanceConfigOutputReference extends cdkt
   }
 
   // enable_secure_boot - computed: false, optional: true, required: false
-  private _enableSecureBoot?: boolean | cdktf.IResolvable; 
+  private _enableSecureBoot?: boolean | cdktn.IResolvable; 
   public get enableSecureBoot() {
     return this.getBooleanAttribute('enable_secure_boot');
   }
-  public set enableSecureBoot(value: boolean | cdktf.IResolvable) {
+  public set enableSecureBoot(value: boolean | cdktn.IResolvable) {
     this._enableSecureBoot = value;
   }
   public resetEnableSecureBoot() {
@@ -787,11 +787,11 @@ export class NotebooksInstanceShieldedInstanceConfigOutputReference extends cdkt
   }
 
   // enable_vtpm - computed: false, optional: true, required: false
-  private _enableVtpm?: boolean | cdktf.IResolvable; 
+  private _enableVtpm?: boolean | cdktn.IResolvable; 
   public get enableVtpm() {
     return this.getBooleanAttribute('enable_vtpm');
   }
-  public set enableVtpm(value: boolean | cdktf.IResolvable) {
+  public set enableVtpm(value: boolean | cdktn.IResolvable) {
     this._enableVtpm = value;
   }
   public resetEnableVtpm() {
@@ -817,39 +817,39 @@ export interface NotebooksInstanceTimeouts {
   readonly update?: string;
 }
 
-export function notebooksInstanceTimeoutsToTerraform(struct?: NotebooksInstanceTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function notebooksInstanceTimeoutsToTerraform(struct?: NotebooksInstanceTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    create: cdktf.stringToTerraform(struct!.create),
-    delete: cdktf.stringToTerraform(struct!.delete),
-    update: cdktf.stringToTerraform(struct!.update),
+    create: cdktn.stringToTerraform(struct!.create),
+    delete: cdktn.stringToTerraform(struct!.delete),
+    update: cdktn.stringToTerraform(struct!.update),
   }
 }
 
 
-export function notebooksInstanceTimeoutsToHclTerraform(struct?: NotebooksInstanceTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function notebooksInstanceTimeoutsToHclTerraform(struct?: NotebooksInstanceTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     create: {
-      value: cdktf.stringToHclTerraform(struct!.create),
+      value: cdktn.stringToHclTerraform(struct!.create),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     delete: {
-      value: cdktf.stringToHclTerraform(struct!.delete),
+      value: cdktn.stringToHclTerraform(struct!.delete),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     update: {
-      value: cdktf.stringToHclTerraform(struct!.update),
+      value: cdktn.stringToHclTerraform(struct!.update),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -860,19 +860,19 @@ export function notebooksInstanceTimeoutsToHclTerraform(struct?: NotebooksInstan
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class NotebooksInstanceTimeoutsOutputReference extends cdktf.ComplexObject {
+export class NotebooksInstanceTimeoutsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): NotebooksInstanceTimeouts | cdktf.IResolvable | undefined {
+  public get internalValue(): NotebooksInstanceTimeouts | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -893,7 +893,7 @@ export class NotebooksInstanceTimeoutsOutputReference extends cdktf.ComplexObjec
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: NotebooksInstanceTimeouts | cdktf.IResolvable | undefined) {
+  public set internalValue(value: NotebooksInstanceTimeouts | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -901,7 +901,7 @@ export class NotebooksInstanceTimeoutsOutputReference extends cdktf.ComplexObjec
       this._delete = undefined;
       this._update = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -985,38 +985,38 @@ export interface NotebooksInstanceVmImage {
 }
 
 export function notebooksInstanceVmImageToTerraform(struct?: NotebooksInstanceVmImageOutputReference | NotebooksInstanceVmImage): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    image_family: cdktf.stringToTerraform(struct!.imageFamily),
-    image_name: cdktf.stringToTerraform(struct!.imageName),
-    project: cdktf.stringToTerraform(struct!.project),
+    image_family: cdktn.stringToTerraform(struct!.imageFamily),
+    image_name: cdktn.stringToTerraform(struct!.imageName),
+    project: cdktn.stringToTerraform(struct!.project),
   }
 }
 
 
 export function notebooksInstanceVmImageToHclTerraform(struct?: NotebooksInstanceVmImageOutputReference | NotebooksInstanceVmImage): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     image_family: {
-      value: cdktf.stringToHclTerraform(struct!.imageFamily),
+      value: cdktn.stringToHclTerraform(struct!.imageFamily),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     image_name: {
-      value: cdktf.stringToHclTerraform(struct!.imageName),
+      value: cdktn.stringToHclTerraform(struct!.imageName),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     project: {
-      value: cdktf.stringToHclTerraform(struct!.project),
+      value: cdktn.stringToHclTerraform(struct!.project),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -1027,14 +1027,14 @@ export function notebooksInstanceVmImageToHclTerraform(struct?: NotebooksInstanc
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class NotebooksInstanceVmImageOutputReference extends cdktf.ComplexObject {
+export class NotebooksInstanceVmImageOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -1120,7 +1120,7 @@ export class NotebooksInstanceVmImageOutputReference extends cdktf.ComplexObject
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/notebooks_instance google_notebooks_instance}
 */
-export class NotebooksInstance extends cdktf.TerraformResource {
+export class NotebooksInstance extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -1131,14 +1131,14 @@ export class NotebooksInstance extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a NotebooksInstance resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a NotebooksInstance resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the NotebooksInstance to import
   * @param importFromId The id of the existing NotebooksInstance that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/notebooks_instance#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the NotebooksInstance to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "google_notebooks_instance", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "google_notebooks_instance", importId: importFromId, provider });
       }
 
   // ===========
@@ -1338,7 +1338,7 @@ export class NotebooksInstance extends cdktf.TerraformResource {
   }
 
   // effective_labels - computed: true, optional: false, required: false
-  private _effectiveLabels = new cdktf.StringMap(this, "effective_labels");
+  private _effectiveLabels = new cdktn.StringMap(this, "effective_labels");
   public get effectiveLabels() {
     return this._effectiveLabels;
   }
@@ -1360,11 +1360,11 @@ export class NotebooksInstance extends cdktf.TerraformResource {
   }
 
   // install_gpu_driver - computed: false, optional: true, required: false
-  private _installGpuDriver?: boolean | cdktf.IResolvable; 
+  private _installGpuDriver?: boolean | cdktn.IResolvable; 
   public get installGpuDriver() {
     return this.getBooleanAttribute('install_gpu_driver');
   }
-  public set installGpuDriver(value: boolean | cdktf.IResolvable) {
+  public set installGpuDriver(value: boolean | cdktn.IResolvable) {
     this._installGpuDriver = value;
   }
   public resetInstallGpuDriver() {
@@ -1511,11 +1511,11 @@ export class NotebooksInstance extends cdktf.TerraformResource {
   }
 
   // no_proxy_access - computed: false, optional: true, required: false
-  private _noProxyAccess?: boolean | cdktf.IResolvable; 
+  private _noProxyAccess?: boolean | cdktn.IResolvable; 
   public get noProxyAccess() {
     return this.getBooleanAttribute('no_proxy_access');
   }
-  public set noProxyAccess(value: boolean | cdktf.IResolvable) {
+  public set noProxyAccess(value: boolean | cdktn.IResolvable) {
     this._noProxyAccess = value;
   }
   public resetNoProxyAccess() {
@@ -1527,11 +1527,11 @@ export class NotebooksInstance extends cdktf.TerraformResource {
   }
 
   // no_public_ip - computed: false, optional: true, required: false
-  private _noPublicIp?: boolean | cdktf.IResolvable; 
+  private _noPublicIp?: boolean | cdktn.IResolvable; 
   public get noPublicIp() {
     return this.getBooleanAttribute('no_public_ip');
   }
-  public set noPublicIp(value: boolean | cdktf.IResolvable) {
+  public set noPublicIp(value: boolean | cdktn.IResolvable) {
     this._noPublicIp = value;
   }
   public resetNoPublicIp() {
@@ -1543,11 +1543,11 @@ export class NotebooksInstance extends cdktf.TerraformResource {
   }
 
   // no_remove_data_disk - computed: false, optional: true, required: false
-  private _noRemoveDataDisk?: boolean | cdktf.IResolvable; 
+  private _noRemoveDataDisk?: boolean | cdktn.IResolvable; 
   public get noRemoveDataDisk() {
     return this.getBooleanAttribute('no_remove_data_disk');
   }
-  public set noRemoveDataDisk(value: boolean | cdktf.IResolvable) {
+  public set noRemoveDataDisk(value: boolean | cdktn.IResolvable) {
     this._noRemoveDataDisk = value;
   }
   public resetNoRemoveDataDisk() {
@@ -1665,7 +1665,7 @@ export class NotebooksInstance extends cdktf.TerraformResource {
   }
 
   // terraform_labels - computed: true, optional: false, required: false
-  private _terraformLabels = new cdktf.StringMap(this, "terraform_labels");
+  private _terraformLabels = new cdktn.StringMap(this, "terraform_labels");
   public get terraformLabels() {
     return this._terraformLabels;
   }
@@ -1788,35 +1788,35 @@ export class NotebooksInstance extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      boot_disk_size_gb: cdktf.numberToTerraform(this._bootDiskSizeGb),
-      boot_disk_type: cdktf.stringToTerraform(this._bootDiskType),
-      create_time: cdktf.stringToTerraform(this._createTime),
-      custom_gpu_driver_path: cdktf.stringToTerraform(this._customGpuDriverPath),
-      data_disk_size_gb: cdktf.numberToTerraform(this._dataDiskSizeGb),
-      data_disk_type: cdktf.stringToTerraform(this._dataDiskType),
-      desired_state: cdktf.stringToTerraform(this._desiredState),
-      disk_encryption: cdktf.stringToTerraform(this._diskEncryption),
-      id: cdktf.stringToTerraform(this._id),
-      install_gpu_driver: cdktf.booleanToTerraform(this._installGpuDriver),
-      instance_owners: cdktf.listMapper(cdktf.stringToTerraform, false)(this._instanceOwners),
-      kms_key: cdktf.stringToTerraform(this._kmsKey),
-      labels: cdktf.hashMapper(cdktf.stringToTerraform)(this._labels),
-      location: cdktf.stringToTerraform(this._location),
-      machine_type: cdktf.stringToTerraform(this._machineType),
-      metadata: cdktf.hashMapper(cdktf.stringToTerraform)(this._metadata),
-      name: cdktf.stringToTerraform(this._name),
-      network: cdktf.stringToTerraform(this._network),
-      nic_type: cdktf.stringToTerraform(this._nicType),
-      no_proxy_access: cdktf.booleanToTerraform(this._noProxyAccess),
-      no_public_ip: cdktf.booleanToTerraform(this._noPublicIp),
-      no_remove_data_disk: cdktf.booleanToTerraform(this._noRemoveDataDisk),
-      post_startup_script: cdktf.stringToTerraform(this._postStartupScript),
-      project: cdktf.stringToTerraform(this._project),
-      service_account: cdktf.stringToTerraform(this._serviceAccount),
-      service_account_scopes: cdktf.listMapper(cdktf.stringToTerraform, false)(this._serviceAccountScopes),
-      subnet: cdktf.stringToTerraform(this._subnet),
-      tags: cdktf.listMapper(cdktf.stringToTerraform, false)(this._tags),
-      update_time: cdktf.stringToTerraform(this._updateTime),
+      boot_disk_size_gb: cdktn.numberToTerraform(this._bootDiskSizeGb),
+      boot_disk_type: cdktn.stringToTerraform(this._bootDiskType),
+      create_time: cdktn.stringToTerraform(this._createTime),
+      custom_gpu_driver_path: cdktn.stringToTerraform(this._customGpuDriverPath),
+      data_disk_size_gb: cdktn.numberToTerraform(this._dataDiskSizeGb),
+      data_disk_type: cdktn.stringToTerraform(this._dataDiskType),
+      desired_state: cdktn.stringToTerraform(this._desiredState),
+      disk_encryption: cdktn.stringToTerraform(this._diskEncryption),
+      id: cdktn.stringToTerraform(this._id),
+      install_gpu_driver: cdktn.booleanToTerraform(this._installGpuDriver),
+      instance_owners: cdktn.listMapper(cdktn.stringToTerraform, false)(this._instanceOwners),
+      kms_key: cdktn.stringToTerraform(this._kmsKey),
+      labels: cdktn.hashMapper(cdktn.stringToTerraform)(this._labels),
+      location: cdktn.stringToTerraform(this._location),
+      machine_type: cdktn.stringToTerraform(this._machineType),
+      metadata: cdktn.hashMapper(cdktn.stringToTerraform)(this._metadata),
+      name: cdktn.stringToTerraform(this._name),
+      network: cdktn.stringToTerraform(this._network),
+      nic_type: cdktn.stringToTerraform(this._nicType),
+      no_proxy_access: cdktn.booleanToTerraform(this._noProxyAccess),
+      no_public_ip: cdktn.booleanToTerraform(this._noPublicIp),
+      no_remove_data_disk: cdktn.booleanToTerraform(this._noRemoveDataDisk),
+      post_startup_script: cdktn.stringToTerraform(this._postStartupScript),
+      project: cdktn.stringToTerraform(this._project),
+      service_account: cdktn.stringToTerraform(this._serviceAccount),
+      service_account_scopes: cdktn.listMapper(cdktn.stringToTerraform, false)(this._serviceAccountScopes),
+      subnet: cdktn.stringToTerraform(this._subnet),
+      tags: cdktn.listMapper(cdktn.stringToTerraform, false)(this._tags),
+      update_time: cdktn.stringToTerraform(this._updateTime),
       accelerator_config: notebooksInstanceAcceleratorConfigToTerraform(this._acceleratorConfig.internalValue),
       container_image: notebooksInstanceContainerImageToTerraform(this._containerImage.internalValue),
       reservation_affinity: notebooksInstanceReservationAffinityToTerraform(this._reservationAffinity.internalValue),
@@ -1829,175 +1829,175 @@ export class NotebooksInstance extends cdktf.TerraformResource {
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       boot_disk_size_gb: {
-        value: cdktf.numberToHclTerraform(this._bootDiskSizeGb),
+        value: cdktn.numberToHclTerraform(this._bootDiskSizeGb),
         isBlock: false,
         type: "simple",
         storageClassType: "number",
       },
       boot_disk_type: {
-        value: cdktf.stringToHclTerraform(this._bootDiskType),
+        value: cdktn.stringToHclTerraform(this._bootDiskType),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       create_time: {
-        value: cdktf.stringToHclTerraform(this._createTime),
+        value: cdktn.stringToHclTerraform(this._createTime),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       custom_gpu_driver_path: {
-        value: cdktf.stringToHclTerraform(this._customGpuDriverPath),
+        value: cdktn.stringToHclTerraform(this._customGpuDriverPath),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       data_disk_size_gb: {
-        value: cdktf.numberToHclTerraform(this._dataDiskSizeGb),
+        value: cdktn.numberToHclTerraform(this._dataDiskSizeGb),
         isBlock: false,
         type: "simple",
         storageClassType: "number",
       },
       data_disk_type: {
-        value: cdktf.stringToHclTerraform(this._dataDiskType),
+        value: cdktn.stringToHclTerraform(this._dataDiskType),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       desired_state: {
-        value: cdktf.stringToHclTerraform(this._desiredState),
+        value: cdktn.stringToHclTerraform(this._desiredState),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       disk_encryption: {
-        value: cdktf.stringToHclTerraform(this._diskEncryption),
+        value: cdktn.stringToHclTerraform(this._diskEncryption),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       install_gpu_driver: {
-        value: cdktf.booleanToHclTerraform(this._installGpuDriver),
+        value: cdktn.booleanToHclTerraform(this._installGpuDriver),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       instance_owners: {
-        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._instanceOwners),
+        value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(this._instanceOwners),
         isBlock: false,
         type: "list",
         storageClassType: "stringList",
       },
       kms_key: {
-        value: cdktf.stringToHclTerraform(this._kmsKey),
+        value: cdktn.stringToHclTerraform(this._kmsKey),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       labels: {
-        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._labels),
+        value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(this._labels),
         isBlock: false,
         type: "map",
         storageClassType: "stringMap",
       },
       location: {
-        value: cdktf.stringToHclTerraform(this._location),
+        value: cdktn.stringToHclTerraform(this._location),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       machine_type: {
-        value: cdktf.stringToHclTerraform(this._machineType),
+        value: cdktn.stringToHclTerraform(this._machineType),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       metadata: {
-        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._metadata),
+        value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(this._metadata),
         isBlock: false,
         type: "map",
         storageClassType: "stringMap",
       },
       name: {
-        value: cdktf.stringToHclTerraform(this._name),
+        value: cdktn.stringToHclTerraform(this._name),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       network: {
-        value: cdktf.stringToHclTerraform(this._network),
+        value: cdktn.stringToHclTerraform(this._network),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       nic_type: {
-        value: cdktf.stringToHclTerraform(this._nicType),
+        value: cdktn.stringToHclTerraform(this._nicType),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       no_proxy_access: {
-        value: cdktf.booleanToHclTerraform(this._noProxyAccess),
+        value: cdktn.booleanToHclTerraform(this._noProxyAccess),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       no_public_ip: {
-        value: cdktf.booleanToHclTerraform(this._noPublicIp),
+        value: cdktn.booleanToHclTerraform(this._noPublicIp),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       no_remove_data_disk: {
-        value: cdktf.booleanToHclTerraform(this._noRemoveDataDisk),
+        value: cdktn.booleanToHclTerraform(this._noRemoveDataDisk),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       post_startup_script: {
-        value: cdktf.stringToHclTerraform(this._postStartupScript),
+        value: cdktn.stringToHclTerraform(this._postStartupScript),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       project: {
-        value: cdktf.stringToHclTerraform(this._project),
+        value: cdktn.stringToHclTerraform(this._project),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       service_account: {
-        value: cdktf.stringToHclTerraform(this._serviceAccount),
+        value: cdktn.stringToHclTerraform(this._serviceAccount),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       service_account_scopes: {
-        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._serviceAccountScopes),
+        value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(this._serviceAccountScopes),
         isBlock: false,
         type: "list",
         storageClassType: "stringList",
       },
       subnet: {
-        value: cdktf.stringToHclTerraform(this._subnet),
+        value: cdktn.stringToHclTerraform(this._subnet),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       tags: {
-        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._tags),
+        value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(this._tags),
         isBlock: false,
         type: "list",
         storageClassType: "stringList",
       },
       update_time: {
-        value: cdktf.stringToHclTerraform(this._updateTime),
+        value: cdktn.stringToHclTerraform(this._updateTime),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

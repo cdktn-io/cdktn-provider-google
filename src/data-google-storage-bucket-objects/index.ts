@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface DataGoogleStorageBucketObjectsConfig extends cdktf.TerraformMetaArguments {
+export interface DataGoogleStorageBucketObjectsConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/data-sources/storage_bucket_objects#bucket DataGoogleStorageBucketObjects#bucket}
   */
@@ -36,8 +36,8 @@ export interface DataGoogleStorageBucketObjectsBucketObjects {
 }
 
 export function dataGoogleStorageBucketObjectsBucketObjectsToTerraform(struct?: DataGoogleStorageBucketObjectsBucketObjects): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -46,8 +46,8 @@ export function dataGoogleStorageBucketObjectsBucketObjectsToTerraform(struct?: 
 
 
 export function dataGoogleStorageBucketObjectsBucketObjectsToHclTerraform(struct?: DataGoogleStorageBucketObjectsBucketObjects): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -55,7 +55,7 @@ export function dataGoogleStorageBucketObjectsBucketObjectsToHclTerraform(struct
   return attrs;
 }
 
-export class DataGoogleStorageBucketObjectsBucketObjectsOutputReference extends cdktf.ComplexObject {
+export class DataGoogleStorageBucketObjectsBucketObjectsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -64,7 +64,7 @@ export class DataGoogleStorageBucketObjectsBucketObjectsOutputReference extends 
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -109,14 +109,14 @@ export class DataGoogleStorageBucketObjectsBucketObjectsOutputReference extends 
   }
 }
 
-export class DataGoogleStorageBucketObjectsBucketObjectsList extends cdktf.ComplexList {
+export class DataGoogleStorageBucketObjectsBucketObjectsList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -131,7 +131,7 @@ export class DataGoogleStorageBucketObjectsBucketObjectsList extends cdktf.Compl
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/data-sources/storage_bucket_objects google_storage_bucket_objects}
 */
-export class DataGoogleStorageBucketObjects extends cdktf.TerraformDataSource {
+export class DataGoogleStorageBucketObjects extends cdktn.TerraformDataSource {
 
   // =================
   // STATIC PROPERTIES
@@ -142,14 +142,14 @@ export class DataGoogleStorageBucketObjects extends cdktf.TerraformDataSource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a DataGoogleStorageBucketObjects resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a DataGoogleStorageBucketObjects resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataGoogleStorageBucketObjects to import
   * @param importFromId The id of the existing DataGoogleStorageBucketObjects that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/data-sources/storage_bucket_objects#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataGoogleStorageBucketObjects to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "google_storage_bucket_objects", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "google_storage_bucket_objects", importId: importFromId, provider });
       }
 
   // ===========
@@ -262,35 +262,35 @@ export class DataGoogleStorageBucketObjects extends cdktf.TerraformDataSource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      bucket: cdktf.stringToTerraform(this._bucket),
-      id: cdktf.stringToTerraform(this._id),
-      match_glob: cdktf.stringToTerraform(this._matchGlob),
-      prefix: cdktf.stringToTerraform(this._prefix),
+      bucket: cdktn.stringToTerraform(this._bucket),
+      id: cdktn.stringToTerraform(this._id),
+      match_glob: cdktn.stringToTerraform(this._matchGlob),
+      prefix: cdktn.stringToTerraform(this._prefix),
     };
   }
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       bucket: {
-        value: cdktf.stringToHclTerraform(this._bucket),
+        value: cdktn.stringToHclTerraform(this._bucket),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       match_glob: {
-        value: cdktf.stringToHclTerraform(this._matchGlob),
+        value: cdktn.stringToHclTerraform(this._matchGlob),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       prefix: {
-        value: cdktf.stringToHclTerraform(this._prefix),
+        value: cdktn.stringToHclTerraform(this._prefix),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

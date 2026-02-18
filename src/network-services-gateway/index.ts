@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface NetworkServicesGatewayConfig extends cdktf.TerraformMetaArguments {
+export interface NetworkServicesGatewayConfig extends cdktn.TerraformMetaArguments {
   /**
   * Zero or one IPv4 or IPv6 address on which the Gateway will receive the traffic.
   * When no address is provided, an IP from the subnetwork is allocated.
@@ -35,7 +35,7 @@ export interface NetworkServicesGatewayConfig extends cdktf.TerraformMetaArgumen
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/network_services_gateway#delete_swg_autogen_router_on_destroy NetworkServicesGateway#delete_swg_autogen_router_on_destroy}
   */
-  readonly deleteSwgAutogenRouterOnDestroy?: boolean | cdktf.IResolvable;
+  readonly deleteSwgAutogenRouterOnDestroy?: boolean | cdktn.IResolvable;
   /**
   * A free-text description of the resource. Max length 1024 characters.
   *
@@ -179,39 +179,39 @@ export interface NetworkServicesGatewayTimeouts {
   readonly update?: string;
 }
 
-export function networkServicesGatewayTimeoutsToTerraform(struct?: NetworkServicesGatewayTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function networkServicesGatewayTimeoutsToTerraform(struct?: NetworkServicesGatewayTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    create: cdktf.stringToTerraform(struct!.create),
-    delete: cdktf.stringToTerraform(struct!.delete),
-    update: cdktf.stringToTerraform(struct!.update),
+    create: cdktn.stringToTerraform(struct!.create),
+    delete: cdktn.stringToTerraform(struct!.delete),
+    update: cdktn.stringToTerraform(struct!.update),
   }
 }
 
 
-export function networkServicesGatewayTimeoutsToHclTerraform(struct?: NetworkServicesGatewayTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function networkServicesGatewayTimeoutsToHclTerraform(struct?: NetworkServicesGatewayTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     create: {
-      value: cdktf.stringToHclTerraform(struct!.create),
+      value: cdktn.stringToHclTerraform(struct!.create),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     delete: {
-      value: cdktf.stringToHclTerraform(struct!.delete),
+      value: cdktn.stringToHclTerraform(struct!.delete),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     update: {
-      value: cdktf.stringToHclTerraform(struct!.update),
+      value: cdktn.stringToHclTerraform(struct!.update),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -222,19 +222,19 @@ export function networkServicesGatewayTimeoutsToHclTerraform(struct?: NetworkSer
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class NetworkServicesGatewayTimeoutsOutputReference extends cdktf.ComplexObject {
+export class NetworkServicesGatewayTimeoutsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): NetworkServicesGatewayTimeouts | cdktf.IResolvable | undefined {
+  public get internalValue(): NetworkServicesGatewayTimeouts | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -255,7 +255,7 @@ export class NetworkServicesGatewayTimeoutsOutputReference extends cdktf.Complex
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: NetworkServicesGatewayTimeouts | cdktf.IResolvable | undefined) {
+  public set internalValue(value: NetworkServicesGatewayTimeouts | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -263,7 +263,7 @@ export class NetworkServicesGatewayTimeoutsOutputReference extends cdktf.Complex
       this._delete = undefined;
       this._update = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -328,7 +328,7 @@ export class NetworkServicesGatewayTimeoutsOutputReference extends cdktf.Complex
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/network_services_gateway google_network_services_gateway}
 */
-export class NetworkServicesGateway extends cdktf.TerraformResource {
+export class NetworkServicesGateway extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -339,14 +339,14 @@ export class NetworkServicesGateway extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a NetworkServicesGateway resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a NetworkServicesGateway resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the NetworkServicesGateway to import
   * @param importFromId The id of the existing NetworkServicesGateway that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/network_services_gateway#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the NetworkServicesGateway to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "google_network_services_gateway", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "google_network_services_gateway", importId: importFromId, provider });
       }
 
   // ===========
@@ -440,11 +440,11 @@ export class NetworkServicesGateway extends cdktf.TerraformResource {
   }
 
   // delete_swg_autogen_router_on_destroy - computed: false, optional: true, required: false
-  private _deleteSwgAutogenRouterOnDestroy?: boolean | cdktf.IResolvable; 
+  private _deleteSwgAutogenRouterOnDestroy?: boolean | cdktn.IResolvable; 
   public get deleteSwgAutogenRouterOnDestroy() {
     return this.getBooleanAttribute('delete_swg_autogen_router_on_destroy');
   }
-  public set deleteSwgAutogenRouterOnDestroy(value: boolean | cdktf.IResolvable) {
+  public set deleteSwgAutogenRouterOnDestroy(value: boolean | cdktn.IResolvable) {
     this._deleteSwgAutogenRouterOnDestroy = value;
   }
   public resetDeleteSwgAutogenRouterOnDestroy() {
@@ -472,7 +472,7 @@ export class NetworkServicesGateway extends cdktf.TerraformResource {
   }
 
   // effective_labels - computed: true, optional: false, required: false
-  private _effectiveLabels = new cdktf.StringMap(this, "effective_labels");
+  private _effectiveLabels = new cdktn.StringMap(this, "effective_labels");
   public get effectiveLabels() {
     return this._effectiveLabels;
   }
@@ -701,7 +701,7 @@ export class NetworkServicesGateway extends cdktf.TerraformResource {
   }
 
   // terraform_labels - computed: true, optional: false, required: false
-  private _terraformLabels = new cdktf.StringMap(this, "terraform_labels");
+  private _terraformLabels = new cdktn.StringMap(this, "terraform_labels");
   public get terraformLabels() {
     return this._terraformLabels;
   }
@@ -746,25 +746,25 @@ export class NetworkServicesGateway extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      addresses: cdktf.listMapper(cdktf.stringToTerraform, false)(this._addresses),
-      certificate_urls: cdktf.listMapper(cdktf.stringToTerraform, false)(this._certificateUrls),
-      delete_swg_autogen_router_on_destroy: cdktf.booleanToTerraform(this._deleteSwgAutogenRouterOnDestroy),
-      description: cdktf.stringToTerraform(this._description),
-      envoy_headers: cdktf.stringToTerraform(this._envoyHeaders),
-      gateway_security_policy: cdktf.stringToTerraform(this._gatewaySecurityPolicy),
-      id: cdktf.stringToTerraform(this._id),
-      ip_version: cdktf.stringToTerraform(this._ipVersion),
-      labels: cdktf.hashMapper(cdktf.stringToTerraform)(this._labels),
-      location: cdktf.stringToTerraform(this._location),
-      name: cdktf.stringToTerraform(this._name),
-      network: cdktf.stringToTerraform(this._network),
-      ports: cdktf.listMapper(cdktf.numberToTerraform, false)(this._ports),
-      project: cdktf.stringToTerraform(this._project),
-      routing_mode: cdktf.stringToTerraform(this._routingMode),
-      scope: cdktf.stringToTerraform(this._scope),
-      server_tls_policy: cdktf.stringToTerraform(this._serverTlsPolicy),
-      subnetwork: cdktf.stringToTerraform(this._subnetwork),
-      type: cdktf.stringToTerraform(this._type),
+      addresses: cdktn.listMapper(cdktn.stringToTerraform, false)(this._addresses),
+      certificate_urls: cdktn.listMapper(cdktn.stringToTerraform, false)(this._certificateUrls),
+      delete_swg_autogen_router_on_destroy: cdktn.booleanToTerraform(this._deleteSwgAutogenRouterOnDestroy),
+      description: cdktn.stringToTerraform(this._description),
+      envoy_headers: cdktn.stringToTerraform(this._envoyHeaders),
+      gateway_security_policy: cdktn.stringToTerraform(this._gatewaySecurityPolicy),
+      id: cdktn.stringToTerraform(this._id),
+      ip_version: cdktn.stringToTerraform(this._ipVersion),
+      labels: cdktn.hashMapper(cdktn.stringToTerraform)(this._labels),
+      location: cdktn.stringToTerraform(this._location),
+      name: cdktn.stringToTerraform(this._name),
+      network: cdktn.stringToTerraform(this._network),
+      ports: cdktn.listMapper(cdktn.numberToTerraform, false)(this._ports),
+      project: cdktn.stringToTerraform(this._project),
+      routing_mode: cdktn.stringToTerraform(this._routingMode),
+      scope: cdktn.stringToTerraform(this._scope),
+      server_tls_policy: cdktn.stringToTerraform(this._serverTlsPolicy),
+      subnetwork: cdktn.stringToTerraform(this._subnetwork),
+      type: cdktn.stringToTerraform(this._type),
       timeouts: networkServicesGatewayTimeoutsToTerraform(this._timeouts.internalValue),
     };
   }
@@ -772,115 +772,115 @@ export class NetworkServicesGateway extends cdktf.TerraformResource {
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       addresses: {
-        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._addresses),
+        value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(this._addresses),
         isBlock: false,
         type: "list",
         storageClassType: "stringList",
       },
       certificate_urls: {
-        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._certificateUrls),
+        value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(this._certificateUrls),
         isBlock: false,
         type: "list",
         storageClassType: "stringList",
       },
       delete_swg_autogen_router_on_destroy: {
-        value: cdktf.booleanToHclTerraform(this._deleteSwgAutogenRouterOnDestroy),
+        value: cdktn.booleanToHclTerraform(this._deleteSwgAutogenRouterOnDestroy),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       description: {
-        value: cdktf.stringToHclTerraform(this._description),
+        value: cdktn.stringToHclTerraform(this._description),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       envoy_headers: {
-        value: cdktf.stringToHclTerraform(this._envoyHeaders),
+        value: cdktn.stringToHclTerraform(this._envoyHeaders),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       gateway_security_policy: {
-        value: cdktf.stringToHclTerraform(this._gatewaySecurityPolicy),
+        value: cdktn.stringToHclTerraform(this._gatewaySecurityPolicy),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       ip_version: {
-        value: cdktf.stringToHclTerraform(this._ipVersion),
+        value: cdktn.stringToHclTerraform(this._ipVersion),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       labels: {
-        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._labels),
+        value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(this._labels),
         isBlock: false,
         type: "map",
         storageClassType: "stringMap",
       },
       location: {
-        value: cdktf.stringToHclTerraform(this._location),
+        value: cdktn.stringToHclTerraform(this._location),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       name: {
-        value: cdktf.stringToHclTerraform(this._name),
+        value: cdktn.stringToHclTerraform(this._name),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       network: {
-        value: cdktf.stringToHclTerraform(this._network),
+        value: cdktn.stringToHclTerraform(this._network),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       ports: {
-        value: cdktf.listMapperHcl(cdktf.numberToHclTerraform, false)(this._ports),
+        value: cdktn.listMapperHcl(cdktn.numberToHclTerraform, false)(this._ports),
         isBlock: false,
         type: "list",
         storageClassType: "numberList",
       },
       project: {
-        value: cdktf.stringToHclTerraform(this._project),
+        value: cdktn.stringToHclTerraform(this._project),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       routing_mode: {
-        value: cdktf.stringToHclTerraform(this._routingMode),
+        value: cdktn.stringToHclTerraform(this._routingMode),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       scope: {
-        value: cdktf.stringToHclTerraform(this._scope),
+        value: cdktn.stringToHclTerraform(this._scope),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       server_tls_policy: {
-        value: cdktf.stringToHclTerraform(this._serverTlsPolicy),
+        value: cdktn.stringToHclTerraform(this._serverTlsPolicy),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       subnetwork: {
-        value: cdktf.stringToHclTerraform(this._subnetwork),
+        value: cdktn.stringToHclTerraform(this._subnetwork),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       type: {
-        value: cdktf.stringToHclTerraform(this._type),
+        value: cdktn.stringToHclTerraform(this._type),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

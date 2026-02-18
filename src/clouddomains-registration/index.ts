@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface ClouddomainsRegistrationConfig extends cdktf.TerraformMetaArguments {
+export interface ClouddomainsRegistrationConfig extends cdktn.TerraformMetaArguments {
   /**
   * The list of contact notices that the caller acknowledges. Possible value is PUBLIC_CONTACT_DATA_ACKNOWLEDGEMENT
   *
@@ -146,66 +146,66 @@ export interface ClouddomainsRegistrationContactSettingsAdminContactPostalAddres
 }
 
 export function clouddomainsRegistrationContactSettingsAdminContactPostalAddressToTerraform(struct?: ClouddomainsRegistrationContactSettingsAdminContactPostalAddressOutputReference | ClouddomainsRegistrationContactSettingsAdminContactPostalAddress): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    address_lines: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.addressLines),
-    administrative_area: cdktf.stringToTerraform(struct!.administrativeArea),
-    locality: cdktf.stringToTerraform(struct!.locality),
-    organization: cdktf.stringToTerraform(struct!.organization),
-    postal_code: cdktf.stringToTerraform(struct!.postalCode),
-    recipients: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.recipients),
-    region_code: cdktf.stringToTerraform(struct!.regionCode),
+    address_lines: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.addressLines),
+    administrative_area: cdktn.stringToTerraform(struct!.administrativeArea),
+    locality: cdktn.stringToTerraform(struct!.locality),
+    organization: cdktn.stringToTerraform(struct!.organization),
+    postal_code: cdktn.stringToTerraform(struct!.postalCode),
+    recipients: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.recipients),
+    region_code: cdktn.stringToTerraform(struct!.regionCode),
   }
 }
 
 
 export function clouddomainsRegistrationContactSettingsAdminContactPostalAddressToHclTerraform(struct?: ClouddomainsRegistrationContactSettingsAdminContactPostalAddressOutputReference | ClouddomainsRegistrationContactSettingsAdminContactPostalAddress): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     address_lines: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.addressLines),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.addressLines),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
     },
     administrative_area: {
-      value: cdktf.stringToHclTerraform(struct!.administrativeArea),
+      value: cdktn.stringToHclTerraform(struct!.administrativeArea),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     locality: {
-      value: cdktf.stringToHclTerraform(struct!.locality),
+      value: cdktn.stringToHclTerraform(struct!.locality),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     organization: {
-      value: cdktf.stringToHclTerraform(struct!.organization),
+      value: cdktn.stringToHclTerraform(struct!.organization),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     postal_code: {
-      value: cdktf.stringToHclTerraform(struct!.postalCode),
+      value: cdktn.stringToHclTerraform(struct!.postalCode),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     recipients: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.recipients),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.recipients),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
     },
     region_code: {
-      value: cdktf.stringToHclTerraform(struct!.regionCode),
+      value: cdktn.stringToHclTerraform(struct!.regionCode),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -216,14 +216,14 @@ export function clouddomainsRegistrationContactSettingsAdminContactPostalAddress
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class ClouddomainsRegistrationContactSettingsAdminContactPostalAddressOutputReference extends cdktf.ComplexObject {
+export class ClouddomainsRegistrationContactSettingsAdminContactPostalAddressOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -421,39 +421,39 @@ export interface ClouddomainsRegistrationContactSettingsAdminContact {
 }
 
 export function clouddomainsRegistrationContactSettingsAdminContactToTerraform(struct?: ClouddomainsRegistrationContactSettingsAdminContactOutputReference | ClouddomainsRegistrationContactSettingsAdminContact): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    email: cdktf.stringToTerraform(struct!.email),
-    fax_number: cdktf.stringToTerraform(struct!.faxNumber),
-    phone_number: cdktf.stringToTerraform(struct!.phoneNumber),
+    email: cdktn.stringToTerraform(struct!.email),
+    fax_number: cdktn.stringToTerraform(struct!.faxNumber),
+    phone_number: cdktn.stringToTerraform(struct!.phoneNumber),
     postal_address: clouddomainsRegistrationContactSettingsAdminContactPostalAddressToTerraform(struct!.postalAddress),
   }
 }
 
 
 export function clouddomainsRegistrationContactSettingsAdminContactToHclTerraform(struct?: ClouddomainsRegistrationContactSettingsAdminContactOutputReference | ClouddomainsRegistrationContactSettingsAdminContact): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     email: {
-      value: cdktf.stringToHclTerraform(struct!.email),
+      value: cdktn.stringToHclTerraform(struct!.email),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     fax_number: {
-      value: cdktf.stringToHclTerraform(struct!.faxNumber),
+      value: cdktn.stringToHclTerraform(struct!.faxNumber),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     phone_number: {
-      value: cdktf.stringToHclTerraform(struct!.phoneNumber),
+      value: cdktn.stringToHclTerraform(struct!.phoneNumber),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -470,14 +470,14 @@ export function clouddomainsRegistrationContactSettingsAdminContactToHclTerrafor
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class ClouddomainsRegistrationContactSettingsAdminContactOutputReference extends cdktf.ComplexObject {
+export class ClouddomainsRegistrationContactSettingsAdminContactOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -634,66 +634,66 @@ export interface ClouddomainsRegistrationContactSettingsRegistrantContactPostalA
 }
 
 export function clouddomainsRegistrationContactSettingsRegistrantContactPostalAddressToTerraform(struct?: ClouddomainsRegistrationContactSettingsRegistrantContactPostalAddressOutputReference | ClouddomainsRegistrationContactSettingsRegistrantContactPostalAddress): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    address_lines: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.addressLines),
-    administrative_area: cdktf.stringToTerraform(struct!.administrativeArea),
-    locality: cdktf.stringToTerraform(struct!.locality),
-    organization: cdktf.stringToTerraform(struct!.organization),
-    postal_code: cdktf.stringToTerraform(struct!.postalCode),
-    recipients: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.recipients),
-    region_code: cdktf.stringToTerraform(struct!.regionCode),
+    address_lines: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.addressLines),
+    administrative_area: cdktn.stringToTerraform(struct!.administrativeArea),
+    locality: cdktn.stringToTerraform(struct!.locality),
+    organization: cdktn.stringToTerraform(struct!.organization),
+    postal_code: cdktn.stringToTerraform(struct!.postalCode),
+    recipients: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.recipients),
+    region_code: cdktn.stringToTerraform(struct!.regionCode),
   }
 }
 
 
 export function clouddomainsRegistrationContactSettingsRegistrantContactPostalAddressToHclTerraform(struct?: ClouddomainsRegistrationContactSettingsRegistrantContactPostalAddressOutputReference | ClouddomainsRegistrationContactSettingsRegistrantContactPostalAddress): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     address_lines: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.addressLines),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.addressLines),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
     },
     administrative_area: {
-      value: cdktf.stringToHclTerraform(struct!.administrativeArea),
+      value: cdktn.stringToHclTerraform(struct!.administrativeArea),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     locality: {
-      value: cdktf.stringToHclTerraform(struct!.locality),
+      value: cdktn.stringToHclTerraform(struct!.locality),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     organization: {
-      value: cdktf.stringToHclTerraform(struct!.organization),
+      value: cdktn.stringToHclTerraform(struct!.organization),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     postal_code: {
-      value: cdktf.stringToHclTerraform(struct!.postalCode),
+      value: cdktn.stringToHclTerraform(struct!.postalCode),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     recipients: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.recipients),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.recipients),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
     },
     region_code: {
-      value: cdktf.stringToHclTerraform(struct!.regionCode),
+      value: cdktn.stringToHclTerraform(struct!.regionCode),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -704,14 +704,14 @@ export function clouddomainsRegistrationContactSettingsRegistrantContactPostalAd
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class ClouddomainsRegistrationContactSettingsRegistrantContactPostalAddressOutputReference extends cdktf.ComplexObject {
+export class ClouddomainsRegistrationContactSettingsRegistrantContactPostalAddressOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -909,39 +909,39 @@ export interface ClouddomainsRegistrationContactSettingsRegistrantContact {
 }
 
 export function clouddomainsRegistrationContactSettingsRegistrantContactToTerraform(struct?: ClouddomainsRegistrationContactSettingsRegistrantContactOutputReference | ClouddomainsRegistrationContactSettingsRegistrantContact): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    email: cdktf.stringToTerraform(struct!.email),
-    fax_number: cdktf.stringToTerraform(struct!.faxNumber),
-    phone_number: cdktf.stringToTerraform(struct!.phoneNumber),
+    email: cdktn.stringToTerraform(struct!.email),
+    fax_number: cdktn.stringToTerraform(struct!.faxNumber),
+    phone_number: cdktn.stringToTerraform(struct!.phoneNumber),
     postal_address: clouddomainsRegistrationContactSettingsRegistrantContactPostalAddressToTerraform(struct!.postalAddress),
   }
 }
 
 
 export function clouddomainsRegistrationContactSettingsRegistrantContactToHclTerraform(struct?: ClouddomainsRegistrationContactSettingsRegistrantContactOutputReference | ClouddomainsRegistrationContactSettingsRegistrantContact): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     email: {
-      value: cdktf.stringToHclTerraform(struct!.email),
+      value: cdktn.stringToHclTerraform(struct!.email),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     fax_number: {
-      value: cdktf.stringToHclTerraform(struct!.faxNumber),
+      value: cdktn.stringToHclTerraform(struct!.faxNumber),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     phone_number: {
-      value: cdktf.stringToHclTerraform(struct!.phoneNumber),
+      value: cdktn.stringToHclTerraform(struct!.phoneNumber),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -958,14 +958,14 @@ export function clouddomainsRegistrationContactSettingsRegistrantContactToHclTer
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class ClouddomainsRegistrationContactSettingsRegistrantContactOutputReference extends cdktf.ComplexObject {
+export class ClouddomainsRegistrationContactSettingsRegistrantContactOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -1122,66 +1122,66 @@ export interface ClouddomainsRegistrationContactSettingsTechnicalContactPostalAd
 }
 
 export function clouddomainsRegistrationContactSettingsTechnicalContactPostalAddressToTerraform(struct?: ClouddomainsRegistrationContactSettingsTechnicalContactPostalAddressOutputReference | ClouddomainsRegistrationContactSettingsTechnicalContactPostalAddress): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    address_lines: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.addressLines),
-    administrative_area: cdktf.stringToTerraform(struct!.administrativeArea),
-    locality: cdktf.stringToTerraform(struct!.locality),
-    organization: cdktf.stringToTerraform(struct!.organization),
-    postal_code: cdktf.stringToTerraform(struct!.postalCode),
-    recipients: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.recipients),
-    region_code: cdktf.stringToTerraform(struct!.regionCode),
+    address_lines: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.addressLines),
+    administrative_area: cdktn.stringToTerraform(struct!.administrativeArea),
+    locality: cdktn.stringToTerraform(struct!.locality),
+    organization: cdktn.stringToTerraform(struct!.organization),
+    postal_code: cdktn.stringToTerraform(struct!.postalCode),
+    recipients: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.recipients),
+    region_code: cdktn.stringToTerraform(struct!.regionCode),
   }
 }
 
 
 export function clouddomainsRegistrationContactSettingsTechnicalContactPostalAddressToHclTerraform(struct?: ClouddomainsRegistrationContactSettingsTechnicalContactPostalAddressOutputReference | ClouddomainsRegistrationContactSettingsTechnicalContactPostalAddress): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     address_lines: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.addressLines),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.addressLines),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
     },
     administrative_area: {
-      value: cdktf.stringToHclTerraform(struct!.administrativeArea),
+      value: cdktn.stringToHclTerraform(struct!.administrativeArea),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     locality: {
-      value: cdktf.stringToHclTerraform(struct!.locality),
+      value: cdktn.stringToHclTerraform(struct!.locality),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     organization: {
-      value: cdktf.stringToHclTerraform(struct!.organization),
+      value: cdktn.stringToHclTerraform(struct!.organization),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     postal_code: {
-      value: cdktf.stringToHclTerraform(struct!.postalCode),
+      value: cdktn.stringToHclTerraform(struct!.postalCode),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     recipients: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.recipients),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.recipients),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
     },
     region_code: {
-      value: cdktf.stringToHclTerraform(struct!.regionCode),
+      value: cdktn.stringToHclTerraform(struct!.regionCode),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -1192,14 +1192,14 @@ export function clouddomainsRegistrationContactSettingsTechnicalContactPostalAdd
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class ClouddomainsRegistrationContactSettingsTechnicalContactPostalAddressOutputReference extends cdktf.ComplexObject {
+export class ClouddomainsRegistrationContactSettingsTechnicalContactPostalAddressOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -1397,39 +1397,39 @@ export interface ClouddomainsRegistrationContactSettingsTechnicalContact {
 }
 
 export function clouddomainsRegistrationContactSettingsTechnicalContactToTerraform(struct?: ClouddomainsRegistrationContactSettingsTechnicalContactOutputReference | ClouddomainsRegistrationContactSettingsTechnicalContact): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    email: cdktf.stringToTerraform(struct!.email),
-    fax_number: cdktf.stringToTerraform(struct!.faxNumber),
-    phone_number: cdktf.stringToTerraform(struct!.phoneNumber),
+    email: cdktn.stringToTerraform(struct!.email),
+    fax_number: cdktn.stringToTerraform(struct!.faxNumber),
+    phone_number: cdktn.stringToTerraform(struct!.phoneNumber),
     postal_address: clouddomainsRegistrationContactSettingsTechnicalContactPostalAddressToTerraform(struct!.postalAddress),
   }
 }
 
 
 export function clouddomainsRegistrationContactSettingsTechnicalContactToHclTerraform(struct?: ClouddomainsRegistrationContactSettingsTechnicalContactOutputReference | ClouddomainsRegistrationContactSettingsTechnicalContact): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     email: {
-      value: cdktf.stringToHclTerraform(struct!.email),
+      value: cdktn.stringToHclTerraform(struct!.email),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     fax_number: {
-      value: cdktf.stringToHclTerraform(struct!.faxNumber),
+      value: cdktn.stringToHclTerraform(struct!.faxNumber),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     phone_number: {
-      value: cdktf.stringToHclTerraform(struct!.phoneNumber),
+      value: cdktn.stringToHclTerraform(struct!.phoneNumber),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -1446,14 +1446,14 @@ export function clouddomainsRegistrationContactSettingsTechnicalContactToHclTerr
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class ClouddomainsRegistrationContactSettingsTechnicalContactOutputReference extends cdktf.ComplexObject {
+export class ClouddomainsRegistrationContactSettingsTechnicalContactOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -1580,12 +1580,12 @@ export interface ClouddomainsRegistrationContactSettings {
 }
 
 export function clouddomainsRegistrationContactSettingsToTerraform(struct?: ClouddomainsRegistrationContactSettingsOutputReference | ClouddomainsRegistrationContactSettings): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    privacy: cdktf.stringToTerraform(struct!.privacy),
+    privacy: cdktn.stringToTerraform(struct!.privacy),
     admin_contact: clouddomainsRegistrationContactSettingsAdminContactToTerraform(struct!.adminContact),
     registrant_contact: clouddomainsRegistrationContactSettingsRegistrantContactToTerraform(struct!.registrantContact),
     technical_contact: clouddomainsRegistrationContactSettingsTechnicalContactToTerraform(struct!.technicalContact),
@@ -1594,13 +1594,13 @@ export function clouddomainsRegistrationContactSettingsToTerraform(struct?: Clou
 
 
 export function clouddomainsRegistrationContactSettingsToHclTerraform(struct?: ClouddomainsRegistrationContactSettingsOutputReference | ClouddomainsRegistrationContactSettings): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     privacy: {
-      value: cdktf.stringToHclTerraform(struct!.privacy),
+      value: cdktn.stringToHclTerraform(struct!.privacy),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -1629,14 +1629,14 @@ export function clouddomainsRegistrationContactSettingsToHclTerraform(struct?: C
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class ClouddomainsRegistrationContactSettingsOutputReference extends cdktf.ComplexObject {
+export class ClouddomainsRegistrationContactSettingsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -1758,46 +1758,46 @@ export interface ClouddomainsRegistrationDnsSettingsCustomDnsDsRecords {
   readonly keyTag?: number;
 }
 
-export function clouddomainsRegistrationDnsSettingsCustomDnsDsRecordsToTerraform(struct?: ClouddomainsRegistrationDnsSettingsCustomDnsDsRecords | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function clouddomainsRegistrationDnsSettingsCustomDnsDsRecordsToTerraform(struct?: ClouddomainsRegistrationDnsSettingsCustomDnsDsRecords | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    algorithm: cdktf.stringToTerraform(struct!.algorithm),
-    digest: cdktf.stringToTerraform(struct!.digest),
-    digest_type: cdktf.stringToTerraform(struct!.digestType),
-    key_tag: cdktf.numberToTerraform(struct!.keyTag),
+    algorithm: cdktn.stringToTerraform(struct!.algorithm),
+    digest: cdktn.stringToTerraform(struct!.digest),
+    digest_type: cdktn.stringToTerraform(struct!.digestType),
+    key_tag: cdktn.numberToTerraform(struct!.keyTag),
   }
 }
 
 
-export function clouddomainsRegistrationDnsSettingsCustomDnsDsRecordsToHclTerraform(struct?: ClouddomainsRegistrationDnsSettingsCustomDnsDsRecords | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function clouddomainsRegistrationDnsSettingsCustomDnsDsRecordsToHclTerraform(struct?: ClouddomainsRegistrationDnsSettingsCustomDnsDsRecords | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     algorithm: {
-      value: cdktf.stringToHclTerraform(struct!.algorithm),
+      value: cdktn.stringToHclTerraform(struct!.algorithm),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     digest: {
-      value: cdktf.stringToHclTerraform(struct!.digest),
+      value: cdktn.stringToHclTerraform(struct!.digest),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     digest_type: {
-      value: cdktf.stringToHclTerraform(struct!.digestType),
+      value: cdktn.stringToHclTerraform(struct!.digestType),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     key_tag: {
-      value: cdktf.numberToHclTerraform(struct!.keyTag),
+      value: cdktn.numberToHclTerraform(struct!.keyTag),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
@@ -1808,9 +1808,9 @@ export function clouddomainsRegistrationDnsSettingsCustomDnsDsRecordsToHclTerraf
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class ClouddomainsRegistrationDnsSettingsCustomDnsDsRecordsOutputReference extends cdktf.ComplexObject {
+export class ClouddomainsRegistrationDnsSettingsCustomDnsDsRecordsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -1818,11 +1818,11 @@ export class ClouddomainsRegistrationDnsSettingsCustomDnsDsRecordsOutputReferenc
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): ClouddomainsRegistrationDnsSettingsCustomDnsDsRecords | cdktf.IResolvable | undefined {
+  public get internalValue(): ClouddomainsRegistrationDnsSettingsCustomDnsDsRecords | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -1847,7 +1847,7 @@ export class ClouddomainsRegistrationDnsSettingsCustomDnsDsRecordsOutputReferenc
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: ClouddomainsRegistrationDnsSettingsCustomDnsDsRecords | cdktf.IResolvable | undefined) {
+  public set internalValue(value: ClouddomainsRegistrationDnsSettingsCustomDnsDsRecords | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -1856,7 +1856,7 @@ export class ClouddomainsRegistrationDnsSettingsCustomDnsDsRecordsOutputReferenc
       this._digestType = undefined;
       this._keyTag = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -1935,15 +1935,15 @@ export class ClouddomainsRegistrationDnsSettingsCustomDnsDsRecordsOutputReferenc
   }
 }
 
-export class ClouddomainsRegistrationDnsSettingsCustomDnsDsRecordsList extends cdktf.ComplexList {
-  public internalValue? : ClouddomainsRegistrationDnsSettingsCustomDnsDsRecords[] | cdktf.IResolvable
+export class ClouddomainsRegistrationDnsSettingsCustomDnsDsRecordsList extends cdktn.ComplexList {
+  public internalValue? : ClouddomainsRegistrationDnsSettingsCustomDnsDsRecords[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -1967,35 +1967,35 @@ export interface ClouddomainsRegistrationDnsSettingsCustomDns {
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/clouddomains_registration#ds_records ClouddomainsRegistration#ds_records}
   */
-  readonly dsRecords?: ClouddomainsRegistrationDnsSettingsCustomDnsDsRecords[] | cdktf.IResolvable;
+  readonly dsRecords?: ClouddomainsRegistrationDnsSettingsCustomDnsDsRecords[] | cdktn.IResolvable;
 }
 
 export function clouddomainsRegistrationDnsSettingsCustomDnsToTerraform(struct?: ClouddomainsRegistrationDnsSettingsCustomDnsOutputReference | ClouddomainsRegistrationDnsSettingsCustomDns): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    name_servers: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.nameServers),
-    ds_records: cdktf.listMapper(clouddomainsRegistrationDnsSettingsCustomDnsDsRecordsToTerraform, true)(struct!.dsRecords),
+    name_servers: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.nameServers),
+    ds_records: cdktn.listMapper(clouddomainsRegistrationDnsSettingsCustomDnsDsRecordsToTerraform, true)(struct!.dsRecords),
   }
 }
 
 
 export function clouddomainsRegistrationDnsSettingsCustomDnsToHclTerraform(struct?: ClouddomainsRegistrationDnsSettingsCustomDnsOutputReference | ClouddomainsRegistrationDnsSettingsCustomDns): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     name_servers: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.nameServers),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.nameServers),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
     },
     ds_records: {
-      value: cdktf.listMapperHcl(clouddomainsRegistrationDnsSettingsCustomDnsDsRecordsToHclTerraform, true)(struct!.dsRecords),
+      value: cdktn.listMapperHcl(clouddomainsRegistrationDnsSettingsCustomDnsDsRecordsToHclTerraform, true)(struct!.dsRecords),
       isBlock: true,
       type: "list",
       storageClassType: "ClouddomainsRegistrationDnsSettingsCustomDnsDsRecordsList",
@@ -2006,14 +2006,14 @@ export function clouddomainsRegistrationDnsSettingsCustomDnsToHclTerraform(struc
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class ClouddomainsRegistrationDnsSettingsCustomDnsOutputReference extends cdktf.ComplexObject {
+export class ClouddomainsRegistrationDnsSettingsCustomDnsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -2062,7 +2062,7 @@ export class ClouddomainsRegistrationDnsSettingsCustomDnsOutputReference extends
   public get dsRecords() {
     return this._dsRecords;
   }
-  public putDsRecords(value: ClouddomainsRegistrationDnsSettingsCustomDnsDsRecords[] | cdktf.IResolvable) {
+  public putDsRecords(value: ClouddomainsRegistrationDnsSettingsCustomDnsDsRecords[] | cdktn.IResolvable) {
     this._dsRecords.internalValue = value;
   }
   public resetDsRecords() {
@@ -2096,39 +2096,39 @@ export interface ClouddomainsRegistrationDnsSettingsGlueRecords {
   readonly ipv6Addresses?: string[];
 }
 
-export function clouddomainsRegistrationDnsSettingsGlueRecordsToTerraform(struct?: ClouddomainsRegistrationDnsSettingsGlueRecords | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function clouddomainsRegistrationDnsSettingsGlueRecordsToTerraform(struct?: ClouddomainsRegistrationDnsSettingsGlueRecords | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    host_name: cdktf.stringToTerraform(struct!.hostName),
-    ipv4_addresses: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.ipv4Addresses),
-    ipv6_addresses: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.ipv6Addresses),
+    host_name: cdktn.stringToTerraform(struct!.hostName),
+    ipv4_addresses: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.ipv4Addresses),
+    ipv6_addresses: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.ipv6Addresses),
   }
 }
 
 
-export function clouddomainsRegistrationDnsSettingsGlueRecordsToHclTerraform(struct?: ClouddomainsRegistrationDnsSettingsGlueRecords | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function clouddomainsRegistrationDnsSettingsGlueRecordsToHclTerraform(struct?: ClouddomainsRegistrationDnsSettingsGlueRecords | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     host_name: {
-      value: cdktf.stringToHclTerraform(struct!.hostName),
+      value: cdktn.stringToHclTerraform(struct!.hostName),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     ipv4_addresses: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.ipv4Addresses),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.ipv4Addresses),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
     },
     ipv6_addresses: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.ipv6Addresses),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.ipv6Addresses),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
@@ -2139,9 +2139,9 @@ export function clouddomainsRegistrationDnsSettingsGlueRecordsToHclTerraform(str
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class ClouddomainsRegistrationDnsSettingsGlueRecordsOutputReference extends cdktf.ComplexObject {
+export class ClouddomainsRegistrationDnsSettingsGlueRecordsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -2149,11 +2149,11 @@ export class ClouddomainsRegistrationDnsSettingsGlueRecordsOutputReference exten
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): ClouddomainsRegistrationDnsSettingsGlueRecords | cdktf.IResolvable | undefined {
+  public get internalValue(): ClouddomainsRegistrationDnsSettingsGlueRecords | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -2174,7 +2174,7 @@ export class ClouddomainsRegistrationDnsSettingsGlueRecordsOutputReference exten
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: ClouddomainsRegistrationDnsSettingsGlueRecords | cdktf.IResolvable | undefined) {
+  public set internalValue(value: ClouddomainsRegistrationDnsSettingsGlueRecords | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -2182,7 +2182,7 @@ export class ClouddomainsRegistrationDnsSettingsGlueRecordsOutputReference exten
       this._ipv4Addresses = undefined;
       this._ipv6Addresses = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -2241,15 +2241,15 @@ export class ClouddomainsRegistrationDnsSettingsGlueRecordsOutputReference exten
   }
 }
 
-export class ClouddomainsRegistrationDnsSettingsGlueRecordsList extends cdktf.ComplexList {
-  public internalValue? : ClouddomainsRegistrationDnsSettingsGlueRecords[] | cdktf.IResolvable
+export class ClouddomainsRegistrationDnsSettingsGlueRecordsList extends cdktn.ComplexList {
+  public internalValue? : ClouddomainsRegistrationDnsSettingsGlueRecords[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -2272,24 +2272,24 @@ export interface ClouddomainsRegistrationDnsSettings {
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/clouddomains_registration#glue_records ClouddomainsRegistration#glue_records}
   */
-  readonly glueRecords?: ClouddomainsRegistrationDnsSettingsGlueRecords[] | cdktf.IResolvable;
+  readonly glueRecords?: ClouddomainsRegistrationDnsSettingsGlueRecords[] | cdktn.IResolvable;
 }
 
 export function clouddomainsRegistrationDnsSettingsToTerraform(struct?: ClouddomainsRegistrationDnsSettingsOutputReference | ClouddomainsRegistrationDnsSettings): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
     custom_dns: clouddomainsRegistrationDnsSettingsCustomDnsToTerraform(struct!.customDns),
-    glue_records: cdktf.listMapper(clouddomainsRegistrationDnsSettingsGlueRecordsToTerraform, true)(struct!.glueRecords),
+    glue_records: cdktn.listMapper(clouddomainsRegistrationDnsSettingsGlueRecordsToTerraform, true)(struct!.glueRecords),
   }
 }
 
 
 export function clouddomainsRegistrationDnsSettingsToHclTerraform(struct?: ClouddomainsRegistrationDnsSettingsOutputReference | ClouddomainsRegistrationDnsSettings): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -2300,7 +2300,7 @@ export function clouddomainsRegistrationDnsSettingsToHclTerraform(struct?: Cloud
       storageClassType: "ClouddomainsRegistrationDnsSettingsCustomDnsList",
     },
     glue_records: {
-      value: cdktf.listMapperHcl(clouddomainsRegistrationDnsSettingsGlueRecordsToHclTerraform, true)(struct!.glueRecords),
+      value: cdktn.listMapperHcl(clouddomainsRegistrationDnsSettingsGlueRecordsToHclTerraform, true)(struct!.glueRecords),
       isBlock: true,
       type: "list",
       storageClassType: "ClouddomainsRegistrationDnsSettingsGlueRecordsList",
@@ -2311,14 +2311,14 @@ export function clouddomainsRegistrationDnsSettingsToHclTerraform(struct?: Cloud
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class ClouddomainsRegistrationDnsSettingsOutputReference extends cdktf.ComplexObject {
+export class ClouddomainsRegistrationDnsSettingsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -2370,7 +2370,7 @@ export class ClouddomainsRegistrationDnsSettingsOutputReference extends cdktf.Co
   public get glueRecords() {
     return this._glueRecords;
   }
-  public putGlueRecords(value: ClouddomainsRegistrationDnsSettingsGlueRecords[] | cdktf.IResolvable) {
+  public putGlueRecords(value: ClouddomainsRegistrationDnsSettingsGlueRecords[] | cdktn.IResolvable) {
     this._glueRecords.internalValue = value;
   }
   public resetGlueRecords() {
@@ -2404,31 +2404,31 @@ export interface ClouddomainsRegistrationManagementSettings {
 }
 
 export function clouddomainsRegistrationManagementSettingsToTerraform(struct?: ClouddomainsRegistrationManagementSettingsOutputReference | ClouddomainsRegistrationManagementSettings): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    preferred_renewal_method: cdktf.stringToTerraform(struct!.preferredRenewalMethod),
-    transfer_lock_state: cdktf.stringToTerraform(struct!.transferLockState),
+    preferred_renewal_method: cdktn.stringToTerraform(struct!.preferredRenewalMethod),
+    transfer_lock_state: cdktn.stringToTerraform(struct!.transferLockState),
   }
 }
 
 
 export function clouddomainsRegistrationManagementSettingsToHclTerraform(struct?: ClouddomainsRegistrationManagementSettingsOutputReference | ClouddomainsRegistrationManagementSettings): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     preferred_renewal_method: {
-      value: cdktf.stringToHclTerraform(struct!.preferredRenewalMethod),
+      value: cdktn.stringToHclTerraform(struct!.preferredRenewalMethod),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     transfer_lock_state: {
-      value: cdktf.stringToHclTerraform(struct!.transferLockState),
+      value: cdktn.stringToHclTerraform(struct!.transferLockState),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -2439,14 +2439,14 @@ export function clouddomainsRegistrationManagementSettingsToHclTerraform(struct?
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class ClouddomainsRegistrationManagementSettingsOutputReference extends cdktf.ComplexObject {
+export class ClouddomainsRegistrationManagementSettingsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -2529,39 +2529,39 @@ export interface ClouddomainsRegistrationTimeouts {
   readonly update?: string;
 }
 
-export function clouddomainsRegistrationTimeoutsToTerraform(struct?: ClouddomainsRegistrationTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function clouddomainsRegistrationTimeoutsToTerraform(struct?: ClouddomainsRegistrationTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    create: cdktf.stringToTerraform(struct!.create),
-    delete: cdktf.stringToTerraform(struct!.delete),
-    update: cdktf.stringToTerraform(struct!.update),
+    create: cdktn.stringToTerraform(struct!.create),
+    delete: cdktn.stringToTerraform(struct!.delete),
+    update: cdktn.stringToTerraform(struct!.update),
   }
 }
 
 
-export function clouddomainsRegistrationTimeoutsToHclTerraform(struct?: ClouddomainsRegistrationTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function clouddomainsRegistrationTimeoutsToHclTerraform(struct?: ClouddomainsRegistrationTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     create: {
-      value: cdktf.stringToHclTerraform(struct!.create),
+      value: cdktn.stringToHclTerraform(struct!.create),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     delete: {
-      value: cdktf.stringToHclTerraform(struct!.delete),
+      value: cdktn.stringToHclTerraform(struct!.delete),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     update: {
-      value: cdktf.stringToHclTerraform(struct!.update),
+      value: cdktn.stringToHclTerraform(struct!.update),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -2572,19 +2572,19 @@ export function clouddomainsRegistrationTimeoutsToHclTerraform(struct?: Clouddom
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class ClouddomainsRegistrationTimeoutsOutputReference extends cdktf.ComplexObject {
+export class ClouddomainsRegistrationTimeoutsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): ClouddomainsRegistrationTimeouts | cdktf.IResolvable | undefined {
+  public get internalValue(): ClouddomainsRegistrationTimeouts | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -2605,7 +2605,7 @@ export class ClouddomainsRegistrationTimeoutsOutputReference extends cdktf.Compl
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: ClouddomainsRegistrationTimeouts | cdktf.IResolvable | undefined) {
+  public set internalValue(value: ClouddomainsRegistrationTimeouts | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -2613,7 +2613,7 @@ export class ClouddomainsRegistrationTimeoutsOutputReference extends cdktf.Compl
       this._delete = undefined;
       this._update = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -2690,31 +2690,31 @@ export interface ClouddomainsRegistrationYearlyPrice {
 }
 
 export function clouddomainsRegistrationYearlyPriceToTerraform(struct?: ClouddomainsRegistrationYearlyPriceOutputReference | ClouddomainsRegistrationYearlyPrice): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    currency_code: cdktf.stringToTerraform(struct!.currencyCode),
-    units: cdktf.stringToTerraform(struct!.units),
+    currency_code: cdktn.stringToTerraform(struct!.currencyCode),
+    units: cdktn.stringToTerraform(struct!.units),
   }
 }
 
 
 export function clouddomainsRegistrationYearlyPriceToHclTerraform(struct?: ClouddomainsRegistrationYearlyPriceOutputReference | ClouddomainsRegistrationYearlyPrice): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     currency_code: {
-      value: cdktf.stringToHclTerraform(struct!.currencyCode),
+      value: cdktn.stringToHclTerraform(struct!.currencyCode),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     units: {
-      value: cdktf.stringToHclTerraform(struct!.units),
+      value: cdktn.stringToHclTerraform(struct!.units),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -2725,14 +2725,14 @@ export function clouddomainsRegistrationYearlyPriceToHclTerraform(struct?: Cloud
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class ClouddomainsRegistrationYearlyPriceOutputReference extends cdktf.ComplexObject {
+export class ClouddomainsRegistrationYearlyPriceOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -2799,7 +2799,7 @@ export class ClouddomainsRegistrationYearlyPriceOutputReference extends cdktf.Co
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/clouddomains_registration google_clouddomains_registration}
 */
-export class ClouddomainsRegistration extends cdktf.TerraformResource {
+export class ClouddomainsRegistration extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -2810,14 +2810,14 @@ export class ClouddomainsRegistration extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a ClouddomainsRegistration resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a ClouddomainsRegistration resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the ClouddomainsRegistration to import
   * @param importFromId The id of the existing ClouddomainsRegistration that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/clouddomains_registration#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the ClouddomainsRegistration to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "google_clouddomains_registration", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "google_clouddomains_registration", importId: importFromId, provider });
       }
 
   // ===========
@@ -2916,7 +2916,7 @@ export class ClouddomainsRegistration extends cdktf.TerraformResource {
   }
 
   // effective_labels - computed: true, optional: false, required: false
-  private _effectiveLabels = new cdktf.StringMap(this, "effective_labels");
+  private _effectiveLabels = new cdktn.StringMap(this, "effective_labels");
   public get effectiveLabels() {
     return this._effectiveLabels;
   }
@@ -3013,7 +3013,7 @@ export class ClouddomainsRegistration extends cdktf.TerraformResource {
   }
 
   // terraform_labels - computed: true, optional: false, required: false
-  private _terraformLabels = new cdktf.StringMap(this, "terraform_labels");
+  private _terraformLabels = new cdktn.StringMap(this, "terraform_labels");
   public get terraformLabels() {
     return this._terraformLabels;
   }
@@ -3098,13 +3098,13 @@ export class ClouddomainsRegistration extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      contact_notices: cdktf.listMapper(cdktf.stringToTerraform, false)(this._contactNotices),
-      domain_name: cdktf.stringToTerraform(this._domainName),
-      domain_notices: cdktf.listMapper(cdktf.stringToTerraform, false)(this._domainNotices),
-      id: cdktf.stringToTerraform(this._id),
-      labels: cdktf.hashMapper(cdktf.stringToTerraform)(this._labels),
-      location: cdktf.stringToTerraform(this._location),
-      project: cdktf.stringToTerraform(this._project),
+      contact_notices: cdktn.listMapper(cdktn.stringToTerraform, false)(this._contactNotices),
+      domain_name: cdktn.stringToTerraform(this._domainName),
+      domain_notices: cdktn.listMapper(cdktn.stringToTerraform, false)(this._domainNotices),
+      id: cdktn.stringToTerraform(this._id),
+      labels: cdktn.hashMapper(cdktn.stringToTerraform)(this._labels),
+      location: cdktn.stringToTerraform(this._location),
+      project: cdktn.stringToTerraform(this._project),
       contact_settings: clouddomainsRegistrationContactSettingsToTerraform(this._contactSettings.internalValue),
       dns_settings: clouddomainsRegistrationDnsSettingsToTerraform(this._dnsSettings.internalValue),
       management_settings: clouddomainsRegistrationManagementSettingsToTerraform(this._managementSettings.internalValue),
@@ -3116,43 +3116,43 @@ export class ClouddomainsRegistration extends cdktf.TerraformResource {
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       contact_notices: {
-        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._contactNotices),
+        value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(this._contactNotices),
         isBlock: false,
         type: "list",
         storageClassType: "stringList",
       },
       domain_name: {
-        value: cdktf.stringToHclTerraform(this._domainName),
+        value: cdktn.stringToHclTerraform(this._domainName),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       domain_notices: {
-        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._domainNotices),
+        value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(this._domainNotices),
         isBlock: false,
         type: "list",
         storageClassType: "stringList",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       labels: {
-        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._labels),
+        value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(this._labels),
         isBlock: false,
         type: "map",
         storageClassType: "stringMap",
       },
       location: {
-        value: cdktf.stringToHclTerraform(this._location),
+        value: cdktn.stringToHclTerraform(this._location),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       project: {
-        value: cdktf.stringToHclTerraform(this._project),
+        value: cdktn.stringToHclTerraform(this._project),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

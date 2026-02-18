@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface GeminiRepositoryGroupIamMemberConfig extends cdktf.TerraformMetaArguments {
+export interface GeminiRepositoryGroupIamMemberConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/gemini_repository_group_iam_member#code_repository_index GeminiRepositoryGroupIamMember#code_repository_index}
   */
@@ -66,38 +66,38 @@ export interface GeminiRepositoryGroupIamMemberCondition {
 }
 
 export function geminiRepositoryGroupIamMemberConditionToTerraform(struct?: GeminiRepositoryGroupIamMemberConditionOutputReference | GeminiRepositoryGroupIamMemberCondition): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    description: cdktf.stringToTerraform(struct!.description),
-    expression: cdktf.stringToTerraform(struct!.expression),
-    title: cdktf.stringToTerraform(struct!.title),
+    description: cdktn.stringToTerraform(struct!.description),
+    expression: cdktn.stringToTerraform(struct!.expression),
+    title: cdktn.stringToTerraform(struct!.title),
   }
 }
 
 
 export function geminiRepositoryGroupIamMemberConditionToHclTerraform(struct?: GeminiRepositoryGroupIamMemberConditionOutputReference | GeminiRepositoryGroupIamMemberCondition): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     description: {
-      value: cdktf.stringToHclTerraform(struct!.description),
+      value: cdktn.stringToHclTerraform(struct!.description),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     expression: {
-      value: cdktf.stringToHclTerraform(struct!.expression),
+      value: cdktn.stringToHclTerraform(struct!.expression),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     title: {
-      value: cdktf.stringToHclTerraform(struct!.title),
+      value: cdktn.stringToHclTerraform(struct!.title),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -108,14 +108,14 @@ export function geminiRepositoryGroupIamMemberConditionToHclTerraform(struct?: G
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class GeminiRepositoryGroupIamMemberConditionOutputReference extends cdktf.ComplexObject {
+export class GeminiRepositoryGroupIamMemberConditionOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -198,7 +198,7 @@ export class GeminiRepositoryGroupIamMemberConditionOutputReference extends cdkt
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/gemini_repository_group_iam_member google_gemini_repository_group_iam_member}
 */
-export class GeminiRepositoryGroupIamMember extends cdktf.TerraformResource {
+export class GeminiRepositoryGroupIamMember extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -209,14 +209,14 @@ export class GeminiRepositoryGroupIamMember extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a GeminiRepositoryGroupIamMember resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a GeminiRepositoryGroupIamMember resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the GeminiRepositoryGroupIamMember to import
   * @param importFromId The id of the existing GeminiRepositoryGroupIamMember that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/gemini_repository_group_iam_member#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the GeminiRepositoryGroupIamMember to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "google_gemini_repository_group_iam_member", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "google_gemini_repository_group_iam_member", importId: importFromId, provider });
       }
 
   // ===========
@@ -387,13 +387,13 @@ export class GeminiRepositoryGroupIamMember extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      code_repository_index: cdktf.stringToTerraform(this._codeRepositoryIndex),
-      id: cdktf.stringToTerraform(this._id),
-      location: cdktf.stringToTerraform(this._location),
-      member: cdktf.stringToTerraform(this._member),
-      project: cdktf.stringToTerraform(this._project),
-      repository_group_id: cdktf.stringToTerraform(this._repositoryGroupId),
-      role: cdktf.stringToTerraform(this._role),
+      code_repository_index: cdktn.stringToTerraform(this._codeRepositoryIndex),
+      id: cdktn.stringToTerraform(this._id),
+      location: cdktn.stringToTerraform(this._location),
+      member: cdktn.stringToTerraform(this._member),
+      project: cdktn.stringToTerraform(this._project),
+      repository_group_id: cdktn.stringToTerraform(this._repositoryGroupId),
+      role: cdktn.stringToTerraform(this._role),
       condition: geminiRepositoryGroupIamMemberConditionToTerraform(this._condition.internalValue),
     };
   }
@@ -401,43 +401,43 @@ export class GeminiRepositoryGroupIamMember extends cdktf.TerraformResource {
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       code_repository_index: {
-        value: cdktf.stringToHclTerraform(this._codeRepositoryIndex),
+        value: cdktn.stringToHclTerraform(this._codeRepositoryIndex),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       location: {
-        value: cdktf.stringToHclTerraform(this._location),
+        value: cdktn.stringToHclTerraform(this._location),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       member: {
-        value: cdktf.stringToHclTerraform(this._member),
+        value: cdktn.stringToHclTerraform(this._member),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       project: {
-        value: cdktf.stringToHclTerraform(this._project),
+        value: cdktn.stringToHclTerraform(this._project),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       repository_group_id: {
-        value: cdktf.stringToHclTerraform(this._repositoryGroupId),
+        value: cdktn.stringToHclTerraform(this._repositoryGroupId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       role: {
-        value: cdktf.stringToHclTerraform(this._role),
+        value: cdktn.stringToHclTerraform(this._role),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

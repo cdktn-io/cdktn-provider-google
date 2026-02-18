@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface StorageInsightsReportConfigConfig extends cdktf.TerraformMetaArguments {
+export interface StorageInsightsReportConfigConfig extends cdktn.TerraformMetaArguments {
   /**
   * The editable display name of the inventory report configuration. Has a limit of 256 characters. Can be empty.
   *
@@ -79,7 +79,7 @@ export interface StorageInsightsReportConfigCsvOptions {
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/storage_insights_report_config#header_required StorageInsightsReportConfig#header_required}
   */
-  readonly headerRequired?: boolean | cdktf.IResolvable;
+  readonly headerRequired?: boolean | cdktn.IResolvable;
   /**
   * The character used to separate the records in the inventory report CSV file.
   *
@@ -89,38 +89,38 @@ export interface StorageInsightsReportConfigCsvOptions {
 }
 
 export function storageInsightsReportConfigCsvOptionsToTerraform(struct?: StorageInsightsReportConfigCsvOptionsOutputReference | StorageInsightsReportConfigCsvOptions): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    delimiter: cdktf.stringToTerraform(struct!.delimiter),
-    header_required: cdktf.booleanToTerraform(struct!.headerRequired),
-    record_separator: cdktf.stringToTerraform(struct!.recordSeparator),
+    delimiter: cdktn.stringToTerraform(struct!.delimiter),
+    header_required: cdktn.booleanToTerraform(struct!.headerRequired),
+    record_separator: cdktn.stringToTerraform(struct!.recordSeparator),
   }
 }
 
 
 export function storageInsightsReportConfigCsvOptionsToHclTerraform(struct?: StorageInsightsReportConfigCsvOptionsOutputReference | StorageInsightsReportConfigCsvOptions): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     delimiter: {
-      value: cdktf.stringToHclTerraform(struct!.delimiter),
+      value: cdktn.stringToHclTerraform(struct!.delimiter),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     header_required: {
-      value: cdktf.booleanToHclTerraform(struct!.headerRequired),
+      value: cdktn.booleanToHclTerraform(struct!.headerRequired),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     record_separator: {
-      value: cdktf.stringToHclTerraform(struct!.recordSeparator),
+      value: cdktn.stringToHclTerraform(struct!.recordSeparator),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -131,14 +131,14 @@ export function storageInsightsReportConfigCsvOptionsToHclTerraform(struct?: Sto
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class StorageInsightsReportConfigCsvOptionsOutputReference extends cdktf.ComplexObject {
+export class StorageInsightsReportConfigCsvOptionsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -192,11 +192,11 @@ export class StorageInsightsReportConfigCsvOptionsOutputReference extends cdktf.
   }
 
   // header_required - computed: false, optional: true, required: false
-  private _headerRequired?: boolean | cdktf.IResolvable; 
+  private _headerRequired?: boolean | cdktn.IResolvable; 
   public get headerRequired() {
     return this.getBooleanAttribute('header_required');
   }
-  public set headerRequired(value: boolean | cdktf.IResolvable) {
+  public set headerRequired(value: boolean | cdktn.IResolvable) {
     this._headerRequired = value;
   }
   public resetHeaderRequired() {
@@ -245,38 +245,38 @@ export interface StorageInsightsReportConfigFrequencyOptionsEndDate {
 }
 
 export function storageInsightsReportConfigFrequencyOptionsEndDateToTerraform(struct?: StorageInsightsReportConfigFrequencyOptionsEndDateOutputReference | StorageInsightsReportConfigFrequencyOptionsEndDate): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    day: cdktf.numberToTerraform(struct!.day),
-    month: cdktf.numberToTerraform(struct!.month),
-    year: cdktf.numberToTerraform(struct!.year),
+    day: cdktn.numberToTerraform(struct!.day),
+    month: cdktn.numberToTerraform(struct!.month),
+    year: cdktn.numberToTerraform(struct!.year),
   }
 }
 
 
 export function storageInsightsReportConfigFrequencyOptionsEndDateToHclTerraform(struct?: StorageInsightsReportConfigFrequencyOptionsEndDateOutputReference | StorageInsightsReportConfigFrequencyOptionsEndDate): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     day: {
-      value: cdktf.numberToHclTerraform(struct!.day),
+      value: cdktn.numberToHclTerraform(struct!.day),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     month: {
-      value: cdktf.numberToHclTerraform(struct!.month),
+      value: cdktn.numberToHclTerraform(struct!.month),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     year: {
-      value: cdktf.numberToHclTerraform(struct!.year),
+      value: cdktn.numberToHclTerraform(struct!.year),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
@@ -287,14 +287,14 @@ export function storageInsightsReportConfigFrequencyOptionsEndDateToHclTerraform
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class StorageInsightsReportConfigFrequencyOptionsEndDateOutputReference extends cdktf.ComplexObject {
+export class StorageInsightsReportConfigFrequencyOptionsEndDateOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -392,38 +392,38 @@ export interface StorageInsightsReportConfigFrequencyOptionsStartDate {
 }
 
 export function storageInsightsReportConfigFrequencyOptionsStartDateToTerraform(struct?: StorageInsightsReportConfigFrequencyOptionsStartDateOutputReference | StorageInsightsReportConfigFrequencyOptionsStartDate): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    day: cdktf.numberToTerraform(struct!.day),
-    month: cdktf.numberToTerraform(struct!.month),
-    year: cdktf.numberToTerraform(struct!.year),
+    day: cdktn.numberToTerraform(struct!.day),
+    month: cdktn.numberToTerraform(struct!.month),
+    year: cdktn.numberToTerraform(struct!.year),
   }
 }
 
 
 export function storageInsightsReportConfigFrequencyOptionsStartDateToHclTerraform(struct?: StorageInsightsReportConfigFrequencyOptionsStartDateOutputReference | StorageInsightsReportConfigFrequencyOptionsStartDate): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     day: {
-      value: cdktf.numberToHclTerraform(struct!.day),
+      value: cdktn.numberToHclTerraform(struct!.day),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     month: {
-      value: cdktf.numberToHclTerraform(struct!.month),
+      value: cdktn.numberToHclTerraform(struct!.month),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     year: {
-      value: cdktf.numberToHclTerraform(struct!.year),
+      value: cdktn.numberToHclTerraform(struct!.year),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
@@ -434,14 +434,14 @@ export function storageInsightsReportConfigFrequencyOptionsStartDateToHclTerrafo
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class StorageInsightsReportConfigFrequencyOptionsStartDateOutputReference extends cdktf.ComplexObject {
+export class StorageInsightsReportConfigFrequencyOptionsStartDateOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -539,12 +539,12 @@ export interface StorageInsightsReportConfigFrequencyOptions {
 }
 
 export function storageInsightsReportConfigFrequencyOptionsToTerraform(struct?: StorageInsightsReportConfigFrequencyOptionsOutputReference | StorageInsightsReportConfigFrequencyOptions): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    frequency: cdktf.stringToTerraform(struct!.frequency),
+    frequency: cdktn.stringToTerraform(struct!.frequency),
     end_date: storageInsightsReportConfigFrequencyOptionsEndDateToTerraform(struct!.endDate),
     start_date: storageInsightsReportConfigFrequencyOptionsStartDateToTerraform(struct!.startDate),
   }
@@ -552,13 +552,13 @@ export function storageInsightsReportConfigFrequencyOptionsToTerraform(struct?: 
 
 
 export function storageInsightsReportConfigFrequencyOptionsToHclTerraform(struct?: StorageInsightsReportConfigFrequencyOptionsOutputReference | StorageInsightsReportConfigFrequencyOptions): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     frequency: {
-      value: cdktf.stringToHclTerraform(struct!.frequency),
+      value: cdktn.stringToHclTerraform(struct!.frequency),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -581,14 +581,14 @@ export function storageInsightsReportConfigFrequencyOptionsToHclTerraform(struct
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class StorageInsightsReportConfigFrequencyOptionsOutputReference extends cdktf.ComplexObject {
+export class StorageInsightsReportConfigFrequencyOptionsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -680,31 +680,31 @@ export interface StorageInsightsReportConfigObjectMetadataReportOptionsStorageDe
 }
 
 export function storageInsightsReportConfigObjectMetadataReportOptionsStorageDestinationOptionsToTerraform(struct?: StorageInsightsReportConfigObjectMetadataReportOptionsStorageDestinationOptionsOutputReference | StorageInsightsReportConfigObjectMetadataReportOptionsStorageDestinationOptions): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    bucket: cdktf.stringToTerraform(struct!.bucket),
-    destination_path: cdktf.stringToTerraform(struct!.destinationPath),
+    bucket: cdktn.stringToTerraform(struct!.bucket),
+    destination_path: cdktn.stringToTerraform(struct!.destinationPath),
   }
 }
 
 
 export function storageInsightsReportConfigObjectMetadataReportOptionsStorageDestinationOptionsToHclTerraform(struct?: StorageInsightsReportConfigObjectMetadataReportOptionsStorageDestinationOptionsOutputReference | StorageInsightsReportConfigObjectMetadataReportOptionsStorageDestinationOptions): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     bucket: {
-      value: cdktf.stringToHclTerraform(struct!.bucket),
+      value: cdktn.stringToHclTerraform(struct!.bucket),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     destination_path: {
-      value: cdktf.stringToHclTerraform(struct!.destinationPath),
+      value: cdktn.stringToHclTerraform(struct!.destinationPath),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -715,14 +715,14 @@ export function storageInsightsReportConfigObjectMetadataReportOptionsStorageDes
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class StorageInsightsReportConfigObjectMetadataReportOptionsStorageDestinationOptionsOutputReference extends cdktf.ComplexObject {
+export class StorageInsightsReportConfigObjectMetadataReportOptionsStorageDestinationOptionsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -792,24 +792,24 @@ export interface StorageInsightsReportConfigObjectMetadataReportOptionsStorageFi
 }
 
 export function storageInsightsReportConfigObjectMetadataReportOptionsStorageFiltersToTerraform(struct?: StorageInsightsReportConfigObjectMetadataReportOptionsStorageFiltersOutputReference | StorageInsightsReportConfigObjectMetadataReportOptionsStorageFilters): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    bucket: cdktf.stringToTerraform(struct!.bucket),
+    bucket: cdktn.stringToTerraform(struct!.bucket),
   }
 }
 
 
 export function storageInsightsReportConfigObjectMetadataReportOptionsStorageFiltersToHclTerraform(struct?: StorageInsightsReportConfigObjectMetadataReportOptionsStorageFiltersOutputReference | StorageInsightsReportConfigObjectMetadataReportOptionsStorageFilters): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     bucket: {
-      value: cdktf.stringToHclTerraform(struct!.bucket),
+      value: cdktn.stringToHclTerraform(struct!.bucket),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -820,14 +820,14 @@ export function storageInsightsReportConfigObjectMetadataReportOptionsStorageFil
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class StorageInsightsReportConfigObjectMetadataReportOptionsStorageFiltersOutputReference extends cdktf.ComplexObject {
+export class StorageInsightsReportConfigObjectMetadataReportOptionsStorageFiltersOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -890,12 +890,12 @@ export interface StorageInsightsReportConfigObjectMetadataReportOptions {
 }
 
 export function storageInsightsReportConfigObjectMetadataReportOptionsToTerraform(struct?: StorageInsightsReportConfigObjectMetadataReportOptionsOutputReference | StorageInsightsReportConfigObjectMetadataReportOptions): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    metadata_fields: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.metadataFields),
+    metadata_fields: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.metadataFields),
     storage_destination_options: storageInsightsReportConfigObjectMetadataReportOptionsStorageDestinationOptionsToTerraform(struct!.storageDestinationOptions),
     storage_filters: storageInsightsReportConfigObjectMetadataReportOptionsStorageFiltersToTerraform(struct!.storageFilters),
   }
@@ -903,13 +903,13 @@ export function storageInsightsReportConfigObjectMetadataReportOptionsToTerrafor
 
 
 export function storageInsightsReportConfigObjectMetadataReportOptionsToHclTerraform(struct?: StorageInsightsReportConfigObjectMetadataReportOptionsOutputReference | StorageInsightsReportConfigObjectMetadataReportOptions): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     metadata_fields: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.metadataFields),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.metadataFields),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
@@ -932,14 +932,14 @@ export function storageInsightsReportConfigObjectMetadataReportOptionsToHclTerra
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class StorageInsightsReportConfigObjectMetadataReportOptionsOutputReference extends cdktf.ComplexObject {
+export class StorageInsightsReportConfigObjectMetadataReportOptionsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -1022,8 +1022,8 @@ export interface StorageInsightsReportConfigParquetOptions {
 }
 
 export function storageInsightsReportConfigParquetOptionsToTerraform(struct?: StorageInsightsReportConfigParquetOptionsOutputReference | StorageInsightsReportConfigParquetOptions): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -1032,8 +1032,8 @@ export function storageInsightsReportConfigParquetOptionsToTerraform(struct?: St
 
 
 export function storageInsightsReportConfigParquetOptionsToHclTerraform(struct?: StorageInsightsReportConfigParquetOptionsOutputReference | StorageInsightsReportConfigParquetOptions): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -1041,14 +1041,14 @@ export function storageInsightsReportConfigParquetOptionsToHclTerraform(struct?:
   return attrs;
 }
 
-export class StorageInsightsReportConfigParquetOptionsOutputReference extends cdktf.ComplexObject {
+export class StorageInsightsReportConfigParquetOptionsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -1082,39 +1082,39 @@ export interface StorageInsightsReportConfigTimeouts {
   readonly update?: string;
 }
 
-export function storageInsightsReportConfigTimeoutsToTerraform(struct?: StorageInsightsReportConfigTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function storageInsightsReportConfigTimeoutsToTerraform(struct?: StorageInsightsReportConfigTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    create: cdktf.stringToTerraform(struct!.create),
-    delete: cdktf.stringToTerraform(struct!.delete),
-    update: cdktf.stringToTerraform(struct!.update),
+    create: cdktn.stringToTerraform(struct!.create),
+    delete: cdktn.stringToTerraform(struct!.delete),
+    update: cdktn.stringToTerraform(struct!.update),
   }
 }
 
 
-export function storageInsightsReportConfigTimeoutsToHclTerraform(struct?: StorageInsightsReportConfigTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function storageInsightsReportConfigTimeoutsToHclTerraform(struct?: StorageInsightsReportConfigTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     create: {
-      value: cdktf.stringToHclTerraform(struct!.create),
+      value: cdktn.stringToHclTerraform(struct!.create),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     delete: {
-      value: cdktf.stringToHclTerraform(struct!.delete),
+      value: cdktn.stringToHclTerraform(struct!.delete),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     update: {
-      value: cdktf.stringToHclTerraform(struct!.update),
+      value: cdktn.stringToHclTerraform(struct!.update),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -1125,19 +1125,19 @@ export function storageInsightsReportConfigTimeoutsToHclTerraform(struct?: Stora
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class StorageInsightsReportConfigTimeoutsOutputReference extends cdktf.ComplexObject {
+export class StorageInsightsReportConfigTimeoutsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): StorageInsightsReportConfigTimeouts | cdktf.IResolvable | undefined {
+  public get internalValue(): StorageInsightsReportConfigTimeouts | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -1158,7 +1158,7 @@ export class StorageInsightsReportConfigTimeoutsOutputReference extends cdktf.Co
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: StorageInsightsReportConfigTimeouts | cdktf.IResolvable | undefined) {
+  public set internalValue(value: StorageInsightsReportConfigTimeouts | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -1166,7 +1166,7 @@ export class StorageInsightsReportConfigTimeoutsOutputReference extends cdktf.Co
       this._delete = undefined;
       this._update = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -1231,7 +1231,7 @@ export class StorageInsightsReportConfigTimeoutsOutputReference extends cdktf.Co
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/storage_insights_report_config google_storage_insights_report_config}
 */
-export class StorageInsightsReportConfig extends cdktf.TerraformResource {
+export class StorageInsightsReportConfig extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -1242,14 +1242,14 @@ export class StorageInsightsReportConfig extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a StorageInsightsReportConfig resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a StorageInsightsReportConfig resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the StorageInsightsReportConfig to import
   * @param importFromId The id of the existing StorageInsightsReportConfig that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/storage_insights_report_config#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the StorageInsightsReportConfig to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "google_storage_insights_report_config", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "google_storage_insights_report_config", importId: importFromId, provider });
       }
 
   // ===========
@@ -1446,10 +1446,10 @@ export class StorageInsightsReportConfig extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      display_name: cdktf.stringToTerraform(this._displayName),
-      id: cdktf.stringToTerraform(this._id),
-      location: cdktf.stringToTerraform(this._location),
-      project: cdktf.stringToTerraform(this._project),
+      display_name: cdktn.stringToTerraform(this._displayName),
+      id: cdktn.stringToTerraform(this._id),
+      location: cdktn.stringToTerraform(this._location),
+      project: cdktn.stringToTerraform(this._project),
       csv_options: storageInsightsReportConfigCsvOptionsToTerraform(this._csvOptions.internalValue),
       frequency_options: storageInsightsReportConfigFrequencyOptionsToTerraform(this._frequencyOptions.internalValue),
       object_metadata_report_options: storageInsightsReportConfigObjectMetadataReportOptionsToTerraform(this._objectMetadataReportOptions.internalValue),
@@ -1461,25 +1461,25 @@ export class StorageInsightsReportConfig extends cdktf.TerraformResource {
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       display_name: {
-        value: cdktf.stringToHclTerraform(this._displayName),
+        value: cdktn.stringToHclTerraform(this._displayName),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       location: {
-        value: cdktf.stringToHclTerraform(this._location),
+        value: cdktn.stringToHclTerraform(this._location),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       project: {
-        value: cdktf.stringToHclTerraform(this._project),
+        value: cdktn.stringToHclTerraform(this._project),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

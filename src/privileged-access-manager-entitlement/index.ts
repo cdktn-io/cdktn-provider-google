@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface PrivilegedAccessManagerEntitlementConfig extends cdktf.TerraformMetaArguments {
+export interface PrivilegedAccessManagerEntitlementConfig extends cdktn.TerraformMetaArguments {
   /**
   * The ID to use for this Entitlement. This will become the last part of the resource name.
   * This value should be 4-63 characters, and valid characters are "[a-z]", "[0-9]", and "-". The first character should be from [a-z].
@@ -64,7 +64,7 @@ export interface PrivilegedAccessManagerEntitlementConfig extends cdktf.Terrafor
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/privileged_access_manager_entitlement#eligible_users PrivilegedAccessManagerEntitlement#eligible_users}
   */
-  readonly eligibleUsers: PrivilegedAccessManagerEntitlementEligibleUsers[] | cdktf.IResolvable;
+  readonly eligibleUsers: PrivilegedAccessManagerEntitlementEligibleUsers[] | cdktn.IResolvable;
   /**
   * privileged_access block
   *
@@ -100,31 +100,31 @@ export interface PrivilegedAccessManagerEntitlementAdditionalNotificationTargets
 }
 
 export function privilegedAccessManagerEntitlementAdditionalNotificationTargetsToTerraform(struct?: PrivilegedAccessManagerEntitlementAdditionalNotificationTargetsOutputReference | PrivilegedAccessManagerEntitlementAdditionalNotificationTargets): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    admin_email_recipients: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.adminEmailRecipients),
-    requester_email_recipients: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.requesterEmailRecipients),
+    admin_email_recipients: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.adminEmailRecipients),
+    requester_email_recipients: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.requesterEmailRecipients),
   }
 }
 
 
 export function privilegedAccessManagerEntitlementAdditionalNotificationTargetsToHclTerraform(struct?: PrivilegedAccessManagerEntitlementAdditionalNotificationTargetsOutputReference | PrivilegedAccessManagerEntitlementAdditionalNotificationTargets): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     admin_email_recipients: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.adminEmailRecipients),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.adminEmailRecipients),
       isBlock: false,
       type: "set",
       storageClassType: "stringList",
     },
     requester_email_recipients: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.requesterEmailRecipients),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.requesterEmailRecipients),
       isBlock: false,
       type: "set",
       storageClassType: "stringList",
@@ -135,14 +135,14 @@ export function privilegedAccessManagerEntitlementAdditionalNotificationTargetsT
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class PrivilegedAccessManagerEntitlementAdditionalNotificationTargetsOutputReference extends cdktf.ComplexObject {
+export class PrivilegedAccessManagerEntitlementAdditionalNotificationTargetsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -176,7 +176,7 @@ export class PrivilegedAccessManagerEntitlementAdditionalNotificationTargetsOutp
   // admin_email_recipients - computed: false, optional: true, required: false
   private _adminEmailRecipients?: string[]; 
   public get adminEmailRecipients() {
-    return cdktf.Fn.tolist(this.getListAttribute('admin_email_recipients'));
+    return cdktn.Fn.tolist(this.getListAttribute('admin_email_recipients'));
   }
   public set adminEmailRecipients(value: string[]) {
     this._adminEmailRecipients = value;
@@ -192,7 +192,7 @@ export class PrivilegedAccessManagerEntitlementAdditionalNotificationTargetsOutp
   // requester_email_recipients - computed: false, optional: true, required: false
   private _requesterEmailRecipients?: string[]; 
   public get requesterEmailRecipients() {
-    return cdktf.Fn.tolist(this.getListAttribute('requester_email_recipients'));
+    return cdktn.Fn.tolist(this.getListAttribute('requester_email_recipients'));
   }
   public set requesterEmailRecipients(value: string[]) {
     this._requesterEmailRecipients = value;
@@ -215,24 +215,24 @@ export interface PrivilegedAccessManagerEntitlementApprovalWorkflowManualApprova
 }
 
 export function privilegedAccessManagerEntitlementApprovalWorkflowManualApprovalsStepsApproversToTerraform(struct?: PrivilegedAccessManagerEntitlementApprovalWorkflowManualApprovalsStepsApproversOutputReference | PrivilegedAccessManagerEntitlementApprovalWorkflowManualApprovalsStepsApprovers): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    principals: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.principals),
+    principals: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.principals),
   }
 }
 
 
 export function privilegedAccessManagerEntitlementApprovalWorkflowManualApprovalsStepsApproversToHclTerraform(struct?: PrivilegedAccessManagerEntitlementApprovalWorkflowManualApprovalsStepsApproversOutputReference | PrivilegedAccessManagerEntitlementApprovalWorkflowManualApprovalsStepsApprovers): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     principals: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.principals),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.principals),
       isBlock: false,
       type: "set",
       storageClassType: "stringList",
@@ -243,14 +243,14 @@ export function privilegedAccessManagerEntitlementApprovalWorkflowManualApproval
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class PrivilegedAccessManagerEntitlementApprovalWorkflowManualApprovalsStepsApproversOutputReference extends cdktf.ComplexObject {
+export class PrivilegedAccessManagerEntitlementApprovalWorkflowManualApprovalsStepsApproversOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -278,7 +278,7 @@ export class PrivilegedAccessManagerEntitlementApprovalWorkflowManualApprovalsSt
   // principals - computed: false, optional: false, required: true
   private _principals?: string[]; 
   public get principals() {
-    return cdktf.Fn.tolist(this.getListAttribute('principals'));
+    return cdktn.Fn.tolist(this.getListAttribute('principals'));
   }
   public set principals(value: string[]) {
     this._principals = value;
@@ -312,33 +312,33 @@ export interface PrivilegedAccessManagerEntitlementApprovalWorkflowManualApprova
   readonly approvers: PrivilegedAccessManagerEntitlementApprovalWorkflowManualApprovalsStepsApprovers;
 }
 
-export function privilegedAccessManagerEntitlementApprovalWorkflowManualApprovalsStepsToTerraform(struct?: PrivilegedAccessManagerEntitlementApprovalWorkflowManualApprovalsSteps | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function privilegedAccessManagerEntitlementApprovalWorkflowManualApprovalsStepsToTerraform(struct?: PrivilegedAccessManagerEntitlementApprovalWorkflowManualApprovalsSteps | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    approvals_needed: cdktf.numberToTerraform(struct!.approvalsNeeded),
-    approver_email_recipients: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.approverEmailRecipients),
+    approvals_needed: cdktn.numberToTerraform(struct!.approvalsNeeded),
+    approver_email_recipients: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.approverEmailRecipients),
     approvers: privilegedAccessManagerEntitlementApprovalWorkflowManualApprovalsStepsApproversToTerraform(struct!.approvers),
   }
 }
 
 
-export function privilegedAccessManagerEntitlementApprovalWorkflowManualApprovalsStepsToHclTerraform(struct?: PrivilegedAccessManagerEntitlementApprovalWorkflowManualApprovalsSteps | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function privilegedAccessManagerEntitlementApprovalWorkflowManualApprovalsStepsToHclTerraform(struct?: PrivilegedAccessManagerEntitlementApprovalWorkflowManualApprovalsSteps | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     approvals_needed: {
-      value: cdktf.numberToHclTerraform(struct!.approvalsNeeded),
+      value: cdktn.numberToHclTerraform(struct!.approvalsNeeded),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     approver_email_recipients: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.approverEmailRecipients),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.approverEmailRecipients),
       isBlock: false,
       type: "set",
       storageClassType: "stringList",
@@ -355,9 +355,9 @@ export function privilegedAccessManagerEntitlementApprovalWorkflowManualApproval
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class PrivilegedAccessManagerEntitlementApprovalWorkflowManualApprovalsStepsOutputReference extends cdktf.ComplexObject {
+export class PrivilegedAccessManagerEntitlementApprovalWorkflowManualApprovalsStepsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -365,11 +365,11 @@ export class PrivilegedAccessManagerEntitlementApprovalWorkflowManualApprovalsSt
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): PrivilegedAccessManagerEntitlementApprovalWorkflowManualApprovalsSteps | cdktf.IResolvable | undefined {
+  public get internalValue(): PrivilegedAccessManagerEntitlementApprovalWorkflowManualApprovalsSteps | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -390,7 +390,7 @@ export class PrivilegedAccessManagerEntitlementApprovalWorkflowManualApprovalsSt
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: PrivilegedAccessManagerEntitlementApprovalWorkflowManualApprovalsSteps | cdktf.IResolvable | undefined) {
+  public set internalValue(value: PrivilegedAccessManagerEntitlementApprovalWorkflowManualApprovalsSteps | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -398,7 +398,7 @@ export class PrivilegedAccessManagerEntitlementApprovalWorkflowManualApprovalsSt
       this._approverEmailRecipients = undefined;
       this._approvers.internalValue = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -430,7 +430,7 @@ export class PrivilegedAccessManagerEntitlementApprovalWorkflowManualApprovalsSt
   // approver_email_recipients - computed: false, optional: true, required: false
   private _approverEmailRecipients?: string[]; 
   public get approverEmailRecipients() {
-    return cdktf.Fn.tolist(this.getListAttribute('approver_email_recipients'));
+    return cdktn.Fn.tolist(this.getListAttribute('approver_email_recipients'));
   }
   public set approverEmailRecipients(value: string[]) {
     this._approverEmailRecipients = value;
@@ -457,15 +457,15 @@ export class PrivilegedAccessManagerEntitlementApprovalWorkflowManualApprovalsSt
   }
 }
 
-export class PrivilegedAccessManagerEntitlementApprovalWorkflowManualApprovalsStepsList extends cdktf.ComplexList {
-  public internalValue? : PrivilegedAccessManagerEntitlementApprovalWorkflowManualApprovalsSteps[] | cdktf.IResolvable
+export class PrivilegedAccessManagerEntitlementApprovalWorkflowManualApprovalsStepsList extends cdktn.ComplexList {
+  public internalValue? : PrivilegedAccessManagerEntitlementApprovalWorkflowManualApprovalsSteps[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -482,41 +482,41 @@ export interface PrivilegedAccessManagerEntitlementApprovalWorkflowManualApprova
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/privileged_access_manager_entitlement#require_approver_justification PrivilegedAccessManagerEntitlement#require_approver_justification}
   */
-  readonly requireApproverJustification?: boolean | cdktf.IResolvable;
+  readonly requireApproverJustification?: boolean | cdktn.IResolvable;
   /**
   * steps block
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/privileged_access_manager_entitlement#steps PrivilegedAccessManagerEntitlement#steps}
   */
-  readonly steps: PrivilegedAccessManagerEntitlementApprovalWorkflowManualApprovalsSteps[] | cdktf.IResolvable;
+  readonly steps: PrivilegedAccessManagerEntitlementApprovalWorkflowManualApprovalsSteps[] | cdktn.IResolvable;
 }
 
 export function privilegedAccessManagerEntitlementApprovalWorkflowManualApprovalsToTerraform(struct?: PrivilegedAccessManagerEntitlementApprovalWorkflowManualApprovalsOutputReference | PrivilegedAccessManagerEntitlementApprovalWorkflowManualApprovals): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    require_approver_justification: cdktf.booleanToTerraform(struct!.requireApproverJustification),
-    steps: cdktf.listMapper(privilegedAccessManagerEntitlementApprovalWorkflowManualApprovalsStepsToTerraform, true)(struct!.steps),
+    require_approver_justification: cdktn.booleanToTerraform(struct!.requireApproverJustification),
+    steps: cdktn.listMapper(privilegedAccessManagerEntitlementApprovalWorkflowManualApprovalsStepsToTerraform, true)(struct!.steps),
   }
 }
 
 
 export function privilegedAccessManagerEntitlementApprovalWorkflowManualApprovalsToHclTerraform(struct?: PrivilegedAccessManagerEntitlementApprovalWorkflowManualApprovalsOutputReference | PrivilegedAccessManagerEntitlementApprovalWorkflowManualApprovals): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     require_approver_justification: {
-      value: cdktf.booleanToHclTerraform(struct!.requireApproverJustification),
+      value: cdktn.booleanToHclTerraform(struct!.requireApproverJustification),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     steps: {
-      value: cdktf.listMapperHcl(privilegedAccessManagerEntitlementApprovalWorkflowManualApprovalsStepsToHclTerraform, true)(struct!.steps),
+      value: cdktn.listMapperHcl(privilegedAccessManagerEntitlementApprovalWorkflowManualApprovalsStepsToHclTerraform, true)(struct!.steps),
       isBlock: true,
       type: "list",
       storageClassType: "PrivilegedAccessManagerEntitlementApprovalWorkflowManualApprovalsStepsList",
@@ -527,14 +527,14 @@ export function privilegedAccessManagerEntitlementApprovalWorkflowManualApproval
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class PrivilegedAccessManagerEntitlementApprovalWorkflowManualApprovalsOutputReference extends cdktf.ComplexObject {
+export class PrivilegedAccessManagerEntitlementApprovalWorkflowManualApprovalsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -566,11 +566,11 @@ export class PrivilegedAccessManagerEntitlementApprovalWorkflowManualApprovalsOu
   }
 
   // require_approver_justification - computed: false, optional: true, required: false
-  private _requireApproverJustification?: boolean | cdktf.IResolvable; 
+  private _requireApproverJustification?: boolean | cdktn.IResolvable; 
   public get requireApproverJustification() {
     return this.getBooleanAttribute('require_approver_justification');
   }
-  public set requireApproverJustification(value: boolean | cdktf.IResolvable) {
+  public set requireApproverJustification(value: boolean | cdktn.IResolvable) {
     this._requireApproverJustification = value;
   }
   public resetRequireApproverJustification() {
@@ -586,7 +586,7 @@ export class PrivilegedAccessManagerEntitlementApprovalWorkflowManualApprovalsOu
   public get steps() {
     return this._steps;
   }
-  public putSteps(value: PrivilegedAccessManagerEntitlementApprovalWorkflowManualApprovalsSteps[] | cdktf.IResolvable) {
+  public putSteps(value: PrivilegedAccessManagerEntitlementApprovalWorkflowManualApprovalsSteps[] | cdktn.IResolvable) {
     this._steps.internalValue = value;
   }
   // Temporarily expose input value. Use with caution.
@@ -604,8 +604,8 @@ export interface PrivilegedAccessManagerEntitlementApprovalWorkflow {
 }
 
 export function privilegedAccessManagerEntitlementApprovalWorkflowToTerraform(struct?: PrivilegedAccessManagerEntitlementApprovalWorkflowOutputReference | PrivilegedAccessManagerEntitlementApprovalWorkflow): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -615,8 +615,8 @@ export function privilegedAccessManagerEntitlementApprovalWorkflowToTerraform(st
 
 
 export function privilegedAccessManagerEntitlementApprovalWorkflowToHclTerraform(struct?: PrivilegedAccessManagerEntitlementApprovalWorkflowOutputReference | PrivilegedAccessManagerEntitlementApprovalWorkflow): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -632,14 +632,14 @@ export function privilegedAccessManagerEntitlementApprovalWorkflowToHclTerraform
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class PrivilegedAccessManagerEntitlementApprovalWorkflowOutputReference extends cdktf.ComplexObject {
+export class PrivilegedAccessManagerEntitlementApprovalWorkflowOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -686,25 +686,25 @@ export interface PrivilegedAccessManagerEntitlementEligibleUsers {
   readonly principals: string[];
 }
 
-export function privilegedAccessManagerEntitlementEligibleUsersToTerraform(struct?: PrivilegedAccessManagerEntitlementEligibleUsers | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function privilegedAccessManagerEntitlementEligibleUsersToTerraform(struct?: PrivilegedAccessManagerEntitlementEligibleUsers | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    principals: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.principals),
+    principals: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.principals),
   }
 }
 
 
-export function privilegedAccessManagerEntitlementEligibleUsersToHclTerraform(struct?: PrivilegedAccessManagerEntitlementEligibleUsers | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function privilegedAccessManagerEntitlementEligibleUsersToHclTerraform(struct?: PrivilegedAccessManagerEntitlementEligibleUsers | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     principals: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.principals),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.principals),
       isBlock: false,
       type: "set",
       storageClassType: "stringList",
@@ -715,9 +715,9 @@ export function privilegedAccessManagerEntitlementEligibleUsersToHclTerraform(st
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class PrivilegedAccessManagerEntitlementEligibleUsersOutputReference extends cdktf.ComplexObject {
+export class PrivilegedAccessManagerEntitlementEligibleUsersOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -725,11 +725,11 @@ export class PrivilegedAccessManagerEntitlementEligibleUsersOutputReference exte
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): PrivilegedAccessManagerEntitlementEligibleUsers | cdktf.IResolvable | undefined {
+  public get internalValue(): PrivilegedAccessManagerEntitlementEligibleUsers | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -742,13 +742,13 @@ export class PrivilegedAccessManagerEntitlementEligibleUsersOutputReference exte
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: PrivilegedAccessManagerEntitlementEligibleUsers | cdktf.IResolvable | undefined) {
+  public set internalValue(value: PrivilegedAccessManagerEntitlementEligibleUsers | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._principals = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -762,7 +762,7 @@ export class PrivilegedAccessManagerEntitlementEligibleUsersOutputReference exte
   // principals - computed: false, optional: false, required: true
   private _principals?: string[]; 
   public get principals() {
-    return cdktf.Fn.tolist(this.getListAttribute('principals'));
+    return cdktn.Fn.tolist(this.getListAttribute('principals'));
   }
   public set principals(value: string[]) {
     this._principals = value;
@@ -773,15 +773,15 @@ export class PrivilegedAccessManagerEntitlementEligibleUsersOutputReference exte
   }
 }
 
-export class PrivilegedAccessManagerEntitlementEligibleUsersList extends cdktf.ComplexList {
-  public internalValue? : PrivilegedAccessManagerEntitlementEligibleUsers[] | cdktf.IResolvable
+export class PrivilegedAccessManagerEntitlementEligibleUsersList extends cdktn.ComplexList {
+  public internalValue? : PrivilegedAccessManagerEntitlementEligibleUsers[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -808,32 +808,32 @@ export interface PrivilegedAccessManagerEntitlementPrivilegedAccessGcpIamAccessR
   readonly role: string;
 }
 
-export function privilegedAccessManagerEntitlementPrivilegedAccessGcpIamAccessRoleBindingsToTerraform(struct?: PrivilegedAccessManagerEntitlementPrivilegedAccessGcpIamAccessRoleBindings | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function privilegedAccessManagerEntitlementPrivilegedAccessGcpIamAccessRoleBindingsToTerraform(struct?: PrivilegedAccessManagerEntitlementPrivilegedAccessGcpIamAccessRoleBindings | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    condition_expression: cdktf.stringToTerraform(struct!.conditionExpression),
-    role: cdktf.stringToTerraform(struct!.role),
+    condition_expression: cdktn.stringToTerraform(struct!.conditionExpression),
+    role: cdktn.stringToTerraform(struct!.role),
   }
 }
 
 
-export function privilegedAccessManagerEntitlementPrivilegedAccessGcpIamAccessRoleBindingsToHclTerraform(struct?: PrivilegedAccessManagerEntitlementPrivilegedAccessGcpIamAccessRoleBindings | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function privilegedAccessManagerEntitlementPrivilegedAccessGcpIamAccessRoleBindingsToHclTerraform(struct?: PrivilegedAccessManagerEntitlementPrivilegedAccessGcpIamAccessRoleBindings | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     condition_expression: {
-      value: cdktf.stringToHclTerraform(struct!.conditionExpression),
+      value: cdktn.stringToHclTerraform(struct!.conditionExpression),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     role: {
-      value: cdktf.stringToHclTerraform(struct!.role),
+      value: cdktn.stringToHclTerraform(struct!.role),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -844,9 +844,9 @@ export function privilegedAccessManagerEntitlementPrivilegedAccessGcpIamAccessRo
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class PrivilegedAccessManagerEntitlementPrivilegedAccessGcpIamAccessRoleBindingsOutputReference extends cdktf.ComplexObject {
+export class PrivilegedAccessManagerEntitlementPrivilegedAccessGcpIamAccessRoleBindingsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -854,11 +854,11 @@ export class PrivilegedAccessManagerEntitlementPrivilegedAccessGcpIamAccessRoleB
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): PrivilegedAccessManagerEntitlementPrivilegedAccessGcpIamAccessRoleBindings | cdktf.IResolvable | undefined {
+  public get internalValue(): PrivilegedAccessManagerEntitlementPrivilegedAccessGcpIamAccessRoleBindings | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -875,14 +875,14 @@ export class PrivilegedAccessManagerEntitlementPrivilegedAccessGcpIamAccessRoleB
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: PrivilegedAccessManagerEntitlementPrivilegedAccessGcpIamAccessRoleBindings | cdktf.IResolvable | undefined) {
+  public set internalValue(value: PrivilegedAccessManagerEntitlementPrivilegedAccessGcpIamAccessRoleBindings | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._conditionExpression = undefined;
       this._role = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -924,15 +924,15 @@ export class PrivilegedAccessManagerEntitlementPrivilegedAccessGcpIamAccessRoleB
   }
 }
 
-export class PrivilegedAccessManagerEntitlementPrivilegedAccessGcpIamAccessRoleBindingsList extends cdktf.ComplexList {
-  public internalValue? : PrivilegedAccessManagerEntitlementPrivilegedAccessGcpIamAccessRoleBindings[] | cdktf.IResolvable
+export class PrivilegedAccessManagerEntitlementPrivilegedAccessGcpIamAccessRoleBindingsList extends cdktn.ComplexList {
+  public internalValue? : PrivilegedAccessManagerEntitlementPrivilegedAccessGcpIamAccessRoleBindings[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -961,42 +961,42 @@ export interface PrivilegedAccessManagerEntitlementPrivilegedAccessGcpIamAccess 
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/privileged_access_manager_entitlement#role_bindings PrivilegedAccessManagerEntitlement#role_bindings}
   */
-  readonly roleBindings: PrivilegedAccessManagerEntitlementPrivilegedAccessGcpIamAccessRoleBindings[] | cdktf.IResolvable;
+  readonly roleBindings: PrivilegedAccessManagerEntitlementPrivilegedAccessGcpIamAccessRoleBindings[] | cdktn.IResolvable;
 }
 
 export function privilegedAccessManagerEntitlementPrivilegedAccessGcpIamAccessToTerraform(struct?: PrivilegedAccessManagerEntitlementPrivilegedAccessGcpIamAccessOutputReference | PrivilegedAccessManagerEntitlementPrivilegedAccessGcpIamAccess): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    resource: cdktf.stringToTerraform(struct!.resource),
-    resource_type: cdktf.stringToTerraform(struct!.resourceType),
-    role_bindings: cdktf.listMapper(privilegedAccessManagerEntitlementPrivilegedAccessGcpIamAccessRoleBindingsToTerraform, true)(struct!.roleBindings),
+    resource: cdktn.stringToTerraform(struct!.resource),
+    resource_type: cdktn.stringToTerraform(struct!.resourceType),
+    role_bindings: cdktn.listMapper(privilegedAccessManagerEntitlementPrivilegedAccessGcpIamAccessRoleBindingsToTerraform, true)(struct!.roleBindings),
   }
 }
 
 
 export function privilegedAccessManagerEntitlementPrivilegedAccessGcpIamAccessToHclTerraform(struct?: PrivilegedAccessManagerEntitlementPrivilegedAccessGcpIamAccessOutputReference | PrivilegedAccessManagerEntitlementPrivilegedAccessGcpIamAccess): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     resource: {
-      value: cdktf.stringToHclTerraform(struct!.resource),
+      value: cdktn.stringToHclTerraform(struct!.resource),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     resource_type: {
-      value: cdktf.stringToHclTerraform(struct!.resourceType),
+      value: cdktn.stringToHclTerraform(struct!.resourceType),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     role_bindings: {
-      value: cdktf.listMapperHcl(privilegedAccessManagerEntitlementPrivilegedAccessGcpIamAccessRoleBindingsToHclTerraform, true)(struct!.roleBindings),
+      value: cdktn.listMapperHcl(privilegedAccessManagerEntitlementPrivilegedAccessGcpIamAccessRoleBindingsToHclTerraform, true)(struct!.roleBindings),
       isBlock: true,
       type: "list",
       storageClassType: "PrivilegedAccessManagerEntitlementPrivilegedAccessGcpIamAccessRoleBindingsList",
@@ -1007,14 +1007,14 @@ export function privilegedAccessManagerEntitlementPrivilegedAccessGcpIamAccessTo
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class PrivilegedAccessManagerEntitlementPrivilegedAccessGcpIamAccessOutputReference extends cdktf.ComplexObject {
+export class PrivilegedAccessManagerEntitlementPrivilegedAccessGcpIamAccessOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -1082,7 +1082,7 @@ export class PrivilegedAccessManagerEntitlementPrivilegedAccessGcpIamAccessOutpu
   public get roleBindings() {
     return this._roleBindings;
   }
-  public putRoleBindings(value: PrivilegedAccessManagerEntitlementPrivilegedAccessGcpIamAccessRoleBindings[] | cdktf.IResolvable) {
+  public putRoleBindings(value: PrivilegedAccessManagerEntitlementPrivilegedAccessGcpIamAccessRoleBindings[] | cdktn.IResolvable) {
     this._roleBindings.internalValue = value;
   }
   // Temporarily expose input value. Use with caution.
@@ -1100,8 +1100,8 @@ export interface PrivilegedAccessManagerEntitlementPrivilegedAccess {
 }
 
 export function privilegedAccessManagerEntitlementPrivilegedAccessToTerraform(struct?: PrivilegedAccessManagerEntitlementPrivilegedAccessOutputReference | PrivilegedAccessManagerEntitlementPrivilegedAccess): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -1111,8 +1111,8 @@ export function privilegedAccessManagerEntitlementPrivilegedAccessToTerraform(st
 
 
 export function privilegedAccessManagerEntitlementPrivilegedAccessToHclTerraform(struct?: PrivilegedAccessManagerEntitlementPrivilegedAccessOutputReference | PrivilegedAccessManagerEntitlementPrivilegedAccess): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -1128,14 +1128,14 @@ export function privilegedAccessManagerEntitlementPrivilegedAccessToHclTerraform
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class PrivilegedAccessManagerEntitlementPrivilegedAccessOutputReference extends cdktf.ComplexObject {
+export class PrivilegedAccessManagerEntitlementPrivilegedAccessOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -1177,8 +1177,8 @@ export interface PrivilegedAccessManagerEntitlementRequesterJustificationConfigN
 }
 
 export function privilegedAccessManagerEntitlementRequesterJustificationConfigNotMandatoryToTerraform(struct?: PrivilegedAccessManagerEntitlementRequesterJustificationConfigNotMandatoryOutputReference | PrivilegedAccessManagerEntitlementRequesterJustificationConfigNotMandatory): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -1187,8 +1187,8 @@ export function privilegedAccessManagerEntitlementRequesterJustificationConfigNo
 
 
 export function privilegedAccessManagerEntitlementRequesterJustificationConfigNotMandatoryToHclTerraform(struct?: PrivilegedAccessManagerEntitlementRequesterJustificationConfigNotMandatoryOutputReference | PrivilegedAccessManagerEntitlementRequesterJustificationConfigNotMandatory): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -1196,14 +1196,14 @@ export function privilegedAccessManagerEntitlementRequesterJustificationConfigNo
   return attrs;
 }
 
-export class PrivilegedAccessManagerEntitlementRequesterJustificationConfigNotMandatoryOutputReference extends cdktf.ComplexObject {
+export class PrivilegedAccessManagerEntitlementRequesterJustificationConfigNotMandatoryOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -1226,8 +1226,8 @@ export interface PrivilegedAccessManagerEntitlementRequesterJustificationConfigU
 }
 
 export function privilegedAccessManagerEntitlementRequesterJustificationConfigUnstructuredToTerraform(struct?: PrivilegedAccessManagerEntitlementRequesterJustificationConfigUnstructuredOutputReference | PrivilegedAccessManagerEntitlementRequesterJustificationConfigUnstructured): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -1236,8 +1236,8 @@ export function privilegedAccessManagerEntitlementRequesterJustificationConfigUn
 
 
 export function privilegedAccessManagerEntitlementRequesterJustificationConfigUnstructuredToHclTerraform(struct?: PrivilegedAccessManagerEntitlementRequesterJustificationConfigUnstructuredOutputReference | PrivilegedAccessManagerEntitlementRequesterJustificationConfigUnstructured): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -1245,14 +1245,14 @@ export function privilegedAccessManagerEntitlementRequesterJustificationConfigUn
   return attrs;
 }
 
-export class PrivilegedAccessManagerEntitlementRequesterJustificationConfigUnstructuredOutputReference extends cdktf.ComplexObject {
+export class PrivilegedAccessManagerEntitlementRequesterJustificationConfigUnstructuredOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -1287,8 +1287,8 @@ export interface PrivilegedAccessManagerEntitlementRequesterJustificationConfig 
 }
 
 export function privilegedAccessManagerEntitlementRequesterJustificationConfigToTerraform(struct?: PrivilegedAccessManagerEntitlementRequesterJustificationConfigOutputReference | PrivilegedAccessManagerEntitlementRequesterJustificationConfig): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -1299,8 +1299,8 @@ export function privilegedAccessManagerEntitlementRequesterJustificationConfigTo
 
 
 export function privilegedAccessManagerEntitlementRequesterJustificationConfigToHclTerraform(struct?: PrivilegedAccessManagerEntitlementRequesterJustificationConfigOutputReference | PrivilegedAccessManagerEntitlementRequesterJustificationConfig): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -1322,14 +1322,14 @@ export function privilegedAccessManagerEntitlementRequesterJustificationConfigTo
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class PrivilegedAccessManagerEntitlementRequesterJustificationConfigOutputReference extends cdktf.ComplexObject {
+export class PrivilegedAccessManagerEntitlementRequesterJustificationConfigOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -1407,39 +1407,39 @@ export interface PrivilegedAccessManagerEntitlementTimeouts {
   readonly update?: string;
 }
 
-export function privilegedAccessManagerEntitlementTimeoutsToTerraform(struct?: PrivilegedAccessManagerEntitlementTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function privilegedAccessManagerEntitlementTimeoutsToTerraform(struct?: PrivilegedAccessManagerEntitlementTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    create: cdktf.stringToTerraform(struct!.create),
-    delete: cdktf.stringToTerraform(struct!.delete),
-    update: cdktf.stringToTerraform(struct!.update),
+    create: cdktn.stringToTerraform(struct!.create),
+    delete: cdktn.stringToTerraform(struct!.delete),
+    update: cdktn.stringToTerraform(struct!.update),
   }
 }
 
 
-export function privilegedAccessManagerEntitlementTimeoutsToHclTerraform(struct?: PrivilegedAccessManagerEntitlementTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function privilegedAccessManagerEntitlementTimeoutsToHclTerraform(struct?: PrivilegedAccessManagerEntitlementTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     create: {
-      value: cdktf.stringToHclTerraform(struct!.create),
+      value: cdktn.stringToHclTerraform(struct!.create),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     delete: {
-      value: cdktf.stringToHclTerraform(struct!.delete),
+      value: cdktn.stringToHclTerraform(struct!.delete),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     update: {
-      value: cdktf.stringToHclTerraform(struct!.update),
+      value: cdktn.stringToHclTerraform(struct!.update),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -1450,19 +1450,19 @@ export function privilegedAccessManagerEntitlementTimeoutsToHclTerraform(struct?
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class PrivilegedAccessManagerEntitlementTimeoutsOutputReference extends cdktf.ComplexObject {
+export class PrivilegedAccessManagerEntitlementTimeoutsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): PrivilegedAccessManagerEntitlementTimeouts | cdktf.IResolvable | undefined {
+  public get internalValue(): PrivilegedAccessManagerEntitlementTimeouts | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -1483,7 +1483,7 @@ export class PrivilegedAccessManagerEntitlementTimeoutsOutputReference extends c
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: PrivilegedAccessManagerEntitlementTimeouts | cdktf.IResolvable | undefined) {
+  public set internalValue(value: PrivilegedAccessManagerEntitlementTimeouts | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -1491,7 +1491,7 @@ export class PrivilegedAccessManagerEntitlementTimeoutsOutputReference extends c
       this._delete = undefined;
       this._update = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -1556,7 +1556,7 @@ export class PrivilegedAccessManagerEntitlementTimeoutsOutputReference extends c
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/privileged_access_manager_entitlement google_privileged_access_manager_entitlement}
 */
-export class PrivilegedAccessManagerEntitlement extends cdktf.TerraformResource {
+export class PrivilegedAccessManagerEntitlement extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -1567,14 +1567,14 @@ export class PrivilegedAccessManagerEntitlement extends cdktf.TerraformResource 
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a PrivilegedAccessManagerEntitlement resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a PrivilegedAccessManagerEntitlement resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the PrivilegedAccessManagerEntitlement to import
   * @param importFromId The id of the existing PrivilegedAccessManagerEntitlement that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/privileged_access_manager_entitlement#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the PrivilegedAccessManagerEntitlement to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "google_privileged_access_manager_entitlement", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "google_privileged_access_manager_entitlement", importId: importFromId, provider });
       }
 
   // ===========
@@ -1751,7 +1751,7 @@ export class PrivilegedAccessManagerEntitlement extends cdktf.TerraformResource 
   public get eligibleUsers() {
     return this._eligibleUsers;
   }
-  public putEligibleUsers(value: PrivilegedAccessManagerEntitlementEligibleUsers[] | cdktf.IResolvable) {
+  public putEligibleUsers(value: PrivilegedAccessManagerEntitlementEligibleUsers[] | cdktn.IResolvable) {
     this._eligibleUsers.internalValue = value;
   }
   // Temporarily expose input value. Use with caution.
@@ -1807,14 +1807,14 @@ export class PrivilegedAccessManagerEntitlement extends cdktf.TerraformResource 
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      entitlement_id: cdktf.stringToTerraform(this._entitlementId),
-      id: cdktf.stringToTerraform(this._id),
-      location: cdktf.stringToTerraform(this._location),
-      max_request_duration: cdktf.stringToTerraform(this._maxRequestDuration),
-      parent: cdktf.stringToTerraform(this._parent),
+      entitlement_id: cdktn.stringToTerraform(this._entitlementId),
+      id: cdktn.stringToTerraform(this._id),
+      location: cdktn.stringToTerraform(this._location),
+      max_request_duration: cdktn.stringToTerraform(this._maxRequestDuration),
+      parent: cdktn.stringToTerraform(this._parent),
       additional_notification_targets: privilegedAccessManagerEntitlementAdditionalNotificationTargetsToTerraform(this._additionalNotificationTargets.internalValue),
       approval_workflow: privilegedAccessManagerEntitlementApprovalWorkflowToTerraform(this._approvalWorkflow.internalValue),
-      eligible_users: cdktf.listMapper(privilegedAccessManagerEntitlementEligibleUsersToTerraform, true)(this._eligibleUsers.internalValue),
+      eligible_users: cdktn.listMapper(privilegedAccessManagerEntitlementEligibleUsersToTerraform, true)(this._eligibleUsers.internalValue),
       privileged_access: privilegedAccessManagerEntitlementPrivilegedAccessToTerraform(this._privilegedAccess.internalValue),
       requester_justification_config: privilegedAccessManagerEntitlementRequesterJustificationConfigToTerraform(this._requesterJustificationConfig.internalValue),
       timeouts: privilegedAccessManagerEntitlementTimeoutsToTerraform(this._timeouts.internalValue),
@@ -1824,31 +1824,31 @@ export class PrivilegedAccessManagerEntitlement extends cdktf.TerraformResource 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       entitlement_id: {
-        value: cdktf.stringToHclTerraform(this._entitlementId),
+        value: cdktn.stringToHclTerraform(this._entitlementId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       location: {
-        value: cdktf.stringToHclTerraform(this._location),
+        value: cdktn.stringToHclTerraform(this._location),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       max_request_duration: {
-        value: cdktf.stringToHclTerraform(this._maxRequestDuration),
+        value: cdktn.stringToHclTerraform(this._maxRequestDuration),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       parent: {
-        value: cdktf.stringToHclTerraform(this._parent),
+        value: cdktn.stringToHclTerraform(this._parent),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
@@ -1866,7 +1866,7 @@ export class PrivilegedAccessManagerEntitlement extends cdktf.TerraformResource 
         storageClassType: "PrivilegedAccessManagerEntitlementApprovalWorkflowList",
       },
       eligible_users: {
-        value: cdktf.listMapperHcl(privilegedAccessManagerEntitlementEligibleUsersToHclTerraform, true)(this._eligibleUsers.internalValue),
+        value: cdktn.listMapperHcl(privilegedAccessManagerEntitlementEligibleUsersToHclTerraform, true)(this._eligibleUsers.internalValue),
         isBlock: true,
         type: "list",
         storageClassType: "PrivilegedAccessManagerEntitlementEligibleUsersList",

@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface IamOauthClientConfig extends cdktf.TerraformMetaArguments {
+export interface IamOauthClientConfig extends cdktn.TerraformMetaArguments {
   /**
   * Required. The list of OAuth grant types is allowed for the OauthClient.
   *
@@ -68,7 +68,7 @@ export interface IamOauthClientConfig extends cdktf.TerraformMetaArguments {
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/iam_oauth_client#disabled IamOauthClient#disabled}
   */
-  readonly disabled?: boolean | cdktf.IResolvable;
+  readonly disabled?: boolean | cdktn.IResolvable;
   /**
   * A user-specified display name of the OauthClient.
   * 
@@ -126,39 +126,39 @@ export interface IamOauthClientTimeouts {
   readonly update?: string;
 }
 
-export function iamOauthClientTimeoutsToTerraform(struct?: IamOauthClientTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function iamOauthClientTimeoutsToTerraform(struct?: IamOauthClientTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    create: cdktf.stringToTerraform(struct!.create),
-    delete: cdktf.stringToTerraform(struct!.delete),
-    update: cdktf.stringToTerraform(struct!.update),
+    create: cdktn.stringToTerraform(struct!.create),
+    delete: cdktn.stringToTerraform(struct!.delete),
+    update: cdktn.stringToTerraform(struct!.update),
   }
 }
 
 
-export function iamOauthClientTimeoutsToHclTerraform(struct?: IamOauthClientTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function iamOauthClientTimeoutsToHclTerraform(struct?: IamOauthClientTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     create: {
-      value: cdktf.stringToHclTerraform(struct!.create),
+      value: cdktn.stringToHclTerraform(struct!.create),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     delete: {
-      value: cdktf.stringToHclTerraform(struct!.delete),
+      value: cdktn.stringToHclTerraform(struct!.delete),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     update: {
-      value: cdktf.stringToHclTerraform(struct!.update),
+      value: cdktn.stringToHclTerraform(struct!.update),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -169,19 +169,19 @@ export function iamOauthClientTimeoutsToHclTerraform(struct?: IamOauthClientTime
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class IamOauthClientTimeoutsOutputReference extends cdktf.ComplexObject {
+export class IamOauthClientTimeoutsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): IamOauthClientTimeouts | cdktf.IResolvable | undefined {
+  public get internalValue(): IamOauthClientTimeouts | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -202,7 +202,7 @@ export class IamOauthClientTimeoutsOutputReference extends cdktf.ComplexObject {
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: IamOauthClientTimeouts | cdktf.IResolvable | undefined) {
+  public set internalValue(value: IamOauthClientTimeouts | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -210,7 +210,7 @@ export class IamOauthClientTimeoutsOutputReference extends cdktf.ComplexObject {
       this._delete = undefined;
       this._update = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -275,7 +275,7 @@ export class IamOauthClientTimeoutsOutputReference extends cdktf.ComplexObject {
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/iam_oauth_client google_iam_oauth_client}
 */
-export class IamOauthClient extends cdktf.TerraformResource {
+export class IamOauthClient extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -286,14 +286,14 @@ export class IamOauthClient extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a IamOauthClient resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a IamOauthClient resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the IamOauthClient to import
   * @param importFromId The id of the existing IamOauthClient that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/iam_oauth_client#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the IamOauthClient to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "google_iam_oauth_client", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "google_iam_oauth_client", importId: importFromId, provider });
       }
 
   // ===========
@@ -418,11 +418,11 @@ export class IamOauthClient extends cdktf.TerraformResource {
   }
 
   // disabled - computed: false, optional: true, required: false
-  private _disabled?: boolean | cdktf.IResolvable; 
+  private _disabled?: boolean | cdktn.IResolvable; 
   public get disabled() {
     return this.getBooleanAttribute('disabled');
   }
-  public set disabled(value: boolean | cdktf.IResolvable) {
+  public set disabled(value: boolean | cdktn.IResolvable) {
     this._disabled = value;
   }
   public resetDisabled() {
@@ -544,17 +544,17 @@ export class IamOauthClient extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      allowed_grant_types: cdktf.listMapper(cdktf.stringToTerraform, false)(this._allowedGrantTypes),
-      allowed_redirect_uris: cdktf.listMapper(cdktf.stringToTerraform, false)(this._allowedRedirectUris),
-      allowed_scopes: cdktf.listMapper(cdktf.stringToTerraform, false)(this._allowedScopes),
-      client_type: cdktf.stringToTerraform(this._clientType),
-      description: cdktf.stringToTerraform(this._description),
-      disabled: cdktf.booleanToTerraform(this._disabled),
-      display_name: cdktf.stringToTerraform(this._displayName),
-      id: cdktf.stringToTerraform(this._id),
-      location: cdktf.stringToTerraform(this._location),
-      oauth_client_id: cdktf.stringToTerraform(this._oauthClientId),
-      project: cdktf.stringToTerraform(this._project),
+      allowed_grant_types: cdktn.listMapper(cdktn.stringToTerraform, false)(this._allowedGrantTypes),
+      allowed_redirect_uris: cdktn.listMapper(cdktn.stringToTerraform, false)(this._allowedRedirectUris),
+      allowed_scopes: cdktn.listMapper(cdktn.stringToTerraform, false)(this._allowedScopes),
+      client_type: cdktn.stringToTerraform(this._clientType),
+      description: cdktn.stringToTerraform(this._description),
+      disabled: cdktn.booleanToTerraform(this._disabled),
+      display_name: cdktn.stringToTerraform(this._displayName),
+      id: cdktn.stringToTerraform(this._id),
+      location: cdktn.stringToTerraform(this._location),
+      oauth_client_id: cdktn.stringToTerraform(this._oauthClientId),
+      project: cdktn.stringToTerraform(this._project),
       timeouts: iamOauthClientTimeoutsToTerraform(this._timeouts.internalValue),
     };
   }
@@ -562,67 +562,67 @@ export class IamOauthClient extends cdktf.TerraformResource {
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       allowed_grant_types: {
-        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._allowedGrantTypes),
+        value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(this._allowedGrantTypes),
         isBlock: false,
         type: "list",
         storageClassType: "stringList",
       },
       allowed_redirect_uris: {
-        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._allowedRedirectUris),
+        value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(this._allowedRedirectUris),
         isBlock: false,
         type: "list",
         storageClassType: "stringList",
       },
       allowed_scopes: {
-        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._allowedScopes),
+        value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(this._allowedScopes),
         isBlock: false,
         type: "list",
         storageClassType: "stringList",
       },
       client_type: {
-        value: cdktf.stringToHclTerraform(this._clientType),
+        value: cdktn.stringToHclTerraform(this._clientType),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       description: {
-        value: cdktf.stringToHclTerraform(this._description),
+        value: cdktn.stringToHclTerraform(this._description),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       disabled: {
-        value: cdktf.booleanToHclTerraform(this._disabled),
+        value: cdktn.booleanToHclTerraform(this._disabled),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       display_name: {
-        value: cdktf.stringToHclTerraform(this._displayName),
+        value: cdktn.stringToHclTerraform(this._displayName),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       location: {
-        value: cdktf.stringToHclTerraform(this._location),
+        value: cdktn.stringToHclTerraform(this._location),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       oauth_client_id: {
-        value: cdktf.stringToHclTerraform(this._oauthClientId),
+        value: cdktn.stringToHclTerraform(this._oauthClientId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       project: {
-        value: cdktf.stringToHclTerraform(this._project),
+        value: cdktn.stringToHclTerraform(this._project),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

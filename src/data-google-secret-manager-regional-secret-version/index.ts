@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface DataGoogleSecretManagerRegionalSecretVersionConfig extends cdktf.TerraformMetaArguments {
+export interface DataGoogleSecretManagerRegionalSecretVersionConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/data-sources/secret_manager_regional_secret_version#id DataGoogleSecretManagerRegionalSecretVersion#id}
   *
@@ -22,7 +22,7 @@ export interface DataGoogleSecretManagerRegionalSecretVersionConfig extends cdkt
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/data-sources/secret_manager_regional_secret_version#is_secret_data_base64 DataGoogleSecretManagerRegionalSecretVersion#is_secret_data_base64}
   */
-  readonly isSecretDataBase64?: boolean | cdktf.IResolvable;
+  readonly isSecretDataBase64?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/data-sources/secret_manager_regional_secret_version#location DataGoogleSecretManagerRegionalSecretVersion#location}
   */
@@ -44,8 +44,8 @@ export interface DataGoogleSecretManagerRegionalSecretVersionCustomerManagedEncr
 }
 
 export function dataGoogleSecretManagerRegionalSecretVersionCustomerManagedEncryptionToTerraform(struct?: DataGoogleSecretManagerRegionalSecretVersionCustomerManagedEncryption): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -54,8 +54,8 @@ export function dataGoogleSecretManagerRegionalSecretVersionCustomerManagedEncry
 
 
 export function dataGoogleSecretManagerRegionalSecretVersionCustomerManagedEncryptionToHclTerraform(struct?: DataGoogleSecretManagerRegionalSecretVersionCustomerManagedEncryption): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -63,7 +63,7 @@ export function dataGoogleSecretManagerRegionalSecretVersionCustomerManagedEncry
   return attrs;
 }
 
-export class DataGoogleSecretManagerRegionalSecretVersionCustomerManagedEncryptionOutputReference extends cdktf.ComplexObject {
+export class DataGoogleSecretManagerRegionalSecretVersionCustomerManagedEncryptionOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -72,7 +72,7 @@ export class DataGoogleSecretManagerRegionalSecretVersionCustomerManagedEncrypti
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -97,14 +97,14 @@ export class DataGoogleSecretManagerRegionalSecretVersionCustomerManagedEncrypti
   }
 }
 
-export class DataGoogleSecretManagerRegionalSecretVersionCustomerManagedEncryptionList extends cdktf.ComplexList {
+export class DataGoogleSecretManagerRegionalSecretVersionCustomerManagedEncryptionList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -119,7 +119,7 @@ export class DataGoogleSecretManagerRegionalSecretVersionCustomerManagedEncrypti
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/data-sources/secret_manager_regional_secret_version google_secret_manager_regional_secret_version}
 */
-export class DataGoogleSecretManagerRegionalSecretVersion extends cdktf.TerraformDataSource {
+export class DataGoogleSecretManagerRegionalSecretVersion extends cdktn.TerraformDataSource {
 
   // =================
   // STATIC PROPERTIES
@@ -130,14 +130,14 @@ export class DataGoogleSecretManagerRegionalSecretVersion extends cdktf.Terrafor
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a DataGoogleSecretManagerRegionalSecretVersion resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a DataGoogleSecretManagerRegionalSecretVersion resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataGoogleSecretManagerRegionalSecretVersion to import
   * @param importFromId The id of the existing DataGoogleSecretManagerRegionalSecretVersion that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/data-sources/secret_manager_regional_secret_version#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataGoogleSecretManagerRegionalSecretVersion to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "google_secret_manager_regional_secret_version", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "google_secret_manager_regional_secret_version", importId: importFromId, provider });
       }
 
   // ===========
@@ -217,11 +217,11 @@ export class DataGoogleSecretManagerRegionalSecretVersion extends cdktf.Terrafor
   }
 
   // is_secret_data_base64 - computed: false, optional: true, required: false
-  private _isSecretDataBase64?: boolean | cdktf.IResolvable; 
+  private _isSecretDataBase64?: boolean | cdktn.IResolvable; 
   public get isSecretDataBase64() {
     return this.getBooleanAttribute('is_secret_data_base64');
   }
-  public set isSecretDataBase64(value: boolean | cdktf.IResolvable) {
+  public set isSecretDataBase64(value: boolean | cdktn.IResolvable) {
     this._isSecretDataBase64 = value;
   }
   public resetIsSecretDataBase64() {
@@ -309,49 +309,49 @@ export class DataGoogleSecretManagerRegionalSecretVersion extends cdktf.Terrafor
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      id: cdktf.stringToTerraform(this._id),
-      is_secret_data_base64: cdktf.booleanToTerraform(this._isSecretDataBase64),
-      location: cdktf.stringToTerraform(this._location),
-      project: cdktf.stringToTerraform(this._project),
-      secret: cdktf.stringToTerraform(this._secret),
-      version: cdktf.stringToTerraform(this._version),
+      id: cdktn.stringToTerraform(this._id),
+      is_secret_data_base64: cdktn.booleanToTerraform(this._isSecretDataBase64),
+      location: cdktn.stringToTerraform(this._location),
+      project: cdktn.stringToTerraform(this._project),
+      secret: cdktn.stringToTerraform(this._secret),
+      version: cdktn.stringToTerraform(this._version),
     };
   }
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       is_secret_data_base64: {
-        value: cdktf.booleanToHclTerraform(this._isSecretDataBase64),
+        value: cdktn.booleanToHclTerraform(this._isSecretDataBase64),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       location: {
-        value: cdktf.stringToHclTerraform(this._location),
+        value: cdktn.stringToHclTerraform(this._location),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       project: {
-        value: cdktf.stringToHclTerraform(this._project),
+        value: cdktn.stringToHclTerraform(this._project),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       secret: {
-        value: cdktf.stringToHclTerraform(this._secret),
+        value: cdktn.stringToHclTerraform(this._secret),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       version: {
-        value: cdktf.stringToHclTerraform(this._version),
+        value: cdktn.stringToHclTerraform(this._version),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

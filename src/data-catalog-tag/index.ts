@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface DataCatalogTagConfig extends cdktf.TerraformMetaArguments {
+export interface DataCatalogTagConfig extends cdktn.TerraformMetaArguments {
   /**
   * Resources like Entry can have schemas associated with them. This scope allows users to attach tags to an
   * individual column based on that schema.
@@ -49,7 +49,7 @@ export interface DataCatalogTagConfig extends cdktf.TerraformMetaArguments {
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/data_catalog_tag#fields DataCatalogTag#fields}
   */
-  readonly fields: DataCatalogTagFields[] | cdktf.IResolvable;
+  readonly fields: DataCatalogTagFields[] | cdktn.IResolvable;
   /**
   * timeouts block
   *
@@ -63,7 +63,7 @@ export interface DataCatalogTagFields {
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/data_catalog_tag#bool_value DataCatalogTag#bool_value}
   */
-  readonly boolValue?: boolean | cdktf.IResolvable;
+  readonly boolValue?: boolean | cdktn.IResolvable;
   /**
   * Holds the value for a tag field with double type.
   *
@@ -94,60 +94,60 @@ export interface DataCatalogTagFields {
   readonly timestampValue?: string;
 }
 
-export function dataCatalogTagFieldsToTerraform(struct?: DataCatalogTagFields | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function dataCatalogTagFieldsToTerraform(struct?: DataCatalogTagFields | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    bool_value: cdktf.booleanToTerraform(struct!.boolValue),
-    double_value: cdktf.numberToTerraform(struct!.doubleValue),
-    enum_value: cdktf.stringToTerraform(struct!.enumValue),
-    field_name: cdktf.stringToTerraform(struct!.fieldName),
-    string_value: cdktf.stringToTerraform(struct!.stringValue),
-    timestamp_value: cdktf.stringToTerraform(struct!.timestampValue),
+    bool_value: cdktn.booleanToTerraform(struct!.boolValue),
+    double_value: cdktn.numberToTerraform(struct!.doubleValue),
+    enum_value: cdktn.stringToTerraform(struct!.enumValue),
+    field_name: cdktn.stringToTerraform(struct!.fieldName),
+    string_value: cdktn.stringToTerraform(struct!.stringValue),
+    timestamp_value: cdktn.stringToTerraform(struct!.timestampValue),
   }
 }
 
 
-export function dataCatalogTagFieldsToHclTerraform(struct?: DataCatalogTagFields | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function dataCatalogTagFieldsToHclTerraform(struct?: DataCatalogTagFields | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     bool_value: {
-      value: cdktf.booleanToHclTerraform(struct!.boolValue),
+      value: cdktn.booleanToHclTerraform(struct!.boolValue),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     double_value: {
-      value: cdktf.numberToHclTerraform(struct!.doubleValue),
+      value: cdktn.numberToHclTerraform(struct!.doubleValue),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     enum_value: {
-      value: cdktf.stringToHclTerraform(struct!.enumValue),
+      value: cdktn.stringToHclTerraform(struct!.enumValue),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     field_name: {
-      value: cdktf.stringToHclTerraform(struct!.fieldName),
+      value: cdktn.stringToHclTerraform(struct!.fieldName),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     string_value: {
-      value: cdktf.stringToHclTerraform(struct!.stringValue),
+      value: cdktn.stringToHclTerraform(struct!.stringValue),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     timestamp_value: {
-      value: cdktf.stringToHclTerraform(struct!.timestampValue),
+      value: cdktn.stringToHclTerraform(struct!.timestampValue),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -158,9 +158,9 @@ export function dataCatalogTagFieldsToHclTerraform(struct?: DataCatalogTagFields
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class DataCatalogTagFieldsOutputReference extends cdktf.ComplexObject {
+export class DataCatalogTagFieldsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -168,11 +168,11 @@ export class DataCatalogTagFieldsOutputReference extends cdktf.ComplexObject {
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): DataCatalogTagFields | cdktf.IResolvable | undefined {
+  public get internalValue(): DataCatalogTagFields | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -205,7 +205,7 @@ export class DataCatalogTagFieldsOutputReference extends cdktf.ComplexObject {
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: DataCatalogTagFields | cdktf.IResolvable | undefined) {
+  public set internalValue(value: DataCatalogTagFields | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -216,7 +216,7 @@ export class DataCatalogTagFieldsOutputReference extends cdktf.ComplexObject {
       this._stringValue = undefined;
       this._timestampValue = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -233,11 +233,11 @@ export class DataCatalogTagFieldsOutputReference extends cdktf.ComplexObject {
   }
 
   // bool_value - computed: false, optional: true, required: false
-  private _boolValue?: boolean | cdktf.IResolvable; 
+  private _boolValue?: boolean | cdktn.IResolvable; 
   public get boolValue() {
     return this.getBooleanAttribute('bool_value');
   }
-  public set boolValue(value: boolean | cdktf.IResolvable) {
+  public set boolValue(value: boolean | cdktn.IResolvable) {
     this._boolValue = value;
   }
   public resetBoolValue() {
@@ -336,15 +336,15 @@ export class DataCatalogTagFieldsOutputReference extends cdktf.ComplexObject {
   }
 }
 
-export class DataCatalogTagFieldsList extends cdktf.ComplexList {
-  public internalValue? : DataCatalogTagFields[] | cdktf.IResolvable
+export class DataCatalogTagFieldsList extends cdktn.ComplexList {
+  public internalValue? : DataCatalogTagFields[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -370,39 +370,39 @@ export interface DataCatalogTagTimeouts {
   readonly update?: string;
 }
 
-export function dataCatalogTagTimeoutsToTerraform(struct?: DataCatalogTagTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function dataCatalogTagTimeoutsToTerraform(struct?: DataCatalogTagTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    create: cdktf.stringToTerraform(struct!.create),
-    delete: cdktf.stringToTerraform(struct!.delete),
-    update: cdktf.stringToTerraform(struct!.update),
+    create: cdktn.stringToTerraform(struct!.create),
+    delete: cdktn.stringToTerraform(struct!.delete),
+    update: cdktn.stringToTerraform(struct!.update),
   }
 }
 
 
-export function dataCatalogTagTimeoutsToHclTerraform(struct?: DataCatalogTagTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function dataCatalogTagTimeoutsToHclTerraform(struct?: DataCatalogTagTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     create: {
-      value: cdktf.stringToHclTerraform(struct!.create),
+      value: cdktn.stringToHclTerraform(struct!.create),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     delete: {
-      value: cdktf.stringToHclTerraform(struct!.delete),
+      value: cdktn.stringToHclTerraform(struct!.delete),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     update: {
-      value: cdktf.stringToHclTerraform(struct!.update),
+      value: cdktn.stringToHclTerraform(struct!.update),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -413,19 +413,19 @@ export function dataCatalogTagTimeoutsToHclTerraform(struct?: DataCatalogTagTime
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class DataCatalogTagTimeoutsOutputReference extends cdktf.ComplexObject {
+export class DataCatalogTagTimeoutsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): DataCatalogTagTimeouts | cdktf.IResolvable | undefined {
+  public get internalValue(): DataCatalogTagTimeouts | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -446,7 +446,7 @@ export class DataCatalogTagTimeoutsOutputReference extends cdktf.ComplexObject {
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: DataCatalogTagTimeouts | cdktf.IResolvable | undefined) {
+  public set internalValue(value: DataCatalogTagTimeouts | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -454,7 +454,7 @@ export class DataCatalogTagTimeoutsOutputReference extends cdktf.ComplexObject {
       this._delete = undefined;
       this._update = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -519,7 +519,7 @@ export class DataCatalogTagTimeoutsOutputReference extends cdktf.ComplexObject {
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/data_catalog_tag google_data_catalog_tag}
 */
-export class DataCatalogTag extends cdktf.TerraformResource {
+export class DataCatalogTag extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -530,14 +530,14 @@ export class DataCatalogTag extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a DataCatalogTag resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a DataCatalogTag resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataCatalogTag to import
   * @param importFromId The id of the existing DataCatalogTag that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/data_catalog_tag#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataCatalogTag to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "google_data_catalog_tag", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "google_data_catalog_tag", importId: importFromId, provider });
       }
 
   // ===========
@@ -655,7 +655,7 @@ export class DataCatalogTag extends cdktf.TerraformResource {
   public get fields() {
     return this._fields;
   }
-  public putFields(value: DataCatalogTagFields[] | cdktf.IResolvable) {
+  public putFields(value: DataCatalogTagFields[] | cdktn.IResolvable) {
     this._fields.internalValue = value;
   }
   // Temporarily expose input value. Use with caution.
@@ -685,11 +685,11 @@ export class DataCatalogTag extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      column: cdktf.stringToTerraform(this._column),
-      id: cdktf.stringToTerraform(this._id),
-      parent: cdktf.stringToTerraform(this._parent),
-      template: cdktf.stringToTerraform(this._template),
-      fields: cdktf.listMapper(dataCatalogTagFieldsToTerraform, true)(this._fields.internalValue),
+      column: cdktn.stringToTerraform(this._column),
+      id: cdktn.stringToTerraform(this._id),
+      parent: cdktn.stringToTerraform(this._parent),
+      template: cdktn.stringToTerraform(this._template),
+      fields: cdktn.listMapper(dataCatalogTagFieldsToTerraform, true)(this._fields.internalValue),
       timeouts: dataCatalogTagTimeoutsToTerraform(this._timeouts.internalValue),
     };
   }
@@ -697,31 +697,31 @@ export class DataCatalogTag extends cdktf.TerraformResource {
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       column: {
-        value: cdktf.stringToHclTerraform(this._column),
+        value: cdktn.stringToHclTerraform(this._column),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       parent: {
-        value: cdktf.stringToHclTerraform(this._parent),
+        value: cdktn.stringToHclTerraform(this._parent),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       template: {
-        value: cdktf.stringToHclTerraform(this._template),
+        value: cdktn.stringToHclTerraform(this._template),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       fields: {
-        value: cdktf.listMapperHcl(dataCatalogTagFieldsToHclTerraform, true)(this._fields.internalValue),
+        value: cdktn.listMapperHcl(dataCatalogTagFieldsToHclTerraform, true)(this._fields.internalValue),
         isBlock: true,
         type: "set",
         storageClassType: "DataCatalogTagFieldsList",

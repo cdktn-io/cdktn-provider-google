@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface BigqueryReservationConfig extends cdktf.TerraformMetaArguments {
+export interface BigqueryReservationConfig extends cdktn.TerraformMetaArguments {
   /**
   * Maximum number of queries that are allowed to run concurrently in this reservation. This is a soft limit due to asynchronous nature of the system and various optimizations for small queries. Default value is 0 which means that concurrency will be automatically set based on the reservation size.
   *
@@ -38,7 +38,7 @@ export interface BigqueryReservationConfig extends cdktf.TerraformMetaArguments 
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/bigquery_reservation#ignore_idle_slots BigqueryReservation#ignore_idle_slots}
   */
-  readonly ignoreIdleSlots?: boolean | cdktf.IResolvable;
+  readonly ignoreIdleSlots?: boolean | cdktn.IResolvable;
   /**
   * The geographic location where the transfer config should reside.
   * Examples: US, EU, asia-northeast1. The default value is US.
@@ -89,8 +89,8 @@ export interface BigqueryReservationReplicationStatusError {
 }
 
 export function bigqueryReservationReplicationStatusErrorToTerraform(struct?: BigqueryReservationReplicationStatusError): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -99,8 +99,8 @@ export function bigqueryReservationReplicationStatusErrorToTerraform(struct?: Bi
 
 
 export function bigqueryReservationReplicationStatusErrorToHclTerraform(struct?: BigqueryReservationReplicationStatusError): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -108,7 +108,7 @@ export function bigqueryReservationReplicationStatusErrorToHclTerraform(struct?:
   return attrs;
 }
 
-export class BigqueryReservationReplicationStatusErrorOutputReference extends cdktf.ComplexObject {
+export class BigqueryReservationReplicationStatusErrorOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -117,7 +117,7 @@ export class BigqueryReservationReplicationStatusErrorOutputReference extends cd
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -147,14 +147,14 @@ export class BigqueryReservationReplicationStatusErrorOutputReference extends cd
   }
 }
 
-export class BigqueryReservationReplicationStatusErrorList extends cdktf.ComplexList {
+export class BigqueryReservationReplicationStatusErrorList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -169,8 +169,8 @@ export interface BigqueryReservationReplicationStatus {
 }
 
 export function bigqueryReservationReplicationStatusToTerraform(struct?: BigqueryReservationReplicationStatus): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -179,8 +179,8 @@ export function bigqueryReservationReplicationStatusToTerraform(struct?: Bigquer
 
 
 export function bigqueryReservationReplicationStatusToHclTerraform(struct?: BigqueryReservationReplicationStatus): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -188,7 +188,7 @@ export function bigqueryReservationReplicationStatusToHclTerraform(struct?: Bigq
   return attrs;
 }
 
-export class BigqueryReservationReplicationStatusOutputReference extends cdktf.ComplexObject {
+export class BigqueryReservationReplicationStatusOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -197,7 +197,7 @@ export class BigqueryReservationReplicationStatusOutputReference extends cdktf.C
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -233,14 +233,14 @@ export class BigqueryReservationReplicationStatusOutputReference extends cdktf.C
   }
 }
 
-export class BigqueryReservationReplicationStatusList extends cdktf.ComplexList {
+export class BigqueryReservationReplicationStatusList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -261,24 +261,24 @@ export interface BigqueryReservationAutoscale {
 }
 
 export function bigqueryReservationAutoscaleToTerraform(struct?: BigqueryReservationAutoscaleOutputReference | BigqueryReservationAutoscale): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    max_slots: cdktf.numberToTerraform(struct!.maxSlots),
+    max_slots: cdktn.numberToTerraform(struct!.maxSlots),
   }
 }
 
 
 export function bigqueryReservationAutoscaleToHclTerraform(struct?: BigqueryReservationAutoscaleOutputReference | BigqueryReservationAutoscale): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     max_slots: {
-      value: cdktf.numberToHclTerraform(struct!.maxSlots),
+      value: cdktn.numberToHclTerraform(struct!.maxSlots),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
@@ -289,14 +289,14 @@ export function bigqueryReservationAutoscaleToHclTerraform(struct?: BigqueryRese
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class BigqueryReservationAutoscaleOutputReference extends cdktf.ComplexObject {
+export class BigqueryReservationAutoscaleOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -357,39 +357,39 @@ export interface BigqueryReservationTimeouts {
   readonly update?: string;
 }
 
-export function bigqueryReservationTimeoutsToTerraform(struct?: BigqueryReservationTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function bigqueryReservationTimeoutsToTerraform(struct?: BigqueryReservationTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    create: cdktf.stringToTerraform(struct!.create),
-    delete: cdktf.stringToTerraform(struct!.delete),
-    update: cdktf.stringToTerraform(struct!.update),
+    create: cdktn.stringToTerraform(struct!.create),
+    delete: cdktn.stringToTerraform(struct!.delete),
+    update: cdktn.stringToTerraform(struct!.update),
   }
 }
 
 
-export function bigqueryReservationTimeoutsToHclTerraform(struct?: BigqueryReservationTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function bigqueryReservationTimeoutsToHclTerraform(struct?: BigqueryReservationTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     create: {
-      value: cdktf.stringToHclTerraform(struct!.create),
+      value: cdktn.stringToHclTerraform(struct!.create),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     delete: {
-      value: cdktf.stringToHclTerraform(struct!.delete),
+      value: cdktn.stringToHclTerraform(struct!.delete),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     update: {
-      value: cdktf.stringToHclTerraform(struct!.update),
+      value: cdktn.stringToHclTerraform(struct!.update),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -400,19 +400,19 @@ export function bigqueryReservationTimeoutsToHclTerraform(struct?: BigqueryReser
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class BigqueryReservationTimeoutsOutputReference extends cdktf.ComplexObject {
+export class BigqueryReservationTimeoutsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): BigqueryReservationTimeouts | cdktf.IResolvable | undefined {
+  public get internalValue(): BigqueryReservationTimeouts | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -433,7 +433,7 @@ export class BigqueryReservationTimeoutsOutputReference extends cdktf.ComplexObj
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: BigqueryReservationTimeouts | cdktf.IResolvable | undefined) {
+  public set internalValue(value: BigqueryReservationTimeouts | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -441,7 +441,7 @@ export class BigqueryReservationTimeoutsOutputReference extends cdktf.ComplexObj
       this._delete = undefined;
       this._update = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -506,7 +506,7 @@ export class BigqueryReservationTimeoutsOutputReference extends cdktf.ComplexObj
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/bigquery_reservation google_bigquery_reservation}
 */
-export class BigqueryReservation extends cdktf.TerraformResource {
+export class BigqueryReservation extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -517,14 +517,14 @@ export class BigqueryReservation extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a BigqueryReservation resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a BigqueryReservation resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the BigqueryReservation to import
   * @param importFromId The id of the existing BigqueryReservation that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/bigquery_reservation#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the BigqueryReservation to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "google_bigquery_reservation", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "google_bigquery_reservation", importId: importFromId, provider });
       }
 
   // ===========
@@ -620,11 +620,11 @@ export class BigqueryReservation extends cdktf.TerraformResource {
   }
 
   // ignore_idle_slots - computed: false, optional: true, required: false
-  private _ignoreIdleSlots?: boolean | cdktf.IResolvable; 
+  private _ignoreIdleSlots?: boolean | cdktn.IResolvable; 
   public get ignoreIdleSlots() {
     return this.getBooleanAttribute('ignore_idle_slots');
   }
-  public set ignoreIdleSlots(value: boolean | cdktf.IResolvable) {
+  public set ignoreIdleSlots(value: boolean | cdktn.IResolvable) {
     this._ignoreIdleSlots = value;
   }
   public resetIgnoreIdleSlots() {
@@ -763,15 +763,15 @@ export class BigqueryReservation extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      concurrency: cdktf.numberToTerraform(this._concurrency),
-      edition: cdktf.stringToTerraform(this._edition),
-      id: cdktf.stringToTerraform(this._id),
-      ignore_idle_slots: cdktf.booleanToTerraform(this._ignoreIdleSlots),
-      location: cdktf.stringToTerraform(this._location),
-      name: cdktf.stringToTerraform(this._name),
-      project: cdktf.stringToTerraform(this._project),
-      secondary_location: cdktf.stringToTerraform(this._secondaryLocation),
-      slot_capacity: cdktf.numberToTerraform(this._slotCapacity),
+      concurrency: cdktn.numberToTerraform(this._concurrency),
+      edition: cdktn.stringToTerraform(this._edition),
+      id: cdktn.stringToTerraform(this._id),
+      ignore_idle_slots: cdktn.booleanToTerraform(this._ignoreIdleSlots),
+      location: cdktn.stringToTerraform(this._location),
+      name: cdktn.stringToTerraform(this._name),
+      project: cdktn.stringToTerraform(this._project),
+      secondary_location: cdktn.stringToTerraform(this._secondaryLocation),
+      slot_capacity: cdktn.numberToTerraform(this._slotCapacity),
       autoscale: bigqueryReservationAutoscaleToTerraform(this._autoscale.internalValue),
       timeouts: bigqueryReservationTimeoutsToTerraform(this._timeouts.internalValue),
     };
@@ -780,55 +780,55 @@ export class BigqueryReservation extends cdktf.TerraformResource {
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       concurrency: {
-        value: cdktf.numberToHclTerraform(this._concurrency),
+        value: cdktn.numberToHclTerraform(this._concurrency),
         isBlock: false,
         type: "simple",
         storageClassType: "number",
       },
       edition: {
-        value: cdktf.stringToHclTerraform(this._edition),
+        value: cdktn.stringToHclTerraform(this._edition),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       ignore_idle_slots: {
-        value: cdktf.booleanToHclTerraform(this._ignoreIdleSlots),
+        value: cdktn.booleanToHclTerraform(this._ignoreIdleSlots),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       location: {
-        value: cdktf.stringToHclTerraform(this._location),
+        value: cdktn.stringToHclTerraform(this._location),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       name: {
-        value: cdktf.stringToHclTerraform(this._name),
+        value: cdktn.stringToHclTerraform(this._name),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       project: {
-        value: cdktf.stringToHclTerraform(this._project),
+        value: cdktn.stringToHclTerraform(this._project),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       secondary_location: {
-        value: cdktf.stringToHclTerraform(this._secondaryLocation),
+        value: cdktn.stringToHclTerraform(this._secondaryLocation),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       slot_capacity: {
-        value: cdktf.numberToHclTerraform(this._slotCapacity),
+        value: cdktn.numberToHclTerraform(this._slotCapacity),
         isBlock: false,
         type: "simple",
         storageClassType: "number",

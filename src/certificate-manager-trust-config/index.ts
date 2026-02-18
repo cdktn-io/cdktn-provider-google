@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface CertificateManagerTrustConfigConfig extends cdktf.TerraformMetaArguments {
+export interface CertificateManagerTrustConfigConfig extends cdktn.TerraformMetaArguments {
   /**
   * One or more paragraphs of text description of a trust config.
   *
@@ -55,7 +55,7 @@ export interface CertificateManagerTrustConfigConfig extends cdktf.TerraformMeta
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/certificate_manager_trust_config#allowlisted_certificates CertificateManagerTrustConfig#allowlisted_certificates}
   */
-  readonly allowlistedCertificates?: CertificateManagerTrustConfigAllowlistedCertificates[] | cdktf.IResolvable;
+  readonly allowlistedCertificates?: CertificateManagerTrustConfigAllowlistedCertificates[] | cdktn.IResolvable;
   /**
   * timeouts block
   *
@@ -67,7 +67,7 @@ export interface CertificateManagerTrustConfigConfig extends cdktf.TerraformMeta
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/certificate_manager_trust_config#trust_stores CertificateManagerTrustConfig#trust_stores}
   */
-  readonly trustStores?: CertificateManagerTrustConfigTrustStores[] | cdktf.IResolvable;
+  readonly trustStores?: CertificateManagerTrustConfigTrustStores[] | cdktn.IResolvable;
 }
 export interface CertificateManagerTrustConfigAllowlistedCertificates {
   /**
@@ -78,25 +78,25 @@ export interface CertificateManagerTrustConfigAllowlistedCertificates {
   readonly pemCertificate: string;
 }
 
-export function certificateManagerTrustConfigAllowlistedCertificatesToTerraform(struct?: CertificateManagerTrustConfigAllowlistedCertificates | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function certificateManagerTrustConfigAllowlistedCertificatesToTerraform(struct?: CertificateManagerTrustConfigAllowlistedCertificates | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    pem_certificate: cdktf.stringToTerraform(struct!.pemCertificate),
+    pem_certificate: cdktn.stringToTerraform(struct!.pemCertificate),
   }
 }
 
 
-export function certificateManagerTrustConfigAllowlistedCertificatesToHclTerraform(struct?: CertificateManagerTrustConfigAllowlistedCertificates | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function certificateManagerTrustConfigAllowlistedCertificatesToHclTerraform(struct?: CertificateManagerTrustConfigAllowlistedCertificates | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     pem_certificate: {
-      value: cdktf.stringToHclTerraform(struct!.pemCertificate),
+      value: cdktn.stringToHclTerraform(struct!.pemCertificate),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -107,9 +107,9 @@ export function certificateManagerTrustConfigAllowlistedCertificatesToHclTerrafo
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class CertificateManagerTrustConfigAllowlistedCertificatesOutputReference extends cdktf.ComplexObject {
+export class CertificateManagerTrustConfigAllowlistedCertificatesOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -117,11 +117,11 @@ export class CertificateManagerTrustConfigAllowlistedCertificatesOutputReference
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): CertificateManagerTrustConfigAllowlistedCertificates | cdktf.IResolvable | undefined {
+  public get internalValue(): CertificateManagerTrustConfigAllowlistedCertificates | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -134,13 +134,13 @@ export class CertificateManagerTrustConfigAllowlistedCertificatesOutputReference
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: CertificateManagerTrustConfigAllowlistedCertificates | cdktf.IResolvable | undefined) {
+  public set internalValue(value: CertificateManagerTrustConfigAllowlistedCertificates | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._pemCertificate = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -165,15 +165,15 @@ export class CertificateManagerTrustConfigAllowlistedCertificatesOutputReference
   }
 }
 
-export class CertificateManagerTrustConfigAllowlistedCertificatesList extends cdktf.ComplexList {
-  public internalValue? : CertificateManagerTrustConfigAllowlistedCertificates[] | cdktf.IResolvable
+export class CertificateManagerTrustConfigAllowlistedCertificatesList extends cdktn.ComplexList {
+  public internalValue? : CertificateManagerTrustConfigAllowlistedCertificates[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -199,39 +199,39 @@ export interface CertificateManagerTrustConfigTimeouts {
   readonly update?: string;
 }
 
-export function certificateManagerTrustConfigTimeoutsToTerraform(struct?: CertificateManagerTrustConfigTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function certificateManagerTrustConfigTimeoutsToTerraform(struct?: CertificateManagerTrustConfigTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    create: cdktf.stringToTerraform(struct!.create),
-    delete: cdktf.stringToTerraform(struct!.delete),
-    update: cdktf.stringToTerraform(struct!.update),
+    create: cdktn.stringToTerraform(struct!.create),
+    delete: cdktn.stringToTerraform(struct!.delete),
+    update: cdktn.stringToTerraform(struct!.update),
   }
 }
 
 
-export function certificateManagerTrustConfigTimeoutsToHclTerraform(struct?: CertificateManagerTrustConfigTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function certificateManagerTrustConfigTimeoutsToHclTerraform(struct?: CertificateManagerTrustConfigTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     create: {
-      value: cdktf.stringToHclTerraform(struct!.create),
+      value: cdktn.stringToHclTerraform(struct!.create),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     delete: {
-      value: cdktf.stringToHclTerraform(struct!.delete),
+      value: cdktn.stringToHclTerraform(struct!.delete),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     update: {
-      value: cdktf.stringToHclTerraform(struct!.update),
+      value: cdktn.stringToHclTerraform(struct!.update),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -242,19 +242,19 @@ export function certificateManagerTrustConfigTimeoutsToHclTerraform(struct?: Cer
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class CertificateManagerTrustConfigTimeoutsOutputReference extends cdktf.ComplexObject {
+export class CertificateManagerTrustConfigTimeoutsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): CertificateManagerTrustConfigTimeouts | cdktf.IResolvable | undefined {
+  public get internalValue(): CertificateManagerTrustConfigTimeouts | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -275,7 +275,7 @@ export class CertificateManagerTrustConfigTimeoutsOutputReference extends cdktf.
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: CertificateManagerTrustConfigTimeouts | cdktf.IResolvable | undefined) {
+  public set internalValue(value: CertificateManagerTrustConfigTimeouts | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -283,7 +283,7 @@ export class CertificateManagerTrustConfigTimeoutsOutputReference extends cdktf.
       this._delete = undefined;
       this._update = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -354,25 +354,25 @@ export interface CertificateManagerTrustConfigTrustStoresIntermediateCas {
   readonly pemCertificate?: string;
 }
 
-export function certificateManagerTrustConfigTrustStoresIntermediateCasToTerraform(struct?: CertificateManagerTrustConfigTrustStoresIntermediateCas | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function certificateManagerTrustConfigTrustStoresIntermediateCasToTerraform(struct?: CertificateManagerTrustConfigTrustStoresIntermediateCas | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    pem_certificate: cdktf.stringToTerraform(struct!.pemCertificate),
+    pem_certificate: cdktn.stringToTerraform(struct!.pemCertificate),
   }
 }
 
 
-export function certificateManagerTrustConfigTrustStoresIntermediateCasToHclTerraform(struct?: CertificateManagerTrustConfigTrustStoresIntermediateCas | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function certificateManagerTrustConfigTrustStoresIntermediateCasToHclTerraform(struct?: CertificateManagerTrustConfigTrustStoresIntermediateCas | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     pem_certificate: {
-      value: cdktf.stringToHclTerraform(struct!.pemCertificate),
+      value: cdktn.stringToHclTerraform(struct!.pemCertificate),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -383,9 +383,9 @@ export function certificateManagerTrustConfigTrustStoresIntermediateCasToHclTerr
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class CertificateManagerTrustConfigTrustStoresIntermediateCasOutputReference extends cdktf.ComplexObject {
+export class CertificateManagerTrustConfigTrustStoresIntermediateCasOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -393,11 +393,11 @@ export class CertificateManagerTrustConfigTrustStoresIntermediateCasOutputRefere
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): CertificateManagerTrustConfigTrustStoresIntermediateCas | cdktf.IResolvable | undefined {
+  public get internalValue(): CertificateManagerTrustConfigTrustStoresIntermediateCas | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -410,13 +410,13 @@ export class CertificateManagerTrustConfigTrustStoresIntermediateCasOutputRefere
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: CertificateManagerTrustConfigTrustStoresIntermediateCas | cdktf.IResolvable | undefined) {
+  public set internalValue(value: CertificateManagerTrustConfigTrustStoresIntermediateCas | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._pemCertificate = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -444,15 +444,15 @@ export class CertificateManagerTrustConfigTrustStoresIntermediateCasOutputRefere
   }
 }
 
-export class CertificateManagerTrustConfigTrustStoresIntermediateCasList extends cdktf.ComplexList {
-  public internalValue? : CertificateManagerTrustConfigTrustStoresIntermediateCas[] | cdktf.IResolvable
+export class CertificateManagerTrustConfigTrustStoresIntermediateCasList extends cdktn.ComplexList {
+  public internalValue? : CertificateManagerTrustConfigTrustStoresIntermediateCas[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -473,25 +473,25 @@ export interface CertificateManagerTrustConfigTrustStoresTrustAnchors {
   readonly pemCertificate?: string;
 }
 
-export function certificateManagerTrustConfigTrustStoresTrustAnchorsToTerraform(struct?: CertificateManagerTrustConfigTrustStoresTrustAnchors | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function certificateManagerTrustConfigTrustStoresTrustAnchorsToTerraform(struct?: CertificateManagerTrustConfigTrustStoresTrustAnchors | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    pem_certificate: cdktf.stringToTerraform(struct!.pemCertificate),
+    pem_certificate: cdktn.stringToTerraform(struct!.pemCertificate),
   }
 }
 
 
-export function certificateManagerTrustConfigTrustStoresTrustAnchorsToHclTerraform(struct?: CertificateManagerTrustConfigTrustStoresTrustAnchors | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function certificateManagerTrustConfigTrustStoresTrustAnchorsToHclTerraform(struct?: CertificateManagerTrustConfigTrustStoresTrustAnchors | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     pem_certificate: {
-      value: cdktf.stringToHclTerraform(struct!.pemCertificate),
+      value: cdktn.stringToHclTerraform(struct!.pemCertificate),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -502,9 +502,9 @@ export function certificateManagerTrustConfigTrustStoresTrustAnchorsToHclTerrafo
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class CertificateManagerTrustConfigTrustStoresTrustAnchorsOutputReference extends cdktf.ComplexObject {
+export class CertificateManagerTrustConfigTrustStoresTrustAnchorsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -512,11 +512,11 @@ export class CertificateManagerTrustConfigTrustStoresTrustAnchorsOutputReference
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): CertificateManagerTrustConfigTrustStoresTrustAnchors | cdktf.IResolvable | undefined {
+  public get internalValue(): CertificateManagerTrustConfigTrustStoresTrustAnchors | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -529,13 +529,13 @@ export class CertificateManagerTrustConfigTrustStoresTrustAnchorsOutputReference
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: CertificateManagerTrustConfigTrustStoresTrustAnchors | cdktf.IResolvable | undefined) {
+  public set internalValue(value: CertificateManagerTrustConfigTrustStoresTrustAnchors | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._pemCertificate = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -563,15 +563,15 @@ export class CertificateManagerTrustConfigTrustStoresTrustAnchorsOutputReference
   }
 }
 
-export class CertificateManagerTrustConfigTrustStoresTrustAnchorsList extends cdktf.ComplexList {
-  public internalValue? : CertificateManagerTrustConfigTrustStoresTrustAnchors[] | cdktf.IResolvable
+export class CertificateManagerTrustConfigTrustStoresTrustAnchorsList extends cdktn.ComplexList {
+  public internalValue? : CertificateManagerTrustConfigTrustStoresTrustAnchors[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -588,41 +588,41 @@ export interface CertificateManagerTrustConfigTrustStores {
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/certificate_manager_trust_config#intermediate_cas CertificateManagerTrustConfig#intermediate_cas}
   */
-  readonly intermediateCas?: CertificateManagerTrustConfigTrustStoresIntermediateCas[] | cdktf.IResolvable;
+  readonly intermediateCas?: CertificateManagerTrustConfigTrustStoresIntermediateCas[] | cdktn.IResolvable;
   /**
   * trust_anchors block
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/certificate_manager_trust_config#trust_anchors CertificateManagerTrustConfig#trust_anchors}
   */
-  readonly trustAnchors?: CertificateManagerTrustConfigTrustStoresTrustAnchors[] | cdktf.IResolvable;
+  readonly trustAnchors?: CertificateManagerTrustConfigTrustStoresTrustAnchors[] | cdktn.IResolvable;
 }
 
-export function certificateManagerTrustConfigTrustStoresToTerraform(struct?: CertificateManagerTrustConfigTrustStores | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function certificateManagerTrustConfigTrustStoresToTerraform(struct?: CertificateManagerTrustConfigTrustStores | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    intermediate_cas: cdktf.listMapper(certificateManagerTrustConfigTrustStoresIntermediateCasToTerraform, true)(struct!.intermediateCas),
-    trust_anchors: cdktf.listMapper(certificateManagerTrustConfigTrustStoresTrustAnchorsToTerraform, true)(struct!.trustAnchors),
+    intermediate_cas: cdktn.listMapper(certificateManagerTrustConfigTrustStoresIntermediateCasToTerraform, true)(struct!.intermediateCas),
+    trust_anchors: cdktn.listMapper(certificateManagerTrustConfigTrustStoresTrustAnchorsToTerraform, true)(struct!.trustAnchors),
   }
 }
 
 
-export function certificateManagerTrustConfigTrustStoresToHclTerraform(struct?: CertificateManagerTrustConfigTrustStores | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function certificateManagerTrustConfigTrustStoresToHclTerraform(struct?: CertificateManagerTrustConfigTrustStores | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     intermediate_cas: {
-      value: cdktf.listMapperHcl(certificateManagerTrustConfigTrustStoresIntermediateCasToHclTerraform, true)(struct!.intermediateCas),
+      value: cdktn.listMapperHcl(certificateManagerTrustConfigTrustStoresIntermediateCasToHclTerraform, true)(struct!.intermediateCas),
       isBlock: true,
       type: "list",
       storageClassType: "CertificateManagerTrustConfigTrustStoresIntermediateCasList",
     },
     trust_anchors: {
-      value: cdktf.listMapperHcl(certificateManagerTrustConfigTrustStoresTrustAnchorsToHclTerraform, true)(struct!.trustAnchors),
+      value: cdktn.listMapperHcl(certificateManagerTrustConfigTrustStoresTrustAnchorsToHclTerraform, true)(struct!.trustAnchors),
       isBlock: true,
       type: "list",
       storageClassType: "CertificateManagerTrustConfigTrustStoresTrustAnchorsList",
@@ -633,9 +633,9 @@ export function certificateManagerTrustConfigTrustStoresToHclTerraform(struct?: 
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class CertificateManagerTrustConfigTrustStoresOutputReference extends cdktf.ComplexObject {
+export class CertificateManagerTrustConfigTrustStoresOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -643,11 +643,11 @@ export class CertificateManagerTrustConfigTrustStoresOutputReference extends cdk
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): CertificateManagerTrustConfigTrustStores | cdktf.IResolvable | undefined {
+  public get internalValue(): CertificateManagerTrustConfigTrustStores | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -664,14 +664,14 @@ export class CertificateManagerTrustConfigTrustStoresOutputReference extends cdk
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: CertificateManagerTrustConfigTrustStores | cdktf.IResolvable | undefined) {
+  public set internalValue(value: CertificateManagerTrustConfigTrustStores | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._intermediateCas.internalValue = undefined;
       this._trustAnchors.internalValue = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -688,7 +688,7 @@ export class CertificateManagerTrustConfigTrustStoresOutputReference extends cdk
   public get intermediateCas() {
     return this._intermediateCas;
   }
-  public putIntermediateCas(value: CertificateManagerTrustConfigTrustStoresIntermediateCas[] | cdktf.IResolvable) {
+  public putIntermediateCas(value: CertificateManagerTrustConfigTrustStoresIntermediateCas[] | cdktn.IResolvable) {
     this._intermediateCas.internalValue = value;
   }
   public resetIntermediateCas() {
@@ -704,7 +704,7 @@ export class CertificateManagerTrustConfigTrustStoresOutputReference extends cdk
   public get trustAnchors() {
     return this._trustAnchors;
   }
-  public putTrustAnchors(value: CertificateManagerTrustConfigTrustStoresTrustAnchors[] | cdktf.IResolvable) {
+  public putTrustAnchors(value: CertificateManagerTrustConfigTrustStoresTrustAnchors[] | cdktn.IResolvable) {
     this._trustAnchors.internalValue = value;
   }
   public resetTrustAnchors() {
@@ -716,15 +716,15 @@ export class CertificateManagerTrustConfigTrustStoresOutputReference extends cdk
   }
 }
 
-export class CertificateManagerTrustConfigTrustStoresList extends cdktf.ComplexList {
-  public internalValue? : CertificateManagerTrustConfigTrustStores[] | cdktf.IResolvable
+export class CertificateManagerTrustConfigTrustStoresList extends cdktn.ComplexList {
+  public internalValue? : CertificateManagerTrustConfigTrustStores[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -739,7 +739,7 @@ export class CertificateManagerTrustConfigTrustStoresList extends cdktf.ComplexL
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/certificate_manager_trust_config google_certificate_manager_trust_config}
 */
-export class CertificateManagerTrustConfig extends cdktf.TerraformResource {
+export class CertificateManagerTrustConfig extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -750,14 +750,14 @@ export class CertificateManagerTrustConfig extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a CertificateManagerTrustConfig resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a CertificateManagerTrustConfig resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the CertificateManagerTrustConfig to import
   * @param importFromId The id of the existing CertificateManagerTrustConfig that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/certificate_manager_trust_config#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the CertificateManagerTrustConfig to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "google_certificate_manager_trust_config", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "google_certificate_manager_trust_config", importId: importFromId, provider });
       }
 
   // ===========
@@ -824,7 +824,7 @@ export class CertificateManagerTrustConfig extends cdktf.TerraformResource {
   }
 
   // effective_labels - computed: true, optional: false, required: false
-  private _effectiveLabels = new cdktf.StringMap(this, "effective_labels");
+  private _effectiveLabels = new cdktn.StringMap(this, "effective_labels");
   public get effectiveLabels() {
     return this._effectiveLabels;
   }
@@ -904,7 +904,7 @@ export class CertificateManagerTrustConfig extends cdktf.TerraformResource {
   }
 
   // terraform_labels - computed: true, optional: false, required: false
-  private _terraformLabels = new cdktf.StringMap(this, "terraform_labels");
+  private _terraformLabels = new cdktn.StringMap(this, "terraform_labels");
   public get terraformLabels() {
     return this._terraformLabels;
   }
@@ -919,7 +919,7 @@ export class CertificateManagerTrustConfig extends cdktf.TerraformResource {
   public get allowlistedCertificates() {
     return this._allowlistedCertificates;
   }
-  public putAllowlistedCertificates(value: CertificateManagerTrustConfigAllowlistedCertificates[] | cdktf.IResolvable) {
+  public putAllowlistedCertificates(value: CertificateManagerTrustConfigAllowlistedCertificates[] | cdktn.IResolvable) {
     this._allowlistedCertificates.internalValue = value;
   }
   public resetAllowlistedCertificates() {
@@ -951,7 +951,7 @@ export class CertificateManagerTrustConfig extends cdktf.TerraformResource {
   public get trustStores() {
     return this._trustStores;
   }
-  public putTrustStores(value: CertificateManagerTrustConfigTrustStores[] | cdktf.IResolvable) {
+  public putTrustStores(value: CertificateManagerTrustConfigTrustStores[] | cdktn.IResolvable) {
     this._trustStores.internalValue = value;
   }
   public resetTrustStores() {
@@ -968,58 +968,58 @@ export class CertificateManagerTrustConfig extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      description: cdktf.stringToTerraform(this._description),
-      id: cdktf.stringToTerraform(this._id),
-      labels: cdktf.hashMapper(cdktf.stringToTerraform)(this._labels),
-      location: cdktf.stringToTerraform(this._location),
-      name: cdktf.stringToTerraform(this._name),
-      project: cdktf.stringToTerraform(this._project),
-      allowlisted_certificates: cdktf.listMapper(certificateManagerTrustConfigAllowlistedCertificatesToTerraform, true)(this._allowlistedCertificates.internalValue),
+      description: cdktn.stringToTerraform(this._description),
+      id: cdktn.stringToTerraform(this._id),
+      labels: cdktn.hashMapper(cdktn.stringToTerraform)(this._labels),
+      location: cdktn.stringToTerraform(this._location),
+      name: cdktn.stringToTerraform(this._name),
+      project: cdktn.stringToTerraform(this._project),
+      allowlisted_certificates: cdktn.listMapper(certificateManagerTrustConfigAllowlistedCertificatesToTerraform, true)(this._allowlistedCertificates.internalValue),
       timeouts: certificateManagerTrustConfigTimeoutsToTerraform(this._timeouts.internalValue),
-      trust_stores: cdktf.listMapper(certificateManagerTrustConfigTrustStoresToTerraform, true)(this._trustStores.internalValue),
+      trust_stores: cdktn.listMapper(certificateManagerTrustConfigTrustStoresToTerraform, true)(this._trustStores.internalValue),
     };
   }
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       description: {
-        value: cdktf.stringToHclTerraform(this._description),
+        value: cdktn.stringToHclTerraform(this._description),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       labels: {
-        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._labels),
+        value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(this._labels),
         isBlock: false,
         type: "map",
         storageClassType: "stringMap",
       },
       location: {
-        value: cdktf.stringToHclTerraform(this._location),
+        value: cdktn.stringToHclTerraform(this._location),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       name: {
-        value: cdktf.stringToHclTerraform(this._name),
+        value: cdktn.stringToHclTerraform(this._name),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       project: {
-        value: cdktf.stringToHclTerraform(this._project),
+        value: cdktn.stringToHclTerraform(this._project),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       allowlisted_certificates: {
-        value: cdktf.listMapperHcl(certificateManagerTrustConfigAllowlistedCertificatesToHclTerraform, true)(this._allowlistedCertificates.internalValue),
+        value: cdktn.listMapperHcl(certificateManagerTrustConfigAllowlistedCertificatesToHclTerraform, true)(this._allowlistedCertificates.internalValue),
         isBlock: true,
         type: "list",
         storageClassType: "CertificateManagerTrustConfigAllowlistedCertificatesList",
@@ -1031,7 +1031,7 @@ export class CertificateManagerTrustConfig extends cdktf.TerraformResource {
         storageClassType: "CertificateManagerTrustConfigTimeouts",
       },
       trust_stores: {
-        value: cdktf.listMapperHcl(certificateManagerTrustConfigTrustStoresToHclTerraform, true)(this._trustStores.internalValue),
+        value: cdktn.listMapperHcl(certificateManagerTrustConfigTrustStoresToHclTerraform, true)(this._trustStores.internalValue),
         isBlock: true,
         type: "list",
         storageClassType: "CertificateManagerTrustConfigTrustStoresList",

@@ -15,8 +15,8 @@ dataLossPreventionDeidentifyTemplateTimeoutsToHclTerraform,
 DataLossPreventionDeidentifyTemplateTimeoutsOutputReference} from './index-structs'
 export * from './index-structs'
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
-export interface DataLossPreventionDeidentifyTemplateConfig extends cdktf.TerraformMetaArguments {
+import * as cdktn from 'cdktn';
+export interface DataLossPreventionDeidentifyTemplateConfig extends cdktn.TerraformMetaArguments {
   /**
   * A description of the template.
   *
@@ -72,7 +72,7 @@ export interface DataLossPreventionDeidentifyTemplateConfig extends cdktf.Terraf
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/data_loss_prevention_deidentify_template google_data_loss_prevention_deidentify_template}
 */
-export class DataLossPreventionDeidentifyTemplate extends cdktf.TerraformResource {
+export class DataLossPreventionDeidentifyTemplate extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -83,14 +83,14 @@ export class DataLossPreventionDeidentifyTemplate extends cdktf.TerraformResourc
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a DataLossPreventionDeidentifyTemplate resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a DataLossPreventionDeidentifyTemplate resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataLossPreventionDeidentifyTemplate to import
   * @param importFromId The id of the existing DataLossPreventionDeidentifyTemplate that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/data_loss_prevention_deidentify_template#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataLossPreventionDeidentifyTemplate to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "google_data_loss_prevention_deidentify_template", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "google_data_loss_prevention_deidentify_template", importId: importFromId, provider });
       }
 
   // ===========
@@ -260,11 +260,11 @@ export class DataLossPreventionDeidentifyTemplate extends cdktf.TerraformResourc
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      description: cdktf.stringToTerraform(this._description),
-      display_name: cdktf.stringToTerraform(this._displayName),
-      id: cdktf.stringToTerraform(this._id),
-      parent: cdktf.stringToTerraform(this._parent),
-      template_id: cdktf.stringToTerraform(this._templateId),
+      description: cdktn.stringToTerraform(this._description),
+      display_name: cdktn.stringToTerraform(this._displayName),
+      id: cdktn.stringToTerraform(this._id),
+      parent: cdktn.stringToTerraform(this._parent),
+      template_id: cdktn.stringToTerraform(this._templateId),
       deidentify_config: dataLossPreventionDeidentifyTemplateDeidentifyConfigToTerraform(this._deidentifyConfig.internalValue),
       timeouts: dataLossPreventionDeidentifyTemplateTimeoutsToTerraform(this._timeouts.internalValue),
     };
@@ -273,31 +273,31 @@ export class DataLossPreventionDeidentifyTemplate extends cdktf.TerraformResourc
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       description: {
-        value: cdktf.stringToHclTerraform(this._description),
+        value: cdktn.stringToHclTerraform(this._description),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       display_name: {
-        value: cdktf.stringToHclTerraform(this._displayName),
+        value: cdktn.stringToHclTerraform(this._displayName),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       parent: {
-        value: cdktf.stringToHclTerraform(this._parent),
+        value: cdktn.stringToHclTerraform(this._parent),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       template_id: {
-        value: cdktf.stringToHclTerraform(this._templateId),
+        value: cdktn.stringToHclTerraform(this._templateId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

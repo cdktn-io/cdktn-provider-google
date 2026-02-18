@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface DataGoogleFirestoreDocumentConfig extends cdktf.TerraformMetaArguments {
+export interface DataGoogleFirestoreDocumentConfig extends cdktn.TerraformMetaArguments {
   /**
   * The collection ID, relative to database. For example: chatrooms or chatrooms/my-document/private-messages.
   *
@@ -46,7 +46,7 @@ export interface DataGoogleFirestoreDocumentConfig extends cdktf.TerraformMetaAr
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/data-sources/firestore_document google_firestore_document}
 */
-export class DataGoogleFirestoreDocument extends cdktf.TerraformDataSource {
+export class DataGoogleFirestoreDocument extends cdktn.TerraformDataSource {
 
   // =================
   // STATIC PROPERTIES
@@ -57,14 +57,14 @@ export class DataGoogleFirestoreDocument extends cdktf.TerraformDataSource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a DataGoogleFirestoreDocument resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a DataGoogleFirestoreDocument resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataGoogleFirestoreDocument to import
   * @param importFromId The id of the existing DataGoogleFirestoreDocument that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/data-sources/firestore_document#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataGoogleFirestoreDocument to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "google_firestore_document", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "google_firestore_document", importId: importFromId, provider });
       }
 
   // ===========
@@ -207,42 +207,42 @@ export class DataGoogleFirestoreDocument extends cdktf.TerraformDataSource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      collection: cdktf.stringToTerraform(this._collection),
-      database: cdktf.stringToTerraform(this._database),
-      document_id: cdktf.stringToTerraform(this._documentId),
-      id: cdktf.stringToTerraform(this._id),
-      project: cdktf.stringToTerraform(this._project),
+      collection: cdktn.stringToTerraform(this._collection),
+      database: cdktn.stringToTerraform(this._database),
+      document_id: cdktn.stringToTerraform(this._documentId),
+      id: cdktn.stringToTerraform(this._id),
+      project: cdktn.stringToTerraform(this._project),
     };
   }
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       collection: {
-        value: cdktf.stringToHclTerraform(this._collection),
+        value: cdktn.stringToHclTerraform(this._collection),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       database: {
-        value: cdktf.stringToHclTerraform(this._database),
+        value: cdktn.stringToHclTerraform(this._database),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       document_id: {
-        value: cdktf.stringToHclTerraform(this._documentId),
+        value: cdktn.stringToHclTerraform(this._documentId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       project: {
-        value: cdktf.stringToHclTerraform(this._project),
+        value: cdktn.stringToHclTerraform(this._project),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

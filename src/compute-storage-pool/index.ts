@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface ComputeStoragePoolConfig extends cdktf.TerraformMetaArguments {
+export interface ComputeStoragePoolConfig extends cdktn.TerraformMetaArguments {
   /**
   * Provisioning type of the byte capacity of the pool. Possible values: ["STANDARD", "ADVANCED"]
   *
@@ -26,7 +26,7 @@ export interface ComputeStoragePoolConfig extends cdktf.TerraformMetaArguments {
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_storage_pool#deletion_protection ComputeStoragePool#deletion_protection}
   */
-  readonly deletionProtection?: boolean | cdktf.IResolvable;
+  readonly deletionProtection?: boolean | cdktn.IResolvable;
   /**
   * A description of this resource. Provide this property when you create the resource.
   *
@@ -113,8 +113,8 @@ export interface ComputeStoragePoolResourceStatus {
 }
 
 export function computeStoragePoolResourceStatusToTerraform(struct?: ComputeStoragePoolResourceStatus): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -123,8 +123,8 @@ export function computeStoragePoolResourceStatusToTerraform(struct?: ComputeStor
 
 
 export function computeStoragePoolResourceStatusToHclTerraform(struct?: ComputeStoragePoolResourceStatus): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -132,7 +132,7 @@ export function computeStoragePoolResourceStatusToHclTerraform(struct?: ComputeS
   return attrs;
 }
 
-export class ComputeStoragePoolResourceStatusOutputReference extends cdktf.ComplexObject {
+export class ComputeStoragePoolResourceStatusOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -141,7 +141,7 @@ export class ComputeStoragePoolResourceStatusOutputReference extends cdktf.Compl
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -211,14 +211,14 @@ export class ComputeStoragePoolResourceStatusOutputReference extends cdktf.Compl
   }
 }
 
-export class ComputeStoragePoolResourceStatusList extends cdktf.ComplexList {
+export class ComputeStoragePoolResourceStatusList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -233,8 +233,8 @@ export interface ComputeStoragePoolStatus {
 }
 
 export function computeStoragePoolStatusToTerraform(struct?: ComputeStoragePoolStatus): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -243,8 +243,8 @@ export function computeStoragePoolStatusToTerraform(struct?: ComputeStoragePoolS
 
 
 export function computeStoragePoolStatusToHclTerraform(struct?: ComputeStoragePoolStatus): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -252,7 +252,7 @@ export function computeStoragePoolStatusToHclTerraform(struct?: ComputeStoragePo
   return attrs;
 }
 
-export class ComputeStoragePoolStatusOutputReference extends cdktf.ComplexObject {
+export class ComputeStoragePoolStatusOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -261,7 +261,7 @@ export class ComputeStoragePoolStatusOutputReference extends cdktf.ComplexObject
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -331,14 +331,14 @@ export class ComputeStoragePoolStatusOutputReference extends cdktf.ComplexObject
   }
 }
 
-export class ComputeStoragePoolStatusList extends cdktf.ComplexList {
+export class ComputeStoragePoolStatusList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -364,39 +364,39 @@ export interface ComputeStoragePoolTimeouts {
   readonly update?: string;
 }
 
-export function computeStoragePoolTimeoutsToTerraform(struct?: ComputeStoragePoolTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function computeStoragePoolTimeoutsToTerraform(struct?: ComputeStoragePoolTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    create: cdktf.stringToTerraform(struct!.create),
-    delete: cdktf.stringToTerraform(struct!.delete),
-    update: cdktf.stringToTerraform(struct!.update),
+    create: cdktn.stringToTerraform(struct!.create),
+    delete: cdktn.stringToTerraform(struct!.delete),
+    update: cdktn.stringToTerraform(struct!.update),
   }
 }
 
 
-export function computeStoragePoolTimeoutsToHclTerraform(struct?: ComputeStoragePoolTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function computeStoragePoolTimeoutsToHclTerraform(struct?: ComputeStoragePoolTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     create: {
-      value: cdktf.stringToHclTerraform(struct!.create),
+      value: cdktn.stringToHclTerraform(struct!.create),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     delete: {
-      value: cdktf.stringToHclTerraform(struct!.delete),
+      value: cdktn.stringToHclTerraform(struct!.delete),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     update: {
-      value: cdktf.stringToHclTerraform(struct!.update),
+      value: cdktn.stringToHclTerraform(struct!.update),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -407,19 +407,19 @@ export function computeStoragePoolTimeoutsToHclTerraform(struct?: ComputeStorage
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class ComputeStoragePoolTimeoutsOutputReference extends cdktf.ComplexObject {
+export class ComputeStoragePoolTimeoutsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): ComputeStoragePoolTimeouts | cdktf.IResolvable | undefined {
+  public get internalValue(): ComputeStoragePoolTimeouts | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -440,7 +440,7 @@ export class ComputeStoragePoolTimeoutsOutputReference extends cdktf.ComplexObje
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: ComputeStoragePoolTimeouts | cdktf.IResolvable | undefined) {
+  public set internalValue(value: ComputeStoragePoolTimeouts | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -448,7 +448,7 @@ export class ComputeStoragePoolTimeoutsOutputReference extends cdktf.ComplexObje
       this._delete = undefined;
       this._update = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -513,7 +513,7 @@ export class ComputeStoragePoolTimeoutsOutputReference extends cdktf.ComplexObje
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_storage_pool google_compute_storage_pool}
 */
-export class ComputeStoragePool extends cdktf.TerraformResource {
+export class ComputeStoragePool extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -524,14 +524,14 @@ export class ComputeStoragePool extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a ComputeStoragePool resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a ComputeStoragePool resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the ComputeStoragePool to import
   * @param importFromId The id of the existing ComputeStoragePool that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_storage_pool#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the ComputeStoragePool to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "google_compute_storage_pool", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "google_compute_storage_pool", importId: importFromId, provider });
       }
 
   // ===========
@@ -602,11 +602,11 @@ export class ComputeStoragePool extends cdktf.TerraformResource {
   }
 
   // deletion_protection - computed: false, optional: true, required: false
-  private _deletionProtection?: boolean | cdktf.IResolvable; 
+  private _deletionProtection?: boolean | cdktn.IResolvable; 
   public get deletionProtection() {
     return this.getBooleanAttribute('deletion_protection');
   }
-  public set deletionProtection(value: boolean | cdktf.IResolvable) {
+  public set deletionProtection(value: boolean | cdktn.IResolvable) {
     this._deletionProtection = value;
   }
   public resetDeletionProtection() {
@@ -634,7 +634,7 @@ export class ComputeStoragePool extends cdktf.TerraformResource {
   }
 
   // effective_labels - computed: true, optional: false, required: false
-  private _effectiveLabels = new cdktf.StringMap(this, "effective_labels");
+  private _effectiveLabels = new cdktn.StringMap(this, "effective_labels");
   public get effectiveLabels() {
     return this._effectiveLabels;
   }
@@ -783,7 +783,7 @@ export class ComputeStoragePool extends cdktf.TerraformResource {
   }
 
   // terraform_labels - computed: true, optional: false, required: false
-  private _terraformLabels = new cdktf.StringMap(this, "terraform_labels");
+  private _terraformLabels = new cdktn.StringMap(this, "terraform_labels");
   public get terraformLabels() {
     return this._terraformLabels;
   }
@@ -826,18 +826,18 @@ export class ComputeStoragePool extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      capacity_provisioning_type: cdktf.stringToTerraform(this._capacityProvisioningType),
-      deletion_protection: cdktf.booleanToTerraform(this._deletionProtection),
-      description: cdktf.stringToTerraform(this._description),
-      labels: cdktf.hashMapper(cdktf.stringToTerraform)(this._labels),
-      name: cdktf.stringToTerraform(this._name),
-      performance_provisioning_type: cdktf.stringToTerraform(this._performanceProvisioningType),
-      pool_provisioned_capacity_gb: cdktf.stringToTerraform(this._poolProvisionedCapacityGb),
-      pool_provisioned_iops: cdktf.stringToTerraform(this._poolProvisionedIops),
-      pool_provisioned_throughput: cdktf.stringToTerraform(this._poolProvisionedThroughput),
-      project: cdktf.stringToTerraform(this._project),
-      storage_pool_type: cdktf.stringToTerraform(this._storagePoolType),
-      zone: cdktf.stringToTerraform(this._zone),
+      capacity_provisioning_type: cdktn.stringToTerraform(this._capacityProvisioningType),
+      deletion_protection: cdktn.booleanToTerraform(this._deletionProtection),
+      description: cdktn.stringToTerraform(this._description),
+      labels: cdktn.hashMapper(cdktn.stringToTerraform)(this._labels),
+      name: cdktn.stringToTerraform(this._name),
+      performance_provisioning_type: cdktn.stringToTerraform(this._performanceProvisioningType),
+      pool_provisioned_capacity_gb: cdktn.stringToTerraform(this._poolProvisionedCapacityGb),
+      pool_provisioned_iops: cdktn.stringToTerraform(this._poolProvisionedIops),
+      pool_provisioned_throughput: cdktn.stringToTerraform(this._poolProvisionedThroughput),
+      project: cdktn.stringToTerraform(this._project),
+      storage_pool_type: cdktn.stringToTerraform(this._storagePoolType),
+      zone: cdktn.stringToTerraform(this._zone),
       timeouts: computeStoragePoolTimeoutsToTerraform(this._timeouts.internalValue),
     };
   }
@@ -845,73 +845,73 @@ export class ComputeStoragePool extends cdktf.TerraformResource {
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       capacity_provisioning_type: {
-        value: cdktf.stringToHclTerraform(this._capacityProvisioningType),
+        value: cdktn.stringToHclTerraform(this._capacityProvisioningType),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       deletion_protection: {
-        value: cdktf.booleanToHclTerraform(this._deletionProtection),
+        value: cdktn.booleanToHclTerraform(this._deletionProtection),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       description: {
-        value: cdktf.stringToHclTerraform(this._description),
+        value: cdktn.stringToHclTerraform(this._description),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       labels: {
-        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._labels),
+        value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(this._labels),
         isBlock: false,
         type: "map",
         storageClassType: "stringMap",
       },
       name: {
-        value: cdktf.stringToHclTerraform(this._name),
+        value: cdktn.stringToHclTerraform(this._name),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       performance_provisioning_type: {
-        value: cdktf.stringToHclTerraform(this._performanceProvisioningType),
+        value: cdktn.stringToHclTerraform(this._performanceProvisioningType),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       pool_provisioned_capacity_gb: {
-        value: cdktf.stringToHclTerraform(this._poolProvisionedCapacityGb),
+        value: cdktn.stringToHclTerraform(this._poolProvisionedCapacityGb),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       pool_provisioned_iops: {
-        value: cdktf.stringToHclTerraform(this._poolProvisionedIops),
+        value: cdktn.stringToHclTerraform(this._poolProvisionedIops),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       pool_provisioned_throughput: {
-        value: cdktf.stringToHclTerraform(this._poolProvisionedThroughput),
+        value: cdktn.stringToHclTerraform(this._poolProvisionedThroughput),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       project: {
-        value: cdktf.stringToHclTerraform(this._project),
+        value: cdktn.stringToHclTerraform(this._project),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       storage_pool_type: {
-        value: cdktf.stringToHclTerraform(this._storagePoolType),
+        value: cdktn.stringToHclTerraform(this._storagePoolType),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       zone: {
-        value: cdktf.stringToHclTerraform(this._zone),
+        value: cdktn.stringToHclTerraform(this._zone),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

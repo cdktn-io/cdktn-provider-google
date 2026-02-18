@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface DataGoogleHealthcareFhirStoreIamPolicyConfig extends cdktf.TerraformMetaArguments {
+export interface DataGoogleHealthcareFhirStoreIamPolicyConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/data-sources/healthcare_fhir_store_iam_policy#fhir_store_id DataGoogleHealthcareFhirStoreIamPolicy#fhir_store_id}
   */
@@ -28,7 +28,7 @@ export interface DataGoogleHealthcareFhirStoreIamPolicyConfig extends cdktf.Terr
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/data-sources/healthcare_fhir_store_iam_policy google_healthcare_fhir_store_iam_policy}
 */
-export class DataGoogleHealthcareFhirStoreIamPolicy extends cdktf.TerraformDataSource {
+export class DataGoogleHealthcareFhirStoreIamPolicy extends cdktn.TerraformDataSource {
 
   // =================
   // STATIC PROPERTIES
@@ -39,14 +39,14 @@ export class DataGoogleHealthcareFhirStoreIamPolicy extends cdktf.TerraformDataS
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a DataGoogleHealthcareFhirStoreIamPolicy resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a DataGoogleHealthcareFhirStoreIamPolicy resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataGoogleHealthcareFhirStoreIamPolicy to import
   * @param importFromId The id of the existing DataGoogleHealthcareFhirStoreIamPolicy that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/data-sources/healthcare_fhir_store_iam_policy#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataGoogleHealthcareFhirStoreIamPolicy to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "google_healthcare_fhir_store_iam_policy", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "google_healthcare_fhir_store_iam_policy", importId: importFromId, provider });
       }
 
   // ===========
@@ -129,21 +129,21 @@ export class DataGoogleHealthcareFhirStoreIamPolicy extends cdktf.TerraformDataS
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      fhir_store_id: cdktf.stringToTerraform(this._fhirStoreId),
-      id: cdktf.stringToTerraform(this._id),
+      fhir_store_id: cdktn.stringToTerraform(this._fhirStoreId),
+      id: cdktn.stringToTerraform(this._id),
     };
   }
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       fhir_store_id: {
-        value: cdktf.stringToHclTerraform(this._fhirStoreId),
+        value: cdktn.stringToHclTerraform(this._fhirStoreId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

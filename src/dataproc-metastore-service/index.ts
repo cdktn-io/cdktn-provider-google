@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface DataprocMetastoreServiceConfig extends cdktf.TerraformMetaArguments {
+export interface DataprocMetastoreServiceConfig extends cdktn.TerraformMetaArguments {
   /**
   * The database type that the Metastore service stores its data. Default value: "MYSQL" Possible values: ["MYSQL", "SPANNER"]
   *
@@ -23,7 +23,7 @@ export interface DataprocMetastoreServiceConfig extends cdktf.TerraformMetaArgum
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/dataproc_metastore_service#deletion_protection DataprocMetastoreService#deletion_protection}
   */
-  readonly deletionProtection?: boolean | cdktf.IResolvable;
+  readonly deletionProtection?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/dataproc_metastore_service#id DataprocMetastoreService#id}
   *
@@ -151,24 +151,24 @@ export interface DataprocMetastoreServiceEncryptionConfig {
 }
 
 export function dataprocMetastoreServiceEncryptionConfigToTerraform(struct?: DataprocMetastoreServiceEncryptionConfigOutputReference | DataprocMetastoreServiceEncryptionConfig): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    kms_key: cdktf.stringToTerraform(struct!.kmsKey),
+    kms_key: cdktn.stringToTerraform(struct!.kmsKey),
   }
 }
 
 
 export function dataprocMetastoreServiceEncryptionConfigToHclTerraform(struct?: DataprocMetastoreServiceEncryptionConfigOutputReference | DataprocMetastoreServiceEncryptionConfig): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     kms_key: {
-      value: cdktf.stringToHclTerraform(struct!.kmsKey),
+      value: cdktn.stringToHclTerraform(struct!.kmsKey),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -179,14 +179,14 @@ export function dataprocMetastoreServiceEncryptionConfigToHclTerraform(struct?: 
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class DataprocMetastoreServiceEncryptionConfigOutputReference extends cdktf.ComplexObject {
+export class DataprocMetastoreServiceEncryptionConfigOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -244,39 +244,39 @@ export interface DataprocMetastoreServiceHiveMetastoreConfigAuxiliaryVersions {
   readonly version: string;
 }
 
-export function dataprocMetastoreServiceHiveMetastoreConfigAuxiliaryVersionsToTerraform(struct?: DataprocMetastoreServiceHiveMetastoreConfigAuxiliaryVersions | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function dataprocMetastoreServiceHiveMetastoreConfigAuxiliaryVersionsToTerraform(struct?: DataprocMetastoreServiceHiveMetastoreConfigAuxiliaryVersions | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    config_overrides: cdktf.hashMapper(cdktf.stringToTerraform)(struct!.configOverrides),
-    key: cdktf.stringToTerraform(struct!.key),
-    version: cdktf.stringToTerraform(struct!.version),
+    config_overrides: cdktn.hashMapper(cdktn.stringToTerraform)(struct!.configOverrides),
+    key: cdktn.stringToTerraform(struct!.key),
+    version: cdktn.stringToTerraform(struct!.version),
   }
 }
 
 
-export function dataprocMetastoreServiceHiveMetastoreConfigAuxiliaryVersionsToHclTerraform(struct?: DataprocMetastoreServiceHiveMetastoreConfigAuxiliaryVersions | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function dataprocMetastoreServiceHiveMetastoreConfigAuxiliaryVersionsToHclTerraform(struct?: DataprocMetastoreServiceHiveMetastoreConfigAuxiliaryVersions | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     config_overrides: {
-      value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(struct!.configOverrides),
+      value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(struct!.configOverrides),
       isBlock: false,
       type: "map",
       storageClassType: "stringMap",
     },
     key: {
-      value: cdktf.stringToHclTerraform(struct!.key),
+      value: cdktn.stringToHclTerraform(struct!.key),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     version: {
-      value: cdktf.stringToHclTerraform(struct!.version),
+      value: cdktn.stringToHclTerraform(struct!.version),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -287,9 +287,9 @@ export function dataprocMetastoreServiceHiveMetastoreConfigAuxiliaryVersionsToHc
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class DataprocMetastoreServiceHiveMetastoreConfigAuxiliaryVersionsOutputReference extends cdktf.ComplexObject {
+export class DataprocMetastoreServiceHiveMetastoreConfigAuxiliaryVersionsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -297,11 +297,11 @@ export class DataprocMetastoreServiceHiveMetastoreConfigAuxiliaryVersionsOutputR
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): DataprocMetastoreServiceHiveMetastoreConfigAuxiliaryVersions | cdktf.IResolvable | undefined {
+  public get internalValue(): DataprocMetastoreServiceHiveMetastoreConfigAuxiliaryVersions | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -322,7 +322,7 @@ export class DataprocMetastoreServiceHiveMetastoreConfigAuxiliaryVersionsOutputR
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: DataprocMetastoreServiceHiveMetastoreConfigAuxiliaryVersions | cdktf.IResolvable | undefined) {
+  public set internalValue(value: DataprocMetastoreServiceHiveMetastoreConfigAuxiliaryVersions | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -330,7 +330,7 @@ export class DataprocMetastoreServiceHiveMetastoreConfigAuxiliaryVersionsOutputR
       this._key = undefined;
       this._version = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -386,15 +386,15 @@ export class DataprocMetastoreServiceHiveMetastoreConfigAuxiliaryVersionsOutputR
   }
 }
 
-export class DataprocMetastoreServiceHiveMetastoreConfigAuxiliaryVersionsList extends cdktf.ComplexList {
-  public internalValue? : DataprocMetastoreServiceHiveMetastoreConfigAuxiliaryVersions[] | cdktf.IResolvable
+export class DataprocMetastoreServiceHiveMetastoreConfigAuxiliaryVersionsList extends cdktn.ComplexList {
+  public internalValue? : DataprocMetastoreServiceHiveMetastoreConfigAuxiliaryVersions[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -417,24 +417,24 @@ export interface DataprocMetastoreServiceHiveMetastoreConfigKerberosConfigKeytab
 }
 
 export function dataprocMetastoreServiceHiveMetastoreConfigKerberosConfigKeytabToTerraform(struct?: DataprocMetastoreServiceHiveMetastoreConfigKerberosConfigKeytabOutputReference | DataprocMetastoreServiceHiveMetastoreConfigKerberosConfigKeytab): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    cloud_secret: cdktf.stringToTerraform(struct!.cloudSecret),
+    cloud_secret: cdktn.stringToTerraform(struct!.cloudSecret),
   }
 }
 
 
 export function dataprocMetastoreServiceHiveMetastoreConfigKerberosConfigKeytabToHclTerraform(struct?: DataprocMetastoreServiceHiveMetastoreConfigKerberosConfigKeytabOutputReference | DataprocMetastoreServiceHiveMetastoreConfigKerberosConfigKeytab): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     cloud_secret: {
-      value: cdktf.stringToHclTerraform(struct!.cloudSecret),
+      value: cdktn.stringToHclTerraform(struct!.cloudSecret),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -445,14 +445,14 @@ export function dataprocMetastoreServiceHiveMetastoreConfigKerberosConfigKeytabT
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class DataprocMetastoreServiceHiveMetastoreConfigKerberosConfigKeytabOutputReference extends cdktf.ComplexObject {
+export class DataprocMetastoreServiceHiveMetastoreConfigKerberosConfigKeytabOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -512,32 +512,32 @@ export interface DataprocMetastoreServiceHiveMetastoreConfigKerberosConfig {
 }
 
 export function dataprocMetastoreServiceHiveMetastoreConfigKerberosConfigToTerraform(struct?: DataprocMetastoreServiceHiveMetastoreConfigKerberosConfigOutputReference | DataprocMetastoreServiceHiveMetastoreConfigKerberosConfig): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    krb5_config_gcs_uri: cdktf.stringToTerraform(struct!.krb5ConfigGcsUri),
-    principal: cdktf.stringToTerraform(struct!.principal),
+    krb5_config_gcs_uri: cdktn.stringToTerraform(struct!.krb5ConfigGcsUri),
+    principal: cdktn.stringToTerraform(struct!.principal),
     keytab: dataprocMetastoreServiceHiveMetastoreConfigKerberosConfigKeytabToTerraform(struct!.keytab),
   }
 }
 
 
 export function dataprocMetastoreServiceHiveMetastoreConfigKerberosConfigToHclTerraform(struct?: DataprocMetastoreServiceHiveMetastoreConfigKerberosConfigOutputReference | DataprocMetastoreServiceHiveMetastoreConfigKerberosConfig): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     krb5_config_gcs_uri: {
-      value: cdktf.stringToHclTerraform(struct!.krb5ConfigGcsUri),
+      value: cdktn.stringToHclTerraform(struct!.krb5ConfigGcsUri),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     principal: {
-      value: cdktf.stringToHclTerraform(struct!.principal),
+      value: cdktn.stringToHclTerraform(struct!.principal),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -554,14 +554,14 @@ export function dataprocMetastoreServiceHiveMetastoreConfigKerberosConfigToHclTe
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class DataprocMetastoreServiceHiveMetastoreConfigKerberosConfigOutputReference extends cdktf.ComplexObject {
+export class DataprocMetastoreServiceHiveMetastoreConfigKerberosConfigOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -662,7 +662,7 @@ export interface DataprocMetastoreServiceHiveMetastoreConfig {
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/dataproc_metastore_service#auxiliary_versions DataprocMetastoreService#auxiliary_versions}
   */
-  readonly auxiliaryVersions?: DataprocMetastoreServiceHiveMetastoreConfigAuxiliaryVersions[] | cdktf.IResolvable;
+  readonly auxiliaryVersions?: DataprocMetastoreServiceHiveMetastoreConfigAuxiliaryVersions[] | cdktn.IResolvable;
   /**
   * kerberos_config block
   *
@@ -672,46 +672,46 @@ export interface DataprocMetastoreServiceHiveMetastoreConfig {
 }
 
 export function dataprocMetastoreServiceHiveMetastoreConfigToTerraform(struct?: DataprocMetastoreServiceHiveMetastoreConfigOutputReference | DataprocMetastoreServiceHiveMetastoreConfig): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    config_overrides: cdktf.hashMapper(cdktf.stringToTerraform)(struct!.configOverrides),
-    endpoint_protocol: cdktf.stringToTerraform(struct!.endpointProtocol),
-    version: cdktf.stringToTerraform(struct!.version),
-    auxiliary_versions: cdktf.listMapper(dataprocMetastoreServiceHiveMetastoreConfigAuxiliaryVersionsToTerraform, true)(struct!.auxiliaryVersions),
+    config_overrides: cdktn.hashMapper(cdktn.stringToTerraform)(struct!.configOverrides),
+    endpoint_protocol: cdktn.stringToTerraform(struct!.endpointProtocol),
+    version: cdktn.stringToTerraform(struct!.version),
+    auxiliary_versions: cdktn.listMapper(dataprocMetastoreServiceHiveMetastoreConfigAuxiliaryVersionsToTerraform, true)(struct!.auxiliaryVersions),
     kerberos_config: dataprocMetastoreServiceHiveMetastoreConfigKerberosConfigToTerraform(struct!.kerberosConfig),
   }
 }
 
 
 export function dataprocMetastoreServiceHiveMetastoreConfigToHclTerraform(struct?: DataprocMetastoreServiceHiveMetastoreConfigOutputReference | DataprocMetastoreServiceHiveMetastoreConfig): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     config_overrides: {
-      value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(struct!.configOverrides),
+      value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(struct!.configOverrides),
       isBlock: false,
       type: "map",
       storageClassType: "stringMap",
     },
     endpoint_protocol: {
-      value: cdktf.stringToHclTerraform(struct!.endpointProtocol),
+      value: cdktn.stringToHclTerraform(struct!.endpointProtocol),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     version: {
-      value: cdktf.stringToHclTerraform(struct!.version),
+      value: cdktn.stringToHclTerraform(struct!.version),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     auxiliary_versions: {
-      value: cdktf.listMapperHcl(dataprocMetastoreServiceHiveMetastoreConfigAuxiliaryVersionsToHclTerraform, true)(struct!.auxiliaryVersions),
+      value: cdktn.listMapperHcl(dataprocMetastoreServiceHiveMetastoreConfigAuxiliaryVersionsToHclTerraform, true)(struct!.auxiliaryVersions),
       isBlock: true,
       type: "set",
       storageClassType: "DataprocMetastoreServiceHiveMetastoreConfigAuxiliaryVersionsList",
@@ -728,14 +728,14 @@ export function dataprocMetastoreServiceHiveMetastoreConfigToHclTerraform(struct
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class DataprocMetastoreServiceHiveMetastoreConfigOutputReference extends cdktf.ComplexObject {
+export class DataprocMetastoreServiceHiveMetastoreConfigOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -834,7 +834,7 @@ export class DataprocMetastoreServiceHiveMetastoreConfigOutputReference extends 
   public get auxiliaryVersions() {
     return this._auxiliaryVersions;
   }
-  public putAuxiliaryVersions(value: DataprocMetastoreServiceHiveMetastoreConfigAuxiliaryVersions[] | cdktf.IResolvable) {
+  public putAuxiliaryVersions(value: DataprocMetastoreServiceHiveMetastoreConfigAuxiliaryVersions[] | cdktn.IResolvable) {
     this._auxiliaryVersions.internalValue = value;
   }
   public resetAuxiliaryVersions() {
@@ -877,31 +877,31 @@ export interface DataprocMetastoreServiceMaintenanceWindow {
 }
 
 export function dataprocMetastoreServiceMaintenanceWindowToTerraform(struct?: DataprocMetastoreServiceMaintenanceWindowOutputReference | DataprocMetastoreServiceMaintenanceWindow): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    day_of_week: cdktf.stringToTerraform(struct!.dayOfWeek),
-    hour_of_day: cdktf.numberToTerraform(struct!.hourOfDay),
+    day_of_week: cdktn.stringToTerraform(struct!.dayOfWeek),
+    hour_of_day: cdktn.numberToTerraform(struct!.hourOfDay),
   }
 }
 
 
 export function dataprocMetastoreServiceMaintenanceWindowToHclTerraform(struct?: DataprocMetastoreServiceMaintenanceWindowOutputReference | DataprocMetastoreServiceMaintenanceWindow): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     day_of_week: {
-      value: cdktf.stringToHclTerraform(struct!.dayOfWeek),
+      value: cdktn.stringToHclTerraform(struct!.dayOfWeek),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     hour_of_day: {
-      value: cdktf.numberToHclTerraform(struct!.hourOfDay),
+      value: cdktn.numberToHclTerraform(struct!.hourOfDay),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
@@ -912,14 +912,14 @@ export function dataprocMetastoreServiceMaintenanceWindowToHclTerraform(struct?:
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class DataprocMetastoreServiceMaintenanceWindowOutputReference extends cdktf.ComplexObject {
+export class DataprocMetastoreServiceMaintenanceWindowOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -982,28 +982,28 @@ export interface DataprocMetastoreServiceMetadataIntegrationDataCatalogConfig {
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/dataproc_metastore_service#enabled DataprocMetastoreService#enabled}
   */
-  readonly enabled: boolean | cdktf.IResolvable;
+  readonly enabled: boolean | cdktn.IResolvable;
 }
 
 export function dataprocMetastoreServiceMetadataIntegrationDataCatalogConfigToTerraform(struct?: DataprocMetastoreServiceMetadataIntegrationDataCatalogConfigOutputReference | DataprocMetastoreServiceMetadataIntegrationDataCatalogConfig): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    enabled: cdktf.booleanToTerraform(struct!.enabled),
+    enabled: cdktn.booleanToTerraform(struct!.enabled),
   }
 }
 
 
 export function dataprocMetastoreServiceMetadataIntegrationDataCatalogConfigToHclTerraform(struct?: DataprocMetastoreServiceMetadataIntegrationDataCatalogConfigOutputReference | DataprocMetastoreServiceMetadataIntegrationDataCatalogConfig): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     enabled: {
-      value: cdktf.booleanToHclTerraform(struct!.enabled),
+      value: cdktn.booleanToHclTerraform(struct!.enabled),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
@@ -1014,14 +1014,14 @@ export function dataprocMetastoreServiceMetadataIntegrationDataCatalogConfigToHc
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class DataprocMetastoreServiceMetadataIntegrationDataCatalogConfigOutputReference extends cdktf.ComplexObject {
+export class DataprocMetastoreServiceMetadataIntegrationDataCatalogConfigOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -1047,11 +1047,11 @@ export class DataprocMetastoreServiceMetadataIntegrationDataCatalogConfigOutputR
   }
 
   // enabled - computed: false, optional: false, required: true
-  private _enabled?: boolean | cdktf.IResolvable; 
+  private _enabled?: boolean | cdktn.IResolvable; 
   public get enabled() {
     return this.getBooleanAttribute('enabled');
   }
-  public set enabled(value: boolean | cdktf.IResolvable) {
+  public set enabled(value: boolean | cdktn.IResolvable) {
     this._enabled = value;
   }
   // Temporarily expose input value. Use with caution.
@@ -1069,8 +1069,8 @@ export interface DataprocMetastoreServiceMetadataIntegration {
 }
 
 export function dataprocMetastoreServiceMetadataIntegrationToTerraform(struct?: DataprocMetastoreServiceMetadataIntegrationOutputReference | DataprocMetastoreServiceMetadataIntegration): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -1080,8 +1080,8 @@ export function dataprocMetastoreServiceMetadataIntegrationToTerraform(struct?: 
 
 
 export function dataprocMetastoreServiceMetadataIntegrationToHclTerraform(struct?: DataprocMetastoreServiceMetadataIntegrationOutputReference | DataprocMetastoreServiceMetadataIntegration): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -1097,14 +1097,14 @@ export function dataprocMetastoreServiceMetadataIntegrationToHclTerraform(struct
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class DataprocMetastoreServiceMetadataIntegrationOutputReference extends cdktf.ComplexObject {
+export class DataprocMetastoreServiceMetadataIntegrationOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -1154,25 +1154,25 @@ export interface DataprocMetastoreServiceNetworkConfigConsumers {
   readonly subnetwork: string;
 }
 
-export function dataprocMetastoreServiceNetworkConfigConsumersToTerraform(struct?: DataprocMetastoreServiceNetworkConfigConsumers | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function dataprocMetastoreServiceNetworkConfigConsumersToTerraform(struct?: DataprocMetastoreServiceNetworkConfigConsumers | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    subnetwork: cdktf.stringToTerraform(struct!.subnetwork),
+    subnetwork: cdktn.stringToTerraform(struct!.subnetwork),
   }
 }
 
 
-export function dataprocMetastoreServiceNetworkConfigConsumersToHclTerraform(struct?: DataprocMetastoreServiceNetworkConfigConsumers | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function dataprocMetastoreServiceNetworkConfigConsumersToHclTerraform(struct?: DataprocMetastoreServiceNetworkConfigConsumers | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     subnetwork: {
-      value: cdktf.stringToHclTerraform(struct!.subnetwork),
+      value: cdktn.stringToHclTerraform(struct!.subnetwork),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -1183,9 +1183,9 @@ export function dataprocMetastoreServiceNetworkConfigConsumersToHclTerraform(str
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class DataprocMetastoreServiceNetworkConfigConsumersOutputReference extends cdktf.ComplexObject {
+export class DataprocMetastoreServiceNetworkConfigConsumersOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -1193,11 +1193,11 @@ export class DataprocMetastoreServiceNetworkConfigConsumersOutputReference exten
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): DataprocMetastoreServiceNetworkConfigConsumers | cdktf.IResolvable | undefined {
+  public get internalValue(): DataprocMetastoreServiceNetworkConfigConsumers | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -1210,13 +1210,13 @@ export class DataprocMetastoreServiceNetworkConfigConsumersOutputReference exten
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: DataprocMetastoreServiceNetworkConfigConsumers | cdktf.IResolvable | undefined) {
+  public set internalValue(value: DataprocMetastoreServiceNetworkConfigConsumers | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._subnetwork = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -1246,15 +1246,15 @@ export class DataprocMetastoreServiceNetworkConfigConsumersOutputReference exten
   }
 }
 
-export class DataprocMetastoreServiceNetworkConfigConsumersList extends cdktf.ComplexList {
-  public internalValue? : DataprocMetastoreServiceNetworkConfigConsumers[] | cdktf.IResolvable
+export class DataprocMetastoreServiceNetworkConfigConsumersList extends cdktn.ComplexList {
+  public internalValue? : DataprocMetastoreServiceNetworkConfigConsumers[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -1271,28 +1271,28 @@ export interface DataprocMetastoreServiceNetworkConfig {
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/dataproc_metastore_service#consumers DataprocMetastoreService#consumers}
   */
-  readonly consumers: DataprocMetastoreServiceNetworkConfigConsumers[] | cdktf.IResolvable;
+  readonly consumers: DataprocMetastoreServiceNetworkConfigConsumers[] | cdktn.IResolvable;
 }
 
 export function dataprocMetastoreServiceNetworkConfigToTerraform(struct?: DataprocMetastoreServiceNetworkConfigOutputReference | DataprocMetastoreServiceNetworkConfig): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    consumers: cdktf.listMapper(dataprocMetastoreServiceNetworkConfigConsumersToTerraform, true)(struct!.consumers),
+    consumers: cdktn.listMapper(dataprocMetastoreServiceNetworkConfigConsumersToTerraform, true)(struct!.consumers),
   }
 }
 
 
 export function dataprocMetastoreServiceNetworkConfigToHclTerraform(struct?: DataprocMetastoreServiceNetworkConfigOutputReference | DataprocMetastoreServiceNetworkConfig): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     consumers: {
-      value: cdktf.listMapperHcl(dataprocMetastoreServiceNetworkConfigConsumersToHclTerraform, true)(struct!.consumers),
+      value: cdktn.listMapperHcl(dataprocMetastoreServiceNetworkConfigConsumersToHclTerraform, true)(struct!.consumers),
       isBlock: true,
       type: "list",
       storageClassType: "DataprocMetastoreServiceNetworkConfigConsumersList",
@@ -1303,14 +1303,14 @@ export function dataprocMetastoreServiceNetworkConfigToHclTerraform(struct?: Dat
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class DataprocMetastoreServiceNetworkConfigOutputReference extends cdktf.ComplexObject {
+export class DataprocMetastoreServiceNetworkConfigOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -1340,7 +1340,7 @@ export class DataprocMetastoreServiceNetworkConfigOutputReference extends cdktf.
   public get consumers() {
     return this._consumers;
   }
-  public putConsumers(value: DataprocMetastoreServiceNetworkConfigConsumers[] | cdktf.IResolvable) {
+  public putConsumers(value: DataprocMetastoreServiceNetworkConfigConsumers[] | cdktn.IResolvable) {
     this._consumers.internalValue = value;
   }
   // Temporarily expose input value. Use with caution.
@@ -1364,31 +1364,31 @@ export interface DataprocMetastoreServiceScalingConfigAutoscalingConfigLimitConf
 }
 
 export function dataprocMetastoreServiceScalingConfigAutoscalingConfigLimitConfigToTerraform(struct?: DataprocMetastoreServiceScalingConfigAutoscalingConfigLimitConfigOutputReference | DataprocMetastoreServiceScalingConfigAutoscalingConfigLimitConfig): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    max_scaling_factor: cdktf.numberToTerraform(struct!.maxScalingFactor),
-    min_scaling_factor: cdktf.numberToTerraform(struct!.minScalingFactor),
+    max_scaling_factor: cdktn.numberToTerraform(struct!.maxScalingFactor),
+    min_scaling_factor: cdktn.numberToTerraform(struct!.minScalingFactor),
   }
 }
 
 
 export function dataprocMetastoreServiceScalingConfigAutoscalingConfigLimitConfigToHclTerraform(struct?: DataprocMetastoreServiceScalingConfigAutoscalingConfigLimitConfigOutputReference | DataprocMetastoreServiceScalingConfigAutoscalingConfigLimitConfig): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     max_scaling_factor: {
-      value: cdktf.numberToHclTerraform(struct!.maxScalingFactor),
+      value: cdktn.numberToHclTerraform(struct!.maxScalingFactor),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     min_scaling_factor: {
-      value: cdktf.numberToHclTerraform(struct!.minScalingFactor),
+      value: cdktn.numberToHclTerraform(struct!.minScalingFactor),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
@@ -1399,14 +1399,14 @@ export function dataprocMetastoreServiceScalingConfigAutoscalingConfigLimitConfi
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class DataprocMetastoreServiceScalingConfigAutoscalingConfigLimitConfigOutputReference extends cdktf.ComplexObject {
+export class DataprocMetastoreServiceScalingConfigAutoscalingConfigLimitConfigOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -1475,7 +1475,7 @@ export interface DataprocMetastoreServiceScalingConfigAutoscalingConfig {
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/dataproc_metastore_service#autoscaling_enabled DataprocMetastoreService#autoscaling_enabled}
   */
-  readonly autoscalingEnabled?: boolean | cdktf.IResolvable;
+  readonly autoscalingEnabled?: boolean | cdktn.IResolvable;
   /**
   * limit_config block
   *
@@ -1485,25 +1485,25 @@ export interface DataprocMetastoreServiceScalingConfigAutoscalingConfig {
 }
 
 export function dataprocMetastoreServiceScalingConfigAutoscalingConfigToTerraform(struct?: DataprocMetastoreServiceScalingConfigAutoscalingConfigOutputReference | DataprocMetastoreServiceScalingConfigAutoscalingConfig): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    autoscaling_enabled: cdktf.booleanToTerraform(struct!.autoscalingEnabled),
+    autoscaling_enabled: cdktn.booleanToTerraform(struct!.autoscalingEnabled),
     limit_config: dataprocMetastoreServiceScalingConfigAutoscalingConfigLimitConfigToTerraform(struct!.limitConfig),
   }
 }
 
 
 export function dataprocMetastoreServiceScalingConfigAutoscalingConfigToHclTerraform(struct?: DataprocMetastoreServiceScalingConfigAutoscalingConfigOutputReference | DataprocMetastoreServiceScalingConfigAutoscalingConfig): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     autoscaling_enabled: {
-      value: cdktf.booleanToHclTerraform(struct!.autoscalingEnabled),
+      value: cdktn.booleanToHclTerraform(struct!.autoscalingEnabled),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
@@ -1520,14 +1520,14 @@ export function dataprocMetastoreServiceScalingConfigAutoscalingConfigToHclTerra
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class DataprocMetastoreServiceScalingConfigAutoscalingConfigOutputReference extends cdktf.ComplexObject {
+export class DataprocMetastoreServiceScalingConfigAutoscalingConfigOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -1559,11 +1559,11 @@ export class DataprocMetastoreServiceScalingConfigAutoscalingConfigOutputReferen
   }
 
   // autoscaling_enabled - computed: false, optional: true, required: false
-  private _autoscalingEnabled?: boolean | cdktf.IResolvable; 
+  private _autoscalingEnabled?: boolean | cdktn.IResolvable; 
   public get autoscalingEnabled() {
     return this.getBooleanAttribute('autoscaling_enabled');
   }
-  public set autoscalingEnabled(value: boolean | cdktf.IResolvable) {
+  public set autoscalingEnabled(value: boolean | cdktn.IResolvable) {
     this._autoscalingEnabled = value;
   }
   public resetAutoscalingEnabled() {
@@ -1617,32 +1617,32 @@ export interface DataprocMetastoreServiceScalingConfig {
 }
 
 export function dataprocMetastoreServiceScalingConfigToTerraform(struct?: DataprocMetastoreServiceScalingConfigOutputReference | DataprocMetastoreServiceScalingConfig): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    instance_size: cdktf.stringToTerraform(struct!.instanceSize),
-    scaling_factor: cdktf.numberToTerraform(struct!.scalingFactor),
+    instance_size: cdktn.stringToTerraform(struct!.instanceSize),
+    scaling_factor: cdktn.numberToTerraform(struct!.scalingFactor),
     autoscaling_config: dataprocMetastoreServiceScalingConfigAutoscalingConfigToTerraform(struct!.autoscalingConfig),
   }
 }
 
 
 export function dataprocMetastoreServiceScalingConfigToHclTerraform(struct?: DataprocMetastoreServiceScalingConfigOutputReference | DataprocMetastoreServiceScalingConfig): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     instance_size: {
-      value: cdktf.stringToHclTerraform(struct!.instanceSize),
+      value: cdktn.stringToHclTerraform(struct!.instanceSize),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     scaling_factor: {
-      value: cdktf.numberToHclTerraform(struct!.scalingFactor),
+      value: cdktn.numberToHclTerraform(struct!.scalingFactor),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
@@ -1659,14 +1659,14 @@ export function dataprocMetastoreServiceScalingConfigToHclTerraform(struct?: Dat
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class DataprocMetastoreServiceScalingConfigOutputReference extends cdktf.ComplexObject {
+export class DataprocMetastoreServiceScalingConfigOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -1769,7 +1769,7 @@ export interface DataprocMetastoreServiceScheduledBackup {
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/dataproc_metastore_service#enabled DataprocMetastoreService#enabled}
   */
-  readonly enabled?: boolean | cdktf.IResolvable;
+  readonly enabled?: boolean | cdktn.IResolvable;
   /**
   * Specifies the time zone to be used when interpreting cronSchedule. Must be a time zone name from the time zone database (https://en.wikipedia.org/wiki/List_of_tz_database_time_zones), e.g. America/Los_Angeles or Africa/Abidjan. If left unspecified, the default is UTC.
   *
@@ -1779,45 +1779,45 @@ export interface DataprocMetastoreServiceScheduledBackup {
 }
 
 export function dataprocMetastoreServiceScheduledBackupToTerraform(struct?: DataprocMetastoreServiceScheduledBackupOutputReference | DataprocMetastoreServiceScheduledBackup): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    backup_location: cdktf.stringToTerraform(struct!.backupLocation),
-    cron_schedule: cdktf.stringToTerraform(struct!.cronSchedule),
-    enabled: cdktf.booleanToTerraform(struct!.enabled),
-    time_zone: cdktf.stringToTerraform(struct!.timeZone),
+    backup_location: cdktn.stringToTerraform(struct!.backupLocation),
+    cron_schedule: cdktn.stringToTerraform(struct!.cronSchedule),
+    enabled: cdktn.booleanToTerraform(struct!.enabled),
+    time_zone: cdktn.stringToTerraform(struct!.timeZone),
   }
 }
 
 
 export function dataprocMetastoreServiceScheduledBackupToHclTerraform(struct?: DataprocMetastoreServiceScheduledBackupOutputReference | DataprocMetastoreServiceScheduledBackup): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     backup_location: {
-      value: cdktf.stringToHclTerraform(struct!.backupLocation),
+      value: cdktn.stringToHclTerraform(struct!.backupLocation),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     cron_schedule: {
-      value: cdktf.stringToHclTerraform(struct!.cronSchedule),
+      value: cdktn.stringToHclTerraform(struct!.cronSchedule),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     enabled: {
-      value: cdktf.booleanToHclTerraform(struct!.enabled),
+      value: cdktn.booleanToHclTerraform(struct!.enabled),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     time_zone: {
-      value: cdktf.stringToHclTerraform(struct!.timeZone),
+      value: cdktn.stringToHclTerraform(struct!.timeZone),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -1828,14 +1828,14 @@ export function dataprocMetastoreServiceScheduledBackupToHclTerraform(struct?: D
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class DataprocMetastoreServiceScheduledBackupOutputReference extends cdktf.ComplexObject {
+export class DataprocMetastoreServiceScheduledBackupOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -1908,11 +1908,11 @@ export class DataprocMetastoreServiceScheduledBackupOutputReference extends cdkt
   }
 
   // enabled - computed: true, optional: true, required: false
-  private _enabled?: boolean | cdktf.IResolvable; 
+  private _enabled?: boolean | cdktn.IResolvable; 
   public get enabled() {
     return this.getBooleanAttribute('enabled');
   }
-  public set enabled(value: boolean | cdktf.IResolvable) {
+  public set enabled(value: boolean | cdktn.IResolvable) {
     this._enabled = value;
   }
   public resetEnabled() {
@@ -1949,24 +1949,24 @@ export interface DataprocMetastoreServiceTelemetryConfig {
 }
 
 export function dataprocMetastoreServiceTelemetryConfigToTerraform(struct?: DataprocMetastoreServiceTelemetryConfigOutputReference | DataprocMetastoreServiceTelemetryConfig): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    log_format: cdktf.stringToTerraform(struct!.logFormat),
+    log_format: cdktn.stringToTerraform(struct!.logFormat),
   }
 }
 
 
 export function dataprocMetastoreServiceTelemetryConfigToHclTerraform(struct?: DataprocMetastoreServiceTelemetryConfigOutputReference | DataprocMetastoreServiceTelemetryConfig): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     log_format: {
-      value: cdktf.stringToHclTerraform(struct!.logFormat),
+      value: cdktn.stringToHclTerraform(struct!.logFormat),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -1977,14 +1977,14 @@ export function dataprocMetastoreServiceTelemetryConfigToHclTerraform(struct?: D
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class DataprocMetastoreServiceTelemetryConfigOutputReference extends cdktf.ComplexObject {
+export class DataprocMetastoreServiceTelemetryConfigOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -2040,39 +2040,39 @@ export interface DataprocMetastoreServiceTimeouts {
   readonly update?: string;
 }
 
-export function dataprocMetastoreServiceTimeoutsToTerraform(struct?: DataprocMetastoreServiceTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function dataprocMetastoreServiceTimeoutsToTerraform(struct?: DataprocMetastoreServiceTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    create: cdktf.stringToTerraform(struct!.create),
-    delete: cdktf.stringToTerraform(struct!.delete),
-    update: cdktf.stringToTerraform(struct!.update),
+    create: cdktn.stringToTerraform(struct!.create),
+    delete: cdktn.stringToTerraform(struct!.delete),
+    update: cdktn.stringToTerraform(struct!.update),
   }
 }
 
 
-export function dataprocMetastoreServiceTimeoutsToHclTerraform(struct?: DataprocMetastoreServiceTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function dataprocMetastoreServiceTimeoutsToHclTerraform(struct?: DataprocMetastoreServiceTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     create: {
-      value: cdktf.stringToHclTerraform(struct!.create),
+      value: cdktn.stringToHclTerraform(struct!.create),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     delete: {
-      value: cdktf.stringToHclTerraform(struct!.delete),
+      value: cdktn.stringToHclTerraform(struct!.delete),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     update: {
-      value: cdktf.stringToHclTerraform(struct!.update),
+      value: cdktn.stringToHclTerraform(struct!.update),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -2083,19 +2083,19 @@ export function dataprocMetastoreServiceTimeoutsToHclTerraform(struct?: Dataproc
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class DataprocMetastoreServiceTimeoutsOutputReference extends cdktf.ComplexObject {
+export class DataprocMetastoreServiceTimeoutsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): DataprocMetastoreServiceTimeouts | cdktf.IResolvable | undefined {
+  public get internalValue(): DataprocMetastoreServiceTimeouts | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -2116,7 +2116,7 @@ export class DataprocMetastoreServiceTimeoutsOutputReference extends cdktf.Compl
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: DataprocMetastoreServiceTimeouts | cdktf.IResolvable | undefined) {
+  public set internalValue(value: DataprocMetastoreServiceTimeouts | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -2124,7 +2124,7 @@ export class DataprocMetastoreServiceTimeoutsOutputReference extends cdktf.Compl
       this._delete = undefined;
       this._update = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -2189,7 +2189,7 @@ export class DataprocMetastoreServiceTimeoutsOutputReference extends cdktf.Compl
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/dataproc_metastore_service google_dataproc_metastore_service}
 */
-export class DataprocMetastoreService extends cdktf.TerraformResource {
+export class DataprocMetastoreService extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -2200,14 +2200,14 @@ export class DataprocMetastoreService extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a DataprocMetastoreService resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a DataprocMetastoreService resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataprocMetastoreService to import
   * @param importFromId The id of the existing DataprocMetastoreService that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/dataproc_metastore_service#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataprocMetastoreService to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "google_dataproc_metastore_service", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "google_dataproc_metastore_service", importId: importFromId, provider });
       }
 
   // ===========
@@ -2290,11 +2290,11 @@ export class DataprocMetastoreService extends cdktf.TerraformResource {
   }
 
   // deletion_protection - computed: false, optional: true, required: false
-  private _deletionProtection?: boolean | cdktf.IResolvable; 
+  private _deletionProtection?: boolean | cdktn.IResolvable; 
   public get deletionProtection() {
     return this.getBooleanAttribute('deletion_protection');
   }
-  public set deletionProtection(value: boolean | cdktf.IResolvable) {
+  public set deletionProtection(value: boolean | cdktn.IResolvable) {
     this._deletionProtection = value;
   }
   public resetDeletionProtection() {
@@ -2306,7 +2306,7 @@ export class DataprocMetastoreService extends cdktf.TerraformResource {
   }
 
   // effective_labels - computed: true, optional: false, required: false
-  private _effectiveLabels = new cdktf.StringMap(this, "effective_labels");
+  private _effectiveLabels = new cdktn.StringMap(this, "effective_labels");
   public get effectiveLabels() {
     return this._effectiveLabels;
   }
@@ -2457,7 +2457,7 @@ export class DataprocMetastoreService extends cdktf.TerraformResource {
   }
 
   // terraform_labels - computed: true, optional: false, required: false
-  private _terraformLabels = new cdktf.StringMap(this, "terraform_labels");
+  private _terraformLabels = new cdktn.StringMap(this, "terraform_labels");
   public get terraformLabels() {
     return this._terraformLabels;
   }
@@ -2638,17 +2638,17 @@ export class DataprocMetastoreService extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      database_type: cdktf.stringToTerraform(this._databaseType),
-      deletion_protection: cdktf.booleanToTerraform(this._deletionProtection),
-      id: cdktf.stringToTerraform(this._id),
-      labels: cdktf.hashMapper(cdktf.stringToTerraform)(this._labels),
-      location: cdktf.stringToTerraform(this._location),
-      network: cdktf.stringToTerraform(this._network),
-      port: cdktf.numberToTerraform(this._port),
-      project: cdktf.stringToTerraform(this._project),
-      release_channel: cdktf.stringToTerraform(this._releaseChannel),
-      service_id: cdktf.stringToTerraform(this._serviceId),
-      tier: cdktf.stringToTerraform(this._tier),
+      database_type: cdktn.stringToTerraform(this._databaseType),
+      deletion_protection: cdktn.booleanToTerraform(this._deletionProtection),
+      id: cdktn.stringToTerraform(this._id),
+      labels: cdktn.hashMapper(cdktn.stringToTerraform)(this._labels),
+      location: cdktn.stringToTerraform(this._location),
+      network: cdktn.stringToTerraform(this._network),
+      port: cdktn.numberToTerraform(this._port),
+      project: cdktn.stringToTerraform(this._project),
+      release_channel: cdktn.stringToTerraform(this._releaseChannel),
+      service_id: cdktn.stringToTerraform(this._serviceId),
+      tier: cdktn.stringToTerraform(this._tier),
       encryption_config: dataprocMetastoreServiceEncryptionConfigToTerraform(this._encryptionConfig.internalValue),
       hive_metastore_config: dataprocMetastoreServiceHiveMetastoreConfigToTerraform(this._hiveMetastoreConfig.internalValue),
       maintenance_window: dataprocMetastoreServiceMaintenanceWindowToTerraform(this._maintenanceWindow.internalValue),
@@ -2664,67 +2664,67 @@ export class DataprocMetastoreService extends cdktf.TerraformResource {
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       database_type: {
-        value: cdktf.stringToHclTerraform(this._databaseType),
+        value: cdktn.stringToHclTerraform(this._databaseType),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       deletion_protection: {
-        value: cdktf.booleanToHclTerraform(this._deletionProtection),
+        value: cdktn.booleanToHclTerraform(this._deletionProtection),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       labels: {
-        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._labels),
+        value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(this._labels),
         isBlock: false,
         type: "map",
         storageClassType: "stringMap",
       },
       location: {
-        value: cdktf.stringToHclTerraform(this._location),
+        value: cdktn.stringToHclTerraform(this._location),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       network: {
-        value: cdktf.stringToHclTerraform(this._network),
+        value: cdktn.stringToHclTerraform(this._network),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       port: {
-        value: cdktf.numberToHclTerraform(this._port),
+        value: cdktn.numberToHclTerraform(this._port),
         isBlock: false,
         type: "simple",
         storageClassType: "number",
       },
       project: {
-        value: cdktf.stringToHclTerraform(this._project),
+        value: cdktn.stringToHclTerraform(this._project),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       release_channel: {
-        value: cdktf.stringToHclTerraform(this._releaseChannel),
+        value: cdktn.stringToHclTerraform(this._releaseChannel),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       service_id: {
-        value: cdktf.stringToHclTerraform(this._serviceId),
+        value: cdktn.stringToHclTerraform(this._serviceId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       tier: {
-        value: cdktf.stringToHclTerraform(this._tier),
+        value: cdktn.stringToHclTerraform(this._tier),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface NetworkServicesEdgeCacheOriginConfig extends cdktf.TerraformMetaArguments {
+export interface NetworkServicesEdgeCacheOriginConfig extends cdktn.TerraformMetaArguments {
   /**
   * A human-readable description of the resource.
   *
@@ -185,38 +185,38 @@ export interface NetworkServicesEdgeCacheOriginAwsV4Authentication {
 }
 
 export function networkServicesEdgeCacheOriginAwsV4AuthenticationToTerraform(struct?: NetworkServicesEdgeCacheOriginAwsV4AuthenticationOutputReference | NetworkServicesEdgeCacheOriginAwsV4Authentication): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    access_key_id: cdktf.stringToTerraform(struct!.accessKeyId),
-    origin_region: cdktf.stringToTerraform(struct!.originRegion),
-    secret_access_key_version: cdktf.stringToTerraform(struct!.secretAccessKeyVersion),
+    access_key_id: cdktn.stringToTerraform(struct!.accessKeyId),
+    origin_region: cdktn.stringToTerraform(struct!.originRegion),
+    secret_access_key_version: cdktn.stringToTerraform(struct!.secretAccessKeyVersion),
   }
 }
 
 
 export function networkServicesEdgeCacheOriginAwsV4AuthenticationToHclTerraform(struct?: NetworkServicesEdgeCacheOriginAwsV4AuthenticationOutputReference | NetworkServicesEdgeCacheOriginAwsV4Authentication): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     access_key_id: {
-      value: cdktf.stringToHclTerraform(struct!.accessKeyId),
+      value: cdktn.stringToHclTerraform(struct!.accessKeyId),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     origin_region: {
-      value: cdktf.stringToHclTerraform(struct!.originRegion),
+      value: cdktn.stringToHclTerraform(struct!.originRegion),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     secret_access_key_version: {
-      value: cdktf.stringToHclTerraform(struct!.secretAccessKeyVersion),
+      value: cdktn.stringToHclTerraform(struct!.secretAccessKeyVersion),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -227,14 +227,14 @@ export function networkServicesEdgeCacheOriginAwsV4AuthenticationToHclTerraform(
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class NetworkServicesEdgeCacheOriginAwsV4AuthenticationOutputReference extends cdktf.ComplexObject {
+export class NetworkServicesEdgeCacheOriginAwsV4AuthenticationOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -323,24 +323,24 @@ export interface NetworkServicesEdgeCacheOriginFlexShielding {
 }
 
 export function networkServicesEdgeCacheOriginFlexShieldingToTerraform(struct?: NetworkServicesEdgeCacheOriginFlexShieldingOutputReference | NetworkServicesEdgeCacheOriginFlexShielding): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    flex_shielding_regions: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.flexShieldingRegions),
+    flex_shielding_regions: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.flexShieldingRegions),
   }
 }
 
 
 export function networkServicesEdgeCacheOriginFlexShieldingToHclTerraform(struct?: NetworkServicesEdgeCacheOriginFlexShieldingOutputReference | NetworkServicesEdgeCacheOriginFlexShielding): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     flex_shielding_regions: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.flexShieldingRegions),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.flexShieldingRegions),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
@@ -351,14 +351,14 @@ export function networkServicesEdgeCacheOriginFlexShieldingToHclTerraform(struct
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class NetworkServicesEdgeCacheOriginFlexShieldingOutputReference extends cdktf.ComplexObject {
+export class NetworkServicesEdgeCacheOriginFlexShieldingOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -424,42 +424,42 @@ export interface NetworkServicesEdgeCacheOriginOriginOverrideActionHeaderActionR
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/network_services_edge_cache_origin#replace NetworkServicesEdgeCacheOrigin#replace}
   */
-  readonly replace?: boolean | cdktf.IResolvable;
+  readonly replace?: boolean | cdktn.IResolvable;
 }
 
-export function networkServicesEdgeCacheOriginOriginOverrideActionHeaderActionRequestHeadersToAddToTerraform(struct?: NetworkServicesEdgeCacheOriginOriginOverrideActionHeaderActionRequestHeadersToAdd | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function networkServicesEdgeCacheOriginOriginOverrideActionHeaderActionRequestHeadersToAddToTerraform(struct?: NetworkServicesEdgeCacheOriginOriginOverrideActionHeaderActionRequestHeadersToAdd | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    header_name: cdktf.stringToTerraform(struct!.headerName),
-    header_value: cdktf.stringToTerraform(struct!.headerValue),
-    replace: cdktf.booleanToTerraform(struct!.replace),
+    header_name: cdktn.stringToTerraform(struct!.headerName),
+    header_value: cdktn.stringToTerraform(struct!.headerValue),
+    replace: cdktn.booleanToTerraform(struct!.replace),
   }
 }
 
 
-export function networkServicesEdgeCacheOriginOriginOverrideActionHeaderActionRequestHeadersToAddToHclTerraform(struct?: NetworkServicesEdgeCacheOriginOriginOverrideActionHeaderActionRequestHeadersToAdd | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function networkServicesEdgeCacheOriginOriginOverrideActionHeaderActionRequestHeadersToAddToHclTerraform(struct?: NetworkServicesEdgeCacheOriginOriginOverrideActionHeaderActionRequestHeadersToAdd | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     header_name: {
-      value: cdktf.stringToHclTerraform(struct!.headerName),
+      value: cdktn.stringToHclTerraform(struct!.headerName),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     header_value: {
-      value: cdktf.stringToHclTerraform(struct!.headerValue),
+      value: cdktn.stringToHclTerraform(struct!.headerValue),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     replace: {
-      value: cdktf.booleanToHclTerraform(struct!.replace),
+      value: cdktn.booleanToHclTerraform(struct!.replace),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
@@ -470,9 +470,9 @@ export function networkServicesEdgeCacheOriginOriginOverrideActionHeaderActionRe
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class NetworkServicesEdgeCacheOriginOriginOverrideActionHeaderActionRequestHeadersToAddOutputReference extends cdktf.ComplexObject {
+export class NetworkServicesEdgeCacheOriginOriginOverrideActionHeaderActionRequestHeadersToAddOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -480,11 +480,11 @@ export class NetworkServicesEdgeCacheOriginOriginOverrideActionHeaderActionReque
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): NetworkServicesEdgeCacheOriginOriginOverrideActionHeaderActionRequestHeadersToAdd | cdktf.IResolvable | undefined {
+  public get internalValue(): NetworkServicesEdgeCacheOriginOriginOverrideActionHeaderActionRequestHeadersToAdd | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -505,7 +505,7 @@ export class NetworkServicesEdgeCacheOriginOriginOverrideActionHeaderActionReque
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: NetworkServicesEdgeCacheOriginOriginOverrideActionHeaderActionRequestHeadersToAdd | cdktf.IResolvable | undefined) {
+  public set internalValue(value: NetworkServicesEdgeCacheOriginOriginOverrideActionHeaderActionRequestHeadersToAdd | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -513,7 +513,7 @@ export class NetworkServicesEdgeCacheOriginOriginOverrideActionHeaderActionReque
       this._headerValue = undefined;
       this._replace = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -553,11 +553,11 @@ export class NetworkServicesEdgeCacheOriginOriginOverrideActionHeaderActionReque
   }
 
   // replace - computed: false, optional: true, required: false
-  private _replace?: boolean | cdktf.IResolvable; 
+  private _replace?: boolean | cdktn.IResolvable; 
   public get replace() {
     return this.getBooleanAttribute('replace');
   }
-  public set replace(value: boolean | cdktf.IResolvable) {
+  public set replace(value: boolean | cdktn.IResolvable) {
     this._replace = value;
   }
   public resetReplace() {
@@ -569,15 +569,15 @@ export class NetworkServicesEdgeCacheOriginOriginOverrideActionHeaderActionReque
   }
 }
 
-export class NetworkServicesEdgeCacheOriginOriginOverrideActionHeaderActionRequestHeadersToAddList extends cdktf.ComplexList {
-  public internalValue? : NetworkServicesEdgeCacheOriginOriginOverrideActionHeaderActionRequestHeadersToAdd[] | cdktf.IResolvable
+export class NetworkServicesEdgeCacheOriginOriginOverrideActionHeaderActionRequestHeadersToAddList extends cdktn.ComplexList {
+  public internalValue? : NetworkServicesEdgeCacheOriginOriginOverrideActionHeaderActionRequestHeadersToAdd[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -594,28 +594,28 @@ export interface NetworkServicesEdgeCacheOriginOriginOverrideActionHeaderAction 
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/network_services_edge_cache_origin#request_headers_to_add NetworkServicesEdgeCacheOrigin#request_headers_to_add}
   */
-  readonly requestHeadersToAdd?: NetworkServicesEdgeCacheOriginOriginOverrideActionHeaderActionRequestHeadersToAdd[] | cdktf.IResolvable;
+  readonly requestHeadersToAdd?: NetworkServicesEdgeCacheOriginOriginOverrideActionHeaderActionRequestHeadersToAdd[] | cdktn.IResolvable;
 }
 
 export function networkServicesEdgeCacheOriginOriginOverrideActionHeaderActionToTerraform(struct?: NetworkServicesEdgeCacheOriginOriginOverrideActionHeaderActionOutputReference | NetworkServicesEdgeCacheOriginOriginOverrideActionHeaderAction): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    request_headers_to_add: cdktf.listMapper(networkServicesEdgeCacheOriginOriginOverrideActionHeaderActionRequestHeadersToAddToTerraform, true)(struct!.requestHeadersToAdd),
+    request_headers_to_add: cdktn.listMapper(networkServicesEdgeCacheOriginOriginOverrideActionHeaderActionRequestHeadersToAddToTerraform, true)(struct!.requestHeadersToAdd),
   }
 }
 
 
 export function networkServicesEdgeCacheOriginOriginOverrideActionHeaderActionToHclTerraform(struct?: NetworkServicesEdgeCacheOriginOriginOverrideActionHeaderActionOutputReference | NetworkServicesEdgeCacheOriginOriginOverrideActionHeaderAction): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     request_headers_to_add: {
-      value: cdktf.listMapperHcl(networkServicesEdgeCacheOriginOriginOverrideActionHeaderActionRequestHeadersToAddToHclTerraform, true)(struct!.requestHeadersToAdd),
+      value: cdktn.listMapperHcl(networkServicesEdgeCacheOriginOriginOverrideActionHeaderActionRequestHeadersToAddToHclTerraform, true)(struct!.requestHeadersToAdd),
       isBlock: true,
       type: "list",
       storageClassType: "NetworkServicesEdgeCacheOriginOriginOverrideActionHeaderActionRequestHeadersToAddList",
@@ -626,14 +626,14 @@ export function networkServicesEdgeCacheOriginOriginOverrideActionHeaderActionTo
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class NetworkServicesEdgeCacheOriginOriginOverrideActionHeaderActionOutputReference extends cdktf.ComplexObject {
+export class NetworkServicesEdgeCacheOriginOriginOverrideActionHeaderActionOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -663,7 +663,7 @@ export class NetworkServicesEdgeCacheOriginOriginOverrideActionHeaderActionOutpu
   public get requestHeadersToAdd() {
     return this._requestHeadersToAdd;
   }
-  public putRequestHeadersToAdd(value: NetworkServicesEdgeCacheOriginOriginOverrideActionHeaderActionRequestHeadersToAdd[] | cdktf.IResolvable) {
+  public putRequestHeadersToAdd(value: NetworkServicesEdgeCacheOriginOriginOverrideActionHeaderActionRequestHeadersToAdd[] | cdktn.IResolvable) {
     this._requestHeadersToAdd.internalValue = value;
   }
   public resetRequestHeadersToAdd() {
@@ -688,24 +688,24 @@ export interface NetworkServicesEdgeCacheOriginOriginOverrideActionUrlRewrite {
 }
 
 export function networkServicesEdgeCacheOriginOriginOverrideActionUrlRewriteToTerraform(struct?: NetworkServicesEdgeCacheOriginOriginOverrideActionUrlRewriteOutputReference | NetworkServicesEdgeCacheOriginOriginOverrideActionUrlRewrite): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    host_rewrite: cdktf.stringToTerraform(struct!.hostRewrite),
+    host_rewrite: cdktn.stringToTerraform(struct!.hostRewrite),
   }
 }
 
 
 export function networkServicesEdgeCacheOriginOriginOverrideActionUrlRewriteToHclTerraform(struct?: NetworkServicesEdgeCacheOriginOriginOverrideActionUrlRewriteOutputReference | NetworkServicesEdgeCacheOriginOriginOverrideActionUrlRewrite): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     host_rewrite: {
-      value: cdktf.stringToHclTerraform(struct!.hostRewrite),
+      value: cdktn.stringToHclTerraform(struct!.hostRewrite),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -716,14 +716,14 @@ export function networkServicesEdgeCacheOriginOriginOverrideActionUrlRewriteToHc
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class NetworkServicesEdgeCacheOriginOriginOverrideActionUrlRewriteOutputReference extends cdktf.ComplexObject {
+export class NetworkServicesEdgeCacheOriginOriginOverrideActionUrlRewriteOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -780,8 +780,8 @@ export interface NetworkServicesEdgeCacheOriginOriginOverrideAction {
 }
 
 export function networkServicesEdgeCacheOriginOriginOverrideActionToTerraform(struct?: NetworkServicesEdgeCacheOriginOriginOverrideActionOutputReference | NetworkServicesEdgeCacheOriginOriginOverrideAction): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -792,8 +792,8 @@ export function networkServicesEdgeCacheOriginOriginOverrideActionToTerraform(st
 
 
 export function networkServicesEdgeCacheOriginOriginOverrideActionToHclTerraform(struct?: NetworkServicesEdgeCacheOriginOriginOverrideActionOutputReference | NetworkServicesEdgeCacheOriginOriginOverrideAction): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -815,14 +815,14 @@ export function networkServicesEdgeCacheOriginOriginOverrideActionToHclTerraform
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class NetworkServicesEdgeCacheOriginOriginOverrideActionOutputReference extends cdktf.ComplexObject {
+export class NetworkServicesEdgeCacheOriginOriginOverrideActionOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -898,24 +898,24 @@ export interface NetworkServicesEdgeCacheOriginOriginRedirect {
 }
 
 export function networkServicesEdgeCacheOriginOriginRedirectToTerraform(struct?: NetworkServicesEdgeCacheOriginOriginRedirectOutputReference | NetworkServicesEdgeCacheOriginOriginRedirect): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    redirect_conditions: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.redirectConditions),
+    redirect_conditions: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.redirectConditions),
   }
 }
 
 
 export function networkServicesEdgeCacheOriginOriginRedirectToHclTerraform(struct?: NetworkServicesEdgeCacheOriginOriginRedirectOutputReference | NetworkServicesEdgeCacheOriginOriginRedirect): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     redirect_conditions: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.redirectConditions),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.redirectConditions),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
@@ -926,14 +926,14 @@ export function networkServicesEdgeCacheOriginOriginRedirectToHclTerraform(struc
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class NetworkServicesEdgeCacheOriginOriginRedirectOutputReference extends cdktf.ComplexObject {
+export class NetworkServicesEdgeCacheOriginOriginRedirectOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -1024,45 +1024,45 @@ export interface NetworkServicesEdgeCacheOriginTimeout {
 }
 
 export function networkServicesEdgeCacheOriginTimeoutToTerraform(struct?: NetworkServicesEdgeCacheOriginTimeoutOutputReference | NetworkServicesEdgeCacheOriginTimeout): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    connect_timeout: cdktf.stringToTerraform(struct!.connectTimeout),
-    max_attempts_timeout: cdktf.stringToTerraform(struct!.maxAttemptsTimeout),
-    read_timeout: cdktf.stringToTerraform(struct!.readTimeout),
-    response_timeout: cdktf.stringToTerraform(struct!.responseTimeout),
+    connect_timeout: cdktn.stringToTerraform(struct!.connectTimeout),
+    max_attempts_timeout: cdktn.stringToTerraform(struct!.maxAttemptsTimeout),
+    read_timeout: cdktn.stringToTerraform(struct!.readTimeout),
+    response_timeout: cdktn.stringToTerraform(struct!.responseTimeout),
   }
 }
 
 
 export function networkServicesEdgeCacheOriginTimeoutToHclTerraform(struct?: NetworkServicesEdgeCacheOriginTimeoutOutputReference | NetworkServicesEdgeCacheOriginTimeout): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     connect_timeout: {
-      value: cdktf.stringToHclTerraform(struct!.connectTimeout),
+      value: cdktn.stringToHclTerraform(struct!.connectTimeout),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     max_attempts_timeout: {
-      value: cdktf.stringToHclTerraform(struct!.maxAttemptsTimeout),
+      value: cdktn.stringToHclTerraform(struct!.maxAttemptsTimeout),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     read_timeout: {
-      value: cdktf.stringToHclTerraform(struct!.readTimeout),
+      value: cdktn.stringToHclTerraform(struct!.readTimeout),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     response_timeout: {
-      value: cdktf.stringToHclTerraform(struct!.responseTimeout),
+      value: cdktn.stringToHclTerraform(struct!.responseTimeout),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -1073,14 +1073,14 @@ export function networkServicesEdgeCacheOriginTimeoutToHclTerraform(struct?: Net
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class NetworkServicesEdgeCacheOriginTimeoutOutputReference extends cdktf.ComplexObject {
+export class NetworkServicesEdgeCacheOriginTimeoutOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -1202,39 +1202,39 @@ export interface NetworkServicesEdgeCacheOriginTimeouts {
   readonly update?: string;
 }
 
-export function networkServicesEdgeCacheOriginTimeoutsToTerraform(struct?: NetworkServicesEdgeCacheOriginTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function networkServicesEdgeCacheOriginTimeoutsToTerraform(struct?: NetworkServicesEdgeCacheOriginTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    create: cdktf.stringToTerraform(struct!.create),
-    delete: cdktf.stringToTerraform(struct!.delete),
-    update: cdktf.stringToTerraform(struct!.update),
+    create: cdktn.stringToTerraform(struct!.create),
+    delete: cdktn.stringToTerraform(struct!.delete),
+    update: cdktn.stringToTerraform(struct!.update),
   }
 }
 
 
-export function networkServicesEdgeCacheOriginTimeoutsToHclTerraform(struct?: NetworkServicesEdgeCacheOriginTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function networkServicesEdgeCacheOriginTimeoutsToHclTerraform(struct?: NetworkServicesEdgeCacheOriginTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     create: {
-      value: cdktf.stringToHclTerraform(struct!.create),
+      value: cdktn.stringToHclTerraform(struct!.create),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     delete: {
-      value: cdktf.stringToHclTerraform(struct!.delete),
+      value: cdktn.stringToHclTerraform(struct!.delete),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     update: {
-      value: cdktf.stringToHclTerraform(struct!.update),
+      value: cdktn.stringToHclTerraform(struct!.update),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -1245,19 +1245,19 @@ export function networkServicesEdgeCacheOriginTimeoutsToHclTerraform(struct?: Ne
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class NetworkServicesEdgeCacheOriginTimeoutsOutputReference extends cdktf.ComplexObject {
+export class NetworkServicesEdgeCacheOriginTimeoutsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): NetworkServicesEdgeCacheOriginTimeouts | cdktf.IResolvable | undefined {
+  public get internalValue(): NetworkServicesEdgeCacheOriginTimeouts | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -1278,7 +1278,7 @@ export class NetworkServicesEdgeCacheOriginTimeoutsOutputReference extends cdktf
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: NetworkServicesEdgeCacheOriginTimeouts | cdktf.IResolvable | undefined) {
+  public set internalValue(value: NetworkServicesEdgeCacheOriginTimeouts | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -1286,7 +1286,7 @@ export class NetworkServicesEdgeCacheOriginTimeoutsOutputReference extends cdktf
       this._delete = undefined;
       this._update = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -1351,7 +1351,7 @@ export class NetworkServicesEdgeCacheOriginTimeoutsOutputReference extends cdktf
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/network_services_edge_cache_origin google_network_services_edge_cache_origin}
 */
-export class NetworkServicesEdgeCacheOrigin extends cdktf.TerraformResource {
+export class NetworkServicesEdgeCacheOrigin extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -1362,14 +1362,14 @@ export class NetworkServicesEdgeCacheOrigin extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a NetworkServicesEdgeCacheOrigin resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a NetworkServicesEdgeCacheOrigin resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the NetworkServicesEdgeCacheOrigin to import
   * @param importFromId The id of the existing NetworkServicesEdgeCacheOrigin that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/network_services_edge_cache_origin#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the NetworkServicesEdgeCacheOrigin to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "google_network_services_edge_cache_origin", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "google_network_services_edge_cache_origin", importId: importFromId, provider });
       }
 
   // ===========
@@ -1439,7 +1439,7 @@ export class NetworkServicesEdgeCacheOrigin extends cdktf.TerraformResource {
   }
 
   // effective_labels - computed: true, optional: false, required: false
-  private _effectiveLabels = new cdktf.StringMap(this, "effective_labels");
+  private _effectiveLabels = new cdktn.StringMap(this, "effective_labels");
   public get effectiveLabels() {
     return this._effectiveLabels;
   }
@@ -1599,7 +1599,7 @@ export class NetworkServicesEdgeCacheOrigin extends cdktf.TerraformResource {
   }
 
   // terraform_labels - computed: true, optional: false, required: false
-  private _terraformLabels = new cdktf.StringMap(this, "terraform_labels");
+  private _terraformLabels = new cdktn.StringMap(this, "terraform_labels");
   public get terraformLabels() {
     return this._terraformLabels;
   }
@@ -1706,17 +1706,17 @@ export class NetworkServicesEdgeCacheOrigin extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      description: cdktf.stringToTerraform(this._description),
-      failover_origin: cdktf.stringToTerraform(this._failoverOrigin),
-      id: cdktf.stringToTerraform(this._id),
-      labels: cdktf.hashMapper(cdktf.stringToTerraform)(this._labels),
-      max_attempts: cdktf.numberToTerraform(this._maxAttempts),
-      name: cdktf.stringToTerraform(this._name),
-      origin_address: cdktf.stringToTerraform(this._originAddress),
-      port: cdktf.numberToTerraform(this._port),
-      project: cdktf.stringToTerraform(this._project),
-      protocol: cdktf.stringToTerraform(this._protocol),
-      retry_conditions: cdktf.listMapper(cdktf.stringToTerraform, false)(this._retryConditions),
+      description: cdktn.stringToTerraform(this._description),
+      failover_origin: cdktn.stringToTerraform(this._failoverOrigin),
+      id: cdktn.stringToTerraform(this._id),
+      labels: cdktn.hashMapper(cdktn.stringToTerraform)(this._labels),
+      max_attempts: cdktn.numberToTerraform(this._maxAttempts),
+      name: cdktn.stringToTerraform(this._name),
+      origin_address: cdktn.stringToTerraform(this._originAddress),
+      port: cdktn.numberToTerraform(this._port),
+      project: cdktn.stringToTerraform(this._project),
+      protocol: cdktn.stringToTerraform(this._protocol),
+      retry_conditions: cdktn.listMapper(cdktn.stringToTerraform, false)(this._retryConditions),
       aws_v4_authentication: networkServicesEdgeCacheOriginAwsV4AuthenticationToTerraform(this._awsV4Authentication.internalValue),
       flex_shielding: networkServicesEdgeCacheOriginFlexShieldingToTerraform(this._flexShielding.internalValue),
       origin_override_action: networkServicesEdgeCacheOriginOriginOverrideActionToTerraform(this._originOverrideAction.internalValue),
@@ -1729,67 +1729,67 @@ export class NetworkServicesEdgeCacheOrigin extends cdktf.TerraformResource {
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       description: {
-        value: cdktf.stringToHclTerraform(this._description),
+        value: cdktn.stringToHclTerraform(this._description),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       failover_origin: {
-        value: cdktf.stringToHclTerraform(this._failoverOrigin),
+        value: cdktn.stringToHclTerraform(this._failoverOrigin),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       labels: {
-        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._labels),
+        value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(this._labels),
         isBlock: false,
         type: "map",
         storageClassType: "stringMap",
       },
       max_attempts: {
-        value: cdktf.numberToHclTerraform(this._maxAttempts),
+        value: cdktn.numberToHclTerraform(this._maxAttempts),
         isBlock: false,
         type: "simple",
         storageClassType: "number",
       },
       name: {
-        value: cdktf.stringToHclTerraform(this._name),
+        value: cdktn.stringToHclTerraform(this._name),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       origin_address: {
-        value: cdktf.stringToHclTerraform(this._originAddress),
+        value: cdktn.stringToHclTerraform(this._originAddress),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       port: {
-        value: cdktf.numberToHclTerraform(this._port),
+        value: cdktn.numberToHclTerraform(this._port),
         isBlock: false,
         type: "simple",
         storageClassType: "number",
       },
       project: {
-        value: cdktf.stringToHclTerraform(this._project),
+        value: cdktn.stringToHclTerraform(this._project),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       protocol: {
-        value: cdktf.stringToHclTerraform(this._protocol),
+        value: cdktn.stringToHclTerraform(this._protocol),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       retry_conditions: {
-        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._retryConditions),
+        value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(this._retryConditions),
         isBlock: false,
         type: "list",
         storageClassType: "stringList",

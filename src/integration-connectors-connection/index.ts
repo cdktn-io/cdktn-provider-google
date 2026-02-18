@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface IntegrationConnectorsConnectionConfig extends cdktf.TerraformMetaArguments {
+export interface IntegrationConnectorsConnectionConfig extends cdktn.TerraformMetaArguments {
   /**
   * connectorVersion of the Connector.
   *
@@ -74,7 +74,7 @@ export interface IntegrationConnectorsConnectionConfig extends cdktf.TerraformMe
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/integration_connectors_connection#suspended IntegrationConnectorsConnection#suspended}
   */
-  readonly suspended?: boolean | cdktf.IResolvable;
+  readonly suspended?: boolean | cdktn.IResolvable;
   /**
   * auth_config block
   *
@@ -86,13 +86,13 @@ export interface IntegrationConnectorsConnectionConfig extends cdktf.TerraformMe
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/integration_connectors_connection#config_variable IntegrationConnectorsConnection#config_variable}
   */
-  readonly configVariable?: IntegrationConnectorsConnectionConfigVariable[] | cdktf.IResolvable;
+  readonly configVariable?: IntegrationConnectorsConnectionConfigVariable[] | cdktn.IResolvable;
   /**
   * destination_config block
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/integration_connectors_connection#destination_config IntegrationConnectorsConnection#destination_config}
   */
-  readonly destinationConfig?: IntegrationConnectorsConnectionDestinationConfig[] | cdktf.IResolvable;
+  readonly destinationConfig?: IntegrationConnectorsConnectionDestinationConfig[] | cdktn.IResolvable;
   /**
   * eventing_config block
   *
@@ -134,8 +134,8 @@ export interface IntegrationConnectorsConnectionConnectorVersionInfraConfig {
 }
 
 export function integrationConnectorsConnectionConnectorVersionInfraConfigToTerraform(struct?: IntegrationConnectorsConnectionConnectorVersionInfraConfig): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -144,8 +144,8 @@ export function integrationConnectorsConnectionConnectorVersionInfraConfigToTerr
 
 
 export function integrationConnectorsConnectionConnectorVersionInfraConfigToHclTerraform(struct?: IntegrationConnectorsConnectionConnectorVersionInfraConfig): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -153,7 +153,7 @@ export function integrationConnectorsConnectionConnectorVersionInfraConfigToHclT
   return attrs;
 }
 
-export class IntegrationConnectorsConnectionConnectorVersionInfraConfigOutputReference extends cdktf.ComplexObject {
+export class IntegrationConnectorsConnectionConnectorVersionInfraConfigOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -162,7 +162,7 @@ export class IntegrationConnectorsConnectionConnectorVersionInfraConfigOutputRef
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -187,14 +187,14 @@ export class IntegrationConnectorsConnectionConnectorVersionInfraConfigOutputRef
   }
 }
 
-export class IntegrationConnectorsConnectionConnectorVersionInfraConfigList extends cdktf.ComplexList {
+export class IntegrationConnectorsConnectionConnectorVersionInfraConfigList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -209,8 +209,8 @@ export interface IntegrationConnectorsConnectionEventingRuntimeDataStatus {
 }
 
 export function integrationConnectorsConnectionEventingRuntimeDataStatusToTerraform(struct?: IntegrationConnectorsConnectionEventingRuntimeDataStatus): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -219,8 +219,8 @@ export function integrationConnectorsConnectionEventingRuntimeDataStatusToTerraf
 
 
 export function integrationConnectorsConnectionEventingRuntimeDataStatusToHclTerraform(struct?: IntegrationConnectorsConnectionEventingRuntimeDataStatus): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -228,7 +228,7 @@ export function integrationConnectorsConnectionEventingRuntimeDataStatusToHclTer
   return attrs;
 }
 
-export class IntegrationConnectorsConnectionEventingRuntimeDataStatusOutputReference extends cdktf.ComplexObject {
+export class IntegrationConnectorsConnectionEventingRuntimeDataStatusOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -237,7 +237,7 @@ export class IntegrationConnectorsConnectionEventingRuntimeDataStatusOutputRefer
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -267,14 +267,14 @@ export class IntegrationConnectorsConnectionEventingRuntimeDataStatusOutputRefer
   }
 }
 
-export class IntegrationConnectorsConnectionEventingRuntimeDataStatusList extends cdktf.ComplexList {
+export class IntegrationConnectorsConnectionEventingRuntimeDataStatusList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -289,8 +289,8 @@ export interface IntegrationConnectorsConnectionEventingRuntimeData {
 }
 
 export function integrationConnectorsConnectionEventingRuntimeDataToTerraform(struct?: IntegrationConnectorsConnectionEventingRuntimeData): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -299,8 +299,8 @@ export function integrationConnectorsConnectionEventingRuntimeDataToTerraform(st
 
 
 export function integrationConnectorsConnectionEventingRuntimeDataToHclTerraform(struct?: IntegrationConnectorsConnectionEventingRuntimeData): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -308,7 +308,7 @@ export function integrationConnectorsConnectionEventingRuntimeDataToHclTerraform
   return attrs;
 }
 
-export class IntegrationConnectorsConnectionEventingRuntimeDataOutputReference extends cdktf.ComplexObject {
+export class IntegrationConnectorsConnectionEventingRuntimeDataOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -317,7 +317,7 @@ export class IntegrationConnectorsConnectionEventingRuntimeDataOutputReference e
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -348,14 +348,14 @@ export class IntegrationConnectorsConnectionEventingRuntimeDataOutputReference e
   }
 }
 
-export class IntegrationConnectorsConnectionEventingRuntimeDataList extends cdktf.ComplexList {
+export class IntegrationConnectorsConnectionEventingRuntimeDataList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -370,8 +370,8 @@ export interface IntegrationConnectorsConnectionStatus {
 }
 
 export function integrationConnectorsConnectionStatusToTerraform(struct?: IntegrationConnectorsConnectionStatus): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -380,8 +380,8 @@ export function integrationConnectorsConnectionStatusToTerraform(struct?: Integr
 
 
 export function integrationConnectorsConnectionStatusToHclTerraform(struct?: IntegrationConnectorsConnectionStatus): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -389,7 +389,7 @@ export function integrationConnectorsConnectionStatusToHclTerraform(struct?: Int
   return attrs;
 }
 
-export class IntegrationConnectorsConnectionStatusOutputReference extends cdktf.ComplexObject {
+export class IntegrationConnectorsConnectionStatusOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -398,7 +398,7 @@ export class IntegrationConnectorsConnectionStatusOutputReference extends cdktf.
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -433,14 +433,14 @@ export class IntegrationConnectorsConnectionStatusOutputReference extends cdktf.
   }
 }
 
-export class IntegrationConnectorsConnectionStatusList extends cdktf.ComplexList {
+export class IntegrationConnectorsConnectionStatusList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -471,31 +471,31 @@ export interface IntegrationConnectorsConnectionAuthConfigAdditionalVariableEncr
 }
 
 export function integrationConnectorsConnectionAuthConfigAdditionalVariableEncryptionKeyValueToTerraform(struct?: IntegrationConnectorsConnectionAuthConfigAdditionalVariableEncryptionKeyValueOutputReference | IntegrationConnectorsConnectionAuthConfigAdditionalVariableEncryptionKeyValue): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    kms_key_name: cdktf.stringToTerraform(struct!.kmsKeyName),
-    type: cdktf.stringToTerraform(struct!.type),
+    kms_key_name: cdktn.stringToTerraform(struct!.kmsKeyName),
+    type: cdktn.stringToTerraform(struct!.type),
   }
 }
 
 
 export function integrationConnectorsConnectionAuthConfigAdditionalVariableEncryptionKeyValueToHclTerraform(struct?: IntegrationConnectorsConnectionAuthConfigAdditionalVariableEncryptionKeyValueOutputReference | IntegrationConnectorsConnectionAuthConfigAdditionalVariableEncryptionKeyValue): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     kms_key_name: {
-      value: cdktf.stringToHclTerraform(struct!.kmsKeyName),
+      value: cdktn.stringToHclTerraform(struct!.kmsKeyName),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     type: {
-      value: cdktf.stringToHclTerraform(struct!.type),
+      value: cdktn.stringToHclTerraform(struct!.type),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -506,14 +506,14 @@ export function integrationConnectorsConnectionAuthConfigAdditionalVariableEncry
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class IntegrationConnectorsConnectionAuthConfigAdditionalVariableEncryptionKeyValueOutputReference extends cdktf.ComplexObject {
+export class IntegrationConnectorsConnectionAuthConfigAdditionalVariableEncryptionKeyValueOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -583,24 +583,24 @@ export interface IntegrationConnectorsConnectionAuthConfigAdditionalVariableSecr
 }
 
 export function integrationConnectorsConnectionAuthConfigAdditionalVariableSecretValueToTerraform(struct?: IntegrationConnectorsConnectionAuthConfigAdditionalVariableSecretValueOutputReference | IntegrationConnectorsConnectionAuthConfigAdditionalVariableSecretValue): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    secret_version: cdktf.stringToTerraform(struct!.secretVersion),
+    secret_version: cdktn.stringToTerraform(struct!.secretVersion),
   }
 }
 
 
 export function integrationConnectorsConnectionAuthConfigAdditionalVariableSecretValueToHclTerraform(struct?: IntegrationConnectorsConnectionAuthConfigAdditionalVariableSecretValueOutputReference | IntegrationConnectorsConnectionAuthConfigAdditionalVariableSecretValue): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     secret_version: {
-      value: cdktf.stringToHclTerraform(struct!.secretVersion),
+      value: cdktn.stringToHclTerraform(struct!.secretVersion),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -611,14 +611,14 @@ export function integrationConnectorsConnectionAuthConfigAdditionalVariableSecre
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class IntegrationConnectorsConnectionAuthConfigAdditionalVariableSecretValueOutputReference extends cdktf.ComplexObject {
+export class IntegrationConnectorsConnectionAuthConfigAdditionalVariableSecretValueOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -662,7 +662,7 @@ export interface IntegrationConnectorsConnectionAuthConfigAdditionalVariable {
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/integration_connectors_connection#boolean_value IntegrationConnectorsConnection#boolean_value}
   */
-  readonly booleanValue?: boolean | cdktf.IResolvable;
+  readonly booleanValue?: boolean | cdktn.IResolvable;
   /**
   * Integer Value of configVariable.
   *
@@ -695,48 +695,48 @@ export interface IntegrationConnectorsConnectionAuthConfigAdditionalVariable {
   readonly secretValue?: IntegrationConnectorsConnectionAuthConfigAdditionalVariableSecretValue;
 }
 
-export function integrationConnectorsConnectionAuthConfigAdditionalVariableToTerraform(struct?: IntegrationConnectorsConnectionAuthConfigAdditionalVariable | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function integrationConnectorsConnectionAuthConfigAdditionalVariableToTerraform(struct?: IntegrationConnectorsConnectionAuthConfigAdditionalVariable | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    boolean_value: cdktf.booleanToTerraform(struct!.booleanValue),
-    integer_value: cdktf.numberToTerraform(struct!.integerValue),
-    key: cdktf.stringToTerraform(struct!.key),
-    string_value: cdktf.stringToTerraform(struct!.stringValue),
+    boolean_value: cdktn.booleanToTerraform(struct!.booleanValue),
+    integer_value: cdktn.numberToTerraform(struct!.integerValue),
+    key: cdktn.stringToTerraform(struct!.key),
+    string_value: cdktn.stringToTerraform(struct!.stringValue),
     encryption_key_value: integrationConnectorsConnectionAuthConfigAdditionalVariableEncryptionKeyValueToTerraform(struct!.encryptionKeyValue),
     secret_value: integrationConnectorsConnectionAuthConfigAdditionalVariableSecretValueToTerraform(struct!.secretValue),
   }
 }
 
 
-export function integrationConnectorsConnectionAuthConfigAdditionalVariableToHclTerraform(struct?: IntegrationConnectorsConnectionAuthConfigAdditionalVariable | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function integrationConnectorsConnectionAuthConfigAdditionalVariableToHclTerraform(struct?: IntegrationConnectorsConnectionAuthConfigAdditionalVariable | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     boolean_value: {
-      value: cdktf.booleanToHclTerraform(struct!.booleanValue),
+      value: cdktn.booleanToHclTerraform(struct!.booleanValue),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     integer_value: {
-      value: cdktf.numberToHclTerraform(struct!.integerValue),
+      value: cdktn.numberToHclTerraform(struct!.integerValue),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     key: {
-      value: cdktf.stringToHclTerraform(struct!.key),
+      value: cdktn.stringToHclTerraform(struct!.key),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     string_value: {
-      value: cdktf.stringToHclTerraform(struct!.stringValue),
+      value: cdktn.stringToHclTerraform(struct!.stringValue),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -759,9 +759,9 @@ export function integrationConnectorsConnectionAuthConfigAdditionalVariableToHcl
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class IntegrationConnectorsConnectionAuthConfigAdditionalVariableOutputReference extends cdktf.ComplexObject {
+export class IntegrationConnectorsConnectionAuthConfigAdditionalVariableOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -769,11 +769,11 @@ export class IntegrationConnectorsConnectionAuthConfigAdditionalVariableOutputRe
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): IntegrationConnectorsConnectionAuthConfigAdditionalVariable | cdktf.IResolvable | undefined {
+  public get internalValue(): IntegrationConnectorsConnectionAuthConfigAdditionalVariable | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -806,7 +806,7 @@ export class IntegrationConnectorsConnectionAuthConfigAdditionalVariableOutputRe
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: IntegrationConnectorsConnectionAuthConfigAdditionalVariable | cdktf.IResolvable | undefined) {
+  public set internalValue(value: IntegrationConnectorsConnectionAuthConfigAdditionalVariable | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -817,7 +817,7 @@ export class IntegrationConnectorsConnectionAuthConfigAdditionalVariableOutputRe
       this._encryptionKeyValue.internalValue = undefined;
       this._secretValue.internalValue = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -834,11 +834,11 @@ export class IntegrationConnectorsConnectionAuthConfigAdditionalVariableOutputRe
   }
 
   // boolean_value - computed: false, optional: true, required: false
-  private _booleanValue?: boolean | cdktf.IResolvable; 
+  private _booleanValue?: boolean | cdktn.IResolvable; 
   public get booleanValue() {
     return this.getBooleanAttribute('boolean_value');
   }
-  public set booleanValue(value: boolean | cdktf.IResolvable) {
+  public set booleanValue(value: boolean | cdktn.IResolvable) {
     this._booleanValue = value;
   }
   public resetBooleanValue() {
@@ -927,15 +927,15 @@ export class IntegrationConnectorsConnectionAuthConfigAdditionalVariableOutputRe
   }
 }
 
-export class IntegrationConnectorsConnectionAuthConfigAdditionalVariableList extends cdktf.ComplexList {
-  public internalValue? : IntegrationConnectorsConnectionAuthConfigAdditionalVariable[] | cdktf.IResolvable
+export class IntegrationConnectorsConnectionAuthConfigAdditionalVariableList extends cdktn.ComplexList {
+  public internalValue? : IntegrationConnectorsConnectionAuthConfigAdditionalVariable[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -959,24 +959,24 @@ export interface IntegrationConnectorsConnectionAuthConfigOauth2AuthCodeFlowClie
 }
 
 export function integrationConnectorsConnectionAuthConfigOauth2AuthCodeFlowClientSecretToTerraform(struct?: IntegrationConnectorsConnectionAuthConfigOauth2AuthCodeFlowClientSecretOutputReference | IntegrationConnectorsConnectionAuthConfigOauth2AuthCodeFlowClientSecret): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    secret_version: cdktf.stringToTerraform(struct!.secretVersion),
+    secret_version: cdktn.stringToTerraform(struct!.secretVersion),
   }
 }
 
 
 export function integrationConnectorsConnectionAuthConfigOauth2AuthCodeFlowClientSecretToHclTerraform(struct?: IntegrationConnectorsConnectionAuthConfigOauth2AuthCodeFlowClientSecretOutputReference | IntegrationConnectorsConnectionAuthConfigOauth2AuthCodeFlowClientSecret): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     secret_version: {
-      value: cdktf.stringToHclTerraform(struct!.secretVersion),
+      value: cdktn.stringToHclTerraform(struct!.secretVersion),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -987,14 +987,14 @@ export function integrationConnectorsConnectionAuthConfigOauth2AuthCodeFlowClien
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class IntegrationConnectorsConnectionAuthConfigOauth2AuthCodeFlowClientSecretOutputReference extends cdktf.ComplexObject {
+export class IntegrationConnectorsConnectionAuthConfigOauth2AuthCodeFlowClientSecretOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -1050,7 +1050,7 @@ export interface IntegrationConnectorsConnectionAuthConfigOauth2AuthCodeFlow {
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/integration_connectors_connection#enable_pkce IntegrationConnectorsConnection#enable_pkce}
   */
-  readonly enablePkce?: boolean | cdktf.IResolvable;
+  readonly enablePkce?: boolean | cdktn.IResolvable;
   /**
   * Scopes the connection will request when the user performs the auth code flow.
   *
@@ -1066,46 +1066,46 @@ export interface IntegrationConnectorsConnectionAuthConfigOauth2AuthCodeFlow {
 }
 
 export function integrationConnectorsConnectionAuthConfigOauth2AuthCodeFlowToTerraform(struct?: IntegrationConnectorsConnectionAuthConfigOauth2AuthCodeFlowOutputReference | IntegrationConnectorsConnectionAuthConfigOauth2AuthCodeFlow): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    auth_uri: cdktf.stringToTerraform(struct!.authUri),
-    client_id: cdktf.stringToTerraform(struct!.clientId),
-    enable_pkce: cdktf.booleanToTerraform(struct!.enablePkce),
-    scopes: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.scopes),
+    auth_uri: cdktn.stringToTerraform(struct!.authUri),
+    client_id: cdktn.stringToTerraform(struct!.clientId),
+    enable_pkce: cdktn.booleanToTerraform(struct!.enablePkce),
+    scopes: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.scopes),
     client_secret: integrationConnectorsConnectionAuthConfigOauth2AuthCodeFlowClientSecretToTerraform(struct!.clientSecret),
   }
 }
 
 
 export function integrationConnectorsConnectionAuthConfigOauth2AuthCodeFlowToHclTerraform(struct?: IntegrationConnectorsConnectionAuthConfigOauth2AuthCodeFlowOutputReference | IntegrationConnectorsConnectionAuthConfigOauth2AuthCodeFlow): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     auth_uri: {
-      value: cdktf.stringToHclTerraform(struct!.authUri),
+      value: cdktn.stringToHclTerraform(struct!.authUri),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     client_id: {
-      value: cdktf.stringToHclTerraform(struct!.clientId),
+      value: cdktn.stringToHclTerraform(struct!.clientId),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     enable_pkce: {
-      value: cdktf.booleanToHclTerraform(struct!.enablePkce),
+      value: cdktn.booleanToHclTerraform(struct!.enablePkce),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     scopes: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.scopes),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.scopes),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
@@ -1122,14 +1122,14 @@ export function integrationConnectorsConnectionAuthConfigOauth2AuthCodeFlowToHcl
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class IntegrationConnectorsConnectionAuthConfigOauth2AuthCodeFlowOutputReference extends cdktf.ComplexObject {
+export class IntegrationConnectorsConnectionAuthConfigOauth2AuthCodeFlowOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -1211,11 +1211,11 @@ export class IntegrationConnectorsConnectionAuthConfigOauth2AuthCodeFlowOutputRe
   }
 
   // enable_pkce - computed: false, optional: true, required: false
-  private _enablePkce?: boolean | cdktf.IResolvable; 
+  private _enablePkce?: boolean | cdktn.IResolvable; 
   public get enablePkce() {
     return this.getBooleanAttribute('enable_pkce');
   }
-  public set enablePkce(value: boolean | cdktf.IResolvable) {
+  public set enablePkce(value: boolean | cdktn.IResolvable) {
     this._enablePkce = value;
   }
   public resetEnablePkce() {
@@ -1271,24 +1271,24 @@ export interface IntegrationConnectorsConnectionAuthConfigOauth2ClientCredential
 }
 
 export function integrationConnectorsConnectionAuthConfigOauth2ClientCredentialsClientSecretToTerraform(struct?: IntegrationConnectorsConnectionAuthConfigOauth2ClientCredentialsClientSecretOutputReference | IntegrationConnectorsConnectionAuthConfigOauth2ClientCredentialsClientSecret): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    secret_version: cdktf.stringToTerraform(struct!.secretVersion),
+    secret_version: cdktn.stringToTerraform(struct!.secretVersion),
   }
 }
 
 
 export function integrationConnectorsConnectionAuthConfigOauth2ClientCredentialsClientSecretToHclTerraform(struct?: IntegrationConnectorsConnectionAuthConfigOauth2ClientCredentialsClientSecretOutputReference | IntegrationConnectorsConnectionAuthConfigOauth2ClientCredentialsClientSecret): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     secret_version: {
-      value: cdktf.stringToHclTerraform(struct!.secretVersion),
+      value: cdktn.stringToHclTerraform(struct!.secretVersion),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -1299,14 +1299,14 @@ export function integrationConnectorsConnectionAuthConfigOauth2ClientCredentials
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class IntegrationConnectorsConnectionAuthConfigOauth2ClientCredentialsClientSecretOutputReference extends cdktf.ComplexObject {
+export class IntegrationConnectorsConnectionAuthConfigOauth2ClientCredentialsClientSecretOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -1360,25 +1360,25 @@ export interface IntegrationConnectorsConnectionAuthConfigOauth2ClientCredential
 }
 
 export function integrationConnectorsConnectionAuthConfigOauth2ClientCredentialsToTerraform(struct?: IntegrationConnectorsConnectionAuthConfigOauth2ClientCredentialsOutputReference | IntegrationConnectorsConnectionAuthConfigOauth2ClientCredentials): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    client_id: cdktf.stringToTerraform(struct!.clientId),
+    client_id: cdktn.stringToTerraform(struct!.clientId),
     client_secret: integrationConnectorsConnectionAuthConfigOauth2ClientCredentialsClientSecretToTerraform(struct!.clientSecret),
   }
 }
 
 
 export function integrationConnectorsConnectionAuthConfigOauth2ClientCredentialsToHclTerraform(struct?: IntegrationConnectorsConnectionAuthConfigOauth2ClientCredentialsOutputReference | IntegrationConnectorsConnectionAuthConfigOauth2ClientCredentials): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     client_id: {
-      value: cdktf.stringToHclTerraform(struct!.clientId),
+      value: cdktn.stringToHclTerraform(struct!.clientId),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -1395,14 +1395,14 @@ export function integrationConnectorsConnectionAuthConfigOauth2ClientCredentials
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class IntegrationConnectorsConnectionAuthConfigOauth2ClientCredentialsOutputReference extends cdktf.ComplexObject {
+export class IntegrationConnectorsConnectionAuthConfigOauth2ClientCredentialsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -1475,24 +1475,24 @@ export interface IntegrationConnectorsConnectionAuthConfigOauth2JwtBearerClientK
 }
 
 export function integrationConnectorsConnectionAuthConfigOauth2JwtBearerClientKeyToTerraform(struct?: IntegrationConnectorsConnectionAuthConfigOauth2JwtBearerClientKeyOutputReference | IntegrationConnectorsConnectionAuthConfigOauth2JwtBearerClientKey): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    secret_version: cdktf.stringToTerraform(struct!.secretVersion),
+    secret_version: cdktn.stringToTerraform(struct!.secretVersion),
   }
 }
 
 
 export function integrationConnectorsConnectionAuthConfigOauth2JwtBearerClientKeyToHclTerraform(struct?: IntegrationConnectorsConnectionAuthConfigOauth2JwtBearerClientKeyOutputReference | IntegrationConnectorsConnectionAuthConfigOauth2JwtBearerClientKey): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     secret_version: {
-      value: cdktf.stringToHclTerraform(struct!.secretVersion),
+      value: cdktn.stringToHclTerraform(struct!.secretVersion),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -1503,14 +1503,14 @@ export function integrationConnectorsConnectionAuthConfigOauth2JwtBearerClientKe
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class IntegrationConnectorsConnectionAuthConfigOauth2JwtBearerClientKeyOutputReference extends cdktf.ComplexObject {
+export class IntegrationConnectorsConnectionAuthConfigOauth2JwtBearerClientKeyOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -1570,38 +1570,38 @@ export interface IntegrationConnectorsConnectionAuthConfigOauth2JwtBearerJwtClai
 }
 
 export function integrationConnectorsConnectionAuthConfigOauth2JwtBearerJwtClaimsToTerraform(struct?: IntegrationConnectorsConnectionAuthConfigOauth2JwtBearerJwtClaimsOutputReference | IntegrationConnectorsConnectionAuthConfigOauth2JwtBearerJwtClaims): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    audience: cdktf.stringToTerraform(struct!.audience),
-    issuer: cdktf.stringToTerraform(struct!.issuer),
-    subject: cdktf.stringToTerraform(struct!.subject),
+    audience: cdktn.stringToTerraform(struct!.audience),
+    issuer: cdktn.stringToTerraform(struct!.issuer),
+    subject: cdktn.stringToTerraform(struct!.subject),
   }
 }
 
 
 export function integrationConnectorsConnectionAuthConfigOauth2JwtBearerJwtClaimsToHclTerraform(struct?: IntegrationConnectorsConnectionAuthConfigOauth2JwtBearerJwtClaimsOutputReference | IntegrationConnectorsConnectionAuthConfigOauth2JwtBearerJwtClaims): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     audience: {
-      value: cdktf.stringToHclTerraform(struct!.audience),
+      value: cdktn.stringToHclTerraform(struct!.audience),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     issuer: {
-      value: cdktf.stringToHclTerraform(struct!.issuer),
+      value: cdktn.stringToHclTerraform(struct!.issuer),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     subject: {
-      value: cdktf.stringToHclTerraform(struct!.subject),
+      value: cdktn.stringToHclTerraform(struct!.subject),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -1612,14 +1612,14 @@ export function integrationConnectorsConnectionAuthConfigOauth2JwtBearerJwtClaim
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class IntegrationConnectorsConnectionAuthConfigOauth2JwtBearerJwtClaimsOutputReference extends cdktf.ComplexObject {
+export class IntegrationConnectorsConnectionAuthConfigOauth2JwtBearerJwtClaimsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -1720,8 +1720,8 @@ export interface IntegrationConnectorsConnectionAuthConfigOauth2JwtBearer {
 }
 
 export function integrationConnectorsConnectionAuthConfigOauth2JwtBearerToTerraform(struct?: IntegrationConnectorsConnectionAuthConfigOauth2JwtBearerOutputReference | IntegrationConnectorsConnectionAuthConfigOauth2JwtBearer): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -1732,8 +1732,8 @@ export function integrationConnectorsConnectionAuthConfigOauth2JwtBearerToTerraf
 
 
 export function integrationConnectorsConnectionAuthConfigOauth2JwtBearerToHclTerraform(struct?: IntegrationConnectorsConnectionAuthConfigOauth2JwtBearerOutputReference | IntegrationConnectorsConnectionAuthConfigOauth2JwtBearer): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -1755,14 +1755,14 @@ export function integrationConnectorsConnectionAuthConfigOauth2JwtBearerToHclTer
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class IntegrationConnectorsConnectionAuthConfigOauth2JwtBearerOutputReference extends cdktf.ComplexObject {
+export class IntegrationConnectorsConnectionAuthConfigOauth2JwtBearerOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -1838,24 +1838,24 @@ export interface IntegrationConnectorsConnectionAuthConfigSshPublicKeySshClientC
 }
 
 export function integrationConnectorsConnectionAuthConfigSshPublicKeySshClientCertToTerraform(struct?: IntegrationConnectorsConnectionAuthConfigSshPublicKeySshClientCertOutputReference | IntegrationConnectorsConnectionAuthConfigSshPublicKeySshClientCert): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    secret_version: cdktf.stringToTerraform(struct!.secretVersion),
+    secret_version: cdktn.stringToTerraform(struct!.secretVersion),
   }
 }
 
 
 export function integrationConnectorsConnectionAuthConfigSshPublicKeySshClientCertToHclTerraform(struct?: IntegrationConnectorsConnectionAuthConfigSshPublicKeySshClientCertOutputReference | IntegrationConnectorsConnectionAuthConfigSshPublicKeySshClientCert): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     secret_version: {
-      value: cdktf.stringToHclTerraform(struct!.secretVersion),
+      value: cdktn.stringToHclTerraform(struct!.secretVersion),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -1866,14 +1866,14 @@ export function integrationConnectorsConnectionAuthConfigSshPublicKeySshClientCe
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class IntegrationConnectorsConnectionAuthConfigSshPublicKeySshClientCertOutputReference extends cdktf.ComplexObject {
+export class IntegrationConnectorsConnectionAuthConfigSshPublicKeySshClientCertOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -1924,24 +1924,24 @@ export interface IntegrationConnectorsConnectionAuthConfigSshPublicKeySshClientC
 }
 
 export function integrationConnectorsConnectionAuthConfigSshPublicKeySshClientCertPassToTerraform(struct?: IntegrationConnectorsConnectionAuthConfigSshPublicKeySshClientCertPassOutputReference | IntegrationConnectorsConnectionAuthConfigSshPublicKeySshClientCertPass): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    secret_version: cdktf.stringToTerraform(struct!.secretVersion),
+    secret_version: cdktn.stringToTerraform(struct!.secretVersion),
   }
 }
 
 
 export function integrationConnectorsConnectionAuthConfigSshPublicKeySshClientCertPassToHclTerraform(struct?: IntegrationConnectorsConnectionAuthConfigSshPublicKeySshClientCertPassOutputReference | IntegrationConnectorsConnectionAuthConfigSshPublicKeySshClientCertPass): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     secret_version: {
-      value: cdktf.stringToHclTerraform(struct!.secretVersion),
+      value: cdktn.stringToHclTerraform(struct!.secretVersion),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -1952,14 +1952,14 @@ export function integrationConnectorsConnectionAuthConfigSshPublicKeySshClientCe
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class IntegrationConnectorsConnectionAuthConfigSshPublicKeySshClientCertPassOutputReference extends cdktf.ComplexObject {
+export class IntegrationConnectorsConnectionAuthConfigSshPublicKeySshClientCertPassOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -2025,13 +2025,13 @@ export interface IntegrationConnectorsConnectionAuthConfigSshPublicKey {
 }
 
 export function integrationConnectorsConnectionAuthConfigSshPublicKeyToTerraform(struct?: IntegrationConnectorsConnectionAuthConfigSshPublicKeyOutputReference | IntegrationConnectorsConnectionAuthConfigSshPublicKey): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    cert_type: cdktf.stringToTerraform(struct!.certType),
-    username: cdktf.stringToTerraform(struct!.username),
+    cert_type: cdktn.stringToTerraform(struct!.certType),
+    username: cdktn.stringToTerraform(struct!.username),
     ssh_client_cert: integrationConnectorsConnectionAuthConfigSshPublicKeySshClientCertToTerraform(struct!.sshClientCert),
     ssh_client_cert_pass: integrationConnectorsConnectionAuthConfigSshPublicKeySshClientCertPassToTerraform(struct!.sshClientCertPass),
   }
@@ -2039,19 +2039,19 @@ export function integrationConnectorsConnectionAuthConfigSshPublicKeyToTerraform
 
 
 export function integrationConnectorsConnectionAuthConfigSshPublicKeyToHclTerraform(struct?: IntegrationConnectorsConnectionAuthConfigSshPublicKeyOutputReference | IntegrationConnectorsConnectionAuthConfigSshPublicKey): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     cert_type: {
-      value: cdktf.stringToHclTerraform(struct!.certType),
+      value: cdktn.stringToHclTerraform(struct!.certType),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     username: {
-      value: cdktf.stringToHclTerraform(struct!.username),
+      value: cdktn.stringToHclTerraform(struct!.username),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -2074,14 +2074,14 @@ export function integrationConnectorsConnectionAuthConfigSshPublicKeyToHclTerraf
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class IntegrationConnectorsConnectionAuthConfigSshPublicKeyOutputReference extends cdktf.ComplexObject {
+export class IntegrationConnectorsConnectionAuthConfigSshPublicKeyOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -2198,24 +2198,24 @@ export interface IntegrationConnectorsConnectionAuthConfigUserPasswordPassword {
 }
 
 export function integrationConnectorsConnectionAuthConfigUserPasswordPasswordToTerraform(struct?: IntegrationConnectorsConnectionAuthConfigUserPasswordPasswordOutputReference | IntegrationConnectorsConnectionAuthConfigUserPasswordPassword): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    secret_version: cdktf.stringToTerraform(struct!.secretVersion),
+    secret_version: cdktn.stringToTerraform(struct!.secretVersion),
   }
 }
 
 
 export function integrationConnectorsConnectionAuthConfigUserPasswordPasswordToHclTerraform(struct?: IntegrationConnectorsConnectionAuthConfigUserPasswordPasswordOutputReference | IntegrationConnectorsConnectionAuthConfigUserPasswordPassword): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     secret_version: {
-      value: cdktf.stringToHclTerraform(struct!.secretVersion),
+      value: cdktn.stringToHclTerraform(struct!.secretVersion),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -2226,14 +2226,14 @@ export function integrationConnectorsConnectionAuthConfigUserPasswordPasswordToH
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class IntegrationConnectorsConnectionAuthConfigUserPasswordPasswordOutputReference extends cdktf.ComplexObject {
+export class IntegrationConnectorsConnectionAuthConfigUserPasswordPasswordOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -2287,25 +2287,25 @@ export interface IntegrationConnectorsConnectionAuthConfigUserPassword {
 }
 
 export function integrationConnectorsConnectionAuthConfigUserPasswordToTerraform(struct?: IntegrationConnectorsConnectionAuthConfigUserPasswordOutputReference | IntegrationConnectorsConnectionAuthConfigUserPassword): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    username: cdktf.stringToTerraform(struct!.username),
+    username: cdktn.stringToTerraform(struct!.username),
     password: integrationConnectorsConnectionAuthConfigUserPasswordPasswordToTerraform(struct!.password),
   }
 }
 
 
 export function integrationConnectorsConnectionAuthConfigUserPasswordToHclTerraform(struct?: IntegrationConnectorsConnectionAuthConfigUserPasswordOutputReference | IntegrationConnectorsConnectionAuthConfigUserPassword): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     username: {
-      value: cdktf.stringToHclTerraform(struct!.username),
+      value: cdktn.stringToHclTerraform(struct!.username),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -2322,14 +2322,14 @@ export function integrationConnectorsConnectionAuthConfigUserPasswordToHclTerraf
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class IntegrationConnectorsConnectionAuthConfigUserPasswordOutputReference extends cdktf.ComplexObject {
+export class IntegrationConnectorsConnectionAuthConfigUserPasswordOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -2407,7 +2407,7 @@ export interface IntegrationConnectorsConnectionAuthConfig {
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/integration_connectors_connection#additional_variable IntegrationConnectorsConnection#additional_variable}
   */
-  readonly additionalVariable?: IntegrationConnectorsConnectionAuthConfigAdditionalVariable[] | cdktf.IResolvable;
+  readonly additionalVariable?: IntegrationConnectorsConnectionAuthConfigAdditionalVariable[] | cdktn.IResolvable;
   /**
   * oauth2_auth_code_flow block
   *
@@ -2441,14 +2441,14 @@ export interface IntegrationConnectorsConnectionAuthConfig {
 }
 
 export function integrationConnectorsConnectionAuthConfigToTerraform(struct?: IntegrationConnectorsConnectionAuthConfigOutputReference | IntegrationConnectorsConnectionAuthConfig): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    auth_key: cdktf.stringToTerraform(struct!.authKey),
-    auth_type: cdktf.stringToTerraform(struct!.authType),
-    additional_variable: cdktf.listMapper(integrationConnectorsConnectionAuthConfigAdditionalVariableToTerraform, true)(struct!.additionalVariable),
+    auth_key: cdktn.stringToTerraform(struct!.authKey),
+    auth_type: cdktn.stringToTerraform(struct!.authType),
+    additional_variable: cdktn.listMapper(integrationConnectorsConnectionAuthConfigAdditionalVariableToTerraform, true)(struct!.additionalVariable),
     oauth2_auth_code_flow: integrationConnectorsConnectionAuthConfigOauth2AuthCodeFlowToTerraform(struct!.oauth2AuthCodeFlow),
     oauth2_client_credentials: integrationConnectorsConnectionAuthConfigOauth2ClientCredentialsToTerraform(struct!.oauth2ClientCredentials),
     oauth2_jwt_bearer: integrationConnectorsConnectionAuthConfigOauth2JwtBearerToTerraform(struct!.oauth2JwtBearer),
@@ -2459,25 +2459,25 @@ export function integrationConnectorsConnectionAuthConfigToTerraform(struct?: In
 
 
 export function integrationConnectorsConnectionAuthConfigToHclTerraform(struct?: IntegrationConnectorsConnectionAuthConfigOutputReference | IntegrationConnectorsConnectionAuthConfig): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     auth_key: {
-      value: cdktf.stringToHclTerraform(struct!.authKey),
+      value: cdktn.stringToHclTerraform(struct!.authKey),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     auth_type: {
-      value: cdktf.stringToHclTerraform(struct!.authType),
+      value: cdktn.stringToHclTerraform(struct!.authType),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     additional_variable: {
-      value: cdktf.listMapperHcl(integrationConnectorsConnectionAuthConfigAdditionalVariableToHclTerraform, true)(struct!.additionalVariable),
+      value: cdktn.listMapperHcl(integrationConnectorsConnectionAuthConfigAdditionalVariableToHclTerraform, true)(struct!.additionalVariable),
       isBlock: true,
       type: "list",
       storageClassType: "IntegrationConnectorsConnectionAuthConfigAdditionalVariableList",
@@ -2518,14 +2518,14 @@ export function integrationConnectorsConnectionAuthConfigToHclTerraform(struct?:
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class IntegrationConnectorsConnectionAuthConfigOutputReference extends cdktf.ComplexObject {
+export class IntegrationConnectorsConnectionAuthConfigOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -2626,7 +2626,7 @@ export class IntegrationConnectorsConnectionAuthConfigOutputReference extends cd
   public get additionalVariable() {
     return this._additionalVariable;
   }
-  public putAdditionalVariable(value: IntegrationConnectorsConnectionAuthConfigAdditionalVariable[] | cdktf.IResolvable) {
+  public putAdditionalVariable(value: IntegrationConnectorsConnectionAuthConfigAdditionalVariable[] | cdktn.IResolvable) {
     this._additionalVariable.internalValue = value;
   }
   public resetAdditionalVariable() {
@@ -2737,31 +2737,31 @@ export interface IntegrationConnectorsConnectionConfigVariableEncryptionKeyValue
 }
 
 export function integrationConnectorsConnectionConfigVariableEncryptionKeyValueToTerraform(struct?: IntegrationConnectorsConnectionConfigVariableEncryptionKeyValueOutputReference | IntegrationConnectorsConnectionConfigVariableEncryptionKeyValue): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    kms_key_name: cdktf.stringToTerraform(struct!.kmsKeyName),
-    type: cdktf.stringToTerraform(struct!.type),
+    kms_key_name: cdktn.stringToTerraform(struct!.kmsKeyName),
+    type: cdktn.stringToTerraform(struct!.type),
   }
 }
 
 
 export function integrationConnectorsConnectionConfigVariableEncryptionKeyValueToHclTerraform(struct?: IntegrationConnectorsConnectionConfigVariableEncryptionKeyValueOutputReference | IntegrationConnectorsConnectionConfigVariableEncryptionKeyValue): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     kms_key_name: {
-      value: cdktf.stringToHclTerraform(struct!.kmsKeyName),
+      value: cdktn.stringToHclTerraform(struct!.kmsKeyName),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     type: {
-      value: cdktf.stringToHclTerraform(struct!.type),
+      value: cdktn.stringToHclTerraform(struct!.type),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -2772,14 +2772,14 @@ export function integrationConnectorsConnectionConfigVariableEncryptionKeyValueT
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class IntegrationConnectorsConnectionConfigVariableEncryptionKeyValueOutputReference extends cdktf.ComplexObject {
+export class IntegrationConnectorsConnectionConfigVariableEncryptionKeyValueOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -2849,24 +2849,24 @@ export interface IntegrationConnectorsConnectionConfigVariableSecretValue {
 }
 
 export function integrationConnectorsConnectionConfigVariableSecretValueToTerraform(struct?: IntegrationConnectorsConnectionConfigVariableSecretValueOutputReference | IntegrationConnectorsConnectionConfigVariableSecretValue): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    secret_version: cdktf.stringToTerraform(struct!.secretVersion),
+    secret_version: cdktn.stringToTerraform(struct!.secretVersion),
   }
 }
 
 
 export function integrationConnectorsConnectionConfigVariableSecretValueToHclTerraform(struct?: IntegrationConnectorsConnectionConfigVariableSecretValueOutputReference | IntegrationConnectorsConnectionConfigVariableSecretValue): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     secret_version: {
-      value: cdktf.stringToHclTerraform(struct!.secretVersion),
+      value: cdktn.stringToHclTerraform(struct!.secretVersion),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -2877,14 +2877,14 @@ export function integrationConnectorsConnectionConfigVariableSecretValueToHclTer
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class IntegrationConnectorsConnectionConfigVariableSecretValueOutputReference extends cdktf.ComplexObject {
+export class IntegrationConnectorsConnectionConfigVariableSecretValueOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -2928,7 +2928,7 @@ export interface IntegrationConnectorsConnectionConfigVariable {
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/integration_connectors_connection#boolean_value IntegrationConnectorsConnection#boolean_value}
   */
-  readonly booleanValue?: boolean | cdktf.IResolvable;
+  readonly booleanValue?: boolean | cdktn.IResolvable;
   /**
   * Integer Value of configVariable
   *
@@ -2961,48 +2961,48 @@ export interface IntegrationConnectorsConnectionConfigVariable {
   readonly secretValue?: IntegrationConnectorsConnectionConfigVariableSecretValue;
 }
 
-export function integrationConnectorsConnectionConfigVariableToTerraform(struct?: IntegrationConnectorsConnectionConfigVariable | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function integrationConnectorsConnectionConfigVariableToTerraform(struct?: IntegrationConnectorsConnectionConfigVariable | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    boolean_value: cdktf.booleanToTerraform(struct!.booleanValue),
-    integer_value: cdktf.numberToTerraform(struct!.integerValue),
-    key: cdktf.stringToTerraform(struct!.key),
-    string_value: cdktf.stringToTerraform(struct!.stringValue),
+    boolean_value: cdktn.booleanToTerraform(struct!.booleanValue),
+    integer_value: cdktn.numberToTerraform(struct!.integerValue),
+    key: cdktn.stringToTerraform(struct!.key),
+    string_value: cdktn.stringToTerraform(struct!.stringValue),
     encryption_key_value: integrationConnectorsConnectionConfigVariableEncryptionKeyValueToTerraform(struct!.encryptionKeyValue),
     secret_value: integrationConnectorsConnectionConfigVariableSecretValueToTerraform(struct!.secretValue),
   }
 }
 
 
-export function integrationConnectorsConnectionConfigVariableToHclTerraform(struct?: IntegrationConnectorsConnectionConfigVariable | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function integrationConnectorsConnectionConfigVariableToHclTerraform(struct?: IntegrationConnectorsConnectionConfigVariable | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     boolean_value: {
-      value: cdktf.booleanToHclTerraform(struct!.booleanValue),
+      value: cdktn.booleanToHclTerraform(struct!.booleanValue),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     integer_value: {
-      value: cdktf.numberToHclTerraform(struct!.integerValue),
+      value: cdktn.numberToHclTerraform(struct!.integerValue),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     key: {
-      value: cdktf.stringToHclTerraform(struct!.key),
+      value: cdktn.stringToHclTerraform(struct!.key),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     string_value: {
-      value: cdktf.stringToHclTerraform(struct!.stringValue),
+      value: cdktn.stringToHclTerraform(struct!.stringValue),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -3025,9 +3025,9 @@ export function integrationConnectorsConnectionConfigVariableToHclTerraform(stru
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class IntegrationConnectorsConnectionConfigVariableOutputReference extends cdktf.ComplexObject {
+export class IntegrationConnectorsConnectionConfigVariableOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -3035,11 +3035,11 @@ export class IntegrationConnectorsConnectionConfigVariableOutputReference extend
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): IntegrationConnectorsConnectionConfigVariable | cdktf.IResolvable | undefined {
+  public get internalValue(): IntegrationConnectorsConnectionConfigVariable | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -3072,7 +3072,7 @@ export class IntegrationConnectorsConnectionConfigVariableOutputReference extend
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: IntegrationConnectorsConnectionConfigVariable | cdktf.IResolvable | undefined) {
+  public set internalValue(value: IntegrationConnectorsConnectionConfigVariable | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -3083,7 +3083,7 @@ export class IntegrationConnectorsConnectionConfigVariableOutputReference extend
       this._encryptionKeyValue.internalValue = undefined;
       this._secretValue.internalValue = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -3100,11 +3100,11 @@ export class IntegrationConnectorsConnectionConfigVariableOutputReference extend
   }
 
   // boolean_value - computed: false, optional: true, required: false
-  private _booleanValue?: boolean | cdktf.IResolvable; 
+  private _booleanValue?: boolean | cdktn.IResolvable; 
   public get booleanValue() {
     return this.getBooleanAttribute('boolean_value');
   }
-  public set booleanValue(value: boolean | cdktf.IResolvable) {
+  public set booleanValue(value: boolean | cdktn.IResolvable) {
     this._booleanValue = value;
   }
   public resetBooleanValue() {
@@ -3193,15 +3193,15 @@ export class IntegrationConnectorsConnectionConfigVariableOutputReference extend
   }
 }
 
-export class IntegrationConnectorsConnectionConfigVariableList extends cdktf.ComplexList {
-  public internalValue? : IntegrationConnectorsConnectionConfigVariable[] | cdktf.IResolvable
+export class IntegrationConnectorsConnectionConfigVariableList extends cdktn.ComplexList {
+  public internalValue? : IntegrationConnectorsConnectionConfigVariable[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -3235,39 +3235,39 @@ export interface IntegrationConnectorsConnectionDestinationConfigDestination {
   readonly serviceAttachment?: string;
 }
 
-export function integrationConnectorsConnectionDestinationConfigDestinationToTerraform(struct?: IntegrationConnectorsConnectionDestinationConfigDestination | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function integrationConnectorsConnectionDestinationConfigDestinationToTerraform(struct?: IntegrationConnectorsConnectionDestinationConfigDestination | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    host: cdktf.stringToTerraform(struct!.host),
-    port: cdktf.numberToTerraform(struct!.port),
-    service_attachment: cdktf.stringToTerraform(struct!.serviceAttachment),
+    host: cdktn.stringToTerraform(struct!.host),
+    port: cdktn.numberToTerraform(struct!.port),
+    service_attachment: cdktn.stringToTerraform(struct!.serviceAttachment),
   }
 }
 
 
-export function integrationConnectorsConnectionDestinationConfigDestinationToHclTerraform(struct?: IntegrationConnectorsConnectionDestinationConfigDestination | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function integrationConnectorsConnectionDestinationConfigDestinationToHclTerraform(struct?: IntegrationConnectorsConnectionDestinationConfigDestination | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     host: {
-      value: cdktf.stringToHclTerraform(struct!.host),
+      value: cdktn.stringToHclTerraform(struct!.host),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     port: {
-      value: cdktf.numberToHclTerraform(struct!.port),
+      value: cdktn.numberToHclTerraform(struct!.port),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     service_attachment: {
-      value: cdktf.stringToHclTerraform(struct!.serviceAttachment),
+      value: cdktn.stringToHclTerraform(struct!.serviceAttachment),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -3278,9 +3278,9 @@ export function integrationConnectorsConnectionDestinationConfigDestinationToHcl
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class IntegrationConnectorsConnectionDestinationConfigDestinationOutputReference extends cdktf.ComplexObject {
+export class IntegrationConnectorsConnectionDestinationConfigDestinationOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -3288,11 +3288,11 @@ export class IntegrationConnectorsConnectionDestinationConfigDestinationOutputRe
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): IntegrationConnectorsConnectionDestinationConfigDestination | cdktf.IResolvable | undefined {
+  public get internalValue(): IntegrationConnectorsConnectionDestinationConfigDestination | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -3313,7 +3313,7 @@ export class IntegrationConnectorsConnectionDestinationConfigDestinationOutputRe
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: IntegrationConnectorsConnectionDestinationConfigDestination | cdktf.IResolvable | undefined) {
+  public set internalValue(value: IntegrationConnectorsConnectionDestinationConfigDestination | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -3321,7 +3321,7 @@ export class IntegrationConnectorsConnectionDestinationConfigDestinationOutputRe
       this._port = undefined;
       this._serviceAttachment = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -3383,15 +3383,15 @@ export class IntegrationConnectorsConnectionDestinationConfigDestinationOutputRe
   }
 }
 
-export class IntegrationConnectorsConnectionDestinationConfigDestinationList extends cdktf.ComplexList {
-  public internalValue? : IntegrationConnectorsConnectionDestinationConfigDestination[] | cdktf.IResolvable
+export class IntegrationConnectorsConnectionDestinationConfigDestinationList extends cdktn.ComplexList {
+  public internalValue? : IntegrationConnectorsConnectionDestinationConfigDestination[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -3414,35 +3414,35 @@ export interface IntegrationConnectorsConnectionDestinationConfig {
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/integration_connectors_connection#destination IntegrationConnectorsConnection#destination}
   */
-  readonly destination?: IntegrationConnectorsConnectionDestinationConfigDestination[] | cdktf.IResolvable;
+  readonly destination?: IntegrationConnectorsConnectionDestinationConfigDestination[] | cdktn.IResolvable;
 }
 
-export function integrationConnectorsConnectionDestinationConfigToTerraform(struct?: IntegrationConnectorsConnectionDestinationConfig | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function integrationConnectorsConnectionDestinationConfigToTerraform(struct?: IntegrationConnectorsConnectionDestinationConfig | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    key: cdktf.stringToTerraform(struct!.key),
-    destination: cdktf.listMapper(integrationConnectorsConnectionDestinationConfigDestinationToTerraform, true)(struct!.destination),
+    key: cdktn.stringToTerraform(struct!.key),
+    destination: cdktn.listMapper(integrationConnectorsConnectionDestinationConfigDestinationToTerraform, true)(struct!.destination),
   }
 }
 
 
-export function integrationConnectorsConnectionDestinationConfigToHclTerraform(struct?: IntegrationConnectorsConnectionDestinationConfig | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function integrationConnectorsConnectionDestinationConfigToHclTerraform(struct?: IntegrationConnectorsConnectionDestinationConfig | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     key: {
-      value: cdktf.stringToHclTerraform(struct!.key),
+      value: cdktn.stringToHclTerraform(struct!.key),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     destination: {
-      value: cdktf.listMapperHcl(integrationConnectorsConnectionDestinationConfigDestinationToHclTerraform, true)(struct!.destination),
+      value: cdktn.listMapperHcl(integrationConnectorsConnectionDestinationConfigDestinationToHclTerraform, true)(struct!.destination),
       isBlock: true,
       type: "list",
       storageClassType: "IntegrationConnectorsConnectionDestinationConfigDestinationList",
@@ -3453,9 +3453,9 @@ export function integrationConnectorsConnectionDestinationConfigToHclTerraform(s
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class IntegrationConnectorsConnectionDestinationConfigOutputReference extends cdktf.ComplexObject {
+export class IntegrationConnectorsConnectionDestinationConfigOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -3463,11 +3463,11 @@ export class IntegrationConnectorsConnectionDestinationConfigOutputReference ext
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): IntegrationConnectorsConnectionDestinationConfig | cdktf.IResolvable | undefined {
+  public get internalValue(): IntegrationConnectorsConnectionDestinationConfig | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -3484,14 +3484,14 @@ export class IntegrationConnectorsConnectionDestinationConfigOutputReference ext
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: IntegrationConnectorsConnectionDestinationConfig | cdktf.IResolvable | undefined) {
+  public set internalValue(value: IntegrationConnectorsConnectionDestinationConfig | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._key = undefined;
       this._destination.internalValue = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -3521,7 +3521,7 @@ export class IntegrationConnectorsConnectionDestinationConfigOutputReference ext
   public get destination() {
     return this._destination;
   }
-  public putDestination(value: IntegrationConnectorsConnectionDestinationConfigDestination[] | cdktf.IResolvable) {
+  public putDestination(value: IntegrationConnectorsConnectionDestinationConfigDestination[] | cdktn.IResolvable) {
     this._destination.internalValue = value;
   }
   public resetDestination() {
@@ -3533,15 +3533,15 @@ export class IntegrationConnectorsConnectionDestinationConfigOutputReference ext
   }
 }
 
-export class IntegrationConnectorsConnectionDestinationConfigList extends cdktf.ComplexList {
-  public internalValue? : IntegrationConnectorsConnectionDestinationConfig[] | cdktf.IResolvable
+export class IntegrationConnectorsConnectionDestinationConfigList extends cdktn.ComplexList {
+  public internalValue? : IntegrationConnectorsConnectionDestinationConfig[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -3572,31 +3572,31 @@ export interface IntegrationConnectorsConnectionEventingConfigAdditionalVariable
 }
 
 export function integrationConnectorsConnectionEventingConfigAdditionalVariableEncryptionKeyValueToTerraform(struct?: IntegrationConnectorsConnectionEventingConfigAdditionalVariableEncryptionKeyValueOutputReference | IntegrationConnectorsConnectionEventingConfigAdditionalVariableEncryptionKeyValue): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    kms_key_name: cdktf.stringToTerraform(struct!.kmsKeyName),
-    type: cdktf.stringToTerraform(struct!.type),
+    kms_key_name: cdktn.stringToTerraform(struct!.kmsKeyName),
+    type: cdktn.stringToTerraform(struct!.type),
   }
 }
 
 
 export function integrationConnectorsConnectionEventingConfigAdditionalVariableEncryptionKeyValueToHclTerraform(struct?: IntegrationConnectorsConnectionEventingConfigAdditionalVariableEncryptionKeyValueOutputReference | IntegrationConnectorsConnectionEventingConfigAdditionalVariableEncryptionKeyValue): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     kms_key_name: {
-      value: cdktf.stringToHclTerraform(struct!.kmsKeyName),
+      value: cdktn.stringToHclTerraform(struct!.kmsKeyName),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     type: {
-      value: cdktf.stringToHclTerraform(struct!.type),
+      value: cdktn.stringToHclTerraform(struct!.type),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -3607,14 +3607,14 @@ export function integrationConnectorsConnectionEventingConfigAdditionalVariableE
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class IntegrationConnectorsConnectionEventingConfigAdditionalVariableEncryptionKeyValueOutputReference extends cdktf.ComplexObject {
+export class IntegrationConnectorsConnectionEventingConfigAdditionalVariableEncryptionKeyValueOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -3687,24 +3687,24 @@ export interface IntegrationConnectorsConnectionEventingConfigAdditionalVariable
 }
 
 export function integrationConnectorsConnectionEventingConfigAdditionalVariableSecretValueToTerraform(struct?: IntegrationConnectorsConnectionEventingConfigAdditionalVariableSecretValueOutputReference | IntegrationConnectorsConnectionEventingConfigAdditionalVariableSecretValue): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    secret_version: cdktf.stringToTerraform(struct!.secretVersion),
+    secret_version: cdktn.stringToTerraform(struct!.secretVersion),
   }
 }
 
 
 export function integrationConnectorsConnectionEventingConfigAdditionalVariableSecretValueToHclTerraform(struct?: IntegrationConnectorsConnectionEventingConfigAdditionalVariableSecretValueOutputReference | IntegrationConnectorsConnectionEventingConfigAdditionalVariableSecretValue): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     secret_version: {
-      value: cdktf.stringToHclTerraform(struct!.secretVersion),
+      value: cdktn.stringToHclTerraform(struct!.secretVersion),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -3715,14 +3715,14 @@ export function integrationConnectorsConnectionEventingConfigAdditionalVariableS
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class IntegrationConnectorsConnectionEventingConfigAdditionalVariableSecretValueOutputReference extends cdktf.ComplexObject {
+export class IntegrationConnectorsConnectionEventingConfigAdditionalVariableSecretValueOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -3766,7 +3766,7 @@ export interface IntegrationConnectorsConnectionEventingConfigAdditionalVariable
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/integration_connectors_connection#boolean_value IntegrationConnectorsConnection#boolean_value}
   */
-  readonly booleanValue?: boolean | cdktf.IResolvable;
+  readonly booleanValue?: boolean | cdktn.IResolvable;
   /**
   * Integer Value of configVariable.
   *
@@ -3799,48 +3799,48 @@ export interface IntegrationConnectorsConnectionEventingConfigAdditionalVariable
   readonly secretValue?: IntegrationConnectorsConnectionEventingConfigAdditionalVariableSecretValue;
 }
 
-export function integrationConnectorsConnectionEventingConfigAdditionalVariableToTerraform(struct?: IntegrationConnectorsConnectionEventingConfigAdditionalVariable | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function integrationConnectorsConnectionEventingConfigAdditionalVariableToTerraform(struct?: IntegrationConnectorsConnectionEventingConfigAdditionalVariable | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    boolean_value: cdktf.booleanToTerraform(struct!.booleanValue),
-    integer_value: cdktf.numberToTerraform(struct!.integerValue),
-    key: cdktf.stringToTerraform(struct!.key),
-    string_value: cdktf.stringToTerraform(struct!.stringValue),
+    boolean_value: cdktn.booleanToTerraform(struct!.booleanValue),
+    integer_value: cdktn.numberToTerraform(struct!.integerValue),
+    key: cdktn.stringToTerraform(struct!.key),
+    string_value: cdktn.stringToTerraform(struct!.stringValue),
     encryption_key_value: integrationConnectorsConnectionEventingConfigAdditionalVariableEncryptionKeyValueToTerraform(struct!.encryptionKeyValue),
     secret_value: integrationConnectorsConnectionEventingConfigAdditionalVariableSecretValueToTerraform(struct!.secretValue),
   }
 }
 
 
-export function integrationConnectorsConnectionEventingConfigAdditionalVariableToHclTerraform(struct?: IntegrationConnectorsConnectionEventingConfigAdditionalVariable | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function integrationConnectorsConnectionEventingConfigAdditionalVariableToHclTerraform(struct?: IntegrationConnectorsConnectionEventingConfigAdditionalVariable | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     boolean_value: {
-      value: cdktf.booleanToHclTerraform(struct!.booleanValue),
+      value: cdktn.booleanToHclTerraform(struct!.booleanValue),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     integer_value: {
-      value: cdktf.numberToHclTerraform(struct!.integerValue),
+      value: cdktn.numberToHclTerraform(struct!.integerValue),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     key: {
-      value: cdktf.stringToHclTerraform(struct!.key),
+      value: cdktn.stringToHclTerraform(struct!.key),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     string_value: {
-      value: cdktf.stringToHclTerraform(struct!.stringValue),
+      value: cdktn.stringToHclTerraform(struct!.stringValue),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -3863,9 +3863,9 @@ export function integrationConnectorsConnectionEventingConfigAdditionalVariableT
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class IntegrationConnectorsConnectionEventingConfigAdditionalVariableOutputReference extends cdktf.ComplexObject {
+export class IntegrationConnectorsConnectionEventingConfigAdditionalVariableOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -3873,11 +3873,11 @@ export class IntegrationConnectorsConnectionEventingConfigAdditionalVariableOutp
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): IntegrationConnectorsConnectionEventingConfigAdditionalVariable | cdktf.IResolvable | undefined {
+  public get internalValue(): IntegrationConnectorsConnectionEventingConfigAdditionalVariable | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -3910,7 +3910,7 @@ export class IntegrationConnectorsConnectionEventingConfigAdditionalVariableOutp
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: IntegrationConnectorsConnectionEventingConfigAdditionalVariable | cdktf.IResolvable | undefined) {
+  public set internalValue(value: IntegrationConnectorsConnectionEventingConfigAdditionalVariable | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -3921,7 +3921,7 @@ export class IntegrationConnectorsConnectionEventingConfigAdditionalVariableOutp
       this._encryptionKeyValue.internalValue = undefined;
       this._secretValue.internalValue = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -3938,11 +3938,11 @@ export class IntegrationConnectorsConnectionEventingConfigAdditionalVariableOutp
   }
 
   // boolean_value - computed: false, optional: true, required: false
-  private _booleanValue?: boolean | cdktf.IResolvable; 
+  private _booleanValue?: boolean | cdktn.IResolvable; 
   public get booleanValue() {
     return this.getBooleanAttribute('boolean_value');
   }
-  public set booleanValue(value: boolean | cdktf.IResolvable) {
+  public set booleanValue(value: boolean | cdktn.IResolvable) {
     this._booleanValue = value;
   }
   public resetBooleanValue() {
@@ -4031,15 +4031,15 @@ export class IntegrationConnectorsConnectionEventingConfigAdditionalVariableOutp
   }
 }
 
-export class IntegrationConnectorsConnectionEventingConfigAdditionalVariableList extends cdktf.ComplexList {
-  public internalValue? : IntegrationConnectorsConnectionEventingConfigAdditionalVariable[] | cdktf.IResolvable
+export class IntegrationConnectorsConnectionEventingConfigAdditionalVariableList extends cdktn.ComplexList {
+  public internalValue? : IntegrationConnectorsConnectionEventingConfigAdditionalVariable[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -4070,31 +4070,31 @@ export interface IntegrationConnectorsConnectionEventingConfigAuthConfigAddition
 }
 
 export function integrationConnectorsConnectionEventingConfigAuthConfigAdditionalVariableEncryptionKeyValueToTerraform(struct?: IntegrationConnectorsConnectionEventingConfigAuthConfigAdditionalVariableEncryptionKeyValueOutputReference | IntegrationConnectorsConnectionEventingConfigAuthConfigAdditionalVariableEncryptionKeyValue): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    kms_key_name: cdktf.stringToTerraform(struct!.kmsKeyName),
-    type: cdktf.stringToTerraform(struct!.type),
+    kms_key_name: cdktn.stringToTerraform(struct!.kmsKeyName),
+    type: cdktn.stringToTerraform(struct!.type),
   }
 }
 
 
 export function integrationConnectorsConnectionEventingConfigAuthConfigAdditionalVariableEncryptionKeyValueToHclTerraform(struct?: IntegrationConnectorsConnectionEventingConfigAuthConfigAdditionalVariableEncryptionKeyValueOutputReference | IntegrationConnectorsConnectionEventingConfigAuthConfigAdditionalVariableEncryptionKeyValue): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     kms_key_name: {
-      value: cdktf.stringToHclTerraform(struct!.kmsKeyName),
+      value: cdktn.stringToHclTerraform(struct!.kmsKeyName),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     type: {
-      value: cdktf.stringToHclTerraform(struct!.type),
+      value: cdktn.stringToHclTerraform(struct!.type),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -4105,14 +4105,14 @@ export function integrationConnectorsConnectionEventingConfigAuthConfigAdditiona
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class IntegrationConnectorsConnectionEventingConfigAuthConfigAdditionalVariableEncryptionKeyValueOutputReference extends cdktf.ComplexObject {
+export class IntegrationConnectorsConnectionEventingConfigAuthConfigAdditionalVariableEncryptionKeyValueOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -4185,24 +4185,24 @@ export interface IntegrationConnectorsConnectionEventingConfigAuthConfigAddition
 }
 
 export function integrationConnectorsConnectionEventingConfigAuthConfigAdditionalVariableSecretValueToTerraform(struct?: IntegrationConnectorsConnectionEventingConfigAuthConfigAdditionalVariableSecretValueOutputReference | IntegrationConnectorsConnectionEventingConfigAuthConfigAdditionalVariableSecretValue): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    secret_version: cdktf.stringToTerraform(struct!.secretVersion),
+    secret_version: cdktn.stringToTerraform(struct!.secretVersion),
   }
 }
 
 
 export function integrationConnectorsConnectionEventingConfigAuthConfigAdditionalVariableSecretValueToHclTerraform(struct?: IntegrationConnectorsConnectionEventingConfigAuthConfigAdditionalVariableSecretValueOutputReference | IntegrationConnectorsConnectionEventingConfigAuthConfigAdditionalVariableSecretValue): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     secret_version: {
-      value: cdktf.stringToHclTerraform(struct!.secretVersion),
+      value: cdktn.stringToHclTerraform(struct!.secretVersion),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -4213,14 +4213,14 @@ export function integrationConnectorsConnectionEventingConfigAuthConfigAdditiona
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class IntegrationConnectorsConnectionEventingConfigAuthConfigAdditionalVariableSecretValueOutputReference extends cdktf.ComplexObject {
+export class IntegrationConnectorsConnectionEventingConfigAuthConfigAdditionalVariableSecretValueOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -4264,7 +4264,7 @@ export interface IntegrationConnectorsConnectionEventingConfigAuthConfigAddition
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/integration_connectors_connection#boolean_value IntegrationConnectorsConnection#boolean_value}
   */
-  readonly booleanValue?: boolean | cdktf.IResolvable;
+  readonly booleanValue?: boolean | cdktn.IResolvable;
   /**
   * Integer Value of configVariable.
   *
@@ -4297,48 +4297,48 @@ export interface IntegrationConnectorsConnectionEventingConfigAuthConfigAddition
   readonly secretValue?: IntegrationConnectorsConnectionEventingConfigAuthConfigAdditionalVariableSecretValue;
 }
 
-export function integrationConnectorsConnectionEventingConfigAuthConfigAdditionalVariableToTerraform(struct?: IntegrationConnectorsConnectionEventingConfigAuthConfigAdditionalVariable | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function integrationConnectorsConnectionEventingConfigAuthConfigAdditionalVariableToTerraform(struct?: IntegrationConnectorsConnectionEventingConfigAuthConfigAdditionalVariable | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    boolean_value: cdktf.booleanToTerraform(struct!.booleanValue),
-    integer_value: cdktf.numberToTerraform(struct!.integerValue),
-    key: cdktf.stringToTerraform(struct!.key),
-    string_value: cdktf.stringToTerraform(struct!.stringValue),
+    boolean_value: cdktn.booleanToTerraform(struct!.booleanValue),
+    integer_value: cdktn.numberToTerraform(struct!.integerValue),
+    key: cdktn.stringToTerraform(struct!.key),
+    string_value: cdktn.stringToTerraform(struct!.stringValue),
     encryption_key_value: integrationConnectorsConnectionEventingConfigAuthConfigAdditionalVariableEncryptionKeyValueToTerraform(struct!.encryptionKeyValue),
     secret_value: integrationConnectorsConnectionEventingConfigAuthConfigAdditionalVariableSecretValueToTerraform(struct!.secretValue),
   }
 }
 
 
-export function integrationConnectorsConnectionEventingConfigAuthConfigAdditionalVariableToHclTerraform(struct?: IntegrationConnectorsConnectionEventingConfigAuthConfigAdditionalVariable | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function integrationConnectorsConnectionEventingConfigAuthConfigAdditionalVariableToHclTerraform(struct?: IntegrationConnectorsConnectionEventingConfigAuthConfigAdditionalVariable | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     boolean_value: {
-      value: cdktf.booleanToHclTerraform(struct!.booleanValue),
+      value: cdktn.booleanToHclTerraform(struct!.booleanValue),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     integer_value: {
-      value: cdktf.numberToHclTerraform(struct!.integerValue),
+      value: cdktn.numberToHclTerraform(struct!.integerValue),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     key: {
-      value: cdktf.stringToHclTerraform(struct!.key),
+      value: cdktn.stringToHclTerraform(struct!.key),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     string_value: {
-      value: cdktf.stringToHclTerraform(struct!.stringValue),
+      value: cdktn.stringToHclTerraform(struct!.stringValue),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -4361,9 +4361,9 @@ export function integrationConnectorsConnectionEventingConfigAuthConfigAdditiona
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class IntegrationConnectorsConnectionEventingConfigAuthConfigAdditionalVariableOutputReference extends cdktf.ComplexObject {
+export class IntegrationConnectorsConnectionEventingConfigAuthConfigAdditionalVariableOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -4371,11 +4371,11 @@ export class IntegrationConnectorsConnectionEventingConfigAuthConfigAdditionalVa
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): IntegrationConnectorsConnectionEventingConfigAuthConfigAdditionalVariable | cdktf.IResolvable | undefined {
+  public get internalValue(): IntegrationConnectorsConnectionEventingConfigAuthConfigAdditionalVariable | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -4408,7 +4408,7 @@ export class IntegrationConnectorsConnectionEventingConfigAuthConfigAdditionalVa
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: IntegrationConnectorsConnectionEventingConfigAuthConfigAdditionalVariable | cdktf.IResolvable | undefined) {
+  public set internalValue(value: IntegrationConnectorsConnectionEventingConfigAuthConfigAdditionalVariable | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -4419,7 +4419,7 @@ export class IntegrationConnectorsConnectionEventingConfigAuthConfigAdditionalVa
       this._encryptionKeyValue.internalValue = undefined;
       this._secretValue.internalValue = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -4436,11 +4436,11 @@ export class IntegrationConnectorsConnectionEventingConfigAuthConfigAdditionalVa
   }
 
   // boolean_value - computed: false, optional: true, required: false
-  private _booleanValue?: boolean | cdktf.IResolvable; 
+  private _booleanValue?: boolean | cdktn.IResolvable; 
   public get booleanValue() {
     return this.getBooleanAttribute('boolean_value');
   }
-  public set booleanValue(value: boolean | cdktf.IResolvable) {
+  public set booleanValue(value: boolean | cdktn.IResolvable) {
     this._booleanValue = value;
   }
   public resetBooleanValue() {
@@ -4529,15 +4529,15 @@ export class IntegrationConnectorsConnectionEventingConfigAuthConfigAdditionalVa
   }
 }
 
-export class IntegrationConnectorsConnectionEventingConfigAuthConfigAdditionalVariableList extends cdktf.ComplexList {
-  public internalValue? : IntegrationConnectorsConnectionEventingConfigAuthConfigAdditionalVariable[] | cdktf.IResolvable
+export class IntegrationConnectorsConnectionEventingConfigAuthConfigAdditionalVariableList extends cdktn.ComplexList {
+  public internalValue? : IntegrationConnectorsConnectionEventingConfigAuthConfigAdditionalVariable[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -4561,24 +4561,24 @@ export interface IntegrationConnectorsConnectionEventingConfigAuthConfigUserPass
 }
 
 export function integrationConnectorsConnectionEventingConfigAuthConfigUserPasswordPasswordToTerraform(struct?: IntegrationConnectorsConnectionEventingConfigAuthConfigUserPasswordPasswordOutputReference | IntegrationConnectorsConnectionEventingConfigAuthConfigUserPasswordPassword): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    secret_version: cdktf.stringToTerraform(struct!.secretVersion),
+    secret_version: cdktn.stringToTerraform(struct!.secretVersion),
   }
 }
 
 
 export function integrationConnectorsConnectionEventingConfigAuthConfigUserPasswordPasswordToHclTerraform(struct?: IntegrationConnectorsConnectionEventingConfigAuthConfigUserPasswordPasswordOutputReference | IntegrationConnectorsConnectionEventingConfigAuthConfigUserPasswordPassword): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     secret_version: {
-      value: cdktf.stringToHclTerraform(struct!.secretVersion),
+      value: cdktn.stringToHclTerraform(struct!.secretVersion),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -4589,14 +4589,14 @@ export function integrationConnectorsConnectionEventingConfigAuthConfigUserPassw
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class IntegrationConnectorsConnectionEventingConfigAuthConfigUserPasswordPasswordOutputReference extends cdktf.ComplexObject {
+export class IntegrationConnectorsConnectionEventingConfigAuthConfigUserPasswordPasswordOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -4650,25 +4650,25 @@ export interface IntegrationConnectorsConnectionEventingConfigAuthConfigUserPass
 }
 
 export function integrationConnectorsConnectionEventingConfigAuthConfigUserPasswordToTerraform(struct?: IntegrationConnectorsConnectionEventingConfigAuthConfigUserPasswordOutputReference | IntegrationConnectorsConnectionEventingConfigAuthConfigUserPassword): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    username: cdktf.stringToTerraform(struct!.username),
+    username: cdktn.stringToTerraform(struct!.username),
     password: integrationConnectorsConnectionEventingConfigAuthConfigUserPasswordPasswordToTerraform(struct!.password),
   }
 }
 
 
 export function integrationConnectorsConnectionEventingConfigAuthConfigUserPasswordToHclTerraform(struct?: IntegrationConnectorsConnectionEventingConfigAuthConfigUserPasswordOutputReference | IntegrationConnectorsConnectionEventingConfigAuthConfigUserPassword): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     username: {
-      value: cdktf.stringToHclTerraform(struct!.username),
+      value: cdktn.stringToHclTerraform(struct!.username),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -4685,14 +4685,14 @@ export function integrationConnectorsConnectionEventingConfigAuthConfigUserPassw
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class IntegrationConnectorsConnectionEventingConfigAuthConfigUserPasswordOutputReference extends cdktf.ComplexObject {
+export class IntegrationConnectorsConnectionEventingConfigAuthConfigUserPasswordOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -4773,7 +4773,7 @@ export interface IntegrationConnectorsConnectionEventingConfigAuthConfig {
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/integration_connectors_connection#additional_variable IntegrationConnectorsConnection#additional_variable}
   */
-  readonly additionalVariable?: IntegrationConnectorsConnectionEventingConfigAuthConfigAdditionalVariable[] | cdktf.IResolvable;
+  readonly additionalVariable?: IntegrationConnectorsConnectionEventingConfigAuthConfigAdditionalVariable[] | cdktn.IResolvable;
   /**
   * user_password block
   *
@@ -4783,39 +4783,39 @@ export interface IntegrationConnectorsConnectionEventingConfigAuthConfig {
 }
 
 export function integrationConnectorsConnectionEventingConfigAuthConfigToTerraform(struct?: IntegrationConnectorsConnectionEventingConfigAuthConfigOutputReference | IntegrationConnectorsConnectionEventingConfigAuthConfig): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    auth_key: cdktf.stringToTerraform(struct!.authKey),
-    auth_type: cdktf.stringToTerraform(struct!.authType),
-    additional_variable: cdktf.listMapper(integrationConnectorsConnectionEventingConfigAuthConfigAdditionalVariableToTerraform, true)(struct!.additionalVariable),
+    auth_key: cdktn.stringToTerraform(struct!.authKey),
+    auth_type: cdktn.stringToTerraform(struct!.authType),
+    additional_variable: cdktn.listMapper(integrationConnectorsConnectionEventingConfigAuthConfigAdditionalVariableToTerraform, true)(struct!.additionalVariable),
     user_password: integrationConnectorsConnectionEventingConfigAuthConfigUserPasswordToTerraform(struct!.userPassword),
   }
 }
 
 
 export function integrationConnectorsConnectionEventingConfigAuthConfigToHclTerraform(struct?: IntegrationConnectorsConnectionEventingConfigAuthConfigOutputReference | IntegrationConnectorsConnectionEventingConfigAuthConfig): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     auth_key: {
-      value: cdktf.stringToHclTerraform(struct!.authKey),
+      value: cdktn.stringToHclTerraform(struct!.authKey),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     auth_type: {
-      value: cdktf.stringToHclTerraform(struct!.authType),
+      value: cdktn.stringToHclTerraform(struct!.authType),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     additional_variable: {
-      value: cdktf.listMapperHcl(integrationConnectorsConnectionEventingConfigAuthConfigAdditionalVariableToHclTerraform, true)(struct!.additionalVariable),
+      value: cdktn.listMapperHcl(integrationConnectorsConnectionEventingConfigAuthConfigAdditionalVariableToHclTerraform, true)(struct!.additionalVariable),
       isBlock: true,
       type: "list",
       storageClassType: "IntegrationConnectorsConnectionEventingConfigAuthConfigAdditionalVariableList",
@@ -4832,14 +4832,14 @@ export function integrationConnectorsConnectionEventingConfigAuthConfigToHclTerr
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class IntegrationConnectorsConnectionEventingConfigAuthConfigOutputReference extends cdktf.ComplexObject {
+export class IntegrationConnectorsConnectionEventingConfigAuthConfigOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -4916,7 +4916,7 @@ export class IntegrationConnectorsConnectionEventingConfigAuthConfigOutputRefere
   public get additionalVariable() {
     return this._additionalVariable;
   }
-  public putAdditionalVariable(value: IntegrationConnectorsConnectionEventingConfigAuthConfigAdditionalVariable[] | cdktf.IResolvable) {
+  public putAdditionalVariable(value: IntegrationConnectorsConnectionEventingConfigAuthConfigAdditionalVariable[] | cdktn.IResolvable) {
     this._additionalVariable.internalValue = value;
   }
   public resetAdditionalVariable() {
@@ -4961,39 +4961,39 @@ export interface IntegrationConnectorsConnectionEventingConfigRegistrationDestin
   readonly serviceAttachment?: string;
 }
 
-export function integrationConnectorsConnectionEventingConfigRegistrationDestinationConfigDestinationToTerraform(struct?: IntegrationConnectorsConnectionEventingConfigRegistrationDestinationConfigDestination | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function integrationConnectorsConnectionEventingConfigRegistrationDestinationConfigDestinationToTerraform(struct?: IntegrationConnectorsConnectionEventingConfigRegistrationDestinationConfigDestination | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    host: cdktf.stringToTerraform(struct!.host),
-    port: cdktf.numberToTerraform(struct!.port),
-    service_attachment: cdktf.stringToTerraform(struct!.serviceAttachment),
+    host: cdktn.stringToTerraform(struct!.host),
+    port: cdktn.numberToTerraform(struct!.port),
+    service_attachment: cdktn.stringToTerraform(struct!.serviceAttachment),
   }
 }
 
 
-export function integrationConnectorsConnectionEventingConfigRegistrationDestinationConfigDestinationToHclTerraform(struct?: IntegrationConnectorsConnectionEventingConfigRegistrationDestinationConfigDestination | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function integrationConnectorsConnectionEventingConfigRegistrationDestinationConfigDestinationToHclTerraform(struct?: IntegrationConnectorsConnectionEventingConfigRegistrationDestinationConfigDestination | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     host: {
-      value: cdktf.stringToHclTerraform(struct!.host),
+      value: cdktn.stringToHclTerraform(struct!.host),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     port: {
-      value: cdktf.numberToHclTerraform(struct!.port),
+      value: cdktn.numberToHclTerraform(struct!.port),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     service_attachment: {
-      value: cdktf.stringToHclTerraform(struct!.serviceAttachment),
+      value: cdktn.stringToHclTerraform(struct!.serviceAttachment),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -5004,9 +5004,9 @@ export function integrationConnectorsConnectionEventingConfigRegistrationDestina
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class IntegrationConnectorsConnectionEventingConfigRegistrationDestinationConfigDestinationOutputReference extends cdktf.ComplexObject {
+export class IntegrationConnectorsConnectionEventingConfigRegistrationDestinationConfigDestinationOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -5014,11 +5014,11 @@ export class IntegrationConnectorsConnectionEventingConfigRegistrationDestinatio
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): IntegrationConnectorsConnectionEventingConfigRegistrationDestinationConfigDestination | cdktf.IResolvable | undefined {
+  public get internalValue(): IntegrationConnectorsConnectionEventingConfigRegistrationDestinationConfigDestination | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -5039,7 +5039,7 @@ export class IntegrationConnectorsConnectionEventingConfigRegistrationDestinatio
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: IntegrationConnectorsConnectionEventingConfigRegistrationDestinationConfigDestination | cdktf.IResolvable | undefined) {
+  public set internalValue(value: IntegrationConnectorsConnectionEventingConfigRegistrationDestinationConfigDestination | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -5047,7 +5047,7 @@ export class IntegrationConnectorsConnectionEventingConfigRegistrationDestinatio
       this._port = undefined;
       this._serviceAttachment = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -5109,15 +5109,15 @@ export class IntegrationConnectorsConnectionEventingConfigRegistrationDestinatio
   }
 }
 
-export class IntegrationConnectorsConnectionEventingConfigRegistrationDestinationConfigDestinationList extends cdktf.ComplexList {
-  public internalValue? : IntegrationConnectorsConnectionEventingConfigRegistrationDestinationConfigDestination[] | cdktf.IResolvable
+export class IntegrationConnectorsConnectionEventingConfigRegistrationDestinationConfigDestinationList extends cdktn.ComplexList {
+  public internalValue? : IntegrationConnectorsConnectionEventingConfigRegistrationDestinationConfigDestination[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -5140,35 +5140,35 @@ export interface IntegrationConnectorsConnectionEventingConfigRegistrationDestin
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/integration_connectors_connection#destination IntegrationConnectorsConnection#destination}
   */
-  readonly destination?: IntegrationConnectorsConnectionEventingConfigRegistrationDestinationConfigDestination[] | cdktf.IResolvable;
+  readonly destination?: IntegrationConnectorsConnectionEventingConfigRegistrationDestinationConfigDestination[] | cdktn.IResolvable;
 }
 
 export function integrationConnectorsConnectionEventingConfigRegistrationDestinationConfigToTerraform(struct?: IntegrationConnectorsConnectionEventingConfigRegistrationDestinationConfigOutputReference | IntegrationConnectorsConnectionEventingConfigRegistrationDestinationConfig): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    key: cdktf.stringToTerraform(struct!.key),
-    destination: cdktf.listMapper(integrationConnectorsConnectionEventingConfigRegistrationDestinationConfigDestinationToTerraform, true)(struct!.destination),
+    key: cdktn.stringToTerraform(struct!.key),
+    destination: cdktn.listMapper(integrationConnectorsConnectionEventingConfigRegistrationDestinationConfigDestinationToTerraform, true)(struct!.destination),
   }
 }
 
 
 export function integrationConnectorsConnectionEventingConfigRegistrationDestinationConfigToHclTerraform(struct?: IntegrationConnectorsConnectionEventingConfigRegistrationDestinationConfigOutputReference | IntegrationConnectorsConnectionEventingConfigRegistrationDestinationConfig): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     key: {
-      value: cdktf.stringToHclTerraform(struct!.key),
+      value: cdktn.stringToHclTerraform(struct!.key),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     destination: {
-      value: cdktf.listMapperHcl(integrationConnectorsConnectionEventingConfigRegistrationDestinationConfigDestinationToHclTerraform, true)(struct!.destination),
+      value: cdktn.listMapperHcl(integrationConnectorsConnectionEventingConfigRegistrationDestinationConfigDestinationToHclTerraform, true)(struct!.destination),
       isBlock: true,
       type: "list",
       storageClassType: "IntegrationConnectorsConnectionEventingConfigRegistrationDestinationConfigDestinationList",
@@ -5179,14 +5179,14 @@ export function integrationConnectorsConnectionEventingConfigRegistrationDestina
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class IntegrationConnectorsConnectionEventingConfigRegistrationDestinationConfigOutputReference extends cdktf.ComplexObject {
+export class IntegrationConnectorsConnectionEventingConfigRegistrationDestinationConfigOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -5238,7 +5238,7 @@ export class IntegrationConnectorsConnectionEventingConfigRegistrationDestinatio
   public get destination() {
     return this._destination;
   }
-  public putDestination(value: IntegrationConnectorsConnectionEventingConfigRegistrationDestinationConfigDestination[] | cdktf.IResolvable) {
+  public putDestination(value: IntegrationConnectorsConnectionEventingConfigRegistrationDestinationConfigDestination[] | cdktn.IResolvable) {
     this._destination.internalValue = value;
   }
   public resetDestination() {
@@ -5255,13 +5255,13 @@ export interface IntegrationConnectorsConnectionEventingConfig {
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/integration_connectors_connection#enrichment_enabled IntegrationConnectorsConnection#enrichment_enabled}
   */
-  readonly enrichmentEnabled?: boolean | cdktf.IResolvable;
+  readonly enrichmentEnabled?: boolean | cdktn.IResolvable;
   /**
   * additional_variable block
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/integration_connectors_connection#additional_variable IntegrationConnectorsConnection#additional_variable}
   */
-  readonly additionalVariable?: IntegrationConnectorsConnectionEventingConfigAdditionalVariable[] | cdktf.IResolvable;
+  readonly additionalVariable?: IntegrationConnectorsConnectionEventingConfigAdditionalVariable[] | cdktn.IResolvable;
   /**
   * auth_config block
   *
@@ -5277,13 +5277,13 @@ export interface IntegrationConnectorsConnectionEventingConfig {
 }
 
 export function integrationConnectorsConnectionEventingConfigToTerraform(struct?: IntegrationConnectorsConnectionEventingConfigOutputReference | IntegrationConnectorsConnectionEventingConfig): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    enrichment_enabled: cdktf.booleanToTerraform(struct!.enrichmentEnabled),
-    additional_variable: cdktf.listMapper(integrationConnectorsConnectionEventingConfigAdditionalVariableToTerraform, true)(struct!.additionalVariable),
+    enrichment_enabled: cdktn.booleanToTerraform(struct!.enrichmentEnabled),
+    additional_variable: cdktn.listMapper(integrationConnectorsConnectionEventingConfigAdditionalVariableToTerraform, true)(struct!.additionalVariable),
     auth_config: integrationConnectorsConnectionEventingConfigAuthConfigToTerraform(struct!.authConfig),
     registration_destination_config: integrationConnectorsConnectionEventingConfigRegistrationDestinationConfigToTerraform(struct!.registrationDestinationConfig),
   }
@@ -5291,19 +5291,19 @@ export function integrationConnectorsConnectionEventingConfigToTerraform(struct?
 
 
 export function integrationConnectorsConnectionEventingConfigToHclTerraform(struct?: IntegrationConnectorsConnectionEventingConfigOutputReference | IntegrationConnectorsConnectionEventingConfig): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     enrichment_enabled: {
-      value: cdktf.booleanToHclTerraform(struct!.enrichmentEnabled),
+      value: cdktn.booleanToHclTerraform(struct!.enrichmentEnabled),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     additional_variable: {
-      value: cdktf.listMapperHcl(integrationConnectorsConnectionEventingConfigAdditionalVariableToHclTerraform, true)(struct!.additionalVariable),
+      value: cdktn.listMapperHcl(integrationConnectorsConnectionEventingConfigAdditionalVariableToHclTerraform, true)(struct!.additionalVariable),
       isBlock: true,
       type: "list",
       storageClassType: "IntegrationConnectorsConnectionEventingConfigAdditionalVariableList",
@@ -5326,14 +5326,14 @@ export function integrationConnectorsConnectionEventingConfigToHclTerraform(stru
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class IntegrationConnectorsConnectionEventingConfigOutputReference extends cdktf.ComplexObject {
+export class IntegrationConnectorsConnectionEventingConfigOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -5377,11 +5377,11 @@ export class IntegrationConnectorsConnectionEventingConfigOutputReference extend
   }
 
   // enrichment_enabled - computed: false, optional: true, required: false
-  private _enrichmentEnabled?: boolean | cdktf.IResolvable; 
+  private _enrichmentEnabled?: boolean | cdktn.IResolvable; 
   public get enrichmentEnabled() {
     return this.getBooleanAttribute('enrichment_enabled');
   }
-  public set enrichmentEnabled(value: boolean | cdktf.IResolvable) {
+  public set enrichmentEnabled(value: boolean | cdktn.IResolvable) {
     this._enrichmentEnabled = value;
   }
   public resetEnrichmentEnabled() {
@@ -5397,7 +5397,7 @@ export class IntegrationConnectorsConnectionEventingConfigOutputReference extend
   public get additionalVariable() {
     return this._additionalVariable;
   }
-  public putAdditionalVariable(value: IntegrationConnectorsConnectionEventingConfigAdditionalVariable[] | cdktf.IResolvable) {
+  public putAdditionalVariable(value: IntegrationConnectorsConnectionEventingConfigAdditionalVariable[] | cdktn.IResolvable) {
     this._additionalVariable.internalValue = value;
   }
   public resetAdditionalVariable() {
@@ -5443,7 +5443,7 @@ export interface IntegrationConnectorsConnectionLockConfig {
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/integration_connectors_connection#locked IntegrationConnectorsConnection#locked}
   */
-  readonly locked: boolean | cdktf.IResolvable;
+  readonly locked: boolean | cdktn.IResolvable;
   /**
   * Describes why a connection is locked.
   *
@@ -5453,31 +5453,31 @@ export interface IntegrationConnectorsConnectionLockConfig {
 }
 
 export function integrationConnectorsConnectionLockConfigToTerraform(struct?: IntegrationConnectorsConnectionLockConfigOutputReference | IntegrationConnectorsConnectionLockConfig): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    locked: cdktf.booleanToTerraform(struct!.locked),
-    reason: cdktf.stringToTerraform(struct!.reason),
+    locked: cdktn.booleanToTerraform(struct!.locked),
+    reason: cdktn.stringToTerraform(struct!.reason),
   }
 }
 
 
 export function integrationConnectorsConnectionLockConfigToHclTerraform(struct?: IntegrationConnectorsConnectionLockConfigOutputReference | IntegrationConnectorsConnectionLockConfig): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     locked: {
-      value: cdktf.booleanToHclTerraform(struct!.locked),
+      value: cdktn.booleanToHclTerraform(struct!.locked),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     reason: {
-      value: cdktf.stringToHclTerraform(struct!.reason),
+      value: cdktn.stringToHclTerraform(struct!.reason),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -5488,14 +5488,14 @@ export function integrationConnectorsConnectionLockConfigToHclTerraform(struct?:
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class IntegrationConnectorsConnectionLockConfigOutputReference extends cdktf.ComplexObject {
+export class IntegrationConnectorsConnectionLockConfigOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -5527,11 +5527,11 @@ export class IntegrationConnectorsConnectionLockConfigOutputReference extends cd
   }
 
   // locked - computed: false, optional: false, required: true
-  private _locked?: boolean | cdktf.IResolvable; 
+  private _locked?: boolean | cdktn.IResolvable; 
   public get locked() {
     return this.getBooleanAttribute('locked');
   }
-  public set locked(value: boolean | cdktf.IResolvable) {
+  public set locked(value: boolean | cdktn.IResolvable) {
     this._locked = value;
   }
   // Temporarily expose input value. Use with caution.
@@ -5561,7 +5561,7 @@ export interface IntegrationConnectorsConnectionLogConfig {
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/integration_connectors_connection#enabled IntegrationConnectorsConnection#enabled}
   */
-  readonly enabled: boolean | cdktf.IResolvable;
+  readonly enabled: boolean | cdktn.IResolvable;
   /**
   * Log configuration level. Possible values: ["LOG_LEVEL_UNSPECIFIED", "ERROR", "INFO", "DEBUG"]
   *
@@ -5571,31 +5571,31 @@ export interface IntegrationConnectorsConnectionLogConfig {
 }
 
 export function integrationConnectorsConnectionLogConfigToTerraform(struct?: IntegrationConnectorsConnectionLogConfigOutputReference | IntegrationConnectorsConnectionLogConfig): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    enabled: cdktf.booleanToTerraform(struct!.enabled),
-    level: cdktf.stringToTerraform(struct!.level),
+    enabled: cdktn.booleanToTerraform(struct!.enabled),
+    level: cdktn.stringToTerraform(struct!.level),
   }
 }
 
 
 export function integrationConnectorsConnectionLogConfigToHclTerraform(struct?: IntegrationConnectorsConnectionLogConfigOutputReference | IntegrationConnectorsConnectionLogConfig): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     enabled: {
-      value: cdktf.booleanToHclTerraform(struct!.enabled),
+      value: cdktn.booleanToHclTerraform(struct!.enabled),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     level: {
-      value: cdktf.stringToHclTerraform(struct!.level),
+      value: cdktn.stringToHclTerraform(struct!.level),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -5606,14 +5606,14 @@ export function integrationConnectorsConnectionLogConfigToHclTerraform(struct?: 
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class IntegrationConnectorsConnectionLogConfigOutputReference extends cdktf.ComplexObject {
+export class IntegrationConnectorsConnectionLogConfigOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -5645,11 +5645,11 @@ export class IntegrationConnectorsConnectionLogConfigOutputReference extends cdk
   }
 
   // enabled - computed: false, optional: false, required: true
-  private _enabled?: boolean | cdktf.IResolvable; 
+  private _enabled?: boolean | cdktn.IResolvable; 
   public get enabled() {
     return this.getBooleanAttribute('enabled');
   }
-  public set enabled(value: boolean | cdktf.IResolvable) {
+  public set enabled(value: boolean | cdktn.IResolvable) {
     this._enabled = value;
   }
   // Temporarily expose input value. Use with caution.
@@ -5689,31 +5689,31 @@ export interface IntegrationConnectorsConnectionNodeConfig {
 }
 
 export function integrationConnectorsConnectionNodeConfigToTerraform(struct?: IntegrationConnectorsConnectionNodeConfigOutputReference | IntegrationConnectorsConnectionNodeConfig): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    max_node_count: cdktf.numberToTerraform(struct!.maxNodeCount),
-    min_node_count: cdktf.numberToTerraform(struct!.minNodeCount),
+    max_node_count: cdktn.numberToTerraform(struct!.maxNodeCount),
+    min_node_count: cdktn.numberToTerraform(struct!.minNodeCount),
   }
 }
 
 
 export function integrationConnectorsConnectionNodeConfigToHclTerraform(struct?: IntegrationConnectorsConnectionNodeConfigOutputReference | IntegrationConnectorsConnectionNodeConfig): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     max_node_count: {
-      value: cdktf.numberToHclTerraform(struct!.maxNodeCount),
+      value: cdktn.numberToHclTerraform(struct!.maxNodeCount),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     min_node_count: {
-      value: cdktf.numberToHclTerraform(struct!.minNodeCount),
+      value: cdktn.numberToHclTerraform(struct!.minNodeCount),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
@@ -5724,14 +5724,14 @@ export function integrationConnectorsConnectionNodeConfigToHclTerraform(struct?:
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class IntegrationConnectorsConnectionNodeConfigOutputReference extends cdktf.ComplexObject {
+export class IntegrationConnectorsConnectionNodeConfigOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -5814,31 +5814,31 @@ export interface IntegrationConnectorsConnectionSslConfigAdditionalVariableEncry
 }
 
 export function integrationConnectorsConnectionSslConfigAdditionalVariableEncryptionKeyValueToTerraform(struct?: IntegrationConnectorsConnectionSslConfigAdditionalVariableEncryptionKeyValueOutputReference | IntegrationConnectorsConnectionSslConfigAdditionalVariableEncryptionKeyValue): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    kms_key_name: cdktf.stringToTerraform(struct!.kmsKeyName),
-    type: cdktf.stringToTerraform(struct!.type),
+    kms_key_name: cdktn.stringToTerraform(struct!.kmsKeyName),
+    type: cdktn.stringToTerraform(struct!.type),
   }
 }
 
 
 export function integrationConnectorsConnectionSslConfigAdditionalVariableEncryptionKeyValueToHclTerraform(struct?: IntegrationConnectorsConnectionSslConfigAdditionalVariableEncryptionKeyValueOutputReference | IntegrationConnectorsConnectionSslConfigAdditionalVariableEncryptionKeyValue): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     kms_key_name: {
-      value: cdktf.stringToHclTerraform(struct!.kmsKeyName),
+      value: cdktn.stringToHclTerraform(struct!.kmsKeyName),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     type: {
-      value: cdktf.stringToHclTerraform(struct!.type),
+      value: cdktn.stringToHclTerraform(struct!.type),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -5849,14 +5849,14 @@ export function integrationConnectorsConnectionSslConfigAdditionalVariableEncryp
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class IntegrationConnectorsConnectionSslConfigAdditionalVariableEncryptionKeyValueOutputReference extends cdktf.ComplexObject {
+export class IntegrationConnectorsConnectionSslConfigAdditionalVariableEncryptionKeyValueOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -5929,24 +5929,24 @@ export interface IntegrationConnectorsConnectionSslConfigAdditionalVariableSecre
 }
 
 export function integrationConnectorsConnectionSslConfigAdditionalVariableSecretValueToTerraform(struct?: IntegrationConnectorsConnectionSslConfigAdditionalVariableSecretValueOutputReference | IntegrationConnectorsConnectionSslConfigAdditionalVariableSecretValue): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    secret_version: cdktf.stringToTerraform(struct!.secretVersion),
+    secret_version: cdktn.stringToTerraform(struct!.secretVersion),
   }
 }
 
 
 export function integrationConnectorsConnectionSslConfigAdditionalVariableSecretValueToHclTerraform(struct?: IntegrationConnectorsConnectionSslConfigAdditionalVariableSecretValueOutputReference | IntegrationConnectorsConnectionSslConfigAdditionalVariableSecretValue): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     secret_version: {
-      value: cdktf.stringToHclTerraform(struct!.secretVersion),
+      value: cdktn.stringToHclTerraform(struct!.secretVersion),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -5957,14 +5957,14 @@ export function integrationConnectorsConnectionSslConfigAdditionalVariableSecret
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class IntegrationConnectorsConnectionSslConfigAdditionalVariableSecretValueOutputReference extends cdktf.ComplexObject {
+export class IntegrationConnectorsConnectionSslConfigAdditionalVariableSecretValueOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -6008,7 +6008,7 @@ export interface IntegrationConnectorsConnectionSslConfigAdditionalVariable {
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/integration_connectors_connection#boolean_value IntegrationConnectorsConnection#boolean_value}
   */
-  readonly booleanValue?: boolean | cdktf.IResolvable;
+  readonly booleanValue?: boolean | cdktn.IResolvable;
   /**
   * Integer Value of configVariable.
   *
@@ -6041,48 +6041,48 @@ export interface IntegrationConnectorsConnectionSslConfigAdditionalVariable {
   readonly secretValue?: IntegrationConnectorsConnectionSslConfigAdditionalVariableSecretValue;
 }
 
-export function integrationConnectorsConnectionSslConfigAdditionalVariableToTerraform(struct?: IntegrationConnectorsConnectionSslConfigAdditionalVariable | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function integrationConnectorsConnectionSslConfigAdditionalVariableToTerraform(struct?: IntegrationConnectorsConnectionSslConfigAdditionalVariable | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    boolean_value: cdktf.booleanToTerraform(struct!.booleanValue),
-    integer_value: cdktf.numberToTerraform(struct!.integerValue),
-    key: cdktf.stringToTerraform(struct!.key),
-    string_value: cdktf.stringToTerraform(struct!.stringValue),
+    boolean_value: cdktn.booleanToTerraform(struct!.booleanValue),
+    integer_value: cdktn.numberToTerraform(struct!.integerValue),
+    key: cdktn.stringToTerraform(struct!.key),
+    string_value: cdktn.stringToTerraform(struct!.stringValue),
     encryption_key_value: integrationConnectorsConnectionSslConfigAdditionalVariableEncryptionKeyValueToTerraform(struct!.encryptionKeyValue),
     secret_value: integrationConnectorsConnectionSslConfigAdditionalVariableSecretValueToTerraform(struct!.secretValue),
   }
 }
 
 
-export function integrationConnectorsConnectionSslConfigAdditionalVariableToHclTerraform(struct?: IntegrationConnectorsConnectionSslConfigAdditionalVariable | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function integrationConnectorsConnectionSslConfigAdditionalVariableToHclTerraform(struct?: IntegrationConnectorsConnectionSslConfigAdditionalVariable | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     boolean_value: {
-      value: cdktf.booleanToHclTerraform(struct!.booleanValue),
+      value: cdktn.booleanToHclTerraform(struct!.booleanValue),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     integer_value: {
-      value: cdktf.numberToHclTerraform(struct!.integerValue),
+      value: cdktn.numberToHclTerraform(struct!.integerValue),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     key: {
-      value: cdktf.stringToHclTerraform(struct!.key),
+      value: cdktn.stringToHclTerraform(struct!.key),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     string_value: {
-      value: cdktf.stringToHclTerraform(struct!.stringValue),
+      value: cdktn.stringToHclTerraform(struct!.stringValue),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -6105,9 +6105,9 @@ export function integrationConnectorsConnectionSslConfigAdditionalVariableToHclT
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class IntegrationConnectorsConnectionSslConfigAdditionalVariableOutputReference extends cdktf.ComplexObject {
+export class IntegrationConnectorsConnectionSslConfigAdditionalVariableOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -6115,11 +6115,11 @@ export class IntegrationConnectorsConnectionSslConfigAdditionalVariableOutputRef
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): IntegrationConnectorsConnectionSslConfigAdditionalVariable | cdktf.IResolvable | undefined {
+  public get internalValue(): IntegrationConnectorsConnectionSslConfigAdditionalVariable | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -6152,7 +6152,7 @@ export class IntegrationConnectorsConnectionSslConfigAdditionalVariableOutputRef
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: IntegrationConnectorsConnectionSslConfigAdditionalVariable | cdktf.IResolvable | undefined) {
+  public set internalValue(value: IntegrationConnectorsConnectionSslConfigAdditionalVariable | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -6163,7 +6163,7 @@ export class IntegrationConnectorsConnectionSslConfigAdditionalVariableOutputRef
       this._encryptionKeyValue.internalValue = undefined;
       this._secretValue.internalValue = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -6180,11 +6180,11 @@ export class IntegrationConnectorsConnectionSslConfigAdditionalVariableOutputRef
   }
 
   // boolean_value - computed: false, optional: true, required: false
-  private _booleanValue?: boolean | cdktf.IResolvable; 
+  private _booleanValue?: boolean | cdktn.IResolvable; 
   public get booleanValue() {
     return this.getBooleanAttribute('boolean_value');
   }
-  public set booleanValue(value: boolean | cdktf.IResolvable) {
+  public set booleanValue(value: boolean | cdktn.IResolvable) {
     this._booleanValue = value;
   }
   public resetBooleanValue() {
@@ -6273,15 +6273,15 @@ export class IntegrationConnectorsConnectionSslConfigAdditionalVariableOutputRef
   }
 }
 
-export class IntegrationConnectorsConnectionSslConfigAdditionalVariableList extends cdktf.ComplexList {
-  public internalValue? : IntegrationConnectorsConnectionSslConfigAdditionalVariable[] | cdktf.IResolvable
+export class IntegrationConnectorsConnectionSslConfigAdditionalVariableList extends cdktn.ComplexList {
+  public internalValue? : IntegrationConnectorsConnectionSslConfigAdditionalVariable[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -6302,24 +6302,24 @@ export interface IntegrationConnectorsConnectionSslConfigClientCertificate {
 }
 
 export function integrationConnectorsConnectionSslConfigClientCertificateToTerraform(struct?: IntegrationConnectorsConnectionSslConfigClientCertificateOutputReference | IntegrationConnectorsConnectionSslConfigClientCertificate): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    secret_version: cdktf.stringToTerraform(struct!.secretVersion),
+    secret_version: cdktn.stringToTerraform(struct!.secretVersion),
   }
 }
 
 
 export function integrationConnectorsConnectionSslConfigClientCertificateToHclTerraform(struct?: IntegrationConnectorsConnectionSslConfigClientCertificateOutputReference | IntegrationConnectorsConnectionSslConfigClientCertificate): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     secret_version: {
-      value: cdktf.stringToHclTerraform(struct!.secretVersion),
+      value: cdktn.stringToHclTerraform(struct!.secretVersion),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -6330,14 +6330,14 @@ export function integrationConnectorsConnectionSslConfigClientCertificateToHclTe
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class IntegrationConnectorsConnectionSslConfigClientCertificateOutputReference extends cdktf.ComplexObject {
+export class IntegrationConnectorsConnectionSslConfigClientCertificateOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -6385,24 +6385,24 @@ export interface IntegrationConnectorsConnectionSslConfigClientPrivateKey {
 }
 
 export function integrationConnectorsConnectionSslConfigClientPrivateKeyToTerraform(struct?: IntegrationConnectorsConnectionSslConfigClientPrivateKeyOutputReference | IntegrationConnectorsConnectionSslConfigClientPrivateKey): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    secret_version: cdktf.stringToTerraform(struct!.secretVersion),
+    secret_version: cdktn.stringToTerraform(struct!.secretVersion),
   }
 }
 
 
 export function integrationConnectorsConnectionSslConfigClientPrivateKeyToHclTerraform(struct?: IntegrationConnectorsConnectionSslConfigClientPrivateKeyOutputReference | IntegrationConnectorsConnectionSslConfigClientPrivateKey): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     secret_version: {
-      value: cdktf.stringToHclTerraform(struct!.secretVersion),
+      value: cdktn.stringToHclTerraform(struct!.secretVersion),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -6413,14 +6413,14 @@ export function integrationConnectorsConnectionSslConfigClientPrivateKeyToHclTer
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class IntegrationConnectorsConnectionSslConfigClientPrivateKeyOutputReference extends cdktf.ComplexObject {
+export class IntegrationConnectorsConnectionSslConfigClientPrivateKeyOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -6468,24 +6468,24 @@ export interface IntegrationConnectorsConnectionSslConfigClientPrivateKeyPass {
 }
 
 export function integrationConnectorsConnectionSslConfigClientPrivateKeyPassToTerraform(struct?: IntegrationConnectorsConnectionSslConfigClientPrivateKeyPassOutputReference | IntegrationConnectorsConnectionSslConfigClientPrivateKeyPass): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    secret_version: cdktf.stringToTerraform(struct!.secretVersion),
+    secret_version: cdktn.stringToTerraform(struct!.secretVersion),
   }
 }
 
 
 export function integrationConnectorsConnectionSslConfigClientPrivateKeyPassToHclTerraform(struct?: IntegrationConnectorsConnectionSslConfigClientPrivateKeyPassOutputReference | IntegrationConnectorsConnectionSslConfigClientPrivateKeyPass): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     secret_version: {
-      value: cdktf.stringToHclTerraform(struct!.secretVersion),
+      value: cdktn.stringToHclTerraform(struct!.secretVersion),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -6496,14 +6496,14 @@ export function integrationConnectorsConnectionSslConfigClientPrivateKeyPassToHc
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class IntegrationConnectorsConnectionSslConfigClientPrivateKeyPassOutputReference extends cdktf.ComplexObject {
+export class IntegrationConnectorsConnectionSslConfigClientPrivateKeyPassOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -6551,24 +6551,24 @@ export interface IntegrationConnectorsConnectionSslConfigPrivateServerCertificat
 }
 
 export function integrationConnectorsConnectionSslConfigPrivateServerCertificateToTerraform(struct?: IntegrationConnectorsConnectionSslConfigPrivateServerCertificateOutputReference | IntegrationConnectorsConnectionSslConfigPrivateServerCertificate): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    secret_version: cdktf.stringToTerraform(struct!.secretVersion),
+    secret_version: cdktn.stringToTerraform(struct!.secretVersion),
   }
 }
 
 
 export function integrationConnectorsConnectionSslConfigPrivateServerCertificateToHclTerraform(struct?: IntegrationConnectorsConnectionSslConfigPrivateServerCertificateOutputReference | IntegrationConnectorsConnectionSslConfigPrivateServerCertificate): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     secret_version: {
-      value: cdktf.stringToHclTerraform(struct!.secretVersion),
+      value: cdktn.stringToHclTerraform(struct!.secretVersion),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -6579,14 +6579,14 @@ export function integrationConnectorsConnectionSslConfigPrivateServerCertificate
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class IntegrationConnectorsConnectionSslConfigPrivateServerCertificateOutputReference extends cdktf.ComplexObject {
+export class IntegrationConnectorsConnectionSslConfigPrivateServerCertificateOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -6654,13 +6654,13 @@ export interface IntegrationConnectorsConnectionSslConfig {
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/integration_connectors_connection#use_ssl IntegrationConnectorsConnection#use_ssl}
   */
-  readonly useSsl?: boolean | cdktf.IResolvable;
+  readonly useSsl?: boolean | cdktn.IResolvable;
   /**
   * additional_variable block
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/integration_connectors_connection#additional_variable IntegrationConnectorsConnection#additional_variable}
   */
-  readonly additionalVariable?: IntegrationConnectorsConnectionSslConfigAdditionalVariable[] | cdktf.IResolvable;
+  readonly additionalVariable?: IntegrationConnectorsConnectionSslConfigAdditionalVariable[] | cdktn.IResolvable;
   /**
   * client_certificate block
   *
@@ -6688,17 +6688,17 @@ export interface IntegrationConnectorsConnectionSslConfig {
 }
 
 export function integrationConnectorsConnectionSslConfigToTerraform(struct?: IntegrationConnectorsConnectionSslConfigOutputReference | IntegrationConnectorsConnectionSslConfig): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    client_cert_type: cdktf.stringToTerraform(struct!.clientCertType),
-    server_cert_type: cdktf.stringToTerraform(struct!.serverCertType),
-    trust_model: cdktf.stringToTerraform(struct!.trustModel),
-    type: cdktf.stringToTerraform(struct!.type),
-    use_ssl: cdktf.booleanToTerraform(struct!.useSsl),
-    additional_variable: cdktf.listMapper(integrationConnectorsConnectionSslConfigAdditionalVariableToTerraform, true)(struct!.additionalVariable),
+    client_cert_type: cdktn.stringToTerraform(struct!.clientCertType),
+    server_cert_type: cdktn.stringToTerraform(struct!.serverCertType),
+    trust_model: cdktn.stringToTerraform(struct!.trustModel),
+    type: cdktn.stringToTerraform(struct!.type),
+    use_ssl: cdktn.booleanToTerraform(struct!.useSsl),
+    additional_variable: cdktn.listMapper(integrationConnectorsConnectionSslConfigAdditionalVariableToTerraform, true)(struct!.additionalVariable),
     client_certificate: integrationConnectorsConnectionSslConfigClientCertificateToTerraform(struct!.clientCertificate),
     client_private_key: integrationConnectorsConnectionSslConfigClientPrivateKeyToTerraform(struct!.clientPrivateKey),
     client_private_key_pass: integrationConnectorsConnectionSslConfigClientPrivateKeyPassToTerraform(struct!.clientPrivateKeyPass),
@@ -6708,43 +6708,43 @@ export function integrationConnectorsConnectionSslConfigToTerraform(struct?: Int
 
 
 export function integrationConnectorsConnectionSslConfigToHclTerraform(struct?: IntegrationConnectorsConnectionSslConfigOutputReference | IntegrationConnectorsConnectionSslConfig): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     client_cert_type: {
-      value: cdktf.stringToHclTerraform(struct!.clientCertType),
+      value: cdktn.stringToHclTerraform(struct!.clientCertType),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     server_cert_type: {
-      value: cdktf.stringToHclTerraform(struct!.serverCertType),
+      value: cdktn.stringToHclTerraform(struct!.serverCertType),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     trust_model: {
-      value: cdktf.stringToHclTerraform(struct!.trustModel),
+      value: cdktn.stringToHclTerraform(struct!.trustModel),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     type: {
-      value: cdktf.stringToHclTerraform(struct!.type),
+      value: cdktn.stringToHclTerraform(struct!.type),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     use_ssl: {
-      value: cdktf.booleanToHclTerraform(struct!.useSsl),
+      value: cdktn.booleanToHclTerraform(struct!.useSsl),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     additional_variable: {
-      value: cdktf.listMapperHcl(integrationConnectorsConnectionSslConfigAdditionalVariableToHclTerraform, true)(struct!.additionalVariable),
+      value: cdktn.listMapperHcl(integrationConnectorsConnectionSslConfigAdditionalVariableToHclTerraform, true)(struct!.additionalVariable),
       isBlock: true,
       type: "list",
       storageClassType: "IntegrationConnectorsConnectionSslConfigAdditionalVariableList",
@@ -6779,14 +6779,14 @@ export function integrationConnectorsConnectionSslConfigToHclTerraform(struct?: 
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class IntegrationConnectorsConnectionSslConfigOutputReference extends cdktf.ComplexObject {
+export class IntegrationConnectorsConnectionSslConfigOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -6927,11 +6927,11 @@ export class IntegrationConnectorsConnectionSslConfigOutputReference extends cdk
   }
 
   // use_ssl - computed: false, optional: true, required: false
-  private _useSsl?: boolean | cdktf.IResolvable; 
+  private _useSsl?: boolean | cdktn.IResolvable; 
   public get useSsl() {
     return this.getBooleanAttribute('use_ssl');
   }
-  public set useSsl(value: boolean | cdktf.IResolvable) {
+  public set useSsl(value: boolean | cdktn.IResolvable) {
     this._useSsl = value;
   }
   public resetUseSsl() {
@@ -6947,7 +6947,7 @@ export class IntegrationConnectorsConnectionSslConfigOutputReference extends cdk
   public get additionalVariable() {
     return this._additionalVariable;
   }
-  public putAdditionalVariable(value: IntegrationConnectorsConnectionSslConfigAdditionalVariable[] | cdktf.IResolvable) {
+  public putAdditionalVariable(value: IntegrationConnectorsConnectionSslConfigAdditionalVariable[] | cdktn.IResolvable) {
     this._additionalVariable.internalValue = value;
   }
   public resetAdditionalVariable() {
@@ -7037,39 +7037,39 @@ export interface IntegrationConnectorsConnectionTimeouts {
   readonly update?: string;
 }
 
-export function integrationConnectorsConnectionTimeoutsToTerraform(struct?: IntegrationConnectorsConnectionTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function integrationConnectorsConnectionTimeoutsToTerraform(struct?: IntegrationConnectorsConnectionTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    create: cdktf.stringToTerraform(struct!.create),
-    delete: cdktf.stringToTerraform(struct!.delete),
-    update: cdktf.stringToTerraform(struct!.update),
+    create: cdktn.stringToTerraform(struct!.create),
+    delete: cdktn.stringToTerraform(struct!.delete),
+    update: cdktn.stringToTerraform(struct!.update),
   }
 }
 
 
-export function integrationConnectorsConnectionTimeoutsToHclTerraform(struct?: IntegrationConnectorsConnectionTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function integrationConnectorsConnectionTimeoutsToHclTerraform(struct?: IntegrationConnectorsConnectionTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     create: {
-      value: cdktf.stringToHclTerraform(struct!.create),
+      value: cdktn.stringToHclTerraform(struct!.create),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     delete: {
-      value: cdktf.stringToHclTerraform(struct!.delete),
+      value: cdktn.stringToHclTerraform(struct!.delete),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     update: {
-      value: cdktf.stringToHclTerraform(struct!.update),
+      value: cdktn.stringToHclTerraform(struct!.update),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -7080,19 +7080,19 @@ export function integrationConnectorsConnectionTimeoutsToHclTerraform(struct?: I
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class IntegrationConnectorsConnectionTimeoutsOutputReference extends cdktf.ComplexObject {
+export class IntegrationConnectorsConnectionTimeoutsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): IntegrationConnectorsConnectionTimeouts | cdktf.IResolvable | undefined {
+  public get internalValue(): IntegrationConnectorsConnectionTimeouts | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -7113,7 +7113,7 @@ export class IntegrationConnectorsConnectionTimeoutsOutputReference extends cdkt
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: IntegrationConnectorsConnectionTimeouts | cdktf.IResolvable | undefined) {
+  public set internalValue(value: IntegrationConnectorsConnectionTimeouts | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -7121,7 +7121,7 @@ export class IntegrationConnectorsConnectionTimeoutsOutputReference extends cdkt
       this._delete = undefined;
       this._update = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -7186,7 +7186,7 @@ export class IntegrationConnectorsConnectionTimeoutsOutputReference extends cdkt
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/integration_connectors_connection google_integration_connectors_connection}
 */
-export class IntegrationConnectorsConnection extends cdktf.TerraformResource {
+export class IntegrationConnectorsConnection extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -7197,14 +7197,14 @@ export class IntegrationConnectorsConnection extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a IntegrationConnectorsConnection resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a IntegrationConnectorsConnection resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the IntegrationConnectorsConnection to import
   * @param importFromId The id of the existing IntegrationConnectorsConnection that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/integration_connectors_connection#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the IntegrationConnectorsConnection to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "google_integration_connectors_connection", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "google_integration_connectors_connection", importId: importFromId, provider });
       }
 
   // ===========
@@ -7310,7 +7310,7 @@ export class IntegrationConnectorsConnection extends cdktf.TerraformResource {
   }
 
   // effective_labels - computed: true, optional: false, required: false
-  private _effectiveLabels = new cdktf.StringMap(this, "effective_labels");
+  private _effectiveLabels = new cdktn.StringMap(this, "effective_labels");
   public get effectiveLabels() {
     return this._effectiveLabels;
   }
@@ -7444,11 +7444,11 @@ export class IntegrationConnectorsConnection extends cdktf.TerraformResource {
   }
 
   // suspended - computed: false, optional: true, required: false
-  private _suspended?: boolean | cdktf.IResolvable; 
+  private _suspended?: boolean | cdktn.IResolvable; 
   public get suspended() {
     return this.getBooleanAttribute('suspended');
   }
-  public set suspended(value: boolean | cdktf.IResolvable) {
+  public set suspended(value: boolean | cdktn.IResolvable) {
     this._suspended = value;
   }
   public resetSuspended() {
@@ -7460,7 +7460,7 @@ export class IntegrationConnectorsConnection extends cdktf.TerraformResource {
   }
 
   // terraform_labels - computed: true, optional: false, required: false
-  private _terraformLabels = new cdktf.StringMap(this, "terraform_labels");
+  private _terraformLabels = new cdktn.StringMap(this, "terraform_labels");
   public get terraformLabels() {
     return this._terraformLabels;
   }
@@ -7491,7 +7491,7 @@ export class IntegrationConnectorsConnection extends cdktf.TerraformResource {
   public get configVariable() {
     return this._configVariable;
   }
-  public putConfigVariable(value: IntegrationConnectorsConnectionConfigVariable[] | cdktf.IResolvable) {
+  public putConfigVariable(value: IntegrationConnectorsConnectionConfigVariable[] | cdktn.IResolvable) {
     this._configVariable.internalValue = value;
   }
   public resetConfigVariable() {
@@ -7507,7 +7507,7 @@ export class IntegrationConnectorsConnection extends cdktf.TerraformResource {
   public get destinationConfig() {
     return this._destinationConfig;
   }
-  public putDestinationConfig(value: IntegrationConnectorsConnectionDestinationConfig[] | cdktf.IResolvable) {
+  public putDestinationConfig(value: IntegrationConnectorsConnectionDestinationConfig[] | cdktn.IResolvable) {
     this._destinationConfig.internalValue = value;
   }
   public resetDestinationConfig() {
@@ -7620,19 +7620,19 @@ export class IntegrationConnectorsConnection extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      connector_version: cdktf.stringToTerraform(this._connectorVersion),
-      description: cdktf.stringToTerraform(this._description),
-      eventing_enablement_type: cdktf.stringToTerraform(this._eventingEnablementType),
-      id: cdktf.stringToTerraform(this._id),
-      labels: cdktf.hashMapper(cdktf.stringToTerraform)(this._labels),
-      location: cdktf.stringToTerraform(this._location),
-      name: cdktf.stringToTerraform(this._name),
-      project: cdktf.stringToTerraform(this._project),
-      service_account: cdktf.stringToTerraform(this._serviceAccount),
-      suspended: cdktf.booleanToTerraform(this._suspended),
+      connector_version: cdktn.stringToTerraform(this._connectorVersion),
+      description: cdktn.stringToTerraform(this._description),
+      eventing_enablement_type: cdktn.stringToTerraform(this._eventingEnablementType),
+      id: cdktn.stringToTerraform(this._id),
+      labels: cdktn.hashMapper(cdktn.stringToTerraform)(this._labels),
+      location: cdktn.stringToTerraform(this._location),
+      name: cdktn.stringToTerraform(this._name),
+      project: cdktn.stringToTerraform(this._project),
+      service_account: cdktn.stringToTerraform(this._serviceAccount),
+      suspended: cdktn.booleanToTerraform(this._suspended),
       auth_config: integrationConnectorsConnectionAuthConfigToTerraform(this._authConfig.internalValue),
-      config_variable: cdktf.listMapper(integrationConnectorsConnectionConfigVariableToTerraform, true)(this._configVariable.internalValue),
-      destination_config: cdktf.listMapper(integrationConnectorsConnectionDestinationConfigToTerraform, true)(this._destinationConfig.internalValue),
+      config_variable: cdktn.listMapper(integrationConnectorsConnectionConfigVariableToTerraform, true)(this._configVariable.internalValue),
+      destination_config: cdktn.listMapper(integrationConnectorsConnectionDestinationConfigToTerraform, true)(this._destinationConfig.internalValue),
       eventing_config: integrationConnectorsConnectionEventingConfigToTerraform(this._eventingConfig.internalValue),
       lock_config: integrationConnectorsConnectionLockConfigToTerraform(this._lockConfig.internalValue),
       log_config: integrationConnectorsConnectionLogConfigToTerraform(this._logConfig.internalValue),
@@ -7645,61 +7645,61 @@ export class IntegrationConnectorsConnection extends cdktf.TerraformResource {
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       connector_version: {
-        value: cdktf.stringToHclTerraform(this._connectorVersion),
+        value: cdktn.stringToHclTerraform(this._connectorVersion),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       description: {
-        value: cdktf.stringToHclTerraform(this._description),
+        value: cdktn.stringToHclTerraform(this._description),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       eventing_enablement_type: {
-        value: cdktf.stringToHclTerraform(this._eventingEnablementType),
+        value: cdktn.stringToHclTerraform(this._eventingEnablementType),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       labels: {
-        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._labels),
+        value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(this._labels),
         isBlock: false,
         type: "map",
         storageClassType: "stringMap",
       },
       location: {
-        value: cdktf.stringToHclTerraform(this._location),
+        value: cdktn.stringToHclTerraform(this._location),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       name: {
-        value: cdktf.stringToHclTerraform(this._name),
+        value: cdktn.stringToHclTerraform(this._name),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       project: {
-        value: cdktf.stringToHclTerraform(this._project),
+        value: cdktn.stringToHclTerraform(this._project),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       service_account: {
-        value: cdktf.stringToHclTerraform(this._serviceAccount),
+        value: cdktn.stringToHclTerraform(this._serviceAccount),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       suspended: {
-        value: cdktf.booleanToHclTerraform(this._suspended),
+        value: cdktn.booleanToHclTerraform(this._suspended),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
@@ -7711,13 +7711,13 @@ export class IntegrationConnectorsConnection extends cdktf.TerraformResource {
         storageClassType: "IntegrationConnectorsConnectionAuthConfigList",
       },
       config_variable: {
-        value: cdktf.listMapperHcl(integrationConnectorsConnectionConfigVariableToHclTerraform, true)(this._configVariable.internalValue),
+        value: cdktn.listMapperHcl(integrationConnectorsConnectionConfigVariableToHclTerraform, true)(this._configVariable.internalValue),
         isBlock: true,
         type: "list",
         storageClassType: "IntegrationConnectorsConnectionConfigVariableList",
       },
       destination_config: {
-        value: cdktf.listMapperHcl(integrationConnectorsConnectionDestinationConfigToHclTerraform, true)(this._destinationConfig.internalValue),
+        value: cdktn.listMapperHcl(integrationConnectorsConnectionDestinationConfigToHclTerraform, true)(this._destinationConfig.internalValue),
         isBlock: true,
         type: "list",
         storageClassType: "IntegrationConnectorsConnectionDestinationConfigList",

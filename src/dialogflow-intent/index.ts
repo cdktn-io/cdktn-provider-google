@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface DialogflowIntentConfig extends cdktf.TerraformMetaArguments {
+export interface DialogflowIntentConfig extends cdktn.TerraformMetaArguments {
   /**
   * The name of the action associated with the intent.
   * Note: The action name must not contain whitespaces.
@@ -59,7 +59,7 @@ export interface DialogflowIntentConfig extends cdktf.TerraformMetaArguments {
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/dialogflow_intent#is_fallback DialogflowIntent#is_fallback}
   */
-  readonly isFallback?: boolean | cdktf.IResolvable;
+  readonly isFallback?: boolean | cdktn.IResolvable;
   /**
   * Indicates whether Machine Learning is disabled for the intent.
   * Note: If mlDisabled setting is set to true, then this intent is not taken into account during inference in ML
@@ -67,7 +67,7 @@ export interface DialogflowIntentConfig extends cdktf.TerraformMetaArguments {
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/dialogflow_intent#ml_disabled DialogflowIntent#ml_disabled}
   */
-  readonly mlDisabled?: boolean | cdktf.IResolvable;
+  readonly mlDisabled?: boolean | cdktn.IResolvable;
   /**
   * The unique identifier of the parent intent in the chain of followup intents.
   * Format: projects/<Project ID>/agent/intents/<Intent ID>.
@@ -93,7 +93,7 @@ export interface DialogflowIntentConfig extends cdktf.TerraformMetaArguments {
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/dialogflow_intent#reset_contexts DialogflowIntent#reset_contexts}
   */
-  readonly resetContexts?: boolean | cdktf.IResolvable;
+  readonly resetContexts?: boolean | cdktn.IResolvable;
   /**
   * Indicates whether webhooks are enabled for the intent.
   * * WEBHOOK_STATE_ENABLED: Webhook is enabled in the agent and in the intent.
@@ -114,8 +114,8 @@ export interface DialogflowIntentFollowupIntentInfo {
 }
 
 export function dialogflowIntentFollowupIntentInfoToTerraform(struct?: DialogflowIntentFollowupIntentInfo): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -124,8 +124,8 @@ export function dialogflowIntentFollowupIntentInfoToTerraform(struct?: Dialogflo
 
 
 export function dialogflowIntentFollowupIntentInfoToHclTerraform(struct?: DialogflowIntentFollowupIntentInfo): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -133,7 +133,7 @@ export function dialogflowIntentFollowupIntentInfoToHclTerraform(struct?: Dialog
   return attrs;
 }
 
-export class DialogflowIntentFollowupIntentInfoOutputReference extends cdktf.ComplexObject {
+export class DialogflowIntentFollowupIntentInfoOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -142,7 +142,7 @@ export class DialogflowIntentFollowupIntentInfoOutputReference extends cdktf.Com
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -172,14 +172,14 @@ export class DialogflowIntentFollowupIntentInfoOutputReference extends cdktf.Com
   }
 }
 
-export class DialogflowIntentFollowupIntentInfoList extends cdktf.ComplexList {
+export class DialogflowIntentFollowupIntentInfoList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -205,39 +205,39 @@ export interface DialogflowIntentTimeouts {
   readonly update?: string;
 }
 
-export function dialogflowIntentTimeoutsToTerraform(struct?: DialogflowIntentTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function dialogflowIntentTimeoutsToTerraform(struct?: DialogflowIntentTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    create: cdktf.stringToTerraform(struct!.create),
-    delete: cdktf.stringToTerraform(struct!.delete),
-    update: cdktf.stringToTerraform(struct!.update),
+    create: cdktn.stringToTerraform(struct!.create),
+    delete: cdktn.stringToTerraform(struct!.delete),
+    update: cdktn.stringToTerraform(struct!.update),
   }
 }
 
 
-export function dialogflowIntentTimeoutsToHclTerraform(struct?: DialogflowIntentTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function dialogflowIntentTimeoutsToHclTerraform(struct?: DialogflowIntentTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     create: {
-      value: cdktf.stringToHclTerraform(struct!.create),
+      value: cdktn.stringToHclTerraform(struct!.create),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     delete: {
-      value: cdktf.stringToHclTerraform(struct!.delete),
+      value: cdktn.stringToHclTerraform(struct!.delete),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     update: {
-      value: cdktf.stringToHclTerraform(struct!.update),
+      value: cdktn.stringToHclTerraform(struct!.update),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -248,19 +248,19 @@ export function dialogflowIntentTimeoutsToHclTerraform(struct?: DialogflowIntent
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class DialogflowIntentTimeoutsOutputReference extends cdktf.ComplexObject {
+export class DialogflowIntentTimeoutsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): DialogflowIntentTimeouts | cdktf.IResolvable | undefined {
+  public get internalValue(): DialogflowIntentTimeouts | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -281,7 +281,7 @@ export class DialogflowIntentTimeoutsOutputReference extends cdktf.ComplexObject
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: DialogflowIntentTimeouts | cdktf.IResolvable | undefined) {
+  public set internalValue(value: DialogflowIntentTimeouts | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -289,7 +289,7 @@ export class DialogflowIntentTimeoutsOutputReference extends cdktf.ComplexObject
       this._delete = undefined;
       this._update = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -354,7 +354,7 @@ export class DialogflowIntentTimeoutsOutputReference extends cdktf.ComplexObject
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/dialogflow_intent google_dialogflow_intent}
 */
-export class DialogflowIntent extends cdktf.TerraformResource {
+export class DialogflowIntent extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -365,14 +365,14 @@ export class DialogflowIntent extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a DialogflowIntent resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a DialogflowIntent resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DialogflowIntent to import
   * @param importFromId The id of the existing DialogflowIntent that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/dialogflow_intent#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DialogflowIntent to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "google_dialogflow_intent", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "google_dialogflow_intent", importId: importFromId, provider });
       }
 
   // ===========
@@ -522,11 +522,11 @@ export class DialogflowIntent extends cdktf.TerraformResource {
   }
 
   // is_fallback - computed: true, optional: true, required: false
-  private _isFallback?: boolean | cdktf.IResolvable; 
+  private _isFallback?: boolean | cdktn.IResolvable; 
   public get isFallback() {
     return this.getBooleanAttribute('is_fallback');
   }
-  public set isFallback(value: boolean | cdktf.IResolvable) {
+  public set isFallback(value: boolean | cdktn.IResolvable) {
     this._isFallback = value;
   }
   public resetIsFallback() {
@@ -538,11 +538,11 @@ export class DialogflowIntent extends cdktf.TerraformResource {
   }
 
   // ml_disabled - computed: true, optional: true, required: false
-  private _mlDisabled?: boolean | cdktf.IResolvable; 
+  private _mlDisabled?: boolean | cdktn.IResolvable; 
   public get mlDisabled() {
     return this.getBooleanAttribute('ml_disabled');
   }
-  public set mlDisabled(value: boolean | cdktf.IResolvable) {
+  public set mlDisabled(value: boolean | cdktn.IResolvable) {
     this._mlDisabled = value;
   }
   public resetMlDisabled() {
@@ -607,11 +607,11 @@ export class DialogflowIntent extends cdktf.TerraformResource {
   }
 
   // reset_contexts - computed: true, optional: true, required: false
-  private _resetContexts?: boolean | cdktf.IResolvable; 
+  private _resetContexts?: boolean | cdktn.IResolvable; 
   public get resetContexts() {
     return this.getBooleanAttribute('reset_contexts');
   }
-  public set resetContexts(value: boolean | cdktf.IResolvable) {
+  public set resetContexts(value: boolean | cdktn.IResolvable) {
     this._resetContexts = value;
   }
   public resetResetContexts() {
@@ -665,19 +665,19 @@ export class DialogflowIntent extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      action: cdktf.stringToTerraform(this._action),
-      default_response_platforms: cdktf.listMapper(cdktf.stringToTerraform, false)(this._defaultResponsePlatforms),
-      display_name: cdktf.stringToTerraform(this._displayName),
-      events: cdktf.listMapper(cdktf.stringToTerraform, false)(this._events),
-      id: cdktf.stringToTerraform(this._id),
-      input_context_names: cdktf.listMapper(cdktf.stringToTerraform, false)(this._inputContextNames),
-      is_fallback: cdktf.booleanToTerraform(this._isFallback),
-      ml_disabled: cdktf.booleanToTerraform(this._mlDisabled),
-      parent_followup_intent_name: cdktf.stringToTerraform(this._parentFollowupIntentName),
-      priority: cdktf.numberToTerraform(this._priority),
-      project: cdktf.stringToTerraform(this._project),
-      reset_contexts: cdktf.booleanToTerraform(this._resetContexts),
-      webhook_state: cdktf.stringToTerraform(this._webhookState),
+      action: cdktn.stringToTerraform(this._action),
+      default_response_platforms: cdktn.listMapper(cdktn.stringToTerraform, false)(this._defaultResponsePlatforms),
+      display_name: cdktn.stringToTerraform(this._displayName),
+      events: cdktn.listMapper(cdktn.stringToTerraform, false)(this._events),
+      id: cdktn.stringToTerraform(this._id),
+      input_context_names: cdktn.listMapper(cdktn.stringToTerraform, false)(this._inputContextNames),
+      is_fallback: cdktn.booleanToTerraform(this._isFallback),
+      ml_disabled: cdktn.booleanToTerraform(this._mlDisabled),
+      parent_followup_intent_name: cdktn.stringToTerraform(this._parentFollowupIntentName),
+      priority: cdktn.numberToTerraform(this._priority),
+      project: cdktn.stringToTerraform(this._project),
+      reset_contexts: cdktn.booleanToTerraform(this._resetContexts),
+      webhook_state: cdktn.stringToTerraform(this._webhookState),
       timeouts: dialogflowIntentTimeoutsToTerraform(this._timeouts.internalValue),
     };
   }
@@ -685,79 +685,79 @@ export class DialogflowIntent extends cdktf.TerraformResource {
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       action: {
-        value: cdktf.stringToHclTerraform(this._action),
+        value: cdktn.stringToHclTerraform(this._action),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       default_response_platforms: {
-        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._defaultResponsePlatforms),
+        value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(this._defaultResponsePlatforms),
         isBlock: false,
         type: "list",
         storageClassType: "stringList",
       },
       display_name: {
-        value: cdktf.stringToHclTerraform(this._displayName),
+        value: cdktn.stringToHclTerraform(this._displayName),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       events: {
-        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._events),
+        value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(this._events),
         isBlock: false,
         type: "list",
         storageClassType: "stringList",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       input_context_names: {
-        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._inputContextNames),
+        value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(this._inputContextNames),
         isBlock: false,
         type: "list",
         storageClassType: "stringList",
       },
       is_fallback: {
-        value: cdktf.booleanToHclTerraform(this._isFallback),
+        value: cdktn.booleanToHclTerraform(this._isFallback),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       ml_disabled: {
-        value: cdktf.booleanToHclTerraform(this._mlDisabled),
+        value: cdktn.booleanToHclTerraform(this._mlDisabled),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       parent_followup_intent_name: {
-        value: cdktf.stringToHclTerraform(this._parentFollowupIntentName),
+        value: cdktn.stringToHclTerraform(this._parentFollowupIntentName),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       priority: {
-        value: cdktf.numberToHclTerraform(this._priority),
+        value: cdktn.numberToHclTerraform(this._priority),
         isBlock: false,
         type: "simple",
         storageClassType: "number",
       },
       project: {
-        value: cdktf.stringToHclTerraform(this._project),
+        value: cdktn.stringToHclTerraform(this._project),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       reset_contexts: {
-        value: cdktf.booleanToHclTerraform(this._resetContexts),
+        value: cdktn.booleanToHclTerraform(this._resetContexts),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       webhook_state: {
-        value: cdktf.stringToHclTerraform(this._webhookState),
+        value: cdktn.stringToHclTerraform(this._webhookState),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

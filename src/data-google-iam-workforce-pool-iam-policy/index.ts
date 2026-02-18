@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface DataGoogleIamWorkforcePoolIamPolicyConfig extends cdktf.TerraformMetaArguments {
+export interface DataGoogleIamWorkforcePoolIamPolicyConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/data-sources/iam_workforce_pool_iam_policy#id DataGoogleIamWorkforcePoolIamPolicy#id}
   *
@@ -32,7 +32,7 @@ export interface DataGoogleIamWorkforcePoolIamPolicyConfig extends cdktf.Terrafo
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/data-sources/iam_workforce_pool_iam_policy google_iam_workforce_pool_iam_policy}
 */
-export class DataGoogleIamWorkforcePoolIamPolicy extends cdktf.TerraformDataSource {
+export class DataGoogleIamWorkforcePoolIamPolicy extends cdktn.TerraformDataSource {
 
   // =================
   // STATIC PROPERTIES
@@ -43,14 +43,14 @@ export class DataGoogleIamWorkforcePoolIamPolicy extends cdktf.TerraformDataSour
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a DataGoogleIamWorkforcePoolIamPolicy resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a DataGoogleIamWorkforcePoolIamPolicy resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataGoogleIamWorkforcePoolIamPolicy to import
   * @param importFromId The id of the existing DataGoogleIamWorkforcePoolIamPolicy that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/data-sources/iam_workforce_pool_iam_policy#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataGoogleIamWorkforcePoolIamPolicy to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "google_iam_workforce_pool_iam_policy", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "google_iam_workforce_pool_iam_policy", importId: importFromId, provider });
       }
 
   // ===========
@@ -150,28 +150,28 @@ export class DataGoogleIamWorkforcePoolIamPolicy extends cdktf.TerraformDataSour
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      id: cdktf.stringToTerraform(this._id),
-      location: cdktf.stringToTerraform(this._location),
-      workforce_pool_id: cdktf.stringToTerraform(this._workforcePoolId),
+      id: cdktn.stringToTerraform(this._id),
+      location: cdktn.stringToTerraform(this._location),
+      workforce_pool_id: cdktn.stringToTerraform(this._workforcePoolId),
     };
   }
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       location: {
-        value: cdktf.stringToHclTerraform(this._location),
+        value: cdktn.stringToHclTerraform(this._location),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       workforce_pool_id: {
-        value: cdktf.stringToHclTerraform(this._workforcePoolId),
+        value: cdktn.stringToHclTerraform(this._workforcePoolId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

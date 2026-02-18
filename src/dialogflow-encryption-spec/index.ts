@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface DialogflowEncryptionSpecConfig extends cdktf.TerraformMetaArguments {
+export interface DialogflowEncryptionSpecConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/dialogflow_encryption_spec#id DialogflowEncryptionSpec#id}
   *
@@ -55,24 +55,24 @@ export interface DialogflowEncryptionSpecEncryptionSpec {
 }
 
 export function dialogflowEncryptionSpecEncryptionSpecToTerraform(struct?: DialogflowEncryptionSpecEncryptionSpecOutputReference | DialogflowEncryptionSpecEncryptionSpec): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    kms_key: cdktf.stringToTerraform(struct!.kmsKey),
+    kms_key: cdktn.stringToTerraform(struct!.kmsKey),
   }
 }
 
 
 export function dialogflowEncryptionSpecEncryptionSpecToHclTerraform(struct?: DialogflowEncryptionSpecEncryptionSpecOutputReference | DialogflowEncryptionSpecEncryptionSpec): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     kms_key: {
-      value: cdktf.stringToHclTerraform(struct!.kmsKey),
+      value: cdktn.stringToHclTerraform(struct!.kmsKey),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -83,14 +83,14 @@ export function dialogflowEncryptionSpecEncryptionSpecToHclTerraform(struct?: Di
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class DialogflowEncryptionSpecEncryptionSpecOutputReference extends cdktf.ComplexObject {
+export class DialogflowEncryptionSpecEncryptionSpecOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -139,32 +139,32 @@ export interface DialogflowEncryptionSpecTimeouts {
   readonly delete?: string;
 }
 
-export function dialogflowEncryptionSpecTimeoutsToTerraform(struct?: DialogflowEncryptionSpecTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function dialogflowEncryptionSpecTimeoutsToTerraform(struct?: DialogflowEncryptionSpecTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    create: cdktf.stringToTerraform(struct!.create),
-    delete: cdktf.stringToTerraform(struct!.delete),
+    create: cdktn.stringToTerraform(struct!.create),
+    delete: cdktn.stringToTerraform(struct!.delete),
   }
 }
 
 
-export function dialogflowEncryptionSpecTimeoutsToHclTerraform(struct?: DialogflowEncryptionSpecTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function dialogflowEncryptionSpecTimeoutsToHclTerraform(struct?: DialogflowEncryptionSpecTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     create: {
-      value: cdktf.stringToHclTerraform(struct!.create),
+      value: cdktn.stringToHclTerraform(struct!.create),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     delete: {
-      value: cdktf.stringToHclTerraform(struct!.delete),
+      value: cdktn.stringToHclTerraform(struct!.delete),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -175,19 +175,19 @@ export function dialogflowEncryptionSpecTimeoutsToHclTerraform(struct?: Dialogfl
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class DialogflowEncryptionSpecTimeoutsOutputReference extends cdktf.ComplexObject {
+export class DialogflowEncryptionSpecTimeoutsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): DialogflowEncryptionSpecTimeouts | cdktf.IResolvable | undefined {
+  public get internalValue(): DialogflowEncryptionSpecTimeouts | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -204,14 +204,14 @@ export class DialogflowEncryptionSpecTimeoutsOutputReference extends cdktf.Compl
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: DialogflowEncryptionSpecTimeouts | cdktf.IResolvable | undefined) {
+  public set internalValue(value: DialogflowEncryptionSpecTimeouts | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._create = undefined;
       this._delete = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -259,7 +259,7 @@ export class DialogflowEncryptionSpecTimeoutsOutputReference extends cdktf.Compl
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/dialogflow_encryption_spec google_dialogflow_encryption_spec}
 */
-export class DialogflowEncryptionSpec extends cdktf.TerraformResource {
+export class DialogflowEncryptionSpec extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -270,14 +270,14 @@ export class DialogflowEncryptionSpec extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a DialogflowEncryptionSpec resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a DialogflowEncryptionSpec resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DialogflowEncryptionSpec to import
   * @param importFromId The id of the existing DialogflowEncryptionSpec that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/dialogflow_encryption_spec#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DialogflowEncryptionSpec to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "google_dialogflow_encryption_spec", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "google_dialogflow_encryption_spec", importId: importFromId, provider });
       }
 
   // ===========
@@ -398,9 +398,9 @@ export class DialogflowEncryptionSpec extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      id: cdktf.stringToTerraform(this._id),
-      location: cdktf.stringToTerraform(this._location),
-      project: cdktf.stringToTerraform(this._project),
+      id: cdktn.stringToTerraform(this._id),
+      location: cdktn.stringToTerraform(this._location),
+      project: cdktn.stringToTerraform(this._project),
       encryption_spec: dialogflowEncryptionSpecEncryptionSpecToTerraform(this._encryptionSpec.internalValue),
       timeouts: dialogflowEncryptionSpecTimeoutsToTerraform(this._timeouts.internalValue),
     };
@@ -409,19 +409,19 @@ export class DialogflowEncryptionSpec extends cdktf.TerraformResource {
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       location: {
-        value: cdktf.stringToHclTerraform(this._location),
+        value: cdktn.stringToHclTerraform(this._location),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       project: {
-        value: cdktf.stringToHclTerraform(this._project),
+        value: cdktn.stringToHclTerraform(this._project),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

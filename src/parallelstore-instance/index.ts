@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface ParallelstoreInstanceConfig extends cdktf.TerraformMetaArguments {
+export interface ParallelstoreInstanceConfig extends cdktn.TerraformMetaArguments {
   /**
   * Required. Immutable. Storage capacity of Parallelstore instance in Gibibytes (GiB).
   *
@@ -156,39 +156,39 @@ export interface ParallelstoreInstanceTimeouts {
   readonly update?: string;
 }
 
-export function parallelstoreInstanceTimeoutsToTerraform(struct?: ParallelstoreInstanceTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function parallelstoreInstanceTimeoutsToTerraform(struct?: ParallelstoreInstanceTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    create: cdktf.stringToTerraform(struct!.create),
-    delete: cdktf.stringToTerraform(struct!.delete),
-    update: cdktf.stringToTerraform(struct!.update),
+    create: cdktn.stringToTerraform(struct!.create),
+    delete: cdktn.stringToTerraform(struct!.delete),
+    update: cdktn.stringToTerraform(struct!.update),
   }
 }
 
 
-export function parallelstoreInstanceTimeoutsToHclTerraform(struct?: ParallelstoreInstanceTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function parallelstoreInstanceTimeoutsToHclTerraform(struct?: ParallelstoreInstanceTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     create: {
-      value: cdktf.stringToHclTerraform(struct!.create),
+      value: cdktn.stringToHclTerraform(struct!.create),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     delete: {
-      value: cdktf.stringToHclTerraform(struct!.delete),
+      value: cdktn.stringToHclTerraform(struct!.delete),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     update: {
-      value: cdktf.stringToHclTerraform(struct!.update),
+      value: cdktn.stringToHclTerraform(struct!.update),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -199,19 +199,19 @@ export function parallelstoreInstanceTimeoutsToHclTerraform(struct?: Parallelsto
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class ParallelstoreInstanceTimeoutsOutputReference extends cdktf.ComplexObject {
+export class ParallelstoreInstanceTimeoutsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): ParallelstoreInstanceTimeouts | cdktf.IResolvable | undefined {
+  public get internalValue(): ParallelstoreInstanceTimeouts | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -232,7 +232,7 @@ export class ParallelstoreInstanceTimeoutsOutputReference extends cdktf.ComplexO
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: ParallelstoreInstanceTimeouts | cdktf.IResolvable | undefined) {
+  public set internalValue(value: ParallelstoreInstanceTimeouts | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -240,7 +240,7 @@ export class ParallelstoreInstanceTimeoutsOutputReference extends cdktf.ComplexO
       this._delete = undefined;
       this._update = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -305,7 +305,7 @@ export class ParallelstoreInstanceTimeoutsOutputReference extends cdktf.ComplexO
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/parallelstore_instance google_parallelstore_instance}
 */
-export class ParallelstoreInstance extends cdktf.TerraformResource {
+export class ParallelstoreInstance extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -316,14 +316,14 @@ export class ParallelstoreInstance extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a ParallelstoreInstance resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a ParallelstoreInstance resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the ParallelstoreInstance to import
   * @param importFromId The id of the existing ParallelstoreInstance that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/parallelstore_instance#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the ParallelstoreInstance to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "google_parallelstore_instance", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "google_parallelstore_instance", importId: importFromId, provider });
       }
 
   // ===========
@@ -449,7 +449,7 @@ export class ParallelstoreInstance extends cdktf.TerraformResource {
   }
 
   // effective_labels - computed: true, optional: false, required: false
-  private _effectiveLabels = new cdktf.StringMap(this, "effective_labels");
+  private _effectiveLabels = new cdktn.StringMap(this, "effective_labels");
   public get effectiveLabels() {
     return this._effectiveLabels;
   }
@@ -592,7 +592,7 @@ export class ParallelstoreInstance extends cdktf.TerraformResource {
   }
 
   // terraform_labels - computed: true, optional: false, required: false
-  private _terraformLabels = new cdktf.StringMap(this, "terraform_labels");
+  private _terraformLabels = new cdktn.StringMap(this, "terraform_labels");
   public get terraformLabels() {
     return this._terraformLabels;
   }
@@ -624,18 +624,18 @@ export class ParallelstoreInstance extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      capacity_gib: cdktf.stringToTerraform(this._capacityGib),
-      deployment_type: cdktf.stringToTerraform(this._deploymentType),
-      description: cdktf.stringToTerraform(this._description),
-      directory_stripe_level: cdktf.stringToTerraform(this._directoryStripeLevel),
-      file_stripe_level: cdktf.stringToTerraform(this._fileStripeLevel),
-      id: cdktf.stringToTerraform(this._id),
-      instance_id: cdktf.stringToTerraform(this._instanceId),
-      labels: cdktf.hashMapper(cdktf.stringToTerraform)(this._labels),
-      location: cdktf.stringToTerraform(this._location),
-      network: cdktf.stringToTerraform(this._network),
-      project: cdktf.stringToTerraform(this._project),
-      reserved_ip_range: cdktf.stringToTerraform(this._reservedIpRange),
+      capacity_gib: cdktn.stringToTerraform(this._capacityGib),
+      deployment_type: cdktn.stringToTerraform(this._deploymentType),
+      description: cdktn.stringToTerraform(this._description),
+      directory_stripe_level: cdktn.stringToTerraform(this._directoryStripeLevel),
+      file_stripe_level: cdktn.stringToTerraform(this._fileStripeLevel),
+      id: cdktn.stringToTerraform(this._id),
+      instance_id: cdktn.stringToTerraform(this._instanceId),
+      labels: cdktn.hashMapper(cdktn.stringToTerraform)(this._labels),
+      location: cdktn.stringToTerraform(this._location),
+      network: cdktn.stringToTerraform(this._network),
+      project: cdktn.stringToTerraform(this._project),
+      reserved_ip_range: cdktn.stringToTerraform(this._reservedIpRange),
       timeouts: parallelstoreInstanceTimeoutsToTerraform(this._timeouts.internalValue),
     };
   }
@@ -643,73 +643,73 @@ export class ParallelstoreInstance extends cdktf.TerraformResource {
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       capacity_gib: {
-        value: cdktf.stringToHclTerraform(this._capacityGib),
+        value: cdktn.stringToHclTerraform(this._capacityGib),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       deployment_type: {
-        value: cdktf.stringToHclTerraform(this._deploymentType),
+        value: cdktn.stringToHclTerraform(this._deploymentType),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       description: {
-        value: cdktf.stringToHclTerraform(this._description),
+        value: cdktn.stringToHclTerraform(this._description),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       directory_stripe_level: {
-        value: cdktf.stringToHclTerraform(this._directoryStripeLevel),
+        value: cdktn.stringToHclTerraform(this._directoryStripeLevel),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       file_stripe_level: {
-        value: cdktf.stringToHclTerraform(this._fileStripeLevel),
+        value: cdktn.stringToHclTerraform(this._fileStripeLevel),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       instance_id: {
-        value: cdktf.stringToHclTerraform(this._instanceId),
+        value: cdktn.stringToHclTerraform(this._instanceId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       labels: {
-        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._labels),
+        value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(this._labels),
         isBlock: false,
         type: "map",
         storageClassType: "stringMap",
       },
       location: {
-        value: cdktf.stringToHclTerraform(this._location),
+        value: cdktn.stringToHclTerraform(this._location),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       network: {
-        value: cdktf.stringToHclTerraform(this._network),
+        value: cdktn.stringToHclTerraform(this._network),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       project: {
-        value: cdktf.stringToHclTerraform(this._project),
+        value: cdktn.stringToHclTerraform(this._project),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       reserved_ip_range: {
-        value: cdktf.stringToHclTerraform(this._reservedIpRange),
+        value: cdktn.stringToHclTerraform(this._reservedIpRange),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

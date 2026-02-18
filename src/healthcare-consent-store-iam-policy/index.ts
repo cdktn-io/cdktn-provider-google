@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface HealthcareConsentStoreIamPolicyConfig extends cdktf.TerraformMetaArguments {
+export interface HealthcareConsentStoreIamPolicyConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/healthcare_consent_store_iam_policy#consent_store_id HealthcareConsentStoreIamPolicy#consent_store_id}
   */
@@ -36,7 +36,7 @@ export interface HealthcareConsentStoreIamPolicyConfig extends cdktf.TerraformMe
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/healthcare_consent_store_iam_policy google_healthcare_consent_store_iam_policy}
 */
-export class HealthcareConsentStoreIamPolicy extends cdktf.TerraformResource {
+export class HealthcareConsentStoreIamPolicy extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -47,14 +47,14 @@ export class HealthcareConsentStoreIamPolicy extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a HealthcareConsentStoreIamPolicy resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a HealthcareConsentStoreIamPolicy resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the HealthcareConsentStoreIamPolicy to import
   * @param importFromId The id of the existing HealthcareConsentStoreIamPolicy that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/healthcare_consent_store_iam_policy#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the HealthcareConsentStoreIamPolicy to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "google_healthcare_consent_store_iam_policy", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "google_healthcare_consent_store_iam_policy", importId: importFromId, provider });
       }
 
   // ===========
@@ -160,35 +160,35 @@ export class HealthcareConsentStoreIamPolicy extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      consent_store_id: cdktf.stringToTerraform(this._consentStoreId),
-      dataset: cdktf.stringToTerraform(this._dataset),
-      id: cdktf.stringToTerraform(this._id),
-      policy_data: cdktf.stringToTerraform(this._policyData),
+      consent_store_id: cdktn.stringToTerraform(this._consentStoreId),
+      dataset: cdktn.stringToTerraform(this._dataset),
+      id: cdktn.stringToTerraform(this._id),
+      policy_data: cdktn.stringToTerraform(this._policyData),
     };
   }
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       consent_store_id: {
-        value: cdktf.stringToHclTerraform(this._consentStoreId),
+        value: cdktn.stringToHclTerraform(this._consentStoreId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       dataset: {
-        value: cdktf.stringToHclTerraform(this._dataset),
+        value: cdktn.stringToHclTerraform(this._dataset),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       policy_data: {
-        value: cdktf.stringToHclTerraform(this._policyData),
+        value: cdktn.stringToHclTerraform(this._policyData),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

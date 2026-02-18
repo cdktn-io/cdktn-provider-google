@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface ApigeeControlPlaneAccessConfig extends cdktf.TerraformMetaArguments {
+export interface ApigeeControlPlaneAccessConfig extends cdktn.TerraformMetaArguments {
   /**
   * Array of service accounts authorized to publish analytics data to the control plane, each specified using the following format: 'serviceAccount:service-account-name'.
   * 
@@ -69,39 +69,39 @@ export interface ApigeeControlPlaneAccessTimeouts {
   readonly update?: string;
 }
 
-export function apigeeControlPlaneAccessTimeoutsToTerraform(struct?: ApigeeControlPlaneAccessTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function apigeeControlPlaneAccessTimeoutsToTerraform(struct?: ApigeeControlPlaneAccessTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    create: cdktf.stringToTerraform(struct!.create),
-    delete: cdktf.stringToTerraform(struct!.delete),
-    update: cdktf.stringToTerraform(struct!.update),
+    create: cdktn.stringToTerraform(struct!.create),
+    delete: cdktn.stringToTerraform(struct!.delete),
+    update: cdktn.stringToTerraform(struct!.update),
   }
 }
 
 
-export function apigeeControlPlaneAccessTimeoutsToHclTerraform(struct?: ApigeeControlPlaneAccessTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function apigeeControlPlaneAccessTimeoutsToHclTerraform(struct?: ApigeeControlPlaneAccessTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     create: {
-      value: cdktf.stringToHclTerraform(struct!.create),
+      value: cdktn.stringToHclTerraform(struct!.create),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     delete: {
-      value: cdktf.stringToHclTerraform(struct!.delete),
+      value: cdktn.stringToHclTerraform(struct!.delete),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     update: {
-      value: cdktf.stringToHclTerraform(struct!.update),
+      value: cdktn.stringToHclTerraform(struct!.update),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -112,19 +112,19 @@ export function apigeeControlPlaneAccessTimeoutsToHclTerraform(struct?: ApigeeCo
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class ApigeeControlPlaneAccessTimeoutsOutputReference extends cdktf.ComplexObject {
+export class ApigeeControlPlaneAccessTimeoutsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): ApigeeControlPlaneAccessTimeouts | cdktf.IResolvable | undefined {
+  public get internalValue(): ApigeeControlPlaneAccessTimeouts | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -145,7 +145,7 @@ export class ApigeeControlPlaneAccessTimeoutsOutputReference extends cdktf.Compl
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: ApigeeControlPlaneAccessTimeouts | cdktf.IResolvable | undefined) {
+  public set internalValue(value: ApigeeControlPlaneAccessTimeouts | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -153,7 +153,7 @@ export class ApigeeControlPlaneAccessTimeoutsOutputReference extends cdktf.Compl
       this._delete = undefined;
       this._update = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -218,7 +218,7 @@ export class ApigeeControlPlaneAccessTimeoutsOutputReference extends cdktf.Compl
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/apigee_control_plane_access google_apigee_control_plane_access}
 */
-export class ApigeeControlPlaneAccess extends cdktf.TerraformResource {
+export class ApigeeControlPlaneAccess extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -229,14 +229,14 @@ export class ApigeeControlPlaneAccess extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a ApigeeControlPlaneAccess resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a ApigeeControlPlaneAccess resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the ApigeeControlPlaneAccess to import
   * @param importFromId The id of the existing ApigeeControlPlaneAccess that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/apigee_control_plane_access#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the ApigeeControlPlaneAccess to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "google_apigee_control_plane_access", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "google_apigee_control_plane_access", importId: importFromId, provider });
       }
 
   // ===========
@@ -360,10 +360,10 @@ export class ApigeeControlPlaneAccess extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      analytics_publisher_identities: cdktf.listMapper(cdktf.stringToTerraform, false)(this._analyticsPublisherIdentities),
-      id: cdktf.stringToTerraform(this._id),
-      name: cdktf.stringToTerraform(this._name),
-      synchronizer_identities: cdktf.listMapper(cdktf.stringToTerraform, false)(this._synchronizerIdentities),
+      analytics_publisher_identities: cdktn.listMapper(cdktn.stringToTerraform, false)(this._analyticsPublisherIdentities),
+      id: cdktn.stringToTerraform(this._id),
+      name: cdktn.stringToTerraform(this._name),
+      synchronizer_identities: cdktn.listMapper(cdktn.stringToTerraform, false)(this._synchronizerIdentities),
       timeouts: apigeeControlPlaneAccessTimeoutsToTerraform(this._timeouts.internalValue),
     };
   }
@@ -371,25 +371,25 @@ export class ApigeeControlPlaneAccess extends cdktf.TerraformResource {
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       analytics_publisher_identities: {
-        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._analyticsPublisherIdentities),
+        value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(this._analyticsPublisherIdentities),
         isBlock: false,
         type: "list",
         storageClassType: "stringList",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       name: {
-        value: cdktf.stringToHclTerraform(this._name),
+        value: cdktn.stringToHclTerraform(this._name),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       synchronizer_identities: {
-        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._synchronizerIdentities),
+        value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(this._synchronizerIdentities),
         isBlock: false,
         type: "list",
         storageClassType: "stringList",

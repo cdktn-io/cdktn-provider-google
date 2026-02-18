@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface ApihubApiHubInstanceConfig extends cdktf.TerraformMetaArguments {
+export interface ApihubApiHubInstanceConfig extends cdktn.TerraformMetaArguments {
   /**
   * Optional. Identifier to assign to the Api Hub instance. Must be unique within
   * scope of the parent resource. If the field is not provided,
@@ -87,7 +87,7 @@ export interface ApihubApiHubInstanceConfigA {
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/apihub_api_hub_instance#disable_search ApihubApiHubInstance#disable_search}
   */
-  readonly disableSearch?: boolean | cdktf.IResolvable;
+  readonly disableSearch?: boolean | cdktn.IResolvable;
   /**
   * Optional. Encryption type for the region. If the encryption type is CMEK, the
   * cmek_key_name must be provided. If no encryption type is provided,
@@ -109,45 +109,45 @@ export interface ApihubApiHubInstanceConfigA {
 }
 
 export function apihubApiHubInstanceConfigAToTerraform(struct?: ApihubApiHubInstanceConfigAOutputReference | ApihubApiHubInstanceConfigA): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    cmek_key_name: cdktf.stringToTerraform(struct!.cmekKeyName),
-    disable_search: cdktf.booleanToTerraform(struct!.disableSearch),
-    encryption_type: cdktf.stringToTerraform(struct!.encryptionType),
-    vertex_location: cdktf.stringToTerraform(struct!.vertexLocation),
+    cmek_key_name: cdktn.stringToTerraform(struct!.cmekKeyName),
+    disable_search: cdktn.booleanToTerraform(struct!.disableSearch),
+    encryption_type: cdktn.stringToTerraform(struct!.encryptionType),
+    vertex_location: cdktn.stringToTerraform(struct!.vertexLocation),
   }
 }
 
 
 export function apihubApiHubInstanceConfigAToHclTerraform(struct?: ApihubApiHubInstanceConfigAOutputReference | ApihubApiHubInstanceConfigA): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     cmek_key_name: {
-      value: cdktf.stringToHclTerraform(struct!.cmekKeyName),
+      value: cdktn.stringToHclTerraform(struct!.cmekKeyName),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     disable_search: {
-      value: cdktf.booleanToHclTerraform(struct!.disableSearch),
+      value: cdktn.booleanToHclTerraform(struct!.disableSearch),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     encryption_type: {
-      value: cdktf.stringToHclTerraform(struct!.encryptionType),
+      value: cdktn.stringToHclTerraform(struct!.encryptionType),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     vertex_location: {
-      value: cdktf.stringToHclTerraform(struct!.vertexLocation),
+      value: cdktn.stringToHclTerraform(struct!.vertexLocation),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -158,14 +158,14 @@ export function apihubApiHubInstanceConfigAToHclTerraform(struct?: ApihubApiHubI
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class ApihubApiHubInstanceConfigAOutputReference extends cdktf.ComplexObject {
+export class ApihubApiHubInstanceConfigAOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -225,11 +225,11 @@ export class ApihubApiHubInstanceConfigAOutputReference extends cdktf.ComplexObj
   }
 
   // disable_search - computed: false, optional: true, required: false
-  private _disableSearch?: boolean | cdktf.IResolvable; 
+  private _disableSearch?: boolean | cdktn.IResolvable; 
   public get disableSearch() {
     return this.getBooleanAttribute('disable_search');
   }
-  public set disableSearch(value: boolean | cdktf.IResolvable) {
+  public set disableSearch(value: boolean | cdktn.IResolvable) {
     this._disableSearch = value;
   }
   public resetDisableSearch() {
@@ -287,39 +287,39 @@ export interface ApihubApiHubInstanceTimeouts {
   readonly update?: string;
 }
 
-export function apihubApiHubInstanceTimeoutsToTerraform(struct?: ApihubApiHubInstanceTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function apihubApiHubInstanceTimeoutsToTerraform(struct?: ApihubApiHubInstanceTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    create: cdktf.stringToTerraform(struct!.create),
-    delete: cdktf.stringToTerraform(struct!.delete),
-    update: cdktf.stringToTerraform(struct!.update),
+    create: cdktn.stringToTerraform(struct!.create),
+    delete: cdktn.stringToTerraform(struct!.delete),
+    update: cdktn.stringToTerraform(struct!.update),
   }
 }
 
 
-export function apihubApiHubInstanceTimeoutsToHclTerraform(struct?: ApihubApiHubInstanceTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function apihubApiHubInstanceTimeoutsToHclTerraform(struct?: ApihubApiHubInstanceTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     create: {
-      value: cdktf.stringToHclTerraform(struct!.create),
+      value: cdktn.stringToHclTerraform(struct!.create),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     delete: {
-      value: cdktf.stringToHclTerraform(struct!.delete),
+      value: cdktn.stringToHclTerraform(struct!.delete),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     update: {
-      value: cdktf.stringToHclTerraform(struct!.update),
+      value: cdktn.stringToHclTerraform(struct!.update),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -330,19 +330,19 @@ export function apihubApiHubInstanceTimeoutsToHclTerraform(struct?: ApihubApiHub
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class ApihubApiHubInstanceTimeoutsOutputReference extends cdktf.ComplexObject {
+export class ApihubApiHubInstanceTimeoutsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): ApihubApiHubInstanceTimeouts | cdktf.IResolvable | undefined {
+  public get internalValue(): ApihubApiHubInstanceTimeouts | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -363,7 +363,7 @@ export class ApihubApiHubInstanceTimeoutsOutputReference extends cdktf.ComplexOb
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: ApihubApiHubInstanceTimeouts | cdktf.IResolvable | undefined) {
+  public set internalValue(value: ApihubApiHubInstanceTimeouts | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -371,7 +371,7 @@ export class ApihubApiHubInstanceTimeoutsOutputReference extends cdktf.ComplexOb
       this._delete = undefined;
       this._update = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -436,7 +436,7 @@ export class ApihubApiHubInstanceTimeoutsOutputReference extends cdktf.ComplexOb
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/apihub_api_hub_instance google_apihub_api_hub_instance}
 */
-export class ApihubApiHubInstance extends cdktf.TerraformResource {
+export class ApihubApiHubInstance extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -447,14 +447,14 @@ export class ApihubApiHubInstance extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a ApihubApiHubInstance resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a ApihubApiHubInstance resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the ApihubApiHubInstance to import
   * @param importFromId The id of the existing ApihubApiHubInstance that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/apihub_api_hub_instance#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the ApihubApiHubInstance to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "google_apihub_api_hub_instance", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "google_apihub_api_hub_instance", importId: importFromId, provider });
       }
 
   // ===========
@@ -536,7 +536,7 @@ export class ApihubApiHubInstance extends cdktf.TerraformResource {
   }
 
   // effective_labels - computed: true, optional: false, required: false
-  private _effectiveLabels = new cdktf.StringMap(this, "effective_labels");
+  private _effectiveLabels = new cdktn.StringMap(this, "effective_labels");
   public get effectiveLabels() {
     return this._effectiveLabels;
   }
@@ -618,7 +618,7 @@ export class ApihubApiHubInstance extends cdktf.TerraformResource {
   }
 
   // terraform_labels - computed: true, optional: false, required: false
-  private _terraformLabels = new cdktf.StringMap(this, "terraform_labels");
+  private _terraformLabels = new cdktn.StringMap(this, "terraform_labels");
   public get terraformLabels() {
     return this._terraformLabels;
   }
@@ -663,12 +663,12 @@ export class ApihubApiHubInstance extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      api_hub_instance_id: cdktf.stringToTerraform(this._apiHubInstanceId),
-      description: cdktf.stringToTerraform(this._description),
-      id: cdktf.stringToTerraform(this._id),
-      labels: cdktf.hashMapper(cdktf.stringToTerraform)(this._labels),
-      location: cdktf.stringToTerraform(this._location),
-      project: cdktf.stringToTerraform(this._project),
+      api_hub_instance_id: cdktn.stringToTerraform(this._apiHubInstanceId),
+      description: cdktn.stringToTerraform(this._description),
+      id: cdktn.stringToTerraform(this._id),
+      labels: cdktn.hashMapper(cdktn.stringToTerraform)(this._labels),
+      location: cdktn.stringToTerraform(this._location),
+      project: cdktn.stringToTerraform(this._project),
       config: apihubApiHubInstanceConfigAToTerraform(this._config.internalValue),
       timeouts: apihubApiHubInstanceTimeoutsToTerraform(this._timeouts.internalValue),
     };
@@ -677,37 +677,37 @@ export class ApihubApiHubInstance extends cdktf.TerraformResource {
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       api_hub_instance_id: {
-        value: cdktf.stringToHclTerraform(this._apiHubInstanceId),
+        value: cdktn.stringToHclTerraform(this._apiHubInstanceId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       description: {
-        value: cdktf.stringToHclTerraform(this._description),
+        value: cdktn.stringToHclTerraform(this._description),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       labels: {
-        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._labels),
+        value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(this._labels),
         isBlock: false,
         type: "map",
         storageClassType: "stringMap",
       },
       location: {
-        value: cdktf.stringToHclTerraform(this._location),
+        value: cdktn.stringToHclTerraform(this._location),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       project: {
-        value: cdktf.stringToHclTerraform(this._project),
+        value: cdktn.stringToHclTerraform(this._project),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

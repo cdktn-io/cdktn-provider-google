@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface DataGoogleSqlBackupRunConfig extends cdktf.TerraformMetaArguments {
+export interface DataGoogleSqlBackupRunConfig extends cdktn.TerraformMetaArguments {
   /**
   * The identifier for this backup run. Unique only for a specific Cloud SQL instance. If left empty and multiple backups exist for the instance, most_recent must be set to true.
   *
@@ -36,7 +36,7 @@ export interface DataGoogleSqlBackupRunConfig extends cdktf.TerraformMetaArgumen
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/data-sources/sql_backup_run#most_recent DataGoogleSqlBackupRun#most_recent}
   */
-  readonly mostRecent?: boolean | cdktf.IResolvable;
+  readonly mostRecent?: boolean | cdktn.IResolvable;
   /**
   * Project ID of the project that contains the instance.
   *
@@ -48,7 +48,7 @@ export interface DataGoogleSqlBackupRunConfig extends cdktf.TerraformMetaArgumen
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/data-sources/sql_backup_run google_sql_backup_run}
 */
-export class DataGoogleSqlBackupRun extends cdktf.TerraformDataSource {
+export class DataGoogleSqlBackupRun extends cdktn.TerraformDataSource {
 
   // =================
   // STATIC PROPERTIES
@@ -59,14 +59,14 @@ export class DataGoogleSqlBackupRun extends cdktf.TerraformDataSource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a DataGoogleSqlBackupRun resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a DataGoogleSqlBackupRun resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataGoogleSqlBackupRun to import
   * @param importFromId The id of the existing DataGoogleSqlBackupRun that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/data-sources/sql_backup_run#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataGoogleSqlBackupRun to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "google_sql_backup_run", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "google_sql_backup_run", importId: importFromId, provider });
       }
 
   // ===========
@@ -158,11 +158,11 @@ export class DataGoogleSqlBackupRun extends cdktf.TerraformDataSource {
   }
 
   // most_recent - computed: false, optional: true, required: false
-  private _mostRecent?: boolean | cdktf.IResolvable; 
+  private _mostRecent?: boolean | cdktn.IResolvable; 
   public get mostRecent() {
     return this.getBooleanAttribute('most_recent');
   }
-  public set mostRecent(value: boolean | cdktf.IResolvable) {
+  public set mostRecent(value: boolean | cdktn.IResolvable) {
     this._mostRecent = value;
   }
   public resetMostRecent() {
@@ -205,42 +205,42 @@ export class DataGoogleSqlBackupRun extends cdktf.TerraformDataSource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      backup_id: cdktf.numberToTerraform(this._backupId),
-      id: cdktf.stringToTerraform(this._id),
-      instance: cdktf.stringToTerraform(this._instance),
-      most_recent: cdktf.booleanToTerraform(this._mostRecent),
-      project: cdktf.stringToTerraform(this._project),
+      backup_id: cdktn.numberToTerraform(this._backupId),
+      id: cdktn.stringToTerraform(this._id),
+      instance: cdktn.stringToTerraform(this._instance),
+      most_recent: cdktn.booleanToTerraform(this._mostRecent),
+      project: cdktn.stringToTerraform(this._project),
     };
   }
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       backup_id: {
-        value: cdktf.numberToHclTerraform(this._backupId),
+        value: cdktn.numberToHclTerraform(this._backupId),
         isBlock: false,
         type: "simple",
         storageClassType: "number",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       instance: {
-        value: cdktf.stringToHclTerraform(this._instance),
+        value: cdktn.stringToHclTerraform(this._instance),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       most_recent: {
-        value: cdktf.booleanToHclTerraform(this._mostRecent),
+        value: cdktn.booleanToHclTerraform(this._mostRecent),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       project: {
-        value: cdktf.stringToHclTerraform(this._project),
+        value: cdktn.stringToHclTerraform(this._project),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

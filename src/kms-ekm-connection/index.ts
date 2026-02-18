@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface KmsEkmConnectionConfig extends cdktf.TerraformMetaArguments {
+export interface KmsEkmConnectionConfig extends cdktn.TerraformMetaArguments {
   /**
   * Optional. Identifies the EKM Crypto Space that this EkmConnection maps to. Note: This field is required if KeyManagementMode is CLOUD_KMS.
   *
@@ -59,7 +59,7 @@ export interface KmsEkmConnectionConfig extends cdktf.TerraformMetaArguments {
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/kms_ekm_connection#service_resolvers KmsEkmConnection#service_resolvers}
   */
-  readonly serviceResolvers: KmsEkmConnectionServiceResolvers[] | cdktf.IResolvable;
+  readonly serviceResolvers: KmsEkmConnectionServiceResolvers[] | cdktn.IResolvable;
   /**
   * timeouts block
   *
@@ -82,32 +82,32 @@ export interface KmsEkmConnectionServiceResolversServerCertificates {
   readonly subjectAlternativeDnsNames?: string[];
 }
 
-export function kmsEkmConnectionServiceResolversServerCertificatesToTerraform(struct?: KmsEkmConnectionServiceResolversServerCertificates | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function kmsEkmConnectionServiceResolversServerCertificatesToTerraform(struct?: KmsEkmConnectionServiceResolversServerCertificates | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    raw_der: cdktf.stringToTerraform(struct!.rawDer),
-    subject_alternative_dns_names: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.subjectAlternativeDnsNames),
+    raw_der: cdktn.stringToTerraform(struct!.rawDer),
+    subject_alternative_dns_names: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.subjectAlternativeDnsNames),
   }
 }
 
 
-export function kmsEkmConnectionServiceResolversServerCertificatesToHclTerraform(struct?: KmsEkmConnectionServiceResolversServerCertificates | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function kmsEkmConnectionServiceResolversServerCertificatesToHclTerraform(struct?: KmsEkmConnectionServiceResolversServerCertificates | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     raw_der: {
-      value: cdktf.stringToHclTerraform(struct!.rawDer),
+      value: cdktn.stringToHclTerraform(struct!.rawDer),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     subject_alternative_dns_names: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.subjectAlternativeDnsNames),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.subjectAlternativeDnsNames),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
@@ -118,9 +118,9 @@ export function kmsEkmConnectionServiceResolversServerCertificatesToHclTerraform
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class KmsEkmConnectionServiceResolversServerCertificatesOutputReference extends cdktf.ComplexObject {
+export class KmsEkmConnectionServiceResolversServerCertificatesOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -128,11 +128,11 @@ export class KmsEkmConnectionServiceResolversServerCertificatesOutputReference e
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): KmsEkmConnectionServiceResolversServerCertificates | cdktf.IResolvable | undefined {
+  public get internalValue(): KmsEkmConnectionServiceResolversServerCertificates | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -149,14 +149,14 @@ export class KmsEkmConnectionServiceResolversServerCertificatesOutputReference e
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: KmsEkmConnectionServiceResolversServerCertificates | cdktf.IResolvable | undefined) {
+  public set internalValue(value: KmsEkmConnectionServiceResolversServerCertificates | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._rawDer = undefined;
       this._subjectAlternativeDnsNames = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -233,15 +233,15 @@ export class KmsEkmConnectionServiceResolversServerCertificatesOutputReference e
   }
 }
 
-export class KmsEkmConnectionServiceResolversServerCertificatesList extends cdktf.ComplexList {
-  public internalValue? : KmsEkmConnectionServiceResolversServerCertificates[] | cdktf.IResolvable
+export class KmsEkmConnectionServiceResolversServerCertificatesList extends cdktn.ComplexList {
+  public internalValue? : KmsEkmConnectionServiceResolversServerCertificates[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -278,49 +278,49 @@ export interface KmsEkmConnectionServiceResolvers {
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/kms_ekm_connection#server_certificates KmsEkmConnection#server_certificates}
   */
-  readonly serverCertificates: KmsEkmConnectionServiceResolversServerCertificates[] | cdktf.IResolvable;
+  readonly serverCertificates: KmsEkmConnectionServiceResolversServerCertificates[] | cdktn.IResolvable;
 }
 
-export function kmsEkmConnectionServiceResolversToTerraform(struct?: KmsEkmConnectionServiceResolvers | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function kmsEkmConnectionServiceResolversToTerraform(struct?: KmsEkmConnectionServiceResolvers | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    endpoint_filter: cdktf.stringToTerraform(struct!.endpointFilter),
-    hostname: cdktf.stringToTerraform(struct!.hostname),
-    service_directory_service: cdktf.stringToTerraform(struct!.serviceDirectoryService),
-    server_certificates: cdktf.listMapper(kmsEkmConnectionServiceResolversServerCertificatesToTerraform, true)(struct!.serverCertificates),
+    endpoint_filter: cdktn.stringToTerraform(struct!.endpointFilter),
+    hostname: cdktn.stringToTerraform(struct!.hostname),
+    service_directory_service: cdktn.stringToTerraform(struct!.serviceDirectoryService),
+    server_certificates: cdktn.listMapper(kmsEkmConnectionServiceResolversServerCertificatesToTerraform, true)(struct!.serverCertificates),
   }
 }
 
 
-export function kmsEkmConnectionServiceResolversToHclTerraform(struct?: KmsEkmConnectionServiceResolvers | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function kmsEkmConnectionServiceResolversToHclTerraform(struct?: KmsEkmConnectionServiceResolvers | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     endpoint_filter: {
-      value: cdktf.stringToHclTerraform(struct!.endpointFilter),
+      value: cdktn.stringToHclTerraform(struct!.endpointFilter),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     hostname: {
-      value: cdktf.stringToHclTerraform(struct!.hostname),
+      value: cdktn.stringToHclTerraform(struct!.hostname),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     service_directory_service: {
-      value: cdktf.stringToHclTerraform(struct!.serviceDirectoryService),
+      value: cdktn.stringToHclTerraform(struct!.serviceDirectoryService),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     server_certificates: {
-      value: cdktf.listMapperHcl(kmsEkmConnectionServiceResolversServerCertificatesToHclTerraform, true)(struct!.serverCertificates),
+      value: cdktn.listMapperHcl(kmsEkmConnectionServiceResolversServerCertificatesToHclTerraform, true)(struct!.serverCertificates),
       isBlock: true,
       type: "list",
       storageClassType: "KmsEkmConnectionServiceResolversServerCertificatesList",
@@ -331,9 +331,9 @@ export function kmsEkmConnectionServiceResolversToHclTerraform(struct?: KmsEkmCo
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class KmsEkmConnectionServiceResolversOutputReference extends cdktf.ComplexObject {
+export class KmsEkmConnectionServiceResolversOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -341,11 +341,11 @@ export class KmsEkmConnectionServiceResolversOutputReference extends cdktf.Compl
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): KmsEkmConnectionServiceResolvers | cdktf.IResolvable | undefined {
+  public get internalValue(): KmsEkmConnectionServiceResolvers | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -370,7 +370,7 @@ export class KmsEkmConnectionServiceResolversOutputReference extends cdktf.Compl
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: KmsEkmConnectionServiceResolvers | cdktf.IResolvable | undefined) {
+  public set internalValue(value: KmsEkmConnectionServiceResolvers | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -379,7 +379,7 @@ export class KmsEkmConnectionServiceResolversOutputReference extends cdktf.Compl
       this._serviceDirectoryService = undefined;
       this._serverCertificates.internalValue = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -440,7 +440,7 @@ export class KmsEkmConnectionServiceResolversOutputReference extends cdktf.Compl
   public get serverCertificates() {
     return this._serverCertificates;
   }
-  public putServerCertificates(value: KmsEkmConnectionServiceResolversServerCertificates[] | cdktf.IResolvable) {
+  public putServerCertificates(value: KmsEkmConnectionServiceResolversServerCertificates[] | cdktn.IResolvable) {
     this._serverCertificates.internalValue = value;
   }
   // Temporarily expose input value. Use with caution.
@@ -449,15 +449,15 @@ export class KmsEkmConnectionServiceResolversOutputReference extends cdktf.Compl
   }
 }
 
-export class KmsEkmConnectionServiceResolversList extends cdktf.ComplexList {
-  public internalValue? : KmsEkmConnectionServiceResolvers[] | cdktf.IResolvable
+export class KmsEkmConnectionServiceResolversList extends cdktn.ComplexList {
+  public internalValue? : KmsEkmConnectionServiceResolvers[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -483,39 +483,39 @@ export interface KmsEkmConnectionTimeouts {
   readonly update?: string;
 }
 
-export function kmsEkmConnectionTimeoutsToTerraform(struct?: KmsEkmConnectionTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function kmsEkmConnectionTimeoutsToTerraform(struct?: KmsEkmConnectionTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    create: cdktf.stringToTerraform(struct!.create),
-    delete: cdktf.stringToTerraform(struct!.delete),
-    update: cdktf.stringToTerraform(struct!.update),
+    create: cdktn.stringToTerraform(struct!.create),
+    delete: cdktn.stringToTerraform(struct!.delete),
+    update: cdktn.stringToTerraform(struct!.update),
   }
 }
 
 
-export function kmsEkmConnectionTimeoutsToHclTerraform(struct?: KmsEkmConnectionTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function kmsEkmConnectionTimeoutsToHclTerraform(struct?: KmsEkmConnectionTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     create: {
-      value: cdktf.stringToHclTerraform(struct!.create),
+      value: cdktn.stringToHclTerraform(struct!.create),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     delete: {
-      value: cdktf.stringToHclTerraform(struct!.delete),
+      value: cdktn.stringToHclTerraform(struct!.delete),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     update: {
-      value: cdktf.stringToHclTerraform(struct!.update),
+      value: cdktn.stringToHclTerraform(struct!.update),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -526,19 +526,19 @@ export function kmsEkmConnectionTimeoutsToHclTerraform(struct?: KmsEkmConnection
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class KmsEkmConnectionTimeoutsOutputReference extends cdktf.ComplexObject {
+export class KmsEkmConnectionTimeoutsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): KmsEkmConnectionTimeouts | cdktf.IResolvable | undefined {
+  public get internalValue(): KmsEkmConnectionTimeouts | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -559,7 +559,7 @@ export class KmsEkmConnectionTimeoutsOutputReference extends cdktf.ComplexObject
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: KmsEkmConnectionTimeouts | cdktf.IResolvable | undefined) {
+  public set internalValue(value: KmsEkmConnectionTimeouts | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -567,7 +567,7 @@ export class KmsEkmConnectionTimeoutsOutputReference extends cdktf.ComplexObject
       this._delete = undefined;
       this._update = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -632,7 +632,7 @@ export class KmsEkmConnectionTimeoutsOutputReference extends cdktf.ComplexObject
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/kms_ekm_connection google_kms_ekm_connection}
 */
-export class KmsEkmConnection extends cdktf.TerraformResource {
+export class KmsEkmConnection extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -643,14 +643,14 @@ export class KmsEkmConnection extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a KmsEkmConnection resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a KmsEkmConnection resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the KmsEkmConnection to import
   * @param importFromId The id of the existing KmsEkmConnection that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/kms_ekm_connection#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the KmsEkmConnection to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "google_kms_ekm_connection", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "google_kms_ekm_connection", importId: importFromId, provider });
       }
 
   // ===========
@@ -811,7 +811,7 @@ export class KmsEkmConnection extends cdktf.TerraformResource {
   public get serviceResolvers() {
     return this._serviceResolvers;
   }
-  public putServiceResolvers(value: KmsEkmConnectionServiceResolvers[] | cdktf.IResolvable) {
+  public putServiceResolvers(value: KmsEkmConnectionServiceResolvers[] | cdktn.IResolvable) {
     this._serviceResolvers.internalValue = value;
   }
   // Temporarily expose input value. Use with caution.
@@ -841,14 +841,14 @@ export class KmsEkmConnection extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      crypto_space_path: cdktf.stringToTerraform(this._cryptoSpacePath),
-      etag: cdktf.stringToTerraform(this._etag),
-      id: cdktf.stringToTerraform(this._id),
-      key_management_mode: cdktf.stringToTerraform(this._keyManagementMode),
-      location: cdktf.stringToTerraform(this._location),
-      name: cdktf.stringToTerraform(this._name),
-      project: cdktf.stringToTerraform(this._project),
-      service_resolvers: cdktf.listMapper(kmsEkmConnectionServiceResolversToTerraform, true)(this._serviceResolvers.internalValue),
+      crypto_space_path: cdktn.stringToTerraform(this._cryptoSpacePath),
+      etag: cdktn.stringToTerraform(this._etag),
+      id: cdktn.stringToTerraform(this._id),
+      key_management_mode: cdktn.stringToTerraform(this._keyManagementMode),
+      location: cdktn.stringToTerraform(this._location),
+      name: cdktn.stringToTerraform(this._name),
+      project: cdktn.stringToTerraform(this._project),
+      service_resolvers: cdktn.listMapper(kmsEkmConnectionServiceResolversToTerraform, true)(this._serviceResolvers.internalValue),
       timeouts: kmsEkmConnectionTimeoutsToTerraform(this._timeouts.internalValue),
     };
   }
@@ -856,49 +856,49 @@ export class KmsEkmConnection extends cdktf.TerraformResource {
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       crypto_space_path: {
-        value: cdktf.stringToHclTerraform(this._cryptoSpacePath),
+        value: cdktn.stringToHclTerraform(this._cryptoSpacePath),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       etag: {
-        value: cdktf.stringToHclTerraform(this._etag),
+        value: cdktn.stringToHclTerraform(this._etag),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       key_management_mode: {
-        value: cdktf.stringToHclTerraform(this._keyManagementMode),
+        value: cdktn.stringToHclTerraform(this._keyManagementMode),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       location: {
-        value: cdktf.stringToHclTerraform(this._location),
+        value: cdktn.stringToHclTerraform(this._location),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       name: {
-        value: cdktf.stringToHclTerraform(this._name),
+        value: cdktn.stringToHclTerraform(this._name),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       project: {
-        value: cdktf.stringToHclTerraform(this._project),
+        value: cdktn.stringToHclTerraform(this._project),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       service_resolvers: {
-        value: cdktf.listMapperHcl(kmsEkmConnectionServiceResolversToHclTerraform, true)(this._serviceResolvers.internalValue),
+        value: cdktn.listMapperHcl(kmsEkmConnectionServiceResolversToHclTerraform, true)(this._serviceResolvers.internalValue),
         isBlock: true,
         type: "list",
         storageClassType: "KmsEkmConnectionServiceResolversList",

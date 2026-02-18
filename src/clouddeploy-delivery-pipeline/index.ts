@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface ClouddeployDeliveryPipelineConfig extends cdktf.TerraformMetaArguments {
+export interface ClouddeployDeliveryPipelineConfig extends cdktn.TerraformMetaArguments {
   /**
   * User annotations. These attributes can only be set and used by the user, and not by Google Cloud Deploy. See https://google.aip.dev/128#annotations for more details such as format and size limitations.
   * 
@@ -66,7 +66,7 @@ export interface ClouddeployDeliveryPipelineConfig extends cdktf.TerraformMetaAr
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/clouddeploy_delivery_pipeline#suspended ClouddeployDeliveryPipeline#suspended}
   */
-  readonly suspended?: boolean | cdktf.IResolvable;
+  readonly suspended?: boolean | cdktn.IResolvable;
   /**
   * serial_pipeline block
   *
@@ -84,8 +84,8 @@ export interface ClouddeployDeliveryPipelineConditionPipelineReadyCondition {
 }
 
 export function clouddeployDeliveryPipelineConditionPipelineReadyConditionToTerraform(struct?: ClouddeployDeliveryPipelineConditionPipelineReadyCondition): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -94,8 +94,8 @@ export function clouddeployDeliveryPipelineConditionPipelineReadyConditionToTerr
 
 
 export function clouddeployDeliveryPipelineConditionPipelineReadyConditionToHclTerraform(struct?: ClouddeployDeliveryPipelineConditionPipelineReadyCondition): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -103,7 +103,7 @@ export function clouddeployDeliveryPipelineConditionPipelineReadyConditionToHclT
   return attrs;
 }
 
-export class ClouddeployDeliveryPipelineConditionPipelineReadyConditionOutputReference extends cdktf.ComplexObject {
+export class ClouddeployDeliveryPipelineConditionPipelineReadyConditionOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -112,7 +112,7 @@ export class ClouddeployDeliveryPipelineConditionPipelineReadyConditionOutputRef
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -142,14 +142,14 @@ export class ClouddeployDeliveryPipelineConditionPipelineReadyConditionOutputRef
   }
 }
 
-export class ClouddeployDeliveryPipelineConditionPipelineReadyConditionList extends cdktf.ComplexList {
+export class ClouddeployDeliveryPipelineConditionPipelineReadyConditionList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -164,8 +164,8 @@ export interface ClouddeployDeliveryPipelineConditionTargetsPresentCondition {
 }
 
 export function clouddeployDeliveryPipelineConditionTargetsPresentConditionToTerraform(struct?: ClouddeployDeliveryPipelineConditionTargetsPresentCondition): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -174,8 +174,8 @@ export function clouddeployDeliveryPipelineConditionTargetsPresentConditionToTer
 
 
 export function clouddeployDeliveryPipelineConditionTargetsPresentConditionToHclTerraform(struct?: ClouddeployDeliveryPipelineConditionTargetsPresentCondition): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -183,7 +183,7 @@ export function clouddeployDeliveryPipelineConditionTargetsPresentConditionToHcl
   return attrs;
 }
 
-export class ClouddeployDeliveryPipelineConditionTargetsPresentConditionOutputReference extends cdktf.ComplexObject {
+export class ClouddeployDeliveryPipelineConditionTargetsPresentConditionOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -192,7 +192,7 @@ export class ClouddeployDeliveryPipelineConditionTargetsPresentConditionOutputRe
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -227,14 +227,14 @@ export class ClouddeployDeliveryPipelineConditionTargetsPresentConditionOutputRe
   }
 }
 
-export class ClouddeployDeliveryPipelineConditionTargetsPresentConditionList extends cdktf.ComplexList {
+export class ClouddeployDeliveryPipelineConditionTargetsPresentConditionList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -249,8 +249,8 @@ export interface ClouddeployDeliveryPipelineConditionTargetsTypeCondition {
 }
 
 export function clouddeployDeliveryPipelineConditionTargetsTypeConditionToTerraform(struct?: ClouddeployDeliveryPipelineConditionTargetsTypeCondition): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -259,8 +259,8 @@ export function clouddeployDeliveryPipelineConditionTargetsTypeConditionToTerraf
 
 
 export function clouddeployDeliveryPipelineConditionTargetsTypeConditionToHclTerraform(struct?: ClouddeployDeliveryPipelineConditionTargetsTypeCondition): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -268,7 +268,7 @@ export function clouddeployDeliveryPipelineConditionTargetsTypeConditionToHclTer
   return attrs;
 }
 
-export class ClouddeployDeliveryPipelineConditionTargetsTypeConditionOutputReference extends cdktf.ComplexObject {
+export class ClouddeployDeliveryPipelineConditionTargetsTypeConditionOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -277,7 +277,7 @@ export class ClouddeployDeliveryPipelineConditionTargetsTypeConditionOutputRefer
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -307,14 +307,14 @@ export class ClouddeployDeliveryPipelineConditionTargetsTypeConditionOutputRefer
   }
 }
 
-export class ClouddeployDeliveryPipelineConditionTargetsTypeConditionList extends cdktf.ComplexList {
+export class ClouddeployDeliveryPipelineConditionTargetsTypeConditionList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -329,8 +329,8 @@ export interface ClouddeployDeliveryPipelineCondition {
 }
 
 export function clouddeployDeliveryPipelineConditionToTerraform(struct?: ClouddeployDeliveryPipelineCondition): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -339,8 +339,8 @@ export function clouddeployDeliveryPipelineConditionToTerraform(struct?: Cloudde
 
 
 export function clouddeployDeliveryPipelineConditionToHclTerraform(struct?: ClouddeployDeliveryPipelineCondition): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -348,7 +348,7 @@ export function clouddeployDeliveryPipelineConditionToHclTerraform(struct?: Clou
   return attrs;
 }
 
-export class ClouddeployDeliveryPipelineConditionOutputReference extends cdktf.ComplexObject {
+export class ClouddeployDeliveryPipelineConditionOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -357,7 +357,7 @@ export class ClouddeployDeliveryPipelineConditionOutputReference extends cdktf.C
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -395,14 +395,14 @@ export class ClouddeployDeliveryPipelineConditionOutputReference extends cdktf.C
   }
 }
 
-export class ClouddeployDeliveryPipelineConditionList extends cdktf.ComplexList {
+export class ClouddeployDeliveryPipelineConditionList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -428,32 +428,32 @@ export interface ClouddeployDeliveryPipelineSerialPipelineStagesDeployParameters
   readonly values: { [key: string]: string };
 }
 
-export function clouddeployDeliveryPipelineSerialPipelineStagesDeployParametersToTerraform(struct?: ClouddeployDeliveryPipelineSerialPipelineStagesDeployParameters | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function clouddeployDeliveryPipelineSerialPipelineStagesDeployParametersToTerraform(struct?: ClouddeployDeliveryPipelineSerialPipelineStagesDeployParameters | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    match_target_labels: cdktf.hashMapper(cdktf.stringToTerraform)(struct!.matchTargetLabels),
-    values: cdktf.hashMapper(cdktf.stringToTerraform)(struct!.values),
+    match_target_labels: cdktn.hashMapper(cdktn.stringToTerraform)(struct!.matchTargetLabels),
+    values: cdktn.hashMapper(cdktn.stringToTerraform)(struct!.values),
   }
 }
 
 
-export function clouddeployDeliveryPipelineSerialPipelineStagesDeployParametersToHclTerraform(struct?: ClouddeployDeliveryPipelineSerialPipelineStagesDeployParameters | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function clouddeployDeliveryPipelineSerialPipelineStagesDeployParametersToHclTerraform(struct?: ClouddeployDeliveryPipelineSerialPipelineStagesDeployParameters | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     match_target_labels: {
-      value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(struct!.matchTargetLabels),
+      value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(struct!.matchTargetLabels),
       isBlock: false,
       type: "map",
       storageClassType: "stringMap",
     },
     values: {
-      value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(struct!.values),
+      value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(struct!.values),
       isBlock: false,
       type: "map",
       storageClassType: "stringMap",
@@ -464,9 +464,9 @@ export function clouddeployDeliveryPipelineSerialPipelineStagesDeployParametersT
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class ClouddeployDeliveryPipelineSerialPipelineStagesDeployParametersOutputReference extends cdktf.ComplexObject {
+export class ClouddeployDeliveryPipelineSerialPipelineStagesDeployParametersOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -474,11 +474,11 @@ export class ClouddeployDeliveryPipelineSerialPipelineStagesDeployParametersOutp
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): ClouddeployDeliveryPipelineSerialPipelineStagesDeployParameters | cdktf.IResolvable | undefined {
+  public get internalValue(): ClouddeployDeliveryPipelineSerialPipelineStagesDeployParameters | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -495,14 +495,14 @@ export class ClouddeployDeliveryPipelineSerialPipelineStagesDeployParametersOutp
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: ClouddeployDeliveryPipelineSerialPipelineStagesDeployParameters | cdktf.IResolvable | undefined) {
+  public set internalValue(value: ClouddeployDeliveryPipelineSerialPipelineStagesDeployParameters | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._matchTargetLabels = undefined;
       this._values = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -544,15 +544,15 @@ export class ClouddeployDeliveryPipelineSerialPipelineStagesDeployParametersOutp
   }
 }
 
-export class ClouddeployDeliveryPipelineSerialPipelineStagesDeployParametersList extends cdktf.ComplexList {
-  public internalValue? : ClouddeployDeliveryPipelineSerialPipelineStagesDeployParameters[] | cdktf.IResolvable
+export class ClouddeployDeliveryPipelineSerialPipelineStagesDeployParametersList extends cdktn.ComplexList {
+  public internalValue? : ClouddeployDeliveryPipelineSerialPipelineStagesDeployParameters[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -573,24 +573,24 @@ export interface ClouddeployDeliveryPipelineSerialPipelineStagesStrategyCanaryCa
 }
 
 export function clouddeployDeliveryPipelineSerialPipelineStagesStrategyCanaryCanaryDeploymentPostdeployToTerraform(struct?: ClouddeployDeliveryPipelineSerialPipelineStagesStrategyCanaryCanaryDeploymentPostdeployOutputReference | ClouddeployDeliveryPipelineSerialPipelineStagesStrategyCanaryCanaryDeploymentPostdeploy): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    actions: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.actions),
+    actions: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.actions),
   }
 }
 
 
 export function clouddeployDeliveryPipelineSerialPipelineStagesStrategyCanaryCanaryDeploymentPostdeployToHclTerraform(struct?: ClouddeployDeliveryPipelineSerialPipelineStagesStrategyCanaryCanaryDeploymentPostdeployOutputReference | ClouddeployDeliveryPipelineSerialPipelineStagesStrategyCanaryCanaryDeploymentPostdeploy): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     actions: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.actions),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.actions),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
@@ -601,14 +601,14 @@ export function clouddeployDeliveryPipelineSerialPipelineStagesStrategyCanaryCan
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class ClouddeployDeliveryPipelineSerialPipelineStagesStrategyCanaryCanaryDeploymentPostdeployOutputReference extends cdktf.ComplexObject {
+export class ClouddeployDeliveryPipelineSerialPipelineStagesStrategyCanaryCanaryDeploymentPostdeployOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -659,24 +659,24 @@ export interface ClouddeployDeliveryPipelineSerialPipelineStagesStrategyCanaryCa
 }
 
 export function clouddeployDeliveryPipelineSerialPipelineStagesStrategyCanaryCanaryDeploymentPredeployToTerraform(struct?: ClouddeployDeliveryPipelineSerialPipelineStagesStrategyCanaryCanaryDeploymentPredeployOutputReference | ClouddeployDeliveryPipelineSerialPipelineStagesStrategyCanaryCanaryDeploymentPredeploy): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    actions: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.actions),
+    actions: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.actions),
   }
 }
 
 
 export function clouddeployDeliveryPipelineSerialPipelineStagesStrategyCanaryCanaryDeploymentPredeployToHclTerraform(struct?: ClouddeployDeliveryPipelineSerialPipelineStagesStrategyCanaryCanaryDeploymentPredeployOutputReference | ClouddeployDeliveryPipelineSerialPipelineStagesStrategyCanaryCanaryDeploymentPredeploy): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     actions: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.actions),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.actions),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
@@ -687,14 +687,14 @@ export function clouddeployDeliveryPipelineSerialPipelineStagesStrategyCanaryCan
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class ClouddeployDeliveryPipelineSerialPipelineStagesStrategyCanaryCanaryDeploymentPredeployOutputReference extends cdktf.ComplexObject {
+export class ClouddeployDeliveryPipelineSerialPipelineStagesStrategyCanaryCanaryDeploymentPredeployOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -747,7 +747,7 @@ export interface ClouddeployDeliveryPipelineSerialPipelineStagesStrategyCanaryCa
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/clouddeploy_delivery_pipeline#verify ClouddeployDeliveryPipeline#verify}
   */
-  readonly verify?: boolean | cdktf.IResolvable;
+  readonly verify?: boolean | cdktn.IResolvable;
   /**
   * postdeploy block
   *
@@ -763,13 +763,13 @@ export interface ClouddeployDeliveryPipelineSerialPipelineStagesStrategyCanaryCa
 }
 
 export function clouddeployDeliveryPipelineSerialPipelineStagesStrategyCanaryCanaryDeploymentToTerraform(struct?: ClouddeployDeliveryPipelineSerialPipelineStagesStrategyCanaryCanaryDeploymentOutputReference | ClouddeployDeliveryPipelineSerialPipelineStagesStrategyCanaryCanaryDeployment): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    percentages: cdktf.listMapper(cdktf.numberToTerraform, false)(struct!.percentages),
-    verify: cdktf.booleanToTerraform(struct!.verify),
+    percentages: cdktn.listMapper(cdktn.numberToTerraform, false)(struct!.percentages),
+    verify: cdktn.booleanToTerraform(struct!.verify),
     postdeploy: clouddeployDeliveryPipelineSerialPipelineStagesStrategyCanaryCanaryDeploymentPostdeployToTerraform(struct!.postdeploy),
     predeploy: clouddeployDeliveryPipelineSerialPipelineStagesStrategyCanaryCanaryDeploymentPredeployToTerraform(struct!.predeploy),
   }
@@ -777,19 +777,19 @@ export function clouddeployDeliveryPipelineSerialPipelineStagesStrategyCanaryCan
 
 
 export function clouddeployDeliveryPipelineSerialPipelineStagesStrategyCanaryCanaryDeploymentToHclTerraform(struct?: ClouddeployDeliveryPipelineSerialPipelineStagesStrategyCanaryCanaryDeploymentOutputReference | ClouddeployDeliveryPipelineSerialPipelineStagesStrategyCanaryCanaryDeployment): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     percentages: {
-      value: cdktf.listMapperHcl(cdktf.numberToHclTerraform, false)(struct!.percentages),
+      value: cdktn.listMapperHcl(cdktn.numberToHclTerraform, false)(struct!.percentages),
       isBlock: false,
       type: "list",
       storageClassType: "numberList",
     },
     verify: {
-      value: cdktf.booleanToHclTerraform(struct!.verify),
+      value: cdktn.booleanToHclTerraform(struct!.verify),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
@@ -812,14 +812,14 @@ export function clouddeployDeliveryPipelineSerialPipelineStagesStrategyCanaryCan
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class ClouddeployDeliveryPipelineSerialPipelineStagesStrategyCanaryCanaryDeploymentOutputReference extends cdktf.ComplexObject {
+export class ClouddeployDeliveryPipelineSerialPipelineStagesStrategyCanaryCanaryDeploymentOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -876,11 +876,11 @@ export class ClouddeployDeliveryPipelineSerialPipelineStagesStrategyCanaryCanary
   }
 
   // verify - computed: false, optional: true, required: false
-  private _verify?: boolean | cdktf.IResolvable; 
+  private _verify?: boolean | cdktn.IResolvable; 
   public get verify() {
     return this.getBooleanAttribute('verify');
   }
-  public set verify(value: boolean | cdktf.IResolvable) {
+  public set verify(value: boolean | cdktn.IResolvable) {
     this._verify = value;
   }
   public resetVerify() {
@@ -933,24 +933,24 @@ export interface ClouddeployDeliveryPipelineSerialPipelineStagesStrategyCanaryCu
 }
 
 export function clouddeployDeliveryPipelineSerialPipelineStagesStrategyCanaryCustomCanaryDeploymentPhaseConfigsPostdeployToTerraform(struct?: ClouddeployDeliveryPipelineSerialPipelineStagesStrategyCanaryCustomCanaryDeploymentPhaseConfigsPostdeployOutputReference | ClouddeployDeliveryPipelineSerialPipelineStagesStrategyCanaryCustomCanaryDeploymentPhaseConfigsPostdeploy): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    actions: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.actions),
+    actions: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.actions),
   }
 }
 
 
 export function clouddeployDeliveryPipelineSerialPipelineStagesStrategyCanaryCustomCanaryDeploymentPhaseConfigsPostdeployToHclTerraform(struct?: ClouddeployDeliveryPipelineSerialPipelineStagesStrategyCanaryCustomCanaryDeploymentPhaseConfigsPostdeployOutputReference | ClouddeployDeliveryPipelineSerialPipelineStagesStrategyCanaryCustomCanaryDeploymentPhaseConfigsPostdeploy): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     actions: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.actions),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.actions),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
@@ -961,14 +961,14 @@ export function clouddeployDeliveryPipelineSerialPipelineStagesStrategyCanaryCus
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class ClouddeployDeliveryPipelineSerialPipelineStagesStrategyCanaryCustomCanaryDeploymentPhaseConfigsPostdeployOutputReference extends cdktf.ComplexObject {
+export class ClouddeployDeliveryPipelineSerialPipelineStagesStrategyCanaryCustomCanaryDeploymentPhaseConfigsPostdeployOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -1019,24 +1019,24 @@ export interface ClouddeployDeliveryPipelineSerialPipelineStagesStrategyCanaryCu
 }
 
 export function clouddeployDeliveryPipelineSerialPipelineStagesStrategyCanaryCustomCanaryDeploymentPhaseConfigsPredeployToTerraform(struct?: ClouddeployDeliveryPipelineSerialPipelineStagesStrategyCanaryCustomCanaryDeploymentPhaseConfigsPredeployOutputReference | ClouddeployDeliveryPipelineSerialPipelineStagesStrategyCanaryCustomCanaryDeploymentPhaseConfigsPredeploy): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    actions: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.actions),
+    actions: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.actions),
   }
 }
 
 
 export function clouddeployDeliveryPipelineSerialPipelineStagesStrategyCanaryCustomCanaryDeploymentPhaseConfigsPredeployToHclTerraform(struct?: ClouddeployDeliveryPipelineSerialPipelineStagesStrategyCanaryCustomCanaryDeploymentPhaseConfigsPredeployOutputReference | ClouddeployDeliveryPipelineSerialPipelineStagesStrategyCanaryCustomCanaryDeploymentPhaseConfigsPredeploy): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     actions: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.actions),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.actions),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
@@ -1047,14 +1047,14 @@ export function clouddeployDeliveryPipelineSerialPipelineStagesStrategyCanaryCus
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class ClouddeployDeliveryPipelineSerialPipelineStagesStrategyCanaryCustomCanaryDeploymentPhaseConfigsPredeployOutputReference extends cdktf.ComplexObject {
+export class ClouddeployDeliveryPipelineSerialPipelineStagesStrategyCanaryCustomCanaryDeploymentPhaseConfigsPredeployOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -1119,7 +1119,7 @@ export interface ClouddeployDeliveryPipelineSerialPipelineStagesStrategyCanaryCu
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/clouddeploy_delivery_pipeline#verify ClouddeployDeliveryPipeline#verify}
   */
-  readonly verify?: boolean | cdktf.IResolvable;
+  readonly verify?: boolean | cdktn.IResolvable;
   /**
   * postdeploy block
   *
@@ -1134,48 +1134,48 @@ export interface ClouddeployDeliveryPipelineSerialPipelineStagesStrategyCanaryCu
   readonly predeploy?: ClouddeployDeliveryPipelineSerialPipelineStagesStrategyCanaryCustomCanaryDeploymentPhaseConfigsPredeploy;
 }
 
-export function clouddeployDeliveryPipelineSerialPipelineStagesStrategyCanaryCustomCanaryDeploymentPhaseConfigsToTerraform(struct?: ClouddeployDeliveryPipelineSerialPipelineStagesStrategyCanaryCustomCanaryDeploymentPhaseConfigs | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function clouddeployDeliveryPipelineSerialPipelineStagesStrategyCanaryCustomCanaryDeploymentPhaseConfigsToTerraform(struct?: ClouddeployDeliveryPipelineSerialPipelineStagesStrategyCanaryCustomCanaryDeploymentPhaseConfigs | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    percentage: cdktf.numberToTerraform(struct!.percentage),
-    phase_id: cdktf.stringToTerraform(struct!.phaseId),
-    profiles: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.profiles),
-    verify: cdktf.booleanToTerraform(struct!.verify),
+    percentage: cdktn.numberToTerraform(struct!.percentage),
+    phase_id: cdktn.stringToTerraform(struct!.phaseId),
+    profiles: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.profiles),
+    verify: cdktn.booleanToTerraform(struct!.verify),
     postdeploy: clouddeployDeliveryPipelineSerialPipelineStagesStrategyCanaryCustomCanaryDeploymentPhaseConfigsPostdeployToTerraform(struct!.postdeploy),
     predeploy: clouddeployDeliveryPipelineSerialPipelineStagesStrategyCanaryCustomCanaryDeploymentPhaseConfigsPredeployToTerraform(struct!.predeploy),
   }
 }
 
 
-export function clouddeployDeliveryPipelineSerialPipelineStagesStrategyCanaryCustomCanaryDeploymentPhaseConfigsToHclTerraform(struct?: ClouddeployDeliveryPipelineSerialPipelineStagesStrategyCanaryCustomCanaryDeploymentPhaseConfigs | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function clouddeployDeliveryPipelineSerialPipelineStagesStrategyCanaryCustomCanaryDeploymentPhaseConfigsToHclTerraform(struct?: ClouddeployDeliveryPipelineSerialPipelineStagesStrategyCanaryCustomCanaryDeploymentPhaseConfigs | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     percentage: {
-      value: cdktf.numberToHclTerraform(struct!.percentage),
+      value: cdktn.numberToHclTerraform(struct!.percentage),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     phase_id: {
-      value: cdktf.stringToHclTerraform(struct!.phaseId),
+      value: cdktn.stringToHclTerraform(struct!.phaseId),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     profiles: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.profiles),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.profiles),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
     },
     verify: {
-      value: cdktf.booleanToHclTerraform(struct!.verify),
+      value: cdktn.booleanToHclTerraform(struct!.verify),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
@@ -1198,9 +1198,9 @@ export function clouddeployDeliveryPipelineSerialPipelineStagesStrategyCanaryCus
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class ClouddeployDeliveryPipelineSerialPipelineStagesStrategyCanaryCustomCanaryDeploymentPhaseConfigsOutputReference extends cdktf.ComplexObject {
+export class ClouddeployDeliveryPipelineSerialPipelineStagesStrategyCanaryCustomCanaryDeploymentPhaseConfigsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -1208,11 +1208,11 @@ export class ClouddeployDeliveryPipelineSerialPipelineStagesStrategyCanaryCustom
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): ClouddeployDeliveryPipelineSerialPipelineStagesStrategyCanaryCustomCanaryDeploymentPhaseConfigs | cdktf.IResolvable | undefined {
+  public get internalValue(): ClouddeployDeliveryPipelineSerialPipelineStagesStrategyCanaryCustomCanaryDeploymentPhaseConfigs | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -1245,7 +1245,7 @@ export class ClouddeployDeliveryPipelineSerialPipelineStagesStrategyCanaryCustom
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: ClouddeployDeliveryPipelineSerialPipelineStagesStrategyCanaryCustomCanaryDeploymentPhaseConfigs | cdktf.IResolvable | undefined) {
+  public set internalValue(value: ClouddeployDeliveryPipelineSerialPipelineStagesStrategyCanaryCustomCanaryDeploymentPhaseConfigs | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -1256,7 +1256,7 @@ export class ClouddeployDeliveryPipelineSerialPipelineStagesStrategyCanaryCustom
       this._postdeploy.internalValue = undefined;
       this._predeploy.internalValue = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -1315,11 +1315,11 @@ export class ClouddeployDeliveryPipelineSerialPipelineStagesStrategyCanaryCustom
   }
 
   // verify - computed: false, optional: true, required: false
-  private _verify?: boolean | cdktf.IResolvable; 
+  private _verify?: boolean | cdktn.IResolvable; 
   public get verify() {
     return this.getBooleanAttribute('verify');
   }
-  public set verify(value: boolean | cdktf.IResolvable) {
+  public set verify(value: boolean | cdktn.IResolvable) {
     this._verify = value;
   }
   public resetVerify() {
@@ -1363,15 +1363,15 @@ export class ClouddeployDeliveryPipelineSerialPipelineStagesStrategyCanaryCustom
   }
 }
 
-export class ClouddeployDeliveryPipelineSerialPipelineStagesStrategyCanaryCustomCanaryDeploymentPhaseConfigsList extends cdktf.ComplexList {
-  public internalValue? : ClouddeployDeliveryPipelineSerialPipelineStagesStrategyCanaryCustomCanaryDeploymentPhaseConfigs[] | cdktf.IResolvable
+export class ClouddeployDeliveryPipelineSerialPipelineStagesStrategyCanaryCustomCanaryDeploymentPhaseConfigsList extends cdktn.ComplexList {
+  public internalValue? : ClouddeployDeliveryPipelineSerialPipelineStagesStrategyCanaryCustomCanaryDeploymentPhaseConfigs[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -1388,28 +1388,28 @@ export interface ClouddeployDeliveryPipelineSerialPipelineStagesStrategyCanaryCu
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/clouddeploy_delivery_pipeline#phase_configs ClouddeployDeliveryPipeline#phase_configs}
   */
-  readonly phaseConfigs: ClouddeployDeliveryPipelineSerialPipelineStagesStrategyCanaryCustomCanaryDeploymentPhaseConfigs[] | cdktf.IResolvable;
+  readonly phaseConfigs: ClouddeployDeliveryPipelineSerialPipelineStagesStrategyCanaryCustomCanaryDeploymentPhaseConfigs[] | cdktn.IResolvable;
 }
 
 export function clouddeployDeliveryPipelineSerialPipelineStagesStrategyCanaryCustomCanaryDeploymentToTerraform(struct?: ClouddeployDeliveryPipelineSerialPipelineStagesStrategyCanaryCustomCanaryDeploymentOutputReference | ClouddeployDeliveryPipelineSerialPipelineStagesStrategyCanaryCustomCanaryDeployment): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    phase_configs: cdktf.listMapper(clouddeployDeliveryPipelineSerialPipelineStagesStrategyCanaryCustomCanaryDeploymentPhaseConfigsToTerraform, true)(struct!.phaseConfigs),
+    phase_configs: cdktn.listMapper(clouddeployDeliveryPipelineSerialPipelineStagesStrategyCanaryCustomCanaryDeploymentPhaseConfigsToTerraform, true)(struct!.phaseConfigs),
   }
 }
 
 
 export function clouddeployDeliveryPipelineSerialPipelineStagesStrategyCanaryCustomCanaryDeploymentToHclTerraform(struct?: ClouddeployDeliveryPipelineSerialPipelineStagesStrategyCanaryCustomCanaryDeploymentOutputReference | ClouddeployDeliveryPipelineSerialPipelineStagesStrategyCanaryCustomCanaryDeployment): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     phase_configs: {
-      value: cdktf.listMapperHcl(clouddeployDeliveryPipelineSerialPipelineStagesStrategyCanaryCustomCanaryDeploymentPhaseConfigsToHclTerraform, true)(struct!.phaseConfigs),
+      value: cdktn.listMapperHcl(clouddeployDeliveryPipelineSerialPipelineStagesStrategyCanaryCustomCanaryDeploymentPhaseConfigsToHclTerraform, true)(struct!.phaseConfigs),
       isBlock: true,
       type: "list",
       storageClassType: "ClouddeployDeliveryPipelineSerialPipelineStagesStrategyCanaryCustomCanaryDeploymentPhaseConfigsList",
@@ -1420,14 +1420,14 @@ export function clouddeployDeliveryPipelineSerialPipelineStagesStrategyCanaryCus
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class ClouddeployDeliveryPipelineSerialPipelineStagesStrategyCanaryCustomCanaryDeploymentOutputReference extends cdktf.ComplexObject {
+export class ClouddeployDeliveryPipelineSerialPipelineStagesStrategyCanaryCustomCanaryDeploymentOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -1457,7 +1457,7 @@ export class ClouddeployDeliveryPipelineSerialPipelineStagesStrategyCanaryCustom
   public get phaseConfigs() {
     return this._phaseConfigs;
   }
-  public putPhaseConfigs(value: ClouddeployDeliveryPipelineSerialPipelineStagesStrategyCanaryCustomCanaryDeploymentPhaseConfigs[] | cdktf.IResolvable) {
+  public putPhaseConfigs(value: ClouddeployDeliveryPipelineSerialPipelineStagesStrategyCanaryCustomCanaryDeploymentPhaseConfigs[] | cdktn.IResolvable) {
     this._phaseConfigs.internalValue = value;
   }
   // Temporarily expose input value. Use with caution.
@@ -1471,7 +1471,7 @@ export interface ClouddeployDeliveryPipelineSerialPipelineStagesStrategyCanaryRu
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/clouddeploy_delivery_pipeline#automatic_traffic_control ClouddeployDeliveryPipeline#automatic_traffic_control}
   */
-  readonly automaticTrafficControl?: boolean | cdktf.IResolvable;
+  readonly automaticTrafficControl?: boolean | cdktn.IResolvable;
   /**
   * Optional. A list of tags that are added to the canary revision while the canary phase is in progress.
   *
@@ -1493,45 +1493,45 @@ export interface ClouddeployDeliveryPipelineSerialPipelineStagesStrategyCanaryRu
 }
 
 export function clouddeployDeliveryPipelineSerialPipelineStagesStrategyCanaryRuntimeConfigCloudRunToTerraform(struct?: ClouddeployDeliveryPipelineSerialPipelineStagesStrategyCanaryRuntimeConfigCloudRunOutputReference | ClouddeployDeliveryPipelineSerialPipelineStagesStrategyCanaryRuntimeConfigCloudRun): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    automatic_traffic_control: cdktf.booleanToTerraform(struct!.automaticTrafficControl),
-    canary_revision_tags: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.canaryRevisionTags),
-    prior_revision_tags: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.priorRevisionTags),
-    stable_revision_tags: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.stableRevisionTags),
+    automatic_traffic_control: cdktn.booleanToTerraform(struct!.automaticTrafficControl),
+    canary_revision_tags: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.canaryRevisionTags),
+    prior_revision_tags: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.priorRevisionTags),
+    stable_revision_tags: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.stableRevisionTags),
   }
 }
 
 
 export function clouddeployDeliveryPipelineSerialPipelineStagesStrategyCanaryRuntimeConfigCloudRunToHclTerraform(struct?: ClouddeployDeliveryPipelineSerialPipelineStagesStrategyCanaryRuntimeConfigCloudRunOutputReference | ClouddeployDeliveryPipelineSerialPipelineStagesStrategyCanaryRuntimeConfigCloudRun): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     automatic_traffic_control: {
-      value: cdktf.booleanToHclTerraform(struct!.automaticTrafficControl),
+      value: cdktn.booleanToHclTerraform(struct!.automaticTrafficControl),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     canary_revision_tags: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.canaryRevisionTags),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.canaryRevisionTags),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
     },
     prior_revision_tags: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.priorRevisionTags),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.priorRevisionTags),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
     },
     stable_revision_tags: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.stableRevisionTags),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.stableRevisionTags),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
@@ -1542,14 +1542,14 @@ export function clouddeployDeliveryPipelineSerialPipelineStagesStrategyCanaryRun
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class ClouddeployDeliveryPipelineSerialPipelineStagesStrategyCanaryRuntimeConfigCloudRunOutputReference extends cdktf.ComplexObject {
+export class ClouddeployDeliveryPipelineSerialPipelineStagesStrategyCanaryRuntimeConfigCloudRunOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -1593,11 +1593,11 @@ export class ClouddeployDeliveryPipelineSerialPipelineStagesStrategyCanaryRuntim
   }
 
   // automatic_traffic_control - computed: false, optional: true, required: false
-  private _automaticTrafficControl?: boolean | cdktf.IResolvable; 
+  private _automaticTrafficControl?: boolean | cdktn.IResolvable; 
   public get automaticTrafficControl() {
     return this.getBooleanAttribute('automatic_traffic_control');
   }
-  public set automaticTrafficControl(value: boolean | cdktf.IResolvable) {
+  public set automaticTrafficControl(value: boolean | cdktn.IResolvable) {
     this._automaticTrafficControl = value;
   }
   public resetAutomaticTrafficControl() {
@@ -1668,35 +1668,35 @@ export interface ClouddeployDeliveryPipelineSerialPipelineStagesStrategyCanaryRu
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/clouddeploy_delivery_pipeline#propagate_service ClouddeployDeliveryPipeline#propagate_service}
   */
-  readonly propagateService?: boolean | cdktf.IResolvable;
+  readonly propagateService?: boolean | cdktn.IResolvable;
 }
 
 export function clouddeployDeliveryPipelineSerialPipelineStagesStrategyCanaryRuntimeConfigKubernetesGatewayServiceMeshRouteDestinationsToTerraform(struct?: ClouddeployDeliveryPipelineSerialPipelineStagesStrategyCanaryRuntimeConfigKubernetesGatewayServiceMeshRouteDestinationsOutputReference | ClouddeployDeliveryPipelineSerialPipelineStagesStrategyCanaryRuntimeConfigKubernetesGatewayServiceMeshRouteDestinations): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    destination_ids: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.destinationIds),
-    propagate_service: cdktf.booleanToTerraform(struct!.propagateService),
+    destination_ids: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.destinationIds),
+    propagate_service: cdktn.booleanToTerraform(struct!.propagateService),
   }
 }
 
 
 export function clouddeployDeliveryPipelineSerialPipelineStagesStrategyCanaryRuntimeConfigKubernetesGatewayServiceMeshRouteDestinationsToHclTerraform(struct?: ClouddeployDeliveryPipelineSerialPipelineStagesStrategyCanaryRuntimeConfigKubernetesGatewayServiceMeshRouteDestinationsOutputReference | ClouddeployDeliveryPipelineSerialPipelineStagesStrategyCanaryRuntimeConfigKubernetesGatewayServiceMeshRouteDestinations): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     destination_ids: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.destinationIds),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.destinationIds),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
     },
     propagate_service: {
-      value: cdktf.booleanToHclTerraform(struct!.propagateService),
+      value: cdktn.booleanToHclTerraform(struct!.propagateService),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
@@ -1707,14 +1707,14 @@ export function clouddeployDeliveryPipelineSerialPipelineStagesStrategyCanaryRun
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class ClouddeployDeliveryPipelineSerialPipelineStagesStrategyCanaryRuntimeConfigKubernetesGatewayServiceMeshRouteDestinationsOutputReference extends cdktf.ComplexObject {
+export class ClouddeployDeliveryPipelineSerialPipelineStagesStrategyCanaryRuntimeConfigKubernetesGatewayServiceMeshRouteDestinationsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -1759,11 +1759,11 @@ export class ClouddeployDeliveryPipelineSerialPipelineStagesStrategyCanaryRuntim
   }
 
   // propagate_service - computed: false, optional: true, required: false
-  private _propagateService?: boolean | cdktf.IResolvable; 
+  private _propagateService?: boolean | cdktn.IResolvable; 
   public get propagateService() {
     return this.getBooleanAttribute('propagate_service');
   }
-  public set propagateService(value: boolean | cdktf.IResolvable) {
+  public set propagateService(value: boolean | cdktn.IResolvable) {
     this._propagateService = value;
   }
   public resetPropagateService() {
@@ -1820,60 +1820,60 @@ export interface ClouddeployDeliveryPipelineSerialPipelineStagesStrategyCanaryRu
 }
 
 export function clouddeployDeliveryPipelineSerialPipelineStagesStrategyCanaryRuntimeConfigKubernetesGatewayServiceMeshToTerraform(struct?: ClouddeployDeliveryPipelineSerialPipelineStagesStrategyCanaryRuntimeConfigKubernetesGatewayServiceMeshOutputReference | ClouddeployDeliveryPipelineSerialPipelineStagesStrategyCanaryRuntimeConfigKubernetesGatewayServiceMesh): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    deployment: cdktf.stringToTerraform(struct!.deployment),
-    http_route: cdktf.stringToTerraform(struct!.httpRoute),
-    pod_selector_label: cdktf.stringToTerraform(struct!.podSelectorLabel),
-    route_update_wait_time: cdktf.stringToTerraform(struct!.routeUpdateWaitTime),
-    service: cdktf.stringToTerraform(struct!.service),
-    stable_cutback_duration: cdktf.stringToTerraform(struct!.stableCutbackDuration),
+    deployment: cdktn.stringToTerraform(struct!.deployment),
+    http_route: cdktn.stringToTerraform(struct!.httpRoute),
+    pod_selector_label: cdktn.stringToTerraform(struct!.podSelectorLabel),
+    route_update_wait_time: cdktn.stringToTerraform(struct!.routeUpdateWaitTime),
+    service: cdktn.stringToTerraform(struct!.service),
+    stable_cutback_duration: cdktn.stringToTerraform(struct!.stableCutbackDuration),
     route_destinations: clouddeployDeliveryPipelineSerialPipelineStagesStrategyCanaryRuntimeConfigKubernetesGatewayServiceMeshRouteDestinationsToTerraform(struct!.routeDestinations),
   }
 }
 
 
 export function clouddeployDeliveryPipelineSerialPipelineStagesStrategyCanaryRuntimeConfigKubernetesGatewayServiceMeshToHclTerraform(struct?: ClouddeployDeliveryPipelineSerialPipelineStagesStrategyCanaryRuntimeConfigKubernetesGatewayServiceMeshOutputReference | ClouddeployDeliveryPipelineSerialPipelineStagesStrategyCanaryRuntimeConfigKubernetesGatewayServiceMesh): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     deployment: {
-      value: cdktf.stringToHclTerraform(struct!.deployment),
+      value: cdktn.stringToHclTerraform(struct!.deployment),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     http_route: {
-      value: cdktf.stringToHclTerraform(struct!.httpRoute),
+      value: cdktn.stringToHclTerraform(struct!.httpRoute),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     pod_selector_label: {
-      value: cdktf.stringToHclTerraform(struct!.podSelectorLabel),
+      value: cdktn.stringToHclTerraform(struct!.podSelectorLabel),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     route_update_wait_time: {
-      value: cdktf.stringToHclTerraform(struct!.routeUpdateWaitTime),
+      value: cdktn.stringToHclTerraform(struct!.routeUpdateWaitTime),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     service: {
-      value: cdktf.stringToHclTerraform(struct!.service),
+      value: cdktn.stringToHclTerraform(struct!.service),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     stable_cutback_duration: {
-      value: cdktf.stringToHclTerraform(struct!.stableCutbackDuration),
+      value: cdktn.stringToHclTerraform(struct!.stableCutbackDuration),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -1890,14 +1890,14 @@ export function clouddeployDeliveryPipelineSerialPipelineStagesStrategyCanaryRun
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class ClouddeployDeliveryPipelineSerialPipelineStagesStrategyCanaryRuntimeConfigKubernetesGatewayServiceMeshOutputReference extends cdktf.ComplexObject {
+export class ClouddeployDeliveryPipelineSerialPipelineStagesStrategyCanaryRuntimeConfigKubernetesGatewayServiceMeshOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -2073,7 +2073,7 @@ export interface ClouddeployDeliveryPipelineSerialPipelineStagesStrategyCanaryRu
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/clouddeploy_delivery_pipeline#disable_pod_overprovisioning ClouddeployDeliveryPipeline#disable_pod_overprovisioning}
   */
-  readonly disablePodOverprovisioning?: boolean | cdktf.IResolvable;
+  readonly disablePodOverprovisioning?: boolean | cdktn.IResolvable;
   /**
   * Optional. The label to use when selecting Pods for the Deployment resource. This label must already be present in the Deployment.
   *
@@ -2089,45 +2089,45 @@ export interface ClouddeployDeliveryPipelineSerialPipelineStagesStrategyCanaryRu
 }
 
 export function clouddeployDeliveryPipelineSerialPipelineStagesStrategyCanaryRuntimeConfigKubernetesServiceNetworkingToTerraform(struct?: ClouddeployDeliveryPipelineSerialPipelineStagesStrategyCanaryRuntimeConfigKubernetesServiceNetworkingOutputReference | ClouddeployDeliveryPipelineSerialPipelineStagesStrategyCanaryRuntimeConfigKubernetesServiceNetworking): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    deployment: cdktf.stringToTerraform(struct!.deployment),
-    disable_pod_overprovisioning: cdktf.booleanToTerraform(struct!.disablePodOverprovisioning),
-    pod_selector_label: cdktf.stringToTerraform(struct!.podSelectorLabel),
-    service: cdktf.stringToTerraform(struct!.service),
+    deployment: cdktn.stringToTerraform(struct!.deployment),
+    disable_pod_overprovisioning: cdktn.booleanToTerraform(struct!.disablePodOverprovisioning),
+    pod_selector_label: cdktn.stringToTerraform(struct!.podSelectorLabel),
+    service: cdktn.stringToTerraform(struct!.service),
   }
 }
 
 
 export function clouddeployDeliveryPipelineSerialPipelineStagesStrategyCanaryRuntimeConfigKubernetesServiceNetworkingToHclTerraform(struct?: ClouddeployDeliveryPipelineSerialPipelineStagesStrategyCanaryRuntimeConfigKubernetesServiceNetworkingOutputReference | ClouddeployDeliveryPipelineSerialPipelineStagesStrategyCanaryRuntimeConfigKubernetesServiceNetworking): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     deployment: {
-      value: cdktf.stringToHclTerraform(struct!.deployment),
+      value: cdktn.stringToHclTerraform(struct!.deployment),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     disable_pod_overprovisioning: {
-      value: cdktf.booleanToHclTerraform(struct!.disablePodOverprovisioning),
+      value: cdktn.booleanToHclTerraform(struct!.disablePodOverprovisioning),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     pod_selector_label: {
-      value: cdktf.stringToHclTerraform(struct!.podSelectorLabel),
+      value: cdktn.stringToHclTerraform(struct!.podSelectorLabel),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     service: {
-      value: cdktf.stringToHclTerraform(struct!.service),
+      value: cdktn.stringToHclTerraform(struct!.service),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -2138,14 +2138,14 @@ export function clouddeployDeliveryPipelineSerialPipelineStagesStrategyCanaryRun
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class ClouddeployDeliveryPipelineSerialPipelineStagesStrategyCanaryRuntimeConfigKubernetesServiceNetworkingOutputReference extends cdktf.ComplexObject {
+export class ClouddeployDeliveryPipelineSerialPipelineStagesStrategyCanaryRuntimeConfigKubernetesServiceNetworkingOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -2202,11 +2202,11 @@ export class ClouddeployDeliveryPipelineSerialPipelineStagesStrategyCanaryRuntim
   }
 
   // disable_pod_overprovisioning - computed: false, optional: true, required: false
-  private _disablePodOverprovisioning?: boolean | cdktf.IResolvable; 
+  private _disablePodOverprovisioning?: boolean | cdktn.IResolvable; 
   public get disablePodOverprovisioning() {
     return this.getBooleanAttribute('disable_pod_overprovisioning');
   }
-  public set disablePodOverprovisioning(value: boolean | cdktf.IResolvable) {
+  public set disablePodOverprovisioning(value: boolean | cdktn.IResolvable) {
     this._disablePodOverprovisioning = value;
   }
   public resetDisablePodOverprovisioning() {
@@ -2262,8 +2262,8 @@ export interface ClouddeployDeliveryPipelineSerialPipelineStagesStrategyCanaryRu
 }
 
 export function clouddeployDeliveryPipelineSerialPipelineStagesStrategyCanaryRuntimeConfigKubernetesToTerraform(struct?: ClouddeployDeliveryPipelineSerialPipelineStagesStrategyCanaryRuntimeConfigKubernetesOutputReference | ClouddeployDeliveryPipelineSerialPipelineStagesStrategyCanaryRuntimeConfigKubernetes): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -2274,8 +2274,8 @@ export function clouddeployDeliveryPipelineSerialPipelineStagesStrategyCanaryRun
 
 
 export function clouddeployDeliveryPipelineSerialPipelineStagesStrategyCanaryRuntimeConfigKubernetesToHclTerraform(struct?: ClouddeployDeliveryPipelineSerialPipelineStagesStrategyCanaryRuntimeConfigKubernetesOutputReference | ClouddeployDeliveryPipelineSerialPipelineStagesStrategyCanaryRuntimeConfigKubernetes): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -2297,14 +2297,14 @@ export function clouddeployDeliveryPipelineSerialPipelineStagesStrategyCanaryRun
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class ClouddeployDeliveryPipelineSerialPipelineStagesStrategyCanaryRuntimeConfigKubernetesOutputReference extends cdktf.ComplexObject {
+export class ClouddeployDeliveryPipelineSerialPipelineStagesStrategyCanaryRuntimeConfigKubernetesOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -2383,8 +2383,8 @@ export interface ClouddeployDeliveryPipelineSerialPipelineStagesStrategyCanaryRu
 }
 
 export function clouddeployDeliveryPipelineSerialPipelineStagesStrategyCanaryRuntimeConfigToTerraform(struct?: ClouddeployDeliveryPipelineSerialPipelineStagesStrategyCanaryRuntimeConfigOutputReference | ClouddeployDeliveryPipelineSerialPipelineStagesStrategyCanaryRuntimeConfig): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -2395,8 +2395,8 @@ export function clouddeployDeliveryPipelineSerialPipelineStagesStrategyCanaryRun
 
 
 export function clouddeployDeliveryPipelineSerialPipelineStagesStrategyCanaryRuntimeConfigToHclTerraform(struct?: ClouddeployDeliveryPipelineSerialPipelineStagesStrategyCanaryRuntimeConfigOutputReference | ClouddeployDeliveryPipelineSerialPipelineStagesStrategyCanaryRuntimeConfig): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -2418,14 +2418,14 @@ export function clouddeployDeliveryPipelineSerialPipelineStagesStrategyCanaryRun
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class ClouddeployDeliveryPipelineSerialPipelineStagesStrategyCanaryRuntimeConfigOutputReference extends cdktf.ComplexObject {
+export class ClouddeployDeliveryPipelineSerialPipelineStagesStrategyCanaryRuntimeConfigOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -2510,8 +2510,8 @@ export interface ClouddeployDeliveryPipelineSerialPipelineStagesStrategyCanary {
 }
 
 export function clouddeployDeliveryPipelineSerialPipelineStagesStrategyCanaryToTerraform(struct?: ClouddeployDeliveryPipelineSerialPipelineStagesStrategyCanaryOutputReference | ClouddeployDeliveryPipelineSerialPipelineStagesStrategyCanary): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -2523,8 +2523,8 @@ export function clouddeployDeliveryPipelineSerialPipelineStagesStrategyCanaryToT
 
 
 export function clouddeployDeliveryPipelineSerialPipelineStagesStrategyCanaryToHclTerraform(struct?: ClouddeployDeliveryPipelineSerialPipelineStagesStrategyCanaryOutputReference | ClouddeployDeliveryPipelineSerialPipelineStagesStrategyCanary): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -2552,14 +2552,14 @@ export function clouddeployDeliveryPipelineSerialPipelineStagesStrategyCanaryToH
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class ClouddeployDeliveryPipelineSerialPipelineStagesStrategyCanaryOutputReference extends cdktf.ComplexObject {
+export class ClouddeployDeliveryPipelineSerialPipelineStagesStrategyCanaryOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -2654,24 +2654,24 @@ export interface ClouddeployDeliveryPipelineSerialPipelineStagesStrategyStandard
 }
 
 export function clouddeployDeliveryPipelineSerialPipelineStagesStrategyStandardPostdeployToTerraform(struct?: ClouddeployDeliveryPipelineSerialPipelineStagesStrategyStandardPostdeployOutputReference | ClouddeployDeliveryPipelineSerialPipelineStagesStrategyStandardPostdeploy): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    actions: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.actions),
+    actions: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.actions),
   }
 }
 
 
 export function clouddeployDeliveryPipelineSerialPipelineStagesStrategyStandardPostdeployToHclTerraform(struct?: ClouddeployDeliveryPipelineSerialPipelineStagesStrategyStandardPostdeployOutputReference | ClouddeployDeliveryPipelineSerialPipelineStagesStrategyStandardPostdeploy): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     actions: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.actions),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.actions),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
@@ -2682,14 +2682,14 @@ export function clouddeployDeliveryPipelineSerialPipelineStagesStrategyStandardP
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class ClouddeployDeliveryPipelineSerialPipelineStagesStrategyStandardPostdeployOutputReference extends cdktf.ComplexObject {
+export class ClouddeployDeliveryPipelineSerialPipelineStagesStrategyStandardPostdeployOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -2740,24 +2740,24 @@ export interface ClouddeployDeliveryPipelineSerialPipelineStagesStrategyStandard
 }
 
 export function clouddeployDeliveryPipelineSerialPipelineStagesStrategyStandardPredeployToTerraform(struct?: ClouddeployDeliveryPipelineSerialPipelineStagesStrategyStandardPredeployOutputReference | ClouddeployDeliveryPipelineSerialPipelineStagesStrategyStandardPredeploy): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    actions: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.actions),
+    actions: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.actions),
   }
 }
 
 
 export function clouddeployDeliveryPipelineSerialPipelineStagesStrategyStandardPredeployToHclTerraform(struct?: ClouddeployDeliveryPipelineSerialPipelineStagesStrategyStandardPredeployOutputReference | ClouddeployDeliveryPipelineSerialPipelineStagesStrategyStandardPredeploy): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     actions: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.actions),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.actions),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
@@ -2768,14 +2768,14 @@ export function clouddeployDeliveryPipelineSerialPipelineStagesStrategyStandardP
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class ClouddeployDeliveryPipelineSerialPipelineStagesStrategyStandardPredeployOutputReference extends cdktf.ComplexObject {
+export class ClouddeployDeliveryPipelineSerialPipelineStagesStrategyStandardPredeployOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -2822,7 +2822,7 @@ export interface ClouddeployDeliveryPipelineSerialPipelineStagesStrategyStandard
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/clouddeploy_delivery_pipeline#verify ClouddeployDeliveryPipeline#verify}
   */
-  readonly verify?: boolean | cdktf.IResolvable;
+  readonly verify?: boolean | cdktn.IResolvable;
   /**
   * postdeploy block
   *
@@ -2838,12 +2838,12 @@ export interface ClouddeployDeliveryPipelineSerialPipelineStagesStrategyStandard
 }
 
 export function clouddeployDeliveryPipelineSerialPipelineStagesStrategyStandardToTerraform(struct?: ClouddeployDeliveryPipelineSerialPipelineStagesStrategyStandardOutputReference | ClouddeployDeliveryPipelineSerialPipelineStagesStrategyStandard): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    verify: cdktf.booleanToTerraform(struct!.verify),
+    verify: cdktn.booleanToTerraform(struct!.verify),
     postdeploy: clouddeployDeliveryPipelineSerialPipelineStagesStrategyStandardPostdeployToTerraform(struct!.postdeploy),
     predeploy: clouddeployDeliveryPipelineSerialPipelineStagesStrategyStandardPredeployToTerraform(struct!.predeploy),
   }
@@ -2851,13 +2851,13 @@ export function clouddeployDeliveryPipelineSerialPipelineStagesStrategyStandardT
 
 
 export function clouddeployDeliveryPipelineSerialPipelineStagesStrategyStandardToHclTerraform(struct?: ClouddeployDeliveryPipelineSerialPipelineStagesStrategyStandardOutputReference | ClouddeployDeliveryPipelineSerialPipelineStagesStrategyStandard): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     verify: {
-      value: cdktf.booleanToHclTerraform(struct!.verify),
+      value: cdktn.booleanToHclTerraform(struct!.verify),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
@@ -2880,14 +2880,14 @@ export function clouddeployDeliveryPipelineSerialPipelineStagesStrategyStandardT
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class ClouddeployDeliveryPipelineSerialPipelineStagesStrategyStandardOutputReference extends cdktf.ComplexObject {
+export class ClouddeployDeliveryPipelineSerialPipelineStagesStrategyStandardOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -2925,11 +2925,11 @@ export class ClouddeployDeliveryPipelineSerialPipelineStagesStrategyStandardOutp
   }
 
   // verify - computed: false, optional: true, required: false
-  private _verify?: boolean | cdktf.IResolvable; 
+  private _verify?: boolean | cdktn.IResolvable; 
   public get verify() {
     return this.getBooleanAttribute('verify');
   }
-  public set verify(value: boolean | cdktf.IResolvable) {
+  public set verify(value: boolean | cdktn.IResolvable) {
     this._verify = value;
   }
   public resetVerify() {
@@ -2988,8 +2988,8 @@ export interface ClouddeployDeliveryPipelineSerialPipelineStagesStrategy {
 }
 
 export function clouddeployDeliveryPipelineSerialPipelineStagesStrategyToTerraform(struct?: ClouddeployDeliveryPipelineSerialPipelineStagesStrategyOutputReference | ClouddeployDeliveryPipelineSerialPipelineStagesStrategy): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -3000,8 +3000,8 @@ export function clouddeployDeliveryPipelineSerialPipelineStagesStrategyToTerrafo
 
 
 export function clouddeployDeliveryPipelineSerialPipelineStagesStrategyToHclTerraform(struct?: ClouddeployDeliveryPipelineSerialPipelineStagesStrategyOutputReference | ClouddeployDeliveryPipelineSerialPipelineStagesStrategy): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -3023,14 +3023,14 @@ export function clouddeployDeliveryPipelineSerialPipelineStagesStrategyToHclTerr
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class ClouddeployDeliveryPipelineSerialPipelineStagesStrategyOutputReference extends cdktf.ComplexObject {
+export class ClouddeployDeliveryPipelineSerialPipelineStagesStrategyOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -3111,7 +3111,7 @@ export interface ClouddeployDeliveryPipelineSerialPipelineStages {
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/clouddeploy_delivery_pipeline#deploy_parameters ClouddeployDeliveryPipeline#deploy_parameters}
   */
-  readonly deployParameters?: ClouddeployDeliveryPipelineSerialPipelineStagesDeployParameters[] | cdktf.IResolvable;
+  readonly deployParameters?: ClouddeployDeliveryPipelineSerialPipelineStagesDeployParameters[] | cdktn.IResolvable;
   /**
   * strategy block
   *
@@ -3120,40 +3120,40 @@ export interface ClouddeployDeliveryPipelineSerialPipelineStages {
   readonly strategy?: ClouddeployDeliveryPipelineSerialPipelineStagesStrategy;
 }
 
-export function clouddeployDeliveryPipelineSerialPipelineStagesToTerraform(struct?: ClouddeployDeliveryPipelineSerialPipelineStages | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function clouddeployDeliveryPipelineSerialPipelineStagesToTerraform(struct?: ClouddeployDeliveryPipelineSerialPipelineStages | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    profiles: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.profiles),
-    target_id: cdktf.stringToTerraform(struct!.targetId),
-    deploy_parameters: cdktf.listMapper(clouddeployDeliveryPipelineSerialPipelineStagesDeployParametersToTerraform, true)(struct!.deployParameters),
+    profiles: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.profiles),
+    target_id: cdktn.stringToTerraform(struct!.targetId),
+    deploy_parameters: cdktn.listMapper(clouddeployDeliveryPipelineSerialPipelineStagesDeployParametersToTerraform, true)(struct!.deployParameters),
     strategy: clouddeployDeliveryPipelineSerialPipelineStagesStrategyToTerraform(struct!.strategy),
   }
 }
 
 
-export function clouddeployDeliveryPipelineSerialPipelineStagesToHclTerraform(struct?: ClouddeployDeliveryPipelineSerialPipelineStages | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function clouddeployDeliveryPipelineSerialPipelineStagesToHclTerraform(struct?: ClouddeployDeliveryPipelineSerialPipelineStages | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     profiles: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.profiles),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.profiles),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
     },
     target_id: {
-      value: cdktf.stringToHclTerraform(struct!.targetId),
+      value: cdktn.stringToHclTerraform(struct!.targetId),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     deploy_parameters: {
-      value: cdktf.listMapperHcl(clouddeployDeliveryPipelineSerialPipelineStagesDeployParametersToHclTerraform, true)(struct!.deployParameters),
+      value: cdktn.listMapperHcl(clouddeployDeliveryPipelineSerialPipelineStagesDeployParametersToHclTerraform, true)(struct!.deployParameters),
       isBlock: true,
       type: "list",
       storageClassType: "ClouddeployDeliveryPipelineSerialPipelineStagesDeployParametersList",
@@ -3170,9 +3170,9 @@ export function clouddeployDeliveryPipelineSerialPipelineStagesToHclTerraform(st
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class ClouddeployDeliveryPipelineSerialPipelineStagesOutputReference extends cdktf.ComplexObject {
+export class ClouddeployDeliveryPipelineSerialPipelineStagesOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -3180,11 +3180,11 @@ export class ClouddeployDeliveryPipelineSerialPipelineStagesOutputReference exte
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): ClouddeployDeliveryPipelineSerialPipelineStages | cdktf.IResolvable | undefined {
+  public get internalValue(): ClouddeployDeliveryPipelineSerialPipelineStages | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -3209,7 +3209,7 @@ export class ClouddeployDeliveryPipelineSerialPipelineStagesOutputReference exte
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: ClouddeployDeliveryPipelineSerialPipelineStages | cdktf.IResolvable | undefined) {
+  public set internalValue(value: ClouddeployDeliveryPipelineSerialPipelineStages | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -3218,7 +3218,7 @@ export class ClouddeployDeliveryPipelineSerialPipelineStagesOutputReference exte
       this._deployParameters.internalValue = undefined;
       this._strategy.internalValue = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -3269,7 +3269,7 @@ export class ClouddeployDeliveryPipelineSerialPipelineStagesOutputReference exte
   public get deployParameters() {
     return this._deployParameters;
   }
-  public putDeployParameters(value: ClouddeployDeliveryPipelineSerialPipelineStagesDeployParameters[] | cdktf.IResolvable) {
+  public putDeployParameters(value: ClouddeployDeliveryPipelineSerialPipelineStagesDeployParameters[] | cdktn.IResolvable) {
     this._deployParameters.internalValue = value;
   }
   public resetDeployParameters() {
@@ -3297,15 +3297,15 @@ export class ClouddeployDeliveryPipelineSerialPipelineStagesOutputReference exte
   }
 }
 
-export class ClouddeployDeliveryPipelineSerialPipelineStagesList extends cdktf.ComplexList {
-  public internalValue? : ClouddeployDeliveryPipelineSerialPipelineStages[] | cdktf.IResolvable
+export class ClouddeployDeliveryPipelineSerialPipelineStagesList extends cdktn.ComplexList {
+  public internalValue? : ClouddeployDeliveryPipelineSerialPipelineStages[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -3322,28 +3322,28 @@ export interface ClouddeployDeliveryPipelineSerialPipeline {
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/clouddeploy_delivery_pipeline#stages ClouddeployDeliveryPipeline#stages}
   */
-  readonly stages?: ClouddeployDeliveryPipelineSerialPipelineStages[] | cdktf.IResolvable;
+  readonly stages?: ClouddeployDeliveryPipelineSerialPipelineStages[] | cdktn.IResolvable;
 }
 
 export function clouddeployDeliveryPipelineSerialPipelineToTerraform(struct?: ClouddeployDeliveryPipelineSerialPipelineOutputReference | ClouddeployDeliveryPipelineSerialPipeline): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    stages: cdktf.listMapper(clouddeployDeliveryPipelineSerialPipelineStagesToTerraform, true)(struct!.stages),
+    stages: cdktn.listMapper(clouddeployDeliveryPipelineSerialPipelineStagesToTerraform, true)(struct!.stages),
   }
 }
 
 
 export function clouddeployDeliveryPipelineSerialPipelineToHclTerraform(struct?: ClouddeployDeliveryPipelineSerialPipelineOutputReference | ClouddeployDeliveryPipelineSerialPipeline): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     stages: {
-      value: cdktf.listMapperHcl(clouddeployDeliveryPipelineSerialPipelineStagesToHclTerraform, true)(struct!.stages),
+      value: cdktn.listMapperHcl(clouddeployDeliveryPipelineSerialPipelineStagesToHclTerraform, true)(struct!.stages),
       isBlock: true,
       type: "list",
       storageClassType: "ClouddeployDeliveryPipelineSerialPipelineStagesList",
@@ -3354,14 +3354,14 @@ export function clouddeployDeliveryPipelineSerialPipelineToHclTerraform(struct?:
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class ClouddeployDeliveryPipelineSerialPipelineOutputReference extends cdktf.ComplexObject {
+export class ClouddeployDeliveryPipelineSerialPipelineOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -3391,7 +3391,7 @@ export class ClouddeployDeliveryPipelineSerialPipelineOutputReference extends cd
   public get stages() {
     return this._stages;
   }
-  public putStages(value: ClouddeployDeliveryPipelineSerialPipelineStages[] | cdktf.IResolvable) {
+  public putStages(value: ClouddeployDeliveryPipelineSerialPipelineStages[] | cdktn.IResolvable) {
     this._stages.internalValue = value;
   }
   public resetStages() {
@@ -3417,39 +3417,39 @@ export interface ClouddeployDeliveryPipelineTimeouts {
   readonly update?: string;
 }
 
-export function clouddeployDeliveryPipelineTimeoutsToTerraform(struct?: ClouddeployDeliveryPipelineTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function clouddeployDeliveryPipelineTimeoutsToTerraform(struct?: ClouddeployDeliveryPipelineTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    create: cdktf.stringToTerraform(struct!.create),
-    delete: cdktf.stringToTerraform(struct!.delete),
-    update: cdktf.stringToTerraform(struct!.update),
+    create: cdktn.stringToTerraform(struct!.create),
+    delete: cdktn.stringToTerraform(struct!.delete),
+    update: cdktn.stringToTerraform(struct!.update),
   }
 }
 
 
-export function clouddeployDeliveryPipelineTimeoutsToHclTerraform(struct?: ClouddeployDeliveryPipelineTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function clouddeployDeliveryPipelineTimeoutsToHclTerraform(struct?: ClouddeployDeliveryPipelineTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     create: {
-      value: cdktf.stringToHclTerraform(struct!.create),
+      value: cdktn.stringToHclTerraform(struct!.create),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     delete: {
-      value: cdktf.stringToHclTerraform(struct!.delete),
+      value: cdktn.stringToHclTerraform(struct!.delete),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     update: {
-      value: cdktf.stringToHclTerraform(struct!.update),
+      value: cdktn.stringToHclTerraform(struct!.update),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -3460,19 +3460,19 @@ export function clouddeployDeliveryPipelineTimeoutsToHclTerraform(struct?: Cloud
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class ClouddeployDeliveryPipelineTimeoutsOutputReference extends cdktf.ComplexObject {
+export class ClouddeployDeliveryPipelineTimeoutsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): ClouddeployDeliveryPipelineTimeouts | cdktf.IResolvable | undefined {
+  public get internalValue(): ClouddeployDeliveryPipelineTimeouts | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -3493,7 +3493,7 @@ export class ClouddeployDeliveryPipelineTimeoutsOutputReference extends cdktf.Co
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: ClouddeployDeliveryPipelineTimeouts | cdktf.IResolvable | undefined) {
+  public set internalValue(value: ClouddeployDeliveryPipelineTimeouts | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -3501,7 +3501,7 @@ export class ClouddeployDeliveryPipelineTimeoutsOutputReference extends cdktf.Co
       this._delete = undefined;
       this._update = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -3566,7 +3566,7 @@ export class ClouddeployDeliveryPipelineTimeoutsOutputReference extends cdktf.Co
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/clouddeploy_delivery_pipeline google_clouddeploy_delivery_pipeline}
 */
-export class ClouddeployDeliveryPipeline extends cdktf.TerraformResource {
+export class ClouddeployDeliveryPipeline extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -3577,14 +3577,14 @@ export class ClouddeployDeliveryPipeline extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a ClouddeployDeliveryPipeline resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a ClouddeployDeliveryPipeline resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the ClouddeployDeliveryPipeline to import
   * @param importFromId The id of the existing ClouddeployDeliveryPipeline that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/clouddeploy_delivery_pipeline#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the ClouddeployDeliveryPipeline to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "google_clouddeploy_delivery_pipeline", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "google_clouddeploy_delivery_pipeline", importId: importFromId, provider });
       }
 
   // ===========
@@ -3674,13 +3674,13 @@ export class ClouddeployDeliveryPipeline extends cdktf.TerraformResource {
   }
 
   // effective_annotations - computed: true, optional: false, required: false
-  private _effectiveAnnotations = new cdktf.StringMap(this, "effective_annotations");
+  private _effectiveAnnotations = new cdktn.StringMap(this, "effective_annotations");
   public get effectiveAnnotations() {
     return this._effectiveAnnotations;
   }
 
   // effective_labels - computed: true, optional: false, required: false
-  private _effectiveLabels = new cdktf.StringMap(this, "effective_labels");
+  private _effectiveLabels = new cdktn.StringMap(this, "effective_labels");
   public get effectiveLabels() {
     return this._effectiveLabels;
   }
@@ -3765,11 +3765,11 @@ export class ClouddeployDeliveryPipeline extends cdktf.TerraformResource {
   }
 
   // suspended - computed: false, optional: true, required: false
-  private _suspended?: boolean | cdktf.IResolvable; 
+  private _suspended?: boolean | cdktn.IResolvable; 
   public get suspended() {
     return this.getBooleanAttribute('suspended');
   }
-  public set suspended(value: boolean | cdktf.IResolvable) {
+  public set suspended(value: boolean | cdktn.IResolvable) {
     this._suspended = value;
   }
   public resetSuspended() {
@@ -3781,7 +3781,7 @@ export class ClouddeployDeliveryPipeline extends cdktf.TerraformResource {
   }
 
   // terraform_labels - computed: true, optional: false, required: false
-  private _terraformLabels = new cdktf.StringMap(this, "terraform_labels");
+  private _terraformLabels = new cdktn.StringMap(this, "terraform_labels");
   public get terraformLabels() {
     return this._terraformLabels;
   }
@@ -3834,14 +3834,14 @@ export class ClouddeployDeliveryPipeline extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      annotations: cdktf.hashMapper(cdktf.stringToTerraform)(this._annotations),
-      description: cdktf.stringToTerraform(this._description),
-      id: cdktf.stringToTerraform(this._id),
-      labels: cdktf.hashMapper(cdktf.stringToTerraform)(this._labels),
-      location: cdktf.stringToTerraform(this._location),
-      name: cdktf.stringToTerraform(this._name),
-      project: cdktf.stringToTerraform(this._project),
-      suspended: cdktf.booleanToTerraform(this._suspended),
+      annotations: cdktn.hashMapper(cdktn.stringToTerraform)(this._annotations),
+      description: cdktn.stringToTerraform(this._description),
+      id: cdktn.stringToTerraform(this._id),
+      labels: cdktn.hashMapper(cdktn.stringToTerraform)(this._labels),
+      location: cdktn.stringToTerraform(this._location),
+      name: cdktn.stringToTerraform(this._name),
+      project: cdktn.stringToTerraform(this._project),
+      suspended: cdktn.booleanToTerraform(this._suspended),
       serial_pipeline: clouddeployDeliveryPipelineSerialPipelineToTerraform(this._serialPipeline.internalValue),
       timeouts: clouddeployDeliveryPipelineTimeoutsToTerraform(this._timeouts.internalValue),
     };
@@ -3850,49 +3850,49 @@ export class ClouddeployDeliveryPipeline extends cdktf.TerraformResource {
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       annotations: {
-        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._annotations),
+        value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(this._annotations),
         isBlock: false,
         type: "map",
         storageClassType: "stringMap",
       },
       description: {
-        value: cdktf.stringToHclTerraform(this._description),
+        value: cdktn.stringToHclTerraform(this._description),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       labels: {
-        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._labels),
+        value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(this._labels),
         isBlock: false,
         type: "map",
         storageClassType: "stringMap",
       },
       location: {
-        value: cdktf.stringToHclTerraform(this._location),
+        value: cdktn.stringToHclTerraform(this._location),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       name: {
-        value: cdktf.stringToHclTerraform(this._name),
+        value: cdktn.stringToHclTerraform(this._name),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       project: {
-        value: cdktf.stringToHclTerraform(this._project),
+        value: cdktn.stringToHclTerraform(this._project),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       suspended: {
-        value: cdktf.booleanToHclTerraform(this._suspended),
+        value: cdktn.booleanToHclTerraform(this._suspended),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",

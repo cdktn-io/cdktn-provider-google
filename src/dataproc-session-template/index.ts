@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface DataprocSessionTemplateConfig extends cdktf.TerraformMetaArguments {
+export interface DataprocSessionTemplateConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/dataproc_session_template#id DataprocSessionTemplate#id}
   *
@@ -87,24 +87,24 @@ export interface DataprocSessionTemplateEnvironmentConfigExecutionConfigAuthenti
 }
 
 export function dataprocSessionTemplateEnvironmentConfigExecutionConfigAuthenticationConfigToTerraform(struct?: DataprocSessionTemplateEnvironmentConfigExecutionConfigAuthenticationConfigOutputReference | DataprocSessionTemplateEnvironmentConfigExecutionConfigAuthenticationConfig): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    user_workload_authentication_type: cdktf.stringToTerraform(struct!.userWorkloadAuthenticationType),
+    user_workload_authentication_type: cdktn.stringToTerraform(struct!.userWorkloadAuthenticationType),
   }
 }
 
 
 export function dataprocSessionTemplateEnvironmentConfigExecutionConfigAuthenticationConfigToHclTerraform(struct?: DataprocSessionTemplateEnvironmentConfigExecutionConfigAuthenticationConfigOutputReference | DataprocSessionTemplateEnvironmentConfigExecutionConfigAuthenticationConfig): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     user_workload_authentication_type: {
-      value: cdktf.stringToHclTerraform(struct!.userWorkloadAuthenticationType),
+      value: cdktn.stringToHclTerraform(struct!.userWorkloadAuthenticationType),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -115,14 +115,14 @@ export function dataprocSessionTemplateEnvironmentConfigExecutionConfigAuthentic
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class DataprocSessionTemplateEnvironmentConfigExecutionConfigAuthenticationConfigOutputReference extends cdktf.ComplexObject {
+export class DataprocSessionTemplateEnvironmentConfigExecutionConfigAuthenticationConfigOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -230,67 +230,67 @@ export interface DataprocSessionTemplateEnvironmentConfigExecutionConfig {
 }
 
 export function dataprocSessionTemplateEnvironmentConfigExecutionConfigToTerraform(struct?: DataprocSessionTemplateEnvironmentConfigExecutionConfigOutputReference | DataprocSessionTemplateEnvironmentConfigExecutionConfig): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    idle_ttl: cdktf.stringToTerraform(struct!.idleTtl),
-    kms_key: cdktf.stringToTerraform(struct!.kmsKey),
-    network_tags: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.networkTags),
-    service_account: cdktf.stringToTerraform(struct!.serviceAccount),
-    staging_bucket: cdktf.stringToTerraform(struct!.stagingBucket),
-    subnetwork_uri: cdktf.stringToTerraform(struct!.subnetworkUri),
-    ttl: cdktf.stringToTerraform(struct!.ttl),
+    idle_ttl: cdktn.stringToTerraform(struct!.idleTtl),
+    kms_key: cdktn.stringToTerraform(struct!.kmsKey),
+    network_tags: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.networkTags),
+    service_account: cdktn.stringToTerraform(struct!.serviceAccount),
+    staging_bucket: cdktn.stringToTerraform(struct!.stagingBucket),
+    subnetwork_uri: cdktn.stringToTerraform(struct!.subnetworkUri),
+    ttl: cdktn.stringToTerraform(struct!.ttl),
     authentication_config: dataprocSessionTemplateEnvironmentConfigExecutionConfigAuthenticationConfigToTerraform(struct!.authenticationConfig),
   }
 }
 
 
 export function dataprocSessionTemplateEnvironmentConfigExecutionConfigToHclTerraform(struct?: DataprocSessionTemplateEnvironmentConfigExecutionConfigOutputReference | DataprocSessionTemplateEnvironmentConfigExecutionConfig): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     idle_ttl: {
-      value: cdktf.stringToHclTerraform(struct!.idleTtl),
+      value: cdktn.stringToHclTerraform(struct!.idleTtl),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     kms_key: {
-      value: cdktf.stringToHclTerraform(struct!.kmsKey),
+      value: cdktn.stringToHclTerraform(struct!.kmsKey),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     network_tags: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.networkTags),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.networkTags),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
     },
     service_account: {
-      value: cdktf.stringToHclTerraform(struct!.serviceAccount),
+      value: cdktn.stringToHclTerraform(struct!.serviceAccount),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     staging_bucket: {
-      value: cdktf.stringToHclTerraform(struct!.stagingBucket),
+      value: cdktn.stringToHclTerraform(struct!.stagingBucket),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     subnetwork_uri: {
-      value: cdktf.stringToHclTerraform(struct!.subnetworkUri),
+      value: cdktn.stringToHclTerraform(struct!.subnetworkUri),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     ttl: {
-      value: cdktf.stringToHclTerraform(struct!.ttl),
+      value: cdktn.stringToHclTerraform(struct!.ttl),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -307,14 +307,14 @@ export function dataprocSessionTemplateEnvironmentConfigExecutionConfigToHclTerr
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class DataprocSessionTemplateEnvironmentConfigExecutionConfigOutputReference extends cdktf.ComplexObject {
+export class DataprocSessionTemplateEnvironmentConfigExecutionConfigOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -519,24 +519,24 @@ export interface DataprocSessionTemplateEnvironmentConfigPeripheralsConfigSparkH
 }
 
 export function dataprocSessionTemplateEnvironmentConfigPeripheralsConfigSparkHistoryServerConfigToTerraform(struct?: DataprocSessionTemplateEnvironmentConfigPeripheralsConfigSparkHistoryServerConfigOutputReference | DataprocSessionTemplateEnvironmentConfigPeripheralsConfigSparkHistoryServerConfig): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    dataproc_cluster: cdktf.stringToTerraform(struct!.dataprocCluster),
+    dataproc_cluster: cdktn.stringToTerraform(struct!.dataprocCluster),
   }
 }
 
 
 export function dataprocSessionTemplateEnvironmentConfigPeripheralsConfigSparkHistoryServerConfigToHclTerraform(struct?: DataprocSessionTemplateEnvironmentConfigPeripheralsConfigSparkHistoryServerConfigOutputReference | DataprocSessionTemplateEnvironmentConfigPeripheralsConfigSparkHistoryServerConfig): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     dataproc_cluster: {
-      value: cdktf.stringToHclTerraform(struct!.dataprocCluster),
+      value: cdktn.stringToHclTerraform(struct!.dataprocCluster),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -547,14 +547,14 @@ export function dataprocSessionTemplateEnvironmentConfigPeripheralsConfigSparkHi
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class DataprocSessionTemplateEnvironmentConfigPeripheralsConfigSparkHistoryServerConfigOutputReference extends cdktf.ComplexObject {
+export class DataprocSessionTemplateEnvironmentConfigPeripheralsConfigSparkHistoryServerConfigOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -611,25 +611,25 @@ export interface DataprocSessionTemplateEnvironmentConfigPeripheralsConfig {
 }
 
 export function dataprocSessionTemplateEnvironmentConfigPeripheralsConfigToTerraform(struct?: DataprocSessionTemplateEnvironmentConfigPeripheralsConfigOutputReference | DataprocSessionTemplateEnvironmentConfigPeripheralsConfig): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    metastore_service: cdktf.stringToTerraform(struct!.metastoreService),
+    metastore_service: cdktn.stringToTerraform(struct!.metastoreService),
     spark_history_server_config: dataprocSessionTemplateEnvironmentConfigPeripheralsConfigSparkHistoryServerConfigToTerraform(struct!.sparkHistoryServerConfig),
   }
 }
 
 
 export function dataprocSessionTemplateEnvironmentConfigPeripheralsConfigToHclTerraform(struct?: DataprocSessionTemplateEnvironmentConfigPeripheralsConfigOutputReference | DataprocSessionTemplateEnvironmentConfigPeripheralsConfig): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     metastore_service: {
-      value: cdktf.stringToHclTerraform(struct!.metastoreService),
+      value: cdktn.stringToHclTerraform(struct!.metastoreService),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -646,14 +646,14 @@ export function dataprocSessionTemplateEnvironmentConfigPeripheralsConfigToHclTe
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class DataprocSessionTemplateEnvironmentConfigPeripheralsConfigOutputReference extends cdktf.ComplexObject {
+export class DataprocSessionTemplateEnvironmentConfigPeripheralsConfigOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -732,8 +732,8 @@ export interface DataprocSessionTemplateEnvironmentConfig {
 }
 
 export function dataprocSessionTemplateEnvironmentConfigToTerraform(struct?: DataprocSessionTemplateEnvironmentConfigOutputReference | DataprocSessionTemplateEnvironmentConfig): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -744,8 +744,8 @@ export function dataprocSessionTemplateEnvironmentConfigToTerraform(struct?: Dat
 
 
 export function dataprocSessionTemplateEnvironmentConfigToHclTerraform(struct?: DataprocSessionTemplateEnvironmentConfigOutputReference | DataprocSessionTemplateEnvironmentConfig): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -767,14 +767,14 @@ export function dataprocSessionTemplateEnvironmentConfigToHclTerraform(struct?: 
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class DataprocSessionTemplateEnvironmentConfigOutputReference extends cdktf.ComplexObject {
+export class DataprocSessionTemplateEnvironmentConfigOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -853,31 +853,31 @@ export interface DataprocSessionTemplateJupyterSession {
 }
 
 export function dataprocSessionTemplateJupyterSessionToTerraform(struct?: DataprocSessionTemplateJupyterSessionOutputReference | DataprocSessionTemplateJupyterSession): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    display_name: cdktf.stringToTerraform(struct!.displayName),
-    kernel: cdktf.stringToTerraform(struct!.kernel),
+    display_name: cdktn.stringToTerraform(struct!.displayName),
+    kernel: cdktn.stringToTerraform(struct!.kernel),
   }
 }
 
 
 export function dataprocSessionTemplateJupyterSessionToHclTerraform(struct?: DataprocSessionTemplateJupyterSessionOutputReference | DataprocSessionTemplateJupyterSession): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     display_name: {
-      value: cdktf.stringToHclTerraform(struct!.displayName),
+      value: cdktn.stringToHclTerraform(struct!.displayName),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     kernel: {
-      value: cdktf.stringToHclTerraform(struct!.kernel),
+      value: cdktn.stringToHclTerraform(struct!.kernel),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -888,14 +888,14 @@ export function dataprocSessionTemplateJupyterSessionToHclTerraform(struct?: Dat
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class DataprocSessionTemplateJupyterSessionOutputReference extends cdktf.ComplexObject {
+export class DataprocSessionTemplateJupyterSessionOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -980,38 +980,38 @@ export interface DataprocSessionTemplateRuntimeConfig {
 }
 
 export function dataprocSessionTemplateRuntimeConfigToTerraform(struct?: DataprocSessionTemplateRuntimeConfigOutputReference | DataprocSessionTemplateRuntimeConfig): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    container_image: cdktf.stringToTerraform(struct!.containerImage),
-    properties: cdktf.hashMapper(cdktf.stringToTerraform)(struct!.properties),
-    version: cdktf.stringToTerraform(struct!.version),
+    container_image: cdktn.stringToTerraform(struct!.containerImage),
+    properties: cdktn.hashMapper(cdktn.stringToTerraform)(struct!.properties),
+    version: cdktn.stringToTerraform(struct!.version),
   }
 }
 
 
 export function dataprocSessionTemplateRuntimeConfigToHclTerraform(struct?: DataprocSessionTemplateRuntimeConfigOutputReference | DataprocSessionTemplateRuntimeConfig): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     container_image: {
-      value: cdktf.stringToHclTerraform(struct!.containerImage),
+      value: cdktn.stringToHclTerraform(struct!.containerImage),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     properties: {
-      value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(struct!.properties),
+      value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(struct!.properties),
       isBlock: false,
       type: "map",
       storageClassType: "stringMap",
     },
     version: {
-      value: cdktf.stringToHclTerraform(struct!.version),
+      value: cdktn.stringToHclTerraform(struct!.version),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -1022,14 +1022,14 @@ export function dataprocSessionTemplateRuntimeConfigToHclTerraform(struct?: Data
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class DataprocSessionTemplateRuntimeConfigOutputReference extends cdktf.ComplexObject {
+export class DataprocSessionTemplateRuntimeConfigOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -1083,7 +1083,7 @@ export class DataprocSessionTemplateRuntimeConfigOutputReference extends cdktf.C
   }
 
   // effective_properties - computed: true, optional: false, required: false
-  private _effectiveProperties = new cdktf.StringMap(this, "effective_properties");
+  private _effectiveProperties = new cdktn.StringMap(this, "effective_properties");
   public get effectiveProperties() {
     return this._effectiveProperties;
   }
@@ -1124,8 +1124,8 @@ export interface DataprocSessionTemplateSparkConnectSession {
 }
 
 export function dataprocSessionTemplateSparkConnectSessionToTerraform(struct?: DataprocSessionTemplateSparkConnectSessionOutputReference | DataprocSessionTemplateSparkConnectSession): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -1134,8 +1134,8 @@ export function dataprocSessionTemplateSparkConnectSessionToTerraform(struct?: D
 
 
 export function dataprocSessionTemplateSparkConnectSessionToHclTerraform(struct?: DataprocSessionTemplateSparkConnectSessionOutputReference | DataprocSessionTemplateSparkConnectSession): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -1143,14 +1143,14 @@ export function dataprocSessionTemplateSparkConnectSessionToHclTerraform(struct?
   return attrs;
 }
 
-export class DataprocSessionTemplateSparkConnectSessionOutputReference extends cdktf.ComplexObject {
+export class DataprocSessionTemplateSparkConnectSessionOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -1184,39 +1184,39 @@ export interface DataprocSessionTemplateTimeouts {
   readonly update?: string;
 }
 
-export function dataprocSessionTemplateTimeoutsToTerraform(struct?: DataprocSessionTemplateTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function dataprocSessionTemplateTimeoutsToTerraform(struct?: DataprocSessionTemplateTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    create: cdktf.stringToTerraform(struct!.create),
-    delete: cdktf.stringToTerraform(struct!.delete),
-    update: cdktf.stringToTerraform(struct!.update),
+    create: cdktn.stringToTerraform(struct!.create),
+    delete: cdktn.stringToTerraform(struct!.delete),
+    update: cdktn.stringToTerraform(struct!.update),
   }
 }
 
 
-export function dataprocSessionTemplateTimeoutsToHclTerraform(struct?: DataprocSessionTemplateTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function dataprocSessionTemplateTimeoutsToHclTerraform(struct?: DataprocSessionTemplateTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     create: {
-      value: cdktf.stringToHclTerraform(struct!.create),
+      value: cdktn.stringToHclTerraform(struct!.create),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     delete: {
-      value: cdktf.stringToHclTerraform(struct!.delete),
+      value: cdktn.stringToHclTerraform(struct!.delete),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     update: {
-      value: cdktf.stringToHclTerraform(struct!.update),
+      value: cdktn.stringToHclTerraform(struct!.update),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -1227,19 +1227,19 @@ export function dataprocSessionTemplateTimeoutsToHclTerraform(struct?: DataprocS
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class DataprocSessionTemplateTimeoutsOutputReference extends cdktf.ComplexObject {
+export class DataprocSessionTemplateTimeoutsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): DataprocSessionTemplateTimeouts | cdktf.IResolvable | undefined {
+  public get internalValue(): DataprocSessionTemplateTimeouts | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -1260,7 +1260,7 @@ export class DataprocSessionTemplateTimeoutsOutputReference extends cdktf.Comple
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: DataprocSessionTemplateTimeouts | cdktf.IResolvable | undefined) {
+  public set internalValue(value: DataprocSessionTemplateTimeouts | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -1268,7 +1268,7 @@ export class DataprocSessionTemplateTimeoutsOutputReference extends cdktf.Comple
       this._delete = undefined;
       this._update = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -1333,7 +1333,7 @@ export class DataprocSessionTemplateTimeoutsOutputReference extends cdktf.Comple
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/dataproc_session_template google_dataproc_session_template}
 */
-export class DataprocSessionTemplate extends cdktf.TerraformResource {
+export class DataprocSessionTemplate extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -1344,14 +1344,14 @@ export class DataprocSessionTemplate extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a DataprocSessionTemplate resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a DataprocSessionTemplate resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataprocSessionTemplate to import
   * @param importFromId The id of the existing DataprocSessionTemplate that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/dataproc_session_template#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataprocSessionTemplate to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "google_dataproc_session_template", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "google_dataproc_session_template", importId: importFromId, provider });
       }
 
   // ===========
@@ -1408,7 +1408,7 @@ export class DataprocSessionTemplate extends cdktf.TerraformResource {
   }
 
   // effective_labels - computed: true, optional: false, required: false
-  private _effectiveLabels = new cdktf.StringMap(this, "effective_labels");
+  private _effectiveLabels = new cdktn.StringMap(this, "effective_labels");
   public get effectiveLabels() {
     return this._effectiveLabels;
   }
@@ -1491,7 +1491,7 @@ export class DataprocSessionTemplate extends cdktf.TerraformResource {
   }
 
   // terraform_labels - computed: true, optional: false, required: false
-  private _terraformLabels = new cdktf.StringMap(this, "terraform_labels");
+  private _terraformLabels = new cdktn.StringMap(this, "terraform_labels");
   public get terraformLabels() {
     return this._terraformLabels;
   }
@@ -1592,11 +1592,11 @@ export class DataprocSessionTemplate extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      id: cdktf.stringToTerraform(this._id),
-      labels: cdktf.hashMapper(cdktf.stringToTerraform)(this._labels),
-      location: cdktf.stringToTerraform(this._location),
-      name: cdktf.stringToTerraform(this._name),
-      project: cdktf.stringToTerraform(this._project),
+      id: cdktn.stringToTerraform(this._id),
+      labels: cdktn.hashMapper(cdktn.stringToTerraform)(this._labels),
+      location: cdktn.stringToTerraform(this._location),
+      name: cdktn.stringToTerraform(this._name),
+      project: cdktn.stringToTerraform(this._project),
       environment_config: dataprocSessionTemplateEnvironmentConfigToTerraform(this._environmentConfig.internalValue),
       jupyter_session: dataprocSessionTemplateJupyterSessionToTerraform(this._jupyterSession.internalValue),
       runtime_config: dataprocSessionTemplateRuntimeConfigToTerraform(this._runtimeConfig.internalValue),
@@ -1608,31 +1608,31 @@ export class DataprocSessionTemplate extends cdktf.TerraformResource {
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       labels: {
-        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._labels),
+        value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(this._labels),
         isBlock: false,
         type: "map",
         storageClassType: "stringMap",
       },
       location: {
-        value: cdktf.stringToHclTerraform(this._location),
+        value: cdktn.stringToHclTerraform(this._location),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       name: {
-        value: cdktf.stringToHclTerraform(this._name),
+        value: cdktn.stringToHclTerraform(this._name),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       project: {
-        value: cdktf.stringToHclTerraform(this._project),
+        value: cdktn.stringToHclTerraform(this._project),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

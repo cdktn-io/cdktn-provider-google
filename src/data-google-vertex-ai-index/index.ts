@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface DataGoogleVertexAiIndexConfig extends cdktf.TerraformMetaArguments {
+export interface DataGoogleVertexAiIndexConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/data-sources/vertex_ai_index#id DataGoogleVertexAiIndex#id}
   *
@@ -40,8 +40,8 @@ export interface DataGoogleVertexAiIndexDeployedIndexes {
 }
 
 export function dataGoogleVertexAiIndexDeployedIndexesToTerraform(struct?: DataGoogleVertexAiIndexDeployedIndexes): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -50,8 +50,8 @@ export function dataGoogleVertexAiIndexDeployedIndexesToTerraform(struct?: DataG
 
 
 export function dataGoogleVertexAiIndexDeployedIndexesToHclTerraform(struct?: DataGoogleVertexAiIndexDeployedIndexes): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -59,7 +59,7 @@ export function dataGoogleVertexAiIndexDeployedIndexesToHclTerraform(struct?: Da
   return attrs;
 }
 
-export class DataGoogleVertexAiIndexDeployedIndexesOutputReference extends cdktf.ComplexObject {
+export class DataGoogleVertexAiIndexDeployedIndexesOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -68,7 +68,7 @@ export class DataGoogleVertexAiIndexDeployedIndexesOutputReference extends cdktf
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -98,14 +98,14 @@ export class DataGoogleVertexAiIndexDeployedIndexesOutputReference extends cdktf
   }
 }
 
-export class DataGoogleVertexAiIndexDeployedIndexesList extends cdktf.ComplexList {
+export class DataGoogleVertexAiIndexDeployedIndexesList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -120,8 +120,8 @@ export interface DataGoogleVertexAiIndexIndexStats {
 }
 
 export function dataGoogleVertexAiIndexIndexStatsToTerraform(struct?: DataGoogleVertexAiIndexIndexStats): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -130,8 +130,8 @@ export function dataGoogleVertexAiIndexIndexStatsToTerraform(struct?: DataGoogle
 
 
 export function dataGoogleVertexAiIndexIndexStatsToHclTerraform(struct?: DataGoogleVertexAiIndexIndexStats): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -139,7 +139,7 @@ export function dataGoogleVertexAiIndexIndexStatsToHclTerraform(struct?: DataGoo
   return attrs;
 }
 
-export class DataGoogleVertexAiIndexIndexStatsOutputReference extends cdktf.ComplexObject {
+export class DataGoogleVertexAiIndexIndexStatsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -148,7 +148,7 @@ export class DataGoogleVertexAiIndexIndexStatsOutputReference extends cdktf.Comp
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -178,14 +178,14 @@ export class DataGoogleVertexAiIndexIndexStatsOutputReference extends cdktf.Comp
   }
 }
 
-export class DataGoogleVertexAiIndexIndexStatsList extends cdktf.ComplexList {
+export class DataGoogleVertexAiIndexIndexStatsList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -200,8 +200,8 @@ export interface DataGoogleVertexAiIndexMetadataConfigAlgorithmConfigBruteForceC
 }
 
 export function dataGoogleVertexAiIndexMetadataConfigAlgorithmConfigBruteForceConfigToTerraform(struct?: DataGoogleVertexAiIndexMetadataConfigAlgorithmConfigBruteForceConfig): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -210,8 +210,8 @@ export function dataGoogleVertexAiIndexMetadataConfigAlgorithmConfigBruteForceCo
 
 
 export function dataGoogleVertexAiIndexMetadataConfigAlgorithmConfigBruteForceConfigToHclTerraform(struct?: DataGoogleVertexAiIndexMetadataConfigAlgorithmConfigBruteForceConfig): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -219,7 +219,7 @@ export function dataGoogleVertexAiIndexMetadataConfigAlgorithmConfigBruteForceCo
   return attrs;
 }
 
-export class DataGoogleVertexAiIndexMetadataConfigAlgorithmConfigBruteForceConfigOutputReference extends cdktf.ComplexObject {
+export class DataGoogleVertexAiIndexMetadataConfigAlgorithmConfigBruteForceConfigOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -228,7 +228,7 @@ export class DataGoogleVertexAiIndexMetadataConfigAlgorithmConfigBruteForceConfi
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -248,14 +248,14 @@ export class DataGoogleVertexAiIndexMetadataConfigAlgorithmConfigBruteForceConfi
   }
 }
 
-export class DataGoogleVertexAiIndexMetadataConfigAlgorithmConfigBruteForceConfigList extends cdktf.ComplexList {
+export class DataGoogleVertexAiIndexMetadataConfigAlgorithmConfigBruteForceConfigList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -270,8 +270,8 @@ export interface DataGoogleVertexAiIndexMetadataConfigAlgorithmConfigTreeAhConfi
 }
 
 export function dataGoogleVertexAiIndexMetadataConfigAlgorithmConfigTreeAhConfigToTerraform(struct?: DataGoogleVertexAiIndexMetadataConfigAlgorithmConfigTreeAhConfig): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -280,8 +280,8 @@ export function dataGoogleVertexAiIndexMetadataConfigAlgorithmConfigTreeAhConfig
 
 
 export function dataGoogleVertexAiIndexMetadataConfigAlgorithmConfigTreeAhConfigToHclTerraform(struct?: DataGoogleVertexAiIndexMetadataConfigAlgorithmConfigTreeAhConfig): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -289,7 +289,7 @@ export function dataGoogleVertexAiIndexMetadataConfigAlgorithmConfigTreeAhConfig
   return attrs;
 }
 
-export class DataGoogleVertexAiIndexMetadataConfigAlgorithmConfigTreeAhConfigOutputReference extends cdktf.ComplexObject {
+export class DataGoogleVertexAiIndexMetadataConfigAlgorithmConfigTreeAhConfigOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -298,7 +298,7 @@ export class DataGoogleVertexAiIndexMetadataConfigAlgorithmConfigTreeAhConfigOut
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -328,14 +328,14 @@ export class DataGoogleVertexAiIndexMetadataConfigAlgorithmConfigTreeAhConfigOut
   }
 }
 
-export class DataGoogleVertexAiIndexMetadataConfigAlgorithmConfigTreeAhConfigList extends cdktf.ComplexList {
+export class DataGoogleVertexAiIndexMetadataConfigAlgorithmConfigTreeAhConfigList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -350,8 +350,8 @@ export interface DataGoogleVertexAiIndexMetadataConfigAlgorithmConfig {
 }
 
 export function dataGoogleVertexAiIndexMetadataConfigAlgorithmConfigToTerraform(struct?: DataGoogleVertexAiIndexMetadataConfigAlgorithmConfig): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -360,8 +360,8 @@ export function dataGoogleVertexAiIndexMetadataConfigAlgorithmConfigToTerraform(
 
 
 export function dataGoogleVertexAiIndexMetadataConfigAlgorithmConfigToHclTerraform(struct?: DataGoogleVertexAiIndexMetadataConfigAlgorithmConfig): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -369,7 +369,7 @@ export function dataGoogleVertexAiIndexMetadataConfigAlgorithmConfigToHclTerrafo
   return attrs;
 }
 
-export class DataGoogleVertexAiIndexMetadataConfigAlgorithmConfigOutputReference extends cdktf.ComplexObject {
+export class DataGoogleVertexAiIndexMetadataConfigAlgorithmConfigOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -378,7 +378,7 @@ export class DataGoogleVertexAiIndexMetadataConfigAlgorithmConfigOutputReference
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -410,14 +410,14 @@ export class DataGoogleVertexAiIndexMetadataConfigAlgorithmConfigOutputReference
   }
 }
 
-export class DataGoogleVertexAiIndexMetadataConfigAlgorithmConfigList extends cdktf.ComplexList {
+export class DataGoogleVertexAiIndexMetadataConfigAlgorithmConfigList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -432,8 +432,8 @@ export interface DataGoogleVertexAiIndexMetadataConfig {
 }
 
 export function dataGoogleVertexAiIndexMetadataConfigToTerraform(struct?: DataGoogleVertexAiIndexMetadataConfig): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -442,8 +442,8 @@ export function dataGoogleVertexAiIndexMetadataConfigToTerraform(struct?: DataGo
 
 
 export function dataGoogleVertexAiIndexMetadataConfigToHclTerraform(struct?: DataGoogleVertexAiIndexMetadataConfig): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -451,7 +451,7 @@ export function dataGoogleVertexAiIndexMetadataConfigToHclTerraform(struct?: Dat
   return attrs;
 }
 
-export class DataGoogleVertexAiIndexMetadataConfigOutputReference extends cdktf.ComplexObject {
+export class DataGoogleVertexAiIndexMetadataConfigOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -460,7 +460,7 @@ export class DataGoogleVertexAiIndexMetadataConfigOutputReference extends cdktf.
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -511,14 +511,14 @@ export class DataGoogleVertexAiIndexMetadataConfigOutputReference extends cdktf.
   }
 }
 
-export class DataGoogleVertexAiIndexMetadataConfigList extends cdktf.ComplexList {
+export class DataGoogleVertexAiIndexMetadataConfigList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -533,8 +533,8 @@ export interface DataGoogleVertexAiIndexMetadata {
 }
 
 export function dataGoogleVertexAiIndexMetadataToTerraform(struct?: DataGoogleVertexAiIndexMetadata): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -543,8 +543,8 @@ export function dataGoogleVertexAiIndexMetadataToTerraform(struct?: DataGoogleVe
 
 
 export function dataGoogleVertexAiIndexMetadataToHclTerraform(struct?: DataGoogleVertexAiIndexMetadata): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -552,7 +552,7 @@ export function dataGoogleVertexAiIndexMetadataToHclTerraform(struct?: DataGoogl
   return attrs;
 }
 
-export class DataGoogleVertexAiIndexMetadataOutputReference extends cdktf.ComplexObject {
+export class DataGoogleVertexAiIndexMetadataOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -561,7 +561,7 @@ export class DataGoogleVertexAiIndexMetadataOutputReference extends cdktf.Comple
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -597,14 +597,14 @@ export class DataGoogleVertexAiIndexMetadataOutputReference extends cdktf.Comple
   }
 }
 
-export class DataGoogleVertexAiIndexMetadataList extends cdktf.ComplexList {
+export class DataGoogleVertexAiIndexMetadataList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -619,7 +619,7 @@ export class DataGoogleVertexAiIndexMetadataList extends cdktf.ComplexList {
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/data-sources/vertex_ai_index google_vertex_ai_index}
 */
-export class DataGoogleVertexAiIndex extends cdktf.TerraformDataSource {
+export class DataGoogleVertexAiIndex extends cdktn.TerraformDataSource {
 
   // =================
   // STATIC PROPERTIES
@@ -630,14 +630,14 @@ export class DataGoogleVertexAiIndex extends cdktf.TerraformDataSource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a DataGoogleVertexAiIndex resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a DataGoogleVertexAiIndex resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataGoogleVertexAiIndex to import
   * @param importFromId The id of the existing DataGoogleVertexAiIndex that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/data-sources/vertex_ai_index#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataGoogleVertexAiIndex to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "google_vertex_ai_index", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "google_vertex_ai_index", importId: importFromId, provider });
       }
 
   // ===========
@@ -699,7 +699,7 @@ export class DataGoogleVertexAiIndex extends cdktf.TerraformDataSource {
   }
 
   // effective_labels - computed: true, optional: false, required: false
-  private _effectiveLabels = new cdktf.StringMap(this, "effective_labels");
+  private _effectiveLabels = new cdktn.StringMap(this, "effective_labels");
   public get effectiveLabels() {
     return this._effectiveLabels;
   }
@@ -737,7 +737,7 @@ export class DataGoogleVertexAiIndex extends cdktf.TerraformDataSource {
   }
 
   // labels - computed: true, optional: false, required: false
-  private _labels = new cdktf.StringMap(this, "labels");
+  private _labels = new cdktn.StringMap(this, "labels");
   public get labels() {
     return this._labels;
   }
@@ -796,7 +796,7 @@ export class DataGoogleVertexAiIndex extends cdktf.TerraformDataSource {
   }
 
   // terraform_labels - computed: true, optional: false, required: false
-  private _terraformLabels = new cdktf.StringMap(this, "terraform_labels");
+  private _terraformLabels = new cdktn.StringMap(this, "terraform_labels");
   public get terraformLabels() {
     return this._terraformLabels;
   }
@@ -812,35 +812,35 @@ export class DataGoogleVertexAiIndex extends cdktf.TerraformDataSource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      id: cdktf.stringToTerraform(this._id),
-      name: cdktf.stringToTerraform(this._name),
-      project: cdktf.stringToTerraform(this._project),
-      region: cdktf.stringToTerraform(this._region),
+      id: cdktn.stringToTerraform(this._id),
+      name: cdktn.stringToTerraform(this._name),
+      project: cdktn.stringToTerraform(this._project),
+      region: cdktn.stringToTerraform(this._region),
     };
   }
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       name: {
-        value: cdktf.stringToHclTerraform(this._name),
+        value: cdktn.stringToHclTerraform(this._name),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       project: {
-        value: cdktf.stringToHclTerraform(this._project),
+        value: cdktn.stringToHclTerraform(this._project),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       region: {
-        value: cdktf.stringToHclTerraform(this._region),
+        value: cdktn.stringToHclTerraform(this._region),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface BinaryAuthorizationAttestorConfig extends cdktf.TerraformMetaArguments {
+export interface BinaryAuthorizationAttestorConfig extends cdktn.TerraformMetaArguments {
   /**
   * A descriptive comment. This field may be updated. The field may be
   * displayed in chooser dialogs.
@@ -70,31 +70,31 @@ export interface BinaryAuthorizationAttestorAttestationAuthorityNotePublicKeysPk
 }
 
 export function binaryAuthorizationAttestorAttestationAuthorityNotePublicKeysPkixPublicKeyToTerraform(struct?: BinaryAuthorizationAttestorAttestationAuthorityNotePublicKeysPkixPublicKeyOutputReference | BinaryAuthorizationAttestorAttestationAuthorityNotePublicKeysPkixPublicKey): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    public_key_pem: cdktf.stringToTerraform(struct!.publicKeyPem),
-    signature_algorithm: cdktf.stringToTerraform(struct!.signatureAlgorithm),
+    public_key_pem: cdktn.stringToTerraform(struct!.publicKeyPem),
+    signature_algorithm: cdktn.stringToTerraform(struct!.signatureAlgorithm),
   }
 }
 
 
 export function binaryAuthorizationAttestorAttestationAuthorityNotePublicKeysPkixPublicKeyToHclTerraform(struct?: BinaryAuthorizationAttestorAttestationAuthorityNotePublicKeysPkixPublicKeyOutputReference | BinaryAuthorizationAttestorAttestationAuthorityNotePublicKeysPkixPublicKey): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     public_key_pem: {
-      value: cdktf.stringToHclTerraform(struct!.publicKeyPem),
+      value: cdktn.stringToHclTerraform(struct!.publicKeyPem),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     signature_algorithm: {
-      value: cdktf.stringToHclTerraform(struct!.signatureAlgorithm),
+      value: cdktn.stringToHclTerraform(struct!.signatureAlgorithm),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -105,14 +105,14 @@ export function binaryAuthorizationAttestorAttestationAuthorityNotePublicKeysPki
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class BinaryAuthorizationAttestorAttestationAuthorityNotePublicKeysPkixPublicKeyOutputReference extends cdktf.ComplexObject {
+export class BinaryAuthorizationAttestorAttestationAuthorityNotePublicKeysPkixPublicKeyOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -218,40 +218,40 @@ export interface BinaryAuthorizationAttestorAttestationAuthorityNotePublicKeys {
   readonly pkixPublicKey?: BinaryAuthorizationAttestorAttestationAuthorityNotePublicKeysPkixPublicKey;
 }
 
-export function binaryAuthorizationAttestorAttestationAuthorityNotePublicKeysToTerraform(struct?: BinaryAuthorizationAttestorAttestationAuthorityNotePublicKeys | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function binaryAuthorizationAttestorAttestationAuthorityNotePublicKeysToTerraform(struct?: BinaryAuthorizationAttestorAttestationAuthorityNotePublicKeys | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    ascii_armored_pgp_public_key: cdktf.stringToTerraform(struct!.asciiArmoredPgpPublicKey),
-    comment: cdktf.stringToTerraform(struct!.comment),
-    id: cdktf.stringToTerraform(struct!.id),
+    ascii_armored_pgp_public_key: cdktn.stringToTerraform(struct!.asciiArmoredPgpPublicKey),
+    comment: cdktn.stringToTerraform(struct!.comment),
+    id: cdktn.stringToTerraform(struct!.id),
     pkix_public_key: binaryAuthorizationAttestorAttestationAuthorityNotePublicKeysPkixPublicKeyToTerraform(struct!.pkixPublicKey),
   }
 }
 
 
-export function binaryAuthorizationAttestorAttestationAuthorityNotePublicKeysToHclTerraform(struct?: BinaryAuthorizationAttestorAttestationAuthorityNotePublicKeys | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function binaryAuthorizationAttestorAttestationAuthorityNotePublicKeysToHclTerraform(struct?: BinaryAuthorizationAttestorAttestationAuthorityNotePublicKeys | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     ascii_armored_pgp_public_key: {
-      value: cdktf.stringToHclTerraform(struct!.asciiArmoredPgpPublicKey),
+      value: cdktn.stringToHclTerraform(struct!.asciiArmoredPgpPublicKey),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     comment: {
-      value: cdktf.stringToHclTerraform(struct!.comment),
+      value: cdktn.stringToHclTerraform(struct!.comment),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     id: {
-      value: cdktf.stringToHclTerraform(struct!.id),
+      value: cdktn.stringToHclTerraform(struct!.id),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -268,9 +268,9 @@ export function binaryAuthorizationAttestorAttestationAuthorityNotePublicKeysToH
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class BinaryAuthorizationAttestorAttestationAuthorityNotePublicKeysOutputReference extends cdktf.ComplexObject {
+export class BinaryAuthorizationAttestorAttestationAuthorityNotePublicKeysOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -278,11 +278,11 @@ export class BinaryAuthorizationAttestorAttestationAuthorityNotePublicKeysOutput
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): BinaryAuthorizationAttestorAttestationAuthorityNotePublicKeys | cdktf.IResolvable | undefined {
+  public get internalValue(): BinaryAuthorizationAttestorAttestationAuthorityNotePublicKeys | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -307,7 +307,7 @@ export class BinaryAuthorizationAttestorAttestationAuthorityNotePublicKeysOutput
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: BinaryAuthorizationAttestorAttestationAuthorityNotePublicKeys | cdktf.IResolvable | undefined) {
+  public set internalValue(value: BinaryAuthorizationAttestorAttestationAuthorityNotePublicKeys | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -316,7 +316,7 @@ export class BinaryAuthorizationAttestorAttestationAuthorityNotePublicKeysOutput
       this._id = undefined;
       this._pkixPublicKey.internalValue = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -395,15 +395,15 @@ export class BinaryAuthorizationAttestorAttestationAuthorityNotePublicKeysOutput
   }
 }
 
-export class BinaryAuthorizationAttestorAttestationAuthorityNotePublicKeysList extends cdktf.ComplexList {
-  public internalValue? : BinaryAuthorizationAttestorAttestationAuthorityNotePublicKeys[] | cdktf.IResolvable
+export class BinaryAuthorizationAttestorAttestationAuthorityNotePublicKeysList extends cdktn.ComplexList {
+  public internalValue? : BinaryAuthorizationAttestorAttestationAuthorityNotePublicKeys[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -434,35 +434,35 @@ export interface BinaryAuthorizationAttestorAttestationAuthorityNote {
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/binary_authorization_attestor#public_keys BinaryAuthorizationAttestor#public_keys}
   */
-  readonly publicKeys?: BinaryAuthorizationAttestorAttestationAuthorityNotePublicKeys[] | cdktf.IResolvable;
+  readonly publicKeys?: BinaryAuthorizationAttestorAttestationAuthorityNotePublicKeys[] | cdktn.IResolvable;
 }
 
 export function binaryAuthorizationAttestorAttestationAuthorityNoteToTerraform(struct?: BinaryAuthorizationAttestorAttestationAuthorityNoteOutputReference | BinaryAuthorizationAttestorAttestationAuthorityNote): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    note_reference: cdktf.stringToTerraform(struct!.noteReference),
-    public_keys: cdktf.listMapper(binaryAuthorizationAttestorAttestationAuthorityNotePublicKeysToTerraform, true)(struct!.publicKeys),
+    note_reference: cdktn.stringToTerraform(struct!.noteReference),
+    public_keys: cdktn.listMapper(binaryAuthorizationAttestorAttestationAuthorityNotePublicKeysToTerraform, true)(struct!.publicKeys),
   }
 }
 
 
 export function binaryAuthorizationAttestorAttestationAuthorityNoteToHclTerraform(struct?: BinaryAuthorizationAttestorAttestationAuthorityNoteOutputReference | BinaryAuthorizationAttestorAttestationAuthorityNote): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     note_reference: {
-      value: cdktf.stringToHclTerraform(struct!.noteReference),
+      value: cdktn.stringToHclTerraform(struct!.noteReference),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     public_keys: {
-      value: cdktf.listMapperHcl(binaryAuthorizationAttestorAttestationAuthorityNotePublicKeysToHclTerraform, true)(struct!.publicKeys),
+      value: cdktn.listMapperHcl(binaryAuthorizationAttestorAttestationAuthorityNotePublicKeysToHclTerraform, true)(struct!.publicKeys),
       isBlock: true,
       type: "list",
       storageClassType: "BinaryAuthorizationAttestorAttestationAuthorityNotePublicKeysList",
@@ -473,14 +473,14 @@ export function binaryAuthorizationAttestorAttestationAuthorityNoteToHclTerrafor
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class BinaryAuthorizationAttestorAttestationAuthorityNoteOutputReference extends cdktf.ComplexObject {
+export class BinaryAuthorizationAttestorAttestationAuthorityNoteOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -534,7 +534,7 @@ export class BinaryAuthorizationAttestorAttestationAuthorityNoteOutputReference 
   public get publicKeys() {
     return this._publicKeys;
   }
-  public putPublicKeys(value: BinaryAuthorizationAttestorAttestationAuthorityNotePublicKeys[] | cdktf.IResolvable) {
+  public putPublicKeys(value: BinaryAuthorizationAttestorAttestationAuthorityNotePublicKeys[] | cdktn.IResolvable) {
     this._publicKeys.internalValue = value;
   }
   public resetPublicKeys() {
@@ -560,39 +560,39 @@ export interface BinaryAuthorizationAttestorTimeouts {
   readonly update?: string;
 }
 
-export function binaryAuthorizationAttestorTimeoutsToTerraform(struct?: BinaryAuthorizationAttestorTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function binaryAuthorizationAttestorTimeoutsToTerraform(struct?: BinaryAuthorizationAttestorTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    create: cdktf.stringToTerraform(struct!.create),
-    delete: cdktf.stringToTerraform(struct!.delete),
-    update: cdktf.stringToTerraform(struct!.update),
+    create: cdktn.stringToTerraform(struct!.create),
+    delete: cdktn.stringToTerraform(struct!.delete),
+    update: cdktn.stringToTerraform(struct!.update),
   }
 }
 
 
-export function binaryAuthorizationAttestorTimeoutsToHclTerraform(struct?: BinaryAuthorizationAttestorTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function binaryAuthorizationAttestorTimeoutsToHclTerraform(struct?: BinaryAuthorizationAttestorTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     create: {
-      value: cdktf.stringToHclTerraform(struct!.create),
+      value: cdktn.stringToHclTerraform(struct!.create),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     delete: {
-      value: cdktf.stringToHclTerraform(struct!.delete),
+      value: cdktn.stringToHclTerraform(struct!.delete),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     update: {
-      value: cdktf.stringToHclTerraform(struct!.update),
+      value: cdktn.stringToHclTerraform(struct!.update),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -603,19 +603,19 @@ export function binaryAuthorizationAttestorTimeoutsToHclTerraform(struct?: Binar
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class BinaryAuthorizationAttestorTimeoutsOutputReference extends cdktf.ComplexObject {
+export class BinaryAuthorizationAttestorTimeoutsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): BinaryAuthorizationAttestorTimeouts | cdktf.IResolvable | undefined {
+  public get internalValue(): BinaryAuthorizationAttestorTimeouts | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -636,7 +636,7 @@ export class BinaryAuthorizationAttestorTimeoutsOutputReference extends cdktf.Co
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: BinaryAuthorizationAttestorTimeouts | cdktf.IResolvable | undefined) {
+  public set internalValue(value: BinaryAuthorizationAttestorTimeouts | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -644,7 +644,7 @@ export class BinaryAuthorizationAttestorTimeoutsOutputReference extends cdktf.Co
       this._delete = undefined;
       this._update = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -709,7 +709,7 @@ export class BinaryAuthorizationAttestorTimeoutsOutputReference extends cdktf.Co
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/binary_authorization_attestor google_binary_authorization_attestor}
 */
-export class BinaryAuthorizationAttestor extends cdktf.TerraformResource {
+export class BinaryAuthorizationAttestor extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -720,14 +720,14 @@ export class BinaryAuthorizationAttestor extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a BinaryAuthorizationAttestor resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a BinaryAuthorizationAttestor resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the BinaryAuthorizationAttestor to import
   * @param importFromId The id of the existing BinaryAuthorizationAttestor that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/binary_authorization_attestor#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the BinaryAuthorizationAttestor to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "google_binary_authorization_attestor", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "google_binary_authorization_attestor", importId: importFromId, provider });
       }
 
   // ===========
@@ -865,10 +865,10 @@ export class BinaryAuthorizationAttestor extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      description: cdktf.stringToTerraform(this._description),
-      id: cdktf.stringToTerraform(this._id),
-      name: cdktf.stringToTerraform(this._name),
-      project: cdktf.stringToTerraform(this._project),
+      description: cdktn.stringToTerraform(this._description),
+      id: cdktn.stringToTerraform(this._id),
+      name: cdktn.stringToTerraform(this._name),
+      project: cdktn.stringToTerraform(this._project),
       attestation_authority_note: binaryAuthorizationAttestorAttestationAuthorityNoteToTerraform(this._attestationAuthorityNote.internalValue),
       timeouts: binaryAuthorizationAttestorTimeoutsToTerraform(this._timeouts.internalValue),
     };
@@ -877,25 +877,25 @@ export class BinaryAuthorizationAttestor extends cdktf.TerraformResource {
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       description: {
-        value: cdktf.stringToHclTerraform(this._description),
+        value: cdktn.stringToHclTerraform(this._description),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       name: {
-        value: cdktf.stringToHclTerraform(this._name),
+        value: cdktn.stringToHclTerraform(this._name),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       project: {
-        value: cdktf.stringToHclTerraform(this._project),
+        value: cdktn.stringToHclTerraform(this._project),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

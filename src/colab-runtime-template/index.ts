@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface ColabRuntimeTemplateConfig extends cdktf.TerraformMetaArguments {
+export interface ColabRuntimeTemplateConfig extends cdktn.TerraformMetaArguments {
   /**
   * The description of the Runtime Template.
   *
@@ -133,31 +133,31 @@ export interface ColabRuntimeTemplateDataPersistentDiskSpec {
 }
 
 export function colabRuntimeTemplateDataPersistentDiskSpecToTerraform(struct?: ColabRuntimeTemplateDataPersistentDiskSpecOutputReference | ColabRuntimeTemplateDataPersistentDiskSpec): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    disk_size_gb: cdktf.stringToTerraform(struct!.diskSizeGb),
-    disk_type: cdktf.stringToTerraform(struct!.diskType),
+    disk_size_gb: cdktn.stringToTerraform(struct!.diskSizeGb),
+    disk_type: cdktn.stringToTerraform(struct!.diskType),
   }
 }
 
 
 export function colabRuntimeTemplateDataPersistentDiskSpecToHclTerraform(struct?: ColabRuntimeTemplateDataPersistentDiskSpecOutputReference | ColabRuntimeTemplateDataPersistentDiskSpec): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     disk_size_gb: {
-      value: cdktf.stringToHclTerraform(struct!.diskSizeGb),
+      value: cdktn.stringToHclTerraform(struct!.diskSizeGb),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     disk_type: {
-      value: cdktf.stringToHclTerraform(struct!.diskType),
+      value: cdktn.stringToHclTerraform(struct!.diskType),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -168,14 +168,14 @@ export function colabRuntimeTemplateDataPersistentDiskSpecToHclTerraform(struct?
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class ColabRuntimeTemplateDataPersistentDiskSpecOutputReference extends cdktf.ComplexObject {
+export class ColabRuntimeTemplateDataPersistentDiskSpecOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -248,24 +248,24 @@ export interface ColabRuntimeTemplateEncryptionSpec {
 }
 
 export function colabRuntimeTemplateEncryptionSpecToTerraform(struct?: ColabRuntimeTemplateEncryptionSpecOutputReference | ColabRuntimeTemplateEncryptionSpec): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    kms_key_name: cdktf.stringToTerraform(struct!.kmsKeyName),
+    kms_key_name: cdktn.stringToTerraform(struct!.kmsKeyName),
   }
 }
 
 
 export function colabRuntimeTemplateEncryptionSpecToHclTerraform(struct?: ColabRuntimeTemplateEncryptionSpecOutputReference | ColabRuntimeTemplateEncryptionSpec): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     kms_key_name: {
-      value: cdktf.stringToHclTerraform(struct!.kmsKeyName),
+      value: cdktn.stringToHclTerraform(struct!.kmsKeyName),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -276,14 +276,14 @@ export function colabRuntimeTemplateEncryptionSpecToHclTerraform(struct?: ColabR
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class ColabRuntimeTemplateEncryptionSpecOutputReference extends cdktf.ComplexObject {
+export class ColabRuntimeTemplateEncryptionSpecOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -330,28 +330,28 @@ export interface ColabRuntimeTemplateEucConfig {
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/colab_runtime_template#euc_disabled ColabRuntimeTemplate#euc_disabled}
   */
-  readonly eucDisabled?: boolean | cdktf.IResolvable;
+  readonly eucDisabled?: boolean | cdktn.IResolvable;
 }
 
 export function colabRuntimeTemplateEucConfigToTerraform(struct?: ColabRuntimeTemplateEucConfigOutputReference | ColabRuntimeTemplateEucConfig): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    euc_disabled: cdktf.booleanToTerraform(struct!.eucDisabled),
+    euc_disabled: cdktn.booleanToTerraform(struct!.eucDisabled),
   }
 }
 
 
 export function colabRuntimeTemplateEucConfigToHclTerraform(struct?: ColabRuntimeTemplateEucConfigOutputReference | ColabRuntimeTemplateEucConfig): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     euc_disabled: {
-      value: cdktf.booleanToHclTerraform(struct!.eucDisabled),
+      value: cdktn.booleanToHclTerraform(struct!.eucDisabled),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
@@ -362,14 +362,14 @@ export function colabRuntimeTemplateEucConfigToHclTerraform(struct?: ColabRuntim
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class ColabRuntimeTemplateEucConfigOutputReference extends cdktf.ComplexObject {
+export class ColabRuntimeTemplateEucConfigOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -395,11 +395,11 @@ export class ColabRuntimeTemplateEucConfigOutputReference extends cdktf.ComplexO
   }
 
   // euc_disabled - computed: true, optional: true, required: false
-  private _eucDisabled?: boolean | cdktf.IResolvable; 
+  private _eucDisabled?: boolean | cdktn.IResolvable; 
   public get eucDisabled() {
     return this.getBooleanAttribute('euc_disabled');
   }
-  public set eucDisabled(value: boolean | cdktf.IResolvable) {
+  public set eucDisabled(value: boolean | cdktn.IResolvable) {
     this._eucDisabled = value;
   }
   public resetEucDisabled() {
@@ -420,24 +420,24 @@ export interface ColabRuntimeTemplateIdleShutdownConfig {
 }
 
 export function colabRuntimeTemplateIdleShutdownConfigToTerraform(struct?: ColabRuntimeTemplateIdleShutdownConfigOutputReference | ColabRuntimeTemplateIdleShutdownConfig): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    idle_timeout: cdktf.stringToTerraform(struct!.idleTimeout),
+    idle_timeout: cdktn.stringToTerraform(struct!.idleTimeout),
   }
 }
 
 
 export function colabRuntimeTemplateIdleShutdownConfigToHclTerraform(struct?: ColabRuntimeTemplateIdleShutdownConfigOutputReference | ColabRuntimeTemplateIdleShutdownConfig): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     idle_timeout: {
-      value: cdktf.stringToHclTerraform(struct!.idleTimeout),
+      value: cdktn.stringToHclTerraform(struct!.idleTimeout),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -448,14 +448,14 @@ export function colabRuntimeTemplateIdleShutdownConfigToHclTerraform(struct?: Co
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class ColabRuntimeTemplateIdleShutdownConfigOutputReference extends cdktf.ComplexObject {
+export class ColabRuntimeTemplateIdleShutdownConfigOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -518,38 +518,38 @@ export interface ColabRuntimeTemplateMachineSpec {
 }
 
 export function colabRuntimeTemplateMachineSpecToTerraform(struct?: ColabRuntimeTemplateMachineSpecOutputReference | ColabRuntimeTemplateMachineSpec): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    accelerator_count: cdktf.numberToTerraform(struct!.acceleratorCount),
-    accelerator_type: cdktf.stringToTerraform(struct!.acceleratorType),
-    machine_type: cdktf.stringToTerraform(struct!.machineType),
+    accelerator_count: cdktn.numberToTerraform(struct!.acceleratorCount),
+    accelerator_type: cdktn.stringToTerraform(struct!.acceleratorType),
+    machine_type: cdktn.stringToTerraform(struct!.machineType),
   }
 }
 
 
 export function colabRuntimeTemplateMachineSpecToHclTerraform(struct?: ColabRuntimeTemplateMachineSpecOutputReference | ColabRuntimeTemplateMachineSpec): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     accelerator_count: {
-      value: cdktf.numberToHclTerraform(struct!.acceleratorCount),
+      value: cdktn.numberToHclTerraform(struct!.acceleratorCount),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     accelerator_type: {
-      value: cdktf.stringToHclTerraform(struct!.acceleratorType),
+      value: cdktn.stringToHclTerraform(struct!.acceleratorType),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     machine_type: {
-      value: cdktf.stringToHclTerraform(struct!.machineType),
+      value: cdktn.stringToHclTerraform(struct!.machineType),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -560,14 +560,14 @@ export function colabRuntimeTemplateMachineSpecToHclTerraform(struct?: ColabRunt
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class ColabRuntimeTemplateMachineSpecOutputReference extends cdktf.ComplexObject {
+export class ColabRuntimeTemplateMachineSpecOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -658,7 +658,7 @@ export interface ColabRuntimeTemplateNetworkSpec {
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/colab_runtime_template#enable_internet_access ColabRuntimeTemplate#enable_internet_access}
   */
-  readonly enableInternetAccess?: boolean | cdktf.IResolvable;
+  readonly enableInternetAccess?: boolean | cdktn.IResolvable;
   /**
   * The name of the VPC that this runtime is in.
   *
@@ -674,38 +674,38 @@ export interface ColabRuntimeTemplateNetworkSpec {
 }
 
 export function colabRuntimeTemplateNetworkSpecToTerraform(struct?: ColabRuntimeTemplateNetworkSpecOutputReference | ColabRuntimeTemplateNetworkSpec): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    enable_internet_access: cdktf.booleanToTerraform(struct!.enableInternetAccess),
-    network: cdktf.stringToTerraform(struct!.network),
-    subnetwork: cdktf.stringToTerraform(struct!.subnetwork),
+    enable_internet_access: cdktn.booleanToTerraform(struct!.enableInternetAccess),
+    network: cdktn.stringToTerraform(struct!.network),
+    subnetwork: cdktn.stringToTerraform(struct!.subnetwork),
   }
 }
 
 
 export function colabRuntimeTemplateNetworkSpecToHclTerraform(struct?: ColabRuntimeTemplateNetworkSpecOutputReference | ColabRuntimeTemplateNetworkSpec): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     enable_internet_access: {
-      value: cdktf.booleanToHclTerraform(struct!.enableInternetAccess),
+      value: cdktn.booleanToHclTerraform(struct!.enableInternetAccess),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     network: {
-      value: cdktf.stringToHclTerraform(struct!.network),
+      value: cdktn.stringToHclTerraform(struct!.network),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     subnetwork: {
-      value: cdktf.stringToHclTerraform(struct!.subnetwork),
+      value: cdktn.stringToHclTerraform(struct!.subnetwork),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -716,14 +716,14 @@ export function colabRuntimeTemplateNetworkSpecToHclTerraform(struct?: ColabRunt
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class ColabRuntimeTemplateNetworkSpecOutputReference extends cdktf.ComplexObject {
+export class ColabRuntimeTemplateNetworkSpecOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -761,11 +761,11 @@ export class ColabRuntimeTemplateNetworkSpecOutputReference extends cdktf.Comple
   }
 
   // enable_internet_access - computed: false, optional: true, required: false
-  private _enableInternetAccess?: boolean | cdktf.IResolvable; 
+  private _enableInternetAccess?: boolean | cdktn.IResolvable; 
   public get enableInternetAccess() {
     return this.getBooleanAttribute('enable_internet_access');
   }
-  public set enableInternetAccess(value: boolean | cdktf.IResolvable) {
+  public set enableInternetAccess(value: boolean | cdktn.IResolvable) {
     this._enableInternetAccess = value;
   }
   public resetEnableInternetAccess() {
@@ -814,28 +814,28 @@ export interface ColabRuntimeTemplateShieldedVmConfig {
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/colab_runtime_template#enable_secure_boot ColabRuntimeTemplate#enable_secure_boot}
   */
-  readonly enableSecureBoot?: boolean | cdktf.IResolvable;
+  readonly enableSecureBoot?: boolean | cdktn.IResolvable;
 }
 
 export function colabRuntimeTemplateShieldedVmConfigToTerraform(struct?: ColabRuntimeTemplateShieldedVmConfigOutputReference | ColabRuntimeTemplateShieldedVmConfig): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    enable_secure_boot: cdktf.booleanToTerraform(struct!.enableSecureBoot),
+    enable_secure_boot: cdktn.booleanToTerraform(struct!.enableSecureBoot),
   }
 }
 
 
 export function colabRuntimeTemplateShieldedVmConfigToHclTerraform(struct?: ColabRuntimeTemplateShieldedVmConfigOutputReference | ColabRuntimeTemplateShieldedVmConfig): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     enable_secure_boot: {
-      value: cdktf.booleanToHclTerraform(struct!.enableSecureBoot),
+      value: cdktn.booleanToHclTerraform(struct!.enableSecureBoot),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
@@ -846,14 +846,14 @@ export function colabRuntimeTemplateShieldedVmConfigToHclTerraform(struct?: Cola
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class ColabRuntimeTemplateShieldedVmConfigOutputReference extends cdktf.ComplexObject {
+export class ColabRuntimeTemplateShieldedVmConfigOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -879,11 +879,11 @@ export class ColabRuntimeTemplateShieldedVmConfigOutputReference extends cdktf.C
   }
 
   // enable_secure_boot - computed: true, optional: true, required: false
-  private _enableSecureBoot?: boolean | cdktf.IResolvable; 
+  private _enableSecureBoot?: boolean | cdktn.IResolvable; 
   public get enableSecureBoot() {
     return this.getBooleanAttribute('enable_secure_boot');
   }
-  public set enableSecureBoot(value: boolean | cdktf.IResolvable) {
+  public set enableSecureBoot(value: boolean | cdktn.IResolvable) {
     this._enableSecureBoot = value;
   }
   public resetEnableSecureBoot() {
@@ -909,32 +909,32 @@ export interface ColabRuntimeTemplateSoftwareConfigEnv {
   readonly value?: string;
 }
 
-export function colabRuntimeTemplateSoftwareConfigEnvToTerraform(struct?: ColabRuntimeTemplateSoftwareConfigEnv | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function colabRuntimeTemplateSoftwareConfigEnvToTerraform(struct?: ColabRuntimeTemplateSoftwareConfigEnv | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    name: cdktf.stringToTerraform(struct!.name),
-    value: cdktf.stringToTerraform(struct!.value),
+    name: cdktn.stringToTerraform(struct!.name),
+    value: cdktn.stringToTerraform(struct!.value),
   }
 }
 
 
-export function colabRuntimeTemplateSoftwareConfigEnvToHclTerraform(struct?: ColabRuntimeTemplateSoftwareConfigEnv | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function colabRuntimeTemplateSoftwareConfigEnvToHclTerraform(struct?: ColabRuntimeTemplateSoftwareConfigEnv | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     name: {
-      value: cdktf.stringToHclTerraform(struct!.name),
+      value: cdktn.stringToHclTerraform(struct!.name),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     value: {
-      value: cdktf.stringToHclTerraform(struct!.value),
+      value: cdktn.stringToHclTerraform(struct!.value),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -945,9 +945,9 @@ export function colabRuntimeTemplateSoftwareConfigEnvToHclTerraform(struct?: Col
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class ColabRuntimeTemplateSoftwareConfigEnvOutputReference extends cdktf.ComplexObject {
+export class ColabRuntimeTemplateSoftwareConfigEnvOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -955,11 +955,11 @@ export class ColabRuntimeTemplateSoftwareConfigEnvOutputReference extends cdktf.
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): ColabRuntimeTemplateSoftwareConfigEnv | cdktf.IResolvable | undefined {
+  public get internalValue(): ColabRuntimeTemplateSoftwareConfigEnv | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -976,14 +976,14 @@ export class ColabRuntimeTemplateSoftwareConfigEnvOutputReference extends cdktf.
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: ColabRuntimeTemplateSoftwareConfigEnv | cdktf.IResolvable | undefined) {
+  public set internalValue(value: ColabRuntimeTemplateSoftwareConfigEnv | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._name = undefined;
       this._value = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -1028,15 +1028,15 @@ export class ColabRuntimeTemplateSoftwareConfigEnvOutputReference extends cdktf.
   }
 }
 
-export class ColabRuntimeTemplateSoftwareConfigEnvList extends cdktf.ComplexList {
-  public internalValue? : ColabRuntimeTemplateSoftwareConfigEnv[] | cdktf.IResolvable
+export class ColabRuntimeTemplateSoftwareConfigEnvList extends cdktn.ComplexList {
+  public internalValue? : ColabRuntimeTemplateSoftwareConfigEnv[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -1069,38 +1069,38 @@ export interface ColabRuntimeTemplateSoftwareConfigPostStartupScriptConfig {
 }
 
 export function colabRuntimeTemplateSoftwareConfigPostStartupScriptConfigToTerraform(struct?: ColabRuntimeTemplateSoftwareConfigPostStartupScriptConfigOutputReference | ColabRuntimeTemplateSoftwareConfigPostStartupScriptConfig): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    post_startup_script: cdktf.stringToTerraform(struct!.postStartupScript),
-    post_startup_script_behavior: cdktf.stringToTerraform(struct!.postStartupScriptBehavior),
-    post_startup_script_url: cdktf.stringToTerraform(struct!.postStartupScriptUrl),
+    post_startup_script: cdktn.stringToTerraform(struct!.postStartupScript),
+    post_startup_script_behavior: cdktn.stringToTerraform(struct!.postStartupScriptBehavior),
+    post_startup_script_url: cdktn.stringToTerraform(struct!.postStartupScriptUrl),
   }
 }
 
 
 export function colabRuntimeTemplateSoftwareConfigPostStartupScriptConfigToHclTerraform(struct?: ColabRuntimeTemplateSoftwareConfigPostStartupScriptConfigOutputReference | ColabRuntimeTemplateSoftwareConfigPostStartupScriptConfig): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     post_startup_script: {
-      value: cdktf.stringToHclTerraform(struct!.postStartupScript),
+      value: cdktn.stringToHclTerraform(struct!.postStartupScript),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     post_startup_script_behavior: {
-      value: cdktf.stringToHclTerraform(struct!.postStartupScriptBehavior),
+      value: cdktn.stringToHclTerraform(struct!.postStartupScriptBehavior),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     post_startup_script_url: {
-      value: cdktf.stringToHclTerraform(struct!.postStartupScriptUrl),
+      value: cdktn.stringToHclTerraform(struct!.postStartupScriptUrl),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -1111,14 +1111,14 @@ export function colabRuntimeTemplateSoftwareConfigPostStartupScriptConfigToHclTe
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class ColabRuntimeTemplateSoftwareConfigPostStartupScriptConfigOutputReference extends cdktf.ComplexObject {
+export class ColabRuntimeTemplateSoftwareConfigPostStartupScriptConfigOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -1209,7 +1209,7 @@ export interface ColabRuntimeTemplateSoftwareConfig {
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/colab_runtime_template#env ColabRuntimeTemplate#env}
   */
-  readonly env?: ColabRuntimeTemplateSoftwareConfigEnv[] | cdktf.IResolvable;
+  readonly env?: ColabRuntimeTemplateSoftwareConfigEnv[] | cdktn.IResolvable;
   /**
   * post_startup_script_config block
   *
@@ -1219,25 +1219,25 @@ export interface ColabRuntimeTemplateSoftwareConfig {
 }
 
 export function colabRuntimeTemplateSoftwareConfigToTerraform(struct?: ColabRuntimeTemplateSoftwareConfigOutputReference | ColabRuntimeTemplateSoftwareConfig): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    env: cdktf.listMapper(colabRuntimeTemplateSoftwareConfigEnvToTerraform, true)(struct!.env),
+    env: cdktn.listMapper(colabRuntimeTemplateSoftwareConfigEnvToTerraform, true)(struct!.env),
     post_startup_script_config: colabRuntimeTemplateSoftwareConfigPostStartupScriptConfigToTerraform(struct!.postStartupScriptConfig),
   }
 }
 
 
 export function colabRuntimeTemplateSoftwareConfigToHclTerraform(struct?: ColabRuntimeTemplateSoftwareConfigOutputReference | ColabRuntimeTemplateSoftwareConfig): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     env: {
-      value: cdktf.listMapperHcl(colabRuntimeTemplateSoftwareConfigEnvToHclTerraform, true)(struct!.env),
+      value: cdktn.listMapperHcl(colabRuntimeTemplateSoftwareConfigEnvToHclTerraform, true)(struct!.env),
       isBlock: true,
       type: "list",
       storageClassType: "ColabRuntimeTemplateSoftwareConfigEnvList",
@@ -1254,14 +1254,14 @@ export function colabRuntimeTemplateSoftwareConfigToHclTerraform(struct?: ColabR
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class ColabRuntimeTemplateSoftwareConfigOutputReference extends cdktf.ComplexObject {
+export class ColabRuntimeTemplateSoftwareConfigOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -1297,7 +1297,7 @@ export class ColabRuntimeTemplateSoftwareConfigOutputReference extends cdktf.Com
   public get env() {
     return this._env;
   }
-  public putEnv(value: ColabRuntimeTemplateSoftwareConfigEnv[] | cdktf.IResolvable) {
+  public putEnv(value: ColabRuntimeTemplateSoftwareConfigEnv[] | cdktn.IResolvable) {
     this._env.internalValue = value;
   }
   public resetEnv() {
@@ -1339,39 +1339,39 @@ export interface ColabRuntimeTemplateTimeouts {
   readonly update?: string;
 }
 
-export function colabRuntimeTemplateTimeoutsToTerraform(struct?: ColabRuntimeTemplateTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function colabRuntimeTemplateTimeoutsToTerraform(struct?: ColabRuntimeTemplateTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    create: cdktf.stringToTerraform(struct!.create),
-    delete: cdktf.stringToTerraform(struct!.delete),
-    update: cdktf.stringToTerraform(struct!.update),
+    create: cdktn.stringToTerraform(struct!.create),
+    delete: cdktn.stringToTerraform(struct!.delete),
+    update: cdktn.stringToTerraform(struct!.update),
   }
 }
 
 
-export function colabRuntimeTemplateTimeoutsToHclTerraform(struct?: ColabRuntimeTemplateTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function colabRuntimeTemplateTimeoutsToHclTerraform(struct?: ColabRuntimeTemplateTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     create: {
-      value: cdktf.stringToHclTerraform(struct!.create),
+      value: cdktn.stringToHclTerraform(struct!.create),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     delete: {
-      value: cdktf.stringToHclTerraform(struct!.delete),
+      value: cdktn.stringToHclTerraform(struct!.delete),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     update: {
-      value: cdktf.stringToHclTerraform(struct!.update),
+      value: cdktn.stringToHclTerraform(struct!.update),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -1382,19 +1382,19 @@ export function colabRuntimeTemplateTimeoutsToHclTerraform(struct?: ColabRuntime
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class ColabRuntimeTemplateTimeoutsOutputReference extends cdktf.ComplexObject {
+export class ColabRuntimeTemplateTimeoutsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): ColabRuntimeTemplateTimeouts | cdktf.IResolvable | undefined {
+  public get internalValue(): ColabRuntimeTemplateTimeouts | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -1415,7 +1415,7 @@ export class ColabRuntimeTemplateTimeoutsOutputReference extends cdktf.ComplexOb
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: ColabRuntimeTemplateTimeouts | cdktf.IResolvable | undefined) {
+  public set internalValue(value: ColabRuntimeTemplateTimeouts | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -1423,7 +1423,7 @@ export class ColabRuntimeTemplateTimeoutsOutputReference extends cdktf.ComplexOb
       this._delete = undefined;
       this._update = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -1488,7 +1488,7 @@ export class ColabRuntimeTemplateTimeoutsOutputReference extends cdktf.ComplexOb
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/colab_runtime_template google_colab_runtime_template}
 */
-export class ColabRuntimeTemplate extends cdktf.TerraformResource {
+export class ColabRuntimeTemplate extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -1499,14 +1499,14 @@ export class ColabRuntimeTemplate extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a ColabRuntimeTemplate resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a ColabRuntimeTemplate resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the ColabRuntimeTemplate to import
   * @param importFromId The id of the existing ColabRuntimeTemplate that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/colab_runtime_template#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the ColabRuntimeTemplate to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "google_colab_runtime_template", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "google_colab_runtime_template", importId: importFromId, provider });
       }
 
   // ===========
@@ -1589,7 +1589,7 @@ export class ColabRuntimeTemplate extends cdktf.TerraformResource {
   }
 
   // effective_labels - computed: true, optional: false, required: false
-  private _effectiveLabels = new cdktf.StringMap(this, "effective_labels");
+  private _effectiveLabels = new cdktn.StringMap(this, "effective_labels");
   public get effectiveLabels() {
     return this._effectiveLabels;
   }
@@ -1688,7 +1688,7 @@ export class ColabRuntimeTemplate extends cdktf.TerraformResource {
   }
 
   // terraform_labels - computed: true, optional: false, required: false
-  private _terraformLabels = new cdktf.StringMap(this, "terraform_labels");
+  private _terraformLabels = new cdktn.StringMap(this, "terraform_labels");
   public get terraformLabels() {
     return this._terraformLabels;
   }
@@ -1843,14 +1843,14 @@ export class ColabRuntimeTemplate extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      description: cdktf.stringToTerraform(this._description),
-      display_name: cdktf.stringToTerraform(this._displayName),
-      id: cdktf.stringToTerraform(this._id),
-      labels: cdktf.hashMapper(cdktf.stringToTerraform)(this._labels),
-      location: cdktf.stringToTerraform(this._location),
-      name: cdktf.stringToTerraform(this._name),
-      network_tags: cdktf.listMapper(cdktf.stringToTerraform, false)(this._networkTags),
-      project: cdktf.stringToTerraform(this._project),
+      description: cdktn.stringToTerraform(this._description),
+      display_name: cdktn.stringToTerraform(this._displayName),
+      id: cdktn.stringToTerraform(this._id),
+      labels: cdktn.hashMapper(cdktn.stringToTerraform)(this._labels),
+      location: cdktn.stringToTerraform(this._location),
+      name: cdktn.stringToTerraform(this._name),
+      network_tags: cdktn.listMapper(cdktn.stringToTerraform, false)(this._networkTags),
+      project: cdktn.stringToTerraform(this._project),
       data_persistent_disk_spec: colabRuntimeTemplateDataPersistentDiskSpecToTerraform(this._dataPersistentDiskSpec.internalValue),
       encryption_spec: colabRuntimeTemplateEncryptionSpecToTerraform(this._encryptionSpec.internalValue),
       euc_config: colabRuntimeTemplateEucConfigToTerraform(this._eucConfig.internalValue),
@@ -1866,49 +1866,49 @@ export class ColabRuntimeTemplate extends cdktf.TerraformResource {
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       description: {
-        value: cdktf.stringToHclTerraform(this._description),
+        value: cdktn.stringToHclTerraform(this._description),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       display_name: {
-        value: cdktf.stringToHclTerraform(this._displayName),
+        value: cdktn.stringToHclTerraform(this._displayName),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       labels: {
-        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._labels),
+        value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(this._labels),
         isBlock: false,
         type: "map",
         storageClassType: "stringMap",
       },
       location: {
-        value: cdktf.stringToHclTerraform(this._location),
+        value: cdktn.stringToHclTerraform(this._location),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       name: {
-        value: cdktf.stringToHclTerraform(this._name),
+        value: cdktn.stringToHclTerraform(this._name),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       network_tags: {
-        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._networkTags),
+        value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(this._networkTags),
         isBlock: false,
         type: "list",
         storageClassType: "stringList",
       },
       project: {
-        value: cdktf.stringToHclTerraform(this._project),
+        value: cdktn.stringToHclTerraform(this._project),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface BigtableAppProfileConfig extends cdktf.TerraformMetaArguments {
+export interface BigtableAppProfileConfig extends cdktn.TerraformMetaArguments {
   /**
   * The unique name of the app profile in the form '[_a-zA-Z0-9][-_.a-zA-Z0-9]*'.
   *
@@ -36,7 +36,7 @@ export interface BigtableAppProfileConfig extends cdktf.TerraformMetaArguments {
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/bigtable_app_profile#ignore_warnings BigtableAppProfile#ignore_warnings}
   */
-  readonly ignoreWarnings?: boolean | cdktf.IResolvable;
+  readonly ignoreWarnings?: boolean | cdktn.IResolvable;
   /**
   * The name of the instance to create the app profile within.
   *
@@ -56,7 +56,7 @@ export interface BigtableAppProfileConfig extends cdktf.TerraformMetaArguments {
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/bigtable_app_profile#multi_cluster_routing_use_any BigtableAppProfile#multi_cluster_routing_use_any}
   */
-  readonly multiClusterRoutingUseAny?: boolean | cdktf.IResolvable;
+  readonly multiClusterRoutingUseAny?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/bigtable_app_profile#project BigtableAppProfile#project}
   */
@@ -66,7 +66,7 @@ export interface BigtableAppProfileConfig extends cdktf.TerraformMetaArguments {
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/bigtable_app_profile#row_affinity BigtableAppProfile#row_affinity}
   */
-  readonly rowAffinity?: boolean | cdktf.IResolvable;
+  readonly rowAffinity?: boolean | cdktn.IResolvable;
   /**
   * data_boost_isolation_read_only block
   *
@@ -102,24 +102,24 @@ export interface BigtableAppProfileDataBoostIsolationReadOnly {
 }
 
 export function bigtableAppProfileDataBoostIsolationReadOnlyToTerraform(struct?: BigtableAppProfileDataBoostIsolationReadOnlyOutputReference | BigtableAppProfileDataBoostIsolationReadOnly): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    compute_billing_owner: cdktf.stringToTerraform(struct!.computeBillingOwner),
+    compute_billing_owner: cdktn.stringToTerraform(struct!.computeBillingOwner),
   }
 }
 
 
 export function bigtableAppProfileDataBoostIsolationReadOnlyToHclTerraform(struct?: BigtableAppProfileDataBoostIsolationReadOnlyOutputReference | BigtableAppProfileDataBoostIsolationReadOnly): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     compute_billing_owner: {
-      value: cdktf.stringToHclTerraform(struct!.computeBillingOwner),
+      value: cdktn.stringToHclTerraform(struct!.computeBillingOwner),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -130,14 +130,14 @@ export function bigtableAppProfileDataBoostIsolationReadOnlyToHclTerraform(struc
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class BigtableAppProfileDataBoostIsolationReadOnlyOutputReference extends cdktf.ComplexObject {
+export class BigtableAppProfileDataBoostIsolationReadOnlyOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -182,7 +182,7 @@ export interface BigtableAppProfileSingleClusterRouting {
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/bigtable_app_profile#allow_transactional_writes BigtableAppProfile#allow_transactional_writes}
   */
-  readonly allowTransactionalWrites?: boolean | cdktf.IResolvable;
+  readonly allowTransactionalWrites?: boolean | cdktn.IResolvable;
   /**
   * The cluster to which read/write requests should be routed.
   *
@@ -192,31 +192,31 @@ export interface BigtableAppProfileSingleClusterRouting {
 }
 
 export function bigtableAppProfileSingleClusterRoutingToTerraform(struct?: BigtableAppProfileSingleClusterRoutingOutputReference | BigtableAppProfileSingleClusterRouting): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    allow_transactional_writes: cdktf.booleanToTerraform(struct!.allowTransactionalWrites),
-    cluster_id: cdktf.stringToTerraform(struct!.clusterId),
+    allow_transactional_writes: cdktn.booleanToTerraform(struct!.allowTransactionalWrites),
+    cluster_id: cdktn.stringToTerraform(struct!.clusterId),
   }
 }
 
 
 export function bigtableAppProfileSingleClusterRoutingToHclTerraform(struct?: BigtableAppProfileSingleClusterRoutingOutputReference | BigtableAppProfileSingleClusterRouting): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     allow_transactional_writes: {
-      value: cdktf.booleanToHclTerraform(struct!.allowTransactionalWrites),
+      value: cdktn.booleanToHclTerraform(struct!.allowTransactionalWrites),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     cluster_id: {
-      value: cdktf.stringToHclTerraform(struct!.clusterId),
+      value: cdktn.stringToHclTerraform(struct!.clusterId),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -227,14 +227,14 @@ export function bigtableAppProfileSingleClusterRoutingToHclTerraform(struct?: Bi
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class BigtableAppProfileSingleClusterRoutingOutputReference extends cdktf.ComplexObject {
+export class BigtableAppProfileSingleClusterRoutingOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -266,11 +266,11 @@ export class BigtableAppProfileSingleClusterRoutingOutputReference extends cdktf
   }
 
   // allow_transactional_writes - computed: false, optional: true, required: false
-  private _allowTransactionalWrites?: boolean | cdktf.IResolvable; 
+  private _allowTransactionalWrites?: boolean | cdktn.IResolvable; 
   public get allowTransactionalWrites() {
     return this.getBooleanAttribute('allow_transactional_writes');
   }
-  public set allowTransactionalWrites(value: boolean | cdktf.IResolvable) {
+  public set allowTransactionalWrites(value: boolean | cdktn.IResolvable) {
     this._allowTransactionalWrites = value;
   }
   public resetAllowTransactionalWrites() {
@@ -304,24 +304,24 @@ export interface BigtableAppProfileStandardIsolation {
 }
 
 export function bigtableAppProfileStandardIsolationToTerraform(struct?: BigtableAppProfileStandardIsolationOutputReference | BigtableAppProfileStandardIsolation): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    priority: cdktf.stringToTerraform(struct!.priority),
+    priority: cdktn.stringToTerraform(struct!.priority),
   }
 }
 
 
 export function bigtableAppProfileStandardIsolationToHclTerraform(struct?: BigtableAppProfileStandardIsolationOutputReference | BigtableAppProfileStandardIsolation): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     priority: {
-      value: cdktf.stringToHclTerraform(struct!.priority),
+      value: cdktn.stringToHclTerraform(struct!.priority),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -332,14 +332,14 @@ export function bigtableAppProfileStandardIsolationToHclTerraform(struct?: Bigta
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class BigtableAppProfileStandardIsolationOutputReference extends cdktf.ComplexObject {
+export class BigtableAppProfileStandardIsolationOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -392,39 +392,39 @@ export interface BigtableAppProfileTimeouts {
   readonly update?: string;
 }
 
-export function bigtableAppProfileTimeoutsToTerraform(struct?: BigtableAppProfileTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function bigtableAppProfileTimeoutsToTerraform(struct?: BigtableAppProfileTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    create: cdktf.stringToTerraform(struct!.create),
-    delete: cdktf.stringToTerraform(struct!.delete),
-    update: cdktf.stringToTerraform(struct!.update),
+    create: cdktn.stringToTerraform(struct!.create),
+    delete: cdktn.stringToTerraform(struct!.delete),
+    update: cdktn.stringToTerraform(struct!.update),
   }
 }
 
 
-export function bigtableAppProfileTimeoutsToHclTerraform(struct?: BigtableAppProfileTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function bigtableAppProfileTimeoutsToHclTerraform(struct?: BigtableAppProfileTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     create: {
-      value: cdktf.stringToHclTerraform(struct!.create),
+      value: cdktn.stringToHclTerraform(struct!.create),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     delete: {
-      value: cdktf.stringToHclTerraform(struct!.delete),
+      value: cdktn.stringToHclTerraform(struct!.delete),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     update: {
-      value: cdktf.stringToHclTerraform(struct!.update),
+      value: cdktn.stringToHclTerraform(struct!.update),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -435,19 +435,19 @@ export function bigtableAppProfileTimeoutsToHclTerraform(struct?: BigtableAppPro
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class BigtableAppProfileTimeoutsOutputReference extends cdktf.ComplexObject {
+export class BigtableAppProfileTimeoutsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): BigtableAppProfileTimeouts | cdktf.IResolvable | undefined {
+  public get internalValue(): BigtableAppProfileTimeouts | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -468,7 +468,7 @@ export class BigtableAppProfileTimeoutsOutputReference extends cdktf.ComplexObje
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: BigtableAppProfileTimeouts | cdktf.IResolvable | undefined) {
+  public set internalValue(value: BigtableAppProfileTimeouts | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -476,7 +476,7 @@ export class BigtableAppProfileTimeoutsOutputReference extends cdktf.ComplexObje
       this._delete = undefined;
       this._update = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -541,7 +541,7 @@ export class BigtableAppProfileTimeoutsOutputReference extends cdktf.ComplexObje
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/bigtable_app_profile google_bigtable_app_profile}
 */
-export class BigtableAppProfile extends cdktf.TerraformResource {
+export class BigtableAppProfile extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -552,14 +552,14 @@ export class BigtableAppProfile extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a BigtableAppProfile resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a BigtableAppProfile resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the BigtableAppProfile to import
   * @param importFromId The id of the existing BigtableAppProfile that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/bigtable_app_profile#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the BigtableAppProfile to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "google_bigtable_app_profile", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "google_bigtable_app_profile", importId: importFromId, provider });
       }
 
   // ===========
@@ -654,11 +654,11 @@ export class BigtableAppProfile extends cdktf.TerraformResource {
   }
 
   // ignore_warnings - computed: false, optional: true, required: false
-  private _ignoreWarnings?: boolean | cdktf.IResolvable; 
+  private _ignoreWarnings?: boolean | cdktn.IResolvable; 
   public get ignoreWarnings() {
     return this.getBooleanAttribute('ignore_warnings');
   }
-  public set ignoreWarnings(value: boolean | cdktf.IResolvable) {
+  public set ignoreWarnings(value: boolean | cdktn.IResolvable) {
     this._ignoreWarnings = value;
   }
   public resetIgnoreWarnings() {
@@ -702,11 +702,11 @@ export class BigtableAppProfile extends cdktf.TerraformResource {
   }
 
   // multi_cluster_routing_use_any - computed: false, optional: true, required: false
-  private _multiClusterRoutingUseAny?: boolean | cdktf.IResolvable; 
+  private _multiClusterRoutingUseAny?: boolean | cdktn.IResolvable; 
   public get multiClusterRoutingUseAny() {
     return this.getBooleanAttribute('multi_cluster_routing_use_any');
   }
-  public set multiClusterRoutingUseAny(value: boolean | cdktf.IResolvable) {
+  public set multiClusterRoutingUseAny(value: boolean | cdktn.IResolvable) {
     this._multiClusterRoutingUseAny = value;
   }
   public resetMultiClusterRoutingUseAny() {
@@ -739,11 +739,11 @@ export class BigtableAppProfile extends cdktf.TerraformResource {
   }
 
   // row_affinity - computed: false, optional: true, required: false
-  private _rowAffinity?: boolean | cdktf.IResolvable; 
+  private _rowAffinity?: boolean | cdktn.IResolvable; 
   public get rowAffinity() {
     return this.getBooleanAttribute('row_affinity');
   }
-  public set rowAffinity(value: boolean | cdktf.IResolvable) {
+  public set rowAffinity(value: boolean | cdktn.IResolvable) {
     this._rowAffinity = value;
   }
   public resetRowAffinity() {
@@ -824,15 +824,15 @@ export class BigtableAppProfile extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      app_profile_id: cdktf.stringToTerraform(this._appProfileId),
-      description: cdktf.stringToTerraform(this._description),
-      id: cdktf.stringToTerraform(this._id),
-      ignore_warnings: cdktf.booleanToTerraform(this._ignoreWarnings),
-      instance: cdktf.stringToTerraform(this._instance),
-      multi_cluster_routing_cluster_ids: cdktf.listMapper(cdktf.stringToTerraform, false)(this._multiClusterRoutingClusterIds),
-      multi_cluster_routing_use_any: cdktf.booleanToTerraform(this._multiClusterRoutingUseAny),
-      project: cdktf.stringToTerraform(this._project),
-      row_affinity: cdktf.booleanToTerraform(this._rowAffinity),
+      app_profile_id: cdktn.stringToTerraform(this._appProfileId),
+      description: cdktn.stringToTerraform(this._description),
+      id: cdktn.stringToTerraform(this._id),
+      ignore_warnings: cdktn.booleanToTerraform(this._ignoreWarnings),
+      instance: cdktn.stringToTerraform(this._instance),
+      multi_cluster_routing_cluster_ids: cdktn.listMapper(cdktn.stringToTerraform, false)(this._multiClusterRoutingClusterIds),
+      multi_cluster_routing_use_any: cdktn.booleanToTerraform(this._multiClusterRoutingUseAny),
+      project: cdktn.stringToTerraform(this._project),
+      row_affinity: cdktn.booleanToTerraform(this._rowAffinity),
       data_boost_isolation_read_only: bigtableAppProfileDataBoostIsolationReadOnlyToTerraform(this._dataBoostIsolationReadOnly.internalValue),
       single_cluster_routing: bigtableAppProfileSingleClusterRoutingToTerraform(this._singleClusterRouting.internalValue),
       standard_isolation: bigtableAppProfileStandardIsolationToTerraform(this._standardIsolation.internalValue),
@@ -843,55 +843,55 @@ export class BigtableAppProfile extends cdktf.TerraformResource {
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       app_profile_id: {
-        value: cdktf.stringToHclTerraform(this._appProfileId),
+        value: cdktn.stringToHclTerraform(this._appProfileId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       description: {
-        value: cdktf.stringToHclTerraform(this._description),
+        value: cdktn.stringToHclTerraform(this._description),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       ignore_warnings: {
-        value: cdktf.booleanToHclTerraform(this._ignoreWarnings),
+        value: cdktn.booleanToHclTerraform(this._ignoreWarnings),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       instance: {
-        value: cdktf.stringToHclTerraform(this._instance),
+        value: cdktn.stringToHclTerraform(this._instance),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       multi_cluster_routing_cluster_ids: {
-        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._multiClusterRoutingClusterIds),
+        value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(this._multiClusterRoutingClusterIds),
         isBlock: false,
         type: "list",
         storageClassType: "stringList",
       },
       multi_cluster_routing_use_any: {
-        value: cdktf.booleanToHclTerraform(this._multiClusterRoutingUseAny),
+        value: cdktn.booleanToHclTerraform(this._multiClusterRoutingUseAny),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       project: {
-        value: cdktf.stringToHclTerraform(this._project),
+        value: cdktn.stringToHclTerraform(this._project),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       row_affinity: {
-        value: cdktf.booleanToHclTerraform(this._rowAffinity),
+        value: cdktn.booleanToHclTerraform(this._rowAffinity),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",

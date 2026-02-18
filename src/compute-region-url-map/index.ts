@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface ComputeRegionUrlMapConfig extends cdktf.TerraformMetaArguments {
+export interface ComputeRegionUrlMapConfig extends cdktn.TerraformMetaArguments {
   /**
   * The full or partial URL of the defaultService resource to which traffic is directed if
   * none of the hostRules match. If defaultRouteAction is additionally specified, advanced
@@ -78,19 +78,19 @@ export interface ComputeRegionUrlMapConfig extends cdktf.TerraformMetaArguments 
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_region_url_map#host_rule ComputeRegionUrlMap#host_rule}
   */
-  readonly hostRule?: ComputeRegionUrlMapHostRule[] | cdktf.IResolvable;
+  readonly hostRule?: ComputeRegionUrlMapHostRule[] | cdktn.IResolvable;
   /**
   * path_matcher block
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_region_url_map#path_matcher ComputeRegionUrlMap#path_matcher}
   */
-  readonly pathMatcher?: ComputeRegionUrlMapPathMatcher[] | cdktf.IResolvable;
+  readonly pathMatcher?: ComputeRegionUrlMapPathMatcher[] | cdktn.IResolvable;
   /**
   * test block
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_region_url_map#test ComputeRegionUrlMap#test}
   */
-  readonly test?: ComputeRegionUrlMapTest[] | cdktf.IResolvable;
+  readonly test?: ComputeRegionUrlMapTest[] | cdktn.IResolvable;
   /**
   * timeouts block
   *
@@ -105,7 +105,7 @@ export interface ComputeRegionUrlMapDefaultRouteActionCorsPolicy {
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_region_url_map#allow_credentials ComputeRegionUrlMap#allow_credentials}
   */
-  readonly allowCredentials?: boolean | cdktf.IResolvable;
+  readonly allowCredentials?: boolean | cdktn.IResolvable;
   /**
   * Specifies the content for the Access-Control-Allow-Headers header.
   *
@@ -138,7 +138,7 @@ export interface ComputeRegionUrlMapDefaultRouteActionCorsPolicy {
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_region_url_map#disabled ComputeRegionUrlMap#disabled}
   */
-  readonly disabled?: boolean | cdktf.IResolvable;
+  readonly disabled?: boolean | cdktn.IResolvable;
   /**
   * Specifies the content for the Access-Control-Expose-Headers header.
   *
@@ -155,73 +155,73 @@ export interface ComputeRegionUrlMapDefaultRouteActionCorsPolicy {
 }
 
 export function computeRegionUrlMapDefaultRouteActionCorsPolicyToTerraform(struct?: ComputeRegionUrlMapDefaultRouteActionCorsPolicyOutputReference | ComputeRegionUrlMapDefaultRouteActionCorsPolicy): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    allow_credentials: cdktf.booleanToTerraform(struct!.allowCredentials),
-    allow_headers: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.allowHeaders),
-    allow_methods: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.allowMethods),
-    allow_origin_regexes: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.allowOriginRegexes),
-    allow_origins: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.allowOrigins),
-    disabled: cdktf.booleanToTerraform(struct!.disabled),
-    expose_headers: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.exposeHeaders),
-    max_age: cdktf.numberToTerraform(struct!.maxAge),
+    allow_credentials: cdktn.booleanToTerraform(struct!.allowCredentials),
+    allow_headers: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.allowHeaders),
+    allow_methods: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.allowMethods),
+    allow_origin_regexes: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.allowOriginRegexes),
+    allow_origins: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.allowOrigins),
+    disabled: cdktn.booleanToTerraform(struct!.disabled),
+    expose_headers: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.exposeHeaders),
+    max_age: cdktn.numberToTerraform(struct!.maxAge),
   }
 }
 
 
 export function computeRegionUrlMapDefaultRouteActionCorsPolicyToHclTerraform(struct?: ComputeRegionUrlMapDefaultRouteActionCorsPolicyOutputReference | ComputeRegionUrlMapDefaultRouteActionCorsPolicy): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     allow_credentials: {
-      value: cdktf.booleanToHclTerraform(struct!.allowCredentials),
+      value: cdktn.booleanToHclTerraform(struct!.allowCredentials),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     allow_headers: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.allowHeaders),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.allowHeaders),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
     },
     allow_methods: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.allowMethods),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.allowMethods),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
     },
     allow_origin_regexes: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.allowOriginRegexes),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.allowOriginRegexes),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
     },
     allow_origins: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.allowOrigins),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.allowOrigins),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
     },
     disabled: {
-      value: cdktf.booleanToHclTerraform(struct!.disabled),
+      value: cdktn.booleanToHclTerraform(struct!.disabled),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     expose_headers: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.exposeHeaders),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.exposeHeaders),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
     },
     max_age: {
-      value: cdktf.numberToHclTerraform(struct!.maxAge),
+      value: cdktn.numberToHclTerraform(struct!.maxAge),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
@@ -232,14 +232,14 @@ export function computeRegionUrlMapDefaultRouteActionCorsPolicyToHclTerraform(st
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class ComputeRegionUrlMapDefaultRouteActionCorsPolicyOutputReference extends cdktf.ComplexObject {
+export class ComputeRegionUrlMapDefaultRouteActionCorsPolicyOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -307,11 +307,11 @@ export class ComputeRegionUrlMapDefaultRouteActionCorsPolicyOutputReference exte
   }
 
   // allow_credentials - computed: false, optional: true, required: false
-  private _allowCredentials?: boolean | cdktf.IResolvable; 
+  private _allowCredentials?: boolean | cdktn.IResolvable; 
   public get allowCredentials() {
     return this.getBooleanAttribute('allow_credentials');
   }
-  public set allowCredentials(value: boolean | cdktf.IResolvable) {
+  public set allowCredentials(value: boolean | cdktn.IResolvable) {
     this._allowCredentials = value;
   }
   public resetAllowCredentials() {
@@ -387,11 +387,11 @@ export class ComputeRegionUrlMapDefaultRouteActionCorsPolicyOutputReference exte
   }
 
   // disabled - computed: false, optional: true, required: false
-  private _disabled?: boolean | cdktf.IResolvable; 
+  private _disabled?: boolean | cdktn.IResolvable; 
   public get disabled() {
     return this.getBooleanAttribute('disabled');
   }
-  public set disabled(value: boolean | cdktf.IResolvable) {
+  public set disabled(value: boolean | cdktn.IResolvable) {
     this._disabled = value;
   }
   public resetDisabled() {
@@ -452,31 +452,31 @@ export interface ComputeRegionUrlMapDefaultRouteActionFaultInjectionPolicyAbort 
 }
 
 export function computeRegionUrlMapDefaultRouteActionFaultInjectionPolicyAbortToTerraform(struct?: ComputeRegionUrlMapDefaultRouteActionFaultInjectionPolicyAbortOutputReference | ComputeRegionUrlMapDefaultRouteActionFaultInjectionPolicyAbort): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    http_status: cdktf.numberToTerraform(struct!.httpStatus),
-    percentage: cdktf.numberToTerraform(struct!.percentage),
+    http_status: cdktn.numberToTerraform(struct!.httpStatus),
+    percentage: cdktn.numberToTerraform(struct!.percentage),
   }
 }
 
 
 export function computeRegionUrlMapDefaultRouteActionFaultInjectionPolicyAbortToHclTerraform(struct?: ComputeRegionUrlMapDefaultRouteActionFaultInjectionPolicyAbortOutputReference | ComputeRegionUrlMapDefaultRouteActionFaultInjectionPolicyAbort): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     http_status: {
-      value: cdktf.numberToHclTerraform(struct!.httpStatus),
+      value: cdktn.numberToHclTerraform(struct!.httpStatus),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     percentage: {
-      value: cdktf.numberToHclTerraform(struct!.percentage),
+      value: cdktn.numberToHclTerraform(struct!.percentage),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
@@ -487,14 +487,14 @@ export function computeRegionUrlMapDefaultRouteActionFaultInjectionPolicyAbortTo
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class ComputeRegionUrlMapDefaultRouteActionFaultInjectionPolicyAbortOutputReference extends cdktf.ComplexObject {
+export class ComputeRegionUrlMapDefaultRouteActionFaultInjectionPolicyAbortOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -575,31 +575,31 @@ export interface ComputeRegionUrlMapDefaultRouteActionFaultInjectionPolicyDelayF
 }
 
 export function computeRegionUrlMapDefaultRouteActionFaultInjectionPolicyDelayFixedDelayToTerraform(struct?: ComputeRegionUrlMapDefaultRouteActionFaultInjectionPolicyDelayFixedDelayOutputReference | ComputeRegionUrlMapDefaultRouteActionFaultInjectionPolicyDelayFixedDelay): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    nanos: cdktf.numberToTerraform(struct!.nanos),
-    seconds: cdktf.stringToTerraform(struct!.seconds),
+    nanos: cdktn.numberToTerraform(struct!.nanos),
+    seconds: cdktn.stringToTerraform(struct!.seconds),
   }
 }
 
 
 export function computeRegionUrlMapDefaultRouteActionFaultInjectionPolicyDelayFixedDelayToHclTerraform(struct?: ComputeRegionUrlMapDefaultRouteActionFaultInjectionPolicyDelayFixedDelayOutputReference | ComputeRegionUrlMapDefaultRouteActionFaultInjectionPolicyDelayFixedDelay): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     nanos: {
-      value: cdktf.numberToHclTerraform(struct!.nanos),
+      value: cdktn.numberToHclTerraform(struct!.nanos),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     seconds: {
-      value: cdktf.stringToHclTerraform(struct!.seconds),
+      value: cdktn.stringToHclTerraform(struct!.seconds),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -610,14 +610,14 @@ export function computeRegionUrlMapDefaultRouteActionFaultInjectionPolicyDelayFi
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class ComputeRegionUrlMapDefaultRouteActionFaultInjectionPolicyDelayFixedDelayOutputReference extends cdktf.ComplexObject {
+export class ComputeRegionUrlMapDefaultRouteActionFaultInjectionPolicyDelayFixedDelayOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -697,25 +697,25 @@ export interface ComputeRegionUrlMapDefaultRouteActionFaultInjectionPolicyDelay 
 }
 
 export function computeRegionUrlMapDefaultRouteActionFaultInjectionPolicyDelayToTerraform(struct?: ComputeRegionUrlMapDefaultRouteActionFaultInjectionPolicyDelayOutputReference | ComputeRegionUrlMapDefaultRouteActionFaultInjectionPolicyDelay): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    percentage: cdktf.numberToTerraform(struct!.percentage),
+    percentage: cdktn.numberToTerraform(struct!.percentage),
     fixed_delay: computeRegionUrlMapDefaultRouteActionFaultInjectionPolicyDelayFixedDelayToTerraform(struct!.fixedDelay),
   }
 }
 
 
 export function computeRegionUrlMapDefaultRouteActionFaultInjectionPolicyDelayToHclTerraform(struct?: ComputeRegionUrlMapDefaultRouteActionFaultInjectionPolicyDelayOutputReference | ComputeRegionUrlMapDefaultRouteActionFaultInjectionPolicyDelay): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     percentage: {
-      value: cdktf.numberToHclTerraform(struct!.percentage),
+      value: cdktn.numberToHclTerraform(struct!.percentage),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
@@ -732,14 +732,14 @@ export function computeRegionUrlMapDefaultRouteActionFaultInjectionPolicyDelayTo
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class ComputeRegionUrlMapDefaultRouteActionFaultInjectionPolicyDelayOutputReference extends cdktf.ComplexObject {
+export class ComputeRegionUrlMapDefaultRouteActionFaultInjectionPolicyDelayOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -818,8 +818,8 @@ export interface ComputeRegionUrlMapDefaultRouteActionFaultInjectionPolicy {
 }
 
 export function computeRegionUrlMapDefaultRouteActionFaultInjectionPolicyToTerraform(struct?: ComputeRegionUrlMapDefaultRouteActionFaultInjectionPolicyOutputReference | ComputeRegionUrlMapDefaultRouteActionFaultInjectionPolicy): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -830,8 +830,8 @@ export function computeRegionUrlMapDefaultRouteActionFaultInjectionPolicyToTerra
 
 
 export function computeRegionUrlMapDefaultRouteActionFaultInjectionPolicyToHclTerraform(struct?: ComputeRegionUrlMapDefaultRouteActionFaultInjectionPolicyOutputReference | ComputeRegionUrlMapDefaultRouteActionFaultInjectionPolicy): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -853,14 +853,14 @@ export function computeRegionUrlMapDefaultRouteActionFaultInjectionPolicyToHclTe
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class ComputeRegionUrlMapDefaultRouteActionFaultInjectionPolicyOutputReference extends cdktf.ComplexObject {
+export class ComputeRegionUrlMapDefaultRouteActionFaultInjectionPolicyOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -935,24 +935,24 @@ export interface ComputeRegionUrlMapDefaultRouteActionRequestMirrorPolicy {
 }
 
 export function computeRegionUrlMapDefaultRouteActionRequestMirrorPolicyToTerraform(struct?: ComputeRegionUrlMapDefaultRouteActionRequestMirrorPolicyOutputReference | ComputeRegionUrlMapDefaultRouteActionRequestMirrorPolicy): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    backend_service: cdktf.stringToTerraform(struct!.backendService),
+    backend_service: cdktn.stringToTerraform(struct!.backendService),
   }
 }
 
 
 export function computeRegionUrlMapDefaultRouteActionRequestMirrorPolicyToHclTerraform(struct?: ComputeRegionUrlMapDefaultRouteActionRequestMirrorPolicyOutputReference | ComputeRegionUrlMapDefaultRouteActionRequestMirrorPolicy): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     backend_service: {
-      value: cdktf.stringToHclTerraform(struct!.backendService),
+      value: cdktn.stringToHclTerraform(struct!.backendService),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -963,14 +963,14 @@ export function computeRegionUrlMapDefaultRouteActionRequestMirrorPolicyToHclTer
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class ComputeRegionUrlMapDefaultRouteActionRequestMirrorPolicyOutputReference extends cdktf.ComplexObject {
+export class ComputeRegionUrlMapDefaultRouteActionRequestMirrorPolicyOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -1029,31 +1029,31 @@ export interface ComputeRegionUrlMapDefaultRouteActionRetryPolicyPerTryTimeout {
 }
 
 export function computeRegionUrlMapDefaultRouteActionRetryPolicyPerTryTimeoutToTerraform(struct?: ComputeRegionUrlMapDefaultRouteActionRetryPolicyPerTryTimeoutOutputReference | ComputeRegionUrlMapDefaultRouteActionRetryPolicyPerTryTimeout): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    nanos: cdktf.numberToTerraform(struct!.nanos),
-    seconds: cdktf.stringToTerraform(struct!.seconds),
+    nanos: cdktn.numberToTerraform(struct!.nanos),
+    seconds: cdktn.stringToTerraform(struct!.seconds),
   }
 }
 
 
 export function computeRegionUrlMapDefaultRouteActionRetryPolicyPerTryTimeoutToHclTerraform(struct?: ComputeRegionUrlMapDefaultRouteActionRetryPolicyPerTryTimeoutOutputReference | ComputeRegionUrlMapDefaultRouteActionRetryPolicyPerTryTimeout): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     nanos: {
-      value: cdktf.numberToHclTerraform(struct!.nanos),
+      value: cdktn.numberToHclTerraform(struct!.nanos),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     seconds: {
-      value: cdktf.stringToHclTerraform(struct!.seconds),
+      value: cdktn.stringToHclTerraform(struct!.seconds),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -1064,14 +1064,14 @@ export function computeRegionUrlMapDefaultRouteActionRetryPolicyPerTryTimeoutToH
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class ComputeRegionUrlMapDefaultRouteActionRetryPolicyPerTryTimeoutOutputReference extends cdktf.ComplexObject {
+export class ComputeRegionUrlMapDefaultRouteActionRetryPolicyPerTryTimeoutOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -1167,32 +1167,32 @@ export interface ComputeRegionUrlMapDefaultRouteActionRetryPolicy {
 }
 
 export function computeRegionUrlMapDefaultRouteActionRetryPolicyToTerraform(struct?: ComputeRegionUrlMapDefaultRouteActionRetryPolicyOutputReference | ComputeRegionUrlMapDefaultRouteActionRetryPolicy): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    num_retries: cdktf.numberToTerraform(struct!.numRetries),
-    retry_conditions: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.retryConditions),
+    num_retries: cdktn.numberToTerraform(struct!.numRetries),
+    retry_conditions: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.retryConditions),
     per_try_timeout: computeRegionUrlMapDefaultRouteActionRetryPolicyPerTryTimeoutToTerraform(struct!.perTryTimeout),
   }
 }
 
 
 export function computeRegionUrlMapDefaultRouteActionRetryPolicyToHclTerraform(struct?: ComputeRegionUrlMapDefaultRouteActionRetryPolicyOutputReference | ComputeRegionUrlMapDefaultRouteActionRetryPolicy): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     num_retries: {
-      value: cdktf.numberToHclTerraform(struct!.numRetries),
+      value: cdktn.numberToHclTerraform(struct!.numRetries),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     retry_conditions: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.retryConditions),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.retryConditions),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
@@ -1209,14 +1209,14 @@ export function computeRegionUrlMapDefaultRouteActionRetryPolicyToHclTerraform(s
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class ComputeRegionUrlMapDefaultRouteActionRetryPolicyOutputReference extends cdktf.ComplexObject {
+export class ComputeRegionUrlMapDefaultRouteActionRetryPolicyOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -1317,31 +1317,31 @@ export interface ComputeRegionUrlMapDefaultRouteActionTimeout {
 }
 
 export function computeRegionUrlMapDefaultRouteActionTimeoutToTerraform(struct?: ComputeRegionUrlMapDefaultRouteActionTimeoutOutputReference | ComputeRegionUrlMapDefaultRouteActionTimeout): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    nanos: cdktf.numberToTerraform(struct!.nanos),
-    seconds: cdktf.stringToTerraform(struct!.seconds),
+    nanos: cdktn.numberToTerraform(struct!.nanos),
+    seconds: cdktn.stringToTerraform(struct!.seconds),
   }
 }
 
 
 export function computeRegionUrlMapDefaultRouteActionTimeoutToHclTerraform(struct?: ComputeRegionUrlMapDefaultRouteActionTimeoutOutputReference | ComputeRegionUrlMapDefaultRouteActionTimeout): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     nanos: {
-      value: cdktf.numberToHclTerraform(struct!.nanos),
+      value: cdktn.numberToHclTerraform(struct!.nanos),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     seconds: {
-      value: cdktf.stringToHclTerraform(struct!.seconds),
+      value: cdktn.stringToHclTerraform(struct!.seconds),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -1352,14 +1352,14 @@ export function computeRegionUrlMapDefaultRouteActionTimeoutToHclTerraform(struc
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class ComputeRegionUrlMapDefaultRouteActionTimeoutOutputReference extends cdktf.ComplexObject {
+export class ComputeRegionUrlMapDefaultRouteActionTimeoutOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -1440,31 +1440,31 @@ export interface ComputeRegionUrlMapDefaultRouteActionUrlRewrite {
 }
 
 export function computeRegionUrlMapDefaultRouteActionUrlRewriteToTerraform(struct?: ComputeRegionUrlMapDefaultRouteActionUrlRewriteOutputReference | ComputeRegionUrlMapDefaultRouteActionUrlRewrite): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    host_rewrite: cdktf.stringToTerraform(struct!.hostRewrite),
-    path_prefix_rewrite: cdktf.stringToTerraform(struct!.pathPrefixRewrite),
+    host_rewrite: cdktn.stringToTerraform(struct!.hostRewrite),
+    path_prefix_rewrite: cdktn.stringToTerraform(struct!.pathPrefixRewrite),
   }
 }
 
 
 export function computeRegionUrlMapDefaultRouteActionUrlRewriteToHclTerraform(struct?: ComputeRegionUrlMapDefaultRouteActionUrlRewriteOutputReference | ComputeRegionUrlMapDefaultRouteActionUrlRewrite): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     host_rewrite: {
-      value: cdktf.stringToHclTerraform(struct!.hostRewrite),
+      value: cdktn.stringToHclTerraform(struct!.hostRewrite),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     path_prefix_rewrite: {
-      value: cdktf.stringToHclTerraform(struct!.pathPrefixRewrite),
+      value: cdktn.stringToHclTerraform(struct!.pathPrefixRewrite),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -1475,14 +1475,14 @@ export function computeRegionUrlMapDefaultRouteActionUrlRewriteToHclTerraform(st
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class ComputeRegionUrlMapDefaultRouteActionUrlRewriteOutputReference extends cdktf.ComplexObject {
+export class ComputeRegionUrlMapDefaultRouteActionUrlRewriteOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -1564,42 +1564,42 @@ export interface ComputeRegionUrlMapDefaultRouteActionWeightedBackendServicesHea
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_region_url_map#replace ComputeRegionUrlMap#replace}
   */
-  readonly replace?: boolean | cdktf.IResolvable;
+  readonly replace?: boolean | cdktn.IResolvable;
 }
 
-export function computeRegionUrlMapDefaultRouteActionWeightedBackendServicesHeaderActionRequestHeadersToAddToTerraform(struct?: ComputeRegionUrlMapDefaultRouteActionWeightedBackendServicesHeaderActionRequestHeadersToAdd | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function computeRegionUrlMapDefaultRouteActionWeightedBackendServicesHeaderActionRequestHeadersToAddToTerraform(struct?: ComputeRegionUrlMapDefaultRouteActionWeightedBackendServicesHeaderActionRequestHeadersToAdd | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    header_name: cdktf.stringToTerraform(struct!.headerName),
-    header_value: cdktf.stringToTerraform(struct!.headerValue),
-    replace: cdktf.booleanToTerraform(struct!.replace),
+    header_name: cdktn.stringToTerraform(struct!.headerName),
+    header_value: cdktn.stringToTerraform(struct!.headerValue),
+    replace: cdktn.booleanToTerraform(struct!.replace),
   }
 }
 
 
-export function computeRegionUrlMapDefaultRouteActionWeightedBackendServicesHeaderActionRequestHeadersToAddToHclTerraform(struct?: ComputeRegionUrlMapDefaultRouteActionWeightedBackendServicesHeaderActionRequestHeadersToAdd | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function computeRegionUrlMapDefaultRouteActionWeightedBackendServicesHeaderActionRequestHeadersToAddToHclTerraform(struct?: ComputeRegionUrlMapDefaultRouteActionWeightedBackendServicesHeaderActionRequestHeadersToAdd | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     header_name: {
-      value: cdktf.stringToHclTerraform(struct!.headerName),
+      value: cdktn.stringToHclTerraform(struct!.headerName),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     header_value: {
-      value: cdktf.stringToHclTerraform(struct!.headerValue),
+      value: cdktn.stringToHclTerraform(struct!.headerValue),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     replace: {
-      value: cdktf.booleanToHclTerraform(struct!.replace),
+      value: cdktn.booleanToHclTerraform(struct!.replace),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
@@ -1610,9 +1610,9 @@ export function computeRegionUrlMapDefaultRouteActionWeightedBackendServicesHead
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class ComputeRegionUrlMapDefaultRouteActionWeightedBackendServicesHeaderActionRequestHeadersToAddOutputReference extends cdktf.ComplexObject {
+export class ComputeRegionUrlMapDefaultRouteActionWeightedBackendServicesHeaderActionRequestHeadersToAddOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -1620,11 +1620,11 @@ export class ComputeRegionUrlMapDefaultRouteActionWeightedBackendServicesHeaderA
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): ComputeRegionUrlMapDefaultRouteActionWeightedBackendServicesHeaderActionRequestHeadersToAdd | cdktf.IResolvable | undefined {
+  public get internalValue(): ComputeRegionUrlMapDefaultRouteActionWeightedBackendServicesHeaderActionRequestHeadersToAdd | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -1645,7 +1645,7 @@ export class ComputeRegionUrlMapDefaultRouteActionWeightedBackendServicesHeaderA
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: ComputeRegionUrlMapDefaultRouteActionWeightedBackendServicesHeaderActionRequestHeadersToAdd | cdktf.IResolvable | undefined) {
+  public set internalValue(value: ComputeRegionUrlMapDefaultRouteActionWeightedBackendServicesHeaderActionRequestHeadersToAdd | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -1653,7 +1653,7 @@ export class ComputeRegionUrlMapDefaultRouteActionWeightedBackendServicesHeaderA
       this._headerValue = undefined;
       this._replace = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -1699,11 +1699,11 @@ export class ComputeRegionUrlMapDefaultRouteActionWeightedBackendServicesHeaderA
   }
 
   // replace - computed: false, optional: true, required: false
-  private _replace?: boolean | cdktf.IResolvable; 
+  private _replace?: boolean | cdktn.IResolvable; 
   public get replace() {
     return this.getBooleanAttribute('replace');
   }
-  public set replace(value: boolean | cdktf.IResolvable) {
+  public set replace(value: boolean | cdktn.IResolvable) {
     this._replace = value;
   }
   public resetReplace() {
@@ -1715,15 +1715,15 @@ export class ComputeRegionUrlMapDefaultRouteActionWeightedBackendServicesHeaderA
   }
 }
 
-export class ComputeRegionUrlMapDefaultRouteActionWeightedBackendServicesHeaderActionRequestHeadersToAddList extends cdktf.ComplexList {
-  public internalValue? : ComputeRegionUrlMapDefaultRouteActionWeightedBackendServicesHeaderActionRequestHeadersToAdd[] | cdktf.IResolvable
+export class ComputeRegionUrlMapDefaultRouteActionWeightedBackendServicesHeaderActionRequestHeadersToAddList extends cdktn.ComplexList {
+  public internalValue? : ComputeRegionUrlMapDefaultRouteActionWeightedBackendServicesHeaderActionRequestHeadersToAdd[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -1753,42 +1753,42 @@ export interface ComputeRegionUrlMapDefaultRouteActionWeightedBackendServicesHea
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_region_url_map#replace ComputeRegionUrlMap#replace}
   */
-  readonly replace?: boolean | cdktf.IResolvable;
+  readonly replace?: boolean | cdktn.IResolvable;
 }
 
-export function computeRegionUrlMapDefaultRouteActionWeightedBackendServicesHeaderActionResponseHeadersToAddToTerraform(struct?: ComputeRegionUrlMapDefaultRouteActionWeightedBackendServicesHeaderActionResponseHeadersToAdd | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function computeRegionUrlMapDefaultRouteActionWeightedBackendServicesHeaderActionResponseHeadersToAddToTerraform(struct?: ComputeRegionUrlMapDefaultRouteActionWeightedBackendServicesHeaderActionResponseHeadersToAdd | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    header_name: cdktf.stringToTerraform(struct!.headerName),
-    header_value: cdktf.stringToTerraform(struct!.headerValue),
-    replace: cdktf.booleanToTerraform(struct!.replace),
+    header_name: cdktn.stringToTerraform(struct!.headerName),
+    header_value: cdktn.stringToTerraform(struct!.headerValue),
+    replace: cdktn.booleanToTerraform(struct!.replace),
   }
 }
 
 
-export function computeRegionUrlMapDefaultRouteActionWeightedBackendServicesHeaderActionResponseHeadersToAddToHclTerraform(struct?: ComputeRegionUrlMapDefaultRouteActionWeightedBackendServicesHeaderActionResponseHeadersToAdd | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function computeRegionUrlMapDefaultRouteActionWeightedBackendServicesHeaderActionResponseHeadersToAddToHclTerraform(struct?: ComputeRegionUrlMapDefaultRouteActionWeightedBackendServicesHeaderActionResponseHeadersToAdd | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     header_name: {
-      value: cdktf.stringToHclTerraform(struct!.headerName),
+      value: cdktn.stringToHclTerraform(struct!.headerName),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     header_value: {
-      value: cdktf.stringToHclTerraform(struct!.headerValue),
+      value: cdktn.stringToHclTerraform(struct!.headerValue),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     replace: {
-      value: cdktf.booleanToHclTerraform(struct!.replace),
+      value: cdktn.booleanToHclTerraform(struct!.replace),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
@@ -1799,9 +1799,9 @@ export function computeRegionUrlMapDefaultRouteActionWeightedBackendServicesHead
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class ComputeRegionUrlMapDefaultRouteActionWeightedBackendServicesHeaderActionResponseHeadersToAddOutputReference extends cdktf.ComplexObject {
+export class ComputeRegionUrlMapDefaultRouteActionWeightedBackendServicesHeaderActionResponseHeadersToAddOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -1809,11 +1809,11 @@ export class ComputeRegionUrlMapDefaultRouteActionWeightedBackendServicesHeaderA
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): ComputeRegionUrlMapDefaultRouteActionWeightedBackendServicesHeaderActionResponseHeadersToAdd | cdktf.IResolvable | undefined {
+  public get internalValue(): ComputeRegionUrlMapDefaultRouteActionWeightedBackendServicesHeaderActionResponseHeadersToAdd | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -1834,7 +1834,7 @@ export class ComputeRegionUrlMapDefaultRouteActionWeightedBackendServicesHeaderA
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: ComputeRegionUrlMapDefaultRouteActionWeightedBackendServicesHeaderActionResponseHeadersToAdd | cdktf.IResolvable | undefined) {
+  public set internalValue(value: ComputeRegionUrlMapDefaultRouteActionWeightedBackendServicesHeaderActionResponseHeadersToAdd | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -1842,7 +1842,7 @@ export class ComputeRegionUrlMapDefaultRouteActionWeightedBackendServicesHeaderA
       this._headerValue = undefined;
       this._replace = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -1888,11 +1888,11 @@ export class ComputeRegionUrlMapDefaultRouteActionWeightedBackendServicesHeaderA
   }
 
   // replace - computed: false, optional: true, required: false
-  private _replace?: boolean | cdktf.IResolvable; 
+  private _replace?: boolean | cdktn.IResolvable; 
   public get replace() {
     return this.getBooleanAttribute('replace');
   }
-  public set replace(value: boolean | cdktf.IResolvable) {
+  public set replace(value: boolean | cdktn.IResolvable) {
     this._replace = value;
   }
   public resetReplace() {
@@ -1904,15 +1904,15 @@ export class ComputeRegionUrlMapDefaultRouteActionWeightedBackendServicesHeaderA
   }
 }
 
-export class ComputeRegionUrlMapDefaultRouteActionWeightedBackendServicesHeaderActionResponseHeadersToAddList extends cdktf.ComplexList {
-  public internalValue? : ComputeRegionUrlMapDefaultRouteActionWeightedBackendServicesHeaderActionResponseHeadersToAdd[] | cdktf.IResolvable
+export class ComputeRegionUrlMapDefaultRouteActionWeightedBackendServicesHeaderActionResponseHeadersToAddList extends cdktn.ComplexList {
+  public internalValue? : ComputeRegionUrlMapDefaultRouteActionWeightedBackendServicesHeaderActionResponseHeadersToAdd[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -1941,55 +1941,55 @@ export interface ComputeRegionUrlMapDefaultRouteActionWeightedBackendServicesHea
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_region_url_map#request_headers_to_add ComputeRegionUrlMap#request_headers_to_add}
   */
-  readonly requestHeadersToAdd?: ComputeRegionUrlMapDefaultRouteActionWeightedBackendServicesHeaderActionRequestHeadersToAdd[] | cdktf.IResolvable;
+  readonly requestHeadersToAdd?: ComputeRegionUrlMapDefaultRouteActionWeightedBackendServicesHeaderActionRequestHeadersToAdd[] | cdktn.IResolvable;
   /**
   * response_headers_to_add block
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_region_url_map#response_headers_to_add ComputeRegionUrlMap#response_headers_to_add}
   */
-  readonly responseHeadersToAdd?: ComputeRegionUrlMapDefaultRouteActionWeightedBackendServicesHeaderActionResponseHeadersToAdd[] | cdktf.IResolvable;
+  readonly responseHeadersToAdd?: ComputeRegionUrlMapDefaultRouteActionWeightedBackendServicesHeaderActionResponseHeadersToAdd[] | cdktn.IResolvable;
 }
 
 export function computeRegionUrlMapDefaultRouteActionWeightedBackendServicesHeaderActionToTerraform(struct?: ComputeRegionUrlMapDefaultRouteActionWeightedBackendServicesHeaderActionOutputReference | ComputeRegionUrlMapDefaultRouteActionWeightedBackendServicesHeaderAction): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    request_headers_to_remove: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.requestHeadersToRemove),
-    response_headers_to_remove: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.responseHeadersToRemove),
-    request_headers_to_add: cdktf.listMapper(computeRegionUrlMapDefaultRouteActionWeightedBackendServicesHeaderActionRequestHeadersToAddToTerraform, true)(struct!.requestHeadersToAdd),
-    response_headers_to_add: cdktf.listMapper(computeRegionUrlMapDefaultRouteActionWeightedBackendServicesHeaderActionResponseHeadersToAddToTerraform, true)(struct!.responseHeadersToAdd),
+    request_headers_to_remove: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.requestHeadersToRemove),
+    response_headers_to_remove: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.responseHeadersToRemove),
+    request_headers_to_add: cdktn.listMapper(computeRegionUrlMapDefaultRouteActionWeightedBackendServicesHeaderActionRequestHeadersToAddToTerraform, true)(struct!.requestHeadersToAdd),
+    response_headers_to_add: cdktn.listMapper(computeRegionUrlMapDefaultRouteActionWeightedBackendServicesHeaderActionResponseHeadersToAddToTerraform, true)(struct!.responseHeadersToAdd),
   }
 }
 
 
 export function computeRegionUrlMapDefaultRouteActionWeightedBackendServicesHeaderActionToHclTerraform(struct?: ComputeRegionUrlMapDefaultRouteActionWeightedBackendServicesHeaderActionOutputReference | ComputeRegionUrlMapDefaultRouteActionWeightedBackendServicesHeaderAction): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     request_headers_to_remove: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.requestHeadersToRemove),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.requestHeadersToRemove),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
     },
     response_headers_to_remove: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.responseHeadersToRemove),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.responseHeadersToRemove),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
     },
     request_headers_to_add: {
-      value: cdktf.listMapperHcl(computeRegionUrlMapDefaultRouteActionWeightedBackendServicesHeaderActionRequestHeadersToAddToHclTerraform, true)(struct!.requestHeadersToAdd),
+      value: cdktn.listMapperHcl(computeRegionUrlMapDefaultRouteActionWeightedBackendServicesHeaderActionRequestHeadersToAddToHclTerraform, true)(struct!.requestHeadersToAdd),
       isBlock: true,
       type: "list",
       storageClassType: "ComputeRegionUrlMapDefaultRouteActionWeightedBackendServicesHeaderActionRequestHeadersToAddList",
     },
     response_headers_to_add: {
-      value: cdktf.listMapperHcl(computeRegionUrlMapDefaultRouteActionWeightedBackendServicesHeaderActionResponseHeadersToAddToHclTerraform, true)(struct!.responseHeadersToAdd),
+      value: cdktn.listMapperHcl(computeRegionUrlMapDefaultRouteActionWeightedBackendServicesHeaderActionResponseHeadersToAddToHclTerraform, true)(struct!.responseHeadersToAdd),
       isBlock: true,
       type: "list",
       storageClassType: "ComputeRegionUrlMapDefaultRouteActionWeightedBackendServicesHeaderActionResponseHeadersToAddList",
@@ -2000,14 +2000,14 @@ export function computeRegionUrlMapDefaultRouteActionWeightedBackendServicesHead
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class ComputeRegionUrlMapDefaultRouteActionWeightedBackendServicesHeaderActionOutputReference extends cdktf.ComplexObject {
+export class ComputeRegionUrlMapDefaultRouteActionWeightedBackendServicesHeaderActionOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -2087,7 +2087,7 @@ export class ComputeRegionUrlMapDefaultRouteActionWeightedBackendServicesHeaderA
   public get requestHeadersToAdd() {
     return this._requestHeadersToAdd;
   }
-  public putRequestHeadersToAdd(value: ComputeRegionUrlMapDefaultRouteActionWeightedBackendServicesHeaderActionRequestHeadersToAdd[] | cdktf.IResolvable) {
+  public putRequestHeadersToAdd(value: ComputeRegionUrlMapDefaultRouteActionWeightedBackendServicesHeaderActionRequestHeadersToAdd[] | cdktn.IResolvable) {
     this._requestHeadersToAdd.internalValue = value;
   }
   public resetRequestHeadersToAdd() {
@@ -2103,7 +2103,7 @@ export class ComputeRegionUrlMapDefaultRouteActionWeightedBackendServicesHeaderA
   public get responseHeadersToAdd() {
     return this._responseHeadersToAdd;
   }
-  public putResponseHeadersToAdd(value: ComputeRegionUrlMapDefaultRouteActionWeightedBackendServicesHeaderActionResponseHeadersToAdd[] | cdktf.IResolvable) {
+  public putResponseHeadersToAdd(value: ComputeRegionUrlMapDefaultRouteActionWeightedBackendServicesHeaderActionResponseHeadersToAdd[] | cdktn.IResolvable) {
     this._responseHeadersToAdd.internalValue = value;
   }
   public resetResponseHeadersToAdd() {
@@ -2137,33 +2137,33 @@ export interface ComputeRegionUrlMapDefaultRouteActionWeightedBackendServices {
   readonly headerAction?: ComputeRegionUrlMapDefaultRouteActionWeightedBackendServicesHeaderAction;
 }
 
-export function computeRegionUrlMapDefaultRouteActionWeightedBackendServicesToTerraform(struct?: ComputeRegionUrlMapDefaultRouteActionWeightedBackendServices | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function computeRegionUrlMapDefaultRouteActionWeightedBackendServicesToTerraform(struct?: ComputeRegionUrlMapDefaultRouteActionWeightedBackendServices | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    backend_service: cdktf.stringToTerraform(struct!.backendService),
-    weight: cdktf.numberToTerraform(struct!.weight),
+    backend_service: cdktn.stringToTerraform(struct!.backendService),
+    weight: cdktn.numberToTerraform(struct!.weight),
     header_action: computeRegionUrlMapDefaultRouteActionWeightedBackendServicesHeaderActionToTerraform(struct!.headerAction),
   }
 }
 
 
-export function computeRegionUrlMapDefaultRouteActionWeightedBackendServicesToHclTerraform(struct?: ComputeRegionUrlMapDefaultRouteActionWeightedBackendServices | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function computeRegionUrlMapDefaultRouteActionWeightedBackendServicesToHclTerraform(struct?: ComputeRegionUrlMapDefaultRouteActionWeightedBackendServices | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     backend_service: {
-      value: cdktf.stringToHclTerraform(struct!.backendService),
+      value: cdktn.stringToHclTerraform(struct!.backendService),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     weight: {
-      value: cdktf.numberToHclTerraform(struct!.weight),
+      value: cdktn.numberToHclTerraform(struct!.weight),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
@@ -2180,9 +2180,9 @@ export function computeRegionUrlMapDefaultRouteActionWeightedBackendServicesToHc
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class ComputeRegionUrlMapDefaultRouteActionWeightedBackendServicesOutputReference extends cdktf.ComplexObject {
+export class ComputeRegionUrlMapDefaultRouteActionWeightedBackendServicesOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -2190,11 +2190,11 @@ export class ComputeRegionUrlMapDefaultRouteActionWeightedBackendServicesOutputR
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): ComputeRegionUrlMapDefaultRouteActionWeightedBackendServices | cdktf.IResolvable | undefined {
+  public get internalValue(): ComputeRegionUrlMapDefaultRouteActionWeightedBackendServices | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -2215,7 +2215,7 @@ export class ComputeRegionUrlMapDefaultRouteActionWeightedBackendServicesOutputR
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: ComputeRegionUrlMapDefaultRouteActionWeightedBackendServices | cdktf.IResolvable | undefined) {
+  public set internalValue(value: ComputeRegionUrlMapDefaultRouteActionWeightedBackendServices | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -2223,7 +2223,7 @@ export class ComputeRegionUrlMapDefaultRouteActionWeightedBackendServicesOutputR
       this._weight = undefined;
       this._headerAction.internalValue = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -2285,15 +2285,15 @@ export class ComputeRegionUrlMapDefaultRouteActionWeightedBackendServicesOutputR
   }
 }
 
-export class ComputeRegionUrlMapDefaultRouteActionWeightedBackendServicesList extends cdktf.ComplexList {
-  public internalValue? : ComputeRegionUrlMapDefaultRouteActionWeightedBackendServices[] | cdktf.IResolvable
+export class ComputeRegionUrlMapDefaultRouteActionWeightedBackendServicesList extends cdktn.ComplexList {
+  public internalValue? : ComputeRegionUrlMapDefaultRouteActionWeightedBackendServices[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -2346,12 +2346,12 @@ export interface ComputeRegionUrlMapDefaultRouteAction {
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_region_url_map#weighted_backend_services ComputeRegionUrlMap#weighted_backend_services}
   */
-  readonly weightedBackendServices?: ComputeRegionUrlMapDefaultRouteActionWeightedBackendServices[] | cdktf.IResolvable;
+  readonly weightedBackendServices?: ComputeRegionUrlMapDefaultRouteActionWeightedBackendServices[] | cdktn.IResolvable;
 }
 
 export function computeRegionUrlMapDefaultRouteActionToTerraform(struct?: ComputeRegionUrlMapDefaultRouteActionOutputReference | ComputeRegionUrlMapDefaultRouteAction): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -2361,14 +2361,14 @@ export function computeRegionUrlMapDefaultRouteActionToTerraform(struct?: Comput
     retry_policy: computeRegionUrlMapDefaultRouteActionRetryPolicyToTerraform(struct!.retryPolicy),
     timeout: computeRegionUrlMapDefaultRouteActionTimeoutToTerraform(struct!.timeout),
     url_rewrite: computeRegionUrlMapDefaultRouteActionUrlRewriteToTerraform(struct!.urlRewrite),
-    weighted_backend_services: cdktf.listMapper(computeRegionUrlMapDefaultRouteActionWeightedBackendServicesToTerraform, true)(struct!.weightedBackendServices),
+    weighted_backend_services: cdktn.listMapper(computeRegionUrlMapDefaultRouteActionWeightedBackendServicesToTerraform, true)(struct!.weightedBackendServices),
   }
 }
 
 
 export function computeRegionUrlMapDefaultRouteActionToHclTerraform(struct?: ComputeRegionUrlMapDefaultRouteActionOutputReference | ComputeRegionUrlMapDefaultRouteAction): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -2409,7 +2409,7 @@ export function computeRegionUrlMapDefaultRouteActionToHclTerraform(struct?: Com
       storageClassType: "ComputeRegionUrlMapDefaultRouteActionUrlRewriteList",
     },
     weighted_backend_services: {
-      value: cdktf.listMapperHcl(computeRegionUrlMapDefaultRouteActionWeightedBackendServicesToHclTerraform, true)(struct!.weightedBackendServices),
+      value: cdktn.listMapperHcl(computeRegionUrlMapDefaultRouteActionWeightedBackendServicesToHclTerraform, true)(struct!.weightedBackendServices),
       isBlock: true,
       type: "list",
       storageClassType: "ComputeRegionUrlMapDefaultRouteActionWeightedBackendServicesList",
@@ -2420,14 +2420,14 @@ export function computeRegionUrlMapDefaultRouteActionToHclTerraform(struct?: Com
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class ComputeRegionUrlMapDefaultRouteActionOutputReference extends cdktf.ComplexObject {
+export class ComputeRegionUrlMapDefaultRouteActionOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -2589,7 +2589,7 @@ export class ComputeRegionUrlMapDefaultRouteActionOutputReference extends cdktf.
   public get weightedBackendServices() {
     return this._weightedBackendServices;
   }
-  public putWeightedBackendServices(value: ComputeRegionUrlMapDefaultRouteActionWeightedBackendServices[] | cdktf.IResolvable) {
+  public putWeightedBackendServices(value: ComputeRegionUrlMapDefaultRouteActionWeightedBackendServices[] | cdktn.IResolvable) {
     this._weightedBackendServices.internalValue = value;
   }
   public resetWeightedBackendServices() {
@@ -2616,7 +2616,7 @@ export interface ComputeRegionUrlMapDefaultUrlRedirect {
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_region_url_map#https_redirect ComputeRegionUrlMap#https_redirect}
   */
-  readonly httpsRedirect?: boolean | cdktf.IResolvable;
+  readonly httpsRedirect?: boolean | cdktn.IResolvable;
   /**
   * The path that will be used in the redirect response instead of the one that was
   * supplied in the request. pathRedirect cannot be supplied together with
@@ -2663,63 +2663,63 @@ export interface ComputeRegionUrlMapDefaultUrlRedirect {
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_region_url_map#strip_query ComputeRegionUrlMap#strip_query}
   */
-  readonly stripQuery: boolean | cdktf.IResolvable;
+  readonly stripQuery: boolean | cdktn.IResolvable;
 }
 
 export function computeRegionUrlMapDefaultUrlRedirectToTerraform(struct?: ComputeRegionUrlMapDefaultUrlRedirectOutputReference | ComputeRegionUrlMapDefaultUrlRedirect): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    host_redirect: cdktf.stringToTerraform(struct!.hostRedirect),
-    https_redirect: cdktf.booleanToTerraform(struct!.httpsRedirect),
-    path_redirect: cdktf.stringToTerraform(struct!.pathRedirect),
-    prefix_redirect: cdktf.stringToTerraform(struct!.prefixRedirect),
-    redirect_response_code: cdktf.stringToTerraform(struct!.redirectResponseCode),
-    strip_query: cdktf.booleanToTerraform(struct!.stripQuery),
+    host_redirect: cdktn.stringToTerraform(struct!.hostRedirect),
+    https_redirect: cdktn.booleanToTerraform(struct!.httpsRedirect),
+    path_redirect: cdktn.stringToTerraform(struct!.pathRedirect),
+    prefix_redirect: cdktn.stringToTerraform(struct!.prefixRedirect),
+    redirect_response_code: cdktn.stringToTerraform(struct!.redirectResponseCode),
+    strip_query: cdktn.booleanToTerraform(struct!.stripQuery),
   }
 }
 
 
 export function computeRegionUrlMapDefaultUrlRedirectToHclTerraform(struct?: ComputeRegionUrlMapDefaultUrlRedirectOutputReference | ComputeRegionUrlMapDefaultUrlRedirect): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     host_redirect: {
-      value: cdktf.stringToHclTerraform(struct!.hostRedirect),
+      value: cdktn.stringToHclTerraform(struct!.hostRedirect),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     https_redirect: {
-      value: cdktf.booleanToHclTerraform(struct!.httpsRedirect),
+      value: cdktn.booleanToHclTerraform(struct!.httpsRedirect),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     path_redirect: {
-      value: cdktf.stringToHclTerraform(struct!.pathRedirect),
+      value: cdktn.stringToHclTerraform(struct!.pathRedirect),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     prefix_redirect: {
-      value: cdktf.stringToHclTerraform(struct!.prefixRedirect),
+      value: cdktn.stringToHclTerraform(struct!.prefixRedirect),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     redirect_response_code: {
-      value: cdktf.stringToHclTerraform(struct!.redirectResponseCode),
+      value: cdktn.stringToHclTerraform(struct!.redirectResponseCode),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     strip_query: {
-      value: cdktf.booleanToHclTerraform(struct!.stripQuery),
+      value: cdktn.booleanToHclTerraform(struct!.stripQuery),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
@@ -2730,14 +2730,14 @@ export function computeRegionUrlMapDefaultUrlRedirectToHclTerraform(struct?: Com
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class ComputeRegionUrlMapDefaultUrlRedirectOutputReference extends cdktf.ComplexObject {
+export class ComputeRegionUrlMapDefaultUrlRedirectOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -2809,11 +2809,11 @@ export class ComputeRegionUrlMapDefaultUrlRedirectOutputReference extends cdktf.
   }
 
   // https_redirect - computed: false, optional: true, required: false
-  private _httpsRedirect?: boolean | cdktf.IResolvable; 
+  private _httpsRedirect?: boolean | cdktn.IResolvable; 
   public get httpsRedirect() {
     return this.getBooleanAttribute('https_redirect');
   }
-  public set httpsRedirect(value: boolean | cdktf.IResolvable) {
+  public set httpsRedirect(value: boolean | cdktn.IResolvable) {
     this._httpsRedirect = value;
   }
   public resetHttpsRedirect() {
@@ -2873,11 +2873,11 @@ export class ComputeRegionUrlMapDefaultUrlRedirectOutputReference extends cdktf.
   }
 
   // strip_query - computed: false, optional: false, required: true
-  private _stripQuery?: boolean | cdktf.IResolvable; 
+  private _stripQuery?: boolean | cdktn.IResolvable; 
   public get stripQuery() {
     return this.getBooleanAttribute('strip_query');
   }
-  public set stripQuery(value: boolean | cdktf.IResolvable) {
+  public set stripQuery(value: boolean | cdktn.IResolvable) {
     this._stripQuery = value;
   }
   // Temporarily expose input value. Use with caution.
@@ -2911,39 +2911,39 @@ export interface ComputeRegionUrlMapHostRule {
   readonly pathMatcher: string;
 }
 
-export function computeRegionUrlMapHostRuleToTerraform(struct?: ComputeRegionUrlMapHostRule | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function computeRegionUrlMapHostRuleToTerraform(struct?: ComputeRegionUrlMapHostRule | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    description: cdktf.stringToTerraform(struct!.description),
-    hosts: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.hosts),
-    path_matcher: cdktf.stringToTerraform(struct!.pathMatcher),
+    description: cdktn.stringToTerraform(struct!.description),
+    hosts: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.hosts),
+    path_matcher: cdktn.stringToTerraform(struct!.pathMatcher),
   }
 }
 
 
-export function computeRegionUrlMapHostRuleToHclTerraform(struct?: ComputeRegionUrlMapHostRule | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function computeRegionUrlMapHostRuleToHclTerraform(struct?: ComputeRegionUrlMapHostRule | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     description: {
-      value: cdktf.stringToHclTerraform(struct!.description),
+      value: cdktn.stringToHclTerraform(struct!.description),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     hosts: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.hosts),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.hosts),
       isBlock: false,
       type: "set",
       storageClassType: "stringList",
     },
     path_matcher: {
-      value: cdktf.stringToHclTerraform(struct!.pathMatcher),
+      value: cdktn.stringToHclTerraform(struct!.pathMatcher),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -2954,9 +2954,9 @@ export function computeRegionUrlMapHostRuleToHclTerraform(struct?: ComputeRegion
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class ComputeRegionUrlMapHostRuleOutputReference extends cdktf.ComplexObject {
+export class ComputeRegionUrlMapHostRuleOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -2964,11 +2964,11 @@ export class ComputeRegionUrlMapHostRuleOutputReference extends cdktf.ComplexObj
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): ComputeRegionUrlMapHostRule | cdktf.IResolvable | undefined {
+  public get internalValue(): ComputeRegionUrlMapHostRule | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -2989,7 +2989,7 @@ export class ComputeRegionUrlMapHostRuleOutputReference extends cdktf.ComplexObj
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: ComputeRegionUrlMapHostRule | cdktf.IResolvable | undefined) {
+  public set internalValue(value: ComputeRegionUrlMapHostRule | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -2997,7 +2997,7 @@ export class ComputeRegionUrlMapHostRuleOutputReference extends cdktf.ComplexObj
       this._hosts = undefined;
       this._pathMatcher = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -3029,7 +3029,7 @@ export class ComputeRegionUrlMapHostRuleOutputReference extends cdktf.ComplexObj
   // hosts - computed: false, optional: false, required: true
   private _hosts?: string[]; 
   public get hosts() {
-    return cdktf.Fn.tolist(this.getListAttribute('hosts'));
+    return cdktn.Fn.tolist(this.getListAttribute('hosts'));
   }
   public set hosts(value: string[]) {
     this._hosts = value;
@@ -3053,15 +3053,15 @@ export class ComputeRegionUrlMapHostRuleOutputReference extends cdktf.ComplexObj
   }
 }
 
-export class ComputeRegionUrlMapHostRuleList extends cdktf.ComplexList {
-  public internalValue? : ComputeRegionUrlMapHostRule[] | cdktf.IResolvable
+export class ComputeRegionUrlMapHostRuleList extends cdktn.ComplexList {
+  public internalValue? : ComputeRegionUrlMapHostRule[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -3079,7 +3079,7 @@ export interface ComputeRegionUrlMapPathMatcherDefaultRouteActionCorsPolicy {
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_region_url_map#allow_credentials ComputeRegionUrlMap#allow_credentials}
   */
-  readonly allowCredentials?: boolean | cdktf.IResolvable;
+  readonly allowCredentials?: boolean | cdktn.IResolvable;
   /**
   * Specifies the content for the Access-Control-Allow-Headers header.
   *
@@ -3112,7 +3112,7 @@ export interface ComputeRegionUrlMapPathMatcherDefaultRouteActionCorsPolicy {
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_region_url_map#disabled ComputeRegionUrlMap#disabled}
   */
-  readonly disabled?: boolean | cdktf.IResolvable;
+  readonly disabled?: boolean | cdktn.IResolvable;
   /**
   * Specifies the content for the Access-Control-Expose-Headers header.
   *
@@ -3129,73 +3129,73 @@ export interface ComputeRegionUrlMapPathMatcherDefaultRouteActionCorsPolicy {
 }
 
 export function computeRegionUrlMapPathMatcherDefaultRouteActionCorsPolicyToTerraform(struct?: ComputeRegionUrlMapPathMatcherDefaultRouteActionCorsPolicyOutputReference | ComputeRegionUrlMapPathMatcherDefaultRouteActionCorsPolicy): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    allow_credentials: cdktf.booleanToTerraform(struct!.allowCredentials),
-    allow_headers: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.allowHeaders),
-    allow_methods: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.allowMethods),
-    allow_origin_regexes: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.allowOriginRegexes),
-    allow_origins: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.allowOrigins),
-    disabled: cdktf.booleanToTerraform(struct!.disabled),
-    expose_headers: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.exposeHeaders),
-    max_age: cdktf.numberToTerraform(struct!.maxAge),
+    allow_credentials: cdktn.booleanToTerraform(struct!.allowCredentials),
+    allow_headers: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.allowHeaders),
+    allow_methods: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.allowMethods),
+    allow_origin_regexes: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.allowOriginRegexes),
+    allow_origins: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.allowOrigins),
+    disabled: cdktn.booleanToTerraform(struct!.disabled),
+    expose_headers: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.exposeHeaders),
+    max_age: cdktn.numberToTerraform(struct!.maxAge),
   }
 }
 
 
 export function computeRegionUrlMapPathMatcherDefaultRouteActionCorsPolicyToHclTerraform(struct?: ComputeRegionUrlMapPathMatcherDefaultRouteActionCorsPolicyOutputReference | ComputeRegionUrlMapPathMatcherDefaultRouteActionCorsPolicy): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     allow_credentials: {
-      value: cdktf.booleanToHclTerraform(struct!.allowCredentials),
+      value: cdktn.booleanToHclTerraform(struct!.allowCredentials),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     allow_headers: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.allowHeaders),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.allowHeaders),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
     },
     allow_methods: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.allowMethods),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.allowMethods),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
     },
     allow_origin_regexes: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.allowOriginRegexes),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.allowOriginRegexes),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
     },
     allow_origins: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.allowOrigins),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.allowOrigins),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
     },
     disabled: {
-      value: cdktf.booleanToHclTerraform(struct!.disabled),
+      value: cdktn.booleanToHclTerraform(struct!.disabled),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     expose_headers: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.exposeHeaders),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.exposeHeaders),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
     },
     max_age: {
-      value: cdktf.numberToHclTerraform(struct!.maxAge),
+      value: cdktn.numberToHclTerraform(struct!.maxAge),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
@@ -3206,14 +3206,14 @@ export function computeRegionUrlMapPathMatcherDefaultRouteActionCorsPolicyToHclT
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class ComputeRegionUrlMapPathMatcherDefaultRouteActionCorsPolicyOutputReference extends cdktf.ComplexObject {
+export class ComputeRegionUrlMapPathMatcherDefaultRouteActionCorsPolicyOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -3281,11 +3281,11 @@ export class ComputeRegionUrlMapPathMatcherDefaultRouteActionCorsPolicyOutputRef
   }
 
   // allow_credentials - computed: false, optional: true, required: false
-  private _allowCredentials?: boolean | cdktf.IResolvable; 
+  private _allowCredentials?: boolean | cdktn.IResolvable; 
   public get allowCredentials() {
     return this.getBooleanAttribute('allow_credentials');
   }
-  public set allowCredentials(value: boolean | cdktf.IResolvable) {
+  public set allowCredentials(value: boolean | cdktn.IResolvable) {
     this._allowCredentials = value;
   }
   public resetAllowCredentials() {
@@ -3361,11 +3361,11 @@ export class ComputeRegionUrlMapPathMatcherDefaultRouteActionCorsPolicyOutputRef
   }
 
   // disabled - computed: false, optional: true, required: false
-  private _disabled?: boolean | cdktf.IResolvable; 
+  private _disabled?: boolean | cdktn.IResolvable; 
   public get disabled() {
     return this.getBooleanAttribute('disabled');
   }
-  public set disabled(value: boolean | cdktf.IResolvable) {
+  public set disabled(value: boolean | cdktn.IResolvable) {
     this._disabled = value;
   }
   public resetDisabled() {
@@ -3426,31 +3426,31 @@ export interface ComputeRegionUrlMapPathMatcherDefaultRouteActionFaultInjectionP
 }
 
 export function computeRegionUrlMapPathMatcherDefaultRouteActionFaultInjectionPolicyAbortToTerraform(struct?: ComputeRegionUrlMapPathMatcherDefaultRouteActionFaultInjectionPolicyAbortOutputReference | ComputeRegionUrlMapPathMatcherDefaultRouteActionFaultInjectionPolicyAbort): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    http_status: cdktf.numberToTerraform(struct!.httpStatus),
-    percentage: cdktf.numberToTerraform(struct!.percentage),
+    http_status: cdktn.numberToTerraform(struct!.httpStatus),
+    percentage: cdktn.numberToTerraform(struct!.percentage),
   }
 }
 
 
 export function computeRegionUrlMapPathMatcherDefaultRouteActionFaultInjectionPolicyAbortToHclTerraform(struct?: ComputeRegionUrlMapPathMatcherDefaultRouteActionFaultInjectionPolicyAbortOutputReference | ComputeRegionUrlMapPathMatcherDefaultRouteActionFaultInjectionPolicyAbort): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     http_status: {
-      value: cdktf.numberToHclTerraform(struct!.httpStatus),
+      value: cdktn.numberToHclTerraform(struct!.httpStatus),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     percentage: {
-      value: cdktf.numberToHclTerraform(struct!.percentage),
+      value: cdktn.numberToHclTerraform(struct!.percentage),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
@@ -3461,14 +3461,14 @@ export function computeRegionUrlMapPathMatcherDefaultRouteActionFaultInjectionPo
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class ComputeRegionUrlMapPathMatcherDefaultRouteActionFaultInjectionPolicyAbortOutputReference extends cdktf.ComplexObject {
+export class ComputeRegionUrlMapPathMatcherDefaultRouteActionFaultInjectionPolicyAbortOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -3549,31 +3549,31 @@ export interface ComputeRegionUrlMapPathMatcherDefaultRouteActionFaultInjectionP
 }
 
 export function computeRegionUrlMapPathMatcherDefaultRouteActionFaultInjectionPolicyDelayFixedDelayToTerraform(struct?: ComputeRegionUrlMapPathMatcherDefaultRouteActionFaultInjectionPolicyDelayFixedDelayOutputReference | ComputeRegionUrlMapPathMatcherDefaultRouteActionFaultInjectionPolicyDelayFixedDelay): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    nanos: cdktf.numberToTerraform(struct!.nanos),
-    seconds: cdktf.stringToTerraform(struct!.seconds),
+    nanos: cdktn.numberToTerraform(struct!.nanos),
+    seconds: cdktn.stringToTerraform(struct!.seconds),
   }
 }
 
 
 export function computeRegionUrlMapPathMatcherDefaultRouteActionFaultInjectionPolicyDelayFixedDelayToHclTerraform(struct?: ComputeRegionUrlMapPathMatcherDefaultRouteActionFaultInjectionPolicyDelayFixedDelayOutputReference | ComputeRegionUrlMapPathMatcherDefaultRouteActionFaultInjectionPolicyDelayFixedDelay): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     nanos: {
-      value: cdktf.numberToHclTerraform(struct!.nanos),
+      value: cdktn.numberToHclTerraform(struct!.nanos),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     seconds: {
-      value: cdktf.stringToHclTerraform(struct!.seconds),
+      value: cdktn.stringToHclTerraform(struct!.seconds),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -3584,14 +3584,14 @@ export function computeRegionUrlMapPathMatcherDefaultRouteActionFaultInjectionPo
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class ComputeRegionUrlMapPathMatcherDefaultRouteActionFaultInjectionPolicyDelayFixedDelayOutputReference extends cdktf.ComplexObject {
+export class ComputeRegionUrlMapPathMatcherDefaultRouteActionFaultInjectionPolicyDelayFixedDelayOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -3671,25 +3671,25 @@ export interface ComputeRegionUrlMapPathMatcherDefaultRouteActionFaultInjectionP
 }
 
 export function computeRegionUrlMapPathMatcherDefaultRouteActionFaultInjectionPolicyDelayToTerraform(struct?: ComputeRegionUrlMapPathMatcherDefaultRouteActionFaultInjectionPolicyDelayOutputReference | ComputeRegionUrlMapPathMatcherDefaultRouteActionFaultInjectionPolicyDelay): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    percentage: cdktf.numberToTerraform(struct!.percentage),
+    percentage: cdktn.numberToTerraform(struct!.percentage),
     fixed_delay: computeRegionUrlMapPathMatcherDefaultRouteActionFaultInjectionPolicyDelayFixedDelayToTerraform(struct!.fixedDelay),
   }
 }
 
 
 export function computeRegionUrlMapPathMatcherDefaultRouteActionFaultInjectionPolicyDelayToHclTerraform(struct?: ComputeRegionUrlMapPathMatcherDefaultRouteActionFaultInjectionPolicyDelayOutputReference | ComputeRegionUrlMapPathMatcherDefaultRouteActionFaultInjectionPolicyDelay): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     percentage: {
-      value: cdktf.numberToHclTerraform(struct!.percentage),
+      value: cdktn.numberToHclTerraform(struct!.percentage),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
@@ -3706,14 +3706,14 @@ export function computeRegionUrlMapPathMatcherDefaultRouteActionFaultInjectionPo
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class ComputeRegionUrlMapPathMatcherDefaultRouteActionFaultInjectionPolicyDelayOutputReference extends cdktf.ComplexObject {
+export class ComputeRegionUrlMapPathMatcherDefaultRouteActionFaultInjectionPolicyDelayOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -3792,8 +3792,8 @@ export interface ComputeRegionUrlMapPathMatcherDefaultRouteActionFaultInjectionP
 }
 
 export function computeRegionUrlMapPathMatcherDefaultRouteActionFaultInjectionPolicyToTerraform(struct?: ComputeRegionUrlMapPathMatcherDefaultRouteActionFaultInjectionPolicyOutputReference | ComputeRegionUrlMapPathMatcherDefaultRouteActionFaultInjectionPolicy): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -3804,8 +3804,8 @@ export function computeRegionUrlMapPathMatcherDefaultRouteActionFaultInjectionPo
 
 
 export function computeRegionUrlMapPathMatcherDefaultRouteActionFaultInjectionPolicyToHclTerraform(struct?: ComputeRegionUrlMapPathMatcherDefaultRouteActionFaultInjectionPolicyOutputReference | ComputeRegionUrlMapPathMatcherDefaultRouteActionFaultInjectionPolicy): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -3827,14 +3827,14 @@ export function computeRegionUrlMapPathMatcherDefaultRouteActionFaultInjectionPo
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class ComputeRegionUrlMapPathMatcherDefaultRouteActionFaultInjectionPolicyOutputReference extends cdktf.ComplexObject {
+export class ComputeRegionUrlMapPathMatcherDefaultRouteActionFaultInjectionPolicyOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -3915,31 +3915,31 @@ export interface ComputeRegionUrlMapPathMatcherDefaultRouteActionMaxStreamDurati
 }
 
 export function computeRegionUrlMapPathMatcherDefaultRouteActionMaxStreamDurationToTerraform(struct?: ComputeRegionUrlMapPathMatcherDefaultRouteActionMaxStreamDurationOutputReference | ComputeRegionUrlMapPathMatcherDefaultRouteActionMaxStreamDuration): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    nanos: cdktf.numberToTerraform(struct!.nanos),
-    seconds: cdktf.stringToTerraform(struct!.seconds),
+    nanos: cdktn.numberToTerraform(struct!.nanos),
+    seconds: cdktn.stringToTerraform(struct!.seconds),
   }
 }
 
 
 export function computeRegionUrlMapPathMatcherDefaultRouteActionMaxStreamDurationToHclTerraform(struct?: ComputeRegionUrlMapPathMatcherDefaultRouteActionMaxStreamDurationOutputReference | ComputeRegionUrlMapPathMatcherDefaultRouteActionMaxStreamDuration): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     nanos: {
-      value: cdktf.numberToHclTerraform(struct!.nanos),
+      value: cdktn.numberToHclTerraform(struct!.nanos),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     seconds: {
-      value: cdktf.stringToHclTerraform(struct!.seconds),
+      value: cdktn.stringToHclTerraform(struct!.seconds),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -3950,14 +3950,14 @@ export function computeRegionUrlMapPathMatcherDefaultRouteActionMaxStreamDuratio
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class ComputeRegionUrlMapPathMatcherDefaultRouteActionMaxStreamDurationOutputReference extends cdktf.ComplexObject {
+export class ComputeRegionUrlMapPathMatcherDefaultRouteActionMaxStreamDurationOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -4027,24 +4027,24 @@ export interface ComputeRegionUrlMapPathMatcherDefaultRouteActionRequestMirrorPo
 }
 
 export function computeRegionUrlMapPathMatcherDefaultRouteActionRequestMirrorPolicyToTerraform(struct?: ComputeRegionUrlMapPathMatcherDefaultRouteActionRequestMirrorPolicyOutputReference | ComputeRegionUrlMapPathMatcherDefaultRouteActionRequestMirrorPolicy): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    backend_service: cdktf.stringToTerraform(struct!.backendService),
+    backend_service: cdktn.stringToTerraform(struct!.backendService),
   }
 }
 
 
 export function computeRegionUrlMapPathMatcherDefaultRouteActionRequestMirrorPolicyToHclTerraform(struct?: ComputeRegionUrlMapPathMatcherDefaultRouteActionRequestMirrorPolicyOutputReference | ComputeRegionUrlMapPathMatcherDefaultRouteActionRequestMirrorPolicy): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     backend_service: {
-      value: cdktf.stringToHclTerraform(struct!.backendService),
+      value: cdktn.stringToHclTerraform(struct!.backendService),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -4055,14 +4055,14 @@ export function computeRegionUrlMapPathMatcherDefaultRouteActionRequestMirrorPol
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class ComputeRegionUrlMapPathMatcherDefaultRouteActionRequestMirrorPolicyOutputReference extends cdktf.ComplexObject {
+export class ComputeRegionUrlMapPathMatcherDefaultRouteActionRequestMirrorPolicyOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -4118,31 +4118,31 @@ export interface ComputeRegionUrlMapPathMatcherDefaultRouteActionRetryPolicyPerT
 }
 
 export function computeRegionUrlMapPathMatcherDefaultRouteActionRetryPolicyPerTryTimeoutToTerraform(struct?: ComputeRegionUrlMapPathMatcherDefaultRouteActionRetryPolicyPerTryTimeoutOutputReference | ComputeRegionUrlMapPathMatcherDefaultRouteActionRetryPolicyPerTryTimeout): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    nanos: cdktf.numberToTerraform(struct!.nanos),
-    seconds: cdktf.stringToTerraform(struct!.seconds),
+    nanos: cdktn.numberToTerraform(struct!.nanos),
+    seconds: cdktn.stringToTerraform(struct!.seconds),
   }
 }
 
 
 export function computeRegionUrlMapPathMatcherDefaultRouteActionRetryPolicyPerTryTimeoutToHclTerraform(struct?: ComputeRegionUrlMapPathMatcherDefaultRouteActionRetryPolicyPerTryTimeoutOutputReference | ComputeRegionUrlMapPathMatcherDefaultRouteActionRetryPolicyPerTryTimeout): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     nanos: {
-      value: cdktf.numberToHclTerraform(struct!.nanos),
+      value: cdktn.numberToHclTerraform(struct!.nanos),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     seconds: {
-      value: cdktf.stringToHclTerraform(struct!.seconds),
+      value: cdktn.stringToHclTerraform(struct!.seconds),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -4153,14 +4153,14 @@ export function computeRegionUrlMapPathMatcherDefaultRouteActionRetryPolicyPerTr
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class ComputeRegionUrlMapPathMatcherDefaultRouteActionRetryPolicyPerTryTimeoutOutputReference extends cdktf.ComplexObject {
+export class ComputeRegionUrlMapPathMatcherDefaultRouteActionRetryPolicyPerTryTimeoutOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -4260,32 +4260,32 @@ export interface ComputeRegionUrlMapPathMatcherDefaultRouteActionRetryPolicy {
 }
 
 export function computeRegionUrlMapPathMatcherDefaultRouteActionRetryPolicyToTerraform(struct?: ComputeRegionUrlMapPathMatcherDefaultRouteActionRetryPolicyOutputReference | ComputeRegionUrlMapPathMatcherDefaultRouteActionRetryPolicy): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    num_retries: cdktf.numberToTerraform(struct!.numRetries),
-    retry_conditions: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.retryConditions),
+    num_retries: cdktn.numberToTerraform(struct!.numRetries),
+    retry_conditions: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.retryConditions),
     per_try_timeout: computeRegionUrlMapPathMatcherDefaultRouteActionRetryPolicyPerTryTimeoutToTerraform(struct!.perTryTimeout),
   }
 }
 
 
 export function computeRegionUrlMapPathMatcherDefaultRouteActionRetryPolicyToHclTerraform(struct?: ComputeRegionUrlMapPathMatcherDefaultRouteActionRetryPolicyOutputReference | ComputeRegionUrlMapPathMatcherDefaultRouteActionRetryPolicy): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     num_retries: {
-      value: cdktf.numberToHclTerraform(struct!.numRetries),
+      value: cdktn.numberToHclTerraform(struct!.numRetries),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     retry_conditions: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.retryConditions),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.retryConditions),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
@@ -4302,14 +4302,14 @@ export function computeRegionUrlMapPathMatcherDefaultRouteActionRetryPolicyToHcl
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class ComputeRegionUrlMapPathMatcherDefaultRouteActionRetryPolicyOutputReference extends cdktf.ComplexObject {
+export class ComputeRegionUrlMapPathMatcherDefaultRouteActionRetryPolicyOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -4412,31 +4412,31 @@ export interface ComputeRegionUrlMapPathMatcherDefaultRouteActionTimeout {
 }
 
 export function computeRegionUrlMapPathMatcherDefaultRouteActionTimeoutToTerraform(struct?: ComputeRegionUrlMapPathMatcherDefaultRouteActionTimeoutOutputReference | ComputeRegionUrlMapPathMatcherDefaultRouteActionTimeout): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    nanos: cdktf.numberToTerraform(struct!.nanos),
-    seconds: cdktf.stringToTerraform(struct!.seconds),
+    nanos: cdktn.numberToTerraform(struct!.nanos),
+    seconds: cdktn.stringToTerraform(struct!.seconds),
   }
 }
 
 
 export function computeRegionUrlMapPathMatcherDefaultRouteActionTimeoutToHclTerraform(struct?: ComputeRegionUrlMapPathMatcherDefaultRouteActionTimeoutOutputReference | ComputeRegionUrlMapPathMatcherDefaultRouteActionTimeout): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     nanos: {
-      value: cdktf.numberToHclTerraform(struct!.nanos),
+      value: cdktn.numberToHclTerraform(struct!.nanos),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     seconds: {
-      value: cdktf.stringToHclTerraform(struct!.seconds),
+      value: cdktn.stringToHclTerraform(struct!.seconds),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -4447,14 +4447,14 @@ export function computeRegionUrlMapPathMatcherDefaultRouteActionTimeoutToHclTerr
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class ComputeRegionUrlMapPathMatcherDefaultRouteActionTimeoutOutputReference extends cdktf.ComplexObject {
+export class ComputeRegionUrlMapPathMatcherDefaultRouteActionTimeoutOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -4559,38 +4559,38 @@ export interface ComputeRegionUrlMapPathMatcherDefaultRouteActionUrlRewrite {
 }
 
 export function computeRegionUrlMapPathMatcherDefaultRouteActionUrlRewriteToTerraform(struct?: ComputeRegionUrlMapPathMatcherDefaultRouteActionUrlRewriteOutputReference | ComputeRegionUrlMapPathMatcherDefaultRouteActionUrlRewrite): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    host_rewrite: cdktf.stringToTerraform(struct!.hostRewrite),
-    path_prefix_rewrite: cdktf.stringToTerraform(struct!.pathPrefixRewrite),
-    path_template_rewrite: cdktf.stringToTerraform(struct!.pathTemplateRewrite),
+    host_rewrite: cdktn.stringToTerraform(struct!.hostRewrite),
+    path_prefix_rewrite: cdktn.stringToTerraform(struct!.pathPrefixRewrite),
+    path_template_rewrite: cdktn.stringToTerraform(struct!.pathTemplateRewrite),
   }
 }
 
 
 export function computeRegionUrlMapPathMatcherDefaultRouteActionUrlRewriteToHclTerraform(struct?: ComputeRegionUrlMapPathMatcherDefaultRouteActionUrlRewriteOutputReference | ComputeRegionUrlMapPathMatcherDefaultRouteActionUrlRewrite): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     host_rewrite: {
-      value: cdktf.stringToHclTerraform(struct!.hostRewrite),
+      value: cdktn.stringToHclTerraform(struct!.hostRewrite),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     path_prefix_rewrite: {
-      value: cdktf.stringToHclTerraform(struct!.pathPrefixRewrite),
+      value: cdktn.stringToHclTerraform(struct!.pathPrefixRewrite),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     path_template_rewrite: {
-      value: cdktf.stringToHclTerraform(struct!.pathTemplateRewrite),
+      value: cdktn.stringToHclTerraform(struct!.pathTemplateRewrite),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -4601,14 +4601,14 @@ export function computeRegionUrlMapPathMatcherDefaultRouteActionUrlRewriteToHclT
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class ComputeRegionUrlMapPathMatcherDefaultRouteActionUrlRewriteOutputReference extends cdktf.ComplexObject {
+export class ComputeRegionUrlMapPathMatcherDefaultRouteActionUrlRewriteOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -4712,42 +4712,42 @@ export interface ComputeRegionUrlMapPathMatcherDefaultRouteActionWeightedBackend
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_region_url_map#replace ComputeRegionUrlMap#replace}
   */
-  readonly replace?: boolean | cdktf.IResolvable;
+  readonly replace?: boolean | cdktn.IResolvable;
 }
 
-export function computeRegionUrlMapPathMatcherDefaultRouteActionWeightedBackendServicesHeaderActionRequestHeadersToAddToTerraform(struct?: ComputeRegionUrlMapPathMatcherDefaultRouteActionWeightedBackendServicesHeaderActionRequestHeadersToAdd | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function computeRegionUrlMapPathMatcherDefaultRouteActionWeightedBackendServicesHeaderActionRequestHeadersToAddToTerraform(struct?: ComputeRegionUrlMapPathMatcherDefaultRouteActionWeightedBackendServicesHeaderActionRequestHeadersToAdd | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    header_name: cdktf.stringToTerraform(struct!.headerName),
-    header_value: cdktf.stringToTerraform(struct!.headerValue),
-    replace: cdktf.booleanToTerraform(struct!.replace),
+    header_name: cdktn.stringToTerraform(struct!.headerName),
+    header_value: cdktn.stringToTerraform(struct!.headerValue),
+    replace: cdktn.booleanToTerraform(struct!.replace),
   }
 }
 
 
-export function computeRegionUrlMapPathMatcherDefaultRouteActionWeightedBackendServicesHeaderActionRequestHeadersToAddToHclTerraform(struct?: ComputeRegionUrlMapPathMatcherDefaultRouteActionWeightedBackendServicesHeaderActionRequestHeadersToAdd | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function computeRegionUrlMapPathMatcherDefaultRouteActionWeightedBackendServicesHeaderActionRequestHeadersToAddToHclTerraform(struct?: ComputeRegionUrlMapPathMatcherDefaultRouteActionWeightedBackendServicesHeaderActionRequestHeadersToAdd | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     header_name: {
-      value: cdktf.stringToHclTerraform(struct!.headerName),
+      value: cdktn.stringToHclTerraform(struct!.headerName),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     header_value: {
-      value: cdktf.stringToHclTerraform(struct!.headerValue),
+      value: cdktn.stringToHclTerraform(struct!.headerValue),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     replace: {
-      value: cdktf.booleanToHclTerraform(struct!.replace),
+      value: cdktn.booleanToHclTerraform(struct!.replace),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
@@ -4758,9 +4758,9 @@ export function computeRegionUrlMapPathMatcherDefaultRouteActionWeightedBackendS
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class ComputeRegionUrlMapPathMatcherDefaultRouteActionWeightedBackendServicesHeaderActionRequestHeadersToAddOutputReference extends cdktf.ComplexObject {
+export class ComputeRegionUrlMapPathMatcherDefaultRouteActionWeightedBackendServicesHeaderActionRequestHeadersToAddOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -4768,11 +4768,11 @@ export class ComputeRegionUrlMapPathMatcherDefaultRouteActionWeightedBackendServ
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): ComputeRegionUrlMapPathMatcherDefaultRouteActionWeightedBackendServicesHeaderActionRequestHeadersToAdd | cdktf.IResolvable | undefined {
+  public get internalValue(): ComputeRegionUrlMapPathMatcherDefaultRouteActionWeightedBackendServicesHeaderActionRequestHeadersToAdd | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -4793,7 +4793,7 @@ export class ComputeRegionUrlMapPathMatcherDefaultRouteActionWeightedBackendServ
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: ComputeRegionUrlMapPathMatcherDefaultRouteActionWeightedBackendServicesHeaderActionRequestHeadersToAdd | cdktf.IResolvable | undefined) {
+  public set internalValue(value: ComputeRegionUrlMapPathMatcherDefaultRouteActionWeightedBackendServicesHeaderActionRequestHeadersToAdd | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -4801,7 +4801,7 @@ export class ComputeRegionUrlMapPathMatcherDefaultRouteActionWeightedBackendServ
       this._headerValue = undefined;
       this._replace = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -4847,11 +4847,11 @@ export class ComputeRegionUrlMapPathMatcherDefaultRouteActionWeightedBackendServ
   }
 
   // replace - computed: false, optional: true, required: false
-  private _replace?: boolean | cdktf.IResolvable; 
+  private _replace?: boolean | cdktn.IResolvable; 
   public get replace() {
     return this.getBooleanAttribute('replace');
   }
-  public set replace(value: boolean | cdktf.IResolvable) {
+  public set replace(value: boolean | cdktn.IResolvable) {
     this._replace = value;
   }
   public resetReplace() {
@@ -4863,15 +4863,15 @@ export class ComputeRegionUrlMapPathMatcherDefaultRouteActionWeightedBackendServ
   }
 }
 
-export class ComputeRegionUrlMapPathMatcherDefaultRouteActionWeightedBackendServicesHeaderActionRequestHeadersToAddList extends cdktf.ComplexList {
-  public internalValue? : ComputeRegionUrlMapPathMatcherDefaultRouteActionWeightedBackendServicesHeaderActionRequestHeadersToAdd[] | cdktf.IResolvable
+export class ComputeRegionUrlMapPathMatcherDefaultRouteActionWeightedBackendServicesHeaderActionRequestHeadersToAddList extends cdktn.ComplexList {
+  public internalValue? : ComputeRegionUrlMapPathMatcherDefaultRouteActionWeightedBackendServicesHeaderActionRequestHeadersToAdd[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -4901,42 +4901,42 @@ export interface ComputeRegionUrlMapPathMatcherDefaultRouteActionWeightedBackend
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_region_url_map#replace ComputeRegionUrlMap#replace}
   */
-  readonly replace?: boolean | cdktf.IResolvable;
+  readonly replace?: boolean | cdktn.IResolvable;
 }
 
-export function computeRegionUrlMapPathMatcherDefaultRouteActionWeightedBackendServicesHeaderActionResponseHeadersToAddToTerraform(struct?: ComputeRegionUrlMapPathMatcherDefaultRouteActionWeightedBackendServicesHeaderActionResponseHeadersToAdd | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function computeRegionUrlMapPathMatcherDefaultRouteActionWeightedBackendServicesHeaderActionResponseHeadersToAddToTerraform(struct?: ComputeRegionUrlMapPathMatcherDefaultRouteActionWeightedBackendServicesHeaderActionResponseHeadersToAdd | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    header_name: cdktf.stringToTerraform(struct!.headerName),
-    header_value: cdktf.stringToTerraform(struct!.headerValue),
-    replace: cdktf.booleanToTerraform(struct!.replace),
+    header_name: cdktn.stringToTerraform(struct!.headerName),
+    header_value: cdktn.stringToTerraform(struct!.headerValue),
+    replace: cdktn.booleanToTerraform(struct!.replace),
   }
 }
 
 
-export function computeRegionUrlMapPathMatcherDefaultRouteActionWeightedBackendServicesHeaderActionResponseHeadersToAddToHclTerraform(struct?: ComputeRegionUrlMapPathMatcherDefaultRouteActionWeightedBackendServicesHeaderActionResponseHeadersToAdd | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function computeRegionUrlMapPathMatcherDefaultRouteActionWeightedBackendServicesHeaderActionResponseHeadersToAddToHclTerraform(struct?: ComputeRegionUrlMapPathMatcherDefaultRouteActionWeightedBackendServicesHeaderActionResponseHeadersToAdd | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     header_name: {
-      value: cdktf.stringToHclTerraform(struct!.headerName),
+      value: cdktn.stringToHclTerraform(struct!.headerName),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     header_value: {
-      value: cdktf.stringToHclTerraform(struct!.headerValue),
+      value: cdktn.stringToHclTerraform(struct!.headerValue),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     replace: {
-      value: cdktf.booleanToHclTerraform(struct!.replace),
+      value: cdktn.booleanToHclTerraform(struct!.replace),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
@@ -4947,9 +4947,9 @@ export function computeRegionUrlMapPathMatcherDefaultRouteActionWeightedBackendS
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class ComputeRegionUrlMapPathMatcherDefaultRouteActionWeightedBackendServicesHeaderActionResponseHeadersToAddOutputReference extends cdktf.ComplexObject {
+export class ComputeRegionUrlMapPathMatcherDefaultRouteActionWeightedBackendServicesHeaderActionResponseHeadersToAddOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -4957,11 +4957,11 @@ export class ComputeRegionUrlMapPathMatcherDefaultRouteActionWeightedBackendServ
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): ComputeRegionUrlMapPathMatcherDefaultRouteActionWeightedBackendServicesHeaderActionResponseHeadersToAdd | cdktf.IResolvable | undefined {
+  public get internalValue(): ComputeRegionUrlMapPathMatcherDefaultRouteActionWeightedBackendServicesHeaderActionResponseHeadersToAdd | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -4982,7 +4982,7 @@ export class ComputeRegionUrlMapPathMatcherDefaultRouteActionWeightedBackendServ
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: ComputeRegionUrlMapPathMatcherDefaultRouteActionWeightedBackendServicesHeaderActionResponseHeadersToAdd | cdktf.IResolvable | undefined) {
+  public set internalValue(value: ComputeRegionUrlMapPathMatcherDefaultRouteActionWeightedBackendServicesHeaderActionResponseHeadersToAdd | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -4990,7 +4990,7 @@ export class ComputeRegionUrlMapPathMatcherDefaultRouteActionWeightedBackendServ
       this._headerValue = undefined;
       this._replace = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -5036,11 +5036,11 @@ export class ComputeRegionUrlMapPathMatcherDefaultRouteActionWeightedBackendServ
   }
 
   // replace - computed: false, optional: true, required: false
-  private _replace?: boolean | cdktf.IResolvable; 
+  private _replace?: boolean | cdktn.IResolvable; 
   public get replace() {
     return this.getBooleanAttribute('replace');
   }
-  public set replace(value: boolean | cdktf.IResolvable) {
+  public set replace(value: boolean | cdktn.IResolvable) {
     this._replace = value;
   }
   public resetReplace() {
@@ -5052,15 +5052,15 @@ export class ComputeRegionUrlMapPathMatcherDefaultRouteActionWeightedBackendServ
   }
 }
 
-export class ComputeRegionUrlMapPathMatcherDefaultRouteActionWeightedBackendServicesHeaderActionResponseHeadersToAddList extends cdktf.ComplexList {
-  public internalValue? : ComputeRegionUrlMapPathMatcherDefaultRouteActionWeightedBackendServicesHeaderActionResponseHeadersToAdd[] | cdktf.IResolvable
+export class ComputeRegionUrlMapPathMatcherDefaultRouteActionWeightedBackendServicesHeaderActionResponseHeadersToAddList extends cdktn.ComplexList {
+  public internalValue? : ComputeRegionUrlMapPathMatcherDefaultRouteActionWeightedBackendServicesHeaderActionResponseHeadersToAdd[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -5091,55 +5091,55 @@ export interface ComputeRegionUrlMapPathMatcherDefaultRouteActionWeightedBackend
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_region_url_map#request_headers_to_add ComputeRegionUrlMap#request_headers_to_add}
   */
-  readonly requestHeadersToAdd?: ComputeRegionUrlMapPathMatcherDefaultRouteActionWeightedBackendServicesHeaderActionRequestHeadersToAdd[] | cdktf.IResolvable;
+  readonly requestHeadersToAdd?: ComputeRegionUrlMapPathMatcherDefaultRouteActionWeightedBackendServicesHeaderActionRequestHeadersToAdd[] | cdktn.IResolvable;
   /**
   * response_headers_to_add block
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_region_url_map#response_headers_to_add ComputeRegionUrlMap#response_headers_to_add}
   */
-  readonly responseHeadersToAdd?: ComputeRegionUrlMapPathMatcherDefaultRouteActionWeightedBackendServicesHeaderActionResponseHeadersToAdd[] | cdktf.IResolvable;
+  readonly responseHeadersToAdd?: ComputeRegionUrlMapPathMatcherDefaultRouteActionWeightedBackendServicesHeaderActionResponseHeadersToAdd[] | cdktn.IResolvable;
 }
 
 export function computeRegionUrlMapPathMatcherDefaultRouteActionWeightedBackendServicesHeaderActionToTerraform(struct?: ComputeRegionUrlMapPathMatcherDefaultRouteActionWeightedBackendServicesHeaderActionOutputReference | ComputeRegionUrlMapPathMatcherDefaultRouteActionWeightedBackendServicesHeaderAction): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    request_headers_to_remove: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.requestHeadersToRemove),
-    response_headers_to_remove: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.responseHeadersToRemove),
-    request_headers_to_add: cdktf.listMapper(computeRegionUrlMapPathMatcherDefaultRouteActionWeightedBackendServicesHeaderActionRequestHeadersToAddToTerraform, true)(struct!.requestHeadersToAdd),
-    response_headers_to_add: cdktf.listMapper(computeRegionUrlMapPathMatcherDefaultRouteActionWeightedBackendServicesHeaderActionResponseHeadersToAddToTerraform, true)(struct!.responseHeadersToAdd),
+    request_headers_to_remove: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.requestHeadersToRemove),
+    response_headers_to_remove: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.responseHeadersToRemove),
+    request_headers_to_add: cdktn.listMapper(computeRegionUrlMapPathMatcherDefaultRouteActionWeightedBackendServicesHeaderActionRequestHeadersToAddToTerraform, true)(struct!.requestHeadersToAdd),
+    response_headers_to_add: cdktn.listMapper(computeRegionUrlMapPathMatcherDefaultRouteActionWeightedBackendServicesHeaderActionResponseHeadersToAddToTerraform, true)(struct!.responseHeadersToAdd),
   }
 }
 
 
 export function computeRegionUrlMapPathMatcherDefaultRouteActionWeightedBackendServicesHeaderActionToHclTerraform(struct?: ComputeRegionUrlMapPathMatcherDefaultRouteActionWeightedBackendServicesHeaderActionOutputReference | ComputeRegionUrlMapPathMatcherDefaultRouteActionWeightedBackendServicesHeaderAction): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     request_headers_to_remove: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.requestHeadersToRemove),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.requestHeadersToRemove),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
     },
     response_headers_to_remove: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.responseHeadersToRemove),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.responseHeadersToRemove),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
     },
     request_headers_to_add: {
-      value: cdktf.listMapperHcl(computeRegionUrlMapPathMatcherDefaultRouteActionWeightedBackendServicesHeaderActionRequestHeadersToAddToHclTerraform, true)(struct!.requestHeadersToAdd),
+      value: cdktn.listMapperHcl(computeRegionUrlMapPathMatcherDefaultRouteActionWeightedBackendServicesHeaderActionRequestHeadersToAddToHclTerraform, true)(struct!.requestHeadersToAdd),
       isBlock: true,
       type: "list",
       storageClassType: "ComputeRegionUrlMapPathMatcherDefaultRouteActionWeightedBackendServicesHeaderActionRequestHeadersToAddList",
     },
     response_headers_to_add: {
-      value: cdktf.listMapperHcl(computeRegionUrlMapPathMatcherDefaultRouteActionWeightedBackendServicesHeaderActionResponseHeadersToAddToHclTerraform, true)(struct!.responseHeadersToAdd),
+      value: cdktn.listMapperHcl(computeRegionUrlMapPathMatcherDefaultRouteActionWeightedBackendServicesHeaderActionResponseHeadersToAddToHclTerraform, true)(struct!.responseHeadersToAdd),
       isBlock: true,
       type: "list",
       storageClassType: "ComputeRegionUrlMapPathMatcherDefaultRouteActionWeightedBackendServicesHeaderActionResponseHeadersToAddList",
@@ -5150,14 +5150,14 @@ export function computeRegionUrlMapPathMatcherDefaultRouteActionWeightedBackendS
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class ComputeRegionUrlMapPathMatcherDefaultRouteActionWeightedBackendServicesHeaderActionOutputReference extends cdktf.ComplexObject {
+export class ComputeRegionUrlMapPathMatcherDefaultRouteActionWeightedBackendServicesHeaderActionOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -5237,7 +5237,7 @@ export class ComputeRegionUrlMapPathMatcherDefaultRouteActionWeightedBackendServ
   public get requestHeadersToAdd() {
     return this._requestHeadersToAdd;
   }
-  public putRequestHeadersToAdd(value: ComputeRegionUrlMapPathMatcherDefaultRouteActionWeightedBackendServicesHeaderActionRequestHeadersToAdd[] | cdktf.IResolvable) {
+  public putRequestHeadersToAdd(value: ComputeRegionUrlMapPathMatcherDefaultRouteActionWeightedBackendServicesHeaderActionRequestHeadersToAdd[] | cdktn.IResolvable) {
     this._requestHeadersToAdd.internalValue = value;
   }
   public resetRequestHeadersToAdd() {
@@ -5253,7 +5253,7 @@ export class ComputeRegionUrlMapPathMatcherDefaultRouteActionWeightedBackendServ
   public get responseHeadersToAdd() {
     return this._responseHeadersToAdd;
   }
-  public putResponseHeadersToAdd(value: ComputeRegionUrlMapPathMatcherDefaultRouteActionWeightedBackendServicesHeaderActionResponseHeadersToAdd[] | cdktf.IResolvable) {
+  public putResponseHeadersToAdd(value: ComputeRegionUrlMapPathMatcherDefaultRouteActionWeightedBackendServicesHeaderActionResponseHeadersToAdd[] | cdktn.IResolvable) {
     this._responseHeadersToAdd.internalValue = value;
   }
   public resetResponseHeadersToAdd() {
@@ -5294,33 +5294,33 @@ export interface ComputeRegionUrlMapPathMatcherDefaultRouteActionWeightedBackend
   readonly headerAction?: ComputeRegionUrlMapPathMatcherDefaultRouteActionWeightedBackendServicesHeaderAction;
 }
 
-export function computeRegionUrlMapPathMatcherDefaultRouteActionWeightedBackendServicesToTerraform(struct?: ComputeRegionUrlMapPathMatcherDefaultRouteActionWeightedBackendServices | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function computeRegionUrlMapPathMatcherDefaultRouteActionWeightedBackendServicesToTerraform(struct?: ComputeRegionUrlMapPathMatcherDefaultRouteActionWeightedBackendServices | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    backend_service: cdktf.stringToTerraform(struct!.backendService),
-    weight: cdktf.numberToTerraform(struct!.weight),
+    backend_service: cdktn.stringToTerraform(struct!.backendService),
+    weight: cdktn.numberToTerraform(struct!.weight),
     header_action: computeRegionUrlMapPathMatcherDefaultRouteActionWeightedBackendServicesHeaderActionToTerraform(struct!.headerAction),
   }
 }
 
 
-export function computeRegionUrlMapPathMatcherDefaultRouteActionWeightedBackendServicesToHclTerraform(struct?: ComputeRegionUrlMapPathMatcherDefaultRouteActionWeightedBackendServices | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function computeRegionUrlMapPathMatcherDefaultRouteActionWeightedBackendServicesToHclTerraform(struct?: ComputeRegionUrlMapPathMatcherDefaultRouteActionWeightedBackendServices | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     backend_service: {
-      value: cdktf.stringToHclTerraform(struct!.backendService),
+      value: cdktn.stringToHclTerraform(struct!.backendService),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     weight: {
-      value: cdktf.numberToHclTerraform(struct!.weight),
+      value: cdktn.numberToHclTerraform(struct!.weight),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
@@ -5337,9 +5337,9 @@ export function computeRegionUrlMapPathMatcherDefaultRouteActionWeightedBackendS
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class ComputeRegionUrlMapPathMatcherDefaultRouteActionWeightedBackendServicesOutputReference extends cdktf.ComplexObject {
+export class ComputeRegionUrlMapPathMatcherDefaultRouteActionWeightedBackendServicesOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -5347,11 +5347,11 @@ export class ComputeRegionUrlMapPathMatcherDefaultRouteActionWeightedBackendServ
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): ComputeRegionUrlMapPathMatcherDefaultRouteActionWeightedBackendServices | cdktf.IResolvable | undefined {
+  public get internalValue(): ComputeRegionUrlMapPathMatcherDefaultRouteActionWeightedBackendServices | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -5372,7 +5372,7 @@ export class ComputeRegionUrlMapPathMatcherDefaultRouteActionWeightedBackendServ
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: ComputeRegionUrlMapPathMatcherDefaultRouteActionWeightedBackendServices | cdktf.IResolvable | undefined) {
+  public set internalValue(value: ComputeRegionUrlMapPathMatcherDefaultRouteActionWeightedBackendServices | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -5380,7 +5380,7 @@ export class ComputeRegionUrlMapPathMatcherDefaultRouteActionWeightedBackendServ
       this._weight = undefined;
       this._headerAction.internalValue = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -5442,15 +5442,15 @@ export class ComputeRegionUrlMapPathMatcherDefaultRouteActionWeightedBackendServ
   }
 }
 
-export class ComputeRegionUrlMapPathMatcherDefaultRouteActionWeightedBackendServicesList extends cdktf.ComplexList {
-  public internalValue? : ComputeRegionUrlMapPathMatcherDefaultRouteActionWeightedBackendServices[] | cdktf.IResolvable
+export class ComputeRegionUrlMapPathMatcherDefaultRouteActionWeightedBackendServicesList extends cdktn.ComplexList {
+  public internalValue? : ComputeRegionUrlMapPathMatcherDefaultRouteActionWeightedBackendServices[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -5509,12 +5509,12 @@ export interface ComputeRegionUrlMapPathMatcherDefaultRouteAction {
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_region_url_map#weighted_backend_services ComputeRegionUrlMap#weighted_backend_services}
   */
-  readonly weightedBackendServices?: ComputeRegionUrlMapPathMatcherDefaultRouteActionWeightedBackendServices[] | cdktf.IResolvable;
+  readonly weightedBackendServices?: ComputeRegionUrlMapPathMatcherDefaultRouteActionWeightedBackendServices[] | cdktn.IResolvable;
 }
 
 export function computeRegionUrlMapPathMatcherDefaultRouteActionToTerraform(struct?: ComputeRegionUrlMapPathMatcherDefaultRouteActionOutputReference | ComputeRegionUrlMapPathMatcherDefaultRouteAction): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -5525,14 +5525,14 @@ export function computeRegionUrlMapPathMatcherDefaultRouteActionToTerraform(stru
     retry_policy: computeRegionUrlMapPathMatcherDefaultRouteActionRetryPolicyToTerraform(struct!.retryPolicy),
     timeout: computeRegionUrlMapPathMatcherDefaultRouteActionTimeoutToTerraform(struct!.timeout),
     url_rewrite: computeRegionUrlMapPathMatcherDefaultRouteActionUrlRewriteToTerraform(struct!.urlRewrite),
-    weighted_backend_services: cdktf.listMapper(computeRegionUrlMapPathMatcherDefaultRouteActionWeightedBackendServicesToTerraform, true)(struct!.weightedBackendServices),
+    weighted_backend_services: cdktn.listMapper(computeRegionUrlMapPathMatcherDefaultRouteActionWeightedBackendServicesToTerraform, true)(struct!.weightedBackendServices),
   }
 }
 
 
 export function computeRegionUrlMapPathMatcherDefaultRouteActionToHclTerraform(struct?: ComputeRegionUrlMapPathMatcherDefaultRouteActionOutputReference | ComputeRegionUrlMapPathMatcherDefaultRouteAction): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -5579,7 +5579,7 @@ export function computeRegionUrlMapPathMatcherDefaultRouteActionToHclTerraform(s
       storageClassType: "ComputeRegionUrlMapPathMatcherDefaultRouteActionUrlRewriteList",
     },
     weighted_backend_services: {
-      value: cdktf.listMapperHcl(computeRegionUrlMapPathMatcherDefaultRouteActionWeightedBackendServicesToHclTerraform, true)(struct!.weightedBackendServices),
+      value: cdktn.listMapperHcl(computeRegionUrlMapPathMatcherDefaultRouteActionWeightedBackendServicesToHclTerraform, true)(struct!.weightedBackendServices),
       isBlock: true,
       type: "list",
       storageClassType: "ComputeRegionUrlMapPathMatcherDefaultRouteActionWeightedBackendServicesList",
@@ -5590,14 +5590,14 @@ export function computeRegionUrlMapPathMatcherDefaultRouteActionToHclTerraform(s
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class ComputeRegionUrlMapPathMatcherDefaultRouteActionOutputReference extends cdktf.ComplexObject {
+export class ComputeRegionUrlMapPathMatcherDefaultRouteActionOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -5781,7 +5781,7 @@ export class ComputeRegionUrlMapPathMatcherDefaultRouteActionOutputReference ext
   public get weightedBackendServices() {
     return this._weightedBackendServices;
   }
-  public putWeightedBackendServices(value: ComputeRegionUrlMapPathMatcherDefaultRouteActionWeightedBackendServices[] | cdktf.IResolvable) {
+  public putWeightedBackendServices(value: ComputeRegionUrlMapPathMatcherDefaultRouteActionWeightedBackendServices[] | cdktn.IResolvable) {
     this._weightedBackendServices.internalValue = value;
   }
   public resetWeightedBackendServices() {
@@ -5808,7 +5808,7 @@ export interface ComputeRegionUrlMapPathMatcherDefaultUrlRedirect {
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_region_url_map#https_redirect ComputeRegionUrlMap#https_redirect}
   */
-  readonly httpsRedirect?: boolean | cdktf.IResolvable;
+  readonly httpsRedirect?: boolean | cdktn.IResolvable;
   /**
   * The path that will be used in the redirect response instead of the one that was
   * supplied in the request. pathRedirect cannot be supplied together with
@@ -5855,63 +5855,63 @@ export interface ComputeRegionUrlMapPathMatcherDefaultUrlRedirect {
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_region_url_map#strip_query ComputeRegionUrlMap#strip_query}
   */
-  readonly stripQuery: boolean | cdktf.IResolvable;
+  readonly stripQuery: boolean | cdktn.IResolvable;
 }
 
 export function computeRegionUrlMapPathMatcherDefaultUrlRedirectToTerraform(struct?: ComputeRegionUrlMapPathMatcherDefaultUrlRedirectOutputReference | ComputeRegionUrlMapPathMatcherDefaultUrlRedirect): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    host_redirect: cdktf.stringToTerraform(struct!.hostRedirect),
-    https_redirect: cdktf.booleanToTerraform(struct!.httpsRedirect),
-    path_redirect: cdktf.stringToTerraform(struct!.pathRedirect),
-    prefix_redirect: cdktf.stringToTerraform(struct!.prefixRedirect),
-    redirect_response_code: cdktf.stringToTerraform(struct!.redirectResponseCode),
-    strip_query: cdktf.booleanToTerraform(struct!.stripQuery),
+    host_redirect: cdktn.stringToTerraform(struct!.hostRedirect),
+    https_redirect: cdktn.booleanToTerraform(struct!.httpsRedirect),
+    path_redirect: cdktn.stringToTerraform(struct!.pathRedirect),
+    prefix_redirect: cdktn.stringToTerraform(struct!.prefixRedirect),
+    redirect_response_code: cdktn.stringToTerraform(struct!.redirectResponseCode),
+    strip_query: cdktn.booleanToTerraform(struct!.stripQuery),
   }
 }
 
 
 export function computeRegionUrlMapPathMatcherDefaultUrlRedirectToHclTerraform(struct?: ComputeRegionUrlMapPathMatcherDefaultUrlRedirectOutputReference | ComputeRegionUrlMapPathMatcherDefaultUrlRedirect): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     host_redirect: {
-      value: cdktf.stringToHclTerraform(struct!.hostRedirect),
+      value: cdktn.stringToHclTerraform(struct!.hostRedirect),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     https_redirect: {
-      value: cdktf.booleanToHclTerraform(struct!.httpsRedirect),
+      value: cdktn.booleanToHclTerraform(struct!.httpsRedirect),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     path_redirect: {
-      value: cdktf.stringToHclTerraform(struct!.pathRedirect),
+      value: cdktn.stringToHclTerraform(struct!.pathRedirect),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     prefix_redirect: {
-      value: cdktf.stringToHclTerraform(struct!.prefixRedirect),
+      value: cdktn.stringToHclTerraform(struct!.prefixRedirect),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     redirect_response_code: {
-      value: cdktf.stringToHclTerraform(struct!.redirectResponseCode),
+      value: cdktn.stringToHclTerraform(struct!.redirectResponseCode),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     strip_query: {
-      value: cdktf.booleanToHclTerraform(struct!.stripQuery),
+      value: cdktn.booleanToHclTerraform(struct!.stripQuery),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
@@ -5922,14 +5922,14 @@ export function computeRegionUrlMapPathMatcherDefaultUrlRedirectToHclTerraform(s
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class ComputeRegionUrlMapPathMatcherDefaultUrlRedirectOutputReference extends cdktf.ComplexObject {
+export class ComputeRegionUrlMapPathMatcherDefaultUrlRedirectOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -6001,11 +6001,11 @@ export class ComputeRegionUrlMapPathMatcherDefaultUrlRedirectOutputReference ext
   }
 
   // https_redirect - computed: false, optional: true, required: false
-  private _httpsRedirect?: boolean | cdktf.IResolvable; 
+  private _httpsRedirect?: boolean | cdktn.IResolvable; 
   public get httpsRedirect() {
     return this.getBooleanAttribute('https_redirect');
   }
-  public set httpsRedirect(value: boolean | cdktf.IResolvable) {
+  public set httpsRedirect(value: boolean | cdktn.IResolvable) {
     this._httpsRedirect = value;
   }
   public resetHttpsRedirect() {
@@ -6065,11 +6065,11 @@ export class ComputeRegionUrlMapPathMatcherDefaultUrlRedirectOutputReference ext
   }
 
   // strip_query - computed: false, optional: false, required: true
-  private _stripQuery?: boolean | cdktf.IResolvable; 
+  private _stripQuery?: boolean | cdktn.IResolvable; 
   public get stripQuery() {
     return this.getBooleanAttribute('strip_query');
   }
-  public set stripQuery(value: boolean | cdktf.IResolvable) {
+  public set stripQuery(value: boolean | cdktn.IResolvable) {
     this._stripQuery = value;
   }
   // Temporarily expose input value. Use with caution.
@@ -6085,7 +6085,7 @@ export interface ComputeRegionUrlMapPathMatcherPathRuleRouteActionCorsPolicy {
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_region_url_map#allow_credentials ComputeRegionUrlMap#allow_credentials}
   */
-  readonly allowCredentials?: boolean | cdktf.IResolvable;
+  readonly allowCredentials?: boolean | cdktn.IResolvable;
   /**
   * Specifies the content for the Access-Control-Allow-Headers header.
   *
@@ -6118,7 +6118,7 @@ export interface ComputeRegionUrlMapPathMatcherPathRuleRouteActionCorsPolicy {
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_region_url_map#disabled ComputeRegionUrlMap#disabled}
   */
-  readonly disabled: boolean | cdktf.IResolvable;
+  readonly disabled: boolean | cdktn.IResolvable;
   /**
   * Specifies the content for the Access-Control-Expose-Headers header.
   *
@@ -6135,73 +6135,73 @@ export interface ComputeRegionUrlMapPathMatcherPathRuleRouteActionCorsPolicy {
 }
 
 export function computeRegionUrlMapPathMatcherPathRuleRouteActionCorsPolicyToTerraform(struct?: ComputeRegionUrlMapPathMatcherPathRuleRouteActionCorsPolicyOutputReference | ComputeRegionUrlMapPathMatcherPathRuleRouteActionCorsPolicy): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    allow_credentials: cdktf.booleanToTerraform(struct!.allowCredentials),
-    allow_headers: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.allowHeaders),
-    allow_methods: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.allowMethods),
-    allow_origin_regexes: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.allowOriginRegexes),
-    allow_origins: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.allowOrigins),
-    disabled: cdktf.booleanToTerraform(struct!.disabled),
-    expose_headers: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.exposeHeaders),
-    max_age: cdktf.numberToTerraform(struct!.maxAge),
+    allow_credentials: cdktn.booleanToTerraform(struct!.allowCredentials),
+    allow_headers: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.allowHeaders),
+    allow_methods: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.allowMethods),
+    allow_origin_regexes: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.allowOriginRegexes),
+    allow_origins: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.allowOrigins),
+    disabled: cdktn.booleanToTerraform(struct!.disabled),
+    expose_headers: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.exposeHeaders),
+    max_age: cdktn.numberToTerraform(struct!.maxAge),
   }
 }
 
 
 export function computeRegionUrlMapPathMatcherPathRuleRouteActionCorsPolicyToHclTerraform(struct?: ComputeRegionUrlMapPathMatcherPathRuleRouteActionCorsPolicyOutputReference | ComputeRegionUrlMapPathMatcherPathRuleRouteActionCorsPolicy): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     allow_credentials: {
-      value: cdktf.booleanToHclTerraform(struct!.allowCredentials),
+      value: cdktn.booleanToHclTerraform(struct!.allowCredentials),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     allow_headers: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.allowHeaders),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.allowHeaders),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
     },
     allow_methods: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.allowMethods),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.allowMethods),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
     },
     allow_origin_regexes: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.allowOriginRegexes),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.allowOriginRegexes),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
     },
     allow_origins: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.allowOrigins),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.allowOrigins),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
     },
     disabled: {
-      value: cdktf.booleanToHclTerraform(struct!.disabled),
+      value: cdktn.booleanToHclTerraform(struct!.disabled),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     expose_headers: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.exposeHeaders),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.exposeHeaders),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
     },
     max_age: {
-      value: cdktf.numberToHclTerraform(struct!.maxAge),
+      value: cdktn.numberToHclTerraform(struct!.maxAge),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
@@ -6212,14 +6212,14 @@ export function computeRegionUrlMapPathMatcherPathRuleRouteActionCorsPolicyToHcl
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class ComputeRegionUrlMapPathMatcherPathRuleRouteActionCorsPolicyOutputReference extends cdktf.ComplexObject {
+export class ComputeRegionUrlMapPathMatcherPathRuleRouteActionCorsPolicyOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -6287,11 +6287,11 @@ export class ComputeRegionUrlMapPathMatcherPathRuleRouteActionCorsPolicyOutputRe
   }
 
   // allow_credentials - computed: false, optional: true, required: false
-  private _allowCredentials?: boolean | cdktf.IResolvable; 
+  private _allowCredentials?: boolean | cdktn.IResolvable; 
   public get allowCredentials() {
     return this.getBooleanAttribute('allow_credentials');
   }
-  public set allowCredentials(value: boolean | cdktf.IResolvable) {
+  public set allowCredentials(value: boolean | cdktn.IResolvable) {
     this._allowCredentials = value;
   }
   public resetAllowCredentials() {
@@ -6367,11 +6367,11 @@ export class ComputeRegionUrlMapPathMatcherPathRuleRouteActionCorsPolicyOutputRe
   }
 
   // disabled - computed: false, optional: false, required: true
-  private _disabled?: boolean | cdktf.IResolvable; 
+  private _disabled?: boolean | cdktn.IResolvable; 
   public get disabled() {
     return this.getBooleanAttribute('disabled');
   }
-  public set disabled(value: boolean | cdktf.IResolvable) {
+  public set disabled(value: boolean | cdktn.IResolvable) {
     this._disabled = value;
   }
   // Temporarily expose input value. Use with caution.
@@ -6430,31 +6430,31 @@ export interface ComputeRegionUrlMapPathMatcherPathRuleRouteActionFaultInjection
 }
 
 export function computeRegionUrlMapPathMatcherPathRuleRouteActionFaultInjectionPolicyAbortToTerraform(struct?: ComputeRegionUrlMapPathMatcherPathRuleRouteActionFaultInjectionPolicyAbortOutputReference | ComputeRegionUrlMapPathMatcherPathRuleRouteActionFaultInjectionPolicyAbort): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    http_status: cdktf.numberToTerraform(struct!.httpStatus),
-    percentage: cdktf.numberToTerraform(struct!.percentage),
+    http_status: cdktn.numberToTerraform(struct!.httpStatus),
+    percentage: cdktn.numberToTerraform(struct!.percentage),
   }
 }
 
 
 export function computeRegionUrlMapPathMatcherPathRuleRouteActionFaultInjectionPolicyAbortToHclTerraform(struct?: ComputeRegionUrlMapPathMatcherPathRuleRouteActionFaultInjectionPolicyAbortOutputReference | ComputeRegionUrlMapPathMatcherPathRuleRouteActionFaultInjectionPolicyAbort): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     http_status: {
-      value: cdktf.numberToHclTerraform(struct!.httpStatus),
+      value: cdktn.numberToHclTerraform(struct!.httpStatus),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     percentage: {
-      value: cdktf.numberToHclTerraform(struct!.percentage),
+      value: cdktn.numberToHclTerraform(struct!.percentage),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
@@ -6465,14 +6465,14 @@ export function computeRegionUrlMapPathMatcherPathRuleRouteActionFaultInjectionP
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class ComputeRegionUrlMapPathMatcherPathRuleRouteActionFaultInjectionPolicyAbortOutputReference extends cdktf.ComplexObject {
+export class ComputeRegionUrlMapPathMatcherPathRuleRouteActionFaultInjectionPolicyAbortOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -6548,31 +6548,31 @@ export interface ComputeRegionUrlMapPathMatcherPathRuleRouteActionFaultInjection
 }
 
 export function computeRegionUrlMapPathMatcherPathRuleRouteActionFaultInjectionPolicyDelayFixedDelayToTerraform(struct?: ComputeRegionUrlMapPathMatcherPathRuleRouteActionFaultInjectionPolicyDelayFixedDelayOutputReference | ComputeRegionUrlMapPathMatcherPathRuleRouteActionFaultInjectionPolicyDelayFixedDelay): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    nanos: cdktf.numberToTerraform(struct!.nanos),
-    seconds: cdktf.stringToTerraform(struct!.seconds),
+    nanos: cdktn.numberToTerraform(struct!.nanos),
+    seconds: cdktn.stringToTerraform(struct!.seconds),
   }
 }
 
 
 export function computeRegionUrlMapPathMatcherPathRuleRouteActionFaultInjectionPolicyDelayFixedDelayToHclTerraform(struct?: ComputeRegionUrlMapPathMatcherPathRuleRouteActionFaultInjectionPolicyDelayFixedDelayOutputReference | ComputeRegionUrlMapPathMatcherPathRuleRouteActionFaultInjectionPolicyDelayFixedDelay): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     nanos: {
-      value: cdktf.numberToHclTerraform(struct!.nanos),
+      value: cdktn.numberToHclTerraform(struct!.nanos),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     seconds: {
-      value: cdktf.stringToHclTerraform(struct!.seconds),
+      value: cdktn.stringToHclTerraform(struct!.seconds),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -6583,14 +6583,14 @@ export function computeRegionUrlMapPathMatcherPathRuleRouteActionFaultInjectionP
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class ComputeRegionUrlMapPathMatcherPathRuleRouteActionFaultInjectionPolicyDelayFixedDelayOutputReference extends cdktf.ComplexObject {
+export class ComputeRegionUrlMapPathMatcherPathRuleRouteActionFaultInjectionPolicyDelayFixedDelayOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -6668,25 +6668,25 @@ export interface ComputeRegionUrlMapPathMatcherPathRuleRouteActionFaultInjection
 }
 
 export function computeRegionUrlMapPathMatcherPathRuleRouteActionFaultInjectionPolicyDelayToTerraform(struct?: ComputeRegionUrlMapPathMatcherPathRuleRouteActionFaultInjectionPolicyDelayOutputReference | ComputeRegionUrlMapPathMatcherPathRuleRouteActionFaultInjectionPolicyDelay): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    percentage: cdktf.numberToTerraform(struct!.percentage),
+    percentage: cdktn.numberToTerraform(struct!.percentage),
     fixed_delay: computeRegionUrlMapPathMatcherPathRuleRouteActionFaultInjectionPolicyDelayFixedDelayToTerraform(struct!.fixedDelay),
   }
 }
 
 
 export function computeRegionUrlMapPathMatcherPathRuleRouteActionFaultInjectionPolicyDelayToHclTerraform(struct?: ComputeRegionUrlMapPathMatcherPathRuleRouteActionFaultInjectionPolicyDelayOutputReference | ComputeRegionUrlMapPathMatcherPathRuleRouteActionFaultInjectionPolicyDelay): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     percentage: {
-      value: cdktf.numberToHclTerraform(struct!.percentage),
+      value: cdktn.numberToHclTerraform(struct!.percentage),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
@@ -6703,14 +6703,14 @@ export function computeRegionUrlMapPathMatcherPathRuleRouteActionFaultInjectionP
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class ComputeRegionUrlMapPathMatcherPathRuleRouteActionFaultInjectionPolicyDelayOutputReference extends cdktf.ComplexObject {
+export class ComputeRegionUrlMapPathMatcherPathRuleRouteActionFaultInjectionPolicyDelayOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -6783,8 +6783,8 @@ export interface ComputeRegionUrlMapPathMatcherPathRuleRouteActionFaultInjection
 }
 
 export function computeRegionUrlMapPathMatcherPathRuleRouteActionFaultInjectionPolicyToTerraform(struct?: ComputeRegionUrlMapPathMatcherPathRuleRouteActionFaultInjectionPolicyOutputReference | ComputeRegionUrlMapPathMatcherPathRuleRouteActionFaultInjectionPolicy): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -6795,8 +6795,8 @@ export function computeRegionUrlMapPathMatcherPathRuleRouteActionFaultInjectionP
 
 
 export function computeRegionUrlMapPathMatcherPathRuleRouteActionFaultInjectionPolicyToHclTerraform(struct?: ComputeRegionUrlMapPathMatcherPathRuleRouteActionFaultInjectionPolicyOutputReference | ComputeRegionUrlMapPathMatcherPathRuleRouteActionFaultInjectionPolicy): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -6818,14 +6818,14 @@ export function computeRegionUrlMapPathMatcherPathRuleRouteActionFaultInjectionP
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class ComputeRegionUrlMapPathMatcherPathRuleRouteActionFaultInjectionPolicyOutputReference extends cdktf.ComplexObject {
+export class ComputeRegionUrlMapPathMatcherPathRuleRouteActionFaultInjectionPolicyOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -6898,24 +6898,24 @@ export interface ComputeRegionUrlMapPathMatcherPathRuleRouteActionRequestMirrorP
 }
 
 export function computeRegionUrlMapPathMatcherPathRuleRouteActionRequestMirrorPolicyToTerraform(struct?: ComputeRegionUrlMapPathMatcherPathRuleRouteActionRequestMirrorPolicyOutputReference | ComputeRegionUrlMapPathMatcherPathRuleRouteActionRequestMirrorPolicy): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    backend_service: cdktf.stringToTerraform(struct!.backendService),
+    backend_service: cdktn.stringToTerraform(struct!.backendService),
   }
 }
 
 
 export function computeRegionUrlMapPathMatcherPathRuleRouteActionRequestMirrorPolicyToHclTerraform(struct?: ComputeRegionUrlMapPathMatcherPathRuleRouteActionRequestMirrorPolicyOutputReference | ComputeRegionUrlMapPathMatcherPathRuleRouteActionRequestMirrorPolicy): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     backend_service: {
-      value: cdktf.stringToHclTerraform(struct!.backendService),
+      value: cdktn.stringToHclTerraform(struct!.backendService),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -6926,14 +6926,14 @@ export function computeRegionUrlMapPathMatcherPathRuleRouteActionRequestMirrorPo
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class ComputeRegionUrlMapPathMatcherPathRuleRouteActionRequestMirrorPolicyOutputReference extends cdktf.ComplexObject {
+export class ComputeRegionUrlMapPathMatcherPathRuleRouteActionRequestMirrorPolicyOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -6990,31 +6990,31 @@ export interface ComputeRegionUrlMapPathMatcherPathRuleRouteActionRetryPolicyPer
 }
 
 export function computeRegionUrlMapPathMatcherPathRuleRouteActionRetryPolicyPerTryTimeoutToTerraform(struct?: ComputeRegionUrlMapPathMatcherPathRuleRouteActionRetryPolicyPerTryTimeoutOutputReference | ComputeRegionUrlMapPathMatcherPathRuleRouteActionRetryPolicyPerTryTimeout): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    nanos: cdktf.numberToTerraform(struct!.nanos),
-    seconds: cdktf.stringToTerraform(struct!.seconds),
+    nanos: cdktn.numberToTerraform(struct!.nanos),
+    seconds: cdktn.stringToTerraform(struct!.seconds),
   }
 }
 
 
 export function computeRegionUrlMapPathMatcherPathRuleRouteActionRetryPolicyPerTryTimeoutToHclTerraform(struct?: ComputeRegionUrlMapPathMatcherPathRuleRouteActionRetryPolicyPerTryTimeoutOutputReference | ComputeRegionUrlMapPathMatcherPathRuleRouteActionRetryPolicyPerTryTimeout): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     nanos: {
-      value: cdktf.numberToHclTerraform(struct!.nanos),
+      value: cdktn.numberToHclTerraform(struct!.nanos),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     seconds: {
-      value: cdktf.stringToHclTerraform(struct!.seconds),
+      value: cdktn.stringToHclTerraform(struct!.seconds),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -7025,14 +7025,14 @@ export function computeRegionUrlMapPathMatcherPathRuleRouteActionRetryPolicyPerT
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class ComputeRegionUrlMapPathMatcherPathRuleRouteActionRetryPolicyPerTryTimeoutOutputReference extends cdktf.ComplexObject {
+export class ComputeRegionUrlMapPathMatcherPathRuleRouteActionRetryPolicyPerTryTimeoutOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -7135,32 +7135,32 @@ export interface ComputeRegionUrlMapPathMatcherPathRuleRouteActionRetryPolicy {
 }
 
 export function computeRegionUrlMapPathMatcherPathRuleRouteActionRetryPolicyToTerraform(struct?: ComputeRegionUrlMapPathMatcherPathRuleRouteActionRetryPolicyOutputReference | ComputeRegionUrlMapPathMatcherPathRuleRouteActionRetryPolicy): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    num_retries: cdktf.numberToTerraform(struct!.numRetries),
-    retry_conditions: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.retryConditions),
+    num_retries: cdktn.numberToTerraform(struct!.numRetries),
+    retry_conditions: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.retryConditions),
     per_try_timeout: computeRegionUrlMapPathMatcherPathRuleRouteActionRetryPolicyPerTryTimeoutToTerraform(struct!.perTryTimeout),
   }
 }
 
 
 export function computeRegionUrlMapPathMatcherPathRuleRouteActionRetryPolicyToHclTerraform(struct?: ComputeRegionUrlMapPathMatcherPathRuleRouteActionRetryPolicyOutputReference | ComputeRegionUrlMapPathMatcherPathRuleRouteActionRetryPolicy): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     num_retries: {
-      value: cdktf.numberToHclTerraform(struct!.numRetries),
+      value: cdktn.numberToHclTerraform(struct!.numRetries),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     retry_conditions: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.retryConditions),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.retryConditions),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
@@ -7177,14 +7177,14 @@ export function computeRegionUrlMapPathMatcherPathRuleRouteActionRetryPolicyToHc
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class ComputeRegionUrlMapPathMatcherPathRuleRouteActionRetryPolicyOutputReference extends cdktf.ComplexObject {
+export class ComputeRegionUrlMapPathMatcherPathRuleRouteActionRetryPolicyOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -7288,31 +7288,31 @@ export interface ComputeRegionUrlMapPathMatcherPathRuleRouteActionTimeout {
 }
 
 export function computeRegionUrlMapPathMatcherPathRuleRouteActionTimeoutToTerraform(struct?: ComputeRegionUrlMapPathMatcherPathRuleRouteActionTimeoutOutputReference | ComputeRegionUrlMapPathMatcherPathRuleRouteActionTimeout): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    nanos: cdktf.numberToTerraform(struct!.nanos),
-    seconds: cdktf.stringToTerraform(struct!.seconds),
+    nanos: cdktn.numberToTerraform(struct!.nanos),
+    seconds: cdktn.stringToTerraform(struct!.seconds),
   }
 }
 
 
 export function computeRegionUrlMapPathMatcherPathRuleRouteActionTimeoutToHclTerraform(struct?: ComputeRegionUrlMapPathMatcherPathRuleRouteActionTimeoutOutputReference | ComputeRegionUrlMapPathMatcherPathRuleRouteActionTimeout): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     nanos: {
-      value: cdktf.numberToHclTerraform(struct!.nanos),
+      value: cdktn.numberToHclTerraform(struct!.nanos),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     seconds: {
-      value: cdktf.stringToHclTerraform(struct!.seconds),
+      value: cdktn.stringToHclTerraform(struct!.seconds),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -7323,14 +7323,14 @@ export function computeRegionUrlMapPathMatcherPathRuleRouteActionTimeoutToHclTer
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class ComputeRegionUrlMapPathMatcherPathRuleRouteActionTimeoutOutputReference extends cdktf.ComplexObject {
+export class ComputeRegionUrlMapPathMatcherPathRuleRouteActionTimeoutOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -7410,31 +7410,31 @@ export interface ComputeRegionUrlMapPathMatcherPathRuleRouteActionUrlRewrite {
 }
 
 export function computeRegionUrlMapPathMatcherPathRuleRouteActionUrlRewriteToTerraform(struct?: ComputeRegionUrlMapPathMatcherPathRuleRouteActionUrlRewriteOutputReference | ComputeRegionUrlMapPathMatcherPathRuleRouteActionUrlRewrite): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    host_rewrite: cdktf.stringToTerraform(struct!.hostRewrite),
-    path_prefix_rewrite: cdktf.stringToTerraform(struct!.pathPrefixRewrite),
+    host_rewrite: cdktn.stringToTerraform(struct!.hostRewrite),
+    path_prefix_rewrite: cdktn.stringToTerraform(struct!.pathPrefixRewrite),
   }
 }
 
 
 export function computeRegionUrlMapPathMatcherPathRuleRouteActionUrlRewriteToHclTerraform(struct?: ComputeRegionUrlMapPathMatcherPathRuleRouteActionUrlRewriteOutputReference | ComputeRegionUrlMapPathMatcherPathRuleRouteActionUrlRewrite): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     host_rewrite: {
-      value: cdktf.stringToHclTerraform(struct!.hostRewrite),
+      value: cdktn.stringToHclTerraform(struct!.hostRewrite),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     path_prefix_rewrite: {
-      value: cdktf.stringToHclTerraform(struct!.pathPrefixRewrite),
+      value: cdktn.stringToHclTerraform(struct!.pathPrefixRewrite),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -7445,14 +7445,14 @@ export function computeRegionUrlMapPathMatcherPathRuleRouteActionUrlRewriteToHcl
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class ComputeRegionUrlMapPathMatcherPathRuleRouteActionUrlRewriteOutputReference extends cdktf.ComplexObject {
+export class ComputeRegionUrlMapPathMatcherPathRuleRouteActionUrlRewriteOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -7535,42 +7535,42 @@ export interface ComputeRegionUrlMapPathMatcherPathRuleRouteActionWeightedBacken
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_region_url_map#replace ComputeRegionUrlMap#replace}
   */
-  readonly replace: boolean | cdktf.IResolvable;
+  readonly replace: boolean | cdktn.IResolvable;
 }
 
-export function computeRegionUrlMapPathMatcherPathRuleRouteActionWeightedBackendServicesHeaderActionRequestHeadersToAddToTerraform(struct?: ComputeRegionUrlMapPathMatcherPathRuleRouteActionWeightedBackendServicesHeaderActionRequestHeadersToAdd | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function computeRegionUrlMapPathMatcherPathRuleRouteActionWeightedBackendServicesHeaderActionRequestHeadersToAddToTerraform(struct?: ComputeRegionUrlMapPathMatcherPathRuleRouteActionWeightedBackendServicesHeaderActionRequestHeadersToAdd | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    header_name: cdktf.stringToTerraform(struct!.headerName),
-    header_value: cdktf.stringToTerraform(struct!.headerValue),
-    replace: cdktf.booleanToTerraform(struct!.replace),
+    header_name: cdktn.stringToTerraform(struct!.headerName),
+    header_value: cdktn.stringToTerraform(struct!.headerValue),
+    replace: cdktn.booleanToTerraform(struct!.replace),
   }
 }
 
 
-export function computeRegionUrlMapPathMatcherPathRuleRouteActionWeightedBackendServicesHeaderActionRequestHeadersToAddToHclTerraform(struct?: ComputeRegionUrlMapPathMatcherPathRuleRouteActionWeightedBackendServicesHeaderActionRequestHeadersToAdd | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function computeRegionUrlMapPathMatcherPathRuleRouteActionWeightedBackendServicesHeaderActionRequestHeadersToAddToHclTerraform(struct?: ComputeRegionUrlMapPathMatcherPathRuleRouteActionWeightedBackendServicesHeaderActionRequestHeadersToAdd | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     header_name: {
-      value: cdktf.stringToHclTerraform(struct!.headerName),
+      value: cdktn.stringToHclTerraform(struct!.headerName),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     header_value: {
-      value: cdktf.stringToHclTerraform(struct!.headerValue),
+      value: cdktn.stringToHclTerraform(struct!.headerValue),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     replace: {
-      value: cdktf.booleanToHclTerraform(struct!.replace),
+      value: cdktn.booleanToHclTerraform(struct!.replace),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
@@ -7581,9 +7581,9 @@ export function computeRegionUrlMapPathMatcherPathRuleRouteActionWeightedBackend
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class ComputeRegionUrlMapPathMatcherPathRuleRouteActionWeightedBackendServicesHeaderActionRequestHeadersToAddOutputReference extends cdktf.ComplexObject {
+export class ComputeRegionUrlMapPathMatcherPathRuleRouteActionWeightedBackendServicesHeaderActionRequestHeadersToAddOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -7591,11 +7591,11 @@ export class ComputeRegionUrlMapPathMatcherPathRuleRouteActionWeightedBackendSer
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): ComputeRegionUrlMapPathMatcherPathRuleRouteActionWeightedBackendServicesHeaderActionRequestHeadersToAdd | cdktf.IResolvable | undefined {
+  public get internalValue(): ComputeRegionUrlMapPathMatcherPathRuleRouteActionWeightedBackendServicesHeaderActionRequestHeadersToAdd | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -7616,7 +7616,7 @@ export class ComputeRegionUrlMapPathMatcherPathRuleRouteActionWeightedBackendSer
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: ComputeRegionUrlMapPathMatcherPathRuleRouteActionWeightedBackendServicesHeaderActionRequestHeadersToAdd | cdktf.IResolvable | undefined) {
+  public set internalValue(value: ComputeRegionUrlMapPathMatcherPathRuleRouteActionWeightedBackendServicesHeaderActionRequestHeadersToAdd | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -7624,7 +7624,7 @@ export class ComputeRegionUrlMapPathMatcherPathRuleRouteActionWeightedBackendSer
       this._headerValue = undefined;
       this._replace = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -7664,11 +7664,11 @@ export class ComputeRegionUrlMapPathMatcherPathRuleRouteActionWeightedBackendSer
   }
 
   // replace - computed: false, optional: false, required: true
-  private _replace?: boolean | cdktf.IResolvable; 
+  private _replace?: boolean | cdktn.IResolvable; 
   public get replace() {
     return this.getBooleanAttribute('replace');
   }
-  public set replace(value: boolean | cdktf.IResolvable) {
+  public set replace(value: boolean | cdktn.IResolvable) {
     this._replace = value;
   }
   // Temporarily expose input value. Use with caution.
@@ -7677,15 +7677,15 @@ export class ComputeRegionUrlMapPathMatcherPathRuleRouteActionWeightedBackendSer
   }
 }
 
-export class ComputeRegionUrlMapPathMatcherPathRuleRouteActionWeightedBackendServicesHeaderActionRequestHeadersToAddList extends cdktf.ComplexList {
-  public internalValue? : ComputeRegionUrlMapPathMatcherPathRuleRouteActionWeightedBackendServicesHeaderActionRequestHeadersToAdd[] | cdktf.IResolvable
+export class ComputeRegionUrlMapPathMatcherPathRuleRouteActionWeightedBackendServicesHeaderActionRequestHeadersToAddList extends cdktn.ComplexList {
+  public internalValue? : ComputeRegionUrlMapPathMatcherPathRuleRouteActionWeightedBackendServicesHeaderActionRequestHeadersToAdd[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -7716,42 +7716,42 @@ export interface ComputeRegionUrlMapPathMatcherPathRuleRouteActionWeightedBacken
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_region_url_map#replace ComputeRegionUrlMap#replace}
   */
-  readonly replace: boolean | cdktf.IResolvable;
+  readonly replace: boolean | cdktn.IResolvable;
 }
 
-export function computeRegionUrlMapPathMatcherPathRuleRouteActionWeightedBackendServicesHeaderActionResponseHeadersToAddToTerraform(struct?: ComputeRegionUrlMapPathMatcherPathRuleRouteActionWeightedBackendServicesHeaderActionResponseHeadersToAdd | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function computeRegionUrlMapPathMatcherPathRuleRouteActionWeightedBackendServicesHeaderActionResponseHeadersToAddToTerraform(struct?: ComputeRegionUrlMapPathMatcherPathRuleRouteActionWeightedBackendServicesHeaderActionResponseHeadersToAdd | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    header_name: cdktf.stringToTerraform(struct!.headerName),
-    header_value: cdktf.stringToTerraform(struct!.headerValue),
-    replace: cdktf.booleanToTerraform(struct!.replace),
+    header_name: cdktn.stringToTerraform(struct!.headerName),
+    header_value: cdktn.stringToTerraform(struct!.headerValue),
+    replace: cdktn.booleanToTerraform(struct!.replace),
   }
 }
 
 
-export function computeRegionUrlMapPathMatcherPathRuleRouteActionWeightedBackendServicesHeaderActionResponseHeadersToAddToHclTerraform(struct?: ComputeRegionUrlMapPathMatcherPathRuleRouteActionWeightedBackendServicesHeaderActionResponseHeadersToAdd | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function computeRegionUrlMapPathMatcherPathRuleRouteActionWeightedBackendServicesHeaderActionResponseHeadersToAddToHclTerraform(struct?: ComputeRegionUrlMapPathMatcherPathRuleRouteActionWeightedBackendServicesHeaderActionResponseHeadersToAdd | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     header_name: {
-      value: cdktf.stringToHclTerraform(struct!.headerName),
+      value: cdktn.stringToHclTerraform(struct!.headerName),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     header_value: {
-      value: cdktf.stringToHclTerraform(struct!.headerValue),
+      value: cdktn.stringToHclTerraform(struct!.headerValue),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     replace: {
-      value: cdktf.booleanToHclTerraform(struct!.replace),
+      value: cdktn.booleanToHclTerraform(struct!.replace),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
@@ -7762,9 +7762,9 @@ export function computeRegionUrlMapPathMatcherPathRuleRouteActionWeightedBackend
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class ComputeRegionUrlMapPathMatcherPathRuleRouteActionWeightedBackendServicesHeaderActionResponseHeadersToAddOutputReference extends cdktf.ComplexObject {
+export class ComputeRegionUrlMapPathMatcherPathRuleRouteActionWeightedBackendServicesHeaderActionResponseHeadersToAddOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -7772,11 +7772,11 @@ export class ComputeRegionUrlMapPathMatcherPathRuleRouteActionWeightedBackendSer
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): ComputeRegionUrlMapPathMatcherPathRuleRouteActionWeightedBackendServicesHeaderActionResponseHeadersToAdd | cdktf.IResolvable | undefined {
+  public get internalValue(): ComputeRegionUrlMapPathMatcherPathRuleRouteActionWeightedBackendServicesHeaderActionResponseHeadersToAdd | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -7797,7 +7797,7 @@ export class ComputeRegionUrlMapPathMatcherPathRuleRouteActionWeightedBackendSer
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: ComputeRegionUrlMapPathMatcherPathRuleRouteActionWeightedBackendServicesHeaderActionResponseHeadersToAdd | cdktf.IResolvable | undefined) {
+  public set internalValue(value: ComputeRegionUrlMapPathMatcherPathRuleRouteActionWeightedBackendServicesHeaderActionResponseHeadersToAdd | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -7805,7 +7805,7 @@ export class ComputeRegionUrlMapPathMatcherPathRuleRouteActionWeightedBackendSer
       this._headerValue = undefined;
       this._replace = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -7845,11 +7845,11 @@ export class ComputeRegionUrlMapPathMatcherPathRuleRouteActionWeightedBackendSer
   }
 
   // replace - computed: false, optional: false, required: true
-  private _replace?: boolean | cdktf.IResolvable; 
+  private _replace?: boolean | cdktn.IResolvable; 
   public get replace() {
     return this.getBooleanAttribute('replace');
   }
-  public set replace(value: boolean | cdktf.IResolvable) {
+  public set replace(value: boolean | cdktn.IResolvable) {
     this._replace = value;
   }
   // Temporarily expose input value. Use with caution.
@@ -7858,15 +7858,15 @@ export class ComputeRegionUrlMapPathMatcherPathRuleRouteActionWeightedBackendSer
   }
 }
 
-export class ComputeRegionUrlMapPathMatcherPathRuleRouteActionWeightedBackendServicesHeaderActionResponseHeadersToAddList extends cdktf.ComplexList {
-  public internalValue? : ComputeRegionUrlMapPathMatcherPathRuleRouteActionWeightedBackendServicesHeaderActionResponseHeadersToAdd[] | cdktf.IResolvable
+export class ComputeRegionUrlMapPathMatcherPathRuleRouteActionWeightedBackendServicesHeaderActionResponseHeadersToAddList extends cdktn.ComplexList {
+  public internalValue? : ComputeRegionUrlMapPathMatcherPathRuleRouteActionWeightedBackendServicesHeaderActionResponseHeadersToAdd[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -7897,55 +7897,55 @@ export interface ComputeRegionUrlMapPathMatcherPathRuleRouteActionWeightedBacken
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_region_url_map#request_headers_to_add ComputeRegionUrlMap#request_headers_to_add}
   */
-  readonly requestHeadersToAdd?: ComputeRegionUrlMapPathMatcherPathRuleRouteActionWeightedBackendServicesHeaderActionRequestHeadersToAdd[] | cdktf.IResolvable;
+  readonly requestHeadersToAdd?: ComputeRegionUrlMapPathMatcherPathRuleRouteActionWeightedBackendServicesHeaderActionRequestHeadersToAdd[] | cdktn.IResolvable;
   /**
   * response_headers_to_add block
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_region_url_map#response_headers_to_add ComputeRegionUrlMap#response_headers_to_add}
   */
-  readonly responseHeadersToAdd?: ComputeRegionUrlMapPathMatcherPathRuleRouteActionWeightedBackendServicesHeaderActionResponseHeadersToAdd[] | cdktf.IResolvable;
+  readonly responseHeadersToAdd?: ComputeRegionUrlMapPathMatcherPathRuleRouteActionWeightedBackendServicesHeaderActionResponseHeadersToAdd[] | cdktn.IResolvable;
 }
 
 export function computeRegionUrlMapPathMatcherPathRuleRouteActionWeightedBackendServicesHeaderActionToTerraform(struct?: ComputeRegionUrlMapPathMatcherPathRuleRouteActionWeightedBackendServicesHeaderActionOutputReference | ComputeRegionUrlMapPathMatcherPathRuleRouteActionWeightedBackendServicesHeaderAction): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    request_headers_to_remove: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.requestHeadersToRemove),
-    response_headers_to_remove: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.responseHeadersToRemove),
-    request_headers_to_add: cdktf.listMapper(computeRegionUrlMapPathMatcherPathRuleRouteActionWeightedBackendServicesHeaderActionRequestHeadersToAddToTerraform, true)(struct!.requestHeadersToAdd),
-    response_headers_to_add: cdktf.listMapper(computeRegionUrlMapPathMatcherPathRuleRouteActionWeightedBackendServicesHeaderActionResponseHeadersToAddToTerraform, true)(struct!.responseHeadersToAdd),
+    request_headers_to_remove: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.requestHeadersToRemove),
+    response_headers_to_remove: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.responseHeadersToRemove),
+    request_headers_to_add: cdktn.listMapper(computeRegionUrlMapPathMatcherPathRuleRouteActionWeightedBackendServicesHeaderActionRequestHeadersToAddToTerraform, true)(struct!.requestHeadersToAdd),
+    response_headers_to_add: cdktn.listMapper(computeRegionUrlMapPathMatcherPathRuleRouteActionWeightedBackendServicesHeaderActionResponseHeadersToAddToTerraform, true)(struct!.responseHeadersToAdd),
   }
 }
 
 
 export function computeRegionUrlMapPathMatcherPathRuleRouteActionWeightedBackendServicesHeaderActionToHclTerraform(struct?: ComputeRegionUrlMapPathMatcherPathRuleRouteActionWeightedBackendServicesHeaderActionOutputReference | ComputeRegionUrlMapPathMatcherPathRuleRouteActionWeightedBackendServicesHeaderAction): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     request_headers_to_remove: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.requestHeadersToRemove),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.requestHeadersToRemove),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
     },
     response_headers_to_remove: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.responseHeadersToRemove),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.responseHeadersToRemove),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
     },
     request_headers_to_add: {
-      value: cdktf.listMapperHcl(computeRegionUrlMapPathMatcherPathRuleRouteActionWeightedBackendServicesHeaderActionRequestHeadersToAddToHclTerraform, true)(struct!.requestHeadersToAdd),
+      value: cdktn.listMapperHcl(computeRegionUrlMapPathMatcherPathRuleRouteActionWeightedBackendServicesHeaderActionRequestHeadersToAddToHclTerraform, true)(struct!.requestHeadersToAdd),
       isBlock: true,
       type: "list",
       storageClassType: "ComputeRegionUrlMapPathMatcherPathRuleRouteActionWeightedBackendServicesHeaderActionRequestHeadersToAddList",
     },
     response_headers_to_add: {
-      value: cdktf.listMapperHcl(computeRegionUrlMapPathMatcherPathRuleRouteActionWeightedBackendServicesHeaderActionResponseHeadersToAddToHclTerraform, true)(struct!.responseHeadersToAdd),
+      value: cdktn.listMapperHcl(computeRegionUrlMapPathMatcherPathRuleRouteActionWeightedBackendServicesHeaderActionResponseHeadersToAddToHclTerraform, true)(struct!.responseHeadersToAdd),
       isBlock: true,
       type: "list",
       storageClassType: "ComputeRegionUrlMapPathMatcherPathRuleRouteActionWeightedBackendServicesHeaderActionResponseHeadersToAddList",
@@ -7956,14 +7956,14 @@ export function computeRegionUrlMapPathMatcherPathRuleRouteActionWeightedBackend
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class ComputeRegionUrlMapPathMatcherPathRuleRouteActionWeightedBackendServicesHeaderActionOutputReference extends cdktf.ComplexObject {
+export class ComputeRegionUrlMapPathMatcherPathRuleRouteActionWeightedBackendServicesHeaderActionOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -8043,7 +8043,7 @@ export class ComputeRegionUrlMapPathMatcherPathRuleRouteActionWeightedBackendSer
   public get requestHeadersToAdd() {
     return this._requestHeadersToAdd;
   }
-  public putRequestHeadersToAdd(value: ComputeRegionUrlMapPathMatcherPathRuleRouteActionWeightedBackendServicesHeaderActionRequestHeadersToAdd[] | cdktf.IResolvable) {
+  public putRequestHeadersToAdd(value: ComputeRegionUrlMapPathMatcherPathRuleRouteActionWeightedBackendServicesHeaderActionRequestHeadersToAdd[] | cdktn.IResolvable) {
     this._requestHeadersToAdd.internalValue = value;
   }
   public resetRequestHeadersToAdd() {
@@ -8059,7 +8059,7 @@ export class ComputeRegionUrlMapPathMatcherPathRuleRouteActionWeightedBackendSer
   public get responseHeadersToAdd() {
     return this._responseHeadersToAdd;
   }
-  public putResponseHeadersToAdd(value: ComputeRegionUrlMapPathMatcherPathRuleRouteActionWeightedBackendServicesHeaderActionResponseHeadersToAdd[] | cdktf.IResolvable) {
+  public putResponseHeadersToAdd(value: ComputeRegionUrlMapPathMatcherPathRuleRouteActionWeightedBackendServicesHeaderActionResponseHeadersToAdd[] | cdktn.IResolvable) {
     this._responseHeadersToAdd.internalValue = value;
   }
   public resetResponseHeadersToAdd() {
@@ -8098,33 +8098,33 @@ export interface ComputeRegionUrlMapPathMatcherPathRuleRouteActionWeightedBacken
   readonly headerAction?: ComputeRegionUrlMapPathMatcherPathRuleRouteActionWeightedBackendServicesHeaderAction;
 }
 
-export function computeRegionUrlMapPathMatcherPathRuleRouteActionWeightedBackendServicesToTerraform(struct?: ComputeRegionUrlMapPathMatcherPathRuleRouteActionWeightedBackendServices | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function computeRegionUrlMapPathMatcherPathRuleRouteActionWeightedBackendServicesToTerraform(struct?: ComputeRegionUrlMapPathMatcherPathRuleRouteActionWeightedBackendServices | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    backend_service: cdktf.stringToTerraform(struct!.backendService),
-    weight: cdktf.numberToTerraform(struct!.weight),
+    backend_service: cdktn.stringToTerraform(struct!.backendService),
+    weight: cdktn.numberToTerraform(struct!.weight),
     header_action: computeRegionUrlMapPathMatcherPathRuleRouteActionWeightedBackendServicesHeaderActionToTerraform(struct!.headerAction),
   }
 }
 
 
-export function computeRegionUrlMapPathMatcherPathRuleRouteActionWeightedBackendServicesToHclTerraform(struct?: ComputeRegionUrlMapPathMatcherPathRuleRouteActionWeightedBackendServices | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function computeRegionUrlMapPathMatcherPathRuleRouteActionWeightedBackendServicesToHclTerraform(struct?: ComputeRegionUrlMapPathMatcherPathRuleRouteActionWeightedBackendServices | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     backend_service: {
-      value: cdktf.stringToHclTerraform(struct!.backendService),
+      value: cdktn.stringToHclTerraform(struct!.backendService),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     weight: {
-      value: cdktf.numberToHclTerraform(struct!.weight),
+      value: cdktn.numberToHclTerraform(struct!.weight),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
@@ -8141,9 +8141,9 @@ export function computeRegionUrlMapPathMatcherPathRuleRouteActionWeightedBackend
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class ComputeRegionUrlMapPathMatcherPathRuleRouteActionWeightedBackendServicesOutputReference extends cdktf.ComplexObject {
+export class ComputeRegionUrlMapPathMatcherPathRuleRouteActionWeightedBackendServicesOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -8151,11 +8151,11 @@ export class ComputeRegionUrlMapPathMatcherPathRuleRouteActionWeightedBackendSer
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): ComputeRegionUrlMapPathMatcherPathRuleRouteActionWeightedBackendServices | cdktf.IResolvable | undefined {
+  public get internalValue(): ComputeRegionUrlMapPathMatcherPathRuleRouteActionWeightedBackendServices | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -8176,7 +8176,7 @@ export class ComputeRegionUrlMapPathMatcherPathRuleRouteActionWeightedBackendSer
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: ComputeRegionUrlMapPathMatcherPathRuleRouteActionWeightedBackendServices | cdktf.IResolvable | undefined) {
+  public set internalValue(value: ComputeRegionUrlMapPathMatcherPathRuleRouteActionWeightedBackendServices | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -8184,7 +8184,7 @@ export class ComputeRegionUrlMapPathMatcherPathRuleRouteActionWeightedBackendSer
       this._weight = undefined;
       this._headerAction.internalValue = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -8240,15 +8240,15 @@ export class ComputeRegionUrlMapPathMatcherPathRuleRouteActionWeightedBackendSer
   }
 }
 
-export class ComputeRegionUrlMapPathMatcherPathRuleRouteActionWeightedBackendServicesList extends cdktf.ComplexList {
-  public internalValue? : ComputeRegionUrlMapPathMatcherPathRuleRouteActionWeightedBackendServices[] | cdktf.IResolvable
+export class ComputeRegionUrlMapPathMatcherPathRuleRouteActionWeightedBackendServicesList extends cdktn.ComplexList {
+  public internalValue? : ComputeRegionUrlMapPathMatcherPathRuleRouteActionWeightedBackendServices[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -8301,12 +8301,12 @@ export interface ComputeRegionUrlMapPathMatcherPathRuleRouteAction {
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_region_url_map#weighted_backend_services ComputeRegionUrlMap#weighted_backend_services}
   */
-  readonly weightedBackendServices?: ComputeRegionUrlMapPathMatcherPathRuleRouteActionWeightedBackendServices[] | cdktf.IResolvable;
+  readonly weightedBackendServices?: ComputeRegionUrlMapPathMatcherPathRuleRouteActionWeightedBackendServices[] | cdktn.IResolvable;
 }
 
 export function computeRegionUrlMapPathMatcherPathRuleRouteActionToTerraform(struct?: ComputeRegionUrlMapPathMatcherPathRuleRouteActionOutputReference | ComputeRegionUrlMapPathMatcherPathRuleRouteAction): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -8316,14 +8316,14 @@ export function computeRegionUrlMapPathMatcherPathRuleRouteActionToTerraform(str
     retry_policy: computeRegionUrlMapPathMatcherPathRuleRouteActionRetryPolicyToTerraform(struct!.retryPolicy),
     timeout: computeRegionUrlMapPathMatcherPathRuleRouteActionTimeoutToTerraform(struct!.timeout),
     url_rewrite: computeRegionUrlMapPathMatcherPathRuleRouteActionUrlRewriteToTerraform(struct!.urlRewrite),
-    weighted_backend_services: cdktf.listMapper(computeRegionUrlMapPathMatcherPathRuleRouteActionWeightedBackendServicesToTerraform, true)(struct!.weightedBackendServices),
+    weighted_backend_services: cdktn.listMapper(computeRegionUrlMapPathMatcherPathRuleRouteActionWeightedBackendServicesToTerraform, true)(struct!.weightedBackendServices),
   }
 }
 
 
 export function computeRegionUrlMapPathMatcherPathRuleRouteActionToHclTerraform(struct?: ComputeRegionUrlMapPathMatcherPathRuleRouteActionOutputReference | ComputeRegionUrlMapPathMatcherPathRuleRouteAction): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -8364,7 +8364,7 @@ export function computeRegionUrlMapPathMatcherPathRuleRouteActionToHclTerraform(
       storageClassType: "ComputeRegionUrlMapPathMatcherPathRuleRouteActionUrlRewriteList",
     },
     weighted_backend_services: {
-      value: cdktf.listMapperHcl(computeRegionUrlMapPathMatcherPathRuleRouteActionWeightedBackendServicesToHclTerraform, true)(struct!.weightedBackendServices),
+      value: cdktn.listMapperHcl(computeRegionUrlMapPathMatcherPathRuleRouteActionWeightedBackendServicesToHclTerraform, true)(struct!.weightedBackendServices),
       isBlock: true,
       type: "list",
       storageClassType: "ComputeRegionUrlMapPathMatcherPathRuleRouteActionWeightedBackendServicesList",
@@ -8375,14 +8375,14 @@ export function computeRegionUrlMapPathMatcherPathRuleRouteActionToHclTerraform(
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class ComputeRegionUrlMapPathMatcherPathRuleRouteActionOutputReference extends cdktf.ComplexObject {
+export class ComputeRegionUrlMapPathMatcherPathRuleRouteActionOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -8544,7 +8544,7 @@ export class ComputeRegionUrlMapPathMatcherPathRuleRouteActionOutputReference ex
   public get weightedBackendServices() {
     return this._weightedBackendServices;
   }
-  public putWeightedBackendServices(value: ComputeRegionUrlMapPathMatcherPathRuleRouteActionWeightedBackendServices[] | cdktf.IResolvable) {
+  public putWeightedBackendServices(value: ComputeRegionUrlMapPathMatcherPathRuleRouteActionWeightedBackendServices[] | cdktn.IResolvable) {
     this._weightedBackendServices.internalValue = value;
   }
   public resetWeightedBackendServices() {
@@ -8573,7 +8573,7 @@ export interface ComputeRegionUrlMapPathMatcherPathRuleUrlRedirect {
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_region_url_map#https_redirect ComputeRegionUrlMap#https_redirect}
   */
-  readonly httpsRedirect?: boolean | cdktf.IResolvable;
+  readonly httpsRedirect?: boolean | cdktn.IResolvable;
   /**
   * The path that will be used in the redirect response instead of the one
   * that was supplied in the request. pathRedirect cannot be supplied
@@ -8621,63 +8621,63 @@ export interface ComputeRegionUrlMapPathMatcherPathRuleUrlRedirect {
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_region_url_map#strip_query ComputeRegionUrlMap#strip_query}
   */
-  readonly stripQuery: boolean | cdktf.IResolvable;
+  readonly stripQuery: boolean | cdktn.IResolvable;
 }
 
 export function computeRegionUrlMapPathMatcherPathRuleUrlRedirectToTerraform(struct?: ComputeRegionUrlMapPathMatcherPathRuleUrlRedirectOutputReference | ComputeRegionUrlMapPathMatcherPathRuleUrlRedirect): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    host_redirect: cdktf.stringToTerraform(struct!.hostRedirect),
-    https_redirect: cdktf.booleanToTerraform(struct!.httpsRedirect),
-    path_redirect: cdktf.stringToTerraform(struct!.pathRedirect),
-    prefix_redirect: cdktf.stringToTerraform(struct!.prefixRedirect),
-    redirect_response_code: cdktf.stringToTerraform(struct!.redirectResponseCode),
-    strip_query: cdktf.booleanToTerraform(struct!.stripQuery),
+    host_redirect: cdktn.stringToTerraform(struct!.hostRedirect),
+    https_redirect: cdktn.booleanToTerraform(struct!.httpsRedirect),
+    path_redirect: cdktn.stringToTerraform(struct!.pathRedirect),
+    prefix_redirect: cdktn.stringToTerraform(struct!.prefixRedirect),
+    redirect_response_code: cdktn.stringToTerraform(struct!.redirectResponseCode),
+    strip_query: cdktn.booleanToTerraform(struct!.stripQuery),
   }
 }
 
 
 export function computeRegionUrlMapPathMatcherPathRuleUrlRedirectToHclTerraform(struct?: ComputeRegionUrlMapPathMatcherPathRuleUrlRedirectOutputReference | ComputeRegionUrlMapPathMatcherPathRuleUrlRedirect): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     host_redirect: {
-      value: cdktf.stringToHclTerraform(struct!.hostRedirect),
+      value: cdktn.stringToHclTerraform(struct!.hostRedirect),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     https_redirect: {
-      value: cdktf.booleanToHclTerraform(struct!.httpsRedirect),
+      value: cdktn.booleanToHclTerraform(struct!.httpsRedirect),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     path_redirect: {
-      value: cdktf.stringToHclTerraform(struct!.pathRedirect),
+      value: cdktn.stringToHclTerraform(struct!.pathRedirect),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     prefix_redirect: {
-      value: cdktf.stringToHclTerraform(struct!.prefixRedirect),
+      value: cdktn.stringToHclTerraform(struct!.prefixRedirect),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     redirect_response_code: {
-      value: cdktf.stringToHclTerraform(struct!.redirectResponseCode),
+      value: cdktn.stringToHclTerraform(struct!.redirectResponseCode),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     strip_query: {
-      value: cdktf.booleanToHclTerraform(struct!.stripQuery),
+      value: cdktn.booleanToHclTerraform(struct!.stripQuery),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
@@ -8688,14 +8688,14 @@ export function computeRegionUrlMapPathMatcherPathRuleUrlRedirectToHclTerraform(
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class ComputeRegionUrlMapPathMatcherPathRuleUrlRedirectOutputReference extends cdktf.ComplexObject {
+export class ComputeRegionUrlMapPathMatcherPathRuleUrlRedirectOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -8767,11 +8767,11 @@ export class ComputeRegionUrlMapPathMatcherPathRuleUrlRedirectOutputReference ex
   }
 
   // https_redirect - computed: false, optional: true, required: false
-  private _httpsRedirect?: boolean | cdktf.IResolvable; 
+  private _httpsRedirect?: boolean | cdktn.IResolvable; 
   public get httpsRedirect() {
     return this.getBooleanAttribute('https_redirect');
   }
-  public set httpsRedirect(value: boolean | cdktf.IResolvable) {
+  public set httpsRedirect(value: boolean | cdktn.IResolvable) {
     this._httpsRedirect = value;
   }
   public resetHttpsRedirect() {
@@ -8831,11 +8831,11 @@ export class ComputeRegionUrlMapPathMatcherPathRuleUrlRedirectOutputReference ex
   }
 
   // strip_query - computed: false, optional: false, required: true
-  private _stripQuery?: boolean | cdktf.IResolvable; 
+  private _stripQuery?: boolean | cdktn.IResolvable; 
   public get stripQuery() {
     return this.getBooleanAttribute('strip_query');
   }
-  public set stripQuery(value: boolean | cdktf.IResolvable) {
+  public set stripQuery(value: boolean | cdktn.IResolvable) {
     this._stripQuery = value;
   }
   // Temporarily expose input value. Use with caution.
@@ -8879,34 +8879,34 @@ export interface ComputeRegionUrlMapPathMatcherPathRule {
   readonly urlRedirect?: ComputeRegionUrlMapPathMatcherPathRuleUrlRedirect;
 }
 
-export function computeRegionUrlMapPathMatcherPathRuleToTerraform(struct?: ComputeRegionUrlMapPathMatcherPathRule | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function computeRegionUrlMapPathMatcherPathRuleToTerraform(struct?: ComputeRegionUrlMapPathMatcherPathRule | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    paths: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.paths),
-    service: cdktf.stringToTerraform(struct!.service),
+    paths: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.paths),
+    service: cdktn.stringToTerraform(struct!.service),
     route_action: computeRegionUrlMapPathMatcherPathRuleRouteActionToTerraform(struct!.routeAction),
     url_redirect: computeRegionUrlMapPathMatcherPathRuleUrlRedirectToTerraform(struct!.urlRedirect),
   }
 }
 
 
-export function computeRegionUrlMapPathMatcherPathRuleToHclTerraform(struct?: ComputeRegionUrlMapPathMatcherPathRule | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function computeRegionUrlMapPathMatcherPathRuleToHclTerraform(struct?: ComputeRegionUrlMapPathMatcherPathRule | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     paths: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.paths),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.paths),
       isBlock: false,
       type: "set",
       storageClassType: "stringList",
     },
     service: {
-      value: cdktf.stringToHclTerraform(struct!.service),
+      value: cdktn.stringToHclTerraform(struct!.service),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -8929,9 +8929,9 @@ export function computeRegionUrlMapPathMatcherPathRuleToHclTerraform(struct?: Co
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class ComputeRegionUrlMapPathMatcherPathRuleOutputReference extends cdktf.ComplexObject {
+export class ComputeRegionUrlMapPathMatcherPathRuleOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -8939,11 +8939,11 @@ export class ComputeRegionUrlMapPathMatcherPathRuleOutputReference extends cdktf
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): ComputeRegionUrlMapPathMatcherPathRule | cdktf.IResolvable | undefined {
+  public get internalValue(): ComputeRegionUrlMapPathMatcherPathRule | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -8968,7 +8968,7 @@ export class ComputeRegionUrlMapPathMatcherPathRuleOutputReference extends cdktf
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: ComputeRegionUrlMapPathMatcherPathRule | cdktf.IResolvable | undefined) {
+  public set internalValue(value: ComputeRegionUrlMapPathMatcherPathRule | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -8977,7 +8977,7 @@ export class ComputeRegionUrlMapPathMatcherPathRuleOutputReference extends cdktf
       this._routeAction.internalValue = undefined;
       this._urlRedirect.internalValue = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -8994,7 +8994,7 @@ export class ComputeRegionUrlMapPathMatcherPathRuleOutputReference extends cdktf
   // paths - computed: false, optional: false, required: true
   private _paths?: string[]; 
   public get paths() {
-    return cdktf.Fn.tolist(this.getListAttribute('paths'));
+    return cdktn.Fn.tolist(this.getListAttribute('paths'));
   }
   public set paths(value: string[]) {
     this._paths = value;
@@ -9053,15 +9053,15 @@ export class ComputeRegionUrlMapPathMatcherPathRuleOutputReference extends cdktf
   }
 }
 
-export class ComputeRegionUrlMapPathMatcherPathRuleList extends cdktf.ComplexList {
-  public internalValue? : ComputeRegionUrlMapPathMatcherPathRule[] | cdktf.IResolvable
+export class ComputeRegionUrlMapPathMatcherPathRuleList extends cdktn.ComplexList {
+  public internalValue? : ComputeRegionUrlMapPathMatcherPathRule[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -9092,42 +9092,42 @@ export interface ComputeRegionUrlMapPathMatcherRouteRulesHeaderActionRequestHead
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_region_url_map#replace ComputeRegionUrlMap#replace}
   */
-  readonly replace: boolean | cdktf.IResolvable;
+  readonly replace: boolean | cdktn.IResolvable;
 }
 
-export function computeRegionUrlMapPathMatcherRouteRulesHeaderActionRequestHeadersToAddToTerraform(struct?: ComputeRegionUrlMapPathMatcherRouteRulesHeaderActionRequestHeadersToAdd | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function computeRegionUrlMapPathMatcherRouteRulesHeaderActionRequestHeadersToAddToTerraform(struct?: ComputeRegionUrlMapPathMatcherRouteRulesHeaderActionRequestHeadersToAdd | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    header_name: cdktf.stringToTerraform(struct!.headerName),
-    header_value: cdktf.stringToTerraform(struct!.headerValue),
-    replace: cdktf.booleanToTerraform(struct!.replace),
+    header_name: cdktn.stringToTerraform(struct!.headerName),
+    header_value: cdktn.stringToTerraform(struct!.headerValue),
+    replace: cdktn.booleanToTerraform(struct!.replace),
   }
 }
 
 
-export function computeRegionUrlMapPathMatcherRouteRulesHeaderActionRequestHeadersToAddToHclTerraform(struct?: ComputeRegionUrlMapPathMatcherRouteRulesHeaderActionRequestHeadersToAdd | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function computeRegionUrlMapPathMatcherRouteRulesHeaderActionRequestHeadersToAddToHclTerraform(struct?: ComputeRegionUrlMapPathMatcherRouteRulesHeaderActionRequestHeadersToAdd | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     header_name: {
-      value: cdktf.stringToHclTerraform(struct!.headerName),
+      value: cdktn.stringToHclTerraform(struct!.headerName),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     header_value: {
-      value: cdktf.stringToHclTerraform(struct!.headerValue),
+      value: cdktn.stringToHclTerraform(struct!.headerValue),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     replace: {
-      value: cdktf.booleanToHclTerraform(struct!.replace),
+      value: cdktn.booleanToHclTerraform(struct!.replace),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
@@ -9138,9 +9138,9 @@ export function computeRegionUrlMapPathMatcherRouteRulesHeaderActionRequestHeade
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class ComputeRegionUrlMapPathMatcherRouteRulesHeaderActionRequestHeadersToAddOutputReference extends cdktf.ComplexObject {
+export class ComputeRegionUrlMapPathMatcherRouteRulesHeaderActionRequestHeadersToAddOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -9148,11 +9148,11 @@ export class ComputeRegionUrlMapPathMatcherRouteRulesHeaderActionRequestHeadersT
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): ComputeRegionUrlMapPathMatcherRouteRulesHeaderActionRequestHeadersToAdd | cdktf.IResolvable | undefined {
+  public get internalValue(): ComputeRegionUrlMapPathMatcherRouteRulesHeaderActionRequestHeadersToAdd | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -9173,7 +9173,7 @@ export class ComputeRegionUrlMapPathMatcherRouteRulesHeaderActionRequestHeadersT
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: ComputeRegionUrlMapPathMatcherRouteRulesHeaderActionRequestHeadersToAdd | cdktf.IResolvable | undefined) {
+  public set internalValue(value: ComputeRegionUrlMapPathMatcherRouteRulesHeaderActionRequestHeadersToAdd | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -9181,7 +9181,7 @@ export class ComputeRegionUrlMapPathMatcherRouteRulesHeaderActionRequestHeadersT
       this._headerValue = undefined;
       this._replace = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -9221,11 +9221,11 @@ export class ComputeRegionUrlMapPathMatcherRouteRulesHeaderActionRequestHeadersT
   }
 
   // replace - computed: false, optional: false, required: true
-  private _replace?: boolean | cdktf.IResolvable; 
+  private _replace?: boolean | cdktn.IResolvable; 
   public get replace() {
     return this.getBooleanAttribute('replace');
   }
-  public set replace(value: boolean | cdktf.IResolvable) {
+  public set replace(value: boolean | cdktn.IResolvable) {
     this._replace = value;
   }
   // Temporarily expose input value. Use with caution.
@@ -9234,15 +9234,15 @@ export class ComputeRegionUrlMapPathMatcherRouteRulesHeaderActionRequestHeadersT
   }
 }
 
-export class ComputeRegionUrlMapPathMatcherRouteRulesHeaderActionRequestHeadersToAddList extends cdktf.ComplexList {
-  public internalValue? : ComputeRegionUrlMapPathMatcherRouteRulesHeaderActionRequestHeadersToAdd[] | cdktf.IResolvable
+export class ComputeRegionUrlMapPathMatcherRouteRulesHeaderActionRequestHeadersToAddList extends cdktn.ComplexList {
+  public internalValue? : ComputeRegionUrlMapPathMatcherRouteRulesHeaderActionRequestHeadersToAdd[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -9273,42 +9273,42 @@ export interface ComputeRegionUrlMapPathMatcherRouteRulesHeaderActionResponseHea
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_region_url_map#replace ComputeRegionUrlMap#replace}
   */
-  readonly replace: boolean | cdktf.IResolvable;
+  readonly replace: boolean | cdktn.IResolvable;
 }
 
-export function computeRegionUrlMapPathMatcherRouteRulesHeaderActionResponseHeadersToAddToTerraform(struct?: ComputeRegionUrlMapPathMatcherRouteRulesHeaderActionResponseHeadersToAdd | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function computeRegionUrlMapPathMatcherRouteRulesHeaderActionResponseHeadersToAddToTerraform(struct?: ComputeRegionUrlMapPathMatcherRouteRulesHeaderActionResponseHeadersToAdd | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    header_name: cdktf.stringToTerraform(struct!.headerName),
-    header_value: cdktf.stringToTerraform(struct!.headerValue),
-    replace: cdktf.booleanToTerraform(struct!.replace),
+    header_name: cdktn.stringToTerraform(struct!.headerName),
+    header_value: cdktn.stringToTerraform(struct!.headerValue),
+    replace: cdktn.booleanToTerraform(struct!.replace),
   }
 }
 
 
-export function computeRegionUrlMapPathMatcherRouteRulesHeaderActionResponseHeadersToAddToHclTerraform(struct?: ComputeRegionUrlMapPathMatcherRouteRulesHeaderActionResponseHeadersToAdd | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function computeRegionUrlMapPathMatcherRouteRulesHeaderActionResponseHeadersToAddToHclTerraform(struct?: ComputeRegionUrlMapPathMatcherRouteRulesHeaderActionResponseHeadersToAdd | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     header_name: {
-      value: cdktf.stringToHclTerraform(struct!.headerName),
+      value: cdktn.stringToHclTerraform(struct!.headerName),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     header_value: {
-      value: cdktf.stringToHclTerraform(struct!.headerValue),
+      value: cdktn.stringToHclTerraform(struct!.headerValue),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     replace: {
-      value: cdktf.booleanToHclTerraform(struct!.replace),
+      value: cdktn.booleanToHclTerraform(struct!.replace),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
@@ -9319,9 +9319,9 @@ export function computeRegionUrlMapPathMatcherRouteRulesHeaderActionResponseHead
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class ComputeRegionUrlMapPathMatcherRouteRulesHeaderActionResponseHeadersToAddOutputReference extends cdktf.ComplexObject {
+export class ComputeRegionUrlMapPathMatcherRouteRulesHeaderActionResponseHeadersToAddOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -9329,11 +9329,11 @@ export class ComputeRegionUrlMapPathMatcherRouteRulesHeaderActionResponseHeaders
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): ComputeRegionUrlMapPathMatcherRouteRulesHeaderActionResponseHeadersToAdd | cdktf.IResolvable | undefined {
+  public get internalValue(): ComputeRegionUrlMapPathMatcherRouteRulesHeaderActionResponseHeadersToAdd | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -9354,7 +9354,7 @@ export class ComputeRegionUrlMapPathMatcherRouteRulesHeaderActionResponseHeaders
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: ComputeRegionUrlMapPathMatcherRouteRulesHeaderActionResponseHeadersToAdd | cdktf.IResolvable | undefined) {
+  public set internalValue(value: ComputeRegionUrlMapPathMatcherRouteRulesHeaderActionResponseHeadersToAdd | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -9362,7 +9362,7 @@ export class ComputeRegionUrlMapPathMatcherRouteRulesHeaderActionResponseHeaders
       this._headerValue = undefined;
       this._replace = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -9402,11 +9402,11 @@ export class ComputeRegionUrlMapPathMatcherRouteRulesHeaderActionResponseHeaders
   }
 
   // replace - computed: false, optional: false, required: true
-  private _replace?: boolean | cdktf.IResolvable; 
+  private _replace?: boolean | cdktn.IResolvable; 
   public get replace() {
     return this.getBooleanAttribute('replace');
   }
-  public set replace(value: boolean | cdktf.IResolvable) {
+  public set replace(value: boolean | cdktn.IResolvable) {
     this._replace = value;
   }
   // Temporarily expose input value. Use with caution.
@@ -9415,15 +9415,15 @@ export class ComputeRegionUrlMapPathMatcherRouteRulesHeaderActionResponseHeaders
   }
 }
 
-export class ComputeRegionUrlMapPathMatcherRouteRulesHeaderActionResponseHeadersToAddList extends cdktf.ComplexList {
-  public internalValue? : ComputeRegionUrlMapPathMatcherRouteRulesHeaderActionResponseHeadersToAdd[] | cdktf.IResolvable
+export class ComputeRegionUrlMapPathMatcherRouteRulesHeaderActionResponseHeadersToAddList extends cdktn.ComplexList {
+  public internalValue? : ComputeRegionUrlMapPathMatcherRouteRulesHeaderActionResponseHeadersToAdd[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -9454,55 +9454,55 @@ export interface ComputeRegionUrlMapPathMatcherRouteRulesHeaderAction {
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_region_url_map#request_headers_to_add ComputeRegionUrlMap#request_headers_to_add}
   */
-  readonly requestHeadersToAdd?: ComputeRegionUrlMapPathMatcherRouteRulesHeaderActionRequestHeadersToAdd[] | cdktf.IResolvable;
+  readonly requestHeadersToAdd?: ComputeRegionUrlMapPathMatcherRouteRulesHeaderActionRequestHeadersToAdd[] | cdktn.IResolvable;
   /**
   * response_headers_to_add block
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_region_url_map#response_headers_to_add ComputeRegionUrlMap#response_headers_to_add}
   */
-  readonly responseHeadersToAdd?: ComputeRegionUrlMapPathMatcherRouteRulesHeaderActionResponseHeadersToAdd[] | cdktf.IResolvable;
+  readonly responseHeadersToAdd?: ComputeRegionUrlMapPathMatcherRouteRulesHeaderActionResponseHeadersToAdd[] | cdktn.IResolvable;
 }
 
 export function computeRegionUrlMapPathMatcherRouteRulesHeaderActionToTerraform(struct?: ComputeRegionUrlMapPathMatcherRouteRulesHeaderActionOutputReference | ComputeRegionUrlMapPathMatcherRouteRulesHeaderAction): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    request_headers_to_remove: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.requestHeadersToRemove),
-    response_headers_to_remove: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.responseHeadersToRemove),
-    request_headers_to_add: cdktf.listMapper(computeRegionUrlMapPathMatcherRouteRulesHeaderActionRequestHeadersToAddToTerraform, true)(struct!.requestHeadersToAdd),
-    response_headers_to_add: cdktf.listMapper(computeRegionUrlMapPathMatcherRouteRulesHeaderActionResponseHeadersToAddToTerraform, true)(struct!.responseHeadersToAdd),
+    request_headers_to_remove: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.requestHeadersToRemove),
+    response_headers_to_remove: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.responseHeadersToRemove),
+    request_headers_to_add: cdktn.listMapper(computeRegionUrlMapPathMatcherRouteRulesHeaderActionRequestHeadersToAddToTerraform, true)(struct!.requestHeadersToAdd),
+    response_headers_to_add: cdktn.listMapper(computeRegionUrlMapPathMatcherRouteRulesHeaderActionResponseHeadersToAddToTerraform, true)(struct!.responseHeadersToAdd),
   }
 }
 
 
 export function computeRegionUrlMapPathMatcherRouteRulesHeaderActionToHclTerraform(struct?: ComputeRegionUrlMapPathMatcherRouteRulesHeaderActionOutputReference | ComputeRegionUrlMapPathMatcherRouteRulesHeaderAction): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     request_headers_to_remove: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.requestHeadersToRemove),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.requestHeadersToRemove),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
     },
     response_headers_to_remove: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.responseHeadersToRemove),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.responseHeadersToRemove),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
     },
     request_headers_to_add: {
-      value: cdktf.listMapperHcl(computeRegionUrlMapPathMatcherRouteRulesHeaderActionRequestHeadersToAddToHclTerraform, true)(struct!.requestHeadersToAdd),
+      value: cdktn.listMapperHcl(computeRegionUrlMapPathMatcherRouteRulesHeaderActionRequestHeadersToAddToHclTerraform, true)(struct!.requestHeadersToAdd),
       isBlock: true,
       type: "list",
       storageClassType: "ComputeRegionUrlMapPathMatcherRouteRulesHeaderActionRequestHeadersToAddList",
     },
     response_headers_to_add: {
-      value: cdktf.listMapperHcl(computeRegionUrlMapPathMatcherRouteRulesHeaderActionResponseHeadersToAddToHclTerraform, true)(struct!.responseHeadersToAdd),
+      value: cdktn.listMapperHcl(computeRegionUrlMapPathMatcherRouteRulesHeaderActionResponseHeadersToAddToHclTerraform, true)(struct!.responseHeadersToAdd),
       isBlock: true,
       type: "list",
       storageClassType: "ComputeRegionUrlMapPathMatcherRouteRulesHeaderActionResponseHeadersToAddList",
@@ -9513,14 +9513,14 @@ export function computeRegionUrlMapPathMatcherRouteRulesHeaderActionToHclTerrafo
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class ComputeRegionUrlMapPathMatcherRouteRulesHeaderActionOutputReference extends cdktf.ComplexObject {
+export class ComputeRegionUrlMapPathMatcherRouteRulesHeaderActionOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -9600,7 +9600,7 @@ export class ComputeRegionUrlMapPathMatcherRouteRulesHeaderActionOutputReference
   public get requestHeadersToAdd() {
     return this._requestHeadersToAdd;
   }
-  public putRequestHeadersToAdd(value: ComputeRegionUrlMapPathMatcherRouteRulesHeaderActionRequestHeadersToAdd[] | cdktf.IResolvable) {
+  public putRequestHeadersToAdd(value: ComputeRegionUrlMapPathMatcherRouteRulesHeaderActionRequestHeadersToAdd[] | cdktn.IResolvable) {
     this._requestHeadersToAdd.internalValue = value;
   }
   public resetRequestHeadersToAdd() {
@@ -9616,7 +9616,7 @@ export class ComputeRegionUrlMapPathMatcherRouteRulesHeaderActionOutputReference
   public get responseHeadersToAdd() {
     return this._responseHeadersToAdd;
   }
-  public putResponseHeadersToAdd(value: ComputeRegionUrlMapPathMatcherRouteRulesHeaderActionResponseHeadersToAdd[] | cdktf.IResolvable) {
+  public putResponseHeadersToAdd(value: ComputeRegionUrlMapPathMatcherRouteRulesHeaderActionResponseHeadersToAdd[] | cdktn.IResolvable) {
     this._responseHeadersToAdd.internalValue = value;
   }
   public resetResponseHeadersToAdd() {
@@ -9643,31 +9643,31 @@ export interface ComputeRegionUrlMapPathMatcherRouteRulesMatchRulesHeaderMatches
 }
 
 export function computeRegionUrlMapPathMatcherRouteRulesMatchRulesHeaderMatchesRangeMatchToTerraform(struct?: ComputeRegionUrlMapPathMatcherRouteRulesMatchRulesHeaderMatchesRangeMatchOutputReference | ComputeRegionUrlMapPathMatcherRouteRulesMatchRulesHeaderMatchesRangeMatch): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    range_end: cdktf.numberToTerraform(struct!.rangeEnd),
-    range_start: cdktf.numberToTerraform(struct!.rangeStart),
+    range_end: cdktn.numberToTerraform(struct!.rangeEnd),
+    range_start: cdktn.numberToTerraform(struct!.rangeStart),
   }
 }
 
 
 export function computeRegionUrlMapPathMatcherRouteRulesMatchRulesHeaderMatchesRangeMatchToHclTerraform(struct?: ComputeRegionUrlMapPathMatcherRouteRulesMatchRulesHeaderMatchesRangeMatchOutputReference | ComputeRegionUrlMapPathMatcherRouteRulesMatchRulesHeaderMatchesRangeMatch): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     range_end: {
-      value: cdktf.numberToHclTerraform(struct!.rangeEnd),
+      value: cdktn.numberToHclTerraform(struct!.rangeEnd),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     range_start: {
-      value: cdktf.numberToHclTerraform(struct!.rangeStart),
+      value: cdktn.numberToHclTerraform(struct!.rangeStart),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
@@ -9678,14 +9678,14 @@ export function computeRegionUrlMapPathMatcherRouteRulesMatchRulesHeaderMatchesR
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class ComputeRegionUrlMapPathMatcherRouteRulesMatchRulesHeaderMatchesRangeMatchOutputReference extends cdktf.ComplexObject {
+export class ComputeRegionUrlMapPathMatcherRouteRulesMatchRulesHeaderMatchesRangeMatchOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -9765,7 +9765,7 @@ export interface ComputeRegionUrlMapPathMatcherRouteRulesMatchRulesHeaderMatches
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_region_url_map#invert_match ComputeRegionUrlMap#invert_match}
   */
-  readonly invertMatch?: boolean | cdktf.IResolvable;
+  readonly invertMatch?: boolean | cdktn.IResolvable;
   /**
   * The value of the header must start with the contents of prefixMatch. Only one of
   * exactMatch, prefixMatch, suffixMatch, regexMatch, presentMatch or rangeMatch
@@ -9781,7 +9781,7 @@ export interface ComputeRegionUrlMapPathMatcherRouteRulesMatchRulesHeaderMatches
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_region_url_map#present_match ComputeRegionUrlMap#present_match}
   */
-  readonly presentMatch?: boolean | cdktf.IResolvable;
+  readonly presentMatch?: boolean | cdktn.IResolvable;
   /**
   * The value of the header must match the regular expression specified in
   * regexMatch. For regular expression grammar, please see:
@@ -9810,68 +9810,68 @@ export interface ComputeRegionUrlMapPathMatcherRouteRulesMatchRulesHeaderMatches
   readonly rangeMatch?: ComputeRegionUrlMapPathMatcherRouteRulesMatchRulesHeaderMatchesRangeMatch;
 }
 
-export function computeRegionUrlMapPathMatcherRouteRulesMatchRulesHeaderMatchesToTerraform(struct?: ComputeRegionUrlMapPathMatcherRouteRulesMatchRulesHeaderMatches | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function computeRegionUrlMapPathMatcherRouteRulesMatchRulesHeaderMatchesToTerraform(struct?: ComputeRegionUrlMapPathMatcherRouteRulesMatchRulesHeaderMatches | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    exact_match: cdktf.stringToTerraform(struct!.exactMatch),
-    header_name: cdktf.stringToTerraform(struct!.headerName),
-    invert_match: cdktf.booleanToTerraform(struct!.invertMatch),
-    prefix_match: cdktf.stringToTerraform(struct!.prefixMatch),
-    present_match: cdktf.booleanToTerraform(struct!.presentMatch),
-    regex_match: cdktf.stringToTerraform(struct!.regexMatch),
-    suffix_match: cdktf.stringToTerraform(struct!.suffixMatch),
+    exact_match: cdktn.stringToTerraform(struct!.exactMatch),
+    header_name: cdktn.stringToTerraform(struct!.headerName),
+    invert_match: cdktn.booleanToTerraform(struct!.invertMatch),
+    prefix_match: cdktn.stringToTerraform(struct!.prefixMatch),
+    present_match: cdktn.booleanToTerraform(struct!.presentMatch),
+    regex_match: cdktn.stringToTerraform(struct!.regexMatch),
+    suffix_match: cdktn.stringToTerraform(struct!.suffixMatch),
     range_match: computeRegionUrlMapPathMatcherRouteRulesMatchRulesHeaderMatchesRangeMatchToTerraform(struct!.rangeMatch),
   }
 }
 
 
-export function computeRegionUrlMapPathMatcherRouteRulesMatchRulesHeaderMatchesToHclTerraform(struct?: ComputeRegionUrlMapPathMatcherRouteRulesMatchRulesHeaderMatches | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function computeRegionUrlMapPathMatcherRouteRulesMatchRulesHeaderMatchesToHclTerraform(struct?: ComputeRegionUrlMapPathMatcherRouteRulesMatchRulesHeaderMatches | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     exact_match: {
-      value: cdktf.stringToHclTerraform(struct!.exactMatch),
+      value: cdktn.stringToHclTerraform(struct!.exactMatch),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     header_name: {
-      value: cdktf.stringToHclTerraform(struct!.headerName),
+      value: cdktn.stringToHclTerraform(struct!.headerName),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     invert_match: {
-      value: cdktf.booleanToHclTerraform(struct!.invertMatch),
+      value: cdktn.booleanToHclTerraform(struct!.invertMatch),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     prefix_match: {
-      value: cdktf.stringToHclTerraform(struct!.prefixMatch),
+      value: cdktn.stringToHclTerraform(struct!.prefixMatch),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     present_match: {
-      value: cdktf.booleanToHclTerraform(struct!.presentMatch),
+      value: cdktn.booleanToHclTerraform(struct!.presentMatch),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     regex_match: {
-      value: cdktf.stringToHclTerraform(struct!.regexMatch),
+      value: cdktn.stringToHclTerraform(struct!.regexMatch),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     suffix_match: {
-      value: cdktf.stringToHclTerraform(struct!.suffixMatch),
+      value: cdktn.stringToHclTerraform(struct!.suffixMatch),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -9888,9 +9888,9 @@ export function computeRegionUrlMapPathMatcherRouteRulesMatchRulesHeaderMatchesT
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class ComputeRegionUrlMapPathMatcherRouteRulesMatchRulesHeaderMatchesOutputReference extends cdktf.ComplexObject {
+export class ComputeRegionUrlMapPathMatcherRouteRulesMatchRulesHeaderMatchesOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -9898,11 +9898,11 @@ export class ComputeRegionUrlMapPathMatcherRouteRulesMatchRulesHeaderMatchesOutp
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): ComputeRegionUrlMapPathMatcherRouteRulesMatchRulesHeaderMatches | cdktf.IResolvable | undefined {
+  public get internalValue(): ComputeRegionUrlMapPathMatcherRouteRulesMatchRulesHeaderMatches | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -9943,7 +9943,7 @@ export class ComputeRegionUrlMapPathMatcherRouteRulesMatchRulesHeaderMatchesOutp
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: ComputeRegionUrlMapPathMatcherRouteRulesMatchRulesHeaderMatches | cdktf.IResolvable | undefined) {
+  public set internalValue(value: ComputeRegionUrlMapPathMatcherRouteRulesMatchRulesHeaderMatches | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -9956,7 +9956,7 @@ export class ComputeRegionUrlMapPathMatcherRouteRulesMatchRulesHeaderMatchesOutp
       this._suffixMatch = undefined;
       this._rangeMatch.internalValue = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -10004,11 +10004,11 @@ export class ComputeRegionUrlMapPathMatcherRouteRulesMatchRulesHeaderMatchesOutp
   }
 
   // invert_match - computed: false, optional: true, required: false
-  private _invertMatch?: boolean | cdktf.IResolvable; 
+  private _invertMatch?: boolean | cdktn.IResolvable; 
   public get invertMatch() {
     return this.getBooleanAttribute('invert_match');
   }
-  public set invertMatch(value: boolean | cdktf.IResolvable) {
+  public set invertMatch(value: boolean | cdktn.IResolvable) {
     this._invertMatch = value;
   }
   public resetInvertMatch() {
@@ -10036,11 +10036,11 @@ export class ComputeRegionUrlMapPathMatcherRouteRulesMatchRulesHeaderMatchesOutp
   }
 
   // present_match - computed: false, optional: true, required: false
-  private _presentMatch?: boolean | cdktf.IResolvable; 
+  private _presentMatch?: boolean | cdktn.IResolvable; 
   public get presentMatch() {
     return this.getBooleanAttribute('present_match');
   }
-  public set presentMatch(value: boolean | cdktf.IResolvable) {
+  public set presentMatch(value: boolean | cdktn.IResolvable) {
     this._presentMatch = value;
   }
   public resetPresentMatch() {
@@ -10100,15 +10100,15 @@ export class ComputeRegionUrlMapPathMatcherRouteRulesMatchRulesHeaderMatchesOutp
   }
 }
 
-export class ComputeRegionUrlMapPathMatcherRouteRulesMatchRulesHeaderMatchesList extends cdktf.ComplexList {
-  public internalValue? : ComputeRegionUrlMapPathMatcherRouteRulesMatchRulesHeaderMatches[] | cdktf.IResolvable
+export class ComputeRegionUrlMapPathMatcherRouteRulesMatchRulesHeaderMatchesList extends cdktn.ComplexList {
+  public internalValue? : ComputeRegionUrlMapPathMatcherRouteRulesMatchRulesHeaderMatches[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -10136,32 +10136,32 @@ export interface ComputeRegionUrlMapPathMatcherRouteRulesMatchRulesMetadataFilte
   readonly value: string;
 }
 
-export function computeRegionUrlMapPathMatcherRouteRulesMatchRulesMetadataFiltersFilterLabelsToTerraform(struct?: ComputeRegionUrlMapPathMatcherRouteRulesMatchRulesMetadataFiltersFilterLabels | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function computeRegionUrlMapPathMatcherRouteRulesMatchRulesMetadataFiltersFilterLabelsToTerraform(struct?: ComputeRegionUrlMapPathMatcherRouteRulesMatchRulesMetadataFiltersFilterLabels | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    name: cdktf.stringToTerraform(struct!.name),
-    value: cdktf.stringToTerraform(struct!.value),
+    name: cdktn.stringToTerraform(struct!.name),
+    value: cdktn.stringToTerraform(struct!.value),
   }
 }
 
 
-export function computeRegionUrlMapPathMatcherRouteRulesMatchRulesMetadataFiltersFilterLabelsToHclTerraform(struct?: ComputeRegionUrlMapPathMatcherRouteRulesMatchRulesMetadataFiltersFilterLabels | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function computeRegionUrlMapPathMatcherRouteRulesMatchRulesMetadataFiltersFilterLabelsToHclTerraform(struct?: ComputeRegionUrlMapPathMatcherRouteRulesMatchRulesMetadataFiltersFilterLabels | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     name: {
-      value: cdktf.stringToHclTerraform(struct!.name),
+      value: cdktn.stringToHclTerraform(struct!.name),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     value: {
-      value: cdktf.stringToHclTerraform(struct!.value),
+      value: cdktn.stringToHclTerraform(struct!.value),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -10172,9 +10172,9 @@ export function computeRegionUrlMapPathMatcherRouteRulesMatchRulesMetadataFilter
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class ComputeRegionUrlMapPathMatcherRouteRulesMatchRulesMetadataFiltersFilterLabelsOutputReference extends cdktf.ComplexObject {
+export class ComputeRegionUrlMapPathMatcherRouteRulesMatchRulesMetadataFiltersFilterLabelsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -10182,11 +10182,11 @@ export class ComputeRegionUrlMapPathMatcherRouteRulesMatchRulesMetadataFiltersFi
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): ComputeRegionUrlMapPathMatcherRouteRulesMatchRulesMetadataFiltersFilterLabels | cdktf.IResolvable | undefined {
+  public get internalValue(): ComputeRegionUrlMapPathMatcherRouteRulesMatchRulesMetadataFiltersFilterLabels | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -10203,14 +10203,14 @@ export class ComputeRegionUrlMapPathMatcherRouteRulesMatchRulesMetadataFiltersFi
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: ComputeRegionUrlMapPathMatcherRouteRulesMatchRulesMetadataFiltersFilterLabels | cdktf.IResolvable | undefined) {
+  public set internalValue(value: ComputeRegionUrlMapPathMatcherRouteRulesMatchRulesMetadataFiltersFilterLabels | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._name = undefined;
       this._value = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -10249,15 +10249,15 @@ export class ComputeRegionUrlMapPathMatcherRouteRulesMatchRulesMetadataFiltersFi
   }
 }
 
-export class ComputeRegionUrlMapPathMatcherRouteRulesMatchRulesMetadataFiltersFilterLabelsList extends cdktf.ComplexList {
-  public internalValue? : ComputeRegionUrlMapPathMatcherRouteRulesMatchRulesMetadataFiltersFilterLabels[] | cdktf.IResolvable
+export class ComputeRegionUrlMapPathMatcherRouteRulesMatchRulesMetadataFiltersFilterLabelsList extends cdktn.ComplexList {
+  public internalValue? : ComputeRegionUrlMapPathMatcherRouteRulesMatchRulesMetadataFiltersFilterLabels[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -10286,35 +10286,35 @@ export interface ComputeRegionUrlMapPathMatcherRouteRulesMatchRulesMetadataFilte
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_region_url_map#filter_labels ComputeRegionUrlMap#filter_labels}
   */
-  readonly filterLabels: ComputeRegionUrlMapPathMatcherRouteRulesMatchRulesMetadataFiltersFilterLabels[] | cdktf.IResolvable;
+  readonly filterLabels: ComputeRegionUrlMapPathMatcherRouteRulesMatchRulesMetadataFiltersFilterLabels[] | cdktn.IResolvable;
 }
 
-export function computeRegionUrlMapPathMatcherRouteRulesMatchRulesMetadataFiltersToTerraform(struct?: ComputeRegionUrlMapPathMatcherRouteRulesMatchRulesMetadataFilters | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function computeRegionUrlMapPathMatcherRouteRulesMatchRulesMetadataFiltersToTerraform(struct?: ComputeRegionUrlMapPathMatcherRouteRulesMatchRulesMetadataFilters | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    filter_match_criteria: cdktf.stringToTerraform(struct!.filterMatchCriteria),
-    filter_labels: cdktf.listMapper(computeRegionUrlMapPathMatcherRouteRulesMatchRulesMetadataFiltersFilterLabelsToTerraform, true)(struct!.filterLabels),
+    filter_match_criteria: cdktn.stringToTerraform(struct!.filterMatchCriteria),
+    filter_labels: cdktn.listMapper(computeRegionUrlMapPathMatcherRouteRulesMatchRulesMetadataFiltersFilterLabelsToTerraform, true)(struct!.filterLabels),
   }
 }
 
 
-export function computeRegionUrlMapPathMatcherRouteRulesMatchRulesMetadataFiltersToHclTerraform(struct?: ComputeRegionUrlMapPathMatcherRouteRulesMatchRulesMetadataFilters | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function computeRegionUrlMapPathMatcherRouteRulesMatchRulesMetadataFiltersToHclTerraform(struct?: ComputeRegionUrlMapPathMatcherRouteRulesMatchRulesMetadataFilters | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     filter_match_criteria: {
-      value: cdktf.stringToHclTerraform(struct!.filterMatchCriteria),
+      value: cdktn.stringToHclTerraform(struct!.filterMatchCriteria),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     filter_labels: {
-      value: cdktf.listMapperHcl(computeRegionUrlMapPathMatcherRouteRulesMatchRulesMetadataFiltersFilterLabelsToHclTerraform, true)(struct!.filterLabels),
+      value: cdktn.listMapperHcl(computeRegionUrlMapPathMatcherRouteRulesMatchRulesMetadataFiltersFilterLabelsToHclTerraform, true)(struct!.filterLabels),
       isBlock: true,
       type: "list",
       storageClassType: "ComputeRegionUrlMapPathMatcherRouteRulesMatchRulesMetadataFiltersFilterLabelsList",
@@ -10325,9 +10325,9 @@ export function computeRegionUrlMapPathMatcherRouteRulesMatchRulesMetadataFilter
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class ComputeRegionUrlMapPathMatcherRouteRulesMatchRulesMetadataFiltersOutputReference extends cdktf.ComplexObject {
+export class ComputeRegionUrlMapPathMatcherRouteRulesMatchRulesMetadataFiltersOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -10335,11 +10335,11 @@ export class ComputeRegionUrlMapPathMatcherRouteRulesMatchRulesMetadataFiltersOu
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): ComputeRegionUrlMapPathMatcherRouteRulesMatchRulesMetadataFilters | cdktf.IResolvable | undefined {
+  public get internalValue(): ComputeRegionUrlMapPathMatcherRouteRulesMatchRulesMetadataFilters | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -10356,14 +10356,14 @@ export class ComputeRegionUrlMapPathMatcherRouteRulesMatchRulesMetadataFiltersOu
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: ComputeRegionUrlMapPathMatcherRouteRulesMatchRulesMetadataFilters | cdktf.IResolvable | undefined) {
+  public set internalValue(value: ComputeRegionUrlMapPathMatcherRouteRulesMatchRulesMetadataFilters | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._filterMatchCriteria = undefined;
       this._filterLabels.internalValue = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -10393,7 +10393,7 @@ export class ComputeRegionUrlMapPathMatcherRouteRulesMatchRulesMetadataFiltersOu
   public get filterLabels() {
     return this._filterLabels;
   }
-  public putFilterLabels(value: ComputeRegionUrlMapPathMatcherRouteRulesMatchRulesMetadataFiltersFilterLabels[] | cdktf.IResolvable) {
+  public putFilterLabels(value: ComputeRegionUrlMapPathMatcherRouteRulesMatchRulesMetadataFiltersFilterLabels[] | cdktn.IResolvable) {
     this._filterLabels.internalValue = value;
   }
   // Temporarily expose input value. Use with caution.
@@ -10402,15 +10402,15 @@ export class ComputeRegionUrlMapPathMatcherRouteRulesMatchRulesMetadataFiltersOu
   }
 }
 
-export class ComputeRegionUrlMapPathMatcherRouteRulesMatchRulesMetadataFiltersList extends cdktf.ComplexList {
-  public internalValue? : ComputeRegionUrlMapPathMatcherRouteRulesMatchRulesMetadataFilters[] | cdktf.IResolvable
+export class ComputeRegionUrlMapPathMatcherRouteRulesMatchRulesMetadataFiltersList extends cdktn.ComplexList {
+  public internalValue? : ComputeRegionUrlMapPathMatcherRouteRulesMatchRulesMetadataFilters[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -10444,7 +10444,7 @@ export interface ComputeRegionUrlMapPathMatcherRouteRulesMatchRulesQueryParamete
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_region_url_map#present_match ComputeRegionUrlMap#present_match}
   */
-  readonly presentMatch?: boolean | cdktf.IResolvable;
+  readonly presentMatch?: boolean | cdktn.IResolvable;
   /**
   * The queryParameterMatch matches if the value of the parameter matches the
   * regular expression specified by regexMatch. For the regular expression grammar,
@@ -10456,46 +10456,46 @@ export interface ComputeRegionUrlMapPathMatcherRouteRulesMatchRulesQueryParamete
   readonly regexMatch?: string;
 }
 
-export function computeRegionUrlMapPathMatcherRouteRulesMatchRulesQueryParameterMatchesToTerraform(struct?: ComputeRegionUrlMapPathMatcherRouteRulesMatchRulesQueryParameterMatches | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function computeRegionUrlMapPathMatcherRouteRulesMatchRulesQueryParameterMatchesToTerraform(struct?: ComputeRegionUrlMapPathMatcherRouteRulesMatchRulesQueryParameterMatches | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    exact_match: cdktf.stringToTerraform(struct!.exactMatch),
-    name: cdktf.stringToTerraform(struct!.name),
-    present_match: cdktf.booleanToTerraform(struct!.presentMatch),
-    regex_match: cdktf.stringToTerraform(struct!.regexMatch),
+    exact_match: cdktn.stringToTerraform(struct!.exactMatch),
+    name: cdktn.stringToTerraform(struct!.name),
+    present_match: cdktn.booleanToTerraform(struct!.presentMatch),
+    regex_match: cdktn.stringToTerraform(struct!.regexMatch),
   }
 }
 
 
-export function computeRegionUrlMapPathMatcherRouteRulesMatchRulesQueryParameterMatchesToHclTerraform(struct?: ComputeRegionUrlMapPathMatcherRouteRulesMatchRulesQueryParameterMatches | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function computeRegionUrlMapPathMatcherRouteRulesMatchRulesQueryParameterMatchesToHclTerraform(struct?: ComputeRegionUrlMapPathMatcherRouteRulesMatchRulesQueryParameterMatches | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     exact_match: {
-      value: cdktf.stringToHclTerraform(struct!.exactMatch),
+      value: cdktn.stringToHclTerraform(struct!.exactMatch),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     name: {
-      value: cdktf.stringToHclTerraform(struct!.name),
+      value: cdktn.stringToHclTerraform(struct!.name),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     present_match: {
-      value: cdktf.booleanToHclTerraform(struct!.presentMatch),
+      value: cdktn.booleanToHclTerraform(struct!.presentMatch),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     regex_match: {
-      value: cdktf.stringToHclTerraform(struct!.regexMatch),
+      value: cdktn.stringToHclTerraform(struct!.regexMatch),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -10506,9 +10506,9 @@ export function computeRegionUrlMapPathMatcherRouteRulesMatchRulesQueryParameter
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class ComputeRegionUrlMapPathMatcherRouteRulesMatchRulesQueryParameterMatchesOutputReference extends cdktf.ComplexObject {
+export class ComputeRegionUrlMapPathMatcherRouteRulesMatchRulesQueryParameterMatchesOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -10516,11 +10516,11 @@ export class ComputeRegionUrlMapPathMatcherRouteRulesMatchRulesQueryParameterMat
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): ComputeRegionUrlMapPathMatcherRouteRulesMatchRulesQueryParameterMatches | cdktf.IResolvable | undefined {
+  public get internalValue(): ComputeRegionUrlMapPathMatcherRouteRulesMatchRulesQueryParameterMatches | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -10545,7 +10545,7 @@ export class ComputeRegionUrlMapPathMatcherRouteRulesMatchRulesQueryParameterMat
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: ComputeRegionUrlMapPathMatcherRouteRulesMatchRulesQueryParameterMatches | cdktf.IResolvable | undefined) {
+  public set internalValue(value: ComputeRegionUrlMapPathMatcherRouteRulesMatchRulesQueryParameterMatches | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -10554,7 +10554,7 @@ export class ComputeRegionUrlMapPathMatcherRouteRulesMatchRulesQueryParameterMat
       this._presentMatch = undefined;
       this._regexMatch = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -10598,11 +10598,11 @@ export class ComputeRegionUrlMapPathMatcherRouteRulesMatchRulesQueryParameterMat
   }
 
   // present_match - computed: false, optional: true, required: false
-  private _presentMatch?: boolean | cdktf.IResolvable; 
+  private _presentMatch?: boolean | cdktn.IResolvable; 
   public get presentMatch() {
     return this.getBooleanAttribute('present_match');
   }
-  public set presentMatch(value: boolean | cdktf.IResolvable) {
+  public set presentMatch(value: boolean | cdktn.IResolvable) {
     this._presentMatch = value;
   }
   public resetPresentMatch() {
@@ -10630,15 +10630,15 @@ export class ComputeRegionUrlMapPathMatcherRouteRulesMatchRulesQueryParameterMat
   }
 }
 
-export class ComputeRegionUrlMapPathMatcherRouteRulesMatchRulesQueryParameterMatchesList extends cdktf.ComplexList {
-  public internalValue? : ComputeRegionUrlMapPathMatcherRouteRulesMatchRulesQueryParameterMatches[] | cdktf.IResolvable
+export class ComputeRegionUrlMapPathMatcherRouteRulesMatchRulesQueryParameterMatchesList extends cdktn.ComplexList {
+  public internalValue? : ComputeRegionUrlMapPathMatcherRouteRulesMatchRulesQueryParameterMatches[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -10666,7 +10666,7 @@ export interface ComputeRegionUrlMapPathMatcherRouteRulesMatchRules {
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_region_url_map#ignore_case ComputeRegionUrlMap#ignore_case}
   */
-  readonly ignoreCase?: boolean | cdktf.IResolvable;
+  readonly ignoreCase?: boolean | cdktn.IResolvable;
   /**
   * For satisfying the matchRule condition, the path of the request
   * must match the wildcard pattern specified in pathTemplateMatch
@@ -10705,89 +10705,89 @@ export interface ComputeRegionUrlMapPathMatcherRouteRulesMatchRules {
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_region_url_map#header_matches ComputeRegionUrlMap#header_matches}
   */
-  readonly headerMatches?: ComputeRegionUrlMapPathMatcherRouteRulesMatchRulesHeaderMatches[] | cdktf.IResolvable;
+  readonly headerMatches?: ComputeRegionUrlMapPathMatcherRouteRulesMatchRulesHeaderMatches[] | cdktn.IResolvable;
   /**
   * metadata_filters block
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_region_url_map#metadata_filters ComputeRegionUrlMap#metadata_filters}
   */
-  readonly metadataFilters?: ComputeRegionUrlMapPathMatcherRouteRulesMatchRulesMetadataFilters[] | cdktf.IResolvable;
+  readonly metadataFilters?: ComputeRegionUrlMapPathMatcherRouteRulesMatchRulesMetadataFilters[] | cdktn.IResolvable;
   /**
   * query_parameter_matches block
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_region_url_map#query_parameter_matches ComputeRegionUrlMap#query_parameter_matches}
   */
-  readonly queryParameterMatches?: ComputeRegionUrlMapPathMatcherRouteRulesMatchRulesQueryParameterMatches[] | cdktf.IResolvable;
+  readonly queryParameterMatches?: ComputeRegionUrlMapPathMatcherRouteRulesMatchRulesQueryParameterMatches[] | cdktn.IResolvable;
 }
 
-export function computeRegionUrlMapPathMatcherRouteRulesMatchRulesToTerraform(struct?: ComputeRegionUrlMapPathMatcherRouteRulesMatchRules | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function computeRegionUrlMapPathMatcherRouteRulesMatchRulesToTerraform(struct?: ComputeRegionUrlMapPathMatcherRouteRulesMatchRules | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    full_path_match: cdktf.stringToTerraform(struct!.fullPathMatch),
-    ignore_case: cdktf.booleanToTerraform(struct!.ignoreCase),
-    path_template_match: cdktf.stringToTerraform(struct!.pathTemplateMatch),
-    prefix_match: cdktf.stringToTerraform(struct!.prefixMatch),
-    regex_match: cdktf.stringToTerraform(struct!.regexMatch),
-    header_matches: cdktf.listMapper(computeRegionUrlMapPathMatcherRouteRulesMatchRulesHeaderMatchesToTerraform, true)(struct!.headerMatches),
-    metadata_filters: cdktf.listMapper(computeRegionUrlMapPathMatcherRouteRulesMatchRulesMetadataFiltersToTerraform, true)(struct!.metadataFilters),
-    query_parameter_matches: cdktf.listMapper(computeRegionUrlMapPathMatcherRouteRulesMatchRulesQueryParameterMatchesToTerraform, true)(struct!.queryParameterMatches),
+    full_path_match: cdktn.stringToTerraform(struct!.fullPathMatch),
+    ignore_case: cdktn.booleanToTerraform(struct!.ignoreCase),
+    path_template_match: cdktn.stringToTerraform(struct!.pathTemplateMatch),
+    prefix_match: cdktn.stringToTerraform(struct!.prefixMatch),
+    regex_match: cdktn.stringToTerraform(struct!.regexMatch),
+    header_matches: cdktn.listMapper(computeRegionUrlMapPathMatcherRouteRulesMatchRulesHeaderMatchesToTerraform, true)(struct!.headerMatches),
+    metadata_filters: cdktn.listMapper(computeRegionUrlMapPathMatcherRouteRulesMatchRulesMetadataFiltersToTerraform, true)(struct!.metadataFilters),
+    query_parameter_matches: cdktn.listMapper(computeRegionUrlMapPathMatcherRouteRulesMatchRulesQueryParameterMatchesToTerraform, true)(struct!.queryParameterMatches),
   }
 }
 
 
-export function computeRegionUrlMapPathMatcherRouteRulesMatchRulesToHclTerraform(struct?: ComputeRegionUrlMapPathMatcherRouteRulesMatchRules | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function computeRegionUrlMapPathMatcherRouteRulesMatchRulesToHclTerraform(struct?: ComputeRegionUrlMapPathMatcherRouteRulesMatchRules | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     full_path_match: {
-      value: cdktf.stringToHclTerraform(struct!.fullPathMatch),
+      value: cdktn.stringToHclTerraform(struct!.fullPathMatch),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     ignore_case: {
-      value: cdktf.booleanToHclTerraform(struct!.ignoreCase),
+      value: cdktn.booleanToHclTerraform(struct!.ignoreCase),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     path_template_match: {
-      value: cdktf.stringToHclTerraform(struct!.pathTemplateMatch),
+      value: cdktn.stringToHclTerraform(struct!.pathTemplateMatch),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     prefix_match: {
-      value: cdktf.stringToHclTerraform(struct!.prefixMatch),
+      value: cdktn.stringToHclTerraform(struct!.prefixMatch),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     regex_match: {
-      value: cdktf.stringToHclTerraform(struct!.regexMatch),
+      value: cdktn.stringToHclTerraform(struct!.regexMatch),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     header_matches: {
-      value: cdktf.listMapperHcl(computeRegionUrlMapPathMatcherRouteRulesMatchRulesHeaderMatchesToHclTerraform, true)(struct!.headerMatches),
+      value: cdktn.listMapperHcl(computeRegionUrlMapPathMatcherRouteRulesMatchRulesHeaderMatchesToHclTerraform, true)(struct!.headerMatches),
       isBlock: true,
       type: "list",
       storageClassType: "ComputeRegionUrlMapPathMatcherRouteRulesMatchRulesHeaderMatchesList",
     },
     metadata_filters: {
-      value: cdktf.listMapperHcl(computeRegionUrlMapPathMatcherRouteRulesMatchRulesMetadataFiltersToHclTerraform, true)(struct!.metadataFilters),
+      value: cdktn.listMapperHcl(computeRegionUrlMapPathMatcherRouteRulesMatchRulesMetadataFiltersToHclTerraform, true)(struct!.metadataFilters),
       isBlock: true,
       type: "list",
       storageClassType: "ComputeRegionUrlMapPathMatcherRouteRulesMatchRulesMetadataFiltersList",
     },
     query_parameter_matches: {
-      value: cdktf.listMapperHcl(computeRegionUrlMapPathMatcherRouteRulesMatchRulesQueryParameterMatchesToHclTerraform, true)(struct!.queryParameterMatches),
+      value: cdktn.listMapperHcl(computeRegionUrlMapPathMatcherRouteRulesMatchRulesQueryParameterMatchesToHclTerraform, true)(struct!.queryParameterMatches),
       isBlock: true,
       type: "list",
       storageClassType: "ComputeRegionUrlMapPathMatcherRouteRulesMatchRulesQueryParameterMatchesList",
@@ -10798,9 +10798,9 @@ export function computeRegionUrlMapPathMatcherRouteRulesMatchRulesToHclTerraform
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class ComputeRegionUrlMapPathMatcherRouteRulesMatchRulesOutputReference extends cdktf.ComplexObject {
+export class ComputeRegionUrlMapPathMatcherRouteRulesMatchRulesOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -10808,11 +10808,11 @@ export class ComputeRegionUrlMapPathMatcherRouteRulesMatchRulesOutputReference e
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): ComputeRegionUrlMapPathMatcherRouteRulesMatchRules | cdktf.IResolvable | undefined {
+  public get internalValue(): ComputeRegionUrlMapPathMatcherRouteRulesMatchRules | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -10853,7 +10853,7 @@ export class ComputeRegionUrlMapPathMatcherRouteRulesMatchRulesOutputReference e
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: ComputeRegionUrlMapPathMatcherRouteRulesMatchRules | cdktf.IResolvable | undefined) {
+  public set internalValue(value: ComputeRegionUrlMapPathMatcherRouteRulesMatchRules | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -10866,7 +10866,7 @@ export class ComputeRegionUrlMapPathMatcherRouteRulesMatchRulesOutputReference e
       this._metadataFilters.internalValue = undefined;
       this._queryParameterMatches.internalValue = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -10901,11 +10901,11 @@ export class ComputeRegionUrlMapPathMatcherRouteRulesMatchRulesOutputReference e
   }
 
   // ignore_case - computed: false, optional: true, required: false
-  private _ignoreCase?: boolean | cdktf.IResolvable; 
+  private _ignoreCase?: boolean | cdktn.IResolvable; 
   public get ignoreCase() {
     return this.getBooleanAttribute('ignore_case');
   }
-  public set ignoreCase(value: boolean | cdktf.IResolvable) {
+  public set ignoreCase(value: boolean | cdktn.IResolvable) {
     this._ignoreCase = value;
   }
   public resetIgnoreCase() {
@@ -10969,7 +10969,7 @@ export class ComputeRegionUrlMapPathMatcherRouteRulesMatchRulesOutputReference e
   public get headerMatches() {
     return this._headerMatches;
   }
-  public putHeaderMatches(value: ComputeRegionUrlMapPathMatcherRouteRulesMatchRulesHeaderMatches[] | cdktf.IResolvable) {
+  public putHeaderMatches(value: ComputeRegionUrlMapPathMatcherRouteRulesMatchRulesHeaderMatches[] | cdktn.IResolvable) {
     this._headerMatches.internalValue = value;
   }
   public resetHeaderMatches() {
@@ -10985,7 +10985,7 @@ export class ComputeRegionUrlMapPathMatcherRouteRulesMatchRulesOutputReference e
   public get metadataFilters() {
     return this._metadataFilters;
   }
-  public putMetadataFilters(value: ComputeRegionUrlMapPathMatcherRouteRulesMatchRulesMetadataFilters[] | cdktf.IResolvable) {
+  public putMetadataFilters(value: ComputeRegionUrlMapPathMatcherRouteRulesMatchRulesMetadataFilters[] | cdktn.IResolvable) {
     this._metadataFilters.internalValue = value;
   }
   public resetMetadataFilters() {
@@ -11001,7 +11001,7 @@ export class ComputeRegionUrlMapPathMatcherRouteRulesMatchRulesOutputReference e
   public get queryParameterMatches() {
     return this._queryParameterMatches;
   }
-  public putQueryParameterMatches(value: ComputeRegionUrlMapPathMatcherRouteRulesMatchRulesQueryParameterMatches[] | cdktf.IResolvable) {
+  public putQueryParameterMatches(value: ComputeRegionUrlMapPathMatcherRouteRulesMatchRulesQueryParameterMatches[] | cdktn.IResolvable) {
     this._queryParameterMatches.internalValue = value;
   }
   public resetQueryParameterMatches() {
@@ -11013,15 +11013,15 @@ export class ComputeRegionUrlMapPathMatcherRouteRulesMatchRulesOutputReference e
   }
 }
 
-export class ComputeRegionUrlMapPathMatcherRouteRulesMatchRulesList extends cdktf.ComplexList {
-  public internalValue? : ComputeRegionUrlMapPathMatcherRouteRulesMatchRules[] | cdktf.IResolvable
+export class ComputeRegionUrlMapPathMatcherRouteRulesMatchRulesList extends cdktn.ComplexList {
+  public internalValue? : ComputeRegionUrlMapPathMatcherRouteRulesMatchRules[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -11040,7 +11040,7 @@ export interface ComputeRegionUrlMapPathMatcherRouteRulesRouteActionCorsPolicy {
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_region_url_map#allow_credentials ComputeRegionUrlMap#allow_credentials}
   */
-  readonly allowCredentials?: boolean | cdktf.IResolvable;
+  readonly allowCredentials?: boolean | cdktn.IResolvable;
   /**
   * Specifies the content for the Access-Control-Allow-Headers header.
   *
@@ -11074,7 +11074,7 @@ export interface ComputeRegionUrlMapPathMatcherRouteRulesRouteActionCorsPolicy {
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_region_url_map#disabled ComputeRegionUrlMap#disabled}
   */
-  readonly disabled?: boolean | cdktf.IResolvable;
+  readonly disabled?: boolean | cdktn.IResolvable;
   /**
   * Specifies the content for the Access-Control-Expose-Headers header.
   *
@@ -11091,73 +11091,73 @@ export interface ComputeRegionUrlMapPathMatcherRouteRulesRouteActionCorsPolicy {
 }
 
 export function computeRegionUrlMapPathMatcherRouteRulesRouteActionCorsPolicyToTerraform(struct?: ComputeRegionUrlMapPathMatcherRouteRulesRouteActionCorsPolicyOutputReference | ComputeRegionUrlMapPathMatcherRouteRulesRouteActionCorsPolicy): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    allow_credentials: cdktf.booleanToTerraform(struct!.allowCredentials),
-    allow_headers: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.allowHeaders),
-    allow_methods: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.allowMethods),
-    allow_origin_regexes: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.allowOriginRegexes),
-    allow_origins: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.allowOrigins),
-    disabled: cdktf.booleanToTerraform(struct!.disabled),
-    expose_headers: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.exposeHeaders),
-    max_age: cdktf.numberToTerraform(struct!.maxAge),
+    allow_credentials: cdktn.booleanToTerraform(struct!.allowCredentials),
+    allow_headers: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.allowHeaders),
+    allow_methods: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.allowMethods),
+    allow_origin_regexes: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.allowOriginRegexes),
+    allow_origins: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.allowOrigins),
+    disabled: cdktn.booleanToTerraform(struct!.disabled),
+    expose_headers: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.exposeHeaders),
+    max_age: cdktn.numberToTerraform(struct!.maxAge),
   }
 }
 
 
 export function computeRegionUrlMapPathMatcherRouteRulesRouteActionCorsPolicyToHclTerraform(struct?: ComputeRegionUrlMapPathMatcherRouteRulesRouteActionCorsPolicyOutputReference | ComputeRegionUrlMapPathMatcherRouteRulesRouteActionCorsPolicy): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     allow_credentials: {
-      value: cdktf.booleanToHclTerraform(struct!.allowCredentials),
+      value: cdktn.booleanToHclTerraform(struct!.allowCredentials),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     allow_headers: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.allowHeaders),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.allowHeaders),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
     },
     allow_methods: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.allowMethods),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.allowMethods),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
     },
     allow_origin_regexes: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.allowOriginRegexes),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.allowOriginRegexes),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
     },
     allow_origins: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.allowOrigins),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.allowOrigins),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
     },
     disabled: {
-      value: cdktf.booleanToHclTerraform(struct!.disabled),
+      value: cdktn.booleanToHclTerraform(struct!.disabled),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     expose_headers: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.exposeHeaders),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.exposeHeaders),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
     },
     max_age: {
-      value: cdktf.numberToHclTerraform(struct!.maxAge),
+      value: cdktn.numberToHclTerraform(struct!.maxAge),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
@@ -11168,14 +11168,14 @@ export function computeRegionUrlMapPathMatcherRouteRulesRouteActionCorsPolicyToH
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class ComputeRegionUrlMapPathMatcherRouteRulesRouteActionCorsPolicyOutputReference extends cdktf.ComplexObject {
+export class ComputeRegionUrlMapPathMatcherRouteRulesRouteActionCorsPolicyOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -11243,11 +11243,11 @@ export class ComputeRegionUrlMapPathMatcherRouteRulesRouteActionCorsPolicyOutput
   }
 
   // allow_credentials - computed: false, optional: true, required: false
-  private _allowCredentials?: boolean | cdktf.IResolvable; 
+  private _allowCredentials?: boolean | cdktn.IResolvable; 
   public get allowCredentials() {
     return this.getBooleanAttribute('allow_credentials');
   }
-  public set allowCredentials(value: boolean | cdktf.IResolvable) {
+  public set allowCredentials(value: boolean | cdktn.IResolvable) {
     this._allowCredentials = value;
   }
   public resetAllowCredentials() {
@@ -11323,11 +11323,11 @@ export class ComputeRegionUrlMapPathMatcherRouteRulesRouteActionCorsPolicyOutput
   }
 
   // disabled - computed: false, optional: true, required: false
-  private _disabled?: boolean | cdktf.IResolvable; 
+  private _disabled?: boolean | cdktn.IResolvable; 
   public get disabled() {
     return this.getBooleanAttribute('disabled');
   }
-  public set disabled(value: boolean | cdktf.IResolvable) {
+  public set disabled(value: boolean | cdktn.IResolvable) {
     this._disabled = value;
   }
   public resetDisabled() {
@@ -11389,31 +11389,31 @@ export interface ComputeRegionUrlMapPathMatcherRouteRulesRouteActionFaultInjecti
 }
 
 export function computeRegionUrlMapPathMatcherRouteRulesRouteActionFaultInjectionPolicyAbortToTerraform(struct?: ComputeRegionUrlMapPathMatcherRouteRulesRouteActionFaultInjectionPolicyAbortOutputReference | ComputeRegionUrlMapPathMatcherRouteRulesRouteActionFaultInjectionPolicyAbort): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    http_status: cdktf.numberToTerraform(struct!.httpStatus),
-    percentage: cdktf.numberToTerraform(struct!.percentage),
+    http_status: cdktn.numberToTerraform(struct!.httpStatus),
+    percentage: cdktn.numberToTerraform(struct!.percentage),
   }
 }
 
 
 export function computeRegionUrlMapPathMatcherRouteRulesRouteActionFaultInjectionPolicyAbortToHclTerraform(struct?: ComputeRegionUrlMapPathMatcherRouteRulesRouteActionFaultInjectionPolicyAbortOutputReference | ComputeRegionUrlMapPathMatcherRouteRulesRouteActionFaultInjectionPolicyAbort): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     http_status: {
-      value: cdktf.numberToHclTerraform(struct!.httpStatus),
+      value: cdktn.numberToHclTerraform(struct!.httpStatus),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     percentage: {
-      value: cdktf.numberToHclTerraform(struct!.percentage),
+      value: cdktn.numberToHclTerraform(struct!.percentage),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
@@ -11424,14 +11424,14 @@ export function computeRegionUrlMapPathMatcherRouteRulesRouteActionFaultInjectio
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class ComputeRegionUrlMapPathMatcherRouteRulesRouteActionFaultInjectionPolicyAbortOutputReference extends cdktf.ComplexObject {
+export class ComputeRegionUrlMapPathMatcherRouteRulesRouteActionFaultInjectionPolicyAbortOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -11513,31 +11513,31 @@ export interface ComputeRegionUrlMapPathMatcherRouteRulesRouteActionFaultInjecti
 }
 
 export function computeRegionUrlMapPathMatcherRouteRulesRouteActionFaultInjectionPolicyDelayFixedDelayToTerraform(struct?: ComputeRegionUrlMapPathMatcherRouteRulesRouteActionFaultInjectionPolicyDelayFixedDelayOutputReference | ComputeRegionUrlMapPathMatcherRouteRulesRouteActionFaultInjectionPolicyDelayFixedDelay): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    nanos: cdktf.numberToTerraform(struct!.nanos),
-    seconds: cdktf.stringToTerraform(struct!.seconds),
+    nanos: cdktn.numberToTerraform(struct!.nanos),
+    seconds: cdktn.stringToTerraform(struct!.seconds),
   }
 }
 
 
 export function computeRegionUrlMapPathMatcherRouteRulesRouteActionFaultInjectionPolicyDelayFixedDelayToHclTerraform(struct?: ComputeRegionUrlMapPathMatcherRouteRulesRouteActionFaultInjectionPolicyDelayFixedDelayOutputReference | ComputeRegionUrlMapPathMatcherRouteRulesRouteActionFaultInjectionPolicyDelayFixedDelay): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     nanos: {
-      value: cdktf.numberToHclTerraform(struct!.nanos),
+      value: cdktn.numberToHclTerraform(struct!.nanos),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     seconds: {
-      value: cdktf.stringToHclTerraform(struct!.seconds),
+      value: cdktn.stringToHclTerraform(struct!.seconds),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -11548,14 +11548,14 @@ export function computeRegionUrlMapPathMatcherRouteRulesRouteActionFaultInjectio
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class ComputeRegionUrlMapPathMatcherRouteRulesRouteActionFaultInjectionPolicyDelayFixedDelayOutputReference extends cdktf.ComplexObject {
+export class ComputeRegionUrlMapPathMatcherRouteRulesRouteActionFaultInjectionPolicyDelayFixedDelayOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -11633,25 +11633,25 @@ export interface ComputeRegionUrlMapPathMatcherRouteRulesRouteActionFaultInjecti
 }
 
 export function computeRegionUrlMapPathMatcherRouteRulesRouteActionFaultInjectionPolicyDelayToTerraform(struct?: ComputeRegionUrlMapPathMatcherRouteRulesRouteActionFaultInjectionPolicyDelayOutputReference | ComputeRegionUrlMapPathMatcherRouteRulesRouteActionFaultInjectionPolicyDelay): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    percentage: cdktf.numberToTerraform(struct!.percentage),
+    percentage: cdktn.numberToTerraform(struct!.percentage),
     fixed_delay: computeRegionUrlMapPathMatcherRouteRulesRouteActionFaultInjectionPolicyDelayFixedDelayToTerraform(struct!.fixedDelay),
   }
 }
 
 
 export function computeRegionUrlMapPathMatcherRouteRulesRouteActionFaultInjectionPolicyDelayToHclTerraform(struct?: ComputeRegionUrlMapPathMatcherRouteRulesRouteActionFaultInjectionPolicyDelayOutputReference | ComputeRegionUrlMapPathMatcherRouteRulesRouteActionFaultInjectionPolicyDelay): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     percentage: {
-      value: cdktf.numberToHclTerraform(struct!.percentage),
+      value: cdktn.numberToHclTerraform(struct!.percentage),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
@@ -11668,14 +11668,14 @@ export function computeRegionUrlMapPathMatcherRouteRulesRouteActionFaultInjectio
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class ComputeRegionUrlMapPathMatcherRouteRulesRouteActionFaultInjectionPolicyDelayOutputReference extends cdktf.ComplexObject {
+export class ComputeRegionUrlMapPathMatcherRouteRulesRouteActionFaultInjectionPolicyDelayOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -11754,8 +11754,8 @@ export interface ComputeRegionUrlMapPathMatcherRouteRulesRouteActionFaultInjecti
 }
 
 export function computeRegionUrlMapPathMatcherRouteRulesRouteActionFaultInjectionPolicyToTerraform(struct?: ComputeRegionUrlMapPathMatcherRouteRulesRouteActionFaultInjectionPolicyOutputReference | ComputeRegionUrlMapPathMatcherRouteRulesRouteActionFaultInjectionPolicy): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -11766,8 +11766,8 @@ export function computeRegionUrlMapPathMatcherRouteRulesRouteActionFaultInjectio
 
 
 export function computeRegionUrlMapPathMatcherRouteRulesRouteActionFaultInjectionPolicyToHclTerraform(struct?: ComputeRegionUrlMapPathMatcherRouteRulesRouteActionFaultInjectionPolicyOutputReference | ComputeRegionUrlMapPathMatcherRouteRulesRouteActionFaultInjectionPolicy): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -11789,14 +11789,14 @@ export function computeRegionUrlMapPathMatcherRouteRulesRouteActionFaultInjectio
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class ComputeRegionUrlMapPathMatcherRouteRulesRouteActionFaultInjectionPolicyOutputReference extends cdktf.ComplexObject {
+export class ComputeRegionUrlMapPathMatcherRouteRulesRouteActionFaultInjectionPolicyOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -11869,24 +11869,24 @@ export interface ComputeRegionUrlMapPathMatcherRouteRulesRouteActionRequestMirro
 }
 
 export function computeRegionUrlMapPathMatcherRouteRulesRouteActionRequestMirrorPolicyToTerraform(struct?: ComputeRegionUrlMapPathMatcherRouteRulesRouteActionRequestMirrorPolicyOutputReference | ComputeRegionUrlMapPathMatcherRouteRulesRouteActionRequestMirrorPolicy): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    backend_service: cdktf.stringToTerraform(struct!.backendService),
+    backend_service: cdktn.stringToTerraform(struct!.backendService),
   }
 }
 
 
 export function computeRegionUrlMapPathMatcherRouteRulesRouteActionRequestMirrorPolicyToHclTerraform(struct?: ComputeRegionUrlMapPathMatcherRouteRulesRouteActionRequestMirrorPolicyOutputReference | ComputeRegionUrlMapPathMatcherRouteRulesRouteActionRequestMirrorPolicy): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     backend_service: {
-      value: cdktf.stringToHclTerraform(struct!.backendService),
+      value: cdktn.stringToHclTerraform(struct!.backendService),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -11897,14 +11897,14 @@ export function computeRegionUrlMapPathMatcherRouteRulesRouteActionRequestMirror
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class ComputeRegionUrlMapPathMatcherRouteRulesRouteActionRequestMirrorPolicyOutputReference extends cdktf.ComplexObject {
+export class ComputeRegionUrlMapPathMatcherRouteRulesRouteActionRequestMirrorPolicyOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -11961,31 +11961,31 @@ export interface ComputeRegionUrlMapPathMatcherRouteRulesRouteActionRetryPolicyP
 }
 
 export function computeRegionUrlMapPathMatcherRouteRulesRouteActionRetryPolicyPerTryTimeoutToTerraform(struct?: ComputeRegionUrlMapPathMatcherRouteRulesRouteActionRetryPolicyPerTryTimeoutOutputReference | ComputeRegionUrlMapPathMatcherRouteRulesRouteActionRetryPolicyPerTryTimeout): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    nanos: cdktf.numberToTerraform(struct!.nanos),
-    seconds: cdktf.stringToTerraform(struct!.seconds),
+    nanos: cdktn.numberToTerraform(struct!.nanos),
+    seconds: cdktn.stringToTerraform(struct!.seconds),
   }
 }
 
 
 export function computeRegionUrlMapPathMatcherRouteRulesRouteActionRetryPolicyPerTryTimeoutToHclTerraform(struct?: ComputeRegionUrlMapPathMatcherRouteRulesRouteActionRetryPolicyPerTryTimeoutOutputReference | ComputeRegionUrlMapPathMatcherRouteRulesRouteActionRetryPolicyPerTryTimeout): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     nanos: {
-      value: cdktf.numberToHclTerraform(struct!.nanos),
+      value: cdktn.numberToHclTerraform(struct!.nanos),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     seconds: {
-      value: cdktf.stringToHclTerraform(struct!.seconds),
+      value: cdktn.stringToHclTerraform(struct!.seconds),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -11996,14 +11996,14 @@ export function computeRegionUrlMapPathMatcherRouteRulesRouteActionRetryPolicyPe
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class ComputeRegionUrlMapPathMatcherRouteRulesRouteActionRetryPolicyPerTryTimeoutOutputReference extends cdktf.ComplexObject {
+export class ComputeRegionUrlMapPathMatcherRouteRulesRouteActionRetryPolicyPerTryTimeoutOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -12106,32 +12106,32 @@ export interface ComputeRegionUrlMapPathMatcherRouteRulesRouteActionRetryPolicy 
 }
 
 export function computeRegionUrlMapPathMatcherRouteRulesRouteActionRetryPolicyToTerraform(struct?: ComputeRegionUrlMapPathMatcherRouteRulesRouteActionRetryPolicyOutputReference | ComputeRegionUrlMapPathMatcherRouteRulesRouteActionRetryPolicy): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    num_retries: cdktf.numberToTerraform(struct!.numRetries),
-    retry_conditions: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.retryConditions),
+    num_retries: cdktn.numberToTerraform(struct!.numRetries),
+    retry_conditions: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.retryConditions),
     per_try_timeout: computeRegionUrlMapPathMatcherRouteRulesRouteActionRetryPolicyPerTryTimeoutToTerraform(struct!.perTryTimeout),
   }
 }
 
 
 export function computeRegionUrlMapPathMatcherRouteRulesRouteActionRetryPolicyToHclTerraform(struct?: ComputeRegionUrlMapPathMatcherRouteRulesRouteActionRetryPolicyOutputReference | ComputeRegionUrlMapPathMatcherRouteRulesRouteActionRetryPolicy): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     num_retries: {
-      value: cdktf.numberToHclTerraform(struct!.numRetries),
+      value: cdktn.numberToHclTerraform(struct!.numRetries),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     retry_conditions: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.retryConditions),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.retryConditions),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
@@ -12148,14 +12148,14 @@ export function computeRegionUrlMapPathMatcherRouteRulesRouteActionRetryPolicyTo
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class ComputeRegionUrlMapPathMatcherRouteRulesRouteActionRetryPolicyOutputReference extends cdktf.ComplexObject {
+export class ComputeRegionUrlMapPathMatcherRouteRulesRouteActionRetryPolicyOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -12256,31 +12256,31 @@ export interface ComputeRegionUrlMapPathMatcherRouteRulesRouteActionTimeout {
 }
 
 export function computeRegionUrlMapPathMatcherRouteRulesRouteActionTimeoutToTerraform(struct?: ComputeRegionUrlMapPathMatcherRouteRulesRouteActionTimeoutOutputReference | ComputeRegionUrlMapPathMatcherRouteRulesRouteActionTimeout): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    nanos: cdktf.numberToTerraform(struct!.nanos),
-    seconds: cdktf.stringToTerraform(struct!.seconds),
+    nanos: cdktn.numberToTerraform(struct!.nanos),
+    seconds: cdktn.stringToTerraform(struct!.seconds),
   }
 }
 
 
 export function computeRegionUrlMapPathMatcherRouteRulesRouteActionTimeoutToHclTerraform(struct?: ComputeRegionUrlMapPathMatcherRouteRulesRouteActionTimeoutOutputReference | ComputeRegionUrlMapPathMatcherRouteRulesRouteActionTimeout): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     nanos: {
-      value: cdktf.numberToHclTerraform(struct!.nanos),
+      value: cdktn.numberToHclTerraform(struct!.nanos),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     seconds: {
-      value: cdktf.stringToHclTerraform(struct!.seconds),
+      value: cdktn.stringToHclTerraform(struct!.seconds),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -12291,14 +12291,14 @@ export function computeRegionUrlMapPathMatcherRouteRulesRouteActionTimeoutToHclT
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class ComputeRegionUrlMapPathMatcherRouteRulesRouteActionTimeoutOutputReference extends cdktf.ComplexObject {
+export class ComputeRegionUrlMapPathMatcherRouteRulesRouteActionTimeoutOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -12397,38 +12397,38 @@ export interface ComputeRegionUrlMapPathMatcherRouteRulesRouteActionUrlRewrite {
 }
 
 export function computeRegionUrlMapPathMatcherRouteRulesRouteActionUrlRewriteToTerraform(struct?: ComputeRegionUrlMapPathMatcherRouteRulesRouteActionUrlRewriteOutputReference | ComputeRegionUrlMapPathMatcherRouteRulesRouteActionUrlRewrite): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    host_rewrite: cdktf.stringToTerraform(struct!.hostRewrite),
-    path_prefix_rewrite: cdktf.stringToTerraform(struct!.pathPrefixRewrite),
-    path_template_rewrite: cdktf.stringToTerraform(struct!.pathTemplateRewrite),
+    host_rewrite: cdktn.stringToTerraform(struct!.hostRewrite),
+    path_prefix_rewrite: cdktn.stringToTerraform(struct!.pathPrefixRewrite),
+    path_template_rewrite: cdktn.stringToTerraform(struct!.pathTemplateRewrite),
   }
 }
 
 
 export function computeRegionUrlMapPathMatcherRouteRulesRouteActionUrlRewriteToHclTerraform(struct?: ComputeRegionUrlMapPathMatcherRouteRulesRouteActionUrlRewriteOutputReference | ComputeRegionUrlMapPathMatcherRouteRulesRouteActionUrlRewrite): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     host_rewrite: {
-      value: cdktf.stringToHclTerraform(struct!.hostRewrite),
+      value: cdktn.stringToHclTerraform(struct!.hostRewrite),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     path_prefix_rewrite: {
-      value: cdktf.stringToHclTerraform(struct!.pathPrefixRewrite),
+      value: cdktn.stringToHclTerraform(struct!.pathPrefixRewrite),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     path_template_rewrite: {
-      value: cdktf.stringToHclTerraform(struct!.pathTemplateRewrite),
+      value: cdktn.stringToHclTerraform(struct!.pathTemplateRewrite),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -12439,14 +12439,14 @@ export function computeRegionUrlMapPathMatcherRouteRulesRouteActionUrlRewriteToH
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class ComputeRegionUrlMapPathMatcherRouteRulesRouteActionUrlRewriteOutputReference extends cdktf.ComplexObject {
+export class ComputeRegionUrlMapPathMatcherRouteRulesRouteActionUrlRewriteOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -12551,42 +12551,42 @@ export interface ComputeRegionUrlMapPathMatcherRouteRulesRouteActionWeightedBack
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_region_url_map#replace ComputeRegionUrlMap#replace}
   */
-  readonly replace: boolean | cdktf.IResolvable;
+  readonly replace: boolean | cdktn.IResolvable;
 }
 
-export function computeRegionUrlMapPathMatcherRouteRulesRouteActionWeightedBackendServicesHeaderActionRequestHeadersToAddToTerraform(struct?: ComputeRegionUrlMapPathMatcherRouteRulesRouteActionWeightedBackendServicesHeaderActionRequestHeadersToAdd | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function computeRegionUrlMapPathMatcherRouteRulesRouteActionWeightedBackendServicesHeaderActionRequestHeadersToAddToTerraform(struct?: ComputeRegionUrlMapPathMatcherRouteRulesRouteActionWeightedBackendServicesHeaderActionRequestHeadersToAdd | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    header_name: cdktf.stringToTerraform(struct!.headerName),
-    header_value: cdktf.stringToTerraform(struct!.headerValue),
-    replace: cdktf.booleanToTerraform(struct!.replace),
+    header_name: cdktn.stringToTerraform(struct!.headerName),
+    header_value: cdktn.stringToTerraform(struct!.headerValue),
+    replace: cdktn.booleanToTerraform(struct!.replace),
   }
 }
 
 
-export function computeRegionUrlMapPathMatcherRouteRulesRouteActionWeightedBackendServicesHeaderActionRequestHeadersToAddToHclTerraform(struct?: ComputeRegionUrlMapPathMatcherRouteRulesRouteActionWeightedBackendServicesHeaderActionRequestHeadersToAdd | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function computeRegionUrlMapPathMatcherRouteRulesRouteActionWeightedBackendServicesHeaderActionRequestHeadersToAddToHclTerraform(struct?: ComputeRegionUrlMapPathMatcherRouteRulesRouteActionWeightedBackendServicesHeaderActionRequestHeadersToAdd | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     header_name: {
-      value: cdktf.stringToHclTerraform(struct!.headerName),
+      value: cdktn.stringToHclTerraform(struct!.headerName),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     header_value: {
-      value: cdktf.stringToHclTerraform(struct!.headerValue),
+      value: cdktn.stringToHclTerraform(struct!.headerValue),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     replace: {
-      value: cdktf.booleanToHclTerraform(struct!.replace),
+      value: cdktn.booleanToHclTerraform(struct!.replace),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
@@ -12597,9 +12597,9 @@ export function computeRegionUrlMapPathMatcherRouteRulesRouteActionWeightedBacke
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class ComputeRegionUrlMapPathMatcherRouteRulesRouteActionWeightedBackendServicesHeaderActionRequestHeadersToAddOutputReference extends cdktf.ComplexObject {
+export class ComputeRegionUrlMapPathMatcherRouteRulesRouteActionWeightedBackendServicesHeaderActionRequestHeadersToAddOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -12607,11 +12607,11 @@ export class ComputeRegionUrlMapPathMatcherRouteRulesRouteActionWeightedBackendS
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): ComputeRegionUrlMapPathMatcherRouteRulesRouteActionWeightedBackendServicesHeaderActionRequestHeadersToAdd | cdktf.IResolvable | undefined {
+  public get internalValue(): ComputeRegionUrlMapPathMatcherRouteRulesRouteActionWeightedBackendServicesHeaderActionRequestHeadersToAdd | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -12632,7 +12632,7 @@ export class ComputeRegionUrlMapPathMatcherRouteRulesRouteActionWeightedBackendS
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: ComputeRegionUrlMapPathMatcherRouteRulesRouteActionWeightedBackendServicesHeaderActionRequestHeadersToAdd | cdktf.IResolvable | undefined) {
+  public set internalValue(value: ComputeRegionUrlMapPathMatcherRouteRulesRouteActionWeightedBackendServicesHeaderActionRequestHeadersToAdd | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -12640,7 +12640,7 @@ export class ComputeRegionUrlMapPathMatcherRouteRulesRouteActionWeightedBackendS
       this._headerValue = undefined;
       this._replace = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -12680,11 +12680,11 @@ export class ComputeRegionUrlMapPathMatcherRouteRulesRouteActionWeightedBackendS
   }
 
   // replace - computed: false, optional: false, required: true
-  private _replace?: boolean | cdktf.IResolvable; 
+  private _replace?: boolean | cdktn.IResolvable; 
   public get replace() {
     return this.getBooleanAttribute('replace');
   }
-  public set replace(value: boolean | cdktf.IResolvable) {
+  public set replace(value: boolean | cdktn.IResolvable) {
     this._replace = value;
   }
   // Temporarily expose input value. Use with caution.
@@ -12693,15 +12693,15 @@ export class ComputeRegionUrlMapPathMatcherRouteRulesRouteActionWeightedBackendS
   }
 }
 
-export class ComputeRegionUrlMapPathMatcherRouteRulesRouteActionWeightedBackendServicesHeaderActionRequestHeadersToAddList extends cdktf.ComplexList {
-  public internalValue? : ComputeRegionUrlMapPathMatcherRouteRulesRouteActionWeightedBackendServicesHeaderActionRequestHeadersToAdd[] | cdktf.IResolvable
+export class ComputeRegionUrlMapPathMatcherRouteRulesRouteActionWeightedBackendServicesHeaderActionRequestHeadersToAddList extends cdktn.ComplexList {
+  public internalValue? : ComputeRegionUrlMapPathMatcherRouteRulesRouteActionWeightedBackendServicesHeaderActionRequestHeadersToAdd[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -12732,42 +12732,42 @@ export interface ComputeRegionUrlMapPathMatcherRouteRulesRouteActionWeightedBack
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_region_url_map#replace ComputeRegionUrlMap#replace}
   */
-  readonly replace: boolean | cdktf.IResolvable;
+  readonly replace: boolean | cdktn.IResolvable;
 }
 
-export function computeRegionUrlMapPathMatcherRouteRulesRouteActionWeightedBackendServicesHeaderActionResponseHeadersToAddToTerraform(struct?: ComputeRegionUrlMapPathMatcherRouteRulesRouteActionWeightedBackendServicesHeaderActionResponseHeadersToAdd | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function computeRegionUrlMapPathMatcherRouteRulesRouteActionWeightedBackendServicesHeaderActionResponseHeadersToAddToTerraform(struct?: ComputeRegionUrlMapPathMatcherRouteRulesRouteActionWeightedBackendServicesHeaderActionResponseHeadersToAdd | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    header_name: cdktf.stringToTerraform(struct!.headerName),
-    header_value: cdktf.stringToTerraform(struct!.headerValue),
-    replace: cdktf.booleanToTerraform(struct!.replace),
+    header_name: cdktn.stringToTerraform(struct!.headerName),
+    header_value: cdktn.stringToTerraform(struct!.headerValue),
+    replace: cdktn.booleanToTerraform(struct!.replace),
   }
 }
 
 
-export function computeRegionUrlMapPathMatcherRouteRulesRouteActionWeightedBackendServicesHeaderActionResponseHeadersToAddToHclTerraform(struct?: ComputeRegionUrlMapPathMatcherRouteRulesRouteActionWeightedBackendServicesHeaderActionResponseHeadersToAdd | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function computeRegionUrlMapPathMatcherRouteRulesRouteActionWeightedBackendServicesHeaderActionResponseHeadersToAddToHclTerraform(struct?: ComputeRegionUrlMapPathMatcherRouteRulesRouteActionWeightedBackendServicesHeaderActionResponseHeadersToAdd | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     header_name: {
-      value: cdktf.stringToHclTerraform(struct!.headerName),
+      value: cdktn.stringToHclTerraform(struct!.headerName),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     header_value: {
-      value: cdktf.stringToHclTerraform(struct!.headerValue),
+      value: cdktn.stringToHclTerraform(struct!.headerValue),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     replace: {
-      value: cdktf.booleanToHclTerraform(struct!.replace),
+      value: cdktn.booleanToHclTerraform(struct!.replace),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
@@ -12778,9 +12778,9 @@ export function computeRegionUrlMapPathMatcherRouteRulesRouteActionWeightedBacke
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class ComputeRegionUrlMapPathMatcherRouteRulesRouteActionWeightedBackendServicesHeaderActionResponseHeadersToAddOutputReference extends cdktf.ComplexObject {
+export class ComputeRegionUrlMapPathMatcherRouteRulesRouteActionWeightedBackendServicesHeaderActionResponseHeadersToAddOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -12788,11 +12788,11 @@ export class ComputeRegionUrlMapPathMatcherRouteRulesRouteActionWeightedBackendS
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): ComputeRegionUrlMapPathMatcherRouteRulesRouteActionWeightedBackendServicesHeaderActionResponseHeadersToAdd | cdktf.IResolvable | undefined {
+  public get internalValue(): ComputeRegionUrlMapPathMatcherRouteRulesRouteActionWeightedBackendServicesHeaderActionResponseHeadersToAdd | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -12813,7 +12813,7 @@ export class ComputeRegionUrlMapPathMatcherRouteRulesRouteActionWeightedBackendS
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: ComputeRegionUrlMapPathMatcherRouteRulesRouteActionWeightedBackendServicesHeaderActionResponseHeadersToAdd | cdktf.IResolvable | undefined) {
+  public set internalValue(value: ComputeRegionUrlMapPathMatcherRouteRulesRouteActionWeightedBackendServicesHeaderActionResponseHeadersToAdd | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -12821,7 +12821,7 @@ export class ComputeRegionUrlMapPathMatcherRouteRulesRouteActionWeightedBackendS
       this._headerValue = undefined;
       this._replace = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -12861,11 +12861,11 @@ export class ComputeRegionUrlMapPathMatcherRouteRulesRouteActionWeightedBackendS
   }
 
   // replace - computed: false, optional: false, required: true
-  private _replace?: boolean | cdktf.IResolvable; 
+  private _replace?: boolean | cdktn.IResolvable; 
   public get replace() {
     return this.getBooleanAttribute('replace');
   }
-  public set replace(value: boolean | cdktf.IResolvable) {
+  public set replace(value: boolean | cdktn.IResolvable) {
     this._replace = value;
   }
   // Temporarily expose input value. Use with caution.
@@ -12874,15 +12874,15 @@ export class ComputeRegionUrlMapPathMatcherRouteRulesRouteActionWeightedBackendS
   }
 }
 
-export class ComputeRegionUrlMapPathMatcherRouteRulesRouteActionWeightedBackendServicesHeaderActionResponseHeadersToAddList extends cdktf.ComplexList {
-  public internalValue? : ComputeRegionUrlMapPathMatcherRouteRulesRouteActionWeightedBackendServicesHeaderActionResponseHeadersToAdd[] | cdktf.IResolvable
+export class ComputeRegionUrlMapPathMatcherRouteRulesRouteActionWeightedBackendServicesHeaderActionResponseHeadersToAddList extends cdktn.ComplexList {
+  public internalValue? : ComputeRegionUrlMapPathMatcherRouteRulesRouteActionWeightedBackendServicesHeaderActionResponseHeadersToAdd[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -12913,55 +12913,55 @@ export interface ComputeRegionUrlMapPathMatcherRouteRulesRouteActionWeightedBack
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_region_url_map#request_headers_to_add ComputeRegionUrlMap#request_headers_to_add}
   */
-  readonly requestHeadersToAdd?: ComputeRegionUrlMapPathMatcherRouteRulesRouteActionWeightedBackendServicesHeaderActionRequestHeadersToAdd[] | cdktf.IResolvable;
+  readonly requestHeadersToAdd?: ComputeRegionUrlMapPathMatcherRouteRulesRouteActionWeightedBackendServicesHeaderActionRequestHeadersToAdd[] | cdktn.IResolvable;
   /**
   * response_headers_to_add block
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_region_url_map#response_headers_to_add ComputeRegionUrlMap#response_headers_to_add}
   */
-  readonly responseHeadersToAdd?: ComputeRegionUrlMapPathMatcherRouteRulesRouteActionWeightedBackendServicesHeaderActionResponseHeadersToAdd[] | cdktf.IResolvable;
+  readonly responseHeadersToAdd?: ComputeRegionUrlMapPathMatcherRouteRulesRouteActionWeightedBackendServicesHeaderActionResponseHeadersToAdd[] | cdktn.IResolvable;
 }
 
 export function computeRegionUrlMapPathMatcherRouteRulesRouteActionWeightedBackendServicesHeaderActionToTerraform(struct?: ComputeRegionUrlMapPathMatcherRouteRulesRouteActionWeightedBackendServicesHeaderActionOutputReference | ComputeRegionUrlMapPathMatcherRouteRulesRouteActionWeightedBackendServicesHeaderAction): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    request_headers_to_remove: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.requestHeadersToRemove),
-    response_headers_to_remove: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.responseHeadersToRemove),
-    request_headers_to_add: cdktf.listMapper(computeRegionUrlMapPathMatcherRouteRulesRouteActionWeightedBackendServicesHeaderActionRequestHeadersToAddToTerraform, true)(struct!.requestHeadersToAdd),
-    response_headers_to_add: cdktf.listMapper(computeRegionUrlMapPathMatcherRouteRulesRouteActionWeightedBackendServicesHeaderActionResponseHeadersToAddToTerraform, true)(struct!.responseHeadersToAdd),
+    request_headers_to_remove: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.requestHeadersToRemove),
+    response_headers_to_remove: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.responseHeadersToRemove),
+    request_headers_to_add: cdktn.listMapper(computeRegionUrlMapPathMatcherRouteRulesRouteActionWeightedBackendServicesHeaderActionRequestHeadersToAddToTerraform, true)(struct!.requestHeadersToAdd),
+    response_headers_to_add: cdktn.listMapper(computeRegionUrlMapPathMatcherRouteRulesRouteActionWeightedBackendServicesHeaderActionResponseHeadersToAddToTerraform, true)(struct!.responseHeadersToAdd),
   }
 }
 
 
 export function computeRegionUrlMapPathMatcherRouteRulesRouteActionWeightedBackendServicesHeaderActionToHclTerraform(struct?: ComputeRegionUrlMapPathMatcherRouteRulesRouteActionWeightedBackendServicesHeaderActionOutputReference | ComputeRegionUrlMapPathMatcherRouteRulesRouteActionWeightedBackendServicesHeaderAction): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     request_headers_to_remove: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.requestHeadersToRemove),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.requestHeadersToRemove),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
     },
     response_headers_to_remove: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.responseHeadersToRemove),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.responseHeadersToRemove),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
     },
     request_headers_to_add: {
-      value: cdktf.listMapperHcl(computeRegionUrlMapPathMatcherRouteRulesRouteActionWeightedBackendServicesHeaderActionRequestHeadersToAddToHclTerraform, true)(struct!.requestHeadersToAdd),
+      value: cdktn.listMapperHcl(computeRegionUrlMapPathMatcherRouteRulesRouteActionWeightedBackendServicesHeaderActionRequestHeadersToAddToHclTerraform, true)(struct!.requestHeadersToAdd),
       isBlock: true,
       type: "list",
       storageClassType: "ComputeRegionUrlMapPathMatcherRouteRulesRouteActionWeightedBackendServicesHeaderActionRequestHeadersToAddList",
     },
     response_headers_to_add: {
-      value: cdktf.listMapperHcl(computeRegionUrlMapPathMatcherRouteRulesRouteActionWeightedBackendServicesHeaderActionResponseHeadersToAddToHclTerraform, true)(struct!.responseHeadersToAdd),
+      value: cdktn.listMapperHcl(computeRegionUrlMapPathMatcherRouteRulesRouteActionWeightedBackendServicesHeaderActionResponseHeadersToAddToHclTerraform, true)(struct!.responseHeadersToAdd),
       isBlock: true,
       type: "list",
       storageClassType: "ComputeRegionUrlMapPathMatcherRouteRulesRouteActionWeightedBackendServicesHeaderActionResponseHeadersToAddList",
@@ -12972,14 +12972,14 @@ export function computeRegionUrlMapPathMatcherRouteRulesRouteActionWeightedBacke
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class ComputeRegionUrlMapPathMatcherRouteRulesRouteActionWeightedBackendServicesHeaderActionOutputReference extends cdktf.ComplexObject {
+export class ComputeRegionUrlMapPathMatcherRouteRulesRouteActionWeightedBackendServicesHeaderActionOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -13059,7 +13059,7 @@ export class ComputeRegionUrlMapPathMatcherRouteRulesRouteActionWeightedBackendS
   public get requestHeadersToAdd() {
     return this._requestHeadersToAdd;
   }
-  public putRequestHeadersToAdd(value: ComputeRegionUrlMapPathMatcherRouteRulesRouteActionWeightedBackendServicesHeaderActionRequestHeadersToAdd[] | cdktf.IResolvable) {
+  public putRequestHeadersToAdd(value: ComputeRegionUrlMapPathMatcherRouteRulesRouteActionWeightedBackendServicesHeaderActionRequestHeadersToAdd[] | cdktn.IResolvable) {
     this._requestHeadersToAdd.internalValue = value;
   }
   public resetRequestHeadersToAdd() {
@@ -13075,7 +13075,7 @@ export class ComputeRegionUrlMapPathMatcherRouteRulesRouteActionWeightedBackendS
   public get responseHeadersToAdd() {
     return this._responseHeadersToAdd;
   }
-  public putResponseHeadersToAdd(value: ComputeRegionUrlMapPathMatcherRouteRulesRouteActionWeightedBackendServicesHeaderActionResponseHeadersToAdd[] | cdktf.IResolvable) {
+  public putResponseHeadersToAdd(value: ComputeRegionUrlMapPathMatcherRouteRulesRouteActionWeightedBackendServicesHeaderActionResponseHeadersToAdd[] | cdktn.IResolvable) {
     this._responseHeadersToAdd.internalValue = value;
   }
   public resetResponseHeadersToAdd() {
@@ -13114,33 +13114,33 @@ export interface ComputeRegionUrlMapPathMatcherRouteRulesRouteActionWeightedBack
   readonly headerAction?: ComputeRegionUrlMapPathMatcherRouteRulesRouteActionWeightedBackendServicesHeaderAction;
 }
 
-export function computeRegionUrlMapPathMatcherRouteRulesRouteActionWeightedBackendServicesToTerraform(struct?: ComputeRegionUrlMapPathMatcherRouteRulesRouteActionWeightedBackendServices | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function computeRegionUrlMapPathMatcherRouteRulesRouteActionWeightedBackendServicesToTerraform(struct?: ComputeRegionUrlMapPathMatcherRouteRulesRouteActionWeightedBackendServices | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    backend_service: cdktf.stringToTerraform(struct!.backendService),
-    weight: cdktf.numberToTerraform(struct!.weight),
+    backend_service: cdktn.stringToTerraform(struct!.backendService),
+    weight: cdktn.numberToTerraform(struct!.weight),
     header_action: computeRegionUrlMapPathMatcherRouteRulesRouteActionWeightedBackendServicesHeaderActionToTerraform(struct!.headerAction),
   }
 }
 
 
-export function computeRegionUrlMapPathMatcherRouteRulesRouteActionWeightedBackendServicesToHclTerraform(struct?: ComputeRegionUrlMapPathMatcherRouteRulesRouteActionWeightedBackendServices | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function computeRegionUrlMapPathMatcherRouteRulesRouteActionWeightedBackendServicesToHclTerraform(struct?: ComputeRegionUrlMapPathMatcherRouteRulesRouteActionWeightedBackendServices | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     backend_service: {
-      value: cdktf.stringToHclTerraform(struct!.backendService),
+      value: cdktn.stringToHclTerraform(struct!.backendService),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     weight: {
-      value: cdktf.numberToHclTerraform(struct!.weight),
+      value: cdktn.numberToHclTerraform(struct!.weight),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
@@ -13157,9 +13157,9 @@ export function computeRegionUrlMapPathMatcherRouteRulesRouteActionWeightedBacke
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class ComputeRegionUrlMapPathMatcherRouteRulesRouteActionWeightedBackendServicesOutputReference extends cdktf.ComplexObject {
+export class ComputeRegionUrlMapPathMatcherRouteRulesRouteActionWeightedBackendServicesOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -13167,11 +13167,11 @@ export class ComputeRegionUrlMapPathMatcherRouteRulesRouteActionWeightedBackendS
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): ComputeRegionUrlMapPathMatcherRouteRulesRouteActionWeightedBackendServices | cdktf.IResolvable | undefined {
+  public get internalValue(): ComputeRegionUrlMapPathMatcherRouteRulesRouteActionWeightedBackendServices | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -13192,7 +13192,7 @@ export class ComputeRegionUrlMapPathMatcherRouteRulesRouteActionWeightedBackendS
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: ComputeRegionUrlMapPathMatcherRouteRulesRouteActionWeightedBackendServices | cdktf.IResolvable | undefined) {
+  public set internalValue(value: ComputeRegionUrlMapPathMatcherRouteRulesRouteActionWeightedBackendServices | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -13200,7 +13200,7 @@ export class ComputeRegionUrlMapPathMatcherRouteRulesRouteActionWeightedBackendS
       this._weight = undefined;
       this._headerAction.internalValue = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -13256,15 +13256,15 @@ export class ComputeRegionUrlMapPathMatcherRouteRulesRouteActionWeightedBackendS
   }
 }
 
-export class ComputeRegionUrlMapPathMatcherRouteRulesRouteActionWeightedBackendServicesList extends cdktf.ComplexList {
-  public internalValue? : ComputeRegionUrlMapPathMatcherRouteRulesRouteActionWeightedBackendServices[] | cdktf.IResolvable
+export class ComputeRegionUrlMapPathMatcherRouteRulesRouteActionWeightedBackendServicesList extends cdktn.ComplexList {
+  public internalValue? : ComputeRegionUrlMapPathMatcherRouteRulesRouteActionWeightedBackendServices[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -13317,12 +13317,12 @@ export interface ComputeRegionUrlMapPathMatcherRouteRulesRouteAction {
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_region_url_map#weighted_backend_services ComputeRegionUrlMap#weighted_backend_services}
   */
-  readonly weightedBackendServices?: ComputeRegionUrlMapPathMatcherRouteRulesRouteActionWeightedBackendServices[] | cdktf.IResolvable;
+  readonly weightedBackendServices?: ComputeRegionUrlMapPathMatcherRouteRulesRouteActionWeightedBackendServices[] | cdktn.IResolvable;
 }
 
 export function computeRegionUrlMapPathMatcherRouteRulesRouteActionToTerraform(struct?: ComputeRegionUrlMapPathMatcherRouteRulesRouteActionOutputReference | ComputeRegionUrlMapPathMatcherRouteRulesRouteAction): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -13332,14 +13332,14 @@ export function computeRegionUrlMapPathMatcherRouteRulesRouteActionToTerraform(s
     retry_policy: computeRegionUrlMapPathMatcherRouteRulesRouteActionRetryPolicyToTerraform(struct!.retryPolicy),
     timeout: computeRegionUrlMapPathMatcherRouteRulesRouteActionTimeoutToTerraform(struct!.timeout),
     url_rewrite: computeRegionUrlMapPathMatcherRouteRulesRouteActionUrlRewriteToTerraform(struct!.urlRewrite),
-    weighted_backend_services: cdktf.listMapper(computeRegionUrlMapPathMatcherRouteRulesRouteActionWeightedBackendServicesToTerraform, true)(struct!.weightedBackendServices),
+    weighted_backend_services: cdktn.listMapper(computeRegionUrlMapPathMatcherRouteRulesRouteActionWeightedBackendServicesToTerraform, true)(struct!.weightedBackendServices),
   }
 }
 
 
 export function computeRegionUrlMapPathMatcherRouteRulesRouteActionToHclTerraform(struct?: ComputeRegionUrlMapPathMatcherRouteRulesRouteActionOutputReference | ComputeRegionUrlMapPathMatcherRouteRulesRouteAction): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -13380,7 +13380,7 @@ export function computeRegionUrlMapPathMatcherRouteRulesRouteActionToHclTerrafor
       storageClassType: "ComputeRegionUrlMapPathMatcherRouteRulesRouteActionUrlRewriteList",
     },
     weighted_backend_services: {
-      value: cdktf.listMapperHcl(computeRegionUrlMapPathMatcherRouteRulesRouteActionWeightedBackendServicesToHclTerraform, true)(struct!.weightedBackendServices),
+      value: cdktn.listMapperHcl(computeRegionUrlMapPathMatcherRouteRulesRouteActionWeightedBackendServicesToHclTerraform, true)(struct!.weightedBackendServices),
       isBlock: true,
       type: "list",
       storageClassType: "ComputeRegionUrlMapPathMatcherRouteRulesRouteActionWeightedBackendServicesList",
@@ -13391,14 +13391,14 @@ export function computeRegionUrlMapPathMatcherRouteRulesRouteActionToHclTerrafor
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class ComputeRegionUrlMapPathMatcherRouteRulesRouteActionOutputReference extends cdktf.ComplexObject {
+export class ComputeRegionUrlMapPathMatcherRouteRulesRouteActionOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -13560,7 +13560,7 @@ export class ComputeRegionUrlMapPathMatcherRouteRulesRouteActionOutputReference 
   public get weightedBackendServices() {
     return this._weightedBackendServices;
   }
-  public putWeightedBackendServices(value: ComputeRegionUrlMapPathMatcherRouteRulesRouteActionWeightedBackendServices[] | cdktf.IResolvable) {
+  public putWeightedBackendServices(value: ComputeRegionUrlMapPathMatcherRouteRulesRouteActionWeightedBackendServices[] | cdktn.IResolvable) {
     this._weightedBackendServices.internalValue = value;
   }
   public resetWeightedBackendServices() {
@@ -13589,7 +13589,7 @@ export interface ComputeRegionUrlMapPathMatcherRouteRulesUrlRedirect {
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_region_url_map#https_redirect ComputeRegionUrlMap#https_redirect}
   */
-  readonly httpsRedirect?: boolean | cdktf.IResolvable;
+  readonly httpsRedirect?: boolean | cdktn.IResolvable;
   /**
   * The path that will be used in the redirect response instead of the one
   * that was supplied in the request. pathRedirect cannot be supplied
@@ -13636,63 +13636,63 @@ export interface ComputeRegionUrlMapPathMatcherRouteRulesUrlRedirect {
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_region_url_map#strip_query ComputeRegionUrlMap#strip_query}
   */
-  readonly stripQuery?: boolean | cdktf.IResolvable;
+  readonly stripQuery?: boolean | cdktn.IResolvable;
 }
 
 export function computeRegionUrlMapPathMatcherRouteRulesUrlRedirectToTerraform(struct?: ComputeRegionUrlMapPathMatcherRouteRulesUrlRedirectOutputReference | ComputeRegionUrlMapPathMatcherRouteRulesUrlRedirect): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    host_redirect: cdktf.stringToTerraform(struct!.hostRedirect),
-    https_redirect: cdktf.booleanToTerraform(struct!.httpsRedirect),
-    path_redirect: cdktf.stringToTerraform(struct!.pathRedirect),
-    prefix_redirect: cdktf.stringToTerraform(struct!.prefixRedirect),
-    redirect_response_code: cdktf.stringToTerraform(struct!.redirectResponseCode),
-    strip_query: cdktf.booleanToTerraform(struct!.stripQuery),
+    host_redirect: cdktn.stringToTerraform(struct!.hostRedirect),
+    https_redirect: cdktn.booleanToTerraform(struct!.httpsRedirect),
+    path_redirect: cdktn.stringToTerraform(struct!.pathRedirect),
+    prefix_redirect: cdktn.stringToTerraform(struct!.prefixRedirect),
+    redirect_response_code: cdktn.stringToTerraform(struct!.redirectResponseCode),
+    strip_query: cdktn.booleanToTerraform(struct!.stripQuery),
   }
 }
 
 
 export function computeRegionUrlMapPathMatcherRouteRulesUrlRedirectToHclTerraform(struct?: ComputeRegionUrlMapPathMatcherRouteRulesUrlRedirectOutputReference | ComputeRegionUrlMapPathMatcherRouteRulesUrlRedirect): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     host_redirect: {
-      value: cdktf.stringToHclTerraform(struct!.hostRedirect),
+      value: cdktn.stringToHclTerraform(struct!.hostRedirect),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     https_redirect: {
-      value: cdktf.booleanToHclTerraform(struct!.httpsRedirect),
+      value: cdktn.booleanToHclTerraform(struct!.httpsRedirect),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     path_redirect: {
-      value: cdktf.stringToHclTerraform(struct!.pathRedirect),
+      value: cdktn.stringToHclTerraform(struct!.pathRedirect),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     prefix_redirect: {
-      value: cdktf.stringToHclTerraform(struct!.prefixRedirect),
+      value: cdktn.stringToHclTerraform(struct!.prefixRedirect),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     redirect_response_code: {
-      value: cdktf.stringToHclTerraform(struct!.redirectResponseCode),
+      value: cdktn.stringToHclTerraform(struct!.redirectResponseCode),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     strip_query: {
-      value: cdktf.booleanToHclTerraform(struct!.stripQuery),
+      value: cdktn.booleanToHclTerraform(struct!.stripQuery),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
@@ -13703,14 +13703,14 @@ export function computeRegionUrlMapPathMatcherRouteRulesUrlRedirectToHclTerrafor
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class ComputeRegionUrlMapPathMatcherRouteRulesUrlRedirectOutputReference extends cdktf.ComplexObject {
+export class ComputeRegionUrlMapPathMatcherRouteRulesUrlRedirectOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -13782,11 +13782,11 @@ export class ComputeRegionUrlMapPathMatcherRouteRulesUrlRedirectOutputReference 
   }
 
   // https_redirect - computed: false, optional: true, required: false
-  private _httpsRedirect?: boolean | cdktf.IResolvable; 
+  private _httpsRedirect?: boolean | cdktn.IResolvable; 
   public get httpsRedirect() {
     return this.getBooleanAttribute('https_redirect');
   }
-  public set httpsRedirect(value: boolean | cdktf.IResolvable) {
+  public set httpsRedirect(value: boolean | cdktn.IResolvable) {
     this._httpsRedirect = value;
   }
   public resetHttpsRedirect() {
@@ -13846,11 +13846,11 @@ export class ComputeRegionUrlMapPathMatcherRouteRulesUrlRedirectOutputReference 
   }
 
   // strip_query - computed: false, optional: true, required: false
-  private _stripQuery?: boolean | cdktf.IResolvable; 
+  private _stripQuery?: boolean | cdktn.IResolvable; 
   public get stripQuery() {
     return this.getBooleanAttribute('strip_query');
   }
-  public set stripQuery(value: boolean | cdktf.IResolvable) {
+  public set stripQuery(value: boolean | cdktn.IResolvable) {
     this._stripQuery = value;
   }
   public resetStripQuery() {
@@ -13905,7 +13905,7 @@ export interface ComputeRegionUrlMapPathMatcherRouteRules {
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_region_url_map#match_rules ComputeRegionUrlMap#match_rules}
   */
-  readonly matchRules?: ComputeRegionUrlMapPathMatcherRouteRulesMatchRules[] | cdktf.IResolvable;
+  readonly matchRules?: ComputeRegionUrlMapPathMatcherRouteRulesMatchRules[] | cdktn.IResolvable;
   /**
   * route_action block
   *
@@ -13920,36 +13920,36 @@ export interface ComputeRegionUrlMapPathMatcherRouteRules {
   readonly urlRedirect?: ComputeRegionUrlMapPathMatcherRouteRulesUrlRedirect;
 }
 
-export function computeRegionUrlMapPathMatcherRouteRulesToTerraform(struct?: ComputeRegionUrlMapPathMatcherRouteRules | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function computeRegionUrlMapPathMatcherRouteRulesToTerraform(struct?: ComputeRegionUrlMapPathMatcherRouteRules | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    priority: cdktf.numberToTerraform(struct!.priority),
-    service: cdktf.stringToTerraform(struct!.service),
+    priority: cdktn.numberToTerraform(struct!.priority),
+    service: cdktn.stringToTerraform(struct!.service),
     header_action: computeRegionUrlMapPathMatcherRouteRulesHeaderActionToTerraform(struct!.headerAction),
-    match_rules: cdktf.listMapper(computeRegionUrlMapPathMatcherRouteRulesMatchRulesToTerraform, true)(struct!.matchRules),
+    match_rules: cdktn.listMapper(computeRegionUrlMapPathMatcherRouteRulesMatchRulesToTerraform, true)(struct!.matchRules),
     route_action: computeRegionUrlMapPathMatcherRouteRulesRouteActionToTerraform(struct!.routeAction),
     url_redirect: computeRegionUrlMapPathMatcherRouteRulesUrlRedirectToTerraform(struct!.urlRedirect),
   }
 }
 
 
-export function computeRegionUrlMapPathMatcherRouteRulesToHclTerraform(struct?: ComputeRegionUrlMapPathMatcherRouteRules | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function computeRegionUrlMapPathMatcherRouteRulesToHclTerraform(struct?: ComputeRegionUrlMapPathMatcherRouteRules | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     priority: {
-      value: cdktf.numberToHclTerraform(struct!.priority),
+      value: cdktn.numberToHclTerraform(struct!.priority),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     service: {
-      value: cdktf.stringToHclTerraform(struct!.service),
+      value: cdktn.stringToHclTerraform(struct!.service),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -13961,7 +13961,7 @@ export function computeRegionUrlMapPathMatcherRouteRulesToHclTerraform(struct?: 
       storageClassType: "ComputeRegionUrlMapPathMatcherRouteRulesHeaderActionList",
     },
     match_rules: {
-      value: cdktf.listMapperHcl(computeRegionUrlMapPathMatcherRouteRulesMatchRulesToHclTerraform, true)(struct!.matchRules),
+      value: cdktn.listMapperHcl(computeRegionUrlMapPathMatcherRouteRulesMatchRulesToHclTerraform, true)(struct!.matchRules),
       isBlock: true,
       type: "list",
       storageClassType: "ComputeRegionUrlMapPathMatcherRouteRulesMatchRulesList",
@@ -13984,9 +13984,9 @@ export function computeRegionUrlMapPathMatcherRouteRulesToHclTerraform(struct?: 
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class ComputeRegionUrlMapPathMatcherRouteRulesOutputReference extends cdktf.ComplexObject {
+export class ComputeRegionUrlMapPathMatcherRouteRulesOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -13994,11 +13994,11 @@ export class ComputeRegionUrlMapPathMatcherRouteRulesOutputReference extends cdk
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): ComputeRegionUrlMapPathMatcherRouteRules | cdktf.IResolvable | undefined {
+  public get internalValue(): ComputeRegionUrlMapPathMatcherRouteRules | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -14031,7 +14031,7 @@ export class ComputeRegionUrlMapPathMatcherRouteRulesOutputReference extends cdk
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: ComputeRegionUrlMapPathMatcherRouteRules | cdktf.IResolvable | undefined) {
+  public set internalValue(value: ComputeRegionUrlMapPathMatcherRouteRules | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -14042,7 +14042,7 @@ export class ComputeRegionUrlMapPathMatcherRouteRulesOutputReference extends cdk
       this._routeAction.internalValue = undefined;
       this._urlRedirect.internalValue = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -14108,7 +14108,7 @@ export class ComputeRegionUrlMapPathMatcherRouteRulesOutputReference extends cdk
   public get matchRules() {
     return this._matchRules;
   }
-  public putMatchRules(value: ComputeRegionUrlMapPathMatcherRouteRulesMatchRules[] | cdktf.IResolvable) {
+  public putMatchRules(value: ComputeRegionUrlMapPathMatcherRouteRulesMatchRules[] | cdktn.IResolvable) {
     this._matchRules.internalValue = value;
   }
   public resetMatchRules() {
@@ -14152,15 +14152,15 @@ export class ComputeRegionUrlMapPathMatcherRouteRulesOutputReference extends cdk
   }
 }
 
-export class ComputeRegionUrlMapPathMatcherRouteRulesList extends cdktf.ComplexList {
-  public internalValue? : ComputeRegionUrlMapPathMatcherRouteRules[] | cdktf.IResolvable
+export class ComputeRegionUrlMapPathMatcherRouteRulesList extends cdktn.ComplexList {
+  public internalValue? : ComputeRegionUrlMapPathMatcherRouteRules[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -14209,52 +14209,52 @@ export interface ComputeRegionUrlMapPathMatcher {
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_region_url_map#path_rule ComputeRegionUrlMap#path_rule}
   */
-  readonly pathRule?: ComputeRegionUrlMapPathMatcherPathRule[] | cdktf.IResolvable;
+  readonly pathRule?: ComputeRegionUrlMapPathMatcherPathRule[] | cdktn.IResolvable;
   /**
   * route_rules block
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_region_url_map#route_rules ComputeRegionUrlMap#route_rules}
   */
-  readonly routeRules?: ComputeRegionUrlMapPathMatcherRouteRules[] | cdktf.IResolvable;
+  readonly routeRules?: ComputeRegionUrlMapPathMatcherRouteRules[] | cdktn.IResolvable;
 }
 
-export function computeRegionUrlMapPathMatcherToTerraform(struct?: ComputeRegionUrlMapPathMatcher | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function computeRegionUrlMapPathMatcherToTerraform(struct?: ComputeRegionUrlMapPathMatcher | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    default_service: cdktf.stringToTerraform(struct!.defaultService),
-    description: cdktf.stringToTerraform(struct!.description),
-    name: cdktf.stringToTerraform(struct!.name),
+    default_service: cdktn.stringToTerraform(struct!.defaultService),
+    description: cdktn.stringToTerraform(struct!.description),
+    name: cdktn.stringToTerraform(struct!.name),
     default_route_action: computeRegionUrlMapPathMatcherDefaultRouteActionToTerraform(struct!.defaultRouteAction),
     default_url_redirect: computeRegionUrlMapPathMatcherDefaultUrlRedirectToTerraform(struct!.defaultUrlRedirect),
-    path_rule: cdktf.listMapper(computeRegionUrlMapPathMatcherPathRuleToTerraform, true)(struct!.pathRule),
-    route_rules: cdktf.listMapper(computeRegionUrlMapPathMatcherRouteRulesToTerraform, true)(struct!.routeRules),
+    path_rule: cdktn.listMapper(computeRegionUrlMapPathMatcherPathRuleToTerraform, true)(struct!.pathRule),
+    route_rules: cdktn.listMapper(computeRegionUrlMapPathMatcherRouteRulesToTerraform, true)(struct!.routeRules),
   }
 }
 
 
-export function computeRegionUrlMapPathMatcherToHclTerraform(struct?: ComputeRegionUrlMapPathMatcher | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function computeRegionUrlMapPathMatcherToHclTerraform(struct?: ComputeRegionUrlMapPathMatcher | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     default_service: {
-      value: cdktf.stringToHclTerraform(struct!.defaultService),
+      value: cdktn.stringToHclTerraform(struct!.defaultService),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     description: {
-      value: cdktf.stringToHclTerraform(struct!.description),
+      value: cdktn.stringToHclTerraform(struct!.description),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     name: {
-      value: cdktf.stringToHclTerraform(struct!.name),
+      value: cdktn.stringToHclTerraform(struct!.name),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -14272,13 +14272,13 @@ export function computeRegionUrlMapPathMatcherToHclTerraform(struct?: ComputeReg
       storageClassType: "ComputeRegionUrlMapPathMatcherDefaultUrlRedirectList",
     },
     path_rule: {
-      value: cdktf.listMapperHcl(computeRegionUrlMapPathMatcherPathRuleToHclTerraform, true)(struct!.pathRule),
+      value: cdktn.listMapperHcl(computeRegionUrlMapPathMatcherPathRuleToHclTerraform, true)(struct!.pathRule),
       isBlock: true,
       type: "list",
       storageClassType: "ComputeRegionUrlMapPathMatcherPathRuleList",
     },
     route_rules: {
-      value: cdktf.listMapperHcl(computeRegionUrlMapPathMatcherRouteRulesToHclTerraform, true)(struct!.routeRules),
+      value: cdktn.listMapperHcl(computeRegionUrlMapPathMatcherRouteRulesToHclTerraform, true)(struct!.routeRules),
       isBlock: true,
       type: "list",
       storageClassType: "ComputeRegionUrlMapPathMatcherRouteRulesList",
@@ -14289,9 +14289,9 @@ export function computeRegionUrlMapPathMatcherToHclTerraform(struct?: ComputeReg
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class ComputeRegionUrlMapPathMatcherOutputReference extends cdktf.ComplexObject {
+export class ComputeRegionUrlMapPathMatcherOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -14299,11 +14299,11 @@ export class ComputeRegionUrlMapPathMatcherOutputReference extends cdktf.Complex
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): ComputeRegionUrlMapPathMatcher | cdktf.IResolvable | undefined {
+  public get internalValue(): ComputeRegionUrlMapPathMatcher | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -14340,7 +14340,7 @@ export class ComputeRegionUrlMapPathMatcherOutputReference extends cdktf.Complex
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: ComputeRegionUrlMapPathMatcher | cdktf.IResolvable | undefined) {
+  public set internalValue(value: ComputeRegionUrlMapPathMatcher | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -14352,7 +14352,7 @@ export class ComputeRegionUrlMapPathMatcherOutputReference extends cdktf.Complex
       this._pathRule.internalValue = undefined;
       this._routeRules.internalValue = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -14451,7 +14451,7 @@ export class ComputeRegionUrlMapPathMatcherOutputReference extends cdktf.Complex
   public get pathRule() {
     return this._pathRule;
   }
-  public putPathRule(value: ComputeRegionUrlMapPathMatcherPathRule[] | cdktf.IResolvable) {
+  public putPathRule(value: ComputeRegionUrlMapPathMatcherPathRule[] | cdktn.IResolvable) {
     this._pathRule.internalValue = value;
   }
   public resetPathRule() {
@@ -14467,7 +14467,7 @@ export class ComputeRegionUrlMapPathMatcherOutputReference extends cdktf.Complex
   public get routeRules() {
     return this._routeRules;
   }
-  public putRouteRules(value: ComputeRegionUrlMapPathMatcherRouteRules[] | cdktf.IResolvable) {
+  public putRouteRules(value: ComputeRegionUrlMapPathMatcherRouteRules[] | cdktn.IResolvable) {
     this._routeRules.internalValue = value;
   }
   public resetRouteRules() {
@@ -14479,15 +14479,15 @@ export class ComputeRegionUrlMapPathMatcherOutputReference extends cdktf.Complex
   }
 }
 
-export class ComputeRegionUrlMapPathMatcherList extends cdktf.ComplexList {
-  public internalValue? : ComputeRegionUrlMapPathMatcher[] | cdktf.IResolvable
+export class ComputeRegionUrlMapPathMatcherList extends cdktn.ComplexList {
+  public internalValue? : ComputeRegionUrlMapPathMatcher[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -14525,46 +14525,46 @@ export interface ComputeRegionUrlMapTest {
   readonly service: string;
 }
 
-export function computeRegionUrlMapTestToTerraform(struct?: ComputeRegionUrlMapTest | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function computeRegionUrlMapTestToTerraform(struct?: ComputeRegionUrlMapTest | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    description: cdktf.stringToTerraform(struct!.description),
-    host: cdktf.stringToTerraform(struct!.host),
-    path: cdktf.stringToTerraform(struct!.path),
-    service: cdktf.stringToTerraform(struct!.service),
+    description: cdktn.stringToTerraform(struct!.description),
+    host: cdktn.stringToTerraform(struct!.host),
+    path: cdktn.stringToTerraform(struct!.path),
+    service: cdktn.stringToTerraform(struct!.service),
   }
 }
 
 
-export function computeRegionUrlMapTestToHclTerraform(struct?: ComputeRegionUrlMapTest | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function computeRegionUrlMapTestToHclTerraform(struct?: ComputeRegionUrlMapTest | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     description: {
-      value: cdktf.stringToHclTerraform(struct!.description),
+      value: cdktn.stringToHclTerraform(struct!.description),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     host: {
-      value: cdktf.stringToHclTerraform(struct!.host),
+      value: cdktn.stringToHclTerraform(struct!.host),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     path: {
-      value: cdktf.stringToHclTerraform(struct!.path),
+      value: cdktn.stringToHclTerraform(struct!.path),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     service: {
-      value: cdktf.stringToHclTerraform(struct!.service),
+      value: cdktn.stringToHclTerraform(struct!.service),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -14575,9 +14575,9 @@ export function computeRegionUrlMapTestToHclTerraform(struct?: ComputeRegionUrlM
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class ComputeRegionUrlMapTestOutputReference extends cdktf.ComplexObject {
+export class ComputeRegionUrlMapTestOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -14585,11 +14585,11 @@ export class ComputeRegionUrlMapTestOutputReference extends cdktf.ComplexObject 
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): ComputeRegionUrlMapTest | cdktf.IResolvable | undefined {
+  public get internalValue(): ComputeRegionUrlMapTest | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -14614,7 +14614,7 @@ export class ComputeRegionUrlMapTestOutputReference extends cdktf.ComplexObject 
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: ComputeRegionUrlMapTest | cdktf.IResolvable | undefined) {
+  public set internalValue(value: ComputeRegionUrlMapTest | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -14623,7 +14623,7 @@ export class ComputeRegionUrlMapTestOutputReference extends cdktf.ComplexObject 
       this._path = undefined;
       this._service = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -14693,15 +14693,15 @@ export class ComputeRegionUrlMapTestOutputReference extends cdktf.ComplexObject 
   }
 }
 
-export class ComputeRegionUrlMapTestList extends cdktf.ComplexList {
-  public internalValue? : ComputeRegionUrlMapTest[] | cdktf.IResolvable
+export class ComputeRegionUrlMapTestList extends cdktn.ComplexList {
+  public internalValue? : ComputeRegionUrlMapTest[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -14727,39 +14727,39 @@ export interface ComputeRegionUrlMapTimeouts {
   readonly update?: string;
 }
 
-export function computeRegionUrlMapTimeoutsToTerraform(struct?: ComputeRegionUrlMapTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function computeRegionUrlMapTimeoutsToTerraform(struct?: ComputeRegionUrlMapTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    create: cdktf.stringToTerraform(struct!.create),
-    delete: cdktf.stringToTerraform(struct!.delete),
-    update: cdktf.stringToTerraform(struct!.update),
+    create: cdktn.stringToTerraform(struct!.create),
+    delete: cdktn.stringToTerraform(struct!.delete),
+    update: cdktn.stringToTerraform(struct!.update),
   }
 }
 
 
-export function computeRegionUrlMapTimeoutsToHclTerraform(struct?: ComputeRegionUrlMapTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function computeRegionUrlMapTimeoutsToHclTerraform(struct?: ComputeRegionUrlMapTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     create: {
-      value: cdktf.stringToHclTerraform(struct!.create),
+      value: cdktn.stringToHclTerraform(struct!.create),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     delete: {
-      value: cdktf.stringToHclTerraform(struct!.delete),
+      value: cdktn.stringToHclTerraform(struct!.delete),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     update: {
-      value: cdktf.stringToHclTerraform(struct!.update),
+      value: cdktn.stringToHclTerraform(struct!.update),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -14770,19 +14770,19 @@ export function computeRegionUrlMapTimeoutsToHclTerraform(struct?: ComputeRegion
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class ComputeRegionUrlMapTimeoutsOutputReference extends cdktf.ComplexObject {
+export class ComputeRegionUrlMapTimeoutsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): ComputeRegionUrlMapTimeouts | cdktf.IResolvable | undefined {
+  public get internalValue(): ComputeRegionUrlMapTimeouts | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -14803,7 +14803,7 @@ export class ComputeRegionUrlMapTimeoutsOutputReference extends cdktf.ComplexObj
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: ComputeRegionUrlMapTimeouts | cdktf.IResolvable | undefined) {
+  public set internalValue(value: ComputeRegionUrlMapTimeouts | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -14811,7 +14811,7 @@ export class ComputeRegionUrlMapTimeoutsOutputReference extends cdktf.ComplexObj
       this._delete = undefined;
       this._update = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -14876,7 +14876,7 @@ export class ComputeRegionUrlMapTimeoutsOutputReference extends cdktf.ComplexObj
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_region_url_map google_compute_region_url_map}
 */
-export class ComputeRegionUrlMap extends cdktf.TerraformResource {
+export class ComputeRegionUrlMap extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -14887,14 +14887,14 @@ export class ComputeRegionUrlMap extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a ComputeRegionUrlMap resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a ComputeRegionUrlMap resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the ComputeRegionUrlMap to import
   * @param importFromId The id of the existing ComputeRegionUrlMap that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_region_url_map#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the ComputeRegionUrlMap to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "google_compute_region_url_map", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "google_compute_region_url_map", importId: importFromId, provider });
       }
 
   // ===========
@@ -15092,7 +15092,7 @@ export class ComputeRegionUrlMap extends cdktf.TerraformResource {
   public get hostRule() {
     return this._hostRule;
   }
-  public putHostRule(value: ComputeRegionUrlMapHostRule[] | cdktf.IResolvable) {
+  public putHostRule(value: ComputeRegionUrlMapHostRule[] | cdktn.IResolvable) {
     this._hostRule.internalValue = value;
   }
   public resetHostRule() {
@@ -15108,7 +15108,7 @@ export class ComputeRegionUrlMap extends cdktf.TerraformResource {
   public get pathMatcher() {
     return this._pathMatcher;
   }
-  public putPathMatcher(value: ComputeRegionUrlMapPathMatcher[] | cdktf.IResolvable) {
+  public putPathMatcher(value: ComputeRegionUrlMapPathMatcher[] | cdktn.IResolvable) {
     this._pathMatcher.internalValue = value;
   }
   public resetPathMatcher() {
@@ -15124,7 +15124,7 @@ export class ComputeRegionUrlMap extends cdktf.TerraformResource {
   public get test() {
     return this._test;
   }
-  public putTest(value: ComputeRegionUrlMapTest[] | cdktf.IResolvable) {
+  public putTest(value: ComputeRegionUrlMapTest[] | cdktn.IResolvable) {
     this._test.internalValue = value;
   }
   public resetTest() {
@@ -15157,17 +15157,17 @@ export class ComputeRegionUrlMap extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      default_service: cdktf.stringToTerraform(this._defaultService),
-      description: cdktf.stringToTerraform(this._description),
-      id: cdktf.stringToTerraform(this._id),
-      name: cdktf.stringToTerraform(this._name),
-      project: cdktf.stringToTerraform(this._project),
-      region: cdktf.stringToTerraform(this._region),
+      default_service: cdktn.stringToTerraform(this._defaultService),
+      description: cdktn.stringToTerraform(this._description),
+      id: cdktn.stringToTerraform(this._id),
+      name: cdktn.stringToTerraform(this._name),
+      project: cdktn.stringToTerraform(this._project),
+      region: cdktn.stringToTerraform(this._region),
       default_route_action: computeRegionUrlMapDefaultRouteActionToTerraform(this._defaultRouteAction.internalValue),
       default_url_redirect: computeRegionUrlMapDefaultUrlRedirectToTerraform(this._defaultUrlRedirect.internalValue),
-      host_rule: cdktf.listMapper(computeRegionUrlMapHostRuleToTerraform, true)(this._hostRule.internalValue),
-      path_matcher: cdktf.listMapper(computeRegionUrlMapPathMatcherToTerraform, true)(this._pathMatcher.internalValue),
-      test: cdktf.listMapper(computeRegionUrlMapTestToTerraform, true)(this._test.internalValue),
+      host_rule: cdktn.listMapper(computeRegionUrlMapHostRuleToTerraform, true)(this._hostRule.internalValue),
+      path_matcher: cdktn.listMapper(computeRegionUrlMapPathMatcherToTerraform, true)(this._pathMatcher.internalValue),
+      test: cdktn.listMapper(computeRegionUrlMapTestToTerraform, true)(this._test.internalValue),
       timeouts: computeRegionUrlMapTimeoutsToTerraform(this._timeouts.internalValue),
     };
   }
@@ -15175,37 +15175,37 @@ export class ComputeRegionUrlMap extends cdktf.TerraformResource {
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       default_service: {
-        value: cdktf.stringToHclTerraform(this._defaultService),
+        value: cdktn.stringToHclTerraform(this._defaultService),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       description: {
-        value: cdktf.stringToHclTerraform(this._description),
+        value: cdktn.stringToHclTerraform(this._description),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       name: {
-        value: cdktf.stringToHclTerraform(this._name),
+        value: cdktn.stringToHclTerraform(this._name),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       project: {
-        value: cdktf.stringToHclTerraform(this._project),
+        value: cdktn.stringToHclTerraform(this._project),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       region: {
-        value: cdktf.stringToHclTerraform(this._region),
+        value: cdktn.stringToHclTerraform(this._region),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
@@ -15223,19 +15223,19 @@ export class ComputeRegionUrlMap extends cdktf.TerraformResource {
         storageClassType: "ComputeRegionUrlMapDefaultUrlRedirectList",
       },
       host_rule: {
-        value: cdktf.listMapperHcl(computeRegionUrlMapHostRuleToHclTerraform, true)(this._hostRule.internalValue),
+        value: cdktn.listMapperHcl(computeRegionUrlMapHostRuleToHclTerraform, true)(this._hostRule.internalValue),
         isBlock: true,
         type: "set",
         storageClassType: "ComputeRegionUrlMapHostRuleList",
       },
       path_matcher: {
-        value: cdktf.listMapperHcl(computeRegionUrlMapPathMatcherToHclTerraform, true)(this._pathMatcher.internalValue),
+        value: cdktn.listMapperHcl(computeRegionUrlMapPathMatcherToHclTerraform, true)(this._pathMatcher.internalValue),
         isBlock: true,
         type: "list",
         storageClassType: "ComputeRegionUrlMapPathMatcherList",
       },
       test: {
-        value: cdktf.listMapperHcl(computeRegionUrlMapTestToHclTerraform, true)(this._test.internalValue),
+        value: cdktn.listMapperHcl(computeRegionUrlMapTestToHclTerraform, true)(this._test.internalValue),
         isBlock: true,
         type: "list",
         storageClassType: "ComputeRegionUrlMapTestList",

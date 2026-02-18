@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface DialogflowCxToolConfig extends cdktf.TerraformMetaArguments {
+export interface DialogflowCxToolConfig extends cdktn.TerraformMetaArguments {
   /**
   * High level description of the Tool and its usage.
   *
@@ -86,39 +86,39 @@ export interface DialogflowCxToolDataStoreSpecDataStoreConnections {
   readonly documentProcessingMode?: string;
 }
 
-export function dialogflowCxToolDataStoreSpecDataStoreConnectionsToTerraform(struct?: DialogflowCxToolDataStoreSpecDataStoreConnections | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function dialogflowCxToolDataStoreSpecDataStoreConnectionsToTerraform(struct?: DialogflowCxToolDataStoreSpecDataStoreConnections | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    data_store: cdktf.stringToTerraform(struct!.dataStore),
-    data_store_type: cdktf.stringToTerraform(struct!.dataStoreType),
-    document_processing_mode: cdktf.stringToTerraform(struct!.documentProcessingMode),
+    data_store: cdktn.stringToTerraform(struct!.dataStore),
+    data_store_type: cdktn.stringToTerraform(struct!.dataStoreType),
+    document_processing_mode: cdktn.stringToTerraform(struct!.documentProcessingMode),
   }
 }
 
 
-export function dialogflowCxToolDataStoreSpecDataStoreConnectionsToHclTerraform(struct?: DialogflowCxToolDataStoreSpecDataStoreConnections | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function dialogflowCxToolDataStoreSpecDataStoreConnectionsToHclTerraform(struct?: DialogflowCxToolDataStoreSpecDataStoreConnections | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     data_store: {
-      value: cdktf.stringToHclTerraform(struct!.dataStore),
+      value: cdktn.stringToHclTerraform(struct!.dataStore),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     data_store_type: {
-      value: cdktf.stringToHclTerraform(struct!.dataStoreType),
+      value: cdktn.stringToHclTerraform(struct!.dataStoreType),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     document_processing_mode: {
-      value: cdktf.stringToHclTerraform(struct!.documentProcessingMode),
+      value: cdktn.stringToHclTerraform(struct!.documentProcessingMode),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -129,9 +129,9 @@ export function dialogflowCxToolDataStoreSpecDataStoreConnectionsToHclTerraform(
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class DialogflowCxToolDataStoreSpecDataStoreConnectionsOutputReference extends cdktf.ComplexObject {
+export class DialogflowCxToolDataStoreSpecDataStoreConnectionsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -139,11 +139,11 @@ export class DialogflowCxToolDataStoreSpecDataStoreConnectionsOutputReference ex
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): DialogflowCxToolDataStoreSpecDataStoreConnections | cdktf.IResolvable | undefined {
+  public get internalValue(): DialogflowCxToolDataStoreSpecDataStoreConnections | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -164,7 +164,7 @@ export class DialogflowCxToolDataStoreSpecDataStoreConnectionsOutputReference ex
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: DialogflowCxToolDataStoreSpecDataStoreConnections | cdktf.IResolvable | undefined) {
+  public set internalValue(value: DialogflowCxToolDataStoreSpecDataStoreConnections | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -172,7 +172,7 @@ export class DialogflowCxToolDataStoreSpecDataStoreConnectionsOutputReference ex
       this._dataStoreType = undefined;
       this._documentProcessingMode = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -234,15 +234,15 @@ export class DialogflowCxToolDataStoreSpecDataStoreConnectionsOutputReference ex
   }
 }
 
-export class DialogflowCxToolDataStoreSpecDataStoreConnectionsList extends cdktf.ComplexList {
-  public internalValue? : DialogflowCxToolDataStoreSpecDataStoreConnections[] | cdktf.IResolvable
+export class DialogflowCxToolDataStoreSpecDataStoreConnectionsList extends cdktn.ComplexList {
+  public internalValue? : DialogflowCxToolDataStoreSpecDataStoreConnections[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -257,8 +257,8 @@ export interface DialogflowCxToolDataStoreSpecFallbackPrompt {
 }
 
 export function dialogflowCxToolDataStoreSpecFallbackPromptToTerraform(struct?: DialogflowCxToolDataStoreSpecFallbackPromptOutputReference | DialogflowCxToolDataStoreSpecFallbackPrompt): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -267,8 +267,8 @@ export function dialogflowCxToolDataStoreSpecFallbackPromptToTerraform(struct?: 
 
 
 export function dialogflowCxToolDataStoreSpecFallbackPromptToHclTerraform(struct?: DialogflowCxToolDataStoreSpecFallbackPromptOutputReference | DialogflowCxToolDataStoreSpecFallbackPrompt): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -276,14 +276,14 @@ export function dialogflowCxToolDataStoreSpecFallbackPromptToHclTerraform(struct
   return attrs;
 }
 
-export class DialogflowCxToolDataStoreSpecFallbackPromptOutputReference extends cdktf.ComplexObject {
+export class DialogflowCxToolDataStoreSpecFallbackPromptOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -308,7 +308,7 @@ export interface DialogflowCxToolDataStoreSpec {
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/dialogflow_cx_tool#data_store_connections DialogflowCxTool#data_store_connections}
   */
-  readonly dataStoreConnections: DialogflowCxToolDataStoreSpecDataStoreConnections[] | cdktf.IResolvable;
+  readonly dataStoreConnections: DialogflowCxToolDataStoreSpecDataStoreConnections[] | cdktn.IResolvable;
   /**
   * fallback_prompt block
   *
@@ -318,25 +318,25 @@ export interface DialogflowCxToolDataStoreSpec {
 }
 
 export function dialogflowCxToolDataStoreSpecToTerraform(struct?: DialogflowCxToolDataStoreSpecOutputReference | DialogflowCxToolDataStoreSpec): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    data_store_connections: cdktf.listMapper(dialogflowCxToolDataStoreSpecDataStoreConnectionsToTerraform, true)(struct!.dataStoreConnections),
+    data_store_connections: cdktn.listMapper(dialogflowCxToolDataStoreSpecDataStoreConnectionsToTerraform, true)(struct!.dataStoreConnections),
     fallback_prompt: dialogflowCxToolDataStoreSpecFallbackPromptToTerraform(struct!.fallbackPrompt),
   }
 }
 
 
 export function dialogflowCxToolDataStoreSpecToHclTerraform(struct?: DialogflowCxToolDataStoreSpecOutputReference | DialogflowCxToolDataStoreSpec): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     data_store_connections: {
-      value: cdktf.listMapperHcl(dialogflowCxToolDataStoreSpecDataStoreConnectionsToHclTerraform, true)(struct!.dataStoreConnections),
+      value: cdktn.listMapperHcl(dialogflowCxToolDataStoreSpecDataStoreConnectionsToHclTerraform, true)(struct!.dataStoreConnections),
       isBlock: true,
       type: "list",
       storageClassType: "DialogflowCxToolDataStoreSpecDataStoreConnectionsList",
@@ -353,14 +353,14 @@ export function dialogflowCxToolDataStoreSpecToHclTerraform(struct?: DialogflowC
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class DialogflowCxToolDataStoreSpecOutputReference extends cdktf.ComplexObject {
+export class DialogflowCxToolDataStoreSpecOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -396,7 +396,7 @@ export class DialogflowCxToolDataStoreSpecOutputReference extends cdktf.ComplexO
   public get dataStoreConnections() {
     return this._dataStoreConnections;
   }
-  public putDataStoreConnections(value: DialogflowCxToolDataStoreSpecDataStoreConnections[] | cdktf.IResolvable) {
+  public putDataStoreConnections(value: DialogflowCxToolDataStoreSpecDataStoreConnections[] | cdktn.IResolvable) {
     this._dataStoreConnections.internalValue = value;
   }
   // Temporarily expose input value. Use with caution.
@@ -435,31 +435,31 @@ export interface DialogflowCxToolFunctionSpec {
 }
 
 export function dialogflowCxToolFunctionSpecToTerraform(struct?: DialogflowCxToolFunctionSpecOutputReference | DialogflowCxToolFunctionSpec): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    input_schema: cdktf.stringToTerraform(struct!.inputSchema),
-    output_schema: cdktf.stringToTerraform(struct!.outputSchema),
+    input_schema: cdktn.stringToTerraform(struct!.inputSchema),
+    output_schema: cdktn.stringToTerraform(struct!.outputSchema),
   }
 }
 
 
 export function dialogflowCxToolFunctionSpecToHclTerraform(struct?: DialogflowCxToolFunctionSpecOutputReference | DialogflowCxToolFunctionSpec): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     input_schema: {
-      value: cdktf.stringToHclTerraform(struct!.inputSchema),
+      value: cdktn.stringToHclTerraform(struct!.inputSchema),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     output_schema: {
-      value: cdktf.stringToHclTerraform(struct!.outputSchema),
+      value: cdktn.stringToHclTerraform(struct!.outputSchema),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -470,14 +470,14 @@ export function dialogflowCxToolFunctionSpecToHclTerraform(struct?: DialogflowCx
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class DialogflowCxToolFunctionSpecOutputReference extends cdktf.ComplexObject {
+export class DialogflowCxToolFunctionSpecOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -572,45 +572,45 @@ export interface DialogflowCxToolOpenApiSpecAuthenticationApiKeyConfig {
 }
 
 export function dialogflowCxToolOpenApiSpecAuthenticationApiKeyConfigToTerraform(struct?: DialogflowCxToolOpenApiSpecAuthenticationApiKeyConfigOutputReference | DialogflowCxToolOpenApiSpecAuthenticationApiKeyConfig): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    api_key: cdktf.stringToTerraform(struct!.apiKey),
-    key_name: cdktf.stringToTerraform(struct!.keyName),
-    request_location: cdktf.stringToTerraform(struct!.requestLocation),
-    secret_version_for_api_key: cdktf.stringToTerraform(struct!.secretVersionForApiKey),
+    api_key: cdktn.stringToTerraform(struct!.apiKey),
+    key_name: cdktn.stringToTerraform(struct!.keyName),
+    request_location: cdktn.stringToTerraform(struct!.requestLocation),
+    secret_version_for_api_key: cdktn.stringToTerraform(struct!.secretVersionForApiKey),
   }
 }
 
 
 export function dialogflowCxToolOpenApiSpecAuthenticationApiKeyConfigToHclTerraform(struct?: DialogflowCxToolOpenApiSpecAuthenticationApiKeyConfigOutputReference | DialogflowCxToolOpenApiSpecAuthenticationApiKeyConfig): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     api_key: {
-      value: cdktf.stringToHclTerraform(struct!.apiKey),
+      value: cdktn.stringToHclTerraform(struct!.apiKey),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     key_name: {
-      value: cdktf.stringToHclTerraform(struct!.keyName),
+      value: cdktn.stringToHclTerraform(struct!.keyName),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     request_location: {
-      value: cdktf.stringToHclTerraform(struct!.requestLocation),
+      value: cdktn.stringToHclTerraform(struct!.requestLocation),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     secret_version_for_api_key: {
-      value: cdktf.stringToHclTerraform(struct!.secretVersionForApiKey),
+      value: cdktn.stringToHclTerraform(struct!.secretVersionForApiKey),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -621,14 +621,14 @@ export function dialogflowCxToolOpenApiSpecAuthenticationApiKeyConfigToHclTerraf
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class DialogflowCxToolOpenApiSpecAuthenticationApiKeyConfigOutputReference extends cdktf.ComplexObject {
+export class DialogflowCxToolOpenApiSpecAuthenticationApiKeyConfigOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -747,31 +747,31 @@ export interface DialogflowCxToolOpenApiSpecAuthenticationBearerTokenConfig {
 }
 
 export function dialogflowCxToolOpenApiSpecAuthenticationBearerTokenConfigToTerraform(struct?: DialogflowCxToolOpenApiSpecAuthenticationBearerTokenConfigOutputReference | DialogflowCxToolOpenApiSpecAuthenticationBearerTokenConfig): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    secret_version_for_token: cdktf.stringToTerraform(struct!.secretVersionForToken),
-    token: cdktf.stringToTerraform(struct!.token),
+    secret_version_for_token: cdktn.stringToTerraform(struct!.secretVersionForToken),
+    token: cdktn.stringToTerraform(struct!.token),
   }
 }
 
 
 export function dialogflowCxToolOpenApiSpecAuthenticationBearerTokenConfigToHclTerraform(struct?: DialogflowCxToolOpenApiSpecAuthenticationBearerTokenConfigOutputReference | DialogflowCxToolOpenApiSpecAuthenticationBearerTokenConfig): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     secret_version_for_token: {
-      value: cdktf.stringToHclTerraform(struct!.secretVersionForToken),
+      value: cdktn.stringToHclTerraform(struct!.secretVersionForToken),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     token: {
-      value: cdktf.stringToHclTerraform(struct!.token),
+      value: cdktn.stringToHclTerraform(struct!.token),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -782,14 +782,14 @@ export function dialogflowCxToolOpenApiSpecAuthenticationBearerTokenConfigToHclT
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class DialogflowCxToolOpenApiSpecAuthenticationBearerTokenConfigOutputReference extends cdktf.ComplexObject {
+export class DialogflowCxToolOpenApiSpecAuthenticationBearerTokenConfigOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -895,59 +895,59 @@ export interface DialogflowCxToolOpenApiSpecAuthenticationOauthConfig {
 }
 
 export function dialogflowCxToolOpenApiSpecAuthenticationOauthConfigToTerraform(struct?: DialogflowCxToolOpenApiSpecAuthenticationOauthConfigOutputReference | DialogflowCxToolOpenApiSpecAuthenticationOauthConfig): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    client_id: cdktf.stringToTerraform(struct!.clientId),
-    client_secret: cdktf.stringToTerraform(struct!.clientSecret),
-    oauth_grant_type: cdktf.stringToTerraform(struct!.oauthGrantType),
-    scopes: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.scopes),
-    secret_version_for_client_secret: cdktf.stringToTerraform(struct!.secretVersionForClientSecret),
-    token_endpoint: cdktf.stringToTerraform(struct!.tokenEndpoint),
+    client_id: cdktn.stringToTerraform(struct!.clientId),
+    client_secret: cdktn.stringToTerraform(struct!.clientSecret),
+    oauth_grant_type: cdktn.stringToTerraform(struct!.oauthGrantType),
+    scopes: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.scopes),
+    secret_version_for_client_secret: cdktn.stringToTerraform(struct!.secretVersionForClientSecret),
+    token_endpoint: cdktn.stringToTerraform(struct!.tokenEndpoint),
   }
 }
 
 
 export function dialogflowCxToolOpenApiSpecAuthenticationOauthConfigToHclTerraform(struct?: DialogflowCxToolOpenApiSpecAuthenticationOauthConfigOutputReference | DialogflowCxToolOpenApiSpecAuthenticationOauthConfig): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     client_id: {
-      value: cdktf.stringToHclTerraform(struct!.clientId),
+      value: cdktn.stringToHclTerraform(struct!.clientId),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     client_secret: {
-      value: cdktf.stringToHclTerraform(struct!.clientSecret),
+      value: cdktn.stringToHclTerraform(struct!.clientSecret),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     oauth_grant_type: {
-      value: cdktf.stringToHclTerraform(struct!.oauthGrantType),
+      value: cdktn.stringToHclTerraform(struct!.oauthGrantType),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     scopes: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.scopes),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.scopes),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
     },
     secret_version_for_client_secret: {
-      value: cdktf.stringToHclTerraform(struct!.secretVersionForClientSecret),
+      value: cdktn.stringToHclTerraform(struct!.secretVersionForClientSecret),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     token_endpoint: {
-      value: cdktf.stringToHclTerraform(struct!.tokenEndpoint),
+      value: cdktn.stringToHclTerraform(struct!.tokenEndpoint),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -958,14 +958,14 @@ export function dialogflowCxToolOpenApiSpecAuthenticationOauthConfigToHclTerrafo
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class DialogflowCxToolOpenApiSpecAuthenticationOauthConfigOutputReference extends cdktf.ComplexObject {
+export class DialogflowCxToolOpenApiSpecAuthenticationOauthConfigOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -1119,24 +1119,24 @@ export interface DialogflowCxToolOpenApiSpecAuthenticationServiceAgentAuthConfig
 }
 
 export function dialogflowCxToolOpenApiSpecAuthenticationServiceAgentAuthConfigToTerraform(struct?: DialogflowCxToolOpenApiSpecAuthenticationServiceAgentAuthConfigOutputReference | DialogflowCxToolOpenApiSpecAuthenticationServiceAgentAuthConfig): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    service_agent_auth: cdktf.stringToTerraform(struct!.serviceAgentAuth),
+    service_agent_auth: cdktn.stringToTerraform(struct!.serviceAgentAuth),
   }
 }
 
 
 export function dialogflowCxToolOpenApiSpecAuthenticationServiceAgentAuthConfigToHclTerraform(struct?: DialogflowCxToolOpenApiSpecAuthenticationServiceAgentAuthConfigOutputReference | DialogflowCxToolOpenApiSpecAuthenticationServiceAgentAuthConfig): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     service_agent_auth: {
-      value: cdktf.stringToHclTerraform(struct!.serviceAgentAuth),
+      value: cdktn.stringToHclTerraform(struct!.serviceAgentAuth),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -1147,14 +1147,14 @@ export function dialogflowCxToolOpenApiSpecAuthenticationServiceAgentAuthConfigT
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class DialogflowCxToolOpenApiSpecAuthenticationServiceAgentAuthConfigOutputReference extends cdktf.ComplexObject {
+export class DialogflowCxToolOpenApiSpecAuthenticationServiceAgentAuthConfigOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -1223,8 +1223,8 @@ export interface DialogflowCxToolOpenApiSpecAuthentication {
 }
 
 export function dialogflowCxToolOpenApiSpecAuthenticationToTerraform(struct?: DialogflowCxToolOpenApiSpecAuthenticationOutputReference | DialogflowCxToolOpenApiSpecAuthentication): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -1237,8 +1237,8 @@ export function dialogflowCxToolOpenApiSpecAuthenticationToTerraform(struct?: Di
 
 
 export function dialogflowCxToolOpenApiSpecAuthenticationToHclTerraform(struct?: DialogflowCxToolOpenApiSpecAuthenticationOutputReference | DialogflowCxToolOpenApiSpecAuthentication): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -1272,14 +1272,14 @@ export function dialogflowCxToolOpenApiSpecAuthenticationToHclTerraform(struct?:
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class DialogflowCxToolOpenApiSpecAuthenticationOutputReference extends cdktf.ComplexObject {
+export class DialogflowCxToolOpenApiSpecAuthenticationOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -1397,24 +1397,24 @@ export interface DialogflowCxToolOpenApiSpecServiceDirectoryConfig {
 }
 
 export function dialogflowCxToolOpenApiSpecServiceDirectoryConfigToTerraform(struct?: DialogflowCxToolOpenApiSpecServiceDirectoryConfigOutputReference | DialogflowCxToolOpenApiSpecServiceDirectoryConfig): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    service: cdktf.stringToTerraform(struct!.service),
+    service: cdktn.stringToTerraform(struct!.service),
   }
 }
 
 
 export function dialogflowCxToolOpenApiSpecServiceDirectoryConfigToHclTerraform(struct?: DialogflowCxToolOpenApiSpecServiceDirectoryConfigOutputReference | DialogflowCxToolOpenApiSpecServiceDirectoryConfig): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     service: {
-      value: cdktf.stringToHclTerraform(struct!.service),
+      value: cdktn.stringToHclTerraform(struct!.service),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -1425,14 +1425,14 @@ export function dialogflowCxToolOpenApiSpecServiceDirectoryConfigToHclTerraform(
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class DialogflowCxToolOpenApiSpecServiceDirectoryConfigOutputReference extends cdktf.ComplexObject {
+export class DialogflowCxToolOpenApiSpecServiceDirectoryConfigOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -1495,32 +1495,32 @@ export interface DialogflowCxToolOpenApiSpecTlsConfigCaCerts {
   readonly displayName: string;
 }
 
-export function dialogflowCxToolOpenApiSpecTlsConfigCaCertsToTerraform(struct?: DialogflowCxToolOpenApiSpecTlsConfigCaCerts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function dialogflowCxToolOpenApiSpecTlsConfigCaCertsToTerraform(struct?: DialogflowCxToolOpenApiSpecTlsConfigCaCerts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    cert: cdktf.stringToTerraform(struct!.cert),
-    display_name: cdktf.stringToTerraform(struct!.displayName),
+    cert: cdktn.stringToTerraform(struct!.cert),
+    display_name: cdktn.stringToTerraform(struct!.displayName),
   }
 }
 
 
-export function dialogflowCxToolOpenApiSpecTlsConfigCaCertsToHclTerraform(struct?: DialogflowCxToolOpenApiSpecTlsConfigCaCerts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function dialogflowCxToolOpenApiSpecTlsConfigCaCertsToHclTerraform(struct?: DialogflowCxToolOpenApiSpecTlsConfigCaCerts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     cert: {
-      value: cdktf.stringToHclTerraform(struct!.cert),
+      value: cdktn.stringToHclTerraform(struct!.cert),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     display_name: {
-      value: cdktf.stringToHclTerraform(struct!.displayName),
+      value: cdktn.stringToHclTerraform(struct!.displayName),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -1531,9 +1531,9 @@ export function dialogflowCxToolOpenApiSpecTlsConfigCaCertsToHclTerraform(struct
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class DialogflowCxToolOpenApiSpecTlsConfigCaCertsOutputReference extends cdktf.ComplexObject {
+export class DialogflowCxToolOpenApiSpecTlsConfigCaCertsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -1541,11 +1541,11 @@ export class DialogflowCxToolOpenApiSpecTlsConfigCaCertsOutputReference extends 
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): DialogflowCxToolOpenApiSpecTlsConfigCaCerts | cdktf.IResolvable | undefined {
+  public get internalValue(): DialogflowCxToolOpenApiSpecTlsConfigCaCerts | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -1562,14 +1562,14 @@ export class DialogflowCxToolOpenApiSpecTlsConfigCaCertsOutputReference extends 
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: DialogflowCxToolOpenApiSpecTlsConfigCaCerts | cdktf.IResolvable | undefined) {
+  public set internalValue(value: DialogflowCxToolOpenApiSpecTlsConfigCaCerts | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._cert = undefined;
       this._displayName = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -1608,15 +1608,15 @@ export class DialogflowCxToolOpenApiSpecTlsConfigCaCertsOutputReference extends 
   }
 }
 
-export class DialogflowCxToolOpenApiSpecTlsConfigCaCertsList extends cdktf.ComplexList {
-  public internalValue? : DialogflowCxToolOpenApiSpecTlsConfigCaCerts[] | cdktf.IResolvable
+export class DialogflowCxToolOpenApiSpecTlsConfigCaCertsList extends cdktn.ComplexList {
+  public internalValue? : DialogflowCxToolOpenApiSpecTlsConfigCaCerts[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -1633,28 +1633,28 @@ export interface DialogflowCxToolOpenApiSpecTlsConfig {
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/dialogflow_cx_tool#ca_certs DialogflowCxTool#ca_certs}
   */
-  readonly caCerts: DialogflowCxToolOpenApiSpecTlsConfigCaCerts[] | cdktf.IResolvable;
+  readonly caCerts: DialogflowCxToolOpenApiSpecTlsConfigCaCerts[] | cdktn.IResolvable;
 }
 
 export function dialogflowCxToolOpenApiSpecTlsConfigToTerraform(struct?: DialogflowCxToolOpenApiSpecTlsConfigOutputReference | DialogflowCxToolOpenApiSpecTlsConfig): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    ca_certs: cdktf.listMapper(dialogflowCxToolOpenApiSpecTlsConfigCaCertsToTerraform, true)(struct!.caCerts),
+    ca_certs: cdktn.listMapper(dialogflowCxToolOpenApiSpecTlsConfigCaCertsToTerraform, true)(struct!.caCerts),
   }
 }
 
 
 export function dialogflowCxToolOpenApiSpecTlsConfigToHclTerraform(struct?: DialogflowCxToolOpenApiSpecTlsConfigOutputReference | DialogflowCxToolOpenApiSpecTlsConfig): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     ca_certs: {
-      value: cdktf.listMapperHcl(dialogflowCxToolOpenApiSpecTlsConfigCaCertsToHclTerraform, true)(struct!.caCerts),
+      value: cdktn.listMapperHcl(dialogflowCxToolOpenApiSpecTlsConfigCaCertsToHclTerraform, true)(struct!.caCerts),
       isBlock: true,
       type: "list",
       storageClassType: "DialogflowCxToolOpenApiSpecTlsConfigCaCertsList",
@@ -1665,14 +1665,14 @@ export function dialogflowCxToolOpenApiSpecTlsConfigToHclTerraform(struct?: Dial
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class DialogflowCxToolOpenApiSpecTlsConfigOutputReference extends cdktf.ComplexObject {
+export class DialogflowCxToolOpenApiSpecTlsConfigOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -1702,7 +1702,7 @@ export class DialogflowCxToolOpenApiSpecTlsConfigOutputReference extends cdktf.C
   public get caCerts() {
     return this._caCerts;
   }
-  public putCaCerts(value: DialogflowCxToolOpenApiSpecTlsConfigCaCerts[] | cdktf.IResolvable) {
+  public putCaCerts(value: DialogflowCxToolOpenApiSpecTlsConfigCaCerts[] | cdktn.IResolvable) {
     this._caCerts.internalValue = value;
   }
   // Temporarily expose input value. Use with caution.
@@ -1739,12 +1739,12 @@ export interface DialogflowCxToolOpenApiSpec {
 }
 
 export function dialogflowCxToolOpenApiSpecToTerraform(struct?: DialogflowCxToolOpenApiSpecOutputReference | DialogflowCxToolOpenApiSpec): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    text_schema: cdktf.stringToTerraform(struct!.textSchema),
+    text_schema: cdktn.stringToTerraform(struct!.textSchema),
     authentication: dialogflowCxToolOpenApiSpecAuthenticationToTerraform(struct!.authentication),
     service_directory_config: dialogflowCxToolOpenApiSpecServiceDirectoryConfigToTerraform(struct!.serviceDirectoryConfig),
     tls_config: dialogflowCxToolOpenApiSpecTlsConfigToTerraform(struct!.tlsConfig),
@@ -1753,13 +1753,13 @@ export function dialogflowCxToolOpenApiSpecToTerraform(struct?: DialogflowCxTool
 
 
 export function dialogflowCxToolOpenApiSpecToHclTerraform(struct?: DialogflowCxToolOpenApiSpecOutputReference | DialogflowCxToolOpenApiSpec): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     text_schema: {
-      value: cdktf.stringToHclTerraform(struct!.textSchema),
+      value: cdktn.stringToHclTerraform(struct!.textSchema),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -1788,14 +1788,14 @@ export function dialogflowCxToolOpenApiSpecToHclTerraform(struct?: DialogflowCxT
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class DialogflowCxToolOpenApiSpecOutputReference extends cdktf.ComplexObject {
+export class DialogflowCxToolOpenApiSpecOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -1914,39 +1914,39 @@ export interface DialogflowCxToolTimeouts {
   readonly update?: string;
 }
 
-export function dialogflowCxToolTimeoutsToTerraform(struct?: DialogflowCxToolTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function dialogflowCxToolTimeoutsToTerraform(struct?: DialogflowCxToolTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    create: cdktf.stringToTerraform(struct!.create),
-    delete: cdktf.stringToTerraform(struct!.delete),
-    update: cdktf.stringToTerraform(struct!.update),
+    create: cdktn.stringToTerraform(struct!.create),
+    delete: cdktn.stringToTerraform(struct!.delete),
+    update: cdktn.stringToTerraform(struct!.update),
   }
 }
 
 
-export function dialogflowCxToolTimeoutsToHclTerraform(struct?: DialogflowCxToolTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function dialogflowCxToolTimeoutsToHclTerraform(struct?: DialogflowCxToolTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     create: {
-      value: cdktf.stringToHclTerraform(struct!.create),
+      value: cdktn.stringToHclTerraform(struct!.create),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     delete: {
-      value: cdktf.stringToHclTerraform(struct!.delete),
+      value: cdktn.stringToHclTerraform(struct!.delete),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     update: {
-      value: cdktf.stringToHclTerraform(struct!.update),
+      value: cdktn.stringToHclTerraform(struct!.update),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -1957,19 +1957,19 @@ export function dialogflowCxToolTimeoutsToHclTerraform(struct?: DialogflowCxTool
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class DialogflowCxToolTimeoutsOutputReference extends cdktf.ComplexObject {
+export class DialogflowCxToolTimeoutsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): DialogflowCxToolTimeouts | cdktf.IResolvable | undefined {
+  public get internalValue(): DialogflowCxToolTimeouts | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -1990,7 +1990,7 @@ export class DialogflowCxToolTimeoutsOutputReference extends cdktf.ComplexObject
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: DialogflowCxToolTimeouts | cdktf.IResolvable | undefined) {
+  public set internalValue(value: DialogflowCxToolTimeouts | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -1998,7 +1998,7 @@ export class DialogflowCxToolTimeoutsOutputReference extends cdktf.ComplexObject
       this._delete = undefined;
       this._update = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -2063,7 +2063,7 @@ export class DialogflowCxToolTimeoutsOutputReference extends cdktf.ComplexObject
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/dialogflow_cx_tool google_dialogflow_cx_tool}
 */
-export class DialogflowCxTool extends cdktf.TerraformResource {
+export class DialogflowCxTool extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -2074,14 +2074,14 @@ export class DialogflowCxTool extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a DialogflowCxTool resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a DialogflowCxTool resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DialogflowCxTool to import
   * @param importFromId The id of the existing DialogflowCxTool that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/dialogflow_cx_tool#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DialogflowCxTool to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "google_dialogflow_cx_tool", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "google_dialogflow_cx_tool", importId: importFromId, provider });
       }
 
   // ===========
@@ -2263,10 +2263,10 @@ export class DialogflowCxTool extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      description: cdktf.stringToTerraform(this._description),
-      display_name: cdktf.stringToTerraform(this._displayName),
-      id: cdktf.stringToTerraform(this._id),
-      parent: cdktf.stringToTerraform(this._parent),
+      description: cdktn.stringToTerraform(this._description),
+      display_name: cdktn.stringToTerraform(this._displayName),
+      id: cdktn.stringToTerraform(this._id),
+      parent: cdktn.stringToTerraform(this._parent),
       data_store_spec: dialogflowCxToolDataStoreSpecToTerraform(this._dataStoreSpec.internalValue),
       function_spec: dialogflowCxToolFunctionSpecToTerraform(this._functionSpec.internalValue),
       open_api_spec: dialogflowCxToolOpenApiSpecToTerraform(this._openApiSpec.internalValue),
@@ -2277,25 +2277,25 @@ export class DialogflowCxTool extends cdktf.TerraformResource {
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       description: {
-        value: cdktf.stringToHclTerraform(this._description),
+        value: cdktn.stringToHclTerraform(this._description),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       display_name: {
-        value: cdktf.stringToHclTerraform(this._displayName),
+        value: cdktn.stringToHclTerraform(this._displayName),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       parent: {
-        value: cdktf.stringToHclTerraform(this._parent),
+        value: cdktn.stringToHclTerraform(this._parent),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface RecaptchaEnterpriseKeyConfig extends cdktf.TerraformMetaArguments {
+export interface RecaptchaEnterpriseKeyConfig extends cdktn.TerraformMetaArguments {
   /**
   * Human-readable display name of this key. Modifiable by user.
   *
@@ -83,7 +83,7 @@ export interface RecaptchaEnterpriseKeyAndroidSettings {
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/recaptcha_enterprise_key#allow_all_package_names RecaptchaEnterpriseKey#allow_all_package_names}
   */
-  readonly allowAllPackageNames?: boolean | cdktf.IResolvable;
+  readonly allowAllPackageNames?: boolean | cdktn.IResolvable;
   /**
   * Android package names of apps allowed to use the key. Example: 'com.companyname.appname'
   *
@@ -93,31 +93,31 @@ export interface RecaptchaEnterpriseKeyAndroidSettings {
 }
 
 export function recaptchaEnterpriseKeyAndroidSettingsToTerraform(struct?: RecaptchaEnterpriseKeyAndroidSettingsOutputReference | RecaptchaEnterpriseKeyAndroidSettings): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    allow_all_package_names: cdktf.booleanToTerraform(struct!.allowAllPackageNames),
-    allowed_package_names: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.allowedPackageNames),
+    allow_all_package_names: cdktn.booleanToTerraform(struct!.allowAllPackageNames),
+    allowed_package_names: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.allowedPackageNames),
   }
 }
 
 
 export function recaptchaEnterpriseKeyAndroidSettingsToHclTerraform(struct?: RecaptchaEnterpriseKeyAndroidSettingsOutputReference | RecaptchaEnterpriseKeyAndroidSettings): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     allow_all_package_names: {
-      value: cdktf.booleanToHclTerraform(struct!.allowAllPackageNames),
+      value: cdktn.booleanToHclTerraform(struct!.allowAllPackageNames),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     allowed_package_names: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.allowedPackageNames),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.allowedPackageNames),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
@@ -128,14 +128,14 @@ export function recaptchaEnterpriseKeyAndroidSettingsToHclTerraform(struct?: Rec
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class RecaptchaEnterpriseKeyAndroidSettingsOutputReference extends cdktf.ComplexObject {
+export class RecaptchaEnterpriseKeyAndroidSettingsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -167,11 +167,11 @@ export class RecaptchaEnterpriseKeyAndroidSettingsOutputReference extends cdktf.
   }
 
   // allow_all_package_names - computed: false, optional: true, required: false
-  private _allowAllPackageNames?: boolean | cdktf.IResolvable; 
+  private _allowAllPackageNames?: boolean | cdktn.IResolvable; 
   public get allowAllPackageNames() {
     return this.getBooleanAttribute('allow_all_package_names');
   }
-  public set allowAllPackageNames(value: boolean | cdktf.IResolvable) {
+  public set allowAllPackageNames(value: boolean | cdktn.IResolvable) {
     this._allowAllPackageNames = value;
   }
   public resetAllowAllPackageNames() {
@@ -204,7 +204,7 @@ export interface RecaptchaEnterpriseKeyIosSettings {
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/recaptcha_enterprise_key#allow_all_bundle_ids RecaptchaEnterpriseKey#allow_all_bundle_ids}
   */
-  readonly allowAllBundleIds?: boolean | cdktf.IResolvable;
+  readonly allowAllBundleIds?: boolean | cdktn.IResolvable;
   /**
   * iOS bundle ids of apps allowed to use the key. Example: 'com.companyname.productname.appname'
   *
@@ -214,31 +214,31 @@ export interface RecaptchaEnterpriseKeyIosSettings {
 }
 
 export function recaptchaEnterpriseKeyIosSettingsToTerraform(struct?: RecaptchaEnterpriseKeyIosSettingsOutputReference | RecaptchaEnterpriseKeyIosSettings): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    allow_all_bundle_ids: cdktf.booleanToTerraform(struct!.allowAllBundleIds),
-    allowed_bundle_ids: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.allowedBundleIds),
+    allow_all_bundle_ids: cdktn.booleanToTerraform(struct!.allowAllBundleIds),
+    allowed_bundle_ids: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.allowedBundleIds),
   }
 }
 
 
 export function recaptchaEnterpriseKeyIosSettingsToHclTerraform(struct?: RecaptchaEnterpriseKeyIosSettingsOutputReference | RecaptchaEnterpriseKeyIosSettings): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     allow_all_bundle_ids: {
-      value: cdktf.booleanToHclTerraform(struct!.allowAllBundleIds),
+      value: cdktn.booleanToHclTerraform(struct!.allowAllBundleIds),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     allowed_bundle_ids: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.allowedBundleIds),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.allowedBundleIds),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
@@ -249,14 +249,14 @@ export function recaptchaEnterpriseKeyIosSettingsToHclTerraform(struct?: Recaptc
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class RecaptchaEnterpriseKeyIosSettingsOutputReference extends cdktf.ComplexObject {
+export class RecaptchaEnterpriseKeyIosSettingsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -288,11 +288,11 @@ export class RecaptchaEnterpriseKeyIosSettingsOutputReference extends cdktf.Comp
   }
 
   // allow_all_bundle_ids - computed: false, optional: true, required: false
-  private _allowAllBundleIds?: boolean | cdktf.IResolvable; 
+  private _allowAllBundleIds?: boolean | cdktn.IResolvable; 
   public get allowAllBundleIds() {
     return this.getBooleanAttribute('allow_all_bundle_ids');
   }
-  public set allowAllBundleIds(value: boolean | cdktf.IResolvable) {
+  public set allowAllBundleIds(value: boolean | cdktn.IResolvable) {
     this._allowAllBundleIds = value;
   }
   public resetAllowAllBundleIds() {
@@ -335,31 +335,31 @@ export interface RecaptchaEnterpriseKeyTestingOptions {
 }
 
 export function recaptchaEnterpriseKeyTestingOptionsToTerraform(struct?: RecaptchaEnterpriseKeyTestingOptionsOutputReference | RecaptchaEnterpriseKeyTestingOptions): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    testing_challenge: cdktf.stringToTerraform(struct!.testingChallenge),
-    testing_score: cdktf.numberToTerraform(struct!.testingScore),
+    testing_challenge: cdktn.stringToTerraform(struct!.testingChallenge),
+    testing_score: cdktn.numberToTerraform(struct!.testingScore),
   }
 }
 
 
 export function recaptchaEnterpriseKeyTestingOptionsToHclTerraform(struct?: RecaptchaEnterpriseKeyTestingOptionsOutputReference | RecaptchaEnterpriseKeyTestingOptions): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     testing_challenge: {
-      value: cdktf.stringToHclTerraform(struct!.testingChallenge),
+      value: cdktn.stringToHclTerraform(struct!.testingChallenge),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     testing_score: {
-      value: cdktf.numberToHclTerraform(struct!.testingScore),
+      value: cdktn.numberToHclTerraform(struct!.testingScore),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
@@ -370,14 +370,14 @@ export function recaptchaEnterpriseKeyTestingOptionsToHclTerraform(struct?: Reca
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class RecaptchaEnterpriseKeyTestingOptionsOutputReference extends cdktf.ComplexObject {
+export class RecaptchaEnterpriseKeyTestingOptionsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -455,39 +455,39 @@ export interface RecaptchaEnterpriseKeyTimeouts {
   readonly update?: string;
 }
 
-export function recaptchaEnterpriseKeyTimeoutsToTerraform(struct?: RecaptchaEnterpriseKeyTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function recaptchaEnterpriseKeyTimeoutsToTerraform(struct?: RecaptchaEnterpriseKeyTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    create: cdktf.stringToTerraform(struct!.create),
-    delete: cdktf.stringToTerraform(struct!.delete),
-    update: cdktf.stringToTerraform(struct!.update),
+    create: cdktn.stringToTerraform(struct!.create),
+    delete: cdktn.stringToTerraform(struct!.delete),
+    update: cdktn.stringToTerraform(struct!.update),
   }
 }
 
 
-export function recaptchaEnterpriseKeyTimeoutsToHclTerraform(struct?: RecaptchaEnterpriseKeyTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function recaptchaEnterpriseKeyTimeoutsToHclTerraform(struct?: RecaptchaEnterpriseKeyTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     create: {
-      value: cdktf.stringToHclTerraform(struct!.create),
+      value: cdktn.stringToHclTerraform(struct!.create),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     delete: {
-      value: cdktf.stringToHclTerraform(struct!.delete),
+      value: cdktn.stringToHclTerraform(struct!.delete),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     update: {
-      value: cdktf.stringToHclTerraform(struct!.update),
+      value: cdktn.stringToHclTerraform(struct!.update),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -498,19 +498,19 @@ export function recaptchaEnterpriseKeyTimeoutsToHclTerraform(struct?: RecaptchaE
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class RecaptchaEnterpriseKeyTimeoutsOutputReference extends cdktf.ComplexObject {
+export class RecaptchaEnterpriseKeyTimeoutsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): RecaptchaEnterpriseKeyTimeouts | cdktf.IResolvable | undefined {
+  public get internalValue(): RecaptchaEnterpriseKeyTimeouts | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -531,7 +531,7 @@ export class RecaptchaEnterpriseKeyTimeoutsOutputReference extends cdktf.Complex
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: RecaptchaEnterpriseKeyTimeouts | cdktf.IResolvable | undefined) {
+  public set internalValue(value: RecaptchaEnterpriseKeyTimeouts | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -539,7 +539,7 @@ export class RecaptchaEnterpriseKeyTimeoutsOutputReference extends cdktf.Complex
       this._delete = undefined;
       this._update = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -616,31 +616,31 @@ export interface RecaptchaEnterpriseKeyWafSettings {
 }
 
 export function recaptchaEnterpriseKeyWafSettingsToTerraform(struct?: RecaptchaEnterpriseKeyWafSettingsOutputReference | RecaptchaEnterpriseKeyWafSettings): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    waf_feature: cdktf.stringToTerraform(struct!.wafFeature),
-    waf_service: cdktf.stringToTerraform(struct!.wafService),
+    waf_feature: cdktn.stringToTerraform(struct!.wafFeature),
+    waf_service: cdktn.stringToTerraform(struct!.wafService),
   }
 }
 
 
 export function recaptchaEnterpriseKeyWafSettingsToHclTerraform(struct?: RecaptchaEnterpriseKeyWafSettingsOutputReference | RecaptchaEnterpriseKeyWafSettings): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     waf_feature: {
-      value: cdktf.stringToHclTerraform(struct!.wafFeature),
+      value: cdktn.stringToHclTerraform(struct!.wafFeature),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     waf_service: {
-      value: cdktf.stringToHclTerraform(struct!.wafService),
+      value: cdktn.stringToHclTerraform(struct!.wafService),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -651,14 +651,14 @@ export function recaptchaEnterpriseKeyWafSettingsToHclTerraform(struct?: Recaptc
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class RecaptchaEnterpriseKeyWafSettingsOutputReference extends cdktf.ComplexObject {
+export class RecaptchaEnterpriseKeyWafSettingsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -721,13 +721,13 @@ export interface RecaptchaEnterpriseKeyWebSettings {
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/recaptcha_enterprise_key#allow_all_domains RecaptchaEnterpriseKey#allow_all_domains}
   */
-  readonly allowAllDomains?: boolean | cdktf.IResolvable;
+  readonly allowAllDomains?: boolean | cdktn.IResolvable;
   /**
   * If set to true, the key can be used on AMP (Accelerated Mobile Pages) websites. This is supported only for the SCORE integration type.
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/recaptcha_enterprise_key#allow_amp_traffic RecaptchaEnterpriseKey#allow_amp_traffic}
   */
-  readonly allowAmpTraffic?: boolean | cdktf.IResolvable;
+  readonly allowAmpTraffic?: boolean | cdktn.IResolvable;
   /**
   * Domains or subdomains of websites allowed to use the key. All subdomains of an allowed domain are automatically allowed. A valid domain requires a host and must not include any path, port, query or fragment. Examples: 'example.com' or 'subdomain.example.com'
   *
@@ -749,52 +749,52 @@ export interface RecaptchaEnterpriseKeyWebSettings {
 }
 
 export function recaptchaEnterpriseKeyWebSettingsToTerraform(struct?: RecaptchaEnterpriseKeyWebSettingsOutputReference | RecaptchaEnterpriseKeyWebSettings): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    allow_all_domains: cdktf.booleanToTerraform(struct!.allowAllDomains),
-    allow_amp_traffic: cdktf.booleanToTerraform(struct!.allowAmpTraffic),
-    allowed_domains: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.allowedDomains),
-    challenge_security_preference: cdktf.stringToTerraform(struct!.challengeSecurityPreference),
-    integration_type: cdktf.stringToTerraform(struct!.integrationType),
+    allow_all_domains: cdktn.booleanToTerraform(struct!.allowAllDomains),
+    allow_amp_traffic: cdktn.booleanToTerraform(struct!.allowAmpTraffic),
+    allowed_domains: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.allowedDomains),
+    challenge_security_preference: cdktn.stringToTerraform(struct!.challengeSecurityPreference),
+    integration_type: cdktn.stringToTerraform(struct!.integrationType),
   }
 }
 
 
 export function recaptchaEnterpriseKeyWebSettingsToHclTerraform(struct?: RecaptchaEnterpriseKeyWebSettingsOutputReference | RecaptchaEnterpriseKeyWebSettings): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     allow_all_domains: {
-      value: cdktf.booleanToHclTerraform(struct!.allowAllDomains),
+      value: cdktn.booleanToHclTerraform(struct!.allowAllDomains),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     allow_amp_traffic: {
-      value: cdktf.booleanToHclTerraform(struct!.allowAmpTraffic),
+      value: cdktn.booleanToHclTerraform(struct!.allowAmpTraffic),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     allowed_domains: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.allowedDomains),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.allowedDomains),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
     },
     challenge_security_preference: {
-      value: cdktf.stringToHclTerraform(struct!.challengeSecurityPreference),
+      value: cdktn.stringToHclTerraform(struct!.challengeSecurityPreference),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     integration_type: {
-      value: cdktf.stringToHclTerraform(struct!.integrationType),
+      value: cdktn.stringToHclTerraform(struct!.integrationType),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -805,14 +805,14 @@ export function recaptchaEnterpriseKeyWebSettingsToHclTerraform(struct?: Recaptc
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class RecaptchaEnterpriseKeyWebSettingsOutputReference extends cdktf.ComplexObject {
+export class RecaptchaEnterpriseKeyWebSettingsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -862,11 +862,11 @@ export class RecaptchaEnterpriseKeyWebSettingsOutputReference extends cdktf.Comp
   }
 
   // allow_all_domains - computed: false, optional: true, required: false
-  private _allowAllDomains?: boolean | cdktf.IResolvable; 
+  private _allowAllDomains?: boolean | cdktn.IResolvable; 
   public get allowAllDomains() {
     return this.getBooleanAttribute('allow_all_domains');
   }
-  public set allowAllDomains(value: boolean | cdktf.IResolvable) {
+  public set allowAllDomains(value: boolean | cdktn.IResolvable) {
     this._allowAllDomains = value;
   }
   public resetAllowAllDomains() {
@@ -878,11 +878,11 @@ export class RecaptchaEnterpriseKeyWebSettingsOutputReference extends cdktf.Comp
   }
 
   // allow_amp_traffic - computed: false, optional: true, required: false
-  private _allowAmpTraffic?: boolean | cdktf.IResolvable; 
+  private _allowAmpTraffic?: boolean | cdktn.IResolvable; 
   public get allowAmpTraffic() {
     return this.getBooleanAttribute('allow_amp_traffic');
   }
-  public set allowAmpTraffic(value: boolean | cdktf.IResolvable) {
+  public set allowAmpTraffic(value: boolean | cdktn.IResolvable) {
     this._allowAmpTraffic = value;
   }
   public resetAllowAmpTraffic() {
@@ -942,7 +942,7 @@ export class RecaptchaEnterpriseKeyWebSettingsOutputReference extends cdktf.Comp
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/recaptcha_enterprise_key google_recaptcha_enterprise_key}
 */
-export class RecaptchaEnterpriseKey extends cdktf.TerraformResource {
+export class RecaptchaEnterpriseKey extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -953,14 +953,14 @@ export class RecaptchaEnterpriseKey extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a RecaptchaEnterpriseKey resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a RecaptchaEnterpriseKey resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the RecaptchaEnterpriseKey to import
   * @param importFromId The id of the existing RecaptchaEnterpriseKey that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/recaptcha_enterprise_key#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the RecaptchaEnterpriseKey to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "google_recaptcha_enterprise_key", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "google_recaptcha_enterprise_key", importId: importFromId, provider });
       }
 
   // ===========
@@ -1025,7 +1025,7 @@ export class RecaptchaEnterpriseKey extends cdktf.TerraformResource {
   }
 
   // effective_labels - computed: true, optional: false, required: false
-  private _effectiveLabels = new cdktf.StringMap(this, "effective_labels");
+  private _effectiveLabels = new cdktn.StringMap(this, "effective_labels");
   public get effectiveLabels() {
     return this._effectiveLabels;
   }
@@ -1084,7 +1084,7 @@ export class RecaptchaEnterpriseKey extends cdktf.TerraformResource {
   }
 
   // terraform_labels - computed: true, optional: false, required: false
-  private _terraformLabels = new cdktf.StringMap(this, "terraform_labels");
+  private _terraformLabels = new cdktn.StringMap(this, "terraform_labels");
   public get terraformLabels() {
     return this._terraformLabels;
   }
@@ -1191,10 +1191,10 @@ export class RecaptchaEnterpriseKey extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      display_name: cdktf.stringToTerraform(this._displayName),
-      id: cdktf.stringToTerraform(this._id),
-      labels: cdktf.hashMapper(cdktf.stringToTerraform)(this._labels),
-      project: cdktf.stringToTerraform(this._project),
+      display_name: cdktn.stringToTerraform(this._displayName),
+      id: cdktn.stringToTerraform(this._id),
+      labels: cdktn.hashMapper(cdktn.stringToTerraform)(this._labels),
+      project: cdktn.stringToTerraform(this._project),
       android_settings: recaptchaEnterpriseKeyAndroidSettingsToTerraform(this._androidSettings.internalValue),
       ios_settings: recaptchaEnterpriseKeyIosSettingsToTerraform(this._iosSettings.internalValue),
       testing_options: recaptchaEnterpriseKeyTestingOptionsToTerraform(this._testingOptions.internalValue),
@@ -1207,25 +1207,25 @@ export class RecaptchaEnterpriseKey extends cdktf.TerraformResource {
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       display_name: {
-        value: cdktf.stringToHclTerraform(this._displayName),
+        value: cdktn.stringToHclTerraform(this._displayName),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       labels: {
-        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._labels),
+        value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(this._labels),
         isBlock: false,
         type: "map",
         storageClassType: "stringMap",
       },
       project: {
-        value: cdktf.stringToHclTerraform(this._project),
+        value: cdktn.stringToHclTerraform(this._project),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

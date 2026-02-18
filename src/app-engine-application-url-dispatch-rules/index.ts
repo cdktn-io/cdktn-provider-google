@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface AppEngineApplicationUrlDispatchRulesConfig extends cdktf.TerraformMetaArguments {
+export interface AppEngineApplicationUrlDispatchRulesConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/app_engine_application_url_dispatch_rules#id AppEngineApplicationUrlDispatchRules#id}
   *
@@ -28,7 +28,7 @@ export interface AppEngineApplicationUrlDispatchRulesConfig extends cdktf.Terraf
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/app_engine_application_url_dispatch_rules#dispatch_rules AppEngineApplicationUrlDispatchRules#dispatch_rules}
   */
-  readonly dispatchRules: AppEngineApplicationUrlDispatchRulesDispatchRules[] | cdktf.IResolvable;
+  readonly dispatchRules: AppEngineApplicationUrlDispatchRulesDispatchRules[] | cdktn.IResolvable;
   /**
   * timeouts block
   *
@@ -60,39 +60,39 @@ export interface AppEngineApplicationUrlDispatchRulesDispatchRules {
   readonly service: string;
 }
 
-export function appEngineApplicationUrlDispatchRulesDispatchRulesToTerraform(struct?: AppEngineApplicationUrlDispatchRulesDispatchRules | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function appEngineApplicationUrlDispatchRulesDispatchRulesToTerraform(struct?: AppEngineApplicationUrlDispatchRulesDispatchRules | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    domain: cdktf.stringToTerraform(struct!.domain),
-    path: cdktf.stringToTerraform(struct!.path),
-    service: cdktf.stringToTerraform(struct!.service),
+    domain: cdktn.stringToTerraform(struct!.domain),
+    path: cdktn.stringToTerraform(struct!.path),
+    service: cdktn.stringToTerraform(struct!.service),
   }
 }
 
 
-export function appEngineApplicationUrlDispatchRulesDispatchRulesToHclTerraform(struct?: AppEngineApplicationUrlDispatchRulesDispatchRules | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function appEngineApplicationUrlDispatchRulesDispatchRulesToHclTerraform(struct?: AppEngineApplicationUrlDispatchRulesDispatchRules | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     domain: {
-      value: cdktf.stringToHclTerraform(struct!.domain),
+      value: cdktn.stringToHclTerraform(struct!.domain),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     path: {
-      value: cdktf.stringToHclTerraform(struct!.path),
+      value: cdktn.stringToHclTerraform(struct!.path),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     service: {
-      value: cdktf.stringToHclTerraform(struct!.service),
+      value: cdktn.stringToHclTerraform(struct!.service),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -103,9 +103,9 @@ export function appEngineApplicationUrlDispatchRulesDispatchRulesToHclTerraform(
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class AppEngineApplicationUrlDispatchRulesDispatchRulesOutputReference extends cdktf.ComplexObject {
+export class AppEngineApplicationUrlDispatchRulesDispatchRulesOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -113,11 +113,11 @@ export class AppEngineApplicationUrlDispatchRulesDispatchRulesOutputReference ex
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): AppEngineApplicationUrlDispatchRulesDispatchRules | cdktf.IResolvable | undefined {
+  public get internalValue(): AppEngineApplicationUrlDispatchRulesDispatchRules | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -138,7 +138,7 @@ export class AppEngineApplicationUrlDispatchRulesDispatchRulesOutputReference ex
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: AppEngineApplicationUrlDispatchRulesDispatchRules | cdktf.IResolvable | undefined) {
+  public set internalValue(value: AppEngineApplicationUrlDispatchRulesDispatchRules | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -146,7 +146,7 @@ export class AppEngineApplicationUrlDispatchRulesDispatchRulesOutputReference ex
       this._path = undefined;
       this._service = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -202,15 +202,15 @@ export class AppEngineApplicationUrlDispatchRulesDispatchRulesOutputReference ex
   }
 }
 
-export class AppEngineApplicationUrlDispatchRulesDispatchRulesList extends cdktf.ComplexList {
-  public internalValue? : AppEngineApplicationUrlDispatchRulesDispatchRules[] | cdktf.IResolvable
+export class AppEngineApplicationUrlDispatchRulesDispatchRulesList extends cdktn.ComplexList {
+  public internalValue? : AppEngineApplicationUrlDispatchRulesDispatchRules[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -236,39 +236,39 @@ export interface AppEngineApplicationUrlDispatchRulesTimeouts {
   readonly update?: string;
 }
 
-export function appEngineApplicationUrlDispatchRulesTimeoutsToTerraform(struct?: AppEngineApplicationUrlDispatchRulesTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function appEngineApplicationUrlDispatchRulesTimeoutsToTerraform(struct?: AppEngineApplicationUrlDispatchRulesTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    create: cdktf.stringToTerraform(struct!.create),
-    delete: cdktf.stringToTerraform(struct!.delete),
-    update: cdktf.stringToTerraform(struct!.update),
+    create: cdktn.stringToTerraform(struct!.create),
+    delete: cdktn.stringToTerraform(struct!.delete),
+    update: cdktn.stringToTerraform(struct!.update),
   }
 }
 
 
-export function appEngineApplicationUrlDispatchRulesTimeoutsToHclTerraform(struct?: AppEngineApplicationUrlDispatchRulesTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function appEngineApplicationUrlDispatchRulesTimeoutsToHclTerraform(struct?: AppEngineApplicationUrlDispatchRulesTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     create: {
-      value: cdktf.stringToHclTerraform(struct!.create),
+      value: cdktn.stringToHclTerraform(struct!.create),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     delete: {
-      value: cdktf.stringToHclTerraform(struct!.delete),
+      value: cdktn.stringToHclTerraform(struct!.delete),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     update: {
-      value: cdktf.stringToHclTerraform(struct!.update),
+      value: cdktn.stringToHclTerraform(struct!.update),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -279,19 +279,19 @@ export function appEngineApplicationUrlDispatchRulesTimeoutsToHclTerraform(struc
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class AppEngineApplicationUrlDispatchRulesTimeoutsOutputReference extends cdktf.ComplexObject {
+export class AppEngineApplicationUrlDispatchRulesTimeoutsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): AppEngineApplicationUrlDispatchRulesTimeouts | cdktf.IResolvable | undefined {
+  public get internalValue(): AppEngineApplicationUrlDispatchRulesTimeouts | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -312,7 +312,7 @@ export class AppEngineApplicationUrlDispatchRulesTimeoutsOutputReference extends
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: AppEngineApplicationUrlDispatchRulesTimeouts | cdktf.IResolvable | undefined) {
+  public set internalValue(value: AppEngineApplicationUrlDispatchRulesTimeouts | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -320,7 +320,7 @@ export class AppEngineApplicationUrlDispatchRulesTimeoutsOutputReference extends
       this._delete = undefined;
       this._update = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -385,7 +385,7 @@ export class AppEngineApplicationUrlDispatchRulesTimeoutsOutputReference extends
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/app_engine_application_url_dispatch_rules google_app_engine_application_url_dispatch_rules}
 */
-export class AppEngineApplicationUrlDispatchRules extends cdktf.TerraformResource {
+export class AppEngineApplicationUrlDispatchRules extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -396,14 +396,14 @@ export class AppEngineApplicationUrlDispatchRules extends cdktf.TerraformResourc
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a AppEngineApplicationUrlDispatchRules resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a AppEngineApplicationUrlDispatchRules resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the AppEngineApplicationUrlDispatchRules to import
   * @param importFromId The id of the existing AppEngineApplicationUrlDispatchRules that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/app_engine_application_url_dispatch_rules#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the AppEngineApplicationUrlDispatchRules to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "google_app_engine_application_url_dispatch_rules", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "google_app_engine_application_url_dispatch_rules", importId: importFromId, provider });
       }
 
   // ===========
@@ -480,7 +480,7 @@ export class AppEngineApplicationUrlDispatchRules extends cdktf.TerraformResourc
   public get dispatchRules() {
     return this._dispatchRules;
   }
-  public putDispatchRules(value: AppEngineApplicationUrlDispatchRulesDispatchRules[] | cdktf.IResolvable) {
+  public putDispatchRules(value: AppEngineApplicationUrlDispatchRulesDispatchRules[] | cdktn.IResolvable) {
     this._dispatchRules.internalValue = value;
   }
   // Temporarily expose input value. Use with caution.
@@ -510,9 +510,9 @@ export class AppEngineApplicationUrlDispatchRules extends cdktf.TerraformResourc
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      id: cdktf.stringToTerraform(this._id),
-      project: cdktf.stringToTerraform(this._project),
-      dispatch_rules: cdktf.listMapper(appEngineApplicationUrlDispatchRulesDispatchRulesToTerraform, true)(this._dispatchRules.internalValue),
+      id: cdktn.stringToTerraform(this._id),
+      project: cdktn.stringToTerraform(this._project),
+      dispatch_rules: cdktn.listMapper(appEngineApplicationUrlDispatchRulesDispatchRulesToTerraform, true)(this._dispatchRules.internalValue),
       timeouts: appEngineApplicationUrlDispatchRulesTimeoutsToTerraform(this._timeouts.internalValue),
     };
   }
@@ -520,19 +520,19 @@ export class AppEngineApplicationUrlDispatchRules extends cdktf.TerraformResourc
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       project: {
-        value: cdktf.stringToHclTerraform(this._project),
+        value: cdktn.stringToHclTerraform(this._project),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       dispatch_rules: {
-        value: cdktf.listMapperHcl(appEngineApplicationUrlDispatchRulesDispatchRulesToHclTerraform, true)(this._dispatchRules.internalValue),
+        value: cdktn.listMapperHcl(appEngineApplicationUrlDispatchRulesDispatchRulesToHclTerraform, true)(this._dispatchRules.internalValue),
         isBlock: true,
         type: "list",
         storageClassType: "AppEngineApplicationUrlDispatchRulesDispatchRulesList",

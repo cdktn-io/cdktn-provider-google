@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface ProjectUsageExportBucketConfig extends cdktf.TerraformMetaArguments {
+export interface ProjectUsageExportBucketConfig extends cdktn.TerraformMetaArguments {
   /**
   * The bucket to store reports in.
   *
@@ -55,32 +55,32 @@ export interface ProjectUsageExportBucketTimeouts {
   readonly delete?: string;
 }
 
-export function projectUsageExportBucketTimeoutsToTerraform(struct?: ProjectUsageExportBucketTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function projectUsageExportBucketTimeoutsToTerraform(struct?: ProjectUsageExportBucketTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    create: cdktf.stringToTerraform(struct!.create),
-    delete: cdktf.stringToTerraform(struct!.delete),
+    create: cdktn.stringToTerraform(struct!.create),
+    delete: cdktn.stringToTerraform(struct!.delete),
   }
 }
 
 
-export function projectUsageExportBucketTimeoutsToHclTerraform(struct?: ProjectUsageExportBucketTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function projectUsageExportBucketTimeoutsToHclTerraform(struct?: ProjectUsageExportBucketTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     create: {
-      value: cdktf.stringToHclTerraform(struct!.create),
+      value: cdktn.stringToHclTerraform(struct!.create),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     delete: {
-      value: cdktf.stringToHclTerraform(struct!.delete),
+      value: cdktn.stringToHclTerraform(struct!.delete),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -91,19 +91,19 @@ export function projectUsageExportBucketTimeoutsToHclTerraform(struct?: ProjectU
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class ProjectUsageExportBucketTimeoutsOutputReference extends cdktf.ComplexObject {
+export class ProjectUsageExportBucketTimeoutsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): ProjectUsageExportBucketTimeouts | cdktf.IResolvable | undefined {
+  public get internalValue(): ProjectUsageExportBucketTimeouts | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -120,14 +120,14 @@ export class ProjectUsageExportBucketTimeoutsOutputReference extends cdktf.Compl
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: ProjectUsageExportBucketTimeouts | cdktf.IResolvable | undefined) {
+  public set internalValue(value: ProjectUsageExportBucketTimeouts | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._create = undefined;
       this._delete = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -175,7 +175,7 @@ export class ProjectUsageExportBucketTimeoutsOutputReference extends cdktf.Compl
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/project_usage_export_bucket google_project_usage_export_bucket}
 */
-export class ProjectUsageExportBucket extends cdktf.TerraformResource {
+export class ProjectUsageExportBucket extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -186,14 +186,14 @@ export class ProjectUsageExportBucket extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a ProjectUsageExportBucket resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a ProjectUsageExportBucket resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the ProjectUsageExportBucket to import
   * @param importFromId The id of the existing ProjectUsageExportBucket that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/project_usage_export_bucket#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the ProjectUsageExportBucket to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "google_project_usage_export_bucket", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "google_project_usage_export_bucket", importId: importFromId, provider });
       }
 
   // ===========
@@ -317,10 +317,10 @@ export class ProjectUsageExportBucket extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      bucket_name: cdktf.stringToTerraform(this._bucketName),
-      id: cdktf.stringToTerraform(this._id),
-      prefix: cdktf.stringToTerraform(this._prefix),
-      project: cdktf.stringToTerraform(this._project),
+      bucket_name: cdktn.stringToTerraform(this._bucketName),
+      id: cdktn.stringToTerraform(this._id),
+      prefix: cdktn.stringToTerraform(this._prefix),
+      project: cdktn.stringToTerraform(this._project),
       timeouts: projectUsageExportBucketTimeoutsToTerraform(this._timeouts.internalValue),
     };
   }
@@ -328,25 +328,25 @@ export class ProjectUsageExportBucket extends cdktf.TerraformResource {
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       bucket_name: {
-        value: cdktf.stringToHclTerraform(this._bucketName),
+        value: cdktn.stringToHclTerraform(this._bucketName),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       prefix: {
-        value: cdktf.stringToHclTerraform(this._prefix),
+        value: cdktn.stringToHclTerraform(this._prefix),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       project: {
-        value: cdktf.stringToHclTerraform(this._project),
+        value: cdktn.stringToHclTerraform(this._project),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

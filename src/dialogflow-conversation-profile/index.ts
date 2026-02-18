@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface DialogflowConversationProfileConfig extends cdktf.TerraformMetaArguments {
+export interface DialogflowConversationProfileConfig extends cdktn.TerraformMetaArguments {
   /**
   * Required. Human readable name for this profile. Max length 1024 bytes.
   *
@@ -125,31 +125,31 @@ export interface DialogflowConversationProfileAutomatedAgentConfig {
 }
 
 export function dialogflowConversationProfileAutomatedAgentConfigToTerraform(struct?: DialogflowConversationProfileAutomatedAgentConfigOutputReference | DialogflowConversationProfileAutomatedAgentConfig): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    agent: cdktf.stringToTerraform(struct!.agent),
-    session_ttl: cdktf.stringToTerraform(struct!.sessionTtl),
+    agent: cdktn.stringToTerraform(struct!.agent),
+    session_ttl: cdktn.stringToTerraform(struct!.sessionTtl),
   }
 }
 
 
 export function dialogflowConversationProfileAutomatedAgentConfigToHclTerraform(struct?: DialogflowConversationProfileAutomatedAgentConfigOutputReference | DialogflowConversationProfileAutomatedAgentConfig): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     agent: {
-      value: cdktf.stringToHclTerraform(struct!.agent),
+      value: cdktn.stringToHclTerraform(struct!.agent),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     session_ttl: {
-      value: cdktf.stringToHclTerraform(struct!.sessionTtl),
+      value: cdktn.stringToHclTerraform(struct!.sessionTtl),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -160,14 +160,14 @@ export function dialogflowConversationProfileAutomatedAgentConfigToHclTerraform(
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class DialogflowConversationProfileAutomatedAgentConfigOutputReference extends cdktf.ComplexObject {
+export class DialogflowConversationProfileAutomatedAgentConfigOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -243,31 +243,31 @@ export interface DialogflowConversationProfileHumanAgentAssistantConfigEndUserSu
 }
 
 export function dialogflowConversationProfileHumanAgentAssistantConfigEndUserSuggestionConfigFeatureConfigsConversationModelConfigToTerraform(struct?: DialogflowConversationProfileHumanAgentAssistantConfigEndUserSuggestionConfigFeatureConfigsConversationModelConfigOutputReference | DialogflowConversationProfileHumanAgentAssistantConfigEndUserSuggestionConfigFeatureConfigsConversationModelConfig): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    baseline_model_version: cdktf.stringToTerraform(struct!.baselineModelVersion),
-    model: cdktf.stringToTerraform(struct!.model),
+    baseline_model_version: cdktn.stringToTerraform(struct!.baselineModelVersion),
+    model: cdktn.stringToTerraform(struct!.model),
   }
 }
 
 
 export function dialogflowConversationProfileHumanAgentAssistantConfigEndUserSuggestionConfigFeatureConfigsConversationModelConfigToHclTerraform(struct?: DialogflowConversationProfileHumanAgentAssistantConfigEndUserSuggestionConfigFeatureConfigsConversationModelConfigOutputReference | DialogflowConversationProfileHumanAgentAssistantConfigEndUserSuggestionConfigFeatureConfigsConversationModelConfig): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     baseline_model_version: {
-      value: cdktf.stringToHclTerraform(struct!.baselineModelVersion),
+      value: cdktn.stringToHclTerraform(struct!.baselineModelVersion),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     model: {
-      value: cdktf.stringToHclTerraform(struct!.model),
+      value: cdktn.stringToHclTerraform(struct!.model),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -278,14 +278,14 @@ export function dialogflowConversationProfileHumanAgentAssistantConfigEndUserSug
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class DialogflowConversationProfileHumanAgentAssistantConfigEndUserSuggestionConfigFeatureConfigsConversationModelConfigOutputReference extends cdktf.ComplexObject {
+export class DialogflowConversationProfileHumanAgentAssistantConfigEndUserSuggestionConfigFeatureConfigsConversationModelConfigOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -358,24 +358,24 @@ export interface DialogflowConversationProfileHumanAgentAssistantConfigEndUserSu
 }
 
 export function dialogflowConversationProfileHumanAgentAssistantConfigEndUserSuggestionConfigFeatureConfigsConversationProcessConfigToTerraform(struct?: DialogflowConversationProfileHumanAgentAssistantConfigEndUserSuggestionConfigFeatureConfigsConversationProcessConfigOutputReference | DialogflowConversationProfileHumanAgentAssistantConfigEndUserSuggestionConfigFeatureConfigsConversationProcessConfig): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    recent_sentences_count: cdktf.numberToTerraform(struct!.recentSentencesCount),
+    recent_sentences_count: cdktn.numberToTerraform(struct!.recentSentencesCount),
   }
 }
 
 
 export function dialogflowConversationProfileHumanAgentAssistantConfigEndUserSuggestionConfigFeatureConfigsConversationProcessConfigToHclTerraform(struct?: DialogflowConversationProfileHumanAgentAssistantConfigEndUserSuggestionConfigFeatureConfigsConversationProcessConfigOutputReference | DialogflowConversationProfileHumanAgentAssistantConfigEndUserSuggestionConfigFeatureConfigsConversationProcessConfig): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     recent_sentences_count: {
-      value: cdktf.numberToHclTerraform(struct!.recentSentencesCount),
+      value: cdktn.numberToHclTerraform(struct!.recentSentencesCount),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
@@ -386,14 +386,14 @@ export function dialogflowConversationProfileHumanAgentAssistantConfigEndUserSug
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class DialogflowConversationProfileHumanAgentAssistantConfigEndUserSuggestionConfigFeatureConfigsConversationProcessConfigOutputReference extends cdktf.ComplexObject {
+export class DialogflowConversationProfileHumanAgentAssistantConfigEndUserSuggestionConfigFeatureConfigsConversationProcessConfigOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -440,54 +440,54 @@ export interface DialogflowConversationProfileHumanAgentAssistantConfigEndUserSu
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/dialogflow_conversation_profile#drop_handoff_messages DialogflowConversationProfile#drop_handoff_messages}
   */
-  readonly dropHandoffMessages?: boolean | cdktf.IResolvable;
+  readonly dropHandoffMessages?: boolean | cdktn.IResolvable;
   /**
   * If set to true, all messages from ivr stage are dropped.
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/dialogflow_conversation_profile#drop_ivr_messages DialogflowConversationProfile#drop_ivr_messages}
   */
-  readonly dropIvrMessages?: boolean | cdktf.IResolvable;
+  readonly dropIvrMessages?: boolean | cdktn.IResolvable;
   /**
   * If set to true, all messages from virtual agent are dropped.
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/dialogflow_conversation_profile#drop_virtual_agent_messages DialogflowConversationProfile#drop_virtual_agent_messages}
   */
-  readonly dropVirtualAgentMessages?: boolean | cdktf.IResolvable;
+  readonly dropVirtualAgentMessages?: boolean | cdktn.IResolvable;
 }
 
 export function dialogflowConversationProfileHumanAgentAssistantConfigEndUserSuggestionConfigFeatureConfigsQueryConfigContextFilterSettingsToTerraform(struct?: DialogflowConversationProfileHumanAgentAssistantConfigEndUserSuggestionConfigFeatureConfigsQueryConfigContextFilterSettingsOutputReference | DialogflowConversationProfileHumanAgentAssistantConfigEndUserSuggestionConfigFeatureConfigsQueryConfigContextFilterSettings): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    drop_handoff_messages: cdktf.booleanToTerraform(struct!.dropHandoffMessages),
-    drop_ivr_messages: cdktf.booleanToTerraform(struct!.dropIvrMessages),
-    drop_virtual_agent_messages: cdktf.booleanToTerraform(struct!.dropVirtualAgentMessages),
+    drop_handoff_messages: cdktn.booleanToTerraform(struct!.dropHandoffMessages),
+    drop_ivr_messages: cdktn.booleanToTerraform(struct!.dropIvrMessages),
+    drop_virtual_agent_messages: cdktn.booleanToTerraform(struct!.dropVirtualAgentMessages),
   }
 }
 
 
 export function dialogflowConversationProfileHumanAgentAssistantConfigEndUserSuggestionConfigFeatureConfigsQueryConfigContextFilterSettingsToHclTerraform(struct?: DialogflowConversationProfileHumanAgentAssistantConfigEndUserSuggestionConfigFeatureConfigsQueryConfigContextFilterSettingsOutputReference | DialogflowConversationProfileHumanAgentAssistantConfigEndUserSuggestionConfigFeatureConfigsQueryConfigContextFilterSettings): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     drop_handoff_messages: {
-      value: cdktf.booleanToHclTerraform(struct!.dropHandoffMessages),
+      value: cdktn.booleanToHclTerraform(struct!.dropHandoffMessages),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     drop_ivr_messages: {
-      value: cdktf.booleanToHclTerraform(struct!.dropIvrMessages),
+      value: cdktn.booleanToHclTerraform(struct!.dropIvrMessages),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     drop_virtual_agent_messages: {
-      value: cdktf.booleanToHclTerraform(struct!.dropVirtualAgentMessages),
+      value: cdktn.booleanToHclTerraform(struct!.dropVirtualAgentMessages),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
@@ -498,14 +498,14 @@ export function dialogflowConversationProfileHumanAgentAssistantConfigEndUserSug
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class DialogflowConversationProfileHumanAgentAssistantConfigEndUserSuggestionConfigFeatureConfigsQueryConfigContextFilterSettingsOutputReference extends cdktf.ComplexObject {
+export class DialogflowConversationProfileHumanAgentAssistantConfigEndUserSuggestionConfigFeatureConfigsQueryConfigContextFilterSettingsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -543,11 +543,11 @@ export class DialogflowConversationProfileHumanAgentAssistantConfigEndUserSugges
   }
 
   // drop_handoff_messages - computed: false, optional: true, required: false
-  private _dropHandoffMessages?: boolean | cdktf.IResolvable; 
+  private _dropHandoffMessages?: boolean | cdktn.IResolvable; 
   public get dropHandoffMessages() {
     return this.getBooleanAttribute('drop_handoff_messages');
   }
-  public set dropHandoffMessages(value: boolean | cdktf.IResolvable) {
+  public set dropHandoffMessages(value: boolean | cdktn.IResolvable) {
     this._dropHandoffMessages = value;
   }
   public resetDropHandoffMessages() {
@@ -559,11 +559,11 @@ export class DialogflowConversationProfileHumanAgentAssistantConfigEndUserSugges
   }
 
   // drop_ivr_messages - computed: false, optional: true, required: false
-  private _dropIvrMessages?: boolean | cdktf.IResolvable; 
+  private _dropIvrMessages?: boolean | cdktn.IResolvable; 
   public get dropIvrMessages() {
     return this.getBooleanAttribute('drop_ivr_messages');
   }
-  public set dropIvrMessages(value: boolean | cdktf.IResolvable) {
+  public set dropIvrMessages(value: boolean | cdktn.IResolvable) {
     this._dropIvrMessages = value;
   }
   public resetDropIvrMessages() {
@@ -575,11 +575,11 @@ export class DialogflowConversationProfileHumanAgentAssistantConfigEndUserSugges
   }
 
   // drop_virtual_agent_messages - computed: false, optional: true, required: false
-  private _dropVirtualAgentMessages?: boolean | cdktf.IResolvable; 
+  private _dropVirtualAgentMessages?: boolean | cdktn.IResolvable; 
   public get dropVirtualAgentMessages() {
     return this.getBooleanAttribute('drop_virtual_agent_messages');
   }
-  public set dropVirtualAgentMessages(value: boolean | cdktf.IResolvable) {
+  public set dropVirtualAgentMessages(value: boolean | cdktn.IResolvable) {
     this._dropVirtualAgentMessages = value;
   }
   public resetDropVirtualAgentMessages() {
@@ -600,24 +600,24 @@ export interface DialogflowConversationProfileHumanAgentAssistantConfigEndUserSu
 }
 
 export function dialogflowConversationProfileHumanAgentAssistantConfigEndUserSuggestionConfigFeatureConfigsQueryConfigDialogflowQuerySourceHumanAgentSideConfigToTerraform(struct?: DialogflowConversationProfileHumanAgentAssistantConfigEndUserSuggestionConfigFeatureConfigsQueryConfigDialogflowQuerySourceHumanAgentSideConfigOutputReference | DialogflowConversationProfileHumanAgentAssistantConfigEndUserSuggestionConfigFeatureConfigsQueryConfigDialogflowQuerySourceHumanAgentSideConfig): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    agent: cdktf.stringToTerraform(struct!.agent),
+    agent: cdktn.stringToTerraform(struct!.agent),
   }
 }
 
 
 export function dialogflowConversationProfileHumanAgentAssistantConfigEndUserSuggestionConfigFeatureConfigsQueryConfigDialogflowQuerySourceHumanAgentSideConfigToHclTerraform(struct?: DialogflowConversationProfileHumanAgentAssistantConfigEndUserSuggestionConfigFeatureConfigsQueryConfigDialogflowQuerySourceHumanAgentSideConfigOutputReference | DialogflowConversationProfileHumanAgentAssistantConfigEndUserSuggestionConfigFeatureConfigsQueryConfigDialogflowQuerySourceHumanAgentSideConfig): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     agent: {
-      value: cdktf.stringToHclTerraform(struct!.agent),
+      value: cdktn.stringToHclTerraform(struct!.agent),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -628,14 +628,14 @@ export function dialogflowConversationProfileHumanAgentAssistantConfigEndUserSug
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class DialogflowConversationProfileHumanAgentAssistantConfigEndUserSuggestionConfigFeatureConfigsQueryConfigDialogflowQuerySourceHumanAgentSideConfigOutputReference extends cdktf.ComplexObject {
+export class DialogflowConversationProfileHumanAgentAssistantConfigEndUserSuggestionConfigFeatureConfigsQueryConfigDialogflowQuerySourceHumanAgentSideConfigOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -692,25 +692,25 @@ export interface DialogflowConversationProfileHumanAgentAssistantConfigEndUserSu
 }
 
 export function dialogflowConversationProfileHumanAgentAssistantConfigEndUserSuggestionConfigFeatureConfigsQueryConfigDialogflowQuerySourceToTerraform(struct?: DialogflowConversationProfileHumanAgentAssistantConfigEndUserSuggestionConfigFeatureConfigsQueryConfigDialogflowQuerySourceOutputReference | DialogflowConversationProfileHumanAgentAssistantConfigEndUserSuggestionConfigFeatureConfigsQueryConfigDialogflowQuerySource): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    agent: cdktf.stringToTerraform(struct!.agent),
+    agent: cdktn.stringToTerraform(struct!.agent),
     human_agent_side_config: dialogflowConversationProfileHumanAgentAssistantConfigEndUserSuggestionConfigFeatureConfigsQueryConfigDialogflowQuerySourceHumanAgentSideConfigToTerraform(struct!.humanAgentSideConfig),
   }
 }
 
 
 export function dialogflowConversationProfileHumanAgentAssistantConfigEndUserSuggestionConfigFeatureConfigsQueryConfigDialogflowQuerySourceToHclTerraform(struct?: DialogflowConversationProfileHumanAgentAssistantConfigEndUserSuggestionConfigFeatureConfigsQueryConfigDialogflowQuerySourceOutputReference | DialogflowConversationProfileHumanAgentAssistantConfigEndUserSuggestionConfigFeatureConfigsQueryConfigDialogflowQuerySource): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     agent: {
-      value: cdktf.stringToHclTerraform(struct!.agent),
+      value: cdktn.stringToHclTerraform(struct!.agent),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -727,14 +727,14 @@ export function dialogflowConversationProfileHumanAgentAssistantConfigEndUserSug
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class DialogflowConversationProfileHumanAgentAssistantConfigEndUserSuggestionConfigFeatureConfigsQueryConfigDialogflowQuerySourceOutputReference extends cdktf.ComplexObject {
+export class DialogflowConversationProfileHumanAgentAssistantConfigEndUserSuggestionConfigFeatureConfigsQueryConfigDialogflowQuerySourceOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -804,24 +804,24 @@ export interface DialogflowConversationProfileHumanAgentAssistantConfigEndUserSu
 }
 
 export function dialogflowConversationProfileHumanAgentAssistantConfigEndUserSuggestionConfigFeatureConfigsQueryConfigDocumentQuerySourceToTerraform(struct?: DialogflowConversationProfileHumanAgentAssistantConfigEndUserSuggestionConfigFeatureConfigsQueryConfigDocumentQuerySourceOutputReference | DialogflowConversationProfileHumanAgentAssistantConfigEndUserSuggestionConfigFeatureConfigsQueryConfigDocumentQuerySource): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    documents: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.documents),
+    documents: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.documents),
   }
 }
 
 
 export function dialogflowConversationProfileHumanAgentAssistantConfigEndUserSuggestionConfigFeatureConfigsQueryConfigDocumentQuerySourceToHclTerraform(struct?: DialogflowConversationProfileHumanAgentAssistantConfigEndUserSuggestionConfigFeatureConfigsQueryConfigDocumentQuerySourceOutputReference | DialogflowConversationProfileHumanAgentAssistantConfigEndUserSuggestionConfigFeatureConfigsQueryConfigDocumentQuerySource): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     documents: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.documents),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.documents),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
@@ -832,14 +832,14 @@ export function dialogflowConversationProfileHumanAgentAssistantConfigEndUserSug
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class DialogflowConversationProfileHumanAgentAssistantConfigEndUserSuggestionConfigFeatureConfigsQueryConfigDocumentQuerySourceOutputReference extends cdktf.ComplexObject {
+export class DialogflowConversationProfileHumanAgentAssistantConfigEndUserSuggestionConfigFeatureConfigsQueryConfigDocumentQuerySourceOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -887,24 +887,24 @@ export interface DialogflowConversationProfileHumanAgentAssistantConfigEndUserSu
 }
 
 export function dialogflowConversationProfileHumanAgentAssistantConfigEndUserSuggestionConfigFeatureConfigsQueryConfigKnowledgeBaseQuerySourceToTerraform(struct?: DialogflowConversationProfileHumanAgentAssistantConfigEndUserSuggestionConfigFeatureConfigsQueryConfigKnowledgeBaseQuerySourceOutputReference | DialogflowConversationProfileHumanAgentAssistantConfigEndUserSuggestionConfigFeatureConfigsQueryConfigKnowledgeBaseQuerySource): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    knowledge_bases: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.knowledgeBases),
+    knowledge_bases: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.knowledgeBases),
   }
 }
 
 
 export function dialogflowConversationProfileHumanAgentAssistantConfigEndUserSuggestionConfigFeatureConfigsQueryConfigKnowledgeBaseQuerySourceToHclTerraform(struct?: DialogflowConversationProfileHumanAgentAssistantConfigEndUserSuggestionConfigFeatureConfigsQueryConfigKnowledgeBaseQuerySourceOutputReference | DialogflowConversationProfileHumanAgentAssistantConfigEndUserSuggestionConfigFeatureConfigsQueryConfigKnowledgeBaseQuerySource): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     knowledge_bases: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.knowledgeBases),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.knowledgeBases),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
@@ -915,14 +915,14 @@ export function dialogflowConversationProfileHumanAgentAssistantConfigEndUserSug
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class DialogflowConversationProfileHumanAgentAssistantConfigEndUserSuggestionConfigFeatureConfigsQueryConfigKnowledgeBaseQuerySourceOutputReference extends cdktf.ComplexObject {
+export class DialogflowConversationProfileHumanAgentAssistantConfigEndUserSuggestionConfigFeatureConfigsQueryConfigKnowledgeBaseQuerySourceOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -971,24 +971,24 @@ export interface DialogflowConversationProfileHumanAgentAssistantConfigEndUserSu
 }
 
 export function dialogflowConversationProfileHumanAgentAssistantConfigEndUserSuggestionConfigFeatureConfigsQueryConfigSectionsToTerraform(struct?: DialogflowConversationProfileHumanAgentAssistantConfigEndUserSuggestionConfigFeatureConfigsQueryConfigSectionsOutputReference | DialogflowConversationProfileHumanAgentAssistantConfigEndUserSuggestionConfigFeatureConfigsQueryConfigSections): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    section_types: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.sectionTypes),
+    section_types: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.sectionTypes),
   }
 }
 
 
 export function dialogflowConversationProfileHumanAgentAssistantConfigEndUserSuggestionConfigFeatureConfigsQueryConfigSectionsToHclTerraform(struct?: DialogflowConversationProfileHumanAgentAssistantConfigEndUserSuggestionConfigFeatureConfigsQueryConfigSectionsOutputReference | DialogflowConversationProfileHumanAgentAssistantConfigEndUserSuggestionConfigFeatureConfigsQueryConfigSections): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     section_types: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.sectionTypes),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.sectionTypes),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
@@ -999,14 +999,14 @@ export function dialogflowConversationProfileHumanAgentAssistantConfigEndUserSug
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class DialogflowConversationProfileHumanAgentAssistantConfigEndUserSuggestionConfigFeatureConfigsQueryConfigSectionsOutputReference extends cdktf.ComplexObject {
+export class DialogflowConversationProfileHumanAgentAssistantConfigEndUserSuggestionConfigFeatureConfigsQueryConfigSectionsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -1094,13 +1094,13 @@ export interface DialogflowConversationProfileHumanAgentAssistantConfigEndUserSu
 }
 
 export function dialogflowConversationProfileHumanAgentAssistantConfigEndUserSuggestionConfigFeatureConfigsQueryConfigToTerraform(struct?: DialogflowConversationProfileHumanAgentAssistantConfigEndUserSuggestionConfigFeatureConfigsQueryConfigOutputReference | DialogflowConversationProfileHumanAgentAssistantConfigEndUserSuggestionConfigFeatureConfigsQueryConfig): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    confidence_threshold: cdktf.numberToTerraform(struct!.confidenceThreshold),
-    max_results: cdktf.numberToTerraform(struct!.maxResults),
+    confidence_threshold: cdktn.numberToTerraform(struct!.confidenceThreshold),
+    max_results: cdktn.numberToTerraform(struct!.maxResults),
     context_filter_settings: dialogflowConversationProfileHumanAgentAssistantConfigEndUserSuggestionConfigFeatureConfigsQueryConfigContextFilterSettingsToTerraform(struct!.contextFilterSettings),
     dialogflow_query_source: dialogflowConversationProfileHumanAgentAssistantConfigEndUserSuggestionConfigFeatureConfigsQueryConfigDialogflowQuerySourceToTerraform(struct!.dialogflowQuerySource),
     document_query_source: dialogflowConversationProfileHumanAgentAssistantConfigEndUserSuggestionConfigFeatureConfigsQueryConfigDocumentQuerySourceToTerraform(struct!.documentQuerySource),
@@ -1111,19 +1111,19 @@ export function dialogflowConversationProfileHumanAgentAssistantConfigEndUserSug
 
 
 export function dialogflowConversationProfileHumanAgentAssistantConfigEndUserSuggestionConfigFeatureConfigsQueryConfigToHclTerraform(struct?: DialogflowConversationProfileHumanAgentAssistantConfigEndUserSuggestionConfigFeatureConfigsQueryConfigOutputReference | DialogflowConversationProfileHumanAgentAssistantConfigEndUserSuggestionConfigFeatureConfigsQueryConfig): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     confidence_threshold: {
-      value: cdktf.numberToHclTerraform(struct!.confidenceThreshold),
+      value: cdktn.numberToHclTerraform(struct!.confidenceThreshold),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     max_results: {
-      value: cdktf.numberToHclTerraform(struct!.maxResults),
+      value: cdktn.numberToHclTerraform(struct!.maxResults),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
@@ -1164,14 +1164,14 @@ export function dialogflowConversationProfileHumanAgentAssistantConfigEndUserSug
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class DialogflowConversationProfileHumanAgentAssistantConfigEndUserSuggestionConfigFeatureConfigsQueryConfigOutputReference extends cdktf.ComplexObject {
+export class DialogflowConversationProfileHumanAgentAssistantConfigEndUserSuggestionConfigFeatureConfigsQueryConfigOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -1354,24 +1354,24 @@ export interface DialogflowConversationProfileHumanAgentAssistantConfigEndUserSu
 }
 
 export function dialogflowConversationProfileHumanAgentAssistantConfigEndUserSuggestionConfigFeatureConfigsSuggestionFeatureToTerraform(struct?: DialogflowConversationProfileHumanAgentAssistantConfigEndUserSuggestionConfigFeatureConfigsSuggestionFeatureOutputReference | DialogflowConversationProfileHumanAgentAssistantConfigEndUserSuggestionConfigFeatureConfigsSuggestionFeature): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    type: cdktf.stringToTerraform(struct!.type),
+    type: cdktn.stringToTerraform(struct!.type),
   }
 }
 
 
 export function dialogflowConversationProfileHumanAgentAssistantConfigEndUserSuggestionConfigFeatureConfigsSuggestionFeatureToHclTerraform(struct?: DialogflowConversationProfileHumanAgentAssistantConfigEndUserSuggestionConfigFeatureConfigsSuggestionFeatureOutputReference | DialogflowConversationProfileHumanAgentAssistantConfigEndUserSuggestionConfigFeatureConfigsSuggestionFeature): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     type: {
-      value: cdktf.stringToHclTerraform(struct!.type),
+      value: cdktn.stringToHclTerraform(struct!.type),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -1382,14 +1382,14 @@ export function dialogflowConversationProfileHumanAgentAssistantConfigEndUserSug
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class DialogflowConversationProfileHumanAgentAssistantConfigEndUserSuggestionConfigFeatureConfigsSuggestionFeatureOutputReference extends cdktf.ComplexObject {
+export class DialogflowConversationProfileHumanAgentAssistantConfigEndUserSuggestionConfigFeatureConfigsSuggestionFeatureOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -1436,41 +1436,41 @@ export interface DialogflowConversationProfileHumanAgentAssistantConfigEndUserSu
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/dialogflow_conversation_profile#no_small_talk DialogflowConversationProfile#no_small_talk}
   */
-  readonly noSmallTalk?: boolean | cdktf.IResolvable;
+  readonly noSmallTalk?: boolean | cdktn.IResolvable;
   /**
   * Only trigger suggestion if participant role of last utterance is END_USER.
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/dialogflow_conversation_profile#only_end_user DialogflowConversationProfile#only_end_user}
   */
-  readonly onlyEndUser?: boolean | cdktf.IResolvable;
+  readonly onlyEndUser?: boolean | cdktn.IResolvable;
 }
 
 export function dialogflowConversationProfileHumanAgentAssistantConfigEndUserSuggestionConfigFeatureConfigsSuggestionTriggerSettingsToTerraform(struct?: DialogflowConversationProfileHumanAgentAssistantConfigEndUserSuggestionConfigFeatureConfigsSuggestionTriggerSettingsOutputReference | DialogflowConversationProfileHumanAgentAssistantConfigEndUserSuggestionConfigFeatureConfigsSuggestionTriggerSettings): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    no_small_talk: cdktf.booleanToTerraform(struct!.noSmallTalk),
-    only_end_user: cdktf.booleanToTerraform(struct!.onlyEndUser),
+    no_small_talk: cdktn.booleanToTerraform(struct!.noSmallTalk),
+    only_end_user: cdktn.booleanToTerraform(struct!.onlyEndUser),
   }
 }
 
 
 export function dialogflowConversationProfileHumanAgentAssistantConfigEndUserSuggestionConfigFeatureConfigsSuggestionTriggerSettingsToHclTerraform(struct?: DialogflowConversationProfileHumanAgentAssistantConfigEndUserSuggestionConfigFeatureConfigsSuggestionTriggerSettingsOutputReference | DialogflowConversationProfileHumanAgentAssistantConfigEndUserSuggestionConfigFeatureConfigsSuggestionTriggerSettings): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     no_small_talk: {
-      value: cdktf.booleanToHclTerraform(struct!.noSmallTalk),
+      value: cdktn.booleanToHclTerraform(struct!.noSmallTalk),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     only_end_user: {
-      value: cdktf.booleanToHclTerraform(struct!.onlyEndUser),
+      value: cdktn.booleanToHclTerraform(struct!.onlyEndUser),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
@@ -1481,14 +1481,14 @@ export function dialogflowConversationProfileHumanAgentAssistantConfigEndUserSug
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class DialogflowConversationProfileHumanAgentAssistantConfigEndUserSuggestionConfigFeatureConfigsSuggestionTriggerSettingsOutputReference extends cdktf.ComplexObject {
+export class DialogflowConversationProfileHumanAgentAssistantConfigEndUserSuggestionConfigFeatureConfigsSuggestionTriggerSettingsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -1520,11 +1520,11 @@ export class DialogflowConversationProfileHumanAgentAssistantConfigEndUserSugges
   }
 
   // no_small_talk - computed: false, optional: true, required: false
-  private _noSmallTalk?: boolean | cdktf.IResolvable; 
+  private _noSmallTalk?: boolean | cdktn.IResolvable; 
   public get noSmallTalk() {
     return this.getBooleanAttribute('no_small_talk');
   }
-  public set noSmallTalk(value: boolean | cdktf.IResolvable) {
+  public set noSmallTalk(value: boolean | cdktn.IResolvable) {
     this._noSmallTalk = value;
   }
   public resetNoSmallTalk() {
@@ -1536,11 +1536,11 @@ export class DialogflowConversationProfileHumanAgentAssistantConfigEndUserSugges
   }
 
   // only_end_user - computed: false, optional: true, required: false
-  private _onlyEndUser?: boolean | cdktf.IResolvable; 
+  private _onlyEndUser?: boolean | cdktn.IResolvable; 
   public get onlyEndUser() {
     return this.getBooleanAttribute('only_end_user');
   }
-  public set onlyEndUser(value: boolean | cdktf.IResolvable) {
+  public set onlyEndUser(value: boolean | cdktn.IResolvable) {
     this._onlyEndUser = value;
   }
   public resetOnlyEndUser() {
@@ -1558,35 +1558,35 @@ export interface DialogflowConversationProfileHumanAgentAssistantConfigEndUserSu
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/dialogflow_conversation_profile#disable_agent_query_logging DialogflowConversationProfile#disable_agent_query_logging}
   */
-  readonly disableAgentQueryLogging?: boolean | cdktf.IResolvable;
+  readonly disableAgentQueryLogging?: boolean | cdktn.IResolvable;
   /**
   * Enable including conversation context during query answer generation.
   * This feature is only supported for types: KNOWLEDGE_SEARCH.
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/dialogflow_conversation_profile#enable_conversation_augmented_query DialogflowConversationProfile#enable_conversation_augmented_query}
   */
-  readonly enableConversationAugmentedQuery?: boolean | cdktf.IResolvable;
+  readonly enableConversationAugmentedQuery?: boolean | cdktn.IResolvable;
   /**
   * Automatically iterates all participants and tries to compile suggestions.
   * This feature is only supported for types: ARTICLE_SUGGESTION, FAQ, DIALOGFLOW_ASSIST, KNOWLEDGE_ASSIST.
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/dialogflow_conversation_profile#enable_event_based_suggestion DialogflowConversationProfile#enable_event_based_suggestion}
   */
-  readonly enableEventBasedSuggestion?: boolean | cdktf.IResolvable;
+  readonly enableEventBasedSuggestion?: boolean | cdktn.IResolvable;
   /**
   * Enable query suggestion only.
   * This feature is only supported for types: KNOWLEDGE_ASSIST
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/dialogflow_conversation_profile#enable_query_suggestion_only DialogflowConversationProfile#enable_query_suggestion_only}
   */
-  readonly enableQuerySuggestionOnly?: boolean | cdktf.IResolvable;
+  readonly enableQuerySuggestionOnly?: boolean | cdktn.IResolvable;
   /**
   * Enable query suggestion even if we can't find its answer. By default, queries are suggested only if we find its answer.
   * This feature is only supported for types: KNOWLEDGE_ASSIST.
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/dialogflow_conversation_profile#enable_query_suggestion_when_no_answer DialogflowConversationProfile#enable_query_suggestion_when_no_answer}
   */
-  readonly enableQuerySuggestionWhenNoAnswer?: boolean | cdktf.IResolvable;
+  readonly enableQuerySuggestionWhenNoAnswer?: boolean | cdktn.IResolvable;
   /**
   * conversation_model_config block
   *
@@ -1619,17 +1619,17 @@ export interface DialogflowConversationProfileHumanAgentAssistantConfigEndUserSu
   readonly suggestionTriggerSettings?: DialogflowConversationProfileHumanAgentAssistantConfigEndUserSuggestionConfigFeatureConfigsSuggestionTriggerSettings;
 }
 
-export function dialogflowConversationProfileHumanAgentAssistantConfigEndUserSuggestionConfigFeatureConfigsToTerraform(struct?: DialogflowConversationProfileHumanAgentAssistantConfigEndUserSuggestionConfigFeatureConfigs | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function dialogflowConversationProfileHumanAgentAssistantConfigEndUserSuggestionConfigFeatureConfigsToTerraform(struct?: DialogflowConversationProfileHumanAgentAssistantConfigEndUserSuggestionConfigFeatureConfigs | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    disable_agent_query_logging: cdktf.booleanToTerraform(struct!.disableAgentQueryLogging),
-    enable_conversation_augmented_query: cdktf.booleanToTerraform(struct!.enableConversationAugmentedQuery),
-    enable_event_based_suggestion: cdktf.booleanToTerraform(struct!.enableEventBasedSuggestion),
-    enable_query_suggestion_only: cdktf.booleanToTerraform(struct!.enableQuerySuggestionOnly),
-    enable_query_suggestion_when_no_answer: cdktf.booleanToTerraform(struct!.enableQuerySuggestionWhenNoAnswer),
+    disable_agent_query_logging: cdktn.booleanToTerraform(struct!.disableAgentQueryLogging),
+    enable_conversation_augmented_query: cdktn.booleanToTerraform(struct!.enableConversationAugmentedQuery),
+    enable_event_based_suggestion: cdktn.booleanToTerraform(struct!.enableEventBasedSuggestion),
+    enable_query_suggestion_only: cdktn.booleanToTerraform(struct!.enableQuerySuggestionOnly),
+    enable_query_suggestion_when_no_answer: cdktn.booleanToTerraform(struct!.enableQuerySuggestionWhenNoAnswer),
     conversation_model_config: dialogflowConversationProfileHumanAgentAssistantConfigEndUserSuggestionConfigFeatureConfigsConversationModelConfigToTerraform(struct!.conversationModelConfig),
     conversation_process_config: dialogflowConversationProfileHumanAgentAssistantConfigEndUserSuggestionConfigFeatureConfigsConversationProcessConfigToTerraform(struct!.conversationProcessConfig),
     query_config: dialogflowConversationProfileHumanAgentAssistantConfigEndUserSuggestionConfigFeatureConfigsQueryConfigToTerraform(struct!.queryConfig),
@@ -1639,38 +1639,38 @@ export function dialogflowConversationProfileHumanAgentAssistantConfigEndUserSug
 }
 
 
-export function dialogflowConversationProfileHumanAgentAssistantConfigEndUserSuggestionConfigFeatureConfigsToHclTerraform(struct?: DialogflowConversationProfileHumanAgentAssistantConfigEndUserSuggestionConfigFeatureConfigs | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function dialogflowConversationProfileHumanAgentAssistantConfigEndUserSuggestionConfigFeatureConfigsToHclTerraform(struct?: DialogflowConversationProfileHumanAgentAssistantConfigEndUserSuggestionConfigFeatureConfigs | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     disable_agent_query_logging: {
-      value: cdktf.booleanToHclTerraform(struct!.disableAgentQueryLogging),
+      value: cdktn.booleanToHclTerraform(struct!.disableAgentQueryLogging),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     enable_conversation_augmented_query: {
-      value: cdktf.booleanToHclTerraform(struct!.enableConversationAugmentedQuery),
+      value: cdktn.booleanToHclTerraform(struct!.enableConversationAugmentedQuery),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     enable_event_based_suggestion: {
-      value: cdktf.booleanToHclTerraform(struct!.enableEventBasedSuggestion),
+      value: cdktn.booleanToHclTerraform(struct!.enableEventBasedSuggestion),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     enable_query_suggestion_only: {
-      value: cdktf.booleanToHclTerraform(struct!.enableQuerySuggestionOnly),
+      value: cdktn.booleanToHclTerraform(struct!.enableQuerySuggestionOnly),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     enable_query_suggestion_when_no_answer: {
-      value: cdktf.booleanToHclTerraform(struct!.enableQuerySuggestionWhenNoAnswer),
+      value: cdktn.booleanToHclTerraform(struct!.enableQuerySuggestionWhenNoAnswer),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
@@ -1711,9 +1711,9 @@ export function dialogflowConversationProfileHumanAgentAssistantConfigEndUserSug
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class DialogflowConversationProfileHumanAgentAssistantConfigEndUserSuggestionConfigFeatureConfigsOutputReference extends cdktf.ComplexObject {
+export class DialogflowConversationProfileHumanAgentAssistantConfigEndUserSuggestionConfigFeatureConfigsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -1721,11 +1721,11 @@ export class DialogflowConversationProfileHumanAgentAssistantConfigEndUserSugges
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): DialogflowConversationProfileHumanAgentAssistantConfigEndUserSuggestionConfigFeatureConfigs | cdktf.IResolvable | undefined {
+  public get internalValue(): DialogflowConversationProfileHumanAgentAssistantConfigEndUserSuggestionConfigFeatureConfigs | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -1774,7 +1774,7 @@ export class DialogflowConversationProfileHumanAgentAssistantConfigEndUserSugges
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: DialogflowConversationProfileHumanAgentAssistantConfigEndUserSuggestionConfigFeatureConfigs | cdktf.IResolvable | undefined) {
+  public set internalValue(value: DialogflowConversationProfileHumanAgentAssistantConfigEndUserSuggestionConfigFeatureConfigs | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -1789,7 +1789,7 @@ export class DialogflowConversationProfileHumanAgentAssistantConfigEndUserSugges
       this._suggestionFeature.internalValue = undefined;
       this._suggestionTriggerSettings.internalValue = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -1810,11 +1810,11 @@ export class DialogflowConversationProfileHumanAgentAssistantConfigEndUserSugges
   }
 
   // disable_agent_query_logging - computed: false, optional: true, required: false
-  private _disableAgentQueryLogging?: boolean | cdktf.IResolvable; 
+  private _disableAgentQueryLogging?: boolean | cdktn.IResolvable; 
   public get disableAgentQueryLogging() {
     return this.getBooleanAttribute('disable_agent_query_logging');
   }
-  public set disableAgentQueryLogging(value: boolean | cdktf.IResolvable) {
+  public set disableAgentQueryLogging(value: boolean | cdktn.IResolvable) {
     this._disableAgentQueryLogging = value;
   }
   public resetDisableAgentQueryLogging() {
@@ -1826,11 +1826,11 @@ export class DialogflowConversationProfileHumanAgentAssistantConfigEndUserSugges
   }
 
   // enable_conversation_augmented_query - computed: false, optional: true, required: false
-  private _enableConversationAugmentedQuery?: boolean | cdktf.IResolvable; 
+  private _enableConversationAugmentedQuery?: boolean | cdktn.IResolvable; 
   public get enableConversationAugmentedQuery() {
     return this.getBooleanAttribute('enable_conversation_augmented_query');
   }
-  public set enableConversationAugmentedQuery(value: boolean | cdktf.IResolvable) {
+  public set enableConversationAugmentedQuery(value: boolean | cdktn.IResolvable) {
     this._enableConversationAugmentedQuery = value;
   }
   public resetEnableConversationAugmentedQuery() {
@@ -1842,11 +1842,11 @@ export class DialogflowConversationProfileHumanAgentAssistantConfigEndUserSugges
   }
 
   // enable_event_based_suggestion - computed: false, optional: true, required: false
-  private _enableEventBasedSuggestion?: boolean | cdktf.IResolvable; 
+  private _enableEventBasedSuggestion?: boolean | cdktn.IResolvable; 
   public get enableEventBasedSuggestion() {
     return this.getBooleanAttribute('enable_event_based_suggestion');
   }
-  public set enableEventBasedSuggestion(value: boolean | cdktf.IResolvable) {
+  public set enableEventBasedSuggestion(value: boolean | cdktn.IResolvable) {
     this._enableEventBasedSuggestion = value;
   }
   public resetEnableEventBasedSuggestion() {
@@ -1858,11 +1858,11 @@ export class DialogflowConversationProfileHumanAgentAssistantConfigEndUserSugges
   }
 
   // enable_query_suggestion_only - computed: false, optional: true, required: false
-  private _enableQuerySuggestionOnly?: boolean | cdktf.IResolvable; 
+  private _enableQuerySuggestionOnly?: boolean | cdktn.IResolvable; 
   public get enableQuerySuggestionOnly() {
     return this.getBooleanAttribute('enable_query_suggestion_only');
   }
-  public set enableQuerySuggestionOnly(value: boolean | cdktf.IResolvable) {
+  public set enableQuerySuggestionOnly(value: boolean | cdktn.IResolvable) {
     this._enableQuerySuggestionOnly = value;
   }
   public resetEnableQuerySuggestionOnly() {
@@ -1874,11 +1874,11 @@ export class DialogflowConversationProfileHumanAgentAssistantConfigEndUserSugges
   }
 
   // enable_query_suggestion_when_no_answer - computed: false, optional: true, required: false
-  private _enableQuerySuggestionWhenNoAnswer?: boolean | cdktf.IResolvable; 
+  private _enableQuerySuggestionWhenNoAnswer?: boolean | cdktn.IResolvable; 
   public get enableQuerySuggestionWhenNoAnswer() {
     return this.getBooleanAttribute('enable_query_suggestion_when_no_answer');
   }
-  public set enableQuerySuggestionWhenNoAnswer(value: boolean | cdktf.IResolvable) {
+  public set enableQuerySuggestionWhenNoAnswer(value: boolean | cdktn.IResolvable) {
     this._enableQuerySuggestionWhenNoAnswer = value;
   }
   public resetEnableQuerySuggestionWhenNoAnswer() {
@@ -1970,15 +1970,15 @@ export class DialogflowConversationProfileHumanAgentAssistantConfigEndUserSugges
   }
 }
 
-export class DialogflowConversationProfileHumanAgentAssistantConfigEndUserSuggestionConfigFeatureConfigsList extends cdktf.ComplexList {
-  public internalValue? : DialogflowConversationProfileHumanAgentAssistantConfigEndUserSuggestionConfigFeatureConfigs[] | cdktf.IResolvable
+export class DialogflowConversationProfileHumanAgentAssistantConfigEndUserSuggestionConfigFeatureConfigsList extends cdktn.ComplexList {
+  public internalValue? : DialogflowConversationProfileHumanAgentAssistantConfigEndUserSuggestionConfigFeatureConfigs[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -1995,7 +1995,7 @@ export interface DialogflowConversationProfileHumanAgentAssistantConfigEndUserSu
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/dialogflow_conversation_profile#disable_high_latency_features_sync_delivery DialogflowConversationProfile#disable_high_latency_features_sync_delivery}
   */
-  readonly disableHighLatencyFeaturesSyncDelivery?: boolean | cdktf.IResolvable;
+  readonly disableHighLatencyFeaturesSyncDelivery?: boolean | cdktn.IResolvable;
   /**
   * List of various generator resource names used in the conversation profile.
   *
@@ -2009,55 +2009,55 @@ export interface DialogflowConversationProfileHumanAgentAssistantConfigEndUserSu
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/dialogflow_conversation_profile#group_suggestion_responses DialogflowConversationProfile#group_suggestion_responses}
   */
-  readonly groupSuggestionResponses?: boolean | cdktf.IResolvable;
+  readonly groupSuggestionResponses?: boolean | cdktn.IResolvable;
   /**
   * feature_configs block
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/dialogflow_conversation_profile#feature_configs DialogflowConversationProfile#feature_configs}
   */
-  readonly featureConfigs?: DialogflowConversationProfileHumanAgentAssistantConfigEndUserSuggestionConfigFeatureConfigs[] | cdktf.IResolvable;
+  readonly featureConfigs?: DialogflowConversationProfileHumanAgentAssistantConfigEndUserSuggestionConfigFeatureConfigs[] | cdktn.IResolvable;
 }
 
 export function dialogflowConversationProfileHumanAgentAssistantConfigEndUserSuggestionConfigToTerraform(struct?: DialogflowConversationProfileHumanAgentAssistantConfigEndUserSuggestionConfigOutputReference | DialogflowConversationProfileHumanAgentAssistantConfigEndUserSuggestionConfig): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    disable_high_latency_features_sync_delivery: cdktf.booleanToTerraform(struct!.disableHighLatencyFeaturesSyncDelivery),
-    generators: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.generators),
-    group_suggestion_responses: cdktf.booleanToTerraform(struct!.groupSuggestionResponses),
-    feature_configs: cdktf.listMapper(dialogflowConversationProfileHumanAgentAssistantConfigEndUserSuggestionConfigFeatureConfigsToTerraform, true)(struct!.featureConfigs),
+    disable_high_latency_features_sync_delivery: cdktn.booleanToTerraform(struct!.disableHighLatencyFeaturesSyncDelivery),
+    generators: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.generators),
+    group_suggestion_responses: cdktn.booleanToTerraform(struct!.groupSuggestionResponses),
+    feature_configs: cdktn.listMapper(dialogflowConversationProfileHumanAgentAssistantConfigEndUserSuggestionConfigFeatureConfigsToTerraform, true)(struct!.featureConfigs),
   }
 }
 
 
 export function dialogflowConversationProfileHumanAgentAssistantConfigEndUserSuggestionConfigToHclTerraform(struct?: DialogflowConversationProfileHumanAgentAssistantConfigEndUserSuggestionConfigOutputReference | DialogflowConversationProfileHumanAgentAssistantConfigEndUserSuggestionConfig): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     disable_high_latency_features_sync_delivery: {
-      value: cdktf.booleanToHclTerraform(struct!.disableHighLatencyFeaturesSyncDelivery),
+      value: cdktn.booleanToHclTerraform(struct!.disableHighLatencyFeaturesSyncDelivery),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     generators: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.generators),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.generators),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
     },
     group_suggestion_responses: {
-      value: cdktf.booleanToHclTerraform(struct!.groupSuggestionResponses),
+      value: cdktn.booleanToHclTerraform(struct!.groupSuggestionResponses),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     feature_configs: {
-      value: cdktf.listMapperHcl(dialogflowConversationProfileHumanAgentAssistantConfigEndUserSuggestionConfigFeatureConfigsToHclTerraform, true)(struct!.featureConfigs),
+      value: cdktn.listMapperHcl(dialogflowConversationProfileHumanAgentAssistantConfigEndUserSuggestionConfigFeatureConfigsToHclTerraform, true)(struct!.featureConfigs),
       isBlock: true,
       type: "list",
       storageClassType: "DialogflowConversationProfileHumanAgentAssistantConfigEndUserSuggestionConfigFeatureConfigsList",
@@ -2068,14 +2068,14 @@ export function dialogflowConversationProfileHumanAgentAssistantConfigEndUserSug
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class DialogflowConversationProfileHumanAgentAssistantConfigEndUserSuggestionConfigOutputReference extends cdktf.ComplexObject {
+export class DialogflowConversationProfileHumanAgentAssistantConfigEndUserSuggestionConfigOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -2119,11 +2119,11 @@ export class DialogflowConversationProfileHumanAgentAssistantConfigEndUserSugges
   }
 
   // disable_high_latency_features_sync_delivery - computed: false, optional: true, required: false
-  private _disableHighLatencyFeaturesSyncDelivery?: boolean | cdktf.IResolvable; 
+  private _disableHighLatencyFeaturesSyncDelivery?: boolean | cdktn.IResolvable; 
   public get disableHighLatencyFeaturesSyncDelivery() {
     return this.getBooleanAttribute('disable_high_latency_features_sync_delivery');
   }
-  public set disableHighLatencyFeaturesSyncDelivery(value: boolean | cdktf.IResolvable) {
+  public set disableHighLatencyFeaturesSyncDelivery(value: boolean | cdktn.IResolvable) {
     this._disableHighLatencyFeaturesSyncDelivery = value;
   }
   public resetDisableHighLatencyFeaturesSyncDelivery() {
@@ -2151,11 +2151,11 @@ export class DialogflowConversationProfileHumanAgentAssistantConfigEndUserSugges
   }
 
   // group_suggestion_responses - computed: false, optional: true, required: false
-  private _groupSuggestionResponses?: boolean | cdktf.IResolvable; 
+  private _groupSuggestionResponses?: boolean | cdktn.IResolvable; 
   public get groupSuggestionResponses() {
     return this.getBooleanAttribute('group_suggestion_responses');
   }
-  public set groupSuggestionResponses(value: boolean | cdktf.IResolvable) {
+  public set groupSuggestionResponses(value: boolean | cdktn.IResolvable) {
     this._groupSuggestionResponses = value;
   }
   public resetGroupSuggestionResponses() {
@@ -2171,7 +2171,7 @@ export class DialogflowConversationProfileHumanAgentAssistantConfigEndUserSugges
   public get featureConfigs() {
     return this._featureConfigs;
   }
-  public putFeatureConfigs(value: DialogflowConversationProfileHumanAgentAssistantConfigEndUserSuggestionConfigFeatureConfigs[] | cdktf.IResolvable) {
+  public putFeatureConfigs(value: DialogflowConversationProfileHumanAgentAssistantConfigEndUserSuggestionConfigFeatureConfigs[] | cdktn.IResolvable) {
     this._featureConfigs.internalValue = value;
   }
   public resetFeatureConfigs() {
@@ -2198,31 +2198,31 @@ export interface DialogflowConversationProfileHumanAgentAssistantConfigHumanAgen
 }
 
 export function dialogflowConversationProfileHumanAgentAssistantConfigHumanAgentSuggestionConfigFeatureConfigsConversationModelConfigToTerraform(struct?: DialogflowConversationProfileHumanAgentAssistantConfigHumanAgentSuggestionConfigFeatureConfigsConversationModelConfigOutputReference | DialogflowConversationProfileHumanAgentAssistantConfigHumanAgentSuggestionConfigFeatureConfigsConversationModelConfig): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    baseline_model_version: cdktf.stringToTerraform(struct!.baselineModelVersion),
-    model: cdktf.stringToTerraform(struct!.model),
+    baseline_model_version: cdktn.stringToTerraform(struct!.baselineModelVersion),
+    model: cdktn.stringToTerraform(struct!.model),
   }
 }
 
 
 export function dialogflowConversationProfileHumanAgentAssistantConfigHumanAgentSuggestionConfigFeatureConfigsConversationModelConfigToHclTerraform(struct?: DialogflowConversationProfileHumanAgentAssistantConfigHumanAgentSuggestionConfigFeatureConfigsConversationModelConfigOutputReference | DialogflowConversationProfileHumanAgentAssistantConfigHumanAgentSuggestionConfigFeatureConfigsConversationModelConfig): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     baseline_model_version: {
-      value: cdktf.stringToHclTerraform(struct!.baselineModelVersion),
+      value: cdktn.stringToHclTerraform(struct!.baselineModelVersion),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     model: {
-      value: cdktf.stringToHclTerraform(struct!.model),
+      value: cdktn.stringToHclTerraform(struct!.model),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -2233,14 +2233,14 @@ export function dialogflowConversationProfileHumanAgentAssistantConfigHumanAgent
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class DialogflowConversationProfileHumanAgentAssistantConfigHumanAgentSuggestionConfigFeatureConfigsConversationModelConfigOutputReference extends cdktf.ComplexObject {
+export class DialogflowConversationProfileHumanAgentAssistantConfigHumanAgentSuggestionConfigFeatureConfigsConversationModelConfigOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -2313,24 +2313,24 @@ export interface DialogflowConversationProfileHumanAgentAssistantConfigHumanAgen
 }
 
 export function dialogflowConversationProfileHumanAgentAssistantConfigHumanAgentSuggestionConfigFeatureConfigsConversationProcessConfigToTerraform(struct?: DialogflowConversationProfileHumanAgentAssistantConfigHumanAgentSuggestionConfigFeatureConfigsConversationProcessConfigOutputReference | DialogflowConversationProfileHumanAgentAssistantConfigHumanAgentSuggestionConfigFeatureConfigsConversationProcessConfig): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    recent_sentences_count: cdktf.numberToTerraform(struct!.recentSentencesCount),
+    recent_sentences_count: cdktn.numberToTerraform(struct!.recentSentencesCount),
   }
 }
 
 
 export function dialogflowConversationProfileHumanAgentAssistantConfigHumanAgentSuggestionConfigFeatureConfigsConversationProcessConfigToHclTerraform(struct?: DialogflowConversationProfileHumanAgentAssistantConfigHumanAgentSuggestionConfigFeatureConfigsConversationProcessConfigOutputReference | DialogflowConversationProfileHumanAgentAssistantConfigHumanAgentSuggestionConfigFeatureConfigsConversationProcessConfig): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     recent_sentences_count: {
-      value: cdktf.numberToHclTerraform(struct!.recentSentencesCount),
+      value: cdktn.numberToHclTerraform(struct!.recentSentencesCount),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
@@ -2341,14 +2341,14 @@ export function dialogflowConversationProfileHumanAgentAssistantConfigHumanAgent
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class DialogflowConversationProfileHumanAgentAssistantConfigHumanAgentSuggestionConfigFeatureConfigsConversationProcessConfigOutputReference extends cdktf.ComplexObject {
+export class DialogflowConversationProfileHumanAgentAssistantConfigHumanAgentSuggestionConfigFeatureConfigsConversationProcessConfigOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -2395,54 +2395,54 @@ export interface DialogflowConversationProfileHumanAgentAssistantConfigHumanAgen
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/dialogflow_conversation_profile#drop_handoff_messages DialogflowConversationProfile#drop_handoff_messages}
   */
-  readonly dropHandoffMessages?: boolean | cdktf.IResolvable;
+  readonly dropHandoffMessages?: boolean | cdktn.IResolvable;
   /**
   * If set to true, all messages from ivr stage are dropped.
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/dialogflow_conversation_profile#drop_ivr_messages DialogflowConversationProfile#drop_ivr_messages}
   */
-  readonly dropIvrMessages?: boolean | cdktf.IResolvable;
+  readonly dropIvrMessages?: boolean | cdktn.IResolvable;
   /**
   * If set to true, all messages from virtual agent are dropped.
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/dialogflow_conversation_profile#drop_virtual_agent_messages DialogflowConversationProfile#drop_virtual_agent_messages}
   */
-  readonly dropVirtualAgentMessages?: boolean | cdktf.IResolvable;
+  readonly dropVirtualAgentMessages?: boolean | cdktn.IResolvable;
 }
 
 export function dialogflowConversationProfileHumanAgentAssistantConfigHumanAgentSuggestionConfigFeatureConfigsQueryConfigContextFilterSettingsToTerraform(struct?: DialogflowConversationProfileHumanAgentAssistantConfigHumanAgentSuggestionConfigFeatureConfigsQueryConfigContextFilterSettingsOutputReference | DialogflowConversationProfileHumanAgentAssistantConfigHumanAgentSuggestionConfigFeatureConfigsQueryConfigContextFilterSettings): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    drop_handoff_messages: cdktf.booleanToTerraform(struct!.dropHandoffMessages),
-    drop_ivr_messages: cdktf.booleanToTerraform(struct!.dropIvrMessages),
-    drop_virtual_agent_messages: cdktf.booleanToTerraform(struct!.dropVirtualAgentMessages),
+    drop_handoff_messages: cdktn.booleanToTerraform(struct!.dropHandoffMessages),
+    drop_ivr_messages: cdktn.booleanToTerraform(struct!.dropIvrMessages),
+    drop_virtual_agent_messages: cdktn.booleanToTerraform(struct!.dropVirtualAgentMessages),
   }
 }
 
 
 export function dialogflowConversationProfileHumanAgentAssistantConfigHumanAgentSuggestionConfigFeatureConfigsQueryConfigContextFilterSettingsToHclTerraform(struct?: DialogflowConversationProfileHumanAgentAssistantConfigHumanAgentSuggestionConfigFeatureConfigsQueryConfigContextFilterSettingsOutputReference | DialogflowConversationProfileHumanAgentAssistantConfigHumanAgentSuggestionConfigFeatureConfigsQueryConfigContextFilterSettings): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     drop_handoff_messages: {
-      value: cdktf.booleanToHclTerraform(struct!.dropHandoffMessages),
+      value: cdktn.booleanToHclTerraform(struct!.dropHandoffMessages),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     drop_ivr_messages: {
-      value: cdktf.booleanToHclTerraform(struct!.dropIvrMessages),
+      value: cdktn.booleanToHclTerraform(struct!.dropIvrMessages),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     drop_virtual_agent_messages: {
-      value: cdktf.booleanToHclTerraform(struct!.dropVirtualAgentMessages),
+      value: cdktn.booleanToHclTerraform(struct!.dropVirtualAgentMessages),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
@@ -2453,14 +2453,14 @@ export function dialogflowConversationProfileHumanAgentAssistantConfigHumanAgent
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class DialogflowConversationProfileHumanAgentAssistantConfigHumanAgentSuggestionConfigFeatureConfigsQueryConfigContextFilterSettingsOutputReference extends cdktf.ComplexObject {
+export class DialogflowConversationProfileHumanAgentAssistantConfigHumanAgentSuggestionConfigFeatureConfigsQueryConfigContextFilterSettingsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -2498,11 +2498,11 @@ export class DialogflowConversationProfileHumanAgentAssistantConfigHumanAgentSug
   }
 
   // drop_handoff_messages - computed: false, optional: true, required: false
-  private _dropHandoffMessages?: boolean | cdktf.IResolvable; 
+  private _dropHandoffMessages?: boolean | cdktn.IResolvable; 
   public get dropHandoffMessages() {
     return this.getBooleanAttribute('drop_handoff_messages');
   }
-  public set dropHandoffMessages(value: boolean | cdktf.IResolvable) {
+  public set dropHandoffMessages(value: boolean | cdktn.IResolvable) {
     this._dropHandoffMessages = value;
   }
   public resetDropHandoffMessages() {
@@ -2514,11 +2514,11 @@ export class DialogflowConversationProfileHumanAgentAssistantConfigHumanAgentSug
   }
 
   // drop_ivr_messages - computed: false, optional: true, required: false
-  private _dropIvrMessages?: boolean | cdktf.IResolvable; 
+  private _dropIvrMessages?: boolean | cdktn.IResolvable; 
   public get dropIvrMessages() {
     return this.getBooleanAttribute('drop_ivr_messages');
   }
-  public set dropIvrMessages(value: boolean | cdktf.IResolvable) {
+  public set dropIvrMessages(value: boolean | cdktn.IResolvable) {
     this._dropIvrMessages = value;
   }
   public resetDropIvrMessages() {
@@ -2530,11 +2530,11 @@ export class DialogflowConversationProfileHumanAgentAssistantConfigHumanAgentSug
   }
 
   // drop_virtual_agent_messages - computed: false, optional: true, required: false
-  private _dropVirtualAgentMessages?: boolean | cdktf.IResolvable; 
+  private _dropVirtualAgentMessages?: boolean | cdktn.IResolvable; 
   public get dropVirtualAgentMessages() {
     return this.getBooleanAttribute('drop_virtual_agent_messages');
   }
-  public set dropVirtualAgentMessages(value: boolean | cdktf.IResolvable) {
+  public set dropVirtualAgentMessages(value: boolean | cdktn.IResolvable) {
     this._dropVirtualAgentMessages = value;
   }
   public resetDropVirtualAgentMessages() {
@@ -2555,24 +2555,24 @@ export interface DialogflowConversationProfileHumanAgentAssistantConfigHumanAgen
 }
 
 export function dialogflowConversationProfileHumanAgentAssistantConfigHumanAgentSuggestionConfigFeatureConfigsQueryConfigDialogflowQuerySourceHumanAgentSideConfigToTerraform(struct?: DialogflowConversationProfileHumanAgentAssistantConfigHumanAgentSuggestionConfigFeatureConfigsQueryConfigDialogflowQuerySourceHumanAgentSideConfigOutputReference | DialogflowConversationProfileHumanAgentAssistantConfigHumanAgentSuggestionConfigFeatureConfigsQueryConfigDialogflowQuerySourceHumanAgentSideConfig): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    agent: cdktf.stringToTerraform(struct!.agent),
+    agent: cdktn.stringToTerraform(struct!.agent),
   }
 }
 
 
 export function dialogflowConversationProfileHumanAgentAssistantConfigHumanAgentSuggestionConfigFeatureConfigsQueryConfigDialogflowQuerySourceHumanAgentSideConfigToHclTerraform(struct?: DialogflowConversationProfileHumanAgentAssistantConfigHumanAgentSuggestionConfigFeatureConfigsQueryConfigDialogflowQuerySourceHumanAgentSideConfigOutputReference | DialogflowConversationProfileHumanAgentAssistantConfigHumanAgentSuggestionConfigFeatureConfigsQueryConfigDialogflowQuerySourceHumanAgentSideConfig): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     agent: {
-      value: cdktf.stringToHclTerraform(struct!.agent),
+      value: cdktn.stringToHclTerraform(struct!.agent),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -2583,14 +2583,14 @@ export function dialogflowConversationProfileHumanAgentAssistantConfigHumanAgent
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class DialogflowConversationProfileHumanAgentAssistantConfigHumanAgentSuggestionConfigFeatureConfigsQueryConfigDialogflowQuerySourceHumanAgentSideConfigOutputReference extends cdktf.ComplexObject {
+export class DialogflowConversationProfileHumanAgentAssistantConfigHumanAgentSuggestionConfigFeatureConfigsQueryConfigDialogflowQuerySourceHumanAgentSideConfigOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -2647,25 +2647,25 @@ export interface DialogflowConversationProfileHumanAgentAssistantConfigHumanAgen
 }
 
 export function dialogflowConversationProfileHumanAgentAssistantConfigHumanAgentSuggestionConfigFeatureConfigsQueryConfigDialogflowQuerySourceToTerraform(struct?: DialogflowConversationProfileHumanAgentAssistantConfigHumanAgentSuggestionConfigFeatureConfigsQueryConfigDialogflowQuerySourceOutputReference | DialogflowConversationProfileHumanAgentAssistantConfigHumanAgentSuggestionConfigFeatureConfigsQueryConfigDialogflowQuerySource): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    agent: cdktf.stringToTerraform(struct!.agent),
+    agent: cdktn.stringToTerraform(struct!.agent),
     human_agent_side_config: dialogflowConversationProfileHumanAgentAssistantConfigHumanAgentSuggestionConfigFeatureConfigsQueryConfigDialogflowQuerySourceHumanAgentSideConfigToTerraform(struct!.humanAgentSideConfig),
   }
 }
 
 
 export function dialogflowConversationProfileHumanAgentAssistantConfigHumanAgentSuggestionConfigFeatureConfigsQueryConfigDialogflowQuerySourceToHclTerraform(struct?: DialogflowConversationProfileHumanAgentAssistantConfigHumanAgentSuggestionConfigFeatureConfigsQueryConfigDialogflowQuerySourceOutputReference | DialogflowConversationProfileHumanAgentAssistantConfigHumanAgentSuggestionConfigFeatureConfigsQueryConfigDialogflowQuerySource): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     agent: {
-      value: cdktf.stringToHclTerraform(struct!.agent),
+      value: cdktn.stringToHclTerraform(struct!.agent),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -2682,14 +2682,14 @@ export function dialogflowConversationProfileHumanAgentAssistantConfigHumanAgent
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class DialogflowConversationProfileHumanAgentAssistantConfigHumanAgentSuggestionConfigFeatureConfigsQueryConfigDialogflowQuerySourceOutputReference extends cdktf.ComplexObject {
+export class DialogflowConversationProfileHumanAgentAssistantConfigHumanAgentSuggestionConfigFeatureConfigsQueryConfigDialogflowQuerySourceOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -2760,24 +2760,24 @@ export interface DialogflowConversationProfileHumanAgentAssistantConfigHumanAgen
 }
 
 export function dialogflowConversationProfileHumanAgentAssistantConfigHumanAgentSuggestionConfigFeatureConfigsQueryConfigSectionsToTerraform(struct?: DialogflowConversationProfileHumanAgentAssistantConfigHumanAgentSuggestionConfigFeatureConfigsQueryConfigSectionsOutputReference | DialogflowConversationProfileHumanAgentAssistantConfigHumanAgentSuggestionConfigFeatureConfigsQueryConfigSections): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    section_types: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.sectionTypes),
+    section_types: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.sectionTypes),
   }
 }
 
 
 export function dialogflowConversationProfileHumanAgentAssistantConfigHumanAgentSuggestionConfigFeatureConfigsQueryConfigSectionsToHclTerraform(struct?: DialogflowConversationProfileHumanAgentAssistantConfigHumanAgentSuggestionConfigFeatureConfigsQueryConfigSectionsOutputReference | DialogflowConversationProfileHumanAgentAssistantConfigHumanAgentSuggestionConfigFeatureConfigsQueryConfigSections): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     section_types: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.sectionTypes),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.sectionTypes),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
@@ -2788,14 +2788,14 @@ export function dialogflowConversationProfileHumanAgentAssistantConfigHumanAgent
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class DialogflowConversationProfileHumanAgentAssistantConfigHumanAgentSuggestionConfigFeatureConfigsQueryConfigSectionsOutputReference extends cdktf.ComplexObject {
+export class DialogflowConversationProfileHumanAgentAssistantConfigHumanAgentSuggestionConfigFeatureConfigsQueryConfigSectionsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -2871,13 +2871,13 @@ export interface DialogflowConversationProfileHumanAgentAssistantConfigHumanAgen
 }
 
 export function dialogflowConversationProfileHumanAgentAssistantConfigHumanAgentSuggestionConfigFeatureConfigsQueryConfigToTerraform(struct?: DialogflowConversationProfileHumanAgentAssistantConfigHumanAgentSuggestionConfigFeatureConfigsQueryConfigOutputReference | DialogflowConversationProfileHumanAgentAssistantConfigHumanAgentSuggestionConfigFeatureConfigsQueryConfig): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    confidence_threshold: cdktf.numberToTerraform(struct!.confidenceThreshold),
-    max_results: cdktf.numberToTerraform(struct!.maxResults),
+    confidence_threshold: cdktn.numberToTerraform(struct!.confidenceThreshold),
+    max_results: cdktn.numberToTerraform(struct!.maxResults),
     context_filter_settings: dialogflowConversationProfileHumanAgentAssistantConfigHumanAgentSuggestionConfigFeatureConfigsQueryConfigContextFilterSettingsToTerraform(struct!.contextFilterSettings),
     dialogflow_query_source: dialogflowConversationProfileHumanAgentAssistantConfigHumanAgentSuggestionConfigFeatureConfigsQueryConfigDialogflowQuerySourceToTerraform(struct!.dialogflowQuerySource),
     sections: dialogflowConversationProfileHumanAgentAssistantConfigHumanAgentSuggestionConfigFeatureConfigsQueryConfigSectionsToTerraform(struct!.sections),
@@ -2886,19 +2886,19 @@ export function dialogflowConversationProfileHumanAgentAssistantConfigHumanAgent
 
 
 export function dialogflowConversationProfileHumanAgentAssistantConfigHumanAgentSuggestionConfigFeatureConfigsQueryConfigToHclTerraform(struct?: DialogflowConversationProfileHumanAgentAssistantConfigHumanAgentSuggestionConfigFeatureConfigsQueryConfigOutputReference | DialogflowConversationProfileHumanAgentAssistantConfigHumanAgentSuggestionConfigFeatureConfigsQueryConfig): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     confidence_threshold: {
-      value: cdktf.numberToHclTerraform(struct!.confidenceThreshold),
+      value: cdktn.numberToHclTerraform(struct!.confidenceThreshold),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     max_results: {
-      value: cdktf.numberToHclTerraform(struct!.maxResults),
+      value: cdktn.numberToHclTerraform(struct!.maxResults),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
@@ -2927,14 +2927,14 @@ export function dialogflowConversationProfileHumanAgentAssistantConfigHumanAgent
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class DialogflowConversationProfileHumanAgentAssistantConfigHumanAgentSuggestionConfigFeatureConfigsQueryConfigOutputReference extends cdktf.ComplexObject {
+export class DialogflowConversationProfileHumanAgentAssistantConfigHumanAgentSuggestionConfigFeatureConfigsQueryConfigOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -3073,24 +3073,24 @@ export interface DialogflowConversationProfileHumanAgentAssistantConfigHumanAgen
 }
 
 export function dialogflowConversationProfileHumanAgentAssistantConfigHumanAgentSuggestionConfigFeatureConfigsSuggestionFeatureToTerraform(struct?: DialogflowConversationProfileHumanAgentAssistantConfigHumanAgentSuggestionConfigFeatureConfigsSuggestionFeatureOutputReference | DialogflowConversationProfileHumanAgentAssistantConfigHumanAgentSuggestionConfigFeatureConfigsSuggestionFeature): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    type: cdktf.stringToTerraform(struct!.type),
+    type: cdktn.stringToTerraform(struct!.type),
   }
 }
 
 
 export function dialogflowConversationProfileHumanAgentAssistantConfigHumanAgentSuggestionConfigFeatureConfigsSuggestionFeatureToHclTerraform(struct?: DialogflowConversationProfileHumanAgentAssistantConfigHumanAgentSuggestionConfigFeatureConfigsSuggestionFeatureOutputReference | DialogflowConversationProfileHumanAgentAssistantConfigHumanAgentSuggestionConfigFeatureConfigsSuggestionFeature): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     type: {
-      value: cdktf.stringToHclTerraform(struct!.type),
+      value: cdktn.stringToHclTerraform(struct!.type),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -3101,14 +3101,14 @@ export function dialogflowConversationProfileHumanAgentAssistantConfigHumanAgent
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class DialogflowConversationProfileHumanAgentAssistantConfigHumanAgentSuggestionConfigFeatureConfigsSuggestionFeatureOutputReference extends cdktf.ComplexObject {
+export class DialogflowConversationProfileHumanAgentAssistantConfigHumanAgentSuggestionConfigFeatureConfigsSuggestionFeatureOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -3155,41 +3155,41 @@ export interface DialogflowConversationProfileHumanAgentAssistantConfigHumanAgen
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/dialogflow_conversation_profile#no_small_talk DialogflowConversationProfile#no_small_talk}
   */
-  readonly noSmallTalk?: boolean | cdktf.IResolvable;
+  readonly noSmallTalk?: boolean | cdktn.IResolvable;
   /**
   * Only trigger suggestion if participant role of last utterance is END_USER.
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/dialogflow_conversation_profile#only_end_user DialogflowConversationProfile#only_end_user}
   */
-  readonly onlyEndUser?: boolean | cdktf.IResolvable;
+  readonly onlyEndUser?: boolean | cdktn.IResolvable;
 }
 
 export function dialogflowConversationProfileHumanAgentAssistantConfigHumanAgentSuggestionConfigFeatureConfigsSuggestionTriggerSettingsToTerraform(struct?: DialogflowConversationProfileHumanAgentAssistantConfigHumanAgentSuggestionConfigFeatureConfigsSuggestionTriggerSettingsOutputReference | DialogflowConversationProfileHumanAgentAssistantConfigHumanAgentSuggestionConfigFeatureConfigsSuggestionTriggerSettings): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    no_small_talk: cdktf.booleanToTerraform(struct!.noSmallTalk),
-    only_end_user: cdktf.booleanToTerraform(struct!.onlyEndUser),
+    no_small_talk: cdktn.booleanToTerraform(struct!.noSmallTalk),
+    only_end_user: cdktn.booleanToTerraform(struct!.onlyEndUser),
   }
 }
 
 
 export function dialogflowConversationProfileHumanAgentAssistantConfigHumanAgentSuggestionConfigFeatureConfigsSuggestionTriggerSettingsToHclTerraform(struct?: DialogflowConversationProfileHumanAgentAssistantConfigHumanAgentSuggestionConfigFeatureConfigsSuggestionTriggerSettingsOutputReference | DialogflowConversationProfileHumanAgentAssistantConfigHumanAgentSuggestionConfigFeatureConfigsSuggestionTriggerSettings): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     no_small_talk: {
-      value: cdktf.booleanToHclTerraform(struct!.noSmallTalk),
+      value: cdktn.booleanToHclTerraform(struct!.noSmallTalk),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     only_end_user: {
-      value: cdktf.booleanToHclTerraform(struct!.onlyEndUser),
+      value: cdktn.booleanToHclTerraform(struct!.onlyEndUser),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
@@ -3200,14 +3200,14 @@ export function dialogflowConversationProfileHumanAgentAssistantConfigHumanAgent
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class DialogflowConversationProfileHumanAgentAssistantConfigHumanAgentSuggestionConfigFeatureConfigsSuggestionTriggerSettingsOutputReference extends cdktf.ComplexObject {
+export class DialogflowConversationProfileHumanAgentAssistantConfigHumanAgentSuggestionConfigFeatureConfigsSuggestionTriggerSettingsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -3239,11 +3239,11 @@ export class DialogflowConversationProfileHumanAgentAssistantConfigHumanAgentSug
   }
 
   // no_small_talk - computed: false, optional: true, required: false
-  private _noSmallTalk?: boolean | cdktf.IResolvable; 
+  private _noSmallTalk?: boolean | cdktn.IResolvable; 
   public get noSmallTalk() {
     return this.getBooleanAttribute('no_small_talk');
   }
-  public set noSmallTalk(value: boolean | cdktf.IResolvable) {
+  public set noSmallTalk(value: boolean | cdktn.IResolvable) {
     this._noSmallTalk = value;
   }
   public resetNoSmallTalk() {
@@ -3255,11 +3255,11 @@ export class DialogflowConversationProfileHumanAgentAssistantConfigHumanAgentSug
   }
 
   // only_end_user - computed: false, optional: true, required: false
-  private _onlyEndUser?: boolean | cdktf.IResolvable; 
+  private _onlyEndUser?: boolean | cdktn.IResolvable; 
   public get onlyEndUser() {
     return this.getBooleanAttribute('only_end_user');
   }
-  public set onlyEndUser(value: boolean | cdktf.IResolvable) {
+  public set onlyEndUser(value: boolean | cdktn.IResolvable) {
     this._onlyEndUser = value;
   }
   public resetOnlyEndUser() {
@@ -3277,35 +3277,35 @@ export interface DialogflowConversationProfileHumanAgentAssistantConfigHumanAgen
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/dialogflow_conversation_profile#disable_agent_query_logging DialogflowConversationProfile#disable_agent_query_logging}
   */
-  readonly disableAgentQueryLogging?: boolean | cdktf.IResolvable;
+  readonly disableAgentQueryLogging?: boolean | cdktn.IResolvable;
   /**
   * Enable including conversation context during query answer generation.
   * This feature is only supported for types: KNOWLEDGE_SEARCH.
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/dialogflow_conversation_profile#enable_conversation_augmented_query DialogflowConversationProfile#enable_conversation_augmented_query}
   */
-  readonly enableConversationAugmentedQuery?: boolean | cdktf.IResolvable;
+  readonly enableConversationAugmentedQuery?: boolean | cdktn.IResolvable;
   /**
   * Automatically iterates all participants and tries to compile suggestions.
   * This feature is only supported for types: ARTICLE_SUGGESTION, FAQ, DIALOGFLOW_ASSIST, KNOWLEDGE_ASSIST.
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/dialogflow_conversation_profile#enable_event_based_suggestion DialogflowConversationProfile#enable_event_based_suggestion}
   */
-  readonly enableEventBasedSuggestion?: boolean | cdktf.IResolvable;
+  readonly enableEventBasedSuggestion?: boolean | cdktn.IResolvable;
   /**
   * Enable query suggestion only.
   * This feature is only supported for types: KNOWLEDGE_ASSIST
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/dialogflow_conversation_profile#enable_query_suggestion_only DialogflowConversationProfile#enable_query_suggestion_only}
   */
-  readonly enableQuerySuggestionOnly?: boolean | cdktf.IResolvable;
+  readonly enableQuerySuggestionOnly?: boolean | cdktn.IResolvable;
   /**
   * Enable query suggestion even if we can't find its answer. By default, queries are suggested only if we find its answer.
   * This feature is only supported for types: KNOWLEDGE_ASSIST.
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/dialogflow_conversation_profile#enable_query_suggestion_when_no_answer DialogflowConversationProfile#enable_query_suggestion_when_no_answer}
   */
-  readonly enableQuerySuggestionWhenNoAnswer?: boolean | cdktf.IResolvable;
+  readonly enableQuerySuggestionWhenNoAnswer?: boolean | cdktn.IResolvable;
   /**
   * conversation_model_config block
   *
@@ -3338,17 +3338,17 @@ export interface DialogflowConversationProfileHumanAgentAssistantConfigHumanAgen
   readonly suggestionTriggerSettings?: DialogflowConversationProfileHumanAgentAssistantConfigHumanAgentSuggestionConfigFeatureConfigsSuggestionTriggerSettings;
 }
 
-export function dialogflowConversationProfileHumanAgentAssistantConfigHumanAgentSuggestionConfigFeatureConfigsToTerraform(struct?: DialogflowConversationProfileHumanAgentAssistantConfigHumanAgentSuggestionConfigFeatureConfigs | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function dialogflowConversationProfileHumanAgentAssistantConfigHumanAgentSuggestionConfigFeatureConfigsToTerraform(struct?: DialogflowConversationProfileHumanAgentAssistantConfigHumanAgentSuggestionConfigFeatureConfigs | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    disable_agent_query_logging: cdktf.booleanToTerraform(struct!.disableAgentQueryLogging),
-    enable_conversation_augmented_query: cdktf.booleanToTerraform(struct!.enableConversationAugmentedQuery),
-    enable_event_based_suggestion: cdktf.booleanToTerraform(struct!.enableEventBasedSuggestion),
-    enable_query_suggestion_only: cdktf.booleanToTerraform(struct!.enableQuerySuggestionOnly),
-    enable_query_suggestion_when_no_answer: cdktf.booleanToTerraform(struct!.enableQuerySuggestionWhenNoAnswer),
+    disable_agent_query_logging: cdktn.booleanToTerraform(struct!.disableAgentQueryLogging),
+    enable_conversation_augmented_query: cdktn.booleanToTerraform(struct!.enableConversationAugmentedQuery),
+    enable_event_based_suggestion: cdktn.booleanToTerraform(struct!.enableEventBasedSuggestion),
+    enable_query_suggestion_only: cdktn.booleanToTerraform(struct!.enableQuerySuggestionOnly),
+    enable_query_suggestion_when_no_answer: cdktn.booleanToTerraform(struct!.enableQuerySuggestionWhenNoAnswer),
     conversation_model_config: dialogflowConversationProfileHumanAgentAssistantConfigHumanAgentSuggestionConfigFeatureConfigsConversationModelConfigToTerraform(struct!.conversationModelConfig),
     conversation_process_config: dialogflowConversationProfileHumanAgentAssistantConfigHumanAgentSuggestionConfigFeatureConfigsConversationProcessConfigToTerraform(struct!.conversationProcessConfig),
     query_config: dialogflowConversationProfileHumanAgentAssistantConfigHumanAgentSuggestionConfigFeatureConfigsQueryConfigToTerraform(struct!.queryConfig),
@@ -3358,38 +3358,38 @@ export function dialogflowConversationProfileHumanAgentAssistantConfigHumanAgent
 }
 
 
-export function dialogflowConversationProfileHumanAgentAssistantConfigHumanAgentSuggestionConfigFeatureConfigsToHclTerraform(struct?: DialogflowConversationProfileHumanAgentAssistantConfigHumanAgentSuggestionConfigFeatureConfigs | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function dialogflowConversationProfileHumanAgentAssistantConfigHumanAgentSuggestionConfigFeatureConfigsToHclTerraform(struct?: DialogflowConversationProfileHumanAgentAssistantConfigHumanAgentSuggestionConfigFeatureConfigs | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     disable_agent_query_logging: {
-      value: cdktf.booleanToHclTerraform(struct!.disableAgentQueryLogging),
+      value: cdktn.booleanToHclTerraform(struct!.disableAgentQueryLogging),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     enable_conversation_augmented_query: {
-      value: cdktf.booleanToHclTerraform(struct!.enableConversationAugmentedQuery),
+      value: cdktn.booleanToHclTerraform(struct!.enableConversationAugmentedQuery),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     enable_event_based_suggestion: {
-      value: cdktf.booleanToHclTerraform(struct!.enableEventBasedSuggestion),
+      value: cdktn.booleanToHclTerraform(struct!.enableEventBasedSuggestion),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     enable_query_suggestion_only: {
-      value: cdktf.booleanToHclTerraform(struct!.enableQuerySuggestionOnly),
+      value: cdktn.booleanToHclTerraform(struct!.enableQuerySuggestionOnly),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     enable_query_suggestion_when_no_answer: {
-      value: cdktf.booleanToHclTerraform(struct!.enableQuerySuggestionWhenNoAnswer),
+      value: cdktn.booleanToHclTerraform(struct!.enableQuerySuggestionWhenNoAnswer),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
@@ -3430,9 +3430,9 @@ export function dialogflowConversationProfileHumanAgentAssistantConfigHumanAgent
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class DialogflowConversationProfileHumanAgentAssistantConfigHumanAgentSuggestionConfigFeatureConfigsOutputReference extends cdktf.ComplexObject {
+export class DialogflowConversationProfileHumanAgentAssistantConfigHumanAgentSuggestionConfigFeatureConfigsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -3440,11 +3440,11 @@ export class DialogflowConversationProfileHumanAgentAssistantConfigHumanAgentSug
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): DialogflowConversationProfileHumanAgentAssistantConfigHumanAgentSuggestionConfigFeatureConfigs | cdktf.IResolvable | undefined {
+  public get internalValue(): DialogflowConversationProfileHumanAgentAssistantConfigHumanAgentSuggestionConfigFeatureConfigs | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -3493,7 +3493,7 @@ export class DialogflowConversationProfileHumanAgentAssistantConfigHumanAgentSug
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: DialogflowConversationProfileHumanAgentAssistantConfigHumanAgentSuggestionConfigFeatureConfigs | cdktf.IResolvable | undefined) {
+  public set internalValue(value: DialogflowConversationProfileHumanAgentAssistantConfigHumanAgentSuggestionConfigFeatureConfigs | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -3508,7 +3508,7 @@ export class DialogflowConversationProfileHumanAgentAssistantConfigHumanAgentSug
       this._suggestionFeature.internalValue = undefined;
       this._suggestionTriggerSettings.internalValue = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -3529,11 +3529,11 @@ export class DialogflowConversationProfileHumanAgentAssistantConfigHumanAgentSug
   }
 
   // disable_agent_query_logging - computed: false, optional: true, required: false
-  private _disableAgentQueryLogging?: boolean | cdktf.IResolvable; 
+  private _disableAgentQueryLogging?: boolean | cdktn.IResolvable; 
   public get disableAgentQueryLogging() {
     return this.getBooleanAttribute('disable_agent_query_logging');
   }
-  public set disableAgentQueryLogging(value: boolean | cdktf.IResolvable) {
+  public set disableAgentQueryLogging(value: boolean | cdktn.IResolvable) {
     this._disableAgentQueryLogging = value;
   }
   public resetDisableAgentQueryLogging() {
@@ -3545,11 +3545,11 @@ export class DialogflowConversationProfileHumanAgentAssistantConfigHumanAgentSug
   }
 
   // enable_conversation_augmented_query - computed: false, optional: true, required: false
-  private _enableConversationAugmentedQuery?: boolean | cdktf.IResolvable; 
+  private _enableConversationAugmentedQuery?: boolean | cdktn.IResolvable; 
   public get enableConversationAugmentedQuery() {
     return this.getBooleanAttribute('enable_conversation_augmented_query');
   }
-  public set enableConversationAugmentedQuery(value: boolean | cdktf.IResolvable) {
+  public set enableConversationAugmentedQuery(value: boolean | cdktn.IResolvable) {
     this._enableConversationAugmentedQuery = value;
   }
   public resetEnableConversationAugmentedQuery() {
@@ -3561,11 +3561,11 @@ export class DialogflowConversationProfileHumanAgentAssistantConfigHumanAgentSug
   }
 
   // enable_event_based_suggestion - computed: false, optional: true, required: false
-  private _enableEventBasedSuggestion?: boolean | cdktf.IResolvable; 
+  private _enableEventBasedSuggestion?: boolean | cdktn.IResolvable; 
   public get enableEventBasedSuggestion() {
     return this.getBooleanAttribute('enable_event_based_suggestion');
   }
-  public set enableEventBasedSuggestion(value: boolean | cdktf.IResolvable) {
+  public set enableEventBasedSuggestion(value: boolean | cdktn.IResolvable) {
     this._enableEventBasedSuggestion = value;
   }
   public resetEnableEventBasedSuggestion() {
@@ -3577,11 +3577,11 @@ export class DialogflowConversationProfileHumanAgentAssistantConfigHumanAgentSug
   }
 
   // enable_query_suggestion_only - computed: false, optional: true, required: false
-  private _enableQuerySuggestionOnly?: boolean | cdktf.IResolvable; 
+  private _enableQuerySuggestionOnly?: boolean | cdktn.IResolvable; 
   public get enableQuerySuggestionOnly() {
     return this.getBooleanAttribute('enable_query_suggestion_only');
   }
-  public set enableQuerySuggestionOnly(value: boolean | cdktf.IResolvable) {
+  public set enableQuerySuggestionOnly(value: boolean | cdktn.IResolvable) {
     this._enableQuerySuggestionOnly = value;
   }
   public resetEnableQuerySuggestionOnly() {
@@ -3593,11 +3593,11 @@ export class DialogflowConversationProfileHumanAgentAssistantConfigHumanAgentSug
   }
 
   // enable_query_suggestion_when_no_answer - computed: false, optional: true, required: false
-  private _enableQuerySuggestionWhenNoAnswer?: boolean | cdktf.IResolvable; 
+  private _enableQuerySuggestionWhenNoAnswer?: boolean | cdktn.IResolvable; 
   public get enableQuerySuggestionWhenNoAnswer() {
     return this.getBooleanAttribute('enable_query_suggestion_when_no_answer');
   }
-  public set enableQuerySuggestionWhenNoAnswer(value: boolean | cdktf.IResolvable) {
+  public set enableQuerySuggestionWhenNoAnswer(value: boolean | cdktn.IResolvable) {
     this._enableQuerySuggestionWhenNoAnswer = value;
   }
   public resetEnableQuerySuggestionWhenNoAnswer() {
@@ -3689,15 +3689,15 @@ export class DialogflowConversationProfileHumanAgentAssistantConfigHumanAgentSug
   }
 }
 
-export class DialogflowConversationProfileHumanAgentAssistantConfigHumanAgentSuggestionConfigFeatureConfigsList extends cdktf.ComplexList {
-  public internalValue? : DialogflowConversationProfileHumanAgentAssistantConfigHumanAgentSuggestionConfigFeatureConfigs[] | cdktf.IResolvable
+export class DialogflowConversationProfileHumanAgentAssistantConfigHumanAgentSuggestionConfigFeatureConfigsList extends cdktn.ComplexList {
+  public internalValue? : DialogflowConversationProfileHumanAgentAssistantConfigHumanAgentSuggestionConfigFeatureConfigs[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -3714,7 +3714,7 @@ export interface DialogflowConversationProfileHumanAgentAssistantConfigHumanAgen
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/dialogflow_conversation_profile#disable_high_latency_features_sync_delivery DialogflowConversationProfile#disable_high_latency_features_sync_delivery}
   */
-  readonly disableHighLatencyFeaturesSyncDelivery?: boolean | cdktf.IResolvable;
+  readonly disableHighLatencyFeaturesSyncDelivery?: boolean | cdktn.IResolvable;
   /**
   * List of various generator resource names used in the conversation profile.
   *
@@ -3728,55 +3728,55 @@ export interface DialogflowConversationProfileHumanAgentAssistantConfigHumanAgen
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/dialogflow_conversation_profile#group_suggestion_responses DialogflowConversationProfile#group_suggestion_responses}
   */
-  readonly groupSuggestionResponses?: boolean | cdktf.IResolvable;
+  readonly groupSuggestionResponses?: boolean | cdktn.IResolvable;
   /**
   * feature_configs block
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/dialogflow_conversation_profile#feature_configs DialogflowConversationProfile#feature_configs}
   */
-  readonly featureConfigs?: DialogflowConversationProfileHumanAgentAssistantConfigHumanAgentSuggestionConfigFeatureConfigs[] | cdktf.IResolvable;
+  readonly featureConfigs?: DialogflowConversationProfileHumanAgentAssistantConfigHumanAgentSuggestionConfigFeatureConfigs[] | cdktn.IResolvable;
 }
 
 export function dialogflowConversationProfileHumanAgentAssistantConfigHumanAgentSuggestionConfigToTerraform(struct?: DialogflowConversationProfileHumanAgentAssistantConfigHumanAgentSuggestionConfigOutputReference | DialogflowConversationProfileHumanAgentAssistantConfigHumanAgentSuggestionConfig): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    disable_high_latency_features_sync_delivery: cdktf.booleanToTerraform(struct!.disableHighLatencyFeaturesSyncDelivery),
-    generators: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.generators),
-    group_suggestion_responses: cdktf.booleanToTerraform(struct!.groupSuggestionResponses),
-    feature_configs: cdktf.listMapper(dialogflowConversationProfileHumanAgentAssistantConfigHumanAgentSuggestionConfigFeatureConfigsToTerraform, true)(struct!.featureConfigs),
+    disable_high_latency_features_sync_delivery: cdktn.booleanToTerraform(struct!.disableHighLatencyFeaturesSyncDelivery),
+    generators: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.generators),
+    group_suggestion_responses: cdktn.booleanToTerraform(struct!.groupSuggestionResponses),
+    feature_configs: cdktn.listMapper(dialogflowConversationProfileHumanAgentAssistantConfigHumanAgentSuggestionConfigFeatureConfigsToTerraform, true)(struct!.featureConfigs),
   }
 }
 
 
 export function dialogflowConversationProfileHumanAgentAssistantConfigHumanAgentSuggestionConfigToHclTerraform(struct?: DialogflowConversationProfileHumanAgentAssistantConfigHumanAgentSuggestionConfigOutputReference | DialogflowConversationProfileHumanAgentAssistantConfigHumanAgentSuggestionConfig): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     disable_high_latency_features_sync_delivery: {
-      value: cdktf.booleanToHclTerraform(struct!.disableHighLatencyFeaturesSyncDelivery),
+      value: cdktn.booleanToHclTerraform(struct!.disableHighLatencyFeaturesSyncDelivery),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     generators: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.generators),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.generators),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
     },
     group_suggestion_responses: {
-      value: cdktf.booleanToHclTerraform(struct!.groupSuggestionResponses),
+      value: cdktn.booleanToHclTerraform(struct!.groupSuggestionResponses),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     feature_configs: {
-      value: cdktf.listMapperHcl(dialogflowConversationProfileHumanAgentAssistantConfigHumanAgentSuggestionConfigFeatureConfigsToHclTerraform, true)(struct!.featureConfigs),
+      value: cdktn.listMapperHcl(dialogflowConversationProfileHumanAgentAssistantConfigHumanAgentSuggestionConfigFeatureConfigsToHclTerraform, true)(struct!.featureConfigs),
       isBlock: true,
       type: "list",
       storageClassType: "DialogflowConversationProfileHumanAgentAssistantConfigHumanAgentSuggestionConfigFeatureConfigsList",
@@ -3787,14 +3787,14 @@ export function dialogflowConversationProfileHumanAgentAssistantConfigHumanAgent
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class DialogflowConversationProfileHumanAgentAssistantConfigHumanAgentSuggestionConfigOutputReference extends cdktf.ComplexObject {
+export class DialogflowConversationProfileHumanAgentAssistantConfigHumanAgentSuggestionConfigOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -3838,11 +3838,11 @@ export class DialogflowConversationProfileHumanAgentAssistantConfigHumanAgentSug
   }
 
   // disable_high_latency_features_sync_delivery - computed: false, optional: true, required: false
-  private _disableHighLatencyFeaturesSyncDelivery?: boolean | cdktf.IResolvable; 
+  private _disableHighLatencyFeaturesSyncDelivery?: boolean | cdktn.IResolvable; 
   public get disableHighLatencyFeaturesSyncDelivery() {
     return this.getBooleanAttribute('disable_high_latency_features_sync_delivery');
   }
-  public set disableHighLatencyFeaturesSyncDelivery(value: boolean | cdktf.IResolvable) {
+  public set disableHighLatencyFeaturesSyncDelivery(value: boolean | cdktn.IResolvable) {
     this._disableHighLatencyFeaturesSyncDelivery = value;
   }
   public resetDisableHighLatencyFeaturesSyncDelivery() {
@@ -3870,11 +3870,11 @@ export class DialogflowConversationProfileHumanAgentAssistantConfigHumanAgentSug
   }
 
   // group_suggestion_responses - computed: false, optional: true, required: false
-  private _groupSuggestionResponses?: boolean | cdktf.IResolvable; 
+  private _groupSuggestionResponses?: boolean | cdktn.IResolvable; 
   public get groupSuggestionResponses() {
     return this.getBooleanAttribute('group_suggestion_responses');
   }
-  public set groupSuggestionResponses(value: boolean | cdktf.IResolvable) {
+  public set groupSuggestionResponses(value: boolean | cdktn.IResolvable) {
     this._groupSuggestionResponses = value;
   }
   public resetGroupSuggestionResponses() {
@@ -3890,7 +3890,7 @@ export class DialogflowConversationProfileHumanAgentAssistantConfigHumanAgentSug
   public get featureConfigs() {
     return this._featureConfigs;
   }
-  public putFeatureConfigs(value: DialogflowConversationProfileHumanAgentAssistantConfigHumanAgentSuggestionConfigFeatureConfigs[] | cdktf.IResolvable) {
+  public putFeatureConfigs(value: DialogflowConversationProfileHumanAgentAssistantConfigHumanAgentSuggestionConfigFeatureConfigs[] | cdktn.IResolvable) {
     this._featureConfigs.internalValue = value;
   }
   public resetFeatureConfigs() {
@@ -3907,41 +3907,41 @@ export interface DialogflowConversationProfileHumanAgentAssistantConfigMessageAn
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/dialogflow_conversation_profile#enable_entity_extraction DialogflowConversationProfile#enable_entity_extraction}
   */
-  readonly enableEntityExtraction?: boolean | cdktf.IResolvable;
+  readonly enableEntityExtraction?: boolean | cdktn.IResolvable;
   /**
   * Enable sentiment analysis in conversation messages on agent assist stage. Sentiment analysis inspects user input and identifies the prevailing subjective opinion, especially to determine a user's attitude as positive, negative, or neutral.
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/dialogflow_conversation_profile#enable_sentiment_analysis DialogflowConversationProfile#enable_sentiment_analysis}
   */
-  readonly enableSentimentAnalysis?: boolean | cdktf.IResolvable;
+  readonly enableSentimentAnalysis?: boolean | cdktn.IResolvable;
 }
 
 export function dialogflowConversationProfileHumanAgentAssistantConfigMessageAnalysisConfigToTerraform(struct?: DialogflowConversationProfileHumanAgentAssistantConfigMessageAnalysisConfigOutputReference | DialogflowConversationProfileHumanAgentAssistantConfigMessageAnalysisConfig): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    enable_entity_extraction: cdktf.booleanToTerraform(struct!.enableEntityExtraction),
-    enable_sentiment_analysis: cdktf.booleanToTerraform(struct!.enableSentimentAnalysis),
+    enable_entity_extraction: cdktn.booleanToTerraform(struct!.enableEntityExtraction),
+    enable_sentiment_analysis: cdktn.booleanToTerraform(struct!.enableSentimentAnalysis),
   }
 }
 
 
 export function dialogflowConversationProfileHumanAgentAssistantConfigMessageAnalysisConfigToHclTerraform(struct?: DialogflowConversationProfileHumanAgentAssistantConfigMessageAnalysisConfigOutputReference | DialogflowConversationProfileHumanAgentAssistantConfigMessageAnalysisConfig): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     enable_entity_extraction: {
-      value: cdktf.booleanToHclTerraform(struct!.enableEntityExtraction),
+      value: cdktn.booleanToHclTerraform(struct!.enableEntityExtraction),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     enable_sentiment_analysis: {
-      value: cdktf.booleanToHclTerraform(struct!.enableSentimentAnalysis),
+      value: cdktn.booleanToHclTerraform(struct!.enableSentimentAnalysis),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
@@ -3952,14 +3952,14 @@ export function dialogflowConversationProfileHumanAgentAssistantConfigMessageAna
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class DialogflowConversationProfileHumanAgentAssistantConfigMessageAnalysisConfigOutputReference extends cdktf.ComplexObject {
+export class DialogflowConversationProfileHumanAgentAssistantConfigMessageAnalysisConfigOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -3991,11 +3991,11 @@ export class DialogflowConversationProfileHumanAgentAssistantConfigMessageAnalys
   }
 
   // enable_entity_extraction - computed: false, optional: true, required: false
-  private _enableEntityExtraction?: boolean | cdktf.IResolvable; 
+  private _enableEntityExtraction?: boolean | cdktn.IResolvable; 
   public get enableEntityExtraction() {
     return this.getBooleanAttribute('enable_entity_extraction');
   }
-  public set enableEntityExtraction(value: boolean | cdktf.IResolvable) {
+  public set enableEntityExtraction(value: boolean | cdktn.IResolvable) {
     this._enableEntityExtraction = value;
   }
   public resetEnableEntityExtraction() {
@@ -4007,11 +4007,11 @@ export class DialogflowConversationProfileHumanAgentAssistantConfigMessageAnalys
   }
 
   // enable_sentiment_analysis - computed: false, optional: true, required: false
-  private _enableSentimentAnalysis?: boolean | cdktf.IResolvable; 
+  private _enableSentimentAnalysis?: boolean | cdktn.IResolvable; 
   public get enableSentimentAnalysis() {
     return this.getBooleanAttribute('enable_sentiment_analysis');
   }
-  public set enableSentimentAnalysis(value: boolean | cdktf.IResolvable) {
+  public set enableSentimentAnalysis(value: boolean | cdktn.IResolvable) {
     this._enableSentimentAnalysis = value;
   }
   public resetEnableSentimentAnalysis() {
@@ -4038,31 +4038,31 @@ export interface DialogflowConversationProfileHumanAgentAssistantConfigNotificat
 }
 
 export function dialogflowConversationProfileHumanAgentAssistantConfigNotificationConfigToTerraform(struct?: DialogflowConversationProfileHumanAgentAssistantConfigNotificationConfigOutputReference | DialogflowConversationProfileHumanAgentAssistantConfigNotificationConfig): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    message_format: cdktf.stringToTerraform(struct!.messageFormat),
-    topic: cdktf.stringToTerraform(struct!.topic),
+    message_format: cdktn.stringToTerraform(struct!.messageFormat),
+    topic: cdktn.stringToTerraform(struct!.topic),
   }
 }
 
 
 export function dialogflowConversationProfileHumanAgentAssistantConfigNotificationConfigToHclTerraform(struct?: DialogflowConversationProfileHumanAgentAssistantConfigNotificationConfigOutputReference | DialogflowConversationProfileHumanAgentAssistantConfigNotificationConfig): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     message_format: {
-      value: cdktf.stringToHclTerraform(struct!.messageFormat),
+      value: cdktn.stringToHclTerraform(struct!.messageFormat),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     topic: {
-      value: cdktf.stringToHclTerraform(struct!.topic),
+      value: cdktn.stringToHclTerraform(struct!.topic),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -4073,14 +4073,14 @@ export function dialogflowConversationProfileHumanAgentAssistantConfigNotificati
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class DialogflowConversationProfileHumanAgentAssistantConfigNotificationConfigOutputReference extends cdktf.ComplexObject {
+export class DialogflowConversationProfileHumanAgentAssistantConfigNotificationConfigOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -4171,8 +4171,8 @@ export interface DialogflowConversationProfileHumanAgentAssistantConfig {
 }
 
 export function dialogflowConversationProfileHumanAgentAssistantConfigToTerraform(struct?: DialogflowConversationProfileHumanAgentAssistantConfigOutputReference | DialogflowConversationProfileHumanAgentAssistantConfig): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -4185,8 +4185,8 @@ export function dialogflowConversationProfileHumanAgentAssistantConfigToTerrafor
 
 
 export function dialogflowConversationProfileHumanAgentAssistantConfigToHclTerraform(struct?: DialogflowConversationProfileHumanAgentAssistantConfigOutputReference | DialogflowConversationProfileHumanAgentAssistantConfig): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -4220,14 +4220,14 @@ export function dialogflowConversationProfileHumanAgentAssistantConfigToHclTerra
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class DialogflowConversationProfileHumanAgentAssistantConfigOutputReference extends cdktf.ComplexObject {
+export class DialogflowConversationProfileHumanAgentAssistantConfigOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -4344,24 +4344,24 @@ export interface DialogflowConversationProfileHumanAgentHandoffConfigLivePersonC
 }
 
 export function dialogflowConversationProfileHumanAgentHandoffConfigLivePersonConfigToTerraform(struct?: DialogflowConversationProfileHumanAgentHandoffConfigLivePersonConfigOutputReference | DialogflowConversationProfileHumanAgentHandoffConfigLivePersonConfig): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    account_number: cdktf.stringToTerraform(struct!.accountNumber),
+    account_number: cdktn.stringToTerraform(struct!.accountNumber),
   }
 }
 
 
 export function dialogflowConversationProfileHumanAgentHandoffConfigLivePersonConfigToHclTerraform(struct?: DialogflowConversationProfileHumanAgentHandoffConfigLivePersonConfigOutputReference | DialogflowConversationProfileHumanAgentHandoffConfigLivePersonConfig): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     account_number: {
-      value: cdktf.stringToHclTerraform(struct!.accountNumber),
+      value: cdktn.stringToHclTerraform(struct!.accountNumber),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -4372,14 +4372,14 @@ export function dialogflowConversationProfileHumanAgentHandoffConfigLivePersonCo
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class DialogflowConversationProfileHumanAgentHandoffConfigLivePersonConfigOutputReference extends cdktf.ComplexObject {
+export class DialogflowConversationProfileHumanAgentHandoffConfigLivePersonConfigOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -4427,8 +4427,8 @@ export interface DialogflowConversationProfileHumanAgentHandoffConfig {
 }
 
 export function dialogflowConversationProfileHumanAgentHandoffConfigToTerraform(struct?: DialogflowConversationProfileHumanAgentHandoffConfigOutputReference | DialogflowConversationProfileHumanAgentHandoffConfig): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -4438,8 +4438,8 @@ export function dialogflowConversationProfileHumanAgentHandoffConfigToTerraform(
 
 
 export function dialogflowConversationProfileHumanAgentHandoffConfigToHclTerraform(struct?: DialogflowConversationProfileHumanAgentHandoffConfigOutputReference | DialogflowConversationProfileHumanAgentHandoffConfig): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -4455,14 +4455,14 @@ export function dialogflowConversationProfileHumanAgentHandoffConfigToHclTerrafo
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class DialogflowConversationProfileHumanAgentHandoffConfigOutputReference extends cdktf.ComplexObject {
+export class DialogflowConversationProfileHumanAgentHandoffConfigOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -4509,28 +4509,28 @@ export interface DialogflowConversationProfileLoggingConfig {
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/dialogflow_conversation_profile#enable_stackdriver_logging DialogflowConversationProfile#enable_stackdriver_logging}
   */
-  readonly enableStackdriverLogging?: boolean | cdktf.IResolvable;
+  readonly enableStackdriverLogging?: boolean | cdktn.IResolvable;
 }
 
 export function dialogflowConversationProfileLoggingConfigToTerraform(struct?: DialogflowConversationProfileLoggingConfigOutputReference | DialogflowConversationProfileLoggingConfig): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    enable_stackdriver_logging: cdktf.booleanToTerraform(struct!.enableStackdriverLogging),
+    enable_stackdriver_logging: cdktn.booleanToTerraform(struct!.enableStackdriverLogging),
   }
 }
 
 
 export function dialogflowConversationProfileLoggingConfigToHclTerraform(struct?: DialogflowConversationProfileLoggingConfigOutputReference | DialogflowConversationProfileLoggingConfig): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     enable_stackdriver_logging: {
-      value: cdktf.booleanToHclTerraform(struct!.enableStackdriverLogging),
+      value: cdktn.booleanToHclTerraform(struct!.enableStackdriverLogging),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
@@ -4541,14 +4541,14 @@ export function dialogflowConversationProfileLoggingConfigToHclTerraform(struct?
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class DialogflowConversationProfileLoggingConfigOutputReference extends cdktf.ComplexObject {
+export class DialogflowConversationProfileLoggingConfigOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -4574,11 +4574,11 @@ export class DialogflowConversationProfileLoggingConfigOutputReference extends c
   }
 
   // enable_stackdriver_logging - computed: false, optional: true, required: false
-  private _enableStackdriverLogging?: boolean | cdktf.IResolvable; 
+  private _enableStackdriverLogging?: boolean | cdktn.IResolvable; 
   public get enableStackdriverLogging() {
     return this.getBooleanAttribute('enable_stackdriver_logging');
   }
-  public set enableStackdriverLogging(value: boolean | cdktf.IResolvable) {
+  public set enableStackdriverLogging(value: boolean | cdktn.IResolvable) {
     this._enableStackdriverLogging = value;
   }
   public resetEnableStackdriverLogging() {
@@ -4605,31 +4605,31 @@ export interface DialogflowConversationProfileNewMessageEventNotificationConfig 
 }
 
 export function dialogflowConversationProfileNewMessageEventNotificationConfigToTerraform(struct?: DialogflowConversationProfileNewMessageEventNotificationConfigOutputReference | DialogflowConversationProfileNewMessageEventNotificationConfig): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    message_format: cdktf.stringToTerraform(struct!.messageFormat),
-    topic: cdktf.stringToTerraform(struct!.topic),
+    message_format: cdktn.stringToTerraform(struct!.messageFormat),
+    topic: cdktn.stringToTerraform(struct!.topic),
   }
 }
 
 
 export function dialogflowConversationProfileNewMessageEventNotificationConfigToHclTerraform(struct?: DialogflowConversationProfileNewMessageEventNotificationConfigOutputReference | DialogflowConversationProfileNewMessageEventNotificationConfig): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     message_format: {
-      value: cdktf.stringToHclTerraform(struct!.messageFormat),
+      value: cdktn.stringToHclTerraform(struct!.messageFormat),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     topic: {
-      value: cdktf.stringToHclTerraform(struct!.topic),
+      value: cdktn.stringToHclTerraform(struct!.topic),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -4640,14 +4640,14 @@ export function dialogflowConversationProfileNewMessageEventNotificationConfigTo
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class DialogflowConversationProfileNewMessageEventNotificationConfigOutputReference extends cdktf.ComplexObject {
+export class DialogflowConversationProfileNewMessageEventNotificationConfigOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -4726,31 +4726,31 @@ export interface DialogflowConversationProfileNotificationConfig {
 }
 
 export function dialogflowConversationProfileNotificationConfigToTerraform(struct?: DialogflowConversationProfileNotificationConfigOutputReference | DialogflowConversationProfileNotificationConfig): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    message_format: cdktf.stringToTerraform(struct!.messageFormat),
-    topic: cdktf.stringToTerraform(struct!.topic),
+    message_format: cdktn.stringToTerraform(struct!.messageFormat),
+    topic: cdktn.stringToTerraform(struct!.topic),
   }
 }
 
 
 export function dialogflowConversationProfileNotificationConfigToHclTerraform(struct?: DialogflowConversationProfileNotificationConfigOutputReference | DialogflowConversationProfileNotificationConfig): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     message_format: {
-      value: cdktf.stringToHclTerraform(struct!.messageFormat),
+      value: cdktn.stringToHclTerraform(struct!.messageFormat),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     topic: {
-      value: cdktf.stringToHclTerraform(struct!.topic),
+      value: cdktn.stringToHclTerraform(struct!.topic),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -4761,14 +4761,14 @@ export function dialogflowConversationProfileNotificationConfigToHclTerraform(st
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class DialogflowConversationProfileNotificationConfigOutputReference extends cdktf.ComplexObject {
+export class DialogflowConversationProfileNotificationConfigOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -4843,7 +4843,7 @@ export interface DialogflowConversationProfileSttConfig {
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/dialogflow_conversation_profile#enable_word_info DialogflowConversationProfile#enable_word_info}
   */
-  readonly enableWordInfo?: boolean | cdktf.IResolvable;
+  readonly enableWordInfo?: boolean | cdktn.IResolvable;
   /**
   * The language of the supplied audio.
   *
@@ -4874,70 +4874,70 @@ export interface DialogflowConversationProfileSttConfig {
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/dialogflow_conversation_profile#use_timeout_based_endpointing DialogflowConversationProfile#use_timeout_based_endpointing}
   */
-  readonly useTimeoutBasedEndpointing?: boolean | cdktf.IResolvable;
+  readonly useTimeoutBasedEndpointing?: boolean | cdktn.IResolvable;
 }
 
 export function dialogflowConversationProfileSttConfigToTerraform(struct?: DialogflowConversationProfileSttConfigOutputReference | DialogflowConversationProfileSttConfig): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    audio_encoding: cdktf.stringToTerraform(struct!.audioEncoding),
-    enable_word_info: cdktf.booleanToTerraform(struct!.enableWordInfo),
-    language_code: cdktf.stringToTerraform(struct!.languageCode),
-    model: cdktf.stringToTerraform(struct!.model),
-    sample_rate_hertz: cdktf.numberToTerraform(struct!.sampleRateHertz),
-    speech_model_variant: cdktf.stringToTerraform(struct!.speechModelVariant),
-    use_timeout_based_endpointing: cdktf.booleanToTerraform(struct!.useTimeoutBasedEndpointing),
+    audio_encoding: cdktn.stringToTerraform(struct!.audioEncoding),
+    enable_word_info: cdktn.booleanToTerraform(struct!.enableWordInfo),
+    language_code: cdktn.stringToTerraform(struct!.languageCode),
+    model: cdktn.stringToTerraform(struct!.model),
+    sample_rate_hertz: cdktn.numberToTerraform(struct!.sampleRateHertz),
+    speech_model_variant: cdktn.stringToTerraform(struct!.speechModelVariant),
+    use_timeout_based_endpointing: cdktn.booleanToTerraform(struct!.useTimeoutBasedEndpointing),
   }
 }
 
 
 export function dialogflowConversationProfileSttConfigToHclTerraform(struct?: DialogflowConversationProfileSttConfigOutputReference | DialogflowConversationProfileSttConfig): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     audio_encoding: {
-      value: cdktf.stringToHclTerraform(struct!.audioEncoding),
+      value: cdktn.stringToHclTerraform(struct!.audioEncoding),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     enable_word_info: {
-      value: cdktf.booleanToHclTerraform(struct!.enableWordInfo),
+      value: cdktn.booleanToHclTerraform(struct!.enableWordInfo),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     language_code: {
-      value: cdktf.stringToHclTerraform(struct!.languageCode),
+      value: cdktn.stringToHclTerraform(struct!.languageCode),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     model: {
-      value: cdktf.stringToHclTerraform(struct!.model),
+      value: cdktn.stringToHclTerraform(struct!.model),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     sample_rate_hertz: {
-      value: cdktf.numberToHclTerraform(struct!.sampleRateHertz),
+      value: cdktn.numberToHclTerraform(struct!.sampleRateHertz),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     speech_model_variant: {
-      value: cdktf.stringToHclTerraform(struct!.speechModelVariant),
+      value: cdktn.stringToHclTerraform(struct!.speechModelVariant),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     use_timeout_based_endpointing: {
-      value: cdktf.booleanToHclTerraform(struct!.useTimeoutBasedEndpointing),
+      value: cdktn.booleanToHclTerraform(struct!.useTimeoutBasedEndpointing),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
@@ -4948,14 +4948,14 @@ export function dialogflowConversationProfileSttConfigToHclTerraform(struct?: Di
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class DialogflowConversationProfileSttConfigOutputReference extends cdktf.ComplexObject {
+export class DialogflowConversationProfileSttConfigOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -5033,11 +5033,11 @@ export class DialogflowConversationProfileSttConfigOutputReference extends cdktf
   }
 
   // enable_word_info - computed: false, optional: true, required: false
-  private _enableWordInfo?: boolean | cdktf.IResolvable; 
+  private _enableWordInfo?: boolean | cdktn.IResolvable; 
   public get enableWordInfo() {
     return this.getBooleanAttribute('enable_word_info');
   }
-  public set enableWordInfo(value: boolean | cdktf.IResolvable) {
+  public set enableWordInfo(value: boolean | cdktn.IResolvable) {
     this._enableWordInfo = value;
   }
   public resetEnableWordInfo() {
@@ -5113,11 +5113,11 @@ export class DialogflowConversationProfileSttConfigOutputReference extends cdktf
   }
 
   // use_timeout_based_endpointing - computed: false, optional: true, required: false
-  private _useTimeoutBasedEndpointing?: boolean | cdktf.IResolvable; 
+  private _useTimeoutBasedEndpointing?: boolean | cdktn.IResolvable; 
   public get useTimeoutBasedEndpointing() {
     return this.getBooleanAttribute('use_timeout_based_endpointing');
   }
-  public set useTimeoutBasedEndpointing(value: boolean | cdktf.IResolvable) {
+  public set useTimeoutBasedEndpointing(value: boolean | cdktn.IResolvable) {
     this._useTimeoutBasedEndpointing = value;
   }
   public resetUseTimeoutBasedEndpointing() {
@@ -5143,39 +5143,39 @@ export interface DialogflowConversationProfileTimeouts {
   readonly update?: string;
 }
 
-export function dialogflowConversationProfileTimeoutsToTerraform(struct?: DialogflowConversationProfileTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function dialogflowConversationProfileTimeoutsToTerraform(struct?: DialogflowConversationProfileTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    create: cdktf.stringToTerraform(struct!.create),
-    delete: cdktf.stringToTerraform(struct!.delete),
-    update: cdktf.stringToTerraform(struct!.update),
+    create: cdktn.stringToTerraform(struct!.create),
+    delete: cdktn.stringToTerraform(struct!.delete),
+    update: cdktn.stringToTerraform(struct!.update),
   }
 }
 
 
-export function dialogflowConversationProfileTimeoutsToHclTerraform(struct?: DialogflowConversationProfileTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function dialogflowConversationProfileTimeoutsToHclTerraform(struct?: DialogflowConversationProfileTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     create: {
-      value: cdktf.stringToHclTerraform(struct!.create),
+      value: cdktn.stringToHclTerraform(struct!.create),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     delete: {
-      value: cdktf.stringToHclTerraform(struct!.delete),
+      value: cdktn.stringToHclTerraform(struct!.delete),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     update: {
-      value: cdktf.stringToHclTerraform(struct!.update),
+      value: cdktn.stringToHclTerraform(struct!.update),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -5186,19 +5186,19 @@ export function dialogflowConversationProfileTimeoutsToHclTerraform(struct?: Dia
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class DialogflowConversationProfileTimeoutsOutputReference extends cdktf.ComplexObject {
+export class DialogflowConversationProfileTimeoutsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): DialogflowConversationProfileTimeouts | cdktf.IResolvable | undefined {
+  public get internalValue(): DialogflowConversationProfileTimeouts | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -5219,7 +5219,7 @@ export class DialogflowConversationProfileTimeoutsOutputReference extends cdktf.
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: DialogflowConversationProfileTimeouts | cdktf.IResolvable | undefined) {
+  public set internalValue(value: DialogflowConversationProfileTimeouts | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -5227,7 +5227,7 @@ export class DialogflowConversationProfileTimeoutsOutputReference extends cdktf.
       this._delete = undefined;
       this._update = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -5304,31 +5304,31 @@ export interface DialogflowConversationProfileTtsConfigVoice {
 }
 
 export function dialogflowConversationProfileTtsConfigVoiceToTerraform(struct?: DialogflowConversationProfileTtsConfigVoiceOutputReference | DialogflowConversationProfileTtsConfigVoice): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    name: cdktf.stringToTerraform(struct!.name),
-    ssml_gender: cdktf.stringToTerraform(struct!.ssmlGender),
+    name: cdktn.stringToTerraform(struct!.name),
+    ssml_gender: cdktn.stringToTerraform(struct!.ssmlGender),
   }
 }
 
 
 export function dialogflowConversationProfileTtsConfigVoiceToHclTerraform(struct?: DialogflowConversationProfileTtsConfigVoiceOutputReference | DialogflowConversationProfileTtsConfigVoice): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     name: {
-      value: cdktf.stringToHclTerraform(struct!.name),
+      value: cdktn.stringToHclTerraform(struct!.name),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     ssml_gender: {
-      value: cdktf.stringToHclTerraform(struct!.ssmlGender),
+      value: cdktn.stringToHclTerraform(struct!.ssmlGender),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -5339,14 +5339,14 @@ export function dialogflowConversationProfileTtsConfigVoiceToHclTerraform(struct
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class DialogflowConversationProfileTtsConfigVoiceOutputReference extends cdktf.ComplexObject {
+export class DialogflowConversationProfileTtsConfigVoiceOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -5443,46 +5443,46 @@ export interface DialogflowConversationProfileTtsConfig {
 }
 
 export function dialogflowConversationProfileTtsConfigToTerraform(struct?: DialogflowConversationProfileTtsConfigOutputReference | DialogflowConversationProfileTtsConfig): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    effects_profile_id: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.effectsProfileId),
-    pitch: cdktf.numberToTerraform(struct!.pitch),
-    speaking_rate: cdktf.numberToTerraform(struct!.speakingRate),
-    volume_gain_db: cdktf.numberToTerraform(struct!.volumeGainDb),
+    effects_profile_id: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.effectsProfileId),
+    pitch: cdktn.numberToTerraform(struct!.pitch),
+    speaking_rate: cdktn.numberToTerraform(struct!.speakingRate),
+    volume_gain_db: cdktn.numberToTerraform(struct!.volumeGainDb),
     voice: dialogflowConversationProfileTtsConfigVoiceToTerraform(struct!.voice),
   }
 }
 
 
 export function dialogflowConversationProfileTtsConfigToHclTerraform(struct?: DialogflowConversationProfileTtsConfigOutputReference | DialogflowConversationProfileTtsConfig): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     effects_profile_id: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.effectsProfileId),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.effectsProfileId),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
     },
     pitch: {
-      value: cdktf.numberToHclTerraform(struct!.pitch),
+      value: cdktn.numberToHclTerraform(struct!.pitch),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     speaking_rate: {
-      value: cdktf.numberToHclTerraform(struct!.speakingRate),
+      value: cdktn.numberToHclTerraform(struct!.speakingRate),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     volume_gain_db: {
-      value: cdktf.numberToHclTerraform(struct!.volumeGainDb),
+      value: cdktn.numberToHclTerraform(struct!.volumeGainDb),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
@@ -5499,14 +5499,14 @@ export function dialogflowConversationProfileTtsConfigToHclTerraform(struct?: Di
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class DialogflowConversationProfileTtsConfigOutputReference extends cdktf.ComplexObject {
+export class DialogflowConversationProfileTtsConfigOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -5639,7 +5639,7 @@ export class DialogflowConversationProfileTtsConfigOutputReference extends cdktf
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/dialogflow_conversation_profile google_dialogflow_conversation_profile}
 */
-export class DialogflowConversationProfile extends cdktf.TerraformResource {
+export class DialogflowConversationProfile extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -5650,14 +5650,14 @@ export class DialogflowConversationProfile extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a DialogflowConversationProfile resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a DialogflowConversationProfile resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DialogflowConversationProfile to import
   * @param importFromId The id of the existing DialogflowConversationProfile that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/dialogflow_conversation_profile#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DialogflowConversationProfile to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "google_dialogflow_conversation_profile", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "google_dialogflow_conversation_profile", importId: importFromId, provider });
       }
 
   // ===========
@@ -5970,13 +5970,13 @@ export class DialogflowConversationProfile extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      display_name: cdktf.stringToTerraform(this._displayName),
-      id: cdktf.stringToTerraform(this._id),
-      language_code: cdktf.stringToTerraform(this._languageCode),
-      location: cdktf.stringToTerraform(this._location),
-      project: cdktf.stringToTerraform(this._project),
-      security_settings: cdktf.stringToTerraform(this._securitySettings),
-      time_zone: cdktf.stringToTerraform(this._timeZone),
+      display_name: cdktn.stringToTerraform(this._displayName),
+      id: cdktn.stringToTerraform(this._id),
+      language_code: cdktn.stringToTerraform(this._languageCode),
+      location: cdktn.stringToTerraform(this._location),
+      project: cdktn.stringToTerraform(this._project),
+      security_settings: cdktn.stringToTerraform(this._securitySettings),
+      time_zone: cdktn.stringToTerraform(this._timeZone),
       automated_agent_config: dialogflowConversationProfileAutomatedAgentConfigToTerraform(this._automatedAgentConfig.internalValue),
       human_agent_assistant_config: dialogflowConversationProfileHumanAgentAssistantConfigToTerraform(this._humanAgentAssistantConfig.internalValue),
       human_agent_handoff_config: dialogflowConversationProfileHumanAgentHandoffConfigToTerraform(this._humanAgentHandoffConfig.internalValue),
@@ -5992,43 +5992,43 @@ export class DialogflowConversationProfile extends cdktf.TerraformResource {
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       display_name: {
-        value: cdktf.stringToHclTerraform(this._displayName),
+        value: cdktn.stringToHclTerraform(this._displayName),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       language_code: {
-        value: cdktf.stringToHclTerraform(this._languageCode),
+        value: cdktn.stringToHclTerraform(this._languageCode),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       location: {
-        value: cdktf.stringToHclTerraform(this._location),
+        value: cdktn.stringToHclTerraform(this._location),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       project: {
-        value: cdktf.stringToHclTerraform(this._project),
+        value: cdktn.stringToHclTerraform(this._project),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       security_settings: {
-        value: cdktf.stringToHclTerraform(this._securitySettings),
+        value: cdktn.stringToHclTerraform(this._securitySettings),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       time_zone: {
-        value: cdktf.stringToHclTerraform(this._timeZone),
+        value: cdktn.stringToHclTerraform(this._timeZone),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

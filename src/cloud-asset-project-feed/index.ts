@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface CloudAssetProjectFeedConfig extends cdktf.TerraformMetaArguments {
+export interface CloudAssetProjectFeedConfig extends cdktn.TerraformMetaArguments {
   /**
   * A list of the full names of the assets to receive updates. You must specify either or both of
   * assetNames and assetTypes. Only asset updates matching specified assetNames and assetTypes are
@@ -113,45 +113,45 @@ export interface CloudAssetProjectFeedCondition {
 }
 
 export function cloudAssetProjectFeedConditionToTerraform(struct?: CloudAssetProjectFeedConditionOutputReference | CloudAssetProjectFeedCondition): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    description: cdktf.stringToTerraform(struct!.description),
-    expression: cdktf.stringToTerraform(struct!.expression),
-    location: cdktf.stringToTerraform(struct!.location),
-    title: cdktf.stringToTerraform(struct!.title),
+    description: cdktn.stringToTerraform(struct!.description),
+    expression: cdktn.stringToTerraform(struct!.expression),
+    location: cdktn.stringToTerraform(struct!.location),
+    title: cdktn.stringToTerraform(struct!.title),
   }
 }
 
 
 export function cloudAssetProjectFeedConditionToHclTerraform(struct?: CloudAssetProjectFeedConditionOutputReference | CloudAssetProjectFeedCondition): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     description: {
-      value: cdktf.stringToHclTerraform(struct!.description),
+      value: cdktn.stringToHclTerraform(struct!.description),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     expression: {
-      value: cdktf.stringToHclTerraform(struct!.expression),
+      value: cdktn.stringToHclTerraform(struct!.expression),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     location: {
-      value: cdktf.stringToHclTerraform(struct!.location),
+      value: cdktn.stringToHclTerraform(struct!.location),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     title: {
-      value: cdktf.stringToHclTerraform(struct!.title),
+      value: cdktn.stringToHclTerraform(struct!.title),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -162,14 +162,14 @@ export function cloudAssetProjectFeedConditionToHclTerraform(struct?: CloudAsset
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class CloudAssetProjectFeedConditionOutputReference extends cdktf.ComplexObject {
+export class CloudAssetProjectFeedConditionOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -283,24 +283,24 @@ export interface CloudAssetProjectFeedFeedOutputConfigPubsubDestination {
 }
 
 export function cloudAssetProjectFeedFeedOutputConfigPubsubDestinationToTerraform(struct?: CloudAssetProjectFeedFeedOutputConfigPubsubDestinationOutputReference | CloudAssetProjectFeedFeedOutputConfigPubsubDestination): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    topic: cdktf.stringToTerraform(struct!.topic),
+    topic: cdktn.stringToTerraform(struct!.topic),
   }
 }
 
 
 export function cloudAssetProjectFeedFeedOutputConfigPubsubDestinationToHclTerraform(struct?: CloudAssetProjectFeedFeedOutputConfigPubsubDestinationOutputReference | CloudAssetProjectFeedFeedOutputConfigPubsubDestination): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     topic: {
-      value: cdktf.stringToHclTerraform(struct!.topic),
+      value: cdktn.stringToHclTerraform(struct!.topic),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -311,14 +311,14 @@ export function cloudAssetProjectFeedFeedOutputConfigPubsubDestinationToHclTerra
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class CloudAssetProjectFeedFeedOutputConfigPubsubDestinationOutputReference extends cdktf.ComplexObject {
+export class CloudAssetProjectFeedFeedOutputConfigPubsubDestinationOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -366,8 +366,8 @@ export interface CloudAssetProjectFeedFeedOutputConfig {
 }
 
 export function cloudAssetProjectFeedFeedOutputConfigToTerraform(struct?: CloudAssetProjectFeedFeedOutputConfigOutputReference | CloudAssetProjectFeedFeedOutputConfig): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -377,8 +377,8 @@ export function cloudAssetProjectFeedFeedOutputConfigToTerraform(struct?: CloudA
 
 
 export function cloudAssetProjectFeedFeedOutputConfigToHclTerraform(struct?: CloudAssetProjectFeedFeedOutputConfigOutputReference | CloudAssetProjectFeedFeedOutputConfig): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -394,14 +394,14 @@ export function cloudAssetProjectFeedFeedOutputConfigToHclTerraform(struct?: Clo
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class CloudAssetProjectFeedFeedOutputConfigOutputReference extends cdktf.ComplexObject {
+export class CloudAssetProjectFeedFeedOutputConfigOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -454,39 +454,39 @@ export interface CloudAssetProjectFeedTimeouts {
   readonly update?: string;
 }
 
-export function cloudAssetProjectFeedTimeoutsToTerraform(struct?: CloudAssetProjectFeedTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function cloudAssetProjectFeedTimeoutsToTerraform(struct?: CloudAssetProjectFeedTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    create: cdktf.stringToTerraform(struct!.create),
-    delete: cdktf.stringToTerraform(struct!.delete),
-    update: cdktf.stringToTerraform(struct!.update),
+    create: cdktn.stringToTerraform(struct!.create),
+    delete: cdktn.stringToTerraform(struct!.delete),
+    update: cdktn.stringToTerraform(struct!.update),
   }
 }
 
 
-export function cloudAssetProjectFeedTimeoutsToHclTerraform(struct?: CloudAssetProjectFeedTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function cloudAssetProjectFeedTimeoutsToHclTerraform(struct?: CloudAssetProjectFeedTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     create: {
-      value: cdktf.stringToHclTerraform(struct!.create),
+      value: cdktn.stringToHclTerraform(struct!.create),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     delete: {
-      value: cdktf.stringToHclTerraform(struct!.delete),
+      value: cdktn.stringToHclTerraform(struct!.delete),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     update: {
-      value: cdktf.stringToHclTerraform(struct!.update),
+      value: cdktn.stringToHclTerraform(struct!.update),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -497,19 +497,19 @@ export function cloudAssetProjectFeedTimeoutsToHclTerraform(struct?: CloudAssetP
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class CloudAssetProjectFeedTimeoutsOutputReference extends cdktf.ComplexObject {
+export class CloudAssetProjectFeedTimeoutsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): CloudAssetProjectFeedTimeouts | cdktf.IResolvable | undefined {
+  public get internalValue(): CloudAssetProjectFeedTimeouts | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -530,7 +530,7 @@ export class CloudAssetProjectFeedTimeoutsOutputReference extends cdktf.ComplexO
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: CloudAssetProjectFeedTimeouts | cdktf.IResolvable | undefined) {
+  public set internalValue(value: CloudAssetProjectFeedTimeouts | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -538,7 +538,7 @@ export class CloudAssetProjectFeedTimeoutsOutputReference extends cdktf.ComplexO
       this._delete = undefined;
       this._update = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -603,7 +603,7 @@ export class CloudAssetProjectFeedTimeoutsOutputReference extends cdktf.ComplexO
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/cloud_asset_project_feed google_cloud_asset_project_feed}
 */
-export class CloudAssetProjectFeed extends cdktf.TerraformResource {
+export class CloudAssetProjectFeed extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -614,14 +614,14 @@ export class CloudAssetProjectFeed extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a CloudAssetProjectFeed resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a CloudAssetProjectFeed resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the CloudAssetProjectFeed to import
   * @param importFromId The id of the existing CloudAssetProjectFeed that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/cloud_asset_project_feed#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the CloudAssetProjectFeed to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "google_cloud_asset_project_feed", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "google_cloud_asset_project_feed", importId: importFromId, provider });
       }
 
   // ===========
@@ -832,13 +832,13 @@ export class CloudAssetProjectFeed extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      asset_names: cdktf.listMapper(cdktf.stringToTerraform, false)(this._assetNames),
-      asset_types: cdktf.listMapper(cdktf.stringToTerraform, false)(this._assetTypes),
-      billing_project: cdktf.stringToTerraform(this._billingProject),
-      content_type: cdktf.stringToTerraform(this._contentType),
-      feed_id: cdktf.stringToTerraform(this._feedId),
-      id: cdktf.stringToTerraform(this._id),
-      project: cdktf.stringToTerraform(this._project),
+      asset_names: cdktn.listMapper(cdktn.stringToTerraform, false)(this._assetNames),
+      asset_types: cdktn.listMapper(cdktn.stringToTerraform, false)(this._assetTypes),
+      billing_project: cdktn.stringToTerraform(this._billingProject),
+      content_type: cdktn.stringToTerraform(this._contentType),
+      feed_id: cdktn.stringToTerraform(this._feedId),
+      id: cdktn.stringToTerraform(this._id),
+      project: cdktn.stringToTerraform(this._project),
       condition: cloudAssetProjectFeedConditionToTerraform(this._condition.internalValue),
       feed_output_config: cloudAssetProjectFeedFeedOutputConfigToTerraform(this._feedOutputConfig.internalValue),
       timeouts: cloudAssetProjectFeedTimeoutsToTerraform(this._timeouts.internalValue),
@@ -848,43 +848,43 @@ export class CloudAssetProjectFeed extends cdktf.TerraformResource {
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       asset_names: {
-        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._assetNames),
+        value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(this._assetNames),
         isBlock: false,
         type: "list",
         storageClassType: "stringList",
       },
       asset_types: {
-        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._assetTypes),
+        value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(this._assetTypes),
         isBlock: false,
         type: "list",
         storageClassType: "stringList",
       },
       billing_project: {
-        value: cdktf.stringToHclTerraform(this._billingProject),
+        value: cdktn.stringToHclTerraform(this._billingProject),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       content_type: {
-        value: cdktf.stringToHclTerraform(this._contentType),
+        value: cdktn.stringToHclTerraform(this._contentType),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       feed_id: {
-        value: cdktf.stringToHclTerraform(this._feedId),
+        value: cdktn.stringToHclTerraform(this._feedId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       project: {
-        value: cdktf.stringToHclTerraform(this._project),
+        value: cdktn.stringToHclTerraform(this._project),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

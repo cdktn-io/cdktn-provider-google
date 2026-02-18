@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface IamWorkforcePoolProviderKeyConfig extends cdktf.TerraformMetaArguments {
+export interface IamWorkforcePoolProviderKeyConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/iam_workforce_pool_provider_key#id IamWorkforcePoolProviderKey#id}
   *
@@ -72,24 +72,24 @@ export interface IamWorkforcePoolProviderKeyKeyData {
 }
 
 export function iamWorkforcePoolProviderKeyKeyDataToTerraform(struct?: IamWorkforcePoolProviderKeyKeyDataOutputReference | IamWorkforcePoolProviderKeyKeyData): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    key_spec: cdktf.stringToTerraform(struct!.keySpec),
+    key_spec: cdktn.stringToTerraform(struct!.keySpec),
   }
 }
 
 
 export function iamWorkforcePoolProviderKeyKeyDataToHclTerraform(struct?: IamWorkforcePoolProviderKeyKeyDataOutputReference | IamWorkforcePoolProviderKeyKeyData): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     key_spec: {
-      value: cdktf.stringToHclTerraform(struct!.keySpec),
+      value: cdktn.stringToHclTerraform(struct!.keySpec),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -100,14 +100,14 @@ export function iamWorkforcePoolProviderKeyKeyDataToHclTerraform(struct?: IamWor
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class IamWorkforcePoolProviderKeyKeyDataOutputReference extends cdktf.ComplexObject {
+export class IamWorkforcePoolProviderKeyKeyDataOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -176,32 +176,32 @@ export interface IamWorkforcePoolProviderKeyTimeouts {
   readonly delete?: string;
 }
 
-export function iamWorkforcePoolProviderKeyTimeoutsToTerraform(struct?: IamWorkforcePoolProviderKeyTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function iamWorkforcePoolProviderKeyTimeoutsToTerraform(struct?: IamWorkforcePoolProviderKeyTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    create: cdktf.stringToTerraform(struct!.create),
-    delete: cdktf.stringToTerraform(struct!.delete),
+    create: cdktn.stringToTerraform(struct!.create),
+    delete: cdktn.stringToTerraform(struct!.delete),
   }
 }
 
 
-export function iamWorkforcePoolProviderKeyTimeoutsToHclTerraform(struct?: IamWorkforcePoolProviderKeyTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function iamWorkforcePoolProviderKeyTimeoutsToHclTerraform(struct?: IamWorkforcePoolProviderKeyTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     create: {
-      value: cdktf.stringToHclTerraform(struct!.create),
+      value: cdktn.stringToHclTerraform(struct!.create),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     delete: {
-      value: cdktf.stringToHclTerraform(struct!.delete),
+      value: cdktn.stringToHclTerraform(struct!.delete),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -212,19 +212,19 @@ export function iamWorkforcePoolProviderKeyTimeoutsToHclTerraform(struct?: IamWo
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class IamWorkforcePoolProviderKeyTimeoutsOutputReference extends cdktf.ComplexObject {
+export class IamWorkforcePoolProviderKeyTimeoutsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): IamWorkforcePoolProviderKeyTimeouts | cdktf.IResolvable | undefined {
+  public get internalValue(): IamWorkforcePoolProviderKeyTimeouts | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -241,14 +241,14 @@ export class IamWorkforcePoolProviderKeyTimeoutsOutputReference extends cdktf.Co
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: IamWorkforcePoolProviderKeyTimeouts | cdktf.IResolvable | undefined) {
+  public set internalValue(value: IamWorkforcePoolProviderKeyTimeouts | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._create = undefined;
       this._delete = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -296,7 +296,7 @@ export class IamWorkforcePoolProviderKeyTimeoutsOutputReference extends cdktf.Co
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/iam_workforce_pool_provider_key google_iam_workforce_pool_provider_key}
 */
-export class IamWorkforcePoolProviderKey extends cdktf.TerraformResource {
+export class IamWorkforcePoolProviderKey extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -307,14 +307,14 @@ export class IamWorkforcePoolProviderKey extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a IamWorkforcePoolProviderKey resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a IamWorkforcePoolProviderKey resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the IamWorkforcePoolProviderKey to import
   * @param importFromId The id of the existing IamWorkforcePoolProviderKey that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/iam_workforce_pool_provider_key#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the IamWorkforcePoolProviderKey to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "google_iam_workforce_pool_provider_key", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "google_iam_workforce_pool_provider_key", importId: importFromId, provider });
       }
 
   // ===========
@@ -489,12 +489,12 @@ export class IamWorkforcePoolProviderKey extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      id: cdktf.stringToTerraform(this._id),
-      key_id: cdktf.stringToTerraform(this._keyId),
-      location: cdktf.stringToTerraform(this._location),
-      provider_id: cdktf.stringToTerraform(this._providerId),
-      use: cdktf.stringToTerraform(this._use),
-      workforce_pool_id: cdktf.stringToTerraform(this._workforcePoolId),
+      id: cdktn.stringToTerraform(this._id),
+      key_id: cdktn.stringToTerraform(this._keyId),
+      location: cdktn.stringToTerraform(this._location),
+      provider_id: cdktn.stringToTerraform(this._providerId),
+      use: cdktn.stringToTerraform(this._use),
+      workforce_pool_id: cdktn.stringToTerraform(this._workforcePoolId),
       key_data: iamWorkforcePoolProviderKeyKeyDataToTerraform(this._keyData.internalValue),
       timeouts: iamWorkforcePoolProviderKeyTimeoutsToTerraform(this._timeouts.internalValue),
     };
@@ -503,37 +503,37 @@ export class IamWorkforcePoolProviderKey extends cdktf.TerraformResource {
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       key_id: {
-        value: cdktf.stringToHclTerraform(this._keyId),
+        value: cdktn.stringToHclTerraform(this._keyId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       location: {
-        value: cdktf.stringToHclTerraform(this._location),
+        value: cdktn.stringToHclTerraform(this._location),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       provider_id: {
-        value: cdktf.stringToHclTerraform(this._providerId),
+        value: cdktn.stringToHclTerraform(this._providerId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       use: {
-        value: cdktf.stringToHclTerraform(this._use),
+        value: cdktn.stringToHclTerraform(this._use),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       workforce_pool_id: {
-        value: cdktf.stringToHclTerraform(this._workforcePoolId),
+        value: cdktn.stringToHclTerraform(this._workforcePoolId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

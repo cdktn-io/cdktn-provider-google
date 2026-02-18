@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface NotebooksRuntimeIamMemberConfig extends cdktf.TerraformMetaArguments {
+export interface NotebooksRuntimeIamMemberConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/notebooks_runtime_iam_member#id NotebooksRuntimeIamMember#id}
   *
@@ -62,38 +62,38 @@ export interface NotebooksRuntimeIamMemberCondition {
 }
 
 export function notebooksRuntimeIamMemberConditionToTerraform(struct?: NotebooksRuntimeIamMemberConditionOutputReference | NotebooksRuntimeIamMemberCondition): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    description: cdktf.stringToTerraform(struct!.description),
-    expression: cdktf.stringToTerraform(struct!.expression),
-    title: cdktf.stringToTerraform(struct!.title),
+    description: cdktn.stringToTerraform(struct!.description),
+    expression: cdktn.stringToTerraform(struct!.expression),
+    title: cdktn.stringToTerraform(struct!.title),
   }
 }
 
 
 export function notebooksRuntimeIamMemberConditionToHclTerraform(struct?: NotebooksRuntimeIamMemberConditionOutputReference | NotebooksRuntimeIamMemberCondition): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     description: {
-      value: cdktf.stringToHclTerraform(struct!.description),
+      value: cdktn.stringToHclTerraform(struct!.description),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     expression: {
-      value: cdktf.stringToHclTerraform(struct!.expression),
+      value: cdktn.stringToHclTerraform(struct!.expression),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     title: {
-      value: cdktf.stringToHclTerraform(struct!.title),
+      value: cdktn.stringToHclTerraform(struct!.title),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -104,14 +104,14 @@ export function notebooksRuntimeIamMemberConditionToHclTerraform(struct?: Notebo
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class NotebooksRuntimeIamMemberConditionOutputReference extends cdktf.ComplexObject {
+export class NotebooksRuntimeIamMemberConditionOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -194,7 +194,7 @@ export class NotebooksRuntimeIamMemberConditionOutputReference extends cdktf.Com
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/notebooks_runtime_iam_member google_notebooks_runtime_iam_member}
 */
-export class NotebooksRuntimeIamMember extends cdktf.TerraformResource {
+export class NotebooksRuntimeIamMember extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -205,14 +205,14 @@ export class NotebooksRuntimeIamMember extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a NotebooksRuntimeIamMember resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a NotebooksRuntimeIamMember resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the NotebooksRuntimeIamMember to import
   * @param importFromId The id of the existing NotebooksRuntimeIamMember that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/notebooks_runtime_iam_member#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the NotebooksRuntimeIamMember to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "google_notebooks_runtime_iam_member", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "google_notebooks_runtime_iam_member", importId: importFromId, provider });
       }
 
   // ===========
@@ -369,12 +369,12 @@ export class NotebooksRuntimeIamMember extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      id: cdktf.stringToTerraform(this._id),
-      location: cdktf.stringToTerraform(this._location),
-      member: cdktf.stringToTerraform(this._member),
-      project: cdktf.stringToTerraform(this._project),
-      role: cdktf.stringToTerraform(this._role),
-      runtime_name: cdktf.stringToTerraform(this._runtimeName),
+      id: cdktn.stringToTerraform(this._id),
+      location: cdktn.stringToTerraform(this._location),
+      member: cdktn.stringToTerraform(this._member),
+      project: cdktn.stringToTerraform(this._project),
+      role: cdktn.stringToTerraform(this._role),
+      runtime_name: cdktn.stringToTerraform(this._runtimeName),
       condition: notebooksRuntimeIamMemberConditionToTerraform(this._condition.internalValue),
     };
   }
@@ -382,37 +382,37 @@ export class NotebooksRuntimeIamMember extends cdktf.TerraformResource {
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       location: {
-        value: cdktf.stringToHclTerraform(this._location),
+        value: cdktn.stringToHclTerraform(this._location),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       member: {
-        value: cdktf.stringToHclTerraform(this._member),
+        value: cdktn.stringToHclTerraform(this._member),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       project: {
-        value: cdktf.stringToHclTerraform(this._project),
+        value: cdktn.stringToHclTerraform(this._project),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       role: {
-        value: cdktf.stringToHclTerraform(this._role),
+        value: cdktn.stringToHclTerraform(this._role),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       runtime_name: {
-        value: cdktf.stringToHclTerraform(this._runtimeName),
+        value: cdktn.stringToHclTerraform(this._runtimeName),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

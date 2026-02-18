@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface SccV2FolderSccBigQueryExportConfig extends cdktf.TerraformMetaArguments {
+export interface SccV2FolderSccBigQueryExportConfig extends cdktn.TerraformMetaArguments {
   /**
   * This must be unique within the organization.  It must consist of only lowercase letters,
   * numbers, and hyphens, must start with a letter, must end with either a letter or a number,
@@ -106,39 +106,39 @@ export interface SccV2FolderSccBigQueryExportTimeouts {
   readonly update?: string;
 }
 
-export function sccV2FolderSccBigQueryExportTimeoutsToTerraform(struct?: SccV2FolderSccBigQueryExportTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function sccV2FolderSccBigQueryExportTimeoutsToTerraform(struct?: SccV2FolderSccBigQueryExportTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    create: cdktf.stringToTerraform(struct!.create),
-    delete: cdktf.stringToTerraform(struct!.delete),
-    update: cdktf.stringToTerraform(struct!.update),
+    create: cdktn.stringToTerraform(struct!.create),
+    delete: cdktn.stringToTerraform(struct!.delete),
+    update: cdktn.stringToTerraform(struct!.update),
   }
 }
 
 
-export function sccV2FolderSccBigQueryExportTimeoutsToHclTerraform(struct?: SccV2FolderSccBigQueryExportTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function sccV2FolderSccBigQueryExportTimeoutsToHclTerraform(struct?: SccV2FolderSccBigQueryExportTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     create: {
-      value: cdktf.stringToHclTerraform(struct!.create),
+      value: cdktn.stringToHclTerraform(struct!.create),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     delete: {
-      value: cdktf.stringToHclTerraform(struct!.delete),
+      value: cdktn.stringToHclTerraform(struct!.delete),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     update: {
-      value: cdktf.stringToHclTerraform(struct!.update),
+      value: cdktn.stringToHclTerraform(struct!.update),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -149,19 +149,19 @@ export function sccV2FolderSccBigQueryExportTimeoutsToHclTerraform(struct?: SccV
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class SccV2FolderSccBigQueryExportTimeoutsOutputReference extends cdktf.ComplexObject {
+export class SccV2FolderSccBigQueryExportTimeoutsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): SccV2FolderSccBigQueryExportTimeouts | cdktf.IResolvable | undefined {
+  public get internalValue(): SccV2FolderSccBigQueryExportTimeouts | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -182,7 +182,7 @@ export class SccV2FolderSccBigQueryExportTimeoutsOutputReference extends cdktf.C
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: SccV2FolderSccBigQueryExportTimeouts | cdktf.IResolvable | undefined) {
+  public set internalValue(value: SccV2FolderSccBigQueryExportTimeouts | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -190,7 +190,7 @@ export class SccV2FolderSccBigQueryExportTimeoutsOutputReference extends cdktf.C
       this._delete = undefined;
       this._update = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -255,7 +255,7 @@ export class SccV2FolderSccBigQueryExportTimeoutsOutputReference extends cdktf.C
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/scc_v2_folder_scc_big_query_export google_scc_v2_folder_scc_big_query_export}
 */
-export class SccV2FolderSccBigQueryExport extends cdktf.TerraformResource {
+export class SccV2FolderSccBigQueryExport extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -266,14 +266,14 @@ export class SccV2FolderSccBigQueryExport extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a SccV2FolderSccBigQueryExport resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a SccV2FolderSccBigQueryExport resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the SccV2FolderSccBigQueryExport to import
   * @param importFromId The id of the existing SccV2FolderSccBigQueryExport that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/scc_v2_folder_scc_big_query_export#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the SccV2FolderSccBigQueryExport to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "google_scc_v2_folder_scc_big_query_export", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "google_scc_v2_folder_scc_big_query_export", importId: importFromId, provider });
       }
 
   // ===========
@@ -470,13 +470,13 @@ export class SccV2FolderSccBigQueryExport extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      big_query_export_id: cdktf.stringToTerraform(this._bigQueryExportId),
-      dataset: cdktf.stringToTerraform(this._dataset),
-      description: cdktf.stringToTerraform(this._description),
-      filter: cdktf.stringToTerraform(this._filter),
-      folder: cdktf.stringToTerraform(this._folder),
-      id: cdktf.stringToTerraform(this._id),
-      location: cdktf.stringToTerraform(this._location),
+      big_query_export_id: cdktn.stringToTerraform(this._bigQueryExportId),
+      dataset: cdktn.stringToTerraform(this._dataset),
+      description: cdktn.stringToTerraform(this._description),
+      filter: cdktn.stringToTerraform(this._filter),
+      folder: cdktn.stringToTerraform(this._folder),
+      id: cdktn.stringToTerraform(this._id),
+      location: cdktn.stringToTerraform(this._location),
       timeouts: sccV2FolderSccBigQueryExportTimeoutsToTerraform(this._timeouts.internalValue),
     };
   }
@@ -484,43 +484,43 @@ export class SccV2FolderSccBigQueryExport extends cdktf.TerraformResource {
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       big_query_export_id: {
-        value: cdktf.stringToHclTerraform(this._bigQueryExportId),
+        value: cdktn.stringToHclTerraform(this._bigQueryExportId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       dataset: {
-        value: cdktf.stringToHclTerraform(this._dataset),
+        value: cdktn.stringToHclTerraform(this._dataset),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       description: {
-        value: cdktf.stringToHclTerraform(this._description),
+        value: cdktn.stringToHclTerraform(this._description),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       filter: {
-        value: cdktf.stringToHclTerraform(this._filter),
+        value: cdktn.stringToHclTerraform(this._filter),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       folder: {
-        value: cdktf.stringToHclTerraform(this._folder),
+        value: cdktn.stringToHclTerraform(this._folder),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       location: {
-        value: cdktf.stringToHclTerraform(this._location),
+        value: cdktn.stringToHclTerraform(this._location),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

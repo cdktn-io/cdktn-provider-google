@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface DataGoogleArtifactRegistryRepositoryIamPolicyConfig extends cdktf.TerraformMetaArguments {
+export interface DataGoogleArtifactRegistryRepositoryIamPolicyConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/data-sources/artifact_registry_repository_iam_policy#id DataGoogleArtifactRegistryRepositoryIamPolicy#id}
   *
@@ -36,7 +36,7 @@ export interface DataGoogleArtifactRegistryRepositoryIamPolicyConfig extends cdk
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/data-sources/artifact_registry_repository_iam_policy google_artifact_registry_repository_iam_policy}
 */
-export class DataGoogleArtifactRegistryRepositoryIamPolicy extends cdktf.TerraformDataSource {
+export class DataGoogleArtifactRegistryRepositoryIamPolicy extends cdktn.TerraformDataSource {
 
   // =================
   // STATIC PROPERTIES
@@ -47,14 +47,14 @@ export class DataGoogleArtifactRegistryRepositoryIamPolicy extends cdktf.Terrafo
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a DataGoogleArtifactRegistryRepositoryIamPolicy resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a DataGoogleArtifactRegistryRepositoryIamPolicy resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataGoogleArtifactRegistryRepositoryIamPolicy to import
   * @param importFromId The id of the existing DataGoogleArtifactRegistryRepositoryIamPolicy that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/data-sources/artifact_registry_repository_iam_policy#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataGoogleArtifactRegistryRepositoryIamPolicy to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "google_artifact_registry_repository_iam_policy", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "google_artifact_registry_repository_iam_policy", importId: importFromId, provider });
       }
 
   // ===========
@@ -171,35 +171,35 @@ export class DataGoogleArtifactRegistryRepositoryIamPolicy extends cdktf.Terrafo
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      id: cdktf.stringToTerraform(this._id),
-      location: cdktf.stringToTerraform(this._location),
-      project: cdktf.stringToTerraform(this._project),
-      repository: cdktf.stringToTerraform(this._repository),
+      id: cdktn.stringToTerraform(this._id),
+      location: cdktn.stringToTerraform(this._location),
+      project: cdktn.stringToTerraform(this._project),
+      repository: cdktn.stringToTerraform(this._repository),
     };
   }
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       location: {
-        value: cdktf.stringToHclTerraform(this._location),
+        value: cdktn.stringToHclTerraform(this._location),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       project: {
-        value: cdktf.stringToHclTerraform(this._project),
+        value: cdktn.stringToHclTerraform(this._project),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       repository: {
-        value: cdktf.stringToHclTerraform(this._repository),
+        value: cdktn.stringToHclTerraform(this._repository),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

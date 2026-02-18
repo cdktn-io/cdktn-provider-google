@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface ServiceNetworkingConnectionConfig extends cdktf.TerraformMetaArguments {
+export interface ServiceNetworkingConnectionConfig extends cdktn.TerraformMetaArguments {
   /**
   * When set to ABANDON, terraform will abandon management of the resource instead of deleting it. Prevents terraform apply failures with CloudSQL. Note: The resource will still exist.
   *
@@ -48,7 +48,7 @@ export interface ServiceNetworkingConnectionConfig extends cdktf.TerraformMetaAr
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/service_networking_connection#update_on_creation_fail ServiceNetworkingConnection#update_on_creation_fail}
   */
-  readonly updateOnCreationFail?: boolean | cdktf.IResolvable;
+  readonly updateOnCreationFail?: boolean | cdktn.IResolvable;
   /**
   * timeouts block
   *
@@ -71,39 +71,39 @@ export interface ServiceNetworkingConnectionTimeouts {
   readonly update?: string;
 }
 
-export function serviceNetworkingConnectionTimeoutsToTerraform(struct?: ServiceNetworkingConnectionTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function serviceNetworkingConnectionTimeoutsToTerraform(struct?: ServiceNetworkingConnectionTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    create: cdktf.stringToTerraform(struct!.create),
-    delete: cdktf.stringToTerraform(struct!.delete),
-    update: cdktf.stringToTerraform(struct!.update),
+    create: cdktn.stringToTerraform(struct!.create),
+    delete: cdktn.stringToTerraform(struct!.delete),
+    update: cdktn.stringToTerraform(struct!.update),
   }
 }
 
 
-export function serviceNetworkingConnectionTimeoutsToHclTerraform(struct?: ServiceNetworkingConnectionTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function serviceNetworkingConnectionTimeoutsToHclTerraform(struct?: ServiceNetworkingConnectionTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     create: {
-      value: cdktf.stringToHclTerraform(struct!.create),
+      value: cdktn.stringToHclTerraform(struct!.create),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     delete: {
-      value: cdktf.stringToHclTerraform(struct!.delete),
+      value: cdktn.stringToHclTerraform(struct!.delete),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     update: {
-      value: cdktf.stringToHclTerraform(struct!.update),
+      value: cdktn.stringToHclTerraform(struct!.update),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -114,19 +114,19 @@ export function serviceNetworkingConnectionTimeoutsToHclTerraform(struct?: Servi
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class ServiceNetworkingConnectionTimeoutsOutputReference extends cdktf.ComplexObject {
+export class ServiceNetworkingConnectionTimeoutsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): ServiceNetworkingConnectionTimeouts | cdktf.IResolvable | undefined {
+  public get internalValue(): ServiceNetworkingConnectionTimeouts | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -147,7 +147,7 @@ export class ServiceNetworkingConnectionTimeoutsOutputReference extends cdktf.Co
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: ServiceNetworkingConnectionTimeouts | cdktf.IResolvable | undefined) {
+  public set internalValue(value: ServiceNetworkingConnectionTimeouts | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -155,7 +155,7 @@ export class ServiceNetworkingConnectionTimeoutsOutputReference extends cdktf.Co
       this._delete = undefined;
       this._update = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -220,7 +220,7 @@ export class ServiceNetworkingConnectionTimeoutsOutputReference extends cdktf.Co
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/service_networking_connection google_service_networking_connection}
 */
-export class ServiceNetworkingConnection extends cdktf.TerraformResource {
+export class ServiceNetworkingConnection extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -231,14 +231,14 @@ export class ServiceNetworkingConnection extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a ServiceNetworkingConnection resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a ServiceNetworkingConnection resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the ServiceNetworkingConnection to import
   * @param importFromId The id of the existing ServiceNetworkingConnection that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/service_networking_connection#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the ServiceNetworkingConnection to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "google_service_networking_connection", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "google_service_networking_connection", importId: importFromId, provider });
       }
 
   // ===========
@@ -358,11 +358,11 @@ export class ServiceNetworkingConnection extends cdktf.TerraformResource {
   }
 
   // update_on_creation_fail - computed: false, optional: true, required: false
-  private _updateOnCreationFail?: boolean | cdktf.IResolvable; 
+  private _updateOnCreationFail?: boolean | cdktn.IResolvable; 
   public get updateOnCreationFail() {
     return this.getBooleanAttribute('update_on_creation_fail');
   }
-  public set updateOnCreationFail(value: boolean | cdktf.IResolvable) {
+  public set updateOnCreationFail(value: boolean | cdktn.IResolvable) {
     this._updateOnCreationFail = value;
   }
   public resetUpdateOnCreationFail() {
@@ -395,12 +395,12 @@ export class ServiceNetworkingConnection extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      deletion_policy: cdktf.stringToTerraform(this._deletionPolicy),
-      id: cdktf.stringToTerraform(this._id),
-      network: cdktf.stringToTerraform(this._network),
-      reserved_peering_ranges: cdktf.listMapper(cdktf.stringToTerraform, false)(this._reservedPeeringRanges),
-      service: cdktf.stringToTerraform(this._service),
-      update_on_creation_fail: cdktf.booleanToTerraform(this._updateOnCreationFail),
+      deletion_policy: cdktn.stringToTerraform(this._deletionPolicy),
+      id: cdktn.stringToTerraform(this._id),
+      network: cdktn.stringToTerraform(this._network),
+      reserved_peering_ranges: cdktn.listMapper(cdktn.stringToTerraform, false)(this._reservedPeeringRanges),
+      service: cdktn.stringToTerraform(this._service),
+      update_on_creation_fail: cdktn.booleanToTerraform(this._updateOnCreationFail),
       timeouts: serviceNetworkingConnectionTimeoutsToTerraform(this._timeouts.internalValue),
     };
   }
@@ -408,37 +408,37 @@ export class ServiceNetworkingConnection extends cdktf.TerraformResource {
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       deletion_policy: {
-        value: cdktf.stringToHclTerraform(this._deletionPolicy),
+        value: cdktn.stringToHclTerraform(this._deletionPolicy),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       network: {
-        value: cdktf.stringToHclTerraform(this._network),
+        value: cdktn.stringToHclTerraform(this._network),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       reserved_peering_ranges: {
-        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._reservedPeeringRanges),
+        value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(this._reservedPeeringRanges),
         isBlock: false,
         type: "list",
         storageClassType: "stringList",
       },
       service: {
-        value: cdktf.stringToHclTerraform(this._service),
+        value: cdktn.stringToHclTerraform(this._service),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       update_on_creation_fail: {
-        value: cdktf.booleanToHclTerraform(this._updateOnCreationFail),
+        value: cdktn.booleanToHclTerraform(this._updateOnCreationFail),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",

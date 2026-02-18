@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface NetworkSecurityInterceptEndpointGroupConfig extends cdktf.TerraformMetaArguments {
+export interface NetworkSecurityInterceptEndpointGroupConfig extends cdktn.TerraformMetaArguments {
   /**
   * User-provided description of the endpoint group.
   * Used as additional context for the endpoint group.
@@ -71,8 +71,8 @@ export interface NetworkSecurityInterceptEndpointGroupAssociations {
 }
 
 export function networkSecurityInterceptEndpointGroupAssociationsToTerraform(struct?: NetworkSecurityInterceptEndpointGroupAssociations): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -81,8 +81,8 @@ export function networkSecurityInterceptEndpointGroupAssociationsToTerraform(str
 
 
 export function networkSecurityInterceptEndpointGroupAssociationsToHclTerraform(struct?: NetworkSecurityInterceptEndpointGroupAssociations): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -90,7 +90,7 @@ export function networkSecurityInterceptEndpointGroupAssociationsToHclTerraform(
   return attrs;
 }
 
-export class NetworkSecurityInterceptEndpointGroupAssociationsOutputReference extends cdktf.ComplexObject {
+export class NetworkSecurityInterceptEndpointGroupAssociationsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -99,7 +99,7 @@ export class NetworkSecurityInterceptEndpointGroupAssociationsOutputReference ex
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -134,14 +134,14 @@ export class NetworkSecurityInterceptEndpointGroupAssociationsOutputReference ex
   }
 }
 
-export class NetworkSecurityInterceptEndpointGroupAssociationsList extends cdktf.ComplexList {
+export class NetworkSecurityInterceptEndpointGroupAssociationsList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -156,8 +156,8 @@ export interface NetworkSecurityInterceptEndpointGroupConnectedDeploymentGroupLo
 }
 
 export function networkSecurityInterceptEndpointGroupConnectedDeploymentGroupLocationsToTerraform(struct?: NetworkSecurityInterceptEndpointGroupConnectedDeploymentGroupLocations): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -166,8 +166,8 @@ export function networkSecurityInterceptEndpointGroupConnectedDeploymentGroupLoc
 
 
 export function networkSecurityInterceptEndpointGroupConnectedDeploymentGroupLocationsToHclTerraform(struct?: NetworkSecurityInterceptEndpointGroupConnectedDeploymentGroupLocations): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -175,7 +175,7 @@ export function networkSecurityInterceptEndpointGroupConnectedDeploymentGroupLoc
   return attrs;
 }
 
-export class NetworkSecurityInterceptEndpointGroupConnectedDeploymentGroupLocationsOutputReference extends cdktf.ComplexObject {
+export class NetworkSecurityInterceptEndpointGroupConnectedDeploymentGroupLocationsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -184,7 +184,7 @@ export class NetworkSecurityInterceptEndpointGroupConnectedDeploymentGroupLocati
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -214,14 +214,14 @@ export class NetworkSecurityInterceptEndpointGroupConnectedDeploymentGroupLocati
   }
 }
 
-export class NetworkSecurityInterceptEndpointGroupConnectedDeploymentGroupLocationsList extends cdktf.ComplexList {
+export class NetworkSecurityInterceptEndpointGroupConnectedDeploymentGroupLocationsList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -236,8 +236,8 @@ export interface NetworkSecurityInterceptEndpointGroupConnectedDeploymentGroup {
 }
 
 export function networkSecurityInterceptEndpointGroupConnectedDeploymentGroupToTerraform(struct?: NetworkSecurityInterceptEndpointGroupConnectedDeploymentGroup): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -246,8 +246,8 @@ export function networkSecurityInterceptEndpointGroupConnectedDeploymentGroupToT
 
 
 export function networkSecurityInterceptEndpointGroupConnectedDeploymentGroupToHclTerraform(struct?: NetworkSecurityInterceptEndpointGroupConnectedDeploymentGroup): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -255,7 +255,7 @@ export function networkSecurityInterceptEndpointGroupConnectedDeploymentGroupToH
   return attrs;
 }
 
-export class NetworkSecurityInterceptEndpointGroupConnectedDeploymentGroupOutputReference extends cdktf.ComplexObject {
+export class NetworkSecurityInterceptEndpointGroupConnectedDeploymentGroupOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -264,7 +264,7 @@ export class NetworkSecurityInterceptEndpointGroupConnectedDeploymentGroupOutput
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -295,14 +295,14 @@ export class NetworkSecurityInterceptEndpointGroupConnectedDeploymentGroupOutput
   }
 }
 
-export class NetworkSecurityInterceptEndpointGroupConnectedDeploymentGroupList extends cdktf.ComplexList {
+export class NetworkSecurityInterceptEndpointGroupConnectedDeploymentGroupList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -328,39 +328,39 @@ export interface NetworkSecurityInterceptEndpointGroupTimeouts {
   readonly update?: string;
 }
 
-export function networkSecurityInterceptEndpointGroupTimeoutsToTerraform(struct?: NetworkSecurityInterceptEndpointGroupTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function networkSecurityInterceptEndpointGroupTimeoutsToTerraform(struct?: NetworkSecurityInterceptEndpointGroupTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    create: cdktf.stringToTerraform(struct!.create),
-    delete: cdktf.stringToTerraform(struct!.delete),
-    update: cdktf.stringToTerraform(struct!.update),
+    create: cdktn.stringToTerraform(struct!.create),
+    delete: cdktn.stringToTerraform(struct!.delete),
+    update: cdktn.stringToTerraform(struct!.update),
   }
 }
 
 
-export function networkSecurityInterceptEndpointGroupTimeoutsToHclTerraform(struct?: NetworkSecurityInterceptEndpointGroupTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function networkSecurityInterceptEndpointGroupTimeoutsToHclTerraform(struct?: NetworkSecurityInterceptEndpointGroupTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     create: {
-      value: cdktf.stringToHclTerraform(struct!.create),
+      value: cdktn.stringToHclTerraform(struct!.create),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     delete: {
-      value: cdktf.stringToHclTerraform(struct!.delete),
+      value: cdktn.stringToHclTerraform(struct!.delete),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     update: {
-      value: cdktf.stringToHclTerraform(struct!.update),
+      value: cdktn.stringToHclTerraform(struct!.update),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -371,19 +371,19 @@ export function networkSecurityInterceptEndpointGroupTimeoutsToHclTerraform(stru
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class NetworkSecurityInterceptEndpointGroupTimeoutsOutputReference extends cdktf.ComplexObject {
+export class NetworkSecurityInterceptEndpointGroupTimeoutsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): NetworkSecurityInterceptEndpointGroupTimeouts | cdktf.IResolvable | undefined {
+  public get internalValue(): NetworkSecurityInterceptEndpointGroupTimeouts | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -404,7 +404,7 @@ export class NetworkSecurityInterceptEndpointGroupTimeoutsOutputReference extend
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: NetworkSecurityInterceptEndpointGroupTimeouts | cdktf.IResolvable | undefined) {
+  public set internalValue(value: NetworkSecurityInterceptEndpointGroupTimeouts | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -412,7 +412,7 @@ export class NetworkSecurityInterceptEndpointGroupTimeoutsOutputReference extend
       this._delete = undefined;
       this._update = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -477,7 +477,7 @@ export class NetworkSecurityInterceptEndpointGroupTimeoutsOutputReference extend
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/network_security_intercept_endpoint_group google_network_security_intercept_endpoint_group}
 */
-export class NetworkSecurityInterceptEndpointGroup extends cdktf.TerraformResource {
+export class NetworkSecurityInterceptEndpointGroup extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -488,14 +488,14 @@ export class NetworkSecurityInterceptEndpointGroup extends cdktf.TerraformResour
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a NetworkSecurityInterceptEndpointGroup resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a NetworkSecurityInterceptEndpointGroup resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the NetworkSecurityInterceptEndpointGroup to import
   * @param importFromId The id of the existing NetworkSecurityInterceptEndpointGroup that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/network_security_intercept_endpoint_group#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the NetworkSecurityInterceptEndpointGroup to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "google_network_security_intercept_endpoint_group", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "google_network_security_intercept_endpoint_group", importId: importFromId, provider });
       }
 
   // ===========
@@ -573,7 +573,7 @@ export class NetworkSecurityInterceptEndpointGroup extends cdktf.TerraformResour
   }
 
   // effective_labels - computed: true, optional: false, required: false
-  private _effectiveLabels = new cdktf.StringMap(this, "effective_labels");
+  private _effectiveLabels = new cdktn.StringMap(this, "effective_labels");
   public get effectiveLabels() {
     return this._effectiveLabels;
   }
@@ -681,7 +681,7 @@ export class NetworkSecurityInterceptEndpointGroup extends cdktf.TerraformResour
   }
 
   // terraform_labels - computed: true, optional: false, required: false
-  private _terraformLabels = new cdktf.StringMap(this, "terraform_labels");
+  private _terraformLabels = new cdktn.StringMap(this, "terraform_labels");
   public get terraformLabels() {
     return this._terraformLabels;
   }
@@ -713,13 +713,13 @@ export class NetworkSecurityInterceptEndpointGroup extends cdktf.TerraformResour
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      description: cdktf.stringToTerraform(this._description),
-      id: cdktf.stringToTerraform(this._id),
-      intercept_deployment_group: cdktf.stringToTerraform(this._interceptDeploymentGroup),
-      intercept_endpoint_group_id: cdktf.stringToTerraform(this._interceptEndpointGroupId),
-      labels: cdktf.hashMapper(cdktf.stringToTerraform)(this._labels),
-      location: cdktf.stringToTerraform(this._location),
-      project: cdktf.stringToTerraform(this._project),
+      description: cdktn.stringToTerraform(this._description),
+      id: cdktn.stringToTerraform(this._id),
+      intercept_deployment_group: cdktn.stringToTerraform(this._interceptDeploymentGroup),
+      intercept_endpoint_group_id: cdktn.stringToTerraform(this._interceptEndpointGroupId),
+      labels: cdktn.hashMapper(cdktn.stringToTerraform)(this._labels),
+      location: cdktn.stringToTerraform(this._location),
+      project: cdktn.stringToTerraform(this._project),
       timeouts: networkSecurityInterceptEndpointGroupTimeoutsToTerraform(this._timeouts.internalValue),
     };
   }
@@ -727,43 +727,43 @@ export class NetworkSecurityInterceptEndpointGroup extends cdktf.TerraformResour
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       description: {
-        value: cdktf.stringToHclTerraform(this._description),
+        value: cdktn.stringToHclTerraform(this._description),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       intercept_deployment_group: {
-        value: cdktf.stringToHclTerraform(this._interceptDeploymentGroup),
+        value: cdktn.stringToHclTerraform(this._interceptDeploymentGroup),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       intercept_endpoint_group_id: {
-        value: cdktf.stringToHclTerraform(this._interceptEndpointGroupId),
+        value: cdktn.stringToHclTerraform(this._interceptEndpointGroupId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       labels: {
-        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._labels),
+        value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(this._labels),
         isBlock: false,
         type: "map",
         storageClassType: "stringMap",
       },
       location: {
-        value: cdktf.stringToHclTerraform(this._location),
+        value: cdktn.stringToHclTerraform(this._location),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       project: {
-        value: cdktf.stringToHclTerraform(this._project),
+        value: cdktn.stringToHclTerraform(this._project),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

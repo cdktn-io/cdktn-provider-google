@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface ApigeeAppGroupConfig extends cdktf.TerraformMetaArguments {
+export interface ApigeeAppGroupConfig extends cdktn.TerraformMetaArguments {
   /**
   * Channel identifier identifies the owner maintaining this grouping.
   *
@@ -61,7 +61,7 @@ export interface ApigeeAppGroupConfig extends cdktf.TerraformMetaArguments {
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/apigee_app_group#attributes ApigeeAppGroup#attributes}
   */
-  readonly attributes?: ApigeeAppGroupAttributes[] | cdktf.IResolvable;
+  readonly attributes?: ApigeeAppGroupAttributes[] | cdktn.IResolvable;
   /**
   * timeouts block
   *
@@ -84,32 +84,32 @@ export interface ApigeeAppGroupAttributes {
   readonly value?: string;
 }
 
-export function apigeeAppGroupAttributesToTerraform(struct?: ApigeeAppGroupAttributes | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function apigeeAppGroupAttributesToTerraform(struct?: ApigeeAppGroupAttributes | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    name: cdktf.stringToTerraform(struct!.name),
-    value: cdktf.stringToTerraform(struct!.value),
+    name: cdktn.stringToTerraform(struct!.name),
+    value: cdktn.stringToTerraform(struct!.value),
   }
 }
 
 
-export function apigeeAppGroupAttributesToHclTerraform(struct?: ApigeeAppGroupAttributes | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function apigeeAppGroupAttributesToHclTerraform(struct?: ApigeeAppGroupAttributes | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     name: {
-      value: cdktf.stringToHclTerraform(struct!.name),
+      value: cdktn.stringToHclTerraform(struct!.name),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     value: {
-      value: cdktf.stringToHclTerraform(struct!.value),
+      value: cdktn.stringToHclTerraform(struct!.value),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -120,9 +120,9 @@ export function apigeeAppGroupAttributesToHclTerraform(struct?: ApigeeAppGroupAt
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class ApigeeAppGroupAttributesOutputReference extends cdktf.ComplexObject {
+export class ApigeeAppGroupAttributesOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -130,11 +130,11 @@ export class ApigeeAppGroupAttributesOutputReference extends cdktf.ComplexObject
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): ApigeeAppGroupAttributes | cdktf.IResolvable | undefined {
+  public get internalValue(): ApigeeAppGroupAttributes | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -151,14 +151,14 @@ export class ApigeeAppGroupAttributesOutputReference extends cdktf.ComplexObject
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: ApigeeAppGroupAttributes | cdktf.IResolvable | undefined) {
+  public set internalValue(value: ApigeeAppGroupAttributes | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._name = undefined;
       this._value = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -203,15 +203,15 @@ export class ApigeeAppGroupAttributesOutputReference extends cdktf.ComplexObject
   }
 }
 
-export class ApigeeAppGroupAttributesList extends cdktf.ComplexList {
-  public internalValue? : ApigeeAppGroupAttributes[] | cdktf.IResolvable
+export class ApigeeAppGroupAttributesList extends cdktn.ComplexList {
+  public internalValue? : ApigeeAppGroupAttributes[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -237,39 +237,39 @@ export interface ApigeeAppGroupTimeouts {
   readonly update?: string;
 }
 
-export function apigeeAppGroupTimeoutsToTerraform(struct?: ApigeeAppGroupTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function apigeeAppGroupTimeoutsToTerraform(struct?: ApigeeAppGroupTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    create: cdktf.stringToTerraform(struct!.create),
-    delete: cdktf.stringToTerraform(struct!.delete),
-    update: cdktf.stringToTerraform(struct!.update),
+    create: cdktn.stringToTerraform(struct!.create),
+    delete: cdktn.stringToTerraform(struct!.delete),
+    update: cdktn.stringToTerraform(struct!.update),
   }
 }
 
 
-export function apigeeAppGroupTimeoutsToHclTerraform(struct?: ApigeeAppGroupTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function apigeeAppGroupTimeoutsToHclTerraform(struct?: ApigeeAppGroupTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     create: {
-      value: cdktf.stringToHclTerraform(struct!.create),
+      value: cdktn.stringToHclTerraform(struct!.create),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     delete: {
-      value: cdktf.stringToHclTerraform(struct!.delete),
+      value: cdktn.stringToHclTerraform(struct!.delete),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     update: {
-      value: cdktf.stringToHclTerraform(struct!.update),
+      value: cdktn.stringToHclTerraform(struct!.update),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -280,19 +280,19 @@ export function apigeeAppGroupTimeoutsToHclTerraform(struct?: ApigeeAppGroupTime
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class ApigeeAppGroupTimeoutsOutputReference extends cdktf.ComplexObject {
+export class ApigeeAppGroupTimeoutsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): ApigeeAppGroupTimeouts | cdktf.IResolvable | undefined {
+  public get internalValue(): ApigeeAppGroupTimeouts | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -313,7 +313,7 @@ export class ApigeeAppGroupTimeoutsOutputReference extends cdktf.ComplexObject {
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: ApigeeAppGroupTimeouts | cdktf.IResolvable | undefined) {
+  public set internalValue(value: ApigeeAppGroupTimeouts | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -321,7 +321,7 @@ export class ApigeeAppGroupTimeoutsOutputReference extends cdktf.ComplexObject {
       this._delete = undefined;
       this._update = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -386,7 +386,7 @@ export class ApigeeAppGroupTimeoutsOutputReference extends cdktf.ComplexObject {
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/apigee_app_group google_apigee_app_group}
 */
-export class ApigeeAppGroup extends cdktf.TerraformResource {
+export class ApigeeAppGroup extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -397,14 +397,14 @@ export class ApigeeAppGroup extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a ApigeeAppGroup resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a ApigeeAppGroup resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the ApigeeAppGroup to import
   * @param importFromId The id of the existing ApigeeAppGroup that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/apigee_app_group#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the ApigeeAppGroup to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "google_apigee_app_group", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "google_apigee_app_group", importId: importFromId, provider });
       }
 
   // ===========
@@ -580,7 +580,7 @@ export class ApigeeAppGroup extends cdktf.TerraformResource {
   public get attributes() {
     return this._attributes;
   }
-  public putAttributes(value: ApigeeAppGroupAttributes[] | cdktf.IResolvable) {
+  public putAttributes(value: ApigeeAppGroupAttributes[] | cdktn.IResolvable) {
     this._attributes.internalValue = value;
   }
   public resetAttributes() {
@@ -613,14 +613,14 @@ export class ApigeeAppGroup extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      channel_id: cdktf.stringToTerraform(this._channelId),
-      channel_uri: cdktf.stringToTerraform(this._channelUri),
-      display_name: cdktf.stringToTerraform(this._displayName),
-      id: cdktf.stringToTerraform(this._id),
-      name: cdktf.stringToTerraform(this._name),
-      org_id: cdktf.stringToTerraform(this._orgId),
-      status: cdktf.stringToTerraform(this._status),
-      attributes: cdktf.listMapper(apigeeAppGroupAttributesToTerraform, true)(this._attributes.internalValue),
+      channel_id: cdktn.stringToTerraform(this._channelId),
+      channel_uri: cdktn.stringToTerraform(this._channelUri),
+      display_name: cdktn.stringToTerraform(this._displayName),
+      id: cdktn.stringToTerraform(this._id),
+      name: cdktn.stringToTerraform(this._name),
+      org_id: cdktn.stringToTerraform(this._orgId),
+      status: cdktn.stringToTerraform(this._status),
+      attributes: cdktn.listMapper(apigeeAppGroupAttributesToTerraform, true)(this._attributes.internalValue),
       timeouts: apigeeAppGroupTimeoutsToTerraform(this._timeouts.internalValue),
     };
   }
@@ -628,49 +628,49 @@ export class ApigeeAppGroup extends cdktf.TerraformResource {
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       channel_id: {
-        value: cdktf.stringToHclTerraform(this._channelId),
+        value: cdktn.stringToHclTerraform(this._channelId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       channel_uri: {
-        value: cdktf.stringToHclTerraform(this._channelUri),
+        value: cdktn.stringToHclTerraform(this._channelUri),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       display_name: {
-        value: cdktf.stringToHclTerraform(this._displayName),
+        value: cdktn.stringToHclTerraform(this._displayName),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       name: {
-        value: cdktf.stringToHclTerraform(this._name),
+        value: cdktn.stringToHclTerraform(this._name),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       org_id: {
-        value: cdktf.stringToHclTerraform(this._orgId),
+        value: cdktn.stringToHclTerraform(this._orgId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       status: {
-        value: cdktf.stringToHclTerraform(this._status),
+        value: cdktn.stringToHclTerraform(this._status),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       attributes: {
-        value: cdktf.listMapperHcl(apigeeAppGroupAttributesToHclTerraform, true)(this._attributes.internalValue),
+        value: cdktn.listMapperHcl(apigeeAppGroupAttributesToHclTerraform, true)(this._attributes.internalValue),
         isBlock: true,
         type: "list",
         storageClassType: "ApigeeAppGroupAttributesList",

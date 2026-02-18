@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface NetappBackupVaultConfig extends cdktf.TerraformMetaArguments {
+export interface NetappBackupVaultConfig extends cdktn.TerraformMetaArguments {
   /**
   * Region in which backup is stored.
   *
@@ -88,74 +88,74 @@ export interface NetappBackupVaultBackupRetentionPolicy {
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/netapp_backup_vault#daily_backup_immutable NetappBackupVault#daily_backup_immutable}
   */
-  readonly dailyBackupImmutable?: boolean | cdktf.IResolvable;
+  readonly dailyBackupImmutable?: boolean | cdktn.IResolvable;
   /**
   * Indicates if the manual backups are immutable. At least one of daily_backup_immutable, weekly_backup_immutable, monthly_backup_immutable and manual_backup_immutable must be true.
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/netapp_backup_vault#manual_backup_immutable NetappBackupVault#manual_backup_immutable}
   */
-  readonly manualBackupImmutable?: boolean | cdktf.IResolvable;
+  readonly manualBackupImmutable?: boolean | cdktn.IResolvable;
   /**
   * Indicates if the monthly backups are immutable. At least one of daily_backup_immutable, weekly_backup_immutable, monthly_backup_immutable and manual_backup_immutable must be true.
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/netapp_backup_vault#monthly_backup_immutable NetappBackupVault#monthly_backup_immutable}
   */
-  readonly monthlyBackupImmutable?: boolean | cdktf.IResolvable;
+  readonly monthlyBackupImmutable?: boolean | cdktn.IResolvable;
   /**
   * Indicates if the weekly backups are immutable. At least one of daily_backup_immutable, weekly_backup_immutable, monthly_backup_immutable and manual_backup_immutable must be true.
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/netapp_backup_vault#weekly_backup_immutable NetappBackupVault#weekly_backup_immutable}
   */
-  readonly weeklyBackupImmutable?: boolean | cdktf.IResolvable;
+  readonly weeklyBackupImmutable?: boolean | cdktn.IResolvable;
 }
 
 export function netappBackupVaultBackupRetentionPolicyToTerraform(struct?: NetappBackupVaultBackupRetentionPolicyOutputReference | NetappBackupVaultBackupRetentionPolicy): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    backup_minimum_enforced_retention_days: cdktf.numberToTerraform(struct!.backupMinimumEnforcedRetentionDays),
-    daily_backup_immutable: cdktf.booleanToTerraform(struct!.dailyBackupImmutable),
-    manual_backup_immutable: cdktf.booleanToTerraform(struct!.manualBackupImmutable),
-    monthly_backup_immutable: cdktf.booleanToTerraform(struct!.monthlyBackupImmutable),
-    weekly_backup_immutable: cdktf.booleanToTerraform(struct!.weeklyBackupImmutable),
+    backup_minimum_enforced_retention_days: cdktn.numberToTerraform(struct!.backupMinimumEnforcedRetentionDays),
+    daily_backup_immutable: cdktn.booleanToTerraform(struct!.dailyBackupImmutable),
+    manual_backup_immutable: cdktn.booleanToTerraform(struct!.manualBackupImmutable),
+    monthly_backup_immutable: cdktn.booleanToTerraform(struct!.monthlyBackupImmutable),
+    weekly_backup_immutable: cdktn.booleanToTerraform(struct!.weeklyBackupImmutable),
   }
 }
 
 
 export function netappBackupVaultBackupRetentionPolicyToHclTerraform(struct?: NetappBackupVaultBackupRetentionPolicyOutputReference | NetappBackupVaultBackupRetentionPolicy): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     backup_minimum_enforced_retention_days: {
-      value: cdktf.numberToHclTerraform(struct!.backupMinimumEnforcedRetentionDays),
+      value: cdktn.numberToHclTerraform(struct!.backupMinimumEnforcedRetentionDays),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     daily_backup_immutable: {
-      value: cdktf.booleanToHclTerraform(struct!.dailyBackupImmutable),
+      value: cdktn.booleanToHclTerraform(struct!.dailyBackupImmutable),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     manual_backup_immutable: {
-      value: cdktf.booleanToHclTerraform(struct!.manualBackupImmutable),
+      value: cdktn.booleanToHclTerraform(struct!.manualBackupImmutable),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     monthly_backup_immutable: {
-      value: cdktf.booleanToHclTerraform(struct!.monthlyBackupImmutable),
+      value: cdktn.booleanToHclTerraform(struct!.monthlyBackupImmutable),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     weekly_backup_immutable: {
-      value: cdktf.booleanToHclTerraform(struct!.weeklyBackupImmutable),
+      value: cdktn.booleanToHclTerraform(struct!.weeklyBackupImmutable),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
@@ -166,14 +166,14 @@ export function netappBackupVaultBackupRetentionPolicyToHclTerraform(struct?: Ne
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class NetappBackupVaultBackupRetentionPolicyOutputReference extends cdktf.ComplexObject {
+export class NetappBackupVaultBackupRetentionPolicyOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -236,11 +236,11 @@ export class NetappBackupVaultBackupRetentionPolicyOutputReference extends cdktf
   }
 
   // daily_backup_immutable - computed: false, optional: true, required: false
-  private _dailyBackupImmutable?: boolean | cdktf.IResolvable; 
+  private _dailyBackupImmutable?: boolean | cdktn.IResolvable; 
   public get dailyBackupImmutable() {
     return this.getBooleanAttribute('daily_backup_immutable');
   }
-  public set dailyBackupImmutable(value: boolean | cdktf.IResolvable) {
+  public set dailyBackupImmutable(value: boolean | cdktn.IResolvable) {
     this._dailyBackupImmutable = value;
   }
   public resetDailyBackupImmutable() {
@@ -252,11 +252,11 @@ export class NetappBackupVaultBackupRetentionPolicyOutputReference extends cdktf
   }
 
   // manual_backup_immutable - computed: false, optional: true, required: false
-  private _manualBackupImmutable?: boolean | cdktf.IResolvable; 
+  private _manualBackupImmutable?: boolean | cdktn.IResolvable; 
   public get manualBackupImmutable() {
     return this.getBooleanAttribute('manual_backup_immutable');
   }
-  public set manualBackupImmutable(value: boolean | cdktf.IResolvable) {
+  public set manualBackupImmutable(value: boolean | cdktn.IResolvable) {
     this._manualBackupImmutable = value;
   }
   public resetManualBackupImmutable() {
@@ -268,11 +268,11 @@ export class NetappBackupVaultBackupRetentionPolicyOutputReference extends cdktf
   }
 
   // monthly_backup_immutable - computed: false, optional: true, required: false
-  private _monthlyBackupImmutable?: boolean | cdktf.IResolvable; 
+  private _monthlyBackupImmutable?: boolean | cdktn.IResolvable; 
   public get monthlyBackupImmutable() {
     return this.getBooleanAttribute('monthly_backup_immutable');
   }
-  public set monthlyBackupImmutable(value: boolean | cdktf.IResolvable) {
+  public set monthlyBackupImmutable(value: boolean | cdktn.IResolvable) {
     this._monthlyBackupImmutable = value;
   }
   public resetMonthlyBackupImmutable() {
@@ -284,11 +284,11 @@ export class NetappBackupVaultBackupRetentionPolicyOutputReference extends cdktf
   }
 
   // weekly_backup_immutable - computed: false, optional: true, required: false
-  private _weeklyBackupImmutable?: boolean | cdktf.IResolvable; 
+  private _weeklyBackupImmutable?: boolean | cdktn.IResolvable; 
   public get weeklyBackupImmutable() {
     return this.getBooleanAttribute('weekly_backup_immutable');
   }
-  public set weeklyBackupImmutable(value: boolean | cdktf.IResolvable) {
+  public set weeklyBackupImmutable(value: boolean | cdktn.IResolvable) {
     this._weeklyBackupImmutable = value;
   }
   public resetWeeklyBackupImmutable() {
@@ -314,39 +314,39 @@ export interface NetappBackupVaultTimeouts {
   readonly update?: string;
 }
 
-export function netappBackupVaultTimeoutsToTerraform(struct?: NetappBackupVaultTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function netappBackupVaultTimeoutsToTerraform(struct?: NetappBackupVaultTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    create: cdktf.stringToTerraform(struct!.create),
-    delete: cdktf.stringToTerraform(struct!.delete),
-    update: cdktf.stringToTerraform(struct!.update),
+    create: cdktn.stringToTerraform(struct!.create),
+    delete: cdktn.stringToTerraform(struct!.delete),
+    update: cdktn.stringToTerraform(struct!.update),
   }
 }
 
 
-export function netappBackupVaultTimeoutsToHclTerraform(struct?: NetappBackupVaultTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function netappBackupVaultTimeoutsToHclTerraform(struct?: NetappBackupVaultTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     create: {
-      value: cdktf.stringToHclTerraform(struct!.create),
+      value: cdktn.stringToHclTerraform(struct!.create),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     delete: {
-      value: cdktf.stringToHclTerraform(struct!.delete),
+      value: cdktn.stringToHclTerraform(struct!.delete),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     update: {
-      value: cdktf.stringToHclTerraform(struct!.update),
+      value: cdktn.stringToHclTerraform(struct!.update),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -357,19 +357,19 @@ export function netappBackupVaultTimeoutsToHclTerraform(struct?: NetappBackupVau
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class NetappBackupVaultTimeoutsOutputReference extends cdktf.ComplexObject {
+export class NetappBackupVaultTimeoutsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): NetappBackupVaultTimeouts | cdktf.IResolvable | undefined {
+  public get internalValue(): NetappBackupVaultTimeouts | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -390,7 +390,7 @@ export class NetappBackupVaultTimeoutsOutputReference extends cdktf.ComplexObjec
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: NetappBackupVaultTimeouts | cdktf.IResolvable | undefined) {
+  public set internalValue(value: NetappBackupVaultTimeouts | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -398,7 +398,7 @@ export class NetappBackupVaultTimeoutsOutputReference extends cdktf.ComplexObjec
       this._delete = undefined;
       this._update = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -463,7 +463,7 @@ export class NetappBackupVaultTimeoutsOutputReference extends cdktf.ComplexObjec
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/netapp_backup_vault google_netapp_backup_vault}
 */
-export class NetappBackupVault extends cdktf.TerraformResource {
+export class NetappBackupVault extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -474,14 +474,14 @@ export class NetappBackupVault extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a NetappBackupVault resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a NetappBackupVault resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the NetappBackupVault to import
   * @param importFromId The id of the existing NetappBackupVault that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/netapp_backup_vault#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the NetappBackupVault to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "google_netapp_backup_vault", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "google_netapp_backup_vault", importId: importFromId, provider });
       }
 
   // ===========
@@ -586,7 +586,7 @@ export class NetappBackupVault extends cdktf.TerraformResource {
   }
 
   // effective_labels - computed: true, optional: false, required: false
-  private _effectiveLabels = new cdktf.StringMap(this, "effective_labels");
+  private _effectiveLabels = new cdktn.StringMap(this, "effective_labels");
   public get effectiveLabels() {
     return this._effectiveLabels;
   }
@@ -681,7 +681,7 @@ export class NetappBackupVault extends cdktf.TerraformResource {
   }
 
   // terraform_labels - computed: true, optional: false, required: false
-  private _terraformLabels = new cdktf.StringMap(this, "terraform_labels");
+  private _terraformLabels = new cdktn.StringMap(this, "terraform_labels");
   public get terraformLabels() {
     return this._terraformLabels;
   }
@@ -724,14 +724,14 @@ export class NetappBackupVault extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      backup_region: cdktf.stringToTerraform(this._backupRegion),
-      backup_vault_type: cdktf.stringToTerraform(this._backupVaultType),
-      description: cdktf.stringToTerraform(this._description),
-      id: cdktf.stringToTerraform(this._id),
-      labels: cdktf.hashMapper(cdktf.stringToTerraform)(this._labels),
-      location: cdktf.stringToTerraform(this._location),
-      name: cdktf.stringToTerraform(this._name),
-      project: cdktf.stringToTerraform(this._project),
+      backup_region: cdktn.stringToTerraform(this._backupRegion),
+      backup_vault_type: cdktn.stringToTerraform(this._backupVaultType),
+      description: cdktn.stringToTerraform(this._description),
+      id: cdktn.stringToTerraform(this._id),
+      labels: cdktn.hashMapper(cdktn.stringToTerraform)(this._labels),
+      location: cdktn.stringToTerraform(this._location),
+      name: cdktn.stringToTerraform(this._name),
+      project: cdktn.stringToTerraform(this._project),
       backup_retention_policy: netappBackupVaultBackupRetentionPolicyToTerraform(this._backupRetentionPolicy.internalValue),
       timeouts: netappBackupVaultTimeoutsToTerraform(this._timeouts.internalValue),
     };
@@ -740,49 +740,49 @@ export class NetappBackupVault extends cdktf.TerraformResource {
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       backup_region: {
-        value: cdktf.stringToHclTerraform(this._backupRegion),
+        value: cdktn.stringToHclTerraform(this._backupRegion),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       backup_vault_type: {
-        value: cdktf.stringToHclTerraform(this._backupVaultType),
+        value: cdktn.stringToHclTerraform(this._backupVaultType),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       description: {
-        value: cdktf.stringToHclTerraform(this._description),
+        value: cdktn.stringToHclTerraform(this._description),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       labels: {
-        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._labels),
+        value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(this._labels),
         isBlock: false,
         type: "map",
         storageClassType: "stringMap",
       },
       location: {
-        value: cdktf.stringToHclTerraform(this._location),
+        value: cdktn.stringToHclTerraform(this._location),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       name: {
-        value: cdktf.stringToHclTerraform(this._name),
+        value: cdktn.stringToHclTerraform(this._name),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       project: {
-        value: cdktf.stringToHclTerraform(this._project),
+        value: cdktn.stringToHclTerraform(this._project),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

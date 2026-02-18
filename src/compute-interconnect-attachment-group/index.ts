@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface ComputeInterconnectAttachmentGroupConfig extends cdktf.TerraformMetaArguments {
+export interface ComputeInterconnectAttachmentGroupConfig extends cdktn.TerraformMetaArguments {
   /**
   * An optional description of this resource. Provide this property when you create the resource.
   *
@@ -52,7 +52,7 @@ export interface ComputeInterconnectAttachmentGroupConfig extends cdktf.Terrafor
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_interconnect_attachment_group#attachments ComputeInterconnectAttachmentGroup#attachments}
   */
-  readonly attachments?: ComputeInterconnectAttachmentGroupAttachments[] | cdktf.IResolvable;
+  readonly attachments?: ComputeInterconnectAttachmentGroupAttachments[] | cdktn.IResolvable;
   /**
   * intent block
   *
@@ -70,8 +70,8 @@ export interface ComputeInterconnectAttachmentGroupConfiguredAvailabilitySlaInte
 }
 
 export function computeInterconnectAttachmentGroupConfiguredAvailabilitySlaIntendedSlaBlockersToTerraform(struct?: ComputeInterconnectAttachmentGroupConfiguredAvailabilitySlaIntendedSlaBlockers): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -80,8 +80,8 @@ export function computeInterconnectAttachmentGroupConfiguredAvailabilitySlaInten
 
 
 export function computeInterconnectAttachmentGroupConfiguredAvailabilitySlaIntendedSlaBlockersToHclTerraform(struct?: ComputeInterconnectAttachmentGroupConfiguredAvailabilitySlaIntendedSlaBlockers): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -89,7 +89,7 @@ export function computeInterconnectAttachmentGroupConfiguredAvailabilitySlaInten
   return attrs;
 }
 
-export class ComputeInterconnectAttachmentGroupConfiguredAvailabilitySlaIntendedSlaBlockersOutputReference extends cdktf.ComplexObject {
+export class ComputeInterconnectAttachmentGroupConfiguredAvailabilitySlaIntendedSlaBlockersOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -98,7 +98,7 @@ export class ComputeInterconnectAttachmentGroupConfiguredAvailabilitySlaIntended
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -153,14 +153,14 @@ export class ComputeInterconnectAttachmentGroupConfiguredAvailabilitySlaIntended
   }
 }
 
-export class ComputeInterconnectAttachmentGroupConfiguredAvailabilitySlaIntendedSlaBlockersList extends cdktf.ComplexList {
+export class ComputeInterconnectAttachmentGroupConfiguredAvailabilitySlaIntendedSlaBlockersList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -175,8 +175,8 @@ export interface ComputeInterconnectAttachmentGroupConfiguredAvailabilitySla {
 }
 
 export function computeInterconnectAttachmentGroupConfiguredAvailabilitySlaToTerraform(struct?: ComputeInterconnectAttachmentGroupConfiguredAvailabilitySla): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -185,8 +185,8 @@ export function computeInterconnectAttachmentGroupConfiguredAvailabilitySlaToTer
 
 
 export function computeInterconnectAttachmentGroupConfiguredAvailabilitySlaToHclTerraform(struct?: ComputeInterconnectAttachmentGroupConfiguredAvailabilitySla): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -194,7 +194,7 @@ export function computeInterconnectAttachmentGroupConfiguredAvailabilitySlaToHcl
   return attrs;
 }
 
-export class ComputeInterconnectAttachmentGroupConfiguredAvailabilitySlaOutputReference extends cdktf.ComplexObject {
+export class ComputeInterconnectAttachmentGroupConfiguredAvailabilitySlaOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -203,7 +203,7 @@ export class ComputeInterconnectAttachmentGroupConfiguredAvailabilitySlaOutputRe
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -234,14 +234,14 @@ export class ComputeInterconnectAttachmentGroupConfiguredAvailabilitySlaOutputRe
   }
 }
 
-export class ComputeInterconnectAttachmentGroupConfiguredAvailabilitySlaList extends cdktf.ComplexList {
+export class ComputeInterconnectAttachmentGroupConfiguredAvailabilitySlaList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -256,8 +256,8 @@ export interface ComputeInterconnectAttachmentGroupConfigured {
 }
 
 export function computeInterconnectAttachmentGroupConfiguredToTerraform(struct?: ComputeInterconnectAttachmentGroupConfigured): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -266,8 +266,8 @@ export function computeInterconnectAttachmentGroupConfiguredToTerraform(struct?:
 
 
 export function computeInterconnectAttachmentGroupConfiguredToHclTerraform(struct?: ComputeInterconnectAttachmentGroupConfigured): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -275,7 +275,7 @@ export function computeInterconnectAttachmentGroupConfiguredToHclTerraform(struc
   return attrs;
 }
 
-export class ComputeInterconnectAttachmentGroupConfiguredOutputReference extends cdktf.ComplexObject {
+export class ComputeInterconnectAttachmentGroupConfiguredOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -284,7 +284,7 @@ export class ComputeInterconnectAttachmentGroupConfiguredOutputReference extends
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -310,14 +310,14 @@ export class ComputeInterconnectAttachmentGroupConfiguredOutputReference extends
   }
 }
 
-export class ComputeInterconnectAttachmentGroupConfiguredList extends cdktf.ComplexList {
+export class ComputeInterconnectAttachmentGroupConfiguredList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -332,8 +332,8 @@ export interface ComputeInterconnectAttachmentGroupLogicalStructureRegionsMetros
 }
 
 export function computeInterconnectAttachmentGroupLogicalStructureRegionsMetrosFacilitiesZonesToTerraform(struct?: ComputeInterconnectAttachmentGroupLogicalStructureRegionsMetrosFacilitiesZones): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -342,8 +342,8 @@ export function computeInterconnectAttachmentGroupLogicalStructureRegionsMetrosF
 
 
 export function computeInterconnectAttachmentGroupLogicalStructureRegionsMetrosFacilitiesZonesToHclTerraform(struct?: ComputeInterconnectAttachmentGroupLogicalStructureRegionsMetrosFacilitiesZones): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -351,7 +351,7 @@ export function computeInterconnectAttachmentGroupLogicalStructureRegionsMetrosF
   return attrs;
 }
 
-export class ComputeInterconnectAttachmentGroupLogicalStructureRegionsMetrosFacilitiesZonesOutputReference extends cdktf.ComplexObject {
+export class ComputeInterconnectAttachmentGroupLogicalStructureRegionsMetrosFacilitiesZonesOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -360,7 +360,7 @@ export class ComputeInterconnectAttachmentGroupLogicalStructureRegionsMetrosFaci
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -390,14 +390,14 @@ export class ComputeInterconnectAttachmentGroupLogicalStructureRegionsMetrosFaci
   }
 }
 
-export class ComputeInterconnectAttachmentGroupLogicalStructureRegionsMetrosFacilitiesZonesList extends cdktf.ComplexList {
+export class ComputeInterconnectAttachmentGroupLogicalStructureRegionsMetrosFacilitiesZonesList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -412,8 +412,8 @@ export interface ComputeInterconnectAttachmentGroupLogicalStructureRegionsMetros
 }
 
 export function computeInterconnectAttachmentGroupLogicalStructureRegionsMetrosFacilitiesToTerraform(struct?: ComputeInterconnectAttachmentGroupLogicalStructureRegionsMetrosFacilities): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -422,8 +422,8 @@ export function computeInterconnectAttachmentGroupLogicalStructureRegionsMetrosF
 
 
 export function computeInterconnectAttachmentGroupLogicalStructureRegionsMetrosFacilitiesToHclTerraform(struct?: ComputeInterconnectAttachmentGroupLogicalStructureRegionsMetrosFacilities): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -431,7 +431,7 @@ export function computeInterconnectAttachmentGroupLogicalStructureRegionsMetrosF
   return attrs;
 }
 
-export class ComputeInterconnectAttachmentGroupLogicalStructureRegionsMetrosFacilitiesOutputReference extends cdktf.ComplexObject {
+export class ComputeInterconnectAttachmentGroupLogicalStructureRegionsMetrosFacilitiesOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -440,7 +440,7 @@ export class ComputeInterconnectAttachmentGroupLogicalStructureRegionsMetrosFaci
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -471,14 +471,14 @@ export class ComputeInterconnectAttachmentGroupLogicalStructureRegionsMetrosFaci
   }
 }
 
-export class ComputeInterconnectAttachmentGroupLogicalStructureRegionsMetrosFacilitiesList extends cdktf.ComplexList {
+export class ComputeInterconnectAttachmentGroupLogicalStructureRegionsMetrosFacilitiesList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -493,8 +493,8 @@ export interface ComputeInterconnectAttachmentGroupLogicalStructureRegionsMetros
 }
 
 export function computeInterconnectAttachmentGroupLogicalStructureRegionsMetrosToTerraform(struct?: ComputeInterconnectAttachmentGroupLogicalStructureRegionsMetros): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -503,8 +503,8 @@ export function computeInterconnectAttachmentGroupLogicalStructureRegionsMetrosT
 
 
 export function computeInterconnectAttachmentGroupLogicalStructureRegionsMetrosToHclTerraform(struct?: ComputeInterconnectAttachmentGroupLogicalStructureRegionsMetros): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -512,7 +512,7 @@ export function computeInterconnectAttachmentGroupLogicalStructureRegionsMetrosT
   return attrs;
 }
 
-export class ComputeInterconnectAttachmentGroupLogicalStructureRegionsMetrosOutputReference extends cdktf.ComplexObject {
+export class ComputeInterconnectAttachmentGroupLogicalStructureRegionsMetrosOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -521,7 +521,7 @@ export class ComputeInterconnectAttachmentGroupLogicalStructureRegionsMetrosOutp
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -552,14 +552,14 @@ export class ComputeInterconnectAttachmentGroupLogicalStructureRegionsMetrosOutp
   }
 }
 
-export class ComputeInterconnectAttachmentGroupLogicalStructureRegionsMetrosList extends cdktf.ComplexList {
+export class ComputeInterconnectAttachmentGroupLogicalStructureRegionsMetrosList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -574,8 +574,8 @@ export interface ComputeInterconnectAttachmentGroupLogicalStructureRegions {
 }
 
 export function computeInterconnectAttachmentGroupLogicalStructureRegionsToTerraform(struct?: ComputeInterconnectAttachmentGroupLogicalStructureRegions): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -584,8 +584,8 @@ export function computeInterconnectAttachmentGroupLogicalStructureRegionsToTerra
 
 
 export function computeInterconnectAttachmentGroupLogicalStructureRegionsToHclTerraform(struct?: ComputeInterconnectAttachmentGroupLogicalStructureRegions): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -593,7 +593,7 @@ export function computeInterconnectAttachmentGroupLogicalStructureRegionsToHclTe
   return attrs;
 }
 
-export class ComputeInterconnectAttachmentGroupLogicalStructureRegionsOutputReference extends cdktf.ComplexObject {
+export class ComputeInterconnectAttachmentGroupLogicalStructureRegionsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -602,7 +602,7 @@ export class ComputeInterconnectAttachmentGroupLogicalStructureRegionsOutputRefe
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -633,14 +633,14 @@ export class ComputeInterconnectAttachmentGroupLogicalStructureRegionsOutputRefe
   }
 }
 
-export class ComputeInterconnectAttachmentGroupLogicalStructureRegionsList extends cdktf.ComplexList {
+export class ComputeInterconnectAttachmentGroupLogicalStructureRegionsList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -655,8 +655,8 @@ export interface ComputeInterconnectAttachmentGroupLogicalStructure {
 }
 
 export function computeInterconnectAttachmentGroupLogicalStructureToTerraform(struct?: ComputeInterconnectAttachmentGroupLogicalStructure): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -665,8 +665,8 @@ export function computeInterconnectAttachmentGroupLogicalStructureToTerraform(st
 
 
 export function computeInterconnectAttachmentGroupLogicalStructureToHclTerraform(struct?: ComputeInterconnectAttachmentGroupLogicalStructure): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -674,7 +674,7 @@ export function computeInterconnectAttachmentGroupLogicalStructureToHclTerraform
   return attrs;
 }
 
-export class ComputeInterconnectAttachmentGroupLogicalStructureOutputReference extends cdktf.ComplexObject {
+export class ComputeInterconnectAttachmentGroupLogicalStructureOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -683,7 +683,7 @@ export class ComputeInterconnectAttachmentGroupLogicalStructureOutputReference e
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -709,14 +709,14 @@ export class ComputeInterconnectAttachmentGroupLogicalStructureOutputReference e
   }
 }
 
-export class ComputeInterconnectAttachmentGroupLogicalStructureList extends cdktf.ComplexList {
+export class ComputeInterconnectAttachmentGroupLogicalStructureList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -738,32 +738,32 @@ export interface ComputeInterconnectAttachmentGroupAttachments {
   readonly name: string;
 }
 
-export function computeInterconnectAttachmentGroupAttachmentsToTerraform(struct?: ComputeInterconnectAttachmentGroupAttachments | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function computeInterconnectAttachmentGroupAttachmentsToTerraform(struct?: ComputeInterconnectAttachmentGroupAttachments | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    attachment: cdktf.stringToTerraform(struct!.attachment),
-    name: cdktf.stringToTerraform(struct!.name),
+    attachment: cdktn.stringToTerraform(struct!.attachment),
+    name: cdktn.stringToTerraform(struct!.name),
   }
 }
 
 
-export function computeInterconnectAttachmentGroupAttachmentsToHclTerraform(struct?: ComputeInterconnectAttachmentGroupAttachments | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function computeInterconnectAttachmentGroupAttachmentsToHclTerraform(struct?: ComputeInterconnectAttachmentGroupAttachments | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     attachment: {
-      value: cdktf.stringToHclTerraform(struct!.attachment),
+      value: cdktn.stringToHclTerraform(struct!.attachment),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     name: {
-      value: cdktf.stringToHclTerraform(struct!.name),
+      value: cdktn.stringToHclTerraform(struct!.name),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -774,9 +774,9 @@ export function computeInterconnectAttachmentGroupAttachmentsToHclTerraform(stru
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class ComputeInterconnectAttachmentGroupAttachmentsOutputReference extends cdktf.ComplexObject {
+export class ComputeInterconnectAttachmentGroupAttachmentsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -784,11 +784,11 @@ export class ComputeInterconnectAttachmentGroupAttachmentsOutputReference extend
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): ComputeInterconnectAttachmentGroupAttachments | cdktf.IResolvable | undefined {
+  public get internalValue(): ComputeInterconnectAttachmentGroupAttachments | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -805,14 +805,14 @@ export class ComputeInterconnectAttachmentGroupAttachmentsOutputReference extend
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: ComputeInterconnectAttachmentGroupAttachments | cdktf.IResolvable | undefined) {
+  public set internalValue(value: ComputeInterconnectAttachmentGroupAttachments | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._attachment = undefined;
       this._name = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -854,15 +854,15 @@ export class ComputeInterconnectAttachmentGroupAttachmentsOutputReference extend
   }
 }
 
-export class ComputeInterconnectAttachmentGroupAttachmentsList extends cdktf.ComplexList {
-  public internalValue? : ComputeInterconnectAttachmentGroupAttachments[] | cdktf.IResolvable
+export class ComputeInterconnectAttachmentGroupAttachmentsList extends cdktn.ComplexList {
+  public internalValue? : ComputeInterconnectAttachmentGroupAttachments[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -883,24 +883,24 @@ export interface ComputeInterconnectAttachmentGroupIntent {
 }
 
 export function computeInterconnectAttachmentGroupIntentToTerraform(struct?: ComputeInterconnectAttachmentGroupIntentOutputReference | ComputeInterconnectAttachmentGroupIntent): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    availability_sla: cdktf.stringToTerraform(struct!.availabilitySla),
+    availability_sla: cdktn.stringToTerraform(struct!.availabilitySla),
   }
 }
 
 
 export function computeInterconnectAttachmentGroupIntentToHclTerraform(struct?: ComputeInterconnectAttachmentGroupIntentOutputReference | ComputeInterconnectAttachmentGroupIntent): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     availability_sla: {
-      value: cdktf.stringToHclTerraform(struct!.availabilitySla),
+      value: cdktn.stringToHclTerraform(struct!.availabilitySla),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -911,14 +911,14 @@ export function computeInterconnectAttachmentGroupIntentToHclTerraform(struct?: 
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class ComputeInterconnectAttachmentGroupIntentOutputReference extends cdktf.ComplexObject {
+export class ComputeInterconnectAttachmentGroupIntentOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -974,39 +974,39 @@ export interface ComputeInterconnectAttachmentGroupTimeouts {
   readonly update?: string;
 }
 
-export function computeInterconnectAttachmentGroupTimeoutsToTerraform(struct?: ComputeInterconnectAttachmentGroupTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function computeInterconnectAttachmentGroupTimeoutsToTerraform(struct?: ComputeInterconnectAttachmentGroupTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    create: cdktf.stringToTerraform(struct!.create),
-    delete: cdktf.stringToTerraform(struct!.delete),
-    update: cdktf.stringToTerraform(struct!.update),
+    create: cdktn.stringToTerraform(struct!.create),
+    delete: cdktn.stringToTerraform(struct!.delete),
+    update: cdktn.stringToTerraform(struct!.update),
   }
 }
 
 
-export function computeInterconnectAttachmentGroupTimeoutsToHclTerraform(struct?: ComputeInterconnectAttachmentGroupTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function computeInterconnectAttachmentGroupTimeoutsToHclTerraform(struct?: ComputeInterconnectAttachmentGroupTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     create: {
-      value: cdktf.stringToHclTerraform(struct!.create),
+      value: cdktn.stringToHclTerraform(struct!.create),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     delete: {
-      value: cdktf.stringToHclTerraform(struct!.delete),
+      value: cdktn.stringToHclTerraform(struct!.delete),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     update: {
-      value: cdktf.stringToHclTerraform(struct!.update),
+      value: cdktn.stringToHclTerraform(struct!.update),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -1017,19 +1017,19 @@ export function computeInterconnectAttachmentGroupTimeoutsToHclTerraform(struct?
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class ComputeInterconnectAttachmentGroupTimeoutsOutputReference extends cdktf.ComplexObject {
+export class ComputeInterconnectAttachmentGroupTimeoutsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): ComputeInterconnectAttachmentGroupTimeouts | cdktf.IResolvable | undefined {
+  public get internalValue(): ComputeInterconnectAttachmentGroupTimeouts | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -1050,7 +1050,7 @@ export class ComputeInterconnectAttachmentGroupTimeoutsOutputReference extends c
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: ComputeInterconnectAttachmentGroupTimeouts | cdktf.IResolvable | undefined) {
+  public set internalValue(value: ComputeInterconnectAttachmentGroupTimeouts | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -1058,7 +1058,7 @@ export class ComputeInterconnectAttachmentGroupTimeoutsOutputReference extends c
       this._delete = undefined;
       this._update = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -1123,7 +1123,7 @@ export class ComputeInterconnectAttachmentGroupTimeoutsOutputReference extends c
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_interconnect_attachment_group google_compute_interconnect_attachment_group}
 */
-export class ComputeInterconnectAttachmentGroup extends cdktf.TerraformResource {
+export class ComputeInterconnectAttachmentGroup extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -1134,14 +1134,14 @@ export class ComputeInterconnectAttachmentGroup extends cdktf.TerraformResource 
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a ComputeInterconnectAttachmentGroup resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a ComputeInterconnectAttachmentGroup resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the ComputeInterconnectAttachmentGroup to import
   * @param importFromId The id of the existing ComputeInterconnectAttachmentGroup that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_interconnect_attachment_group#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the ComputeInterconnectAttachmentGroup to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "google_compute_interconnect_attachment_group", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "google_compute_interconnect_attachment_group", importId: importFromId, provider });
       }
 
   // ===========
@@ -1284,7 +1284,7 @@ export class ComputeInterconnectAttachmentGroup extends cdktf.TerraformResource 
   public get attachments() {
     return this._attachments;
   }
-  public putAttachments(value: ComputeInterconnectAttachmentGroupAttachments[] | cdktf.IResolvable) {
+  public putAttachments(value: ComputeInterconnectAttachmentGroupAttachments[] | cdktn.IResolvable) {
     this._attachments.internalValue = value;
   }
   public resetAttachments() {
@@ -1330,12 +1330,12 @@ export class ComputeInterconnectAttachmentGroup extends cdktf.TerraformResource 
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      description: cdktf.stringToTerraform(this._description),
-      id: cdktf.stringToTerraform(this._id),
-      interconnect_group: cdktf.stringToTerraform(this._interconnectGroup),
-      name: cdktf.stringToTerraform(this._name),
-      project: cdktf.stringToTerraform(this._project),
-      attachments: cdktf.listMapper(computeInterconnectAttachmentGroupAttachmentsToTerraform, true)(this._attachments.internalValue),
+      description: cdktn.stringToTerraform(this._description),
+      id: cdktn.stringToTerraform(this._id),
+      interconnect_group: cdktn.stringToTerraform(this._interconnectGroup),
+      name: cdktn.stringToTerraform(this._name),
+      project: cdktn.stringToTerraform(this._project),
+      attachments: cdktn.listMapper(computeInterconnectAttachmentGroupAttachmentsToTerraform, true)(this._attachments.internalValue),
       intent: computeInterconnectAttachmentGroupIntentToTerraform(this._intent.internalValue),
       timeouts: computeInterconnectAttachmentGroupTimeoutsToTerraform(this._timeouts.internalValue),
     };
@@ -1344,37 +1344,37 @@ export class ComputeInterconnectAttachmentGroup extends cdktf.TerraformResource 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       description: {
-        value: cdktf.stringToHclTerraform(this._description),
+        value: cdktn.stringToHclTerraform(this._description),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       interconnect_group: {
-        value: cdktf.stringToHclTerraform(this._interconnectGroup),
+        value: cdktn.stringToHclTerraform(this._interconnectGroup),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       name: {
-        value: cdktf.stringToHclTerraform(this._name),
+        value: cdktn.stringToHclTerraform(this._name),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       project: {
-        value: cdktf.stringToHclTerraform(this._project),
+        value: cdktn.stringToHclTerraform(this._project),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       attachments: {
-        value: cdktf.listMapperHcl(computeInterconnectAttachmentGroupAttachmentsToHclTerraform, true)(this._attachments.internalValue),
+        value: cdktn.listMapperHcl(computeInterconnectAttachmentGroupAttachmentsToHclTerraform, true)(this._attachments.internalValue),
         isBlock: true,
         type: "set",
         storageClassType: "ComputeInterconnectAttachmentGroupAttachmentsList",

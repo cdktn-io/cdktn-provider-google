@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface BigqueryRowAccessPolicyConfig extends cdktf.TerraformMetaArguments {
+export interface BigqueryRowAccessPolicyConfig extends cdktn.TerraformMetaArguments {
   /**
   * The ID of the dataset containing this row access policy.
   *
@@ -107,39 +107,39 @@ export interface BigqueryRowAccessPolicyTimeouts {
   readonly update?: string;
 }
 
-export function bigqueryRowAccessPolicyTimeoutsToTerraform(struct?: BigqueryRowAccessPolicyTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function bigqueryRowAccessPolicyTimeoutsToTerraform(struct?: BigqueryRowAccessPolicyTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    create: cdktf.stringToTerraform(struct!.create),
-    delete: cdktf.stringToTerraform(struct!.delete),
-    update: cdktf.stringToTerraform(struct!.update),
+    create: cdktn.stringToTerraform(struct!.create),
+    delete: cdktn.stringToTerraform(struct!.delete),
+    update: cdktn.stringToTerraform(struct!.update),
   }
 }
 
 
-export function bigqueryRowAccessPolicyTimeoutsToHclTerraform(struct?: BigqueryRowAccessPolicyTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function bigqueryRowAccessPolicyTimeoutsToHclTerraform(struct?: BigqueryRowAccessPolicyTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     create: {
-      value: cdktf.stringToHclTerraform(struct!.create),
+      value: cdktn.stringToHclTerraform(struct!.create),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     delete: {
-      value: cdktf.stringToHclTerraform(struct!.delete),
+      value: cdktn.stringToHclTerraform(struct!.delete),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     update: {
-      value: cdktf.stringToHclTerraform(struct!.update),
+      value: cdktn.stringToHclTerraform(struct!.update),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -150,19 +150,19 @@ export function bigqueryRowAccessPolicyTimeoutsToHclTerraform(struct?: BigqueryR
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class BigqueryRowAccessPolicyTimeoutsOutputReference extends cdktf.ComplexObject {
+export class BigqueryRowAccessPolicyTimeoutsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): BigqueryRowAccessPolicyTimeouts | cdktf.IResolvable | undefined {
+  public get internalValue(): BigqueryRowAccessPolicyTimeouts | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -183,7 +183,7 @@ export class BigqueryRowAccessPolicyTimeoutsOutputReference extends cdktf.Comple
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: BigqueryRowAccessPolicyTimeouts | cdktf.IResolvable | undefined) {
+  public set internalValue(value: BigqueryRowAccessPolicyTimeouts | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -191,7 +191,7 @@ export class BigqueryRowAccessPolicyTimeoutsOutputReference extends cdktf.Comple
       this._delete = undefined;
       this._update = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -256,7 +256,7 @@ export class BigqueryRowAccessPolicyTimeoutsOutputReference extends cdktf.Comple
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/bigquery_row_access_policy google_bigquery_row_access_policy}
 */
-export class BigqueryRowAccessPolicy extends cdktf.TerraformResource {
+export class BigqueryRowAccessPolicy extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -267,14 +267,14 @@ export class BigqueryRowAccessPolicy extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a BigqueryRowAccessPolicy resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a BigqueryRowAccessPolicy resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the BigqueryRowAccessPolicy to import
   * @param importFromId The id of the existing BigqueryRowAccessPolicy that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/bigquery_row_access_policy#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the BigqueryRowAccessPolicy to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "google_bigquery_row_access_policy", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "google_bigquery_row_access_policy", importId: importFromId, provider });
       }
 
   // ===========
@@ -450,13 +450,13 @@ export class BigqueryRowAccessPolicy extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      dataset_id: cdktf.stringToTerraform(this._datasetId),
-      filter_predicate: cdktf.stringToTerraform(this._filterPredicate),
-      grantees: cdktf.listMapper(cdktf.stringToTerraform, false)(this._grantees),
-      id: cdktf.stringToTerraform(this._id),
-      policy_id: cdktf.stringToTerraform(this._policyId),
-      project: cdktf.stringToTerraform(this._project),
-      table_id: cdktf.stringToTerraform(this._tableId),
+      dataset_id: cdktn.stringToTerraform(this._datasetId),
+      filter_predicate: cdktn.stringToTerraform(this._filterPredicate),
+      grantees: cdktn.listMapper(cdktn.stringToTerraform, false)(this._grantees),
+      id: cdktn.stringToTerraform(this._id),
+      policy_id: cdktn.stringToTerraform(this._policyId),
+      project: cdktn.stringToTerraform(this._project),
+      table_id: cdktn.stringToTerraform(this._tableId),
       timeouts: bigqueryRowAccessPolicyTimeoutsToTerraform(this._timeouts.internalValue),
     };
   }
@@ -464,43 +464,43 @@ export class BigqueryRowAccessPolicy extends cdktf.TerraformResource {
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       dataset_id: {
-        value: cdktf.stringToHclTerraform(this._datasetId),
+        value: cdktn.stringToHclTerraform(this._datasetId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       filter_predicate: {
-        value: cdktf.stringToHclTerraform(this._filterPredicate),
+        value: cdktn.stringToHclTerraform(this._filterPredicate),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       grantees: {
-        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._grantees),
+        value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(this._grantees),
         isBlock: false,
         type: "list",
         storageClassType: "stringList",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       policy_id: {
-        value: cdktf.stringToHclTerraform(this._policyId),
+        value: cdktn.stringToHclTerraform(this._policyId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       project: {
-        value: cdktf.stringToHclTerraform(this._project),
+        value: cdktn.stringToHclTerraform(this._project),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       table_id: {
-        value: cdktf.stringToHclTerraform(this._tableId),
+        value: cdktn.stringToHclTerraform(this._tableId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface DataGoogleMonitoringMeshIstioServiceConfig extends cdktf.TerraformMetaArguments {
+export interface DataGoogleMonitoringMeshIstioServiceConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/data-sources/monitoring_mesh_istio_service#id DataGoogleMonitoringMeshIstioService#id}
   *
@@ -49,8 +49,8 @@ export interface DataGoogleMonitoringMeshIstioServiceTelemetry {
 }
 
 export function dataGoogleMonitoringMeshIstioServiceTelemetryToTerraform(struct?: DataGoogleMonitoringMeshIstioServiceTelemetry): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -59,8 +59,8 @@ export function dataGoogleMonitoringMeshIstioServiceTelemetryToTerraform(struct?
 
 
 export function dataGoogleMonitoringMeshIstioServiceTelemetryToHclTerraform(struct?: DataGoogleMonitoringMeshIstioServiceTelemetry): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -68,7 +68,7 @@ export function dataGoogleMonitoringMeshIstioServiceTelemetryToHclTerraform(stru
   return attrs;
 }
 
-export class DataGoogleMonitoringMeshIstioServiceTelemetryOutputReference extends cdktf.ComplexObject {
+export class DataGoogleMonitoringMeshIstioServiceTelemetryOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -77,7 +77,7 @@ export class DataGoogleMonitoringMeshIstioServiceTelemetryOutputReference extend
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -102,14 +102,14 @@ export class DataGoogleMonitoringMeshIstioServiceTelemetryOutputReference extend
   }
 }
 
-export class DataGoogleMonitoringMeshIstioServiceTelemetryList extends cdktf.ComplexList {
+export class DataGoogleMonitoringMeshIstioServiceTelemetryList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -124,7 +124,7 @@ export class DataGoogleMonitoringMeshIstioServiceTelemetryList extends cdktf.Com
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/data-sources/monitoring_mesh_istio_service google_monitoring_mesh_istio_service}
 */
-export class DataGoogleMonitoringMeshIstioService extends cdktf.TerraformDataSource {
+export class DataGoogleMonitoringMeshIstioService extends cdktn.TerraformDataSource {
 
   // =================
   // STATIC PROPERTIES
@@ -135,14 +135,14 @@ export class DataGoogleMonitoringMeshIstioService extends cdktf.TerraformDataSou
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a DataGoogleMonitoringMeshIstioService resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a DataGoogleMonitoringMeshIstioService resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataGoogleMonitoringMeshIstioService to import
   * @param importFromId The id of the existing DataGoogleMonitoringMeshIstioService that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/data-sources/monitoring_mesh_istio_service#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataGoogleMonitoringMeshIstioService to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "google_monitoring_mesh_istio_service", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "google_monitoring_mesh_istio_service", importId: importFromId, provider });
       }
 
   // ===========
@@ -276,7 +276,7 @@ export class DataGoogleMonitoringMeshIstioService extends cdktf.TerraformDataSou
   }
 
   // user_labels - computed: true, optional: false, required: false
-  private _userLabels = new cdktf.StringMap(this, "user_labels");
+  private _userLabels = new cdktn.StringMap(this, "user_labels");
   public get userLabels() {
     return this._userLabels;
   }
@@ -287,42 +287,42 @@ export class DataGoogleMonitoringMeshIstioService extends cdktf.TerraformDataSou
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      id: cdktf.stringToTerraform(this._id),
-      mesh_uid: cdktf.stringToTerraform(this._meshUid),
-      project: cdktf.stringToTerraform(this._project),
-      service_name: cdktf.stringToTerraform(this._serviceName),
-      service_namespace: cdktf.stringToTerraform(this._serviceNamespace),
+      id: cdktn.stringToTerraform(this._id),
+      mesh_uid: cdktn.stringToTerraform(this._meshUid),
+      project: cdktn.stringToTerraform(this._project),
+      service_name: cdktn.stringToTerraform(this._serviceName),
+      service_namespace: cdktn.stringToTerraform(this._serviceNamespace),
     };
   }
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       mesh_uid: {
-        value: cdktf.stringToHclTerraform(this._meshUid),
+        value: cdktn.stringToHclTerraform(this._meshUid),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       project: {
-        value: cdktf.stringToHclTerraform(this._project),
+        value: cdktn.stringToHclTerraform(this._project),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       service_name: {
-        value: cdktf.stringToHclTerraform(this._serviceName),
+        value: cdktn.stringToHclTerraform(this._serviceName),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       service_namespace: {
-        value: cdktf.stringToHclTerraform(this._serviceNamespace),
+        value: cdktn.stringToHclTerraform(this._serviceNamespace),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

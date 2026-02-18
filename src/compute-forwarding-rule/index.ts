@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface ComputeForwardingRuleConfig extends cdktf.TerraformMetaArguments {
+export interface ComputeForwardingRuleConfig extends cdktn.TerraformMetaArguments {
   /**
   * The 'ports', 'portRange', and 'allPorts' fields are mutually exclusive.
   * Only packets addressed to ports in the specified range will be forwarded
@@ -31,7 +31,7 @@ export interface ComputeForwardingRuleConfig extends cdktf.TerraformMetaArgument
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_forwarding_rule#all_ports ComputeForwardingRule#all_ports}
   */
-  readonly allPorts?: boolean | cdktf.IResolvable;
+  readonly allPorts?: boolean | cdktn.IResolvable;
   /**
   * This field is used along with the 'backend_service' field for
   * internal load balancing or with the 'target' field for internal
@@ -45,13 +45,13 @@ export interface ComputeForwardingRuleConfig extends cdktf.TerraformMetaArgument
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_forwarding_rule#allow_global_access ComputeForwardingRule#allow_global_access}
   */
-  readonly allowGlobalAccess?: boolean | cdktf.IResolvable;
+  readonly allowGlobalAccess?: boolean | cdktn.IResolvable;
   /**
   * This is used in PSC consumer ForwardingRule to control whether the PSC endpoint can be accessed from another region.
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_forwarding_rule#allow_psc_global_access ComputeForwardingRule#allow_psc_global_access}
   */
-  readonly allowPscGlobalAccess?: boolean | cdktf.IResolvable;
+  readonly allowPscGlobalAccess?: boolean | cdktn.IResolvable;
   /**
   * Identifies the backend service to which the forwarding rule sends traffic.
   * 
@@ -171,7 +171,7 @@ export interface ComputeForwardingRuleConfig extends cdktf.TerraformMetaArgument
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_forwarding_rule#is_mirroring_collector ComputeForwardingRule#is_mirroring_collector}
   */
-  readonly isMirroringCollector?: boolean | cdktf.IResolvable;
+  readonly isMirroringCollector?: boolean | cdktn.IResolvable;
   /**
   * Labels to apply to this forwarding rule.  A list of key->value pairs.
   * 
@@ -249,7 +249,7 @@ export interface ComputeForwardingRuleConfig extends cdktf.TerraformMetaArgument
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_forwarding_rule#no_automate_dns_zone ComputeForwardingRule#no_automate_dns_zone}
   */
-  readonly noAutomateDnsZone?: boolean | cdktf.IResolvable;
+  readonly noAutomateDnsZone?: boolean | cdktn.IResolvable;
   /**
   * The 'ports', 'portRange', and 'allPorts' fields are mutually exclusive.
   * Only packets addressed to ports in the specified range will be forwarded
@@ -315,7 +315,7 @@ export interface ComputeForwardingRuleConfig extends cdktf.TerraformMetaArgument
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_forwarding_rule#recreate_closed_psc ComputeForwardingRule#recreate_closed_psc}
   */
-  readonly recreateClosedPsc?: boolean | cdktf.IResolvable;
+  readonly recreateClosedPsc?: boolean | cdktn.IResolvable;
   /**
   * A reference to the region where the regional forwarding rule resides.
   * 
@@ -402,31 +402,31 @@ export interface ComputeForwardingRuleServiceDirectoryRegistrations {
 }
 
 export function computeForwardingRuleServiceDirectoryRegistrationsToTerraform(struct?: ComputeForwardingRuleServiceDirectoryRegistrationsOutputReference | ComputeForwardingRuleServiceDirectoryRegistrations): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    namespace: cdktf.stringToTerraform(struct!.namespace),
-    service: cdktf.stringToTerraform(struct!.service),
+    namespace: cdktn.stringToTerraform(struct!.namespace),
+    service: cdktn.stringToTerraform(struct!.service),
   }
 }
 
 
 export function computeForwardingRuleServiceDirectoryRegistrationsToHclTerraform(struct?: ComputeForwardingRuleServiceDirectoryRegistrationsOutputReference | ComputeForwardingRuleServiceDirectoryRegistrations): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     namespace: {
-      value: cdktf.stringToHclTerraform(struct!.namespace),
+      value: cdktn.stringToHclTerraform(struct!.namespace),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     service: {
-      value: cdktf.stringToHclTerraform(struct!.service),
+      value: cdktn.stringToHclTerraform(struct!.service),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -437,14 +437,14 @@ export function computeForwardingRuleServiceDirectoryRegistrationsToHclTerraform
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class ComputeForwardingRuleServiceDirectoryRegistrationsOutputReference extends cdktf.ComplexObject {
+export class ComputeForwardingRuleServiceDirectoryRegistrationsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -522,39 +522,39 @@ export interface ComputeForwardingRuleTimeouts {
   readonly update?: string;
 }
 
-export function computeForwardingRuleTimeoutsToTerraform(struct?: ComputeForwardingRuleTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function computeForwardingRuleTimeoutsToTerraform(struct?: ComputeForwardingRuleTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    create: cdktf.stringToTerraform(struct!.create),
-    delete: cdktf.stringToTerraform(struct!.delete),
-    update: cdktf.stringToTerraform(struct!.update),
+    create: cdktn.stringToTerraform(struct!.create),
+    delete: cdktn.stringToTerraform(struct!.delete),
+    update: cdktn.stringToTerraform(struct!.update),
   }
 }
 
 
-export function computeForwardingRuleTimeoutsToHclTerraform(struct?: ComputeForwardingRuleTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function computeForwardingRuleTimeoutsToHclTerraform(struct?: ComputeForwardingRuleTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     create: {
-      value: cdktf.stringToHclTerraform(struct!.create),
+      value: cdktn.stringToHclTerraform(struct!.create),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     delete: {
-      value: cdktf.stringToHclTerraform(struct!.delete),
+      value: cdktn.stringToHclTerraform(struct!.delete),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     update: {
-      value: cdktf.stringToHclTerraform(struct!.update),
+      value: cdktn.stringToHclTerraform(struct!.update),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -565,19 +565,19 @@ export function computeForwardingRuleTimeoutsToHclTerraform(struct?: ComputeForw
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class ComputeForwardingRuleTimeoutsOutputReference extends cdktf.ComplexObject {
+export class ComputeForwardingRuleTimeoutsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): ComputeForwardingRuleTimeouts | cdktf.IResolvable | undefined {
+  public get internalValue(): ComputeForwardingRuleTimeouts | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -598,7 +598,7 @@ export class ComputeForwardingRuleTimeoutsOutputReference extends cdktf.ComplexO
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: ComputeForwardingRuleTimeouts | cdktf.IResolvable | undefined) {
+  public set internalValue(value: ComputeForwardingRuleTimeouts | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -606,7 +606,7 @@ export class ComputeForwardingRuleTimeoutsOutputReference extends cdktf.ComplexO
       this._delete = undefined;
       this._update = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -671,7 +671,7 @@ export class ComputeForwardingRuleTimeoutsOutputReference extends cdktf.ComplexO
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_forwarding_rule google_compute_forwarding_rule}
 */
-export class ComputeForwardingRule extends cdktf.TerraformResource {
+export class ComputeForwardingRule extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -682,14 +682,14 @@ export class ComputeForwardingRule extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a ComputeForwardingRule resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a ComputeForwardingRule resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the ComputeForwardingRule to import
   * @param importFromId The id of the existing ComputeForwardingRule that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_forwarding_rule#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the ComputeForwardingRule to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "google_compute_forwarding_rule", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "google_compute_forwarding_rule", importId: importFromId, provider });
       }
 
   // ===========
@@ -754,11 +754,11 @@ export class ComputeForwardingRule extends cdktf.TerraformResource {
   // ==========
 
   // all_ports - computed: false, optional: true, required: false
-  private _allPorts?: boolean | cdktf.IResolvable; 
+  private _allPorts?: boolean | cdktn.IResolvable; 
   public get allPorts() {
     return this.getBooleanAttribute('all_ports');
   }
-  public set allPorts(value: boolean | cdktf.IResolvable) {
+  public set allPorts(value: boolean | cdktn.IResolvable) {
     this._allPorts = value;
   }
   public resetAllPorts() {
@@ -770,11 +770,11 @@ export class ComputeForwardingRule extends cdktf.TerraformResource {
   }
 
   // allow_global_access - computed: false, optional: true, required: false
-  private _allowGlobalAccess?: boolean | cdktf.IResolvable; 
+  private _allowGlobalAccess?: boolean | cdktn.IResolvable; 
   public get allowGlobalAccess() {
     return this.getBooleanAttribute('allow_global_access');
   }
-  public set allowGlobalAccess(value: boolean | cdktf.IResolvable) {
+  public set allowGlobalAccess(value: boolean | cdktn.IResolvable) {
     this._allowGlobalAccess = value;
   }
   public resetAllowGlobalAccess() {
@@ -786,11 +786,11 @@ export class ComputeForwardingRule extends cdktf.TerraformResource {
   }
 
   // allow_psc_global_access - computed: false, optional: true, required: false
-  private _allowPscGlobalAccess?: boolean | cdktf.IResolvable; 
+  private _allowPscGlobalAccess?: boolean | cdktn.IResolvable; 
   public get allowPscGlobalAccess() {
     return this.getBooleanAttribute('allow_psc_global_access');
   }
-  public set allowPscGlobalAccess(value: boolean | cdktf.IResolvable) {
+  public set allowPscGlobalAccess(value: boolean | cdktn.IResolvable) {
     this._allowPscGlobalAccess = value;
   }
   public resetAllowPscGlobalAccess() {
@@ -844,7 +844,7 @@ export class ComputeForwardingRule extends cdktf.TerraformResource {
   }
 
   // effective_labels - computed: true, optional: false, required: false
-  private _effectiveLabels = new cdktf.StringMap(this, "effective_labels");
+  private _effectiveLabels = new cdktn.StringMap(this, "effective_labels");
   public get effectiveLabels() {
     return this._effectiveLabels;
   }
@@ -935,11 +935,11 @@ export class ComputeForwardingRule extends cdktf.TerraformResource {
   }
 
   // is_mirroring_collector - computed: false, optional: true, required: false
-  private _isMirroringCollector?: boolean | cdktf.IResolvable; 
+  private _isMirroringCollector?: boolean | cdktn.IResolvable; 
   public get isMirroringCollector() {
     return this.getBooleanAttribute('is_mirroring_collector');
   }
-  public set isMirroringCollector(value: boolean | cdktf.IResolvable) {
+  public set isMirroringCollector(value: boolean | cdktn.IResolvable) {
     this._isMirroringCollector = value;
   }
   public resetIsMirroringCollector() {
@@ -1033,11 +1033,11 @@ export class ComputeForwardingRule extends cdktf.TerraformResource {
   }
 
   // no_automate_dns_zone - computed: false, optional: true, required: false
-  private _noAutomateDnsZone?: boolean | cdktf.IResolvable; 
+  private _noAutomateDnsZone?: boolean | cdktn.IResolvable; 
   public get noAutomateDnsZone() {
     return this.getBooleanAttribute('no_automate_dns_zone');
   }
-  public set noAutomateDnsZone(value: boolean | cdktf.IResolvable) {
+  public set noAutomateDnsZone(value: boolean | cdktn.IResolvable) {
     this._noAutomateDnsZone = value;
   }
   public resetNoAutomateDnsZone() {
@@ -1067,7 +1067,7 @@ export class ComputeForwardingRule extends cdktf.TerraformResource {
   // ports - computed: false, optional: true, required: false
   private _ports?: string[]; 
   public get ports() {
-    return cdktf.Fn.tolist(this.getListAttribute('ports'));
+    return cdktn.Fn.tolist(this.getListAttribute('ports'));
   }
   public set ports(value: string[]) {
     this._ports = value;
@@ -1107,11 +1107,11 @@ export class ComputeForwardingRule extends cdktf.TerraformResource {
   }
 
   // recreate_closed_psc - computed: false, optional: true, required: false
-  private _recreateClosedPsc?: boolean | cdktf.IResolvable; 
+  private _recreateClosedPsc?: boolean | cdktn.IResolvable; 
   public get recreateClosedPsc() {
     return this.getBooleanAttribute('recreate_closed_psc');
   }
-  public set recreateClosedPsc(value: boolean | cdktf.IResolvable) {
+  public set recreateClosedPsc(value: boolean | cdktn.IResolvable) {
     this._recreateClosedPsc = value;
   }
   public resetRecreateClosedPsc() {
@@ -1213,7 +1213,7 @@ export class ComputeForwardingRule extends cdktf.TerraformResource {
   }
 
   // terraform_labels - computed: true, optional: false, required: false
-  private _terraformLabels = new cdktf.StringMap(this, "terraform_labels");
+  private _terraformLabels = new cdktn.StringMap(this, "terraform_labels");
   public get terraformLabels() {
     return this._terraformLabels;
   }
@@ -1256,32 +1256,32 @@ export class ComputeForwardingRule extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      all_ports: cdktf.booleanToTerraform(this._allPorts),
-      allow_global_access: cdktf.booleanToTerraform(this._allowGlobalAccess),
-      allow_psc_global_access: cdktf.booleanToTerraform(this._allowPscGlobalAccess),
-      backend_service: cdktf.stringToTerraform(this._backendService),
-      description: cdktf.stringToTerraform(this._description),
-      id: cdktf.stringToTerraform(this._id),
-      ip_address: cdktf.stringToTerraform(this._ipAddress),
-      ip_collection: cdktf.stringToTerraform(this._ipCollection),
-      ip_protocol: cdktf.stringToTerraform(this._ipProtocol),
-      ip_version: cdktf.stringToTerraform(this._ipVersion),
-      is_mirroring_collector: cdktf.booleanToTerraform(this._isMirroringCollector),
-      labels: cdktf.hashMapper(cdktf.stringToTerraform)(this._labels),
-      load_balancing_scheme: cdktf.stringToTerraform(this._loadBalancingScheme),
-      name: cdktf.stringToTerraform(this._name),
-      network: cdktf.stringToTerraform(this._network),
-      network_tier: cdktf.stringToTerraform(this._networkTier),
-      no_automate_dns_zone: cdktf.booleanToTerraform(this._noAutomateDnsZone),
-      port_range: cdktf.stringToTerraform(this._portRange),
-      ports: cdktf.listMapper(cdktf.stringToTerraform, false)(this._ports),
-      project: cdktf.stringToTerraform(this._project),
-      recreate_closed_psc: cdktf.booleanToTerraform(this._recreateClosedPsc),
-      region: cdktf.stringToTerraform(this._region),
-      service_label: cdktf.stringToTerraform(this._serviceLabel),
-      source_ip_ranges: cdktf.listMapper(cdktf.stringToTerraform, false)(this._sourceIpRanges),
-      subnetwork: cdktf.stringToTerraform(this._subnetwork),
-      target: cdktf.stringToTerraform(this._target),
+      all_ports: cdktn.booleanToTerraform(this._allPorts),
+      allow_global_access: cdktn.booleanToTerraform(this._allowGlobalAccess),
+      allow_psc_global_access: cdktn.booleanToTerraform(this._allowPscGlobalAccess),
+      backend_service: cdktn.stringToTerraform(this._backendService),
+      description: cdktn.stringToTerraform(this._description),
+      id: cdktn.stringToTerraform(this._id),
+      ip_address: cdktn.stringToTerraform(this._ipAddress),
+      ip_collection: cdktn.stringToTerraform(this._ipCollection),
+      ip_protocol: cdktn.stringToTerraform(this._ipProtocol),
+      ip_version: cdktn.stringToTerraform(this._ipVersion),
+      is_mirroring_collector: cdktn.booleanToTerraform(this._isMirroringCollector),
+      labels: cdktn.hashMapper(cdktn.stringToTerraform)(this._labels),
+      load_balancing_scheme: cdktn.stringToTerraform(this._loadBalancingScheme),
+      name: cdktn.stringToTerraform(this._name),
+      network: cdktn.stringToTerraform(this._network),
+      network_tier: cdktn.stringToTerraform(this._networkTier),
+      no_automate_dns_zone: cdktn.booleanToTerraform(this._noAutomateDnsZone),
+      port_range: cdktn.stringToTerraform(this._portRange),
+      ports: cdktn.listMapper(cdktn.stringToTerraform, false)(this._ports),
+      project: cdktn.stringToTerraform(this._project),
+      recreate_closed_psc: cdktn.booleanToTerraform(this._recreateClosedPsc),
+      region: cdktn.stringToTerraform(this._region),
+      service_label: cdktn.stringToTerraform(this._serviceLabel),
+      source_ip_ranges: cdktn.listMapper(cdktn.stringToTerraform, false)(this._sourceIpRanges),
+      subnetwork: cdktn.stringToTerraform(this._subnetwork),
+      target: cdktn.stringToTerraform(this._target),
       service_directory_registrations: computeForwardingRuleServiceDirectoryRegistrationsToTerraform(this._serviceDirectoryRegistrations.internalValue),
       timeouts: computeForwardingRuleTimeoutsToTerraform(this._timeouts.internalValue),
     };
@@ -1290,157 +1290,157 @@ export class ComputeForwardingRule extends cdktf.TerraformResource {
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       all_ports: {
-        value: cdktf.booleanToHclTerraform(this._allPorts),
+        value: cdktn.booleanToHclTerraform(this._allPorts),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       allow_global_access: {
-        value: cdktf.booleanToHclTerraform(this._allowGlobalAccess),
+        value: cdktn.booleanToHclTerraform(this._allowGlobalAccess),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       allow_psc_global_access: {
-        value: cdktf.booleanToHclTerraform(this._allowPscGlobalAccess),
+        value: cdktn.booleanToHclTerraform(this._allowPscGlobalAccess),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       backend_service: {
-        value: cdktf.stringToHclTerraform(this._backendService),
+        value: cdktn.stringToHclTerraform(this._backendService),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       description: {
-        value: cdktf.stringToHclTerraform(this._description),
+        value: cdktn.stringToHclTerraform(this._description),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       ip_address: {
-        value: cdktf.stringToHclTerraform(this._ipAddress),
+        value: cdktn.stringToHclTerraform(this._ipAddress),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       ip_collection: {
-        value: cdktf.stringToHclTerraform(this._ipCollection),
+        value: cdktn.stringToHclTerraform(this._ipCollection),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       ip_protocol: {
-        value: cdktf.stringToHclTerraform(this._ipProtocol),
+        value: cdktn.stringToHclTerraform(this._ipProtocol),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       ip_version: {
-        value: cdktf.stringToHclTerraform(this._ipVersion),
+        value: cdktn.stringToHclTerraform(this._ipVersion),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       is_mirroring_collector: {
-        value: cdktf.booleanToHclTerraform(this._isMirroringCollector),
+        value: cdktn.booleanToHclTerraform(this._isMirroringCollector),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       labels: {
-        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._labels),
+        value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(this._labels),
         isBlock: false,
         type: "map",
         storageClassType: "stringMap",
       },
       load_balancing_scheme: {
-        value: cdktf.stringToHclTerraform(this._loadBalancingScheme),
+        value: cdktn.stringToHclTerraform(this._loadBalancingScheme),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       name: {
-        value: cdktf.stringToHclTerraform(this._name),
+        value: cdktn.stringToHclTerraform(this._name),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       network: {
-        value: cdktf.stringToHclTerraform(this._network),
+        value: cdktn.stringToHclTerraform(this._network),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       network_tier: {
-        value: cdktf.stringToHclTerraform(this._networkTier),
+        value: cdktn.stringToHclTerraform(this._networkTier),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       no_automate_dns_zone: {
-        value: cdktf.booleanToHclTerraform(this._noAutomateDnsZone),
+        value: cdktn.booleanToHclTerraform(this._noAutomateDnsZone),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       port_range: {
-        value: cdktf.stringToHclTerraform(this._portRange),
+        value: cdktn.stringToHclTerraform(this._portRange),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       ports: {
-        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._ports),
+        value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(this._ports),
         isBlock: false,
         type: "set",
         storageClassType: "stringList",
       },
       project: {
-        value: cdktf.stringToHclTerraform(this._project),
+        value: cdktn.stringToHclTerraform(this._project),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       recreate_closed_psc: {
-        value: cdktf.booleanToHclTerraform(this._recreateClosedPsc),
+        value: cdktn.booleanToHclTerraform(this._recreateClosedPsc),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       region: {
-        value: cdktf.stringToHclTerraform(this._region),
+        value: cdktn.stringToHclTerraform(this._region),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       service_label: {
-        value: cdktf.stringToHclTerraform(this._serviceLabel),
+        value: cdktn.stringToHclTerraform(this._serviceLabel),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       source_ip_ranges: {
-        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._sourceIpRanges),
+        value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(this._sourceIpRanges),
         isBlock: false,
         type: "list",
         storageClassType: "stringList",
       },
       subnetwork: {
-        value: cdktf.stringToHclTerraform(this._subnetwork),
+        value: cdktn.stringToHclTerraform(this._subnetwork),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       target: {
-        value: cdktf.stringToHclTerraform(this._target),
+        value: cdktn.stringToHclTerraform(this._target),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

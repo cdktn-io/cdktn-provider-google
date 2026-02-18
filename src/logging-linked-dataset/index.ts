@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface LoggingLinkedDatasetConfig extends cdktf.TerraformMetaArguments {
+export interface LoggingLinkedDatasetConfig extends cdktn.TerraformMetaArguments {
   /**
   * The bucket to which the linked dataset is attached.
   *
@@ -54,7 +54,7 @@ export interface LoggingLinkedDatasetConfig extends cdktf.TerraformMetaArguments
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/logging_linked_dataset#bigquery_dataset LoggingLinkedDataset#bigquery_dataset}
   */
-  readonly bigqueryDataset?: LoggingLinkedDatasetBigqueryDataset[] | cdktf.IResolvable;
+  readonly bigqueryDataset?: LoggingLinkedDatasetBigqueryDataset[] | cdktn.IResolvable;
   /**
   * timeouts block
   *
@@ -65,9 +65,9 @@ export interface LoggingLinkedDatasetConfig extends cdktf.TerraformMetaArguments
 export interface LoggingLinkedDatasetBigqueryDataset {
 }
 
-export function loggingLinkedDatasetBigqueryDatasetToTerraform(struct?: LoggingLinkedDatasetBigqueryDataset | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function loggingLinkedDatasetBigqueryDatasetToTerraform(struct?: LoggingLinkedDatasetBigqueryDataset | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -75,9 +75,9 @@ export function loggingLinkedDatasetBigqueryDatasetToTerraform(struct?: LoggingL
 }
 
 
-export function loggingLinkedDatasetBigqueryDatasetToHclTerraform(struct?: LoggingLinkedDatasetBigqueryDataset | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function loggingLinkedDatasetBigqueryDatasetToHclTerraform(struct?: LoggingLinkedDatasetBigqueryDataset | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -85,9 +85,9 @@ export function loggingLinkedDatasetBigqueryDatasetToHclTerraform(struct?: Loggi
   return attrs;
 }
 
-export class LoggingLinkedDatasetBigqueryDatasetOutputReference extends cdktf.ComplexObject {
+export class LoggingLinkedDatasetBigqueryDatasetOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -95,11 +95,11 @@ export class LoggingLinkedDatasetBigqueryDatasetOutputReference extends cdktf.Co
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): LoggingLinkedDatasetBigqueryDataset | cdktf.IResolvable | undefined {
+  public get internalValue(): LoggingLinkedDatasetBigqueryDataset | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -108,12 +108,12 @@ export class LoggingLinkedDatasetBigqueryDatasetOutputReference extends cdktf.Co
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: LoggingLinkedDatasetBigqueryDataset | cdktf.IResolvable | undefined) {
+  public set internalValue(value: LoggingLinkedDatasetBigqueryDataset | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -129,15 +129,15 @@ export class LoggingLinkedDatasetBigqueryDatasetOutputReference extends cdktf.Co
   }
 }
 
-export class LoggingLinkedDatasetBigqueryDatasetList extends cdktf.ComplexList {
-  public internalValue? : LoggingLinkedDatasetBigqueryDataset[] | cdktf.IResolvable
+export class LoggingLinkedDatasetBigqueryDatasetList extends cdktn.ComplexList {
+  public internalValue? : LoggingLinkedDatasetBigqueryDataset[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -159,32 +159,32 @@ export interface LoggingLinkedDatasetTimeouts {
   readonly delete?: string;
 }
 
-export function loggingLinkedDatasetTimeoutsToTerraform(struct?: LoggingLinkedDatasetTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function loggingLinkedDatasetTimeoutsToTerraform(struct?: LoggingLinkedDatasetTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    create: cdktf.stringToTerraform(struct!.create),
-    delete: cdktf.stringToTerraform(struct!.delete),
+    create: cdktn.stringToTerraform(struct!.create),
+    delete: cdktn.stringToTerraform(struct!.delete),
   }
 }
 
 
-export function loggingLinkedDatasetTimeoutsToHclTerraform(struct?: LoggingLinkedDatasetTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function loggingLinkedDatasetTimeoutsToHclTerraform(struct?: LoggingLinkedDatasetTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     create: {
-      value: cdktf.stringToHclTerraform(struct!.create),
+      value: cdktn.stringToHclTerraform(struct!.create),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     delete: {
-      value: cdktf.stringToHclTerraform(struct!.delete),
+      value: cdktn.stringToHclTerraform(struct!.delete),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -195,19 +195,19 @@ export function loggingLinkedDatasetTimeoutsToHclTerraform(struct?: LoggingLinke
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class LoggingLinkedDatasetTimeoutsOutputReference extends cdktf.ComplexObject {
+export class LoggingLinkedDatasetTimeoutsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): LoggingLinkedDatasetTimeouts | cdktf.IResolvable | undefined {
+  public get internalValue(): LoggingLinkedDatasetTimeouts | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -224,14 +224,14 @@ export class LoggingLinkedDatasetTimeoutsOutputReference extends cdktf.ComplexOb
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: LoggingLinkedDatasetTimeouts | cdktf.IResolvable | undefined) {
+  public set internalValue(value: LoggingLinkedDatasetTimeouts | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._create = undefined;
       this._delete = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -279,7 +279,7 @@ export class LoggingLinkedDatasetTimeoutsOutputReference extends cdktf.ComplexOb
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/logging_linked_dataset google_logging_linked_dataset}
 */
-export class LoggingLinkedDataset extends cdktf.TerraformResource {
+export class LoggingLinkedDataset extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -290,14 +290,14 @@ export class LoggingLinkedDataset extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a LoggingLinkedDataset resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a LoggingLinkedDataset resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the LoggingLinkedDataset to import
   * @param importFromId The id of the existing LoggingLinkedDataset that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/logging_linked_dataset#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the LoggingLinkedDataset to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "google_logging_linked_dataset", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "google_logging_linked_dataset", importId: importFromId, provider });
       }
 
   // ===========
@@ -451,7 +451,7 @@ export class LoggingLinkedDataset extends cdktf.TerraformResource {
   public get bigqueryDataset() {
     return this._bigqueryDataset;
   }
-  public putBigqueryDataset(value: LoggingLinkedDatasetBigqueryDataset[] | cdktf.IResolvable) {
+  public putBigqueryDataset(value: LoggingLinkedDatasetBigqueryDataset[] | cdktn.IResolvable) {
     this._bigqueryDataset.internalValue = value;
   }
   public resetBigqueryDataset() {
@@ -484,13 +484,13 @@ export class LoggingLinkedDataset extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      bucket: cdktf.stringToTerraform(this._bucket),
-      description: cdktf.stringToTerraform(this._description),
-      id: cdktf.stringToTerraform(this._id),
-      link_id: cdktf.stringToTerraform(this._linkId),
-      location: cdktf.stringToTerraform(this._location),
-      parent: cdktf.stringToTerraform(this._parent),
-      bigquery_dataset: cdktf.listMapper(loggingLinkedDatasetBigqueryDatasetToTerraform, true)(this._bigqueryDataset.internalValue),
+      bucket: cdktn.stringToTerraform(this._bucket),
+      description: cdktn.stringToTerraform(this._description),
+      id: cdktn.stringToTerraform(this._id),
+      link_id: cdktn.stringToTerraform(this._linkId),
+      location: cdktn.stringToTerraform(this._location),
+      parent: cdktn.stringToTerraform(this._parent),
+      bigquery_dataset: cdktn.listMapper(loggingLinkedDatasetBigqueryDatasetToTerraform, true)(this._bigqueryDataset.internalValue),
       timeouts: loggingLinkedDatasetTimeoutsToTerraform(this._timeouts.internalValue),
     };
   }
@@ -498,43 +498,43 @@ export class LoggingLinkedDataset extends cdktf.TerraformResource {
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       bucket: {
-        value: cdktf.stringToHclTerraform(this._bucket),
+        value: cdktn.stringToHclTerraform(this._bucket),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       description: {
-        value: cdktf.stringToHclTerraform(this._description),
+        value: cdktn.stringToHclTerraform(this._description),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       link_id: {
-        value: cdktf.stringToHclTerraform(this._linkId),
+        value: cdktn.stringToHclTerraform(this._linkId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       location: {
-        value: cdktf.stringToHclTerraform(this._location),
+        value: cdktn.stringToHclTerraform(this._location),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       parent: {
-        value: cdktf.stringToHclTerraform(this._parent),
+        value: cdktn.stringToHclTerraform(this._parent),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       bigquery_dataset: {
-        value: cdktf.listMapperHcl(loggingLinkedDatasetBigqueryDatasetToHclTerraform, true)(this._bigqueryDataset.internalValue),
+        value: cdktn.listMapperHcl(loggingLinkedDatasetBigqueryDatasetToHclTerraform, true)(this._bigqueryDataset.internalValue),
         isBlock: true,
         type: "list",
         storageClassType: "LoggingLinkedDatasetBigqueryDatasetList",

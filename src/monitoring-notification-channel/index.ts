@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface MonitoringNotificationChannelConfig extends cdktf.TerraformMetaArguments {
+export interface MonitoringNotificationChannelConfig extends cdktn.TerraformMetaArguments {
   /**
   * An optional human-readable description of this notification channel. This description may provide additional details, beyond the display name, for the channel. This may not exceed 1024 Unicode characters.
   *
@@ -29,7 +29,7 @@ export interface MonitoringNotificationChannelConfig extends cdktf.TerraformMeta
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/monitoring_notification_channel#enabled MonitoringNotificationChannel#enabled}
   */
-  readonly enabled?: boolean | cdktf.IResolvable;
+  readonly enabled?: boolean | cdktn.IResolvable;
   /**
   * If true, the notification channel will be deleted regardless
   * of its use in alert policies (the policies will be updated
@@ -39,7 +39,7 @@ export interface MonitoringNotificationChannelConfig extends cdktf.TerraformMeta
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/monitoring_notification_channel#force_delete MonitoringNotificationChannel#force_delete}
   */
-  readonly forceDelete?: boolean | cdktf.IResolvable;
+  readonly forceDelete?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/monitoring_notification_channel#id MonitoringNotificationChannel#id}
   *
@@ -110,38 +110,38 @@ export interface MonitoringNotificationChannelSensitiveLabels {
 }
 
 export function monitoringNotificationChannelSensitiveLabelsToTerraform(struct?: MonitoringNotificationChannelSensitiveLabelsOutputReference | MonitoringNotificationChannelSensitiveLabels): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    auth_token: cdktf.stringToTerraform(struct!.authToken),
-    password: cdktf.stringToTerraform(struct!.password),
-    service_key: cdktf.stringToTerraform(struct!.serviceKey),
+    auth_token: cdktn.stringToTerraform(struct!.authToken),
+    password: cdktn.stringToTerraform(struct!.password),
+    service_key: cdktn.stringToTerraform(struct!.serviceKey),
   }
 }
 
 
 export function monitoringNotificationChannelSensitiveLabelsToHclTerraform(struct?: MonitoringNotificationChannelSensitiveLabelsOutputReference | MonitoringNotificationChannelSensitiveLabels): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     auth_token: {
-      value: cdktf.stringToHclTerraform(struct!.authToken),
+      value: cdktn.stringToHclTerraform(struct!.authToken),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     password: {
-      value: cdktf.stringToHclTerraform(struct!.password),
+      value: cdktn.stringToHclTerraform(struct!.password),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     service_key: {
-      value: cdktf.stringToHclTerraform(struct!.serviceKey),
+      value: cdktn.stringToHclTerraform(struct!.serviceKey),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -152,14 +152,14 @@ export function monitoringNotificationChannelSensitiveLabelsToHclTerraform(struc
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class MonitoringNotificationChannelSensitiveLabelsOutputReference extends cdktf.ComplexObject {
+export class MonitoringNotificationChannelSensitiveLabelsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -259,39 +259,39 @@ export interface MonitoringNotificationChannelTimeouts {
   readonly update?: string;
 }
 
-export function monitoringNotificationChannelTimeoutsToTerraform(struct?: MonitoringNotificationChannelTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function monitoringNotificationChannelTimeoutsToTerraform(struct?: MonitoringNotificationChannelTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    create: cdktf.stringToTerraform(struct!.create),
-    delete: cdktf.stringToTerraform(struct!.delete),
-    update: cdktf.stringToTerraform(struct!.update),
+    create: cdktn.stringToTerraform(struct!.create),
+    delete: cdktn.stringToTerraform(struct!.delete),
+    update: cdktn.stringToTerraform(struct!.update),
   }
 }
 
 
-export function monitoringNotificationChannelTimeoutsToHclTerraform(struct?: MonitoringNotificationChannelTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function monitoringNotificationChannelTimeoutsToHclTerraform(struct?: MonitoringNotificationChannelTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     create: {
-      value: cdktf.stringToHclTerraform(struct!.create),
+      value: cdktn.stringToHclTerraform(struct!.create),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     delete: {
-      value: cdktf.stringToHclTerraform(struct!.delete),
+      value: cdktn.stringToHclTerraform(struct!.delete),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     update: {
-      value: cdktf.stringToHclTerraform(struct!.update),
+      value: cdktn.stringToHclTerraform(struct!.update),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -302,19 +302,19 @@ export function monitoringNotificationChannelTimeoutsToHclTerraform(struct?: Mon
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class MonitoringNotificationChannelTimeoutsOutputReference extends cdktf.ComplexObject {
+export class MonitoringNotificationChannelTimeoutsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): MonitoringNotificationChannelTimeouts | cdktf.IResolvable | undefined {
+  public get internalValue(): MonitoringNotificationChannelTimeouts | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -335,7 +335,7 @@ export class MonitoringNotificationChannelTimeoutsOutputReference extends cdktf.
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: MonitoringNotificationChannelTimeouts | cdktf.IResolvable | undefined) {
+  public set internalValue(value: MonitoringNotificationChannelTimeouts | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -343,7 +343,7 @@ export class MonitoringNotificationChannelTimeoutsOutputReference extends cdktf.
       this._delete = undefined;
       this._update = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -408,7 +408,7 @@ export class MonitoringNotificationChannelTimeoutsOutputReference extends cdktf.
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/monitoring_notification_channel google_monitoring_notification_channel}
 */
-export class MonitoringNotificationChannel extends cdktf.TerraformResource {
+export class MonitoringNotificationChannel extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -419,14 +419,14 @@ export class MonitoringNotificationChannel extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a MonitoringNotificationChannel resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a MonitoringNotificationChannel resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the MonitoringNotificationChannel to import
   * @param importFromId The id of the existing MonitoringNotificationChannel that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/monitoring_notification_channel#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the MonitoringNotificationChannel to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "google_monitoring_notification_channel", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "google_monitoring_notification_channel", importId: importFromId, provider });
       }
 
   // ===========
@@ -506,11 +506,11 @@ export class MonitoringNotificationChannel extends cdktf.TerraformResource {
   }
 
   // enabled - computed: false, optional: true, required: false
-  private _enabled?: boolean | cdktf.IResolvable; 
+  private _enabled?: boolean | cdktn.IResolvable; 
   public get enabled() {
     return this.getBooleanAttribute('enabled');
   }
-  public set enabled(value: boolean | cdktf.IResolvable) {
+  public set enabled(value: boolean | cdktn.IResolvable) {
     this._enabled = value;
   }
   public resetEnabled() {
@@ -522,11 +522,11 @@ export class MonitoringNotificationChannel extends cdktf.TerraformResource {
   }
 
   // force_delete - computed: false, optional: true, required: false
-  private _forceDelete?: boolean | cdktf.IResolvable; 
+  private _forceDelete?: boolean | cdktn.IResolvable; 
   public get forceDelete() {
     return this.getBooleanAttribute('force_delete');
   }
-  public set forceDelete(value: boolean | cdktf.IResolvable) {
+  public set forceDelete(value: boolean | cdktn.IResolvable) {
     this._forceDelete = value;
   }
   public resetForceDelete() {
@@ -662,15 +662,15 @@ export class MonitoringNotificationChannel extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      description: cdktf.stringToTerraform(this._description),
-      display_name: cdktf.stringToTerraform(this._displayName),
-      enabled: cdktf.booleanToTerraform(this._enabled),
-      force_delete: cdktf.booleanToTerraform(this._forceDelete),
-      id: cdktf.stringToTerraform(this._id),
-      labels: cdktf.hashMapper(cdktf.stringToTerraform)(this._labels),
-      project: cdktf.stringToTerraform(this._project),
-      type: cdktf.stringToTerraform(this._type),
-      user_labels: cdktf.hashMapper(cdktf.stringToTerraform)(this._userLabels),
+      description: cdktn.stringToTerraform(this._description),
+      display_name: cdktn.stringToTerraform(this._displayName),
+      enabled: cdktn.booleanToTerraform(this._enabled),
+      force_delete: cdktn.booleanToTerraform(this._forceDelete),
+      id: cdktn.stringToTerraform(this._id),
+      labels: cdktn.hashMapper(cdktn.stringToTerraform)(this._labels),
+      project: cdktn.stringToTerraform(this._project),
+      type: cdktn.stringToTerraform(this._type),
+      user_labels: cdktn.hashMapper(cdktn.stringToTerraform)(this._userLabels),
       sensitive_labels: monitoringNotificationChannelSensitiveLabelsToTerraform(this._sensitiveLabels.internalValue),
       timeouts: monitoringNotificationChannelTimeoutsToTerraform(this._timeouts.internalValue),
     };
@@ -679,55 +679,55 @@ export class MonitoringNotificationChannel extends cdktf.TerraformResource {
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       description: {
-        value: cdktf.stringToHclTerraform(this._description),
+        value: cdktn.stringToHclTerraform(this._description),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       display_name: {
-        value: cdktf.stringToHclTerraform(this._displayName),
+        value: cdktn.stringToHclTerraform(this._displayName),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       enabled: {
-        value: cdktf.booleanToHclTerraform(this._enabled),
+        value: cdktn.booleanToHclTerraform(this._enabled),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       force_delete: {
-        value: cdktf.booleanToHclTerraform(this._forceDelete),
+        value: cdktn.booleanToHclTerraform(this._forceDelete),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       labels: {
-        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._labels),
+        value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(this._labels),
         isBlock: false,
         type: "map",
         storageClassType: "stringMap",
       },
       project: {
-        value: cdktf.stringToHclTerraform(this._project),
+        value: cdktn.stringToHclTerraform(this._project),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       type: {
-        value: cdktf.stringToHclTerraform(this._type),
+        value: cdktn.stringToHclTerraform(this._type),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       user_labels: {
-        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._userLabels),
+        value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(this._userLabels),
         isBlock: false,
         type: "map",
         storageClassType: "stringMap",

@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface ApigeeEnvironmentKeyvaluemapsEntriesConfig extends cdktf.TerraformMetaArguments {
+export interface ApigeeEnvironmentKeyvaluemapsEntriesConfig extends cdktn.TerraformMetaArguments {
   /**
   * The Apigee environment keyvalumaps Id associated with the Apigee environment,
   * in the format 'organizations/{{org_name}}/environments/{{env_name}}/keyvaluemaps/{{keyvaluemap_name}}'.
@@ -56,32 +56,32 @@ export interface ApigeeEnvironmentKeyvaluemapsEntriesTimeouts {
   readonly delete?: string;
 }
 
-export function apigeeEnvironmentKeyvaluemapsEntriesTimeoutsToTerraform(struct?: ApigeeEnvironmentKeyvaluemapsEntriesTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function apigeeEnvironmentKeyvaluemapsEntriesTimeoutsToTerraform(struct?: ApigeeEnvironmentKeyvaluemapsEntriesTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    create: cdktf.stringToTerraform(struct!.create),
-    delete: cdktf.stringToTerraform(struct!.delete),
+    create: cdktn.stringToTerraform(struct!.create),
+    delete: cdktn.stringToTerraform(struct!.delete),
   }
 }
 
 
-export function apigeeEnvironmentKeyvaluemapsEntriesTimeoutsToHclTerraform(struct?: ApigeeEnvironmentKeyvaluemapsEntriesTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function apigeeEnvironmentKeyvaluemapsEntriesTimeoutsToHclTerraform(struct?: ApigeeEnvironmentKeyvaluemapsEntriesTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     create: {
-      value: cdktf.stringToHclTerraform(struct!.create),
+      value: cdktn.stringToHclTerraform(struct!.create),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     delete: {
-      value: cdktf.stringToHclTerraform(struct!.delete),
+      value: cdktn.stringToHclTerraform(struct!.delete),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -92,19 +92,19 @@ export function apigeeEnvironmentKeyvaluemapsEntriesTimeoutsToHclTerraform(struc
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class ApigeeEnvironmentKeyvaluemapsEntriesTimeoutsOutputReference extends cdktf.ComplexObject {
+export class ApigeeEnvironmentKeyvaluemapsEntriesTimeoutsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): ApigeeEnvironmentKeyvaluemapsEntriesTimeouts | cdktf.IResolvable | undefined {
+  public get internalValue(): ApigeeEnvironmentKeyvaluemapsEntriesTimeouts | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -121,14 +121,14 @@ export class ApigeeEnvironmentKeyvaluemapsEntriesTimeoutsOutputReference extends
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: ApigeeEnvironmentKeyvaluemapsEntriesTimeouts | cdktf.IResolvable | undefined) {
+  public set internalValue(value: ApigeeEnvironmentKeyvaluemapsEntriesTimeouts | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._create = undefined;
       this._delete = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -176,7 +176,7 @@ export class ApigeeEnvironmentKeyvaluemapsEntriesTimeoutsOutputReference extends
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/apigee_environment_keyvaluemaps_entries google_apigee_environment_keyvaluemaps_entries}
 */
-export class ApigeeEnvironmentKeyvaluemapsEntries extends cdktf.TerraformResource {
+export class ApigeeEnvironmentKeyvaluemapsEntries extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -187,14 +187,14 @@ export class ApigeeEnvironmentKeyvaluemapsEntries extends cdktf.TerraformResourc
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a ApigeeEnvironmentKeyvaluemapsEntries resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a ApigeeEnvironmentKeyvaluemapsEntries resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the ApigeeEnvironmentKeyvaluemapsEntries to import
   * @param importFromId The id of the existing ApigeeEnvironmentKeyvaluemapsEntries that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/apigee_environment_keyvaluemaps_entries#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the ApigeeEnvironmentKeyvaluemapsEntries to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "google_apigee_environment_keyvaluemaps_entries", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "google_apigee_environment_keyvaluemaps_entries", importId: importFromId, provider });
       }
 
   // ===========
@@ -312,10 +312,10 @@ export class ApigeeEnvironmentKeyvaluemapsEntries extends cdktf.TerraformResourc
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      env_keyvaluemap_id: cdktf.stringToTerraform(this._envKeyvaluemapId),
-      id: cdktf.stringToTerraform(this._id),
-      name: cdktf.stringToTerraform(this._name),
-      value: cdktf.stringToTerraform(this._value),
+      env_keyvaluemap_id: cdktn.stringToTerraform(this._envKeyvaluemapId),
+      id: cdktn.stringToTerraform(this._id),
+      name: cdktn.stringToTerraform(this._name),
+      value: cdktn.stringToTerraform(this._value),
       timeouts: apigeeEnvironmentKeyvaluemapsEntriesTimeoutsToTerraform(this._timeouts.internalValue),
     };
   }
@@ -323,25 +323,25 @@ export class ApigeeEnvironmentKeyvaluemapsEntries extends cdktf.TerraformResourc
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       env_keyvaluemap_id: {
-        value: cdktf.stringToHclTerraform(this._envKeyvaluemapId),
+        value: cdktn.stringToHclTerraform(this._envKeyvaluemapId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       name: {
-        value: cdktf.stringToHclTerraform(this._name),
+        value: cdktn.stringToHclTerraform(this._name),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       value: {
-        value: cdktf.stringToHclTerraform(this._value),
+        value: cdktn.stringToHclTerraform(this._value),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

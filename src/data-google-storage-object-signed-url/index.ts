@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface DataGoogleStorageObjectSignedUrlConfig extends cdktf.TerraformMetaArguments {
+export interface DataGoogleStorageObjectSignedUrlConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/data-sources/storage_object_signed_url#bucket DataGoogleStorageObjectSignedUrl#bucket}
   */
@@ -56,7 +56,7 @@ export interface DataGoogleStorageObjectSignedUrlConfig extends cdktf.TerraformM
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/data-sources/storage_object_signed_url google_storage_object_signed_url}
 */
-export class DataGoogleStorageObjectSignedUrl extends cdktf.TerraformDataSource {
+export class DataGoogleStorageObjectSignedUrl extends cdktn.TerraformDataSource {
 
   // =================
   // STATIC PROPERTIES
@@ -67,14 +67,14 @@ export class DataGoogleStorageObjectSignedUrl extends cdktf.TerraformDataSource 
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a DataGoogleStorageObjectSignedUrl resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a DataGoogleStorageObjectSignedUrl resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataGoogleStorageObjectSignedUrl to import
   * @param importFromId The id of the existing DataGoogleStorageObjectSignedUrl that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/data-sources/storage_object_signed_url#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataGoogleStorageObjectSignedUrl to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "google_storage_object_signed_url", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "google_storage_object_signed_url", importId: importFromId, provider });
       }
 
   // ===========
@@ -268,70 +268,70 @@ export class DataGoogleStorageObjectSignedUrl extends cdktf.TerraformDataSource 
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      bucket: cdktf.stringToTerraform(this._bucket),
-      content_md5: cdktf.stringToTerraform(this._contentMd5),
-      content_type: cdktf.stringToTerraform(this._contentType),
-      credentials: cdktf.stringToTerraform(this._credentials),
-      duration: cdktf.stringToTerraform(this._duration),
-      extension_headers: cdktf.hashMapper(cdktf.stringToTerraform)(this._extensionHeaders),
-      http_method: cdktf.stringToTerraform(this._httpMethod),
-      id: cdktf.stringToTerraform(this._id),
-      path: cdktf.stringToTerraform(this._path),
+      bucket: cdktn.stringToTerraform(this._bucket),
+      content_md5: cdktn.stringToTerraform(this._contentMd5),
+      content_type: cdktn.stringToTerraform(this._contentType),
+      credentials: cdktn.stringToTerraform(this._credentials),
+      duration: cdktn.stringToTerraform(this._duration),
+      extension_headers: cdktn.hashMapper(cdktn.stringToTerraform)(this._extensionHeaders),
+      http_method: cdktn.stringToTerraform(this._httpMethod),
+      id: cdktn.stringToTerraform(this._id),
+      path: cdktn.stringToTerraform(this._path),
     };
   }
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       bucket: {
-        value: cdktf.stringToHclTerraform(this._bucket),
+        value: cdktn.stringToHclTerraform(this._bucket),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       content_md5: {
-        value: cdktf.stringToHclTerraform(this._contentMd5),
+        value: cdktn.stringToHclTerraform(this._contentMd5),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       content_type: {
-        value: cdktf.stringToHclTerraform(this._contentType),
+        value: cdktn.stringToHclTerraform(this._contentType),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       credentials: {
-        value: cdktf.stringToHclTerraform(this._credentials),
+        value: cdktn.stringToHclTerraform(this._credentials),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       duration: {
-        value: cdktf.stringToHclTerraform(this._duration),
+        value: cdktn.stringToHclTerraform(this._duration),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       extension_headers: {
-        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._extensionHeaders),
+        value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(this._extensionHeaders),
         isBlock: false,
         type: "map",
         storageClassType: "stringMap",
       },
       http_method: {
-        value: cdktf.stringToHclTerraform(this._httpMethod),
+        value: cdktn.stringToHclTerraform(this._httpMethod),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       path: {
-        value: cdktf.stringToHclTerraform(this._path),
+        value: cdktn.stringToHclTerraform(this._path),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

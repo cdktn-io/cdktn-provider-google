@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface ComputeRouterPeerConfig extends cdktf.TerraformMetaArguments {
+export interface ComputeRouterPeerConfig extends cdktn.TerraformMetaArguments {
   /**
   * User-specified flag to indicate which mode to use for advertisement.
   * Valid values of this enum field are: 'DEFAULT', 'CUSTOM' Default value: "DEFAULT" Possible values: ["DEFAULT", "CUSTOM"]
@@ -60,19 +60,19 @@ export interface ComputeRouterPeerConfig extends cdktf.TerraformMetaArguments {
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_router_peer#enable ComputeRouterPeer#enable}
   */
-  readonly enable?: boolean | cdktf.IResolvable;
+  readonly enable?: boolean | cdktn.IResolvable;
   /**
   * Enable IPv4 traffic over BGP Peer. It is enabled by default if the peerIpAddress is version 4.
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_router_peer#enable_ipv4 ComputeRouterPeer#enable_ipv4}
   */
-  readonly enableIpv4?: boolean | cdktf.IResolvable;
+  readonly enableIpv4?: boolean | cdktn.IResolvable;
   /**
   * Enable IPv6 traffic over BGP Peer. If not specified, it is disabled by default.
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_router_peer#enable_ipv6 ComputeRouterPeer#enable_ipv6}
   */
-  readonly enableIpv6?: boolean | cdktf.IResolvable;
+  readonly enableIpv6?: boolean | cdktn.IResolvable;
   /**
   * routers.list of export policies applied to this peer, in the order they must be evaluated. 
   * The name must correspond to an existing policy that has ROUTE_POLICY_TYPE_EXPORT type.
@@ -193,19 +193,19 @@ export interface ComputeRouterPeerConfig extends cdktf.TerraformMetaArguments {
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_router_peer#zero_advertised_route_priority ComputeRouterPeer#zero_advertised_route_priority}
   */
-  readonly zeroAdvertisedRoutePriority?: boolean | cdktf.IResolvable;
+  readonly zeroAdvertisedRoutePriority?: boolean | cdktn.IResolvable;
   /**
   * Force the custom_learned_route_priority to be 0.
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_router_peer#zero_custom_learned_route_priority ComputeRouterPeer#zero_custom_learned_route_priority}
   */
-  readonly zeroCustomLearnedRoutePriority?: boolean | cdktf.IResolvable;
+  readonly zeroCustomLearnedRoutePriority?: boolean | cdktn.IResolvable;
   /**
   * advertised_ip_ranges block
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_router_peer#advertised_ip_ranges ComputeRouterPeer#advertised_ip_ranges}
   */
-  readonly advertisedIpRanges?: ComputeRouterPeerAdvertisedIpRanges[] | cdktf.IResolvable;
+  readonly advertisedIpRanges?: ComputeRouterPeerAdvertisedIpRanges[] | cdktn.IResolvable;
   /**
   * bfd block
   *
@@ -217,7 +217,7 @@ export interface ComputeRouterPeerConfig extends cdktf.TerraformMetaArguments {
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_router_peer#custom_learned_ip_ranges ComputeRouterPeer#custom_learned_ip_ranges}
   */
-  readonly customLearnedIpRanges?: ComputeRouterPeerCustomLearnedIpRanges[] | cdktf.IResolvable;
+  readonly customLearnedIpRanges?: ComputeRouterPeerCustomLearnedIpRanges[] | cdktn.IResolvable;
   /**
   * md5_authentication_key block
   *
@@ -247,32 +247,32 @@ export interface ComputeRouterPeerAdvertisedIpRanges {
   readonly range: string;
 }
 
-export function computeRouterPeerAdvertisedIpRangesToTerraform(struct?: ComputeRouterPeerAdvertisedIpRanges | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function computeRouterPeerAdvertisedIpRangesToTerraform(struct?: ComputeRouterPeerAdvertisedIpRanges | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    description: cdktf.stringToTerraform(struct!.description),
-    range: cdktf.stringToTerraform(struct!.range),
+    description: cdktn.stringToTerraform(struct!.description),
+    range: cdktn.stringToTerraform(struct!.range),
   }
 }
 
 
-export function computeRouterPeerAdvertisedIpRangesToHclTerraform(struct?: ComputeRouterPeerAdvertisedIpRanges | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function computeRouterPeerAdvertisedIpRangesToHclTerraform(struct?: ComputeRouterPeerAdvertisedIpRanges | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     description: {
-      value: cdktf.stringToHclTerraform(struct!.description),
+      value: cdktn.stringToHclTerraform(struct!.description),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     range: {
-      value: cdktf.stringToHclTerraform(struct!.range),
+      value: cdktn.stringToHclTerraform(struct!.range),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -283,9 +283,9 @@ export function computeRouterPeerAdvertisedIpRangesToHclTerraform(struct?: Compu
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class ComputeRouterPeerAdvertisedIpRangesOutputReference extends cdktf.ComplexObject {
+export class ComputeRouterPeerAdvertisedIpRangesOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -293,11 +293,11 @@ export class ComputeRouterPeerAdvertisedIpRangesOutputReference extends cdktf.Co
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): ComputeRouterPeerAdvertisedIpRanges | cdktf.IResolvable | undefined {
+  public get internalValue(): ComputeRouterPeerAdvertisedIpRanges | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -314,14 +314,14 @@ export class ComputeRouterPeerAdvertisedIpRangesOutputReference extends cdktf.Co
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: ComputeRouterPeerAdvertisedIpRanges | cdktf.IResolvable | undefined) {
+  public set internalValue(value: ComputeRouterPeerAdvertisedIpRanges | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._description = undefined;
       this._range = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -363,15 +363,15 @@ export class ComputeRouterPeerAdvertisedIpRangesOutputReference extends cdktf.Co
   }
 }
 
-export class ComputeRouterPeerAdvertisedIpRangesList extends cdktf.ComplexList {
-  public internalValue? : ComputeRouterPeerAdvertisedIpRanges[] | cdktf.IResolvable
+export class ComputeRouterPeerAdvertisedIpRangesList extends cdktn.ComplexList {
+  public internalValue? : ComputeRouterPeerAdvertisedIpRanges[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -424,45 +424,45 @@ export interface ComputeRouterPeerBfd {
 }
 
 export function computeRouterPeerBfdToTerraform(struct?: ComputeRouterPeerBfdOutputReference | ComputeRouterPeerBfd): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    min_receive_interval: cdktf.numberToTerraform(struct!.minReceiveInterval),
-    min_transmit_interval: cdktf.numberToTerraform(struct!.minTransmitInterval),
-    multiplier: cdktf.numberToTerraform(struct!.multiplier),
-    session_initialization_mode: cdktf.stringToTerraform(struct!.sessionInitializationMode),
+    min_receive_interval: cdktn.numberToTerraform(struct!.minReceiveInterval),
+    min_transmit_interval: cdktn.numberToTerraform(struct!.minTransmitInterval),
+    multiplier: cdktn.numberToTerraform(struct!.multiplier),
+    session_initialization_mode: cdktn.stringToTerraform(struct!.sessionInitializationMode),
   }
 }
 
 
 export function computeRouterPeerBfdToHclTerraform(struct?: ComputeRouterPeerBfdOutputReference | ComputeRouterPeerBfd): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     min_receive_interval: {
-      value: cdktf.numberToHclTerraform(struct!.minReceiveInterval),
+      value: cdktn.numberToHclTerraform(struct!.minReceiveInterval),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     min_transmit_interval: {
-      value: cdktf.numberToHclTerraform(struct!.minTransmitInterval),
+      value: cdktn.numberToHclTerraform(struct!.minTransmitInterval),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     multiplier: {
-      value: cdktf.numberToHclTerraform(struct!.multiplier),
+      value: cdktn.numberToHclTerraform(struct!.multiplier),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     session_initialization_mode: {
-      value: cdktf.stringToHclTerraform(struct!.sessionInitializationMode),
+      value: cdktn.stringToHclTerraform(struct!.sessionInitializationMode),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -473,14 +473,14 @@ export function computeRouterPeerBfdToHclTerraform(struct?: ComputeRouterPeerBfd
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class ComputeRouterPeerBfdOutputReference extends cdktf.ComplexObject {
+export class ComputeRouterPeerBfdOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -594,25 +594,25 @@ export interface ComputeRouterPeerCustomLearnedIpRanges {
   readonly range: string;
 }
 
-export function computeRouterPeerCustomLearnedIpRangesToTerraform(struct?: ComputeRouterPeerCustomLearnedIpRanges | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function computeRouterPeerCustomLearnedIpRangesToTerraform(struct?: ComputeRouterPeerCustomLearnedIpRanges | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    range: cdktf.stringToTerraform(struct!.range),
+    range: cdktn.stringToTerraform(struct!.range),
   }
 }
 
 
-export function computeRouterPeerCustomLearnedIpRangesToHclTerraform(struct?: ComputeRouterPeerCustomLearnedIpRanges | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function computeRouterPeerCustomLearnedIpRangesToHclTerraform(struct?: ComputeRouterPeerCustomLearnedIpRanges | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     range: {
-      value: cdktf.stringToHclTerraform(struct!.range),
+      value: cdktn.stringToHclTerraform(struct!.range),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -623,9 +623,9 @@ export function computeRouterPeerCustomLearnedIpRangesToHclTerraform(struct?: Co
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class ComputeRouterPeerCustomLearnedIpRangesOutputReference extends cdktf.ComplexObject {
+export class ComputeRouterPeerCustomLearnedIpRangesOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -633,11 +633,11 @@ export class ComputeRouterPeerCustomLearnedIpRangesOutputReference extends cdktf
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): ComputeRouterPeerCustomLearnedIpRanges | cdktf.IResolvable | undefined {
+  public get internalValue(): ComputeRouterPeerCustomLearnedIpRanges | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -650,13 +650,13 @@ export class ComputeRouterPeerCustomLearnedIpRangesOutputReference extends cdktf
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: ComputeRouterPeerCustomLearnedIpRanges | cdktf.IResolvable | undefined) {
+  public set internalValue(value: ComputeRouterPeerCustomLearnedIpRanges | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._range = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -681,15 +681,15 @@ export class ComputeRouterPeerCustomLearnedIpRangesOutputReference extends cdktf
   }
 }
 
-export class ComputeRouterPeerCustomLearnedIpRangesList extends cdktf.ComplexList {
-  public internalValue? : ComputeRouterPeerCustomLearnedIpRanges[] | cdktf.IResolvable
+export class ComputeRouterPeerCustomLearnedIpRangesList extends cdktn.ComplexList {
+  public internalValue? : ComputeRouterPeerCustomLearnedIpRanges[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -717,31 +717,31 @@ export interface ComputeRouterPeerMd5AuthenticationKey {
 }
 
 export function computeRouterPeerMd5AuthenticationKeyToTerraform(struct?: ComputeRouterPeerMd5AuthenticationKeyOutputReference | ComputeRouterPeerMd5AuthenticationKey): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    key: cdktf.stringToTerraform(struct!.key),
-    name: cdktf.stringToTerraform(struct!.name),
+    key: cdktn.stringToTerraform(struct!.key),
+    name: cdktn.stringToTerraform(struct!.name),
   }
 }
 
 
 export function computeRouterPeerMd5AuthenticationKeyToHclTerraform(struct?: ComputeRouterPeerMd5AuthenticationKeyOutputReference | ComputeRouterPeerMd5AuthenticationKey): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     key: {
-      value: cdktf.stringToHclTerraform(struct!.key),
+      value: cdktn.stringToHclTerraform(struct!.key),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     name: {
-      value: cdktf.stringToHclTerraform(struct!.name),
+      value: cdktn.stringToHclTerraform(struct!.name),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -752,14 +752,14 @@ export function computeRouterPeerMd5AuthenticationKeyToHclTerraform(struct?: Com
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class ComputeRouterPeerMd5AuthenticationKeyOutputReference extends cdktf.ComplexObject {
+export class ComputeRouterPeerMd5AuthenticationKeyOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -831,39 +831,39 @@ export interface ComputeRouterPeerTimeouts {
   readonly update?: string;
 }
 
-export function computeRouterPeerTimeoutsToTerraform(struct?: ComputeRouterPeerTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function computeRouterPeerTimeoutsToTerraform(struct?: ComputeRouterPeerTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    create: cdktf.stringToTerraform(struct!.create),
-    delete: cdktf.stringToTerraform(struct!.delete),
-    update: cdktf.stringToTerraform(struct!.update),
+    create: cdktn.stringToTerraform(struct!.create),
+    delete: cdktn.stringToTerraform(struct!.delete),
+    update: cdktn.stringToTerraform(struct!.update),
   }
 }
 
 
-export function computeRouterPeerTimeoutsToHclTerraform(struct?: ComputeRouterPeerTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function computeRouterPeerTimeoutsToHclTerraform(struct?: ComputeRouterPeerTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     create: {
-      value: cdktf.stringToHclTerraform(struct!.create),
+      value: cdktn.stringToHclTerraform(struct!.create),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     delete: {
-      value: cdktf.stringToHclTerraform(struct!.delete),
+      value: cdktn.stringToHclTerraform(struct!.delete),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     update: {
-      value: cdktf.stringToHclTerraform(struct!.update),
+      value: cdktn.stringToHclTerraform(struct!.update),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -874,19 +874,19 @@ export function computeRouterPeerTimeoutsToHclTerraform(struct?: ComputeRouterPe
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class ComputeRouterPeerTimeoutsOutputReference extends cdktf.ComplexObject {
+export class ComputeRouterPeerTimeoutsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): ComputeRouterPeerTimeouts | cdktf.IResolvable | undefined {
+  public get internalValue(): ComputeRouterPeerTimeouts | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -907,7 +907,7 @@ export class ComputeRouterPeerTimeoutsOutputReference extends cdktf.ComplexObjec
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: ComputeRouterPeerTimeouts | cdktf.IResolvable | undefined) {
+  public set internalValue(value: ComputeRouterPeerTimeouts | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -915,7 +915,7 @@ export class ComputeRouterPeerTimeoutsOutputReference extends cdktf.ComplexObjec
       this._delete = undefined;
       this._update = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -980,7 +980,7 @@ export class ComputeRouterPeerTimeoutsOutputReference extends cdktf.ComplexObjec
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_router_peer google_compute_router_peer}
 */
-export class ComputeRouterPeer extends cdktf.TerraformResource {
+export class ComputeRouterPeer extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -991,14 +991,14 @@ export class ComputeRouterPeer extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a ComputeRouterPeer resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a ComputeRouterPeer resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the ComputeRouterPeer to import
   * @param importFromId The id of the existing ComputeRouterPeer that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_router_peer#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the ComputeRouterPeer to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "google_compute_router_peer", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "google_compute_router_peer", importId: importFromId, provider });
       }
 
   // ===========
@@ -1129,11 +1129,11 @@ export class ComputeRouterPeer extends cdktf.TerraformResource {
   }
 
   // enable - computed: false, optional: true, required: false
-  private _enable?: boolean | cdktf.IResolvable; 
+  private _enable?: boolean | cdktn.IResolvable; 
   public get enable() {
     return this.getBooleanAttribute('enable');
   }
-  public set enable(value: boolean | cdktf.IResolvable) {
+  public set enable(value: boolean | cdktn.IResolvable) {
     this._enable = value;
   }
   public resetEnable() {
@@ -1145,11 +1145,11 @@ export class ComputeRouterPeer extends cdktf.TerraformResource {
   }
 
   // enable_ipv4 - computed: true, optional: true, required: false
-  private _enableIpv4?: boolean | cdktf.IResolvable; 
+  private _enableIpv4?: boolean | cdktn.IResolvable; 
   public get enableIpv4() {
     return this.getBooleanAttribute('enable_ipv4');
   }
-  public set enableIpv4(value: boolean | cdktf.IResolvable) {
+  public set enableIpv4(value: boolean | cdktn.IResolvable) {
     this._enableIpv4 = value;
   }
   public resetEnableIpv4() {
@@ -1161,11 +1161,11 @@ export class ComputeRouterPeer extends cdktf.TerraformResource {
   }
 
   // enable_ipv6 - computed: false, optional: true, required: false
-  private _enableIpv6?: boolean | cdktf.IResolvable; 
+  private _enableIpv6?: boolean | cdktn.IResolvable; 
   public get enableIpv6() {
     return this.getBooleanAttribute('enable_ipv6');
   }
-  public set enableIpv6(value: boolean | cdktf.IResolvable) {
+  public set enableIpv6(value: boolean | cdktn.IResolvable) {
     this._enableIpv6 = value;
   }
   public resetEnableIpv6() {
@@ -1436,11 +1436,11 @@ export class ComputeRouterPeer extends cdktf.TerraformResource {
   }
 
   // zero_advertised_route_priority - computed: false, optional: true, required: false
-  private _zeroAdvertisedRoutePriority?: boolean | cdktf.IResolvable; 
+  private _zeroAdvertisedRoutePriority?: boolean | cdktn.IResolvable; 
   public get zeroAdvertisedRoutePriority() {
     return this.getBooleanAttribute('zero_advertised_route_priority');
   }
-  public set zeroAdvertisedRoutePriority(value: boolean | cdktf.IResolvable) {
+  public set zeroAdvertisedRoutePriority(value: boolean | cdktn.IResolvable) {
     this._zeroAdvertisedRoutePriority = value;
   }
   public resetZeroAdvertisedRoutePriority() {
@@ -1452,11 +1452,11 @@ export class ComputeRouterPeer extends cdktf.TerraformResource {
   }
 
   // zero_custom_learned_route_priority - computed: false, optional: true, required: false
-  private _zeroCustomLearnedRoutePriority?: boolean | cdktf.IResolvable; 
+  private _zeroCustomLearnedRoutePriority?: boolean | cdktn.IResolvable; 
   public get zeroCustomLearnedRoutePriority() {
     return this.getBooleanAttribute('zero_custom_learned_route_priority');
   }
-  public set zeroCustomLearnedRoutePriority(value: boolean | cdktf.IResolvable) {
+  public set zeroCustomLearnedRoutePriority(value: boolean | cdktn.IResolvable) {
     this._zeroCustomLearnedRoutePriority = value;
   }
   public resetZeroCustomLearnedRoutePriority() {
@@ -1472,7 +1472,7 @@ export class ComputeRouterPeer extends cdktf.TerraformResource {
   public get advertisedIpRanges() {
     return this._advertisedIpRanges;
   }
-  public putAdvertisedIpRanges(value: ComputeRouterPeerAdvertisedIpRanges[] | cdktf.IResolvable) {
+  public putAdvertisedIpRanges(value: ComputeRouterPeerAdvertisedIpRanges[] | cdktn.IResolvable) {
     this._advertisedIpRanges.internalValue = value;
   }
   public resetAdvertisedIpRanges() {
@@ -1504,7 +1504,7 @@ export class ComputeRouterPeer extends cdktf.TerraformResource {
   public get customLearnedIpRanges() {
     return this._customLearnedIpRanges;
   }
-  public putCustomLearnedIpRanges(value: ComputeRouterPeerCustomLearnedIpRanges[] | cdktf.IResolvable) {
+  public putCustomLearnedIpRanges(value: ComputeRouterPeerCustomLearnedIpRanges[] | cdktn.IResolvable) {
     this._customLearnedIpRanges.internalValue = value;
   }
   public resetCustomLearnedIpRanges() {
@@ -1553,34 +1553,34 @@ export class ComputeRouterPeer extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      advertise_mode: cdktf.stringToTerraform(this._advertiseMode),
-      advertised_groups: cdktf.listMapper(cdktf.stringToTerraform, false)(this._advertisedGroups),
-      advertised_route_priority: cdktf.numberToTerraform(this._advertisedRoutePriority),
-      custom_learned_route_priority: cdktf.numberToTerraform(this._customLearnedRoutePriority),
-      enable: cdktf.booleanToTerraform(this._enable),
-      enable_ipv4: cdktf.booleanToTerraform(this._enableIpv4),
-      enable_ipv6: cdktf.booleanToTerraform(this._enableIpv6),
-      export_policies: cdktf.listMapper(cdktf.stringToTerraform, false)(this._exportPolicies),
-      id: cdktf.stringToTerraform(this._id),
-      import_policies: cdktf.listMapper(cdktf.stringToTerraform, false)(this._importPolicies),
-      interface: cdktf.stringToTerraform(this._interface),
-      ip_address: cdktf.stringToTerraform(this._ipAddress),
-      ipv4_nexthop_address: cdktf.stringToTerraform(this._ipv4NexthopAddress),
-      ipv6_nexthop_address: cdktf.stringToTerraform(this._ipv6NexthopAddress),
-      name: cdktf.stringToTerraform(this._name),
-      peer_asn: cdktf.numberToTerraform(this._peerAsn),
-      peer_ip_address: cdktf.stringToTerraform(this._peerIpAddress),
-      peer_ipv4_nexthop_address: cdktf.stringToTerraform(this._peerIpv4NexthopAddress),
-      peer_ipv6_nexthop_address: cdktf.stringToTerraform(this._peerIpv6NexthopAddress),
-      project: cdktf.stringToTerraform(this._project),
-      region: cdktf.stringToTerraform(this._region),
-      router: cdktf.stringToTerraform(this._router),
-      router_appliance_instance: cdktf.stringToTerraform(this._routerApplianceInstance),
-      zero_advertised_route_priority: cdktf.booleanToTerraform(this._zeroAdvertisedRoutePriority),
-      zero_custom_learned_route_priority: cdktf.booleanToTerraform(this._zeroCustomLearnedRoutePriority),
-      advertised_ip_ranges: cdktf.listMapper(computeRouterPeerAdvertisedIpRangesToTerraform, true)(this._advertisedIpRanges.internalValue),
+      advertise_mode: cdktn.stringToTerraform(this._advertiseMode),
+      advertised_groups: cdktn.listMapper(cdktn.stringToTerraform, false)(this._advertisedGroups),
+      advertised_route_priority: cdktn.numberToTerraform(this._advertisedRoutePriority),
+      custom_learned_route_priority: cdktn.numberToTerraform(this._customLearnedRoutePriority),
+      enable: cdktn.booleanToTerraform(this._enable),
+      enable_ipv4: cdktn.booleanToTerraform(this._enableIpv4),
+      enable_ipv6: cdktn.booleanToTerraform(this._enableIpv6),
+      export_policies: cdktn.listMapper(cdktn.stringToTerraform, false)(this._exportPolicies),
+      id: cdktn.stringToTerraform(this._id),
+      import_policies: cdktn.listMapper(cdktn.stringToTerraform, false)(this._importPolicies),
+      interface: cdktn.stringToTerraform(this._interface),
+      ip_address: cdktn.stringToTerraform(this._ipAddress),
+      ipv4_nexthop_address: cdktn.stringToTerraform(this._ipv4NexthopAddress),
+      ipv6_nexthop_address: cdktn.stringToTerraform(this._ipv6NexthopAddress),
+      name: cdktn.stringToTerraform(this._name),
+      peer_asn: cdktn.numberToTerraform(this._peerAsn),
+      peer_ip_address: cdktn.stringToTerraform(this._peerIpAddress),
+      peer_ipv4_nexthop_address: cdktn.stringToTerraform(this._peerIpv4NexthopAddress),
+      peer_ipv6_nexthop_address: cdktn.stringToTerraform(this._peerIpv6NexthopAddress),
+      project: cdktn.stringToTerraform(this._project),
+      region: cdktn.stringToTerraform(this._region),
+      router: cdktn.stringToTerraform(this._router),
+      router_appliance_instance: cdktn.stringToTerraform(this._routerApplianceInstance),
+      zero_advertised_route_priority: cdktn.booleanToTerraform(this._zeroAdvertisedRoutePriority),
+      zero_custom_learned_route_priority: cdktn.booleanToTerraform(this._zeroCustomLearnedRoutePriority),
+      advertised_ip_ranges: cdktn.listMapper(computeRouterPeerAdvertisedIpRangesToTerraform, true)(this._advertisedIpRanges.internalValue),
       bfd: computeRouterPeerBfdToTerraform(this._bfd.internalValue),
-      custom_learned_ip_ranges: cdktf.listMapper(computeRouterPeerCustomLearnedIpRangesToTerraform, true)(this._customLearnedIpRanges.internalValue),
+      custom_learned_ip_ranges: cdktn.listMapper(computeRouterPeerCustomLearnedIpRangesToTerraform, true)(this._customLearnedIpRanges.internalValue),
       md5_authentication_key: computeRouterPeerMd5AuthenticationKeyToTerraform(this._md5AuthenticationKey.internalValue),
       timeouts: computeRouterPeerTimeoutsToTerraform(this._timeouts.internalValue),
     };
@@ -1589,157 +1589,157 @@ export class ComputeRouterPeer extends cdktf.TerraformResource {
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       advertise_mode: {
-        value: cdktf.stringToHclTerraform(this._advertiseMode),
+        value: cdktn.stringToHclTerraform(this._advertiseMode),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       advertised_groups: {
-        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._advertisedGroups),
+        value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(this._advertisedGroups),
         isBlock: false,
         type: "list",
         storageClassType: "stringList",
       },
       advertised_route_priority: {
-        value: cdktf.numberToHclTerraform(this._advertisedRoutePriority),
+        value: cdktn.numberToHclTerraform(this._advertisedRoutePriority),
         isBlock: false,
         type: "simple",
         storageClassType: "number",
       },
       custom_learned_route_priority: {
-        value: cdktf.numberToHclTerraform(this._customLearnedRoutePriority),
+        value: cdktn.numberToHclTerraform(this._customLearnedRoutePriority),
         isBlock: false,
         type: "simple",
         storageClassType: "number",
       },
       enable: {
-        value: cdktf.booleanToHclTerraform(this._enable),
+        value: cdktn.booleanToHclTerraform(this._enable),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       enable_ipv4: {
-        value: cdktf.booleanToHclTerraform(this._enableIpv4),
+        value: cdktn.booleanToHclTerraform(this._enableIpv4),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       enable_ipv6: {
-        value: cdktf.booleanToHclTerraform(this._enableIpv6),
+        value: cdktn.booleanToHclTerraform(this._enableIpv6),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       export_policies: {
-        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._exportPolicies),
+        value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(this._exportPolicies),
         isBlock: false,
         type: "list",
         storageClassType: "stringList",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       import_policies: {
-        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._importPolicies),
+        value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(this._importPolicies),
         isBlock: false,
         type: "list",
         storageClassType: "stringList",
       },
       interface: {
-        value: cdktf.stringToHclTerraform(this._interface),
+        value: cdktn.stringToHclTerraform(this._interface),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       ip_address: {
-        value: cdktf.stringToHclTerraform(this._ipAddress),
+        value: cdktn.stringToHclTerraform(this._ipAddress),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       ipv4_nexthop_address: {
-        value: cdktf.stringToHclTerraform(this._ipv4NexthopAddress),
+        value: cdktn.stringToHclTerraform(this._ipv4NexthopAddress),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       ipv6_nexthop_address: {
-        value: cdktf.stringToHclTerraform(this._ipv6NexthopAddress),
+        value: cdktn.stringToHclTerraform(this._ipv6NexthopAddress),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       name: {
-        value: cdktf.stringToHclTerraform(this._name),
+        value: cdktn.stringToHclTerraform(this._name),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       peer_asn: {
-        value: cdktf.numberToHclTerraform(this._peerAsn),
+        value: cdktn.numberToHclTerraform(this._peerAsn),
         isBlock: false,
         type: "simple",
         storageClassType: "number",
       },
       peer_ip_address: {
-        value: cdktf.stringToHclTerraform(this._peerIpAddress),
+        value: cdktn.stringToHclTerraform(this._peerIpAddress),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       peer_ipv4_nexthop_address: {
-        value: cdktf.stringToHclTerraform(this._peerIpv4NexthopAddress),
+        value: cdktn.stringToHclTerraform(this._peerIpv4NexthopAddress),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       peer_ipv6_nexthop_address: {
-        value: cdktf.stringToHclTerraform(this._peerIpv6NexthopAddress),
+        value: cdktn.stringToHclTerraform(this._peerIpv6NexthopAddress),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       project: {
-        value: cdktf.stringToHclTerraform(this._project),
+        value: cdktn.stringToHclTerraform(this._project),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       region: {
-        value: cdktf.stringToHclTerraform(this._region),
+        value: cdktn.stringToHclTerraform(this._region),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       router: {
-        value: cdktf.stringToHclTerraform(this._router),
+        value: cdktn.stringToHclTerraform(this._router),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       router_appliance_instance: {
-        value: cdktf.stringToHclTerraform(this._routerApplianceInstance),
+        value: cdktn.stringToHclTerraform(this._routerApplianceInstance),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       zero_advertised_route_priority: {
-        value: cdktf.booleanToHclTerraform(this._zeroAdvertisedRoutePriority),
+        value: cdktn.booleanToHclTerraform(this._zeroAdvertisedRoutePriority),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       zero_custom_learned_route_priority: {
-        value: cdktf.booleanToHclTerraform(this._zeroCustomLearnedRoutePriority),
+        value: cdktn.booleanToHclTerraform(this._zeroCustomLearnedRoutePriority),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       advertised_ip_ranges: {
-        value: cdktf.listMapperHcl(computeRouterPeerAdvertisedIpRangesToHclTerraform, true)(this._advertisedIpRanges.internalValue),
+        value: cdktn.listMapperHcl(computeRouterPeerAdvertisedIpRangesToHclTerraform, true)(this._advertisedIpRanges.internalValue),
         isBlock: true,
         type: "list",
         storageClassType: "ComputeRouterPeerAdvertisedIpRangesList",
@@ -1751,7 +1751,7 @@ export class ComputeRouterPeer extends cdktf.TerraformResource {
         storageClassType: "ComputeRouterPeerBfdList",
       },
       custom_learned_ip_ranges: {
-        value: cdktf.listMapperHcl(computeRouterPeerCustomLearnedIpRangesToHclTerraform, true)(this._customLearnedIpRanges.internalValue),
+        value: cdktn.listMapperHcl(computeRouterPeerCustomLearnedIpRangesToHclTerraform, true)(this._customLearnedIpRanges.internalValue),
         isBlock: true,
         type: "list",
         storageClassType: "ComputeRouterPeerCustomLearnedIpRangesList",

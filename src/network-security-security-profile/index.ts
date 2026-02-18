@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface NetworkSecuritySecurityProfileConfig extends cdktf.TerraformMetaArguments {
+export interface NetworkSecuritySecurityProfileConfig extends cdktn.TerraformMetaArguments {
   /**
   * An optional description of the security profile. The Max length is 512 characters.
   *
@@ -97,24 +97,24 @@ export interface NetworkSecuritySecurityProfileCustomInterceptProfile {
 }
 
 export function networkSecuritySecurityProfileCustomInterceptProfileToTerraform(struct?: NetworkSecuritySecurityProfileCustomInterceptProfileOutputReference | NetworkSecuritySecurityProfileCustomInterceptProfile): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    intercept_endpoint_group: cdktf.stringToTerraform(struct!.interceptEndpointGroup),
+    intercept_endpoint_group: cdktn.stringToTerraform(struct!.interceptEndpointGroup),
   }
 }
 
 
 export function networkSecuritySecurityProfileCustomInterceptProfileToHclTerraform(struct?: NetworkSecuritySecurityProfileCustomInterceptProfileOutputReference | NetworkSecuritySecurityProfileCustomInterceptProfile): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     intercept_endpoint_group: {
-      value: cdktf.stringToHclTerraform(struct!.interceptEndpointGroup),
+      value: cdktn.stringToHclTerraform(struct!.interceptEndpointGroup),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -125,14 +125,14 @@ export function networkSecuritySecurityProfileCustomInterceptProfileToHclTerrafo
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class NetworkSecuritySecurityProfileCustomInterceptProfileOutputReference extends cdktf.ComplexObject {
+export class NetworkSecuritySecurityProfileCustomInterceptProfileOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -181,24 +181,24 @@ export interface NetworkSecuritySecurityProfileCustomMirroringProfile {
 }
 
 export function networkSecuritySecurityProfileCustomMirroringProfileToTerraform(struct?: NetworkSecuritySecurityProfileCustomMirroringProfileOutputReference | NetworkSecuritySecurityProfileCustomMirroringProfile): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    mirroring_endpoint_group: cdktf.stringToTerraform(struct!.mirroringEndpointGroup),
+    mirroring_endpoint_group: cdktn.stringToTerraform(struct!.mirroringEndpointGroup),
   }
 }
 
 
 export function networkSecuritySecurityProfileCustomMirroringProfileToHclTerraform(struct?: NetworkSecuritySecurityProfileCustomMirroringProfileOutputReference | NetworkSecuritySecurityProfileCustomMirroringProfile): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     mirroring_endpoint_group: {
-      value: cdktf.stringToHclTerraform(struct!.mirroringEndpointGroup),
+      value: cdktn.stringToHclTerraform(struct!.mirroringEndpointGroup),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -209,14 +209,14 @@ export function networkSecuritySecurityProfileCustomMirroringProfileToHclTerrafo
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class NetworkSecuritySecurityProfileCustomMirroringProfileOutputReference extends cdktf.ComplexObject {
+export class NetworkSecuritySecurityProfileCustomMirroringProfileOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -269,32 +269,32 @@ export interface NetworkSecuritySecurityProfileThreatPreventionProfileAntivirusO
   readonly protocol: string;
 }
 
-export function networkSecuritySecurityProfileThreatPreventionProfileAntivirusOverridesToTerraform(struct?: NetworkSecuritySecurityProfileThreatPreventionProfileAntivirusOverrides | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function networkSecuritySecurityProfileThreatPreventionProfileAntivirusOverridesToTerraform(struct?: NetworkSecuritySecurityProfileThreatPreventionProfileAntivirusOverrides | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    action: cdktf.stringToTerraform(struct!.action),
-    protocol: cdktf.stringToTerraform(struct!.protocol),
+    action: cdktn.stringToTerraform(struct!.action),
+    protocol: cdktn.stringToTerraform(struct!.protocol),
   }
 }
 
 
-export function networkSecuritySecurityProfileThreatPreventionProfileAntivirusOverridesToHclTerraform(struct?: NetworkSecuritySecurityProfileThreatPreventionProfileAntivirusOverrides | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function networkSecuritySecurityProfileThreatPreventionProfileAntivirusOverridesToHclTerraform(struct?: NetworkSecuritySecurityProfileThreatPreventionProfileAntivirusOverrides | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     action: {
-      value: cdktf.stringToHclTerraform(struct!.action),
+      value: cdktn.stringToHclTerraform(struct!.action),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     protocol: {
-      value: cdktf.stringToHclTerraform(struct!.protocol),
+      value: cdktn.stringToHclTerraform(struct!.protocol),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -305,9 +305,9 @@ export function networkSecuritySecurityProfileThreatPreventionProfileAntivirusOv
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class NetworkSecuritySecurityProfileThreatPreventionProfileAntivirusOverridesOutputReference extends cdktf.ComplexObject {
+export class NetworkSecuritySecurityProfileThreatPreventionProfileAntivirusOverridesOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -315,11 +315,11 @@ export class NetworkSecuritySecurityProfileThreatPreventionProfileAntivirusOverr
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): NetworkSecuritySecurityProfileThreatPreventionProfileAntivirusOverrides | cdktf.IResolvable | undefined {
+  public get internalValue(): NetworkSecuritySecurityProfileThreatPreventionProfileAntivirusOverrides | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -336,14 +336,14 @@ export class NetworkSecuritySecurityProfileThreatPreventionProfileAntivirusOverr
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: NetworkSecuritySecurityProfileThreatPreventionProfileAntivirusOverrides | cdktf.IResolvable | undefined) {
+  public set internalValue(value: NetworkSecuritySecurityProfileThreatPreventionProfileAntivirusOverrides | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._action = undefined;
       this._protocol = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -382,15 +382,15 @@ export class NetworkSecuritySecurityProfileThreatPreventionProfileAntivirusOverr
   }
 }
 
-export class NetworkSecuritySecurityProfileThreatPreventionProfileAntivirusOverridesList extends cdktf.ComplexList {
-  public internalValue? : NetworkSecuritySecurityProfileThreatPreventionProfileAntivirusOverrides[] | cdktf.IResolvable
+export class NetworkSecuritySecurityProfileThreatPreventionProfileAntivirusOverridesList extends cdktn.ComplexList {
+  public internalValue? : NetworkSecuritySecurityProfileThreatPreventionProfileAntivirusOverrides[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -416,32 +416,32 @@ export interface NetworkSecuritySecurityProfileThreatPreventionProfileSeverityOv
   readonly severity: string;
 }
 
-export function networkSecuritySecurityProfileThreatPreventionProfileSeverityOverridesToTerraform(struct?: NetworkSecuritySecurityProfileThreatPreventionProfileSeverityOverrides | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function networkSecuritySecurityProfileThreatPreventionProfileSeverityOverridesToTerraform(struct?: NetworkSecuritySecurityProfileThreatPreventionProfileSeverityOverrides | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    action: cdktf.stringToTerraform(struct!.action),
-    severity: cdktf.stringToTerraform(struct!.severity),
+    action: cdktn.stringToTerraform(struct!.action),
+    severity: cdktn.stringToTerraform(struct!.severity),
   }
 }
 
 
-export function networkSecuritySecurityProfileThreatPreventionProfileSeverityOverridesToHclTerraform(struct?: NetworkSecuritySecurityProfileThreatPreventionProfileSeverityOverrides | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function networkSecuritySecurityProfileThreatPreventionProfileSeverityOverridesToHclTerraform(struct?: NetworkSecuritySecurityProfileThreatPreventionProfileSeverityOverrides | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     action: {
-      value: cdktf.stringToHclTerraform(struct!.action),
+      value: cdktn.stringToHclTerraform(struct!.action),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     severity: {
-      value: cdktf.stringToHclTerraform(struct!.severity),
+      value: cdktn.stringToHclTerraform(struct!.severity),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -452,9 +452,9 @@ export function networkSecuritySecurityProfileThreatPreventionProfileSeverityOve
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class NetworkSecuritySecurityProfileThreatPreventionProfileSeverityOverridesOutputReference extends cdktf.ComplexObject {
+export class NetworkSecuritySecurityProfileThreatPreventionProfileSeverityOverridesOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -462,11 +462,11 @@ export class NetworkSecuritySecurityProfileThreatPreventionProfileSeverityOverri
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): NetworkSecuritySecurityProfileThreatPreventionProfileSeverityOverrides | cdktf.IResolvable | undefined {
+  public get internalValue(): NetworkSecuritySecurityProfileThreatPreventionProfileSeverityOverrides | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -483,14 +483,14 @@ export class NetworkSecuritySecurityProfileThreatPreventionProfileSeverityOverri
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: NetworkSecuritySecurityProfileThreatPreventionProfileSeverityOverrides | cdktf.IResolvable | undefined) {
+  public set internalValue(value: NetworkSecuritySecurityProfileThreatPreventionProfileSeverityOverrides | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._action = undefined;
       this._severity = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -529,15 +529,15 @@ export class NetworkSecuritySecurityProfileThreatPreventionProfileSeverityOverri
   }
 }
 
-export class NetworkSecuritySecurityProfileThreatPreventionProfileSeverityOverridesList extends cdktf.ComplexList {
-  public internalValue? : NetworkSecuritySecurityProfileThreatPreventionProfileSeverityOverrides[] | cdktf.IResolvable
+export class NetworkSecuritySecurityProfileThreatPreventionProfileSeverityOverridesList extends cdktn.ComplexList {
+  public internalValue? : NetworkSecuritySecurityProfileThreatPreventionProfileSeverityOverrides[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -563,32 +563,32 @@ export interface NetworkSecuritySecurityProfileThreatPreventionProfileThreatOver
   readonly threatId: string;
 }
 
-export function networkSecuritySecurityProfileThreatPreventionProfileThreatOverridesToTerraform(struct?: NetworkSecuritySecurityProfileThreatPreventionProfileThreatOverrides | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function networkSecuritySecurityProfileThreatPreventionProfileThreatOverridesToTerraform(struct?: NetworkSecuritySecurityProfileThreatPreventionProfileThreatOverrides | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    action: cdktf.stringToTerraform(struct!.action),
-    threat_id: cdktf.stringToTerraform(struct!.threatId),
+    action: cdktn.stringToTerraform(struct!.action),
+    threat_id: cdktn.stringToTerraform(struct!.threatId),
   }
 }
 
 
-export function networkSecuritySecurityProfileThreatPreventionProfileThreatOverridesToHclTerraform(struct?: NetworkSecuritySecurityProfileThreatPreventionProfileThreatOverrides | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function networkSecuritySecurityProfileThreatPreventionProfileThreatOverridesToHclTerraform(struct?: NetworkSecuritySecurityProfileThreatPreventionProfileThreatOverrides | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     action: {
-      value: cdktf.stringToHclTerraform(struct!.action),
+      value: cdktn.stringToHclTerraform(struct!.action),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     threat_id: {
-      value: cdktf.stringToHclTerraform(struct!.threatId),
+      value: cdktn.stringToHclTerraform(struct!.threatId),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -599,9 +599,9 @@ export function networkSecuritySecurityProfileThreatPreventionProfileThreatOverr
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class NetworkSecuritySecurityProfileThreatPreventionProfileThreatOverridesOutputReference extends cdktf.ComplexObject {
+export class NetworkSecuritySecurityProfileThreatPreventionProfileThreatOverridesOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -609,11 +609,11 @@ export class NetworkSecuritySecurityProfileThreatPreventionProfileThreatOverride
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): NetworkSecuritySecurityProfileThreatPreventionProfileThreatOverrides | cdktf.IResolvable | undefined {
+  public get internalValue(): NetworkSecuritySecurityProfileThreatPreventionProfileThreatOverrides | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -630,14 +630,14 @@ export class NetworkSecuritySecurityProfileThreatPreventionProfileThreatOverride
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: NetworkSecuritySecurityProfileThreatPreventionProfileThreatOverrides | cdktf.IResolvable | undefined) {
+  public set internalValue(value: NetworkSecuritySecurityProfileThreatPreventionProfileThreatOverrides | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._action = undefined;
       this._threatId = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -681,15 +681,15 @@ export class NetworkSecuritySecurityProfileThreatPreventionProfileThreatOverride
   }
 }
 
-export class NetworkSecuritySecurityProfileThreatPreventionProfileThreatOverridesList extends cdktf.ComplexList {
-  public internalValue? : NetworkSecuritySecurityProfileThreatPreventionProfileThreatOverrides[] | cdktf.IResolvable
+export class NetworkSecuritySecurityProfileThreatPreventionProfileThreatOverridesList extends cdktn.ComplexList {
+  public internalValue? : NetworkSecuritySecurityProfileThreatPreventionProfileThreatOverrides[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -706,54 +706,54 @@ export interface NetworkSecuritySecurityProfileThreatPreventionProfile {
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/network_security_security_profile#antivirus_overrides NetworkSecuritySecurityProfile#antivirus_overrides}
   */
-  readonly antivirusOverrides?: NetworkSecuritySecurityProfileThreatPreventionProfileAntivirusOverrides[] | cdktf.IResolvable;
+  readonly antivirusOverrides?: NetworkSecuritySecurityProfileThreatPreventionProfileAntivirusOverrides[] | cdktn.IResolvable;
   /**
   * severity_overrides block
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/network_security_security_profile#severity_overrides NetworkSecuritySecurityProfile#severity_overrides}
   */
-  readonly severityOverrides?: NetworkSecuritySecurityProfileThreatPreventionProfileSeverityOverrides[] | cdktf.IResolvable;
+  readonly severityOverrides?: NetworkSecuritySecurityProfileThreatPreventionProfileSeverityOverrides[] | cdktn.IResolvable;
   /**
   * threat_overrides block
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/network_security_security_profile#threat_overrides NetworkSecuritySecurityProfile#threat_overrides}
   */
-  readonly threatOverrides?: NetworkSecuritySecurityProfileThreatPreventionProfileThreatOverrides[] | cdktf.IResolvable;
+  readonly threatOverrides?: NetworkSecuritySecurityProfileThreatPreventionProfileThreatOverrides[] | cdktn.IResolvable;
 }
 
 export function networkSecuritySecurityProfileThreatPreventionProfileToTerraform(struct?: NetworkSecuritySecurityProfileThreatPreventionProfileOutputReference | NetworkSecuritySecurityProfileThreatPreventionProfile): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    antivirus_overrides: cdktf.listMapper(networkSecuritySecurityProfileThreatPreventionProfileAntivirusOverridesToTerraform, true)(struct!.antivirusOverrides),
-    severity_overrides: cdktf.listMapper(networkSecuritySecurityProfileThreatPreventionProfileSeverityOverridesToTerraform, true)(struct!.severityOverrides),
-    threat_overrides: cdktf.listMapper(networkSecuritySecurityProfileThreatPreventionProfileThreatOverridesToTerraform, true)(struct!.threatOverrides),
+    antivirus_overrides: cdktn.listMapper(networkSecuritySecurityProfileThreatPreventionProfileAntivirusOverridesToTerraform, true)(struct!.antivirusOverrides),
+    severity_overrides: cdktn.listMapper(networkSecuritySecurityProfileThreatPreventionProfileSeverityOverridesToTerraform, true)(struct!.severityOverrides),
+    threat_overrides: cdktn.listMapper(networkSecuritySecurityProfileThreatPreventionProfileThreatOverridesToTerraform, true)(struct!.threatOverrides),
   }
 }
 
 
 export function networkSecuritySecurityProfileThreatPreventionProfileToHclTerraform(struct?: NetworkSecuritySecurityProfileThreatPreventionProfileOutputReference | NetworkSecuritySecurityProfileThreatPreventionProfile): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     antivirus_overrides: {
-      value: cdktf.listMapperHcl(networkSecuritySecurityProfileThreatPreventionProfileAntivirusOverridesToHclTerraform, true)(struct!.antivirusOverrides),
+      value: cdktn.listMapperHcl(networkSecuritySecurityProfileThreatPreventionProfileAntivirusOverridesToHclTerraform, true)(struct!.antivirusOverrides),
       isBlock: true,
       type: "set",
       storageClassType: "NetworkSecuritySecurityProfileThreatPreventionProfileAntivirusOverridesList",
     },
     severity_overrides: {
-      value: cdktf.listMapperHcl(networkSecuritySecurityProfileThreatPreventionProfileSeverityOverridesToHclTerraform, true)(struct!.severityOverrides),
+      value: cdktn.listMapperHcl(networkSecuritySecurityProfileThreatPreventionProfileSeverityOverridesToHclTerraform, true)(struct!.severityOverrides),
       isBlock: true,
       type: "set",
       storageClassType: "NetworkSecuritySecurityProfileThreatPreventionProfileSeverityOverridesList",
     },
     threat_overrides: {
-      value: cdktf.listMapperHcl(networkSecuritySecurityProfileThreatPreventionProfileThreatOverridesToHclTerraform, true)(struct!.threatOverrides),
+      value: cdktn.listMapperHcl(networkSecuritySecurityProfileThreatPreventionProfileThreatOverridesToHclTerraform, true)(struct!.threatOverrides),
       isBlock: true,
       type: "set",
       storageClassType: "NetworkSecuritySecurityProfileThreatPreventionProfileThreatOverridesList",
@@ -764,14 +764,14 @@ export function networkSecuritySecurityProfileThreatPreventionProfileToHclTerraf
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class NetworkSecuritySecurityProfileThreatPreventionProfileOutputReference extends cdktf.ComplexObject {
+export class NetworkSecuritySecurityProfileThreatPreventionProfileOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -813,7 +813,7 @@ export class NetworkSecuritySecurityProfileThreatPreventionProfileOutputReferenc
   public get antivirusOverrides() {
     return this._antivirusOverrides;
   }
-  public putAntivirusOverrides(value: NetworkSecuritySecurityProfileThreatPreventionProfileAntivirusOverrides[] | cdktf.IResolvable) {
+  public putAntivirusOverrides(value: NetworkSecuritySecurityProfileThreatPreventionProfileAntivirusOverrides[] | cdktn.IResolvable) {
     this._antivirusOverrides.internalValue = value;
   }
   public resetAntivirusOverrides() {
@@ -829,7 +829,7 @@ export class NetworkSecuritySecurityProfileThreatPreventionProfileOutputReferenc
   public get severityOverrides() {
     return this._severityOverrides;
   }
-  public putSeverityOverrides(value: NetworkSecuritySecurityProfileThreatPreventionProfileSeverityOverrides[] | cdktf.IResolvable) {
+  public putSeverityOverrides(value: NetworkSecuritySecurityProfileThreatPreventionProfileSeverityOverrides[] | cdktn.IResolvable) {
     this._severityOverrides.internalValue = value;
   }
   public resetSeverityOverrides() {
@@ -845,7 +845,7 @@ export class NetworkSecuritySecurityProfileThreatPreventionProfileOutputReferenc
   public get threatOverrides() {
     return this._threatOverrides;
   }
-  public putThreatOverrides(value: NetworkSecuritySecurityProfileThreatPreventionProfileThreatOverrides[] | cdktf.IResolvable) {
+  public putThreatOverrides(value: NetworkSecuritySecurityProfileThreatPreventionProfileThreatOverrides[] | cdktn.IResolvable) {
     this._threatOverrides.internalValue = value;
   }
   public resetThreatOverrides() {
@@ -871,39 +871,39 @@ export interface NetworkSecuritySecurityProfileTimeouts {
   readonly update?: string;
 }
 
-export function networkSecuritySecurityProfileTimeoutsToTerraform(struct?: NetworkSecuritySecurityProfileTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function networkSecuritySecurityProfileTimeoutsToTerraform(struct?: NetworkSecuritySecurityProfileTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    create: cdktf.stringToTerraform(struct!.create),
-    delete: cdktf.stringToTerraform(struct!.delete),
-    update: cdktf.stringToTerraform(struct!.update),
+    create: cdktn.stringToTerraform(struct!.create),
+    delete: cdktn.stringToTerraform(struct!.delete),
+    update: cdktn.stringToTerraform(struct!.update),
   }
 }
 
 
-export function networkSecuritySecurityProfileTimeoutsToHclTerraform(struct?: NetworkSecuritySecurityProfileTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function networkSecuritySecurityProfileTimeoutsToHclTerraform(struct?: NetworkSecuritySecurityProfileTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     create: {
-      value: cdktf.stringToHclTerraform(struct!.create),
+      value: cdktn.stringToHclTerraform(struct!.create),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     delete: {
-      value: cdktf.stringToHclTerraform(struct!.delete),
+      value: cdktn.stringToHclTerraform(struct!.delete),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     update: {
-      value: cdktf.stringToHclTerraform(struct!.update),
+      value: cdktn.stringToHclTerraform(struct!.update),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -914,19 +914,19 @@ export function networkSecuritySecurityProfileTimeoutsToHclTerraform(struct?: Ne
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class NetworkSecuritySecurityProfileTimeoutsOutputReference extends cdktf.ComplexObject {
+export class NetworkSecuritySecurityProfileTimeoutsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): NetworkSecuritySecurityProfileTimeouts | cdktf.IResolvable | undefined {
+  public get internalValue(): NetworkSecuritySecurityProfileTimeouts | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -947,7 +947,7 @@ export class NetworkSecuritySecurityProfileTimeoutsOutputReference extends cdktf
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: NetworkSecuritySecurityProfileTimeouts | cdktf.IResolvable | undefined) {
+  public set internalValue(value: NetworkSecuritySecurityProfileTimeouts | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -955,7 +955,7 @@ export class NetworkSecuritySecurityProfileTimeoutsOutputReference extends cdktf
       this._delete = undefined;
       this._update = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -1020,7 +1020,7 @@ export class NetworkSecuritySecurityProfileTimeoutsOutputReference extends cdktf
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/network_security_security_profile google_network_security_security_profile}
 */
-export class NetworkSecuritySecurityProfile extends cdktf.TerraformResource {
+export class NetworkSecuritySecurityProfile extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -1031,14 +1031,14 @@ export class NetworkSecuritySecurityProfile extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a NetworkSecuritySecurityProfile resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a NetworkSecuritySecurityProfile resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the NetworkSecuritySecurityProfile to import
   * @param importFromId The id of the existing NetworkSecuritySecurityProfile that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/network_security_security_profile#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the NetworkSecuritySecurityProfile to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "google_network_security_security_profile", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "google_network_security_security_profile", importId: importFromId, provider });
       }
 
   // ===========
@@ -1107,7 +1107,7 @@ export class NetworkSecuritySecurityProfile extends cdktf.TerraformResource {
   }
 
   // effective_labels - computed: true, optional: false, required: false
-  private _effectiveLabels = new cdktf.StringMap(this, "effective_labels");
+  private _effectiveLabels = new cdktn.StringMap(this, "effective_labels");
   public get effectiveLabels() {
     return this._effectiveLabels;
   }
@@ -1200,7 +1200,7 @@ export class NetworkSecuritySecurityProfile extends cdktf.TerraformResource {
   }
 
   // terraform_labels - computed: true, optional: false, required: false
-  private _terraformLabels = new cdktf.StringMap(this, "terraform_labels");
+  private _terraformLabels = new cdktn.StringMap(this, "terraform_labels");
   public get terraformLabels() {
     return this._terraformLabels;
   }
@@ -1293,13 +1293,13 @@ export class NetworkSecuritySecurityProfile extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      description: cdktf.stringToTerraform(this._description),
-      id: cdktf.stringToTerraform(this._id),
-      labels: cdktf.hashMapper(cdktf.stringToTerraform)(this._labels),
-      location: cdktf.stringToTerraform(this._location),
-      name: cdktf.stringToTerraform(this._name),
-      parent: cdktf.stringToTerraform(this._parent),
-      type: cdktf.stringToTerraform(this._type),
+      description: cdktn.stringToTerraform(this._description),
+      id: cdktn.stringToTerraform(this._id),
+      labels: cdktn.hashMapper(cdktn.stringToTerraform)(this._labels),
+      location: cdktn.stringToTerraform(this._location),
+      name: cdktn.stringToTerraform(this._name),
+      parent: cdktn.stringToTerraform(this._parent),
+      type: cdktn.stringToTerraform(this._type),
       custom_intercept_profile: networkSecuritySecurityProfileCustomInterceptProfileToTerraform(this._customInterceptProfile.internalValue),
       custom_mirroring_profile: networkSecuritySecurityProfileCustomMirroringProfileToTerraform(this._customMirroringProfile.internalValue),
       threat_prevention_profile: networkSecuritySecurityProfileThreatPreventionProfileToTerraform(this._threatPreventionProfile.internalValue),
@@ -1310,43 +1310,43 @@ export class NetworkSecuritySecurityProfile extends cdktf.TerraformResource {
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       description: {
-        value: cdktf.stringToHclTerraform(this._description),
+        value: cdktn.stringToHclTerraform(this._description),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       labels: {
-        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._labels),
+        value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(this._labels),
         isBlock: false,
         type: "map",
         storageClassType: "stringMap",
       },
       location: {
-        value: cdktf.stringToHclTerraform(this._location),
+        value: cdktn.stringToHclTerraform(this._location),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       name: {
-        value: cdktf.stringToHclTerraform(this._name),
+        value: cdktn.stringToHclTerraform(this._name),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       parent: {
-        value: cdktf.stringToHclTerraform(this._parent),
+        value: cdktn.stringToHclTerraform(this._parent),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       type: {
-        value: cdktf.stringToHclTerraform(this._type),
+        value: cdktn.stringToHclTerraform(this._type),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

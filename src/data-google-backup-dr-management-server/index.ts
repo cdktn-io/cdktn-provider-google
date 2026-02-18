@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface DataGoogleBackupDrManagementServerConfig extends cdktf.TerraformMetaArguments {
+export interface DataGoogleBackupDrManagementServerConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/data-sources/backup_dr_management_server#id DataGoogleBackupDrManagementServer#id}
   *
@@ -30,8 +30,8 @@ export interface DataGoogleBackupDrManagementServerManagementUri {
 }
 
 export function dataGoogleBackupDrManagementServerManagementUriToTerraform(struct?: DataGoogleBackupDrManagementServerManagementUri): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -40,8 +40,8 @@ export function dataGoogleBackupDrManagementServerManagementUriToTerraform(struc
 
 
 export function dataGoogleBackupDrManagementServerManagementUriToHclTerraform(struct?: DataGoogleBackupDrManagementServerManagementUri): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -49,7 +49,7 @@ export function dataGoogleBackupDrManagementServerManagementUriToHclTerraform(st
   return attrs;
 }
 
-export class DataGoogleBackupDrManagementServerManagementUriOutputReference extends cdktf.ComplexObject {
+export class DataGoogleBackupDrManagementServerManagementUriOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -58,7 +58,7 @@ export class DataGoogleBackupDrManagementServerManagementUriOutputReference exte
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -88,14 +88,14 @@ export class DataGoogleBackupDrManagementServerManagementUriOutputReference exte
   }
 }
 
-export class DataGoogleBackupDrManagementServerManagementUriList extends cdktf.ComplexList {
+export class DataGoogleBackupDrManagementServerManagementUriList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -110,8 +110,8 @@ export interface DataGoogleBackupDrManagementServerNetworks {
 }
 
 export function dataGoogleBackupDrManagementServerNetworksToTerraform(struct?: DataGoogleBackupDrManagementServerNetworks): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -120,8 +120,8 @@ export function dataGoogleBackupDrManagementServerNetworksToTerraform(struct?: D
 
 
 export function dataGoogleBackupDrManagementServerNetworksToHclTerraform(struct?: DataGoogleBackupDrManagementServerNetworks): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -129,7 +129,7 @@ export function dataGoogleBackupDrManagementServerNetworksToHclTerraform(struct?
   return attrs;
 }
 
-export class DataGoogleBackupDrManagementServerNetworksOutputReference extends cdktf.ComplexObject {
+export class DataGoogleBackupDrManagementServerNetworksOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -138,7 +138,7 @@ export class DataGoogleBackupDrManagementServerNetworksOutputReference extends c
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -168,14 +168,14 @@ export class DataGoogleBackupDrManagementServerNetworksOutputReference extends c
   }
 }
 
-export class DataGoogleBackupDrManagementServerNetworksList extends cdktf.ComplexList {
+export class DataGoogleBackupDrManagementServerNetworksList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -190,7 +190,7 @@ export class DataGoogleBackupDrManagementServerNetworksList extends cdktf.Comple
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/data-sources/backup_dr_management_server google_backup_dr_management_server}
 */
-export class DataGoogleBackupDrManagementServer extends cdktf.TerraformDataSource {
+export class DataGoogleBackupDrManagementServer extends cdktn.TerraformDataSource {
 
   // =================
   // STATIC PROPERTIES
@@ -201,14 +201,14 @@ export class DataGoogleBackupDrManagementServer extends cdktf.TerraformDataSourc
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a DataGoogleBackupDrManagementServer resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a DataGoogleBackupDrManagementServer resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataGoogleBackupDrManagementServer to import
   * @param importFromId The id of the existing DataGoogleBackupDrManagementServer that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/data-sources/backup_dr_management_server#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataGoogleBackupDrManagementServer to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "google_backup_dr_management_server", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "google_backup_dr_management_server", importId: importFromId, provider });
       }
 
   // ===========
@@ -313,21 +313,21 @@ export class DataGoogleBackupDrManagementServer extends cdktf.TerraformDataSourc
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      id: cdktf.stringToTerraform(this._id),
-      location: cdktf.stringToTerraform(this._location),
+      id: cdktn.stringToTerraform(this._id),
+      location: cdktn.stringToTerraform(this._location),
     };
   }
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       location: {
-        value: cdktf.stringToHclTerraform(this._location),
+        value: cdktn.stringToHclTerraform(this._location),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

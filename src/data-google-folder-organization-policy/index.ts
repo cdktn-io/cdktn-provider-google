@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface DataGoogleFolderOrganizationPolicyConfig extends cdktf.TerraformMetaArguments {
+export interface DataGoogleFolderOrganizationPolicyConfig extends cdktn.TerraformMetaArguments {
   /**
   * The name of the Constraint the Policy is configuring, for example, serviceuser.services.
   *
@@ -36,8 +36,8 @@ export interface DataGoogleFolderOrganizationPolicyBooleanPolicy {
 }
 
 export function dataGoogleFolderOrganizationPolicyBooleanPolicyToTerraform(struct?: DataGoogleFolderOrganizationPolicyBooleanPolicy): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -46,8 +46,8 @@ export function dataGoogleFolderOrganizationPolicyBooleanPolicyToTerraform(struc
 
 
 export function dataGoogleFolderOrganizationPolicyBooleanPolicyToHclTerraform(struct?: DataGoogleFolderOrganizationPolicyBooleanPolicy): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -55,7 +55,7 @@ export function dataGoogleFolderOrganizationPolicyBooleanPolicyToHclTerraform(st
   return attrs;
 }
 
-export class DataGoogleFolderOrganizationPolicyBooleanPolicyOutputReference extends cdktf.ComplexObject {
+export class DataGoogleFolderOrganizationPolicyBooleanPolicyOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -64,7 +64,7 @@ export class DataGoogleFolderOrganizationPolicyBooleanPolicyOutputReference exte
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -89,14 +89,14 @@ export class DataGoogleFolderOrganizationPolicyBooleanPolicyOutputReference exte
   }
 }
 
-export class DataGoogleFolderOrganizationPolicyBooleanPolicyList extends cdktf.ComplexList {
+export class DataGoogleFolderOrganizationPolicyBooleanPolicyList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -111,8 +111,8 @@ export interface DataGoogleFolderOrganizationPolicyListPolicyAllow {
 }
 
 export function dataGoogleFolderOrganizationPolicyListPolicyAllowToTerraform(struct?: DataGoogleFolderOrganizationPolicyListPolicyAllow): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -121,8 +121,8 @@ export function dataGoogleFolderOrganizationPolicyListPolicyAllowToTerraform(str
 
 
 export function dataGoogleFolderOrganizationPolicyListPolicyAllowToHclTerraform(struct?: DataGoogleFolderOrganizationPolicyListPolicyAllow): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -130,7 +130,7 @@ export function dataGoogleFolderOrganizationPolicyListPolicyAllowToHclTerraform(
   return attrs;
 }
 
-export class DataGoogleFolderOrganizationPolicyListPolicyAllowOutputReference extends cdktf.ComplexObject {
+export class DataGoogleFolderOrganizationPolicyListPolicyAllowOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -139,7 +139,7 @@ export class DataGoogleFolderOrganizationPolicyListPolicyAllowOutputReference ex
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -165,18 +165,18 @@ export class DataGoogleFolderOrganizationPolicyListPolicyAllowOutputReference ex
 
   // values - computed: true, optional: false, required: false
   public get values() {
-    return cdktf.Fn.tolist(this.getListAttribute('values'));
+    return cdktn.Fn.tolist(this.getListAttribute('values'));
   }
 }
 
-export class DataGoogleFolderOrganizationPolicyListPolicyAllowList extends cdktf.ComplexList {
+export class DataGoogleFolderOrganizationPolicyListPolicyAllowList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -191,8 +191,8 @@ export interface DataGoogleFolderOrganizationPolicyListPolicyDeny {
 }
 
 export function dataGoogleFolderOrganizationPolicyListPolicyDenyToTerraform(struct?: DataGoogleFolderOrganizationPolicyListPolicyDeny): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -201,8 +201,8 @@ export function dataGoogleFolderOrganizationPolicyListPolicyDenyToTerraform(stru
 
 
 export function dataGoogleFolderOrganizationPolicyListPolicyDenyToHclTerraform(struct?: DataGoogleFolderOrganizationPolicyListPolicyDeny): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -210,7 +210,7 @@ export function dataGoogleFolderOrganizationPolicyListPolicyDenyToHclTerraform(s
   return attrs;
 }
 
-export class DataGoogleFolderOrganizationPolicyListPolicyDenyOutputReference extends cdktf.ComplexObject {
+export class DataGoogleFolderOrganizationPolicyListPolicyDenyOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -219,7 +219,7 @@ export class DataGoogleFolderOrganizationPolicyListPolicyDenyOutputReference ext
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -245,18 +245,18 @@ export class DataGoogleFolderOrganizationPolicyListPolicyDenyOutputReference ext
 
   // values - computed: true, optional: false, required: false
   public get values() {
-    return cdktf.Fn.tolist(this.getListAttribute('values'));
+    return cdktn.Fn.tolist(this.getListAttribute('values'));
   }
 }
 
-export class DataGoogleFolderOrganizationPolicyListPolicyDenyList extends cdktf.ComplexList {
+export class DataGoogleFolderOrganizationPolicyListPolicyDenyList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -271,8 +271,8 @@ export interface DataGoogleFolderOrganizationPolicyListPolicy {
 }
 
 export function dataGoogleFolderOrganizationPolicyListPolicyToTerraform(struct?: DataGoogleFolderOrganizationPolicyListPolicy): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -281,8 +281,8 @@ export function dataGoogleFolderOrganizationPolicyListPolicyToTerraform(struct?:
 
 
 export function dataGoogleFolderOrganizationPolicyListPolicyToHclTerraform(struct?: DataGoogleFolderOrganizationPolicyListPolicy): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -290,7 +290,7 @@ export function dataGoogleFolderOrganizationPolicyListPolicyToHclTerraform(struc
   return attrs;
 }
 
-export class DataGoogleFolderOrganizationPolicyListPolicyOutputReference extends cdktf.ComplexObject {
+export class DataGoogleFolderOrganizationPolicyListPolicyOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -299,7 +299,7 @@ export class DataGoogleFolderOrganizationPolicyListPolicyOutputReference extends
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -341,14 +341,14 @@ export class DataGoogleFolderOrganizationPolicyListPolicyOutputReference extends
   }
 }
 
-export class DataGoogleFolderOrganizationPolicyListPolicyList extends cdktf.ComplexList {
+export class DataGoogleFolderOrganizationPolicyListPolicyList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -363,8 +363,8 @@ export interface DataGoogleFolderOrganizationPolicyRestorePolicy {
 }
 
 export function dataGoogleFolderOrganizationPolicyRestorePolicyToTerraform(struct?: DataGoogleFolderOrganizationPolicyRestorePolicy): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -373,8 +373,8 @@ export function dataGoogleFolderOrganizationPolicyRestorePolicyToTerraform(struc
 
 
 export function dataGoogleFolderOrganizationPolicyRestorePolicyToHclTerraform(struct?: DataGoogleFolderOrganizationPolicyRestorePolicy): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -382,7 +382,7 @@ export function dataGoogleFolderOrganizationPolicyRestorePolicyToHclTerraform(st
   return attrs;
 }
 
-export class DataGoogleFolderOrganizationPolicyRestorePolicyOutputReference extends cdktf.ComplexObject {
+export class DataGoogleFolderOrganizationPolicyRestorePolicyOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -391,7 +391,7 @@ export class DataGoogleFolderOrganizationPolicyRestorePolicyOutputReference exte
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -416,14 +416,14 @@ export class DataGoogleFolderOrganizationPolicyRestorePolicyOutputReference exte
   }
 }
 
-export class DataGoogleFolderOrganizationPolicyRestorePolicyList extends cdktf.ComplexList {
+export class DataGoogleFolderOrganizationPolicyRestorePolicyList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -438,7 +438,7 @@ export class DataGoogleFolderOrganizationPolicyRestorePolicyList extends cdktf.C
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/data-sources/folder_organization_policy google_folder_organization_policy}
 */
-export class DataGoogleFolderOrganizationPolicy extends cdktf.TerraformDataSource {
+export class DataGoogleFolderOrganizationPolicy extends cdktn.TerraformDataSource {
 
   // =================
   // STATIC PROPERTIES
@@ -449,14 +449,14 @@ export class DataGoogleFolderOrganizationPolicy extends cdktf.TerraformDataSourc
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a DataGoogleFolderOrganizationPolicy resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a DataGoogleFolderOrganizationPolicy resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataGoogleFolderOrganizationPolicy to import
   * @param importFromId The id of the existing DataGoogleFolderOrganizationPolicy that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/data-sources/folder_organization_policy#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataGoogleFolderOrganizationPolicy to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "google_folder_organization_policy", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "google_folder_organization_policy", importId: importFromId, provider });
       }
 
   // ===========
@@ -576,28 +576,28 @@ export class DataGoogleFolderOrganizationPolicy extends cdktf.TerraformDataSourc
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      constraint: cdktf.stringToTerraform(this._constraint),
-      folder: cdktf.stringToTerraform(this._folder),
-      id: cdktf.stringToTerraform(this._id),
+      constraint: cdktn.stringToTerraform(this._constraint),
+      folder: cdktn.stringToTerraform(this._folder),
+      id: cdktn.stringToTerraform(this._id),
     };
   }
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       constraint: {
-        value: cdktf.stringToHclTerraform(this._constraint),
+        value: cdktn.stringToHclTerraform(this._constraint),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       folder: {
-        value: cdktf.stringToHclTerraform(this._folder),
+        value: cdktn.stringToHclTerraform(this._folder),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface DataflowJobConfig extends cdktf.TerraformMetaArguments {
+export interface DataflowJobConfig extends cdktn.TerraformMetaArguments {
   /**
   * List of experiments that should be used by the job. An example value is ["enable_stackdriver_agent_metrics"].
   *
@@ -23,7 +23,7 @@ export interface DataflowJobConfig extends cdktf.TerraformMetaArguments {
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/dataflow_job#enable_streaming_engine DataflowJob#enable_streaming_engine}
   */
-  readonly enableStreamingEngine?: boolean | cdktf.IResolvable;
+  readonly enableStreamingEngine?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/dataflow_job#id DataflowJob#id}
   *
@@ -109,7 +109,7 @@ export interface DataflowJobConfig extends cdktf.TerraformMetaArguments {
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/dataflow_job#skip_wait_on_job_termination DataflowJob#skip_wait_on_job_termination}
   */
-  readonly skipWaitOnJobTermination?: boolean | cdktf.IResolvable;
+  readonly skipWaitOnJobTermination?: boolean | cdktn.IResolvable;
   /**
   * The subnetwork to which VMs will be assigned. Should be of the form "regions/REGION/subnetworks/SUBNETWORK".
   *
@@ -154,25 +154,25 @@ export interface DataflowJobTimeouts {
   readonly update?: string;
 }
 
-export function dataflowJobTimeoutsToTerraform(struct?: DataflowJobTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function dataflowJobTimeoutsToTerraform(struct?: DataflowJobTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    update: cdktf.stringToTerraform(struct!.update),
+    update: cdktn.stringToTerraform(struct!.update),
   }
 }
 
 
-export function dataflowJobTimeoutsToHclTerraform(struct?: DataflowJobTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function dataflowJobTimeoutsToHclTerraform(struct?: DataflowJobTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     update: {
-      value: cdktf.stringToHclTerraform(struct!.update),
+      value: cdktn.stringToHclTerraform(struct!.update),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -183,19 +183,19 @@ export function dataflowJobTimeoutsToHclTerraform(struct?: DataflowJobTimeouts |
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class DataflowJobTimeoutsOutputReference extends cdktf.ComplexObject {
+export class DataflowJobTimeoutsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): DataflowJobTimeouts | cdktf.IResolvable | undefined {
+  public get internalValue(): DataflowJobTimeouts | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -208,13 +208,13 @@ export class DataflowJobTimeoutsOutputReference extends cdktf.ComplexObject {
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: DataflowJobTimeouts | cdktf.IResolvable | undefined) {
+  public set internalValue(value: DataflowJobTimeouts | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._update = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -245,7 +245,7 @@ export class DataflowJobTimeoutsOutputReference extends cdktf.ComplexObject {
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/dataflow_job google_dataflow_job}
 */
-export class DataflowJob extends cdktf.TerraformResource {
+export class DataflowJob extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -256,14 +256,14 @@ export class DataflowJob extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a DataflowJob resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a DataflowJob resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataflowJob to import
   * @param importFromId The id of the existing DataflowJob that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/dataflow_job#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataflowJob to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "google_dataflow_job", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "google_dataflow_job", importId: importFromId, provider });
       }
 
   // ===========
@@ -324,7 +324,7 @@ export class DataflowJob extends cdktf.TerraformResource {
   // additional_experiments - computed: true, optional: true, required: false
   private _additionalExperiments?: string[]; 
   public get additionalExperiments() {
-    return cdktf.Fn.tolist(this.getListAttribute('additional_experiments'));
+    return cdktn.Fn.tolist(this.getListAttribute('additional_experiments'));
   }
   public set additionalExperiments(value: string[]) {
     this._additionalExperiments = value;
@@ -338,17 +338,17 @@ export class DataflowJob extends cdktf.TerraformResource {
   }
 
   // effective_labels - computed: true, optional: false, required: false
-  private _effectiveLabels = new cdktf.StringMap(this, "effective_labels");
+  private _effectiveLabels = new cdktn.StringMap(this, "effective_labels");
   public get effectiveLabels() {
     return this._effectiveLabels;
   }
 
   // enable_streaming_engine - computed: false, optional: true, required: false
-  private _enableStreamingEngine?: boolean | cdktf.IResolvable; 
+  private _enableStreamingEngine?: boolean | cdktn.IResolvable; 
   public get enableStreamingEngine() {
     return this.getBooleanAttribute('enable_streaming_engine');
   }
-  public set enableStreamingEngine(value: boolean | cdktf.IResolvable) {
+  public set enableStreamingEngine(value: boolean | cdktn.IResolvable) {
     this._enableStreamingEngine = value;
   }
   public resetEnableStreamingEngine() {
@@ -570,11 +570,11 @@ export class DataflowJob extends cdktf.TerraformResource {
   }
 
   // skip_wait_on_job_termination - computed: false, optional: true, required: false
-  private _skipWaitOnJobTermination?: boolean | cdktf.IResolvable; 
+  private _skipWaitOnJobTermination?: boolean | cdktn.IResolvable; 
   public get skipWaitOnJobTermination() {
     return this.getBooleanAttribute('skip_wait_on_job_termination');
   }
-  public set skipWaitOnJobTermination(value: boolean | cdktf.IResolvable) {
+  public set skipWaitOnJobTermination(value: boolean | cdktn.IResolvable) {
     this._skipWaitOnJobTermination = value;
   }
   public resetSkipWaitOnJobTermination() {
@@ -633,7 +633,7 @@ export class DataflowJob extends cdktf.TerraformResource {
   }
 
   // terraform_labels - computed: true, optional: false, required: false
-  private _terraformLabels = new cdktf.StringMap(this, "terraform_labels");
+  private _terraformLabels = new cdktn.StringMap(this, "terraform_labels");
   public get terraformLabels() {
     return this._terraformLabels;
   }
@@ -697,27 +697,27 @@ export class DataflowJob extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      additional_experiments: cdktf.listMapper(cdktf.stringToTerraform, false)(this._additionalExperiments),
-      enable_streaming_engine: cdktf.booleanToTerraform(this._enableStreamingEngine),
-      id: cdktf.stringToTerraform(this._id),
-      ip_configuration: cdktf.stringToTerraform(this._ipConfiguration),
-      kms_key_name: cdktf.stringToTerraform(this._kmsKeyName),
-      labels: cdktf.hashMapper(cdktf.stringToTerraform)(this._labels),
-      machine_type: cdktf.stringToTerraform(this._machineType),
-      max_workers: cdktf.numberToTerraform(this._maxWorkers),
-      name: cdktf.stringToTerraform(this._name),
-      network: cdktf.stringToTerraform(this._network),
-      on_delete: cdktf.stringToTerraform(this._onDelete),
-      parameters: cdktf.hashMapper(cdktf.stringToTerraform)(this._parameters),
-      project: cdktf.stringToTerraform(this._project),
-      region: cdktf.stringToTerraform(this._region),
-      service_account_email: cdktf.stringToTerraform(this._serviceAccountEmail),
-      skip_wait_on_job_termination: cdktf.booleanToTerraform(this._skipWaitOnJobTermination),
-      subnetwork: cdktf.stringToTerraform(this._subnetwork),
-      temp_gcs_location: cdktf.stringToTerraform(this._tempGcsLocation),
-      template_gcs_path: cdktf.stringToTerraform(this._templateGcsPath),
-      transform_name_mapping: cdktf.hashMapper(cdktf.stringToTerraform)(this._transformNameMapping),
-      zone: cdktf.stringToTerraform(this._zone),
+      additional_experiments: cdktn.listMapper(cdktn.stringToTerraform, false)(this._additionalExperiments),
+      enable_streaming_engine: cdktn.booleanToTerraform(this._enableStreamingEngine),
+      id: cdktn.stringToTerraform(this._id),
+      ip_configuration: cdktn.stringToTerraform(this._ipConfiguration),
+      kms_key_name: cdktn.stringToTerraform(this._kmsKeyName),
+      labels: cdktn.hashMapper(cdktn.stringToTerraform)(this._labels),
+      machine_type: cdktn.stringToTerraform(this._machineType),
+      max_workers: cdktn.numberToTerraform(this._maxWorkers),
+      name: cdktn.stringToTerraform(this._name),
+      network: cdktn.stringToTerraform(this._network),
+      on_delete: cdktn.stringToTerraform(this._onDelete),
+      parameters: cdktn.hashMapper(cdktn.stringToTerraform)(this._parameters),
+      project: cdktn.stringToTerraform(this._project),
+      region: cdktn.stringToTerraform(this._region),
+      service_account_email: cdktn.stringToTerraform(this._serviceAccountEmail),
+      skip_wait_on_job_termination: cdktn.booleanToTerraform(this._skipWaitOnJobTermination),
+      subnetwork: cdktn.stringToTerraform(this._subnetwork),
+      temp_gcs_location: cdktn.stringToTerraform(this._tempGcsLocation),
+      template_gcs_path: cdktn.stringToTerraform(this._templateGcsPath),
+      transform_name_mapping: cdktn.hashMapper(cdktn.stringToTerraform)(this._transformNameMapping),
+      zone: cdktn.stringToTerraform(this._zone),
       timeouts: dataflowJobTimeoutsToTerraform(this._timeouts.internalValue),
     };
   }
@@ -725,127 +725,127 @@ export class DataflowJob extends cdktf.TerraformResource {
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       additional_experiments: {
-        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._additionalExperiments),
+        value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(this._additionalExperiments),
         isBlock: false,
         type: "set",
         storageClassType: "stringList",
       },
       enable_streaming_engine: {
-        value: cdktf.booleanToHclTerraform(this._enableStreamingEngine),
+        value: cdktn.booleanToHclTerraform(this._enableStreamingEngine),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       ip_configuration: {
-        value: cdktf.stringToHclTerraform(this._ipConfiguration),
+        value: cdktn.stringToHclTerraform(this._ipConfiguration),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       kms_key_name: {
-        value: cdktf.stringToHclTerraform(this._kmsKeyName),
+        value: cdktn.stringToHclTerraform(this._kmsKeyName),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       labels: {
-        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._labels),
+        value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(this._labels),
         isBlock: false,
         type: "map",
         storageClassType: "stringMap",
       },
       machine_type: {
-        value: cdktf.stringToHclTerraform(this._machineType),
+        value: cdktn.stringToHclTerraform(this._machineType),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       max_workers: {
-        value: cdktf.numberToHclTerraform(this._maxWorkers),
+        value: cdktn.numberToHclTerraform(this._maxWorkers),
         isBlock: false,
         type: "simple",
         storageClassType: "number",
       },
       name: {
-        value: cdktf.stringToHclTerraform(this._name),
+        value: cdktn.stringToHclTerraform(this._name),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       network: {
-        value: cdktf.stringToHclTerraform(this._network),
+        value: cdktn.stringToHclTerraform(this._network),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       on_delete: {
-        value: cdktf.stringToHclTerraform(this._onDelete),
+        value: cdktn.stringToHclTerraform(this._onDelete),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       parameters: {
-        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._parameters),
+        value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(this._parameters),
         isBlock: false,
         type: "map",
         storageClassType: "stringMap",
       },
       project: {
-        value: cdktf.stringToHclTerraform(this._project),
+        value: cdktn.stringToHclTerraform(this._project),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       region: {
-        value: cdktf.stringToHclTerraform(this._region),
+        value: cdktn.stringToHclTerraform(this._region),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       service_account_email: {
-        value: cdktf.stringToHclTerraform(this._serviceAccountEmail),
+        value: cdktn.stringToHclTerraform(this._serviceAccountEmail),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       skip_wait_on_job_termination: {
-        value: cdktf.booleanToHclTerraform(this._skipWaitOnJobTermination),
+        value: cdktn.booleanToHclTerraform(this._skipWaitOnJobTermination),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       subnetwork: {
-        value: cdktf.stringToHclTerraform(this._subnetwork),
+        value: cdktn.stringToHclTerraform(this._subnetwork),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       temp_gcs_location: {
-        value: cdktf.stringToHclTerraform(this._tempGcsLocation),
+        value: cdktn.stringToHclTerraform(this._tempGcsLocation),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       template_gcs_path: {
-        value: cdktf.stringToHclTerraform(this._templateGcsPath),
+        value: cdktn.stringToHclTerraform(this._templateGcsPath),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       transform_name_mapping: {
-        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._transformNameMapping),
+        value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(this._transformNameMapping),
         isBlock: false,
         type: "map",
         storageClassType: "stringMap",
       },
       zone: {
-        value: cdktf.stringToHclTerraform(this._zone),
+        value: cdktn.stringToHclTerraform(this._zone),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

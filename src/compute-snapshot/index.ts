@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface ComputeSnapshotConfig extends cdktf.TerraformMetaArguments {
+export interface ComputeSnapshotConfig extends cdktn.TerraformMetaArguments {
   /**
   * Creates the new snapshot in the snapshot chain labeled with the
   * specified name. The chain name must be 1-63 characters long and
@@ -129,45 +129,45 @@ export interface ComputeSnapshotSnapshotEncryptionKey {
 }
 
 export function computeSnapshotSnapshotEncryptionKeyToTerraform(struct?: ComputeSnapshotSnapshotEncryptionKeyOutputReference | ComputeSnapshotSnapshotEncryptionKey): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    kms_key_self_link: cdktf.stringToTerraform(struct!.kmsKeySelfLink),
-    kms_key_service_account: cdktf.stringToTerraform(struct!.kmsKeyServiceAccount),
-    raw_key: cdktf.stringToTerraform(struct!.rawKey),
-    rsa_encrypted_key: cdktf.stringToTerraform(struct!.rsaEncryptedKey),
+    kms_key_self_link: cdktn.stringToTerraform(struct!.kmsKeySelfLink),
+    kms_key_service_account: cdktn.stringToTerraform(struct!.kmsKeyServiceAccount),
+    raw_key: cdktn.stringToTerraform(struct!.rawKey),
+    rsa_encrypted_key: cdktn.stringToTerraform(struct!.rsaEncryptedKey),
   }
 }
 
 
 export function computeSnapshotSnapshotEncryptionKeyToHclTerraform(struct?: ComputeSnapshotSnapshotEncryptionKeyOutputReference | ComputeSnapshotSnapshotEncryptionKey): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     kms_key_self_link: {
-      value: cdktf.stringToHclTerraform(struct!.kmsKeySelfLink),
+      value: cdktn.stringToHclTerraform(struct!.kmsKeySelfLink),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     kms_key_service_account: {
-      value: cdktf.stringToHclTerraform(struct!.kmsKeyServiceAccount),
+      value: cdktn.stringToHclTerraform(struct!.kmsKeyServiceAccount),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     raw_key: {
-      value: cdktf.stringToHclTerraform(struct!.rawKey),
+      value: cdktn.stringToHclTerraform(struct!.rawKey),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     rsa_encrypted_key: {
-      value: cdktf.stringToHclTerraform(struct!.rsaEncryptedKey),
+      value: cdktn.stringToHclTerraform(struct!.rsaEncryptedKey),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -178,14 +178,14 @@ export function computeSnapshotSnapshotEncryptionKeyToHclTerraform(struct?: Comp
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class ComputeSnapshotSnapshotEncryptionKeyOutputReference extends cdktf.ComplexObject {
+export class ComputeSnapshotSnapshotEncryptionKeyOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -328,45 +328,45 @@ export interface ComputeSnapshotSourceDiskEncryptionKey {
 }
 
 export function computeSnapshotSourceDiskEncryptionKeyToTerraform(struct?: ComputeSnapshotSourceDiskEncryptionKeyOutputReference | ComputeSnapshotSourceDiskEncryptionKey): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    kms_key_self_link: cdktf.stringToTerraform(struct!.kmsKeySelfLink),
-    kms_key_service_account: cdktf.stringToTerraform(struct!.kmsKeyServiceAccount),
-    raw_key: cdktf.stringToTerraform(struct!.rawKey),
-    rsa_encrypted_key: cdktf.stringToTerraform(struct!.rsaEncryptedKey),
+    kms_key_self_link: cdktn.stringToTerraform(struct!.kmsKeySelfLink),
+    kms_key_service_account: cdktn.stringToTerraform(struct!.kmsKeyServiceAccount),
+    raw_key: cdktn.stringToTerraform(struct!.rawKey),
+    rsa_encrypted_key: cdktn.stringToTerraform(struct!.rsaEncryptedKey),
   }
 }
 
 
 export function computeSnapshotSourceDiskEncryptionKeyToHclTerraform(struct?: ComputeSnapshotSourceDiskEncryptionKeyOutputReference | ComputeSnapshotSourceDiskEncryptionKey): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     kms_key_self_link: {
-      value: cdktf.stringToHclTerraform(struct!.kmsKeySelfLink),
+      value: cdktn.stringToHclTerraform(struct!.kmsKeySelfLink),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     kms_key_service_account: {
-      value: cdktf.stringToHclTerraform(struct!.kmsKeyServiceAccount),
+      value: cdktn.stringToHclTerraform(struct!.kmsKeyServiceAccount),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     raw_key: {
-      value: cdktf.stringToHclTerraform(struct!.rawKey),
+      value: cdktn.stringToHclTerraform(struct!.rawKey),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     rsa_encrypted_key: {
-      value: cdktf.stringToHclTerraform(struct!.rsaEncryptedKey),
+      value: cdktn.stringToHclTerraform(struct!.rsaEncryptedKey),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -377,14 +377,14 @@ export function computeSnapshotSourceDiskEncryptionKeyToHclTerraform(struct?: Co
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class ComputeSnapshotSourceDiskEncryptionKeyOutputReference extends cdktf.ComplexObject {
+export class ComputeSnapshotSourceDiskEncryptionKeyOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -506,39 +506,39 @@ export interface ComputeSnapshotTimeouts {
   readonly update?: string;
 }
 
-export function computeSnapshotTimeoutsToTerraform(struct?: ComputeSnapshotTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function computeSnapshotTimeoutsToTerraform(struct?: ComputeSnapshotTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    create: cdktf.stringToTerraform(struct!.create),
-    delete: cdktf.stringToTerraform(struct!.delete),
-    update: cdktf.stringToTerraform(struct!.update),
+    create: cdktn.stringToTerraform(struct!.create),
+    delete: cdktn.stringToTerraform(struct!.delete),
+    update: cdktn.stringToTerraform(struct!.update),
   }
 }
 
 
-export function computeSnapshotTimeoutsToHclTerraform(struct?: ComputeSnapshotTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function computeSnapshotTimeoutsToHclTerraform(struct?: ComputeSnapshotTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     create: {
-      value: cdktf.stringToHclTerraform(struct!.create),
+      value: cdktn.stringToHclTerraform(struct!.create),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     delete: {
-      value: cdktf.stringToHclTerraform(struct!.delete),
+      value: cdktn.stringToHclTerraform(struct!.delete),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     update: {
-      value: cdktf.stringToHclTerraform(struct!.update),
+      value: cdktn.stringToHclTerraform(struct!.update),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -549,19 +549,19 @@ export function computeSnapshotTimeoutsToHclTerraform(struct?: ComputeSnapshotTi
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class ComputeSnapshotTimeoutsOutputReference extends cdktf.ComplexObject {
+export class ComputeSnapshotTimeoutsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): ComputeSnapshotTimeouts | cdktf.IResolvable | undefined {
+  public get internalValue(): ComputeSnapshotTimeouts | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -582,7 +582,7 @@ export class ComputeSnapshotTimeoutsOutputReference extends cdktf.ComplexObject 
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: ComputeSnapshotTimeouts | cdktf.IResolvable | undefined) {
+  public set internalValue(value: ComputeSnapshotTimeouts | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -590,7 +590,7 @@ export class ComputeSnapshotTimeoutsOutputReference extends cdktf.ComplexObject 
       this._delete = undefined;
       this._update = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -655,7 +655,7 @@ export class ComputeSnapshotTimeoutsOutputReference extends cdktf.ComplexObject 
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_snapshot google_compute_snapshot}
 */
-export class ComputeSnapshot extends cdktf.TerraformResource {
+export class ComputeSnapshot extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -666,14 +666,14 @@ export class ComputeSnapshot extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a ComputeSnapshot resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a ComputeSnapshot resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the ComputeSnapshot to import
   * @param importFromId The id of the existing ComputeSnapshot that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_snapshot#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the ComputeSnapshot to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "google_compute_snapshot", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "google_compute_snapshot", importId: importFromId, provider });
       }
 
   // ===========
@@ -764,7 +764,7 @@ export class ComputeSnapshot extends cdktf.TerraformResource {
   }
 
   // effective_labels - computed: true, optional: false, required: false
-  private _effectiveLabels = new cdktf.StringMap(this, "effective_labels");
+  private _effectiveLabels = new cdktn.StringMap(this, "effective_labels");
   public get effectiveLabels() {
     return this._effectiveLabels;
   }
@@ -885,7 +885,7 @@ export class ComputeSnapshot extends cdktf.TerraformResource {
   }
 
   // terraform_labels - computed: true, optional: false, required: false
-  private _terraformLabels = new cdktf.StringMap(this, "terraform_labels");
+  private _terraformLabels = new cdktn.StringMap(this, "terraform_labels");
   public get terraformLabels() {
     return this._terraformLabels;
   }
@@ -960,15 +960,15 @@ export class ComputeSnapshot extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      chain_name: cdktf.stringToTerraform(this._chainName),
-      description: cdktf.stringToTerraform(this._description),
-      id: cdktf.stringToTerraform(this._id),
-      labels: cdktf.hashMapper(cdktf.stringToTerraform)(this._labels),
-      name: cdktf.stringToTerraform(this._name),
-      project: cdktf.stringToTerraform(this._project),
-      source_disk: cdktf.stringToTerraform(this._sourceDisk),
-      storage_locations: cdktf.listMapper(cdktf.stringToTerraform, false)(this._storageLocations),
-      zone: cdktf.stringToTerraform(this._zone),
+      chain_name: cdktn.stringToTerraform(this._chainName),
+      description: cdktn.stringToTerraform(this._description),
+      id: cdktn.stringToTerraform(this._id),
+      labels: cdktn.hashMapper(cdktn.stringToTerraform)(this._labels),
+      name: cdktn.stringToTerraform(this._name),
+      project: cdktn.stringToTerraform(this._project),
+      source_disk: cdktn.stringToTerraform(this._sourceDisk),
+      storage_locations: cdktn.listMapper(cdktn.stringToTerraform, false)(this._storageLocations),
+      zone: cdktn.stringToTerraform(this._zone),
       snapshot_encryption_key: computeSnapshotSnapshotEncryptionKeyToTerraform(this._snapshotEncryptionKey.internalValue),
       source_disk_encryption_key: computeSnapshotSourceDiskEncryptionKeyToTerraform(this._sourceDiskEncryptionKey.internalValue),
       timeouts: computeSnapshotTimeoutsToTerraform(this._timeouts.internalValue),
@@ -978,55 +978,55 @@ export class ComputeSnapshot extends cdktf.TerraformResource {
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       chain_name: {
-        value: cdktf.stringToHclTerraform(this._chainName),
+        value: cdktn.stringToHclTerraform(this._chainName),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       description: {
-        value: cdktf.stringToHclTerraform(this._description),
+        value: cdktn.stringToHclTerraform(this._description),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       labels: {
-        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._labels),
+        value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(this._labels),
         isBlock: false,
         type: "map",
         storageClassType: "stringMap",
       },
       name: {
-        value: cdktf.stringToHclTerraform(this._name),
+        value: cdktn.stringToHclTerraform(this._name),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       project: {
-        value: cdktf.stringToHclTerraform(this._project),
+        value: cdktn.stringToHclTerraform(this._project),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       source_disk: {
-        value: cdktf.stringToHclTerraform(this._sourceDisk),
+        value: cdktn.stringToHclTerraform(this._sourceDisk),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       storage_locations: {
-        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._storageLocations),
+        value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(this._storageLocations),
         isBlock: false,
         type: "list",
         storageClassType: "stringList",
       },
       zone: {
-        value: cdktf.stringToHclTerraform(this._zone),
+        value: cdktn.stringToHclTerraform(this._zone),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

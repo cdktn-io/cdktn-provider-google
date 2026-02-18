@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface AlloydbInstanceConfig extends cdktf.TerraformMetaArguments {
+export interface AlloydbInstanceConfig extends cdktn.TerraformMetaArguments {
   /**
   * 'Specifies whether an instance needs to spin up. Once the instance is
   * active, the activation policy can be updated to the 'NEVER' to stop the
@@ -157,24 +157,24 @@ export interface AlloydbInstanceClientConnectionConfigSslConfig {
 }
 
 export function alloydbInstanceClientConnectionConfigSslConfigToTerraform(struct?: AlloydbInstanceClientConnectionConfigSslConfigOutputReference | AlloydbInstanceClientConnectionConfigSslConfig): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    ssl_mode: cdktf.stringToTerraform(struct!.sslMode),
+    ssl_mode: cdktn.stringToTerraform(struct!.sslMode),
   }
 }
 
 
 export function alloydbInstanceClientConnectionConfigSslConfigToHclTerraform(struct?: AlloydbInstanceClientConnectionConfigSslConfigOutputReference | AlloydbInstanceClientConnectionConfigSslConfig): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     ssl_mode: {
-      value: cdktf.stringToHclTerraform(struct!.sslMode),
+      value: cdktn.stringToHclTerraform(struct!.sslMode),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -185,14 +185,14 @@ export function alloydbInstanceClientConnectionConfigSslConfigToHclTerraform(str
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class AlloydbInstanceClientConnectionConfigSslConfigOutputReference extends cdktf.ComplexObject {
+export class AlloydbInstanceClientConnectionConfigSslConfigOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -239,7 +239,7 @@ export interface AlloydbInstanceClientConnectionConfig {
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/alloydb_instance#require_connectors AlloydbInstance#require_connectors}
   */
-  readonly requireConnectors?: boolean | cdktf.IResolvable;
+  readonly requireConnectors?: boolean | cdktn.IResolvable;
   /**
   * ssl_config block
   *
@@ -249,25 +249,25 @@ export interface AlloydbInstanceClientConnectionConfig {
 }
 
 export function alloydbInstanceClientConnectionConfigToTerraform(struct?: AlloydbInstanceClientConnectionConfigOutputReference | AlloydbInstanceClientConnectionConfig): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    require_connectors: cdktf.booleanToTerraform(struct!.requireConnectors),
+    require_connectors: cdktn.booleanToTerraform(struct!.requireConnectors),
     ssl_config: alloydbInstanceClientConnectionConfigSslConfigToTerraform(struct!.sslConfig),
   }
 }
 
 
 export function alloydbInstanceClientConnectionConfigToHclTerraform(struct?: AlloydbInstanceClientConnectionConfigOutputReference | AlloydbInstanceClientConnectionConfig): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     require_connectors: {
-      value: cdktf.booleanToHclTerraform(struct!.requireConnectors),
+      value: cdktn.booleanToHclTerraform(struct!.requireConnectors),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
@@ -284,14 +284,14 @@ export function alloydbInstanceClientConnectionConfigToHclTerraform(struct?: All
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class AlloydbInstanceClientConnectionConfigOutputReference extends cdktf.ComplexObject {
+export class AlloydbInstanceClientConnectionConfigOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -323,11 +323,11 @@ export class AlloydbInstanceClientConnectionConfigOutputReference extends cdktf.
   }
 
   // require_connectors - computed: false, optional: true, required: false
-  private _requireConnectors?: boolean | cdktf.IResolvable; 
+  private _requireConnectors?: boolean | cdktn.IResolvable; 
   public get requireConnectors() {
     return this.getBooleanAttribute('require_connectors');
   }
-  public set requireConnectors(value: boolean | cdktf.IResolvable) {
+  public set requireConnectors(value: boolean | cdktn.IResolvable) {
     this._requireConnectors = value;
   }
   public resetRequireConnectors() {
@@ -372,31 +372,31 @@ export interface AlloydbInstanceMachineConfig {
 }
 
 export function alloydbInstanceMachineConfigToTerraform(struct?: AlloydbInstanceMachineConfigOutputReference | AlloydbInstanceMachineConfig): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    cpu_count: cdktf.numberToTerraform(struct!.cpuCount),
-    machine_type: cdktf.stringToTerraform(struct!.machineType),
+    cpu_count: cdktn.numberToTerraform(struct!.cpuCount),
+    machine_type: cdktn.stringToTerraform(struct!.machineType),
   }
 }
 
 
 export function alloydbInstanceMachineConfigToHclTerraform(struct?: AlloydbInstanceMachineConfigOutputReference | AlloydbInstanceMachineConfig): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     cpu_count: {
-      value: cdktf.numberToHclTerraform(struct!.cpuCount),
+      value: cdktn.numberToHclTerraform(struct!.cpuCount),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     machine_type: {
-      value: cdktf.stringToHclTerraform(struct!.machineType),
+      value: cdktn.stringToHclTerraform(struct!.machineType),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -407,14 +407,14 @@ export function alloydbInstanceMachineConfigToHclTerraform(struct?: AlloydbInsta
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class AlloydbInstanceMachineConfigOutputReference extends cdktf.ComplexObject {
+export class AlloydbInstanceMachineConfigOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -486,25 +486,25 @@ export interface AlloydbInstanceNetworkConfigAuthorizedExternalNetworks {
   readonly cidrRange?: string;
 }
 
-export function alloydbInstanceNetworkConfigAuthorizedExternalNetworksToTerraform(struct?: AlloydbInstanceNetworkConfigAuthorizedExternalNetworks | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function alloydbInstanceNetworkConfigAuthorizedExternalNetworksToTerraform(struct?: AlloydbInstanceNetworkConfigAuthorizedExternalNetworks | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    cidr_range: cdktf.stringToTerraform(struct!.cidrRange),
+    cidr_range: cdktn.stringToTerraform(struct!.cidrRange),
   }
 }
 
 
-export function alloydbInstanceNetworkConfigAuthorizedExternalNetworksToHclTerraform(struct?: AlloydbInstanceNetworkConfigAuthorizedExternalNetworks | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function alloydbInstanceNetworkConfigAuthorizedExternalNetworksToHclTerraform(struct?: AlloydbInstanceNetworkConfigAuthorizedExternalNetworks | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     cidr_range: {
-      value: cdktf.stringToHclTerraform(struct!.cidrRange),
+      value: cdktn.stringToHclTerraform(struct!.cidrRange),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -515,9 +515,9 @@ export function alloydbInstanceNetworkConfigAuthorizedExternalNetworksToHclTerra
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class AlloydbInstanceNetworkConfigAuthorizedExternalNetworksOutputReference extends cdktf.ComplexObject {
+export class AlloydbInstanceNetworkConfigAuthorizedExternalNetworksOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -525,11 +525,11 @@ export class AlloydbInstanceNetworkConfigAuthorizedExternalNetworksOutputReferen
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): AlloydbInstanceNetworkConfigAuthorizedExternalNetworks | cdktf.IResolvable | undefined {
+  public get internalValue(): AlloydbInstanceNetworkConfigAuthorizedExternalNetworks | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -542,13 +542,13 @@ export class AlloydbInstanceNetworkConfigAuthorizedExternalNetworksOutputReferen
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: AlloydbInstanceNetworkConfigAuthorizedExternalNetworks | cdktf.IResolvable | undefined) {
+  public set internalValue(value: AlloydbInstanceNetworkConfigAuthorizedExternalNetworks | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._cidrRange = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -576,15 +576,15 @@ export class AlloydbInstanceNetworkConfigAuthorizedExternalNetworksOutputReferen
   }
 }
 
-export class AlloydbInstanceNetworkConfigAuthorizedExternalNetworksList extends cdktf.ComplexList {
-  public internalValue? : AlloydbInstanceNetworkConfigAuthorizedExternalNetworks[] | cdktf.IResolvable
+export class AlloydbInstanceNetworkConfigAuthorizedExternalNetworksList extends cdktn.ComplexList {
+  public internalValue? : AlloydbInstanceNetworkConfigAuthorizedExternalNetworks[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -609,7 +609,7 @@ export interface AlloydbInstanceNetworkConfig {
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/alloydb_instance#enable_outbound_public_ip AlloydbInstance#enable_outbound_public_ip}
   */
-  readonly enableOutboundPublicIp?: boolean | cdktf.IResolvable;
+  readonly enableOutboundPublicIp?: boolean | cdktn.IResolvable;
   /**
   * Enabling public ip for the instance. If a user wishes to disable this,
   * please also clear the list of the authorized external networks set on
@@ -617,55 +617,55 @@ export interface AlloydbInstanceNetworkConfig {
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/alloydb_instance#enable_public_ip AlloydbInstance#enable_public_ip}
   */
-  readonly enablePublicIp?: boolean | cdktf.IResolvable;
+  readonly enablePublicIp?: boolean | cdktn.IResolvable;
   /**
   * authorized_external_networks block
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/alloydb_instance#authorized_external_networks AlloydbInstance#authorized_external_networks}
   */
-  readonly authorizedExternalNetworks?: AlloydbInstanceNetworkConfigAuthorizedExternalNetworks[] | cdktf.IResolvable;
+  readonly authorizedExternalNetworks?: AlloydbInstanceNetworkConfigAuthorizedExternalNetworks[] | cdktn.IResolvable;
 }
 
 export function alloydbInstanceNetworkConfigToTerraform(struct?: AlloydbInstanceNetworkConfigOutputReference | AlloydbInstanceNetworkConfig): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    allocated_ip_range_override: cdktf.stringToTerraform(struct!.allocatedIpRangeOverride),
-    enable_outbound_public_ip: cdktf.booleanToTerraform(struct!.enableOutboundPublicIp),
-    enable_public_ip: cdktf.booleanToTerraform(struct!.enablePublicIp),
-    authorized_external_networks: cdktf.listMapper(alloydbInstanceNetworkConfigAuthorizedExternalNetworksToTerraform, true)(struct!.authorizedExternalNetworks),
+    allocated_ip_range_override: cdktn.stringToTerraform(struct!.allocatedIpRangeOverride),
+    enable_outbound_public_ip: cdktn.booleanToTerraform(struct!.enableOutboundPublicIp),
+    enable_public_ip: cdktn.booleanToTerraform(struct!.enablePublicIp),
+    authorized_external_networks: cdktn.listMapper(alloydbInstanceNetworkConfigAuthorizedExternalNetworksToTerraform, true)(struct!.authorizedExternalNetworks),
   }
 }
 
 
 export function alloydbInstanceNetworkConfigToHclTerraform(struct?: AlloydbInstanceNetworkConfigOutputReference | AlloydbInstanceNetworkConfig): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     allocated_ip_range_override: {
-      value: cdktf.stringToHclTerraform(struct!.allocatedIpRangeOverride),
+      value: cdktn.stringToHclTerraform(struct!.allocatedIpRangeOverride),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     enable_outbound_public_ip: {
-      value: cdktf.booleanToHclTerraform(struct!.enableOutboundPublicIp),
+      value: cdktn.booleanToHclTerraform(struct!.enableOutboundPublicIp),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     enable_public_ip: {
-      value: cdktf.booleanToHclTerraform(struct!.enablePublicIp),
+      value: cdktn.booleanToHclTerraform(struct!.enablePublicIp),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     authorized_external_networks: {
-      value: cdktf.listMapperHcl(alloydbInstanceNetworkConfigAuthorizedExternalNetworksToHclTerraform, true)(struct!.authorizedExternalNetworks),
+      value: cdktn.listMapperHcl(alloydbInstanceNetworkConfigAuthorizedExternalNetworksToHclTerraform, true)(struct!.authorizedExternalNetworks),
       isBlock: true,
       type: "list",
       storageClassType: "AlloydbInstanceNetworkConfigAuthorizedExternalNetworksList",
@@ -676,14 +676,14 @@ export function alloydbInstanceNetworkConfigToHclTerraform(struct?: AlloydbInsta
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class AlloydbInstanceNetworkConfigOutputReference extends cdktf.ComplexObject {
+export class AlloydbInstanceNetworkConfigOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -743,11 +743,11 @@ export class AlloydbInstanceNetworkConfigOutputReference extends cdktf.ComplexOb
   }
 
   // enable_outbound_public_ip - computed: false, optional: true, required: false
-  private _enableOutboundPublicIp?: boolean | cdktf.IResolvable; 
+  private _enableOutboundPublicIp?: boolean | cdktn.IResolvable; 
   public get enableOutboundPublicIp() {
     return this.getBooleanAttribute('enable_outbound_public_ip');
   }
-  public set enableOutboundPublicIp(value: boolean | cdktf.IResolvable) {
+  public set enableOutboundPublicIp(value: boolean | cdktn.IResolvable) {
     this._enableOutboundPublicIp = value;
   }
   public resetEnableOutboundPublicIp() {
@@ -759,11 +759,11 @@ export class AlloydbInstanceNetworkConfigOutputReference extends cdktf.ComplexOb
   }
 
   // enable_public_ip - computed: false, optional: true, required: false
-  private _enablePublicIp?: boolean | cdktf.IResolvable; 
+  private _enablePublicIp?: boolean | cdktn.IResolvable; 
   public get enablePublicIp() {
     return this.getBooleanAttribute('enable_public_ip');
   }
-  public set enablePublicIp(value: boolean | cdktf.IResolvable) {
+  public set enablePublicIp(value: boolean | cdktn.IResolvable) {
     this._enablePublicIp = value;
   }
   public resetEnablePublicIp() {
@@ -779,7 +779,7 @@ export class AlloydbInstanceNetworkConfigOutputReference extends cdktf.ComplexOb
   public get authorizedExternalNetworks() {
     return this._authorizedExternalNetworks;
   }
-  public putAuthorizedExternalNetworks(value: AlloydbInstanceNetworkConfigAuthorizedExternalNetworks[] | cdktf.IResolvable) {
+  public putAuthorizedExternalNetworks(value: AlloydbInstanceNetworkConfigAuthorizedExternalNetworks[] | cdktn.IResolvable) {
     this._authorizedExternalNetworks.internalValue = value;
   }
   public resetAuthorizedExternalNetworks() {
@@ -811,32 +811,32 @@ export interface AlloydbInstancePscInstanceConfigPscAutoConnections {
   readonly consumerProject?: string;
 }
 
-export function alloydbInstancePscInstanceConfigPscAutoConnectionsToTerraform(struct?: AlloydbInstancePscInstanceConfigPscAutoConnections | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function alloydbInstancePscInstanceConfigPscAutoConnectionsToTerraform(struct?: AlloydbInstancePscInstanceConfigPscAutoConnections | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    consumer_network: cdktf.stringToTerraform(struct!.consumerNetwork),
-    consumer_project: cdktf.stringToTerraform(struct!.consumerProject),
+    consumer_network: cdktn.stringToTerraform(struct!.consumerNetwork),
+    consumer_project: cdktn.stringToTerraform(struct!.consumerProject),
   }
 }
 
 
-export function alloydbInstancePscInstanceConfigPscAutoConnectionsToHclTerraform(struct?: AlloydbInstancePscInstanceConfigPscAutoConnections | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function alloydbInstancePscInstanceConfigPscAutoConnectionsToHclTerraform(struct?: AlloydbInstancePscInstanceConfigPscAutoConnections | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     consumer_network: {
-      value: cdktf.stringToHclTerraform(struct!.consumerNetwork),
+      value: cdktn.stringToHclTerraform(struct!.consumerNetwork),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     consumer_project: {
-      value: cdktf.stringToHclTerraform(struct!.consumerProject),
+      value: cdktn.stringToHclTerraform(struct!.consumerProject),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -847,9 +847,9 @@ export function alloydbInstancePscInstanceConfigPscAutoConnectionsToHclTerraform
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class AlloydbInstancePscInstanceConfigPscAutoConnectionsOutputReference extends cdktf.ComplexObject {
+export class AlloydbInstancePscInstanceConfigPscAutoConnectionsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -857,11 +857,11 @@ export class AlloydbInstancePscInstanceConfigPscAutoConnectionsOutputReference e
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): AlloydbInstancePscInstanceConfigPscAutoConnections | cdktf.IResolvable | undefined {
+  public get internalValue(): AlloydbInstancePscInstanceConfigPscAutoConnections | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -878,14 +878,14 @@ export class AlloydbInstancePscInstanceConfigPscAutoConnectionsOutputReference e
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: AlloydbInstancePscInstanceConfigPscAutoConnections | cdktf.IResolvable | undefined) {
+  public set internalValue(value: AlloydbInstancePscInstanceConfigPscAutoConnections | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._consumerNetwork = undefined;
       this._consumerProject = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -945,15 +945,15 @@ export class AlloydbInstancePscInstanceConfigPscAutoConnectionsOutputReference e
   }
 }
 
-export class AlloydbInstancePscInstanceConfigPscAutoConnectionsList extends cdktf.ComplexList {
-  public internalValue? : AlloydbInstancePscInstanceConfigPscAutoConnections[] | cdktf.IResolvable
+export class AlloydbInstancePscInstanceConfigPscAutoConnectionsList extends cdktn.ComplexList {
+  public internalValue? : AlloydbInstancePscInstanceConfigPscAutoConnections[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -975,25 +975,25 @@ export interface AlloydbInstancePscInstanceConfigPscInterfaceConfigs {
   readonly networkAttachmentResource?: string;
 }
 
-export function alloydbInstancePscInstanceConfigPscInterfaceConfigsToTerraform(struct?: AlloydbInstancePscInstanceConfigPscInterfaceConfigs | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function alloydbInstancePscInstanceConfigPscInterfaceConfigsToTerraform(struct?: AlloydbInstancePscInstanceConfigPscInterfaceConfigs | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    network_attachment_resource: cdktf.stringToTerraform(struct!.networkAttachmentResource),
+    network_attachment_resource: cdktn.stringToTerraform(struct!.networkAttachmentResource),
   }
 }
 
 
-export function alloydbInstancePscInstanceConfigPscInterfaceConfigsToHclTerraform(struct?: AlloydbInstancePscInstanceConfigPscInterfaceConfigs | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function alloydbInstancePscInstanceConfigPscInterfaceConfigsToHclTerraform(struct?: AlloydbInstancePscInstanceConfigPscInterfaceConfigs | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     network_attachment_resource: {
-      value: cdktf.stringToHclTerraform(struct!.networkAttachmentResource),
+      value: cdktn.stringToHclTerraform(struct!.networkAttachmentResource),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -1004,9 +1004,9 @@ export function alloydbInstancePscInstanceConfigPscInterfaceConfigsToHclTerrafor
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class AlloydbInstancePscInstanceConfigPscInterfaceConfigsOutputReference extends cdktf.ComplexObject {
+export class AlloydbInstancePscInstanceConfigPscInterfaceConfigsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -1014,11 +1014,11 @@ export class AlloydbInstancePscInstanceConfigPscInterfaceConfigsOutputReference 
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): AlloydbInstancePscInstanceConfigPscInterfaceConfigs | cdktf.IResolvable | undefined {
+  public get internalValue(): AlloydbInstancePscInstanceConfigPscInterfaceConfigs | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -1031,13 +1031,13 @@ export class AlloydbInstancePscInstanceConfigPscInterfaceConfigsOutputReference 
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: AlloydbInstancePscInstanceConfigPscInterfaceConfigs | cdktf.IResolvable | undefined) {
+  public set internalValue(value: AlloydbInstancePscInstanceConfigPscInterfaceConfigs | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._networkAttachmentResource = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -1065,15 +1065,15 @@ export class AlloydbInstancePscInstanceConfigPscInterfaceConfigsOutputReference 
   }
 }
 
-export class AlloydbInstancePscInstanceConfigPscInterfaceConfigsList extends cdktf.ComplexList {
-  public internalValue? : AlloydbInstancePscInstanceConfigPscInterfaceConfigs[] | cdktf.IResolvable
+export class AlloydbInstancePscInstanceConfigPscInterfaceConfigsList extends cdktn.ComplexList {
+  public internalValue? : AlloydbInstancePscInstanceConfigPscInterfaceConfigs[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -1097,48 +1097,48 @@ export interface AlloydbInstancePscInstanceConfig {
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/alloydb_instance#psc_auto_connections AlloydbInstance#psc_auto_connections}
   */
-  readonly pscAutoConnections?: AlloydbInstancePscInstanceConfigPscAutoConnections[] | cdktf.IResolvable;
+  readonly pscAutoConnections?: AlloydbInstancePscInstanceConfigPscAutoConnections[] | cdktn.IResolvable;
   /**
   * psc_interface_configs block
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/alloydb_instance#psc_interface_configs AlloydbInstance#psc_interface_configs}
   */
-  readonly pscInterfaceConfigs?: AlloydbInstancePscInstanceConfigPscInterfaceConfigs[] | cdktf.IResolvable;
+  readonly pscInterfaceConfigs?: AlloydbInstancePscInstanceConfigPscInterfaceConfigs[] | cdktn.IResolvable;
 }
 
 export function alloydbInstancePscInstanceConfigToTerraform(struct?: AlloydbInstancePscInstanceConfigOutputReference | AlloydbInstancePscInstanceConfig): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    allowed_consumer_projects: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.allowedConsumerProjects),
-    psc_auto_connections: cdktf.listMapper(alloydbInstancePscInstanceConfigPscAutoConnectionsToTerraform, true)(struct!.pscAutoConnections),
-    psc_interface_configs: cdktf.listMapper(alloydbInstancePscInstanceConfigPscInterfaceConfigsToTerraform, true)(struct!.pscInterfaceConfigs),
+    allowed_consumer_projects: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.allowedConsumerProjects),
+    psc_auto_connections: cdktn.listMapper(alloydbInstancePscInstanceConfigPscAutoConnectionsToTerraform, true)(struct!.pscAutoConnections),
+    psc_interface_configs: cdktn.listMapper(alloydbInstancePscInstanceConfigPscInterfaceConfigsToTerraform, true)(struct!.pscInterfaceConfigs),
   }
 }
 
 
 export function alloydbInstancePscInstanceConfigToHclTerraform(struct?: AlloydbInstancePscInstanceConfigOutputReference | AlloydbInstancePscInstanceConfig): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     allowed_consumer_projects: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.allowedConsumerProjects),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.allowedConsumerProjects),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
     },
     psc_auto_connections: {
-      value: cdktf.listMapperHcl(alloydbInstancePscInstanceConfigPscAutoConnectionsToHclTerraform, true)(struct!.pscAutoConnections),
+      value: cdktn.listMapperHcl(alloydbInstancePscInstanceConfigPscAutoConnectionsToHclTerraform, true)(struct!.pscAutoConnections),
       isBlock: true,
       type: "list",
       storageClassType: "AlloydbInstancePscInstanceConfigPscAutoConnectionsList",
     },
     psc_interface_configs: {
-      value: cdktf.listMapperHcl(alloydbInstancePscInstanceConfigPscInterfaceConfigsToHclTerraform, true)(struct!.pscInterfaceConfigs),
+      value: cdktn.listMapperHcl(alloydbInstancePscInstanceConfigPscInterfaceConfigsToHclTerraform, true)(struct!.pscInterfaceConfigs),
       isBlock: true,
       type: "list",
       storageClassType: "AlloydbInstancePscInstanceConfigPscInterfaceConfigsList",
@@ -1149,14 +1149,14 @@ export function alloydbInstancePscInstanceConfigToHclTerraform(struct?: AlloydbI
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class AlloydbInstancePscInstanceConfigOutputReference extends cdktf.ComplexObject {
+export class AlloydbInstancePscInstanceConfigOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -1224,7 +1224,7 @@ export class AlloydbInstancePscInstanceConfigOutputReference extends cdktf.Compl
   public get pscAutoConnections() {
     return this._pscAutoConnections;
   }
-  public putPscAutoConnections(value: AlloydbInstancePscInstanceConfigPscAutoConnections[] | cdktf.IResolvable) {
+  public putPscAutoConnections(value: AlloydbInstancePscInstanceConfigPscAutoConnections[] | cdktn.IResolvable) {
     this._pscAutoConnections.internalValue = value;
   }
   public resetPscAutoConnections() {
@@ -1240,7 +1240,7 @@ export class AlloydbInstancePscInstanceConfigOutputReference extends cdktf.Compl
   public get pscInterfaceConfigs() {
     return this._pscInterfaceConfigs;
   }
-  public putPscInterfaceConfigs(value: AlloydbInstancePscInstanceConfigPscInterfaceConfigs[] | cdktf.IResolvable) {
+  public putPscInterfaceConfigs(value: AlloydbInstancePscInstanceConfigPscInterfaceConfigs[] | cdktn.IResolvable) {
     this._pscInterfaceConfigs.internalValue = value;
   }
   public resetPscInterfaceConfigs() {
@@ -1269,55 +1269,55 @@ export interface AlloydbInstanceQueryInsightsConfig {
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/alloydb_instance#record_application_tags AlloydbInstance#record_application_tags}
   */
-  readonly recordApplicationTags?: boolean | cdktf.IResolvable;
+  readonly recordApplicationTags?: boolean | cdktn.IResolvable;
   /**
   * Record client address for an instance. Client address is PII information. This flag is turned "on" by default.
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/alloydb_instance#record_client_address AlloydbInstance#record_client_address}
   */
-  readonly recordClientAddress?: boolean | cdktf.IResolvable;
+  readonly recordClientAddress?: boolean | cdktn.IResolvable;
 }
 
 export function alloydbInstanceQueryInsightsConfigToTerraform(struct?: AlloydbInstanceQueryInsightsConfigOutputReference | AlloydbInstanceQueryInsightsConfig): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    query_plans_per_minute: cdktf.numberToTerraform(struct!.queryPlansPerMinute),
-    query_string_length: cdktf.numberToTerraform(struct!.queryStringLength),
-    record_application_tags: cdktf.booleanToTerraform(struct!.recordApplicationTags),
-    record_client_address: cdktf.booleanToTerraform(struct!.recordClientAddress),
+    query_plans_per_minute: cdktn.numberToTerraform(struct!.queryPlansPerMinute),
+    query_string_length: cdktn.numberToTerraform(struct!.queryStringLength),
+    record_application_tags: cdktn.booleanToTerraform(struct!.recordApplicationTags),
+    record_client_address: cdktn.booleanToTerraform(struct!.recordClientAddress),
   }
 }
 
 
 export function alloydbInstanceQueryInsightsConfigToHclTerraform(struct?: AlloydbInstanceQueryInsightsConfigOutputReference | AlloydbInstanceQueryInsightsConfig): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     query_plans_per_minute: {
-      value: cdktf.numberToHclTerraform(struct!.queryPlansPerMinute),
+      value: cdktn.numberToHclTerraform(struct!.queryPlansPerMinute),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     query_string_length: {
-      value: cdktf.numberToHclTerraform(struct!.queryStringLength),
+      value: cdktn.numberToHclTerraform(struct!.queryStringLength),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     record_application_tags: {
-      value: cdktf.booleanToHclTerraform(struct!.recordApplicationTags),
+      value: cdktn.booleanToHclTerraform(struct!.recordApplicationTags),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     record_client_address: {
-      value: cdktf.booleanToHclTerraform(struct!.recordClientAddress),
+      value: cdktn.booleanToHclTerraform(struct!.recordClientAddress),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
@@ -1328,14 +1328,14 @@ export function alloydbInstanceQueryInsightsConfigToHclTerraform(struct?: Alloyd
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class AlloydbInstanceQueryInsightsConfigOutputReference extends cdktf.ComplexObject {
+export class AlloydbInstanceQueryInsightsConfigOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -1411,11 +1411,11 @@ export class AlloydbInstanceQueryInsightsConfigOutputReference extends cdktf.Com
   }
 
   // record_application_tags - computed: false, optional: true, required: false
-  private _recordApplicationTags?: boolean | cdktf.IResolvable; 
+  private _recordApplicationTags?: boolean | cdktn.IResolvable; 
   public get recordApplicationTags() {
     return this.getBooleanAttribute('record_application_tags');
   }
-  public set recordApplicationTags(value: boolean | cdktf.IResolvable) {
+  public set recordApplicationTags(value: boolean | cdktn.IResolvable) {
     this._recordApplicationTags = value;
   }
   public resetRecordApplicationTags() {
@@ -1427,11 +1427,11 @@ export class AlloydbInstanceQueryInsightsConfigOutputReference extends cdktf.Com
   }
 
   // record_client_address - computed: false, optional: true, required: false
-  private _recordClientAddress?: boolean | cdktf.IResolvable; 
+  private _recordClientAddress?: boolean | cdktn.IResolvable; 
   public get recordClientAddress() {
     return this.getBooleanAttribute('record_client_address');
   }
-  public set recordClientAddress(value: boolean | cdktf.IResolvable) {
+  public set recordClientAddress(value: boolean | cdktn.IResolvable) {
     this._recordClientAddress = value;
   }
   public resetRecordClientAddress() {
@@ -1452,24 +1452,24 @@ export interface AlloydbInstanceReadPoolConfig {
 }
 
 export function alloydbInstanceReadPoolConfigToTerraform(struct?: AlloydbInstanceReadPoolConfigOutputReference | AlloydbInstanceReadPoolConfig): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    node_count: cdktf.numberToTerraform(struct!.nodeCount),
+    node_count: cdktn.numberToTerraform(struct!.nodeCount),
   }
 }
 
 
 export function alloydbInstanceReadPoolConfigToHclTerraform(struct?: AlloydbInstanceReadPoolConfigOutputReference | AlloydbInstanceReadPoolConfig): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     node_count: {
-      value: cdktf.numberToHclTerraform(struct!.nodeCount),
+      value: cdktn.numberToHclTerraform(struct!.nodeCount),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
@@ -1480,14 +1480,14 @@ export function alloydbInstanceReadPoolConfigToHclTerraform(struct?: AlloydbInst
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class AlloydbInstanceReadPoolConfigOutputReference extends cdktf.ComplexObject {
+export class AlloydbInstanceReadPoolConfigOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -1543,39 +1543,39 @@ export interface AlloydbInstanceTimeouts {
   readonly update?: string;
 }
 
-export function alloydbInstanceTimeoutsToTerraform(struct?: AlloydbInstanceTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function alloydbInstanceTimeoutsToTerraform(struct?: AlloydbInstanceTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    create: cdktf.stringToTerraform(struct!.create),
-    delete: cdktf.stringToTerraform(struct!.delete),
-    update: cdktf.stringToTerraform(struct!.update),
+    create: cdktn.stringToTerraform(struct!.create),
+    delete: cdktn.stringToTerraform(struct!.delete),
+    update: cdktn.stringToTerraform(struct!.update),
   }
 }
 
 
-export function alloydbInstanceTimeoutsToHclTerraform(struct?: AlloydbInstanceTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function alloydbInstanceTimeoutsToHclTerraform(struct?: AlloydbInstanceTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     create: {
-      value: cdktf.stringToHclTerraform(struct!.create),
+      value: cdktn.stringToHclTerraform(struct!.create),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     delete: {
-      value: cdktf.stringToHclTerraform(struct!.delete),
+      value: cdktn.stringToHclTerraform(struct!.delete),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     update: {
-      value: cdktf.stringToHclTerraform(struct!.update),
+      value: cdktn.stringToHclTerraform(struct!.update),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -1586,19 +1586,19 @@ export function alloydbInstanceTimeoutsToHclTerraform(struct?: AlloydbInstanceTi
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class AlloydbInstanceTimeoutsOutputReference extends cdktf.ComplexObject {
+export class AlloydbInstanceTimeoutsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): AlloydbInstanceTimeouts | cdktf.IResolvable | undefined {
+  public get internalValue(): AlloydbInstanceTimeouts | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -1619,7 +1619,7 @@ export class AlloydbInstanceTimeoutsOutputReference extends cdktf.ComplexObject 
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: AlloydbInstanceTimeouts | cdktf.IResolvable | undefined) {
+  public set internalValue(value: AlloydbInstanceTimeouts | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -1627,7 +1627,7 @@ export class AlloydbInstanceTimeoutsOutputReference extends cdktf.ComplexObject 
       this._delete = undefined;
       this._update = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -1692,7 +1692,7 @@ export class AlloydbInstanceTimeoutsOutputReference extends cdktf.ComplexObject 
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/alloydb_instance google_alloydb_instance}
 */
-export class AlloydbInstance extends cdktf.TerraformResource {
+export class AlloydbInstance extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -1703,14 +1703,14 @@ export class AlloydbInstance extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a AlloydbInstance resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a AlloydbInstance resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the AlloydbInstance to import
   * @param importFromId The id of the existing AlloydbInstance that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/alloydb_instance#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the AlloydbInstance to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "google_alloydb_instance", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "google_alloydb_instance", importId: importFromId, provider });
       }
 
   // ===========
@@ -1863,13 +1863,13 @@ export class AlloydbInstance extends cdktf.TerraformResource {
   }
 
   // effective_annotations - computed: true, optional: false, required: false
-  private _effectiveAnnotations = new cdktf.StringMap(this, "effective_annotations");
+  private _effectiveAnnotations = new cdktn.StringMap(this, "effective_annotations");
   public get effectiveAnnotations() {
     return this._effectiveAnnotations;
   }
 
   // effective_labels - computed: true, optional: false, required: false
-  private _effectiveLabels = new cdktf.StringMap(this, "effective_labels");
+  private _effectiveLabels = new cdktn.StringMap(this, "effective_labels");
   public get effectiveLabels() {
     return this._effectiveLabels;
   }
@@ -1979,7 +1979,7 @@ export class AlloydbInstance extends cdktf.TerraformResource {
   }
 
   // terraform_labels - computed: true, optional: false, required: false
-  private _terraformLabels = new cdktf.StringMap(this, "terraform_labels");
+  private _terraformLabels = new cdktn.StringMap(this, "terraform_labels");
   public get terraformLabels() {
     return this._terraformLabels;
   }
@@ -2112,17 +2112,17 @@ export class AlloydbInstance extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      activation_policy: cdktf.stringToTerraform(this._activationPolicy),
-      annotations: cdktf.hashMapper(cdktf.stringToTerraform)(this._annotations),
-      availability_type: cdktf.stringToTerraform(this._availabilityType),
-      cluster: cdktf.stringToTerraform(this._cluster),
-      database_flags: cdktf.hashMapper(cdktf.stringToTerraform)(this._databaseFlags),
-      display_name: cdktf.stringToTerraform(this._displayName),
-      gce_zone: cdktf.stringToTerraform(this._gceZone),
-      id: cdktf.stringToTerraform(this._id),
-      instance_id: cdktf.stringToTerraform(this._instanceId),
-      instance_type: cdktf.stringToTerraform(this._instanceType),
-      labels: cdktf.hashMapper(cdktf.stringToTerraform)(this._labels),
+      activation_policy: cdktn.stringToTerraform(this._activationPolicy),
+      annotations: cdktn.hashMapper(cdktn.stringToTerraform)(this._annotations),
+      availability_type: cdktn.stringToTerraform(this._availabilityType),
+      cluster: cdktn.stringToTerraform(this._cluster),
+      database_flags: cdktn.hashMapper(cdktn.stringToTerraform)(this._databaseFlags),
+      display_name: cdktn.stringToTerraform(this._displayName),
+      gce_zone: cdktn.stringToTerraform(this._gceZone),
+      id: cdktn.stringToTerraform(this._id),
+      instance_id: cdktn.stringToTerraform(this._instanceId),
+      instance_type: cdktn.stringToTerraform(this._instanceType),
+      labels: cdktn.hashMapper(cdktn.stringToTerraform)(this._labels),
       client_connection_config: alloydbInstanceClientConnectionConfigToTerraform(this._clientConnectionConfig.internalValue),
       machine_config: alloydbInstanceMachineConfigToTerraform(this._machineConfig.internalValue),
       network_config: alloydbInstanceNetworkConfigToTerraform(this._networkConfig.internalValue),
@@ -2136,67 +2136,67 @@ export class AlloydbInstance extends cdktf.TerraformResource {
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       activation_policy: {
-        value: cdktf.stringToHclTerraform(this._activationPolicy),
+        value: cdktn.stringToHclTerraform(this._activationPolicy),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       annotations: {
-        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._annotations),
+        value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(this._annotations),
         isBlock: false,
         type: "map",
         storageClassType: "stringMap",
       },
       availability_type: {
-        value: cdktf.stringToHclTerraform(this._availabilityType),
+        value: cdktn.stringToHclTerraform(this._availabilityType),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       cluster: {
-        value: cdktf.stringToHclTerraform(this._cluster),
+        value: cdktn.stringToHclTerraform(this._cluster),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       database_flags: {
-        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._databaseFlags),
+        value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(this._databaseFlags),
         isBlock: false,
         type: "map",
         storageClassType: "stringMap",
       },
       display_name: {
-        value: cdktf.stringToHclTerraform(this._displayName),
+        value: cdktn.stringToHclTerraform(this._displayName),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       gce_zone: {
-        value: cdktf.stringToHclTerraform(this._gceZone),
+        value: cdktn.stringToHclTerraform(this._gceZone),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       instance_id: {
-        value: cdktf.stringToHclTerraform(this._instanceId),
+        value: cdktn.stringToHclTerraform(this._instanceId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       instance_type: {
-        value: cdktf.stringToHclTerraform(this._instanceType),
+        value: cdktn.stringToHclTerraform(this._instanceType),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       labels: {
-        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._labels),
+        value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(this._labels),
         isBlock: false,
         type: "map",
         storageClassType: "stringMap",

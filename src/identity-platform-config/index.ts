@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface IdentityPlatformConfigConfig extends cdktf.TerraformMetaArguments {
+export interface IdentityPlatformConfigConfig extends cdktn.TerraformMetaArguments {
   /**
   * List of domains authorized for OAuth redirects.
   *
@@ -23,7 +23,7 @@ export interface IdentityPlatformConfigConfig extends cdktf.TerraformMetaArgumen
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/identity_platform_config#autodelete_anonymous_users IdentityPlatformConfig#autodelete_anonymous_users}
   */
-  readonly autodeleteAnonymousUsers?: boolean | cdktf.IResolvable;
+  readonly autodeleteAnonymousUsers?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/identity_platform_config#id IdentityPlatformConfig#id}
   *
@@ -96,54 +96,54 @@ export interface IdentityPlatformConfigBlockingFunctionsForwardInboundCredential
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/identity_platform_config#access_token IdentityPlatformConfig#access_token}
   */
-  readonly accessToken?: boolean | cdktf.IResolvable;
+  readonly accessToken?: boolean | cdktn.IResolvable;
   /**
   * Whether to pass the user's OIDC identity provider's ID token.
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/identity_platform_config#id_token IdentityPlatformConfig#id_token}
   */
-  readonly idToken?: boolean | cdktf.IResolvable;
+  readonly idToken?: boolean | cdktn.IResolvable;
   /**
   * Whether to pass the user's OAuth identity provider's refresh token.
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/identity_platform_config#refresh_token IdentityPlatformConfig#refresh_token}
   */
-  readonly refreshToken?: boolean | cdktf.IResolvable;
+  readonly refreshToken?: boolean | cdktn.IResolvable;
 }
 
 export function identityPlatformConfigBlockingFunctionsForwardInboundCredentialsToTerraform(struct?: IdentityPlatformConfigBlockingFunctionsForwardInboundCredentialsOutputReference | IdentityPlatformConfigBlockingFunctionsForwardInboundCredentials): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    access_token: cdktf.booleanToTerraform(struct!.accessToken),
-    id_token: cdktf.booleanToTerraform(struct!.idToken),
-    refresh_token: cdktf.booleanToTerraform(struct!.refreshToken),
+    access_token: cdktn.booleanToTerraform(struct!.accessToken),
+    id_token: cdktn.booleanToTerraform(struct!.idToken),
+    refresh_token: cdktn.booleanToTerraform(struct!.refreshToken),
   }
 }
 
 
 export function identityPlatformConfigBlockingFunctionsForwardInboundCredentialsToHclTerraform(struct?: IdentityPlatformConfigBlockingFunctionsForwardInboundCredentialsOutputReference | IdentityPlatformConfigBlockingFunctionsForwardInboundCredentials): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     access_token: {
-      value: cdktf.booleanToHclTerraform(struct!.accessToken),
+      value: cdktn.booleanToHclTerraform(struct!.accessToken),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     id_token: {
-      value: cdktf.booleanToHclTerraform(struct!.idToken),
+      value: cdktn.booleanToHclTerraform(struct!.idToken),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     refresh_token: {
-      value: cdktf.booleanToHclTerraform(struct!.refreshToken),
+      value: cdktn.booleanToHclTerraform(struct!.refreshToken),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
@@ -154,14 +154,14 @@ export function identityPlatformConfigBlockingFunctionsForwardInboundCredentials
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class IdentityPlatformConfigBlockingFunctionsForwardInboundCredentialsOutputReference extends cdktf.ComplexObject {
+export class IdentityPlatformConfigBlockingFunctionsForwardInboundCredentialsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -199,11 +199,11 @@ export class IdentityPlatformConfigBlockingFunctionsForwardInboundCredentialsOut
   }
 
   // access_token - computed: false, optional: true, required: false
-  private _accessToken?: boolean | cdktf.IResolvable; 
+  private _accessToken?: boolean | cdktn.IResolvable; 
   public get accessToken() {
     return this.getBooleanAttribute('access_token');
   }
-  public set accessToken(value: boolean | cdktf.IResolvable) {
+  public set accessToken(value: boolean | cdktn.IResolvable) {
     this._accessToken = value;
   }
   public resetAccessToken() {
@@ -215,11 +215,11 @@ export class IdentityPlatformConfigBlockingFunctionsForwardInboundCredentialsOut
   }
 
   // id_token - computed: false, optional: true, required: false
-  private _idToken?: boolean | cdktf.IResolvable; 
+  private _idToken?: boolean | cdktn.IResolvable; 
   public get idToken() {
     return this.getBooleanAttribute('id_token');
   }
-  public set idToken(value: boolean | cdktf.IResolvable) {
+  public set idToken(value: boolean | cdktn.IResolvable) {
     this._idToken = value;
   }
   public resetIdToken() {
@@ -231,11 +231,11 @@ export class IdentityPlatformConfigBlockingFunctionsForwardInboundCredentialsOut
   }
 
   // refresh_token - computed: false, optional: true, required: false
-  private _refreshToken?: boolean | cdktf.IResolvable; 
+  private _refreshToken?: boolean | cdktn.IResolvable; 
   public get refreshToken() {
     return this.getBooleanAttribute('refresh_token');
   }
-  public set refreshToken(value: boolean | cdktf.IResolvable) {
+  public set refreshToken(value: boolean | cdktn.IResolvable) {
     this._refreshToken = value;
   }
   public resetRefreshToken() {
@@ -259,32 +259,32 @@ export interface IdentityPlatformConfigBlockingFunctionsTriggers {
   readonly functionUri: string;
 }
 
-export function identityPlatformConfigBlockingFunctionsTriggersToTerraform(struct?: IdentityPlatformConfigBlockingFunctionsTriggers | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function identityPlatformConfigBlockingFunctionsTriggersToTerraform(struct?: IdentityPlatformConfigBlockingFunctionsTriggers | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    event_type: cdktf.stringToTerraform(struct!.eventType),
-    function_uri: cdktf.stringToTerraform(struct!.functionUri),
+    event_type: cdktn.stringToTerraform(struct!.eventType),
+    function_uri: cdktn.stringToTerraform(struct!.functionUri),
   }
 }
 
 
-export function identityPlatformConfigBlockingFunctionsTriggersToHclTerraform(struct?: IdentityPlatformConfigBlockingFunctionsTriggers | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function identityPlatformConfigBlockingFunctionsTriggersToHclTerraform(struct?: IdentityPlatformConfigBlockingFunctionsTriggers | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     event_type: {
-      value: cdktf.stringToHclTerraform(struct!.eventType),
+      value: cdktn.stringToHclTerraform(struct!.eventType),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     function_uri: {
-      value: cdktf.stringToHclTerraform(struct!.functionUri),
+      value: cdktn.stringToHclTerraform(struct!.functionUri),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -295,9 +295,9 @@ export function identityPlatformConfigBlockingFunctionsTriggersToHclTerraform(st
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class IdentityPlatformConfigBlockingFunctionsTriggersOutputReference extends cdktf.ComplexObject {
+export class IdentityPlatformConfigBlockingFunctionsTriggersOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -305,11 +305,11 @@ export class IdentityPlatformConfigBlockingFunctionsTriggersOutputReference exte
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): IdentityPlatformConfigBlockingFunctionsTriggers | cdktf.IResolvable | undefined {
+  public get internalValue(): IdentityPlatformConfigBlockingFunctionsTriggers | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -326,14 +326,14 @@ export class IdentityPlatformConfigBlockingFunctionsTriggersOutputReference exte
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: IdentityPlatformConfigBlockingFunctionsTriggers | cdktf.IResolvable | undefined) {
+  public set internalValue(value: IdentityPlatformConfigBlockingFunctionsTriggers | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._eventType = undefined;
       this._functionUri = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -377,15 +377,15 @@ export class IdentityPlatformConfigBlockingFunctionsTriggersOutputReference exte
   }
 }
 
-export class IdentityPlatformConfigBlockingFunctionsTriggersList extends cdktf.ComplexList {
-  public internalValue? : IdentityPlatformConfigBlockingFunctionsTriggers[] | cdktf.IResolvable
+export class IdentityPlatformConfigBlockingFunctionsTriggersList extends cdktn.ComplexList {
+  public internalValue? : IdentityPlatformConfigBlockingFunctionsTriggers[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -408,24 +408,24 @@ export interface IdentityPlatformConfigBlockingFunctions {
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/identity_platform_config#triggers IdentityPlatformConfig#triggers}
   */
-  readonly triggers: IdentityPlatformConfigBlockingFunctionsTriggers[] | cdktf.IResolvable;
+  readonly triggers: IdentityPlatformConfigBlockingFunctionsTriggers[] | cdktn.IResolvable;
 }
 
 export function identityPlatformConfigBlockingFunctionsToTerraform(struct?: IdentityPlatformConfigBlockingFunctionsOutputReference | IdentityPlatformConfigBlockingFunctions): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
     forward_inbound_credentials: identityPlatformConfigBlockingFunctionsForwardInboundCredentialsToTerraform(struct!.forwardInboundCredentials),
-    triggers: cdktf.listMapper(identityPlatformConfigBlockingFunctionsTriggersToTerraform, true)(struct!.triggers),
+    triggers: cdktn.listMapper(identityPlatformConfigBlockingFunctionsTriggersToTerraform, true)(struct!.triggers),
   }
 }
 
 
 export function identityPlatformConfigBlockingFunctionsToHclTerraform(struct?: IdentityPlatformConfigBlockingFunctionsOutputReference | IdentityPlatformConfigBlockingFunctions): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -436,7 +436,7 @@ export function identityPlatformConfigBlockingFunctionsToHclTerraform(struct?: I
       storageClassType: "IdentityPlatformConfigBlockingFunctionsForwardInboundCredentialsList",
     },
     triggers: {
-      value: cdktf.listMapperHcl(identityPlatformConfigBlockingFunctionsTriggersToHclTerraform, true)(struct!.triggers),
+      value: cdktn.listMapperHcl(identityPlatformConfigBlockingFunctionsTriggersToHclTerraform, true)(struct!.triggers),
       isBlock: true,
       type: "set",
       storageClassType: "IdentityPlatformConfigBlockingFunctionsTriggersList",
@@ -447,14 +447,14 @@ export function identityPlatformConfigBlockingFunctionsToHclTerraform(struct?: I
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class IdentityPlatformConfigBlockingFunctionsOutputReference extends cdktf.ComplexObject {
+export class IdentityPlatformConfigBlockingFunctionsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -506,7 +506,7 @@ export class IdentityPlatformConfigBlockingFunctionsOutputReference extends cdkt
   public get triggers() {
     return this._triggers;
   }
-  public putTriggers(value: IdentityPlatformConfigBlockingFunctionsTriggers[] | cdktf.IResolvable) {
+  public putTriggers(value: IdentityPlatformConfigBlockingFunctionsTriggers[] | cdktn.IResolvable) {
     this._triggers.internalValue = value;
   }
   // Temporarily expose input value. Use with caution.
@@ -520,41 +520,41 @@ export interface IdentityPlatformConfigClientPermissions {
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/identity_platform_config#disabled_user_deletion IdentityPlatformConfig#disabled_user_deletion}
   */
-  readonly disabledUserDeletion?: boolean | cdktf.IResolvable;
+  readonly disabledUserDeletion?: boolean | cdktn.IResolvable;
   /**
   * When true, end users cannot sign up for a new account on the associated project through any of our API methods
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/identity_platform_config#disabled_user_signup IdentityPlatformConfig#disabled_user_signup}
   */
-  readonly disabledUserSignup?: boolean | cdktf.IResolvable;
+  readonly disabledUserSignup?: boolean | cdktn.IResolvable;
 }
 
 export function identityPlatformConfigClientPermissionsToTerraform(struct?: IdentityPlatformConfigClientPermissionsOutputReference | IdentityPlatformConfigClientPermissions): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    disabled_user_deletion: cdktf.booleanToTerraform(struct!.disabledUserDeletion),
-    disabled_user_signup: cdktf.booleanToTerraform(struct!.disabledUserSignup),
+    disabled_user_deletion: cdktn.booleanToTerraform(struct!.disabledUserDeletion),
+    disabled_user_signup: cdktn.booleanToTerraform(struct!.disabledUserSignup),
   }
 }
 
 
 export function identityPlatformConfigClientPermissionsToHclTerraform(struct?: IdentityPlatformConfigClientPermissionsOutputReference | IdentityPlatformConfigClientPermissions): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     disabled_user_deletion: {
-      value: cdktf.booleanToHclTerraform(struct!.disabledUserDeletion),
+      value: cdktn.booleanToHclTerraform(struct!.disabledUserDeletion),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     disabled_user_signup: {
-      value: cdktf.booleanToHclTerraform(struct!.disabledUserSignup),
+      value: cdktn.booleanToHclTerraform(struct!.disabledUserSignup),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
@@ -565,14 +565,14 @@ export function identityPlatformConfigClientPermissionsToHclTerraform(struct?: I
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class IdentityPlatformConfigClientPermissionsOutputReference extends cdktf.ComplexObject {
+export class IdentityPlatformConfigClientPermissionsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -604,11 +604,11 @@ export class IdentityPlatformConfigClientPermissionsOutputReference extends cdkt
   }
 
   // disabled_user_deletion - computed: false, optional: true, required: false
-  private _disabledUserDeletion?: boolean | cdktf.IResolvable; 
+  private _disabledUserDeletion?: boolean | cdktn.IResolvable; 
   public get disabledUserDeletion() {
     return this.getBooleanAttribute('disabled_user_deletion');
   }
-  public set disabledUserDeletion(value: boolean | cdktf.IResolvable) {
+  public set disabledUserDeletion(value: boolean | cdktn.IResolvable) {
     this._disabledUserDeletion = value;
   }
   public resetDisabledUserDeletion() {
@@ -620,11 +620,11 @@ export class IdentityPlatformConfigClientPermissionsOutputReference extends cdkt
   }
 
   // disabled_user_signup - computed: false, optional: true, required: false
-  private _disabledUserSignup?: boolean | cdktf.IResolvable; 
+  private _disabledUserSignup?: boolean | cdktn.IResolvable; 
   public get disabledUserSignup() {
     return this.getBooleanAttribute('disabled_user_signup');
   }
-  public set disabledUserSignup(value: boolean | cdktf.IResolvable) {
+  public set disabledUserSignup(value: boolean | cdktn.IResolvable) {
     this._disabledUserSignup = value;
   }
   public resetDisabledUserSignup() {
@@ -645,8 +645,8 @@ export interface IdentityPlatformConfigClient {
 }
 
 export function identityPlatformConfigClientToTerraform(struct?: IdentityPlatformConfigClientOutputReference | IdentityPlatformConfigClient): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -656,8 +656,8 @@ export function identityPlatformConfigClientToTerraform(struct?: IdentityPlatfor
 
 
 export function identityPlatformConfigClientToHclTerraform(struct?: IdentityPlatformConfigClientOutputReference | IdentityPlatformConfigClient): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -673,14 +673,14 @@ export function identityPlatformConfigClientToHclTerraform(struct?: IdentityPlat
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class IdentityPlatformConfigClientOutputReference extends cdktf.ComplexObject {
+export class IdentityPlatformConfigClientOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -741,24 +741,24 @@ export interface IdentityPlatformConfigMfaProviderConfigsTotpProviderConfig {
 }
 
 export function identityPlatformConfigMfaProviderConfigsTotpProviderConfigToTerraform(struct?: IdentityPlatformConfigMfaProviderConfigsTotpProviderConfigOutputReference | IdentityPlatformConfigMfaProviderConfigsTotpProviderConfig): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    adjacent_intervals: cdktf.numberToTerraform(struct!.adjacentIntervals),
+    adjacent_intervals: cdktn.numberToTerraform(struct!.adjacentIntervals),
   }
 }
 
 
 export function identityPlatformConfigMfaProviderConfigsTotpProviderConfigToHclTerraform(struct?: IdentityPlatformConfigMfaProviderConfigsTotpProviderConfigOutputReference | IdentityPlatformConfigMfaProviderConfigsTotpProviderConfig): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     adjacent_intervals: {
-      value: cdktf.numberToHclTerraform(struct!.adjacentIntervals),
+      value: cdktn.numberToHclTerraform(struct!.adjacentIntervals),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
@@ -769,14 +769,14 @@ export function identityPlatformConfigMfaProviderConfigsTotpProviderConfigToHclT
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class IdentityPlatformConfigMfaProviderConfigsTotpProviderConfigOutputReference extends cdktf.ComplexObject {
+export class IdentityPlatformConfigMfaProviderConfigsTotpProviderConfigOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -832,26 +832,26 @@ export interface IdentityPlatformConfigMfaProviderConfigs {
   readonly totpProviderConfig?: IdentityPlatformConfigMfaProviderConfigsTotpProviderConfig;
 }
 
-export function identityPlatformConfigMfaProviderConfigsToTerraform(struct?: IdentityPlatformConfigMfaProviderConfigs | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function identityPlatformConfigMfaProviderConfigsToTerraform(struct?: IdentityPlatformConfigMfaProviderConfigs | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    state: cdktf.stringToTerraform(struct!.state),
+    state: cdktn.stringToTerraform(struct!.state),
     totp_provider_config: identityPlatformConfigMfaProviderConfigsTotpProviderConfigToTerraform(struct!.totpProviderConfig),
   }
 }
 
 
-export function identityPlatformConfigMfaProviderConfigsToHclTerraform(struct?: IdentityPlatformConfigMfaProviderConfigs | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function identityPlatformConfigMfaProviderConfigsToHclTerraform(struct?: IdentityPlatformConfigMfaProviderConfigs | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     state: {
-      value: cdktf.stringToHclTerraform(struct!.state),
+      value: cdktn.stringToHclTerraform(struct!.state),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -868,9 +868,9 @@ export function identityPlatformConfigMfaProviderConfigsToHclTerraform(struct?: 
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class IdentityPlatformConfigMfaProviderConfigsOutputReference extends cdktf.ComplexObject {
+export class IdentityPlatformConfigMfaProviderConfigsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -878,11 +878,11 @@ export class IdentityPlatformConfigMfaProviderConfigsOutputReference extends cdk
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): IdentityPlatformConfigMfaProviderConfigs | cdktf.IResolvable | undefined {
+  public get internalValue(): IdentityPlatformConfigMfaProviderConfigs | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -899,14 +899,14 @@ export class IdentityPlatformConfigMfaProviderConfigsOutputReference extends cdk
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: IdentityPlatformConfigMfaProviderConfigs | cdktf.IResolvable | undefined) {
+  public set internalValue(value: IdentityPlatformConfigMfaProviderConfigs | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._state = undefined;
       this._totpProviderConfig.internalValue = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -951,15 +951,15 @@ export class IdentityPlatformConfigMfaProviderConfigsOutputReference extends cdk
   }
 }
 
-export class IdentityPlatformConfigMfaProviderConfigsList extends cdktf.ComplexList {
-  public internalValue? : IdentityPlatformConfigMfaProviderConfigs[] | cdktf.IResolvable
+export class IdentityPlatformConfigMfaProviderConfigsList extends cdktn.ComplexList {
+  public internalValue? : IdentityPlatformConfigMfaProviderConfigs[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -988,42 +988,42 @@ export interface IdentityPlatformConfigMfa {
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/identity_platform_config#provider_configs IdentityPlatformConfig#provider_configs}
   */
-  readonly providerConfigs?: IdentityPlatformConfigMfaProviderConfigs[] | cdktf.IResolvable;
+  readonly providerConfigs?: IdentityPlatformConfigMfaProviderConfigs[] | cdktn.IResolvable;
 }
 
 export function identityPlatformConfigMfaToTerraform(struct?: IdentityPlatformConfigMfaOutputReference | IdentityPlatformConfigMfa): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    enabled_providers: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.enabledProviders),
-    state: cdktf.stringToTerraform(struct!.state),
-    provider_configs: cdktf.listMapper(identityPlatformConfigMfaProviderConfigsToTerraform, true)(struct!.providerConfigs),
+    enabled_providers: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.enabledProviders),
+    state: cdktn.stringToTerraform(struct!.state),
+    provider_configs: cdktn.listMapper(identityPlatformConfigMfaProviderConfigsToTerraform, true)(struct!.providerConfigs),
   }
 }
 
 
 export function identityPlatformConfigMfaToHclTerraform(struct?: IdentityPlatformConfigMfaOutputReference | IdentityPlatformConfigMfa): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     enabled_providers: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.enabledProviders),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.enabledProviders),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
     },
     state: {
-      value: cdktf.stringToHclTerraform(struct!.state),
+      value: cdktn.stringToHclTerraform(struct!.state),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     provider_configs: {
-      value: cdktf.listMapperHcl(identityPlatformConfigMfaProviderConfigsToHclTerraform, true)(struct!.providerConfigs),
+      value: cdktn.listMapperHcl(identityPlatformConfigMfaProviderConfigsToHclTerraform, true)(struct!.providerConfigs),
       isBlock: true,
       type: "list",
       storageClassType: "IdentityPlatformConfigMfaProviderConfigsList",
@@ -1034,14 +1034,14 @@ export function identityPlatformConfigMfaToHclTerraform(struct?: IdentityPlatfor
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class IdentityPlatformConfigMfaOutputReference extends cdktf.ComplexObject {
+export class IdentityPlatformConfigMfaOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -1115,7 +1115,7 @@ export class IdentityPlatformConfigMfaOutputReference extends cdktf.ComplexObjec
   public get providerConfigs() {
     return this._providerConfigs;
   }
-  public putProviderConfigs(value: IdentityPlatformConfigMfaProviderConfigs[] | cdktf.IResolvable) {
+  public putProviderConfigs(value: IdentityPlatformConfigMfaProviderConfigs[] | cdktn.IResolvable) {
     this._providerConfigs.internalValue = value;
   }
   public resetProviderConfigs() {
@@ -1132,28 +1132,28 @@ export interface IdentityPlatformConfigMonitoringRequestLogging {
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/identity_platform_config#enabled IdentityPlatformConfig#enabled}
   */
-  readonly enabled?: boolean | cdktf.IResolvable;
+  readonly enabled?: boolean | cdktn.IResolvable;
 }
 
 export function identityPlatformConfigMonitoringRequestLoggingToTerraform(struct?: IdentityPlatformConfigMonitoringRequestLoggingOutputReference | IdentityPlatformConfigMonitoringRequestLogging): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    enabled: cdktf.booleanToTerraform(struct!.enabled),
+    enabled: cdktn.booleanToTerraform(struct!.enabled),
   }
 }
 
 
 export function identityPlatformConfigMonitoringRequestLoggingToHclTerraform(struct?: IdentityPlatformConfigMonitoringRequestLoggingOutputReference | IdentityPlatformConfigMonitoringRequestLogging): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     enabled: {
-      value: cdktf.booleanToHclTerraform(struct!.enabled),
+      value: cdktn.booleanToHclTerraform(struct!.enabled),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
@@ -1164,14 +1164,14 @@ export function identityPlatformConfigMonitoringRequestLoggingToHclTerraform(str
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class IdentityPlatformConfigMonitoringRequestLoggingOutputReference extends cdktf.ComplexObject {
+export class IdentityPlatformConfigMonitoringRequestLoggingOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -1197,11 +1197,11 @@ export class IdentityPlatformConfigMonitoringRequestLoggingOutputReference exten
   }
 
   // enabled - computed: false, optional: true, required: false
-  private _enabled?: boolean | cdktf.IResolvable; 
+  private _enabled?: boolean | cdktn.IResolvable; 
   public get enabled() {
     return this.getBooleanAttribute('enabled');
   }
-  public set enabled(value: boolean | cdktf.IResolvable) {
+  public set enabled(value: boolean | cdktn.IResolvable) {
     this._enabled = value;
   }
   public resetEnabled() {
@@ -1222,8 +1222,8 @@ export interface IdentityPlatformConfigMonitoring {
 }
 
 export function identityPlatformConfigMonitoringToTerraform(struct?: IdentityPlatformConfigMonitoringOutputReference | IdentityPlatformConfigMonitoring): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -1233,8 +1233,8 @@ export function identityPlatformConfigMonitoringToTerraform(struct?: IdentityPla
 
 
 export function identityPlatformConfigMonitoringToHclTerraform(struct?: IdentityPlatformConfigMonitoringOutputReference | IdentityPlatformConfigMonitoring): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -1250,14 +1250,14 @@ export function identityPlatformConfigMonitoringToHclTerraform(struct?: Identity
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class IdentityPlatformConfigMonitoringOutputReference extends cdktf.ComplexObject {
+export class IdentityPlatformConfigMonitoringOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -1304,7 +1304,7 @@ export interface IdentityPlatformConfigMultiTenant {
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/identity_platform_config#allow_tenants IdentityPlatformConfig#allow_tenants}
   */
-  readonly allowTenants?: boolean | cdktf.IResolvable;
+  readonly allowTenants?: boolean | cdktn.IResolvable;
   /**
   * The default cloud parent org or folder that the tenant project should be created under.
   * The parent resource name should be in the format of "/", such as "folders/123" or "organizations/456".
@@ -1316,31 +1316,31 @@ export interface IdentityPlatformConfigMultiTenant {
 }
 
 export function identityPlatformConfigMultiTenantToTerraform(struct?: IdentityPlatformConfigMultiTenantOutputReference | IdentityPlatformConfigMultiTenant): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    allow_tenants: cdktf.booleanToTerraform(struct!.allowTenants),
-    default_tenant_location: cdktf.stringToTerraform(struct!.defaultTenantLocation),
+    allow_tenants: cdktn.booleanToTerraform(struct!.allowTenants),
+    default_tenant_location: cdktn.stringToTerraform(struct!.defaultTenantLocation),
   }
 }
 
 
 export function identityPlatformConfigMultiTenantToHclTerraform(struct?: IdentityPlatformConfigMultiTenantOutputReference | IdentityPlatformConfigMultiTenant): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     allow_tenants: {
-      value: cdktf.booleanToHclTerraform(struct!.allowTenants),
+      value: cdktn.booleanToHclTerraform(struct!.allowTenants),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     default_tenant_location: {
-      value: cdktf.stringToHclTerraform(struct!.defaultTenantLocation),
+      value: cdktn.stringToHclTerraform(struct!.defaultTenantLocation),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -1351,14 +1351,14 @@ export function identityPlatformConfigMultiTenantToHclTerraform(struct?: Identit
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class IdentityPlatformConfigMultiTenantOutputReference extends cdktf.ComplexObject {
+export class IdentityPlatformConfigMultiTenantOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -1390,11 +1390,11 @@ export class IdentityPlatformConfigMultiTenantOutputReference extends cdktf.Comp
   }
 
   // allow_tenants - computed: false, optional: true, required: false
-  private _allowTenants?: boolean | cdktf.IResolvable; 
+  private _allowTenants?: boolean | cdktn.IResolvable; 
   public get allowTenants() {
     return this.getBooleanAttribute('allow_tenants');
   }
-  public set allowTenants(value: boolean | cdktf.IResolvable) {
+  public set allowTenants(value: boolean | cdktn.IResolvable) {
     this._allowTenants = value;
   }
   public resetAllowTenants() {
@@ -1443,38 +1443,38 @@ export interface IdentityPlatformConfigQuotaSignUpQuotaConfig {
 }
 
 export function identityPlatformConfigQuotaSignUpQuotaConfigToTerraform(struct?: IdentityPlatformConfigQuotaSignUpQuotaConfigOutputReference | IdentityPlatformConfigQuotaSignUpQuotaConfig): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    quota: cdktf.numberToTerraform(struct!.quota),
-    quota_duration: cdktf.stringToTerraform(struct!.quotaDuration),
-    start_time: cdktf.stringToTerraform(struct!.startTime),
+    quota: cdktn.numberToTerraform(struct!.quota),
+    quota_duration: cdktn.stringToTerraform(struct!.quotaDuration),
+    start_time: cdktn.stringToTerraform(struct!.startTime),
   }
 }
 
 
 export function identityPlatformConfigQuotaSignUpQuotaConfigToHclTerraform(struct?: IdentityPlatformConfigQuotaSignUpQuotaConfigOutputReference | IdentityPlatformConfigQuotaSignUpQuotaConfig): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     quota: {
-      value: cdktf.numberToHclTerraform(struct!.quota),
+      value: cdktn.numberToHclTerraform(struct!.quota),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     quota_duration: {
-      value: cdktf.stringToHclTerraform(struct!.quotaDuration),
+      value: cdktn.stringToHclTerraform(struct!.quotaDuration),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     start_time: {
-      value: cdktf.stringToHclTerraform(struct!.startTime),
+      value: cdktn.stringToHclTerraform(struct!.startTime),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -1485,14 +1485,14 @@ export function identityPlatformConfigQuotaSignUpQuotaConfigToHclTerraform(struc
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class IdentityPlatformConfigQuotaSignUpQuotaConfigOutputReference extends cdktf.ComplexObject {
+export class IdentityPlatformConfigQuotaSignUpQuotaConfigOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -1587,8 +1587,8 @@ export interface IdentityPlatformConfigQuota {
 }
 
 export function identityPlatformConfigQuotaToTerraform(struct?: IdentityPlatformConfigQuotaOutputReference | IdentityPlatformConfigQuota): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -1598,8 +1598,8 @@ export function identityPlatformConfigQuotaToTerraform(struct?: IdentityPlatform
 
 
 export function identityPlatformConfigQuotaToHclTerraform(struct?: IdentityPlatformConfigQuotaOutputReference | IdentityPlatformConfigQuota): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -1615,14 +1615,14 @@ export function identityPlatformConfigQuotaToHclTerraform(struct?: IdentityPlatf
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class IdentityPlatformConfigQuotaOutputReference extends cdktf.ComplexObject {
+export class IdentityPlatformConfigQuotaOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -1667,8 +1667,8 @@ export interface IdentityPlatformConfigSignInHashConfig {
 }
 
 export function identityPlatformConfigSignInHashConfigToTerraform(struct?: IdentityPlatformConfigSignInHashConfig): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -1677,8 +1677,8 @@ export function identityPlatformConfigSignInHashConfigToTerraform(struct?: Ident
 
 
 export function identityPlatformConfigSignInHashConfigToHclTerraform(struct?: IdentityPlatformConfigSignInHashConfig): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -1686,7 +1686,7 @@ export function identityPlatformConfigSignInHashConfigToHclTerraform(struct?: Id
   return attrs;
 }
 
-export class IdentityPlatformConfigSignInHashConfigOutputReference extends cdktf.ComplexObject {
+export class IdentityPlatformConfigSignInHashConfigOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -1695,7 +1695,7 @@ export class IdentityPlatformConfigSignInHashConfigOutputReference extends cdktf
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -1740,14 +1740,14 @@ export class IdentityPlatformConfigSignInHashConfigOutputReference extends cdktf
   }
 }
 
-export class IdentityPlatformConfigSignInHashConfigList extends cdktf.ComplexList {
+export class IdentityPlatformConfigSignInHashConfigList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -1764,28 +1764,28 @@ export interface IdentityPlatformConfigSignInAnonymous {
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/identity_platform_config#enabled IdentityPlatformConfig#enabled}
   */
-  readonly enabled: boolean | cdktf.IResolvable;
+  readonly enabled: boolean | cdktn.IResolvable;
 }
 
 export function identityPlatformConfigSignInAnonymousToTerraform(struct?: IdentityPlatformConfigSignInAnonymousOutputReference | IdentityPlatformConfigSignInAnonymous): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    enabled: cdktf.booleanToTerraform(struct!.enabled),
+    enabled: cdktn.booleanToTerraform(struct!.enabled),
   }
 }
 
 
 export function identityPlatformConfigSignInAnonymousToHclTerraform(struct?: IdentityPlatformConfigSignInAnonymousOutputReference | IdentityPlatformConfigSignInAnonymous): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     enabled: {
-      value: cdktf.booleanToHclTerraform(struct!.enabled),
+      value: cdktn.booleanToHclTerraform(struct!.enabled),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
@@ -1796,14 +1796,14 @@ export function identityPlatformConfigSignInAnonymousToHclTerraform(struct?: Ide
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class IdentityPlatformConfigSignInAnonymousOutputReference extends cdktf.ComplexObject {
+export class IdentityPlatformConfigSignInAnonymousOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -1829,11 +1829,11 @@ export class IdentityPlatformConfigSignInAnonymousOutputReference extends cdktf.
   }
 
   // enabled - computed: false, optional: false, required: true
-  private _enabled?: boolean | cdktf.IResolvable; 
+  private _enabled?: boolean | cdktn.IResolvable; 
   public get enabled() {
     return this.getBooleanAttribute('enabled');
   }
-  public set enabled(value: boolean | cdktf.IResolvable) {
+  public set enabled(value: boolean | cdktn.IResolvable) {
     this._enabled = value;
   }
   // Temporarily expose input value. Use with caution.
@@ -1847,7 +1847,7 @@ export interface IdentityPlatformConfigSignInEmail {
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/identity_platform_config#enabled IdentityPlatformConfig#enabled}
   */
-  readonly enabled: boolean | cdktf.IResolvable;
+  readonly enabled: boolean | cdktn.IResolvable;
   /**
   * Whether a password is required for email auth or not. If true, both an email and
   * password must be provided to sign in. If false, a user may sign in via either
@@ -1855,35 +1855,35 @@ export interface IdentityPlatformConfigSignInEmail {
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/identity_platform_config#password_required IdentityPlatformConfig#password_required}
   */
-  readonly passwordRequired?: boolean | cdktf.IResolvable;
+  readonly passwordRequired?: boolean | cdktn.IResolvable;
 }
 
 export function identityPlatformConfigSignInEmailToTerraform(struct?: IdentityPlatformConfigSignInEmailOutputReference | IdentityPlatformConfigSignInEmail): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    enabled: cdktf.booleanToTerraform(struct!.enabled),
-    password_required: cdktf.booleanToTerraform(struct!.passwordRequired),
+    enabled: cdktn.booleanToTerraform(struct!.enabled),
+    password_required: cdktn.booleanToTerraform(struct!.passwordRequired),
   }
 }
 
 
 export function identityPlatformConfigSignInEmailToHclTerraform(struct?: IdentityPlatformConfigSignInEmailOutputReference | IdentityPlatformConfigSignInEmail): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     enabled: {
-      value: cdktf.booleanToHclTerraform(struct!.enabled),
+      value: cdktn.booleanToHclTerraform(struct!.enabled),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     password_required: {
-      value: cdktf.booleanToHclTerraform(struct!.passwordRequired),
+      value: cdktn.booleanToHclTerraform(struct!.passwordRequired),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
@@ -1894,14 +1894,14 @@ export function identityPlatformConfigSignInEmailToHclTerraform(struct?: Identit
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class IdentityPlatformConfigSignInEmailOutputReference extends cdktf.ComplexObject {
+export class IdentityPlatformConfigSignInEmailOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -1933,11 +1933,11 @@ export class IdentityPlatformConfigSignInEmailOutputReference extends cdktf.Comp
   }
 
   // enabled - computed: false, optional: false, required: true
-  private _enabled?: boolean | cdktf.IResolvable; 
+  private _enabled?: boolean | cdktn.IResolvable; 
   public get enabled() {
     return this.getBooleanAttribute('enabled');
   }
-  public set enabled(value: boolean | cdktf.IResolvable) {
+  public set enabled(value: boolean | cdktn.IResolvable) {
     this._enabled = value;
   }
   // Temporarily expose input value. Use with caution.
@@ -1946,11 +1946,11 @@ export class IdentityPlatformConfigSignInEmailOutputReference extends cdktf.Comp
   }
 
   // password_required - computed: false, optional: true, required: false
-  private _passwordRequired?: boolean | cdktf.IResolvable; 
+  private _passwordRequired?: boolean | cdktn.IResolvable; 
   public get passwordRequired() {
     return this.getBooleanAttribute('password_required');
   }
-  public set passwordRequired(value: boolean | cdktf.IResolvable) {
+  public set passwordRequired(value: boolean | cdktn.IResolvable) {
     this._passwordRequired = value;
   }
   public resetPasswordRequired() {
@@ -1967,7 +1967,7 @@ export interface IdentityPlatformConfigSignInPhoneNumber {
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/identity_platform_config#enabled IdentityPlatformConfig#enabled}
   */
-  readonly enabled: boolean | cdktf.IResolvable;
+  readonly enabled: boolean | cdktn.IResolvable;
   /**
   * A map of <test phone number, fake code> that can be used for phone auth testing.
   *
@@ -1977,31 +1977,31 @@ export interface IdentityPlatformConfigSignInPhoneNumber {
 }
 
 export function identityPlatformConfigSignInPhoneNumberToTerraform(struct?: IdentityPlatformConfigSignInPhoneNumberOutputReference | IdentityPlatformConfigSignInPhoneNumber): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    enabled: cdktf.booleanToTerraform(struct!.enabled),
-    test_phone_numbers: cdktf.hashMapper(cdktf.stringToTerraform)(struct!.testPhoneNumbers),
+    enabled: cdktn.booleanToTerraform(struct!.enabled),
+    test_phone_numbers: cdktn.hashMapper(cdktn.stringToTerraform)(struct!.testPhoneNumbers),
   }
 }
 
 
 export function identityPlatformConfigSignInPhoneNumberToHclTerraform(struct?: IdentityPlatformConfigSignInPhoneNumberOutputReference | IdentityPlatformConfigSignInPhoneNumber): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     enabled: {
-      value: cdktf.booleanToHclTerraform(struct!.enabled),
+      value: cdktn.booleanToHclTerraform(struct!.enabled),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     test_phone_numbers: {
-      value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(struct!.testPhoneNumbers),
+      value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(struct!.testPhoneNumbers),
       isBlock: false,
       type: "map",
       storageClassType: "stringMap",
@@ -2012,14 +2012,14 @@ export function identityPlatformConfigSignInPhoneNumberToHclTerraform(struct?: I
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class IdentityPlatformConfigSignInPhoneNumberOutputReference extends cdktf.ComplexObject {
+export class IdentityPlatformConfigSignInPhoneNumberOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -2051,11 +2051,11 @@ export class IdentityPlatformConfigSignInPhoneNumberOutputReference extends cdkt
   }
 
   // enabled - computed: false, optional: false, required: true
-  private _enabled?: boolean | cdktf.IResolvable; 
+  private _enabled?: boolean | cdktn.IResolvable; 
   public get enabled() {
     return this.getBooleanAttribute('enabled');
   }
-  public set enabled(value: boolean | cdktf.IResolvable) {
+  public set enabled(value: boolean | cdktn.IResolvable) {
     this._enabled = value;
   }
   // Temporarily expose input value. Use with caution.
@@ -2085,7 +2085,7 @@ export interface IdentityPlatformConfigSignIn {
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/identity_platform_config#allow_duplicate_emails IdentityPlatformConfig#allow_duplicate_emails}
   */
-  readonly allowDuplicateEmails?: boolean | cdktf.IResolvable;
+  readonly allowDuplicateEmails?: boolean | cdktn.IResolvable;
   /**
   * anonymous block
   *
@@ -2107,12 +2107,12 @@ export interface IdentityPlatformConfigSignIn {
 }
 
 export function identityPlatformConfigSignInToTerraform(struct?: IdentityPlatformConfigSignInOutputReference | IdentityPlatformConfigSignIn): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    allow_duplicate_emails: cdktf.booleanToTerraform(struct!.allowDuplicateEmails),
+    allow_duplicate_emails: cdktn.booleanToTerraform(struct!.allowDuplicateEmails),
     anonymous: identityPlatformConfigSignInAnonymousToTerraform(struct!.anonymous),
     email: identityPlatformConfigSignInEmailToTerraform(struct!.email),
     phone_number: identityPlatformConfigSignInPhoneNumberToTerraform(struct!.phoneNumber),
@@ -2121,13 +2121,13 @@ export function identityPlatformConfigSignInToTerraform(struct?: IdentityPlatfor
 
 
 export function identityPlatformConfigSignInToHclTerraform(struct?: IdentityPlatformConfigSignInOutputReference | IdentityPlatformConfigSignIn): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     allow_duplicate_emails: {
-      value: cdktf.booleanToHclTerraform(struct!.allowDuplicateEmails),
+      value: cdktn.booleanToHclTerraform(struct!.allowDuplicateEmails),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
@@ -2156,14 +2156,14 @@ export function identityPlatformConfigSignInToHclTerraform(struct?: IdentityPlat
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class IdentityPlatformConfigSignInOutputReference extends cdktf.ComplexObject {
+export class IdentityPlatformConfigSignInOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -2207,11 +2207,11 @@ export class IdentityPlatformConfigSignInOutputReference extends cdktf.ComplexOb
   }
 
   // allow_duplicate_emails - computed: false, optional: true, required: false
-  private _allowDuplicateEmails?: boolean | cdktf.IResolvable; 
+  private _allowDuplicateEmails?: boolean | cdktn.IResolvable; 
   public get allowDuplicateEmails() {
     return this.getBooleanAttribute('allow_duplicate_emails');
   }
-  public set allowDuplicateEmails(value: boolean | cdktf.IResolvable) {
+  public set allowDuplicateEmails(value: boolean | cdktn.IResolvable) {
     this._allowDuplicateEmails = value;
   }
   public resetAllowDuplicateEmails() {
@@ -2286,24 +2286,24 @@ export interface IdentityPlatformConfigSmsRegionConfigAllowByDefault {
 }
 
 export function identityPlatformConfigSmsRegionConfigAllowByDefaultToTerraform(struct?: IdentityPlatformConfigSmsRegionConfigAllowByDefaultOutputReference | IdentityPlatformConfigSmsRegionConfigAllowByDefault): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    disallowed_regions: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.disallowedRegions),
+    disallowed_regions: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.disallowedRegions),
   }
 }
 
 
 export function identityPlatformConfigSmsRegionConfigAllowByDefaultToHclTerraform(struct?: IdentityPlatformConfigSmsRegionConfigAllowByDefaultOutputReference | IdentityPlatformConfigSmsRegionConfigAllowByDefault): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     disallowed_regions: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.disallowedRegions),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.disallowedRegions),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
@@ -2314,14 +2314,14 @@ export function identityPlatformConfigSmsRegionConfigAllowByDefaultToHclTerrafor
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class IdentityPlatformConfigSmsRegionConfigAllowByDefaultOutputReference extends cdktf.ComplexObject {
+export class IdentityPlatformConfigSmsRegionConfigAllowByDefaultOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -2372,24 +2372,24 @@ export interface IdentityPlatformConfigSmsRegionConfigAllowlistOnly {
 }
 
 export function identityPlatformConfigSmsRegionConfigAllowlistOnlyToTerraform(struct?: IdentityPlatformConfigSmsRegionConfigAllowlistOnlyOutputReference | IdentityPlatformConfigSmsRegionConfigAllowlistOnly): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    allowed_regions: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.allowedRegions),
+    allowed_regions: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.allowedRegions),
   }
 }
 
 
 export function identityPlatformConfigSmsRegionConfigAllowlistOnlyToHclTerraform(struct?: IdentityPlatformConfigSmsRegionConfigAllowlistOnlyOutputReference | IdentityPlatformConfigSmsRegionConfigAllowlistOnly): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     allowed_regions: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.allowedRegions),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.allowedRegions),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
@@ -2400,14 +2400,14 @@ export function identityPlatformConfigSmsRegionConfigAllowlistOnlyToHclTerraform
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class IdentityPlatformConfigSmsRegionConfigAllowlistOnlyOutputReference extends cdktf.ComplexObject {
+export class IdentityPlatformConfigSmsRegionConfigAllowlistOnlyOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -2464,8 +2464,8 @@ export interface IdentityPlatformConfigSmsRegionConfig {
 }
 
 export function identityPlatformConfigSmsRegionConfigToTerraform(struct?: IdentityPlatformConfigSmsRegionConfigOutputReference | IdentityPlatformConfigSmsRegionConfig): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -2476,8 +2476,8 @@ export function identityPlatformConfigSmsRegionConfigToTerraform(struct?: Identi
 
 
 export function identityPlatformConfigSmsRegionConfigToHclTerraform(struct?: IdentityPlatformConfigSmsRegionConfigOutputReference | IdentityPlatformConfigSmsRegionConfig): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -2499,14 +2499,14 @@ export function identityPlatformConfigSmsRegionConfigToHclTerraform(struct?: Ide
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class IdentityPlatformConfigSmsRegionConfigOutputReference extends cdktf.ComplexObject {
+export class IdentityPlatformConfigSmsRegionConfigOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -2584,39 +2584,39 @@ export interface IdentityPlatformConfigTimeouts {
   readonly update?: string;
 }
 
-export function identityPlatformConfigTimeoutsToTerraform(struct?: IdentityPlatformConfigTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function identityPlatformConfigTimeoutsToTerraform(struct?: IdentityPlatformConfigTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    create: cdktf.stringToTerraform(struct!.create),
-    delete: cdktf.stringToTerraform(struct!.delete),
-    update: cdktf.stringToTerraform(struct!.update),
+    create: cdktn.stringToTerraform(struct!.create),
+    delete: cdktn.stringToTerraform(struct!.delete),
+    update: cdktn.stringToTerraform(struct!.update),
   }
 }
 
 
-export function identityPlatformConfigTimeoutsToHclTerraform(struct?: IdentityPlatformConfigTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function identityPlatformConfigTimeoutsToHclTerraform(struct?: IdentityPlatformConfigTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     create: {
-      value: cdktf.stringToHclTerraform(struct!.create),
+      value: cdktn.stringToHclTerraform(struct!.create),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     delete: {
-      value: cdktf.stringToHclTerraform(struct!.delete),
+      value: cdktn.stringToHclTerraform(struct!.delete),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     update: {
-      value: cdktf.stringToHclTerraform(struct!.update),
+      value: cdktn.stringToHclTerraform(struct!.update),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -2627,19 +2627,19 @@ export function identityPlatformConfigTimeoutsToHclTerraform(struct?: IdentityPl
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class IdentityPlatformConfigTimeoutsOutputReference extends cdktf.ComplexObject {
+export class IdentityPlatformConfigTimeoutsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): IdentityPlatformConfigTimeouts | cdktf.IResolvable | undefined {
+  public get internalValue(): IdentityPlatformConfigTimeouts | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -2660,7 +2660,7 @@ export class IdentityPlatformConfigTimeoutsOutputReference extends cdktf.Complex
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: IdentityPlatformConfigTimeouts | cdktf.IResolvable | undefined) {
+  public set internalValue(value: IdentityPlatformConfigTimeouts | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -2668,7 +2668,7 @@ export class IdentityPlatformConfigTimeoutsOutputReference extends cdktf.Complex
       this._delete = undefined;
       this._update = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -2733,7 +2733,7 @@ export class IdentityPlatformConfigTimeoutsOutputReference extends cdktf.Complex
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/identity_platform_config google_identity_platform_config}
 */
-export class IdentityPlatformConfig extends cdktf.TerraformResource {
+export class IdentityPlatformConfig extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -2744,14 +2744,14 @@ export class IdentityPlatformConfig extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a IdentityPlatformConfig resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a IdentityPlatformConfig resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the IdentityPlatformConfig to import
   * @param importFromId The id of the existing IdentityPlatformConfig that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/identity_platform_config#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the IdentityPlatformConfig to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "google_identity_platform_config", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "google_identity_platform_config", importId: importFromId, provider });
       }
 
   // ===========
@@ -2817,11 +2817,11 @@ export class IdentityPlatformConfig extends cdktf.TerraformResource {
   }
 
   // autodelete_anonymous_users - computed: false, optional: true, required: false
-  private _autodeleteAnonymousUsers?: boolean | cdktf.IResolvable; 
+  private _autodeleteAnonymousUsers?: boolean | cdktn.IResolvable; 
   public get autodeleteAnonymousUsers() {
     return this.getBooleanAttribute('autodelete_anonymous_users');
   }
-  public set autodeleteAnonymousUsers(value: boolean | cdktf.IResolvable) {
+  public set autodeleteAnonymousUsers(value: boolean | cdktn.IResolvable) {
     this._autodeleteAnonymousUsers = value;
   }
   public resetAutodeleteAnonymousUsers() {
@@ -3019,10 +3019,10 @@ export class IdentityPlatformConfig extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      authorized_domains: cdktf.listMapper(cdktf.stringToTerraform, false)(this._authorizedDomains),
-      autodelete_anonymous_users: cdktf.booleanToTerraform(this._autodeleteAnonymousUsers),
-      id: cdktf.stringToTerraform(this._id),
-      project: cdktf.stringToTerraform(this._project),
+      authorized_domains: cdktn.listMapper(cdktn.stringToTerraform, false)(this._authorizedDomains),
+      autodelete_anonymous_users: cdktn.booleanToTerraform(this._autodeleteAnonymousUsers),
+      id: cdktn.stringToTerraform(this._id),
+      project: cdktn.stringToTerraform(this._project),
       blocking_functions: identityPlatformConfigBlockingFunctionsToTerraform(this._blockingFunctions.internalValue),
       client: identityPlatformConfigClientToTerraform(this._client.internalValue),
       mfa: identityPlatformConfigMfaToTerraform(this._mfa.internalValue),
@@ -3038,25 +3038,25 @@ export class IdentityPlatformConfig extends cdktf.TerraformResource {
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       authorized_domains: {
-        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._authorizedDomains),
+        value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(this._authorizedDomains),
         isBlock: false,
         type: "list",
         storageClassType: "stringList",
       },
       autodelete_anonymous_users: {
-        value: cdktf.booleanToHclTerraform(this._autodeleteAnonymousUsers),
+        value: cdktn.booleanToHclTerraform(this._autodeleteAnonymousUsers),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       project: {
-        value: cdktf.stringToHclTerraform(this._project),
+        value: cdktn.stringToHclTerraform(this._project),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

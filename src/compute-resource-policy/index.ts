@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface ComputeResourcePolicyConfig extends cdktf.TerraformMetaArguments {
+export interface ComputeResourcePolicyConfig extends cdktn.TerraformMetaArguments {
   /**
   * An optional description of this resource. Provide this property when you create the resource.
   *
@@ -90,28 +90,28 @@ export interface ComputeResourcePolicyDiskConsistencyGroupPolicy {
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_resource_policy#enabled ComputeResourcePolicy#enabled}
   */
-  readonly enabled: boolean | cdktf.IResolvable;
+  readonly enabled: boolean | cdktn.IResolvable;
 }
 
 export function computeResourcePolicyDiskConsistencyGroupPolicyToTerraform(struct?: ComputeResourcePolicyDiskConsistencyGroupPolicyOutputReference | ComputeResourcePolicyDiskConsistencyGroupPolicy): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    enabled: cdktf.booleanToTerraform(struct!.enabled),
+    enabled: cdktn.booleanToTerraform(struct!.enabled),
   }
 }
 
 
 export function computeResourcePolicyDiskConsistencyGroupPolicyToHclTerraform(struct?: ComputeResourcePolicyDiskConsistencyGroupPolicyOutputReference | ComputeResourcePolicyDiskConsistencyGroupPolicy): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     enabled: {
-      value: cdktf.booleanToHclTerraform(struct!.enabled),
+      value: cdktn.booleanToHclTerraform(struct!.enabled),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
@@ -122,14 +122,14 @@ export function computeResourcePolicyDiskConsistencyGroupPolicyToHclTerraform(st
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class ComputeResourcePolicyDiskConsistencyGroupPolicyOutputReference extends cdktf.ComplexObject {
+export class ComputeResourcePolicyDiskConsistencyGroupPolicyOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -155,11 +155,11 @@ export class ComputeResourcePolicyDiskConsistencyGroupPolicyOutputReference exte
   }
 
   // enabled - computed: false, optional: false, required: true
-  private _enabled?: boolean | cdktf.IResolvable; 
+  private _enabled?: boolean | cdktn.IResolvable; 
   public get enabled() {
     return this.getBooleanAttribute('enabled');
   }
-  public set enabled(value: boolean | cdktf.IResolvable) {
+  public set enabled(value: boolean | cdktn.IResolvable) {
     this._enabled = value;
   }
   // Temporarily expose input value. Use with caution.
@@ -201,45 +201,45 @@ export interface ComputeResourcePolicyGroupPlacementPolicy {
 }
 
 export function computeResourcePolicyGroupPlacementPolicyToTerraform(struct?: ComputeResourcePolicyGroupPlacementPolicyOutputReference | ComputeResourcePolicyGroupPlacementPolicy): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    availability_domain_count: cdktf.numberToTerraform(struct!.availabilityDomainCount),
-    collocation: cdktf.stringToTerraform(struct!.collocation),
-    gpu_topology: cdktf.stringToTerraform(struct!.gpuTopology),
-    vm_count: cdktf.numberToTerraform(struct!.vmCount),
+    availability_domain_count: cdktn.numberToTerraform(struct!.availabilityDomainCount),
+    collocation: cdktn.stringToTerraform(struct!.collocation),
+    gpu_topology: cdktn.stringToTerraform(struct!.gpuTopology),
+    vm_count: cdktn.numberToTerraform(struct!.vmCount),
   }
 }
 
 
 export function computeResourcePolicyGroupPlacementPolicyToHclTerraform(struct?: ComputeResourcePolicyGroupPlacementPolicyOutputReference | ComputeResourcePolicyGroupPlacementPolicy): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     availability_domain_count: {
-      value: cdktf.numberToHclTerraform(struct!.availabilityDomainCount),
+      value: cdktn.numberToHclTerraform(struct!.availabilityDomainCount),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     collocation: {
-      value: cdktf.stringToHclTerraform(struct!.collocation),
+      value: cdktn.stringToHclTerraform(struct!.collocation),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     gpu_topology: {
-      value: cdktf.stringToHclTerraform(struct!.gpuTopology),
+      value: cdktn.stringToHclTerraform(struct!.gpuTopology),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     vm_count: {
-      value: cdktf.numberToHclTerraform(struct!.vmCount),
+      value: cdktn.numberToHclTerraform(struct!.vmCount),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
@@ -250,14 +250,14 @@ export function computeResourcePolicyGroupPlacementPolicyToHclTerraform(struct?:
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class ComputeResourcePolicyGroupPlacementPolicyOutputReference extends cdktf.ComplexObject {
+export class ComputeResourcePolicyGroupPlacementPolicyOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -374,24 +374,24 @@ export interface ComputeResourcePolicyInstanceSchedulePolicyVmStartSchedule {
 }
 
 export function computeResourcePolicyInstanceSchedulePolicyVmStartScheduleToTerraform(struct?: ComputeResourcePolicyInstanceSchedulePolicyVmStartScheduleOutputReference | ComputeResourcePolicyInstanceSchedulePolicyVmStartSchedule): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    schedule: cdktf.stringToTerraform(struct!.schedule),
+    schedule: cdktn.stringToTerraform(struct!.schedule),
   }
 }
 
 
 export function computeResourcePolicyInstanceSchedulePolicyVmStartScheduleToHclTerraform(struct?: ComputeResourcePolicyInstanceSchedulePolicyVmStartScheduleOutputReference | ComputeResourcePolicyInstanceSchedulePolicyVmStartSchedule): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     schedule: {
-      value: cdktf.stringToHclTerraform(struct!.schedule),
+      value: cdktn.stringToHclTerraform(struct!.schedule),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -402,14 +402,14 @@ export function computeResourcePolicyInstanceSchedulePolicyVmStartScheduleToHclT
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class ComputeResourcePolicyInstanceSchedulePolicyVmStartScheduleOutputReference extends cdktf.ComplexObject {
+export class ComputeResourcePolicyInstanceSchedulePolicyVmStartScheduleOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -457,24 +457,24 @@ export interface ComputeResourcePolicyInstanceSchedulePolicyVmStopSchedule {
 }
 
 export function computeResourcePolicyInstanceSchedulePolicyVmStopScheduleToTerraform(struct?: ComputeResourcePolicyInstanceSchedulePolicyVmStopScheduleOutputReference | ComputeResourcePolicyInstanceSchedulePolicyVmStopSchedule): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    schedule: cdktf.stringToTerraform(struct!.schedule),
+    schedule: cdktn.stringToTerraform(struct!.schedule),
   }
 }
 
 
 export function computeResourcePolicyInstanceSchedulePolicyVmStopScheduleToHclTerraform(struct?: ComputeResourcePolicyInstanceSchedulePolicyVmStopScheduleOutputReference | ComputeResourcePolicyInstanceSchedulePolicyVmStopSchedule): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     schedule: {
-      value: cdktf.stringToHclTerraform(struct!.schedule),
+      value: cdktn.stringToHclTerraform(struct!.schedule),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -485,14 +485,14 @@ export function computeResourcePolicyInstanceSchedulePolicyVmStopScheduleToHclTe
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class ComputeResourcePolicyInstanceSchedulePolicyVmStopScheduleOutputReference extends cdktf.ComplexObject {
+export class ComputeResourcePolicyInstanceSchedulePolicyVmStopScheduleOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -565,14 +565,14 @@ export interface ComputeResourcePolicyInstanceSchedulePolicy {
 }
 
 export function computeResourcePolicyInstanceSchedulePolicyToTerraform(struct?: ComputeResourcePolicyInstanceSchedulePolicyOutputReference | ComputeResourcePolicyInstanceSchedulePolicy): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    expiration_time: cdktf.stringToTerraform(struct!.expirationTime),
-    start_time: cdktf.stringToTerraform(struct!.startTime),
-    time_zone: cdktf.stringToTerraform(struct!.timeZone),
+    expiration_time: cdktn.stringToTerraform(struct!.expirationTime),
+    start_time: cdktn.stringToTerraform(struct!.startTime),
+    time_zone: cdktn.stringToTerraform(struct!.timeZone),
     vm_start_schedule: computeResourcePolicyInstanceSchedulePolicyVmStartScheduleToTerraform(struct!.vmStartSchedule),
     vm_stop_schedule: computeResourcePolicyInstanceSchedulePolicyVmStopScheduleToTerraform(struct!.vmStopSchedule),
   }
@@ -580,25 +580,25 @@ export function computeResourcePolicyInstanceSchedulePolicyToTerraform(struct?: 
 
 
 export function computeResourcePolicyInstanceSchedulePolicyToHclTerraform(struct?: ComputeResourcePolicyInstanceSchedulePolicyOutputReference | ComputeResourcePolicyInstanceSchedulePolicy): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     expiration_time: {
-      value: cdktf.stringToHclTerraform(struct!.expirationTime),
+      value: cdktn.stringToHclTerraform(struct!.expirationTime),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     start_time: {
-      value: cdktf.stringToHclTerraform(struct!.startTime),
+      value: cdktn.stringToHclTerraform(struct!.startTime),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     time_zone: {
-      value: cdktf.stringToHclTerraform(struct!.timeZone),
+      value: cdktn.stringToHclTerraform(struct!.timeZone),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -621,14 +621,14 @@ export function computeResourcePolicyInstanceSchedulePolicyToHclTerraform(struct
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class ComputeResourcePolicyInstanceSchedulePolicyOutputReference extends cdktf.ComplexObject {
+export class ComputeResourcePolicyInstanceSchedulePolicyOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -771,31 +771,31 @@ export interface ComputeResourcePolicySnapshotSchedulePolicyRetentionPolicy {
 }
 
 export function computeResourcePolicySnapshotSchedulePolicyRetentionPolicyToTerraform(struct?: ComputeResourcePolicySnapshotSchedulePolicyRetentionPolicyOutputReference | ComputeResourcePolicySnapshotSchedulePolicyRetentionPolicy): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    max_retention_days: cdktf.numberToTerraform(struct!.maxRetentionDays),
-    on_source_disk_delete: cdktf.stringToTerraform(struct!.onSourceDiskDelete),
+    max_retention_days: cdktn.numberToTerraform(struct!.maxRetentionDays),
+    on_source_disk_delete: cdktn.stringToTerraform(struct!.onSourceDiskDelete),
   }
 }
 
 
 export function computeResourcePolicySnapshotSchedulePolicyRetentionPolicyToHclTerraform(struct?: ComputeResourcePolicySnapshotSchedulePolicyRetentionPolicyOutputReference | ComputeResourcePolicySnapshotSchedulePolicyRetentionPolicy): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     max_retention_days: {
-      value: cdktf.numberToHclTerraform(struct!.maxRetentionDays),
+      value: cdktn.numberToHclTerraform(struct!.maxRetentionDays),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     on_source_disk_delete: {
-      value: cdktf.stringToHclTerraform(struct!.onSourceDiskDelete),
+      value: cdktn.stringToHclTerraform(struct!.onSourceDiskDelete),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -806,14 +806,14 @@ export function computeResourcePolicySnapshotSchedulePolicyRetentionPolicyToHclT
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class ComputeResourcePolicySnapshotSchedulePolicyRetentionPolicyOutputReference extends cdktf.ComplexObject {
+export class ComputeResourcePolicySnapshotSchedulePolicyRetentionPolicyOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -891,31 +891,31 @@ export interface ComputeResourcePolicySnapshotSchedulePolicyScheduleDailySchedul
 }
 
 export function computeResourcePolicySnapshotSchedulePolicyScheduleDailyScheduleToTerraform(struct?: ComputeResourcePolicySnapshotSchedulePolicyScheduleDailyScheduleOutputReference | ComputeResourcePolicySnapshotSchedulePolicyScheduleDailySchedule): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    days_in_cycle: cdktf.numberToTerraform(struct!.daysInCycle),
-    start_time: cdktf.stringToTerraform(struct!.startTime),
+    days_in_cycle: cdktn.numberToTerraform(struct!.daysInCycle),
+    start_time: cdktn.stringToTerraform(struct!.startTime),
   }
 }
 
 
 export function computeResourcePolicySnapshotSchedulePolicyScheduleDailyScheduleToHclTerraform(struct?: ComputeResourcePolicySnapshotSchedulePolicyScheduleDailyScheduleOutputReference | ComputeResourcePolicySnapshotSchedulePolicyScheduleDailySchedule): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     days_in_cycle: {
-      value: cdktf.numberToHclTerraform(struct!.daysInCycle),
+      value: cdktn.numberToHclTerraform(struct!.daysInCycle),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     start_time: {
-      value: cdktf.stringToHclTerraform(struct!.startTime),
+      value: cdktn.stringToHclTerraform(struct!.startTime),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -926,14 +926,14 @@ export function computeResourcePolicySnapshotSchedulePolicyScheduleDailySchedule
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class ComputeResourcePolicySnapshotSchedulePolicyScheduleDailyScheduleOutputReference extends cdktf.ComplexObject {
+export class ComputeResourcePolicySnapshotSchedulePolicyScheduleDailyScheduleOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -1008,31 +1008,31 @@ export interface ComputeResourcePolicySnapshotSchedulePolicyScheduleHourlySchedu
 }
 
 export function computeResourcePolicySnapshotSchedulePolicyScheduleHourlyScheduleToTerraform(struct?: ComputeResourcePolicySnapshotSchedulePolicyScheduleHourlyScheduleOutputReference | ComputeResourcePolicySnapshotSchedulePolicyScheduleHourlySchedule): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    hours_in_cycle: cdktf.numberToTerraform(struct!.hoursInCycle),
-    start_time: cdktf.stringToTerraform(struct!.startTime),
+    hours_in_cycle: cdktn.numberToTerraform(struct!.hoursInCycle),
+    start_time: cdktn.stringToTerraform(struct!.startTime),
   }
 }
 
 
 export function computeResourcePolicySnapshotSchedulePolicyScheduleHourlyScheduleToHclTerraform(struct?: ComputeResourcePolicySnapshotSchedulePolicyScheduleHourlyScheduleOutputReference | ComputeResourcePolicySnapshotSchedulePolicyScheduleHourlySchedule): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     hours_in_cycle: {
-      value: cdktf.numberToHclTerraform(struct!.hoursInCycle),
+      value: cdktn.numberToHclTerraform(struct!.hoursInCycle),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     start_time: {
-      value: cdktf.stringToHclTerraform(struct!.startTime),
+      value: cdktn.stringToHclTerraform(struct!.startTime),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -1043,14 +1043,14 @@ export function computeResourcePolicySnapshotSchedulePolicyScheduleHourlySchedul
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class ComputeResourcePolicySnapshotSchedulePolicyScheduleHourlyScheduleOutputReference extends cdktf.ComplexObject {
+export class ComputeResourcePolicySnapshotSchedulePolicyScheduleHourlyScheduleOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -1123,32 +1123,32 @@ export interface ComputeResourcePolicySnapshotSchedulePolicyScheduleWeeklySchedu
   readonly startTime: string;
 }
 
-export function computeResourcePolicySnapshotSchedulePolicyScheduleWeeklyScheduleDayOfWeeksToTerraform(struct?: ComputeResourcePolicySnapshotSchedulePolicyScheduleWeeklyScheduleDayOfWeeks | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function computeResourcePolicySnapshotSchedulePolicyScheduleWeeklyScheduleDayOfWeeksToTerraform(struct?: ComputeResourcePolicySnapshotSchedulePolicyScheduleWeeklyScheduleDayOfWeeks | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    day: cdktf.stringToTerraform(struct!.day),
-    start_time: cdktf.stringToTerraform(struct!.startTime),
+    day: cdktn.stringToTerraform(struct!.day),
+    start_time: cdktn.stringToTerraform(struct!.startTime),
   }
 }
 
 
-export function computeResourcePolicySnapshotSchedulePolicyScheduleWeeklyScheduleDayOfWeeksToHclTerraform(struct?: ComputeResourcePolicySnapshotSchedulePolicyScheduleWeeklyScheduleDayOfWeeks | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function computeResourcePolicySnapshotSchedulePolicyScheduleWeeklyScheduleDayOfWeeksToHclTerraform(struct?: ComputeResourcePolicySnapshotSchedulePolicyScheduleWeeklyScheduleDayOfWeeks | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     day: {
-      value: cdktf.stringToHclTerraform(struct!.day),
+      value: cdktn.stringToHclTerraform(struct!.day),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     start_time: {
-      value: cdktf.stringToHclTerraform(struct!.startTime),
+      value: cdktn.stringToHclTerraform(struct!.startTime),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -1159,9 +1159,9 @@ export function computeResourcePolicySnapshotSchedulePolicyScheduleWeeklySchedul
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class ComputeResourcePolicySnapshotSchedulePolicyScheduleWeeklyScheduleDayOfWeeksOutputReference extends cdktf.ComplexObject {
+export class ComputeResourcePolicySnapshotSchedulePolicyScheduleWeeklyScheduleDayOfWeeksOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -1169,11 +1169,11 @@ export class ComputeResourcePolicySnapshotSchedulePolicyScheduleWeeklyScheduleDa
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): ComputeResourcePolicySnapshotSchedulePolicyScheduleWeeklyScheduleDayOfWeeks | cdktf.IResolvable | undefined {
+  public get internalValue(): ComputeResourcePolicySnapshotSchedulePolicyScheduleWeeklyScheduleDayOfWeeks | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -1190,14 +1190,14 @@ export class ComputeResourcePolicySnapshotSchedulePolicyScheduleWeeklyScheduleDa
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: ComputeResourcePolicySnapshotSchedulePolicyScheduleWeeklyScheduleDayOfWeeks | cdktf.IResolvable | undefined) {
+  public set internalValue(value: ComputeResourcePolicySnapshotSchedulePolicyScheduleWeeklyScheduleDayOfWeeks | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._day = undefined;
       this._startTime = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -1236,15 +1236,15 @@ export class ComputeResourcePolicySnapshotSchedulePolicyScheduleWeeklyScheduleDa
   }
 }
 
-export class ComputeResourcePolicySnapshotSchedulePolicyScheduleWeeklyScheduleDayOfWeeksList extends cdktf.ComplexList {
-  public internalValue? : ComputeResourcePolicySnapshotSchedulePolicyScheduleWeeklyScheduleDayOfWeeks[] | cdktf.IResolvable
+export class ComputeResourcePolicySnapshotSchedulePolicyScheduleWeeklyScheduleDayOfWeeksList extends cdktn.ComplexList {
+  public internalValue? : ComputeResourcePolicySnapshotSchedulePolicyScheduleWeeklyScheduleDayOfWeeks[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -1261,28 +1261,28 @@ export interface ComputeResourcePolicySnapshotSchedulePolicyScheduleWeeklySchedu
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_resource_policy#day_of_weeks ComputeResourcePolicy#day_of_weeks}
   */
-  readonly dayOfWeeks: ComputeResourcePolicySnapshotSchedulePolicyScheduleWeeklyScheduleDayOfWeeks[] | cdktf.IResolvable;
+  readonly dayOfWeeks: ComputeResourcePolicySnapshotSchedulePolicyScheduleWeeklyScheduleDayOfWeeks[] | cdktn.IResolvable;
 }
 
 export function computeResourcePolicySnapshotSchedulePolicyScheduleWeeklyScheduleToTerraform(struct?: ComputeResourcePolicySnapshotSchedulePolicyScheduleWeeklyScheduleOutputReference | ComputeResourcePolicySnapshotSchedulePolicyScheduleWeeklySchedule): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    day_of_weeks: cdktf.listMapper(computeResourcePolicySnapshotSchedulePolicyScheduleWeeklyScheduleDayOfWeeksToTerraform, true)(struct!.dayOfWeeks),
+    day_of_weeks: cdktn.listMapper(computeResourcePolicySnapshotSchedulePolicyScheduleWeeklyScheduleDayOfWeeksToTerraform, true)(struct!.dayOfWeeks),
   }
 }
 
 
 export function computeResourcePolicySnapshotSchedulePolicyScheduleWeeklyScheduleToHclTerraform(struct?: ComputeResourcePolicySnapshotSchedulePolicyScheduleWeeklyScheduleOutputReference | ComputeResourcePolicySnapshotSchedulePolicyScheduleWeeklySchedule): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     day_of_weeks: {
-      value: cdktf.listMapperHcl(computeResourcePolicySnapshotSchedulePolicyScheduleWeeklyScheduleDayOfWeeksToHclTerraform, true)(struct!.dayOfWeeks),
+      value: cdktn.listMapperHcl(computeResourcePolicySnapshotSchedulePolicyScheduleWeeklyScheduleDayOfWeeksToHclTerraform, true)(struct!.dayOfWeeks),
       isBlock: true,
       type: "set",
       storageClassType: "ComputeResourcePolicySnapshotSchedulePolicyScheduleWeeklyScheduleDayOfWeeksList",
@@ -1293,14 +1293,14 @@ export function computeResourcePolicySnapshotSchedulePolicyScheduleWeeklySchedul
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class ComputeResourcePolicySnapshotSchedulePolicyScheduleWeeklyScheduleOutputReference extends cdktf.ComplexObject {
+export class ComputeResourcePolicySnapshotSchedulePolicyScheduleWeeklyScheduleOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -1330,7 +1330,7 @@ export class ComputeResourcePolicySnapshotSchedulePolicyScheduleWeeklyScheduleOu
   public get dayOfWeeks() {
     return this._dayOfWeeks;
   }
-  public putDayOfWeeks(value: ComputeResourcePolicySnapshotSchedulePolicyScheduleWeeklyScheduleDayOfWeeks[] | cdktf.IResolvable) {
+  public putDayOfWeeks(value: ComputeResourcePolicySnapshotSchedulePolicyScheduleWeeklyScheduleDayOfWeeks[] | cdktn.IResolvable) {
     this._dayOfWeeks.internalValue = value;
   }
   // Temporarily expose input value. Use with caution.
@@ -1360,8 +1360,8 @@ export interface ComputeResourcePolicySnapshotSchedulePolicySchedule {
 }
 
 export function computeResourcePolicySnapshotSchedulePolicyScheduleToTerraform(struct?: ComputeResourcePolicySnapshotSchedulePolicyScheduleOutputReference | ComputeResourcePolicySnapshotSchedulePolicySchedule): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -1373,8 +1373,8 @@ export function computeResourcePolicySnapshotSchedulePolicyScheduleToTerraform(s
 
 
 export function computeResourcePolicySnapshotSchedulePolicyScheduleToHclTerraform(struct?: ComputeResourcePolicySnapshotSchedulePolicyScheduleOutputReference | ComputeResourcePolicySnapshotSchedulePolicySchedule): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -1402,14 +1402,14 @@ export function computeResourcePolicySnapshotSchedulePolicyScheduleToHclTerrafor
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class ComputeResourcePolicySnapshotSchedulePolicyScheduleOutputReference extends cdktf.ComplexObject {
+export class ComputeResourcePolicySnapshotSchedulePolicyScheduleOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -1508,7 +1508,7 @@ export interface ComputeResourcePolicySnapshotSchedulePolicySnapshotProperties {
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_resource_policy#guest_flush ComputeResourcePolicy#guest_flush}
   */
-  readonly guestFlush?: boolean | cdktf.IResolvable;
+  readonly guestFlush?: boolean | cdktn.IResolvable;
   /**
   * A set of key-value pairs.
   *
@@ -1525,45 +1525,45 @@ export interface ComputeResourcePolicySnapshotSchedulePolicySnapshotProperties {
 }
 
 export function computeResourcePolicySnapshotSchedulePolicySnapshotPropertiesToTerraform(struct?: ComputeResourcePolicySnapshotSchedulePolicySnapshotPropertiesOutputReference | ComputeResourcePolicySnapshotSchedulePolicySnapshotProperties): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    chain_name: cdktf.stringToTerraform(struct!.chainName),
-    guest_flush: cdktf.booleanToTerraform(struct!.guestFlush),
-    labels: cdktf.hashMapper(cdktf.stringToTerraform)(struct!.labels),
-    storage_locations: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.storageLocations),
+    chain_name: cdktn.stringToTerraform(struct!.chainName),
+    guest_flush: cdktn.booleanToTerraform(struct!.guestFlush),
+    labels: cdktn.hashMapper(cdktn.stringToTerraform)(struct!.labels),
+    storage_locations: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.storageLocations),
   }
 }
 
 
 export function computeResourcePolicySnapshotSchedulePolicySnapshotPropertiesToHclTerraform(struct?: ComputeResourcePolicySnapshotSchedulePolicySnapshotPropertiesOutputReference | ComputeResourcePolicySnapshotSchedulePolicySnapshotProperties): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     chain_name: {
-      value: cdktf.stringToHclTerraform(struct!.chainName),
+      value: cdktn.stringToHclTerraform(struct!.chainName),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     guest_flush: {
-      value: cdktf.booleanToHclTerraform(struct!.guestFlush),
+      value: cdktn.booleanToHclTerraform(struct!.guestFlush),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     labels: {
-      value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(struct!.labels),
+      value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(struct!.labels),
       isBlock: false,
       type: "map",
       storageClassType: "stringMap",
     },
     storage_locations: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.storageLocations),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.storageLocations),
       isBlock: false,
       type: "set",
       storageClassType: "stringList",
@@ -1574,14 +1574,14 @@ export function computeResourcePolicySnapshotSchedulePolicySnapshotPropertiesToH
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class ComputeResourcePolicySnapshotSchedulePolicySnapshotPropertiesOutputReference extends cdktf.ComplexObject {
+export class ComputeResourcePolicySnapshotSchedulePolicySnapshotPropertiesOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -1641,11 +1641,11 @@ export class ComputeResourcePolicySnapshotSchedulePolicySnapshotPropertiesOutput
   }
 
   // guest_flush - computed: false, optional: true, required: false
-  private _guestFlush?: boolean | cdktf.IResolvable; 
+  private _guestFlush?: boolean | cdktn.IResolvable; 
   public get guestFlush() {
     return this.getBooleanAttribute('guest_flush');
   }
-  public set guestFlush(value: boolean | cdktf.IResolvable) {
+  public set guestFlush(value: boolean | cdktn.IResolvable) {
     this._guestFlush = value;
   }
   public resetGuestFlush() {
@@ -1675,7 +1675,7 @@ export class ComputeResourcePolicySnapshotSchedulePolicySnapshotPropertiesOutput
   // storage_locations - computed: false, optional: true, required: false
   private _storageLocations?: string[]; 
   public get storageLocations() {
-    return cdktf.Fn.tolist(this.getListAttribute('storage_locations'));
+    return cdktn.Fn.tolist(this.getListAttribute('storage_locations'));
   }
   public set storageLocations(value: string[]) {
     this._storageLocations = value;
@@ -1710,8 +1710,8 @@ export interface ComputeResourcePolicySnapshotSchedulePolicy {
 }
 
 export function computeResourcePolicySnapshotSchedulePolicyToTerraform(struct?: ComputeResourcePolicySnapshotSchedulePolicyOutputReference | ComputeResourcePolicySnapshotSchedulePolicy): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -1723,8 +1723,8 @@ export function computeResourcePolicySnapshotSchedulePolicyToTerraform(struct?: 
 
 
 export function computeResourcePolicySnapshotSchedulePolicyToHclTerraform(struct?: ComputeResourcePolicySnapshotSchedulePolicyOutputReference | ComputeResourcePolicySnapshotSchedulePolicy): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -1752,14 +1752,14 @@ export function computeResourcePolicySnapshotSchedulePolicyToHclTerraform(struct
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class ComputeResourcePolicySnapshotSchedulePolicyOutputReference extends cdktf.ComplexObject {
+export class ComputeResourcePolicySnapshotSchedulePolicyOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -1856,39 +1856,39 @@ export interface ComputeResourcePolicyTimeouts {
   readonly update?: string;
 }
 
-export function computeResourcePolicyTimeoutsToTerraform(struct?: ComputeResourcePolicyTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function computeResourcePolicyTimeoutsToTerraform(struct?: ComputeResourcePolicyTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    create: cdktf.stringToTerraform(struct!.create),
-    delete: cdktf.stringToTerraform(struct!.delete),
-    update: cdktf.stringToTerraform(struct!.update),
+    create: cdktn.stringToTerraform(struct!.create),
+    delete: cdktn.stringToTerraform(struct!.delete),
+    update: cdktn.stringToTerraform(struct!.update),
   }
 }
 
 
-export function computeResourcePolicyTimeoutsToHclTerraform(struct?: ComputeResourcePolicyTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function computeResourcePolicyTimeoutsToHclTerraform(struct?: ComputeResourcePolicyTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     create: {
-      value: cdktf.stringToHclTerraform(struct!.create),
+      value: cdktn.stringToHclTerraform(struct!.create),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     delete: {
-      value: cdktf.stringToHclTerraform(struct!.delete),
+      value: cdktn.stringToHclTerraform(struct!.delete),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     update: {
-      value: cdktf.stringToHclTerraform(struct!.update),
+      value: cdktn.stringToHclTerraform(struct!.update),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -1899,19 +1899,19 @@ export function computeResourcePolicyTimeoutsToHclTerraform(struct?: ComputeReso
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class ComputeResourcePolicyTimeoutsOutputReference extends cdktf.ComplexObject {
+export class ComputeResourcePolicyTimeoutsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): ComputeResourcePolicyTimeouts | cdktf.IResolvable | undefined {
+  public get internalValue(): ComputeResourcePolicyTimeouts | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -1932,7 +1932,7 @@ export class ComputeResourcePolicyTimeoutsOutputReference extends cdktf.ComplexO
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: ComputeResourcePolicyTimeouts | cdktf.IResolvable | undefined) {
+  public set internalValue(value: ComputeResourcePolicyTimeouts | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -1940,7 +1940,7 @@ export class ComputeResourcePolicyTimeoutsOutputReference extends cdktf.ComplexO
       this._delete = undefined;
       this._update = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -2025,38 +2025,38 @@ export interface ComputeResourcePolicyWorkloadPolicy {
 }
 
 export function computeResourcePolicyWorkloadPolicyToTerraform(struct?: ComputeResourcePolicyWorkloadPolicyOutputReference | ComputeResourcePolicyWorkloadPolicy): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    accelerator_topology: cdktf.stringToTerraform(struct!.acceleratorTopology),
-    max_topology_distance: cdktf.stringToTerraform(struct!.maxTopologyDistance),
-    type: cdktf.stringToTerraform(struct!.type),
+    accelerator_topology: cdktn.stringToTerraform(struct!.acceleratorTopology),
+    max_topology_distance: cdktn.stringToTerraform(struct!.maxTopologyDistance),
+    type: cdktn.stringToTerraform(struct!.type),
   }
 }
 
 
 export function computeResourcePolicyWorkloadPolicyToHclTerraform(struct?: ComputeResourcePolicyWorkloadPolicyOutputReference | ComputeResourcePolicyWorkloadPolicy): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     accelerator_topology: {
-      value: cdktf.stringToHclTerraform(struct!.acceleratorTopology),
+      value: cdktn.stringToHclTerraform(struct!.acceleratorTopology),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     max_topology_distance: {
-      value: cdktf.stringToHclTerraform(struct!.maxTopologyDistance),
+      value: cdktn.stringToHclTerraform(struct!.maxTopologyDistance),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     type: {
-      value: cdktf.stringToHclTerraform(struct!.type),
+      value: cdktn.stringToHclTerraform(struct!.type),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -2067,14 +2067,14 @@ export function computeResourcePolicyWorkloadPolicyToHclTerraform(struct?: Compu
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class ComputeResourcePolicyWorkloadPolicyOutputReference extends cdktf.ComplexObject {
+export class ComputeResourcePolicyWorkloadPolicyOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -2160,7 +2160,7 @@ export class ComputeResourcePolicyWorkloadPolicyOutputReference extends cdktf.Co
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_resource_policy google_compute_resource_policy}
 */
-export class ComputeResourcePolicy extends cdktf.TerraformResource {
+export class ComputeResourcePolicy extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -2171,14 +2171,14 @@ export class ComputeResourcePolicy extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a ComputeResourcePolicy resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a ComputeResourcePolicy resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the ComputeResourcePolicy to import
   * @param importFromId The id of the existing ComputeResourcePolicy that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_resource_policy#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the ComputeResourcePolicy to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "google_compute_resource_policy", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "google_compute_resource_policy", importId: importFromId, provider });
       }
 
   // ===========
@@ -2409,11 +2409,11 @@ export class ComputeResourcePolicy extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      description: cdktf.stringToTerraform(this._description),
-      id: cdktf.stringToTerraform(this._id),
-      name: cdktf.stringToTerraform(this._name),
-      project: cdktf.stringToTerraform(this._project),
-      region: cdktf.stringToTerraform(this._region),
+      description: cdktn.stringToTerraform(this._description),
+      id: cdktn.stringToTerraform(this._id),
+      name: cdktn.stringToTerraform(this._name),
+      project: cdktn.stringToTerraform(this._project),
+      region: cdktn.stringToTerraform(this._region),
       disk_consistency_group_policy: computeResourcePolicyDiskConsistencyGroupPolicyToTerraform(this._diskConsistencyGroupPolicy.internalValue),
       group_placement_policy: computeResourcePolicyGroupPlacementPolicyToTerraform(this._groupPlacementPolicy.internalValue),
       instance_schedule_policy: computeResourcePolicyInstanceSchedulePolicyToTerraform(this._instanceSchedulePolicy.internalValue),
@@ -2426,31 +2426,31 @@ export class ComputeResourcePolicy extends cdktf.TerraformResource {
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       description: {
-        value: cdktf.stringToHclTerraform(this._description),
+        value: cdktn.stringToHclTerraform(this._description),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       name: {
-        value: cdktf.stringToHclTerraform(this._name),
+        value: cdktn.stringToHclTerraform(this._name),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       project: {
-        value: cdktf.stringToHclTerraform(this._project),
+        value: cdktn.stringToHclTerraform(this._project),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       region: {
-        value: cdktf.stringToHclTerraform(this._region),
+        value: cdktn.stringToHclTerraform(this._region),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface TagsLocationTagBindingConfig extends cdktf.TerraformMetaArguments {
+export interface TagsLocationTagBindingConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/tags_location_tag_binding#id TagsLocationTagBinding#id}
   *
@@ -56,32 +56,32 @@ export interface TagsLocationTagBindingTimeouts {
   readonly delete?: string;
 }
 
-export function tagsLocationTagBindingTimeoutsToTerraform(struct?: TagsLocationTagBindingTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function tagsLocationTagBindingTimeoutsToTerraform(struct?: TagsLocationTagBindingTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    create: cdktf.stringToTerraform(struct!.create),
-    delete: cdktf.stringToTerraform(struct!.delete),
+    create: cdktn.stringToTerraform(struct!.create),
+    delete: cdktn.stringToTerraform(struct!.delete),
   }
 }
 
 
-export function tagsLocationTagBindingTimeoutsToHclTerraform(struct?: TagsLocationTagBindingTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function tagsLocationTagBindingTimeoutsToHclTerraform(struct?: TagsLocationTagBindingTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     create: {
-      value: cdktf.stringToHclTerraform(struct!.create),
+      value: cdktn.stringToHclTerraform(struct!.create),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     delete: {
-      value: cdktf.stringToHclTerraform(struct!.delete),
+      value: cdktn.stringToHclTerraform(struct!.delete),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -92,19 +92,19 @@ export function tagsLocationTagBindingTimeoutsToHclTerraform(struct?: TagsLocati
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class TagsLocationTagBindingTimeoutsOutputReference extends cdktf.ComplexObject {
+export class TagsLocationTagBindingTimeoutsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): TagsLocationTagBindingTimeouts | cdktf.IResolvable | undefined {
+  public get internalValue(): TagsLocationTagBindingTimeouts | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -121,14 +121,14 @@ export class TagsLocationTagBindingTimeoutsOutputReference extends cdktf.Complex
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: TagsLocationTagBindingTimeouts | cdktf.IResolvable | undefined) {
+  public set internalValue(value: TagsLocationTagBindingTimeouts | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._create = undefined;
       this._delete = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -176,7 +176,7 @@ export class TagsLocationTagBindingTimeoutsOutputReference extends cdktf.Complex
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/tags_location_tag_binding google_tags_location_tag_binding}
 */
-export class TagsLocationTagBinding extends cdktf.TerraformResource {
+export class TagsLocationTagBinding extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -187,14 +187,14 @@ export class TagsLocationTagBinding extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a TagsLocationTagBinding resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a TagsLocationTagBinding resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the TagsLocationTagBinding to import
   * @param importFromId The id of the existing TagsLocationTagBinding that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/tags_location_tag_binding#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the TagsLocationTagBinding to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "google_tags_location_tag_binding", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "google_tags_location_tag_binding", importId: importFromId, provider });
       }
 
   // ===========
@@ -320,10 +320,10 @@ export class TagsLocationTagBinding extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      id: cdktf.stringToTerraform(this._id),
-      location: cdktf.stringToTerraform(this._location),
-      parent: cdktf.stringToTerraform(this._parent),
-      tag_value: cdktf.stringToTerraform(this._tagValue),
+      id: cdktn.stringToTerraform(this._id),
+      location: cdktn.stringToTerraform(this._location),
+      parent: cdktn.stringToTerraform(this._parent),
+      tag_value: cdktn.stringToTerraform(this._tagValue),
       timeouts: tagsLocationTagBindingTimeoutsToTerraform(this._timeouts.internalValue),
     };
   }
@@ -331,25 +331,25 @@ export class TagsLocationTagBinding extends cdktf.TerraformResource {
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       location: {
-        value: cdktf.stringToHclTerraform(this._location),
+        value: cdktn.stringToHclTerraform(this._location),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       parent: {
-        value: cdktf.stringToHclTerraform(this._parent),
+        value: cdktn.stringToHclTerraform(this._parent),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       tag_value: {
-        value: cdktf.stringToHclTerraform(this._tagValue),
+        value: cdktn.stringToHclTerraform(this._tagValue),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

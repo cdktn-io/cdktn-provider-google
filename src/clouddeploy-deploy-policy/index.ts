@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface ClouddeployDeployPolicyConfig extends cdktf.TerraformMetaArguments {
+export interface ClouddeployDeployPolicyConfig extends cdktn.TerraformMetaArguments {
   /**
   * User annotations. These attributes can only be set and used by the user, and not by Cloud Deploy. Annotations must meet the following constraints: * Annotations are key/value pairs. * Valid annotation keys have two segments: an optional prefix and name, separated by a slash ('/'). * The name segment is required and must be 63 characters or less, beginning and ending with an alphanumeric character ('[a-z0-9A-Z]') with dashes ('-'), underscores ('_'), dots ('.'), and alphanumerics between. * The prefix is optional. If specified, the prefix must be a DNS subdomain: a series of DNS labels separated by dots('.'), not longer than 253 characters in total, followed by a slash ('/'). See https://kubernetes.io/docs/concepts/overview/working-with-objects/annotations/#syntax-and-character-set for more details.
   * 
@@ -64,19 +64,19 @@ export interface ClouddeployDeployPolicyConfig extends cdktf.TerraformMetaArgume
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/clouddeploy_deploy_policy#suspended ClouddeployDeployPolicy#suspended}
   */
-  readonly suspended?: boolean | cdktf.IResolvable;
+  readonly suspended?: boolean | cdktn.IResolvable;
   /**
   * rules block
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/clouddeploy_deploy_policy#rules ClouddeployDeployPolicy#rules}
   */
-  readonly rules: ClouddeployDeployPolicyRules[] | cdktf.IResolvable;
+  readonly rules: ClouddeployDeployPolicyRules[] | cdktn.IResolvable;
   /**
   * selectors block
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/clouddeploy_deploy_policy#selectors ClouddeployDeployPolicy#selectors}
   */
-  readonly selectors: ClouddeployDeployPolicySelectors[] | cdktf.IResolvable;
+  readonly selectors: ClouddeployDeployPolicySelectors[] | cdktn.IResolvable;
   /**
   * timeouts block
   *
@@ -106,38 +106,38 @@ export interface ClouddeployDeployPolicyRulesRolloutRestrictionTimeWindowsOneTim
 }
 
 export function clouddeployDeployPolicyRulesRolloutRestrictionTimeWindowsOneTimeWindowsEndDateToTerraform(struct?: ClouddeployDeployPolicyRulesRolloutRestrictionTimeWindowsOneTimeWindowsEndDateOutputReference | ClouddeployDeployPolicyRulesRolloutRestrictionTimeWindowsOneTimeWindowsEndDate): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    day: cdktf.numberToTerraform(struct!.day),
-    month: cdktf.numberToTerraform(struct!.month),
-    year: cdktf.numberToTerraform(struct!.year),
+    day: cdktn.numberToTerraform(struct!.day),
+    month: cdktn.numberToTerraform(struct!.month),
+    year: cdktn.numberToTerraform(struct!.year),
   }
 }
 
 
 export function clouddeployDeployPolicyRulesRolloutRestrictionTimeWindowsOneTimeWindowsEndDateToHclTerraform(struct?: ClouddeployDeployPolicyRulesRolloutRestrictionTimeWindowsOneTimeWindowsEndDateOutputReference | ClouddeployDeployPolicyRulesRolloutRestrictionTimeWindowsOneTimeWindowsEndDate): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     day: {
-      value: cdktf.numberToHclTerraform(struct!.day),
+      value: cdktn.numberToHclTerraform(struct!.day),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     month: {
-      value: cdktf.numberToHclTerraform(struct!.month),
+      value: cdktn.numberToHclTerraform(struct!.month),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     year: {
-      value: cdktf.numberToHclTerraform(struct!.year),
+      value: cdktn.numberToHclTerraform(struct!.year),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
@@ -148,14 +148,14 @@ export function clouddeployDeployPolicyRulesRolloutRestrictionTimeWindowsOneTime
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class ClouddeployDeployPolicyRulesRolloutRestrictionTimeWindowsOneTimeWindowsEndDateOutputReference extends cdktf.ComplexObject {
+export class ClouddeployDeployPolicyRulesRolloutRestrictionTimeWindowsOneTimeWindowsEndDateOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -268,45 +268,45 @@ export interface ClouddeployDeployPolicyRulesRolloutRestrictionTimeWindowsOneTim
 }
 
 export function clouddeployDeployPolicyRulesRolloutRestrictionTimeWindowsOneTimeWindowsEndTimeToTerraform(struct?: ClouddeployDeployPolicyRulesRolloutRestrictionTimeWindowsOneTimeWindowsEndTimeOutputReference | ClouddeployDeployPolicyRulesRolloutRestrictionTimeWindowsOneTimeWindowsEndTime): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    hours: cdktf.numberToTerraform(struct!.hours),
-    minutes: cdktf.numberToTerraform(struct!.minutes),
-    nanos: cdktf.numberToTerraform(struct!.nanos),
-    seconds: cdktf.numberToTerraform(struct!.seconds),
+    hours: cdktn.numberToTerraform(struct!.hours),
+    minutes: cdktn.numberToTerraform(struct!.minutes),
+    nanos: cdktn.numberToTerraform(struct!.nanos),
+    seconds: cdktn.numberToTerraform(struct!.seconds),
   }
 }
 
 
 export function clouddeployDeployPolicyRulesRolloutRestrictionTimeWindowsOneTimeWindowsEndTimeToHclTerraform(struct?: ClouddeployDeployPolicyRulesRolloutRestrictionTimeWindowsOneTimeWindowsEndTimeOutputReference | ClouddeployDeployPolicyRulesRolloutRestrictionTimeWindowsOneTimeWindowsEndTime): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     hours: {
-      value: cdktf.numberToHclTerraform(struct!.hours),
+      value: cdktn.numberToHclTerraform(struct!.hours),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     minutes: {
-      value: cdktf.numberToHclTerraform(struct!.minutes),
+      value: cdktn.numberToHclTerraform(struct!.minutes),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     nanos: {
-      value: cdktf.numberToHclTerraform(struct!.nanos),
+      value: cdktn.numberToHclTerraform(struct!.nanos),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     seconds: {
-      value: cdktf.numberToHclTerraform(struct!.seconds),
+      value: cdktn.numberToHclTerraform(struct!.seconds),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
@@ -317,14 +317,14 @@ export function clouddeployDeployPolicyRulesRolloutRestrictionTimeWindowsOneTime
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class ClouddeployDeployPolicyRulesRolloutRestrictionTimeWindowsOneTimeWindowsEndTimeOutputReference extends cdktf.ComplexObject {
+export class ClouddeployDeployPolicyRulesRolloutRestrictionTimeWindowsOneTimeWindowsEndTimeOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -453,38 +453,38 @@ export interface ClouddeployDeployPolicyRulesRolloutRestrictionTimeWindowsOneTim
 }
 
 export function clouddeployDeployPolicyRulesRolloutRestrictionTimeWindowsOneTimeWindowsStartDateToTerraform(struct?: ClouddeployDeployPolicyRulesRolloutRestrictionTimeWindowsOneTimeWindowsStartDateOutputReference | ClouddeployDeployPolicyRulesRolloutRestrictionTimeWindowsOneTimeWindowsStartDate): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    day: cdktf.numberToTerraform(struct!.day),
-    month: cdktf.numberToTerraform(struct!.month),
-    year: cdktf.numberToTerraform(struct!.year),
+    day: cdktn.numberToTerraform(struct!.day),
+    month: cdktn.numberToTerraform(struct!.month),
+    year: cdktn.numberToTerraform(struct!.year),
   }
 }
 
 
 export function clouddeployDeployPolicyRulesRolloutRestrictionTimeWindowsOneTimeWindowsStartDateToHclTerraform(struct?: ClouddeployDeployPolicyRulesRolloutRestrictionTimeWindowsOneTimeWindowsStartDateOutputReference | ClouddeployDeployPolicyRulesRolloutRestrictionTimeWindowsOneTimeWindowsStartDate): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     day: {
-      value: cdktf.numberToHclTerraform(struct!.day),
+      value: cdktn.numberToHclTerraform(struct!.day),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     month: {
-      value: cdktf.numberToHclTerraform(struct!.month),
+      value: cdktn.numberToHclTerraform(struct!.month),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     year: {
-      value: cdktf.numberToHclTerraform(struct!.year),
+      value: cdktn.numberToHclTerraform(struct!.year),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
@@ -495,14 +495,14 @@ export function clouddeployDeployPolicyRulesRolloutRestrictionTimeWindowsOneTime
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class ClouddeployDeployPolicyRulesRolloutRestrictionTimeWindowsOneTimeWindowsStartDateOutputReference extends cdktf.ComplexObject {
+export class ClouddeployDeployPolicyRulesRolloutRestrictionTimeWindowsOneTimeWindowsStartDateOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -615,45 +615,45 @@ export interface ClouddeployDeployPolicyRulesRolloutRestrictionTimeWindowsOneTim
 }
 
 export function clouddeployDeployPolicyRulesRolloutRestrictionTimeWindowsOneTimeWindowsStartTimeToTerraform(struct?: ClouddeployDeployPolicyRulesRolloutRestrictionTimeWindowsOneTimeWindowsStartTimeOutputReference | ClouddeployDeployPolicyRulesRolloutRestrictionTimeWindowsOneTimeWindowsStartTime): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    hours: cdktf.numberToTerraform(struct!.hours),
-    minutes: cdktf.numberToTerraform(struct!.minutes),
-    nanos: cdktf.numberToTerraform(struct!.nanos),
-    seconds: cdktf.numberToTerraform(struct!.seconds),
+    hours: cdktn.numberToTerraform(struct!.hours),
+    minutes: cdktn.numberToTerraform(struct!.minutes),
+    nanos: cdktn.numberToTerraform(struct!.nanos),
+    seconds: cdktn.numberToTerraform(struct!.seconds),
   }
 }
 
 
 export function clouddeployDeployPolicyRulesRolloutRestrictionTimeWindowsOneTimeWindowsStartTimeToHclTerraform(struct?: ClouddeployDeployPolicyRulesRolloutRestrictionTimeWindowsOneTimeWindowsStartTimeOutputReference | ClouddeployDeployPolicyRulesRolloutRestrictionTimeWindowsOneTimeWindowsStartTime): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     hours: {
-      value: cdktf.numberToHclTerraform(struct!.hours),
+      value: cdktn.numberToHclTerraform(struct!.hours),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     minutes: {
-      value: cdktf.numberToHclTerraform(struct!.minutes),
+      value: cdktn.numberToHclTerraform(struct!.minutes),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     nanos: {
-      value: cdktf.numberToHclTerraform(struct!.nanos),
+      value: cdktn.numberToHclTerraform(struct!.nanos),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     seconds: {
-      value: cdktf.numberToHclTerraform(struct!.seconds),
+      value: cdktn.numberToHclTerraform(struct!.seconds),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
@@ -664,14 +664,14 @@ export function clouddeployDeployPolicyRulesRolloutRestrictionTimeWindowsOneTime
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class ClouddeployDeployPolicyRulesRolloutRestrictionTimeWindowsOneTimeWindowsStartTimeOutputReference extends cdktf.ComplexObject {
+export class ClouddeployDeployPolicyRulesRolloutRestrictionTimeWindowsOneTimeWindowsStartTimeOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -805,9 +805,9 @@ export interface ClouddeployDeployPolicyRulesRolloutRestrictionTimeWindowsOneTim
   readonly startTime: ClouddeployDeployPolicyRulesRolloutRestrictionTimeWindowsOneTimeWindowsStartTime;
 }
 
-export function clouddeployDeployPolicyRulesRolloutRestrictionTimeWindowsOneTimeWindowsToTerraform(struct?: ClouddeployDeployPolicyRulesRolloutRestrictionTimeWindowsOneTimeWindows | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function clouddeployDeployPolicyRulesRolloutRestrictionTimeWindowsOneTimeWindowsToTerraform(struct?: ClouddeployDeployPolicyRulesRolloutRestrictionTimeWindowsOneTimeWindows | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -819,9 +819,9 @@ export function clouddeployDeployPolicyRulesRolloutRestrictionTimeWindowsOneTime
 }
 
 
-export function clouddeployDeployPolicyRulesRolloutRestrictionTimeWindowsOneTimeWindowsToHclTerraform(struct?: ClouddeployDeployPolicyRulesRolloutRestrictionTimeWindowsOneTimeWindows | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function clouddeployDeployPolicyRulesRolloutRestrictionTimeWindowsOneTimeWindowsToHclTerraform(struct?: ClouddeployDeployPolicyRulesRolloutRestrictionTimeWindowsOneTimeWindows | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -855,9 +855,9 @@ export function clouddeployDeployPolicyRulesRolloutRestrictionTimeWindowsOneTime
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class ClouddeployDeployPolicyRulesRolloutRestrictionTimeWindowsOneTimeWindowsOutputReference extends cdktf.ComplexObject {
+export class ClouddeployDeployPolicyRulesRolloutRestrictionTimeWindowsOneTimeWindowsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -865,11 +865,11 @@ export class ClouddeployDeployPolicyRulesRolloutRestrictionTimeWindowsOneTimeWin
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): ClouddeployDeployPolicyRulesRolloutRestrictionTimeWindowsOneTimeWindows | cdktf.IResolvable | undefined {
+  public get internalValue(): ClouddeployDeployPolicyRulesRolloutRestrictionTimeWindowsOneTimeWindows | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -894,7 +894,7 @@ export class ClouddeployDeployPolicyRulesRolloutRestrictionTimeWindowsOneTimeWin
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: ClouddeployDeployPolicyRulesRolloutRestrictionTimeWindowsOneTimeWindows | cdktf.IResolvable | undefined) {
+  public set internalValue(value: ClouddeployDeployPolicyRulesRolloutRestrictionTimeWindowsOneTimeWindows | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -903,7 +903,7 @@ export class ClouddeployDeployPolicyRulesRolloutRestrictionTimeWindowsOneTimeWin
       this._startDate.internalValue = undefined;
       this._startTime.internalValue = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -970,15 +970,15 @@ export class ClouddeployDeployPolicyRulesRolloutRestrictionTimeWindowsOneTimeWin
   }
 }
 
-export class ClouddeployDeployPolicyRulesRolloutRestrictionTimeWindowsOneTimeWindowsList extends cdktf.ComplexList {
-  public internalValue? : ClouddeployDeployPolicyRulesRolloutRestrictionTimeWindowsOneTimeWindows[] | cdktf.IResolvable
+export class ClouddeployDeployPolicyRulesRolloutRestrictionTimeWindowsOneTimeWindowsList extends cdktn.ComplexList {
+  public internalValue? : ClouddeployDeployPolicyRulesRolloutRestrictionTimeWindowsOneTimeWindows[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -1017,45 +1017,45 @@ export interface ClouddeployDeployPolicyRulesRolloutRestrictionTimeWindowsWeekly
 }
 
 export function clouddeployDeployPolicyRulesRolloutRestrictionTimeWindowsWeeklyWindowsEndTimeToTerraform(struct?: ClouddeployDeployPolicyRulesRolloutRestrictionTimeWindowsWeeklyWindowsEndTimeOutputReference | ClouddeployDeployPolicyRulesRolloutRestrictionTimeWindowsWeeklyWindowsEndTime): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    hours: cdktf.numberToTerraform(struct!.hours),
-    minutes: cdktf.numberToTerraform(struct!.minutes),
-    nanos: cdktf.numberToTerraform(struct!.nanos),
-    seconds: cdktf.numberToTerraform(struct!.seconds),
+    hours: cdktn.numberToTerraform(struct!.hours),
+    minutes: cdktn.numberToTerraform(struct!.minutes),
+    nanos: cdktn.numberToTerraform(struct!.nanos),
+    seconds: cdktn.numberToTerraform(struct!.seconds),
   }
 }
 
 
 export function clouddeployDeployPolicyRulesRolloutRestrictionTimeWindowsWeeklyWindowsEndTimeToHclTerraform(struct?: ClouddeployDeployPolicyRulesRolloutRestrictionTimeWindowsWeeklyWindowsEndTimeOutputReference | ClouddeployDeployPolicyRulesRolloutRestrictionTimeWindowsWeeklyWindowsEndTime): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     hours: {
-      value: cdktf.numberToHclTerraform(struct!.hours),
+      value: cdktn.numberToHclTerraform(struct!.hours),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     minutes: {
-      value: cdktf.numberToHclTerraform(struct!.minutes),
+      value: cdktn.numberToHclTerraform(struct!.minutes),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     nanos: {
-      value: cdktf.numberToHclTerraform(struct!.nanos),
+      value: cdktn.numberToHclTerraform(struct!.nanos),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     seconds: {
-      value: cdktf.numberToHclTerraform(struct!.seconds),
+      value: cdktn.numberToHclTerraform(struct!.seconds),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
@@ -1066,14 +1066,14 @@ export function clouddeployDeployPolicyRulesRolloutRestrictionTimeWindowsWeeklyW
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class ClouddeployDeployPolicyRulesRolloutRestrictionTimeWindowsWeeklyWindowsEndTimeOutputReference extends cdktf.ComplexObject {
+export class ClouddeployDeployPolicyRulesRolloutRestrictionTimeWindowsWeeklyWindowsEndTimeOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -1208,45 +1208,45 @@ export interface ClouddeployDeployPolicyRulesRolloutRestrictionTimeWindowsWeekly
 }
 
 export function clouddeployDeployPolicyRulesRolloutRestrictionTimeWindowsWeeklyWindowsStartTimeToTerraform(struct?: ClouddeployDeployPolicyRulesRolloutRestrictionTimeWindowsWeeklyWindowsStartTimeOutputReference | ClouddeployDeployPolicyRulesRolloutRestrictionTimeWindowsWeeklyWindowsStartTime): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    hours: cdktf.numberToTerraform(struct!.hours),
-    minutes: cdktf.numberToTerraform(struct!.minutes),
-    nanos: cdktf.numberToTerraform(struct!.nanos),
-    seconds: cdktf.numberToTerraform(struct!.seconds),
+    hours: cdktn.numberToTerraform(struct!.hours),
+    minutes: cdktn.numberToTerraform(struct!.minutes),
+    nanos: cdktn.numberToTerraform(struct!.nanos),
+    seconds: cdktn.numberToTerraform(struct!.seconds),
   }
 }
 
 
 export function clouddeployDeployPolicyRulesRolloutRestrictionTimeWindowsWeeklyWindowsStartTimeToHclTerraform(struct?: ClouddeployDeployPolicyRulesRolloutRestrictionTimeWindowsWeeklyWindowsStartTimeOutputReference | ClouddeployDeployPolicyRulesRolloutRestrictionTimeWindowsWeeklyWindowsStartTime): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     hours: {
-      value: cdktf.numberToHclTerraform(struct!.hours),
+      value: cdktn.numberToHclTerraform(struct!.hours),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     minutes: {
-      value: cdktf.numberToHclTerraform(struct!.minutes),
+      value: cdktn.numberToHclTerraform(struct!.minutes),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     nanos: {
-      value: cdktf.numberToHclTerraform(struct!.nanos),
+      value: cdktn.numberToHclTerraform(struct!.nanos),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     seconds: {
-      value: cdktf.numberToHclTerraform(struct!.seconds),
+      value: cdktn.numberToHclTerraform(struct!.seconds),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
@@ -1257,14 +1257,14 @@ export function clouddeployDeployPolicyRulesRolloutRestrictionTimeWindowsWeeklyW
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class ClouddeployDeployPolicyRulesRolloutRestrictionTimeWindowsWeeklyWindowsStartTimeOutputReference extends cdktf.ComplexObject {
+export class ClouddeployDeployPolicyRulesRolloutRestrictionTimeWindowsWeeklyWindowsStartTimeOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -1392,27 +1392,27 @@ export interface ClouddeployDeployPolicyRulesRolloutRestrictionTimeWindowsWeekly
   readonly startTime?: ClouddeployDeployPolicyRulesRolloutRestrictionTimeWindowsWeeklyWindowsStartTime;
 }
 
-export function clouddeployDeployPolicyRulesRolloutRestrictionTimeWindowsWeeklyWindowsToTerraform(struct?: ClouddeployDeployPolicyRulesRolloutRestrictionTimeWindowsWeeklyWindows | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function clouddeployDeployPolicyRulesRolloutRestrictionTimeWindowsWeeklyWindowsToTerraform(struct?: ClouddeployDeployPolicyRulesRolloutRestrictionTimeWindowsWeeklyWindows | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    days_of_week: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.daysOfWeek),
+    days_of_week: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.daysOfWeek),
     end_time: clouddeployDeployPolicyRulesRolloutRestrictionTimeWindowsWeeklyWindowsEndTimeToTerraform(struct!.endTime),
     start_time: clouddeployDeployPolicyRulesRolloutRestrictionTimeWindowsWeeklyWindowsStartTimeToTerraform(struct!.startTime),
   }
 }
 
 
-export function clouddeployDeployPolicyRulesRolloutRestrictionTimeWindowsWeeklyWindowsToHclTerraform(struct?: ClouddeployDeployPolicyRulesRolloutRestrictionTimeWindowsWeeklyWindows | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function clouddeployDeployPolicyRulesRolloutRestrictionTimeWindowsWeeklyWindowsToHclTerraform(struct?: ClouddeployDeployPolicyRulesRolloutRestrictionTimeWindowsWeeklyWindows | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     days_of_week: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.daysOfWeek),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.daysOfWeek),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
@@ -1435,9 +1435,9 @@ export function clouddeployDeployPolicyRulesRolloutRestrictionTimeWindowsWeeklyW
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class ClouddeployDeployPolicyRulesRolloutRestrictionTimeWindowsWeeklyWindowsOutputReference extends cdktf.ComplexObject {
+export class ClouddeployDeployPolicyRulesRolloutRestrictionTimeWindowsWeeklyWindowsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -1445,11 +1445,11 @@ export class ClouddeployDeployPolicyRulesRolloutRestrictionTimeWindowsWeeklyWind
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): ClouddeployDeployPolicyRulesRolloutRestrictionTimeWindowsWeeklyWindows | cdktf.IResolvable | undefined {
+  public get internalValue(): ClouddeployDeployPolicyRulesRolloutRestrictionTimeWindowsWeeklyWindows | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -1470,7 +1470,7 @@ export class ClouddeployDeployPolicyRulesRolloutRestrictionTimeWindowsWeeklyWind
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: ClouddeployDeployPolicyRulesRolloutRestrictionTimeWindowsWeeklyWindows | cdktf.IResolvable | undefined) {
+  public set internalValue(value: ClouddeployDeployPolicyRulesRolloutRestrictionTimeWindowsWeeklyWindows | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -1478,7 +1478,7 @@ export class ClouddeployDeployPolicyRulesRolloutRestrictionTimeWindowsWeeklyWind
       this._endTime.internalValue = undefined;
       this._startTime.internalValue = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -1540,15 +1540,15 @@ export class ClouddeployDeployPolicyRulesRolloutRestrictionTimeWindowsWeeklyWind
   }
 }
 
-export class ClouddeployDeployPolicyRulesRolloutRestrictionTimeWindowsWeeklyWindowsList extends cdktf.ComplexList {
-  public internalValue? : ClouddeployDeployPolicyRulesRolloutRestrictionTimeWindowsWeeklyWindows[] | cdktf.IResolvable
+export class ClouddeployDeployPolicyRulesRolloutRestrictionTimeWindowsWeeklyWindowsList extends cdktn.ComplexList {
+  public internalValue? : ClouddeployDeployPolicyRulesRolloutRestrictionTimeWindowsWeeklyWindows[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -1571,48 +1571,48 @@ export interface ClouddeployDeployPolicyRulesRolloutRestrictionTimeWindows {
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/clouddeploy_deploy_policy#one_time_windows ClouddeployDeployPolicy#one_time_windows}
   */
-  readonly oneTimeWindows?: ClouddeployDeployPolicyRulesRolloutRestrictionTimeWindowsOneTimeWindows[] | cdktf.IResolvable;
+  readonly oneTimeWindows?: ClouddeployDeployPolicyRulesRolloutRestrictionTimeWindowsOneTimeWindows[] | cdktn.IResolvable;
   /**
   * weekly_windows block
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/clouddeploy_deploy_policy#weekly_windows ClouddeployDeployPolicy#weekly_windows}
   */
-  readonly weeklyWindows?: ClouddeployDeployPolicyRulesRolloutRestrictionTimeWindowsWeeklyWindows[] | cdktf.IResolvable;
+  readonly weeklyWindows?: ClouddeployDeployPolicyRulesRolloutRestrictionTimeWindowsWeeklyWindows[] | cdktn.IResolvable;
 }
 
 export function clouddeployDeployPolicyRulesRolloutRestrictionTimeWindowsToTerraform(struct?: ClouddeployDeployPolicyRulesRolloutRestrictionTimeWindowsOutputReference | ClouddeployDeployPolicyRulesRolloutRestrictionTimeWindows): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    time_zone: cdktf.stringToTerraform(struct!.timeZone),
-    one_time_windows: cdktf.listMapper(clouddeployDeployPolicyRulesRolloutRestrictionTimeWindowsOneTimeWindowsToTerraform, true)(struct!.oneTimeWindows),
-    weekly_windows: cdktf.listMapper(clouddeployDeployPolicyRulesRolloutRestrictionTimeWindowsWeeklyWindowsToTerraform, true)(struct!.weeklyWindows),
+    time_zone: cdktn.stringToTerraform(struct!.timeZone),
+    one_time_windows: cdktn.listMapper(clouddeployDeployPolicyRulesRolloutRestrictionTimeWindowsOneTimeWindowsToTerraform, true)(struct!.oneTimeWindows),
+    weekly_windows: cdktn.listMapper(clouddeployDeployPolicyRulesRolloutRestrictionTimeWindowsWeeklyWindowsToTerraform, true)(struct!.weeklyWindows),
   }
 }
 
 
 export function clouddeployDeployPolicyRulesRolloutRestrictionTimeWindowsToHclTerraform(struct?: ClouddeployDeployPolicyRulesRolloutRestrictionTimeWindowsOutputReference | ClouddeployDeployPolicyRulesRolloutRestrictionTimeWindows): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     time_zone: {
-      value: cdktf.stringToHclTerraform(struct!.timeZone),
+      value: cdktn.stringToHclTerraform(struct!.timeZone),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     one_time_windows: {
-      value: cdktf.listMapperHcl(clouddeployDeployPolicyRulesRolloutRestrictionTimeWindowsOneTimeWindowsToHclTerraform, true)(struct!.oneTimeWindows),
+      value: cdktn.listMapperHcl(clouddeployDeployPolicyRulesRolloutRestrictionTimeWindowsOneTimeWindowsToHclTerraform, true)(struct!.oneTimeWindows),
       isBlock: true,
       type: "list",
       storageClassType: "ClouddeployDeployPolicyRulesRolloutRestrictionTimeWindowsOneTimeWindowsList",
     },
     weekly_windows: {
-      value: cdktf.listMapperHcl(clouddeployDeployPolicyRulesRolloutRestrictionTimeWindowsWeeklyWindowsToHclTerraform, true)(struct!.weeklyWindows),
+      value: cdktn.listMapperHcl(clouddeployDeployPolicyRulesRolloutRestrictionTimeWindowsWeeklyWindowsToHclTerraform, true)(struct!.weeklyWindows),
       isBlock: true,
       type: "list",
       storageClassType: "ClouddeployDeployPolicyRulesRolloutRestrictionTimeWindowsWeeklyWindowsList",
@@ -1623,14 +1623,14 @@ export function clouddeployDeployPolicyRulesRolloutRestrictionTimeWindowsToHclTe
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class ClouddeployDeployPolicyRulesRolloutRestrictionTimeWindowsOutputReference extends cdktf.ComplexObject {
+export class ClouddeployDeployPolicyRulesRolloutRestrictionTimeWindowsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -1685,7 +1685,7 @@ export class ClouddeployDeployPolicyRulesRolloutRestrictionTimeWindowsOutputRefe
   public get oneTimeWindows() {
     return this._oneTimeWindows;
   }
-  public putOneTimeWindows(value: ClouddeployDeployPolicyRulesRolloutRestrictionTimeWindowsOneTimeWindows[] | cdktf.IResolvable) {
+  public putOneTimeWindows(value: ClouddeployDeployPolicyRulesRolloutRestrictionTimeWindowsOneTimeWindows[] | cdktn.IResolvable) {
     this._oneTimeWindows.internalValue = value;
   }
   public resetOneTimeWindows() {
@@ -1701,7 +1701,7 @@ export class ClouddeployDeployPolicyRulesRolloutRestrictionTimeWindowsOutputRefe
   public get weeklyWindows() {
     return this._weeklyWindows;
   }
-  public putWeeklyWindows(value: ClouddeployDeployPolicyRulesRolloutRestrictionTimeWindowsWeeklyWindows[] | cdktf.IResolvable) {
+  public putWeeklyWindows(value: ClouddeployDeployPolicyRulesRolloutRestrictionTimeWindowsWeeklyWindows[] | cdktn.IResolvable) {
     this._weeklyWindows.internalValue = value;
   }
   public resetWeeklyWindows() {
@@ -1743,39 +1743,39 @@ export interface ClouddeployDeployPolicyRulesRolloutRestriction {
 }
 
 export function clouddeployDeployPolicyRulesRolloutRestrictionToTerraform(struct?: ClouddeployDeployPolicyRulesRolloutRestrictionOutputReference | ClouddeployDeployPolicyRulesRolloutRestriction): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    actions: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.actions),
-    id: cdktf.stringToTerraform(struct!.id),
-    invokers: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.invokers),
+    actions: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.actions),
+    id: cdktn.stringToTerraform(struct!.id),
+    invokers: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.invokers),
     time_windows: clouddeployDeployPolicyRulesRolloutRestrictionTimeWindowsToTerraform(struct!.timeWindows),
   }
 }
 
 
 export function clouddeployDeployPolicyRulesRolloutRestrictionToHclTerraform(struct?: ClouddeployDeployPolicyRulesRolloutRestrictionOutputReference | ClouddeployDeployPolicyRulesRolloutRestriction): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     actions: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.actions),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.actions),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
     },
     id: {
-      value: cdktf.stringToHclTerraform(struct!.id),
+      value: cdktn.stringToHclTerraform(struct!.id),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     invokers: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.invokers),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.invokers),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
@@ -1792,14 +1792,14 @@ export function clouddeployDeployPolicyRulesRolloutRestrictionToHclTerraform(str
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class ClouddeployDeployPolicyRulesRolloutRestrictionOutputReference extends cdktf.ComplexObject {
+export class ClouddeployDeployPolicyRulesRolloutRestrictionOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -1912,9 +1912,9 @@ export interface ClouddeployDeployPolicyRules {
   readonly rolloutRestriction?: ClouddeployDeployPolicyRulesRolloutRestriction;
 }
 
-export function clouddeployDeployPolicyRulesToTerraform(struct?: ClouddeployDeployPolicyRules | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function clouddeployDeployPolicyRulesToTerraform(struct?: ClouddeployDeployPolicyRules | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -1923,9 +1923,9 @@ export function clouddeployDeployPolicyRulesToTerraform(struct?: ClouddeployDepl
 }
 
 
-export function clouddeployDeployPolicyRulesToHclTerraform(struct?: ClouddeployDeployPolicyRules | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function clouddeployDeployPolicyRulesToHclTerraform(struct?: ClouddeployDeployPolicyRules | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -1941,9 +1941,9 @@ export function clouddeployDeployPolicyRulesToHclTerraform(struct?: ClouddeployD
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class ClouddeployDeployPolicyRulesOutputReference extends cdktf.ComplexObject {
+export class ClouddeployDeployPolicyRulesOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -1951,11 +1951,11 @@ export class ClouddeployDeployPolicyRulesOutputReference extends cdktf.ComplexOb
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): ClouddeployDeployPolicyRules | cdktf.IResolvable | undefined {
+  public get internalValue(): ClouddeployDeployPolicyRules | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -1968,13 +1968,13 @@ export class ClouddeployDeployPolicyRulesOutputReference extends cdktf.ComplexOb
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: ClouddeployDeployPolicyRules | cdktf.IResolvable | undefined) {
+  public set internalValue(value: ClouddeployDeployPolicyRules | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._rolloutRestriction.internalValue = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -2002,15 +2002,15 @@ export class ClouddeployDeployPolicyRulesOutputReference extends cdktf.ComplexOb
   }
 }
 
-export class ClouddeployDeployPolicyRulesList extends cdktf.ComplexList {
-  public internalValue? : ClouddeployDeployPolicyRules[] | cdktf.IResolvable
+export class ClouddeployDeployPolicyRulesList extends cdktn.ComplexList {
+  public internalValue? : ClouddeployDeployPolicyRules[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -2042,31 +2042,31 @@ export interface ClouddeployDeployPolicySelectorsDeliveryPipeline {
 }
 
 export function clouddeployDeployPolicySelectorsDeliveryPipelineToTerraform(struct?: ClouddeployDeployPolicySelectorsDeliveryPipelineOutputReference | ClouddeployDeployPolicySelectorsDeliveryPipeline): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    id: cdktf.stringToTerraform(struct!.id),
-    labels: cdktf.hashMapper(cdktf.stringToTerraform)(struct!.labels),
+    id: cdktn.stringToTerraform(struct!.id),
+    labels: cdktn.hashMapper(cdktn.stringToTerraform)(struct!.labels),
   }
 }
 
 
 export function clouddeployDeployPolicySelectorsDeliveryPipelineToHclTerraform(struct?: ClouddeployDeployPolicySelectorsDeliveryPipelineOutputReference | ClouddeployDeployPolicySelectorsDeliveryPipeline): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     id: {
-      value: cdktf.stringToHclTerraform(struct!.id),
+      value: cdktn.stringToHclTerraform(struct!.id),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     labels: {
-      value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(struct!.labels),
+      value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(struct!.labels),
       isBlock: false,
       type: "map",
       storageClassType: "stringMap",
@@ -2077,14 +2077,14 @@ export function clouddeployDeployPolicySelectorsDeliveryPipelineToHclTerraform(s
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class ClouddeployDeployPolicySelectorsDeliveryPipelineOutputReference extends cdktf.ComplexObject {
+export class ClouddeployDeployPolicySelectorsDeliveryPipelineOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -2166,31 +2166,31 @@ export interface ClouddeployDeployPolicySelectorsTarget {
 }
 
 export function clouddeployDeployPolicySelectorsTargetToTerraform(struct?: ClouddeployDeployPolicySelectorsTargetOutputReference | ClouddeployDeployPolicySelectorsTarget): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    id: cdktf.stringToTerraform(struct!.id),
-    labels: cdktf.hashMapper(cdktf.stringToTerraform)(struct!.labels),
+    id: cdktn.stringToTerraform(struct!.id),
+    labels: cdktn.hashMapper(cdktn.stringToTerraform)(struct!.labels),
   }
 }
 
 
 export function clouddeployDeployPolicySelectorsTargetToHclTerraform(struct?: ClouddeployDeployPolicySelectorsTargetOutputReference | ClouddeployDeployPolicySelectorsTarget): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     id: {
-      value: cdktf.stringToHclTerraform(struct!.id),
+      value: cdktn.stringToHclTerraform(struct!.id),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     labels: {
-      value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(struct!.labels),
+      value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(struct!.labels),
       isBlock: false,
       type: "map",
       storageClassType: "stringMap",
@@ -2201,14 +2201,14 @@ export function clouddeployDeployPolicySelectorsTargetToHclTerraform(struct?: Cl
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class ClouddeployDeployPolicySelectorsTargetOutputReference extends cdktf.ComplexObject {
+export class ClouddeployDeployPolicySelectorsTargetOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -2286,9 +2286,9 @@ export interface ClouddeployDeployPolicySelectors {
   readonly target?: ClouddeployDeployPolicySelectorsTarget;
 }
 
-export function clouddeployDeployPolicySelectorsToTerraform(struct?: ClouddeployDeployPolicySelectors | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function clouddeployDeployPolicySelectorsToTerraform(struct?: ClouddeployDeployPolicySelectors | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -2298,9 +2298,9 @@ export function clouddeployDeployPolicySelectorsToTerraform(struct?: Clouddeploy
 }
 
 
-export function clouddeployDeployPolicySelectorsToHclTerraform(struct?: ClouddeployDeployPolicySelectors | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function clouddeployDeployPolicySelectorsToHclTerraform(struct?: ClouddeployDeployPolicySelectors | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -2322,9 +2322,9 @@ export function clouddeployDeployPolicySelectorsToHclTerraform(struct?: Clouddep
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class ClouddeployDeployPolicySelectorsOutputReference extends cdktf.ComplexObject {
+export class ClouddeployDeployPolicySelectorsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -2332,11 +2332,11 @@ export class ClouddeployDeployPolicySelectorsOutputReference extends cdktf.Compl
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): ClouddeployDeployPolicySelectors | cdktf.IResolvable | undefined {
+  public get internalValue(): ClouddeployDeployPolicySelectors | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -2353,14 +2353,14 @@ export class ClouddeployDeployPolicySelectorsOutputReference extends cdktf.Compl
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: ClouddeployDeployPolicySelectors | cdktf.IResolvable | undefined) {
+  public set internalValue(value: ClouddeployDeployPolicySelectors | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._deliveryPipeline.internalValue = undefined;
       this._target.internalValue = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -2405,15 +2405,15 @@ export class ClouddeployDeployPolicySelectorsOutputReference extends cdktf.Compl
   }
 }
 
-export class ClouddeployDeployPolicySelectorsList extends cdktf.ComplexList {
-  public internalValue? : ClouddeployDeployPolicySelectors[] | cdktf.IResolvable
+export class ClouddeployDeployPolicySelectorsList extends cdktn.ComplexList {
+  public internalValue? : ClouddeployDeployPolicySelectors[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -2439,39 +2439,39 @@ export interface ClouddeployDeployPolicyTimeouts {
   readonly update?: string;
 }
 
-export function clouddeployDeployPolicyTimeoutsToTerraform(struct?: ClouddeployDeployPolicyTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function clouddeployDeployPolicyTimeoutsToTerraform(struct?: ClouddeployDeployPolicyTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    create: cdktf.stringToTerraform(struct!.create),
-    delete: cdktf.stringToTerraform(struct!.delete),
-    update: cdktf.stringToTerraform(struct!.update),
+    create: cdktn.stringToTerraform(struct!.create),
+    delete: cdktn.stringToTerraform(struct!.delete),
+    update: cdktn.stringToTerraform(struct!.update),
   }
 }
 
 
-export function clouddeployDeployPolicyTimeoutsToHclTerraform(struct?: ClouddeployDeployPolicyTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function clouddeployDeployPolicyTimeoutsToHclTerraform(struct?: ClouddeployDeployPolicyTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     create: {
-      value: cdktf.stringToHclTerraform(struct!.create),
+      value: cdktn.stringToHclTerraform(struct!.create),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     delete: {
-      value: cdktf.stringToHclTerraform(struct!.delete),
+      value: cdktn.stringToHclTerraform(struct!.delete),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     update: {
-      value: cdktf.stringToHclTerraform(struct!.update),
+      value: cdktn.stringToHclTerraform(struct!.update),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -2482,19 +2482,19 @@ export function clouddeployDeployPolicyTimeoutsToHclTerraform(struct?: Clouddepl
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class ClouddeployDeployPolicyTimeoutsOutputReference extends cdktf.ComplexObject {
+export class ClouddeployDeployPolicyTimeoutsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): ClouddeployDeployPolicyTimeouts | cdktf.IResolvable | undefined {
+  public get internalValue(): ClouddeployDeployPolicyTimeouts | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -2515,7 +2515,7 @@ export class ClouddeployDeployPolicyTimeoutsOutputReference extends cdktf.Comple
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: ClouddeployDeployPolicyTimeouts | cdktf.IResolvable | undefined) {
+  public set internalValue(value: ClouddeployDeployPolicyTimeouts | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -2523,7 +2523,7 @@ export class ClouddeployDeployPolicyTimeoutsOutputReference extends cdktf.Comple
       this._delete = undefined;
       this._update = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -2588,7 +2588,7 @@ export class ClouddeployDeployPolicyTimeoutsOutputReference extends cdktf.Comple
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/clouddeploy_deploy_policy google_clouddeploy_deploy_policy}
 */
-export class ClouddeployDeployPolicy extends cdktf.TerraformResource {
+export class ClouddeployDeployPolicy extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -2599,14 +2599,14 @@ export class ClouddeployDeployPolicy extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a ClouddeployDeployPolicy resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a ClouddeployDeployPolicy resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the ClouddeployDeployPolicy to import
   * @param importFromId The id of the existing ClouddeployDeployPolicy that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/clouddeploy_deploy_policy#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the ClouddeployDeployPolicy to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "google_clouddeploy_deploy_policy", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "google_clouddeploy_deploy_policy", importId: importFromId, provider });
       }
 
   // ===========
@@ -2691,13 +2691,13 @@ export class ClouddeployDeployPolicy extends cdktf.TerraformResource {
   }
 
   // effective_annotations - computed: true, optional: false, required: false
-  private _effectiveAnnotations = new cdktf.StringMap(this, "effective_annotations");
+  private _effectiveAnnotations = new cdktn.StringMap(this, "effective_annotations");
   public get effectiveAnnotations() {
     return this._effectiveAnnotations;
   }
 
   // effective_labels - computed: true, optional: false, required: false
-  private _effectiveLabels = new cdktf.StringMap(this, "effective_labels");
+  private _effectiveLabels = new cdktn.StringMap(this, "effective_labels");
   public get effectiveLabels() {
     return this._effectiveLabels;
   }
@@ -2782,11 +2782,11 @@ export class ClouddeployDeployPolicy extends cdktf.TerraformResource {
   }
 
   // suspended - computed: false, optional: true, required: false
-  private _suspended?: boolean | cdktf.IResolvable; 
+  private _suspended?: boolean | cdktn.IResolvable; 
   public get suspended() {
     return this.getBooleanAttribute('suspended');
   }
-  public set suspended(value: boolean | cdktf.IResolvable) {
+  public set suspended(value: boolean | cdktn.IResolvable) {
     this._suspended = value;
   }
   public resetSuspended() {
@@ -2798,7 +2798,7 @@ export class ClouddeployDeployPolicy extends cdktf.TerraformResource {
   }
 
   // terraform_labels - computed: true, optional: false, required: false
-  private _terraformLabels = new cdktf.StringMap(this, "terraform_labels");
+  private _terraformLabels = new cdktn.StringMap(this, "terraform_labels");
   public get terraformLabels() {
     return this._terraformLabels;
   }
@@ -2818,7 +2818,7 @@ export class ClouddeployDeployPolicy extends cdktf.TerraformResource {
   public get rules() {
     return this._rules;
   }
-  public putRules(value: ClouddeployDeployPolicyRules[] | cdktf.IResolvable) {
+  public putRules(value: ClouddeployDeployPolicyRules[] | cdktn.IResolvable) {
     this._rules.internalValue = value;
   }
   // Temporarily expose input value. Use with caution.
@@ -2831,7 +2831,7 @@ export class ClouddeployDeployPolicy extends cdktf.TerraformResource {
   public get selectors() {
     return this._selectors;
   }
-  public putSelectors(value: ClouddeployDeployPolicySelectors[] | cdktf.IResolvable) {
+  public putSelectors(value: ClouddeployDeployPolicySelectors[] | cdktn.IResolvable) {
     this._selectors.internalValue = value;
   }
   // Temporarily expose input value. Use with caution.
@@ -2861,16 +2861,16 @@ export class ClouddeployDeployPolicy extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      annotations: cdktf.hashMapper(cdktf.stringToTerraform)(this._annotations),
-      description: cdktf.stringToTerraform(this._description),
-      id: cdktf.stringToTerraform(this._id),
-      labels: cdktf.hashMapper(cdktf.stringToTerraform)(this._labels),
-      location: cdktf.stringToTerraform(this._location),
-      name: cdktf.stringToTerraform(this._name),
-      project: cdktf.stringToTerraform(this._project),
-      suspended: cdktf.booleanToTerraform(this._suspended),
-      rules: cdktf.listMapper(clouddeployDeployPolicyRulesToTerraform, true)(this._rules.internalValue),
-      selectors: cdktf.listMapper(clouddeployDeployPolicySelectorsToTerraform, true)(this._selectors.internalValue),
+      annotations: cdktn.hashMapper(cdktn.stringToTerraform)(this._annotations),
+      description: cdktn.stringToTerraform(this._description),
+      id: cdktn.stringToTerraform(this._id),
+      labels: cdktn.hashMapper(cdktn.stringToTerraform)(this._labels),
+      location: cdktn.stringToTerraform(this._location),
+      name: cdktn.stringToTerraform(this._name),
+      project: cdktn.stringToTerraform(this._project),
+      suspended: cdktn.booleanToTerraform(this._suspended),
+      rules: cdktn.listMapper(clouddeployDeployPolicyRulesToTerraform, true)(this._rules.internalValue),
+      selectors: cdktn.listMapper(clouddeployDeployPolicySelectorsToTerraform, true)(this._selectors.internalValue),
       timeouts: clouddeployDeployPolicyTimeoutsToTerraform(this._timeouts.internalValue),
     };
   }
@@ -2878,61 +2878,61 @@ export class ClouddeployDeployPolicy extends cdktf.TerraformResource {
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       annotations: {
-        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._annotations),
+        value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(this._annotations),
         isBlock: false,
         type: "map",
         storageClassType: "stringMap",
       },
       description: {
-        value: cdktf.stringToHclTerraform(this._description),
+        value: cdktn.stringToHclTerraform(this._description),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       labels: {
-        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._labels),
+        value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(this._labels),
         isBlock: false,
         type: "map",
         storageClassType: "stringMap",
       },
       location: {
-        value: cdktf.stringToHclTerraform(this._location),
+        value: cdktn.stringToHclTerraform(this._location),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       name: {
-        value: cdktf.stringToHclTerraform(this._name),
+        value: cdktn.stringToHclTerraform(this._name),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       project: {
-        value: cdktf.stringToHclTerraform(this._project),
+        value: cdktn.stringToHclTerraform(this._project),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       suspended: {
-        value: cdktf.booleanToHclTerraform(this._suspended),
+        value: cdktn.booleanToHclTerraform(this._suspended),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       rules: {
-        value: cdktf.listMapperHcl(clouddeployDeployPolicyRulesToHclTerraform, true)(this._rules.internalValue),
+        value: cdktn.listMapperHcl(clouddeployDeployPolicyRulesToHclTerraform, true)(this._rules.internalValue),
         isBlock: true,
         type: "list",
         storageClassType: "ClouddeployDeployPolicyRulesList",
       },
       selectors: {
-        value: cdktf.listMapperHcl(clouddeployDeployPolicySelectorsToHclTerraform, true)(this._selectors.internalValue),
+        value: cdktn.listMapperHcl(clouddeployDeployPolicySelectorsToHclTerraform, true)(this._selectors.internalValue),
         isBlock: true,
         type: "list",
         storageClassType: "ClouddeployDeployPolicySelectorsList",

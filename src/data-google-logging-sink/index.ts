@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface DataGoogleLoggingSinkConfig extends cdktf.TerraformMetaArguments {
+export interface DataGoogleLoggingSinkConfig extends cdktn.TerraformMetaArguments {
   /**
   * Required. An identifier for the resource in format: "projects/[PROJECT_ID]/sinks/[SINK_NAME]", "organizations/[ORGANIZATION_ID]/sinks/[SINK_NAME]", "billingAccounts/[BILLING_ACCOUNT_ID]/sinks/[SINK_NAME]", "folders/[FOLDER_ID]/sinks/[SINK_NAME]"
   *
@@ -26,8 +26,8 @@ export interface DataGoogleLoggingSinkBigqueryOptions {
 }
 
 export function dataGoogleLoggingSinkBigqueryOptionsToTerraform(struct?: DataGoogleLoggingSinkBigqueryOptions): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -36,8 +36,8 @@ export function dataGoogleLoggingSinkBigqueryOptionsToTerraform(struct?: DataGoo
 
 
 export function dataGoogleLoggingSinkBigqueryOptionsToHclTerraform(struct?: DataGoogleLoggingSinkBigqueryOptions): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -45,7 +45,7 @@ export function dataGoogleLoggingSinkBigqueryOptionsToHclTerraform(struct?: Data
   return attrs;
 }
 
-export class DataGoogleLoggingSinkBigqueryOptionsOutputReference extends cdktf.ComplexObject {
+export class DataGoogleLoggingSinkBigqueryOptionsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -54,7 +54,7 @@ export class DataGoogleLoggingSinkBigqueryOptionsOutputReference extends cdktf.C
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -79,14 +79,14 @@ export class DataGoogleLoggingSinkBigqueryOptionsOutputReference extends cdktf.C
   }
 }
 
-export class DataGoogleLoggingSinkBigqueryOptionsList extends cdktf.ComplexList {
+export class DataGoogleLoggingSinkBigqueryOptionsList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -101,8 +101,8 @@ export interface DataGoogleLoggingSinkExclusions {
 }
 
 export function dataGoogleLoggingSinkExclusionsToTerraform(struct?: DataGoogleLoggingSinkExclusions): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -111,8 +111,8 @@ export function dataGoogleLoggingSinkExclusionsToTerraform(struct?: DataGoogleLo
 
 
 export function dataGoogleLoggingSinkExclusionsToHclTerraform(struct?: DataGoogleLoggingSinkExclusions): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -120,7 +120,7 @@ export function dataGoogleLoggingSinkExclusionsToHclTerraform(struct?: DataGoogl
   return attrs;
 }
 
-export class DataGoogleLoggingSinkExclusionsOutputReference extends cdktf.ComplexObject {
+export class DataGoogleLoggingSinkExclusionsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -129,7 +129,7 @@ export class DataGoogleLoggingSinkExclusionsOutputReference extends cdktf.Comple
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -169,14 +169,14 @@ export class DataGoogleLoggingSinkExclusionsOutputReference extends cdktf.Comple
   }
 }
 
-export class DataGoogleLoggingSinkExclusionsList extends cdktf.ComplexList {
+export class DataGoogleLoggingSinkExclusionsList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -191,7 +191,7 @@ export class DataGoogleLoggingSinkExclusionsList extends cdktf.ComplexList {
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/data-sources/logging_sink google_logging_sink}
 */
-export class DataGoogleLoggingSink extends cdktf.TerraformDataSource {
+export class DataGoogleLoggingSink extends cdktn.TerraformDataSource {
 
   // =================
   // STATIC PROPERTIES
@@ -202,14 +202,14 @@ export class DataGoogleLoggingSink extends cdktf.TerraformDataSource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a DataGoogleLoggingSink resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a DataGoogleLoggingSink resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataGoogleLoggingSink to import
   * @param importFromId The id of the existing DataGoogleLoggingSink that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/data-sources/logging_sink#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataGoogleLoggingSink to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "google_logging_sink", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "google_logging_sink", importId: importFromId, provider });
       }
 
   // ===========
@@ -307,14 +307,14 @@ export class DataGoogleLoggingSink extends cdktf.TerraformDataSource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      id: cdktf.stringToTerraform(this._id),
+      id: cdktn.stringToTerraform(this._id),
     };
   }
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

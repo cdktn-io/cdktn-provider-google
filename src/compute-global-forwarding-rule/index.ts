@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface ComputeGlobalForwardingRuleConfig extends cdktf.TerraformMetaArguments {
+export interface ComputeGlobalForwardingRuleConfig extends cdktn.TerraformMetaArguments {
   /**
   * An optional description of this resource. Provide this property when
   * you create the resource.
@@ -193,7 +193,7 @@ export interface ComputeGlobalForwardingRuleConfig extends cdktf.TerraformMetaAr
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_global_forwarding_rule#no_automate_dns_zone ComputeGlobalForwardingRule#no_automate_dns_zone}
   */
-  readonly noAutomateDnsZone?: boolean | cdktf.IResolvable;
+  readonly noAutomateDnsZone?: boolean | cdktn.IResolvable;
   /**
   * The 'portRange' field has the following limitations:
   * * It requires that the forwarding rule 'IPProtocol' be TCP, UDP, or SCTP,
@@ -263,7 +263,7 @@ export interface ComputeGlobalForwardingRuleConfig extends cdktf.TerraformMetaAr
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_global_forwarding_rule#metadata_filters ComputeGlobalForwardingRule#metadata_filters}
   */
-  readonly metadataFilters?: ComputeGlobalForwardingRuleMetadataFilters[] | cdktf.IResolvable;
+  readonly metadataFilters?: ComputeGlobalForwardingRuleMetadataFilters[] | cdktn.IResolvable;
   /**
   * service_directory_registrations block
   *
@@ -294,32 +294,32 @@ export interface ComputeGlobalForwardingRuleMetadataFiltersFilterLabels {
   readonly value: string;
 }
 
-export function computeGlobalForwardingRuleMetadataFiltersFilterLabelsToTerraform(struct?: ComputeGlobalForwardingRuleMetadataFiltersFilterLabels | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function computeGlobalForwardingRuleMetadataFiltersFilterLabelsToTerraform(struct?: ComputeGlobalForwardingRuleMetadataFiltersFilterLabels | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    name: cdktf.stringToTerraform(struct!.name),
-    value: cdktf.stringToTerraform(struct!.value),
+    name: cdktn.stringToTerraform(struct!.name),
+    value: cdktn.stringToTerraform(struct!.value),
   }
 }
 
 
-export function computeGlobalForwardingRuleMetadataFiltersFilterLabelsToHclTerraform(struct?: ComputeGlobalForwardingRuleMetadataFiltersFilterLabels | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function computeGlobalForwardingRuleMetadataFiltersFilterLabelsToHclTerraform(struct?: ComputeGlobalForwardingRuleMetadataFiltersFilterLabels | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     name: {
-      value: cdktf.stringToHclTerraform(struct!.name),
+      value: cdktn.stringToHclTerraform(struct!.name),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     value: {
-      value: cdktf.stringToHclTerraform(struct!.value),
+      value: cdktn.stringToHclTerraform(struct!.value),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -330,9 +330,9 @@ export function computeGlobalForwardingRuleMetadataFiltersFilterLabelsToHclTerra
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class ComputeGlobalForwardingRuleMetadataFiltersFilterLabelsOutputReference extends cdktf.ComplexObject {
+export class ComputeGlobalForwardingRuleMetadataFiltersFilterLabelsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -340,11 +340,11 @@ export class ComputeGlobalForwardingRuleMetadataFiltersFilterLabelsOutputReferen
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): ComputeGlobalForwardingRuleMetadataFiltersFilterLabels | cdktf.IResolvable | undefined {
+  public get internalValue(): ComputeGlobalForwardingRuleMetadataFiltersFilterLabels | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -361,14 +361,14 @@ export class ComputeGlobalForwardingRuleMetadataFiltersFilterLabelsOutputReferen
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: ComputeGlobalForwardingRuleMetadataFiltersFilterLabels | cdktf.IResolvable | undefined) {
+  public set internalValue(value: ComputeGlobalForwardingRuleMetadataFiltersFilterLabels | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._name = undefined;
       this._value = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -407,15 +407,15 @@ export class ComputeGlobalForwardingRuleMetadataFiltersFilterLabelsOutputReferen
   }
 }
 
-export class ComputeGlobalForwardingRuleMetadataFiltersFilterLabelsList extends cdktf.ComplexList {
-  public internalValue? : ComputeGlobalForwardingRuleMetadataFiltersFilterLabels[] | cdktf.IResolvable
+export class ComputeGlobalForwardingRuleMetadataFiltersFilterLabelsList extends cdktn.ComplexList {
+  public internalValue? : ComputeGlobalForwardingRuleMetadataFiltersFilterLabels[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -444,35 +444,35 @@ export interface ComputeGlobalForwardingRuleMetadataFilters {
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_global_forwarding_rule#filter_labels ComputeGlobalForwardingRule#filter_labels}
   */
-  readonly filterLabels: ComputeGlobalForwardingRuleMetadataFiltersFilterLabels[] | cdktf.IResolvable;
+  readonly filterLabels: ComputeGlobalForwardingRuleMetadataFiltersFilterLabels[] | cdktn.IResolvable;
 }
 
-export function computeGlobalForwardingRuleMetadataFiltersToTerraform(struct?: ComputeGlobalForwardingRuleMetadataFilters | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function computeGlobalForwardingRuleMetadataFiltersToTerraform(struct?: ComputeGlobalForwardingRuleMetadataFilters | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    filter_match_criteria: cdktf.stringToTerraform(struct!.filterMatchCriteria),
-    filter_labels: cdktf.listMapper(computeGlobalForwardingRuleMetadataFiltersFilterLabelsToTerraform, true)(struct!.filterLabels),
+    filter_match_criteria: cdktn.stringToTerraform(struct!.filterMatchCriteria),
+    filter_labels: cdktn.listMapper(computeGlobalForwardingRuleMetadataFiltersFilterLabelsToTerraform, true)(struct!.filterLabels),
   }
 }
 
 
-export function computeGlobalForwardingRuleMetadataFiltersToHclTerraform(struct?: ComputeGlobalForwardingRuleMetadataFilters | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function computeGlobalForwardingRuleMetadataFiltersToHclTerraform(struct?: ComputeGlobalForwardingRuleMetadataFilters | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     filter_match_criteria: {
-      value: cdktf.stringToHclTerraform(struct!.filterMatchCriteria),
+      value: cdktn.stringToHclTerraform(struct!.filterMatchCriteria),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     filter_labels: {
-      value: cdktf.listMapperHcl(computeGlobalForwardingRuleMetadataFiltersFilterLabelsToHclTerraform, true)(struct!.filterLabels),
+      value: cdktn.listMapperHcl(computeGlobalForwardingRuleMetadataFiltersFilterLabelsToHclTerraform, true)(struct!.filterLabels),
       isBlock: true,
       type: "list",
       storageClassType: "ComputeGlobalForwardingRuleMetadataFiltersFilterLabelsList",
@@ -483,9 +483,9 @@ export function computeGlobalForwardingRuleMetadataFiltersToHclTerraform(struct?
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class ComputeGlobalForwardingRuleMetadataFiltersOutputReference extends cdktf.ComplexObject {
+export class ComputeGlobalForwardingRuleMetadataFiltersOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -493,11 +493,11 @@ export class ComputeGlobalForwardingRuleMetadataFiltersOutputReference extends c
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): ComputeGlobalForwardingRuleMetadataFilters | cdktf.IResolvable | undefined {
+  public get internalValue(): ComputeGlobalForwardingRuleMetadataFilters | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -514,14 +514,14 @@ export class ComputeGlobalForwardingRuleMetadataFiltersOutputReference extends c
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: ComputeGlobalForwardingRuleMetadataFilters | cdktf.IResolvable | undefined) {
+  public set internalValue(value: ComputeGlobalForwardingRuleMetadataFilters | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._filterMatchCriteria = undefined;
       this._filterLabels.internalValue = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -551,7 +551,7 @@ export class ComputeGlobalForwardingRuleMetadataFiltersOutputReference extends c
   public get filterLabels() {
     return this._filterLabels;
   }
-  public putFilterLabels(value: ComputeGlobalForwardingRuleMetadataFiltersFilterLabels[] | cdktf.IResolvable) {
+  public putFilterLabels(value: ComputeGlobalForwardingRuleMetadataFiltersFilterLabels[] | cdktn.IResolvable) {
     this._filterLabels.internalValue = value;
   }
   // Temporarily expose input value. Use with caution.
@@ -560,15 +560,15 @@ export class ComputeGlobalForwardingRuleMetadataFiltersOutputReference extends c
   }
 }
 
-export class ComputeGlobalForwardingRuleMetadataFiltersList extends cdktf.ComplexList {
-  public internalValue? : ComputeGlobalForwardingRuleMetadataFilters[] | cdktf.IResolvable
+export class ComputeGlobalForwardingRuleMetadataFiltersList extends cdktn.ComplexList {
+  public internalValue? : ComputeGlobalForwardingRuleMetadataFilters[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -598,31 +598,31 @@ export interface ComputeGlobalForwardingRuleServiceDirectoryRegistrations {
 }
 
 export function computeGlobalForwardingRuleServiceDirectoryRegistrationsToTerraform(struct?: ComputeGlobalForwardingRuleServiceDirectoryRegistrationsOutputReference | ComputeGlobalForwardingRuleServiceDirectoryRegistrations): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    namespace: cdktf.stringToTerraform(struct!.namespace),
-    service_directory_region: cdktf.stringToTerraform(struct!.serviceDirectoryRegion),
+    namespace: cdktn.stringToTerraform(struct!.namespace),
+    service_directory_region: cdktn.stringToTerraform(struct!.serviceDirectoryRegion),
   }
 }
 
 
 export function computeGlobalForwardingRuleServiceDirectoryRegistrationsToHclTerraform(struct?: ComputeGlobalForwardingRuleServiceDirectoryRegistrationsOutputReference | ComputeGlobalForwardingRuleServiceDirectoryRegistrations): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     namespace: {
-      value: cdktf.stringToHclTerraform(struct!.namespace),
+      value: cdktn.stringToHclTerraform(struct!.namespace),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     service_directory_region: {
-      value: cdktf.stringToHclTerraform(struct!.serviceDirectoryRegion),
+      value: cdktn.stringToHclTerraform(struct!.serviceDirectoryRegion),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -633,14 +633,14 @@ export function computeGlobalForwardingRuleServiceDirectoryRegistrationsToHclTer
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class ComputeGlobalForwardingRuleServiceDirectoryRegistrationsOutputReference extends cdktf.ComplexObject {
+export class ComputeGlobalForwardingRuleServiceDirectoryRegistrationsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -718,39 +718,39 @@ export interface ComputeGlobalForwardingRuleTimeouts {
   readonly update?: string;
 }
 
-export function computeGlobalForwardingRuleTimeoutsToTerraform(struct?: ComputeGlobalForwardingRuleTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function computeGlobalForwardingRuleTimeoutsToTerraform(struct?: ComputeGlobalForwardingRuleTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    create: cdktf.stringToTerraform(struct!.create),
-    delete: cdktf.stringToTerraform(struct!.delete),
-    update: cdktf.stringToTerraform(struct!.update),
+    create: cdktn.stringToTerraform(struct!.create),
+    delete: cdktn.stringToTerraform(struct!.delete),
+    update: cdktn.stringToTerraform(struct!.update),
   }
 }
 
 
-export function computeGlobalForwardingRuleTimeoutsToHclTerraform(struct?: ComputeGlobalForwardingRuleTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function computeGlobalForwardingRuleTimeoutsToHclTerraform(struct?: ComputeGlobalForwardingRuleTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     create: {
-      value: cdktf.stringToHclTerraform(struct!.create),
+      value: cdktn.stringToHclTerraform(struct!.create),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     delete: {
-      value: cdktf.stringToHclTerraform(struct!.delete),
+      value: cdktn.stringToHclTerraform(struct!.delete),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     update: {
-      value: cdktf.stringToHclTerraform(struct!.update),
+      value: cdktn.stringToHclTerraform(struct!.update),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -761,19 +761,19 @@ export function computeGlobalForwardingRuleTimeoutsToHclTerraform(struct?: Compu
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class ComputeGlobalForwardingRuleTimeoutsOutputReference extends cdktf.ComplexObject {
+export class ComputeGlobalForwardingRuleTimeoutsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): ComputeGlobalForwardingRuleTimeouts | cdktf.IResolvable | undefined {
+  public get internalValue(): ComputeGlobalForwardingRuleTimeouts | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -794,7 +794,7 @@ export class ComputeGlobalForwardingRuleTimeoutsOutputReference extends cdktf.Co
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: ComputeGlobalForwardingRuleTimeouts | cdktf.IResolvable | undefined) {
+  public set internalValue(value: ComputeGlobalForwardingRuleTimeouts | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -802,7 +802,7 @@ export class ComputeGlobalForwardingRuleTimeoutsOutputReference extends cdktf.Co
       this._delete = undefined;
       this._update = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -867,7 +867,7 @@ export class ComputeGlobalForwardingRuleTimeoutsOutputReference extends cdktf.Co
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_global_forwarding_rule google_compute_global_forwarding_rule}
 */
-export class ComputeGlobalForwardingRule extends cdktf.TerraformResource {
+export class ComputeGlobalForwardingRule extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -878,14 +878,14 @@ export class ComputeGlobalForwardingRule extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a ComputeGlobalForwardingRule resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a ComputeGlobalForwardingRule resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the ComputeGlobalForwardingRule to import
   * @param importFromId The id of the existing ComputeGlobalForwardingRule that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_global_forwarding_rule#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the ComputeGlobalForwardingRule to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "google_compute_global_forwarding_rule", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "google_compute_global_forwarding_rule", importId: importFromId, provider });
       }
 
   // ===========
@@ -964,7 +964,7 @@ export class ComputeGlobalForwardingRule extends cdktf.TerraformResource {
   }
 
   // effective_labels - computed: true, optional: false, required: false
-  private _effectiveLabels = new cdktf.StringMap(this, "effective_labels");
+  private _effectiveLabels = new cdktn.StringMap(this, "effective_labels");
   public get effectiveLabels() {
     return this._effectiveLabels;
   }
@@ -1153,11 +1153,11 @@ export class ComputeGlobalForwardingRule extends cdktf.TerraformResource {
   }
 
   // no_automate_dns_zone - computed: false, optional: true, required: false
-  private _noAutomateDnsZone?: boolean | cdktf.IResolvable; 
+  private _noAutomateDnsZone?: boolean | cdktn.IResolvable; 
   public get noAutomateDnsZone() {
     return this.getBooleanAttribute('no_automate_dns_zone');
   }
-  public set noAutomateDnsZone(value: boolean | cdktf.IResolvable) {
+  public set noAutomateDnsZone(value: boolean | cdktn.IResolvable) {
     this._noAutomateDnsZone = value;
   }
   public resetNoAutomateDnsZone() {
@@ -1261,7 +1261,7 @@ export class ComputeGlobalForwardingRule extends cdktf.TerraformResource {
   }
 
   // terraform_labels - computed: true, optional: false, required: false
-  private _terraformLabels = new cdktf.StringMap(this, "terraform_labels");
+  private _terraformLabels = new cdktn.StringMap(this, "terraform_labels");
   public get terraformLabels() {
     return this._terraformLabels;
   }
@@ -1271,7 +1271,7 @@ export class ComputeGlobalForwardingRule extends cdktf.TerraformResource {
   public get metadataFilters() {
     return this._metadataFilters;
   }
-  public putMetadataFilters(value: ComputeGlobalForwardingRuleMetadataFilters[] | cdktf.IResolvable) {
+  public putMetadataFilters(value: ComputeGlobalForwardingRuleMetadataFilters[] | cdktn.IResolvable) {
     this._metadataFilters.internalValue = value;
   }
   public resetMetadataFilters() {
@@ -1320,25 +1320,25 @@ export class ComputeGlobalForwardingRule extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      description: cdktf.stringToTerraform(this._description),
-      external_managed_backend_bucket_migration_state: cdktf.stringToTerraform(this._externalManagedBackendBucketMigrationState),
-      external_managed_backend_bucket_migration_testing_percentage: cdktf.numberToTerraform(this._externalManagedBackendBucketMigrationTestingPercentage),
-      id: cdktf.stringToTerraform(this._id),
-      ip_address: cdktf.stringToTerraform(this._ipAddress),
-      ip_protocol: cdktf.stringToTerraform(this._ipProtocol),
-      ip_version: cdktf.stringToTerraform(this._ipVersion),
-      labels: cdktf.hashMapper(cdktf.stringToTerraform)(this._labels),
-      load_balancing_scheme: cdktf.stringToTerraform(this._loadBalancingScheme),
-      name: cdktf.stringToTerraform(this._name),
-      network: cdktf.stringToTerraform(this._network),
-      network_tier: cdktf.stringToTerraform(this._networkTier),
-      no_automate_dns_zone: cdktf.booleanToTerraform(this._noAutomateDnsZone),
-      port_range: cdktf.stringToTerraform(this._portRange),
-      project: cdktf.stringToTerraform(this._project),
-      source_ip_ranges: cdktf.listMapper(cdktf.stringToTerraform, false)(this._sourceIpRanges),
-      subnetwork: cdktf.stringToTerraform(this._subnetwork),
-      target: cdktf.stringToTerraform(this._target),
-      metadata_filters: cdktf.listMapper(computeGlobalForwardingRuleMetadataFiltersToTerraform, true)(this._metadataFilters.internalValue),
+      description: cdktn.stringToTerraform(this._description),
+      external_managed_backend_bucket_migration_state: cdktn.stringToTerraform(this._externalManagedBackendBucketMigrationState),
+      external_managed_backend_bucket_migration_testing_percentage: cdktn.numberToTerraform(this._externalManagedBackendBucketMigrationTestingPercentage),
+      id: cdktn.stringToTerraform(this._id),
+      ip_address: cdktn.stringToTerraform(this._ipAddress),
+      ip_protocol: cdktn.stringToTerraform(this._ipProtocol),
+      ip_version: cdktn.stringToTerraform(this._ipVersion),
+      labels: cdktn.hashMapper(cdktn.stringToTerraform)(this._labels),
+      load_balancing_scheme: cdktn.stringToTerraform(this._loadBalancingScheme),
+      name: cdktn.stringToTerraform(this._name),
+      network: cdktn.stringToTerraform(this._network),
+      network_tier: cdktn.stringToTerraform(this._networkTier),
+      no_automate_dns_zone: cdktn.booleanToTerraform(this._noAutomateDnsZone),
+      port_range: cdktn.stringToTerraform(this._portRange),
+      project: cdktn.stringToTerraform(this._project),
+      source_ip_ranges: cdktn.listMapper(cdktn.stringToTerraform, false)(this._sourceIpRanges),
+      subnetwork: cdktn.stringToTerraform(this._subnetwork),
+      target: cdktn.stringToTerraform(this._target),
+      metadata_filters: cdktn.listMapper(computeGlobalForwardingRuleMetadataFiltersToTerraform, true)(this._metadataFilters.internalValue),
       service_directory_registrations: computeGlobalForwardingRuleServiceDirectoryRegistrationsToTerraform(this._serviceDirectoryRegistrations.internalValue),
       timeouts: computeGlobalForwardingRuleTimeoutsToTerraform(this._timeouts.internalValue),
     };
@@ -1347,115 +1347,115 @@ export class ComputeGlobalForwardingRule extends cdktf.TerraformResource {
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       description: {
-        value: cdktf.stringToHclTerraform(this._description),
+        value: cdktn.stringToHclTerraform(this._description),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       external_managed_backend_bucket_migration_state: {
-        value: cdktf.stringToHclTerraform(this._externalManagedBackendBucketMigrationState),
+        value: cdktn.stringToHclTerraform(this._externalManagedBackendBucketMigrationState),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       external_managed_backend_bucket_migration_testing_percentage: {
-        value: cdktf.numberToHclTerraform(this._externalManagedBackendBucketMigrationTestingPercentage),
+        value: cdktn.numberToHclTerraform(this._externalManagedBackendBucketMigrationTestingPercentage),
         isBlock: false,
         type: "simple",
         storageClassType: "number",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       ip_address: {
-        value: cdktf.stringToHclTerraform(this._ipAddress),
+        value: cdktn.stringToHclTerraform(this._ipAddress),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       ip_protocol: {
-        value: cdktf.stringToHclTerraform(this._ipProtocol),
+        value: cdktn.stringToHclTerraform(this._ipProtocol),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       ip_version: {
-        value: cdktf.stringToHclTerraform(this._ipVersion),
+        value: cdktn.stringToHclTerraform(this._ipVersion),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       labels: {
-        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._labels),
+        value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(this._labels),
         isBlock: false,
         type: "map",
         storageClassType: "stringMap",
       },
       load_balancing_scheme: {
-        value: cdktf.stringToHclTerraform(this._loadBalancingScheme),
+        value: cdktn.stringToHclTerraform(this._loadBalancingScheme),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       name: {
-        value: cdktf.stringToHclTerraform(this._name),
+        value: cdktn.stringToHclTerraform(this._name),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       network: {
-        value: cdktf.stringToHclTerraform(this._network),
+        value: cdktn.stringToHclTerraform(this._network),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       network_tier: {
-        value: cdktf.stringToHclTerraform(this._networkTier),
+        value: cdktn.stringToHclTerraform(this._networkTier),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       no_automate_dns_zone: {
-        value: cdktf.booleanToHclTerraform(this._noAutomateDnsZone),
+        value: cdktn.booleanToHclTerraform(this._noAutomateDnsZone),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       port_range: {
-        value: cdktf.stringToHclTerraform(this._portRange),
+        value: cdktn.stringToHclTerraform(this._portRange),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       project: {
-        value: cdktf.stringToHclTerraform(this._project),
+        value: cdktn.stringToHclTerraform(this._project),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       source_ip_ranges: {
-        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._sourceIpRanges),
+        value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(this._sourceIpRanges),
         isBlock: false,
         type: "list",
         storageClassType: "stringList",
       },
       subnetwork: {
-        value: cdktf.stringToHclTerraform(this._subnetwork),
+        value: cdktn.stringToHclTerraform(this._subnetwork),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       target: {
-        value: cdktf.stringToHclTerraform(this._target),
+        value: cdktn.stringToHclTerraform(this._target),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       metadata_filters: {
-        value: cdktf.listMapperHcl(computeGlobalForwardingRuleMetadataFiltersToHclTerraform, true)(this._metadataFilters.internalValue),
+        value: cdktn.listMapperHcl(computeGlobalForwardingRuleMetadataFiltersToHclTerraform, true)(this._metadataFilters.internalValue),
         isBlock: true,
         type: "list",
         storageClassType: "ComputeGlobalForwardingRuleMetadataFiltersList",

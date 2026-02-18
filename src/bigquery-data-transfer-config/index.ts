@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface BigqueryDataTransferConfigConfig extends cdktf.TerraformMetaArguments {
+export interface BigqueryDataTransferConfigConfig extends cdktn.TerraformMetaArguments {
   /**
   * The number of days to look back to automatically refresh the data.
   * For example, if dataRefreshWindowDays = 10, then every day BigQuery
@@ -39,7 +39,7 @@ export interface BigqueryDataTransferConfigConfig extends cdktf.TerraformMetaArg
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/bigquery_data_transfer_config#disabled BigqueryDataTransferConfig#disabled}
   */
-  readonly disabled?: boolean | cdktf.IResolvable;
+  readonly disabled?: boolean | cdktn.IResolvable;
   /**
   * The user specified display name for the transfer config.
   *
@@ -140,28 +140,28 @@ export interface BigqueryDataTransferConfigEmailPreferences {
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/bigquery_data_transfer_config#enable_failure_email BigqueryDataTransferConfig#enable_failure_email}
   */
-  readonly enableFailureEmail: boolean | cdktf.IResolvable;
+  readonly enableFailureEmail: boolean | cdktn.IResolvable;
 }
 
 export function bigqueryDataTransferConfigEmailPreferencesToTerraform(struct?: BigqueryDataTransferConfigEmailPreferencesOutputReference | BigqueryDataTransferConfigEmailPreferences): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    enable_failure_email: cdktf.booleanToTerraform(struct!.enableFailureEmail),
+    enable_failure_email: cdktn.booleanToTerraform(struct!.enableFailureEmail),
   }
 }
 
 
 export function bigqueryDataTransferConfigEmailPreferencesToHclTerraform(struct?: BigqueryDataTransferConfigEmailPreferencesOutputReference | BigqueryDataTransferConfigEmailPreferences): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     enable_failure_email: {
-      value: cdktf.booleanToHclTerraform(struct!.enableFailureEmail),
+      value: cdktn.booleanToHclTerraform(struct!.enableFailureEmail),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
@@ -172,14 +172,14 @@ export function bigqueryDataTransferConfigEmailPreferencesToHclTerraform(struct?
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class BigqueryDataTransferConfigEmailPreferencesOutputReference extends cdktf.ComplexObject {
+export class BigqueryDataTransferConfigEmailPreferencesOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -205,11 +205,11 @@ export class BigqueryDataTransferConfigEmailPreferencesOutputReference extends c
   }
 
   // enable_failure_email - computed: false, optional: false, required: true
-  private _enableFailureEmail?: boolean | cdktf.IResolvable; 
+  private _enableFailureEmail?: boolean | cdktn.IResolvable; 
   public get enableFailureEmail() {
     return this.getBooleanAttribute('enable_failure_email');
   }
-  public set enableFailureEmail(value: boolean | cdktf.IResolvable) {
+  public set enableFailureEmail(value: boolean | cdktn.IResolvable) {
     this._enableFailureEmail = value;
   }
   // Temporarily expose input value. Use with caution.
@@ -227,24 +227,24 @@ export interface BigqueryDataTransferConfigEncryptionConfiguration {
 }
 
 export function bigqueryDataTransferConfigEncryptionConfigurationToTerraform(struct?: BigqueryDataTransferConfigEncryptionConfigurationOutputReference | BigqueryDataTransferConfigEncryptionConfiguration): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    kms_key_name: cdktf.stringToTerraform(struct!.kmsKeyName),
+    kms_key_name: cdktn.stringToTerraform(struct!.kmsKeyName),
   }
 }
 
 
 export function bigqueryDataTransferConfigEncryptionConfigurationToHclTerraform(struct?: BigqueryDataTransferConfigEncryptionConfigurationOutputReference | BigqueryDataTransferConfigEncryptionConfiguration): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     kms_key_name: {
-      value: cdktf.stringToHclTerraform(struct!.kmsKeyName),
+      value: cdktn.stringToHclTerraform(struct!.kmsKeyName),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -255,14 +255,14 @@ export function bigqueryDataTransferConfigEncryptionConfigurationToHclTerraform(
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class BigqueryDataTransferConfigEncryptionConfigurationOutputReference extends cdktf.ComplexObject {
+export class BigqueryDataTransferConfigEncryptionConfigurationOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -310,7 +310,7 @@ export interface BigqueryDataTransferConfigScheduleOptions {
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/bigquery_data_transfer_config#disable_auto_scheduling BigqueryDataTransferConfig#disable_auto_scheduling}
   */
-  readonly disableAutoScheduling?: boolean | cdktf.IResolvable;
+  readonly disableAutoScheduling?: boolean | cdktn.IResolvable;
   /**
   * Defines time to stop scheduling transfer runs. A transfer run cannot be
   * scheduled at or after the end time. The end time can be changed at any
@@ -333,38 +333,38 @@ export interface BigqueryDataTransferConfigScheduleOptions {
 }
 
 export function bigqueryDataTransferConfigScheduleOptionsToTerraform(struct?: BigqueryDataTransferConfigScheduleOptionsOutputReference | BigqueryDataTransferConfigScheduleOptions): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    disable_auto_scheduling: cdktf.booleanToTerraform(struct!.disableAutoScheduling),
-    end_time: cdktf.stringToTerraform(struct!.endTime),
-    start_time: cdktf.stringToTerraform(struct!.startTime),
+    disable_auto_scheduling: cdktn.booleanToTerraform(struct!.disableAutoScheduling),
+    end_time: cdktn.stringToTerraform(struct!.endTime),
+    start_time: cdktn.stringToTerraform(struct!.startTime),
   }
 }
 
 
 export function bigqueryDataTransferConfigScheduleOptionsToHclTerraform(struct?: BigqueryDataTransferConfigScheduleOptionsOutputReference | BigqueryDataTransferConfigScheduleOptions): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     disable_auto_scheduling: {
-      value: cdktf.booleanToHclTerraform(struct!.disableAutoScheduling),
+      value: cdktn.booleanToHclTerraform(struct!.disableAutoScheduling),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     end_time: {
-      value: cdktf.stringToHclTerraform(struct!.endTime),
+      value: cdktn.stringToHclTerraform(struct!.endTime),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     start_time: {
-      value: cdktf.stringToHclTerraform(struct!.startTime),
+      value: cdktn.stringToHclTerraform(struct!.startTime),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -375,14 +375,14 @@ export function bigqueryDataTransferConfigScheduleOptionsToHclTerraform(struct?:
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class BigqueryDataTransferConfigScheduleOptionsOutputReference extends cdktf.ComplexObject {
+export class BigqueryDataTransferConfigScheduleOptionsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -420,11 +420,11 @@ export class BigqueryDataTransferConfigScheduleOptionsOutputReference extends cd
   }
 
   // disable_auto_scheduling - computed: false, optional: true, required: false
-  private _disableAutoScheduling?: boolean | cdktf.IResolvable; 
+  private _disableAutoScheduling?: boolean | cdktn.IResolvable; 
   public get disableAutoScheduling() {
     return this.getBooleanAttribute('disable_auto_scheduling');
   }
-  public set disableAutoScheduling(value: boolean | cdktf.IResolvable) {
+  public set disableAutoScheduling(value: boolean | cdktn.IResolvable) {
     this._disableAutoScheduling = value;
   }
   public resetDisableAutoScheduling() {
@@ -489,38 +489,38 @@ export interface BigqueryDataTransferConfigSensitiveParams {
 }
 
 export function bigqueryDataTransferConfigSensitiveParamsToTerraform(struct?: BigqueryDataTransferConfigSensitiveParamsOutputReference | BigqueryDataTransferConfigSensitiveParams): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    secret_access_key: cdktf.stringToTerraform(struct!.secretAccessKey),
-    secret_access_key_wo: cdktf.stringToTerraform(struct!.secretAccessKeyWo),
-    secret_access_key_wo_version: cdktf.numberToTerraform(struct!.secretAccessKeyWoVersion),
+    secret_access_key: cdktn.stringToTerraform(struct!.secretAccessKey),
+    secret_access_key_wo: cdktn.stringToTerraform(struct!.secretAccessKeyWo),
+    secret_access_key_wo_version: cdktn.numberToTerraform(struct!.secretAccessKeyWoVersion),
   }
 }
 
 
 export function bigqueryDataTransferConfigSensitiveParamsToHclTerraform(struct?: BigqueryDataTransferConfigSensitiveParamsOutputReference | BigqueryDataTransferConfigSensitiveParams): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     secret_access_key: {
-      value: cdktf.stringToHclTerraform(struct!.secretAccessKey),
+      value: cdktn.stringToHclTerraform(struct!.secretAccessKey),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     secret_access_key_wo: {
-      value: cdktf.stringToHclTerraform(struct!.secretAccessKeyWo),
+      value: cdktn.stringToHclTerraform(struct!.secretAccessKeyWo),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     secret_access_key_wo_version: {
-      value: cdktf.numberToHclTerraform(struct!.secretAccessKeyWoVersion),
+      value: cdktn.numberToHclTerraform(struct!.secretAccessKeyWoVersion),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
@@ -531,14 +531,14 @@ export function bigqueryDataTransferConfigSensitiveParamsToHclTerraform(struct?:
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class BigqueryDataTransferConfigSensitiveParamsOutputReference extends cdktf.ComplexObject {
+export class BigqueryDataTransferConfigSensitiveParamsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -638,39 +638,39 @@ export interface BigqueryDataTransferConfigTimeouts {
   readonly update?: string;
 }
 
-export function bigqueryDataTransferConfigTimeoutsToTerraform(struct?: BigqueryDataTransferConfigTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function bigqueryDataTransferConfigTimeoutsToTerraform(struct?: BigqueryDataTransferConfigTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    create: cdktf.stringToTerraform(struct!.create),
-    delete: cdktf.stringToTerraform(struct!.delete),
-    update: cdktf.stringToTerraform(struct!.update),
+    create: cdktn.stringToTerraform(struct!.create),
+    delete: cdktn.stringToTerraform(struct!.delete),
+    update: cdktn.stringToTerraform(struct!.update),
   }
 }
 
 
-export function bigqueryDataTransferConfigTimeoutsToHclTerraform(struct?: BigqueryDataTransferConfigTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function bigqueryDataTransferConfigTimeoutsToHclTerraform(struct?: BigqueryDataTransferConfigTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     create: {
-      value: cdktf.stringToHclTerraform(struct!.create),
+      value: cdktn.stringToHclTerraform(struct!.create),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     delete: {
-      value: cdktf.stringToHclTerraform(struct!.delete),
+      value: cdktn.stringToHclTerraform(struct!.delete),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     update: {
-      value: cdktf.stringToHclTerraform(struct!.update),
+      value: cdktn.stringToHclTerraform(struct!.update),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -681,19 +681,19 @@ export function bigqueryDataTransferConfigTimeoutsToHclTerraform(struct?: Bigque
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class BigqueryDataTransferConfigTimeoutsOutputReference extends cdktf.ComplexObject {
+export class BigqueryDataTransferConfigTimeoutsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): BigqueryDataTransferConfigTimeouts | cdktf.IResolvable | undefined {
+  public get internalValue(): BigqueryDataTransferConfigTimeouts | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -714,7 +714,7 @@ export class BigqueryDataTransferConfigTimeoutsOutputReference extends cdktf.Com
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: BigqueryDataTransferConfigTimeouts | cdktf.IResolvable | undefined) {
+  public set internalValue(value: BigqueryDataTransferConfigTimeouts | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -722,7 +722,7 @@ export class BigqueryDataTransferConfigTimeoutsOutputReference extends cdktf.Com
       this._delete = undefined;
       this._update = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -787,7 +787,7 @@ export class BigqueryDataTransferConfigTimeoutsOutputReference extends cdktf.Com
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/bigquery_data_transfer_config google_bigquery_data_transfer_config}
 */
-export class BigqueryDataTransferConfig extends cdktf.TerraformResource {
+export class BigqueryDataTransferConfig extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -798,14 +798,14 @@ export class BigqueryDataTransferConfig extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a BigqueryDataTransferConfig resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a BigqueryDataTransferConfig resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the BigqueryDataTransferConfig to import
   * @param importFromId The id of the existing BigqueryDataTransferConfig that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/bigquery_data_transfer_config#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the BigqueryDataTransferConfig to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "google_bigquery_data_transfer_config", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "google_bigquery_data_transfer_config", importId: importFromId, provider });
       }
 
   // ===========
@@ -904,11 +904,11 @@ export class BigqueryDataTransferConfig extends cdktf.TerraformResource {
   }
 
   // disabled - computed: false, optional: true, required: false
-  private _disabled?: boolean | cdktf.IResolvable; 
+  private _disabled?: boolean | cdktn.IResolvable; 
   public get disabled() {
     return this.getBooleanAttribute('disabled');
   }
-  public set disabled(value: boolean | cdktf.IResolvable) {
+  public set disabled(value: boolean | cdktn.IResolvable) {
     this._disabled = value;
   }
   public resetDisabled() {
@@ -1132,18 +1132,18 @@ export class BigqueryDataTransferConfig extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      data_refresh_window_days: cdktf.numberToTerraform(this._dataRefreshWindowDays),
-      data_source_id: cdktf.stringToTerraform(this._dataSourceId),
-      destination_dataset_id: cdktf.stringToTerraform(this._destinationDatasetId),
-      disabled: cdktf.booleanToTerraform(this._disabled),
-      display_name: cdktf.stringToTerraform(this._displayName),
-      id: cdktf.stringToTerraform(this._id),
-      location: cdktf.stringToTerraform(this._location),
-      notification_pubsub_topic: cdktf.stringToTerraform(this._notificationPubsubTopic),
-      params: cdktf.hashMapper(cdktf.stringToTerraform)(this._params),
-      project: cdktf.stringToTerraform(this._project),
-      schedule: cdktf.stringToTerraform(this._schedule),
-      service_account_name: cdktf.stringToTerraform(this._serviceAccountName),
+      data_refresh_window_days: cdktn.numberToTerraform(this._dataRefreshWindowDays),
+      data_source_id: cdktn.stringToTerraform(this._dataSourceId),
+      destination_dataset_id: cdktn.stringToTerraform(this._destinationDatasetId),
+      disabled: cdktn.booleanToTerraform(this._disabled),
+      display_name: cdktn.stringToTerraform(this._displayName),
+      id: cdktn.stringToTerraform(this._id),
+      location: cdktn.stringToTerraform(this._location),
+      notification_pubsub_topic: cdktn.stringToTerraform(this._notificationPubsubTopic),
+      params: cdktn.hashMapper(cdktn.stringToTerraform)(this._params),
+      project: cdktn.stringToTerraform(this._project),
+      schedule: cdktn.stringToTerraform(this._schedule),
+      service_account_name: cdktn.stringToTerraform(this._serviceAccountName),
       email_preferences: bigqueryDataTransferConfigEmailPreferencesToTerraform(this._emailPreferences.internalValue),
       encryption_configuration: bigqueryDataTransferConfigEncryptionConfigurationToTerraform(this._encryptionConfiguration.internalValue),
       schedule_options: bigqueryDataTransferConfigScheduleOptionsToTerraform(this._scheduleOptions.internalValue),
@@ -1155,73 +1155,73 @@ export class BigqueryDataTransferConfig extends cdktf.TerraformResource {
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       data_refresh_window_days: {
-        value: cdktf.numberToHclTerraform(this._dataRefreshWindowDays),
+        value: cdktn.numberToHclTerraform(this._dataRefreshWindowDays),
         isBlock: false,
         type: "simple",
         storageClassType: "number",
       },
       data_source_id: {
-        value: cdktf.stringToHclTerraform(this._dataSourceId),
+        value: cdktn.stringToHclTerraform(this._dataSourceId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       destination_dataset_id: {
-        value: cdktf.stringToHclTerraform(this._destinationDatasetId),
+        value: cdktn.stringToHclTerraform(this._destinationDatasetId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       disabled: {
-        value: cdktf.booleanToHclTerraform(this._disabled),
+        value: cdktn.booleanToHclTerraform(this._disabled),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       display_name: {
-        value: cdktf.stringToHclTerraform(this._displayName),
+        value: cdktn.stringToHclTerraform(this._displayName),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       location: {
-        value: cdktf.stringToHclTerraform(this._location),
+        value: cdktn.stringToHclTerraform(this._location),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       notification_pubsub_topic: {
-        value: cdktf.stringToHclTerraform(this._notificationPubsubTopic),
+        value: cdktn.stringToHclTerraform(this._notificationPubsubTopic),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       params: {
-        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._params),
+        value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(this._params),
         isBlock: false,
         type: "map",
         storageClassType: "stringMap",
       },
       project: {
-        value: cdktf.stringToHclTerraform(this._project),
+        value: cdktn.stringToHclTerraform(this._project),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       schedule: {
-        value: cdktf.stringToHclTerraform(this._schedule),
+        value: cdktn.stringToHclTerraform(this._schedule),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       service_account_name: {
-        value: cdktf.stringToHclTerraform(this._serviceAccountName),
+        value: cdktn.stringToHclTerraform(this._serviceAccountName),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

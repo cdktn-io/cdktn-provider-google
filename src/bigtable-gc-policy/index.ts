@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface BigtableGcPolicyConfig extends cdktf.TerraformMetaArguments {
+export interface BigtableGcPolicyConfig extends cdktn.TerraformMetaArguments {
   /**
   * The name of the column family.
   *
@@ -47,7 +47,7 @@ export interface BigtableGcPolicyConfig extends cdktf.TerraformMetaArguments {
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/bigtable_gc_policy#ignore_warnings BigtableGcPolicy#ignore_warnings}
   */
-  readonly ignoreWarnings?: boolean | cdktf.IResolvable;
+  readonly ignoreWarnings?: boolean | cdktn.IResolvable;
   /**
   * The name of the Bigtable instance.
   *
@@ -83,7 +83,7 @@ export interface BigtableGcPolicyConfig extends cdktf.TerraformMetaArguments {
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/bigtable_gc_policy#max_version BigtableGcPolicy#max_version}
   */
-  readonly maxVersion?: BigtableGcPolicyMaxVersion[] | cdktf.IResolvable;
+  readonly maxVersion?: BigtableGcPolicyMaxVersion[] | cdktn.IResolvable;
   /**
   * timeouts block
   *
@@ -107,31 +107,31 @@ export interface BigtableGcPolicyMaxAge {
 }
 
 export function bigtableGcPolicyMaxAgeToTerraform(struct?: BigtableGcPolicyMaxAgeOutputReference | BigtableGcPolicyMaxAge): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    days: cdktf.numberToTerraform(struct!.days),
-    duration: cdktf.stringToTerraform(struct!.duration),
+    days: cdktn.numberToTerraform(struct!.days),
+    duration: cdktn.stringToTerraform(struct!.duration),
   }
 }
 
 
 export function bigtableGcPolicyMaxAgeToHclTerraform(struct?: BigtableGcPolicyMaxAgeOutputReference | BigtableGcPolicyMaxAge): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     days: {
-      value: cdktf.numberToHclTerraform(struct!.days),
+      value: cdktn.numberToHclTerraform(struct!.days),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     duration: {
-      value: cdktf.stringToHclTerraform(struct!.duration),
+      value: cdktn.stringToHclTerraform(struct!.duration),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -142,14 +142,14 @@ export function bigtableGcPolicyMaxAgeToHclTerraform(struct?: BigtableGcPolicyMa
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class BigtableGcPolicyMaxAgeOutputReference extends cdktf.ComplexObject {
+export class BigtableGcPolicyMaxAgeOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -221,25 +221,25 @@ export interface BigtableGcPolicyMaxVersion {
   readonly number: number;
 }
 
-export function bigtableGcPolicyMaxVersionToTerraform(struct?: BigtableGcPolicyMaxVersion | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function bigtableGcPolicyMaxVersionToTerraform(struct?: BigtableGcPolicyMaxVersion | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    number: cdktf.numberToTerraform(struct!.number),
+    number: cdktn.numberToTerraform(struct!.number),
   }
 }
 
 
-export function bigtableGcPolicyMaxVersionToHclTerraform(struct?: BigtableGcPolicyMaxVersion | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function bigtableGcPolicyMaxVersionToHclTerraform(struct?: BigtableGcPolicyMaxVersion | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     number: {
-      value: cdktf.numberToHclTerraform(struct!.number),
+      value: cdktn.numberToHclTerraform(struct!.number),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
@@ -250,9 +250,9 @@ export function bigtableGcPolicyMaxVersionToHclTerraform(struct?: BigtableGcPoli
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class BigtableGcPolicyMaxVersionOutputReference extends cdktf.ComplexObject {
+export class BigtableGcPolicyMaxVersionOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -260,11 +260,11 @@ export class BigtableGcPolicyMaxVersionOutputReference extends cdktf.ComplexObje
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): BigtableGcPolicyMaxVersion | cdktf.IResolvable | undefined {
+  public get internalValue(): BigtableGcPolicyMaxVersion | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -277,13 +277,13 @@ export class BigtableGcPolicyMaxVersionOutputReference extends cdktf.ComplexObje
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: BigtableGcPolicyMaxVersion | cdktf.IResolvable | undefined) {
+  public set internalValue(value: BigtableGcPolicyMaxVersion | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._number = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -308,15 +308,15 @@ export class BigtableGcPolicyMaxVersionOutputReference extends cdktf.ComplexObje
   }
 }
 
-export class BigtableGcPolicyMaxVersionList extends cdktf.ComplexList {
-  public internalValue? : BigtableGcPolicyMaxVersion[] | cdktf.IResolvable
+export class BigtableGcPolicyMaxVersionList extends cdktn.ComplexList {
+  public internalValue? : BigtableGcPolicyMaxVersion[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -338,32 +338,32 @@ export interface BigtableGcPolicyTimeouts {
   readonly delete?: string;
 }
 
-export function bigtableGcPolicyTimeoutsToTerraform(struct?: BigtableGcPolicyTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function bigtableGcPolicyTimeoutsToTerraform(struct?: BigtableGcPolicyTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    create: cdktf.stringToTerraform(struct!.create),
-    delete: cdktf.stringToTerraform(struct!.delete),
+    create: cdktn.stringToTerraform(struct!.create),
+    delete: cdktn.stringToTerraform(struct!.delete),
   }
 }
 
 
-export function bigtableGcPolicyTimeoutsToHclTerraform(struct?: BigtableGcPolicyTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function bigtableGcPolicyTimeoutsToHclTerraform(struct?: BigtableGcPolicyTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     create: {
-      value: cdktf.stringToHclTerraform(struct!.create),
+      value: cdktn.stringToHclTerraform(struct!.create),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     delete: {
-      value: cdktf.stringToHclTerraform(struct!.delete),
+      value: cdktn.stringToHclTerraform(struct!.delete),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -374,19 +374,19 @@ export function bigtableGcPolicyTimeoutsToHclTerraform(struct?: BigtableGcPolicy
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class BigtableGcPolicyTimeoutsOutputReference extends cdktf.ComplexObject {
+export class BigtableGcPolicyTimeoutsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): BigtableGcPolicyTimeouts | cdktf.IResolvable | undefined {
+  public get internalValue(): BigtableGcPolicyTimeouts | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -403,14 +403,14 @@ export class BigtableGcPolicyTimeoutsOutputReference extends cdktf.ComplexObject
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: BigtableGcPolicyTimeouts | cdktf.IResolvable | undefined) {
+  public set internalValue(value: BigtableGcPolicyTimeouts | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._create = undefined;
       this._delete = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -458,7 +458,7 @@ export class BigtableGcPolicyTimeoutsOutputReference extends cdktf.ComplexObject
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/bigtable_gc_policy google_bigtable_gc_policy}
 */
-export class BigtableGcPolicy extends cdktf.TerraformResource {
+export class BigtableGcPolicy extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -469,14 +469,14 @@ export class BigtableGcPolicy extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a BigtableGcPolicy resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a BigtableGcPolicy resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the BigtableGcPolicy to import
   * @param importFromId The id of the existing BigtableGcPolicy that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/bigtable_gc_policy#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the BigtableGcPolicy to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "google_bigtable_gc_policy", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "google_bigtable_gc_policy", importId: importFromId, provider });
       }
 
   // ===========
@@ -586,11 +586,11 @@ export class BigtableGcPolicy extends cdktf.TerraformResource {
   }
 
   // ignore_warnings - computed: false, optional: true, required: false
-  private _ignoreWarnings?: boolean | cdktf.IResolvable; 
+  private _ignoreWarnings?: boolean | cdktn.IResolvable; 
   public get ignoreWarnings() {
     return this.getBooleanAttribute('ignore_warnings');
   }
-  public set ignoreWarnings(value: boolean | cdktf.IResolvable) {
+  public set ignoreWarnings(value: boolean | cdktn.IResolvable) {
     this._ignoreWarnings = value;
   }
   public resetIgnoreWarnings() {
@@ -680,7 +680,7 @@ export class BigtableGcPolicy extends cdktf.TerraformResource {
   public get maxVersion() {
     return this._maxVersion;
   }
-  public putMaxVersion(value: BigtableGcPolicyMaxVersion[] | cdktf.IResolvable) {
+  public putMaxVersion(value: BigtableGcPolicyMaxVersion[] | cdktn.IResolvable) {
     this._maxVersion.internalValue = value;
   }
   public resetMaxVersion() {
@@ -713,17 +713,17 @@ export class BigtableGcPolicy extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      column_family: cdktf.stringToTerraform(this._columnFamily),
-      deletion_policy: cdktf.stringToTerraform(this._deletionPolicy),
-      gc_rules: cdktf.stringToTerraform(this._gcRules),
-      id: cdktf.stringToTerraform(this._id),
-      ignore_warnings: cdktf.booleanToTerraform(this._ignoreWarnings),
-      instance_name: cdktf.stringToTerraform(this._instanceName),
-      mode: cdktf.stringToTerraform(this._mode),
-      project: cdktf.stringToTerraform(this._project),
-      table: cdktf.stringToTerraform(this._table),
+      column_family: cdktn.stringToTerraform(this._columnFamily),
+      deletion_policy: cdktn.stringToTerraform(this._deletionPolicy),
+      gc_rules: cdktn.stringToTerraform(this._gcRules),
+      id: cdktn.stringToTerraform(this._id),
+      ignore_warnings: cdktn.booleanToTerraform(this._ignoreWarnings),
+      instance_name: cdktn.stringToTerraform(this._instanceName),
+      mode: cdktn.stringToTerraform(this._mode),
+      project: cdktn.stringToTerraform(this._project),
+      table: cdktn.stringToTerraform(this._table),
       max_age: bigtableGcPolicyMaxAgeToTerraform(this._maxAge.internalValue),
-      max_version: cdktf.listMapper(bigtableGcPolicyMaxVersionToTerraform, true)(this._maxVersion.internalValue),
+      max_version: cdktn.listMapper(bigtableGcPolicyMaxVersionToTerraform, true)(this._maxVersion.internalValue),
       timeouts: bigtableGcPolicyTimeoutsToTerraform(this._timeouts.internalValue),
     };
   }
@@ -731,55 +731,55 @@ export class BigtableGcPolicy extends cdktf.TerraformResource {
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       column_family: {
-        value: cdktf.stringToHclTerraform(this._columnFamily),
+        value: cdktn.stringToHclTerraform(this._columnFamily),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       deletion_policy: {
-        value: cdktf.stringToHclTerraform(this._deletionPolicy),
+        value: cdktn.stringToHclTerraform(this._deletionPolicy),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       gc_rules: {
-        value: cdktf.stringToHclTerraform(this._gcRules),
+        value: cdktn.stringToHclTerraform(this._gcRules),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       ignore_warnings: {
-        value: cdktf.booleanToHclTerraform(this._ignoreWarnings),
+        value: cdktn.booleanToHclTerraform(this._ignoreWarnings),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       instance_name: {
-        value: cdktf.stringToHclTerraform(this._instanceName),
+        value: cdktn.stringToHclTerraform(this._instanceName),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       mode: {
-        value: cdktf.stringToHclTerraform(this._mode),
+        value: cdktn.stringToHclTerraform(this._mode),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       project: {
-        value: cdktf.stringToHclTerraform(this._project),
+        value: cdktn.stringToHclTerraform(this._project),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       table: {
-        value: cdktf.stringToHclTerraform(this._table),
+        value: cdktn.stringToHclTerraform(this._table),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
@@ -791,7 +791,7 @@ export class BigtableGcPolicy extends cdktf.TerraformResource {
         storageClassType: "BigtableGcPolicyMaxAgeList",
       },
       max_version: {
-        value: cdktf.listMapperHcl(bigtableGcPolicyMaxVersionToHclTerraform, true)(this._maxVersion.internalValue),
+        value: cdktn.listMapperHcl(bigtableGcPolicyMaxVersionToHclTerraform, true)(this._maxVersion.internalValue),
         isBlock: true,
         type: "list",
         storageClassType: "BigtableGcPolicyMaxVersionList",

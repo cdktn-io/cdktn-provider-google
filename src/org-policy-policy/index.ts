@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface OrgPolicyPolicyConfig extends cdktf.TerraformMetaArguments {
+export interface OrgPolicyPolicyConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/org_policy_policy#id OrgPolicyPolicy#id}
   *
@@ -78,45 +78,45 @@ export interface OrgPolicyPolicyDryRunSpecRulesCondition {
 }
 
 export function orgPolicyPolicyDryRunSpecRulesConditionToTerraform(struct?: OrgPolicyPolicyDryRunSpecRulesConditionOutputReference | OrgPolicyPolicyDryRunSpecRulesCondition): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    description: cdktf.stringToTerraform(struct!.description),
-    expression: cdktf.stringToTerraform(struct!.expression),
-    location: cdktf.stringToTerraform(struct!.location),
-    title: cdktf.stringToTerraform(struct!.title),
+    description: cdktn.stringToTerraform(struct!.description),
+    expression: cdktn.stringToTerraform(struct!.expression),
+    location: cdktn.stringToTerraform(struct!.location),
+    title: cdktn.stringToTerraform(struct!.title),
   }
 }
 
 
 export function orgPolicyPolicyDryRunSpecRulesConditionToHclTerraform(struct?: OrgPolicyPolicyDryRunSpecRulesConditionOutputReference | OrgPolicyPolicyDryRunSpecRulesCondition): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     description: {
-      value: cdktf.stringToHclTerraform(struct!.description),
+      value: cdktn.stringToHclTerraform(struct!.description),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     expression: {
-      value: cdktf.stringToHclTerraform(struct!.expression),
+      value: cdktn.stringToHclTerraform(struct!.expression),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     location: {
-      value: cdktf.stringToHclTerraform(struct!.location),
+      value: cdktn.stringToHclTerraform(struct!.location),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     title: {
-      value: cdktf.stringToHclTerraform(struct!.title),
+      value: cdktn.stringToHclTerraform(struct!.title),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -127,14 +127,14 @@ export function orgPolicyPolicyDryRunSpecRulesConditionToHclTerraform(struct?: O
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class OrgPolicyPolicyDryRunSpecRulesConditionOutputReference extends cdktf.ComplexObject {
+export class OrgPolicyPolicyDryRunSpecRulesConditionOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -257,31 +257,31 @@ export interface OrgPolicyPolicyDryRunSpecRulesValues {
 }
 
 export function orgPolicyPolicyDryRunSpecRulesValuesToTerraform(struct?: OrgPolicyPolicyDryRunSpecRulesValuesOutputReference | OrgPolicyPolicyDryRunSpecRulesValues): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    allowed_values: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.allowedValues),
-    denied_values: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.deniedValues),
+    allowed_values: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.allowedValues),
+    denied_values: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.deniedValues),
   }
 }
 
 
 export function orgPolicyPolicyDryRunSpecRulesValuesToHclTerraform(struct?: OrgPolicyPolicyDryRunSpecRulesValuesOutputReference | OrgPolicyPolicyDryRunSpecRulesValues): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     allowed_values: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.allowedValues),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.allowedValues),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
     },
     denied_values: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.deniedValues),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.deniedValues),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
@@ -292,14 +292,14 @@ export function orgPolicyPolicyDryRunSpecRulesValuesToHclTerraform(struct?: OrgP
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class OrgPolicyPolicyDryRunSpecRulesValuesOutputReference extends cdktf.ComplexObject {
+export class OrgPolicyPolicyDryRunSpecRulesValuesOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -401,48 +401,48 @@ export interface OrgPolicyPolicyDryRunSpecRules {
   readonly values?: OrgPolicyPolicyDryRunSpecRulesValues;
 }
 
-export function orgPolicyPolicyDryRunSpecRulesToTerraform(struct?: OrgPolicyPolicyDryRunSpecRules | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function orgPolicyPolicyDryRunSpecRulesToTerraform(struct?: OrgPolicyPolicyDryRunSpecRules | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    allow_all: cdktf.stringToTerraform(struct!.allowAll),
-    deny_all: cdktf.stringToTerraform(struct!.denyAll),
-    enforce: cdktf.stringToTerraform(struct!.enforce),
-    parameters: cdktf.stringToTerraform(struct!.parameters),
+    allow_all: cdktn.stringToTerraform(struct!.allowAll),
+    deny_all: cdktn.stringToTerraform(struct!.denyAll),
+    enforce: cdktn.stringToTerraform(struct!.enforce),
+    parameters: cdktn.stringToTerraform(struct!.parameters),
     condition: orgPolicyPolicyDryRunSpecRulesConditionToTerraform(struct!.condition),
     values: orgPolicyPolicyDryRunSpecRulesValuesToTerraform(struct!.values),
   }
 }
 
 
-export function orgPolicyPolicyDryRunSpecRulesToHclTerraform(struct?: OrgPolicyPolicyDryRunSpecRules | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function orgPolicyPolicyDryRunSpecRulesToHclTerraform(struct?: OrgPolicyPolicyDryRunSpecRules | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     allow_all: {
-      value: cdktf.stringToHclTerraform(struct!.allowAll),
+      value: cdktn.stringToHclTerraform(struct!.allowAll),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     deny_all: {
-      value: cdktf.stringToHclTerraform(struct!.denyAll),
+      value: cdktn.stringToHclTerraform(struct!.denyAll),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     enforce: {
-      value: cdktf.stringToHclTerraform(struct!.enforce),
+      value: cdktn.stringToHclTerraform(struct!.enforce),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     parameters: {
-      value: cdktf.stringToHclTerraform(struct!.parameters),
+      value: cdktn.stringToHclTerraform(struct!.parameters),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -465,9 +465,9 @@ export function orgPolicyPolicyDryRunSpecRulesToHclTerraform(struct?: OrgPolicyP
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class OrgPolicyPolicyDryRunSpecRulesOutputReference extends cdktf.ComplexObject {
+export class OrgPolicyPolicyDryRunSpecRulesOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -475,11 +475,11 @@ export class OrgPolicyPolicyDryRunSpecRulesOutputReference extends cdktf.Complex
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): OrgPolicyPolicyDryRunSpecRules | cdktf.IResolvable | undefined {
+  public get internalValue(): OrgPolicyPolicyDryRunSpecRules | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -512,7 +512,7 @@ export class OrgPolicyPolicyDryRunSpecRulesOutputReference extends cdktf.Complex
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: OrgPolicyPolicyDryRunSpecRules | cdktf.IResolvable | undefined) {
+  public set internalValue(value: OrgPolicyPolicyDryRunSpecRules | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -523,7 +523,7 @@ export class OrgPolicyPolicyDryRunSpecRulesOutputReference extends cdktf.Complex
       this._condition.internalValue = undefined;
       this._values.internalValue = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -636,15 +636,15 @@ export class OrgPolicyPolicyDryRunSpecRulesOutputReference extends cdktf.Complex
   }
 }
 
-export class OrgPolicyPolicyDryRunSpecRulesList extends cdktf.ComplexList {
-  public internalValue? : OrgPolicyPolicyDryRunSpecRules[] | cdktf.IResolvable
+export class OrgPolicyPolicyDryRunSpecRulesList extends cdktn.ComplexList {
+  public internalValue? : OrgPolicyPolicyDryRunSpecRules[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -661,54 +661,54 @@ export interface OrgPolicyPolicyDryRunSpec {
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/org_policy_policy#inherit_from_parent OrgPolicyPolicy#inherit_from_parent}
   */
-  readonly inheritFromParent?: boolean | cdktf.IResolvable;
+  readonly inheritFromParent?: boolean | cdktn.IResolvable;
   /**
   * Ignores policies set above this resource and restores the 'constraint_default' enforcement behavior of the specific constraint at this resource. This field can be set in policies for either list or boolean constraints. If set, 'rules' must be empty and 'inherit_from_parent' must be set to false.
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/org_policy_policy#reset OrgPolicyPolicy#reset}
   */
-  readonly reset?: boolean | cdktf.IResolvable;
+  readonly reset?: boolean | cdktn.IResolvable;
   /**
   * rules block
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/org_policy_policy#rules OrgPolicyPolicy#rules}
   */
-  readonly rules?: OrgPolicyPolicyDryRunSpecRules[] | cdktf.IResolvable;
+  readonly rules?: OrgPolicyPolicyDryRunSpecRules[] | cdktn.IResolvable;
 }
 
 export function orgPolicyPolicyDryRunSpecToTerraform(struct?: OrgPolicyPolicyDryRunSpecOutputReference | OrgPolicyPolicyDryRunSpec): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    inherit_from_parent: cdktf.booleanToTerraform(struct!.inheritFromParent),
-    reset: cdktf.booleanToTerraform(struct!.reset),
-    rules: cdktf.listMapper(orgPolicyPolicyDryRunSpecRulesToTerraform, true)(struct!.rules),
+    inherit_from_parent: cdktn.booleanToTerraform(struct!.inheritFromParent),
+    reset: cdktn.booleanToTerraform(struct!.reset),
+    rules: cdktn.listMapper(orgPolicyPolicyDryRunSpecRulesToTerraform, true)(struct!.rules),
   }
 }
 
 
 export function orgPolicyPolicyDryRunSpecToHclTerraform(struct?: OrgPolicyPolicyDryRunSpecOutputReference | OrgPolicyPolicyDryRunSpec): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     inherit_from_parent: {
-      value: cdktf.booleanToHclTerraform(struct!.inheritFromParent),
+      value: cdktn.booleanToHclTerraform(struct!.inheritFromParent),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     reset: {
-      value: cdktf.booleanToHclTerraform(struct!.reset),
+      value: cdktn.booleanToHclTerraform(struct!.reset),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     rules: {
-      value: cdktf.listMapperHcl(orgPolicyPolicyDryRunSpecRulesToHclTerraform, true)(struct!.rules),
+      value: cdktn.listMapperHcl(orgPolicyPolicyDryRunSpecRulesToHclTerraform, true)(struct!.rules),
       isBlock: true,
       type: "list",
       storageClassType: "OrgPolicyPolicyDryRunSpecRulesList",
@@ -719,14 +719,14 @@ export function orgPolicyPolicyDryRunSpecToHclTerraform(struct?: OrgPolicyPolicy
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class OrgPolicyPolicyDryRunSpecOutputReference extends cdktf.ComplexObject {
+export class OrgPolicyPolicyDryRunSpecOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -769,11 +769,11 @@ export class OrgPolicyPolicyDryRunSpecOutputReference extends cdktf.ComplexObjec
   }
 
   // inherit_from_parent - computed: false, optional: true, required: false
-  private _inheritFromParent?: boolean | cdktf.IResolvable; 
+  private _inheritFromParent?: boolean | cdktn.IResolvable; 
   public get inheritFromParent() {
     return this.getBooleanAttribute('inherit_from_parent');
   }
-  public set inheritFromParent(value: boolean | cdktf.IResolvable) {
+  public set inheritFromParent(value: boolean | cdktn.IResolvable) {
     this._inheritFromParent = value;
   }
   public resetInheritFromParent() {
@@ -785,11 +785,11 @@ export class OrgPolicyPolicyDryRunSpecOutputReference extends cdktf.ComplexObjec
   }
 
   // reset - computed: false, optional: true, required: false
-  private _reset?: boolean | cdktf.IResolvable; 
+  private _reset?: boolean | cdktn.IResolvable; 
   public get reset() {
     return this.getBooleanAttribute('reset');
   }
-  public set reset(value: boolean | cdktf.IResolvable) {
+  public set reset(value: boolean | cdktn.IResolvable) {
     this._reset = value;
   }
   public resetReset() {
@@ -810,7 +810,7 @@ export class OrgPolicyPolicyDryRunSpecOutputReference extends cdktf.ComplexObjec
   public get rules() {
     return this._rules;
   }
-  public putRules(value: OrgPolicyPolicyDryRunSpecRules[] | cdktf.IResolvable) {
+  public putRules(value: OrgPolicyPolicyDryRunSpecRules[] | cdktn.IResolvable) {
     this._rules.internalValue = value;
   }
   public resetRules() {
@@ -849,45 +849,45 @@ export interface OrgPolicyPolicySpecRulesCondition {
 }
 
 export function orgPolicyPolicySpecRulesConditionToTerraform(struct?: OrgPolicyPolicySpecRulesConditionOutputReference | OrgPolicyPolicySpecRulesCondition): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    description: cdktf.stringToTerraform(struct!.description),
-    expression: cdktf.stringToTerraform(struct!.expression),
-    location: cdktf.stringToTerraform(struct!.location),
-    title: cdktf.stringToTerraform(struct!.title),
+    description: cdktn.stringToTerraform(struct!.description),
+    expression: cdktn.stringToTerraform(struct!.expression),
+    location: cdktn.stringToTerraform(struct!.location),
+    title: cdktn.stringToTerraform(struct!.title),
   }
 }
 
 
 export function orgPolicyPolicySpecRulesConditionToHclTerraform(struct?: OrgPolicyPolicySpecRulesConditionOutputReference | OrgPolicyPolicySpecRulesCondition): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     description: {
-      value: cdktf.stringToHclTerraform(struct!.description),
+      value: cdktn.stringToHclTerraform(struct!.description),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     expression: {
-      value: cdktf.stringToHclTerraform(struct!.expression),
+      value: cdktn.stringToHclTerraform(struct!.expression),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     location: {
-      value: cdktf.stringToHclTerraform(struct!.location),
+      value: cdktn.stringToHclTerraform(struct!.location),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     title: {
-      value: cdktf.stringToHclTerraform(struct!.title),
+      value: cdktn.stringToHclTerraform(struct!.title),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -898,14 +898,14 @@ export function orgPolicyPolicySpecRulesConditionToHclTerraform(struct?: OrgPoli
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class OrgPolicyPolicySpecRulesConditionOutputReference extends cdktf.ComplexObject {
+export class OrgPolicyPolicySpecRulesConditionOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -1028,31 +1028,31 @@ export interface OrgPolicyPolicySpecRulesValues {
 }
 
 export function orgPolicyPolicySpecRulesValuesToTerraform(struct?: OrgPolicyPolicySpecRulesValuesOutputReference | OrgPolicyPolicySpecRulesValues): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    allowed_values: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.allowedValues),
-    denied_values: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.deniedValues),
+    allowed_values: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.allowedValues),
+    denied_values: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.deniedValues),
   }
 }
 
 
 export function orgPolicyPolicySpecRulesValuesToHclTerraform(struct?: OrgPolicyPolicySpecRulesValuesOutputReference | OrgPolicyPolicySpecRulesValues): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     allowed_values: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.allowedValues),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.allowedValues),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
     },
     denied_values: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.deniedValues),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.deniedValues),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
@@ -1063,14 +1063,14 @@ export function orgPolicyPolicySpecRulesValuesToHclTerraform(struct?: OrgPolicyP
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class OrgPolicyPolicySpecRulesValuesOutputReference extends cdktf.ComplexObject {
+export class OrgPolicyPolicySpecRulesValuesOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -1172,48 +1172,48 @@ export interface OrgPolicyPolicySpecRules {
   readonly values?: OrgPolicyPolicySpecRulesValues;
 }
 
-export function orgPolicyPolicySpecRulesToTerraform(struct?: OrgPolicyPolicySpecRules | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function orgPolicyPolicySpecRulesToTerraform(struct?: OrgPolicyPolicySpecRules | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    allow_all: cdktf.stringToTerraform(struct!.allowAll),
-    deny_all: cdktf.stringToTerraform(struct!.denyAll),
-    enforce: cdktf.stringToTerraform(struct!.enforce),
-    parameters: cdktf.stringToTerraform(struct!.parameters),
+    allow_all: cdktn.stringToTerraform(struct!.allowAll),
+    deny_all: cdktn.stringToTerraform(struct!.denyAll),
+    enforce: cdktn.stringToTerraform(struct!.enforce),
+    parameters: cdktn.stringToTerraform(struct!.parameters),
     condition: orgPolicyPolicySpecRulesConditionToTerraform(struct!.condition),
     values: orgPolicyPolicySpecRulesValuesToTerraform(struct!.values),
   }
 }
 
 
-export function orgPolicyPolicySpecRulesToHclTerraform(struct?: OrgPolicyPolicySpecRules | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function orgPolicyPolicySpecRulesToHclTerraform(struct?: OrgPolicyPolicySpecRules | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     allow_all: {
-      value: cdktf.stringToHclTerraform(struct!.allowAll),
+      value: cdktn.stringToHclTerraform(struct!.allowAll),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     deny_all: {
-      value: cdktf.stringToHclTerraform(struct!.denyAll),
+      value: cdktn.stringToHclTerraform(struct!.denyAll),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     enforce: {
-      value: cdktf.stringToHclTerraform(struct!.enforce),
+      value: cdktn.stringToHclTerraform(struct!.enforce),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     parameters: {
-      value: cdktf.stringToHclTerraform(struct!.parameters),
+      value: cdktn.stringToHclTerraform(struct!.parameters),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -1236,9 +1236,9 @@ export function orgPolicyPolicySpecRulesToHclTerraform(struct?: OrgPolicyPolicyS
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class OrgPolicyPolicySpecRulesOutputReference extends cdktf.ComplexObject {
+export class OrgPolicyPolicySpecRulesOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -1246,11 +1246,11 @@ export class OrgPolicyPolicySpecRulesOutputReference extends cdktf.ComplexObject
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): OrgPolicyPolicySpecRules | cdktf.IResolvable | undefined {
+  public get internalValue(): OrgPolicyPolicySpecRules | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -1283,7 +1283,7 @@ export class OrgPolicyPolicySpecRulesOutputReference extends cdktf.ComplexObject
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: OrgPolicyPolicySpecRules | cdktf.IResolvable | undefined) {
+  public set internalValue(value: OrgPolicyPolicySpecRules | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -1294,7 +1294,7 @@ export class OrgPolicyPolicySpecRulesOutputReference extends cdktf.ComplexObject
       this._condition.internalValue = undefined;
       this._values.internalValue = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -1407,15 +1407,15 @@ export class OrgPolicyPolicySpecRulesOutputReference extends cdktf.ComplexObject
   }
 }
 
-export class OrgPolicyPolicySpecRulesList extends cdktf.ComplexList {
-  public internalValue? : OrgPolicyPolicySpecRules[] | cdktf.IResolvable
+export class OrgPolicyPolicySpecRulesList extends cdktn.ComplexList {
+  public internalValue? : OrgPolicyPolicySpecRules[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -1432,54 +1432,54 @@ export interface OrgPolicyPolicySpec {
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/org_policy_policy#inherit_from_parent OrgPolicyPolicy#inherit_from_parent}
   */
-  readonly inheritFromParent?: boolean | cdktf.IResolvable;
+  readonly inheritFromParent?: boolean | cdktn.IResolvable;
   /**
   * Ignores policies set above this resource and restores the 'constraint_default' enforcement behavior of the specific 'Constraint' at this resource. This field can be set in policies for either list or boolean constraints. If set, 'rules' must be empty and 'inherit_from_parent' must be set to false.
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/org_policy_policy#reset OrgPolicyPolicy#reset}
   */
-  readonly reset?: boolean | cdktf.IResolvable;
+  readonly reset?: boolean | cdktn.IResolvable;
   /**
   * rules block
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/org_policy_policy#rules OrgPolicyPolicy#rules}
   */
-  readonly rules?: OrgPolicyPolicySpecRules[] | cdktf.IResolvable;
+  readonly rules?: OrgPolicyPolicySpecRules[] | cdktn.IResolvable;
 }
 
 export function orgPolicyPolicySpecToTerraform(struct?: OrgPolicyPolicySpecOutputReference | OrgPolicyPolicySpec): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    inherit_from_parent: cdktf.booleanToTerraform(struct!.inheritFromParent),
-    reset: cdktf.booleanToTerraform(struct!.reset),
-    rules: cdktf.listMapper(orgPolicyPolicySpecRulesToTerraform, true)(struct!.rules),
+    inherit_from_parent: cdktn.booleanToTerraform(struct!.inheritFromParent),
+    reset: cdktn.booleanToTerraform(struct!.reset),
+    rules: cdktn.listMapper(orgPolicyPolicySpecRulesToTerraform, true)(struct!.rules),
   }
 }
 
 
 export function orgPolicyPolicySpecToHclTerraform(struct?: OrgPolicyPolicySpecOutputReference | OrgPolicyPolicySpec): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     inherit_from_parent: {
-      value: cdktf.booleanToHclTerraform(struct!.inheritFromParent),
+      value: cdktn.booleanToHclTerraform(struct!.inheritFromParent),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     reset: {
-      value: cdktf.booleanToHclTerraform(struct!.reset),
+      value: cdktn.booleanToHclTerraform(struct!.reset),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     rules: {
-      value: cdktf.listMapperHcl(orgPolicyPolicySpecRulesToHclTerraform, true)(struct!.rules),
+      value: cdktn.listMapperHcl(orgPolicyPolicySpecRulesToHclTerraform, true)(struct!.rules),
       isBlock: true,
       type: "list",
       storageClassType: "OrgPolicyPolicySpecRulesList",
@@ -1490,14 +1490,14 @@ export function orgPolicyPolicySpecToHclTerraform(struct?: OrgPolicyPolicySpecOu
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class OrgPolicyPolicySpecOutputReference extends cdktf.ComplexObject {
+export class OrgPolicyPolicySpecOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -1540,11 +1540,11 @@ export class OrgPolicyPolicySpecOutputReference extends cdktf.ComplexObject {
   }
 
   // inherit_from_parent - computed: false, optional: true, required: false
-  private _inheritFromParent?: boolean | cdktf.IResolvable; 
+  private _inheritFromParent?: boolean | cdktn.IResolvable; 
   public get inheritFromParent() {
     return this.getBooleanAttribute('inherit_from_parent');
   }
-  public set inheritFromParent(value: boolean | cdktf.IResolvable) {
+  public set inheritFromParent(value: boolean | cdktn.IResolvable) {
     this._inheritFromParent = value;
   }
   public resetInheritFromParent() {
@@ -1556,11 +1556,11 @@ export class OrgPolicyPolicySpecOutputReference extends cdktf.ComplexObject {
   }
 
   // reset - computed: false, optional: true, required: false
-  private _reset?: boolean | cdktf.IResolvable; 
+  private _reset?: boolean | cdktn.IResolvable; 
   public get reset() {
     return this.getBooleanAttribute('reset');
   }
-  public set reset(value: boolean | cdktf.IResolvable) {
+  public set reset(value: boolean | cdktn.IResolvable) {
     this._reset = value;
   }
   public resetReset() {
@@ -1581,7 +1581,7 @@ export class OrgPolicyPolicySpecOutputReference extends cdktf.ComplexObject {
   public get rules() {
     return this._rules;
   }
-  public putRules(value: OrgPolicyPolicySpecRules[] | cdktf.IResolvable) {
+  public putRules(value: OrgPolicyPolicySpecRules[] | cdktn.IResolvable) {
     this._rules.internalValue = value;
   }
   public resetRules() {
@@ -1607,39 +1607,39 @@ export interface OrgPolicyPolicyTimeouts {
   readonly update?: string;
 }
 
-export function orgPolicyPolicyTimeoutsToTerraform(struct?: OrgPolicyPolicyTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function orgPolicyPolicyTimeoutsToTerraform(struct?: OrgPolicyPolicyTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    create: cdktf.stringToTerraform(struct!.create),
-    delete: cdktf.stringToTerraform(struct!.delete),
-    update: cdktf.stringToTerraform(struct!.update),
+    create: cdktn.stringToTerraform(struct!.create),
+    delete: cdktn.stringToTerraform(struct!.delete),
+    update: cdktn.stringToTerraform(struct!.update),
   }
 }
 
 
-export function orgPolicyPolicyTimeoutsToHclTerraform(struct?: OrgPolicyPolicyTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function orgPolicyPolicyTimeoutsToHclTerraform(struct?: OrgPolicyPolicyTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     create: {
-      value: cdktf.stringToHclTerraform(struct!.create),
+      value: cdktn.stringToHclTerraform(struct!.create),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     delete: {
-      value: cdktf.stringToHclTerraform(struct!.delete),
+      value: cdktn.stringToHclTerraform(struct!.delete),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     update: {
-      value: cdktf.stringToHclTerraform(struct!.update),
+      value: cdktn.stringToHclTerraform(struct!.update),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -1650,19 +1650,19 @@ export function orgPolicyPolicyTimeoutsToHclTerraform(struct?: OrgPolicyPolicyTi
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class OrgPolicyPolicyTimeoutsOutputReference extends cdktf.ComplexObject {
+export class OrgPolicyPolicyTimeoutsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): OrgPolicyPolicyTimeouts | cdktf.IResolvable | undefined {
+  public get internalValue(): OrgPolicyPolicyTimeouts | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -1683,7 +1683,7 @@ export class OrgPolicyPolicyTimeoutsOutputReference extends cdktf.ComplexObject 
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: OrgPolicyPolicyTimeouts | cdktf.IResolvable | undefined) {
+  public set internalValue(value: OrgPolicyPolicyTimeouts | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -1691,7 +1691,7 @@ export class OrgPolicyPolicyTimeoutsOutputReference extends cdktf.ComplexObject 
       this._delete = undefined;
       this._update = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -1756,7 +1756,7 @@ export class OrgPolicyPolicyTimeoutsOutputReference extends cdktf.ComplexObject 
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/org_policy_policy google_org_policy_policy}
 */
-export class OrgPolicyPolicy extends cdktf.TerraformResource {
+export class OrgPolicyPolicy extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -1767,14 +1767,14 @@ export class OrgPolicyPolicy extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a OrgPolicyPolicy resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a OrgPolicyPolicy resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the OrgPolicyPolicy to import
   * @param importFromId The id of the existing OrgPolicyPolicy that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/org_policy_policy#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the OrgPolicyPolicy to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "google_org_policy_policy", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "google_org_policy_policy", importId: importFromId, provider });
       }
 
   // ===========
@@ -1917,9 +1917,9 @@ export class OrgPolicyPolicy extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      id: cdktf.stringToTerraform(this._id),
-      name: cdktf.stringToTerraform(this._name),
-      parent: cdktf.stringToTerraform(this._parent),
+      id: cdktn.stringToTerraform(this._id),
+      name: cdktn.stringToTerraform(this._name),
+      parent: cdktn.stringToTerraform(this._parent),
       dry_run_spec: orgPolicyPolicyDryRunSpecToTerraform(this._dryRunSpec.internalValue),
       spec: orgPolicyPolicySpecToTerraform(this._spec.internalValue),
       timeouts: orgPolicyPolicyTimeoutsToTerraform(this._timeouts.internalValue),
@@ -1929,19 +1929,19 @@ export class OrgPolicyPolicy extends cdktf.TerraformResource {
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       name: {
-        value: cdktf.stringToHclTerraform(this._name),
+        value: cdktn.stringToHclTerraform(this._name),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       parent: {
-        value: cdktf.stringToHclTerraform(this._parent),
+        value: cdktn.stringToHclTerraform(this._parent),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

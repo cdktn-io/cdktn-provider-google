@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface DialogflowEntityTypeConfig extends cdktf.TerraformMetaArguments {
+export interface DialogflowEntityTypeConfig extends cdktn.TerraformMetaArguments {
   /**
   * The name of this entity type to be displayed on the console.
   *
@@ -23,7 +23,7 @@ export interface DialogflowEntityTypeConfig extends cdktf.TerraformMetaArguments
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/dialogflow_entity_type#enable_fuzzy_extraction DialogflowEntityType#enable_fuzzy_extraction}
   */
-  readonly enableFuzzyExtraction?: boolean | cdktf.IResolvable;
+  readonly enableFuzzyExtraction?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/dialogflow_entity_type#id DialogflowEntityType#id}
   *
@@ -50,7 +50,7 @@ export interface DialogflowEntityTypeConfig extends cdktf.TerraformMetaArguments
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/dialogflow_entity_type#entities DialogflowEntityType#entities}
   */
-  readonly entities?: DialogflowEntityTypeEntities[] | cdktf.IResolvable;
+  readonly entities?: DialogflowEntityTypeEntities[] | cdktn.IResolvable;
   /**
   * timeouts block
   *
@@ -81,32 +81,32 @@ export interface DialogflowEntityTypeEntities {
   readonly value: string;
 }
 
-export function dialogflowEntityTypeEntitiesToTerraform(struct?: DialogflowEntityTypeEntities | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function dialogflowEntityTypeEntitiesToTerraform(struct?: DialogflowEntityTypeEntities | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    synonyms: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.synonyms),
-    value: cdktf.stringToTerraform(struct!.value),
+    synonyms: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.synonyms),
+    value: cdktn.stringToTerraform(struct!.value),
   }
 }
 
 
-export function dialogflowEntityTypeEntitiesToHclTerraform(struct?: DialogflowEntityTypeEntities | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function dialogflowEntityTypeEntitiesToHclTerraform(struct?: DialogflowEntityTypeEntities | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     synonyms: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.synonyms),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.synonyms),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
     },
     value: {
-      value: cdktf.stringToHclTerraform(struct!.value),
+      value: cdktn.stringToHclTerraform(struct!.value),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -117,9 +117,9 @@ export function dialogflowEntityTypeEntitiesToHclTerraform(struct?: DialogflowEn
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class DialogflowEntityTypeEntitiesOutputReference extends cdktf.ComplexObject {
+export class DialogflowEntityTypeEntitiesOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -127,11 +127,11 @@ export class DialogflowEntityTypeEntitiesOutputReference extends cdktf.ComplexOb
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): DialogflowEntityTypeEntities | cdktf.IResolvable | undefined {
+  public get internalValue(): DialogflowEntityTypeEntities | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -148,14 +148,14 @@ export class DialogflowEntityTypeEntitiesOutputReference extends cdktf.ComplexOb
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: DialogflowEntityTypeEntities | cdktf.IResolvable | undefined) {
+  public set internalValue(value: DialogflowEntityTypeEntities | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._synonyms = undefined;
       this._value = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -194,15 +194,15 @@ export class DialogflowEntityTypeEntitiesOutputReference extends cdktf.ComplexOb
   }
 }
 
-export class DialogflowEntityTypeEntitiesList extends cdktf.ComplexList {
-  public internalValue? : DialogflowEntityTypeEntities[] | cdktf.IResolvable
+export class DialogflowEntityTypeEntitiesList extends cdktn.ComplexList {
+  public internalValue? : DialogflowEntityTypeEntities[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -228,39 +228,39 @@ export interface DialogflowEntityTypeTimeouts {
   readonly update?: string;
 }
 
-export function dialogflowEntityTypeTimeoutsToTerraform(struct?: DialogflowEntityTypeTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function dialogflowEntityTypeTimeoutsToTerraform(struct?: DialogflowEntityTypeTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    create: cdktf.stringToTerraform(struct!.create),
-    delete: cdktf.stringToTerraform(struct!.delete),
-    update: cdktf.stringToTerraform(struct!.update),
+    create: cdktn.stringToTerraform(struct!.create),
+    delete: cdktn.stringToTerraform(struct!.delete),
+    update: cdktn.stringToTerraform(struct!.update),
   }
 }
 
 
-export function dialogflowEntityTypeTimeoutsToHclTerraform(struct?: DialogflowEntityTypeTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function dialogflowEntityTypeTimeoutsToHclTerraform(struct?: DialogflowEntityTypeTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     create: {
-      value: cdktf.stringToHclTerraform(struct!.create),
+      value: cdktn.stringToHclTerraform(struct!.create),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     delete: {
-      value: cdktf.stringToHclTerraform(struct!.delete),
+      value: cdktn.stringToHclTerraform(struct!.delete),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     update: {
-      value: cdktf.stringToHclTerraform(struct!.update),
+      value: cdktn.stringToHclTerraform(struct!.update),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -271,19 +271,19 @@ export function dialogflowEntityTypeTimeoutsToHclTerraform(struct?: DialogflowEn
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class DialogflowEntityTypeTimeoutsOutputReference extends cdktf.ComplexObject {
+export class DialogflowEntityTypeTimeoutsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): DialogflowEntityTypeTimeouts | cdktf.IResolvable | undefined {
+  public get internalValue(): DialogflowEntityTypeTimeouts | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -304,7 +304,7 @@ export class DialogflowEntityTypeTimeoutsOutputReference extends cdktf.ComplexOb
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: DialogflowEntityTypeTimeouts | cdktf.IResolvable | undefined) {
+  public set internalValue(value: DialogflowEntityTypeTimeouts | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -312,7 +312,7 @@ export class DialogflowEntityTypeTimeoutsOutputReference extends cdktf.ComplexOb
       this._delete = undefined;
       this._update = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -377,7 +377,7 @@ export class DialogflowEntityTypeTimeoutsOutputReference extends cdktf.ComplexOb
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/dialogflow_entity_type google_dialogflow_entity_type}
 */
-export class DialogflowEntityType extends cdktf.TerraformResource {
+export class DialogflowEntityType extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -388,14 +388,14 @@ export class DialogflowEntityType extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a DialogflowEntityType resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a DialogflowEntityType resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DialogflowEntityType to import
   * @param importFromId The id of the existing DialogflowEntityType that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/dialogflow_entity_type#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DialogflowEntityType to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "google_dialogflow_entity_type", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "google_dialogflow_entity_type", importId: importFromId, provider });
       }
 
   // ===========
@@ -452,11 +452,11 @@ export class DialogflowEntityType extends cdktf.TerraformResource {
   }
 
   // enable_fuzzy_extraction - computed: false, optional: true, required: false
-  private _enableFuzzyExtraction?: boolean | cdktf.IResolvable; 
+  private _enableFuzzyExtraction?: boolean | cdktn.IResolvable; 
   public get enableFuzzyExtraction() {
     return this.getBooleanAttribute('enable_fuzzy_extraction');
   }
-  public set enableFuzzyExtraction(value: boolean | cdktf.IResolvable) {
+  public set enableFuzzyExtraction(value: boolean | cdktn.IResolvable) {
     this._enableFuzzyExtraction = value;
   }
   public resetEnableFuzzyExtraction() {
@@ -522,7 +522,7 @@ export class DialogflowEntityType extends cdktf.TerraformResource {
   public get entities() {
     return this._entities;
   }
-  public putEntities(value: DialogflowEntityTypeEntities[] | cdktf.IResolvable) {
+  public putEntities(value: DialogflowEntityTypeEntities[] | cdktn.IResolvable) {
     this._entities.internalValue = value;
   }
   public resetEntities() {
@@ -555,12 +555,12 @@ export class DialogflowEntityType extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      display_name: cdktf.stringToTerraform(this._displayName),
-      enable_fuzzy_extraction: cdktf.booleanToTerraform(this._enableFuzzyExtraction),
-      id: cdktf.stringToTerraform(this._id),
-      kind: cdktf.stringToTerraform(this._kind),
-      project: cdktf.stringToTerraform(this._project),
-      entities: cdktf.listMapper(dialogflowEntityTypeEntitiesToTerraform, true)(this._entities.internalValue),
+      display_name: cdktn.stringToTerraform(this._displayName),
+      enable_fuzzy_extraction: cdktn.booleanToTerraform(this._enableFuzzyExtraction),
+      id: cdktn.stringToTerraform(this._id),
+      kind: cdktn.stringToTerraform(this._kind),
+      project: cdktn.stringToTerraform(this._project),
+      entities: cdktn.listMapper(dialogflowEntityTypeEntitiesToTerraform, true)(this._entities.internalValue),
       timeouts: dialogflowEntityTypeTimeoutsToTerraform(this._timeouts.internalValue),
     };
   }
@@ -568,37 +568,37 @@ export class DialogflowEntityType extends cdktf.TerraformResource {
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       display_name: {
-        value: cdktf.stringToHclTerraform(this._displayName),
+        value: cdktn.stringToHclTerraform(this._displayName),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       enable_fuzzy_extraction: {
-        value: cdktf.booleanToHclTerraform(this._enableFuzzyExtraction),
+        value: cdktn.booleanToHclTerraform(this._enableFuzzyExtraction),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       kind: {
-        value: cdktf.stringToHclTerraform(this._kind),
+        value: cdktn.stringToHclTerraform(this._kind),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       project: {
-        value: cdktf.stringToHclTerraform(this._project),
+        value: cdktn.stringToHclTerraform(this._project),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       entities: {
-        value: cdktf.listMapperHcl(dialogflowEntityTypeEntitiesToHclTerraform, true)(this._entities.internalValue),
+        value: cdktn.listMapperHcl(dialogflowEntityTypeEntitiesToHclTerraform, true)(this._entities.internalValue),
         isBlock: true,
         type: "list",
         storageClassType: "DialogflowEntityTypeEntitiesList",

@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface BigqueryDatapolicyDataPolicyConfig extends cdktf.TerraformMetaArguments {
+export interface BigqueryDatapolicyDataPolicyConfig extends cdktn.TerraformMetaArguments {
   /**
   * User-assigned (human readable) ID of the data policy that needs to be unique within a project. Used as {dataPolicyId} in part of the resource name.
   *
@@ -76,31 +76,31 @@ export interface BigqueryDatapolicyDataPolicyDataMaskingPolicy {
 }
 
 export function bigqueryDatapolicyDataPolicyDataMaskingPolicyToTerraform(struct?: BigqueryDatapolicyDataPolicyDataMaskingPolicyOutputReference | BigqueryDatapolicyDataPolicyDataMaskingPolicy): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    predefined_expression: cdktf.stringToTerraform(struct!.predefinedExpression),
-    routine: cdktf.stringToTerraform(struct!.routine),
+    predefined_expression: cdktn.stringToTerraform(struct!.predefinedExpression),
+    routine: cdktn.stringToTerraform(struct!.routine),
   }
 }
 
 
 export function bigqueryDatapolicyDataPolicyDataMaskingPolicyToHclTerraform(struct?: BigqueryDatapolicyDataPolicyDataMaskingPolicyOutputReference | BigqueryDatapolicyDataPolicyDataMaskingPolicy): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     predefined_expression: {
-      value: cdktf.stringToHclTerraform(struct!.predefinedExpression),
+      value: cdktn.stringToHclTerraform(struct!.predefinedExpression),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     routine: {
-      value: cdktf.stringToHclTerraform(struct!.routine),
+      value: cdktn.stringToHclTerraform(struct!.routine),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -111,14 +111,14 @@ export function bigqueryDatapolicyDataPolicyDataMaskingPolicyToHclTerraform(stru
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class BigqueryDatapolicyDataPolicyDataMaskingPolicyOutputReference extends cdktf.ComplexObject {
+export class BigqueryDatapolicyDataPolicyDataMaskingPolicyOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -196,39 +196,39 @@ export interface BigqueryDatapolicyDataPolicyTimeouts {
   readonly update?: string;
 }
 
-export function bigqueryDatapolicyDataPolicyTimeoutsToTerraform(struct?: BigqueryDatapolicyDataPolicyTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function bigqueryDatapolicyDataPolicyTimeoutsToTerraform(struct?: BigqueryDatapolicyDataPolicyTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    create: cdktf.stringToTerraform(struct!.create),
-    delete: cdktf.stringToTerraform(struct!.delete),
-    update: cdktf.stringToTerraform(struct!.update),
+    create: cdktn.stringToTerraform(struct!.create),
+    delete: cdktn.stringToTerraform(struct!.delete),
+    update: cdktn.stringToTerraform(struct!.update),
   }
 }
 
 
-export function bigqueryDatapolicyDataPolicyTimeoutsToHclTerraform(struct?: BigqueryDatapolicyDataPolicyTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function bigqueryDatapolicyDataPolicyTimeoutsToHclTerraform(struct?: BigqueryDatapolicyDataPolicyTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     create: {
-      value: cdktf.stringToHclTerraform(struct!.create),
+      value: cdktn.stringToHclTerraform(struct!.create),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     delete: {
-      value: cdktf.stringToHclTerraform(struct!.delete),
+      value: cdktn.stringToHclTerraform(struct!.delete),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     update: {
-      value: cdktf.stringToHclTerraform(struct!.update),
+      value: cdktn.stringToHclTerraform(struct!.update),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -239,19 +239,19 @@ export function bigqueryDatapolicyDataPolicyTimeoutsToHclTerraform(struct?: Bigq
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class BigqueryDatapolicyDataPolicyTimeoutsOutputReference extends cdktf.ComplexObject {
+export class BigqueryDatapolicyDataPolicyTimeoutsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): BigqueryDatapolicyDataPolicyTimeouts | cdktf.IResolvable | undefined {
+  public get internalValue(): BigqueryDatapolicyDataPolicyTimeouts | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -272,7 +272,7 @@ export class BigqueryDatapolicyDataPolicyTimeoutsOutputReference extends cdktf.C
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: BigqueryDatapolicyDataPolicyTimeouts | cdktf.IResolvable | undefined) {
+  public set internalValue(value: BigqueryDatapolicyDataPolicyTimeouts | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -280,7 +280,7 @@ export class BigqueryDatapolicyDataPolicyTimeoutsOutputReference extends cdktf.C
       this._delete = undefined;
       this._update = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -345,7 +345,7 @@ export class BigqueryDatapolicyDataPolicyTimeoutsOutputReference extends cdktf.C
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/bigquery_datapolicy_data_policy google_bigquery_datapolicy_data_policy}
 */
-export class BigqueryDatapolicyDataPolicy extends cdktf.TerraformResource {
+export class BigqueryDatapolicyDataPolicy extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -356,14 +356,14 @@ export class BigqueryDatapolicyDataPolicy extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a BigqueryDatapolicyDataPolicy resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a BigqueryDatapolicyDataPolicy resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the BigqueryDatapolicyDataPolicy to import
   * @param importFromId The id of the existing BigqueryDatapolicyDataPolicy that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/bigquery_datapolicy_data_policy#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the BigqueryDatapolicyDataPolicy to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "google_bigquery_datapolicy_data_policy", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "google_bigquery_datapolicy_data_policy", importId: importFromId, provider });
       }
 
   // ===========
@@ -534,12 +534,12 @@ export class BigqueryDatapolicyDataPolicy extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      data_policy_id: cdktf.stringToTerraform(this._dataPolicyId),
-      data_policy_type: cdktf.stringToTerraform(this._dataPolicyType),
-      id: cdktf.stringToTerraform(this._id),
-      location: cdktf.stringToTerraform(this._location),
-      policy_tag: cdktf.stringToTerraform(this._policyTag),
-      project: cdktf.stringToTerraform(this._project),
+      data_policy_id: cdktn.stringToTerraform(this._dataPolicyId),
+      data_policy_type: cdktn.stringToTerraform(this._dataPolicyType),
+      id: cdktn.stringToTerraform(this._id),
+      location: cdktn.stringToTerraform(this._location),
+      policy_tag: cdktn.stringToTerraform(this._policyTag),
+      project: cdktn.stringToTerraform(this._project),
       data_masking_policy: bigqueryDatapolicyDataPolicyDataMaskingPolicyToTerraform(this._dataMaskingPolicy.internalValue),
       timeouts: bigqueryDatapolicyDataPolicyTimeoutsToTerraform(this._timeouts.internalValue),
     };
@@ -548,37 +548,37 @@ export class BigqueryDatapolicyDataPolicy extends cdktf.TerraformResource {
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       data_policy_id: {
-        value: cdktf.stringToHclTerraform(this._dataPolicyId),
+        value: cdktn.stringToHclTerraform(this._dataPolicyId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       data_policy_type: {
-        value: cdktf.stringToHclTerraform(this._dataPolicyType),
+        value: cdktn.stringToHclTerraform(this._dataPolicyType),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       location: {
-        value: cdktf.stringToHclTerraform(this._location),
+        value: cdktn.stringToHclTerraform(this._location),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       policy_tag: {
-        value: cdktf.stringToHclTerraform(this._policyTag),
+        value: cdktn.stringToHclTerraform(this._policyTag),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       project: {
-        value: cdktf.stringToHclTerraform(this._project),
+        value: cdktn.stringToHclTerraform(this._project),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

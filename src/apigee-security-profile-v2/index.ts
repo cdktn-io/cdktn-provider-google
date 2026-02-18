@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface ApigeeSecurityProfileV2Config extends cdktf.TerraformMetaArguments {
+export interface ApigeeSecurityProfileV2Config extends cdktn.TerraformMetaArguments {
   /**
   * Description of the security profile.
   *
@@ -43,7 +43,7 @@ export interface ApigeeSecurityProfileV2Config extends cdktf.TerraformMetaArgume
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/apigee_security_profile_v2#profile_assessment_configs ApigeeSecurityProfileV2#profile_assessment_configs}
   */
-  readonly profileAssessmentConfigs: ApigeeSecurityProfileV2ProfileAssessmentConfigs[] | cdktf.IResolvable;
+  readonly profileAssessmentConfigs: ApigeeSecurityProfileV2ProfileAssessmentConfigs[] | cdktn.IResolvable;
   /**
   * timeouts block
   *
@@ -64,32 +64,32 @@ export interface ApigeeSecurityProfileV2ProfileAssessmentConfigs {
   readonly weight: string;
 }
 
-export function apigeeSecurityProfileV2ProfileAssessmentConfigsToTerraform(struct?: ApigeeSecurityProfileV2ProfileAssessmentConfigs | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function apigeeSecurityProfileV2ProfileAssessmentConfigsToTerraform(struct?: ApigeeSecurityProfileV2ProfileAssessmentConfigs | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    assessment: cdktf.stringToTerraform(struct!.assessment),
-    weight: cdktf.stringToTerraform(struct!.weight),
+    assessment: cdktn.stringToTerraform(struct!.assessment),
+    weight: cdktn.stringToTerraform(struct!.weight),
   }
 }
 
 
-export function apigeeSecurityProfileV2ProfileAssessmentConfigsToHclTerraform(struct?: ApigeeSecurityProfileV2ProfileAssessmentConfigs | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function apigeeSecurityProfileV2ProfileAssessmentConfigsToHclTerraform(struct?: ApigeeSecurityProfileV2ProfileAssessmentConfigs | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     assessment: {
-      value: cdktf.stringToHclTerraform(struct!.assessment),
+      value: cdktn.stringToHclTerraform(struct!.assessment),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     weight: {
-      value: cdktf.stringToHclTerraform(struct!.weight),
+      value: cdktn.stringToHclTerraform(struct!.weight),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -100,9 +100,9 @@ export function apigeeSecurityProfileV2ProfileAssessmentConfigsToHclTerraform(st
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class ApigeeSecurityProfileV2ProfileAssessmentConfigsOutputReference extends cdktf.ComplexObject {
+export class ApigeeSecurityProfileV2ProfileAssessmentConfigsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -110,11 +110,11 @@ export class ApigeeSecurityProfileV2ProfileAssessmentConfigsOutputReference exte
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): ApigeeSecurityProfileV2ProfileAssessmentConfigs | cdktf.IResolvable | undefined {
+  public get internalValue(): ApigeeSecurityProfileV2ProfileAssessmentConfigs | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -131,14 +131,14 @@ export class ApigeeSecurityProfileV2ProfileAssessmentConfigsOutputReference exte
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: ApigeeSecurityProfileV2ProfileAssessmentConfigs | cdktf.IResolvable | undefined) {
+  public set internalValue(value: ApigeeSecurityProfileV2ProfileAssessmentConfigs | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._assessment = undefined;
       this._weight = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -177,15 +177,15 @@ export class ApigeeSecurityProfileV2ProfileAssessmentConfigsOutputReference exte
   }
 }
 
-export class ApigeeSecurityProfileV2ProfileAssessmentConfigsList extends cdktf.ComplexList {
-  public internalValue? : ApigeeSecurityProfileV2ProfileAssessmentConfigs[] | cdktf.IResolvable
+export class ApigeeSecurityProfileV2ProfileAssessmentConfigsList extends cdktn.ComplexList {
+  public internalValue? : ApigeeSecurityProfileV2ProfileAssessmentConfigs[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -211,39 +211,39 @@ export interface ApigeeSecurityProfileV2Timeouts {
   readonly update?: string;
 }
 
-export function apigeeSecurityProfileV2TimeoutsToTerraform(struct?: ApigeeSecurityProfileV2Timeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function apigeeSecurityProfileV2TimeoutsToTerraform(struct?: ApigeeSecurityProfileV2Timeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    create: cdktf.stringToTerraform(struct!.create),
-    delete: cdktf.stringToTerraform(struct!.delete),
-    update: cdktf.stringToTerraform(struct!.update),
+    create: cdktn.stringToTerraform(struct!.create),
+    delete: cdktn.stringToTerraform(struct!.delete),
+    update: cdktn.stringToTerraform(struct!.update),
   }
 }
 
 
-export function apigeeSecurityProfileV2TimeoutsToHclTerraform(struct?: ApigeeSecurityProfileV2Timeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function apigeeSecurityProfileV2TimeoutsToHclTerraform(struct?: ApigeeSecurityProfileV2Timeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     create: {
-      value: cdktf.stringToHclTerraform(struct!.create),
+      value: cdktn.stringToHclTerraform(struct!.create),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     delete: {
-      value: cdktf.stringToHclTerraform(struct!.delete),
+      value: cdktn.stringToHclTerraform(struct!.delete),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     update: {
-      value: cdktf.stringToHclTerraform(struct!.update),
+      value: cdktn.stringToHclTerraform(struct!.update),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -254,19 +254,19 @@ export function apigeeSecurityProfileV2TimeoutsToHclTerraform(struct?: ApigeeSec
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class ApigeeSecurityProfileV2TimeoutsOutputReference extends cdktf.ComplexObject {
+export class ApigeeSecurityProfileV2TimeoutsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): ApigeeSecurityProfileV2Timeouts | cdktf.IResolvable | undefined {
+  public get internalValue(): ApigeeSecurityProfileV2Timeouts | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -287,7 +287,7 @@ export class ApigeeSecurityProfileV2TimeoutsOutputReference extends cdktf.Comple
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: ApigeeSecurityProfileV2Timeouts | cdktf.IResolvable | undefined) {
+  public set internalValue(value: ApigeeSecurityProfileV2Timeouts | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -295,7 +295,7 @@ export class ApigeeSecurityProfileV2TimeoutsOutputReference extends cdktf.Comple
       this._delete = undefined;
       this._update = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -360,7 +360,7 @@ export class ApigeeSecurityProfileV2TimeoutsOutputReference extends cdktf.Comple
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/apigee_security_profile_v2 google_apigee_security_profile_v2}
 */
-export class ApigeeSecurityProfileV2 extends cdktf.TerraformResource {
+export class ApigeeSecurityProfileV2 extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -371,14 +371,14 @@ export class ApigeeSecurityProfileV2 extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a ApigeeSecurityProfileV2 resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a ApigeeSecurityProfileV2 resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the ApigeeSecurityProfileV2 to import
   * @param importFromId The id of the existing ApigeeSecurityProfileV2 that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/apigee_security_profile_v2#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the ApigeeSecurityProfileV2 to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "google_apigee_security_profile_v2", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "google_apigee_security_profile_v2", importId: importFromId, provider });
       }
 
   // ===========
@@ -498,7 +498,7 @@ export class ApigeeSecurityProfileV2 extends cdktf.TerraformResource {
   public get profileAssessmentConfigs() {
     return this._profileAssessmentConfigs;
   }
-  public putProfileAssessmentConfigs(value: ApigeeSecurityProfileV2ProfileAssessmentConfigs[] | cdktf.IResolvable) {
+  public putProfileAssessmentConfigs(value: ApigeeSecurityProfileV2ProfileAssessmentConfigs[] | cdktn.IResolvable) {
     this._profileAssessmentConfigs.internalValue = value;
   }
   // Temporarily expose input value. Use with caution.
@@ -528,11 +528,11 @@ export class ApigeeSecurityProfileV2 extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      description: cdktf.stringToTerraform(this._description),
-      id: cdktf.stringToTerraform(this._id),
-      org_id: cdktf.stringToTerraform(this._orgId),
-      profile_id: cdktf.stringToTerraform(this._profileId),
-      profile_assessment_configs: cdktf.listMapper(apigeeSecurityProfileV2ProfileAssessmentConfigsToTerraform, true)(this._profileAssessmentConfigs.internalValue),
+      description: cdktn.stringToTerraform(this._description),
+      id: cdktn.stringToTerraform(this._id),
+      org_id: cdktn.stringToTerraform(this._orgId),
+      profile_id: cdktn.stringToTerraform(this._profileId),
+      profile_assessment_configs: cdktn.listMapper(apigeeSecurityProfileV2ProfileAssessmentConfigsToTerraform, true)(this._profileAssessmentConfigs.internalValue),
       timeouts: apigeeSecurityProfileV2TimeoutsToTerraform(this._timeouts.internalValue),
     };
   }
@@ -540,31 +540,31 @@ export class ApigeeSecurityProfileV2 extends cdktf.TerraformResource {
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       description: {
-        value: cdktf.stringToHclTerraform(this._description),
+        value: cdktn.stringToHclTerraform(this._description),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       org_id: {
-        value: cdktf.stringToHclTerraform(this._orgId),
+        value: cdktn.stringToHclTerraform(this._orgId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       profile_id: {
-        value: cdktf.stringToHclTerraform(this._profileId),
+        value: cdktn.stringToHclTerraform(this._profileId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       profile_assessment_configs: {
-        value: cdktf.listMapperHcl(apigeeSecurityProfileV2ProfileAssessmentConfigsToHclTerraform, true)(this._profileAssessmentConfigs.internalValue),
+        value: cdktn.listMapperHcl(apigeeSecurityProfileV2ProfileAssessmentConfigsToHclTerraform, true)(this._profileAssessmentConfigs.internalValue),
         isBlock: true,
         type: "set",
         storageClassType: "ApigeeSecurityProfileV2ProfileAssessmentConfigsList",

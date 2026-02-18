@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface FirestoreDatabaseConfig extends cdktf.TerraformMetaArguments {
+export interface FirestoreDatabaseConfig extends cdktn.TerraformMetaArguments {
   /**
   * The App Engine integration mode to use for this database. Possible values: ["ENABLED", "DISABLED"]
   *
@@ -142,24 +142,24 @@ export interface FirestoreDatabaseCmekConfig {
 }
 
 export function firestoreDatabaseCmekConfigToTerraform(struct?: FirestoreDatabaseCmekConfigOutputReference | FirestoreDatabaseCmekConfig): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    kms_key_name: cdktf.stringToTerraform(struct!.kmsKeyName),
+    kms_key_name: cdktn.stringToTerraform(struct!.kmsKeyName),
   }
 }
 
 
 export function firestoreDatabaseCmekConfigToHclTerraform(struct?: FirestoreDatabaseCmekConfigOutputReference | FirestoreDatabaseCmekConfig): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     kms_key_name: {
-      value: cdktf.stringToHclTerraform(struct!.kmsKeyName),
+      value: cdktn.stringToHclTerraform(struct!.kmsKeyName),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -170,14 +170,14 @@ export function firestoreDatabaseCmekConfigToHclTerraform(struct?: FirestoreData
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class FirestoreDatabaseCmekConfigOutputReference extends cdktf.ComplexObject {
+export class FirestoreDatabaseCmekConfigOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -235,39 +235,39 @@ export interface FirestoreDatabaseTimeouts {
   readonly update?: string;
 }
 
-export function firestoreDatabaseTimeoutsToTerraform(struct?: FirestoreDatabaseTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function firestoreDatabaseTimeoutsToTerraform(struct?: FirestoreDatabaseTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    create: cdktf.stringToTerraform(struct!.create),
-    delete: cdktf.stringToTerraform(struct!.delete),
-    update: cdktf.stringToTerraform(struct!.update),
+    create: cdktn.stringToTerraform(struct!.create),
+    delete: cdktn.stringToTerraform(struct!.delete),
+    update: cdktn.stringToTerraform(struct!.update),
   }
 }
 
 
-export function firestoreDatabaseTimeoutsToHclTerraform(struct?: FirestoreDatabaseTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function firestoreDatabaseTimeoutsToHclTerraform(struct?: FirestoreDatabaseTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     create: {
-      value: cdktf.stringToHclTerraform(struct!.create),
+      value: cdktn.stringToHclTerraform(struct!.create),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     delete: {
-      value: cdktf.stringToHclTerraform(struct!.delete),
+      value: cdktn.stringToHclTerraform(struct!.delete),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     update: {
-      value: cdktf.stringToHclTerraform(struct!.update),
+      value: cdktn.stringToHclTerraform(struct!.update),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -278,19 +278,19 @@ export function firestoreDatabaseTimeoutsToHclTerraform(struct?: FirestoreDataba
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class FirestoreDatabaseTimeoutsOutputReference extends cdktf.ComplexObject {
+export class FirestoreDatabaseTimeoutsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): FirestoreDatabaseTimeouts | cdktf.IResolvable | undefined {
+  public get internalValue(): FirestoreDatabaseTimeouts | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -311,7 +311,7 @@ export class FirestoreDatabaseTimeoutsOutputReference extends cdktf.ComplexObjec
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: FirestoreDatabaseTimeouts | cdktf.IResolvable | undefined) {
+  public set internalValue(value: FirestoreDatabaseTimeouts | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -319,7 +319,7 @@ export class FirestoreDatabaseTimeoutsOutputReference extends cdktf.ComplexObjec
       this._delete = undefined;
       this._update = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -384,7 +384,7 @@ export class FirestoreDatabaseTimeoutsOutputReference extends cdktf.ComplexObjec
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/firestore_database google_firestore_database}
 */
-export class FirestoreDatabase extends cdktf.TerraformResource {
+export class FirestoreDatabase extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -395,14 +395,14 @@ export class FirestoreDatabase extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a FirestoreDatabase resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a FirestoreDatabase resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the FirestoreDatabase to import
   * @param importFromId The id of the existing FirestoreDatabase that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/firestore_database#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the FirestoreDatabase to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "google_firestore_database", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "google_firestore_database", importId: importFromId, provider });
       }
 
   // ===========
@@ -708,18 +708,18 @@ export class FirestoreDatabase extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      app_engine_integration_mode: cdktf.stringToTerraform(this._appEngineIntegrationMode),
-      concurrency_mode: cdktf.stringToTerraform(this._concurrencyMode),
-      database_edition: cdktf.stringToTerraform(this._databaseEdition),
-      delete_protection_state: cdktf.stringToTerraform(this._deleteProtectionState),
-      deletion_policy: cdktf.stringToTerraform(this._deletionPolicy),
-      id: cdktf.stringToTerraform(this._id),
-      location_id: cdktf.stringToTerraform(this._locationId),
-      name: cdktf.stringToTerraform(this._name),
-      point_in_time_recovery_enablement: cdktf.stringToTerraform(this._pointInTimeRecoveryEnablement),
-      project: cdktf.stringToTerraform(this._project),
-      tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
-      type: cdktf.stringToTerraform(this._type),
+      app_engine_integration_mode: cdktn.stringToTerraform(this._appEngineIntegrationMode),
+      concurrency_mode: cdktn.stringToTerraform(this._concurrencyMode),
+      database_edition: cdktn.stringToTerraform(this._databaseEdition),
+      delete_protection_state: cdktn.stringToTerraform(this._deleteProtectionState),
+      deletion_policy: cdktn.stringToTerraform(this._deletionPolicy),
+      id: cdktn.stringToTerraform(this._id),
+      location_id: cdktn.stringToTerraform(this._locationId),
+      name: cdktn.stringToTerraform(this._name),
+      point_in_time_recovery_enablement: cdktn.stringToTerraform(this._pointInTimeRecoveryEnablement),
+      project: cdktn.stringToTerraform(this._project),
+      tags: cdktn.hashMapper(cdktn.stringToTerraform)(this._tags),
+      type: cdktn.stringToTerraform(this._type),
       cmek_config: firestoreDatabaseCmekConfigToTerraform(this._cmekConfig.internalValue),
       timeouts: firestoreDatabaseTimeoutsToTerraform(this._timeouts.internalValue),
     };
@@ -728,73 +728,73 @@ export class FirestoreDatabase extends cdktf.TerraformResource {
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       app_engine_integration_mode: {
-        value: cdktf.stringToHclTerraform(this._appEngineIntegrationMode),
+        value: cdktn.stringToHclTerraform(this._appEngineIntegrationMode),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       concurrency_mode: {
-        value: cdktf.stringToHclTerraform(this._concurrencyMode),
+        value: cdktn.stringToHclTerraform(this._concurrencyMode),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       database_edition: {
-        value: cdktf.stringToHclTerraform(this._databaseEdition),
+        value: cdktn.stringToHclTerraform(this._databaseEdition),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       delete_protection_state: {
-        value: cdktf.stringToHclTerraform(this._deleteProtectionState),
+        value: cdktn.stringToHclTerraform(this._deleteProtectionState),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       deletion_policy: {
-        value: cdktf.stringToHclTerraform(this._deletionPolicy),
+        value: cdktn.stringToHclTerraform(this._deletionPolicy),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       location_id: {
-        value: cdktf.stringToHclTerraform(this._locationId),
+        value: cdktn.stringToHclTerraform(this._locationId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       name: {
-        value: cdktf.stringToHclTerraform(this._name),
+        value: cdktn.stringToHclTerraform(this._name),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       point_in_time_recovery_enablement: {
-        value: cdktf.stringToHclTerraform(this._pointInTimeRecoveryEnablement),
+        value: cdktn.stringToHclTerraform(this._pointInTimeRecoveryEnablement),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       project: {
-        value: cdktf.stringToHclTerraform(this._project),
+        value: cdktn.stringToHclTerraform(this._project),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       tags: {
-        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tags),
+        value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(this._tags),
         isBlock: false,
         type: "map",
         storageClassType: "stringMap",
       },
       type: {
-        value: cdktf.stringToHclTerraform(this._type),
+        value: cdktn.stringToHclTerraform(this._type),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

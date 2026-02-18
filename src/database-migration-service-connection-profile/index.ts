@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface DatabaseMigrationServiceConnectionProfileConfig extends cdktf.TerraformMetaArguments {
+export interface DatabaseMigrationServiceConnectionProfileConfig extends cdktn.TerraformMetaArguments {
   /**
   * The ID of the connection profile.
   *
@@ -92,8 +92,8 @@ export interface DatabaseMigrationServiceConnectionProfileError {
 }
 
 export function databaseMigrationServiceConnectionProfileErrorToTerraform(struct?: DatabaseMigrationServiceConnectionProfileError): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -102,8 +102,8 @@ export function databaseMigrationServiceConnectionProfileErrorToTerraform(struct
 
 
 export function databaseMigrationServiceConnectionProfileErrorToHclTerraform(struct?: DatabaseMigrationServiceConnectionProfileError): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -111,7 +111,7 @@ export function databaseMigrationServiceConnectionProfileErrorToHclTerraform(str
   return attrs;
 }
 
-export class DatabaseMigrationServiceConnectionProfileErrorOutputReference extends cdktf.ComplexObject {
+export class DatabaseMigrationServiceConnectionProfileErrorOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -120,7 +120,7 @@ export class DatabaseMigrationServiceConnectionProfileErrorOutputReference exten
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -145,7 +145,7 @@ export class DatabaseMigrationServiceConnectionProfileErrorOutputReference exten
   }
 
   // details - computed: true, optional: false, required: false
-  private _details = new cdktf.StringMapList(this, "details", false);
+  private _details = new cdktn.StringMapList(this, "details", false);
   public get details() {
     return this._details;
   }
@@ -156,14 +156,14 @@ export class DatabaseMigrationServiceConnectionProfileErrorOutputReference exten
   }
 }
 
-export class DatabaseMigrationServiceConnectionProfileErrorList extends cdktf.ComplexList {
+export class DatabaseMigrationServiceConnectionProfileErrorList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -190,31 +190,31 @@ export interface DatabaseMigrationServiceConnectionProfileAlloydbSettingsInitial
 }
 
 export function databaseMigrationServiceConnectionProfileAlloydbSettingsInitialUserToTerraform(struct?: DatabaseMigrationServiceConnectionProfileAlloydbSettingsInitialUserOutputReference | DatabaseMigrationServiceConnectionProfileAlloydbSettingsInitialUser): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    password: cdktf.stringToTerraform(struct!.password),
-    user: cdktf.stringToTerraform(struct!.user),
+    password: cdktn.stringToTerraform(struct!.password),
+    user: cdktn.stringToTerraform(struct!.user),
   }
 }
 
 
 export function databaseMigrationServiceConnectionProfileAlloydbSettingsInitialUserToHclTerraform(struct?: DatabaseMigrationServiceConnectionProfileAlloydbSettingsInitialUserOutputReference | DatabaseMigrationServiceConnectionProfileAlloydbSettingsInitialUser): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     password: {
-      value: cdktf.stringToHclTerraform(struct!.password),
+      value: cdktn.stringToHclTerraform(struct!.password),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     user: {
-      value: cdktf.stringToHclTerraform(struct!.user),
+      value: cdktn.stringToHclTerraform(struct!.user),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -225,14 +225,14 @@ export function databaseMigrationServiceConnectionProfileAlloydbSettingsInitialU
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class DatabaseMigrationServiceConnectionProfileAlloydbSettingsInitialUserOutputReference extends cdktf.ComplexObject {
+export class DatabaseMigrationServiceConnectionProfileAlloydbSettingsInitialUserOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -304,24 +304,24 @@ export interface DatabaseMigrationServiceConnectionProfileAlloydbSettingsPrimary
 }
 
 export function databaseMigrationServiceConnectionProfileAlloydbSettingsPrimaryInstanceSettingsMachineConfigToTerraform(struct?: DatabaseMigrationServiceConnectionProfileAlloydbSettingsPrimaryInstanceSettingsMachineConfigOutputReference | DatabaseMigrationServiceConnectionProfileAlloydbSettingsPrimaryInstanceSettingsMachineConfig): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    cpu_count: cdktf.numberToTerraform(struct!.cpuCount),
+    cpu_count: cdktn.numberToTerraform(struct!.cpuCount),
   }
 }
 
 
 export function databaseMigrationServiceConnectionProfileAlloydbSettingsPrimaryInstanceSettingsMachineConfigToHclTerraform(struct?: DatabaseMigrationServiceConnectionProfileAlloydbSettingsPrimaryInstanceSettingsMachineConfigOutputReference | DatabaseMigrationServiceConnectionProfileAlloydbSettingsPrimaryInstanceSettingsMachineConfig): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     cpu_count: {
-      value: cdktf.numberToHclTerraform(struct!.cpuCount),
+      value: cdktn.numberToHclTerraform(struct!.cpuCount),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
@@ -332,14 +332,14 @@ export function databaseMigrationServiceConnectionProfileAlloydbSettingsPrimaryI
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class DatabaseMigrationServiceConnectionProfileAlloydbSettingsPrimaryInstanceSettingsMachineConfigOutputReference extends cdktf.ComplexObject {
+export class DatabaseMigrationServiceConnectionProfileAlloydbSettingsPrimaryInstanceSettingsMachineConfigOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -408,39 +408,39 @@ export interface DatabaseMigrationServiceConnectionProfileAlloydbSettingsPrimary
 }
 
 export function databaseMigrationServiceConnectionProfileAlloydbSettingsPrimaryInstanceSettingsToTerraform(struct?: DatabaseMigrationServiceConnectionProfileAlloydbSettingsPrimaryInstanceSettingsOutputReference | DatabaseMigrationServiceConnectionProfileAlloydbSettingsPrimaryInstanceSettings): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    database_flags: cdktf.hashMapper(cdktf.stringToTerraform)(struct!.databaseFlags),
-    id: cdktf.stringToTerraform(struct!.id),
-    labels: cdktf.hashMapper(cdktf.stringToTerraform)(struct!.labels),
+    database_flags: cdktn.hashMapper(cdktn.stringToTerraform)(struct!.databaseFlags),
+    id: cdktn.stringToTerraform(struct!.id),
+    labels: cdktn.hashMapper(cdktn.stringToTerraform)(struct!.labels),
     machine_config: databaseMigrationServiceConnectionProfileAlloydbSettingsPrimaryInstanceSettingsMachineConfigToTerraform(struct!.machineConfig),
   }
 }
 
 
 export function databaseMigrationServiceConnectionProfileAlloydbSettingsPrimaryInstanceSettingsToHclTerraform(struct?: DatabaseMigrationServiceConnectionProfileAlloydbSettingsPrimaryInstanceSettingsOutputReference | DatabaseMigrationServiceConnectionProfileAlloydbSettingsPrimaryInstanceSettings): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     database_flags: {
-      value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(struct!.databaseFlags),
+      value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(struct!.databaseFlags),
       isBlock: false,
       type: "map",
       storageClassType: "stringMap",
     },
     id: {
-      value: cdktf.stringToHclTerraform(struct!.id),
+      value: cdktn.stringToHclTerraform(struct!.id),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     labels: {
-      value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(struct!.labels),
+      value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(struct!.labels),
       isBlock: false,
       type: "map",
       storageClassType: "stringMap",
@@ -457,14 +457,14 @@ export function databaseMigrationServiceConnectionProfileAlloydbSettingsPrimaryI
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class DatabaseMigrationServiceConnectionProfileAlloydbSettingsPrimaryInstanceSettingsOutputReference extends cdktf.ComplexObject {
+export class DatabaseMigrationServiceConnectionProfileAlloydbSettingsPrimaryInstanceSettingsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -599,13 +599,13 @@ export interface DatabaseMigrationServiceConnectionProfileAlloydbSettings {
 }
 
 export function databaseMigrationServiceConnectionProfileAlloydbSettingsToTerraform(struct?: DatabaseMigrationServiceConnectionProfileAlloydbSettingsOutputReference | DatabaseMigrationServiceConnectionProfileAlloydbSettings): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    labels: cdktf.hashMapper(cdktf.stringToTerraform)(struct!.labels),
-    vpc_network: cdktf.stringToTerraform(struct!.vpcNetwork),
+    labels: cdktn.hashMapper(cdktn.stringToTerraform)(struct!.labels),
+    vpc_network: cdktn.stringToTerraform(struct!.vpcNetwork),
     initial_user: databaseMigrationServiceConnectionProfileAlloydbSettingsInitialUserToTerraform(struct!.initialUser),
     primary_instance_settings: databaseMigrationServiceConnectionProfileAlloydbSettingsPrimaryInstanceSettingsToTerraform(struct!.primaryInstanceSettings),
   }
@@ -613,19 +613,19 @@ export function databaseMigrationServiceConnectionProfileAlloydbSettingsToTerraf
 
 
 export function databaseMigrationServiceConnectionProfileAlloydbSettingsToHclTerraform(struct?: DatabaseMigrationServiceConnectionProfileAlloydbSettingsOutputReference | DatabaseMigrationServiceConnectionProfileAlloydbSettings): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     labels: {
-      value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(struct!.labels),
+      value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(struct!.labels),
       isBlock: false,
       type: "map",
       storageClassType: "stringMap",
     },
     vpc_network: {
-      value: cdktf.stringToHclTerraform(struct!.vpcNetwork),
+      value: cdktn.stringToHclTerraform(struct!.vpcNetwork),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -648,14 +648,14 @@ export function databaseMigrationServiceConnectionProfileAlloydbSettingsToHclTer
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class DatabaseMigrationServiceConnectionProfileAlloydbSettingsOutputReference extends cdktf.ComplexObject {
+export class DatabaseMigrationServiceConnectionProfileAlloydbSettingsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -772,25 +772,25 @@ export interface DatabaseMigrationServiceConnectionProfileAlloydb {
 }
 
 export function databaseMigrationServiceConnectionProfileAlloydbToTerraform(struct?: DatabaseMigrationServiceConnectionProfileAlloydbOutputReference | DatabaseMigrationServiceConnectionProfileAlloydb): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    cluster_id: cdktf.stringToTerraform(struct!.clusterId),
+    cluster_id: cdktn.stringToTerraform(struct!.clusterId),
     settings: databaseMigrationServiceConnectionProfileAlloydbSettingsToTerraform(struct!.settings),
   }
 }
 
 
 export function databaseMigrationServiceConnectionProfileAlloydbToHclTerraform(struct?: DatabaseMigrationServiceConnectionProfileAlloydbOutputReference | DatabaseMigrationServiceConnectionProfileAlloydb): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     cluster_id: {
-      value: cdktf.stringToHclTerraform(struct!.clusterId),
+      value: cdktn.stringToHclTerraform(struct!.clusterId),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -807,14 +807,14 @@ export function databaseMigrationServiceConnectionProfileAlloydbToHclTerraform(s
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class DatabaseMigrationServiceConnectionProfileAlloydbOutputReference extends cdktf.ComplexObject {
+export class DatabaseMigrationServiceConnectionProfileAlloydbOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -901,46 +901,46 @@ export interface DatabaseMigrationServiceConnectionProfileCloudsqlSettingsIpConf
   readonly value: string;
 }
 
-export function databaseMigrationServiceConnectionProfileCloudsqlSettingsIpConfigAuthorizedNetworksToTerraform(struct?: DatabaseMigrationServiceConnectionProfileCloudsqlSettingsIpConfigAuthorizedNetworks | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function databaseMigrationServiceConnectionProfileCloudsqlSettingsIpConfigAuthorizedNetworksToTerraform(struct?: DatabaseMigrationServiceConnectionProfileCloudsqlSettingsIpConfigAuthorizedNetworks | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    expire_time: cdktf.stringToTerraform(struct!.expireTime),
-    label: cdktf.stringToTerraform(struct!.label),
-    ttl: cdktf.stringToTerraform(struct!.ttl),
-    value: cdktf.stringToTerraform(struct!.value),
+    expire_time: cdktn.stringToTerraform(struct!.expireTime),
+    label: cdktn.stringToTerraform(struct!.label),
+    ttl: cdktn.stringToTerraform(struct!.ttl),
+    value: cdktn.stringToTerraform(struct!.value),
   }
 }
 
 
-export function databaseMigrationServiceConnectionProfileCloudsqlSettingsIpConfigAuthorizedNetworksToHclTerraform(struct?: DatabaseMigrationServiceConnectionProfileCloudsqlSettingsIpConfigAuthorizedNetworks | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function databaseMigrationServiceConnectionProfileCloudsqlSettingsIpConfigAuthorizedNetworksToHclTerraform(struct?: DatabaseMigrationServiceConnectionProfileCloudsqlSettingsIpConfigAuthorizedNetworks | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     expire_time: {
-      value: cdktf.stringToHclTerraform(struct!.expireTime),
+      value: cdktn.stringToHclTerraform(struct!.expireTime),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     label: {
-      value: cdktf.stringToHclTerraform(struct!.label),
+      value: cdktn.stringToHclTerraform(struct!.label),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     ttl: {
-      value: cdktf.stringToHclTerraform(struct!.ttl),
+      value: cdktn.stringToHclTerraform(struct!.ttl),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     value: {
-      value: cdktf.stringToHclTerraform(struct!.value),
+      value: cdktn.stringToHclTerraform(struct!.value),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -951,9 +951,9 @@ export function databaseMigrationServiceConnectionProfileCloudsqlSettingsIpConfi
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class DatabaseMigrationServiceConnectionProfileCloudsqlSettingsIpConfigAuthorizedNetworksOutputReference extends cdktf.ComplexObject {
+export class DatabaseMigrationServiceConnectionProfileCloudsqlSettingsIpConfigAuthorizedNetworksOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -961,11 +961,11 @@ export class DatabaseMigrationServiceConnectionProfileCloudsqlSettingsIpConfigAu
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): DatabaseMigrationServiceConnectionProfileCloudsqlSettingsIpConfigAuthorizedNetworks | cdktf.IResolvable | undefined {
+  public get internalValue(): DatabaseMigrationServiceConnectionProfileCloudsqlSettingsIpConfigAuthorizedNetworks | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -990,7 +990,7 @@ export class DatabaseMigrationServiceConnectionProfileCloudsqlSettingsIpConfigAu
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: DatabaseMigrationServiceConnectionProfileCloudsqlSettingsIpConfigAuthorizedNetworks | cdktf.IResolvable | undefined) {
+  public set internalValue(value: DatabaseMigrationServiceConnectionProfileCloudsqlSettingsIpConfigAuthorizedNetworks | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -999,7 +999,7 @@ export class DatabaseMigrationServiceConnectionProfileCloudsqlSettingsIpConfigAu
       this._ttl = undefined;
       this._value = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -1075,15 +1075,15 @@ export class DatabaseMigrationServiceConnectionProfileCloudsqlSettingsIpConfigAu
   }
 }
 
-export class DatabaseMigrationServiceConnectionProfileCloudsqlSettingsIpConfigAuthorizedNetworksList extends cdktf.ComplexList {
-  public internalValue? : DatabaseMigrationServiceConnectionProfileCloudsqlSettingsIpConfigAuthorizedNetworks[] | cdktf.IResolvable
+export class DatabaseMigrationServiceConnectionProfileCloudsqlSettingsIpConfigAuthorizedNetworksList extends cdktn.ComplexList {
+  public internalValue? : DatabaseMigrationServiceConnectionProfileCloudsqlSettingsIpConfigAuthorizedNetworks[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -1100,7 +1100,7 @@ export interface DatabaseMigrationServiceConnectionProfileCloudsqlSettingsIpConf
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/database_migration_service_connection_profile#enable_ipv4 DatabaseMigrationServiceConnectionProfile#enable_ipv4}
   */
-  readonly enableIpv4?: boolean | cdktf.IResolvable;
+  readonly enableIpv4?: boolean | cdktn.IResolvable;
   /**
   * The resource link for the VPC network from which the Cloud SQL instance is accessible for private IP. For example, projects/myProject/global/networks/default.
   * This setting can be updated, but it cannot be removed after it is set.
@@ -1113,55 +1113,55 @@ export interface DatabaseMigrationServiceConnectionProfileCloudsqlSettingsIpConf
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/database_migration_service_connection_profile#require_ssl DatabaseMigrationServiceConnectionProfile#require_ssl}
   */
-  readonly requireSsl?: boolean | cdktf.IResolvable;
+  readonly requireSsl?: boolean | cdktn.IResolvable;
   /**
   * authorized_networks block
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/database_migration_service_connection_profile#authorized_networks DatabaseMigrationServiceConnectionProfile#authorized_networks}
   */
-  readonly authorizedNetworks?: DatabaseMigrationServiceConnectionProfileCloudsqlSettingsIpConfigAuthorizedNetworks[] | cdktf.IResolvable;
+  readonly authorizedNetworks?: DatabaseMigrationServiceConnectionProfileCloudsqlSettingsIpConfigAuthorizedNetworks[] | cdktn.IResolvable;
 }
 
 export function databaseMigrationServiceConnectionProfileCloudsqlSettingsIpConfigToTerraform(struct?: DatabaseMigrationServiceConnectionProfileCloudsqlSettingsIpConfigOutputReference | DatabaseMigrationServiceConnectionProfileCloudsqlSettingsIpConfig): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    enable_ipv4: cdktf.booleanToTerraform(struct!.enableIpv4),
-    private_network: cdktf.stringToTerraform(struct!.privateNetwork),
-    require_ssl: cdktf.booleanToTerraform(struct!.requireSsl),
-    authorized_networks: cdktf.listMapper(databaseMigrationServiceConnectionProfileCloudsqlSettingsIpConfigAuthorizedNetworksToTerraform, true)(struct!.authorizedNetworks),
+    enable_ipv4: cdktn.booleanToTerraform(struct!.enableIpv4),
+    private_network: cdktn.stringToTerraform(struct!.privateNetwork),
+    require_ssl: cdktn.booleanToTerraform(struct!.requireSsl),
+    authorized_networks: cdktn.listMapper(databaseMigrationServiceConnectionProfileCloudsqlSettingsIpConfigAuthorizedNetworksToTerraform, true)(struct!.authorizedNetworks),
   }
 }
 
 
 export function databaseMigrationServiceConnectionProfileCloudsqlSettingsIpConfigToHclTerraform(struct?: DatabaseMigrationServiceConnectionProfileCloudsqlSettingsIpConfigOutputReference | DatabaseMigrationServiceConnectionProfileCloudsqlSettingsIpConfig): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     enable_ipv4: {
-      value: cdktf.booleanToHclTerraform(struct!.enableIpv4),
+      value: cdktn.booleanToHclTerraform(struct!.enableIpv4),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     private_network: {
-      value: cdktf.stringToHclTerraform(struct!.privateNetwork),
+      value: cdktn.stringToHclTerraform(struct!.privateNetwork),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     require_ssl: {
-      value: cdktf.booleanToHclTerraform(struct!.requireSsl),
+      value: cdktn.booleanToHclTerraform(struct!.requireSsl),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     authorized_networks: {
-      value: cdktf.listMapperHcl(databaseMigrationServiceConnectionProfileCloudsqlSettingsIpConfigAuthorizedNetworksToHclTerraform, true)(struct!.authorizedNetworks),
+      value: cdktn.listMapperHcl(databaseMigrationServiceConnectionProfileCloudsqlSettingsIpConfigAuthorizedNetworksToHclTerraform, true)(struct!.authorizedNetworks),
       isBlock: true,
       type: "list",
       storageClassType: "DatabaseMigrationServiceConnectionProfileCloudsqlSettingsIpConfigAuthorizedNetworksList",
@@ -1172,14 +1172,14 @@ export function databaseMigrationServiceConnectionProfileCloudsqlSettingsIpConfi
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class DatabaseMigrationServiceConnectionProfileCloudsqlSettingsIpConfigOutputReference extends cdktf.ComplexObject {
+export class DatabaseMigrationServiceConnectionProfileCloudsqlSettingsIpConfigOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -1223,11 +1223,11 @@ export class DatabaseMigrationServiceConnectionProfileCloudsqlSettingsIpConfigOu
   }
 
   // enable_ipv4 - computed: false, optional: true, required: false
-  private _enableIpv4?: boolean | cdktf.IResolvable; 
+  private _enableIpv4?: boolean | cdktn.IResolvable; 
   public get enableIpv4() {
     return this.getBooleanAttribute('enable_ipv4');
   }
-  public set enableIpv4(value: boolean | cdktf.IResolvable) {
+  public set enableIpv4(value: boolean | cdktn.IResolvable) {
     this._enableIpv4 = value;
   }
   public resetEnableIpv4() {
@@ -1255,11 +1255,11 @@ export class DatabaseMigrationServiceConnectionProfileCloudsqlSettingsIpConfigOu
   }
 
   // require_ssl - computed: false, optional: true, required: false
-  private _requireSsl?: boolean | cdktf.IResolvable; 
+  private _requireSsl?: boolean | cdktn.IResolvable; 
   public get requireSsl() {
     return this.getBooleanAttribute('require_ssl');
   }
-  public set requireSsl(value: boolean | cdktf.IResolvable) {
+  public set requireSsl(value: boolean | cdktn.IResolvable) {
     this._requireSsl = value;
   }
   public resetRequireSsl() {
@@ -1275,7 +1275,7 @@ export class DatabaseMigrationServiceConnectionProfileCloudsqlSettingsIpConfigOu
   public get authorizedNetworks() {
     return this._authorizedNetworks;
   }
-  public putAuthorizedNetworks(value: DatabaseMigrationServiceConnectionProfileCloudsqlSettingsIpConfigAuthorizedNetworks[] | cdktf.IResolvable) {
+  public putAuthorizedNetworks(value: DatabaseMigrationServiceConnectionProfileCloudsqlSettingsIpConfigAuthorizedNetworks[] | cdktn.IResolvable) {
     this._authorizedNetworks.internalValue = value;
   }
   public resetAuthorizedNetworks() {
@@ -1299,7 +1299,7 @@ export interface DatabaseMigrationServiceConnectionProfileCloudsqlSettings {
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/database_migration_service_connection_profile#auto_storage_increase DatabaseMigrationServiceConnectionProfile#auto_storage_increase}
   */
-  readonly autoStorageIncrease?: boolean | cdktf.IResolvable;
+  readonly autoStorageIncrease?: boolean | cdktn.IResolvable;
   /**
   * The KMS key name used for the csql instance.
   *
@@ -1389,123 +1389,123 @@ export interface DatabaseMigrationServiceConnectionProfileCloudsqlSettings {
 }
 
 export function databaseMigrationServiceConnectionProfileCloudsqlSettingsToTerraform(struct?: DatabaseMigrationServiceConnectionProfileCloudsqlSettingsOutputReference | DatabaseMigrationServiceConnectionProfileCloudsqlSettings): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    activation_policy: cdktf.stringToTerraform(struct!.activationPolicy),
-    auto_storage_increase: cdktf.booleanToTerraform(struct!.autoStorageIncrease),
-    cmek_key_name: cdktf.stringToTerraform(struct!.cmekKeyName),
-    collation: cdktf.stringToTerraform(struct!.collation),
-    data_disk_size_gb: cdktf.stringToTerraform(struct!.dataDiskSizeGb),
-    data_disk_type: cdktf.stringToTerraform(struct!.dataDiskType),
-    database_flags: cdktf.hashMapper(cdktf.stringToTerraform)(struct!.databaseFlags),
-    database_version: cdktf.stringToTerraform(struct!.databaseVersion),
-    edition: cdktf.stringToTerraform(struct!.edition),
-    root_password: cdktf.stringToTerraform(struct!.rootPassword),
-    source_id: cdktf.stringToTerraform(struct!.sourceId),
-    storage_auto_resize_limit: cdktf.stringToTerraform(struct!.storageAutoResizeLimit),
-    tier: cdktf.stringToTerraform(struct!.tier),
-    user_labels: cdktf.hashMapper(cdktf.stringToTerraform)(struct!.userLabels),
-    zone: cdktf.stringToTerraform(struct!.zone),
+    activation_policy: cdktn.stringToTerraform(struct!.activationPolicy),
+    auto_storage_increase: cdktn.booleanToTerraform(struct!.autoStorageIncrease),
+    cmek_key_name: cdktn.stringToTerraform(struct!.cmekKeyName),
+    collation: cdktn.stringToTerraform(struct!.collation),
+    data_disk_size_gb: cdktn.stringToTerraform(struct!.dataDiskSizeGb),
+    data_disk_type: cdktn.stringToTerraform(struct!.dataDiskType),
+    database_flags: cdktn.hashMapper(cdktn.stringToTerraform)(struct!.databaseFlags),
+    database_version: cdktn.stringToTerraform(struct!.databaseVersion),
+    edition: cdktn.stringToTerraform(struct!.edition),
+    root_password: cdktn.stringToTerraform(struct!.rootPassword),
+    source_id: cdktn.stringToTerraform(struct!.sourceId),
+    storage_auto_resize_limit: cdktn.stringToTerraform(struct!.storageAutoResizeLimit),
+    tier: cdktn.stringToTerraform(struct!.tier),
+    user_labels: cdktn.hashMapper(cdktn.stringToTerraform)(struct!.userLabels),
+    zone: cdktn.stringToTerraform(struct!.zone),
     ip_config: databaseMigrationServiceConnectionProfileCloudsqlSettingsIpConfigToTerraform(struct!.ipConfig),
   }
 }
 
 
 export function databaseMigrationServiceConnectionProfileCloudsqlSettingsToHclTerraform(struct?: DatabaseMigrationServiceConnectionProfileCloudsqlSettingsOutputReference | DatabaseMigrationServiceConnectionProfileCloudsqlSettings): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     activation_policy: {
-      value: cdktf.stringToHclTerraform(struct!.activationPolicy),
+      value: cdktn.stringToHclTerraform(struct!.activationPolicy),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     auto_storage_increase: {
-      value: cdktf.booleanToHclTerraform(struct!.autoStorageIncrease),
+      value: cdktn.booleanToHclTerraform(struct!.autoStorageIncrease),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     cmek_key_name: {
-      value: cdktf.stringToHclTerraform(struct!.cmekKeyName),
+      value: cdktn.stringToHclTerraform(struct!.cmekKeyName),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     collation: {
-      value: cdktf.stringToHclTerraform(struct!.collation),
+      value: cdktn.stringToHclTerraform(struct!.collation),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     data_disk_size_gb: {
-      value: cdktf.stringToHclTerraform(struct!.dataDiskSizeGb),
+      value: cdktn.stringToHclTerraform(struct!.dataDiskSizeGb),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     data_disk_type: {
-      value: cdktf.stringToHclTerraform(struct!.dataDiskType),
+      value: cdktn.stringToHclTerraform(struct!.dataDiskType),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     database_flags: {
-      value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(struct!.databaseFlags),
+      value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(struct!.databaseFlags),
       isBlock: false,
       type: "map",
       storageClassType: "stringMap",
     },
     database_version: {
-      value: cdktf.stringToHclTerraform(struct!.databaseVersion),
+      value: cdktn.stringToHclTerraform(struct!.databaseVersion),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     edition: {
-      value: cdktf.stringToHclTerraform(struct!.edition),
+      value: cdktn.stringToHclTerraform(struct!.edition),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     root_password: {
-      value: cdktf.stringToHclTerraform(struct!.rootPassword),
+      value: cdktn.stringToHclTerraform(struct!.rootPassword),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     source_id: {
-      value: cdktf.stringToHclTerraform(struct!.sourceId),
+      value: cdktn.stringToHclTerraform(struct!.sourceId),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     storage_auto_resize_limit: {
-      value: cdktf.stringToHclTerraform(struct!.storageAutoResizeLimit),
+      value: cdktn.stringToHclTerraform(struct!.storageAutoResizeLimit),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     tier: {
-      value: cdktf.stringToHclTerraform(struct!.tier),
+      value: cdktn.stringToHclTerraform(struct!.tier),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     user_labels: {
-      value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(struct!.userLabels),
+      value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(struct!.userLabels),
       isBlock: false,
       type: "map",
       storageClassType: "stringMap",
     },
     zone: {
-      value: cdktf.stringToHclTerraform(struct!.zone),
+      value: cdktn.stringToHclTerraform(struct!.zone),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -1522,14 +1522,14 @@ export function databaseMigrationServiceConnectionProfileCloudsqlSettingsToHclTe
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class DatabaseMigrationServiceConnectionProfileCloudsqlSettingsOutputReference extends cdktf.ComplexObject {
+export class DatabaseMigrationServiceConnectionProfileCloudsqlSettingsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -1661,11 +1661,11 @@ export class DatabaseMigrationServiceConnectionProfileCloudsqlSettingsOutputRefe
   }
 
   // auto_storage_increase - computed: false, optional: true, required: false
-  private _autoStorageIncrease?: boolean | cdktf.IResolvable; 
+  private _autoStorageIncrease?: boolean | cdktn.IResolvable; 
   public get autoStorageIncrease() {
     return this.getBooleanAttribute('auto_storage_increase');
   }
-  public set autoStorageIncrease(value: boolean | cdktf.IResolvable) {
+  public set autoStorageIncrease(value: boolean | cdktn.IResolvable) {
     this._autoStorageIncrease = value;
   }
   public resetAutoStorageIncrease() {
@@ -1912,8 +1912,8 @@ export interface DatabaseMigrationServiceConnectionProfileCloudsql {
 }
 
 export function databaseMigrationServiceConnectionProfileCloudsqlToTerraform(struct?: DatabaseMigrationServiceConnectionProfileCloudsqlOutputReference | DatabaseMigrationServiceConnectionProfileCloudsql): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -1923,8 +1923,8 @@ export function databaseMigrationServiceConnectionProfileCloudsqlToTerraform(str
 
 
 export function databaseMigrationServiceConnectionProfileCloudsqlToHclTerraform(struct?: DatabaseMigrationServiceConnectionProfileCloudsqlOutputReference | DatabaseMigrationServiceConnectionProfileCloudsql): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -1940,14 +1940,14 @@ export function databaseMigrationServiceConnectionProfileCloudsqlToHclTerraform(
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class DatabaseMigrationServiceConnectionProfileCloudsqlOutputReference extends cdktf.ComplexObject {
+export class DatabaseMigrationServiceConnectionProfileCloudsqlOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -2034,45 +2034,45 @@ export interface DatabaseMigrationServiceConnectionProfileMysqlSsl {
 }
 
 export function databaseMigrationServiceConnectionProfileMysqlSslToTerraform(struct?: DatabaseMigrationServiceConnectionProfileMysqlSslOutputReference | DatabaseMigrationServiceConnectionProfileMysqlSsl): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    ca_certificate: cdktf.stringToTerraform(struct!.caCertificate),
-    client_certificate: cdktf.stringToTerraform(struct!.clientCertificate),
-    client_key: cdktf.stringToTerraform(struct!.clientKey),
-    type: cdktf.stringToTerraform(struct!.type),
+    ca_certificate: cdktn.stringToTerraform(struct!.caCertificate),
+    client_certificate: cdktn.stringToTerraform(struct!.clientCertificate),
+    client_key: cdktn.stringToTerraform(struct!.clientKey),
+    type: cdktn.stringToTerraform(struct!.type),
   }
 }
 
 
 export function databaseMigrationServiceConnectionProfileMysqlSslToHclTerraform(struct?: DatabaseMigrationServiceConnectionProfileMysqlSslOutputReference | DatabaseMigrationServiceConnectionProfileMysqlSsl): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     ca_certificate: {
-      value: cdktf.stringToHclTerraform(struct!.caCertificate),
+      value: cdktn.stringToHclTerraform(struct!.caCertificate),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     client_certificate: {
-      value: cdktf.stringToHclTerraform(struct!.clientCertificate),
+      value: cdktn.stringToHclTerraform(struct!.clientCertificate),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     client_key: {
-      value: cdktf.stringToHclTerraform(struct!.clientKey),
+      value: cdktn.stringToHclTerraform(struct!.clientKey),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     type: {
-      value: cdktf.stringToHclTerraform(struct!.type),
+      value: cdktn.stringToHclTerraform(struct!.type),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -2083,14 +2083,14 @@ export function databaseMigrationServiceConnectionProfileMysqlSslToHclTerraform(
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class DatabaseMigrationServiceConnectionProfileMysqlSslOutputReference extends cdktf.ComplexObject {
+export class DatabaseMigrationServiceConnectionProfileMysqlSslOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -2238,53 +2238,53 @@ export interface DatabaseMigrationServiceConnectionProfileMysql {
 }
 
 export function databaseMigrationServiceConnectionProfileMysqlToTerraform(struct?: DatabaseMigrationServiceConnectionProfileMysqlOutputReference | DatabaseMigrationServiceConnectionProfileMysql): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    cloud_sql_id: cdktf.stringToTerraform(struct!.cloudSqlId),
-    host: cdktf.stringToTerraform(struct!.host),
-    password: cdktf.stringToTerraform(struct!.password),
-    port: cdktf.numberToTerraform(struct!.port),
-    username: cdktf.stringToTerraform(struct!.username),
+    cloud_sql_id: cdktn.stringToTerraform(struct!.cloudSqlId),
+    host: cdktn.stringToTerraform(struct!.host),
+    password: cdktn.stringToTerraform(struct!.password),
+    port: cdktn.numberToTerraform(struct!.port),
+    username: cdktn.stringToTerraform(struct!.username),
     ssl: databaseMigrationServiceConnectionProfileMysqlSslToTerraform(struct!.ssl),
   }
 }
 
 
 export function databaseMigrationServiceConnectionProfileMysqlToHclTerraform(struct?: DatabaseMigrationServiceConnectionProfileMysqlOutputReference | DatabaseMigrationServiceConnectionProfileMysql): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     cloud_sql_id: {
-      value: cdktf.stringToHclTerraform(struct!.cloudSqlId),
+      value: cdktn.stringToHclTerraform(struct!.cloudSqlId),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     host: {
-      value: cdktf.stringToHclTerraform(struct!.host),
+      value: cdktn.stringToHclTerraform(struct!.host),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     password: {
-      value: cdktf.stringToHclTerraform(struct!.password),
+      value: cdktn.stringToHclTerraform(struct!.password),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     port: {
-      value: cdktf.numberToHclTerraform(struct!.port),
+      value: cdktn.numberToHclTerraform(struct!.port),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     username: {
-      value: cdktf.stringToHclTerraform(struct!.username),
+      value: cdktn.stringToHclTerraform(struct!.username),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -2301,14 +2301,14 @@ export function databaseMigrationServiceConnectionProfileMysqlToHclTerraform(str
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class DatabaseMigrationServiceConnectionProfileMysqlOutputReference extends cdktf.ComplexObject {
+export class DatabaseMigrationServiceConnectionProfileMysqlOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -2498,52 +2498,52 @@ export interface DatabaseMigrationServiceConnectionProfileOracleForwardSshConnec
 }
 
 export function databaseMigrationServiceConnectionProfileOracleForwardSshConnectivityToTerraform(struct?: DatabaseMigrationServiceConnectionProfileOracleForwardSshConnectivityOutputReference | DatabaseMigrationServiceConnectionProfileOracleForwardSshConnectivity): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    hostname: cdktf.stringToTerraform(struct!.hostname),
-    password: cdktf.stringToTerraform(struct!.password),
-    port: cdktf.numberToTerraform(struct!.port),
-    private_key: cdktf.stringToTerraform(struct!.privateKey),
-    username: cdktf.stringToTerraform(struct!.username),
+    hostname: cdktn.stringToTerraform(struct!.hostname),
+    password: cdktn.stringToTerraform(struct!.password),
+    port: cdktn.numberToTerraform(struct!.port),
+    private_key: cdktn.stringToTerraform(struct!.privateKey),
+    username: cdktn.stringToTerraform(struct!.username),
   }
 }
 
 
 export function databaseMigrationServiceConnectionProfileOracleForwardSshConnectivityToHclTerraform(struct?: DatabaseMigrationServiceConnectionProfileOracleForwardSshConnectivityOutputReference | DatabaseMigrationServiceConnectionProfileOracleForwardSshConnectivity): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     hostname: {
-      value: cdktf.stringToHclTerraform(struct!.hostname),
+      value: cdktn.stringToHclTerraform(struct!.hostname),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     password: {
-      value: cdktf.stringToHclTerraform(struct!.password),
+      value: cdktn.stringToHclTerraform(struct!.password),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     port: {
-      value: cdktf.numberToHclTerraform(struct!.port),
+      value: cdktn.numberToHclTerraform(struct!.port),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     private_key: {
-      value: cdktf.stringToHclTerraform(struct!.privateKey),
+      value: cdktn.stringToHclTerraform(struct!.privateKey),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     username: {
-      value: cdktf.stringToHclTerraform(struct!.username),
+      value: cdktn.stringToHclTerraform(struct!.username),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -2554,14 +2554,14 @@ export function databaseMigrationServiceConnectionProfileOracleForwardSshConnect
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class DatabaseMigrationServiceConnectionProfileOracleForwardSshConnectivityOutputReference extends cdktf.ComplexObject {
+export class DatabaseMigrationServiceConnectionProfileOracleForwardSshConnectivityOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -2691,24 +2691,24 @@ export interface DatabaseMigrationServiceConnectionProfileOraclePrivateConnectiv
 }
 
 export function databaseMigrationServiceConnectionProfileOraclePrivateConnectivityToTerraform(struct?: DatabaseMigrationServiceConnectionProfileOraclePrivateConnectivityOutputReference | DatabaseMigrationServiceConnectionProfileOraclePrivateConnectivity): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    private_connection: cdktf.stringToTerraform(struct!.privateConnection),
+    private_connection: cdktn.stringToTerraform(struct!.privateConnection),
   }
 }
 
 
 export function databaseMigrationServiceConnectionProfileOraclePrivateConnectivityToHclTerraform(struct?: DatabaseMigrationServiceConnectionProfileOraclePrivateConnectivityOutputReference | DatabaseMigrationServiceConnectionProfileOraclePrivateConnectivity): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     private_connection: {
-      value: cdktf.stringToHclTerraform(struct!.privateConnection),
+      value: cdktn.stringToHclTerraform(struct!.privateConnection),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -2719,14 +2719,14 @@ export function databaseMigrationServiceConnectionProfileOraclePrivateConnectivi
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class DatabaseMigrationServiceConnectionProfileOraclePrivateConnectivityOutputReference extends cdktf.ComplexObject {
+export class DatabaseMigrationServiceConnectionProfileOraclePrivateConnectivityOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -2789,38 +2789,38 @@ export interface DatabaseMigrationServiceConnectionProfileOracleSsl {
 }
 
 export function databaseMigrationServiceConnectionProfileOracleSslToTerraform(struct?: DatabaseMigrationServiceConnectionProfileOracleSslOutputReference | DatabaseMigrationServiceConnectionProfileOracleSsl): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    ca_certificate: cdktf.stringToTerraform(struct!.caCertificate),
-    client_certificate: cdktf.stringToTerraform(struct!.clientCertificate),
-    client_key: cdktf.stringToTerraform(struct!.clientKey),
+    ca_certificate: cdktn.stringToTerraform(struct!.caCertificate),
+    client_certificate: cdktn.stringToTerraform(struct!.clientCertificate),
+    client_key: cdktn.stringToTerraform(struct!.clientKey),
   }
 }
 
 
 export function databaseMigrationServiceConnectionProfileOracleSslToHclTerraform(struct?: DatabaseMigrationServiceConnectionProfileOracleSslOutputReference | DatabaseMigrationServiceConnectionProfileOracleSsl): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     ca_certificate: {
-      value: cdktf.stringToHclTerraform(struct!.caCertificate),
+      value: cdktn.stringToHclTerraform(struct!.caCertificate),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     client_certificate: {
-      value: cdktf.stringToHclTerraform(struct!.clientCertificate),
+      value: cdktn.stringToHclTerraform(struct!.clientCertificate),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     client_key: {
-      value: cdktf.stringToHclTerraform(struct!.clientKey),
+      value: cdktn.stringToHclTerraform(struct!.clientKey),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -2831,14 +2831,14 @@ export function databaseMigrationServiceConnectionProfileOracleSslToHclTerraform
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class DatabaseMigrationServiceConnectionProfileOracleSslOutputReference extends cdktf.ComplexObject {
+export class DatabaseMigrationServiceConnectionProfileOracleSslOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -2932,8 +2932,8 @@ export interface DatabaseMigrationServiceConnectionProfileOracleStaticServiceIpC
 }
 
 export function databaseMigrationServiceConnectionProfileOracleStaticServiceIpConnectivityToTerraform(struct?: DatabaseMigrationServiceConnectionProfileOracleStaticServiceIpConnectivityOutputReference | DatabaseMigrationServiceConnectionProfileOracleStaticServiceIpConnectivity): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -2942,8 +2942,8 @@ export function databaseMigrationServiceConnectionProfileOracleStaticServiceIpCo
 
 
 export function databaseMigrationServiceConnectionProfileOracleStaticServiceIpConnectivityToHclTerraform(struct?: DatabaseMigrationServiceConnectionProfileOracleStaticServiceIpConnectivityOutputReference | DatabaseMigrationServiceConnectionProfileOracleStaticServiceIpConnectivity): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -2951,14 +2951,14 @@ export function databaseMigrationServiceConnectionProfileOracleStaticServiceIpCo
   return attrs;
 }
 
-export class DatabaseMigrationServiceConnectionProfileOracleStaticServiceIpConnectivityOutputReference extends cdktf.ComplexObject {
+export class DatabaseMigrationServiceConnectionProfileOracleStaticServiceIpConnectivityOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -3036,16 +3036,16 @@ export interface DatabaseMigrationServiceConnectionProfileOracle {
 }
 
 export function databaseMigrationServiceConnectionProfileOracleToTerraform(struct?: DatabaseMigrationServiceConnectionProfileOracleOutputReference | DatabaseMigrationServiceConnectionProfileOracle): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    database_service: cdktf.stringToTerraform(struct!.databaseService),
-    host: cdktf.stringToTerraform(struct!.host),
-    password: cdktf.stringToTerraform(struct!.password),
-    port: cdktf.numberToTerraform(struct!.port),
-    username: cdktf.stringToTerraform(struct!.username),
+    database_service: cdktn.stringToTerraform(struct!.databaseService),
+    host: cdktn.stringToTerraform(struct!.host),
+    password: cdktn.stringToTerraform(struct!.password),
+    port: cdktn.numberToTerraform(struct!.port),
+    username: cdktn.stringToTerraform(struct!.username),
     forward_ssh_connectivity: databaseMigrationServiceConnectionProfileOracleForwardSshConnectivityToTerraform(struct!.forwardSshConnectivity),
     private_connectivity: databaseMigrationServiceConnectionProfileOraclePrivateConnectivityToTerraform(struct!.privateConnectivity),
     ssl: databaseMigrationServiceConnectionProfileOracleSslToTerraform(struct!.ssl),
@@ -3055,37 +3055,37 @@ export function databaseMigrationServiceConnectionProfileOracleToTerraform(struc
 
 
 export function databaseMigrationServiceConnectionProfileOracleToHclTerraform(struct?: DatabaseMigrationServiceConnectionProfileOracleOutputReference | DatabaseMigrationServiceConnectionProfileOracle): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     database_service: {
-      value: cdktf.stringToHclTerraform(struct!.databaseService),
+      value: cdktn.stringToHclTerraform(struct!.databaseService),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     host: {
-      value: cdktf.stringToHclTerraform(struct!.host),
+      value: cdktn.stringToHclTerraform(struct!.host),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     password: {
-      value: cdktf.stringToHclTerraform(struct!.password),
+      value: cdktn.stringToHclTerraform(struct!.password),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     port: {
-      value: cdktf.numberToHclTerraform(struct!.port),
+      value: cdktn.numberToHclTerraform(struct!.port),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     username: {
-      value: cdktf.stringToHclTerraform(struct!.username),
+      value: cdktn.stringToHclTerraform(struct!.username),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -3120,14 +3120,14 @@ export function databaseMigrationServiceConnectionProfileOracleToHclTerraform(st
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class DatabaseMigrationServiceConnectionProfileOracleOutputReference extends cdktf.ComplexObject {
+export class DatabaseMigrationServiceConnectionProfileOracleOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -3365,45 +3365,45 @@ export interface DatabaseMigrationServiceConnectionProfilePostgresqlSsl {
 }
 
 export function databaseMigrationServiceConnectionProfilePostgresqlSslToTerraform(struct?: DatabaseMigrationServiceConnectionProfilePostgresqlSslOutputReference | DatabaseMigrationServiceConnectionProfilePostgresqlSsl): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    ca_certificate: cdktf.stringToTerraform(struct!.caCertificate),
-    client_certificate: cdktf.stringToTerraform(struct!.clientCertificate),
-    client_key: cdktf.stringToTerraform(struct!.clientKey),
-    type: cdktf.stringToTerraform(struct!.type),
+    ca_certificate: cdktn.stringToTerraform(struct!.caCertificate),
+    client_certificate: cdktn.stringToTerraform(struct!.clientCertificate),
+    client_key: cdktn.stringToTerraform(struct!.clientKey),
+    type: cdktn.stringToTerraform(struct!.type),
   }
 }
 
 
 export function databaseMigrationServiceConnectionProfilePostgresqlSslToHclTerraform(struct?: DatabaseMigrationServiceConnectionProfilePostgresqlSslOutputReference | DatabaseMigrationServiceConnectionProfilePostgresqlSsl): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     ca_certificate: {
-      value: cdktf.stringToHclTerraform(struct!.caCertificate),
+      value: cdktn.stringToHclTerraform(struct!.caCertificate),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     client_certificate: {
-      value: cdktf.stringToHclTerraform(struct!.clientCertificate),
+      value: cdktn.stringToHclTerraform(struct!.clientCertificate),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     client_key: {
-      value: cdktf.stringToHclTerraform(struct!.clientKey),
+      value: cdktn.stringToHclTerraform(struct!.clientKey),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     type: {
-      value: cdktf.stringToHclTerraform(struct!.type),
+      value: cdktn.stringToHclTerraform(struct!.type),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -3414,14 +3414,14 @@ export function databaseMigrationServiceConnectionProfilePostgresqlSslToHclTerra
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class DatabaseMigrationServiceConnectionProfilePostgresqlSslOutputReference extends cdktf.ComplexObject {
+export class DatabaseMigrationServiceConnectionProfilePostgresqlSslOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -3575,60 +3575,60 @@ export interface DatabaseMigrationServiceConnectionProfilePostgresql {
 }
 
 export function databaseMigrationServiceConnectionProfilePostgresqlToTerraform(struct?: DatabaseMigrationServiceConnectionProfilePostgresqlOutputReference | DatabaseMigrationServiceConnectionProfilePostgresql): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    alloydb_cluster_id: cdktf.stringToTerraform(struct!.alloydbClusterId),
-    cloud_sql_id: cdktf.stringToTerraform(struct!.cloudSqlId),
-    host: cdktf.stringToTerraform(struct!.host),
-    password: cdktf.stringToTerraform(struct!.password),
-    port: cdktf.numberToTerraform(struct!.port),
-    username: cdktf.stringToTerraform(struct!.username),
+    alloydb_cluster_id: cdktn.stringToTerraform(struct!.alloydbClusterId),
+    cloud_sql_id: cdktn.stringToTerraform(struct!.cloudSqlId),
+    host: cdktn.stringToTerraform(struct!.host),
+    password: cdktn.stringToTerraform(struct!.password),
+    port: cdktn.numberToTerraform(struct!.port),
+    username: cdktn.stringToTerraform(struct!.username),
     ssl: databaseMigrationServiceConnectionProfilePostgresqlSslToTerraform(struct!.ssl),
   }
 }
 
 
 export function databaseMigrationServiceConnectionProfilePostgresqlToHclTerraform(struct?: DatabaseMigrationServiceConnectionProfilePostgresqlOutputReference | DatabaseMigrationServiceConnectionProfilePostgresql): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     alloydb_cluster_id: {
-      value: cdktf.stringToHclTerraform(struct!.alloydbClusterId),
+      value: cdktn.stringToHclTerraform(struct!.alloydbClusterId),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     cloud_sql_id: {
-      value: cdktf.stringToHclTerraform(struct!.cloudSqlId),
+      value: cdktn.stringToHclTerraform(struct!.cloudSqlId),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     host: {
-      value: cdktf.stringToHclTerraform(struct!.host),
+      value: cdktn.stringToHclTerraform(struct!.host),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     password: {
-      value: cdktf.stringToHclTerraform(struct!.password),
+      value: cdktn.stringToHclTerraform(struct!.password),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     port: {
-      value: cdktf.numberToHclTerraform(struct!.port),
+      value: cdktn.numberToHclTerraform(struct!.port),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     username: {
-      value: cdktf.stringToHclTerraform(struct!.username),
+      value: cdktn.stringToHclTerraform(struct!.username),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -3645,14 +3645,14 @@ export function databaseMigrationServiceConnectionProfilePostgresqlToHclTerrafor
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class DatabaseMigrationServiceConnectionProfilePostgresqlOutputReference extends cdktf.ComplexObject {
+export class DatabaseMigrationServiceConnectionProfilePostgresqlOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -3850,39 +3850,39 @@ export interface DatabaseMigrationServiceConnectionProfileTimeouts {
   readonly update?: string;
 }
 
-export function databaseMigrationServiceConnectionProfileTimeoutsToTerraform(struct?: DatabaseMigrationServiceConnectionProfileTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function databaseMigrationServiceConnectionProfileTimeoutsToTerraform(struct?: DatabaseMigrationServiceConnectionProfileTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    create: cdktf.stringToTerraform(struct!.create),
-    delete: cdktf.stringToTerraform(struct!.delete),
-    update: cdktf.stringToTerraform(struct!.update),
+    create: cdktn.stringToTerraform(struct!.create),
+    delete: cdktn.stringToTerraform(struct!.delete),
+    update: cdktn.stringToTerraform(struct!.update),
   }
 }
 
 
-export function databaseMigrationServiceConnectionProfileTimeoutsToHclTerraform(struct?: DatabaseMigrationServiceConnectionProfileTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function databaseMigrationServiceConnectionProfileTimeoutsToHclTerraform(struct?: DatabaseMigrationServiceConnectionProfileTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     create: {
-      value: cdktf.stringToHclTerraform(struct!.create),
+      value: cdktn.stringToHclTerraform(struct!.create),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     delete: {
-      value: cdktf.stringToHclTerraform(struct!.delete),
+      value: cdktn.stringToHclTerraform(struct!.delete),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     update: {
-      value: cdktf.stringToHclTerraform(struct!.update),
+      value: cdktn.stringToHclTerraform(struct!.update),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -3893,19 +3893,19 @@ export function databaseMigrationServiceConnectionProfileTimeoutsToHclTerraform(
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class DatabaseMigrationServiceConnectionProfileTimeoutsOutputReference extends cdktf.ComplexObject {
+export class DatabaseMigrationServiceConnectionProfileTimeoutsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): DatabaseMigrationServiceConnectionProfileTimeouts | cdktf.IResolvable | undefined {
+  public get internalValue(): DatabaseMigrationServiceConnectionProfileTimeouts | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -3926,7 +3926,7 @@ export class DatabaseMigrationServiceConnectionProfileTimeoutsOutputReference ex
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: DatabaseMigrationServiceConnectionProfileTimeouts | cdktf.IResolvable | undefined) {
+  public set internalValue(value: DatabaseMigrationServiceConnectionProfileTimeouts | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -3934,7 +3934,7 @@ export class DatabaseMigrationServiceConnectionProfileTimeoutsOutputReference ex
       this._delete = undefined;
       this._update = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -3999,7 +3999,7 @@ export class DatabaseMigrationServiceConnectionProfileTimeoutsOutputReference ex
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/database_migration_service_connection_profile google_database_migration_service_connection_profile}
 */
-export class DatabaseMigrationServiceConnectionProfile extends cdktf.TerraformResource {
+export class DatabaseMigrationServiceConnectionProfile extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -4010,14 +4010,14 @@ export class DatabaseMigrationServiceConnectionProfile extends cdktf.TerraformRe
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a DatabaseMigrationServiceConnectionProfile resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a DatabaseMigrationServiceConnectionProfile resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DatabaseMigrationServiceConnectionProfile to import
   * @param importFromId The id of the existing DatabaseMigrationServiceConnectionProfile that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/database_migration_service_connection_profile#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DatabaseMigrationServiceConnectionProfile to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "google_database_migration_service_connection_profile", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "google_database_migration_service_connection_profile", importId: importFromId, provider });
       }
 
   // ===========
@@ -4105,7 +4105,7 @@ export class DatabaseMigrationServiceConnectionProfile extends cdktf.TerraformRe
   }
 
   // effective_labels - computed: true, optional: false, required: false
-  private _effectiveLabels = new cdktf.StringMap(this, "effective_labels");
+  private _effectiveLabels = new cdktn.StringMap(this, "effective_labels");
   public get effectiveLabels() {
     return this._effectiveLabels;
   }
@@ -4191,7 +4191,7 @@ export class DatabaseMigrationServiceConnectionProfile extends cdktf.TerraformRe
   }
 
   // terraform_labels - computed: true, optional: false, required: false
-  private _terraformLabels = new cdktf.StringMap(this, "terraform_labels");
+  private _terraformLabels = new cdktn.StringMap(this, "terraform_labels");
   public get terraformLabels() {
     return this._terraformLabels;
   }
@@ -4298,12 +4298,12 @@ export class DatabaseMigrationServiceConnectionProfile extends cdktf.TerraformRe
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      connection_profile_id: cdktf.stringToTerraform(this._connectionProfileId),
-      display_name: cdktf.stringToTerraform(this._displayName),
-      id: cdktf.stringToTerraform(this._id),
-      labels: cdktf.hashMapper(cdktf.stringToTerraform)(this._labels),
-      location: cdktf.stringToTerraform(this._location),
-      project: cdktf.stringToTerraform(this._project),
+      connection_profile_id: cdktn.stringToTerraform(this._connectionProfileId),
+      display_name: cdktn.stringToTerraform(this._displayName),
+      id: cdktn.stringToTerraform(this._id),
+      labels: cdktn.hashMapper(cdktn.stringToTerraform)(this._labels),
+      location: cdktn.stringToTerraform(this._location),
+      project: cdktn.stringToTerraform(this._project),
       alloydb: databaseMigrationServiceConnectionProfileAlloydbToTerraform(this._alloydb.internalValue),
       cloudsql: databaseMigrationServiceConnectionProfileCloudsqlToTerraform(this._cloudsql.internalValue),
       mysql: databaseMigrationServiceConnectionProfileMysqlToTerraform(this._mysql.internalValue),
@@ -4316,37 +4316,37 @@ export class DatabaseMigrationServiceConnectionProfile extends cdktf.TerraformRe
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       connection_profile_id: {
-        value: cdktf.stringToHclTerraform(this._connectionProfileId),
+        value: cdktn.stringToHclTerraform(this._connectionProfileId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       display_name: {
-        value: cdktf.stringToHclTerraform(this._displayName),
+        value: cdktn.stringToHclTerraform(this._displayName),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       labels: {
-        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._labels),
+        value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(this._labels),
         isBlock: false,
         type: "map",
         storageClassType: "stringMap",
       },
       location: {
-        value: cdktf.stringToHclTerraform(this._location),
+        value: cdktn.stringToHclTerraform(this._location),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       project: {
-        value: cdktf.stringToHclTerraform(this._project),
+        value: cdktn.stringToHclTerraform(this._project),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

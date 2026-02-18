@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface ApphubWorkloadConfig extends cdktf.TerraformMetaArguments {
+export interface ApphubWorkloadConfig extends cdktn.TerraformMetaArguments {
   /**
   * Part of 'parent'.  Full resource name of a parent Application. Example: projects/{HOST_PROJECT_ID}/locations/{LOCATION}/applications/{APPLICATION_ID}
   *
@@ -76,8 +76,8 @@ export interface ApphubWorkloadWorkloadProperties {
 }
 
 export function apphubWorkloadWorkloadPropertiesToTerraform(struct?: ApphubWorkloadWorkloadProperties): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -86,8 +86,8 @@ export function apphubWorkloadWorkloadPropertiesToTerraform(struct?: ApphubWorkl
 
 
 export function apphubWorkloadWorkloadPropertiesToHclTerraform(struct?: ApphubWorkloadWorkloadProperties): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -95,7 +95,7 @@ export function apphubWorkloadWorkloadPropertiesToHclTerraform(struct?: ApphubWo
   return attrs;
 }
 
-export class ApphubWorkloadWorkloadPropertiesOutputReference extends cdktf.ComplexObject {
+export class ApphubWorkloadWorkloadPropertiesOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -104,7 +104,7 @@ export class ApphubWorkloadWorkloadPropertiesOutputReference extends cdktf.Compl
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -139,14 +139,14 @@ export class ApphubWorkloadWorkloadPropertiesOutputReference extends cdktf.Compl
   }
 }
 
-export class ApphubWorkloadWorkloadPropertiesList extends cdktf.ComplexList {
+export class ApphubWorkloadWorkloadPropertiesList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -161,8 +161,8 @@ export interface ApphubWorkloadWorkloadReference {
 }
 
 export function apphubWorkloadWorkloadReferenceToTerraform(struct?: ApphubWorkloadWorkloadReference): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -171,8 +171,8 @@ export function apphubWorkloadWorkloadReferenceToTerraform(struct?: ApphubWorklo
 
 
 export function apphubWorkloadWorkloadReferenceToHclTerraform(struct?: ApphubWorkloadWorkloadReference): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -180,7 +180,7 @@ export function apphubWorkloadWorkloadReferenceToHclTerraform(struct?: ApphubWor
   return attrs;
 }
 
-export class ApphubWorkloadWorkloadReferenceOutputReference extends cdktf.ComplexObject {
+export class ApphubWorkloadWorkloadReferenceOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -189,7 +189,7 @@ export class ApphubWorkloadWorkloadReferenceOutputReference extends cdktf.Comple
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -214,14 +214,14 @@ export class ApphubWorkloadWorkloadReferenceOutputReference extends cdktf.Comple
   }
 }
 
-export class ApphubWorkloadWorkloadReferenceList extends cdktf.ComplexList {
+export class ApphubWorkloadWorkloadReferenceList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -247,32 +247,32 @@ export interface ApphubWorkloadAttributesBusinessOwners {
   readonly email: string;
 }
 
-export function apphubWorkloadAttributesBusinessOwnersToTerraform(struct?: ApphubWorkloadAttributesBusinessOwners | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function apphubWorkloadAttributesBusinessOwnersToTerraform(struct?: ApphubWorkloadAttributesBusinessOwners | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    display_name: cdktf.stringToTerraform(struct!.displayName),
-    email: cdktf.stringToTerraform(struct!.email),
+    display_name: cdktn.stringToTerraform(struct!.displayName),
+    email: cdktn.stringToTerraform(struct!.email),
   }
 }
 
 
-export function apphubWorkloadAttributesBusinessOwnersToHclTerraform(struct?: ApphubWorkloadAttributesBusinessOwners | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function apphubWorkloadAttributesBusinessOwnersToHclTerraform(struct?: ApphubWorkloadAttributesBusinessOwners | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     display_name: {
-      value: cdktf.stringToHclTerraform(struct!.displayName),
+      value: cdktn.stringToHclTerraform(struct!.displayName),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     email: {
-      value: cdktf.stringToHclTerraform(struct!.email),
+      value: cdktn.stringToHclTerraform(struct!.email),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -283,9 +283,9 @@ export function apphubWorkloadAttributesBusinessOwnersToHclTerraform(struct?: Ap
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class ApphubWorkloadAttributesBusinessOwnersOutputReference extends cdktf.ComplexObject {
+export class ApphubWorkloadAttributesBusinessOwnersOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -293,11 +293,11 @@ export class ApphubWorkloadAttributesBusinessOwnersOutputReference extends cdktf
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): ApphubWorkloadAttributesBusinessOwners | cdktf.IResolvable | undefined {
+  public get internalValue(): ApphubWorkloadAttributesBusinessOwners | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -314,14 +314,14 @@ export class ApphubWorkloadAttributesBusinessOwnersOutputReference extends cdktf
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: ApphubWorkloadAttributesBusinessOwners | cdktf.IResolvable | undefined) {
+  public set internalValue(value: ApphubWorkloadAttributesBusinessOwners | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._displayName = undefined;
       this._email = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -363,15 +363,15 @@ export class ApphubWorkloadAttributesBusinessOwnersOutputReference extends cdktf
   }
 }
 
-export class ApphubWorkloadAttributesBusinessOwnersList extends cdktf.ComplexList {
-  public internalValue? : ApphubWorkloadAttributesBusinessOwners[] | cdktf.IResolvable
+export class ApphubWorkloadAttributesBusinessOwnersList extends cdktn.ComplexList {
+  public internalValue? : ApphubWorkloadAttributesBusinessOwners[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -392,24 +392,24 @@ export interface ApphubWorkloadAttributesCriticality {
 }
 
 export function apphubWorkloadAttributesCriticalityToTerraform(struct?: ApphubWorkloadAttributesCriticalityOutputReference | ApphubWorkloadAttributesCriticality): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    type: cdktf.stringToTerraform(struct!.type),
+    type: cdktn.stringToTerraform(struct!.type),
   }
 }
 
 
 export function apphubWorkloadAttributesCriticalityToHclTerraform(struct?: ApphubWorkloadAttributesCriticalityOutputReference | ApphubWorkloadAttributesCriticality): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     type: {
-      value: cdktf.stringToHclTerraform(struct!.type),
+      value: cdktn.stringToHclTerraform(struct!.type),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -420,14 +420,14 @@ export function apphubWorkloadAttributesCriticalityToHclTerraform(struct?: Apphu
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class ApphubWorkloadAttributesCriticalityOutputReference extends cdktf.ComplexObject {
+export class ApphubWorkloadAttributesCriticalityOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -480,32 +480,32 @@ export interface ApphubWorkloadAttributesDeveloperOwners {
   readonly email: string;
 }
 
-export function apphubWorkloadAttributesDeveloperOwnersToTerraform(struct?: ApphubWorkloadAttributesDeveloperOwners | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function apphubWorkloadAttributesDeveloperOwnersToTerraform(struct?: ApphubWorkloadAttributesDeveloperOwners | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    display_name: cdktf.stringToTerraform(struct!.displayName),
-    email: cdktf.stringToTerraform(struct!.email),
+    display_name: cdktn.stringToTerraform(struct!.displayName),
+    email: cdktn.stringToTerraform(struct!.email),
   }
 }
 
 
-export function apphubWorkloadAttributesDeveloperOwnersToHclTerraform(struct?: ApphubWorkloadAttributesDeveloperOwners | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function apphubWorkloadAttributesDeveloperOwnersToHclTerraform(struct?: ApphubWorkloadAttributesDeveloperOwners | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     display_name: {
-      value: cdktf.stringToHclTerraform(struct!.displayName),
+      value: cdktn.stringToHclTerraform(struct!.displayName),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     email: {
-      value: cdktf.stringToHclTerraform(struct!.email),
+      value: cdktn.stringToHclTerraform(struct!.email),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -516,9 +516,9 @@ export function apphubWorkloadAttributesDeveloperOwnersToHclTerraform(struct?: A
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class ApphubWorkloadAttributesDeveloperOwnersOutputReference extends cdktf.ComplexObject {
+export class ApphubWorkloadAttributesDeveloperOwnersOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -526,11 +526,11 @@ export class ApphubWorkloadAttributesDeveloperOwnersOutputReference extends cdkt
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): ApphubWorkloadAttributesDeveloperOwners | cdktf.IResolvable | undefined {
+  public get internalValue(): ApphubWorkloadAttributesDeveloperOwners | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -547,14 +547,14 @@ export class ApphubWorkloadAttributesDeveloperOwnersOutputReference extends cdkt
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: ApphubWorkloadAttributesDeveloperOwners | cdktf.IResolvable | undefined) {
+  public set internalValue(value: ApphubWorkloadAttributesDeveloperOwners | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._displayName = undefined;
       this._email = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -596,15 +596,15 @@ export class ApphubWorkloadAttributesDeveloperOwnersOutputReference extends cdkt
   }
 }
 
-export class ApphubWorkloadAttributesDeveloperOwnersList extends cdktf.ComplexList {
-  public internalValue? : ApphubWorkloadAttributesDeveloperOwners[] | cdktf.IResolvable
+export class ApphubWorkloadAttributesDeveloperOwnersList extends cdktn.ComplexList {
+  public internalValue? : ApphubWorkloadAttributesDeveloperOwners[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -625,24 +625,24 @@ export interface ApphubWorkloadAttributesEnvironment {
 }
 
 export function apphubWorkloadAttributesEnvironmentToTerraform(struct?: ApphubWorkloadAttributesEnvironmentOutputReference | ApphubWorkloadAttributesEnvironment): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    type: cdktf.stringToTerraform(struct!.type),
+    type: cdktn.stringToTerraform(struct!.type),
   }
 }
 
 
 export function apphubWorkloadAttributesEnvironmentToHclTerraform(struct?: ApphubWorkloadAttributesEnvironmentOutputReference | ApphubWorkloadAttributesEnvironment): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     type: {
-      value: cdktf.stringToHclTerraform(struct!.type),
+      value: cdktn.stringToHclTerraform(struct!.type),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -653,14 +653,14 @@ export function apphubWorkloadAttributesEnvironmentToHclTerraform(struct?: Apphu
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class ApphubWorkloadAttributesEnvironmentOutputReference extends cdktf.ComplexObject {
+export class ApphubWorkloadAttributesEnvironmentOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -713,32 +713,32 @@ export interface ApphubWorkloadAttributesOperatorOwners {
   readonly email: string;
 }
 
-export function apphubWorkloadAttributesOperatorOwnersToTerraform(struct?: ApphubWorkloadAttributesOperatorOwners | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function apphubWorkloadAttributesOperatorOwnersToTerraform(struct?: ApphubWorkloadAttributesOperatorOwners | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    display_name: cdktf.stringToTerraform(struct!.displayName),
-    email: cdktf.stringToTerraform(struct!.email),
+    display_name: cdktn.stringToTerraform(struct!.displayName),
+    email: cdktn.stringToTerraform(struct!.email),
   }
 }
 
 
-export function apphubWorkloadAttributesOperatorOwnersToHclTerraform(struct?: ApphubWorkloadAttributesOperatorOwners | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function apphubWorkloadAttributesOperatorOwnersToHclTerraform(struct?: ApphubWorkloadAttributesOperatorOwners | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     display_name: {
-      value: cdktf.stringToHclTerraform(struct!.displayName),
+      value: cdktn.stringToHclTerraform(struct!.displayName),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     email: {
-      value: cdktf.stringToHclTerraform(struct!.email),
+      value: cdktn.stringToHclTerraform(struct!.email),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -749,9 +749,9 @@ export function apphubWorkloadAttributesOperatorOwnersToHclTerraform(struct?: Ap
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class ApphubWorkloadAttributesOperatorOwnersOutputReference extends cdktf.ComplexObject {
+export class ApphubWorkloadAttributesOperatorOwnersOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -759,11 +759,11 @@ export class ApphubWorkloadAttributesOperatorOwnersOutputReference extends cdktf
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): ApphubWorkloadAttributesOperatorOwners | cdktf.IResolvable | undefined {
+  public get internalValue(): ApphubWorkloadAttributesOperatorOwners | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -780,14 +780,14 @@ export class ApphubWorkloadAttributesOperatorOwnersOutputReference extends cdktf
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: ApphubWorkloadAttributesOperatorOwners | cdktf.IResolvable | undefined) {
+  public set internalValue(value: ApphubWorkloadAttributesOperatorOwners | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._displayName = undefined;
       this._email = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -829,15 +829,15 @@ export class ApphubWorkloadAttributesOperatorOwnersOutputReference extends cdktf
   }
 }
 
-export class ApphubWorkloadAttributesOperatorOwnersList extends cdktf.ComplexList {
-  public internalValue? : ApphubWorkloadAttributesOperatorOwners[] | cdktf.IResolvable
+export class ApphubWorkloadAttributesOperatorOwnersList extends cdktn.ComplexList {
+  public internalValue? : ApphubWorkloadAttributesOperatorOwners[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -854,7 +854,7 @@ export interface ApphubWorkloadAttributes {
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/apphub_workload#business_owners ApphubWorkload#business_owners}
   */
-  readonly businessOwners?: ApphubWorkloadAttributesBusinessOwners[] | cdktf.IResolvable;
+  readonly businessOwners?: ApphubWorkloadAttributesBusinessOwners[] | cdktn.IResolvable;
   /**
   * criticality block
   *
@@ -866,7 +866,7 @@ export interface ApphubWorkloadAttributes {
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/apphub_workload#developer_owners ApphubWorkload#developer_owners}
   */
-  readonly developerOwners?: ApphubWorkloadAttributesDeveloperOwners[] | cdktf.IResolvable;
+  readonly developerOwners?: ApphubWorkloadAttributesDeveloperOwners[] | cdktn.IResolvable;
   /**
   * environment block
   *
@@ -878,32 +878,32 @@ export interface ApphubWorkloadAttributes {
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/apphub_workload#operator_owners ApphubWorkload#operator_owners}
   */
-  readonly operatorOwners?: ApphubWorkloadAttributesOperatorOwners[] | cdktf.IResolvable;
+  readonly operatorOwners?: ApphubWorkloadAttributesOperatorOwners[] | cdktn.IResolvable;
 }
 
 export function apphubWorkloadAttributesToTerraform(struct?: ApphubWorkloadAttributesOutputReference | ApphubWorkloadAttributes): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    business_owners: cdktf.listMapper(apphubWorkloadAttributesBusinessOwnersToTerraform, true)(struct!.businessOwners),
+    business_owners: cdktn.listMapper(apphubWorkloadAttributesBusinessOwnersToTerraform, true)(struct!.businessOwners),
     criticality: apphubWorkloadAttributesCriticalityToTerraform(struct!.criticality),
-    developer_owners: cdktf.listMapper(apphubWorkloadAttributesDeveloperOwnersToTerraform, true)(struct!.developerOwners),
+    developer_owners: cdktn.listMapper(apphubWorkloadAttributesDeveloperOwnersToTerraform, true)(struct!.developerOwners),
     environment: apphubWorkloadAttributesEnvironmentToTerraform(struct!.environment),
-    operator_owners: cdktf.listMapper(apphubWorkloadAttributesOperatorOwnersToTerraform, true)(struct!.operatorOwners),
+    operator_owners: cdktn.listMapper(apphubWorkloadAttributesOperatorOwnersToTerraform, true)(struct!.operatorOwners),
   }
 }
 
 
 export function apphubWorkloadAttributesToHclTerraform(struct?: ApphubWorkloadAttributesOutputReference | ApphubWorkloadAttributes): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     business_owners: {
-      value: cdktf.listMapperHcl(apphubWorkloadAttributesBusinessOwnersToHclTerraform, true)(struct!.businessOwners),
+      value: cdktn.listMapperHcl(apphubWorkloadAttributesBusinessOwnersToHclTerraform, true)(struct!.businessOwners),
       isBlock: true,
       type: "list",
       storageClassType: "ApphubWorkloadAttributesBusinessOwnersList",
@@ -915,7 +915,7 @@ export function apphubWorkloadAttributesToHclTerraform(struct?: ApphubWorkloadAt
       storageClassType: "ApphubWorkloadAttributesCriticalityList",
     },
     developer_owners: {
-      value: cdktf.listMapperHcl(apphubWorkloadAttributesDeveloperOwnersToHclTerraform, true)(struct!.developerOwners),
+      value: cdktn.listMapperHcl(apphubWorkloadAttributesDeveloperOwnersToHclTerraform, true)(struct!.developerOwners),
       isBlock: true,
       type: "list",
       storageClassType: "ApphubWorkloadAttributesDeveloperOwnersList",
@@ -927,7 +927,7 @@ export function apphubWorkloadAttributesToHclTerraform(struct?: ApphubWorkloadAt
       storageClassType: "ApphubWorkloadAttributesEnvironmentList",
     },
     operator_owners: {
-      value: cdktf.listMapperHcl(apphubWorkloadAttributesOperatorOwnersToHclTerraform, true)(struct!.operatorOwners),
+      value: cdktn.listMapperHcl(apphubWorkloadAttributesOperatorOwnersToHclTerraform, true)(struct!.operatorOwners),
       isBlock: true,
       type: "list",
       storageClassType: "ApphubWorkloadAttributesOperatorOwnersList",
@@ -938,14 +938,14 @@ export function apphubWorkloadAttributesToHclTerraform(struct?: ApphubWorkloadAt
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class ApphubWorkloadAttributesOutputReference extends cdktf.ComplexObject {
+export class ApphubWorkloadAttributesOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -999,7 +999,7 @@ export class ApphubWorkloadAttributesOutputReference extends cdktf.ComplexObject
   public get businessOwners() {
     return this._businessOwners;
   }
-  public putBusinessOwners(value: ApphubWorkloadAttributesBusinessOwners[] | cdktf.IResolvable) {
+  public putBusinessOwners(value: ApphubWorkloadAttributesBusinessOwners[] | cdktn.IResolvable) {
     this._businessOwners.internalValue = value;
   }
   public resetBusinessOwners() {
@@ -1031,7 +1031,7 @@ export class ApphubWorkloadAttributesOutputReference extends cdktf.ComplexObject
   public get developerOwners() {
     return this._developerOwners;
   }
-  public putDeveloperOwners(value: ApphubWorkloadAttributesDeveloperOwners[] | cdktf.IResolvable) {
+  public putDeveloperOwners(value: ApphubWorkloadAttributesDeveloperOwners[] | cdktn.IResolvable) {
     this._developerOwners.internalValue = value;
   }
   public resetDeveloperOwners() {
@@ -1063,7 +1063,7 @@ export class ApphubWorkloadAttributesOutputReference extends cdktf.ComplexObject
   public get operatorOwners() {
     return this._operatorOwners;
   }
-  public putOperatorOwners(value: ApphubWorkloadAttributesOperatorOwners[] | cdktf.IResolvable) {
+  public putOperatorOwners(value: ApphubWorkloadAttributesOperatorOwners[] | cdktn.IResolvable) {
     this._operatorOwners.internalValue = value;
   }
   public resetOperatorOwners() {
@@ -1089,39 +1089,39 @@ export interface ApphubWorkloadTimeouts {
   readonly update?: string;
 }
 
-export function apphubWorkloadTimeoutsToTerraform(struct?: ApphubWorkloadTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function apphubWorkloadTimeoutsToTerraform(struct?: ApphubWorkloadTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    create: cdktf.stringToTerraform(struct!.create),
-    delete: cdktf.stringToTerraform(struct!.delete),
-    update: cdktf.stringToTerraform(struct!.update),
+    create: cdktn.stringToTerraform(struct!.create),
+    delete: cdktn.stringToTerraform(struct!.delete),
+    update: cdktn.stringToTerraform(struct!.update),
   }
 }
 
 
-export function apphubWorkloadTimeoutsToHclTerraform(struct?: ApphubWorkloadTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function apphubWorkloadTimeoutsToHclTerraform(struct?: ApphubWorkloadTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     create: {
-      value: cdktf.stringToHclTerraform(struct!.create),
+      value: cdktn.stringToHclTerraform(struct!.create),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     delete: {
-      value: cdktf.stringToHclTerraform(struct!.delete),
+      value: cdktn.stringToHclTerraform(struct!.delete),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     update: {
-      value: cdktf.stringToHclTerraform(struct!.update),
+      value: cdktn.stringToHclTerraform(struct!.update),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -1132,19 +1132,19 @@ export function apphubWorkloadTimeoutsToHclTerraform(struct?: ApphubWorkloadTime
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class ApphubWorkloadTimeoutsOutputReference extends cdktf.ComplexObject {
+export class ApphubWorkloadTimeoutsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): ApphubWorkloadTimeouts | cdktf.IResolvable | undefined {
+  public get internalValue(): ApphubWorkloadTimeouts | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -1165,7 +1165,7 @@ export class ApphubWorkloadTimeoutsOutputReference extends cdktf.ComplexObject {
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: ApphubWorkloadTimeouts | cdktf.IResolvable | undefined) {
+  public set internalValue(value: ApphubWorkloadTimeouts | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -1173,7 +1173,7 @@ export class ApphubWorkloadTimeoutsOutputReference extends cdktf.ComplexObject {
       this._delete = undefined;
       this._update = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -1238,7 +1238,7 @@ export class ApphubWorkloadTimeoutsOutputReference extends cdktf.ComplexObject {
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/apphub_workload google_apphub_workload}
 */
-export class ApphubWorkload extends cdktf.TerraformResource {
+export class ApphubWorkload extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -1249,14 +1249,14 @@ export class ApphubWorkload extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a ApphubWorkload resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a ApphubWorkload resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the ApphubWorkload to import
   * @param importFromId The id of the existing ApphubWorkload that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/apphub_workload#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the ApphubWorkload to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "google_apphub_workload", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "google_apphub_workload", importId: importFromId, provider });
       }
 
   // ===========
@@ -1493,14 +1493,14 @@ export class ApphubWorkload extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      application_id: cdktf.stringToTerraform(this._applicationId),
-      description: cdktf.stringToTerraform(this._description),
-      discovered_workload: cdktf.stringToTerraform(this._discoveredWorkload),
-      display_name: cdktf.stringToTerraform(this._displayName),
-      id: cdktf.stringToTerraform(this._id),
-      location: cdktf.stringToTerraform(this._location),
-      project: cdktf.stringToTerraform(this._project),
-      workload_id: cdktf.stringToTerraform(this._workloadId),
+      application_id: cdktn.stringToTerraform(this._applicationId),
+      description: cdktn.stringToTerraform(this._description),
+      discovered_workload: cdktn.stringToTerraform(this._discoveredWorkload),
+      display_name: cdktn.stringToTerraform(this._displayName),
+      id: cdktn.stringToTerraform(this._id),
+      location: cdktn.stringToTerraform(this._location),
+      project: cdktn.stringToTerraform(this._project),
+      workload_id: cdktn.stringToTerraform(this._workloadId),
       attributes: apphubWorkloadAttributesToTerraform(this._attributes.internalValue),
       timeouts: apphubWorkloadTimeoutsToTerraform(this._timeouts.internalValue),
     };
@@ -1509,49 +1509,49 @@ export class ApphubWorkload extends cdktf.TerraformResource {
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       application_id: {
-        value: cdktf.stringToHclTerraform(this._applicationId),
+        value: cdktn.stringToHclTerraform(this._applicationId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       description: {
-        value: cdktf.stringToHclTerraform(this._description),
+        value: cdktn.stringToHclTerraform(this._description),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       discovered_workload: {
-        value: cdktf.stringToHclTerraform(this._discoveredWorkload),
+        value: cdktn.stringToHclTerraform(this._discoveredWorkload),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       display_name: {
-        value: cdktf.stringToHclTerraform(this._displayName),
+        value: cdktn.stringToHclTerraform(this._displayName),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       location: {
-        value: cdktf.stringToHclTerraform(this._location),
+        value: cdktn.stringToHclTerraform(this._location),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       project: {
-        value: cdktf.stringToHclTerraform(this._project),
+        value: cdktn.stringToHclTerraform(this._project),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       workload_id: {
-        value: cdktf.stringToHclTerraform(this._workloadId),
+        value: cdktn.stringToHclTerraform(this._workloadId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

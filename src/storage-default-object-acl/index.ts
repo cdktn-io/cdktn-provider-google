@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface StorageDefaultObjectAclConfig extends cdktf.TerraformMetaArguments {
+export interface StorageDefaultObjectAclConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/storage_default_object_acl#bucket StorageDefaultObjectAcl#bucket}
   */
@@ -32,7 +32,7 @@ export interface StorageDefaultObjectAclConfig extends cdktf.TerraformMetaArgume
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/storage_default_object_acl google_storage_default_object_acl}
 */
-export class StorageDefaultObjectAcl extends cdktf.TerraformResource {
+export class StorageDefaultObjectAcl extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -43,14 +43,14 @@ export class StorageDefaultObjectAcl extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a StorageDefaultObjectAcl resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a StorageDefaultObjectAcl resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the StorageDefaultObjectAcl to import
   * @param importFromId The id of the existing StorageDefaultObjectAcl that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/storage_default_object_acl#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the StorageDefaultObjectAcl to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "google_storage_default_object_acl", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "google_storage_default_object_acl", importId: importFromId, provider });
       }
 
   // ===========
@@ -121,7 +121,7 @@ export class StorageDefaultObjectAcl extends cdktf.TerraformResource {
   // role_entity - computed: true, optional: true, required: false
   private _roleEntity?: string[]; 
   public get roleEntity() {
-    return cdktf.Fn.tolist(this.getListAttribute('role_entity'));
+    return cdktn.Fn.tolist(this.getListAttribute('role_entity'));
   }
   public set roleEntity(value: string[]) {
     this._roleEntity = value;
@@ -140,28 +140,28 @@ export class StorageDefaultObjectAcl extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      bucket: cdktf.stringToTerraform(this._bucket),
-      id: cdktf.stringToTerraform(this._id),
-      role_entity: cdktf.listMapper(cdktf.stringToTerraform, false)(this._roleEntity),
+      bucket: cdktn.stringToTerraform(this._bucket),
+      id: cdktn.stringToTerraform(this._id),
+      role_entity: cdktn.listMapper(cdktn.stringToTerraform, false)(this._roleEntity),
     };
   }
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       bucket: {
-        value: cdktf.stringToHclTerraform(this._bucket),
+        value: cdktn.stringToHclTerraform(this._bucket),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       role_entity: {
-        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._roleEntity),
+        value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(this._roleEntity),
         isBlock: false,
         type: "set",
         storageClassType: "stringList",

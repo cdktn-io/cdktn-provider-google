@@ -7,17 +7,17 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface ModelArmorFloorsettingConfig extends cdktf.TerraformMetaArguments {
+export interface ModelArmorFloorsettingConfig extends cdktn.TerraformMetaArguments {
   /**
   * Floor Settings enforcement status.
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/model_armor_floorsetting#enable_floor_setting_enforcement ModelArmorFloorsetting#enable_floor_setting_enforcement}
   */
-  readonly enableFloorSettingEnforcement?: boolean | cdktf.IResolvable;
+  readonly enableFloorSettingEnforcement?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/model_armor_floorsetting#id ModelArmorFloorsetting#id}
   *
@@ -78,56 +78,56 @@ export interface ModelArmorFloorsettingAiPlatformFloorSetting {
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/model_armor_floorsetting#enable_cloud_logging ModelArmorFloorsetting#enable_cloud_logging}
   */
-  readonly enableCloudLogging?: boolean | cdktf.IResolvable;
+  readonly enableCloudLogging?: boolean | cdktn.IResolvable;
   /**
   * If true, Model Armor filters will be run in inspect and block mode.
   * Requests that trip Model Armor filters will be blocked.
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/model_armor_floorsetting#inspect_and_block ModelArmorFloorsetting#inspect_and_block}
   */
-  readonly inspectAndBlock?: boolean | cdktf.IResolvable;
+  readonly inspectAndBlock?: boolean | cdktn.IResolvable;
   /**
   * If true, Model Armor filters will be run in inspect only mode. No action
   * will be taken on the request.
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/model_armor_floorsetting#inspect_only ModelArmorFloorsetting#inspect_only}
   */
-  readonly inspectOnly?: boolean | cdktf.IResolvable;
+  readonly inspectOnly?: boolean | cdktn.IResolvable;
 }
 
 export function modelArmorFloorsettingAiPlatformFloorSettingToTerraform(struct?: ModelArmorFloorsettingAiPlatformFloorSettingOutputReference | ModelArmorFloorsettingAiPlatformFloorSetting): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    enable_cloud_logging: cdktf.booleanToTerraform(struct!.enableCloudLogging),
-    inspect_and_block: cdktf.booleanToTerraform(struct!.inspectAndBlock),
-    inspect_only: cdktf.booleanToTerraform(struct!.inspectOnly),
+    enable_cloud_logging: cdktn.booleanToTerraform(struct!.enableCloudLogging),
+    inspect_and_block: cdktn.booleanToTerraform(struct!.inspectAndBlock),
+    inspect_only: cdktn.booleanToTerraform(struct!.inspectOnly),
   }
 }
 
 
 export function modelArmorFloorsettingAiPlatformFloorSettingToHclTerraform(struct?: ModelArmorFloorsettingAiPlatformFloorSettingOutputReference | ModelArmorFloorsettingAiPlatformFloorSetting): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     enable_cloud_logging: {
-      value: cdktf.booleanToHclTerraform(struct!.enableCloudLogging),
+      value: cdktn.booleanToHclTerraform(struct!.enableCloudLogging),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     inspect_and_block: {
-      value: cdktf.booleanToHclTerraform(struct!.inspectAndBlock),
+      value: cdktn.booleanToHclTerraform(struct!.inspectAndBlock),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     inspect_only: {
-      value: cdktf.booleanToHclTerraform(struct!.inspectOnly),
+      value: cdktn.booleanToHclTerraform(struct!.inspectOnly),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
@@ -138,14 +138,14 @@ export function modelArmorFloorsettingAiPlatformFloorSettingToHclTerraform(struc
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class ModelArmorFloorsettingAiPlatformFloorSettingOutputReference extends cdktf.ComplexObject {
+export class ModelArmorFloorsettingAiPlatformFloorSettingOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -183,11 +183,11 @@ export class ModelArmorFloorsettingAiPlatformFloorSettingOutputReference extends
   }
 
   // enable_cloud_logging - computed: false, optional: true, required: false
-  private _enableCloudLogging?: boolean | cdktf.IResolvable; 
+  private _enableCloudLogging?: boolean | cdktn.IResolvable; 
   public get enableCloudLogging() {
     return this.getBooleanAttribute('enable_cloud_logging');
   }
-  public set enableCloudLogging(value: boolean | cdktf.IResolvable) {
+  public set enableCloudLogging(value: boolean | cdktn.IResolvable) {
     this._enableCloudLogging = value;
   }
   public resetEnableCloudLogging() {
@@ -199,11 +199,11 @@ export class ModelArmorFloorsettingAiPlatformFloorSettingOutputReference extends
   }
 
   // inspect_and_block - computed: false, optional: true, required: false
-  private _inspectAndBlock?: boolean | cdktf.IResolvable; 
+  private _inspectAndBlock?: boolean | cdktn.IResolvable; 
   public get inspectAndBlock() {
     return this.getBooleanAttribute('inspect_and_block');
   }
-  public set inspectAndBlock(value: boolean | cdktf.IResolvable) {
+  public set inspectAndBlock(value: boolean | cdktn.IResolvable) {
     this._inspectAndBlock = value;
   }
   public resetInspectAndBlock() {
@@ -215,11 +215,11 @@ export class ModelArmorFloorsettingAiPlatformFloorSettingOutputReference extends
   }
 
   // inspect_only - computed: false, optional: true, required: false
-  private _inspectOnly?: boolean | cdktf.IResolvable; 
+  private _inspectOnly?: boolean | cdktn.IResolvable; 
   public get inspectOnly() {
     return this.getBooleanAttribute('inspect_only');
   }
-  public set inspectOnly(value: boolean | cdktf.IResolvable) {
+  public set inspectOnly(value: boolean | cdktn.IResolvable) {
     this._inspectOnly = value;
   }
   public resetInspectOnly() {
@@ -243,24 +243,24 @@ export interface ModelArmorFloorsettingFilterConfigMaliciousUriFilterSettings {
 }
 
 export function modelArmorFloorsettingFilterConfigMaliciousUriFilterSettingsToTerraform(struct?: ModelArmorFloorsettingFilterConfigMaliciousUriFilterSettingsOutputReference | ModelArmorFloorsettingFilterConfigMaliciousUriFilterSettings): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    filter_enforcement: cdktf.stringToTerraform(struct!.filterEnforcement),
+    filter_enforcement: cdktn.stringToTerraform(struct!.filterEnforcement),
   }
 }
 
 
 export function modelArmorFloorsettingFilterConfigMaliciousUriFilterSettingsToHclTerraform(struct?: ModelArmorFloorsettingFilterConfigMaliciousUriFilterSettingsOutputReference | ModelArmorFloorsettingFilterConfigMaliciousUriFilterSettings): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     filter_enforcement: {
-      value: cdktf.stringToHclTerraform(struct!.filterEnforcement),
+      value: cdktn.stringToHclTerraform(struct!.filterEnforcement),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -271,14 +271,14 @@ export function modelArmorFloorsettingFilterConfigMaliciousUriFilterSettingsToHc
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class ModelArmorFloorsettingFilterConfigMaliciousUriFilterSettingsOutputReference extends cdktf.ComplexObject {
+export class ModelArmorFloorsettingFilterConfigMaliciousUriFilterSettingsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -342,31 +342,31 @@ export interface ModelArmorFloorsettingFilterConfigPiAndJailbreakFilterSettings 
 }
 
 export function modelArmorFloorsettingFilterConfigPiAndJailbreakFilterSettingsToTerraform(struct?: ModelArmorFloorsettingFilterConfigPiAndJailbreakFilterSettingsOutputReference | ModelArmorFloorsettingFilterConfigPiAndJailbreakFilterSettings): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    confidence_level: cdktf.stringToTerraform(struct!.confidenceLevel),
-    filter_enforcement: cdktf.stringToTerraform(struct!.filterEnforcement),
+    confidence_level: cdktn.stringToTerraform(struct!.confidenceLevel),
+    filter_enforcement: cdktn.stringToTerraform(struct!.filterEnforcement),
   }
 }
 
 
 export function modelArmorFloorsettingFilterConfigPiAndJailbreakFilterSettingsToHclTerraform(struct?: ModelArmorFloorsettingFilterConfigPiAndJailbreakFilterSettingsOutputReference | ModelArmorFloorsettingFilterConfigPiAndJailbreakFilterSettings): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     confidence_level: {
-      value: cdktf.stringToHclTerraform(struct!.confidenceLevel),
+      value: cdktn.stringToHclTerraform(struct!.confidenceLevel),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     filter_enforcement: {
-      value: cdktf.stringToHclTerraform(struct!.filterEnforcement),
+      value: cdktn.stringToHclTerraform(struct!.filterEnforcement),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -377,14 +377,14 @@ export function modelArmorFloorsettingFilterConfigPiAndJailbreakFilterSettingsTo
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class ModelArmorFloorsettingFilterConfigPiAndJailbreakFilterSettingsOutputReference extends cdktf.ComplexObject {
+export class ModelArmorFloorsettingFilterConfigPiAndJailbreakFilterSettingsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -469,32 +469,32 @@ export interface ModelArmorFloorsettingFilterConfigRaiSettingsRaiFilters {
   readonly filterType: string;
 }
 
-export function modelArmorFloorsettingFilterConfigRaiSettingsRaiFiltersToTerraform(struct?: ModelArmorFloorsettingFilterConfigRaiSettingsRaiFilters | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function modelArmorFloorsettingFilterConfigRaiSettingsRaiFiltersToTerraform(struct?: ModelArmorFloorsettingFilterConfigRaiSettingsRaiFilters | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    confidence_level: cdktf.stringToTerraform(struct!.confidenceLevel),
-    filter_type: cdktf.stringToTerraform(struct!.filterType),
+    confidence_level: cdktn.stringToTerraform(struct!.confidenceLevel),
+    filter_type: cdktn.stringToTerraform(struct!.filterType),
   }
 }
 
 
-export function modelArmorFloorsettingFilterConfigRaiSettingsRaiFiltersToHclTerraform(struct?: ModelArmorFloorsettingFilterConfigRaiSettingsRaiFilters | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function modelArmorFloorsettingFilterConfigRaiSettingsRaiFiltersToHclTerraform(struct?: ModelArmorFloorsettingFilterConfigRaiSettingsRaiFilters | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     confidence_level: {
-      value: cdktf.stringToHclTerraform(struct!.confidenceLevel),
+      value: cdktn.stringToHclTerraform(struct!.confidenceLevel),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     filter_type: {
-      value: cdktf.stringToHclTerraform(struct!.filterType),
+      value: cdktn.stringToHclTerraform(struct!.filterType),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -505,9 +505,9 @@ export function modelArmorFloorsettingFilterConfigRaiSettingsRaiFiltersToHclTerr
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class ModelArmorFloorsettingFilterConfigRaiSettingsRaiFiltersOutputReference extends cdktf.ComplexObject {
+export class ModelArmorFloorsettingFilterConfigRaiSettingsRaiFiltersOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -515,11 +515,11 @@ export class ModelArmorFloorsettingFilterConfigRaiSettingsRaiFiltersOutputRefere
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): ModelArmorFloorsettingFilterConfigRaiSettingsRaiFilters | cdktf.IResolvable | undefined {
+  public get internalValue(): ModelArmorFloorsettingFilterConfigRaiSettingsRaiFilters | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -536,14 +536,14 @@ export class ModelArmorFloorsettingFilterConfigRaiSettingsRaiFiltersOutputRefere
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: ModelArmorFloorsettingFilterConfigRaiSettingsRaiFilters | cdktf.IResolvable | undefined) {
+  public set internalValue(value: ModelArmorFloorsettingFilterConfigRaiSettingsRaiFilters | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._confidenceLevel = undefined;
       this._filterType = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -585,15 +585,15 @@ export class ModelArmorFloorsettingFilterConfigRaiSettingsRaiFiltersOutputRefere
   }
 }
 
-export class ModelArmorFloorsettingFilterConfigRaiSettingsRaiFiltersList extends cdktf.ComplexList {
-  public internalValue? : ModelArmorFloorsettingFilterConfigRaiSettingsRaiFilters[] | cdktf.IResolvable
+export class ModelArmorFloorsettingFilterConfigRaiSettingsRaiFiltersList extends cdktn.ComplexList {
+  public internalValue? : ModelArmorFloorsettingFilterConfigRaiSettingsRaiFilters[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -610,28 +610,28 @@ export interface ModelArmorFloorsettingFilterConfigRaiSettings {
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/model_armor_floorsetting#rai_filters ModelArmorFloorsetting#rai_filters}
   */
-  readonly raiFilters: ModelArmorFloorsettingFilterConfigRaiSettingsRaiFilters[] | cdktf.IResolvable;
+  readonly raiFilters: ModelArmorFloorsettingFilterConfigRaiSettingsRaiFilters[] | cdktn.IResolvable;
 }
 
 export function modelArmorFloorsettingFilterConfigRaiSettingsToTerraform(struct?: ModelArmorFloorsettingFilterConfigRaiSettingsOutputReference | ModelArmorFloorsettingFilterConfigRaiSettings): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    rai_filters: cdktf.listMapper(modelArmorFloorsettingFilterConfigRaiSettingsRaiFiltersToTerraform, true)(struct!.raiFilters),
+    rai_filters: cdktn.listMapper(modelArmorFloorsettingFilterConfigRaiSettingsRaiFiltersToTerraform, true)(struct!.raiFilters),
   }
 }
 
 
 export function modelArmorFloorsettingFilterConfigRaiSettingsToHclTerraform(struct?: ModelArmorFloorsettingFilterConfigRaiSettingsOutputReference | ModelArmorFloorsettingFilterConfigRaiSettings): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     rai_filters: {
-      value: cdktf.listMapperHcl(modelArmorFloorsettingFilterConfigRaiSettingsRaiFiltersToHclTerraform, true)(struct!.raiFilters),
+      value: cdktn.listMapperHcl(modelArmorFloorsettingFilterConfigRaiSettingsRaiFiltersToHclTerraform, true)(struct!.raiFilters),
       isBlock: true,
       type: "list",
       storageClassType: "ModelArmorFloorsettingFilterConfigRaiSettingsRaiFiltersList",
@@ -642,14 +642,14 @@ export function modelArmorFloorsettingFilterConfigRaiSettingsToHclTerraform(stru
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class ModelArmorFloorsettingFilterConfigRaiSettingsOutputReference extends cdktf.ComplexObject {
+export class ModelArmorFloorsettingFilterConfigRaiSettingsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -679,7 +679,7 @@ export class ModelArmorFloorsettingFilterConfigRaiSettingsOutputReference extend
   public get raiFilters() {
     return this._raiFilters;
   }
-  public putRaiFilters(value: ModelArmorFloorsettingFilterConfigRaiSettingsRaiFilters[] | cdktf.IResolvable) {
+  public putRaiFilters(value: ModelArmorFloorsettingFilterConfigRaiSettingsRaiFilters[] | cdktn.IResolvable) {
     this._raiFilters.internalValue = value;
   }
   // Temporarily expose input value. Use with caution.
@@ -720,31 +720,31 @@ export interface ModelArmorFloorsettingFilterConfigSdpSettingsAdvancedConfig {
 }
 
 export function modelArmorFloorsettingFilterConfigSdpSettingsAdvancedConfigToTerraform(struct?: ModelArmorFloorsettingFilterConfigSdpSettingsAdvancedConfigOutputReference | ModelArmorFloorsettingFilterConfigSdpSettingsAdvancedConfig): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    deidentify_template: cdktf.stringToTerraform(struct!.deidentifyTemplate),
-    inspect_template: cdktf.stringToTerraform(struct!.inspectTemplate),
+    deidentify_template: cdktn.stringToTerraform(struct!.deidentifyTemplate),
+    inspect_template: cdktn.stringToTerraform(struct!.inspectTemplate),
   }
 }
 
 
 export function modelArmorFloorsettingFilterConfigSdpSettingsAdvancedConfigToHclTerraform(struct?: ModelArmorFloorsettingFilterConfigSdpSettingsAdvancedConfigOutputReference | ModelArmorFloorsettingFilterConfigSdpSettingsAdvancedConfig): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     deidentify_template: {
-      value: cdktf.stringToHclTerraform(struct!.deidentifyTemplate),
+      value: cdktn.stringToHclTerraform(struct!.deidentifyTemplate),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     inspect_template: {
-      value: cdktf.stringToHclTerraform(struct!.inspectTemplate),
+      value: cdktn.stringToHclTerraform(struct!.inspectTemplate),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -755,14 +755,14 @@ export function modelArmorFloorsettingFilterConfigSdpSettingsAdvancedConfigToHcl
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class ModelArmorFloorsettingFilterConfigSdpSettingsAdvancedConfigOutputReference extends cdktf.ComplexObject {
+export class ModelArmorFloorsettingFilterConfigSdpSettingsAdvancedConfigOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -839,24 +839,24 @@ export interface ModelArmorFloorsettingFilterConfigSdpSettingsBasicConfig {
 }
 
 export function modelArmorFloorsettingFilterConfigSdpSettingsBasicConfigToTerraform(struct?: ModelArmorFloorsettingFilterConfigSdpSettingsBasicConfigOutputReference | ModelArmorFloorsettingFilterConfigSdpSettingsBasicConfig): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    filter_enforcement: cdktf.stringToTerraform(struct!.filterEnforcement),
+    filter_enforcement: cdktn.stringToTerraform(struct!.filterEnforcement),
   }
 }
 
 
 export function modelArmorFloorsettingFilterConfigSdpSettingsBasicConfigToHclTerraform(struct?: ModelArmorFloorsettingFilterConfigSdpSettingsBasicConfigOutputReference | ModelArmorFloorsettingFilterConfigSdpSettingsBasicConfig): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     filter_enforcement: {
-      value: cdktf.stringToHclTerraform(struct!.filterEnforcement),
+      value: cdktn.stringToHclTerraform(struct!.filterEnforcement),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -867,14 +867,14 @@ export function modelArmorFloorsettingFilterConfigSdpSettingsBasicConfigToHclTer
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class ModelArmorFloorsettingFilterConfigSdpSettingsBasicConfigOutputReference extends cdktf.ComplexObject {
+export class ModelArmorFloorsettingFilterConfigSdpSettingsBasicConfigOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -931,8 +931,8 @@ export interface ModelArmorFloorsettingFilterConfigSdpSettings {
 }
 
 export function modelArmorFloorsettingFilterConfigSdpSettingsToTerraform(struct?: ModelArmorFloorsettingFilterConfigSdpSettingsOutputReference | ModelArmorFloorsettingFilterConfigSdpSettings): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -943,8 +943,8 @@ export function modelArmorFloorsettingFilterConfigSdpSettingsToTerraform(struct?
 
 
 export function modelArmorFloorsettingFilterConfigSdpSettingsToHclTerraform(struct?: ModelArmorFloorsettingFilterConfigSdpSettingsOutputReference | ModelArmorFloorsettingFilterConfigSdpSettings): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -966,14 +966,14 @@ export function modelArmorFloorsettingFilterConfigSdpSettingsToHclTerraform(stru
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class ModelArmorFloorsettingFilterConfigSdpSettingsOutputReference extends cdktf.ComplexObject {
+export class ModelArmorFloorsettingFilterConfigSdpSettingsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -1064,8 +1064,8 @@ export interface ModelArmorFloorsettingFilterConfig {
 }
 
 export function modelArmorFloorsettingFilterConfigToTerraform(struct?: ModelArmorFloorsettingFilterConfigOutputReference | ModelArmorFloorsettingFilterConfig): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -1078,8 +1078,8 @@ export function modelArmorFloorsettingFilterConfigToTerraform(struct?: ModelArmo
 
 
 export function modelArmorFloorsettingFilterConfigToHclTerraform(struct?: ModelArmorFloorsettingFilterConfigOutputReference | ModelArmorFloorsettingFilterConfig): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -1113,14 +1113,14 @@ export function modelArmorFloorsettingFilterConfigToHclTerraform(struct?: ModelA
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class ModelArmorFloorsettingFilterConfigOutputReference extends cdktf.ComplexObject {
+export class ModelArmorFloorsettingFilterConfigOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -1233,28 +1233,28 @@ export interface ModelArmorFloorsettingFloorSettingMetadataMultiLanguageDetectio
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/model_armor_floorsetting#enable_multi_language_detection ModelArmorFloorsetting#enable_multi_language_detection}
   */
-  readonly enableMultiLanguageDetection: boolean | cdktf.IResolvable;
+  readonly enableMultiLanguageDetection: boolean | cdktn.IResolvable;
 }
 
 export function modelArmorFloorsettingFloorSettingMetadataMultiLanguageDetectionToTerraform(struct?: ModelArmorFloorsettingFloorSettingMetadataMultiLanguageDetectionOutputReference | ModelArmorFloorsettingFloorSettingMetadataMultiLanguageDetection): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    enable_multi_language_detection: cdktf.booleanToTerraform(struct!.enableMultiLanguageDetection),
+    enable_multi_language_detection: cdktn.booleanToTerraform(struct!.enableMultiLanguageDetection),
   }
 }
 
 
 export function modelArmorFloorsettingFloorSettingMetadataMultiLanguageDetectionToHclTerraform(struct?: ModelArmorFloorsettingFloorSettingMetadataMultiLanguageDetectionOutputReference | ModelArmorFloorsettingFloorSettingMetadataMultiLanguageDetection): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     enable_multi_language_detection: {
-      value: cdktf.booleanToHclTerraform(struct!.enableMultiLanguageDetection),
+      value: cdktn.booleanToHclTerraform(struct!.enableMultiLanguageDetection),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
@@ -1265,14 +1265,14 @@ export function modelArmorFloorsettingFloorSettingMetadataMultiLanguageDetection
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class ModelArmorFloorsettingFloorSettingMetadataMultiLanguageDetectionOutputReference extends cdktf.ComplexObject {
+export class ModelArmorFloorsettingFloorSettingMetadataMultiLanguageDetectionOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -1298,11 +1298,11 @@ export class ModelArmorFloorsettingFloorSettingMetadataMultiLanguageDetectionOut
   }
 
   // enable_multi_language_detection - computed: false, optional: false, required: true
-  private _enableMultiLanguageDetection?: boolean | cdktf.IResolvable; 
+  private _enableMultiLanguageDetection?: boolean | cdktn.IResolvable; 
   public get enableMultiLanguageDetection() {
     return this.getBooleanAttribute('enable_multi_language_detection');
   }
-  public set enableMultiLanguageDetection(value: boolean | cdktf.IResolvable) {
+  public set enableMultiLanguageDetection(value: boolean | cdktn.IResolvable) {
     this._enableMultiLanguageDetection = value;
   }
   // Temporarily expose input value. Use with caution.
@@ -1320,8 +1320,8 @@ export interface ModelArmorFloorsettingFloorSettingMetadata {
 }
 
 export function modelArmorFloorsettingFloorSettingMetadataToTerraform(struct?: ModelArmorFloorsettingFloorSettingMetadataOutputReference | ModelArmorFloorsettingFloorSettingMetadata): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -1331,8 +1331,8 @@ export function modelArmorFloorsettingFloorSettingMetadataToTerraform(struct?: M
 
 
 export function modelArmorFloorsettingFloorSettingMetadataToHclTerraform(struct?: ModelArmorFloorsettingFloorSettingMetadataOutputReference | ModelArmorFloorsettingFloorSettingMetadata): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -1348,14 +1348,14 @@ export function modelArmorFloorsettingFloorSettingMetadataToHclTerraform(struct?
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class ModelArmorFloorsettingFloorSettingMetadataOutputReference extends cdktf.ComplexObject {
+export class ModelArmorFloorsettingFloorSettingMetadataOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -1411,39 +1411,39 @@ export interface ModelArmorFloorsettingTimeouts {
   readonly update?: string;
 }
 
-export function modelArmorFloorsettingTimeoutsToTerraform(struct?: ModelArmorFloorsettingTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function modelArmorFloorsettingTimeoutsToTerraform(struct?: ModelArmorFloorsettingTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    create: cdktf.stringToTerraform(struct!.create),
-    delete: cdktf.stringToTerraform(struct!.delete),
-    update: cdktf.stringToTerraform(struct!.update),
+    create: cdktn.stringToTerraform(struct!.create),
+    delete: cdktn.stringToTerraform(struct!.delete),
+    update: cdktn.stringToTerraform(struct!.update),
   }
 }
 
 
-export function modelArmorFloorsettingTimeoutsToHclTerraform(struct?: ModelArmorFloorsettingTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function modelArmorFloorsettingTimeoutsToHclTerraform(struct?: ModelArmorFloorsettingTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     create: {
-      value: cdktf.stringToHclTerraform(struct!.create),
+      value: cdktn.stringToHclTerraform(struct!.create),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     delete: {
-      value: cdktf.stringToHclTerraform(struct!.delete),
+      value: cdktn.stringToHclTerraform(struct!.delete),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     update: {
-      value: cdktf.stringToHclTerraform(struct!.update),
+      value: cdktn.stringToHclTerraform(struct!.update),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -1454,19 +1454,19 @@ export function modelArmorFloorsettingTimeoutsToHclTerraform(struct?: ModelArmor
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class ModelArmorFloorsettingTimeoutsOutputReference extends cdktf.ComplexObject {
+export class ModelArmorFloorsettingTimeoutsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): ModelArmorFloorsettingTimeouts | cdktf.IResolvable | undefined {
+  public get internalValue(): ModelArmorFloorsettingTimeouts | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -1487,7 +1487,7 @@ export class ModelArmorFloorsettingTimeoutsOutputReference extends cdktf.Complex
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: ModelArmorFloorsettingTimeouts | cdktf.IResolvable | undefined) {
+  public set internalValue(value: ModelArmorFloorsettingTimeouts | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -1495,7 +1495,7 @@ export class ModelArmorFloorsettingTimeoutsOutputReference extends cdktf.Complex
       this._delete = undefined;
       this._update = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -1560,7 +1560,7 @@ export class ModelArmorFloorsettingTimeoutsOutputReference extends cdktf.Complex
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/model_armor_floorsetting google_model_armor_floorsetting}
 */
-export class ModelArmorFloorsetting extends cdktf.TerraformResource {
+export class ModelArmorFloorsetting extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -1571,14 +1571,14 @@ export class ModelArmorFloorsetting extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a ModelArmorFloorsetting resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a ModelArmorFloorsetting resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the ModelArmorFloorsetting to import
   * @param importFromId The id of the existing ModelArmorFloorsetting that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/model_armor_floorsetting#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the ModelArmorFloorsetting to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "google_model_armor_floorsetting", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "google_model_armor_floorsetting", importId: importFromId, provider });
       }
 
   // ===========
@@ -1629,11 +1629,11 @@ export class ModelArmorFloorsetting extends cdktf.TerraformResource {
   }
 
   // enable_floor_setting_enforcement - computed: false, optional: true, required: false
-  private _enableFloorSettingEnforcement?: boolean | cdktf.IResolvable; 
+  private _enableFloorSettingEnforcement?: boolean | cdktn.IResolvable; 
   public get enableFloorSettingEnforcement() {
     return this.getBooleanAttribute('enable_floor_setting_enforcement');
   }
-  public set enableFloorSettingEnforcement(value: boolean | cdktf.IResolvable) {
+  public set enableFloorSettingEnforcement(value: boolean | cdktn.IResolvable) {
     this._enableFloorSettingEnforcement = value;
   }
   public resetEnableFloorSettingEnforcement() {
@@ -1779,11 +1779,11 @@ export class ModelArmorFloorsetting extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      enable_floor_setting_enforcement: cdktf.booleanToTerraform(this._enableFloorSettingEnforcement),
-      id: cdktf.stringToTerraform(this._id),
-      integrated_services: cdktf.listMapper(cdktf.stringToTerraform, false)(this._integratedServices),
-      location: cdktf.stringToTerraform(this._location),
-      parent: cdktf.stringToTerraform(this._parent),
+      enable_floor_setting_enforcement: cdktn.booleanToTerraform(this._enableFloorSettingEnforcement),
+      id: cdktn.stringToTerraform(this._id),
+      integrated_services: cdktn.listMapper(cdktn.stringToTerraform, false)(this._integratedServices),
+      location: cdktn.stringToTerraform(this._location),
+      parent: cdktn.stringToTerraform(this._parent),
       ai_platform_floor_setting: modelArmorFloorsettingAiPlatformFloorSettingToTerraform(this._aiPlatformFloorSetting.internalValue),
       filter_config: modelArmorFloorsettingFilterConfigToTerraform(this._filterConfig.internalValue),
       floor_setting_metadata: modelArmorFloorsettingFloorSettingMetadataToTerraform(this._floorSettingMetadata.internalValue),
@@ -1794,31 +1794,31 @@ export class ModelArmorFloorsetting extends cdktf.TerraformResource {
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       enable_floor_setting_enforcement: {
-        value: cdktf.booleanToHclTerraform(this._enableFloorSettingEnforcement),
+        value: cdktn.booleanToHclTerraform(this._enableFloorSettingEnforcement),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       integrated_services: {
-        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._integratedServices),
+        value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(this._integratedServices),
         isBlock: false,
         type: "list",
         storageClassType: "stringList",
       },
       location: {
-        value: cdktf.stringToHclTerraform(this._location),
+        value: cdktn.stringToHclTerraform(this._location),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       parent: {
-        value: cdktf.stringToHclTerraform(this._parent),
+        value: cdktn.stringToHclTerraform(this._parent),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

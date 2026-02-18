@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface SecretManagerRegionalSecretConfig extends cdktf.TerraformMetaArguments {
+export interface SecretManagerRegionalSecretConfig extends cdktn.TerraformMetaArguments {
   /**
   * Custom metadata about the regional secret.
   * 
@@ -42,7 +42,7 @@ export interface SecretManagerRegionalSecretConfig extends cdktf.TerraformMetaAr
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/secret_manager_regional_secret#deletion_protection SecretManagerRegionalSecret#deletion_protection}
   */
-  readonly deletionProtection?: boolean | cdktf.IResolvable;
+  readonly deletionProtection?: boolean | cdktn.IResolvable;
   /**
   * Timestamp in UTC when the regional secret is scheduled to expire. This is always provided on
   * output, regardless of what was sent on input. A timestamp in RFC3339 UTC "Zulu" format, with
@@ -158,7 +158,7 @@ export interface SecretManagerRegionalSecretConfig extends cdktf.TerraformMetaAr
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/secret_manager_regional_secret#topics SecretManagerRegionalSecret#topics}
   */
-  readonly topics?: SecretManagerRegionalSecretTopics[] | cdktf.IResolvable;
+  readonly topics?: SecretManagerRegionalSecretTopics[] | cdktn.IResolvable;
 }
 export interface SecretManagerRegionalSecretCustomerManagedEncryption {
   /**
@@ -170,24 +170,24 @@ export interface SecretManagerRegionalSecretCustomerManagedEncryption {
 }
 
 export function secretManagerRegionalSecretCustomerManagedEncryptionToTerraform(struct?: SecretManagerRegionalSecretCustomerManagedEncryptionOutputReference | SecretManagerRegionalSecretCustomerManagedEncryption): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    kms_key_name: cdktf.stringToTerraform(struct!.kmsKeyName),
+    kms_key_name: cdktn.stringToTerraform(struct!.kmsKeyName),
   }
 }
 
 
 export function secretManagerRegionalSecretCustomerManagedEncryptionToHclTerraform(struct?: SecretManagerRegionalSecretCustomerManagedEncryptionOutputReference | SecretManagerRegionalSecretCustomerManagedEncryption): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     kms_key_name: {
-      value: cdktf.stringToHclTerraform(struct!.kmsKeyName),
+      value: cdktn.stringToHclTerraform(struct!.kmsKeyName),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -198,14 +198,14 @@ export function secretManagerRegionalSecretCustomerManagedEncryptionToHclTerrafo
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class SecretManagerRegionalSecretCustomerManagedEncryptionOutputReference extends cdktf.ComplexObject {
+export class SecretManagerRegionalSecretCustomerManagedEncryptionOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -264,31 +264,31 @@ export interface SecretManagerRegionalSecretRotation {
 }
 
 export function secretManagerRegionalSecretRotationToTerraform(struct?: SecretManagerRegionalSecretRotationOutputReference | SecretManagerRegionalSecretRotation): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    next_rotation_time: cdktf.stringToTerraform(struct!.nextRotationTime),
-    rotation_period: cdktf.stringToTerraform(struct!.rotationPeriod),
+    next_rotation_time: cdktn.stringToTerraform(struct!.nextRotationTime),
+    rotation_period: cdktn.stringToTerraform(struct!.rotationPeriod),
   }
 }
 
 
 export function secretManagerRegionalSecretRotationToHclTerraform(struct?: SecretManagerRegionalSecretRotationOutputReference | SecretManagerRegionalSecretRotation): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     next_rotation_time: {
-      value: cdktf.stringToHclTerraform(struct!.nextRotationTime),
+      value: cdktn.stringToHclTerraform(struct!.nextRotationTime),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     rotation_period: {
-      value: cdktf.stringToHclTerraform(struct!.rotationPeriod),
+      value: cdktn.stringToHclTerraform(struct!.rotationPeriod),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -299,14 +299,14 @@ export function secretManagerRegionalSecretRotationToHclTerraform(struct?: Secre
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class SecretManagerRegionalSecretRotationOutputReference extends cdktf.ComplexObject {
+export class SecretManagerRegionalSecretRotationOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -384,39 +384,39 @@ export interface SecretManagerRegionalSecretTimeouts {
   readonly update?: string;
 }
 
-export function secretManagerRegionalSecretTimeoutsToTerraform(struct?: SecretManagerRegionalSecretTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function secretManagerRegionalSecretTimeoutsToTerraform(struct?: SecretManagerRegionalSecretTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    create: cdktf.stringToTerraform(struct!.create),
-    delete: cdktf.stringToTerraform(struct!.delete),
-    update: cdktf.stringToTerraform(struct!.update),
+    create: cdktn.stringToTerraform(struct!.create),
+    delete: cdktn.stringToTerraform(struct!.delete),
+    update: cdktn.stringToTerraform(struct!.update),
   }
 }
 
 
-export function secretManagerRegionalSecretTimeoutsToHclTerraform(struct?: SecretManagerRegionalSecretTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function secretManagerRegionalSecretTimeoutsToHclTerraform(struct?: SecretManagerRegionalSecretTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     create: {
-      value: cdktf.stringToHclTerraform(struct!.create),
+      value: cdktn.stringToHclTerraform(struct!.create),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     delete: {
-      value: cdktf.stringToHclTerraform(struct!.delete),
+      value: cdktn.stringToHclTerraform(struct!.delete),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     update: {
-      value: cdktf.stringToHclTerraform(struct!.update),
+      value: cdktn.stringToHclTerraform(struct!.update),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -427,19 +427,19 @@ export function secretManagerRegionalSecretTimeoutsToHclTerraform(struct?: Secre
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class SecretManagerRegionalSecretTimeoutsOutputReference extends cdktf.ComplexObject {
+export class SecretManagerRegionalSecretTimeoutsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): SecretManagerRegionalSecretTimeouts | cdktf.IResolvable | undefined {
+  public get internalValue(): SecretManagerRegionalSecretTimeouts | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -460,7 +460,7 @@ export class SecretManagerRegionalSecretTimeoutsOutputReference extends cdktf.Co
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: SecretManagerRegionalSecretTimeouts | cdktf.IResolvable | undefined) {
+  public set internalValue(value: SecretManagerRegionalSecretTimeouts | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -468,7 +468,7 @@ export class SecretManagerRegionalSecretTimeoutsOutputReference extends cdktf.Co
       this._delete = undefined;
       this._update = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -542,25 +542,25 @@ export interface SecretManagerRegionalSecretTopics {
   readonly name: string;
 }
 
-export function secretManagerRegionalSecretTopicsToTerraform(struct?: SecretManagerRegionalSecretTopics | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function secretManagerRegionalSecretTopicsToTerraform(struct?: SecretManagerRegionalSecretTopics | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    name: cdktf.stringToTerraform(struct!.name),
+    name: cdktn.stringToTerraform(struct!.name),
   }
 }
 
 
-export function secretManagerRegionalSecretTopicsToHclTerraform(struct?: SecretManagerRegionalSecretTopics | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function secretManagerRegionalSecretTopicsToHclTerraform(struct?: SecretManagerRegionalSecretTopics | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     name: {
-      value: cdktf.stringToHclTerraform(struct!.name),
+      value: cdktn.stringToHclTerraform(struct!.name),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -571,9 +571,9 @@ export function secretManagerRegionalSecretTopicsToHclTerraform(struct?: SecretM
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class SecretManagerRegionalSecretTopicsOutputReference extends cdktf.ComplexObject {
+export class SecretManagerRegionalSecretTopicsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -581,11 +581,11 @@ export class SecretManagerRegionalSecretTopicsOutputReference extends cdktf.Comp
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): SecretManagerRegionalSecretTopics | cdktf.IResolvable | undefined {
+  public get internalValue(): SecretManagerRegionalSecretTopics | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -598,13 +598,13 @@ export class SecretManagerRegionalSecretTopicsOutputReference extends cdktf.Comp
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: SecretManagerRegionalSecretTopics | cdktf.IResolvable | undefined) {
+  public set internalValue(value: SecretManagerRegionalSecretTopics | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._name = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -629,15 +629,15 @@ export class SecretManagerRegionalSecretTopicsOutputReference extends cdktf.Comp
   }
 }
 
-export class SecretManagerRegionalSecretTopicsList extends cdktf.ComplexList {
-  public internalValue? : SecretManagerRegionalSecretTopics[] | cdktf.IResolvable
+export class SecretManagerRegionalSecretTopicsList extends cdktn.ComplexList {
+  public internalValue? : SecretManagerRegionalSecretTopics[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -652,7 +652,7 @@ export class SecretManagerRegionalSecretTopicsList extends cdktf.ComplexList {
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/secret_manager_regional_secret google_secret_manager_regional_secret}
 */
-export class SecretManagerRegionalSecret extends cdktf.TerraformResource {
+export class SecretManagerRegionalSecret extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -663,14 +663,14 @@ export class SecretManagerRegionalSecret extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a SecretManagerRegionalSecret resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a SecretManagerRegionalSecret resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the SecretManagerRegionalSecret to import
   * @param importFromId The id of the existing SecretManagerRegionalSecret that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/secret_manager_regional_secret#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the SecretManagerRegionalSecret to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "google_secret_manager_regional_secret", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "google_secret_manager_regional_secret", importId: importFromId, provider });
       }
 
   // ===========
@@ -744,11 +744,11 @@ export class SecretManagerRegionalSecret extends cdktf.TerraformResource {
   }
 
   // deletion_protection - computed: false, optional: true, required: false
-  private _deletionProtection?: boolean | cdktf.IResolvable; 
+  private _deletionProtection?: boolean | cdktn.IResolvable; 
   public get deletionProtection() {
     return this.getBooleanAttribute('deletion_protection');
   }
-  public set deletionProtection(value: boolean | cdktf.IResolvable) {
+  public set deletionProtection(value: boolean | cdktn.IResolvable) {
     this._deletionProtection = value;
   }
   public resetDeletionProtection() {
@@ -760,13 +760,13 @@ export class SecretManagerRegionalSecret extends cdktf.TerraformResource {
   }
 
   // effective_annotations - computed: true, optional: false, required: false
-  private _effectiveAnnotations = new cdktf.StringMap(this, "effective_annotations");
+  private _effectiveAnnotations = new cdktn.StringMap(this, "effective_annotations");
   public get effectiveAnnotations() {
     return this._effectiveAnnotations;
   }
 
   // effective_labels - computed: true, optional: false, required: false
-  private _effectiveLabels = new cdktf.StringMap(this, "effective_labels");
+  private _effectiveLabels = new cdktn.StringMap(this, "effective_labels");
   public get effectiveLabels() {
     return this._effectiveLabels;
   }
@@ -883,7 +883,7 @@ export class SecretManagerRegionalSecret extends cdktf.TerraformResource {
   }
 
   // terraform_labels - computed: true, optional: false, required: false
-  private _terraformLabels = new cdktf.StringMap(this, "terraform_labels");
+  private _terraformLabels = new cdktn.StringMap(this, "terraform_labels");
   public get terraformLabels() {
     return this._terraformLabels;
   }
@@ -989,7 +989,7 @@ export class SecretManagerRegionalSecret extends cdktf.TerraformResource {
   public get topics() {
     return this._topics;
   }
-  public putTopics(value: SecretManagerRegionalSecretTopics[] | cdktf.IResolvable) {
+  public putTopics(value: SecretManagerRegionalSecretTopics[] | cdktn.IResolvable) {
     this._topics.internalValue = value;
   }
   public resetTopics() {
@@ -1006,95 +1006,95 @@ export class SecretManagerRegionalSecret extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      annotations: cdktf.hashMapper(cdktf.stringToTerraform)(this._annotations),
-      deletion_protection: cdktf.booleanToTerraform(this._deletionProtection),
-      expire_time: cdktf.stringToTerraform(this._expireTime),
-      id: cdktf.stringToTerraform(this._id),
-      labels: cdktf.hashMapper(cdktf.stringToTerraform)(this._labels),
-      location: cdktf.stringToTerraform(this._location),
-      project: cdktf.stringToTerraform(this._project),
-      secret_id: cdktf.stringToTerraform(this._secretId),
-      tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
-      ttl: cdktf.stringToTerraform(this._ttl),
-      version_aliases: cdktf.hashMapper(cdktf.stringToTerraform)(this._versionAliases),
-      version_destroy_ttl: cdktf.stringToTerraform(this._versionDestroyTtl),
+      annotations: cdktn.hashMapper(cdktn.stringToTerraform)(this._annotations),
+      deletion_protection: cdktn.booleanToTerraform(this._deletionProtection),
+      expire_time: cdktn.stringToTerraform(this._expireTime),
+      id: cdktn.stringToTerraform(this._id),
+      labels: cdktn.hashMapper(cdktn.stringToTerraform)(this._labels),
+      location: cdktn.stringToTerraform(this._location),
+      project: cdktn.stringToTerraform(this._project),
+      secret_id: cdktn.stringToTerraform(this._secretId),
+      tags: cdktn.hashMapper(cdktn.stringToTerraform)(this._tags),
+      ttl: cdktn.stringToTerraform(this._ttl),
+      version_aliases: cdktn.hashMapper(cdktn.stringToTerraform)(this._versionAliases),
+      version_destroy_ttl: cdktn.stringToTerraform(this._versionDestroyTtl),
       customer_managed_encryption: secretManagerRegionalSecretCustomerManagedEncryptionToTerraform(this._customerManagedEncryption.internalValue),
       rotation: secretManagerRegionalSecretRotationToTerraform(this._rotation.internalValue),
       timeouts: secretManagerRegionalSecretTimeoutsToTerraform(this._timeouts.internalValue),
-      topics: cdktf.listMapper(secretManagerRegionalSecretTopicsToTerraform, true)(this._topics.internalValue),
+      topics: cdktn.listMapper(secretManagerRegionalSecretTopicsToTerraform, true)(this._topics.internalValue),
     };
   }
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       annotations: {
-        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._annotations),
+        value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(this._annotations),
         isBlock: false,
         type: "map",
         storageClassType: "stringMap",
       },
       deletion_protection: {
-        value: cdktf.booleanToHclTerraform(this._deletionProtection),
+        value: cdktn.booleanToHclTerraform(this._deletionProtection),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       expire_time: {
-        value: cdktf.stringToHclTerraform(this._expireTime),
+        value: cdktn.stringToHclTerraform(this._expireTime),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       labels: {
-        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._labels),
+        value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(this._labels),
         isBlock: false,
         type: "map",
         storageClassType: "stringMap",
       },
       location: {
-        value: cdktf.stringToHclTerraform(this._location),
+        value: cdktn.stringToHclTerraform(this._location),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       project: {
-        value: cdktf.stringToHclTerraform(this._project),
+        value: cdktn.stringToHclTerraform(this._project),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       secret_id: {
-        value: cdktf.stringToHclTerraform(this._secretId),
+        value: cdktn.stringToHclTerraform(this._secretId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       tags: {
-        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tags),
+        value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(this._tags),
         isBlock: false,
         type: "map",
         storageClassType: "stringMap",
       },
       ttl: {
-        value: cdktf.stringToHclTerraform(this._ttl),
+        value: cdktn.stringToHclTerraform(this._ttl),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       version_aliases: {
-        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._versionAliases),
+        value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(this._versionAliases),
         isBlock: false,
         type: "map",
         storageClassType: "stringMap",
       },
       version_destroy_ttl: {
-        value: cdktf.stringToHclTerraform(this._versionDestroyTtl),
+        value: cdktn.stringToHclTerraform(this._versionDestroyTtl),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
@@ -1118,7 +1118,7 @@ export class SecretManagerRegionalSecret extends cdktf.TerraformResource {
         storageClassType: "SecretManagerRegionalSecretTimeouts",
       },
       topics: {
-        value: cdktf.listMapperHcl(secretManagerRegionalSecretTopicsToHclTerraform, true)(this._topics.internalValue),
+        value: cdktn.listMapperHcl(secretManagerRegionalSecretTopicsToHclTerraform, true)(this._topics.internalValue),
         isBlock: true,
         type: "list",
         storageClassType: "SecretManagerRegionalSecretTopicsList",

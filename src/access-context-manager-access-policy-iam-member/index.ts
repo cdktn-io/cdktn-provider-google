@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface AccessContextManagerAccessPolicyIamMemberConfig extends cdktf.TerraformMetaArguments {
+export interface AccessContextManagerAccessPolicyIamMemberConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/access_context_manager_access_policy_iam_member#id AccessContextManagerAccessPolicyIamMember#id}
   *
@@ -54,38 +54,38 @@ export interface AccessContextManagerAccessPolicyIamMemberCondition {
 }
 
 export function accessContextManagerAccessPolicyIamMemberConditionToTerraform(struct?: AccessContextManagerAccessPolicyIamMemberConditionOutputReference | AccessContextManagerAccessPolicyIamMemberCondition): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    description: cdktf.stringToTerraform(struct!.description),
-    expression: cdktf.stringToTerraform(struct!.expression),
-    title: cdktf.stringToTerraform(struct!.title),
+    description: cdktn.stringToTerraform(struct!.description),
+    expression: cdktn.stringToTerraform(struct!.expression),
+    title: cdktn.stringToTerraform(struct!.title),
   }
 }
 
 
 export function accessContextManagerAccessPolicyIamMemberConditionToHclTerraform(struct?: AccessContextManagerAccessPolicyIamMemberConditionOutputReference | AccessContextManagerAccessPolicyIamMemberCondition): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     description: {
-      value: cdktf.stringToHclTerraform(struct!.description),
+      value: cdktn.stringToHclTerraform(struct!.description),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     expression: {
-      value: cdktf.stringToHclTerraform(struct!.expression),
+      value: cdktn.stringToHclTerraform(struct!.expression),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     title: {
-      value: cdktf.stringToHclTerraform(struct!.title),
+      value: cdktn.stringToHclTerraform(struct!.title),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -96,14 +96,14 @@ export function accessContextManagerAccessPolicyIamMemberConditionToHclTerraform
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class AccessContextManagerAccessPolicyIamMemberConditionOutputReference extends cdktf.ComplexObject {
+export class AccessContextManagerAccessPolicyIamMemberConditionOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -186,7 +186,7 @@ export class AccessContextManagerAccessPolicyIamMemberConditionOutputReference e
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/access_context_manager_access_policy_iam_member google_access_context_manager_access_policy_iam_member}
 */
-export class AccessContextManagerAccessPolicyIamMember extends cdktf.TerraformResource {
+export class AccessContextManagerAccessPolicyIamMember extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -197,14 +197,14 @@ export class AccessContextManagerAccessPolicyIamMember extends cdktf.TerraformRe
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a AccessContextManagerAccessPolicyIamMember resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a AccessContextManagerAccessPolicyIamMember resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the AccessContextManagerAccessPolicyIamMember to import
   * @param importFromId The id of the existing AccessContextManagerAccessPolicyIamMember that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/access_context_manager_access_policy_iam_member#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the AccessContextManagerAccessPolicyIamMember to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "google_access_context_manager_access_policy_iam_member", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "google_access_context_manager_access_policy_iam_member", importId: importFromId, provider });
       }
 
   // ===========
@@ -327,10 +327,10 @@ export class AccessContextManagerAccessPolicyIamMember extends cdktf.TerraformRe
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      id: cdktf.stringToTerraform(this._id),
-      member: cdktf.stringToTerraform(this._member),
-      name: cdktf.stringToTerraform(this._name),
-      role: cdktf.stringToTerraform(this._role),
+      id: cdktn.stringToTerraform(this._id),
+      member: cdktn.stringToTerraform(this._member),
+      name: cdktn.stringToTerraform(this._name),
+      role: cdktn.stringToTerraform(this._role),
       condition: accessContextManagerAccessPolicyIamMemberConditionToTerraform(this._condition.internalValue),
     };
   }
@@ -338,25 +338,25 @@ export class AccessContextManagerAccessPolicyIamMember extends cdktf.TerraformRe
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       member: {
-        value: cdktf.stringToHclTerraform(this._member),
+        value: cdktn.stringToHclTerraform(this._member),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       name: {
-        value: cdktf.stringToHclTerraform(this._name),
+        value: cdktn.stringToHclTerraform(this._name),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       role: {
-        value: cdktf.stringToHclTerraform(this._role),
+        value: cdktn.stringToHclTerraform(this._role),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

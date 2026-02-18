@@ -7,7 +7,7 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
@@ -31,7 +31,7 @@ export interface GoogleProviderConfig {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs#add_terraform_attribution_label GoogleProvider#add_terraform_attribution_label}
   */
-  readonly addTerraformAttributionLabel?: boolean | cdktf.IResolvable;
+  readonly addTerraformAttributionLabel?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs#alloydb_custom_endpoint GoogleProvider#alloydb_custom_endpoint}
   */
@@ -691,7 +691,7 @@ export interface GoogleProviderConfig {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs#user_project_override GoogleProvider#user_project_override}
   */
-  readonly userProjectOverride?: boolean | cdktf.IResolvable;
+  readonly userProjectOverride?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs#vertex_ai_custom_endpoint GoogleProvider#vertex_ai_custom_endpoint}
   */
@@ -727,51 +727,51 @@ export interface GoogleProviderConfig {
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs#batching GoogleProvider#batching}
   */
-  readonly batching?: GoogleProviderBatching[] | cdktf.IResolvable;
+  readonly batching?: GoogleProviderBatching[] | cdktn.IResolvable;
   /**
   * external_credentials block
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs#external_credentials GoogleProvider#external_credentials}
   */
-  readonly externalCredentials?: GoogleProviderExternalCredentials[] | cdktf.IResolvable;
+  readonly externalCredentials?: GoogleProviderExternalCredentials[] | cdktn.IResolvable;
 }
 export interface GoogleProviderBatching {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs#enable_batching GoogleProvider#enable_batching}
   */
-  readonly enableBatching?: boolean | cdktf.IResolvable;
+  readonly enableBatching?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs#send_after GoogleProvider#send_after}
   */
   readonly sendAfter?: string;
 }
 
-export function googleProviderBatchingToTerraform(struct?: GoogleProviderBatching | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function googleProviderBatchingToTerraform(struct?: GoogleProviderBatching | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    enable_batching: cdktf.booleanToTerraform(struct!.enableBatching),
-    send_after: cdktf.stringToTerraform(struct!.sendAfter),
+    enable_batching: cdktn.booleanToTerraform(struct!.enableBatching),
+    send_after: cdktn.stringToTerraform(struct!.sendAfter),
   }
 }
 
 
-export function googleProviderBatchingToHclTerraform(struct?: GoogleProviderBatching | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function googleProviderBatchingToHclTerraform(struct?: GoogleProviderBatching | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     enable_batching: {
-      value: cdktf.booleanToHclTerraform(struct!.enableBatching),
+      value: cdktn.booleanToHclTerraform(struct!.enableBatching),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     send_after: {
-      value: cdktf.stringToHclTerraform(struct!.sendAfter),
+      value: cdktn.stringToHclTerraform(struct!.sendAfter),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -797,39 +797,39 @@ export interface GoogleProviderExternalCredentials {
   readonly serviceAccountEmail: string;
 }
 
-export function googleProviderExternalCredentialsToTerraform(struct?: GoogleProviderExternalCredentials | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function googleProviderExternalCredentialsToTerraform(struct?: GoogleProviderExternalCredentials | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    audience: cdktf.stringToTerraform(struct!.audience),
-    identity_token: cdktf.stringToTerraform(struct!.identityToken),
-    service_account_email: cdktf.stringToTerraform(struct!.serviceAccountEmail),
+    audience: cdktn.stringToTerraform(struct!.audience),
+    identity_token: cdktn.stringToTerraform(struct!.identityToken),
+    service_account_email: cdktn.stringToTerraform(struct!.serviceAccountEmail),
   }
 }
 
 
-export function googleProviderExternalCredentialsToHclTerraform(struct?: GoogleProviderExternalCredentials | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function googleProviderExternalCredentialsToHclTerraform(struct?: GoogleProviderExternalCredentials | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     audience: {
-      value: cdktf.stringToHclTerraform(struct!.audience),
+      value: cdktn.stringToHclTerraform(struct!.audience),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     identity_token: {
-      value: cdktf.stringToHclTerraform(struct!.identityToken),
+      value: cdktn.stringToHclTerraform(struct!.identityToken),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     service_account_email: {
-      value: cdktf.stringToHclTerraform(struct!.serviceAccountEmail),
+      value: cdktn.stringToHclTerraform(struct!.serviceAccountEmail),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -844,7 +844,7 @@ export function googleProviderExternalCredentialsToHclTerraform(struct?: GoogleP
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs google}
 */
-export class GoogleProvider extends cdktf.TerraformProvider {
+export class GoogleProvider extends cdktn.TerraformProvider {
 
   // =================
   // STATIC PROPERTIES
@@ -855,14 +855,14 @@ export class GoogleProvider extends cdktf.TerraformProvider {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a GoogleProvider resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a GoogleProvider resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the GoogleProvider to import
   * @param importFromId The id of the existing GoogleProvider that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the GoogleProvider to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "google", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "google", importId: importFromId, provider });
       }
 
   // ===========
@@ -1136,11 +1136,11 @@ export class GoogleProvider extends cdktf.TerraformProvider {
   }
 
   // add_terraform_attribution_label - computed: false, optional: true, required: false
-  private _addTerraformAttributionLabel?: boolean | cdktf.IResolvable; 
+  private _addTerraformAttributionLabel?: boolean | cdktn.IResolvable; 
   public get addTerraformAttributionLabel() {
     return this._addTerraformAttributionLabel;
   }
-  public set addTerraformAttributionLabel(value: boolean | cdktf.IResolvable | undefined) {
+  public set addTerraformAttributionLabel(value: boolean | cdktn.IResolvable | undefined) {
     this._addTerraformAttributionLabel = value;
   }
   public resetAddTerraformAttributionLabel() {
@@ -3776,11 +3776,11 @@ export class GoogleProvider extends cdktf.TerraformProvider {
   }
 
   // user_project_override - computed: false, optional: true, required: false
-  private _userProjectOverride?: boolean | cdktf.IResolvable; 
+  private _userProjectOverride?: boolean | cdktn.IResolvable; 
   public get userProjectOverride() {
     return this._userProjectOverride;
   }
-  public set userProjectOverride(value: boolean | cdktf.IResolvable | undefined) {
+  public set userProjectOverride(value: boolean | cdktn.IResolvable | undefined) {
     this._userProjectOverride = value;
   }
   public resetUserProjectOverride() {
@@ -3904,11 +3904,11 @@ export class GoogleProvider extends cdktf.TerraformProvider {
   }
 
   // batching - computed: false, optional: true, required: false
-  private _batching?: GoogleProviderBatching[] | cdktf.IResolvable; 
+  private _batching?: GoogleProviderBatching[] | cdktn.IResolvable; 
   public get batching() {
     return this._batching;
   }
-  public set batching(value: GoogleProviderBatching[] | cdktf.IResolvable | undefined) {
+  public set batching(value: GoogleProviderBatching[] | cdktn.IResolvable | undefined) {
     this._batching = value;
   }
   public resetBatching() {
@@ -3920,11 +3920,11 @@ export class GoogleProvider extends cdktf.TerraformProvider {
   }
 
   // external_credentials - computed: false, optional: true, required: false
-  private _externalCredentials?: GoogleProviderExternalCredentials[] | cdktf.IResolvable; 
+  private _externalCredentials?: GoogleProviderExternalCredentials[] | cdktn.IResolvable; 
   public get externalCredentials() {
     return this._externalCredentials;
   }
-  public set externalCredentials(value: GoogleProviderExternalCredentials[] | cdktf.IResolvable | undefined) {
+  public set externalCredentials(value: GoogleProviderExternalCredentials[] | cdktn.IResolvable | undefined) {
     this._externalCredentials = value;
   }
   public resetExternalCredentials() {
@@ -3941,1260 +3941,1260 @@ export class GoogleProvider extends cdktf.TerraformProvider {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      access_approval_custom_endpoint: cdktf.stringToTerraform(this._accessApprovalCustomEndpoint),
-      access_context_manager_custom_endpoint: cdktf.stringToTerraform(this._accessContextManagerCustomEndpoint),
-      access_token: cdktf.stringToTerraform(this._accessToken),
-      active_directory_custom_endpoint: cdktf.stringToTerraform(this._activeDirectoryCustomEndpoint),
-      add_terraform_attribution_label: cdktf.booleanToTerraform(this._addTerraformAttributionLabel),
-      alloydb_custom_endpoint: cdktf.stringToTerraform(this._alloydbCustomEndpoint),
-      apigee_custom_endpoint: cdktf.stringToTerraform(this._apigeeCustomEndpoint),
-      apihub_custom_endpoint: cdktf.stringToTerraform(this._apihubCustomEndpoint),
-      apikeys_custom_endpoint: cdktf.stringToTerraform(this._apikeysCustomEndpoint),
-      app_engine_custom_endpoint: cdktf.stringToTerraform(this._appEngineCustomEndpoint),
-      apphub_custom_endpoint: cdktf.stringToTerraform(this._apphubCustomEndpoint),
-      artifact_registry_custom_endpoint: cdktf.stringToTerraform(this._artifactRegistryCustomEndpoint),
-      assured_workloads_custom_endpoint: cdktf.stringToTerraform(this._assuredWorkloadsCustomEndpoint),
-      backup_dr_custom_endpoint: cdktf.stringToTerraform(this._backupDrCustomEndpoint),
-      beyondcorp_custom_endpoint: cdktf.stringToTerraform(this._beyondcorpCustomEndpoint),
-      big_query_custom_endpoint: cdktf.stringToTerraform(this._bigQueryCustomEndpoint),
-      biglake_custom_endpoint: cdktf.stringToTerraform(this._biglakeCustomEndpoint),
-      bigquery_analytics_hub_custom_endpoint: cdktf.stringToTerraform(this._bigqueryAnalyticsHubCustomEndpoint),
-      bigquery_connection_custom_endpoint: cdktf.stringToTerraform(this._bigqueryConnectionCustomEndpoint),
-      bigquery_data_transfer_custom_endpoint: cdktf.stringToTerraform(this._bigqueryDataTransferCustomEndpoint),
-      bigquery_datapolicy_custom_endpoint: cdktf.stringToTerraform(this._bigqueryDatapolicyCustomEndpoint),
-      bigquery_reservation_custom_endpoint: cdktf.stringToTerraform(this._bigqueryReservationCustomEndpoint),
-      bigtable_custom_endpoint: cdktf.stringToTerraform(this._bigtableCustomEndpoint),
-      billing_custom_endpoint: cdktf.stringToTerraform(this._billingCustomEndpoint),
-      billing_project: cdktf.stringToTerraform(this._billingProject),
-      binary_authorization_custom_endpoint: cdktf.stringToTerraform(this._binaryAuthorizationCustomEndpoint),
-      blockchain_node_engine_custom_endpoint: cdktf.stringToTerraform(this._blockchainNodeEngineCustomEndpoint),
-      certificate_manager_custom_endpoint: cdktf.stringToTerraform(this._certificateManagerCustomEndpoint),
-      chronicle_custom_endpoint: cdktf.stringToTerraform(this._chronicleCustomEndpoint),
-      cloud_asset_custom_endpoint: cdktf.stringToTerraform(this._cloudAssetCustomEndpoint),
-      cloud_billing_custom_endpoint: cdktf.stringToTerraform(this._cloudBillingCustomEndpoint),
-      cloud_build_custom_endpoint: cdktf.stringToTerraform(this._cloudBuildCustomEndpoint),
-      cloud_functions_custom_endpoint: cdktf.stringToTerraform(this._cloudFunctionsCustomEndpoint),
-      cloud_identity_custom_endpoint: cdktf.stringToTerraform(this._cloudIdentityCustomEndpoint),
-      cloud_ids_custom_endpoint: cdktf.stringToTerraform(this._cloudIdsCustomEndpoint),
-      cloud_quotas_custom_endpoint: cdktf.stringToTerraform(this._cloudQuotasCustomEndpoint),
-      cloud_resource_manager_custom_endpoint: cdktf.stringToTerraform(this._cloudResourceManagerCustomEndpoint),
-      cloud_run_custom_endpoint: cdktf.stringToTerraform(this._cloudRunCustomEndpoint),
-      cloud_run_v2_custom_endpoint: cdktf.stringToTerraform(this._cloudRunV2CustomEndpoint),
-      cloud_scheduler_custom_endpoint: cdktf.stringToTerraform(this._cloudSchedulerCustomEndpoint),
-      cloud_tasks_custom_endpoint: cdktf.stringToTerraform(this._cloudTasksCustomEndpoint),
-      cloudbuildv2_custom_endpoint: cdktf.stringToTerraform(this._cloudbuildv2CustomEndpoint),
-      clouddeploy_custom_endpoint: cdktf.stringToTerraform(this._clouddeployCustomEndpoint),
-      clouddomains_custom_endpoint: cdktf.stringToTerraform(this._clouddomainsCustomEndpoint),
-      cloudfunctions2_custom_endpoint: cdktf.stringToTerraform(this._cloudfunctions2CustomEndpoint),
-      colab_custom_endpoint: cdktf.stringToTerraform(this._colabCustomEndpoint),
-      composer_custom_endpoint: cdktf.stringToTerraform(this._composerCustomEndpoint),
-      compute_custom_endpoint: cdktf.stringToTerraform(this._computeCustomEndpoint),
-      contact_center_insights_custom_endpoint: cdktf.stringToTerraform(this._contactCenterInsightsCustomEndpoint),
-      container_analysis_custom_endpoint: cdktf.stringToTerraform(this._containerAnalysisCustomEndpoint),
-      container_attached_custom_endpoint: cdktf.stringToTerraform(this._containerAttachedCustomEndpoint),
-      container_aws_custom_endpoint: cdktf.stringToTerraform(this._containerAwsCustomEndpoint),
-      container_azure_custom_endpoint: cdktf.stringToTerraform(this._containerAzureCustomEndpoint),
-      container_custom_endpoint: cdktf.stringToTerraform(this._containerCustomEndpoint),
-      core_billing_custom_endpoint: cdktf.stringToTerraform(this._coreBillingCustomEndpoint),
-      credentials: cdktf.stringToTerraform(this._credentials),
-      data_catalog_custom_endpoint: cdktf.stringToTerraform(this._dataCatalogCustomEndpoint),
-      data_fusion_custom_endpoint: cdktf.stringToTerraform(this._dataFusionCustomEndpoint),
-      data_loss_prevention_custom_endpoint: cdktf.stringToTerraform(this._dataLossPreventionCustomEndpoint),
-      data_pipeline_custom_endpoint: cdktf.stringToTerraform(this._dataPipelineCustomEndpoint),
-      database_migration_service_custom_endpoint: cdktf.stringToTerraform(this._databaseMigrationServiceCustomEndpoint),
-      dataflow_custom_endpoint: cdktf.stringToTerraform(this._dataflowCustomEndpoint),
-      dataplex_custom_endpoint: cdktf.stringToTerraform(this._dataplexCustomEndpoint),
-      dataproc_custom_endpoint: cdktf.stringToTerraform(this._dataprocCustomEndpoint),
-      dataproc_gdc_custom_endpoint: cdktf.stringToTerraform(this._dataprocGdcCustomEndpoint),
-      dataproc_metastore_custom_endpoint: cdktf.stringToTerraform(this._dataprocMetastoreCustomEndpoint),
-      datastream_custom_endpoint: cdktf.stringToTerraform(this._datastreamCustomEndpoint),
-      default_labels: cdktf.hashMapper(cdktf.stringToTerraform)(this._defaultLabels),
-      deployment_manager_custom_endpoint: cdktf.stringToTerraform(this._deploymentManagerCustomEndpoint),
-      developer_connect_custom_endpoint: cdktf.stringToTerraform(this._developerConnectCustomEndpoint),
-      dialogflow_custom_endpoint: cdktf.stringToTerraform(this._dialogflowCustomEndpoint),
-      dialogflow_cx_custom_endpoint: cdktf.stringToTerraform(this._dialogflowCxCustomEndpoint),
-      discovery_engine_custom_endpoint: cdktf.stringToTerraform(this._discoveryEngineCustomEndpoint),
-      dns_custom_endpoint: cdktf.stringToTerraform(this._dnsCustomEndpoint),
-      document_ai_custom_endpoint: cdktf.stringToTerraform(this._documentAiCustomEndpoint),
-      document_ai_warehouse_custom_endpoint: cdktf.stringToTerraform(this._documentAiWarehouseCustomEndpoint),
-      edgecontainer_custom_endpoint: cdktf.stringToTerraform(this._edgecontainerCustomEndpoint),
-      edgenetwork_custom_endpoint: cdktf.stringToTerraform(this._edgenetworkCustomEndpoint),
-      essential_contacts_custom_endpoint: cdktf.stringToTerraform(this._essentialContactsCustomEndpoint),
-      eventarc_custom_endpoint: cdktf.stringToTerraform(this._eventarcCustomEndpoint),
-      filestore_custom_endpoint: cdktf.stringToTerraform(this._filestoreCustomEndpoint),
-      firebase_app_check_custom_endpoint: cdktf.stringToTerraform(this._firebaseAppCheckCustomEndpoint),
-      firebase_app_hosting_custom_endpoint: cdktf.stringToTerraform(this._firebaseAppHostingCustomEndpoint),
-      firebase_data_connect_custom_endpoint: cdktf.stringToTerraform(this._firebaseDataConnectCustomEndpoint),
-      firebaserules_custom_endpoint: cdktf.stringToTerraform(this._firebaserulesCustomEndpoint),
-      firestore_custom_endpoint: cdktf.stringToTerraform(this._firestoreCustomEndpoint),
-      gemini_custom_endpoint: cdktf.stringToTerraform(this._geminiCustomEndpoint),
-      gke_backup_custom_endpoint: cdktf.stringToTerraform(this._gkeBackupCustomEndpoint),
-      gke_hub2_custom_endpoint: cdktf.stringToTerraform(this._gkeHub2CustomEndpoint),
-      gke_hub_custom_endpoint: cdktf.stringToTerraform(this._gkeHubCustomEndpoint),
-      gkeonprem_custom_endpoint: cdktf.stringToTerraform(this._gkeonpremCustomEndpoint),
-      healthcare_custom_endpoint: cdktf.stringToTerraform(this._healthcareCustomEndpoint),
-      iam2_custom_endpoint: cdktf.stringToTerraform(this._iam2CustomEndpoint),
-      iam3_custom_endpoint: cdktf.stringToTerraform(this._iam3CustomEndpoint),
-      iam_beta_custom_endpoint: cdktf.stringToTerraform(this._iamBetaCustomEndpoint),
-      iam_credentials_custom_endpoint: cdktf.stringToTerraform(this._iamCredentialsCustomEndpoint),
-      iam_custom_endpoint: cdktf.stringToTerraform(this._iamCustomEndpoint),
-      iam_workforce_pool_custom_endpoint: cdktf.stringToTerraform(this._iamWorkforcePoolCustomEndpoint),
-      iap_custom_endpoint: cdktf.stringToTerraform(this._iapCustomEndpoint),
-      identity_platform_custom_endpoint: cdktf.stringToTerraform(this._identityPlatformCustomEndpoint),
-      impersonate_service_account: cdktf.stringToTerraform(this._impersonateServiceAccount),
-      impersonate_service_account_delegates: cdktf.listMapper(cdktf.stringToTerraform, false)(this._impersonateServiceAccountDelegates),
-      integration_connectors_custom_endpoint: cdktf.stringToTerraform(this._integrationConnectorsCustomEndpoint),
-      integrations_custom_endpoint: cdktf.stringToTerraform(this._integrationsCustomEndpoint),
-      kms_custom_endpoint: cdktf.stringToTerraform(this._kmsCustomEndpoint),
-      logging_custom_endpoint: cdktf.stringToTerraform(this._loggingCustomEndpoint),
-      looker_custom_endpoint: cdktf.stringToTerraform(this._lookerCustomEndpoint),
-      lustre_custom_endpoint: cdktf.stringToTerraform(this._lustreCustomEndpoint),
-      managed_kafka_custom_endpoint: cdktf.stringToTerraform(this._managedKafkaCustomEndpoint),
-      memcache_custom_endpoint: cdktf.stringToTerraform(this._memcacheCustomEndpoint),
-      memorystore_custom_endpoint: cdktf.stringToTerraform(this._memorystoreCustomEndpoint),
-      migration_center_custom_endpoint: cdktf.stringToTerraform(this._migrationCenterCustomEndpoint),
-      ml_engine_custom_endpoint: cdktf.stringToTerraform(this._mlEngineCustomEndpoint),
-      model_armor_custom_endpoint: cdktf.stringToTerraform(this._modelArmorCustomEndpoint),
-      model_armor_global_custom_endpoint: cdktf.stringToTerraform(this._modelArmorGlobalCustomEndpoint),
-      monitoring_custom_endpoint: cdktf.stringToTerraform(this._monitoringCustomEndpoint),
-      netapp_custom_endpoint: cdktf.stringToTerraform(this._netappCustomEndpoint),
-      network_connectivity_custom_endpoint: cdktf.stringToTerraform(this._networkConnectivityCustomEndpoint),
-      network_management_custom_endpoint: cdktf.stringToTerraform(this._networkManagementCustomEndpoint),
-      network_security_custom_endpoint: cdktf.stringToTerraform(this._networkSecurityCustomEndpoint),
-      network_services_custom_endpoint: cdktf.stringToTerraform(this._networkServicesCustomEndpoint),
-      notebooks_custom_endpoint: cdktf.stringToTerraform(this._notebooksCustomEndpoint),
-      oracle_database_custom_endpoint: cdktf.stringToTerraform(this._oracleDatabaseCustomEndpoint),
-      org_policy_custom_endpoint: cdktf.stringToTerraform(this._orgPolicyCustomEndpoint),
-      os_config_custom_endpoint: cdktf.stringToTerraform(this._osConfigCustomEndpoint),
-      os_config_v2_custom_endpoint: cdktf.stringToTerraform(this._osConfigV2CustomEndpoint),
-      os_login_custom_endpoint: cdktf.stringToTerraform(this._osLoginCustomEndpoint),
-      parallelstore_custom_endpoint: cdktf.stringToTerraform(this._parallelstoreCustomEndpoint),
-      parameter_manager_custom_endpoint: cdktf.stringToTerraform(this._parameterManagerCustomEndpoint),
-      parameter_manager_regional_custom_endpoint: cdktf.stringToTerraform(this._parameterManagerRegionalCustomEndpoint),
-      privateca_custom_endpoint: cdktf.stringToTerraform(this._privatecaCustomEndpoint),
-      privileged_access_manager_custom_endpoint: cdktf.stringToTerraform(this._privilegedAccessManagerCustomEndpoint),
-      project: cdktf.stringToTerraform(this._project),
-      public_ca_custom_endpoint: cdktf.stringToTerraform(this._publicCaCustomEndpoint),
-      pubsub_custom_endpoint: cdktf.stringToTerraform(this._pubsubCustomEndpoint),
-      pubsub_lite_custom_endpoint: cdktf.stringToTerraform(this._pubsubLiteCustomEndpoint),
-      recaptcha_enterprise_custom_endpoint: cdktf.stringToTerraform(this._recaptchaEnterpriseCustomEndpoint),
-      redis_custom_endpoint: cdktf.stringToTerraform(this._redisCustomEndpoint),
-      region: cdktf.stringToTerraform(this._region),
-      request_reason: cdktf.stringToTerraform(this._requestReason),
-      request_timeout: cdktf.stringToTerraform(this._requestTimeout),
-      resource_manager_custom_endpoint: cdktf.stringToTerraform(this._resourceManagerCustomEndpoint),
-      resource_manager_v3_custom_endpoint: cdktf.stringToTerraform(this._resourceManagerV3CustomEndpoint),
-      scopes: cdktf.listMapper(cdktf.stringToTerraform, false)(this._scopes),
-      secret_manager_custom_endpoint: cdktf.stringToTerraform(this._secretManagerCustomEndpoint),
-      secret_manager_regional_custom_endpoint: cdktf.stringToTerraform(this._secretManagerRegionalCustomEndpoint),
-      secure_source_manager_custom_endpoint: cdktf.stringToTerraform(this._secureSourceManagerCustomEndpoint),
-      security_center_custom_endpoint: cdktf.stringToTerraform(this._securityCenterCustomEndpoint),
-      security_center_management_custom_endpoint: cdktf.stringToTerraform(this._securityCenterManagementCustomEndpoint),
-      security_center_v2_custom_endpoint: cdktf.stringToTerraform(this._securityCenterV2CustomEndpoint),
-      securityposture_custom_endpoint: cdktf.stringToTerraform(this._securitypostureCustomEndpoint),
-      service_management_custom_endpoint: cdktf.stringToTerraform(this._serviceManagementCustomEndpoint),
-      service_networking_custom_endpoint: cdktf.stringToTerraform(this._serviceNetworkingCustomEndpoint),
-      service_usage_custom_endpoint: cdktf.stringToTerraform(this._serviceUsageCustomEndpoint),
-      site_verification_custom_endpoint: cdktf.stringToTerraform(this._siteVerificationCustomEndpoint),
-      source_repo_custom_endpoint: cdktf.stringToTerraform(this._sourceRepoCustomEndpoint),
-      spanner_custom_endpoint: cdktf.stringToTerraform(this._spannerCustomEndpoint),
-      sql_custom_endpoint: cdktf.stringToTerraform(this._sqlCustomEndpoint),
-      storage_batch_operations_custom_endpoint: cdktf.stringToTerraform(this._storageBatchOperationsCustomEndpoint),
-      storage_control_custom_endpoint: cdktf.stringToTerraform(this._storageControlCustomEndpoint),
-      storage_custom_endpoint: cdktf.stringToTerraform(this._storageCustomEndpoint),
-      storage_insights_custom_endpoint: cdktf.stringToTerraform(this._storageInsightsCustomEndpoint),
-      storage_transfer_custom_endpoint: cdktf.stringToTerraform(this._storageTransferCustomEndpoint),
-      tags_custom_endpoint: cdktf.stringToTerraform(this._tagsCustomEndpoint),
-      tags_location_custom_endpoint: cdktf.stringToTerraform(this._tagsLocationCustomEndpoint),
-      terraform_attribution_label_addition_strategy: cdktf.stringToTerraform(this._terraformAttributionLabelAdditionStrategy),
-      tpu_custom_endpoint: cdktf.stringToTerraform(this._tpuCustomEndpoint),
-      transcoder_custom_endpoint: cdktf.stringToTerraform(this._transcoderCustomEndpoint),
-      universe_domain: cdktf.stringToTerraform(this._universeDomain),
-      user_project_override: cdktf.booleanToTerraform(this._userProjectOverride),
-      vertex_ai_custom_endpoint: cdktf.stringToTerraform(this._vertexAiCustomEndpoint),
-      vmwareengine_custom_endpoint: cdktf.stringToTerraform(this._vmwareengineCustomEndpoint),
-      vpc_access_custom_endpoint: cdktf.stringToTerraform(this._vpcAccessCustomEndpoint),
-      workbench_custom_endpoint: cdktf.stringToTerraform(this._workbenchCustomEndpoint),
-      workflows_custom_endpoint: cdktf.stringToTerraform(this._workflowsCustomEndpoint),
-      zone: cdktf.stringToTerraform(this._zone),
-      alias: cdktf.stringToTerraform(this._alias),
-      batching: cdktf.listMapper(googleProviderBatchingToTerraform, true)(this._batching),
-      external_credentials: cdktf.listMapper(googleProviderExternalCredentialsToTerraform, true)(this._externalCredentials),
+      access_approval_custom_endpoint: cdktn.stringToTerraform(this._accessApprovalCustomEndpoint),
+      access_context_manager_custom_endpoint: cdktn.stringToTerraform(this._accessContextManagerCustomEndpoint),
+      access_token: cdktn.stringToTerraform(this._accessToken),
+      active_directory_custom_endpoint: cdktn.stringToTerraform(this._activeDirectoryCustomEndpoint),
+      add_terraform_attribution_label: cdktn.booleanToTerraform(this._addTerraformAttributionLabel),
+      alloydb_custom_endpoint: cdktn.stringToTerraform(this._alloydbCustomEndpoint),
+      apigee_custom_endpoint: cdktn.stringToTerraform(this._apigeeCustomEndpoint),
+      apihub_custom_endpoint: cdktn.stringToTerraform(this._apihubCustomEndpoint),
+      apikeys_custom_endpoint: cdktn.stringToTerraform(this._apikeysCustomEndpoint),
+      app_engine_custom_endpoint: cdktn.stringToTerraform(this._appEngineCustomEndpoint),
+      apphub_custom_endpoint: cdktn.stringToTerraform(this._apphubCustomEndpoint),
+      artifact_registry_custom_endpoint: cdktn.stringToTerraform(this._artifactRegistryCustomEndpoint),
+      assured_workloads_custom_endpoint: cdktn.stringToTerraform(this._assuredWorkloadsCustomEndpoint),
+      backup_dr_custom_endpoint: cdktn.stringToTerraform(this._backupDrCustomEndpoint),
+      beyondcorp_custom_endpoint: cdktn.stringToTerraform(this._beyondcorpCustomEndpoint),
+      big_query_custom_endpoint: cdktn.stringToTerraform(this._bigQueryCustomEndpoint),
+      biglake_custom_endpoint: cdktn.stringToTerraform(this._biglakeCustomEndpoint),
+      bigquery_analytics_hub_custom_endpoint: cdktn.stringToTerraform(this._bigqueryAnalyticsHubCustomEndpoint),
+      bigquery_connection_custom_endpoint: cdktn.stringToTerraform(this._bigqueryConnectionCustomEndpoint),
+      bigquery_data_transfer_custom_endpoint: cdktn.stringToTerraform(this._bigqueryDataTransferCustomEndpoint),
+      bigquery_datapolicy_custom_endpoint: cdktn.stringToTerraform(this._bigqueryDatapolicyCustomEndpoint),
+      bigquery_reservation_custom_endpoint: cdktn.stringToTerraform(this._bigqueryReservationCustomEndpoint),
+      bigtable_custom_endpoint: cdktn.stringToTerraform(this._bigtableCustomEndpoint),
+      billing_custom_endpoint: cdktn.stringToTerraform(this._billingCustomEndpoint),
+      billing_project: cdktn.stringToTerraform(this._billingProject),
+      binary_authorization_custom_endpoint: cdktn.stringToTerraform(this._binaryAuthorizationCustomEndpoint),
+      blockchain_node_engine_custom_endpoint: cdktn.stringToTerraform(this._blockchainNodeEngineCustomEndpoint),
+      certificate_manager_custom_endpoint: cdktn.stringToTerraform(this._certificateManagerCustomEndpoint),
+      chronicle_custom_endpoint: cdktn.stringToTerraform(this._chronicleCustomEndpoint),
+      cloud_asset_custom_endpoint: cdktn.stringToTerraform(this._cloudAssetCustomEndpoint),
+      cloud_billing_custom_endpoint: cdktn.stringToTerraform(this._cloudBillingCustomEndpoint),
+      cloud_build_custom_endpoint: cdktn.stringToTerraform(this._cloudBuildCustomEndpoint),
+      cloud_functions_custom_endpoint: cdktn.stringToTerraform(this._cloudFunctionsCustomEndpoint),
+      cloud_identity_custom_endpoint: cdktn.stringToTerraform(this._cloudIdentityCustomEndpoint),
+      cloud_ids_custom_endpoint: cdktn.stringToTerraform(this._cloudIdsCustomEndpoint),
+      cloud_quotas_custom_endpoint: cdktn.stringToTerraform(this._cloudQuotasCustomEndpoint),
+      cloud_resource_manager_custom_endpoint: cdktn.stringToTerraform(this._cloudResourceManagerCustomEndpoint),
+      cloud_run_custom_endpoint: cdktn.stringToTerraform(this._cloudRunCustomEndpoint),
+      cloud_run_v2_custom_endpoint: cdktn.stringToTerraform(this._cloudRunV2CustomEndpoint),
+      cloud_scheduler_custom_endpoint: cdktn.stringToTerraform(this._cloudSchedulerCustomEndpoint),
+      cloud_tasks_custom_endpoint: cdktn.stringToTerraform(this._cloudTasksCustomEndpoint),
+      cloudbuildv2_custom_endpoint: cdktn.stringToTerraform(this._cloudbuildv2CustomEndpoint),
+      clouddeploy_custom_endpoint: cdktn.stringToTerraform(this._clouddeployCustomEndpoint),
+      clouddomains_custom_endpoint: cdktn.stringToTerraform(this._clouddomainsCustomEndpoint),
+      cloudfunctions2_custom_endpoint: cdktn.stringToTerraform(this._cloudfunctions2CustomEndpoint),
+      colab_custom_endpoint: cdktn.stringToTerraform(this._colabCustomEndpoint),
+      composer_custom_endpoint: cdktn.stringToTerraform(this._composerCustomEndpoint),
+      compute_custom_endpoint: cdktn.stringToTerraform(this._computeCustomEndpoint),
+      contact_center_insights_custom_endpoint: cdktn.stringToTerraform(this._contactCenterInsightsCustomEndpoint),
+      container_analysis_custom_endpoint: cdktn.stringToTerraform(this._containerAnalysisCustomEndpoint),
+      container_attached_custom_endpoint: cdktn.stringToTerraform(this._containerAttachedCustomEndpoint),
+      container_aws_custom_endpoint: cdktn.stringToTerraform(this._containerAwsCustomEndpoint),
+      container_azure_custom_endpoint: cdktn.stringToTerraform(this._containerAzureCustomEndpoint),
+      container_custom_endpoint: cdktn.stringToTerraform(this._containerCustomEndpoint),
+      core_billing_custom_endpoint: cdktn.stringToTerraform(this._coreBillingCustomEndpoint),
+      credentials: cdktn.stringToTerraform(this._credentials),
+      data_catalog_custom_endpoint: cdktn.stringToTerraform(this._dataCatalogCustomEndpoint),
+      data_fusion_custom_endpoint: cdktn.stringToTerraform(this._dataFusionCustomEndpoint),
+      data_loss_prevention_custom_endpoint: cdktn.stringToTerraform(this._dataLossPreventionCustomEndpoint),
+      data_pipeline_custom_endpoint: cdktn.stringToTerraform(this._dataPipelineCustomEndpoint),
+      database_migration_service_custom_endpoint: cdktn.stringToTerraform(this._databaseMigrationServiceCustomEndpoint),
+      dataflow_custom_endpoint: cdktn.stringToTerraform(this._dataflowCustomEndpoint),
+      dataplex_custom_endpoint: cdktn.stringToTerraform(this._dataplexCustomEndpoint),
+      dataproc_custom_endpoint: cdktn.stringToTerraform(this._dataprocCustomEndpoint),
+      dataproc_gdc_custom_endpoint: cdktn.stringToTerraform(this._dataprocGdcCustomEndpoint),
+      dataproc_metastore_custom_endpoint: cdktn.stringToTerraform(this._dataprocMetastoreCustomEndpoint),
+      datastream_custom_endpoint: cdktn.stringToTerraform(this._datastreamCustomEndpoint),
+      default_labels: cdktn.hashMapper(cdktn.stringToTerraform)(this._defaultLabels),
+      deployment_manager_custom_endpoint: cdktn.stringToTerraform(this._deploymentManagerCustomEndpoint),
+      developer_connect_custom_endpoint: cdktn.stringToTerraform(this._developerConnectCustomEndpoint),
+      dialogflow_custom_endpoint: cdktn.stringToTerraform(this._dialogflowCustomEndpoint),
+      dialogflow_cx_custom_endpoint: cdktn.stringToTerraform(this._dialogflowCxCustomEndpoint),
+      discovery_engine_custom_endpoint: cdktn.stringToTerraform(this._discoveryEngineCustomEndpoint),
+      dns_custom_endpoint: cdktn.stringToTerraform(this._dnsCustomEndpoint),
+      document_ai_custom_endpoint: cdktn.stringToTerraform(this._documentAiCustomEndpoint),
+      document_ai_warehouse_custom_endpoint: cdktn.stringToTerraform(this._documentAiWarehouseCustomEndpoint),
+      edgecontainer_custom_endpoint: cdktn.stringToTerraform(this._edgecontainerCustomEndpoint),
+      edgenetwork_custom_endpoint: cdktn.stringToTerraform(this._edgenetworkCustomEndpoint),
+      essential_contacts_custom_endpoint: cdktn.stringToTerraform(this._essentialContactsCustomEndpoint),
+      eventarc_custom_endpoint: cdktn.stringToTerraform(this._eventarcCustomEndpoint),
+      filestore_custom_endpoint: cdktn.stringToTerraform(this._filestoreCustomEndpoint),
+      firebase_app_check_custom_endpoint: cdktn.stringToTerraform(this._firebaseAppCheckCustomEndpoint),
+      firebase_app_hosting_custom_endpoint: cdktn.stringToTerraform(this._firebaseAppHostingCustomEndpoint),
+      firebase_data_connect_custom_endpoint: cdktn.stringToTerraform(this._firebaseDataConnectCustomEndpoint),
+      firebaserules_custom_endpoint: cdktn.stringToTerraform(this._firebaserulesCustomEndpoint),
+      firestore_custom_endpoint: cdktn.stringToTerraform(this._firestoreCustomEndpoint),
+      gemini_custom_endpoint: cdktn.stringToTerraform(this._geminiCustomEndpoint),
+      gke_backup_custom_endpoint: cdktn.stringToTerraform(this._gkeBackupCustomEndpoint),
+      gke_hub2_custom_endpoint: cdktn.stringToTerraform(this._gkeHub2CustomEndpoint),
+      gke_hub_custom_endpoint: cdktn.stringToTerraform(this._gkeHubCustomEndpoint),
+      gkeonprem_custom_endpoint: cdktn.stringToTerraform(this._gkeonpremCustomEndpoint),
+      healthcare_custom_endpoint: cdktn.stringToTerraform(this._healthcareCustomEndpoint),
+      iam2_custom_endpoint: cdktn.stringToTerraform(this._iam2CustomEndpoint),
+      iam3_custom_endpoint: cdktn.stringToTerraform(this._iam3CustomEndpoint),
+      iam_beta_custom_endpoint: cdktn.stringToTerraform(this._iamBetaCustomEndpoint),
+      iam_credentials_custom_endpoint: cdktn.stringToTerraform(this._iamCredentialsCustomEndpoint),
+      iam_custom_endpoint: cdktn.stringToTerraform(this._iamCustomEndpoint),
+      iam_workforce_pool_custom_endpoint: cdktn.stringToTerraform(this._iamWorkforcePoolCustomEndpoint),
+      iap_custom_endpoint: cdktn.stringToTerraform(this._iapCustomEndpoint),
+      identity_platform_custom_endpoint: cdktn.stringToTerraform(this._identityPlatformCustomEndpoint),
+      impersonate_service_account: cdktn.stringToTerraform(this._impersonateServiceAccount),
+      impersonate_service_account_delegates: cdktn.listMapper(cdktn.stringToTerraform, false)(this._impersonateServiceAccountDelegates),
+      integration_connectors_custom_endpoint: cdktn.stringToTerraform(this._integrationConnectorsCustomEndpoint),
+      integrations_custom_endpoint: cdktn.stringToTerraform(this._integrationsCustomEndpoint),
+      kms_custom_endpoint: cdktn.stringToTerraform(this._kmsCustomEndpoint),
+      logging_custom_endpoint: cdktn.stringToTerraform(this._loggingCustomEndpoint),
+      looker_custom_endpoint: cdktn.stringToTerraform(this._lookerCustomEndpoint),
+      lustre_custom_endpoint: cdktn.stringToTerraform(this._lustreCustomEndpoint),
+      managed_kafka_custom_endpoint: cdktn.stringToTerraform(this._managedKafkaCustomEndpoint),
+      memcache_custom_endpoint: cdktn.stringToTerraform(this._memcacheCustomEndpoint),
+      memorystore_custom_endpoint: cdktn.stringToTerraform(this._memorystoreCustomEndpoint),
+      migration_center_custom_endpoint: cdktn.stringToTerraform(this._migrationCenterCustomEndpoint),
+      ml_engine_custom_endpoint: cdktn.stringToTerraform(this._mlEngineCustomEndpoint),
+      model_armor_custom_endpoint: cdktn.stringToTerraform(this._modelArmorCustomEndpoint),
+      model_armor_global_custom_endpoint: cdktn.stringToTerraform(this._modelArmorGlobalCustomEndpoint),
+      monitoring_custom_endpoint: cdktn.stringToTerraform(this._monitoringCustomEndpoint),
+      netapp_custom_endpoint: cdktn.stringToTerraform(this._netappCustomEndpoint),
+      network_connectivity_custom_endpoint: cdktn.stringToTerraform(this._networkConnectivityCustomEndpoint),
+      network_management_custom_endpoint: cdktn.stringToTerraform(this._networkManagementCustomEndpoint),
+      network_security_custom_endpoint: cdktn.stringToTerraform(this._networkSecurityCustomEndpoint),
+      network_services_custom_endpoint: cdktn.stringToTerraform(this._networkServicesCustomEndpoint),
+      notebooks_custom_endpoint: cdktn.stringToTerraform(this._notebooksCustomEndpoint),
+      oracle_database_custom_endpoint: cdktn.stringToTerraform(this._oracleDatabaseCustomEndpoint),
+      org_policy_custom_endpoint: cdktn.stringToTerraform(this._orgPolicyCustomEndpoint),
+      os_config_custom_endpoint: cdktn.stringToTerraform(this._osConfigCustomEndpoint),
+      os_config_v2_custom_endpoint: cdktn.stringToTerraform(this._osConfigV2CustomEndpoint),
+      os_login_custom_endpoint: cdktn.stringToTerraform(this._osLoginCustomEndpoint),
+      parallelstore_custom_endpoint: cdktn.stringToTerraform(this._parallelstoreCustomEndpoint),
+      parameter_manager_custom_endpoint: cdktn.stringToTerraform(this._parameterManagerCustomEndpoint),
+      parameter_manager_regional_custom_endpoint: cdktn.stringToTerraform(this._parameterManagerRegionalCustomEndpoint),
+      privateca_custom_endpoint: cdktn.stringToTerraform(this._privatecaCustomEndpoint),
+      privileged_access_manager_custom_endpoint: cdktn.stringToTerraform(this._privilegedAccessManagerCustomEndpoint),
+      project: cdktn.stringToTerraform(this._project),
+      public_ca_custom_endpoint: cdktn.stringToTerraform(this._publicCaCustomEndpoint),
+      pubsub_custom_endpoint: cdktn.stringToTerraform(this._pubsubCustomEndpoint),
+      pubsub_lite_custom_endpoint: cdktn.stringToTerraform(this._pubsubLiteCustomEndpoint),
+      recaptcha_enterprise_custom_endpoint: cdktn.stringToTerraform(this._recaptchaEnterpriseCustomEndpoint),
+      redis_custom_endpoint: cdktn.stringToTerraform(this._redisCustomEndpoint),
+      region: cdktn.stringToTerraform(this._region),
+      request_reason: cdktn.stringToTerraform(this._requestReason),
+      request_timeout: cdktn.stringToTerraform(this._requestTimeout),
+      resource_manager_custom_endpoint: cdktn.stringToTerraform(this._resourceManagerCustomEndpoint),
+      resource_manager_v3_custom_endpoint: cdktn.stringToTerraform(this._resourceManagerV3CustomEndpoint),
+      scopes: cdktn.listMapper(cdktn.stringToTerraform, false)(this._scopes),
+      secret_manager_custom_endpoint: cdktn.stringToTerraform(this._secretManagerCustomEndpoint),
+      secret_manager_regional_custom_endpoint: cdktn.stringToTerraform(this._secretManagerRegionalCustomEndpoint),
+      secure_source_manager_custom_endpoint: cdktn.stringToTerraform(this._secureSourceManagerCustomEndpoint),
+      security_center_custom_endpoint: cdktn.stringToTerraform(this._securityCenterCustomEndpoint),
+      security_center_management_custom_endpoint: cdktn.stringToTerraform(this._securityCenterManagementCustomEndpoint),
+      security_center_v2_custom_endpoint: cdktn.stringToTerraform(this._securityCenterV2CustomEndpoint),
+      securityposture_custom_endpoint: cdktn.stringToTerraform(this._securitypostureCustomEndpoint),
+      service_management_custom_endpoint: cdktn.stringToTerraform(this._serviceManagementCustomEndpoint),
+      service_networking_custom_endpoint: cdktn.stringToTerraform(this._serviceNetworkingCustomEndpoint),
+      service_usage_custom_endpoint: cdktn.stringToTerraform(this._serviceUsageCustomEndpoint),
+      site_verification_custom_endpoint: cdktn.stringToTerraform(this._siteVerificationCustomEndpoint),
+      source_repo_custom_endpoint: cdktn.stringToTerraform(this._sourceRepoCustomEndpoint),
+      spanner_custom_endpoint: cdktn.stringToTerraform(this._spannerCustomEndpoint),
+      sql_custom_endpoint: cdktn.stringToTerraform(this._sqlCustomEndpoint),
+      storage_batch_operations_custom_endpoint: cdktn.stringToTerraform(this._storageBatchOperationsCustomEndpoint),
+      storage_control_custom_endpoint: cdktn.stringToTerraform(this._storageControlCustomEndpoint),
+      storage_custom_endpoint: cdktn.stringToTerraform(this._storageCustomEndpoint),
+      storage_insights_custom_endpoint: cdktn.stringToTerraform(this._storageInsightsCustomEndpoint),
+      storage_transfer_custom_endpoint: cdktn.stringToTerraform(this._storageTransferCustomEndpoint),
+      tags_custom_endpoint: cdktn.stringToTerraform(this._tagsCustomEndpoint),
+      tags_location_custom_endpoint: cdktn.stringToTerraform(this._tagsLocationCustomEndpoint),
+      terraform_attribution_label_addition_strategy: cdktn.stringToTerraform(this._terraformAttributionLabelAdditionStrategy),
+      tpu_custom_endpoint: cdktn.stringToTerraform(this._tpuCustomEndpoint),
+      transcoder_custom_endpoint: cdktn.stringToTerraform(this._transcoderCustomEndpoint),
+      universe_domain: cdktn.stringToTerraform(this._universeDomain),
+      user_project_override: cdktn.booleanToTerraform(this._userProjectOverride),
+      vertex_ai_custom_endpoint: cdktn.stringToTerraform(this._vertexAiCustomEndpoint),
+      vmwareengine_custom_endpoint: cdktn.stringToTerraform(this._vmwareengineCustomEndpoint),
+      vpc_access_custom_endpoint: cdktn.stringToTerraform(this._vpcAccessCustomEndpoint),
+      workbench_custom_endpoint: cdktn.stringToTerraform(this._workbenchCustomEndpoint),
+      workflows_custom_endpoint: cdktn.stringToTerraform(this._workflowsCustomEndpoint),
+      zone: cdktn.stringToTerraform(this._zone),
+      alias: cdktn.stringToTerraform(this._alias),
+      batching: cdktn.listMapper(googleProviderBatchingToTerraform, true)(this._batching),
+      external_credentials: cdktn.listMapper(googleProviderExternalCredentialsToTerraform, true)(this._externalCredentials),
     };
   }
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       access_approval_custom_endpoint: {
-        value: cdktf.stringToHclTerraform(this._accessApprovalCustomEndpoint),
+        value: cdktn.stringToHclTerraform(this._accessApprovalCustomEndpoint),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       access_context_manager_custom_endpoint: {
-        value: cdktf.stringToHclTerraform(this._accessContextManagerCustomEndpoint),
+        value: cdktn.stringToHclTerraform(this._accessContextManagerCustomEndpoint),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       access_token: {
-        value: cdktf.stringToHclTerraform(this._accessToken),
+        value: cdktn.stringToHclTerraform(this._accessToken),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       active_directory_custom_endpoint: {
-        value: cdktf.stringToHclTerraform(this._activeDirectoryCustomEndpoint),
+        value: cdktn.stringToHclTerraform(this._activeDirectoryCustomEndpoint),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       add_terraform_attribution_label: {
-        value: cdktf.booleanToHclTerraform(this._addTerraformAttributionLabel),
+        value: cdktn.booleanToHclTerraform(this._addTerraformAttributionLabel),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       alloydb_custom_endpoint: {
-        value: cdktf.stringToHclTerraform(this._alloydbCustomEndpoint),
+        value: cdktn.stringToHclTerraform(this._alloydbCustomEndpoint),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       apigee_custom_endpoint: {
-        value: cdktf.stringToHclTerraform(this._apigeeCustomEndpoint),
+        value: cdktn.stringToHclTerraform(this._apigeeCustomEndpoint),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       apihub_custom_endpoint: {
-        value: cdktf.stringToHclTerraform(this._apihubCustomEndpoint),
+        value: cdktn.stringToHclTerraform(this._apihubCustomEndpoint),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       apikeys_custom_endpoint: {
-        value: cdktf.stringToHclTerraform(this._apikeysCustomEndpoint),
+        value: cdktn.stringToHclTerraform(this._apikeysCustomEndpoint),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       app_engine_custom_endpoint: {
-        value: cdktf.stringToHclTerraform(this._appEngineCustomEndpoint),
+        value: cdktn.stringToHclTerraform(this._appEngineCustomEndpoint),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       apphub_custom_endpoint: {
-        value: cdktf.stringToHclTerraform(this._apphubCustomEndpoint),
+        value: cdktn.stringToHclTerraform(this._apphubCustomEndpoint),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       artifact_registry_custom_endpoint: {
-        value: cdktf.stringToHclTerraform(this._artifactRegistryCustomEndpoint),
+        value: cdktn.stringToHclTerraform(this._artifactRegistryCustomEndpoint),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       assured_workloads_custom_endpoint: {
-        value: cdktf.stringToHclTerraform(this._assuredWorkloadsCustomEndpoint),
+        value: cdktn.stringToHclTerraform(this._assuredWorkloadsCustomEndpoint),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       backup_dr_custom_endpoint: {
-        value: cdktf.stringToHclTerraform(this._backupDrCustomEndpoint),
+        value: cdktn.stringToHclTerraform(this._backupDrCustomEndpoint),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       beyondcorp_custom_endpoint: {
-        value: cdktf.stringToHclTerraform(this._beyondcorpCustomEndpoint),
+        value: cdktn.stringToHclTerraform(this._beyondcorpCustomEndpoint),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       big_query_custom_endpoint: {
-        value: cdktf.stringToHclTerraform(this._bigQueryCustomEndpoint),
+        value: cdktn.stringToHclTerraform(this._bigQueryCustomEndpoint),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       biglake_custom_endpoint: {
-        value: cdktf.stringToHclTerraform(this._biglakeCustomEndpoint),
+        value: cdktn.stringToHclTerraform(this._biglakeCustomEndpoint),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       bigquery_analytics_hub_custom_endpoint: {
-        value: cdktf.stringToHclTerraform(this._bigqueryAnalyticsHubCustomEndpoint),
+        value: cdktn.stringToHclTerraform(this._bigqueryAnalyticsHubCustomEndpoint),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       bigquery_connection_custom_endpoint: {
-        value: cdktf.stringToHclTerraform(this._bigqueryConnectionCustomEndpoint),
+        value: cdktn.stringToHclTerraform(this._bigqueryConnectionCustomEndpoint),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       bigquery_data_transfer_custom_endpoint: {
-        value: cdktf.stringToHclTerraform(this._bigqueryDataTransferCustomEndpoint),
+        value: cdktn.stringToHclTerraform(this._bigqueryDataTransferCustomEndpoint),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       bigquery_datapolicy_custom_endpoint: {
-        value: cdktf.stringToHclTerraform(this._bigqueryDatapolicyCustomEndpoint),
+        value: cdktn.stringToHclTerraform(this._bigqueryDatapolicyCustomEndpoint),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       bigquery_reservation_custom_endpoint: {
-        value: cdktf.stringToHclTerraform(this._bigqueryReservationCustomEndpoint),
+        value: cdktn.stringToHclTerraform(this._bigqueryReservationCustomEndpoint),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       bigtable_custom_endpoint: {
-        value: cdktf.stringToHclTerraform(this._bigtableCustomEndpoint),
+        value: cdktn.stringToHclTerraform(this._bigtableCustomEndpoint),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       billing_custom_endpoint: {
-        value: cdktf.stringToHclTerraform(this._billingCustomEndpoint),
+        value: cdktn.stringToHclTerraform(this._billingCustomEndpoint),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       billing_project: {
-        value: cdktf.stringToHclTerraform(this._billingProject),
+        value: cdktn.stringToHclTerraform(this._billingProject),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       binary_authorization_custom_endpoint: {
-        value: cdktf.stringToHclTerraform(this._binaryAuthorizationCustomEndpoint),
+        value: cdktn.stringToHclTerraform(this._binaryAuthorizationCustomEndpoint),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       blockchain_node_engine_custom_endpoint: {
-        value: cdktf.stringToHclTerraform(this._blockchainNodeEngineCustomEndpoint),
+        value: cdktn.stringToHclTerraform(this._blockchainNodeEngineCustomEndpoint),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       certificate_manager_custom_endpoint: {
-        value: cdktf.stringToHclTerraform(this._certificateManagerCustomEndpoint),
+        value: cdktn.stringToHclTerraform(this._certificateManagerCustomEndpoint),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       chronicle_custom_endpoint: {
-        value: cdktf.stringToHclTerraform(this._chronicleCustomEndpoint),
+        value: cdktn.stringToHclTerraform(this._chronicleCustomEndpoint),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       cloud_asset_custom_endpoint: {
-        value: cdktf.stringToHclTerraform(this._cloudAssetCustomEndpoint),
+        value: cdktn.stringToHclTerraform(this._cloudAssetCustomEndpoint),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       cloud_billing_custom_endpoint: {
-        value: cdktf.stringToHclTerraform(this._cloudBillingCustomEndpoint),
+        value: cdktn.stringToHclTerraform(this._cloudBillingCustomEndpoint),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       cloud_build_custom_endpoint: {
-        value: cdktf.stringToHclTerraform(this._cloudBuildCustomEndpoint),
+        value: cdktn.stringToHclTerraform(this._cloudBuildCustomEndpoint),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       cloud_functions_custom_endpoint: {
-        value: cdktf.stringToHclTerraform(this._cloudFunctionsCustomEndpoint),
+        value: cdktn.stringToHclTerraform(this._cloudFunctionsCustomEndpoint),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       cloud_identity_custom_endpoint: {
-        value: cdktf.stringToHclTerraform(this._cloudIdentityCustomEndpoint),
+        value: cdktn.stringToHclTerraform(this._cloudIdentityCustomEndpoint),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       cloud_ids_custom_endpoint: {
-        value: cdktf.stringToHclTerraform(this._cloudIdsCustomEndpoint),
+        value: cdktn.stringToHclTerraform(this._cloudIdsCustomEndpoint),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       cloud_quotas_custom_endpoint: {
-        value: cdktf.stringToHclTerraform(this._cloudQuotasCustomEndpoint),
+        value: cdktn.stringToHclTerraform(this._cloudQuotasCustomEndpoint),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       cloud_resource_manager_custom_endpoint: {
-        value: cdktf.stringToHclTerraform(this._cloudResourceManagerCustomEndpoint),
+        value: cdktn.stringToHclTerraform(this._cloudResourceManagerCustomEndpoint),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       cloud_run_custom_endpoint: {
-        value: cdktf.stringToHclTerraform(this._cloudRunCustomEndpoint),
+        value: cdktn.stringToHclTerraform(this._cloudRunCustomEndpoint),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       cloud_run_v2_custom_endpoint: {
-        value: cdktf.stringToHclTerraform(this._cloudRunV2CustomEndpoint),
+        value: cdktn.stringToHclTerraform(this._cloudRunV2CustomEndpoint),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       cloud_scheduler_custom_endpoint: {
-        value: cdktf.stringToHclTerraform(this._cloudSchedulerCustomEndpoint),
+        value: cdktn.stringToHclTerraform(this._cloudSchedulerCustomEndpoint),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       cloud_tasks_custom_endpoint: {
-        value: cdktf.stringToHclTerraform(this._cloudTasksCustomEndpoint),
+        value: cdktn.stringToHclTerraform(this._cloudTasksCustomEndpoint),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       cloudbuildv2_custom_endpoint: {
-        value: cdktf.stringToHclTerraform(this._cloudbuildv2CustomEndpoint),
+        value: cdktn.stringToHclTerraform(this._cloudbuildv2CustomEndpoint),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       clouddeploy_custom_endpoint: {
-        value: cdktf.stringToHclTerraform(this._clouddeployCustomEndpoint),
+        value: cdktn.stringToHclTerraform(this._clouddeployCustomEndpoint),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       clouddomains_custom_endpoint: {
-        value: cdktf.stringToHclTerraform(this._clouddomainsCustomEndpoint),
+        value: cdktn.stringToHclTerraform(this._clouddomainsCustomEndpoint),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       cloudfunctions2_custom_endpoint: {
-        value: cdktf.stringToHclTerraform(this._cloudfunctions2CustomEndpoint),
+        value: cdktn.stringToHclTerraform(this._cloudfunctions2CustomEndpoint),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       colab_custom_endpoint: {
-        value: cdktf.stringToHclTerraform(this._colabCustomEndpoint),
+        value: cdktn.stringToHclTerraform(this._colabCustomEndpoint),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       composer_custom_endpoint: {
-        value: cdktf.stringToHclTerraform(this._composerCustomEndpoint),
+        value: cdktn.stringToHclTerraform(this._composerCustomEndpoint),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       compute_custom_endpoint: {
-        value: cdktf.stringToHclTerraform(this._computeCustomEndpoint),
+        value: cdktn.stringToHclTerraform(this._computeCustomEndpoint),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       contact_center_insights_custom_endpoint: {
-        value: cdktf.stringToHclTerraform(this._contactCenterInsightsCustomEndpoint),
+        value: cdktn.stringToHclTerraform(this._contactCenterInsightsCustomEndpoint),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       container_analysis_custom_endpoint: {
-        value: cdktf.stringToHclTerraform(this._containerAnalysisCustomEndpoint),
+        value: cdktn.stringToHclTerraform(this._containerAnalysisCustomEndpoint),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       container_attached_custom_endpoint: {
-        value: cdktf.stringToHclTerraform(this._containerAttachedCustomEndpoint),
+        value: cdktn.stringToHclTerraform(this._containerAttachedCustomEndpoint),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       container_aws_custom_endpoint: {
-        value: cdktf.stringToHclTerraform(this._containerAwsCustomEndpoint),
+        value: cdktn.stringToHclTerraform(this._containerAwsCustomEndpoint),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       container_azure_custom_endpoint: {
-        value: cdktf.stringToHclTerraform(this._containerAzureCustomEndpoint),
+        value: cdktn.stringToHclTerraform(this._containerAzureCustomEndpoint),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       container_custom_endpoint: {
-        value: cdktf.stringToHclTerraform(this._containerCustomEndpoint),
+        value: cdktn.stringToHclTerraform(this._containerCustomEndpoint),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       core_billing_custom_endpoint: {
-        value: cdktf.stringToHclTerraform(this._coreBillingCustomEndpoint),
+        value: cdktn.stringToHclTerraform(this._coreBillingCustomEndpoint),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       credentials: {
-        value: cdktf.stringToHclTerraform(this._credentials),
+        value: cdktn.stringToHclTerraform(this._credentials),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       data_catalog_custom_endpoint: {
-        value: cdktf.stringToHclTerraform(this._dataCatalogCustomEndpoint),
+        value: cdktn.stringToHclTerraform(this._dataCatalogCustomEndpoint),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       data_fusion_custom_endpoint: {
-        value: cdktf.stringToHclTerraform(this._dataFusionCustomEndpoint),
+        value: cdktn.stringToHclTerraform(this._dataFusionCustomEndpoint),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       data_loss_prevention_custom_endpoint: {
-        value: cdktf.stringToHclTerraform(this._dataLossPreventionCustomEndpoint),
+        value: cdktn.stringToHclTerraform(this._dataLossPreventionCustomEndpoint),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       data_pipeline_custom_endpoint: {
-        value: cdktf.stringToHclTerraform(this._dataPipelineCustomEndpoint),
+        value: cdktn.stringToHclTerraform(this._dataPipelineCustomEndpoint),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       database_migration_service_custom_endpoint: {
-        value: cdktf.stringToHclTerraform(this._databaseMigrationServiceCustomEndpoint),
+        value: cdktn.stringToHclTerraform(this._databaseMigrationServiceCustomEndpoint),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       dataflow_custom_endpoint: {
-        value: cdktf.stringToHclTerraform(this._dataflowCustomEndpoint),
+        value: cdktn.stringToHclTerraform(this._dataflowCustomEndpoint),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       dataplex_custom_endpoint: {
-        value: cdktf.stringToHclTerraform(this._dataplexCustomEndpoint),
+        value: cdktn.stringToHclTerraform(this._dataplexCustomEndpoint),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       dataproc_custom_endpoint: {
-        value: cdktf.stringToHclTerraform(this._dataprocCustomEndpoint),
+        value: cdktn.stringToHclTerraform(this._dataprocCustomEndpoint),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       dataproc_gdc_custom_endpoint: {
-        value: cdktf.stringToHclTerraform(this._dataprocGdcCustomEndpoint),
+        value: cdktn.stringToHclTerraform(this._dataprocGdcCustomEndpoint),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       dataproc_metastore_custom_endpoint: {
-        value: cdktf.stringToHclTerraform(this._dataprocMetastoreCustomEndpoint),
+        value: cdktn.stringToHclTerraform(this._dataprocMetastoreCustomEndpoint),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       datastream_custom_endpoint: {
-        value: cdktf.stringToHclTerraform(this._datastreamCustomEndpoint),
+        value: cdktn.stringToHclTerraform(this._datastreamCustomEndpoint),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       default_labels: {
-        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._defaultLabels),
+        value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(this._defaultLabels),
         isBlock: false,
         type: "map",
         storageClassType: "stringMap",
       },
       deployment_manager_custom_endpoint: {
-        value: cdktf.stringToHclTerraform(this._deploymentManagerCustomEndpoint),
+        value: cdktn.stringToHclTerraform(this._deploymentManagerCustomEndpoint),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       developer_connect_custom_endpoint: {
-        value: cdktf.stringToHclTerraform(this._developerConnectCustomEndpoint),
+        value: cdktn.stringToHclTerraform(this._developerConnectCustomEndpoint),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       dialogflow_custom_endpoint: {
-        value: cdktf.stringToHclTerraform(this._dialogflowCustomEndpoint),
+        value: cdktn.stringToHclTerraform(this._dialogflowCustomEndpoint),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       dialogflow_cx_custom_endpoint: {
-        value: cdktf.stringToHclTerraform(this._dialogflowCxCustomEndpoint),
+        value: cdktn.stringToHclTerraform(this._dialogflowCxCustomEndpoint),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       discovery_engine_custom_endpoint: {
-        value: cdktf.stringToHclTerraform(this._discoveryEngineCustomEndpoint),
+        value: cdktn.stringToHclTerraform(this._discoveryEngineCustomEndpoint),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       dns_custom_endpoint: {
-        value: cdktf.stringToHclTerraform(this._dnsCustomEndpoint),
+        value: cdktn.stringToHclTerraform(this._dnsCustomEndpoint),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       document_ai_custom_endpoint: {
-        value: cdktf.stringToHclTerraform(this._documentAiCustomEndpoint),
+        value: cdktn.stringToHclTerraform(this._documentAiCustomEndpoint),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       document_ai_warehouse_custom_endpoint: {
-        value: cdktf.stringToHclTerraform(this._documentAiWarehouseCustomEndpoint),
+        value: cdktn.stringToHclTerraform(this._documentAiWarehouseCustomEndpoint),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       edgecontainer_custom_endpoint: {
-        value: cdktf.stringToHclTerraform(this._edgecontainerCustomEndpoint),
+        value: cdktn.stringToHclTerraform(this._edgecontainerCustomEndpoint),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       edgenetwork_custom_endpoint: {
-        value: cdktf.stringToHclTerraform(this._edgenetworkCustomEndpoint),
+        value: cdktn.stringToHclTerraform(this._edgenetworkCustomEndpoint),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       essential_contacts_custom_endpoint: {
-        value: cdktf.stringToHclTerraform(this._essentialContactsCustomEndpoint),
+        value: cdktn.stringToHclTerraform(this._essentialContactsCustomEndpoint),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       eventarc_custom_endpoint: {
-        value: cdktf.stringToHclTerraform(this._eventarcCustomEndpoint),
+        value: cdktn.stringToHclTerraform(this._eventarcCustomEndpoint),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       filestore_custom_endpoint: {
-        value: cdktf.stringToHclTerraform(this._filestoreCustomEndpoint),
+        value: cdktn.stringToHclTerraform(this._filestoreCustomEndpoint),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       firebase_app_check_custom_endpoint: {
-        value: cdktf.stringToHclTerraform(this._firebaseAppCheckCustomEndpoint),
+        value: cdktn.stringToHclTerraform(this._firebaseAppCheckCustomEndpoint),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       firebase_app_hosting_custom_endpoint: {
-        value: cdktf.stringToHclTerraform(this._firebaseAppHostingCustomEndpoint),
+        value: cdktn.stringToHclTerraform(this._firebaseAppHostingCustomEndpoint),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       firebase_data_connect_custom_endpoint: {
-        value: cdktf.stringToHclTerraform(this._firebaseDataConnectCustomEndpoint),
+        value: cdktn.stringToHclTerraform(this._firebaseDataConnectCustomEndpoint),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       firebaserules_custom_endpoint: {
-        value: cdktf.stringToHclTerraform(this._firebaserulesCustomEndpoint),
+        value: cdktn.stringToHclTerraform(this._firebaserulesCustomEndpoint),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       firestore_custom_endpoint: {
-        value: cdktf.stringToHclTerraform(this._firestoreCustomEndpoint),
+        value: cdktn.stringToHclTerraform(this._firestoreCustomEndpoint),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       gemini_custom_endpoint: {
-        value: cdktf.stringToHclTerraform(this._geminiCustomEndpoint),
+        value: cdktn.stringToHclTerraform(this._geminiCustomEndpoint),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       gke_backup_custom_endpoint: {
-        value: cdktf.stringToHclTerraform(this._gkeBackupCustomEndpoint),
+        value: cdktn.stringToHclTerraform(this._gkeBackupCustomEndpoint),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       gke_hub2_custom_endpoint: {
-        value: cdktf.stringToHclTerraform(this._gkeHub2CustomEndpoint),
+        value: cdktn.stringToHclTerraform(this._gkeHub2CustomEndpoint),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       gke_hub_custom_endpoint: {
-        value: cdktf.stringToHclTerraform(this._gkeHubCustomEndpoint),
+        value: cdktn.stringToHclTerraform(this._gkeHubCustomEndpoint),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       gkeonprem_custom_endpoint: {
-        value: cdktf.stringToHclTerraform(this._gkeonpremCustomEndpoint),
+        value: cdktn.stringToHclTerraform(this._gkeonpremCustomEndpoint),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       healthcare_custom_endpoint: {
-        value: cdktf.stringToHclTerraform(this._healthcareCustomEndpoint),
+        value: cdktn.stringToHclTerraform(this._healthcareCustomEndpoint),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       iam2_custom_endpoint: {
-        value: cdktf.stringToHclTerraform(this._iam2CustomEndpoint),
+        value: cdktn.stringToHclTerraform(this._iam2CustomEndpoint),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       iam3_custom_endpoint: {
-        value: cdktf.stringToHclTerraform(this._iam3CustomEndpoint),
+        value: cdktn.stringToHclTerraform(this._iam3CustomEndpoint),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       iam_beta_custom_endpoint: {
-        value: cdktf.stringToHclTerraform(this._iamBetaCustomEndpoint),
+        value: cdktn.stringToHclTerraform(this._iamBetaCustomEndpoint),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       iam_credentials_custom_endpoint: {
-        value: cdktf.stringToHclTerraform(this._iamCredentialsCustomEndpoint),
+        value: cdktn.stringToHclTerraform(this._iamCredentialsCustomEndpoint),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       iam_custom_endpoint: {
-        value: cdktf.stringToHclTerraform(this._iamCustomEndpoint),
+        value: cdktn.stringToHclTerraform(this._iamCustomEndpoint),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       iam_workforce_pool_custom_endpoint: {
-        value: cdktf.stringToHclTerraform(this._iamWorkforcePoolCustomEndpoint),
+        value: cdktn.stringToHclTerraform(this._iamWorkforcePoolCustomEndpoint),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       iap_custom_endpoint: {
-        value: cdktf.stringToHclTerraform(this._iapCustomEndpoint),
+        value: cdktn.stringToHclTerraform(this._iapCustomEndpoint),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       identity_platform_custom_endpoint: {
-        value: cdktf.stringToHclTerraform(this._identityPlatformCustomEndpoint),
+        value: cdktn.stringToHclTerraform(this._identityPlatformCustomEndpoint),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       impersonate_service_account: {
-        value: cdktf.stringToHclTerraform(this._impersonateServiceAccount),
+        value: cdktn.stringToHclTerraform(this._impersonateServiceAccount),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       impersonate_service_account_delegates: {
-        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._impersonateServiceAccountDelegates),
+        value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(this._impersonateServiceAccountDelegates),
         isBlock: false,
         type: "list",
         storageClassType: "stringList",
       },
       integration_connectors_custom_endpoint: {
-        value: cdktf.stringToHclTerraform(this._integrationConnectorsCustomEndpoint),
+        value: cdktn.stringToHclTerraform(this._integrationConnectorsCustomEndpoint),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       integrations_custom_endpoint: {
-        value: cdktf.stringToHclTerraform(this._integrationsCustomEndpoint),
+        value: cdktn.stringToHclTerraform(this._integrationsCustomEndpoint),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       kms_custom_endpoint: {
-        value: cdktf.stringToHclTerraform(this._kmsCustomEndpoint),
+        value: cdktn.stringToHclTerraform(this._kmsCustomEndpoint),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       logging_custom_endpoint: {
-        value: cdktf.stringToHclTerraform(this._loggingCustomEndpoint),
+        value: cdktn.stringToHclTerraform(this._loggingCustomEndpoint),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       looker_custom_endpoint: {
-        value: cdktf.stringToHclTerraform(this._lookerCustomEndpoint),
+        value: cdktn.stringToHclTerraform(this._lookerCustomEndpoint),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       lustre_custom_endpoint: {
-        value: cdktf.stringToHclTerraform(this._lustreCustomEndpoint),
+        value: cdktn.stringToHclTerraform(this._lustreCustomEndpoint),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       managed_kafka_custom_endpoint: {
-        value: cdktf.stringToHclTerraform(this._managedKafkaCustomEndpoint),
+        value: cdktn.stringToHclTerraform(this._managedKafkaCustomEndpoint),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       memcache_custom_endpoint: {
-        value: cdktf.stringToHclTerraform(this._memcacheCustomEndpoint),
+        value: cdktn.stringToHclTerraform(this._memcacheCustomEndpoint),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       memorystore_custom_endpoint: {
-        value: cdktf.stringToHclTerraform(this._memorystoreCustomEndpoint),
+        value: cdktn.stringToHclTerraform(this._memorystoreCustomEndpoint),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       migration_center_custom_endpoint: {
-        value: cdktf.stringToHclTerraform(this._migrationCenterCustomEndpoint),
+        value: cdktn.stringToHclTerraform(this._migrationCenterCustomEndpoint),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       ml_engine_custom_endpoint: {
-        value: cdktf.stringToHclTerraform(this._mlEngineCustomEndpoint),
+        value: cdktn.stringToHclTerraform(this._mlEngineCustomEndpoint),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       model_armor_custom_endpoint: {
-        value: cdktf.stringToHclTerraform(this._modelArmorCustomEndpoint),
+        value: cdktn.stringToHclTerraform(this._modelArmorCustomEndpoint),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       model_armor_global_custom_endpoint: {
-        value: cdktf.stringToHclTerraform(this._modelArmorGlobalCustomEndpoint),
+        value: cdktn.stringToHclTerraform(this._modelArmorGlobalCustomEndpoint),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       monitoring_custom_endpoint: {
-        value: cdktf.stringToHclTerraform(this._monitoringCustomEndpoint),
+        value: cdktn.stringToHclTerraform(this._monitoringCustomEndpoint),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       netapp_custom_endpoint: {
-        value: cdktf.stringToHclTerraform(this._netappCustomEndpoint),
+        value: cdktn.stringToHclTerraform(this._netappCustomEndpoint),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       network_connectivity_custom_endpoint: {
-        value: cdktf.stringToHclTerraform(this._networkConnectivityCustomEndpoint),
+        value: cdktn.stringToHclTerraform(this._networkConnectivityCustomEndpoint),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       network_management_custom_endpoint: {
-        value: cdktf.stringToHclTerraform(this._networkManagementCustomEndpoint),
+        value: cdktn.stringToHclTerraform(this._networkManagementCustomEndpoint),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       network_security_custom_endpoint: {
-        value: cdktf.stringToHclTerraform(this._networkSecurityCustomEndpoint),
+        value: cdktn.stringToHclTerraform(this._networkSecurityCustomEndpoint),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       network_services_custom_endpoint: {
-        value: cdktf.stringToHclTerraform(this._networkServicesCustomEndpoint),
+        value: cdktn.stringToHclTerraform(this._networkServicesCustomEndpoint),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       notebooks_custom_endpoint: {
-        value: cdktf.stringToHclTerraform(this._notebooksCustomEndpoint),
+        value: cdktn.stringToHclTerraform(this._notebooksCustomEndpoint),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       oracle_database_custom_endpoint: {
-        value: cdktf.stringToHclTerraform(this._oracleDatabaseCustomEndpoint),
+        value: cdktn.stringToHclTerraform(this._oracleDatabaseCustomEndpoint),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       org_policy_custom_endpoint: {
-        value: cdktf.stringToHclTerraform(this._orgPolicyCustomEndpoint),
+        value: cdktn.stringToHclTerraform(this._orgPolicyCustomEndpoint),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       os_config_custom_endpoint: {
-        value: cdktf.stringToHclTerraform(this._osConfigCustomEndpoint),
+        value: cdktn.stringToHclTerraform(this._osConfigCustomEndpoint),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       os_config_v2_custom_endpoint: {
-        value: cdktf.stringToHclTerraform(this._osConfigV2CustomEndpoint),
+        value: cdktn.stringToHclTerraform(this._osConfigV2CustomEndpoint),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       os_login_custom_endpoint: {
-        value: cdktf.stringToHclTerraform(this._osLoginCustomEndpoint),
+        value: cdktn.stringToHclTerraform(this._osLoginCustomEndpoint),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       parallelstore_custom_endpoint: {
-        value: cdktf.stringToHclTerraform(this._parallelstoreCustomEndpoint),
+        value: cdktn.stringToHclTerraform(this._parallelstoreCustomEndpoint),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       parameter_manager_custom_endpoint: {
-        value: cdktf.stringToHclTerraform(this._parameterManagerCustomEndpoint),
+        value: cdktn.stringToHclTerraform(this._parameterManagerCustomEndpoint),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       parameter_manager_regional_custom_endpoint: {
-        value: cdktf.stringToHclTerraform(this._parameterManagerRegionalCustomEndpoint),
+        value: cdktn.stringToHclTerraform(this._parameterManagerRegionalCustomEndpoint),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       privateca_custom_endpoint: {
-        value: cdktf.stringToHclTerraform(this._privatecaCustomEndpoint),
+        value: cdktn.stringToHclTerraform(this._privatecaCustomEndpoint),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       privileged_access_manager_custom_endpoint: {
-        value: cdktf.stringToHclTerraform(this._privilegedAccessManagerCustomEndpoint),
+        value: cdktn.stringToHclTerraform(this._privilegedAccessManagerCustomEndpoint),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       project: {
-        value: cdktf.stringToHclTerraform(this._project),
+        value: cdktn.stringToHclTerraform(this._project),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       public_ca_custom_endpoint: {
-        value: cdktf.stringToHclTerraform(this._publicCaCustomEndpoint),
+        value: cdktn.stringToHclTerraform(this._publicCaCustomEndpoint),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       pubsub_custom_endpoint: {
-        value: cdktf.stringToHclTerraform(this._pubsubCustomEndpoint),
+        value: cdktn.stringToHclTerraform(this._pubsubCustomEndpoint),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       pubsub_lite_custom_endpoint: {
-        value: cdktf.stringToHclTerraform(this._pubsubLiteCustomEndpoint),
+        value: cdktn.stringToHclTerraform(this._pubsubLiteCustomEndpoint),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       recaptcha_enterprise_custom_endpoint: {
-        value: cdktf.stringToHclTerraform(this._recaptchaEnterpriseCustomEndpoint),
+        value: cdktn.stringToHclTerraform(this._recaptchaEnterpriseCustomEndpoint),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       redis_custom_endpoint: {
-        value: cdktf.stringToHclTerraform(this._redisCustomEndpoint),
+        value: cdktn.stringToHclTerraform(this._redisCustomEndpoint),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       region: {
-        value: cdktf.stringToHclTerraform(this._region),
+        value: cdktn.stringToHclTerraform(this._region),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       request_reason: {
-        value: cdktf.stringToHclTerraform(this._requestReason),
+        value: cdktn.stringToHclTerraform(this._requestReason),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       request_timeout: {
-        value: cdktf.stringToHclTerraform(this._requestTimeout),
+        value: cdktn.stringToHclTerraform(this._requestTimeout),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       resource_manager_custom_endpoint: {
-        value: cdktf.stringToHclTerraform(this._resourceManagerCustomEndpoint),
+        value: cdktn.stringToHclTerraform(this._resourceManagerCustomEndpoint),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       resource_manager_v3_custom_endpoint: {
-        value: cdktf.stringToHclTerraform(this._resourceManagerV3CustomEndpoint),
+        value: cdktn.stringToHclTerraform(this._resourceManagerV3CustomEndpoint),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       scopes: {
-        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._scopes),
+        value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(this._scopes),
         isBlock: false,
         type: "list",
         storageClassType: "stringList",
       },
       secret_manager_custom_endpoint: {
-        value: cdktf.stringToHclTerraform(this._secretManagerCustomEndpoint),
+        value: cdktn.stringToHclTerraform(this._secretManagerCustomEndpoint),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       secret_manager_regional_custom_endpoint: {
-        value: cdktf.stringToHclTerraform(this._secretManagerRegionalCustomEndpoint),
+        value: cdktn.stringToHclTerraform(this._secretManagerRegionalCustomEndpoint),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       secure_source_manager_custom_endpoint: {
-        value: cdktf.stringToHclTerraform(this._secureSourceManagerCustomEndpoint),
+        value: cdktn.stringToHclTerraform(this._secureSourceManagerCustomEndpoint),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       security_center_custom_endpoint: {
-        value: cdktf.stringToHclTerraform(this._securityCenterCustomEndpoint),
+        value: cdktn.stringToHclTerraform(this._securityCenterCustomEndpoint),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       security_center_management_custom_endpoint: {
-        value: cdktf.stringToHclTerraform(this._securityCenterManagementCustomEndpoint),
+        value: cdktn.stringToHclTerraform(this._securityCenterManagementCustomEndpoint),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       security_center_v2_custom_endpoint: {
-        value: cdktf.stringToHclTerraform(this._securityCenterV2CustomEndpoint),
+        value: cdktn.stringToHclTerraform(this._securityCenterV2CustomEndpoint),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       securityposture_custom_endpoint: {
-        value: cdktf.stringToHclTerraform(this._securitypostureCustomEndpoint),
+        value: cdktn.stringToHclTerraform(this._securitypostureCustomEndpoint),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       service_management_custom_endpoint: {
-        value: cdktf.stringToHclTerraform(this._serviceManagementCustomEndpoint),
+        value: cdktn.stringToHclTerraform(this._serviceManagementCustomEndpoint),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       service_networking_custom_endpoint: {
-        value: cdktf.stringToHclTerraform(this._serviceNetworkingCustomEndpoint),
+        value: cdktn.stringToHclTerraform(this._serviceNetworkingCustomEndpoint),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       service_usage_custom_endpoint: {
-        value: cdktf.stringToHclTerraform(this._serviceUsageCustomEndpoint),
+        value: cdktn.stringToHclTerraform(this._serviceUsageCustomEndpoint),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       site_verification_custom_endpoint: {
-        value: cdktf.stringToHclTerraform(this._siteVerificationCustomEndpoint),
+        value: cdktn.stringToHclTerraform(this._siteVerificationCustomEndpoint),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       source_repo_custom_endpoint: {
-        value: cdktf.stringToHclTerraform(this._sourceRepoCustomEndpoint),
+        value: cdktn.stringToHclTerraform(this._sourceRepoCustomEndpoint),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       spanner_custom_endpoint: {
-        value: cdktf.stringToHclTerraform(this._spannerCustomEndpoint),
+        value: cdktn.stringToHclTerraform(this._spannerCustomEndpoint),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       sql_custom_endpoint: {
-        value: cdktf.stringToHclTerraform(this._sqlCustomEndpoint),
+        value: cdktn.stringToHclTerraform(this._sqlCustomEndpoint),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       storage_batch_operations_custom_endpoint: {
-        value: cdktf.stringToHclTerraform(this._storageBatchOperationsCustomEndpoint),
+        value: cdktn.stringToHclTerraform(this._storageBatchOperationsCustomEndpoint),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       storage_control_custom_endpoint: {
-        value: cdktf.stringToHclTerraform(this._storageControlCustomEndpoint),
+        value: cdktn.stringToHclTerraform(this._storageControlCustomEndpoint),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       storage_custom_endpoint: {
-        value: cdktf.stringToHclTerraform(this._storageCustomEndpoint),
+        value: cdktn.stringToHclTerraform(this._storageCustomEndpoint),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       storage_insights_custom_endpoint: {
-        value: cdktf.stringToHclTerraform(this._storageInsightsCustomEndpoint),
+        value: cdktn.stringToHclTerraform(this._storageInsightsCustomEndpoint),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       storage_transfer_custom_endpoint: {
-        value: cdktf.stringToHclTerraform(this._storageTransferCustomEndpoint),
+        value: cdktn.stringToHclTerraform(this._storageTransferCustomEndpoint),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       tags_custom_endpoint: {
-        value: cdktf.stringToHclTerraform(this._tagsCustomEndpoint),
+        value: cdktn.stringToHclTerraform(this._tagsCustomEndpoint),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       tags_location_custom_endpoint: {
-        value: cdktf.stringToHclTerraform(this._tagsLocationCustomEndpoint),
+        value: cdktn.stringToHclTerraform(this._tagsLocationCustomEndpoint),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       terraform_attribution_label_addition_strategy: {
-        value: cdktf.stringToHclTerraform(this._terraformAttributionLabelAdditionStrategy),
+        value: cdktn.stringToHclTerraform(this._terraformAttributionLabelAdditionStrategy),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       tpu_custom_endpoint: {
-        value: cdktf.stringToHclTerraform(this._tpuCustomEndpoint),
+        value: cdktn.stringToHclTerraform(this._tpuCustomEndpoint),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       transcoder_custom_endpoint: {
-        value: cdktf.stringToHclTerraform(this._transcoderCustomEndpoint),
+        value: cdktn.stringToHclTerraform(this._transcoderCustomEndpoint),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       universe_domain: {
-        value: cdktf.stringToHclTerraform(this._universeDomain),
+        value: cdktn.stringToHclTerraform(this._universeDomain),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       user_project_override: {
-        value: cdktf.booleanToHclTerraform(this._userProjectOverride),
+        value: cdktn.booleanToHclTerraform(this._userProjectOverride),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       vertex_ai_custom_endpoint: {
-        value: cdktf.stringToHclTerraform(this._vertexAiCustomEndpoint),
+        value: cdktn.stringToHclTerraform(this._vertexAiCustomEndpoint),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       vmwareengine_custom_endpoint: {
-        value: cdktf.stringToHclTerraform(this._vmwareengineCustomEndpoint),
+        value: cdktn.stringToHclTerraform(this._vmwareengineCustomEndpoint),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       vpc_access_custom_endpoint: {
-        value: cdktf.stringToHclTerraform(this._vpcAccessCustomEndpoint),
+        value: cdktn.stringToHclTerraform(this._vpcAccessCustomEndpoint),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       workbench_custom_endpoint: {
-        value: cdktf.stringToHclTerraform(this._workbenchCustomEndpoint),
+        value: cdktn.stringToHclTerraform(this._workbenchCustomEndpoint),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       workflows_custom_endpoint: {
-        value: cdktf.stringToHclTerraform(this._workflowsCustomEndpoint),
+        value: cdktn.stringToHclTerraform(this._workflowsCustomEndpoint),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       zone: {
-        value: cdktf.stringToHclTerraform(this._zone),
+        value: cdktn.stringToHclTerraform(this._zone),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       alias: {
-        value: cdktf.stringToHclTerraform(this._alias),
+        value: cdktn.stringToHclTerraform(this._alias),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       batching: {
-        value: cdktf.listMapperHcl(googleProviderBatchingToHclTerraform, true)(this._batching),
+        value: cdktn.listMapperHcl(googleProviderBatchingToHclTerraform, true)(this._batching),
         isBlock: true,
         type: "list",
         storageClassType: "GoogleProviderBatchingList",
       },
       external_credentials: {
-        value: cdktf.listMapperHcl(googleProviderExternalCredentialsToHclTerraform, true)(this._externalCredentials),
+        value: cdktn.listMapperHcl(googleProviderExternalCredentialsToHclTerraform, true)(this._externalCredentials),
         isBlock: true,
         type: "list",
         storageClassType: "GoogleProviderExternalCredentialsList",

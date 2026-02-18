@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface IntegrationConnectorsEndpointAttachmentConfig extends cdktf.TerraformMetaArguments {
+export interface IntegrationConnectorsEndpointAttachmentConfig extends cdktn.TerraformMetaArguments {
   /**
   * Description of the resource.
   *
@@ -23,7 +23,7 @@ export interface IntegrationConnectorsEndpointAttachmentConfig extends cdktf.Ter
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/integration_connectors_endpoint_attachment#endpoint_global_access IntegrationConnectorsEndpointAttachment#endpoint_global_access}
   */
-  readonly endpointGlobalAccess?: boolean | cdktf.IResolvable;
+  readonly endpointGlobalAccess?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/integration_connectors_endpoint_attachment#id IntegrationConnectorsEndpointAttachment#id}
   *
@@ -85,39 +85,39 @@ export interface IntegrationConnectorsEndpointAttachmentTimeouts {
   readonly update?: string;
 }
 
-export function integrationConnectorsEndpointAttachmentTimeoutsToTerraform(struct?: IntegrationConnectorsEndpointAttachmentTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function integrationConnectorsEndpointAttachmentTimeoutsToTerraform(struct?: IntegrationConnectorsEndpointAttachmentTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    create: cdktf.stringToTerraform(struct!.create),
-    delete: cdktf.stringToTerraform(struct!.delete),
-    update: cdktf.stringToTerraform(struct!.update),
+    create: cdktn.stringToTerraform(struct!.create),
+    delete: cdktn.stringToTerraform(struct!.delete),
+    update: cdktn.stringToTerraform(struct!.update),
   }
 }
 
 
-export function integrationConnectorsEndpointAttachmentTimeoutsToHclTerraform(struct?: IntegrationConnectorsEndpointAttachmentTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function integrationConnectorsEndpointAttachmentTimeoutsToHclTerraform(struct?: IntegrationConnectorsEndpointAttachmentTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     create: {
-      value: cdktf.stringToHclTerraform(struct!.create),
+      value: cdktn.stringToHclTerraform(struct!.create),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     delete: {
-      value: cdktf.stringToHclTerraform(struct!.delete),
+      value: cdktn.stringToHclTerraform(struct!.delete),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     update: {
-      value: cdktf.stringToHclTerraform(struct!.update),
+      value: cdktn.stringToHclTerraform(struct!.update),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -128,19 +128,19 @@ export function integrationConnectorsEndpointAttachmentTimeoutsToHclTerraform(st
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class IntegrationConnectorsEndpointAttachmentTimeoutsOutputReference extends cdktf.ComplexObject {
+export class IntegrationConnectorsEndpointAttachmentTimeoutsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): IntegrationConnectorsEndpointAttachmentTimeouts | cdktf.IResolvable | undefined {
+  public get internalValue(): IntegrationConnectorsEndpointAttachmentTimeouts | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -161,7 +161,7 @@ export class IntegrationConnectorsEndpointAttachmentTimeoutsOutputReference exte
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: IntegrationConnectorsEndpointAttachmentTimeouts | cdktf.IResolvable | undefined) {
+  public set internalValue(value: IntegrationConnectorsEndpointAttachmentTimeouts | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -169,7 +169,7 @@ export class IntegrationConnectorsEndpointAttachmentTimeoutsOutputReference exte
       this._delete = undefined;
       this._update = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -234,7 +234,7 @@ export class IntegrationConnectorsEndpointAttachmentTimeoutsOutputReference exte
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/integration_connectors_endpoint_attachment google_integration_connectors_endpoint_attachment}
 */
-export class IntegrationConnectorsEndpointAttachment extends cdktf.TerraformResource {
+export class IntegrationConnectorsEndpointAttachment extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -245,14 +245,14 @@ export class IntegrationConnectorsEndpointAttachment extends cdktf.TerraformReso
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a IntegrationConnectorsEndpointAttachment resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a IntegrationConnectorsEndpointAttachment resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the IntegrationConnectorsEndpointAttachment to import
   * @param importFromId The id of the existing IntegrationConnectorsEndpointAttachment that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/integration_connectors_endpoint_attachment#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the IntegrationConnectorsEndpointAttachment to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "google_integration_connectors_endpoint_attachment", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "google_integration_connectors_endpoint_attachment", importId: importFromId, provider });
       }
 
   // ===========
@@ -319,17 +319,17 @@ export class IntegrationConnectorsEndpointAttachment extends cdktf.TerraformReso
   }
 
   // effective_labels - computed: true, optional: false, required: false
-  private _effectiveLabels = new cdktf.StringMap(this, "effective_labels");
+  private _effectiveLabels = new cdktn.StringMap(this, "effective_labels");
   public get effectiveLabels() {
     return this._effectiveLabels;
   }
 
   // endpoint_global_access - computed: false, optional: true, required: false
-  private _endpointGlobalAccess?: boolean | cdktf.IResolvable; 
+  private _endpointGlobalAccess?: boolean | cdktn.IResolvable; 
   public get endpointGlobalAccess() {
     return this.getBooleanAttribute('endpoint_global_access');
   }
-  public set endpointGlobalAccess(value: boolean | cdktf.IResolvable) {
+  public set endpointGlobalAccess(value: boolean | cdktn.IResolvable) {
     this._endpointGlobalAccess = value;
   }
   public resetEndpointGlobalAccess() {
@@ -433,7 +433,7 @@ export class IntegrationConnectorsEndpointAttachment extends cdktf.TerraformReso
   }
 
   // terraform_labels - computed: true, optional: false, required: false
-  private _terraformLabels = new cdktf.StringMap(this, "terraform_labels");
+  private _terraformLabels = new cdktn.StringMap(this, "terraform_labels");
   public get terraformLabels() {
     return this._terraformLabels;
   }
@@ -465,14 +465,14 @@ export class IntegrationConnectorsEndpointAttachment extends cdktf.TerraformReso
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      description: cdktf.stringToTerraform(this._description),
-      endpoint_global_access: cdktf.booleanToTerraform(this._endpointGlobalAccess),
-      id: cdktf.stringToTerraform(this._id),
-      labels: cdktf.hashMapper(cdktf.stringToTerraform)(this._labels),
-      location: cdktf.stringToTerraform(this._location),
-      name: cdktf.stringToTerraform(this._name),
-      project: cdktf.stringToTerraform(this._project),
-      service_attachment: cdktf.stringToTerraform(this._serviceAttachment),
+      description: cdktn.stringToTerraform(this._description),
+      endpoint_global_access: cdktn.booleanToTerraform(this._endpointGlobalAccess),
+      id: cdktn.stringToTerraform(this._id),
+      labels: cdktn.hashMapper(cdktn.stringToTerraform)(this._labels),
+      location: cdktn.stringToTerraform(this._location),
+      name: cdktn.stringToTerraform(this._name),
+      project: cdktn.stringToTerraform(this._project),
+      service_attachment: cdktn.stringToTerraform(this._serviceAttachment),
       timeouts: integrationConnectorsEndpointAttachmentTimeoutsToTerraform(this._timeouts.internalValue),
     };
   }
@@ -480,49 +480,49 @@ export class IntegrationConnectorsEndpointAttachment extends cdktf.TerraformReso
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       description: {
-        value: cdktf.stringToHclTerraform(this._description),
+        value: cdktn.stringToHclTerraform(this._description),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       endpoint_global_access: {
-        value: cdktf.booleanToHclTerraform(this._endpointGlobalAccess),
+        value: cdktn.booleanToHclTerraform(this._endpointGlobalAccess),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       labels: {
-        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._labels),
+        value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(this._labels),
         isBlock: false,
         type: "map",
         storageClassType: "stringMap",
       },
       location: {
-        value: cdktf.stringToHclTerraform(this._location),
+        value: cdktn.stringToHclTerraform(this._location),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       name: {
-        value: cdktf.stringToHclTerraform(this._name),
+        value: cdktn.stringToHclTerraform(this._name),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       project: {
-        value: cdktf.stringToHclTerraform(this._project),
+        value: cdktn.stringToHclTerraform(this._project),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       service_attachment: {
-        value: cdktf.stringToHclTerraform(this._serviceAttachment),
+        value: cdktn.stringToHclTerraform(this._serviceAttachment),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

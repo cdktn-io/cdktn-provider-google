@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface TpuNodeConfig extends cdktf.TerraformMetaArguments {
+export interface TpuNodeConfig extends cdktn.TerraformMetaArguments {
   /**
   * The type of hardware accelerators associated with this node.
   *
@@ -87,7 +87,7 @@ export interface TpuNodeConfig extends cdktf.TerraformMetaArguments {
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/tpu_node#use_service_networking TpuNode#use_service_networking}
   */
-  readonly useServiceNetworking?: boolean | cdktf.IResolvable;
+  readonly useServiceNetworking?: boolean | cdktn.IResolvable;
   /**
   * The GCP location for the TPU. If it is not provided, the provider zone is used.
   *
@@ -111,8 +111,8 @@ export interface TpuNodeNetworkEndpoints {
 }
 
 export function tpuNodeNetworkEndpointsToTerraform(struct?: TpuNodeNetworkEndpoints): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -121,8 +121,8 @@ export function tpuNodeNetworkEndpointsToTerraform(struct?: TpuNodeNetworkEndpoi
 
 
 export function tpuNodeNetworkEndpointsToHclTerraform(struct?: TpuNodeNetworkEndpoints): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -130,7 +130,7 @@ export function tpuNodeNetworkEndpointsToHclTerraform(struct?: TpuNodeNetworkEnd
   return attrs;
 }
 
-export class TpuNodeNetworkEndpointsOutputReference extends cdktf.ComplexObject {
+export class TpuNodeNetworkEndpointsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -139,7 +139,7 @@ export class TpuNodeNetworkEndpointsOutputReference extends cdktf.ComplexObject 
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -169,14 +169,14 @@ export class TpuNodeNetworkEndpointsOutputReference extends cdktf.ComplexObject 
   }
 }
 
-export class TpuNodeNetworkEndpointsList extends cdktf.ComplexList {
+export class TpuNodeNetworkEndpointsList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -193,28 +193,28 @@ export interface TpuNodeSchedulingConfig {
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/tpu_node#preemptible TpuNode#preemptible}
   */
-  readonly preemptible: boolean | cdktf.IResolvable;
+  readonly preemptible: boolean | cdktn.IResolvable;
 }
 
 export function tpuNodeSchedulingConfigToTerraform(struct?: TpuNodeSchedulingConfigOutputReference | TpuNodeSchedulingConfig): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    preemptible: cdktf.booleanToTerraform(struct!.preemptible),
+    preemptible: cdktn.booleanToTerraform(struct!.preemptible),
   }
 }
 
 
 export function tpuNodeSchedulingConfigToHclTerraform(struct?: TpuNodeSchedulingConfigOutputReference | TpuNodeSchedulingConfig): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     preemptible: {
-      value: cdktf.booleanToHclTerraform(struct!.preemptible),
+      value: cdktn.booleanToHclTerraform(struct!.preemptible),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
@@ -225,14 +225,14 @@ export function tpuNodeSchedulingConfigToHclTerraform(struct?: TpuNodeScheduling
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class TpuNodeSchedulingConfigOutputReference extends cdktf.ComplexObject {
+export class TpuNodeSchedulingConfigOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -258,11 +258,11 @@ export class TpuNodeSchedulingConfigOutputReference extends cdktf.ComplexObject 
   }
 
   // preemptible - computed: false, optional: false, required: true
-  private _preemptible?: boolean | cdktf.IResolvable; 
+  private _preemptible?: boolean | cdktn.IResolvable; 
   public get preemptible() {
     return this.getBooleanAttribute('preemptible');
   }
-  public set preemptible(value: boolean | cdktf.IResolvable) {
+  public set preemptible(value: boolean | cdktn.IResolvable) {
     this._preemptible = value;
   }
   // Temporarily expose input value. Use with caution.
@@ -285,39 +285,39 @@ export interface TpuNodeTimeouts {
   readonly update?: string;
 }
 
-export function tpuNodeTimeoutsToTerraform(struct?: TpuNodeTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function tpuNodeTimeoutsToTerraform(struct?: TpuNodeTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    create: cdktf.stringToTerraform(struct!.create),
-    delete: cdktf.stringToTerraform(struct!.delete),
-    update: cdktf.stringToTerraform(struct!.update),
+    create: cdktn.stringToTerraform(struct!.create),
+    delete: cdktn.stringToTerraform(struct!.delete),
+    update: cdktn.stringToTerraform(struct!.update),
   }
 }
 
 
-export function tpuNodeTimeoutsToHclTerraform(struct?: TpuNodeTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function tpuNodeTimeoutsToHclTerraform(struct?: TpuNodeTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     create: {
-      value: cdktf.stringToHclTerraform(struct!.create),
+      value: cdktn.stringToHclTerraform(struct!.create),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     delete: {
-      value: cdktf.stringToHclTerraform(struct!.delete),
+      value: cdktn.stringToHclTerraform(struct!.delete),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     update: {
-      value: cdktf.stringToHclTerraform(struct!.update),
+      value: cdktn.stringToHclTerraform(struct!.update),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -328,19 +328,19 @@ export function tpuNodeTimeoutsToHclTerraform(struct?: TpuNodeTimeouts | cdktf.I
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class TpuNodeTimeoutsOutputReference extends cdktf.ComplexObject {
+export class TpuNodeTimeoutsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): TpuNodeTimeouts | cdktf.IResolvable | undefined {
+  public get internalValue(): TpuNodeTimeouts | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -361,7 +361,7 @@ export class TpuNodeTimeoutsOutputReference extends cdktf.ComplexObject {
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: TpuNodeTimeouts | cdktf.IResolvable | undefined) {
+  public set internalValue(value: TpuNodeTimeouts | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -369,7 +369,7 @@ export class TpuNodeTimeoutsOutputReference extends cdktf.ComplexObject {
       this._delete = undefined;
       this._update = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -434,7 +434,7 @@ export class TpuNodeTimeoutsOutputReference extends cdktf.ComplexObject {
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/tpu_node google_tpu_node}
 */
-export class TpuNode extends cdktf.TerraformResource {
+export class TpuNode extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -445,14 +445,14 @@ export class TpuNode extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a TpuNode resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a TpuNode resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the TpuNode to import
   * @param importFromId The id of the existing TpuNode that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/tpu_node#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the TpuNode to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "google_tpu_node", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "google_tpu_node", importId: importFromId, provider });
       }
 
   // ===========
@@ -547,7 +547,7 @@ export class TpuNode extends cdktf.TerraformResource {
   }
 
   // effective_labels - computed: true, optional: false, required: false
-  private _effectiveLabels = new cdktf.StringMap(this, "effective_labels");
+  private _effectiveLabels = new cdktn.StringMap(this, "effective_labels");
   public get effectiveLabels() {
     return this._effectiveLabels;
   }
@@ -654,17 +654,17 @@ export class TpuNode extends cdktf.TerraformResource {
   }
 
   // terraform_labels - computed: true, optional: false, required: false
-  private _terraformLabels = new cdktf.StringMap(this, "terraform_labels");
+  private _terraformLabels = new cdktn.StringMap(this, "terraform_labels");
   public get terraformLabels() {
     return this._terraformLabels;
   }
 
   // use_service_networking - computed: false, optional: true, required: false
-  private _useServiceNetworking?: boolean | cdktf.IResolvable; 
+  private _useServiceNetworking?: boolean | cdktn.IResolvable; 
   public get useServiceNetworking() {
     return this.getBooleanAttribute('use_service_networking');
   }
-  public set useServiceNetworking(value: boolean | cdktf.IResolvable) {
+  public set useServiceNetworking(value: boolean | cdktn.IResolvable) {
     this._useServiceNetworking = value;
   }
   public resetUseServiceNetworking() {
@@ -729,17 +729,17 @@ export class TpuNode extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      accelerator_type: cdktf.stringToTerraform(this._acceleratorType),
-      cidr_block: cdktf.stringToTerraform(this._cidrBlock),
-      description: cdktf.stringToTerraform(this._description),
-      id: cdktf.stringToTerraform(this._id),
-      labels: cdktf.hashMapper(cdktf.stringToTerraform)(this._labels),
-      name: cdktf.stringToTerraform(this._name),
-      network: cdktf.stringToTerraform(this._network),
-      project: cdktf.stringToTerraform(this._project),
-      tensorflow_version: cdktf.stringToTerraform(this._tensorflowVersion),
-      use_service_networking: cdktf.booleanToTerraform(this._useServiceNetworking),
-      zone: cdktf.stringToTerraform(this._zone),
+      accelerator_type: cdktn.stringToTerraform(this._acceleratorType),
+      cidr_block: cdktn.stringToTerraform(this._cidrBlock),
+      description: cdktn.stringToTerraform(this._description),
+      id: cdktn.stringToTerraform(this._id),
+      labels: cdktn.hashMapper(cdktn.stringToTerraform)(this._labels),
+      name: cdktn.stringToTerraform(this._name),
+      network: cdktn.stringToTerraform(this._network),
+      project: cdktn.stringToTerraform(this._project),
+      tensorflow_version: cdktn.stringToTerraform(this._tensorflowVersion),
+      use_service_networking: cdktn.booleanToTerraform(this._useServiceNetworking),
+      zone: cdktn.stringToTerraform(this._zone),
       scheduling_config: tpuNodeSchedulingConfigToTerraform(this._schedulingConfig.internalValue),
       timeouts: tpuNodeTimeoutsToTerraform(this._timeouts.internalValue),
     };
@@ -748,67 +748,67 @@ export class TpuNode extends cdktf.TerraformResource {
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       accelerator_type: {
-        value: cdktf.stringToHclTerraform(this._acceleratorType),
+        value: cdktn.stringToHclTerraform(this._acceleratorType),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       cidr_block: {
-        value: cdktf.stringToHclTerraform(this._cidrBlock),
+        value: cdktn.stringToHclTerraform(this._cidrBlock),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       description: {
-        value: cdktf.stringToHclTerraform(this._description),
+        value: cdktn.stringToHclTerraform(this._description),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       labels: {
-        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._labels),
+        value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(this._labels),
         isBlock: false,
         type: "map",
         storageClassType: "stringMap",
       },
       name: {
-        value: cdktf.stringToHclTerraform(this._name),
+        value: cdktn.stringToHclTerraform(this._name),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       network: {
-        value: cdktf.stringToHclTerraform(this._network),
+        value: cdktn.stringToHclTerraform(this._network),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       project: {
-        value: cdktf.stringToHclTerraform(this._project),
+        value: cdktn.stringToHclTerraform(this._project),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       tensorflow_version: {
-        value: cdktf.stringToHclTerraform(this._tensorflowVersion),
+        value: cdktn.stringToHclTerraform(this._tensorflowVersion),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       use_service_networking: {
-        value: cdktf.booleanToHclTerraform(this._useServiceNetworking),
+        value: cdktn.booleanToHclTerraform(this._useServiceNetworking),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       zone: {
-        value: cdktf.stringToHclTerraform(this._zone),
+        value: cdktn.stringToHclTerraform(this._zone),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

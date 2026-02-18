@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface IapAppEngineVersionIamPolicyConfig extends cdktf.TerraformMetaArguments {
+export interface IapAppEngineVersionIamPolicyConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/iap_app_engine_version_iam_policy#app_id IapAppEngineVersionIamPolicy#app_id}
   */
@@ -44,7 +44,7 @@ export interface IapAppEngineVersionIamPolicyConfig extends cdktf.TerraformMetaA
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/iap_app_engine_version_iam_policy google_iap_app_engine_version_iam_policy}
 */
-export class IapAppEngineVersionIamPolicy extends cdktf.TerraformResource {
+export class IapAppEngineVersionIamPolicy extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -55,14 +55,14 @@ export class IapAppEngineVersionIamPolicy extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a IapAppEngineVersionIamPolicy resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a IapAppEngineVersionIamPolicy resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the IapAppEngineVersionIamPolicy to import
   * @param importFromId The id of the existing IapAppEngineVersionIamPolicy that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/iap_app_engine_version_iam_policy#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the IapAppEngineVersionIamPolicy to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "google_iap_app_engine_version_iam_policy", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "google_iap_app_engine_version_iam_policy", importId: importFromId, provider });
       }
 
   // ===========
@@ -199,49 +199,49 @@ export class IapAppEngineVersionIamPolicy extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      app_id: cdktf.stringToTerraform(this._appId),
-      id: cdktf.stringToTerraform(this._id),
-      policy_data: cdktf.stringToTerraform(this._policyData),
-      project: cdktf.stringToTerraform(this._project),
-      service: cdktf.stringToTerraform(this._service),
-      version_id: cdktf.stringToTerraform(this._versionId),
+      app_id: cdktn.stringToTerraform(this._appId),
+      id: cdktn.stringToTerraform(this._id),
+      policy_data: cdktn.stringToTerraform(this._policyData),
+      project: cdktn.stringToTerraform(this._project),
+      service: cdktn.stringToTerraform(this._service),
+      version_id: cdktn.stringToTerraform(this._versionId),
     };
   }
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       app_id: {
-        value: cdktf.stringToHclTerraform(this._appId),
+        value: cdktn.stringToHclTerraform(this._appId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       policy_data: {
-        value: cdktf.stringToHclTerraform(this._policyData),
+        value: cdktn.stringToHclTerraform(this._policyData),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       project: {
-        value: cdktf.stringToHclTerraform(this._project),
+        value: cdktn.stringToHclTerraform(this._project),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       service: {
-        value: cdktf.stringToHclTerraform(this._service),
+        value: cdktn.stringToHclTerraform(this._service),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       version_id: {
-        value: cdktf.stringToHclTerraform(this._versionId),
+        value: cdktn.stringToHclTerraform(this._versionId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

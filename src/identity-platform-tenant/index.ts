@@ -7,17 +7,17 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface IdentityPlatformTenantConfig extends cdktf.TerraformMetaArguments {
+export interface IdentityPlatformTenantConfig extends cdktn.TerraformMetaArguments {
   /**
   * Whether to allow email/password user authentication.
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/identity_platform_tenant#allow_password_signup IdentityPlatformTenant#allow_password_signup}
   */
-  readonly allowPasswordSignup?: boolean | cdktf.IResolvable;
+  readonly allowPasswordSignup?: boolean | cdktn.IResolvable;
   /**
   * Whether authentication is disabled for the tenant. If true, the users under
   * the disabled tenant are not allowed to sign-in. Admins of the disabled tenant
@@ -25,7 +25,7 @@ export interface IdentityPlatformTenantConfig extends cdktf.TerraformMetaArgumen
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/identity_platform_tenant#disable_auth IdentityPlatformTenant#disable_auth}
   */
-  readonly disableAuth?: boolean | cdktf.IResolvable;
+  readonly disableAuth?: boolean | cdktn.IResolvable;
   /**
   * Human friendly display name of the tenant.
   *
@@ -37,7 +37,7 @@ export interface IdentityPlatformTenantConfig extends cdktf.TerraformMetaArgumen
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/identity_platform_tenant#enable_email_link_signin IdentityPlatformTenant#enable_email_link_signin}
   */
-  readonly enableEmailLinkSignin?: boolean | cdktf.IResolvable;
+  readonly enableEmailLinkSignin?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/identity_platform_tenant#id IdentityPlatformTenant#id}
   *
@@ -68,41 +68,41 @@ export interface IdentityPlatformTenantClientPermissions {
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/identity_platform_tenant#disabled_user_deletion IdentityPlatformTenant#disabled_user_deletion}
   */
-  readonly disabledUserDeletion?: boolean | cdktf.IResolvable;
+  readonly disabledUserDeletion?: boolean | cdktn.IResolvable;
   /**
   * When true, end users cannot sign up for a new account on the associated project through any of our API methods.
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/identity_platform_tenant#disabled_user_signup IdentityPlatformTenant#disabled_user_signup}
   */
-  readonly disabledUserSignup?: boolean | cdktf.IResolvable;
+  readonly disabledUserSignup?: boolean | cdktn.IResolvable;
 }
 
 export function identityPlatformTenantClientPermissionsToTerraform(struct?: IdentityPlatformTenantClientPermissionsOutputReference | IdentityPlatformTenantClientPermissions): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    disabled_user_deletion: cdktf.booleanToTerraform(struct!.disabledUserDeletion),
-    disabled_user_signup: cdktf.booleanToTerraform(struct!.disabledUserSignup),
+    disabled_user_deletion: cdktn.booleanToTerraform(struct!.disabledUserDeletion),
+    disabled_user_signup: cdktn.booleanToTerraform(struct!.disabledUserSignup),
   }
 }
 
 
 export function identityPlatformTenantClientPermissionsToHclTerraform(struct?: IdentityPlatformTenantClientPermissionsOutputReference | IdentityPlatformTenantClientPermissions): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     disabled_user_deletion: {
-      value: cdktf.booleanToHclTerraform(struct!.disabledUserDeletion),
+      value: cdktn.booleanToHclTerraform(struct!.disabledUserDeletion),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     disabled_user_signup: {
-      value: cdktf.booleanToHclTerraform(struct!.disabledUserSignup),
+      value: cdktn.booleanToHclTerraform(struct!.disabledUserSignup),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
@@ -113,14 +113,14 @@ export function identityPlatformTenantClientPermissionsToHclTerraform(struct?: I
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class IdentityPlatformTenantClientPermissionsOutputReference extends cdktf.ComplexObject {
+export class IdentityPlatformTenantClientPermissionsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -152,11 +152,11 @@ export class IdentityPlatformTenantClientPermissionsOutputReference extends cdkt
   }
 
   // disabled_user_deletion - computed: false, optional: true, required: false
-  private _disabledUserDeletion?: boolean | cdktf.IResolvable; 
+  private _disabledUserDeletion?: boolean | cdktn.IResolvable; 
   public get disabledUserDeletion() {
     return this.getBooleanAttribute('disabled_user_deletion');
   }
-  public set disabledUserDeletion(value: boolean | cdktf.IResolvable) {
+  public set disabledUserDeletion(value: boolean | cdktn.IResolvable) {
     this._disabledUserDeletion = value;
   }
   public resetDisabledUserDeletion() {
@@ -168,11 +168,11 @@ export class IdentityPlatformTenantClientPermissionsOutputReference extends cdkt
   }
 
   // disabled_user_signup - computed: false, optional: true, required: false
-  private _disabledUserSignup?: boolean | cdktf.IResolvable; 
+  private _disabledUserSignup?: boolean | cdktn.IResolvable; 
   public get disabledUserSignup() {
     return this.getBooleanAttribute('disabled_user_signup');
   }
-  public set disabledUserSignup(value: boolean | cdktf.IResolvable) {
+  public set disabledUserSignup(value: boolean | cdktn.IResolvable) {
     this._disabledUserSignup = value;
   }
   public resetDisabledUserSignup() {
@@ -193,8 +193,8 @@ export interface IdentityPlatformTenantClient {
 }
 
 export function identityPlatformTenantClientToTerraform(struct?: IdentityPlatformTenantClientOutputReference | IdentityPlatformTenantClient): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -204,8 +204,8 @@ export function identityPlatformTenantClientToTerraform(struct?: IdentityPlatfor
 
 
 export function identityPlatformTenantClientToHclTerraform(struct?: IdentityPlatformTenantClientOutputReference | IdentityPlatformTenantClient): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -221,14 +221,14 @@ export function identityPlatformTenantClientToHclTerraform(struct?: IdentityPlat
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class IdentityPlatformTenantClientOutputReference extends cdktf.ComplexObject {
+export class IdentityPlatformTenantClientOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -284,39 +284,39 @@ export interface IdentityPlatformTenantTimeouts {
   readonly update?: string;
 }
 
-export function identityPlatformTenantTimeoutsToTerraform(struct?: IdentityPlatformTenantTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function identityPlatformTenantTimeoutsToTerraform(struct?: IdentityPlatformTenantTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    create: cdktf.stringToTerraform(struct!.create),
-    delete: cdktf.stringToTerraform(struct!.delete),
-    update: cdktf.stringToTerraform(struct!.update),
+    create: cdktn.stringToTerraform(struct!.create),
+    delete: cdktn.stringToTerraform(struct!.delete),
+    update: cdktn.stringToTerraform(struct!.update),
   }
 }
 
 
-export function identityPlatformTenantTimeoutsToHclTerraform(struct?: IdentityPlatformTenantTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function identityPlatformTenantTimeoutsToHclTerraform(struct?: IdentityPlatformTenantTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     create: {
-      value: cdktf.stringToHclTerraform(struct!.create),
+      value: cdktn.stringToHclTerraform(struct!.create),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     delete: {
-      value: cdktf.stringToHclTerraform(struct!.delete),
+      value: cdktn.stringToHclTerraform(struct!.delete),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     update: {
-      value: cdktf.stringToHclTerraform(struct!.update),
+      value: cdktn.stringToHclTerraform(struct!.update),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -327,19 +327,19 @@ export function identityPlatformTenantTimeoutsToHclTerraform(struct?: IdentityPl
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class IdentityPlatformTenantTimeoutsOutputReference extends cdktf.ComplexObject {
+export class IdentityPlatformTenantTimeoutsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): IdentityPlatformTenantTimeouts | cdktf.IResolvable | undefined {
+  public get internalValue(): IdentityPlatformTenantTimeouts | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -360,7 +360,7 @@ export class IdentityPlatformTenantTimeoutsOutputReference extends cdktf.Complex
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: IdentityPlatformTenantTimeouts | cdktf.IResolvable | undefined) {
+  public set internalValue(value: IdentityPlatformTenantTimeouts | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -368,7 +368,7 @@ export class IdentityPlatformTenantTimeoutsOutputReference extends cdktf.Complex
       this._delete = undefined;
       this._update = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -433,7 +433,7 @@ export class IdentityPlatformTenantTimeoutsOutputReference extends cdktf.Complex
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/identity_platform_tenant google_identity_platform_tenant}
 */
-export class IdentityPlatformTenant extends cdktf.TerraformResource {
+export class IdentityPlatformTenant extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -444,14 +444,14 @@ export class IdentityPlatformTenant extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a IdentityPlatformTenant resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a IdentityPlatformTenant resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the IdentityPlatformTenant to import
   * @param importFromId The id of the existing IdentityPlatformTenant that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/identity_platform_tenant#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the IdentityPlatformTenant to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "google_identity_platform_tenant", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "google_identity_platform_tenant", importId: importFromId, provider });
       }
 
   // ===========
@@ -496,11 +496,11 @@ export class IdentityPlatformTenant extends cdktf.TerraformResource {
   // ==========
 
   // allow_password_signup - computed: false, optional: true, required: false
-  private _allowPasswordSignup?: boolean | cdktf.IResolvable; 
+  private _allowPasswordSignup?: boolean | cdktn.IResolvable; 
   public get allowPasswordSignup() {
     return this.getBooleanAttribute('allow_password_signup');
   }
-  public set allowPasswordSignup(value: boolean | cdktf.IResolvable) {
+  public set allowPasswordSignup(value: boolean | cdktn.IResolvable) {
     this._allowPasswordSignup = value;
   }
   public resetAllowPasswordSignup() {
@@ -512,11 +512,11 @@ export class IdentityPlatformTenant extends cdktf.TerraformResource {
   }
 
   // disable_auth - computed: false, optional: true, required: false
-  private _disableAuth?: boolean | cdktf.IResolvable; 
+  private _disableAuth?: boolean | cdktn.IResolvable; 
   public get disableAuth() {
     return this.getBooleanAttribute('disable_auth');
   }
-  public set disableAuth(value: boolean | cdktf.IResolvable) {
+  public set disableAuth(value: boolean | cdktn.IResolvable) {
     this._disableAuth = value;
   }
   public resetDisableAuth() {
@@ -541,11 +541,11 @@ export class IdentityPlatformTenant extends cdktf.TerraformResource {
   }
 
   // enable_email_link_signin - computed: false, optional: true, required: false
-  private _enableEmailLinkSignin?: boolean | cdktf.IResolvable; 
+  private _enableEmailLinkSignin?: boolean | cdktn.IResolvable; 
   public get enableEmailLinkSignin() {
     return this.getBooleanAttribute('enable_email_link_signin');
   }
-  public set enableEmailLinkSignin(value: boolean | cdktf.IResolvable) {
+  public set enableEmailLinkSignin(value: boolean | cdktn.IResolvable) {
     this._enableEmailLinkSignin = value;
   }
   public resetEnableEmailLinkSignin() {
@@ -631,12 +631,12 @@ export class IdentityPlatformTenant extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      allow_password_signup: cdktf.booleanToTerraform(this._allowPasswordSignup),
-      disable_auth: cdktf.booleanToTerraform(this._disableAuth),
-      display_name: cdktf.stringToTerraform(this._displayName),
-      enable_email_link_signin: cdktf.booleanToTerraform(this._enableEmailLinkSignin),
-      id: cdktf.stringToTerraform(this._id),
-      project: cdktf.stringToTerraform(this._project),
+      allow_password_signup: cdktn.booleanToTerraform(this._allowPasswordSignup),
+      disable_auth: cdktn.booleanToTerraform(this._disableAuth),
+      display_name: cdktn.stringToTerraform(this._displayName),
+      enable_email_link_signin: cdktn.booleanToTerraform(this._enableEmailLinkSignin),
+      id: cdktn.stringToTerraform(this._id),
+      project: cdktn.stringToTerraform(this._project),
       client: identityPlatformTenantClientToTerraform(this._client.internalValue),
       timeouts: identityPlatformTenantTimeoutsToTerraform(this._timeouts.internalValue),
     };
@@ -645,37 +645,37 @@ export class IdentityPlatformTenant extends cdktf.TerraformResource {
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       allow_password_signup: {
-        value: cdktf.booleanToHclTerraform(this._allowPasswordSignup),
+        value: cdktn.booleanToHclTerraform(this._allowPasswordSignup),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       disable_auth: {
-        value: cdktf.booleanToHclTerraform(this._disableAuth),
+        value: cdktn.booleanToHclTerraform(this._disableAuth),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       display_name: {
-        value: cdktf.stringToHclTerraform(this._displayName),
+        value: cdktn.stringToHclTerraform(this._displayName),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       enable_email_link_signin: {
-        value: cdktf.booleanToHclTerraform(this._enableEmailLinkSignin),
+        value: cdktn.booleanToHclTerraform(this._enableEmailLinkSignin),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       project: {
-        value: cdktf.stringToHclTerraform(this._project),
+        value: cdktn.stringToHclTerraform(this._project),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

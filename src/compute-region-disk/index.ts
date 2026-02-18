@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface ComputeRegionDiskConfig extends cdktf.TerraformMetaArguments {
+export interface ComputeRegionDiskConfig extends cdktn.TerraformMetaArguments {
   /**
   * The access mode of the disk.
   * For example:
@@ -30,7 +30,7 @@ export interface ComputeRegionDiskConfig extends cdktf.TerraformMetaArguments {
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_region_disk#create_snapshot_before_destroy ComputeRegionDisk#create_snapshot_before_destroy}
   */
-  readonly createSnapshotBeforeDestroy?: boolean | cdktf.IResolvable;
+  readonly createSnapshotBeforeDestroy?: boolean | cdktn.IResolvable;
   /**
   * This will set a custom name prefix for the snapshot that's created when the disk is deleted.
   *
@@ -184,7 +184,7 @@ export interface ComputeRegionDiskConfig extends cdktf.TerraformMetaArguments {
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_region_disk#guest_os_features ComputeRegionDisk#guest_os_features}
   */
-  readonly guestOsFeatures?: ComputeRegionDiskGuestOsFeatures[] | cdktf.IResolvable;
+  readonly guestOsFeatures?: ComputeRegionDiskGuestOsFeatures[] | cdktn.IResolvable;
   /**
   * source_snapshot_encryption_key block
   *
@@ -208,24 +208,24 @@ export interface ComputeRegionDiskAsyncPrimaryDisk {
 }
 
 export function computeRegionDiskAsyncPrimaryDiskToTerraform(struct?: ComputeRegionDiskAsyncPrimaryDiskOutputReference | ComputeRegionDiskAsyncPrimaryDisk): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    disk: cdktf.stringToTerraform(struct!.disk),
+    disk: cdktn.stringToTerraform(struct!.disk),
   }
 }
 
 
 export function computeRegionDiskAsyncPrimaryDiskToHclTerraform(struct?: ComputeRegionDiskAsyncPrimaryDiskOutputReference | ComputeRegionDiskAsyncPrimaryDisk): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     disk: {
-      value: cdktf.stringToHclTerraform(struct!.disk),
+      value: cdktn.stringToHclTerraform(struct!.disk),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -236,14 +236,14 @@ export function computeRegionDiskAsyncPrimaryDiskToHclTerraform(struct?: Compute
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class ComputeRegionDiskAsyncPrimaryDiskOutputReference extends cdktf.ComplexObject {
+export class ComputeRegionDiskAsyncPrimaryDiskOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -306,38 +306,38 @@ export interface ComputeRegionDiskDiskEncryptionKey {
 }
 
 export function computeRegionDiskDiskEncryptionKeyToTerraform(struct?: ComputeRegionDiskDiskEncryptionKeyOutputReference | ComputeRegionDiskDiskEncryptionKey): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    kms_key_name: cdktf.stringToTerraform(struct!.kmsKeyName),
-    raw_key: cdktf.stringToTerraform(struct!.rawKey),
-    rsa_encrypted_key: cdktf.stringToTerraform(struct!.rsaEncryptedKey),
+    kms_key_name: cdktn.stringToTerraform(struct!.kmsKeyName),
+    raw_key: cdktn.stringToTerraform(struct!.rawKey),
+    rsa_encrypted_key: cdktn.stringToTerraform(struct!.rsaEncryptedKey),
   }
 }
 
 
 export function computeRegionDiskDiskEncryptionKeyToHclTerraform(struct?: ComputeRegionDiskDiskEncryptionKeyOutputReference | ComputeRegionDiskDiskEncryptionKey): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     kms_key_name: {
-      value: cdktf.stringToHclTerraform(struct!.kmsKeyName),
+      value: cdktn.stringToHclTerraform(struct!.kmsKeyName),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     raw_key: {
-      value: cdktf.stringToHclTerraform(struct!.rawKey),
+      value: cdktn.stringToHclTerraform(struct!.rawKey),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     rsa_encrypted_key: {
-      value: cdktf.stringToHclTerraform(struct!.rsaEncryptedKey),
+      value: cdktn.stringToHclTerraform(struct!.rsaEncryptedKey),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -348,14 +348,14 @@ export function computeRegionDiskDiskEncryptionKeyToHclTerraform(struct?: Comput
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class ComputeRegionDiskDiskEncryptionKeyOutputReference extends cdktf.ComplexObject {
+export class ComputeRegionDiskDiskEncryptionKeyOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -454,25 +454,25 @@ export interface ComputeRegionDiskGuestOsFeatures {
   readonly type: string;
 }
 
-export function computeRegionDiskGuestOsFeaturesToTerraform(struct?: ComputeRegionDiskGuestOsFeatures | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function computeRegionDiskGuestOsFeaturesToTerraform(struct?: ComputeRegionDiskGuestOsFeatures | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    type: cdktf.stringToTerraform(struct!.type),
+    type: cdktn.stringToTerraform(struct!.type),
   }
 }
 
 
-export function computeRegionDiskGuestOsFeaturesToHclTerraform(struct?: ComputeRegionDiskGuestOsFeatures | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function computeRegionDiskGuestOsFeaturesToHclTerraform(struct?: ComputeRegionDiskGuestOsFeatures | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     type: {
-      value: cdktf.stringToHclTerraform(struct!.type),
+      value: cdktn.stringToHclTerraform(struct!.type),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -483,9 +483,9 @@ export function computeRegionDiskGuestOsFeaturesToHclTerraform(struct?: ComputeR
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class ComputeRegionDiskGuestOsFeaturesOutputReference extends cdktf.ComplexObject {
+export class ComputeRegionDiskGuestOsFeaturesOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -493,11 +493,11 @@ export class ComputeRegionDiskGuestOsFeaturesOutputReference extends cdktf.Compl
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): ComputeRegionDiskGuestOsFeatures | cdktf.IResolvable | undefined {
+  public get internalValue(): ComputeRegionDiskGuestOsFeatures | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -510,13 +510,13 @@ export class ComputeRegionDiskGuestOsFeaturesOutputReference extends cdktf.Compl
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: ComputeRegionDiskGuestOsFeatures | cdktf.IResolvable | undefined) {
+  public set internalValue(value: ComputeRegionDiskGuestOsFeatures | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._type = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -541,15 +541,15 @@ export class ComputeRegionDiskGuestOsFeaturesOutputReference extends cdktf.Compl
   }
 }
 
-export class ComputeRegionDiskGuestOsFeaturesList extends cdktf.ComplexList {
-  public internalValue? : ComputeRegionDiskGuestOsFeatures[] | cdktf.IResolvable
+export class ComputeRegionDiskGuestOsFeaturesList extends cdktn.ComplexList {
+  public internalValue? : ComputeRegionDiskGuestOsFeatures[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -571,24 +571,24 @@ export interface ComputeRegionDiskSourceSnapshotEncryptionKey {
 }
 
 export function computeRegionDiskSourceSnapshotEncryptionKeyToTerraform(struct?: ComputeRegionDiskSourceSnapshotEncryptionKeyOutputReference | ComputeRegionDiskSourceSnapshotEncryptionKey): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    raw_key: cdktf.stringToTerraform(struct!.rawKey),
+    raw_key: cdktn.stringToTerraform(struct!.rawKey),
   }
 }
 
 
 export function computeRegionDiskSourceSnapshotEncryptionKeyToHclTerraform(struct?: ComputeRegionDiskSourceSnapshotEncryptionKeyOutputReference | ComputeRegionDiskSourceSnapshotEncryptionKey): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     raw_key: {
-      value: cdktf.stringToHclTerraform(struct!.rawKey),
+      value: cdktn.stringToHclTerraform(struct!.rawKey),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -599,14 +599,14 @@ export function computeRegionDiskSourceSnapshotEncryptionKeyToHclTerraform(struc
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class ComputeRegionDiskSourceSnapshotEncryptionKeyOutputReference extends cdktf.ComplexObject {
+export class ComputeRegionDiskSourceSnapshotEncryptionKeyOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -667,39 +667,39 @@ export interface ComputeRegionDiskTimeouts {
   readonly update?: string;
 }
 
-export function computeRegionDiskTimeoutsToTerraform(struct?: ComputeRegionDiskTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function computeRegionDiskTimeoutsToTerraform(struct?: ComputeRegionDiskTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    create: cdktf.stringToTerraform(struct!.create),
-    delete: cdktf.stringToTerraform(struct!.delete),
-    update: cdktf.stringToTerraform(struct!.update),
+    create: cdktn.stringToTerraform(struct!.create),
+    delete: cdktn.stringToTerraform(struct!.delete),
+    update: cdktn.stringToTerraform(struct!.update),
   }
 }
 
 
-export function computeRegionDiskTimeoutsToHclTerraform(struct?: ComputeRegionDiskTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function computeRegionDiskTimeoutsToHclTerraform(struct?: ComputeRegionDiskTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     create: {
-      value: cdktf.stringToHclTerraform(struct!.create),
+      value: cdktn.stringToHclTerraform(struct!.create),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     delete: {
-      value: cdktf.stringToHclTerraform(struct!.delete),
+      value: cdktn.stringToHclTerraform(struct!.delete),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     update: {
-      value: cdktf.stringToHclTerraform(struct!.update),
+      value: cdktn.stringToHclTerraform(struct!.update),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -710,19 +710,19 @@ export function computeRegionDiskTimeoutsToHclTerraform(struct?: ComputeRegionDi
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class ComputeRegionDiskTimeoutsOutputReference extends cdktf.ComplexObject {
+export class ComputeRegionDiskTimeoutsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): ComputeRegionDiskTimeouts | cdktf.IResolvable | undefined {
+  public get internalValue(): ComputeRegionDiskTimeouts | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -743,7 +743,7 @@ export class ComputeRegionDiskTimeoutsOutputReference extends cdktf.ComplexObjec
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: ComputeRegionDiskTimeouts | cdktf.IResolvable | undefined) {
+  public set internalValue(value: ComputeRegionDiskTimeouts | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -751,7 +751,7 @@ export class ComputeRegionDiskTimeoutsOutputReference extends cdktf.ComplexObjec
       this._delete = undefined;
       this._update = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -816,7 +816,7 @@ export class ComputeRegionDiskTimeoutsOutputReference extends cdktf.ComplexObjec
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_region_disk google_compute_region_disk}
 */
-export class ComputeRegionDisk extends cdktf.TerraformResource {
+export class ComputeRegionDisk extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -827,14 +827,14 @@ export class ComputeRegionDisk extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a ComputeRegionDisk resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a ComputeRegionDisk resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the ComputeRegionDisk to import
   * @param importFromId The id of the existing ComputeRegionDisk that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_region_disk#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the ComputeRegionDisk to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "google_compute_region_disk", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "google_compute_region_disk", importId: importFromId, provider });
       }
 
   // ===========
@@ -910,11 +910,11 @@ export class ComputeRegionDisk extends cdktf.TerraformResource {
   }
 
   // create_snapshot_before_destroy - computed: false, optional: true, required: false
-  private _createSnapshotBeforeDestroy?: boolean | cdktf.IResolvable; 
+  private _createSnapshotBeforeDestroy?: boolean | cdktn.IResolvable; 
   public get createSnapshotBeforeDestroy() {
     return this.getBooleanAttribute('create_snapshot_before_destroy');
   }
-  public set createSnapshotBeforeDestroy(value: boolean | cdktf.IResolvable) {
+  public set createSnapshotBeforeDestroy(value: boolean | cdktn.IResolvable) {
     this._createSnapshotBeforeDestroy = value;
   }
   public resetCreateSnapshotBeforeDestroy() {
@@ -968,7 +968,7 @@ export class ComputeRegionDisk extends cdktf.TerraformResource {
   }
 
   // effective_labels - computed: true, optional: false, required: false
-  private _effectiveLabels = new cdktf.StringMap(this, "effective_labels");
+  private _effectiveLabels = new cdktn.StringMap(this, "effective_labels");
   public get effectiveLabels() {
     return this._effectiveLabels;
   }
@@ -1206,7 +1206,7 @@ export class ComputeRegionDisk extends cdktf.TerraformResource {
   }
 
   // terraform_labels - computed: true, optional: false, required: false
-  private _terraformLabels = new cdktf.StringMap(this, "terraform_labels");
+  private _terraformLabels = new cdktn.StringMap(this, "terraform_labels");
   public get terraformLabels() {
     return this._terraformLabels;
   }
@@ -1269,7 +1269,7 @@ export class ComputeRegionDisk extends cdktf.TerraformResource {
   public get guestOsFeatures() {
     return this._guestOsFeatures;
   }
-  public putGuestOsFeatures(value: ComputeRegionDiskGuestOsFeatures[] | cdktf.IResolvable) {
+  public putGuestOsFeatures(value: ComputeRegionDiskGuestOsFeatures[] | cdktn.IResolvable) {
     this._guestOsFeatures.internalValue = value;
   }
   public resetGuestOsFeatures() {
@@ -1318,27 +1318,27 @@ export class ComputeRegionDisk extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      access_mode: cdktf.stringToTerraform(this._accessMode),
-      create_snapshot_before_destroy: cdktf.booleanToTerraform(this._createSnapshotBeforeDestroy),
-      create_snapshot_before_destroy_prefix: cdktf.stringToTerraform(this._createSnapshotBeforeDestroyPrefix),
-      description: cdktf.stringToTerraform(this._description),
-      id: cdktf.stringToTerraform(this._id),
-      labels: cdktf.hashMapper(cdktf.stringToTerraform)(this._labels),
-      licenses: cdktf.listMapper(cdktf.stringToTerraform, false)(this._licenses),
-      name: cdktf.stringToTerraform(this._name),
-      physical_block_size_bytes: cdktf.numberToTerraform(this._physicalBlockSizeBytes),
-      project: cdktf.stringToTerraform(this._project),
-      provisioned_iops: cdktf.numberToTerraform(this._provisionedIops),
-      provisioned_throughput: cdktf.numberToTerraform(this._provisionedThroughput),
-      region: cdktf.stringToTerraform(this._region),
-      replica_zones: cdktf.listMapper(cdktf.stringToTerraform, false)(this._replicaZones),
-      size: cdktf.numberToTerraform(this._size),
-      snapshot: cdktf.stringToTerraform(this._snapshot),
-      source_disk: cdktf.stringToTerraform(this._sourceDisk),
-      type: cdktf.stringToTerraform(this._type),
+      access_mode: cdktn.stringToTerraform(this._accessMode),
+      create_snapshot_before_destroy: cdktn.booleanToTerraform(this._createSnapshotBeforeDestroy),
+      create_snapshot_before_destroy_prefix: cdktn.stringToTerraform(this._createSnapshotBeforeDestroyPrefix),
+      description: cdktn.stringToTerraform(this._description),
+      id: cdktn.stringToTerraform(this._id),
+      labels: cdktn.hashMapper(cdktn.stringToTerraform)(this._labels),
+      licenses: cdktn.listMapper(cdktn.stringToTerraform, false)(this._licenses),
+      name: cdktn.stringToTerraform(this._name),
+      physical_block_size_bytes: cdktn.numberToTerraform(this._physicalBlockSizeBytes),
+      project: cdktn.stringToTerraform(this._project),
+      provisioned_iops: cdktn.numberToTerraform(this._provisionedIops),
+      provisioned_throughput: cdktn.numberToTerraform(this._provisionedThroughput),
+      region: cdktn.stringToTerraform(this._region),
+      replica_zones: cdktn.listMapper(cdktn.stringToTerraform, false)(this._replicaZones),
+      size: cdktn.numberToTerraform(this._size),
+      snapshot: cdktn.stringToTerraform(this._snapshot),
+      source_disk: cdktn.stringToTerraform(this._sourceDisk),
+      type: cdktn.stringToTerraform(this._type),
       async_primary_disk: computeRegionDiskAsyncPrimaryDiskToTerraform(this._asyncPrimaryDisk.internalValue),
       disk_encryption_key: computeRegionDiskDiskEncryptionKeyToTerraform(this._diskEncryptionKey.internalValue),
-      guest_os_features: cdktf.listMapper(computeRegionDiskGuestOsFeaturesToTerraform, true)(this._guestOsFeatures.internalValue),
+      guest_os_features: cdktn.listMapper(computeRegionDiskGuestOsFeaturesToTerraform, true)(this._guestOsFeatures.internalValue),
       source_snapshot_encryption_key: computeRegionDiskSourceSnapshotEncryptionKeyToTerraform(this._sourceSnapshotEncryptionKey.internalValue),
       timeouts: computeRegionDiskTimeoutsToTerraform(this._timeouts.internalValue),
     };
@@ -1347,109 +1347,109 @@ export class ComputeRegionDisk extends cdktf.TerraformResource {
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       access_mode: {
-        value: cdktf.stringToHclTerraform(this._accessMode),
+        value: cdktn.stringToHclTerraform(this._accessMode),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       create_snapshot_before_destroy: {
-        value: cdktf.booleanToHclTerraform(this._createSnapshotBeforeDestroy),
+        value: cdktn.booleanToHclTerraform(this._createSnapshotBeforeDestroy),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       create_snapshot_before_destroy_prefix: {
-        value: cdktf.stringToHclTerraform(this._createSnapshotBeforeDestroyPrefix),
+        value: cdktn.stringToHclTerraform(this._createSnapshotBeforeDestroyPrefix),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       description: {
-        value: cdktf.stringToHclTerraform(this._description),
+        value: cdktn.stringToHclTerraform(this._description),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       labels: {
-        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._labels),
+        value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(this._labels),
         isBlock: false,
         type: "map",
         storageClassType: "stringMap",
       },
       licenses: {
-        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._licenses),
+        value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(this._licenses),
         isBlock: false,
         type: "list",
         storageClassType: "stringList",
       },
       name: {
-        value: cdktf.stringToHclTerraform(this._name),
+        value: cdktn.stringToHclTerraform(this._name),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       physical_block_size_bytes: {
-        value: cdktf.numberToHclTerraform(this._physicalBlockSizeBytes),
+        value: cdktn.numberToHclTerraform(this._physicalBlockSizeBytes),
         isBlock: false,
         type: "simple",
         storageClassType: "number",
       },
       project: {
-        value: cdktf.stringToHclTerraform(this._project),
+        value: cdktn.stringToHclTerraform(this._project),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       provisioned_iops: {
-        value: cdktf.numberToHclTerraform(this._provisionedIops),
+        value: cdktn.numberToHclTerraform(this._provisionedIops),
         isBlock: false,
         type: "simple",
         storageClassType: "number",
       },
       provisioned_throughput: {
-        value: cdktf.numberToHclTerraform(this._provisionedThroughput),
+        value: cdktn.numberToHclTerraform(this._provisionedThroughput),
         isBlock: false,
         type: "simple",
         storageClassType: "number",
       },
       region: {
-        value: cdktf.stringToHclTerraform(this._region),
+        value: cdktn.stringToHclTerraform(this._region),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       replica_zones: {
-        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._replicaZones),
+        value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(this._replicaZones),
         isBlock: false,
         type: "list",
         storageClassType: "stringList",
       },
       size: {
-        value: cdktf.numberToHclTerraform(this._size),
+        value: cdktn.numberToHclTerraform(this._size),
         isBlock: false,
         type: "simple",
         storageClassType: "number",
       },
       snapshot: {
-        value: cdktf.stringToHclTerraform(this._snapshot),
+        value: cdktn.stringToHclTerraform(this._snapshot),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       source_disk: {
-        value: cdktf.stringToHclTerraform(this._sourceDisk),
+        value: cdktn.stringToHclTerraform(this._sourceDisk),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       type: {
-        value: cdktf.stringToHclTerraform(this._type),
+        value: cdktn.stringToHclTerraform(this._type),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
@@ -1467,7 +1467,7 @@ export class ComputeRegionDisk extends cdktf.TerraformResource {
         storageClassType: "ComputeRegionDiskDiskEncryptionKeyList",
       },
       guest_os_features: {
-        value: cdktf.listMapperHcl(computeRegionDiskGuestOsFeaturesToHclTerraform, true)(this._guestOsFeatures.internalValue),
+        value: cdktn.listMapperHcl(computeRegionDiskGuestOsFeaturesToHclTerraform, true)(this._guestOsFeatures.internalValue),
         isBlock: true,
         type: "set",
         storageClassType: "ComputeRegionDiskGuestOsFeaturesList",

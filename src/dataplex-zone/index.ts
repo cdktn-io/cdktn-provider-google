@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface DataplexZoneConfig extends cdktf.TerraformMetaArguments {
+export interface DataplexZoneConfig extends cdktn.TerraformMetaArguments {
   /**
   * Optional. Description of the zone.
   *
@@ -93,8 +93,8 @@ export interface DataplexZoneAssetStatus {
 }
 
 export function dataplexZoneAssetStatusToTerraform(struct?: DataplexZoneAssetStatus): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -103,8 +103,8 @@ export function dataplexZoneAssetStatusToTerraform(struct?: DataplexZoneAssetSta
 
 
 export function dataplexZoneAssetStatusToHclTerraform(struct?: DataplexZoneAssetStatus): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -112,7 +112,7 @@ export function dataplexZoneAssetStatusToHclTerraform(struct?: DataplexZoneAsset
   return attrs;
 }
 
-export class DataplexZoneAssetStatusOutputReference extends cdktf.ComplexObject {
+export class DataplexZoneAssetStatusOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -121,7 +121,7 @@ export class DataplexZoneAssetStatusOutputReference extends cdktf.ComplexObject 
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -156,14 +156,14 @@ export class DataplexZoneAssetStatusOutputReference extends cdktf.ComplexObject 
   }
 }
 
-export class DataplexZoneAssetStatusList extends cdktf.ComplexList {
+export class DataplexZoneAssetStatusList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -186,7 +186,7 @@ export interface DataplexZoneDiscoverySpecCsvOptions {
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/dataplex_zone#disable_type_inference DataplexZone#disable_type_inference}
   */
-  readonly disableTypeInference?: boolean | cdktf.IResolvable;
+  readonly disableTypeInference?: boolean | cdktn.IResolvable;
   /**
   * Optional. The character encoding of the data. The default is UTF-8.
   *
@@ -202,45 +202,45 @@ export interface DataplexZoneDiscoverySpecCsvOptions {
 }
 
 export function dataplexZoneDiscoverySpecCsvOptionsToTerraform(struct?: DataplexZoneDiscoverySpecCsvOptionsOutputReference | DataplexZoneDiscoverySpecCsvOptions): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    delimiter: cdktf.stringToTerraform(struct!.delimiter),
-    disable_type_inference: cdktf.booleanToTerraform(struct!.disableTypeInference),
-    encoding: cdktf.stringToTerraform(struct!.encoding),
-    header_rows: cdktf.numberToTerraform(struct!.headerRows),
+    delimiter: cdktn.stringToTerraform(struct!.delimiter),
+    disable_type_inference: cdktn.booleanToTerraform(struct!.disableTypeInference),
+    encoding: cdktn.stringToTerraform(struct!.encoding),
+    header_rows: cdktn.numberToTerraform(struct!.headerRows),
   }
 }
 
 
 export function dataplexZoneDiscoverySpecCsvOptionsToHclTerraform(struct?: DataplexZoneDiscoverySpecCsvOptionsOutputReference | DataplexZoneDiscoverySpecCsvOptions): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     delimiter: {
-      value: cdktf.stringToHclTerraform(struct!.delimiter),
+      value: cdktn.stringToHclTerraform(struct!.delimiter),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     disable_type_inference: {
-      value: cdktf.booleanToHclTerraform(struct!.disableTypeInference),
+      value: cdktn.booleanToHclTerraform(struct!.disableTypeInference),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     encoding: {
-      value: cdktf.stringToHclTerraform(struct!.encoding),
+      value: cdktn.stringToHclTerraform(struct!.encoding),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     header_rows: {
-      value: cdktf.numberToHclTerraform(struct!.headerRows),
+      value: cdktn.numberToHclTerraform(struct!.headerRows),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
@@ -251,14 +251,14 @@ export function dataplexZoneDiscoverySpecCsvOptionsToHclTerraform(struct?: Datap
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class DataplexZoneDiscoverySpecCsvOptionsOutputReference extends cdktf.ComplexObject {
+export class DataplexZoneDiscoverySpecCsvOptionsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -318,11 +318,11 @@ export class DataplexZoneDiscoverySpecCsvOptionsOutputReference extends cdktf.Co
   }
 
   // disable_type_inference - computed: false, optional: true, required: false
-  private _disableTypeInference?: boolean | cdktf.IResolvable; 
+  private _disableTypeInference?: boolean | cdktn.IResolvable; 
   public get disableTypeInference() {
     return this.getBooleanAttribute('disable_type_inference');
   }
-  public set disableTypeInference(value: boolean | cdktf.IResolvable) {
+  public set disableTypeInference(value: boolean | cdktn.IResolvable) {
     this._disableTypeInference = value;
   }
   public resetDisableTypeInference() {
@@ -371,7 +371,7 @@ export interface DataplexZoneDiscoverySpecJsonOptions {
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/dataplex_zone#disable_type_inference DataplexZone#disable_type_inference}
   */
-  readonly disableTypeInference?: boolean | cdktf.IResolvable;
+  readonly disableTypeInference?: boolean | cdktn.IResolvable;
   /**
   * Optional. The character encoding of the data. The default is UTF-8.
   *
@@ -381,31 +381,31 @@ export interface DataplexZoneDiscoverySpecJsonOptions {
 }
 
 export function dataplexZoneDiscoverySpecJsonOptionsToTerraform(struct?: DataplexZoneDiscoverySpecJsonOptionsOutputReference | DataplexZoneDiscoverySpecJsonOptions): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    disable_type_inference: cdktf.booleanToTerraform(struct!.disableTypeInference),
-    encoding: cdktf.stringToTerraform(struct!.encoding),
+    disable_type_inference: cdktn.booleanToTerraform(struct!.disableTypeInference),
+    encoding: cdktn.stringToTerraform(struct!.encoding),
   }
 }
 
 
 export function dataplexZoneDiscoverySpecJsonOptionsToHclTerraform(struct?: DataplexZoneDiscoverySpecJsonOptionsOutputReference | DataplexZoneDiscoverySpecJsonOptions): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     disable_type_inference: {
-      value: cdktf.booleanToHclTerraform(struct!.disableTypeInference),
+      value: cdktn.booleanToHclTerraform(struct!.disableTypeInference),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     encoding: {
-      value: cdktf.stringToHclTerraform(struct!.encoding),
+      value: cdktn.stringToHclTerraform(struct!.encoding),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -416,14 +416,14 @@ export function dataplexZoneDiscoverySpecJsonOptionsToHclTerraform(struct?: Data
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class DataplexZoneDiscoverySpecJsonOptionsOutputReference extends cdktf.ComplexObject {
+export class DataplexZoneDiscoverySpecJsonOptionsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -455,11 +455,11 @@ export class DataplexZoneDiscoverySpecJsonOptionsOutputReference extends cdktf.C
   }
 
   // disable_type_inference - computed: false, optional: true, required: false
-  private _disableTypeInference?: boolean | cdktf.IResolvable; 
+  private _disableTypeInference?: boolean | cdktn.IResolvable; 
   public get disableTypeInference() {
     return this.getBooleanAttribute('disable_type_inference');
   }
-  public set disableTypeInference(value: boolean | cdktf.IResolvable) {
+  public set disableTypeInference(value: boolean | cdktn.IResolvable) {
     this._disableTypeInference = value;
   }
   public resetDisableTypeInference() {
@@ -492,7 +492,7 @@ export interface DataplexZoneDiscoverySpec {
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/dataplex_zone#enabled DataplexZone#enabled}
   */
-  readonly enabled: boolean | cdktf.IResolvable;
+  readonly enabled: boolean | cdktn.IResolvable;
   /**
   * Optional. The list of patterns to apply for selecting data to exclude during discovery. For Cloud Storage bucket assets, these are interpreted as glob patterns used to match object names. For BigQuery dataset assets, these are interpreted as patterns to match table names.
   *
@@ -526,15 +526,15 @@ export interface DataplexZoneDiscoverySpec {
 }
 
 export function dataplexZoneDiscoverySpecToTerraform(struct?: DataplexZoneDiscoverySpecOutputReference | DataplexZoneDiscoverySpec): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    enabled: cdktf.booleanToTerraform(struct!.enabled),
-    exclude_patterns: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.excludePatterns),
-    include_patterns: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.includePatterns),
-    schedule: cdktf.stringToTerraform(struct!.schedule),
+    enabled: cdktn.booleanToTerraform(struct!.enabled),
+    exclude_patterns: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.excludePatterns),
+    include_patterns: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.includePatterns),
+    schedule: cdktn.stringToTerraform(struct!.schedule),
     csv_options: dataplexZoneDiscoverySpecCsvOptionsToTerraform(struct!.csvOptions),
     json_options: dataplexZoneDiscoverySpecJsonOptionsToTerraform(struct!.jsonOptions),
   }
@@ -542,31 +542,31 @@ export function dataplexZoneDiscoverySpecToTerraform(struct?: DataplexZoneDiscov
 
 
 export function dataplexZoneDiscoverySpecToHclTerraform(struct?: DataplexZoneDiscoverySpecOutputReference | DataplexZoneDiscoverySpec): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     enabled: {
-      value: cdktf.booleanToHclTerraform(struct!.enabled),
+      value: cdktn.booleanToHclTerraform(struct!.enabled),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     exclude_patterns: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.excludePatterns),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.excludePatterns),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
     },
     include_patterns: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.includePatterns),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.includePatterns),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
     },
     schedule: {
-      value: cdktf.stringToHclTerraform(struct!.schedule),
+      value: cdktn.stringToHclTerraform(struct!.schedule),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -589,14 +589,14 @@ export function dataplexZoneDiscoverySpecToHclTerraform(struct?: DataplexZoneDis
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class DataplexZoneDiscoverySpecOutputReference extends cdktf.ComplexObject {
+export class DataplexZoneDiscoverySpecOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -652,11 +652,11 @@ export class DataplexZoneDiscoverySpecOutputReference extends cdktf.ComplexObjec
   }
 
   // enabled - computed: false, optional: false, required: true
-  private _enabled?: boolean | cdktf.IResolvable; 
+  private _enabled?: boolean | cdktn.IResolvable; 
   public get enabled() {
     return this.getBooleanAttribute('enabled');
   }
-  public set enabled(value: boolean | cdktf.IResolvable) {
+  public set enabled(value: boolean | cdktn.IResolvable) {
     this._enabled = value;
   }
   // Temporarily expose input value. Use with caution.
@@ -754,24 +754,24 @@ export interface DataplexZoneResourceSpec {
 }
 
 export function dataplexZoneResourceSpecToTerraform(struct?: DataplexZoneResourceSpecOutputReference | DataplexZoneResourceSpec): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    location_type: cdktf.stringToTerraform(struct!.locationType),
+    location_type: cdktn.stringToTerraform(struct!.locationType),
   }
 }
 
 
 export function dataplexZoneResourceSpecToHclTerraform(struct?: DataplexZoneResourceSpecOutputReference | DataplexZoneResourceSpec): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     location_type: {
-      value: cdktf.stringToHclTerraform(struct!.locationType),
+      value: cdktn.stringToHclTerraform(struct!.locationType),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -782,14 +782,14 @@ export function dataplexZoneResourceSpecToHclTerraform(struct?: DataplexZoneReso
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class DataplexZoneResourceSpecOutputReference extends cdktf.ComplexObject {
+export class DataplexZoneResourceSpecOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -842,39 +842,39 @@ export interface DataplexZoneTimeouts {
   readonly update?: string;
 }
 
-export function dataplexZoneTimeoutsToTerraform(struct?: DataplexZoneTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function dataplexZoneTimeoutsToTerraform(struct?: DataplexZoneTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    create: cdktf.stringToTerraform(struct!.create),
-    delete: cdktf.stringToTerraform(struct!.delete),
-    update: cdktf.stringToTerraform(struct!.update),
+    create: cdktn.stringToTerraform(struct!.create),
+    delete: cdktn.stringToTerraform(struct!.delete),
+    update: cdktn.stringToTerraform(struct!.update),
   }
 }
 
 
-export function dataplexZoneTimeoutsToHclTerraform(struct?: DataplexZoneTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function dataplexZoneTimeoutsToHclTerraform(struct?: DataplexZoneTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     create: {
-      value: cdktf.stringToHclTerraform(struct!.create),
+      value: cdktn.stringToHclTerraform(struct!.create),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     delete: {
-      value: cdktf.stringToHclTerraform(struct!.delete),
+      value: cdktn.stringToHclTerraform(struct!.delete),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     update: {
-      value: cdktf.stringToHclTerraform(struct!.update),
+      value: cdktn.stringToHclTerraform(struct!.update),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -885,19 +885,19 @@ export function dataplexZoneTimeoutsToHclTerraform(struct?: DataplexZoneTimeouts
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class DataplexZoneTimeoutsOutputReference extends cdktf.ComplexObject {
+export class DataplexZoneTimeoutsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): DataplexZoneTimeouts | cdktf.IResolvable | undefined {
+  public get internalValue(): DataplexZoneTimeouts | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -918,7 +918,7 @@ export class DataplexZoneTimeoutsOutputReference extends cdktf.ComplexObject {
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: DataplexZoneTimeouts | cdktf.IResolvable | undefined) {
+  public set internalValue(value: DataplexZoneTimeouts | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -926,7 +926,7 @@ export class DataplexZoneTimeoutsOutputReference extends cdktf.ComplexObject {
       this._delete = undefined;
       this._update = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -991,7 +991,7 @@ export class DataplexZoneTimeoutsOutputReference extends cdktf.ComplexObject {
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/dataplex_zone google_dataplex_zone}
 */
-export class DataplexZone extends cdktf.TerraformResource {
+export class DataplexZone extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -1002,14 +1002,14 @@ export class DataplexZone extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a DataplexZone resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a DataplexZone resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataplexZone to import
   * @param importFromId The id of the existing DataplexZone that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/dataplex_zone#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataplexZone to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "google_dataplex_zone", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "google_dataplex_zone", importId: importFromId, provider });
       }
 
   // ===========
@@ -1101,7 +1101,7 @@ export class DataplexZone extends cdktf.TerraformResource {
   }
 
   // effective_labels - computed: true, optional: false, required: false
-  private _effectiveLabels = new cdktf.StringMap(this, "effective_labels");
+  private _effectiveLabels = new cdktn.StringMap(this, "effective_labels");
   public get effectiveLabels() {
     return this._effectiveLabels;
   }
@@ -1199,7 +1199,7 @@ export class DataplexZone extends cdktf.TerraformResource {
   }
 
   // terraform_labels - computed: true, optional: false, required: false
-  private _terraformLabels = new cdktf.StringMap(this, "terraform_labels");
+  private _terraformLabels = new cdktn.StringMap(this, "terraform_labels");
   public get terraformLabels() {
     return this._terraformLabels;
   }
@@ -1275,15 +1275,15 @@ export class DataplexZone extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      description: cdktf.stringToTerraform(this._description),
-      display_name: cdktf.stringToTerraform(this._displayName),
-      id: cdktf.stringToTerraform(this._id),
-      labels: cdktf.hashMapper(cdktf.stringToTerraform)(this._labels),
-      lake: cdktf.stringToTerraform(this._lake),
-      location: cdktf.stringToTerraform(this._location),
-      name: cdktf.stringToTerraform(this._name),
-      project: cdktf.stringToTerraform(this._project),
-      type: cdktf.stringToTerraform(this._type),
+      description: cdktn.stringToTerraform(this._description),
+      display_name: cdktn.stringToTerraform(this._displayName),
+      id: cdktn.stringToTerraform(this._id),
+      labels: cdktn.hashMapper(cdktn.stringToTerraform)(this._labels),
+      lake: cdktn.stringToTerraform(this._lake),
+      location: cdktn.stringToTerraform(this._location),
+      name: cdktn.stringToTerraform(this._name),
+      project: cdktn.stringToTerraform(this._project),
+      type: cdktn.stringToTerraform(this._type),
       discovery_spec: dataplexZoneDiscoverySpecToTerraform(this._discoverySpec.internalValue),
       resource_spec: dataplexZoneResourceSpecToTerraform(this._resourceSpec.internalValue),
       timeouts: dataplexZoneTimeoutsToTerraform(this._timeouts.internalValue),
@@ -1293,55 +1293,55 @@ export class DataplexZone extends cdktf.TerraformResource {
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       description: {
-        value: cdktf.stringToHclTerraform(this._description),
+        value: cdktn.stringToHclTerraform(this._description),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       display_name: {
-        value: cdktf.stringToHclTerraform(this._displayName),
+        value: cdktn.stringToHclTerraform(this._displayName),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       labels: {
-        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._labels),
+        value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(this._labels),
         isBlock: false,
         type: "map",
         storageClassType: "stringMap",
       },
       lake: {
-        value: cdktf.stringToHclTerraform(this._lake),
+        value: cdktn.stringToHclTerraform(this._lake),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       location: {
-        value: cdktf.stringToHclTerraform(this._location),
+        value: cdktn.stringToHclTerraform(this._location),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       name: {
-        value: cdktf.stringToHclTerraform(this._name),
+        value: cdktn.stringToHclTerraform(this._name),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       project: {
-        value: cdktf.stringToHclTerraform(this._project),
+        value: cdktn.stringToHclTerraform(this._project),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       type: {
-        value: cdktf.stringToHclTerraform(this._type),
+        value: cdktn.stringToHclTerraform(this._type),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

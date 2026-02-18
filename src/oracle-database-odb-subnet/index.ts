@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface OracleDatabaseOdbSubnetConfig extends cdktf.TerraformMetaArguments {
+export interface OracleDatabaseOdbSubnetConfig extends cdktn.TerraformMetaArguments {
   /**
   * The CIDR range of the subnet.
   *
@@ -23,7 +23,7 @@ export interface OracleDatabaseOdbSubnetConfig extends cdktf.TerraformMetaArgume
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/oracle_database_odb_subnet#deletion_protection OracleDatabaseOdbSubnet#deletion_protection}
   */
-  readonly deletionProtection?: boolean | cdktf.IResolvable;
+  readonly deletionProtection?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/oracle_database_odb_subnet#id OracleDatabaseOdbSubnet#id}
   *
@@ -96,39 +96,39 @@ export interface OracleDatabaseOdbSubnetTimeouts {
   readonly update?: string;
 }
 
-export function oracleDatabaseOdbSubnetTimeoutsToTerraform(struct?: OracleDatabaseOdbSubnetTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function oracleDatabaseOdbSubnetTimeoutsToTerraform(struct?: OracleDatabaseOdbSubnetTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    create: cdktf.stringToTerraform(struct!.create),
-    delete: cdktf.stringToTerraform(struct!.delete),
-    update: cdktf.stringToTerraform(struct!.update),
+    create: cdktn.stringToTerraform(struct!.create),
+    delete: cdktn.stringToTerraform(struct!.delete),
+    update: cdktn.stringToTerraform(struct!.update),
   }
 }
 
 
-export function oracleDatabaseOdbSubnetTimeoutsToHclTerraform(struct?: OracleDatabaseOdbSubnetTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function oracleDatabaseOdbSubnetTimeoutsToHclTerraform(struct?: OracleDatabaseOdbSubnetTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     create: {
-      value: cdktf.stringToHclTerraform(struct!.create),
+      value: cdktn.stringToHclTerraform(struct!.create),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     delete: {
-      value: cdktf.stringToHclTerraform(struct!.delete),
+      value: cdktn.stringToHclTerraform(struct!.delete),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     update: {
-      value: cdktf.stringToHclTerraform(struct!.update),
+      value: cdktn.stringToHclTerraform(struct!.update),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -139,19 +139,19 @@ export function oracleDatabaseOdbSubnetTimeoutsToHclTerraform(struct?: OracleDat
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class OracleDatabaseOdbSubnetTimeoutsOutputReference extends cdktf.ComplexObject {
+export class OracleDatabaseOdbSubnetTimeoutsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): OracleDatabaseOdbSubnetTimeouts | cdktf.IResolvable | undefined {
+  public get internalValue(): OracleDatabaseOdbSubnetTimeouts | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -172,7 +172,7 @@ export class OracleDatabaseOdbSubnetTimeoutsOutputReference extends cdktf.Comple
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: OracleDatabaseOdbSubnetTimeouts | cdktf.IResolvable | undefined) {
+  public set internalValue(value: OracleDatabaseOdbSubnetTimeouts | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -180,7 +180,7 @@ export class OracleDatabaseOdbSubnetTimeoutsOutputReference extends cdktf.Comple
       this._delete = undefined;
       this._update = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -245,7 +245,7 @@ export class OracleDatabaseOdbSubnetTimeoutsOutputReference extends cdktf.Comple
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/oracle_database_odb_subnet google_oracle_database_odb_subnet}
 */
-export class OracleDatabaseOdbSubnet extends cdktf.TerraformResource {
+export class OracleDatabaseOdbSubnet extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -256,14 +256,14 @@ export class OracleDatabaseOdbSubnet extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a OracleDatabaseOdbSubnet resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a OracleDatabaseOdbSubnet resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the OracleDatabaseOdbSubnet to import
   * @param importFromId The id of the existing OracleDatabaseOdbSubnet that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/oracle_database_odb_subnet#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the OracleDatabaseOdbSubnet to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "google_oracle_database_odb_subnet", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "google_oracle_database_odb_subnet", importId: importFromId, provider });
       }
 
   // ===========
@@ -328,11 +328,11 @@ export class OracleDatabaseOdbSubnet extends cdktf.TerraformResource {
   }
 
   // deletion_protection - computed: false, optional: true, required: false
-  private _deletionProtection?: boolean | cdktf.IResolvable; 
+  private _deletionProtection?: boolean | cdktn.IResolvable; 
   public get deletionProtection() {
     return this.getBooleanAttribute('deletion_protection');
   }
-  public set deletionProtection(value: boolean | cdktf.IResolvable) {
+  public set deletionProtection(value: boolean | cdktn.IResolvable) {
     this._deletionProtection = value;
   }
   public resetDeletionProtection() {
@@ -344,7 +344,7 @@ export class OracleDatabaseOdbSubnet extends cdktf.TerraformResource {
   }
 
   // effective_labels - computed: true, optional: false, required: false
-  private _effectiveLabels = new cdktf.StringMap(this, "effective_labels");
+  private _effectiveLabels = new cdktn.StringMap(this, "effective_labels");
   public get effectiveLabels() {
     return this._effectiveLabels;
   }
@@ -460,7 +460,7 @@ export class OracleDatabaseOdbSubnet extends cdktf.TerraformResource {
   }
 
   // terraform_labels - computed: true, optional: false, required: false
-  private _terraformLabels = new cdktf.StringMap(this, "terraform_labels");
+  private _terraformLabels = new cdktn.StringMap(this, "terraform_labels");
   public get terraformLabels() {
     return this._terraformLabels;
   }
@@ -487,15 +487,15 @@ export class OracleDatabaseOdbSubnet extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      cidr_range: cdktf.stringToTerraform(this._cidrRange),
-      deletion_protection: cdktf.booleanToTerraform(this._deletionProtection),
-      id: cdktf.stringToTerraform(this._id),
-      labels: cdktf.hashMapper(cdktf.stringToTerraform)(this._labels),
-      location: cdktf.stringToTerraform(this._location),
-      odb_subnet_id: cdktf.stringToTerraform(this._odbSubnetId),
-      odbnetwork: cdktf.stringToTerraform(this._odbnetwork),
-      project: cdktf.stringToTerraform(this._project),
-      purpose: cdktf.stringToTerraform(this._purpose),
+      cidr_range: cdktn.stringToTerraform(this._cidrRange),
+      deletion_protection: cdktn.booleanToTerraform(this._deletionProtection),
+      id: cdktn.stringToTerraform(this._id),
+      labels: cdktn.hashMapper(cdktn.stringToTerraform)(this._labels),
+      location: cdktn.stringToTerraform(this._location),
+      odb_subnet_id: cdktn.stringToTerraform(this._odbSubnetId),
+      odbnetwork: cdktn.stringToTerraform(this._odbnetwork),
+      project: cdktn.stringToTerraform(this._project),
+      purpose: cdktn.stringToTerraform(this._purpose),
       timeouts: oracleDatabaseOdbSubnetTimeoutsToTerraform(this._timeouts.internalValue),
     };
   }
@@ -503,55 +503,55 @@ export class OracleDatabaseOdbSubnet extends cdktf.TerraformResource {
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       cidr_range: {
-        value: cdktf.stringToHclTerraform(this._cidrRange),
+        value: cdktn.stringToHclTerraform(this._cidrRange),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       deletion_protection: {
-        value: cdktf.booleanToHclTerraform(this._deletionProtection),
+        value: cdktn.booleanToHclTerraform(this._deletionProtection),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       labels: {
-        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._labels),
+        value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(this._labels),
         isBlock: false,
         type: "map",
         storageClassType: "stringMap",
       },
       location: {
-        value: cdktf.stringToHclTerraform(this._location),
+        value: cdktn.stringToHclTerraform(this._location),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       odb_subnet_id: {
-        value: cdktf.stringToHclTerraform(this._odbSubnetId),
+        value: cdktn.stringToHclTerraform(this._odbSubnetId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       odbnetwork: {
-        value: cdktf.stringToHclTerraform(this._odbnetwork),
+        value: cdktn.stringToHclTerraform(this._odbnetwork),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       project: {
-        value: cdktf.stringToHclTerraform(this._project),
+        value: cdktn.stringToHclTerraform(this._project),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       purpose: {
-        value: cdktf.stringToHclTerraform(this._purpose),
+        value: cdktn.stringToHclTerraform(this._purpose),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

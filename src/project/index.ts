@@ -7,17 +7,17 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface ProjectConfig extends cdktf.TerraformMetaArguments {
+export interface ProjectConfig extends cdktn.TerraformMetaArguments {
   /**
   * Create the 'default' network automatically.  Default true. If set to false, the default network will be deleted.  Note that, for quota purposes, you will still need to have 1 network slot available to create the project successfully, even if you set auto_create_network to false, since the network will exist momentarily.
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/project#auto_create_network Project#auto_create_network}
   */
-  readonly autoCreateNetwork?: boolean | cdktf.IResolvable;
+  readonly autoCreateNetwork?: boolean | cdktn.IResolvable;
   /**
   * The alphanumeric ID of the billing account this project belongs to. The user or service account performing this operation with Terraform must have Billing Account Administrator privileges (roles/billing.admin) in the organization. See Google Cloud Billing API Access Control for more details.
   *
@@ -103,46 +103,46 @@ export interface ProjectTimeouts {
   readonly update?: string;
 }
 
-export function projectTimeoutsToTerraform(struct?: ProjectTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function projectTimeoutsToTerraform(struct?: ProjectTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    create: cdktf.stringToTerraform(struct!.create),
-    delete: cdktf.stringToTerraform(struct!.delete),
-    read: cdktf.stringToTerraform(struct!.read),
-    update: cdktf.stringToTerraform(struct!.update),
+    create: cdktn.stringToTerraform(struct!.create),
+    delete: cdktn.stringToTerraform(struct!.delete),
+    read: cdktn.stringToTerraform(struct!.read),
+    update: cdktn.stringToTerraform(struct!.update),
   }
 }
 
 
-export function projectTimeoutsToHclTerraform(struct?: ProjectTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function projectTimeoutsToHclTerraform(struct?: ProjectTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     create: {
-      value: cdktf.stringToHclTerraform(struct!.create),
+      value: cdktn.stringToHclTerraform(struct!.create),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     delete: {
-      value: cdktf.stringToHclTerraform(struct!.delete),
+      value: cdktn.stringToHclTerraform(struct!.delete),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     read: {
-      value: cdktf.stringToHclTerraform(struct!.read),
+      value: cdktn.stringToHclTerraform(struct!.read),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     update: {
-      value: cdktf.stringToHclTerraform(struct!.update),
+      value: cdktn.stringToHclTerraform(struct!.update),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -153,19 +153,19 @@ export function projectTimeoutsToHclTerraform(struct?: ProjectTimeouts | cdktf.I
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class ProjectTimeoutsOutputReference extends cdktf.ComplexObject {
+export class ProjectTimeoutsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): ProjectTimeouts | cdktf.IResolvable | undefined {
+  public get internalValue(): ProjectTimeouts | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -190,7 +190,7 @@ export class ProjectTimeoutsOutputReference extends cdktf.ComplexObject {
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: ProjectTimeouts | cdktf.IResolvable | undefined) {
+  public set internalValue(value: ProjectTimeouts | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -199,7 +199,7 @@ export class ProjectTimeoutsOutputReference extends cdktf.ComplexObject {
       this._read = undefined;
       this._update = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -281,7 +281,7 @@ export class ProjectTimeoutsOutputReference extends cdktf.ComplexObject {
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/project google_project}
 */
-export class Project extends cdktf.TerraformResource {
+export class Project extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -292,14 +292,14 @@ export class Project extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a Project resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a Project resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the Project to import
   * @param importFromId The id of the existing Project that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/project#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the Project to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "google_project", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "google_project", importId: importFromId, provider });
       }
 
   // ===========
@@ -347,11 +347,11 @@ export class Project extends cdktf.TerraformResource {
   // ==========
 
   // auto_create_network - computed: false, optional: true, required: false
-  private _autoCreateNetwork?: boolean | cdktf.IResolvable; 
+  private _autoCreateNetwork?: boolean | cdktn.IResolvable; 
   public get autoCreateNetwork() {
     return this.getBooleanAttribute('auto_create_network');
   }
-  public set autoCreateNetwork(value: boolean | cdktf.IResolvable) {
+  public set autoCreateNetwork(value: boolean | cdktn.IResolvable) {
     this._autoCreateNetwork = value;
   }
   public resetAutoCreateNetwork() {
@@ -395,7 +395,7 @@ export class Project extends cdktf.TerraformResource {
   }
 
   // effective_labels - computed: true, optional: false, required: false
-  private _effectiveLabels = new cdktf.StringMap(this, "effective_labels");
+  private _effectiveLabels = new cdktn.StringMap(this, "effective_labels");
   public get effectiveLabels() {
     return this._effectiveLabels;
   }
@@ -512,7 +512,7 @@ export class Project extends cdktf.TerraformResource {
   }
 
   // terraform_labels - computed: true, optional: false, required: false
-  private _terraformLabels = new cdktf.StringMap(this, "terraform_labels");
+  private _terraformLabels = new cdktn.StringMap(this, "terraform_labels");
   public get terraformLabels() {
     return this._terraformLabels;
   }
@@ -539,16 +539,16 @@ export class Project extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      auto_create_network: cdktf.booleanToTerraform(this._autoCreateNetwork),
-      billing_account: cdktf.stringToTerraform(this._billingAccount),
-      deletion_policy: cdktf.stringToTerraform(this._deletionPolicy),
-      folder_id: cdktf.stringToTerraform(this._folderId),
-      id: cdktf.stringToTerraform(this._id),
-      labels: cdktf.hashMapper(cdktf.stringToTerraform)(this._labels),
-      name: cdktf.stringToTerraform(this._name),
-      org_id: cdktf.stringToTerraform(this._orgId),
-      project_id: cdktf.stringToTerraform(this._projectId),
-      tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
+      auto_create_network: cdktn.booleanToTerraform(this._autoCreateNetwork),
+      billing_account: cdktn.stringToTerraform(this._billingAccount),
+      deletion_policy: cdktn.stringToTerraform(this._deletionPolicy),
+      folder_id: cdktn.stringToTerraform(this._folderId),
+      id: cdktn.stringToTerraform(this._id),
+      labels: cdktn.hashMapper(cdktn.stringToTerraform)(this._labels),
+      name: cdktn.stringToTerraform(this._name),
+      org_id: cdktn.stringToTerraform(this._orgId),
+      project_id: cdktn.stringToTerraform(this._projectId),
+      tags: cdktn.hashMapper(cdktn.stringToTerraform)(this._tags),
       timeouts: projectTimeoutsToTerraform(this._timeouts.internalValue),
     };
   }
@@ -556,61 +556,61 @@ export class Project extends cdktf.TerraformResource {
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       auto_create_network: {
-        value: cdktf.booleanToHclTerraform(this._autoCreateNetwork),
+        value: cdktn.booleanToHclTerraform(this._autoCreateNetwork),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       billing_account: {
-        value: cdktf.stringToHclTerraform(this._billingAccount),
+        value: cdktn.stringToHclTerraform(this._billingAccount),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       deletion_policy: {
-        value: cdktf.stringToHclTerraform(this._deletionPolicy),
+        value: cdktn.stringToHclTerraform(this._deletionPolicy),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       folder_id: {
-        value: cdktf.stringToHclTerraform(this._folderId),
+        value: cdktn.stringToHclTerraform(this._folderId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       labels: {
-        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._labels),
+        value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(this._labels),
         isBlock: false,
         type: "map",
         storageClassType: "stringMap",
       },
       name: {
-        value: cdktf.stringToHclTerraform(this._name),
+        value: cdktn.stringToHclTerraform(this._name),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       org_id: {
-        value: cdktf.stringToHclTerraform(this._orgId),
+        value: cdktn.stringToHclTerraform(this._orgId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       project_id: {
-        value: cdktf.stringToHclTerraform(this._projectId),
+        value: cdktn.stringToHclTerraform(this._projectId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       tags: {
-        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tags),
+        value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(this._tags),
         isBlock: false,
         type: "map",
         storageClassType: "stringMap",

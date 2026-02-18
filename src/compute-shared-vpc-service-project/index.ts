@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface ComputeSharedVpcServiceProjectConfig extends cdktf.TerraformMetaArguments {
+export interface ComputeSharedVpcServiceProjectConfig extends cdktn.TerraformMetaArguments {
   /**
   * The deletion policy for the shared VPC service. Setting ABANDON allows the resource
   * 				to be abandoned rather than deleted. Possible values are: "ABANDON".
@@ -56,32 +56,32 @@ export interface ComputeSharedVpcServiceProjectTimeouts {
   readonly delete?: string;
 }
 
-export function computeSharedVpcServiceProjectTimeoutsToTerraform(struct?: ComputeSharedVpcServiceProjectTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function computeSharedVpcServiceProjectTimeoutsToTerraform(struct?: ComputeSharedVpcServiceProjectTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    create: cdktf.stringToTerraform(struct!.create),
-    delete: cdktf.stringToTerraform(struct!.delete),
+    create: cdktn.stringToTerraform(struct!.create),
+    delete: cdktn.stringToTerraform(struct!.delete),
   }
 }
 
 
-export function computeSharedVpcServiceProjectTimeoutsToHclTerraform(struct?: ComputeSharedVpcServiceProjectTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function computeSharedVpcServiceProjectTimeoutsToHclTerraform(struct?: ComputeSharedVpcServiceProjectTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     create: {
-      value: cdktf.stringToHclTerraform(struct!.create),
+      value: cdktn.stringToHclTerraform(struct!.create),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     delete: {
-      value: cdktf.stringToHclTerraform(struct!.delete),
+      value: cdktn.stringToHclTerraform(struct!.delete),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -92,19 +92,19 @@ export function computeSharedVpcServiceProjectTimeoutsToHclTerraform(struct?: Co
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class ComputeSharedVpcServiceProjectTimeoutsOutputReference extends cdktf.ComplexObject {
+export class ComputeSharedVpcServiceProjectTimeoutsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): ComputeSharedVpcServiceProjectTimeouts | cdktf.IResolvable | undefined {
+  public get internalValue(): ComputeSharedVpcServiceProjectTimeouts | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -121,14 +121,14 @@ export class ComputeSharedVpcServiceProjectTimeoutsOutputReference extends cdktf
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: ComputeSharedVpcServiceProjectTimeouts | cdktf.IResolvable | undefined) {
+  public set internalValue(value: ComputeSharedVpcServiceProjectTimeouts | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._create = undefined;
       this._delete = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -176,7 +176,7 @@ export class ComputeSharedVpcServiceProjectTimeoutsOutputReference extends cdktf
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_shared_vpc_service_project google_compute_shared_vpc_service_project}
 */
-export class ComputeSharedVpcServiceProject extends cdktf.TerraformResource {
+export class ComputeSharedVpcServiceProject extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -187,14 +187,14 @@ export class ComputeSharedVpcServiceProject extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a ComputeSharedVpcServiceProject resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a ComputeSharedVpcServiceProject resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the ComputeSharedVpcServiceProject to import
   * @param importFromId The id of the existing ComputeSharedVpcServiceProject that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_shared_vpc_service_project#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the ComputeSharedVpcServiceProject to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "google_compute_shared_vpc_service_project", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "google_compute_shared_vpc_service_project", importId: importFromId, provider });
       }
 
   // ===========
@@ -315,10 +315,10 @@ export class ComputeSharedVpcServiceProject extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      deletion_policy: cdktf.stringToTerraform(this._deletionPolicy),
-      host_project: cdktf.stringToTerraform(this._hostProject),
-      id: cdktf.stringToTerraform(this._id),
-      service_project: cdktf.stringToTerraform(this._serviceProject),
+      deletion_policy: cdktn.stringToTerraform(this._deletionPolicy),
+      host_project: cdktn.stringToTerraform(this._hostProject),
+      id: cdktn.stringToTerraform(this._id),
+      service_project: cdktn.stringToTerraform(this._serviceProject),
       timeouts: computeSharedVpcServiceProjectTimeoutsToTerraform(this._timeouts.internalValue),
     };
   }
@@ -326,25 +326,25 @@ export class ComputeSharedVpcServiceProject extends cdktf.TerraformResource {
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       deletion_policy: {
-        value: cdktf.stringToHclTerraform(this._deletionPolicy),
+        value: cdktn.stringToHclTerraform(this._deletionPolicy),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       host_project: {
-        value: cdktf.stringToHclTerraform(this._hostProject),
+        value: cdktn.stringToHclTerraform(this._hostProject),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       service_project: {
-        value: cdktf.stringToHclTerraform(this._serviceProject),
+        value: cdktn.stringToHclTerraform(this._serviceProject),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

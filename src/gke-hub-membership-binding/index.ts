@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface GkeHubMembershipBindingConfig extends cdktf.TerraformMetaArguments {
+export interface GkeHubMembershipBindingConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/gke_hub_membership_binding#id GkeHubMembershipBinding#id}
   *
@@ -71,8 +71,8 @@ export interface GkeHubMembershipBindingState {
 }
 
 export function gkeHubMembershipBindingStateToTerraform(struct?: GkeHubMembershipBindingState): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -81,8 +81,8 @@ export function gkeHubMembershipBindingStateToTerraform(struct?: GkeHubMembershi
 
 
 export function gkeHubMembershipBindingStateToHclTerraform(struct?: GkeHubMembershipBindingState): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -90,7 +90,7 @@ export function gkeHubMembershipBindingStateToHclTerraform(struct?: GkeHubMember
   return attrs;
 }
 
-export class GkeHubMembershipBindingStateOutputReference extends cdktf.ComplexObject {
+export class GkeHubMembershipBindingStateOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -99,7 +99,7 @@ export class GkeHubMembershipBindingStateOutputReference extends cdktf.ComplexOb
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -124,14 +124,14 @@ export class GkeHubMembershipBindingStateOutputReference extends cdktf.ComplexOb
   }
 }
 
-export class GkeHubMembershipBindingStateList extends cdktf.ComplexList {
+export class GkeHubMembershipBindingStateList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -157,39 +157,39 @@ export interface GkeHubMembershipBindingTimeouts {
   readonly update?: string;
 }
 
-export function gkeHubMembershipBindingTimeoutsToTerraform(struct?: GkeHubMembershipBindingTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function gkeHubMembershipBindingTimeoutsToTerraform(struct?: GkeHubMembershipBindingTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    create: cdktf.stringToTerraform(struct!.create),
-    delete: cdktf.stringToTerraform(struct!.delete),
-    update: cdktf.stringToTerraform(struct!.update),
+    create: cdktn.stringToTerraform(struct!.create),
+    delete: cdktn.stringToTerraform(struct!.delete),
+    update: cdktn.stringToTerraform(struct!.update),
   }
 }
 
 
-export function gkeHubMembershipBindingTimeoutsToHclTerraform(struct?: GkeHubMembershipBindingTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function gkeHubMembershipBindingTimeoutsToHclTerraform(struct?: GkeHubMembershipBindingTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     create: {
-      value: cdktf.stringToHclTerraform(struct!.create),
+      value: cdktn.stringToHclTerraform(struct!.create),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     delete: {
-      value: cdktf.stringToHclTerraform(struct!.delete),
+      value: cdktn.stringToHclTerraform(struct!.delete),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     update: {
-      value: cdktf.stringToHclTerraform(struct!.update),
+      value: cdktn.stringToHclTerraform(struct!.update),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -200,19 +200,19 @@ export function gkeHubMembershipBindingTimeoutsToHclTerraform(struct?: GkeHubMem
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class GkeHubMembershipBindingTimeoutsOutputReference extends cdktf.ComplexObject {
+export class GkeHubMembershipBindingTimeoutsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): GkeHubMembershipBindingTimeouts | cdktf.IResolvable | undefined {
+  public get internalValue(): GkeHubMembershipBindingTimeouts | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -233,7 +233,7 @@ export class GkeHubMembershipBindingTimeoutsOutputReference extends cdktf.Comple
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: GkeHubMembershipBindingTimeouts | cdktf.IResolvable | undefined) {
+  public set internalValue(value: GkeHubMembershipBindingTimeouts | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -241,7 +241,7 @@ export class GkeHubMembershipBindingTimeoutsOutputReference extends cdktf.Comple
       this._delete = undefined;
       this._update = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -306,7 +306,7 @@ export class GkeHubMembershipBindingTimeoutsOutputReference extends cdktf.Comple
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/gke_hub_membership_binding google_gke_hub_membership_binding}
 */
-export class GkeHubMembershipBinding extends cdktf.TerraformResource {
+export class GkeHubMembershipBinding extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -317,14 +317,14 @@ export class GkeHubMembershipBinding extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a GkeHubMembershipBinding resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a GkeHubMembershipBinding resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the GkeHubMembershipBinding to import
   * @param importFromId The id of the existing GkeHubMembershipBinding that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/gke_hub_membership_binding#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the GkeHubMembershipBinding to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "google_gke_hub_membership_binding", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "google_gke_hub_membership_binding", importId: importFromId, provider });
       }
 
   // ===========
@@ -379,7 +379,7 @@ export class GkeHubMembershipBinding extends cdktf.TerraformResource {
   }
 
   // effective_labels - computed: true, optional: false, required: false
-  private _effectiveLabels = new cdktf.StringMap(this, "effective_labels");
+  private _effectiveLabels = new cdktn.StringMap(this, "effective_labels");
   public get effectiveLabels() {
     return this._effectiveLabels;
   }
@@ -496,7 +496,7 @@ export class GkeHubMembershipBinding extends cdktf.TerraformResource {
   }
 
   // terraform_labels - computed: true, optional: false, required: false
-  private _terraformLabels = new cdktf.StringMap(this, "terraform_labels");
+  private _terraformLabels = new cdktn.StringMap(this, "terraform_labels");
   public get terraformLabels() {
     return this._terraformLabels;
   }
@@ -533,13 +533,13 @@ export class GkeHubMembershipBinding extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      id: cdktf.stringToTerraform(this._id),
-      labels: cdktf.hashMapper(cdktf.stringToTerraform)(this._labels),
-      location: cdktf.stringToTerraform(this._location),
-      membership_binding_id: cdktf.stringToTerraform(this._membershipBindingId),
-      membership_id: cdktf.stringToTerraform(this._membershipId),
-      project: cdktf.stringToTerraform(this._project),
-      scope: cdktf.stringToTerraform(this._scope),
+      id: cdktn.stringToTerraform(this._id),
+      labels: cdktn.hashMapper(cdktn.stringToTerraform)(this._labels),
+      location: cdktn.stringToTerraform(this._location),
+      membership_binding_id: cdktn.stringToTerraform(this._membershipBindingId),
+      membership_id: cdktn.stringToTerraform(this._membershipId),
+      project: cdktn.stringToTerraform(this._project),
+      scope: cdktn.stringToTerraform(this._scope),
       timeouts: gkeHubMembershipBindingTimeoutsToTerraform(this._timeouts.internalValue),
     };
   }
@@ -547,43 +547,43 @@ export class GkeHubMembershipBinding extends cdktf.TerraformResource {
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       labels: {
-        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._labels),
+        value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(this._labels),
         isBlock: false,
         type: "map",
         storageClassType: "stringMap",
       },
       location: {
-        value: cdktf.stringToHclTerraform(this._location),
+        value: cdktn.stringToHclTerraform(this._location),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       membership_binding_id: {
-        value: cdktf.stringToHclTerraform(this._membershipBindingId),
+        value: cdktn.stringToHclTerraform(this._membershipBindingId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       membership_id: {
-        value: cdktf.stringToHclTerraform(this._membershipId),
+        value: cdktn.stringToHclTerraform(this._membershipId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       project: {
-        value: cdktf.stringToHclTerraform(this._project),
+        value: cdktn.stringToHclTerraform(this._project),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       scope: {
-        value: cdktf.stringToHclTerraform(this._scope),
+        value: cdktn.stringToHclTerraform(this._scope),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

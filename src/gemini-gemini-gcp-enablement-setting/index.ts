@@ -7,23 +7,23 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface GeminiGeminiGcpEnablementSettingConfig extends cdktf.TerraformMetaArguments {
+export interface GeminiGeminiGcpEnablementSettingConfig extends cdktn.TerraformMetaArguments {
   /**
   * Whether web grounding should be disabled.
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/gemini_gemini_gcp_enablement_setting#disable_web_grounding GeminiGeminiGcpEnablementSetting#disable_web_grounding}
   */
-  readonly disableWebGrounding?: boolean | cdktf.IResolvable;
+  readonly disableWebGrounding?: boolean | cdktn.IResolvable;
   /**
   * Whether customer data sharing should be enabled.
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/gemini_gemini_gcp_enablement_setting#enable_customer_data_sharing GeminiGeminiGcpEnablementSetting#enable_customer_data_sharing}
   */
-  readonly enableCustomerDataSharing?: boolean | cdktf.IResolvable;
+  readonly enableCustomerDataSharing?: boolean | cdktn.IResolvable;
   /**
   * Id of the Gemini Gcp Enablement setting.
   *
@@ -87,39 +87,39 @@ export interface GeminiGeminiGcpEnablementSettingTimeouts {
   readonly update?: string;
 }
 
-export function geminiGeminiGcpEnablementSettingTimeoutsToTerraform(struct?: GeminiGeminiGcpEnablementSettingTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function geminiGeminiGcpEnablementSettingTimeoutsToTerraform(struct?: GeminiGeminiGcpEnablementSettingTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    create: cdktf.stringToTerraform(struct!.create),
-    delete: cdktf.stringToTerraform(struct!.delete),
-    update: cdktf.stringToTerraform(struct!.update),
+    create: cdktn.stringToTerraform(struct!.create),
+    delete: cdktn.stringToTerraform(struct!.delete),
+    update: cdktn.stringToTerraform(struct!.update),
   }
 }
 
 
-export function geminiGeminiGcpEnablementSettingTimeoutsToHclTerraform(struct?: GeminiGeminiGcpEnablementSettingTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function geminiGeminiGcpEnablementSettingTimeoutsToHclTerraform(struct?: GeminiGeminiGcpEnablementSettingTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     create: {
-      value: cdktf.stringToHclTerraform(struct!.create),
+      value: cdktn.stringToHclTerraform(struct!.create),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     delete: {
-      value: cdktf.stringToHclTerraform(struct!.delete),
+      value: cdktn.stringToHclTerraform(struct!.delete),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     update: {
-      value: cdktf.stringToHclTerraform(struct!.update),
+      value: cdktn.stringToHclTerraform(struct!.update),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -130,19 +130,19 @@ export function geminiGeminiGcpEnablementSettingTimeoutsToHclTerraform(struct?: 
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class GeminiGeminiGcpEnablementSettingTimeoutsOutputReference extends cdktf.ComplexObject {
+export class GeminiGeminiGcpEnablementSettingTimeoutsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): GeminiGeminiGcpEnablementSettingTimeouts | cdktf.IResolvable | undefined {
+  public get internalValue(): GeminiGeminiGcpEnablementSettingTimeouts | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -163,7 +163,7 @@ export class GeminiGeminiGcpEnablementSettingTimeoutsOutputReference extends cdk
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: GeminiGeminiGcpEnablementSettingTimeouts | cdktf.IResolvable | undefined) {
+  public set internalValue(value: GeminiGeminiGcpEnablementSettingTimeouts | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -171,7 +171,7 @@ export class GeminiGeminiGcpEnablementSettingTimeoutsOutputReference extends cdk
       this._delete = undefined;
       this._update = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -236,7 +236,7 @@ export class GeminiGeminiGcpEnablementSettingTimeoutsOutputReference extends cdk
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/gemini_gemini_gcp_enablement_setting google_gemini_gemini_gcp_enablement_setting}
 */
-export class GeminiGeminiGcpEnablementSetting extends cdktf.TerraformResource {
+export class GeminiGeminiGcpEnablementSetting extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -247,14 +247,14 @@ export class GeminiGeminiGcpEnablementSetting extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a GeminiGeminiGcpEnablementSetting resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a GeminiGeminiGcpEnablementSetting resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the GeminiGeminiGcpEnablementSetting to import
   * @param importFromId The id of the existing GeminiGeminiGcpEnablementSetting that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/gemini_gemini_gcp_enablement_setting#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the GeminiGeminiGcpEnablementSetting to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "google_gemini_gemini_gcp_enablement_setting", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "google_gemini_gemini_gcp_enablement_setting", importId: importFromId, provider });
       }
 
   // ===========
@@ -305,11 +305,11 @@ export class GeminiGeminiGcpEnablementSetting extends cdktf.TerraformResource {
   }
 
   // disable_web_grounding - computed: false, optional: true, required: false
-  private _disableWebGrounding?: boolean | cdktf.IResolvable; 
+  private _disableWebGrounding?: boolean | cdktn.IResolvable; 
   public get disableWebGrounding() {
     return this.getBooleanAttribute('disable_web_grounding');
   }
-  public set disableWebGrounding(value: boolean | cdktf.IResolvable) {
+  public set disableWebGrounding(value: boolean | cdktn.IResolvable) {
     this._disableWebGrounding = value;
   }
   public resetDisableWebGrounding() {
@@ -321,17 +321,17 @@ export class GeminiGeminiGcpEnablementSetting extends cdktf.TerraformResource {
   }
 
   // effective_labels - computed: true, optional: false, required: false
-  private _effectiveLabels = new cdktf.StringMap(this, "effective_labels");
+  private _effectiveLabels = new cdktn.StringMap(this, "effective_labels");
   public get effectiveLabels() {
     return this._effectiveLabels;
   }
 
   // enable_customer_data_sharing - computed: false, optional: true, required: false
-  private _enableCustomerDataSharing?: boolean | cdktf.IResolvable; 
+  private _enableCustomerDataSharing?: boolean | cdktn.IResolvable; 
   public get enableCustomerDataSharing() {
     return this.getBooleanAttribute('enable_customer_data_sharing');
   }
-  public set enableCustomerDataSharing(value: boolean | cdktf.IResolvable) {
+  public set enableCustomerDataSharing(value: boolean | cdktn.IResolvable) {
     this._enableCustomerDataSharing = value;
   }
   public resetEnableCustomerDataSharing() {
@@ -422,7 +422,7 @@ export class GeminiGeminiGcpEnablementSetting extends cdktf.TerraformResource {
   }
 
   // terraform_labels - computed: true, optional: false, required: false
-  private _terraformLabels = new cdktf.StringMap(this, "terraform_labels");
+  private _terraformLabels = new cdktn.StringMap(this, "terraform_labels");
   public get terraformLabels() {
     return this._terraformLabels;
   }
@@ -470,14 +470,14 @@ export class GeminiGeminiGcpEnablementSetting extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      disable_web_grounding: cdktf.booleanToTerraform(this._disableWebGrounding),
-      enable_customer_data_sharing: cdktf.booleanToTerraform(this._enableCustomerDataSharing),
-      gemini_gcp_enablement_setting_id: cdktf.stringToTerraform(this._geminiGcpEnablementSettingId),
-      id: cdktf.stringToTerraform(this._id),
-      labels: cdktf.hashMapper(cdktf.stringToTerraform)(this._labels),
-      location: cdktf.stringToTerraform(this._location),
-      project: cdktf.stringToTerraform(this._project),
-      web_grounding_type: cdktf.stringToTerraform(this._webGroundingType),
+      disable_web_grounding: cdktn.booleanToTerraform(this._disableWebGrounding),
+      enable_customer_data_sharing: cdktn.booleanToTerraform(this._enableCustomerDataSharing),
+      gemini_gcp_enablement_setting_id: cdktn.stringToTerraform(this._geminiGcpEnablementSettingId),
+      id: cdktn.stringToTerraform(this._id),
+      labels: cdktn.hashMapper(cdktn.stringToTerraform)(this._labels),
+      location: cdktn.stringToTerraform(this._location),
+      project: cdktn.stringToTerraform(this._project),
+      web_grounding_type: cdktn.stringToTerraform(this._webGroundingType),
       timeouts: geminiGeminiGcpEnablementSettingTimeoutsToTerraform(this._timeouts.internalValue),
     };
   }
@@ -485,49 +485,49 @@ export class GeminiGeminiGcpEnablementSetting extends cdktf.TerraformResource {
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       disable_web_grounding: {
-        value: cdktf.booleanToHclTerraform(this._disableWebGrounding),
+        value: cdktn.booleanToHclTerraform(this._disableWebGrounding),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       enable_customer_data_sharing: {
-        value: cdktf.booleanToHclTerraform(this._enableCustomerDataSharing),
+        value: cdktn.booleanToHclTerraform(this._enableCustomerDataSharing),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       gemini_gcp_enablement_setting_id: {
-        value: cdktf.stringToHclTerraform(this._geminiGcpEnablementSettingId),
+        value: cdktn.stringToHclTerraform(this._geminiGcpEnablementSettingId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       labels: {
-        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._labels),
+        value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(this._labels),
         isBlock: false,
         type: "map",
         storageClassType: "stringMap",
       },
       location: {
-        value: cdktf.stringToHclTerraform(this._location),
+        value: cdktn.stringToHclTerraform(this._location),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       project: {
-        value: cdktf.stringToHclTerraform(this._project),
+        value: cdktn.stringToHclTerraform(this._project),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       web_grounding_type: {
-        value: cdktf.stringToHclTerraform(this._webGroundingType),
+        value: cdktn.stringToHclTerraform(this._webGroundingType),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

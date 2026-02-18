@@ -7,17 +7,17 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface BigtableInstanceConfig extends cdktf.TerraformMetaArguments {
+export interface BigtableInstanceConfig extends cdktn.TerraformMetaArguments {
   /**
   * When the field is set to true or unset in Terraform state, a terraform apply or terraform destroy that would delete the instance will fail. When the field is set to false, deleting the instance is allowed.
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/bigtable_instance#deletion_protection BigtableInstance#deletion_protection}
   */
-  readonly deletionProtection?: boolean | cdktf.IResolvable;
+  readonly deletionProtection?: boolean | cdktn.IResolvable;
   /**
   * The human-readable display name of the Bigtable instance. Defaults to the instance name.
   *
@@ -29,7 +29,7 @@ export interface BigtableInstanceConfig extends cdktf.TerraformMetaArguments {
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/bigtable_instance#force_destroy BigtableInstance#force_destroy}
   */
-  readonly forceDestroy?: boolean | cdktf.IResolvable;
+  readonly forceDestroy?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/bigtable_instance#id BigtableInstance#id}
   *
@@ -69,7 +69,7 @@ export interface BigtableInstanceConfig extends cdktf.TerraformMetaArguments {
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/bigtable_instance#cluster BigtableInstance#cluster}
   */
-  readonly cluster?: BigtableInstanceCluster[] | cdktf.IResolvable;
+  readonly cluster?: BigtableInstanceCluster[] | cdktn.IResolvable;
   /**
   * timeouts block
   *
@@ -105,45 +105,45 @@ export interface BigtableInstanceClusterAutoscalingConfig {
 }
 
 export function bigtableInstanceClusterAutoscalingConfigToTerraform(struct?: BigtableInstanceClusterAutoscalingConfigOutputReference | BigtableInstanceClusterAutoscalingConfig): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    cpu_target: cdktf.numberToTerraform(struct!.cpuTarget),
-    max_nodes: cdktf.numberToTerraform(struct!.maxNodes),
-    min_nodes: cdktf.numberToTerraform(struct!.minNodes),
-    storage_target: cdktf.numberToTerraform(struct!.storageTarget),
+    cpu_target: cdktn.numberToTerraform(struct!.cpuTarget),
+    max_nodes: cdktn.numberToTerraform(struct!.maxNodes),
+    min_nodes: cdktn.numberToTerraform(struct!.minNodes),
+    storage_target: cdktn.numberToTerraform(struct!.storageTarget),
   }
 }
 
 
 export function bigtableInstanceClusterAutoscalingConfigToHclTerraform(struct?: BigtableInstanceClusterAutoscalingConfigOutputReference | BigtableInstanceClusterAutoscalingConfig): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     cpu_target: {
-      value: cdktf.numberToHclTerraform(struct!.cpuTarget),
+      value: cdktn.numberToHclTerraform(struct!.cpuTarget),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     max_nodes: {
-      value: cdktf.numberToHclTerraform(struct!.maxNodes),
+      value: cdktn.numberToHclTerraform(struct!.maxNodes),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     min_nodes: {
-      value: cdktf.numberToHclTerraform(struct!.minNodes),
+      value: cdktn.numberToHclTerraform(struct!.minNodes),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     storage_target: {
-      value: cdktf.numberToHclTerraform(struct!.storageTarget),
+      value: cdktn.numberToHclTerraform(struct!.storageTarget),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
@@ -154,14 +154,14 @@ export function bigtableInstanceClusterAutoscalingConfigToHclTerraform(struct?: 
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class BigtableInstanceClusterAutoscalingConfigOutputReference extends cdktf.ComplexObject {
+export class BigtableInstanceClusterAutoscalingConfigOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -304,61 +304,61 @@ export interface BigtableInstanceCluster {
   readonly autoscalingConfig?: BigtableInstanceClusterAutoscalingConfig;
 }
 
-export function bigtableInstanceClusterToTerraform(struct?: BigtableInstanceCluster | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function bigtableInstanceClusterToTerraform(struct?: BigtableInstanceCluster | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    cluster_id: cdktf.stringToTerraform(struct!.clusterId),
-    kms_key_name: cdktf.stringToTerraform(struct!.kmsKeyName),
-    node_scaling_factor: cdktf.stringToTerraform(struct!.nodeScalingFactor),
-    num_nodes: cdktf.numberToTerraform(struct!.numNodes),
-    storage_type: cdktf.stringToTerraform(struct!.storageType),
-    zone: cdktf.stringToTerraform(struct!.zone),
+    cluster_id: cdktn.stringToTerraform(struct!.clusterId),
+    kms_key_name: cdktn.stringToTerraform(struct!.kmsKeyName),
+    node_scaling_factor: cdktn.stringToTerraform(struct!.nodeScalingFactor),
+    num_nodes: cdktn.numberToTerraform(struct!.numNodes),
+    storage_type: cdktn.stringToTerraform(struct!.storageType),
+    zone: cdktn.stringToTerraform(struct!.zone),
     autoscaling_config: bigtableInstanceClusterAutoscalingConfigToTerraform(struct!.autoscalingConfig),
   }
 }
 
 
-export function bigtableInstanceClusterToHclTerraform(struct?: BigtableInstanceCluster | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function bigtableInstanceClusterToHclTerraform(struct?: BigtableInstanceCluster | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     cluster_id: {
-      value: cdktf.stringToHclTerraform(struct!.clusterId),
+      value: cdktn.stringToHclTerraform(struct!.clusterId),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     kms_key_name: {
-      value: cdktf.stringToHclTerraform(struct!.kmsKeyName),
+      value: cdktn.stringToHclTerraform(struct!.kmsKeyName),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     node_scaling_factor: {
-      value: cdktf.stringToHclTerraform(struct!.nodeScalingFactor),
+      value: cdktn.stringToHclTerraform(struct!.nodeScalingFactor),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     num_nodes: {
-      value: cdktf.numberToHclTerraform(struct!.numNodes),
+      value: cdktn.numberToHclTerraform(struct!.numNodes),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     storage_type: {
-      value: cdktf.stringToHclTerraform(struct!.storageType),
+      value: cdktn.stringToHclTerraform(struct!.storageType),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     zone: {
-      value: cdktf.stringToHclTerraform(struct!.zone),
+      value: cdktn.stringToHclTerraform(struct!.zone),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -375,9 +375,9 @@ export function bigtableInstanceClusterToHclTerraform(struct?: BigtableInstanceC
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class BigtableInstanceClusterOutputReference extends cdktf.ComplexObject {
+export class BigtableInstanceClusterOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -385,11 +385,11 @@ export class BigtableInstanceClusterOutputReference extends cdktf.ComplexObject 
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): BigtableInstanceCluster | cdktf.IResolvable | undefined {
+  public get internalValue(): BigtableInstanceCluster | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -426,7 +426,7 @@ export class BigtableInstanceClusterOutputReference extends cdktf.ComplexObject 
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: BigtableInstanceCluster | cdktf.IResolvable | undefined) {
+  public set internalValue(value: BigtableInstanceCluster | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -438,7 +438,7 @@ export class BigtableInstanceClusterOutputReference extends cdktf.ComplexObject 
       this._zone = undefined;
       this._autoscalingConfig.internalValue = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -570,15 +570,15 @@ export class BigtableInstanceClusterOutputReference extends cdktf.ComplexObject 
   }
 }
 
-export class BigtableInstanceClusterList extends cdktf.ComplexList {
-  public internalValue? : BigtableInstanceCluster[] | cdktf.IResolvable
+export class BigtableInstanceClusterList extends cdktn.ComplexList {
+  public internalValue? : BigtableInstanceCluster[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -604,39 +604,39 @@ export interface BigtableInstanceTimeouts {
   readonly update?: string;
 }
 
-export function bigtableInstanceTimeoutsToTerraform(struct?: BigtableInstanceTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function bigtableInstanceTimeoutsToTerraform(struct?: BigtableInstanceTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    create: cdktf.stringToTerraform(struct!.create),
-    read: cdktf.stringToTerraform(struct!.read),
-    update: cdktf.stringToTerraform(struct!.update),
+    create: cdktn.stringToTerraform(struct!.create),
+    read: cdktn.stringToTerraform(struct!.read),
+    update: cdktn.stringToTerraform(struct!.update),
   }
 }
 
 
-export function bigtableInstanceTimeoutsToHclTerraform(struct?: BigtableInstanceTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function bigtableInstanceTimeoutsToHclTerraform(struct?: BigtableInstanceTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     create: {
-      value: cdktf.stringToHclTerraform(struct!.create),
+      value: cdktn.stringToHclTerraform(struct!.create),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     read: {
-      value: cdktf.stringToHclTerraform(struct!.read),
+      value: cdktn.stringToHclTerraform(struct!.read),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     update: {
-      value: cdktf.stringToHclTerraform(struct!.update),
+      value: cdktn.stringToHclTerraform(struct!.update),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -647,19 +647,19 @@ export function bigtableInstanceTimeoutsToHclTerraform(struct?: BigtableInstance
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class BigtableInstanceTimeoutsOutputReference extends cdktf.ComplexObject {
+export class BigtableInstanceTimeoutsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): BigtableInstanceTimeouts | cdktf.IResolvable | undefined {
+  public get internalValue(): BigtableInstanceTimeouts | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -680,7 +680,7 @@ export class BigtableInstanceTimeoutsOutputReference extends cdktf.ComplexObject
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: BigtableInstanceTimeouts | cdktf.IResolvable | undefined) {
+  public set internalValue(value: BigtableInstanceTimeouts | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -688,7 +688,7 @@ export class BigtableInstanceTimeoutsOutputReference extends cdktf.ComplexObject
       this._read = undefined;
       this._update = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -753,7 +753,7 @@ export class BigtableInstanceTimeoutsOutputReference extends cdktf.ComplexObject
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/bigtable_instance google_bigtable_instance}
 */
-export class BigtableInstance extends cdktf.TerraformResource {
+export class BigtableInstance extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -764,14 +764,14 @@ export class BigtableInstance extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a BigtableInstance resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a BigtableInstance resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the BigtableInstance to import
   * @param importFromId The id of the existing BigtableInstance that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/bigtable_instance#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the BigtableInstance to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "google_bigtable_instance", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "google_bigtable_instance", importId: importFromId, provider });
       }
 
   // ===========
@@ -818,11 +818,11 @@ export class BigtableInstance extends cdktf.TerraformResource {
   // ==========
 
   // deletion_protection - computed: false, optional: true, required: false
-  private _deletionProtection?: boolean | cdktf.IResolvable; 
+  private _deletionProtection?: boolean | cdktn.IResolvable; 
   public get deletionProtection() {
     return this.getBooleanAttribute('deletion_protection');
   }
-  public set deletionProtection(value: boolean | cdktf.IResolvable) {
+  public set deletionProtection(value: boolean | cdktn.IResolvable) {
     this._deletionProtection = value;
   }
   public resetDeletionProtection() {
@@ -850,17 +850,17 @@ export class BigtableInstance extends cdktf.TerraformResource {
   }
 
   // effective_labels - computed: true, optional: false, required: false
-  private _effectiveLabels = new cdktf.StringMap(this, "effective_labels");
+  private _effectiveLabels = new cdktn.StringMap(this, "effective_labels");
   public get effectiveLabels() {
     return this._effectiveLabels;
   }
 
   // force_destroy - computed: false, optional: true, required: false
-  private _forceDestroy?: boolean | cdktf.IResolvable; 
+  private _forceDestroy?: boolean | cdktn.IResolvable; 
   public get forceDestroy() {
     return this.getBooleanAttribute('force_destroy');
   }
-  public set forceDestroy(value: boolean | cdktf.IResolvable) {
+  public set forceDestroy(value: boolean | cdktn.IResolvable) {
     this._forceDestroy = value;
   }
   public resetForceDestroy() {
@@ -949,7 +949,7 @@ export class BigtableInstance extends cdktf.TerraformResource {
   }
 
   // terraform_labels - computed: true, optional: false, required: false
-  private _terraformLabels = new cdktf.StringMap(this, "terraform_labels");
+  private _terraformLabels = new cdktn.StringMap(this, "terraform_labels");
   public get terraformLabels() {
     return this._terraformLabels;
   }
@@ -959,7 +959,7 @@ export class BigtableInstance extends cdktf.TerraformResource {
   public get cluster() {
     return this._cluster;
   }
-  public putCluster(value: BigtableInstanceCluster[] | cdktf.IResolvable) {
+  public putCluster(value: BigtableInstanceCluster[] | cdktn.IResolvable) {
     this._cluster.internalValue = value;
   }
   public resetCluster() {
@@ -992,15 +992,15 @@ export class BigtableInstance extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      deletion_protection: cdktf.booleanToTerraform(this._deletionProtection),
-      display_name: cdktf.stringToTerraform(this._displayName),
-      force_destroy: cdktf.booleanToTerraform(this._forceDestroy),
-      id: cdktf.stringToTerraform(this._id),
-      instance_type: cdktf.stringToTerraform(this._instanceType),
-      labels: cdktf.hashMapper(cdktf.stringToTerraform)(this._labels),
-      name: cdktf.stringToTerraform(this._name),
-      project: cdktf.stringToTerraform(this._project),
-      cluster: cdktf.listMapper(bigtableInstanceClusterToTerraform, true)(this._cluster.internalValue),
+      deletion_protection: cdktn.booleanToTerraform(this._deletionProtection),
+      display_name: cdktn.stringToTerraform(this._displayName),
+      force_destroy: cdktn.booleanToTerraform(this._forceDestroy),
+      id: cdktn.stringToTerraform(this._id),
+      instance_type: cdktn.stringToTerraform(this._instanceType),
+      labels: cdktn.hashMapper(cdktn.stringToTerraform)(this._labels),
+      name: cdktn.stringToTerraform(this._name),
+      project: cdktn.stringToTerraform(this._project),
+      cluster: cdktn.listMapper(bigtableInstanceClusterToTerraform, true)(this._cluster.internalValue),
       timeouts: bigtableInstanceTimeoutsToTerraform(this._timeouts.internalValue),
     };
   }
@@ -1008,55 +1008,55 @@ export class BigtableInstance extends cdktf.TerraformResource {
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       deletion_protection: {
-        value: cdktf.booleanToHclTerraform(this._deletionProtection),
+        value: cdktn.booleanToHclTerraform(this._deletionProtection),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       display_name: {
-        value: cdktf.stringToHclTerraform(this._displayName),
+        value: cdktn.stringToHclTerraform(this._displayName),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       force_destroy: {
-        value: cdktf.booleanToHclTerraform(this._forceDestroy),
+        value: cdktn.booleanToHclTerraform(this._forceDestroy),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       instance_type: {
-        value: cdktf.stringToHclTerraform(this._instanceType),
+        value: cdktn.stringToHclTerraform(this._instanceType),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       labels: {
-        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._labels),
+        value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(this._labels),
         isBlock: false,
         type: "map",
         storageClassType: "stringMap",
       },
       name: {
-        value: cdktf.stringToHclTerraform(this._name),
+        value: cdktn.stringToHclTerraform(this._name),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       project: {
-        value: cdktf.stringToHclTerraform(this._project),
+        value: cdktn.stringToHclTerraform(this._project),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       cluster: {
-        value: cdktf.listMapperHcl(bigtableInstanceClusterToHclTerraform, true)(this._cluster.internalValue),
+        value: cdktn.listMapperHcl(bigtableInstanceClusterToHclTerraform, true)(this._cluster.internalValue),
         isBlock: true,
         type: "list",
         storageClassType: "BigtableInstanceClusterList",

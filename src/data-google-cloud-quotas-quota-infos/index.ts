@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface DataGoogleCloudQuotasQuotaInfosConfig extends cdktf.TerraformMetaArguments {
+export interface DataGoogleCloudQuotasQuotaInfosConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/data-sources/cloud_quotas_quota_infos#id DataGoogleCloudQuotasQuotaInfos#id}
   *
@@ -32,8 +32,8 @@ export interface DataGoogleCloudQuotasQuotaInfosQuotaInfosDimensionsInfosDetails
 }
 
 export function dataGoogleCloudQuotasQuotaInfosQuotaInfosDimensionsInfosDetailsToTerraform(struct?: DataGoogleCloudQuotasQuotaInfosQuotaInfosDimensionsInfosDetails): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -42,8 +42,8 @@ export function dataGoogleCloudQuotasQuotaInfosQuotaInfosDimensionsInfosDetailsT
 
 
 export function dataGoogleCloudQuotasQuotaInfosQuotaInfosDimensionsInfosDetailsToHclTerraform(struct?: DataGoogleCloudQuotasQuotaInfosQuotaInfosDimensionsInfosDetails): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -51,7 +51,7 @@ export function dataGoogleCloudQuotasQuotaInfosQuotaInfosDimensionsInfosDetailsT
   return attrs;
 }
 
-export class DataGoogleCloudQuotasQuotaInfosQuotaInfosDimensionsInfosDetailsOutputReference extends cdktf.ComplexObject {
+export class DataGoogleCloudQuotasQuotaInfosQuotaInfosDimensionsInfosDetailsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -60,7 +60,7 @@ export class DataGoogleCloudQuotasQuotaInfosQuotaInfosDimensionsInfosDetailsOutp
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -85,14 +85,14 @@ export class DataGoogleCloudQuotasQuotaInfosQuotaInfosDimensionsInfosDetailsOutp
   }
 }
 
-export class DataGoogleCloudQuotasQuotaInfosQuotaInfosDimensionsInfosDetailsList extends cdktf.ComplexList {
+export class DataGoogleCloudQuotasQuotaInfosQuotaInfosDimensionsInfosDetailsList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -107,8 +107,8 @@ export interface DataGoogleCloudQuotasQuotaInfosQuotaInfosDimensionsInfos {
 }
 
 export function dataGoogleCloudQuotasQuotaInfosQuotaInfosDimensionsInfosToTerraform(struct?: DataGoogleCloudQuotasQuotaInfosQuotaInfosDimensionsInfos): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -117,8 +117,8 @@ export function dataGoogleCloudQuotasQuotaInfosQuotaInfosDimensionsInfosToTerraf
 
 
 export function dataGoogleCloudQuotasQuotaInfosQuotaInfosDimensionsInfosToHclTerraform(struct?: DataGoogleCloudQuotasQuotaInfosQuotaInfosDimensionsInfos): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -126,7 +126,7 @@ export function dataGoogleCloudQuotasQuotaInfosQuotaInfosDimensionsInfosToHclTer
   return attrs;
 }
 
-export class DataGoogleCloudQuotasQuotaInfosQuotaInfosDimensionsInfosOutputReference extends cdktf.ComplexObject {
+export class DataGoogleCloudQuotasQuotaInfosQuotaInfosDimensionsInfosOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -135,7 +135,7 @@ export class DataGoogleCloudQuotasQuotaInfosQuotaInfosDimensionsInfosOutputRefer
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -166,20 +166,20 @@ export class DataGoogleCloudQuotasQuotaInfosQuotaInfosDimensionsInfosOutputRefer
   }
 
   // dimensions - computed: true, optional: false, required: false
-  private _dimensions = new cdktf.StringMap(this, "dimensions");
+  private _dimensions = new cdktn.StringMap(this, "dimensions");
   public get dimensions() {
     return this._dimensions;
   }
 }
 
-export class DataGoogleCloudQuotasQuotaInfosQuotaInfosDimensionsInfosList extends cdktf.ComplexList {
+export class DataGoogleCloudQuotasQuotaInfosQuotaInfosDimensionsInfosList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -194,8 +194,8 @@ export interface DataGoogleCloudQuotasQuotaInfosQuotaInfosQuotaIncreaseEligibili
 }
 
 export function dataGoogleCloudQuotasQuotaInfosQuotaInfosQuotaIncreaseEligibilityToTerraform(struct?: DataGoogleCloudQuotasQuotaInfosQuotaInfosQuotaIncreaseEligibility): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -204,8 +204,8 @@ export function dataGoogleCloudQuotasQuotaInfosQuotaInfosQuotaIncreaseEligibilit
 
 
 export function dataGoogleCloudQuotasQuotaInfosQuotaInfosQuotaIncreaseEligibilityToHclTerraform(struct?: DataGoogleCloudQuotasQuotaInfosQuotaInfosQuotaIncreaseEligibility): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -213,7 +213,7 @@ export function dataGoogleCloudQuotasQuotaInfosQuotaInfosQuotaIncreaseEligibilit
   return attrs;
 }
 
-export class DataGoogleCloudQuotasQuotaInfosQuotaInfosQuotaIncreaseEligibilityOutputReference extends cdktf.ComplexObject {
+export class DataGoogleCloudQuotasQuotaInfosQuotaInfosQuotaIncreaseEligibilityOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -222,7 +222,7 @@ export class DataGoogleCloudQuotasQuotaInfosQuotaInfosQuotaIncreaseEligibilityOu
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -252,14 +252,14 @@ export class DataGoogleCloudQuotasQuotaInfosQuotaInfosQuotaIncreaseEligibilityOu
   }
 }
 
-export class DataGoogleCloudQuotasQuotaInfosQuotaInfosQuotaIncreaseEligibilityList extends cdktf.ComplexList {
+export class DataGoogleCloudQuotasQuotaInfosQuotaInfosQuotaIncreaseEligibilityList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -274,8 +274,8 @@ export interface DataGoogleCloudQuotasQuotaInfosQuotaInfos {
 }
 
 export function dataGoogleCloudQuotasQuotaInfosQuotaInfosToTerraform(struct?: DataGoogleCloudQuotasQuotaInfosQuotaInfos): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -284,8 +284,8 @@ export function dataGoogleCloudQuotasQuotaInfosQuotaInfosToTerraform(struct?: Da
 
 
 export function dataGoogleCloudQuotasQuotaInfosQuotaInfosToHclTerraform(struct?: DataGoogleCloudQuotasQuotaInfosQuotaInfos): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -293,7 +293,7 @@ export function dataGoogleCloudQuotasQuotaInfosQuotaInfosToHclTerraform(struct?:
   return attrs;
 }
 
-export class DataGoogleCloudQuotasQuotaInfosQuotaInfosOutputReference extends cdktf.ComplexObject {
+export class DataGoogleCloudQuotasQuotaInfosQuotaInfosOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -302,7 +302,7 @@ export class DataGoogleCloudQuotasQuotaInfosQuotaInfosOutputReference extends cd
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -404,14 +404,14 @@ export class DataGoogleCloudQuotasQuotaInfosQuotaInfosOutputReference extends cd
   }
 }
 
-export class DataGoogleCloudQuotasQuotaInfosQuotaInfosList extends cdktf.ComplexList {
+export class DataGoogleCloudQuotasQuotaInfosQuotaInfosList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -426,7 +426,7 @@ export class DataGoogleCloudQuotasQuotaInfosQuotaInfosList extends cdktf.Complex
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/data-sources/cloud_quotas_quota_infos google_cloud_quotas_quota_infos}
 */
-export class DataGoogleCloudQuotasQuotaInfos extends cdktf.TerraformDataSource {
+export class DataGoogleCloudQuotasQuotaInfos extends cdktn.TerraformDataSource {
 
   // =================
   // STATIC PROPERTIES
@@ -437,14 +437,14 @@ export class DataGoogleCloudQuotasQuotaInfos extends cdktf.TerraformDataSource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a DataGoogleCloudQuotasQuotaInfos resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a DataGoogleCloudQuotasQuotaInfos resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataGoogleCloudQuotasQuotaInfos to import
   * @param importFromId The id of the existing DataGoogleCloudQuotasQuotaInfos that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/data-sources/cloud_quotas_quota_infos#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataGoogleCloudQuotasQuotaInfos to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "google_cloud_quotas_quota_infos", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "google_cloud_quotas_quota_infos", importId: importFromId, provider });
       }
 
   // ===========
@@ -537,28 +537,28 @@ export class DataGoogleCloudQuotasQuotaInfos extends cdktf.TerraformDataSource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      id: cdktf.stringToTerraform(this._id),
-      parent: cdktf.stringToTerraform(this._parent),
-      service: cdktf.stringToTerraform(this._service),
+      id: cdktn.stringToTerraform(this._id),
+      parent: cdktn.stringToTerraform(this._parent),
+      service: cdktn.stringToTerraform(this._service),
     };
   }
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       parent: {
-        value: cdktf.stringToHclTerraform(this._parent),
+        value: cdktn.stringToHclTerraform(this._parent),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       service: {
-        value: cdktf.stringToHclTerraform(this._service),
+        value: cdktn.stringToHclTerraform(this._service),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

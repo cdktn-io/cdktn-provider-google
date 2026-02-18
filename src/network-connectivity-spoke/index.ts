@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface NetworkConnectivitySpokeConfig extends cdktf.TerraformMetaArguments {
+export interface NetworkConnectivitySpokeConfig extends cdktn.TerraformMetaArguments {
   /**
   * An optional description of the spoke.
   *
@@ -103,8 +103,8 @@ export interface NetworkConnectivitySpokeReasons {
 }
 
 export function networkConnectivitySpokeReasonsToTerraform(struct?: NetworkConnectivitySpokeReasons): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -113,8 +113,8 @@ export function networkConnectivitySpokeReasonsToTerraform(struct?: NetworkConne
 
 
 export function networkConnectivitySpokeReasonsToHclTerraform(struct?: NetworkConnectivitySpokeReasons): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -122,7 +122,7 @@ export function networkConnectivitySpokeReasonsToHclTerraform(struct?: NetworkCo
   return attrs;
 }
 
-export class NetworkConnectivitySpokeReasonsOutputReference extends cdktf.ComplexObject {
+export class NetworkConnectivitySpokeReasonsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -131,7 +131,7 @@ export class NetworkConnectivitySpokeReasonsOutputReference extends cdktf.Comple
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -166,14 +166,14 @@ export class NetworkConnectivitySpokeReasonsOutputReference extends cdktf.Comple
   }
 }
 
-export class NetworkConnectivitySpokeReasonsList extends cdktf.ComplexList {
+export class NetworkConnectivitySpokeReasonsList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -197,7 +197,7 @@ export interface NetworkConnectivitySpokeLinkedInterconnectAttachments {
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/network_connectivity_spoke#site_to_site_data_transfer NetworkConnectivitySpoke#site_to_site_data_transfer}
   */
-  readonly siteToSiteDataTransfer: boolean | cdktf.IResolvable;
+  readonly siteToSiteDataTransfer: boolean | cdktn.IResolvable;
   /**
   * The URIs of linked interconnect attachment resources
   *
@@ -207,38 +207,38 @@ export interface NetworkConnectivitySpokeLinkedInterconnectAttachments {
 }
 
 export function networkConnectivitySpokeLinkedInterconnectAttachmentsToTerraform(struct?: NetworkConnectivitySpokeLinkedInterconnectAttachmentsOutputReference | NetworkConnectivitySpokeLinkedInterconnectAttachments): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    include_import_ranges: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.includeImportRanges),
-    site_to_site_data_transfer: cdktf.booleanToTerraform(struct!.siteToSiteDataTransfer),
-    uris: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.uris),
+    include_import_ranges: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.includeImportRanges),
+    site_to_site_data_transfer: cdktn.booleanToTerraform(struct!.siteToSiteDataTransfer),
+    uris: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.uris),
   }
 }
 
 
 export function networkConnectivitySpokeLinkedInterconnectAttachmentsToHclTerraform(struct?: NetworkConnectivitySpokeLinkedInterconnectAttachmentsOutputReference | NetworkConnectivitySpokeLinkedInterconnectAttachments): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     include_import_ranges: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.includeImportRanges),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.includeImportRanges),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
     },
     site_to_site_data_transfer: {
-      value: cdktf.booleanToHclTerraform(struct!.siteToSiteDataTransfer),
+      value: cdktn.booleanToHclTerraform(struct!.siteToSiteDataTransfer),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     uris: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.uris),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.uris),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
@@ -249,14 +249,14 @@ export function networkConnectivitySpokeLinkedInterconnectAttachmentsToHclTerraf
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class NetworkConnectivitySpokeLinkedInterconnectAttachmentsOutputReference extends cdktf.ComplexObject {
+export class NetworkConnectivitySpokeLinkedInterconnectAttachmentsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -310,11 +310,11 @@ export class NetworkConnectivitySpokeLinkedInterconnectAttachmentsOutputReferenc
   }
 
   // site_to_site_data_transfer - computed: false, optional: false, required: true
-  private _siteToSiteDataTransfer?: boolean | cdktf.IResolvable; 
+  private _siteToSiteDataTransfer?: boolean | cdktn.IResolvable; 
   public get siteToSiteDataTransfer() {
     return this.getBooleanAttribute('site_to_site_data_transfer');
   }
-  public set siteToSiteDataTransfer(value: boolean | cdktf.IResolvable) {
+  public set siteToSiteDataTransfer(value: boolean | cdktn.IResolvable) {
     this._siteToSiteDataTransfer = value;
   }
   // Temporarily expose input value. Use with caution.
@@ -363,45 +363,45 @@ export interface NetworkConnectivitySpokeLinkedProducerVpcNetwork {
 }
 
 export function networkConnectivitySpokeLinkedProducerVpcNetworkToTerraform(struct?: NetworkConnectivitySpokeLinkedProducerVpcNetworkOutputReference | NetworkConnectivitySpokeLinkedProducerVpcNetwork): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    exclude_export_ranges: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.excludeExportRanges),
-    include_export_ranges: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.includeExportRanges),
-    network: cdktf.stringToTerraform(struct!.network),
-    peering: cdktf.stringToTerraform(struct!.peering),
+    exclude_export_ranges: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.excludeExportRanges),
+    include_export_ranges: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.includeExportRanges),
+    network: cdktn.stringToTerraform(struct!.network),
+    peering: cdktn.stringToTerraform(struct!.peering),
   }
 }
 
 
 export function networkConnectivitySpokeLinkedProducerVpcNetworkToHclTerraform(struct?: NetworkConnectivitySpokeLinkedProducerVpcNetworkOutputReference | NetworkConnectivitySpokeLinkedProducerVpcNetwork): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     exclude_export_ranges: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.excludeExportRanges),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.excludeExportRanges),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
     },
     include_export_ranges: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.includeExportRanges),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.includeExportRanges),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
     },
     network: {
-      value: cdktf.stringToHclTerraform(struct!.network),
+      value: cdktn.stringToHclTerraform(struct!.network),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     peering: {
-      value: cdktf.stringToHclTerraform(struct!.peering),
+      value: cdktn.stringToHclTerraform(struct!.peering),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -412,14 +412,14 @@ export function networkConnectivitySpokeLinkedProducerVpcNetworkToHclTerraform(s
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class NetworkConnectivitySpokeLinkedProducerVpcNetworkOutputReference extends cdktf.ComplexObject {
+export class NetworkConnectivitySpokeLinkedProducerVpcNetworkOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -540,32 +540,32 @@ export interface NetworkConnectivitySpokeLinkedRouterApplianceInstancesInstances
   readonly virtualMachine: string;
 }
 
-export function networkConnectivitySpokeLinkedRouterApplianceInstancesInstancesToTerraform(struct?: NetworkConnectivitySpokeLinkedRouterApplianceInstancesInstances | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function networkConnectivitySpokeLinkedRouterApplianceInstancesInstancesToTerraform(struct?: NetworkConnectivitySpokeLinkedRouterApplianceInstancesInstances | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    ip_address: cdktf.stringToTerraform(struct!.ipAddress),
-    virtual_machine: cdktf.stringToTerraform(struct!.virtualMachine),
+    ip_address: cdktn.stringToTerraform(struct!.ipAddress),
+    virtual_machine: cdktn.stringToTerraform(struct!.virtualMachine),
   }
 }
 
 
-export function networkConnectivitySpokeLinkedRouterApplianceInstancesInstancesToHclTerraform(struct?: NetworkConnectivitySpokeLinkedRouterApplianceInstancesInstances | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function networkConnectivitySpokeLinkedRouterApplianceInstancesInstancesToHclTerraform(struct?: NetworkConnectivitySpokeLinkedRouterApplianceInstancesInstances | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     ip_address: {
-      value: cdktf.stringToHclTerraform(struct!.ipAddress),
+      value: cdktn.stringToHclTerraform(struct!.ipAddress),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     virtual_machine: {
-      value: cdktf.stringToHclTerraform(struct!.virtualMachine),
+      value: cdktn.stringToHclTerraform(struct!.virtualMachine),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -576,9 +576,9 @@ export function networkConnectivitySpokeLinkedRouterApplianceInstancesInstancesT
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class NetworkConnectivitySpokeLinkedRouterApplianceInstancesInstancesOutputReference extends cdktf.ComplexObject {
+export class NetworkConnectivitySpokeLinkedRouterApplianceInstancesInstancesOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -586,11 +586,11 @@ export class NetworkConnectivitySpokeLinkedRouterApplianceInstancesInstancesOutp
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): NetworkConnectivitySpokeLinkedRouterApplianceInstancesInstances | cdktf.IResolvable | undefined {
+  public get internalValue(): NetworkConnectivitySpokeLinkedRouterApplianceInstancesInstances | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -607,14 +607,14 @@ export class NetworkConnectivitySpokeLinkedRouterApplianceInstancesInstancesOutp
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: NetworkConnectivitySpokeLinkedRouterApplianceInstancesInstances | cdktf.IResolvable | undefined) {
+  public set internalValue(value: NetworkConnectivitySpokeLinkedRouterApplianceInstancesInstances | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._ipAddress = undefined;
       this._virtualMachine = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -653,15 +653,15 @@ export class NetworkConnectivitySpokeLinkedRouterApplianceInstancesInstancesOutp
   }
 }
 
-export class NetworkConnectivitySpokeLinkedRouterApplianceInstancesInstancesList extends cdktf.ComplexList {
-  public internalValue? : NetworkConnectivitySpokeLinkedRouterApplianceInstancesInstances[] | cdktf.IResolvable
+export class NetworkConnectivitySpokeLinkedRouterApplianceInstancesInstancesList extends cdktn.ComplexList {
+  public internalValue? : NetworkConnectivitySpokeLinkedRouterApplianceInstancesInstances[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -685,48 +685,48 @@ export interface NetworkConnectivitySpokeLinkedRouterApplianceInstances {
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/network_connectivity_spoke#site_to_site_data_transfer NetworkConnectivitySpoke#site_to_site_data_transfer}
   */
-  readonly siteToSiteDataTransfer: boolean | cdktf.IResolvable;
+  readonly siteToSiteDataTransfer: boolean | cdktn.IResolvable;
   /**
   * instances block
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/network_connectivity_spoke#instances NetworkConnectivitySpoke#instances}
   */
-  readonly instances: NetworkConnectivitySpokeLinkedRouterApplianceInstancesInstances[] | cdktf.IResolvable;
+  readonly instances: NetworkConnectivitySpokeLinkedRouterApplianceInstancesInstances[] | cdktn.IResolvable;
 }
 
 export function networkConnectivitySpokeLinkedRouterApplianceInstancesToTerraform(struct?: NetworkConnectivitySpokeLinkedRouterApplianceInstancesOutputReference | NetworkConnectivitySpokeLinkedRouterApplianceInstances): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    include_import_ranges: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.includeImportRanges),
-    site_to_site_data_transfer: cdktf.booleanToTerraform(struct!.siteToSiteDataTransfer),
-    instances: cdktf.listMapper(networkConnectivitySpokeLinkedRouterApplianceInstancesInstancesToTerraform, true)(struct!.instances),
+    include_import_ranges: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.includeImportRanges),
+    site_to_site_data_transfer: cdktn.booleanToTerraform(struct!.siteToSiteDataTransfer),
+    instances: cdktn.listMapper(networkConnectivitySpokeLinkedRouterApplianceInstancesInstancesToTerraform, true)(struct!.instances),
   }
 }
 
 
 export function networkConnectivitySpokeLinkedRouterApplianceInstancesToHclTerraform(struct?: NetworkConnectivitySpokeLinkedRouterApplianceInstancesOutputReference | NetworkConnectivitySpokeLinkedRouterApplianceInstances): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     include_import_ranges: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.includeImportRanges),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.includeImportRanges),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
     },
     site_to_site_data_transfer: {
-      value: cdktf.booleanToHclTerraform(struct!.siteToSiteDataTransfer),
+      value: cdktn.booleanToHclTerraform(struct!.siteToSiteDataTransfer),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     instances: {
-      value: cdktf.listMapperHcl(networkConnectivitySpokeLinkedRouterApplianceInstancesInstancesToHclTerraform, true)(struct!.instances),
+      value: cdktn.listMapperHcl(networkConnectivitySpokeLinkedRouterApplianceInstancesInstancesToHclTerraform, true)(struct!.instances),
       isBlock: true,
       type: "list",
       storageClassType: "NetworkConnectivitySpokeLinkedRouterApplianceInstancesInstancesList",
@@ -737,14 +737,14 @@ export function networkConnectivitySpokeLinkedRouterApplianceInstancesToHclTerra
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class NetworkConnectivitySpokeLinkedRouterApplianceInstancesOutputReference extends cdktf.ComplexObject {
+export class NetworkConnectivitySpokeLinkedRouterApplianceInstancesOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -798,11 +798,11 @@ export class NetworkConnectivitySpokeLinkedRouterApplianceInstancesOutputReferen
   }
 
   // site_to_site_data_transfer - computed: false, optional: false, required: true
-  private _siteToSiteDataTransfer?: boolean | cdktf.IResolvable; 
+  private _siteToSiteDataTransfer?: boolean | cdktn.IResolvable; 
   public get siteToSiteDataTransfer() {
     return this.getBooleanAttribute('site_to_site_data_transfer');
   }
-  public set siteToSiteDataTransfer(value: boolean | cdktf.IResolvable) {
+  public set siteToSiteDataTransfer(value: boolean | cdktn.IResolvable) {
     this._siteToSiteDataTransfer = value;
   }
   // Temporarily expose input value. Use with caution.
@@ -815,7 +815,7 @@ export class NetworkConnectivitySpokeLinkedRouterApplianceInstancesOutputReferen
   public get instances() {
     return this._instances;
   }
-  public putInstances(value: NetworkConnectivitySpokeLinkedRouterApplianceInstancesInstances[] | cdktf.IResolvable) {
+  public putInstances(value: NetworkConnectivitySpokeLinkedRouterApplianceInstancesInstances[] | cdktn.IResolvable) {
     this._instances.internalValue = value;
   }
   // Temporarily expose input value. Use with caution.
@@ -845,38 +845,38 @@ export interface NetworkConnectivitySpokeLinkedVpcNetwork {
 }
 
 export function networkConnectivitySpokeLinkedVpcNetworkToTerraform(struct?: NetworkConnectivitySpokeLinkedVpcNetworkOutputReference | NetworkConnectivitySpokeLinkedVpcNetwork): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    exclude_export_ranges: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.excludeExportRanges),
-    include_export_ranges: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.includeExportRanges),
-    uri: cdktf.stringToTerraform(struct!.uri),
+    exclude_export_ranges: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.excludeExportRanges),
+    include_export_ranges: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.includeExportRanges),
+    uri: cdktn.stringToTerraform(struct!.uri),
   }
 }
 
 
 export function networkConnectivitySpokeLinkedVpcNetworkToHclTerraform(struct?: NetworkConnectivitySpokeLinkedVpcNetworkOutputReference | NetworkConnectivitySpokeLinkedVpcNetwork): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     exclude_export_ranges: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.excludeExportRanges),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.excludeExportRanges),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
     },
     include_export_ranges: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.includeExportRanges),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.includeExportRanges),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
     },
     uri: {
-      value: cdktf.stringToHclTerraform(struct!.uri),
+      value: cdktn.stringToHclTerraform(struct!.uri),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -887,14 +887,14 @@ export function networkConnectivitySpokeLinkedVpcNetworkToHclTerraform(struct?: 
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class NetworkConnectivitySpokeLinkedVpcNetworkOutputReference extends cdktf.ComplexObject {
+export class NetworkConnectivitySpokeLinkedVpcNetworkOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -989,7 +989,7 @@ export interface NetworkConnectivitySpokeLinkedVpnTunnels {
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/network_connectivity_spoke#site_to_site_data_transfer NetworkConnectivitySpoke#site_to_site_data_transfer}
   */
-  readonly siteToSiteDataTransfer: boolean | cdktf.IResolvable;
+  readonly siteToSiteDataTransfer: boolean | cdktn.IResolvable;
   /**
   * The URIs of linked VPN tunnel resources.
   *
@@ -999,38 +999,38 @@ export interface NetworkConnectivitySpokeLinkedVpnTunnels {
 }
 
 export function networkConnectivitySpokeLinkedVpnTunnelsToTerraform(struct?: NetworkConnectivitySpokeLinkedVpnTunnelsOutputReference | NetworkConnectivitySpokeLinkedVpnTunnels): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    include_import_ranges: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.includeImportRanges),
-    site_to_site_data_transfer: cdktf.booleanToTerraform(struct!.siteToSiteDataTransfer),
-    uris: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.uris),
+    include_import_ranges: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.includeImportRanges),
+    site_to_site_data_transfer: cdktn.booleanToTerraform(struct!.siteToSiteDataTransfer),
+    uris: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.uris),
   }
 }
 
 
 export function networkConnectivitySpokeLinkedVpnTunnelsToHclTerraform(struct?: NetworkConnectivitySpokeLinkedVpnTunnelsOutputReference | NetworkConnectivitySpokeLinkedVpnTunnels): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     include_import_ranges: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.includeImportRanges),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.includeImportRanges),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
     },
     site_to_site_data_transfer: {
-      value: cdktf.booleanToHclTerraform(struct!.siteToSiteDataTransfer),
+      value: cdktn.booleanToHclTerraform(struct!.siteToSiteDataTransfer),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     uris: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.uris),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.uris),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
@@ -1041,14 +1041,14 @@ export function networkConnectivitySpokeLinkedVpnTunnelsToHclTerraform(struct?: 
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class NetworkConnectivitySpokeLinkedVpnTunnelsOutputReference extends cdktf.ComplexObject {
+export class NetworkConnectivitySpokeLinkedVpnTunnelsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -1102,11 +1102,11 @@ export class NetworkConnectivitySpokeLinkedVpnTunnelsOutputReference extends cdk
   }
 
   // site_to_site_data_transfer - computed: false, optional: false, required: true
-  private _siteToSiteDataTransfer?: boolean | cdktf.IResolvable; 
+  private _siteToSiteDataTransfer?: boolean | cdktn.IResolvable; 
   public get siteToSiteDataTransfer() {
     return this.getBooleanAttribute('site_to_site_data_transfer');
   }
-  public set siteToSiteDataTransfer(value: boolean | cdktf.IResolvable) {
+  public set siteToSiteDataTransfer(value: boolean | cdktn.IResolvable) {
     this._siteToSiteDataTransfer = value;
   }
   // Temporarily expose input value. Use with caution.
@@ -1142,39 +1142,39 @@ export interface NetworkConnectivitySpokeTimeouts {
   readonly update?: string;
 }
 
-export function networkConnectivitySpokeTimeoutsToTerraform(struct?: NetworkConnectivitySpokeTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function networkConnectivitySpokeTimeoutsToTerraform(struct?: NetworkConnectivitySpokeTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    create: cdktf.stringToTerraform(struct!.create),
-    delete: cdktf.stringToTerraform(struct!.delete),
-    update: cdktf.stringToTerraform(struct!.update),
+    create: cdktn.stringToTerraform(struct!.create),
+    delete: cdktn.stringToTerraform(struct!.delete),
+    update: cdktn.stringToTerraform(struct!.update),
   }
 }
 
 
-export function networkConnectivitySpokeTimeoutsToHclTerraform(struct?: NetworkConnectivitySpokeTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function networkConnectivitySpokeTimeoutsToHclTerraform(struct?: NetworkConnectivitySpokeTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     create: {
-      value: cdktf.stringToHclTerraform(struct!.create),
+      value: cdktn.stringToHclTerraform(struct!.create),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     delete: {
-      value: cdktf.stringToHclTerraform(struct!.delete),
+      value: cdktn.stringToHclTerraform(struct!.delete),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     update: {
-      value: cdktf.stringToHclTerraform(struct!.update),
+      value: cdktn.stringToHclTerraform(struct!.update),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -1185,19 +1185,19 @@ export function networkConnectivitySpokeTimeoutsToHclTerraform(struct?: NetworkC
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class NetworkConnectivitySpokeTimeoutsOutputReference extends cdktf.ComplexObject {
+export class NetworkConnectivitySpokeTimeoutsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): NetworkConnectivitySpokeTimeouts | cdktf.IResolvable | undefined {
+  public get internalValue(): NetworkConnectivitySpokeTimeouts | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -1218,7 +1218,7 @@ export class NetworkConnectivitySpokeTimeoutsOutputReference extends cdktf.Compl
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: NetworkConnectivitySpokeTimeouts | cdktf.IResolvable | undefined) {
+  public set internalValue(value: NetworkConnectivitySpokeTimeouts | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -1226,7 +1226,7 @@ export class NetworkConnectivitySpokeTimeoutsOutputReference extends cdktf.Compl
       this._delete = undefined;
       this._update = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -1291,7 +1291,7 @@ export class NetworkConnectivitySpokeTimeoutsOutputReference extends cdktf.Compl
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/network_connectivity_spoke google_network_connectivity_spoke}
 */
-export class NetworkConnectivitySpoke extends cdktf.TerraformResource {
+export class NetworkConnectivitySpoke extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -1302,14 +1302,14 @@ export class NetworkConnectivitySpoke extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a NetworkConnectivitySpoke resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a NetworkConnectivitySpoke resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the NetworkConnectivitySpoke to import
   * @param importFromId The id of the existing NetworkConnectivitySpoke that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/network_connectivity_spoke#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the NetworkConnectivitySpoke to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "google_network_connectivity_spoke", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "google_network_connectivity_spoke", importId: importFromId, provider });
       }
 
   // ===========
@@ -1381,7 +1381,7 @@ export class NetworkConnectivitySpoke extends cdktf.TerraformResource {
   }
 
   // effective_labels - computed: true, optional: false, required: false
-  private _effectiveLabels = new cdktf.StringMap(this, "effective_labels");
+  private _effectiveLabels = new cdktn.StringMap(this, "effective_labels");
   public get effectiveLabels() {
     return this._effectiveLabels;
   }
@@ -1501,7 +1501,7 @@ export class NetworkConnectivitySpoke extends cdktf.TerraformResource {
   }
 
   // terraform_labels - computed: true, optional: false, required: false
-  private _terraformLabels = new cdktf.StringMap(this, "terraform_labels");
+  private _terraformLabels = new cdktn.StringMap(this, "terraform_labels");
   public get terraformLabels() {
     return this._terraformLabels;
   }
@@ -1618,14 +1618,14 @@ export class NetworkConnectivitySpoke extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      description: cdktf.stringToTerraform(this._description),
-      group: cdktf.stringToTerraform(this._group),
-      hub: cdktf.stringToTerraform(this._hub),
-      id: cdktf.stringToTerraform(this._id),
-      labels: cdktf.hashMapper(cdktf.stringToTerraform)(this._labels),
-      location: cdktf.stringToTerraform(this._location),
-      name: cdktf.stringToTerraform(this._name),
-      project: cdktf.stringToTerraform(this._project),
+      description: cdktn.stringToTerraform(this._description),
+      group: cdktn.stringToTerraform(this._group),
+      hub: cdktn.stringToTerraform(this._hub),
+      id: cdktn.stringToTerraform(this._id),
+      labels: cdktn.hashMapper(cdktn.stringToTerraform)(this._labels),
+      location: cdktn.stringToTerraform(this._location),
+      name: cdktn.stringToTerraform(this._name),
+      project: cdktn.stringToTerraform(this._project),
       linked_interconnect_attachments: networkConnectivitySpokeLinkedInterconnectAttachmentsToTerraform(this._linkedInterconnectAttachments.internalValue),
       linked_producer_vpc_network: networkConnectivitySpokeLinkedProducerVpcNetworkToTerraform(this._linkedProducerVpcNetwork.internalValue),
       linked_router_appliance_instances: networkConnectivitySpokeLinkedRouterApplianceInstancesToTerraform(this._linkedRouterApplianceInstances.internalValue),
@@ -1638,49 +1638,49 @@ export class NetworkConnectivitySpoke extends cdktf.TerraformResource {
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       description: {
-        value: cdktf.stringToHclTerraform(this._description),
+        value: cdktn.stringToHclTerraform(this._description),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       group: {
-        value: cdktf.stringToHclTerraform(this._group),
+        value: cdktn.stringToHclTerraform(this._group),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       hub: {
-        value: cdktf.stringToHclTerraform(this._hub),
+        value: cdktn.stringToHclTerraform(this._hub),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       labels: {
-        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._labels),
+        value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(this._labels),
         isBlock: false,
         type: "map",
         storageClassType: "stringMap",
       },
       location: {
-        value: cdktf.stringToHclTerraform(this._location),
+        value: cdktn.stringToHclTerraform(this._location),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       name: {
-        value: cdktf.stringToHclTerraform(this._name),
+        value: cdktn.stringToHclTerraform(this._name),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       project: {
-        value: cdktf.stringToHclTerraform(this._project),
+        value: cdktn.stringToHclTerraform(this._project),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

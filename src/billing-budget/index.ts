@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface BillingBudgetConfig extends cdktf.TerraformMetaArguments {
+export interface BillingBudgetConfig extends cdktn.TerraformMetaArguments {
   /**
   * ID of the billing account to set a budget on.
   *
@@ -61,7 +61,7 @@ export interface BillingBudgetConfig extends cdktf.TerraformMetaArguments {
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/billing_budget#threshold_rules BillingBudget#threshold_rules}
   */
-  readonly thresholdRules?: BillingBudgetThresholdRules[] | cdktf.IResolvable;
+  readonly thresholdRules?: BillingBudgetThresholdRules[] | cdktn.IResolvable;
   /**
   * timeouts block
   *
@@ -78,7 +78,7 @@ export interface BillingBudgetAllUpdatesRule {
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/billing_budget#disable_default_iam_recipients BillingBudget#disable_default_iam_recipients}
   */
-  readonly disableDefaultIamRecipients?: boolean | cdktf.IResolvable;
+  readonly disableDefaultIamRecipients?: boolean | cdktn.IResolvable;
   /**
   * When set to true, and when the budget has a single project configured,
   * notifications will be sent to project level recipients of that project.
@@ -88,7 +88,7 @@ export interface BillingBudgetAllUpdatesRule {
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/billing_budget#enable_project_level_recipients BillingBudget#enable_project_level_recipients}
   */
-  readonly enableProjectLevelRecipients?: boolean | cdktf.IResolvable;
+  readonly enableProjectLevelRecipients?: boolean | cdktn.IResolvable;
   /**
   * The full resource name of a monitoring notification
   * channel in the form
@@ -118,52 +118,52 @@ export interface BillingBudgetAllUpdatesRule {
 }
 
 export function billingBudgetAllUpdatesRuleToTerraform(struct?: BillingBudgetAllUpdatesRuleOutputReference | BillingBudgetAllUpdatesRule): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    disable_default_iam_recipients: cdktf.booleanToTerraform(struct!.disableDefaultIamRecipients),
-    enable_project_level_recipients: cdktf.booleanToTerraform(struct!.enableProjectLevelRecipients),
-    monitoring_notification_channels: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.monitoringNotificationChannels),
-    pubsub_topic: cdktf.stringToTerraform(struct!.pubsubTopic),
-    schema_version: cdktf.stringToTerraform(struct!.schemaVersion),
+    disable_default_iam_recipients: cdktn.booleanToTerraform(struct!.disableDefaultIamRecipients),
+    enable_project_level_recipients: cdktn.booleanToTerraform(struct!.enableProjectLevelRecipients),
+    monitoring_notification_channels: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.monitoringNotificationChannels),
+    pubsub_topic: cdktn.stringToTerraform(struct!.pubsubTopic),
+    schema_version: cdktn.stringToTerraform(struct!.schemaVersion),
   }
 }
 
 
 export function billingBudgetAllUpdatesRuleToHclTerraform(struct?: BillingBudgetAllUpdatesRuleOutputReference | BillingBudgetAllUpdatesRule): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     disable_default_iam_recipients: {
-      value: cdktf.booleanToHclTerraform(struct!.disableDefaultIamRecipients),
+      value: cdktn.booleanToHclTerraform(struct!.disableDefaultIamRecipients),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     enable_project_level_recipients: {
-      value: cdktf.booleanToHclTerraform(struct!.enableProjectLevelRecipients),
+      value: cdktn.booleanToHclTerraform(struct!.enableProjectLevelRecipients),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     monitoring_notification_channels: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.monitoringNotificationChannels),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.monitoringNotificationChannels),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
     },
     pubsub_topic: {
-      value: cdktf.stringToHclTerraform(struct!.pubsubTopic),
+      value: cdktn.stringToHclTerraform(struct!.pubsubTopic),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     schema_version: {
-      value: cdktf.stringToHclTerraform(struct!.schemaVersion),
+      value: cdktn.stringToHclTerraform(struct!.schemaVersion),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -174,14 +174,14 @@ export function billingBudgetAllUpdatesRuleToHclTerraform(struct?: BillingBudget
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class BillingBudgetAllUpdatesRuleOutputReference extends cdktf.ComplexObject {
+export class BillingBudgetAllUpdatesRuleOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -231,11 +231,11 @@ export class BillingBudgetAllUpdatesRuleOutputReference extends cdktf.ComplexObj
   }
 
   // disable_default_iam_recipients - computed: false, optional: true, required: false
-  private _disableDefaultIamRecipients?: boolean | cdktf.IResolvable; 
+  private _disableDefaultIamRecipients?: boolean | cdktn.IResolvable; 
   public get disableDefaultIamRecipients() {
     return this.getBooleanAttribute('disable_default_iam_recipients');
   }
-  public set disableDefaultIamRecipients(value: boolean | cdktf.IResolvable) {
+  public set disableDefaultIamRecipients(value: boolean | cdktn.IResolvable) {
     this._disableDefaultIamRecipients = value;
   }
   public resetDisableDefaultIamRecipients() {
@@ -247,11 +247,11 @@ export class BillingBudgetAllUpdatesRuleOutputReference extends cdktf.ComplexObj
   }
 
   // enable_project_level_recipients - computed: false, optional: true, required: false
-  private _enableProjectLevelRecipients?: boolean | cdktf.IResolvable; 
+  private _enableProjectLevelRecipients?: boolean | cdktn.IResolvable; 
   public get enableProjectLevelRecipients() {
     return this.getBooleanAttribute('enable_project_level_recipients');
   }
-  public set enableProjectLevelRecipients(value: boolean | cdktf.IResolvable) {
+  public set enableProjectLevelRecipients(value: boolean | cdktn.IResolvable) {
     this._enableProjectLevelRecipients = value;
   }
   public resetEnableProjectLevelRecipients() {
@@ -339,38 +339,38 @@ export interface BillingBudgetAmountSpecifiedAmount {
 }
 
 export function billingBudgetAmountSpecifiedAmountToTerraform(struct?: BillingBudgetAmountSpecifiedAmountOutputReference | BillingBudgetAmountSpecifiedAmount): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    currency_code: cdktf.stringToTerraform(struct!.currencyCode),
-    nanos: cdktf.numberToTerraform(struct!.nanos),
-    units: cdktf.stringToTerraform(struct!.units),
+    currency_code: cdktn.stringToTerraform(struct!.currencyCode),
+    nanos: cdktn.numberToTerraform(struct!.nanos),
+    units: cdktn.stringToTerraform(struct!.units),
   }
 }
 
 
 export function billingBudgetAmountSpecifiedAmountToHclTerraform(struct?: BillingBudgetAmountSpecifiedAmountOutputReference | BillingBudgetAmountSpecifiedAmount): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     currency_code: {
-      value: cdktf.stringToHclTerraform(struct!.currencyCode),
+      value: cdktn.stringToHclTerraform(struct!.currencyCode),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     nanos: {
-      value: cdktf.numberToHclTerraform(struct!.nanos),
+      value: cdktn.numberToHclTerraform(struct!.nanos),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     units: {
-      value: cdktf.stringToHclTerraform(struct!.units),
+      value: cdktn.stringToHclTerraform(struct!.units),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -381,14 +381,14 @@ export function billingBudgetAmountSpecifiedAmountToHclTerraform(struct?: Billin
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class BillingBudgetAmountSpecifiedAmountOutputReference extends cdktf.ComplexObject {
+export class BillingBudgetAmountSpecifiedAmountOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -482,7 +482,7 @@ export interface BillingBudgetAmount {
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/billing_budget#last_period_amount BillingBudget#last_period_amount}
   */
-  readonly lastPeriodAmount?: boolean | cdktf.IResolvable;
+  readonly lastPeriodAmount?: boolean | cdktn.IResolvable;
   /**
   * specified_amount block
   *
@@ -492,25 +492,25 @@ export interface BillingBudgetAmount {
 }
 
 export function billingBudgetAmountToTerraform(struct?: BillingBudgetAmountOutputReference | BillingBudgetAmount): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    last_period_amount: cdktf.booleanToTerraform(struct!.lastPeriodAmount),
+    last_period_amount: cdktn.booleanToTerraform(struct!.lastPeriodAmount),
     specified_amount: billingBudgetAmountSpecifiedAmountToTerraform(struct!.specifiedAmount),
   }
 }
 
 
 export function billingBudgetAmountToHclTerraform(struct?: BillingBudgetAmountOutputReference | BillingBudgetAmount): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     last_period_amount: {
-      value: cdktf.booleanToHclTerraform(struct!.lastPeriodAmount),
+      value: cdktn.booleanToHclTerraform(struct!.lastPeriodAmount),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
@@ -527,14 +527,14 @@ export function billingBudgetAmountToHclTerraform(struct?: BillingBudgetAmountOu
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class BillingBudgetAmountOutputReference extends cdktf.ComplexObject {
+export class BillingBudgetAmountOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -566,11 +566,11 @@ export class BillingBudgetAmountOutputReference extends cdktf.ComplexObject {
   }
 
   // last_period_amount - computed: false, optional: true, required: false
-  private _lastPeriodAmount?: boolean | cdktf.IResolvable; 
+  private _lastPeriodAmount?: boolean | cdktn.IResolvable; 
   public get lastPeriodAmount() {
     return this.getBooleanAttribute('last_period_amount');
   }
-  public set lastPeriodAmount(value: boolean | cdktf.IResolvable) {
+  public set lastPeriodAmount(value: boolean | cdktn.IResolvable) {
     this._lastPeriodAmount = value;
   }
   public resetLastPeriodAmount() {
@@ -619,38 +619,38 @@ export interface BillingBudgetBudgetFilterCustomPeriodEndDate {
 }
 
 export function billingBudgetBudgetFilterCustomPeriodEndDateToTerraform(struct?: BillingBudgetBudgetFilterCustomPeriodEndDateOutputReference | BillingBudgetBudgetFilterCustomPeriodEndDate): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    day: cdktf.numberToTerraform(struct!.day),
-    month: cdktf.numberToTerraform(struct!.month),
-    year: cdktf.numberToTerraform(struct!.year),
+    day: cdktn.numberToTerraform(struct!.day),
+    month: cdktn.numberToTerraform(struct!.month),
+    year: cdktn.numberToTerraform(struct!.year),
   }
 }
 
 
 export function billingBudgetBudgetFilterCustomPeriodEndDateToHclTerraform(struct?: BillingBudgetBudgetFilterCustomPeriodEndDateOutputReference | BillingBudgetBudgetFilterCustomPeriodEndDate): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     day: {
-      value: cdktf.numberToHclTerraform(struct!.day),
+      value: cdktn.numberToHclTerraform(struct!.day),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     month: {
-      value: cdktf.numberToHclTerraform(struct!.month),
+      value: cdktn.numberToHclTerraform(struct!.month),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     year: {
-      value: cdktf.numberToHclTerraform(struct!.year),
+      value: cdktn.numberToHclTerraform(struct!.year),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
@@ -661,14 +661,14 @@ export function billingBudgetBudgetFilterCustomPeriodEndDateToHclTerraform(struc
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class BillingBudgetBudgetFilterCustomPeriodEndDateOutputReference extends cdktf.ComplexObject {
+export class BillingBudgetBudgetFilterCustomPeriodEndDateOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -766,38 +766,38 @@ export interface BillingBudgetBudgetFilterCustomPeriodStartDate {
 }
 
 export function billingBudgetBudgetFilterCustomPeriodStartDateToTerraform(struct?: BillingBudgetBudgetFilterCustomPeriodStartDateOutputReference | BillingBudgetBudgetFilterCustomPeriodStartDate): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    day: cdktf.numberToTerraform(struct!.day),
-    month: cdktf.numberToTerraform(struct!.month),
-    year: cdktf.numberToTerraform(struct!.year),
+    day: cdktn.numberToTerraform(struct!.day),
+    month: cdktn.numberToTerraform(struct!.month),
+    year: cdktn.numberToTerraform(struct!.year),
   }
 }
 
 
 export function billingBudgetBudgetFilterCustomPeriodStartDateToHclTerraform(struct?: BillingBudgetBudgetFilterCustomPeriodStartDateOutputReference | BillingBudgetBudgetFilterCustomPeriodStartDate): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     day: {
-      value: cdktf.numberToHclTerraform(struct!.day),
+      value: cdktn.numberToHclTerraform(struct!.day),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     month: {
-      value: cdktf.numberToHclTerraform(struct!.month),
+      value: cdktn.numberToHclTerraform(struct!.month),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     year: {
-      value: cdktf.numberToHclTerraform(struct!.year),
+      value: cdktn.numberToHclTerraform(struct!.year),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
@@ -808,14 +808,14 @@ export function billingBudgetBudgetFilterCustomPeriodStartDateToHclTerraform(str
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class BillingBudgetBudgetFilterCustomPeriodStartDateOutputReference extends cdktf.ComplexObject {
+export class BillingBudgetBudgetFilterCustomPeriodStartDateOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -907,8 +907,8 @@ export interface BillingBudgetBudgetFilterCustomPeriod {
 }
 
 export function billingBudgetBudgetFilterCustomPeriodToTerraform(struct?: BillingBudgetBudgetFilterCustomPeriodOutputReference | BillingBudgetBudgetFilterCustomPeriod): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -919,8 +919,8 @@ export function billingBudgetBudgetFilterCustomPeriodToTerraform(struct?: Billin
 
 
 export function billingBudgetBudgetFilterCustomPeriodToHclTerraform(struct?: BillingBudgetBudgetFilterCustomPeriodOutputReference | BillingBudgetBudgetFilterCustomPeriod): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -942,14 +942,14 @@ export function billingBudgetBudgetFilterCustomPeriodToHclTerraform(struct?: Bil
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class BillingBudgetBudgetFilterCustomPeriodOutputReference extends cdktf.ComplexObject {
+export class BillingBudgetBudgetFilterCustomPeriodOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -1096,74 +1096,74 @@ export interface BillingBudgetBudgetFilter {
 }
 
 export function billingBudgetBudgetFilterToTerraform(struct?: BillingBudgetBudgetFilterOutputReference | BillingBudgetBudgetFilter): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    calendar_period: cdktf.stringToTerraform(struct!.calendarPeriod),
-    credit_types: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.creditTypes),
-    credit_types_treatment: cdktf.stringToTerraform(struct!.creditTypesTreatment),
-    labels: cdktf.hashMapper(cdktf.stringToTerraform)(struct!.labels),
-    projects: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.projects),
-    resource_ancestors: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.resourceAncestors),
-    services: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.services),
-    subaccounts: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.subaccounts),
+    calendar_period: cdktn.stringToTerraform(struct!.calendarPeriod),
+    credit_types: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.creditTypes),
+    credit_types_treatment: cdktn.stringToTerraform(struct!.creditTypesTreatment),
+    labels: cdktn.hashMapper(cdktn.stringToTerraform)(struct!.labels),
+    projects: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.projects),
+    resource_ancestors: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.resourceAncestors),
+    services: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.services),
+    subaccounts: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.subaccounts),
     custom_period: billingBudgetBudgetFilterCustomPeriodToTerraform(struct!.customPeriod),
   }
 }
 
 
 export function billingBudgetBudgetFilterToHclTerraform(struct?: BillingBudgetBudgetFilterOutputReference | BillingBudgetBudgetFilter): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     calendar_period: {
-      value: cdktf.stringToHclTerraform(struct!.calendarPeriod),
+      value: cdktn.stringToHclTerraform(struct!.calendarPeriod),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     credit_types: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.creditTypes),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.creditTypes),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
     },
     credit_types_treatment: {
-      value: cdktf.stringToHclTerraform(struct!.creditTypesTreatment),
+      value: cdktn.stringToHclTerraform(struct!.creditTypesTreatment),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     labels: {
-      value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(struct!.labels),
+      value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(struct!.labels),
       isBlock: false,
       type: "map",
       storageClassType: "stringMap",
     },
     projects: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.projects),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.projects),
       isBlock: false,
       type: "set",
       storageClassType: "stringList",
     },
     resource_ancestors: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.resourceAncestors),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.resourceAncestors),
       isBlock: false,
       type: "set",
       storageClassType: "stringList",
     },
     services: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.services),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.services),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
     },
     subaccounts: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.subaccounts),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.subaccounts),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
@@ -1180,14 +1180,14 @@ export function billingBudgetBudgetFilterToHclTerraform(struct?: BillingBudgetBu
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class BillingBudgetBudgetFilterOutputReference extends cdktf.ComplexObject {
+export class BillingBudgetBudgetFilterOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -1327,7 +1327,7 @@ export class BillingBudgetBudgetFilterOutputReference extends cdktf.ComplexObjec
   // projects - computed: false, optional: true, required: false
   private _projects?: string[]; 
   public get projects() {
-    return cdktf.Fn.tolist(this.getListAttribute('projects'));
+    return cdktn.Fn.tolist(this.getListAttribute('projects'));
   }
   public set projects(value: string[]) {
     this._projects = value;
@@ -1343,7 +1343,7 @@ export class BillingBudgetBudgetFilterOutputReference extends cdktf.ComplexObjec
   // resource_ancestors - computed: false, optional: true, required: false
   private _resourceAncestors?: string[]; 
   public get resourceAncestors() {
-    return cdktf.Fn.tolist(this.getListAttribute('resource_ancestors'));
+    return cdktn.Fn.tolist(this.getListAttribute('resource_ancestors'));
   }
   public set resourceAncestors(value: string[]) {
     this._resourceAncestors = value;
@@ -1421,32 +1421,32 @@ export interface BillingBudgetThresholdRules {
   readonly thresholdPercent: number;
 }
 
-export function billingBudgetThresholdRulesToTerraform(struct?: BillingBudgetThresholdRules | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function billingBudgetThresholdRulesToTerraform(struct?: BillingBudgetThresholdRules | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    spend_basis: cdktf.stringToTerraform(struct!.spendBasis),
-    threshold_percent: cdktf.numberToTerraform(struct!.thresholdPercent),
+    spend_basis: cdktn.stringToTerraform(struct!.spendBasis),
+    threshold_percent: cdktn.numberToTerraform(struct!.thresholdPercent),
   }
 }
 
 
-export function billingBudgetThresholdRulesToHclTerraform(struct?: BillingBudgetThresholdRules | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function billingBudgetThresholdRulesToHclTerraform(struct?: BillingBudgetThresholdRules | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     spend_basis: {
-      value: cdktf.stringToHclTerraform(struct!.spendBasis),
+      value: cdktn.stringToHclTerraform(struct!.spendBasis),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     threshold_percent: {
-      value: cdktf.numberToHclTerraform(struct!.thresholdPercent),
+      value: cdktn.numberToHclTerraform(struct!.thresholdPercent),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
@@ -1457,9 +1457,9 @@ export function billingBudgetThresholdRulesToHclTerraform(struct?: BillingBudget
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class BillingBudgetThresholdRulesOutputReference extends cdktf.ComplexObject {
+export class BillingBudgetThresholdRulesOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -1467,11 +1467,11 @@ export class BillingBudgetThresholdRulesOutputReference extends cdktf.ComplexObj
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): BillingBudgetThresholdRules | cdktf.IResolvable | undefined {
+  public get internalValue(): BillingBudgetThresholdRules | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -1488,14 +1488,14 @@ export class BillingBudgetThresholdRulesOutputReference extends cdktf.ComplexObj
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: BillingBudgetThresholdRules | cdktf.IResolvable | undefined) {
+  public set internalValue(value: BillingBudgetThresholdRules | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._spendBasis = undefined;
       this._thresholdPercent = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -1537,15 +1537,15 @@ export class BillingBudgetThresholdRulesOutputReference extends cdktf.ComplexObj
   }
 }
 
-export class BillingBudgetThresholdRulesList extends cdktf.ComplexList {
-  public internalValue? : BillingBudgetThresholdRules[] | cdktf.IResolvable
+export class BillingBudgetThresholdRulesList extends cdktn.ComplexList {
+  public internalValue? : BillingBudgetThresholdRules[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -1571,39 +1571,39 @@ export interface BillingBudgetTimeouts {
   readonly update?: string;
 }
 
-export function billingBudgetTimeoutsToTerraform(struct?: BillingBudgetTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function billingBudgetTimeoutsToTerraform(struct?: BillingBudgetTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    create: cdktf.stringToTerraform(struct!.create),
-    delete: cdktf.stringToTerraform(struct!.delete),
-    update: cdktf.stringToTerraform(struct!.update),
+    create: cdktn.stringToTerraform(struct!.create),
+    delete: cdktn.stringToTerraform(struct!.delete),
+    update: cdktn.stringToTerraform(struct!.update),
   }
 }
 
 
-export function billingBudgetTimeoutsToHclTerraform(struct?: BillingBudgetTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function billingBudgetTimeoutsToHclTerraform(struct?: BillingBudgetTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     create: {
-      value: cdktf.stringToHclTerraform(struct!.create),
+      value: cdktn.stringToHclTerraform(struct!.create),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     delete: {
-      value: cdktf.stringToHclTerraform(struct!.delete),
+      value: cdktn.stringToHclTerraform(struct!.delete),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     update: {
-      value: cdktf.stringToHclTerraform(struct!.update),
+      value: cdktn.stringToHclTerraform(struct!.update),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -1614,19 +1614,19 @@ export function billingBudgetTimeoutsToHclTerraform(struct?: BillingBudgetTimeou
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class BillingBudgetTimeoutsOutputReference extends cdktf.ComplexObject {
+export class BillingBudgetTimeoutsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): BillingBudgetTimeouts | cdktf.IResolvable | undefined {
+  public get internalValue(): BillingBudgetTimeouts | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -1647,7 +1647,7 @@ export class BillingBudgetTimeoutsOutputReference extends cdktf.ComplexObject {
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: BillingBudgetTimeouts | cdktf.IResolvable | undefined) {
+  public set internalValue(value: BillingBudgetTimeouts | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -1655,7 +1655,7 @@ export class BillingBudgetTimeoutsOutputReference extends cdktf.ComplexObject {
       this._delete = undefined;
       this._update = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -1720,7 +1720,7 @@ export class BillingBudgetTimeoutsOutputReference extends cdktf.ComplexObject {
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/billing_budget google_billing_budget}
 */
-export class BillingBudget extends cdktf.TerraformResource {
+export class BillingBudget extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -1731,14 +1731,14 @@ export class BillingBudget extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a BillingBudget resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a BillingBudget resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the BillingBudget to import
   * @param importFromId The id of the existing BillingBudget that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/billing_budget#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the BillingBudget to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "google_billing_budget", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "google_billing_budget", importId: importFromId, provider });
       }
 
   // ===========
@@ -1899,7 +1899,7 @@ export class BillingBudget extends cdktf.TerraformResource {
   public get thresholdRules() {
     return this._thresholdRules;
   }
-  public putThresholdRules(value: BillingBudgetThresholdRules[] | cdktf.IResolvable) {
+  public putThresholdRules(value: BillingBudgetThresholdRules[] | cdktn.IResolvable) {
     this._thresholdRules.internalValue = value;
   }
   public resetThresholdRules() {
@@ -1932,14 +1932,14 @@ export class BillingBudget extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      billing_account: cdktf.stringToTerraform(this._billingAccount),
-      display_name: cdktf.stringToTerraform(this._displayName),
-      id: cdktf.stringToTerraform(this._id),
-      ownership_scope: cdktf.stringToTerraform(this._ownershipScope),
+      billing_account: cdktn.stringToTerraform(this._billingAccount),
+      display_name: cdktn.stringToTerraform(this._displayName),
+      id: cdktn.stringToTerraform(this._id),
+      ownership_scope: cdktn.stringToTerraform(this._ownershipScope),
       all_updates_rule: billingBudgetAllUpdatesRuleToTerraform(this._allUpdatesRule.internalValue),
       amount: billingBudgetAmountToTerraform(this._amount.internalValue),
       budget_filter: billingBudgetBudgetFilterToTerraform(this._budgetFilter.internalValue),
-      threshold_rules: cdktf.listMapper(billingBudgetThresholdRulesToTerraform, true)(this._thresholdRules.internalValue),
+      threshold_rules: cdktn.listMapper(billingBudgetThresholdRulesToTerraform, true)(this._thresholdRules.internalValue),
       timeouts: billingBudgetTimeoutsToTerraform(this._timeouts.internalValue),
     };
   }
@@ -1947,25 +1947,25 @@ export class BillingBudget extends cdktf.TerraformResource {
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       billing_account: {
-        value: cdktf.stringToHclTerraform(this._billingAccount),
+        value: cdktn.stringToHclTerraform(this._billingAccount),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       display_name: {
-        value: cdktf.stringToHclTerraform(this._displayName),
+        value: cdktn.stringToHclTerraform(this._displayName),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       ownership_scope: {
-        value: cdktf.stringToHclTerraform(this._ownershipScope),
+        value: cdktn.stringToHclTerraform(this._ownershipScope),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
@@ -1989,7 +1989,7 @@ export class BillingBudget extends cdktf.TerraformResource {
         storageClassType: "BillingBudgetBudgetFilterList",
       },
       threshold_rules: {
-        value: cdktf.listMapperHcl(billingBudgetThresholdRulesToHclTerraform, true)(this._thresholdRules.internalValue),
+        value: cdktn.listMapperHcl(billingBudgetThresholdRulesToHclTerraform, true)(this._thresholdRules.internalValue),
         isBlock: true,
         type: "list",
         storageClassType: "BillingBudgetThresholdRulesList",
