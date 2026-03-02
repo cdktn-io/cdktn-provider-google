@@ -51,6 +51,7 @@ Must be unique amongst siblings in the same scope
 | **Name** | **Description** |
 | --- | --- |
 | <code><a href="#@cdktn/provider-google.computeNetworkEndpointGroup.ComputeNetworkEndpointGroup.toString">toString</a></code> | Returns a string representation of this construct. |
+| <code><a href="#@cdktn/provider-google.computeNetworkEndpointGroup.ComputeNetworkEndpointGroup.with">with</a></code> | Applies one or more mixins to this construct. |
 | <code><a href="#@cdktn/provider-google.computeNetworkEndpointGroup.ComputeNetworkEndpointGroup.addOverride">addOverride</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeNetworkEndpointGroup.ComputeNetworkEndpointGroup.overrideLogicalId">overrideLogicalId</a></code> | Overrides the auto-generated logical ID with a specific ID. |
 | <code><a href="#@cdktn/provider-google.computeNetworkEndpointGroup.ComputeNetworkEndpointGroup.resetOverrideLogicalId">resetOverrideLogicalId</a></code> | Resets a previously passed logical Id to use the auto-generated logical id again. |
@@ -92,6 +93,27 @@ public toString(): string
 ```
 
 Returns a string representation of this construct.
+
+##### `with` <a name="with" id="@cdktn/provider-google.computeNetworkEndpointGroup.ComputeNetworkEndpointGroup.with"></a>
+
+```typescript
+public with(mixins: ...IMixin[]): IConstruct
+```
+
+Applies one or more mixins to this construct.
+
+Mixins are applied in order. The list of constructs is captured at the
+start of the call, so constructs added by a mixin will not be visited.
+Use multiple `with()` calls if subsequent mixins should apply to added
+constructs.
+
+###### `mixins`<sup>Required</sup> <a name="mixins" id="@cdktn/provider-google.computeNetworkEndpointGroup.ComputeNetworkEndpointGroup.with.parameter.mixins"></a>
+
+- *Type:* ...constructs.IMixin[]
+
+The mixins to apply.
+
+---
 
 ##### `addOverride` <a name="addOverride" id="@cdktn/provider-google.computeNetworkEndpointGroup.ComputeNetworkEndpointGroup.addOverride"></a>
 
