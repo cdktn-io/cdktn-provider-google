@@ -18,6 +18,7 @@
     "fetch": "projen fetch",
     "package": "projen package",
     "package-all": "projen package-all",
+    "package:dotnet": "projen package:dotnet",
     "package:go": "projen package:go",
     "package:js": "projen package:js",
     "package:python": "projen package:python",
@@ -97,6 +98,10 @@
       "python": {
         "distName": "cdktn-provider-google",
         "module": "cdktn_provider_google"
+      },
+      "dotnet": {
+        "namespace": "Io.Cdktn.Providers.Google",
+        "packageId": "Io.Cdktn.Providers.Google"
       },
       "go": {
         "moduleName": "github.com/cdktn-io/cdktn-provider-google-go",
