@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.5
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataGoogleStorageProjectServiceAccount.DataGoogleStorageProjectServiceAccount.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/datagooglestorageprojectserviceaccount"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/datagooglestorageprojectserviceaccount"
 
 datagooglestorageprojectserviceaccount.NewDataGoogleStorageProjectServiceAccount(scope Construct, id *string, config DataGoogleStorageProjectServiceAccountConfig) DataGoogleStorageProjectServiceAccount
 ```
@@ -319,7 +319,7 @@ func ResetUserProject()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-google.dataGoogleStorageProjectServiceAccount.DataGoogleStorageProjectServiceAccount.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/datagooglestorageprojectserviceaccount"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/datagooglestorageprojectserviceaccount"
 
 datagooglestorageprojectserviceaccount.DataGoogleStorageProjectServiceAccount_IsConstruct(x interface{}) *bool
 ```
@@ -351,7 +351,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-google.dataGoogleStorageProjectServiceAccount.DataGoogleStorageProjectServiceAccount.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/datagooglestorageprojectserviceaccount"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/datagooglestorageprojectserviceaccount"
 
 datagooglestorageprojectserviceaccount.DataGoogleStorageProjectServiceAccount_IsTerraformElement(x interface{}) *bool
 ```
@@ -365,7 +365,7 @@ datagooglestorageprojectserviceaccount.DataGoogleStorageProjectServiceAccount_Is
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktn/provider-google.dataGoogleStorageProjectServiceAccount.DataGoogleStorageProjectServiceAccount.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/datagooglestorageprojectserviceaccount"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/datagooglestorageprojectserviceaccount"
 
 datagooglestorageprojectserviceaccount.DataGoogleStorageProjectServiceAccount_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -379,7 +379,7 @@ datagooglestorageprojectserviceaccount.DataGoogleStorageProjectServiceAccount_Is
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-google.dataGoogleStorageProjectServiceAccount.DataGoogleStorageProjectServiceAccount.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/datagooglestorageprojectserviceaccount"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/datagooglestorageprojectserviceaccount"
 
 datagooglestorageprojectserviceaccount.DataGoogleStorageProjectServiceAccount_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -674,7 +674,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.dataGoogleStorageProjectServiceAccount.DataGoogleStorageProjectServiceAccountConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/datagooglestorageprojectserviceaccount"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/datagooglestorageprojectserviceaccount"
 
 &datagooglestorageprojectserviceaccount.DataGoogleStorageProjectServiceAccountConfig {
 	Connection: interface{},

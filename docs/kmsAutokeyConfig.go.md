@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.5
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.kmsAutokeyConfig.KmsAutokeyConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/kmsautokeyconfig"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/kmsautokeyconfig"
 
 kmsautokeyconfig.NewKmsAutokeyConfig(scope Construct, id *string, config KmsAutokeyConfigConfig) KmsAutokeyConfig
 ```
@@ -434,7 +434,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-google.kmsAutokeyConfig.KmsAutokeyConfig.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/kmsautokeyconfig"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/kmsautokeyconfig"
 
 kmsautokeyconfig.KmsAutokeyConfig_IsConstruct(x interface{}) *bool
 ```
@@ -466,7 +466,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-google.kmsAutokeyConfig.KmsAutokeyConfig.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/kmsautokeyconfig"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/kmsautokeyconfig"
 
 kmsautokeyconfig.KmsAutokeyConfig_IsTerraformElement(x interface{}) *bool
 ```
@@ -480,7 +480,7 @@ kmsautokeyconfig.KmsAutokeyConfig_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-google.kmsAutokeyConfig.KmsAutokeyConfig.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/kmsautokeyconfig"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/kmsautokeyconfig"
 
 kmsautokeyconfig.KmsAutokeyConfig_IsTerraformResource(x interface{}) *bool
 ```
@@ -494,7 +494,7 @@ kmsautokeyconfig.KmsAutokeyConfig_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-google.kmsAutokeyConfig.KmsAutokeyConfig.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/kmsautokeyconfig"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/kmsautokeyconfig"
 
 kmsautokeyconfig.KmsAutokeyConfig_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -822,7 +822,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.kmsAutokeyConfig.KmsAutokeyConfigConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/kmsautokeyconfig"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/kmsautokeyconfig"
 
 &kmsautokeyconfig.KmsAutokeyConfigConfig {
 	Connection: interface{},
@@ -835,7 +835,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/kmsautokeyconfig
 	Folder: *string,
 	Id: *string,
 	KeyProject: *string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-google-go/google/v17.kmsAutokeyConfig.KmsAutokeyConfigTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-google-go/google/v18.kmsAutokeyConfig.KmsAutokeyConfigTimeouts,
 }
 ```
 
@@ -992,7 +992,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.kmsAutokeyConfig.KmsAutokeyConfigTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/kmsautokeyconfig"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/kmsautokeyconfig"
 
 &kmsautokeyconfig.KmsAutokeyConfigTimeouts {
 	Create: *string,
@@ -1054,7 +1054,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.kmsAutokeyConfig.KmsAutokeyConfigTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/kmsautokeyconfig"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/kmsautokeyconfig"
 
 kmsautokeyconfig.NewKmsAutokeyConfigTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) KmsAutokeyConfigTimeoutsOutputReference
 ```

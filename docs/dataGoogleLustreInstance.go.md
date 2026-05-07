@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.5
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataGoogleLustreInstance.DataGoogleLustreInstance.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/datagooglelustreinstance"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/datagooglelustreinstance"
 
 datagooglelustreinstance.NewDataGoogleLustreInstance(scope Construct, id *string, config DataGoogleLustreInstanceConfig) DataGoogleLustreInstance
 ```
@@ -319,7 +319,7 @@ func ResetZone()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-google.dataGoogleLustreInstance.DataGoogleLustreInstance.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/datagooglelustreinstance"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/datagooglelustreinstance"
 
 datagooglelustreinstance.DataGoogleLustreInstance_IsConstruct(x interface{}) *bool
 ```
@@ -351,7 +351,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-google.dataGoogleLustreInstance.DataGoogleLustreInstance.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/datagooglelustreinstance"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/datagooglelustreinstance"
 
 datagooglelustreinstance.DataGoogleLustreInstance_IsTerraformElement(x interface{}) *bool
 ```
@@ -365,7 +365,7 @@ datagooglelustreinstance.DataGoogleLustreInstance_IsTerraformElement(x interface
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktn/provider-google.dataGoogleLustreInstance.DataGoogleLustreInstance.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/datagooglelustreinstance"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/datagooglelustreinstance"
 
 datagooglelustreinstance.DataGoogleLustreInstance_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -379,7 +379,7 @@ datagooglelustreinstance.DataGoogleLustreInstance_IsTerraformDataSource(x interf
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-google.dataGoogleLustreInstance.DataGoogleLustreInstance.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/datagooglelustreinstance"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/datagooglelustreinstance"
 
 datagooglelustreinstance.DataGoogleLustreInstance_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -839,7 +839,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.dataGoogleLustreInstance.DataGoogleLustreInstanceConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/datagooglelustreinstance"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/datagooglelustreinstance"
 
 &datagooglelustreinstance.DataGoogleLustreInstanceConfig {
 	Connection: interface{},

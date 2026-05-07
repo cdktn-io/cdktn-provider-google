@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.5
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataGoogleMonitoringIstioCanonicalService.DataGoogleMonitoringIstioCanonicalService.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/datagooglemonitoringistiocanonicalservice"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/datagooglemonitoringistiocanonicalservice"
 
 datagooglemonitoringistiocanonicalservice.NewDataGoogleMonitoringIstioCanonicalService(scope Construct, id *string, config DataGoogleMonitoringIstioCanonicalServiceConfig) DataGoogleMonitoringIstioCanonicalService
 ```
@@ -312,7 +312,7 @@ func ResetProject()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-google.dataGoogleMonitoringIstioCanonicalService.DataGoogleMonitoringIstioCanonicalService.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/datagooglemonitoringistiocanonicalservice"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/datagooglemonitoringistiocanonicalservice"
 
 datagooglemonitoringistiocanonicalservice.DataGoogleMonitoringIstioCanonicalService_IsConstruct(x interface{}) *bool
 ```
@@ -344,7 +344,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-google.dataGoogleMonitoringIstioCanonicalService.DataGoogleMonitoringIstioCanonicalService.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/datagooglemonitoringistiocanonicalservice"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/datagooglemonitoringistiocanonicalservice"
 
 datagooglemonitoringistiocanonicalservice.DataGoogleMonitoringIstioCanonicalService_IsTerraformElement(x interface{}) *bool
 ```
@@ -358,7 +358,7 @@ datagooglemonitoringistiocanonicalservice.DataGoogleMonitoringIstioCanonicalServ
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktn/provider-google.dataGoogleMonitoringIstioCanonicalService.DataGoogleMonitoringIstioCanonicalService.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/datagooglemonitoringistiocanonicalservice"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/datagooglemonitoringistiocanonicalservice"
 
 datagooglemonitoringistiocanonicalservice.DataGoogleMonitoringIstioCanonicalService_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -372,7 +372,7 @@ datagooglemonitoringistiocanonicalservice.DataGoogleMonitoringIstioCanonicalServ
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-google.dataGoogleMonitoringIstioCanonicalService.DataGoogleMonitoringIstioCanonicalService.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/datagooglemonitoringistiocanonicalservice"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/datagooglemonitoringistiocanonicalservice"
 
 datagooglemonitoringistiocanonicalservice.DataGoogleMonitoringIstioCanonicalService_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -744,7 +744,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.dataGoogleMonitoringIstioCanonicalService.DataGoogleMonitoringIstioCanonicalServiceConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/datagooglemonitoringistiocanonicalservice"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/datagooglemonitoringistiocanonicalservice"
 
 &datagooglemonitoringistiocanonicalservice.DataGoogleMonitoringIstioCanonicalServiceConfig {
 	Connection: interface{},
@@ -929,7 +929,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.dataGoogleMonitoringIstioCanonicalService.DataGoogleMonitoringIstioCanonicalServiceTelemetry.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/datagooglemonitoringistiocanonicalservice"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/datagooglemonitoringistiocanonicalservice"
 
 &datagooglemonitoringistiocanonicalservice.DataGoogleMonitoringIstioCanonicalServiceTelemetry {
 
@@ -944,7 +944,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/datagooglemonito
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataGoogleMonitoringIstioCanonicalService.DataGoogleMonitoringIstioCanonicalServiceTelemetryList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/datagooglemonitoringistiocanonicalservice"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/datagooglemonitoringistiocanonicalservice"
 
 datagooglemonitoringistiocanonicalservice.NewDataGoogleMonitoringIstioCanonicalServiceTelemetryList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataGoogleMonitoringIstioCanonicalServiceTelemetryList
 ```
@@ -1093,7 +1093,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataGoogleMonitoringIstioCanonicalService.DataGoogleMonitoringIstioCanonicalServiceTelemetryOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/datagooglemonitoringistiocanonicalservice"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/datagooglemonitoringistiocanonicalservice"
 
 datagooglemonitoringistiocanonicalservice.NewDataGoogleMonitoringIstioCanonicalServiceTelemetryOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataGoogleMonitoringIstioCanonicalServiceTelemetryOutputReference
 ```

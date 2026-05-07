@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.5
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.vmwareengineCluster.VmwareengineCluster.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/vmwareenginecluster"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/vmwareenginecluster"
 
 vmwareenginecluster.NewVmwareengineCluster(scope Construct, id *string, config VmwareengineClusterConfig) VmwareengineCluster
 ```
@@ -467,7 +467,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-google.vmwareengineCluster.VmwareengineCluster.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/vmwareenginecluster"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/vmwareenginecluster"
 
 vmwareenginecluster.VmwareengineCluster_IsConstruct(x interface{}) *bool
 ```
@@ -499,7 +499,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-google.vmwareengineCluster.VmwareengineCluster.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/vmwareenginecluster"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/vmwareenginecluster"
 
 vmwareenginecluster.VmwareengineCluster_IsTerraformElement(x interface{}) *bool
 ```
@@ -513,7 +513,7 @@ vmwareenginecluster.VmwareengineCluster_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-google.vmwareengineCluster.VmwareengineCluster.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/vmwareenginecluster"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/vmwareenginecluster"
 
 vmwareenginecluster.VmwareengineCluster_IsTerraformResource(x interface{}) *bool
 ```
@@ -527,7 +527,7 @@ vmwareenginecluster.VmwareengineCluster_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-google.vmwareengineCluster.VmwareengineCluster.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/vmwareenginecluster"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/vmwareenginecluster"
 
 vmwareenginecluster.VmwareengineCluster_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -921,7 +921,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.vmwareengineCluster.VmwareengineClusterAutoscalingSettings.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/vmwareenginecluster"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/vmwareenginecluster"
 
 &vmwareenginecluster.VmwareengineClusterAutoscalingSettings {
 	AutoscalingPolicies: interface{},
@@ -1008,15 +1008,15 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.vmwareengineCluster.VmwareengineClusterAutoscalingSettingsAutoscalingPolicies.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/vmwareenginecluster"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/vmwareenginecluster"
 
 &vmwareenginecluster.VmwareengineClusterAutoscalingSettingsAutoscalingPolicies {
 	AutoscalePolicyId: *string,
 	NodeTypeId: *string,
 	ScaleOutSize: *f64,
-	ConsumedMemoryThresholds: github.com/cdktn-io/cdktn-provider-google-go/google/v17.vmwareengineCluster.VmwareengineClusterAutoscalingSettingsAutoscalingPoliciesConsumedMemoryThresholds,
-	CpuThresholds: github.com/cdktn-io/cdktn-provider-google-go/google/v17.vmwareengineCluster.VmwareengineClusterAutoscalingSettingsAutoscalingPoliciesCpuThresholds,
-	StorageThresholds: github.com/cdktn-io/cdktn-provider-google-go/google/v17.vmwareengineCluster.VmwareengineClusterAutoscalingSettingsAutoscalingPoliciesStorageThresholds,
+	ConsumedMemoryThresholds: github.com/cdktn-io/cdktn-provider-google-go/google/v18.vmwareengineCluster.VmwareengineClusterAutoscalingSettingsAutoscalingPoliciesConsumedMemoryThresholds,
+	CpuThresholds: github.com/cdktn-io/cdktn-provider-google-go/google/v18.vmwareengineCluster.VmwareengineClusterAutoscalingSettingsAutoscalingPoliciesCpuThresholds,
+	StorageThresholds: github.com/cdktn-io/cdktn-provider-google-go/google/v18.vmwareengineCluster.VmwareengineClusterAutoscalingSettingsAutoscalingPoliciesStorageThresholds,
 }
 ```
 
@@ -1120,7 +1120,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.vmwareengineCluster.VmwareengineClusterAutoscalingSettingsAutoscalingPoliciesConsumedMemoryThresholds.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/vmwareenginecluster"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/vmwareenginecluster"
 
 &vmwareenginecluster.VmwareengineClusterAutoscalingSettingsAutoscalingPoliciesConsumedMemoryThresholds {
 	ScaleIn: *f64,
@@ -1170,7 +1170,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.vmwareengineCluster.VmwareengineClusterAutoscalingSettingsAutoscalingPoliciesCpuThresholds.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/vmwareenginecluster"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/vmwareenginecluster"
 
 &vmwareenginecluster.VmwareengineClusterAutoscalingSettingsAutoscalingPoliciesCpuThresholds {
 	ScaleIn: *f64,
@@ -1220,7 +1220,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.vmwareengineCluster.VmwareengineClusterAutoscalingSettingsAutoscalingPoliciesStorageThresholds.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/vmwareenginecluster"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/vmwareenginecluster"
 
 &vmwareenginecluster.VmwareengineClusterAutoscalingSettingsAutoscalingPoliciesStorageThresholds {
 	ScaleIn: *f64,
@@ -1270,7 +1270,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.vmwareengineCluster.VmwareengineClusterConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/vmwareenginecluster"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/vmwareenginecluster"
 
 &vmwareenginecluster.VmwareengineClusterConfig {
 	Connection: interface{},
@@ -1282,10 +1282,10 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/vmwareengineclus
 	Provisioners: *[]interface{},
 	Name: *string,
 	Parent: *string,
-	AutoscalingSettings: github.com/cdktn-io/cdktn-provider-google-go/google/v17.vmwareengineCluster.VmwareengineClusterAutoscalingSettings,
+	AutoscalingSettings: github.com/cdktn-io/cdktn-provider-google-go/google/v18.vmwareengineCluster.VmwareengineClusterAutoscalingSettings,
 	Id: *string,
 	NodeTypeConfigs: interface{},
-	Timeouts: github.com/cdktn-io/cdktn-provider-google-go/google/v17.vmwareengineCluster.VmwareengineClusterTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-google-go/google/v18.vmwareengineCluster.VmwareengineClusterTimeouts,
 }
 ```
 
@@ -1472,7 +1472,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.vmwareengineCluster.VmwareengineClusterNodeTypeConfigs.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/vmwareenginecluster"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/vmwareenginecluster"
 
 &vmwareenginecluster.VmwareengineClusterNodeTypeConfigs {
 	NodeCount: *f64,
@@ -1540,7 +1540,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.vmwareengineCluster.VmwareengineClusterTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/vmwareenginecluster"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/vmwareenginecluster"
 
 &vmwareenginecluster.VmwareengineClusterTimeouts {
 	Create: *string,
@@ -1602,7 +1602,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.vmwareengineCluster.VmwareengineClusterAutoscalingSettingsAutoscalingPoliciesConsumedMemoryThresholdsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/vmwareenginecluster"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/vmwareenginecluster"
 
 vmwareenginecluster.NewVmwareengineClusterAutoscalingSettingsAutoscalingPoliciesConsumedMemoryThresholdsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) VmwareengineClusterAutoscalingSettingsAutoscalingPoliciesConsumedMemoryThresholdsOutputReference
 ```
@@ -1895,7 +1895,7 @@ func InternalValue() VmwareengineClusterAutoscalingSettingsAutoscalingPoliciesCo
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.vmwareengineCluster.VmwareengineClusterAutoscalingSettingsAutoscalingPoliciesCpuThresholdsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/vmwareenginecluster"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/vmwareenginecluster"
 
 vmwareenginecluster.NewVmwareengineClusterAutoscalingSettingsAutoscalingPoliciesCpuThresholdsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) VmwareengineClusterAutoscalingSettingsAutoscalingPoliciesCpuThresholdsOutputReference
 ```
@@ -2188,7 +2188,7 @@ func InternalValue() VmwareengineClusterAutoscalingSettingsAutoscalingPoliciesCp
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.vmwareengineCluster.VmwareengineClusterAutoscalingSettingsAutoscalingPoliciesList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/vmwareenginecluster"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/vmwareenginecluster"
 
 vmwareenginecluster.NewVmwareengineClusterAutoscalingSettingsAutoscalingPoliciesList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) VmwareengineClusterAutoscalingSettingsAutoscalingPoliciesList
 ```
@@ -2348,7 +2348,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.vmwareengineCluster.VmwareengineClusterAutoscalingSettingsAutoscalingPoliciesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/vmwareenginecluster"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/vmwareenginecluster"
 
 vmwareenginecluster.NewVmwareengineClusterAutoscalingSettingsAutoscalingPoliciesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) VmwareengineClusterAutoscalingSettingsAutoscalingPoliciesOutputReference
 ```
@@ -2807,7 +2807,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.vmwareengineCluster.VmwareengineClusterAutoscalingSettingsAutoscalingPoliciesStorageThresholdsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/vmwareenginecluster"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/vmwareenginecluster"
 
 vmwareenginecluster.NewVmwareengineClusterAutoscalingSettingsAutoscalingPoliciesStorageThresholdsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) VmwareengineClusterAutoscalingSettingsAutoscalingPoliciesStorageThresholdsOutputReference
 ```
@@ -3100,7 +3100,7 @@ func InternalValue() VmwareengineClusterAutoscalingSettingsAutoscalingPoliciesSt
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.vmwareengineCluster.VmwareengineClusterAutoscalingSettingsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/vmwareenginecluster"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/vmwareenginecluster"
 
 vmwareenginecluster.NewVmwareengineClusterAutoscalingSettingsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) VmwareengineClusterAutoscalingSettingsOutputReference
 ```
@@ -3471,7 +3471,7 @@ func InternalValue() VmwareengineClusterAutoscalingSettings
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.vmwareengineCluster.VmwareengineClusterNodeTypeConfigsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/vmwareenginecluster"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/vmwareenginecluster"
 
 vmwareenginecluster.NewVmwareengineClusterNodeTypeConfigsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) VmwareengineClusterNodeTypeConfigsList
 ```
@@ -3631,7 +3631,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.vmwareengineCluster.VmwareengineClusterNodeTypeConfigsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/vmwareenginecluster"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/vmwareenginecluster"
 
 vmwareenginecluster.NewVmwareengineClusterNodeTypeConfigsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) VmwareengineClusterNodeTypeConfigsOutputReference
 ```
@@ -3971,7 +3971,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.vmwareengineCluster.VmwareengineClusterTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/vmwareenginecluster"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/vmwareenginecluster"
 
 vmwareenginecluster.NewVmwareengineClusterTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) VmwareengineClusterTimeoutsOutputReference
 ```

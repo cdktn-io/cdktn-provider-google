@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.5
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.computeRouterRoutePolicy.ComputeRouterRoutePolicy.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/computerouterroutepolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/computerouterroutepolicy"
 
 computerouterroutepolicy.NewComputeRouterRoutePolicy(scope Construct, id *string, config ComputeRouterRoutePolicyConfig) ComputeRouterRoutePolicy
 ```
@@ -461,7 +461,7 @@ func ResetType()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-google.computeRouterRoutePolicy.ComputeRouterRoutePolicy.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/computerouterroutepolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/computerouterroutepolicy"
 
 computerouterroutepolicy.ComputeRouterRoutePolicy_IsConstruct(x interface{}) *bool
 ```
@@ -493,7 +493,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-google.computeRouterRoutePolicy.ComputeRouterRoutePolicy.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/computerouterroutepolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/computerouterroutepolicy"
 
 computerouterroutepolicy.ComputeRouterRoutePolicy_IsTerraformElement(x interface{}) *bool
 ```
@@ -507,7 +507,7 @@ computerouterroutepolicy.ComputeRouterRoutePolicy_IsTerraformElement(x interface
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-google.computeRouterRoutePolicy.ComputeRouterRoutePolicy.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/computerouterroutepolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/computerouterroutepolicy"
 
 computerouterroutepolicy.ComputeRouterRoutePolicy_IsTerraformResource(x interface{}) *bool
 ```
@@ -521,7 +521,7 @@ computerouterroutepolicy.ComputeRouterRoutePolicy_IsTerraformResource(x interfac
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-google.computeRouterRoutePolicy.ComputeRouterRoutePolicy.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/computerouterroutepolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/computerouterroutepolicy"
 
 computerouterroutepolicy.ComputeRouterRoutePolicy_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -937,7 +937,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.computeRouterRoutePolicy.ComputeRouterRoutePolicyConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/computerouterroutepolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/computerouterroutepolicy"
 
 &computerouterroutepolicy.ComputeRouterRoutePolicyConfig {
 	Connection: interface{},
@@ -953,7 +953,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/computerouterrou
 	Id: *string,
 	Project: *string,
 	Region: *string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-google-go/google/v17.computeRouterRoutePolicy.ComputeRouterRoutePolicyTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-google-go/google/v18.computeRouterRoutePolicy.ComputeRouterRoutePolicyTimeouts,
 	Type: *string,
 }
 ```
@@ -1168,10 +1168,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.computeRouterRoutePolicy.ComputeRouterRoutePolicyTerms.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/computerouterroutepolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/computerouterroutepolicy"
 
 &computerouterroutepolicy.ComputeRouterRoutePolicyTerms {
-	Match: github.com/cdktn-io/cdktn-provider-google-go/google/v17.computeRouterRoutePolicy.ComputeRouterRoutePolicyTermsMatch,
+	Match: github.com/cdktn-io/cdktn-provider-google-go/google/v18.computeRouterRoutePolicy.ComputeRouterRoutePolicyTermsMatch,
 	Priority: *f64,
 	Actions: interface{},
 }
@@ -1234,7 +1234,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.computeRouterRoutePolicy.ComputeRouterRoutePolicyTermsActions.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/computerouterroutepolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/computerouterroutepolicy"
 
 &computerouterroutepolicy.ComputeRouterRoutePolicyTermsActions {
 	Expression: *string,
@@ -1316,7 +1316,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.computeRouterRoutePolicy.ComputeRouterRoutePolicyTermsMatch.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/computerouterroutepolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/computerouterroutepolicy"
 
 &computerouterroutepolicy.ComputeRouterRoutePolicyTermsMatch {
 	Expression: *string,
@@ -1398,7 +1398,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.computeRouterRoutePolicy.ComputeRouterRoutePolicyTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/computerouterroutepolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/computerouterroutepolicy"
 
 &computerouterroutepolicy.ComputeRouterRoutePolicyTimeouts {
 	Create: *string,
@@ -1460,7 +1460,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.computeRouterRoutePolicy.ComputeRouterRoutePolicyTermsActionsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/computerouterroutepolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/computerouterroutepolicy"
 
 computerouterroutepolicy.NewComputeRouterRoutePolicyTermsActionsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ComputeRouterRoutePolicyTermsActionsList
 ```
@@ -1620,7 +1620,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.computeRouterRoutePolicy.ComputeRouterRoutePolicyTermsActionsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/computerouterroutepolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/computerouterroutepolicy"
 
 computerouterroutepolicy.NewComputeRouterRoutePolicyTermsActionsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ComputeRouterRoutePolicyTermsActionsOutputReference
 ```
@@ -1996,7 +1996,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.computeRouterRoutePolicy.ComputeRouterRoutePolicyTermsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/computerouterroutepolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/computerouterroutepolicy"
 
 computerouterroutepolicy.NewComputeRouterRoutePolicyTermsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ComputeRouterRoutePolicyTermsList
 ```
@@ -2156,7 +2156,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.computeRouterRoutePolicy.ComputeRouterRoutePolicyTermsMatchOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/computerouterroutepolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/computerouterroutepolicy"
 
 computerouterroutepolicy.NewComputeRouterRoutePolicyTermsMatchOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ComputeRouterRoutePolicyTermsMatchOutputReference
 ```
@@ -2514,7 +2514,7 @@ func InternalValue() ComputeRouterRoutePolicyTermsMatch
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.computeRouterRoutePolicy.ComputeRouterRoutePolicyTermsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/computerouterroutepolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/computerouterroutepolicy"
 
 computerouterroutepolicy.NewComputeRouterRoutePolicyTermsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ComputeRouterRoutePolicyTermsOutputReference
 ```
@@ -2880,7 +2880,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.computeRouterRoutePolicy.ComputeRouterRoutePolicyTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/computerouterroutepolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/computerouterroutepolicy"
 
 computerouterroutepolicy.NewComputeRouterRoutePolicyTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ComputeRouterRoutePolicyTimeoutsOutputReference
 ```

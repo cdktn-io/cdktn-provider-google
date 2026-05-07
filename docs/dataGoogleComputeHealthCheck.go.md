@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.5
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataGoogleComputeHealthCheck.DataGoogleComputeHealthCheck.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/datagooglecomputehealthcheck"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/datagooglecomputehealthcheck"
 
 datagooglecomputehealthcheck.NewDataGoogleComputeHealthCheck(scope Construct, id *string, config DataGoogleComputeHealthCheckConfig) DataGoogleComputeHealthCheck
 ```
@@ -312,7 +312,7 @@ func ResetProject()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-google.dataGoogleComputeHealthCheck.DataGoogleComputeHealthCheck.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/datagooglecomputehealthcheck"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/datagooglecomputehealthcheck"
 
 datagooglecomputehealthcheck.DataGoogleComputeHealthCheck_IsConstruct(x interface{}) *bool
 ```
@@ -344,7 +344,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-google.dataGoogleComputeHealthCheck.DataGoogleComputeHealthCheck.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/datagooglecomputehealthcheck"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/datagooglecomputehealthcheck"
 
 datagooglecomputehealthcheck.DataGoogleComputeHealthCheck_IsTerraformElement(x interface{}) *bool
 ```
@@ -358,7 +358,7 @@ datagooglecomputehealthcheck.DataGoogleComputeHealthCheck_IsTerraformElement(x i
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktn/provider-google.dataGoogleComputeHealthCheck.DataGoogleComputeHealthCheck.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/datagooglecomputehealthcheck"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/datagooglecomputehealthcheck"
 
 datagooglecomputehealthcheck.DataGoogleComputeHealthCheck_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -372,7 +372,7 @@ datagooglecomputehealthcheck.DataGoogleComputeHealthCheck_IsTerraformDataSource(
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-google.dataGoogleComputeHealthCheck.DataGoogleComputeHealthCheck.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/datagooglecomputehealthcheck"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/datagooglecomputehealthcheck"
 
 datagooglecomputehealthcheck.DataGoogleComputeHealthCheck_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -821,7 +821,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.dataGoogleComputeHealthCheck.DataGoogleComputeHealthCheckConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/datagooglecomputehealthcheck"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/datagooglecomputehealthcheck"
 
 &datagooglecomputehealthcheck.DataGoogleComputeHealthCheckConfig {
 	Connection: interface{},
@@ -978,7 +978,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.dataGoogleComputeHealthCheck.DataGoogleComputeHealthCheckGrpcHealthCheck.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/datagooglecomputehealthcheck"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/datagooglecomputehealthcheck"
 
 &datagooglecomputehealthcheck.DataGoogleComputeHealthCheckGrpcHealthCheck {
 
@@ -991,7 +991,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/datagooglecomput
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.dataGoogleComputeHealthCheck.DataGoogleComputeHealthCheckHttp2HealthCheck.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/datagooglecomputehealthcheck"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/datagooglecomputehealthcheck"
 
 &datagooglecomputehealthcheck.DataGoogleComputeHealthCheckHttp2HealthCheck {
 
@@ -1004,7 +1004,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/datagooglecomput
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.dataGoogleComputeHealthCheck.DataGoogleComputeHealthCheckHttpHealthCheck.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/datagooglecomputehealthcheck"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/datagooglecomputehealthcheck"
 
 &datagooglecomputehealthcheck.DataGoogleComputeHealthCheckHttpHealthCheck {
 
@@ -1017,7 +1017,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/datagooglecomput
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.dataGoogleComputeHealthCheck.DataGoogleComputeHealthCheckHttpsHealthCheck.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/datagooglecomputehealthcheck"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/datagooglecomputehealthcheck"
 
 &datagooglecomputehealthcheck.DataGoogleComputeHealthCheckHttpsHealthCheck {
 
@@ -1030,7 +1030,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/datagooglecomput
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.dataGoogleComputeHealthCheck.DataGoogleComputeHealthCheckLogConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/datagooglecomputehealthcheck"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/datagooglecomputehealthcheck"
 
 &datagooglecomputehealthcheck.DataGoogleComputeHealthCheckLogConfig {
 
@@ -1043,7 +1043,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/datagooglecomput
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.dataGoogleComputeHealthCheck.DataGoogleComputeHealthCheckSslHealthCheck.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/datagooglecomputehealthcheck"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/datagooglecomputehealthcheck"
 
 &datagooglecomputehealthcheck.DataGoogleComputeHealthCheckSslHealthCheck {
 
@@ -1056,7 +1056,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/datagooglecomput
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.dataGoogleComputeHealthCheck.DataGoogleComputeHealthCheckTcpHealthCheck.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/datagooglecomputehealthcheck"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/datagooglecomputehealthcheck"
 
 &datagooglecomputehealthcheck.DataGoogleComputeHealthCheckTcpHealthCheck {
 
@@ -1071,7 +1071,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/datagooglecomput
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataGoogleComputeHealthCheck.DataGoogleComputeHealthCheckGrpcHealthCheckList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/datagooglecomputehealthcheck"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/datagooglecomputehealthcheck"
 
 datagooglecomputehealthcheck.NewDataGoogleComputeHealthCheckGrpcHealthCheckList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataGoogleComputeHealthCheckGrpcHealthCheckList
 ```
@@ -1220,7 +1220,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataGoogleComputeHealthCheck.DataGoogleComputeHealthCheckGrpcHealthCheckOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/datagooglecomputehealthcheck"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/datagooglecomputehealthcheck"
 
 datagooglecomputehealthcheck.NewDataGoogleComputeHealthCheckGrpcHealthCheckOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataGoogleComputeHealthCheckGrpcHealthCheckOutputReference
 ```
@@ -1531,7 +1531,7 @@ func InternalValue() DataGoogleComputeHealthCheckGrpcHealthCheck
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataGoogleComputeHealthCheck.DataGoogleComputeHealthCheckHttp2HealthCheckList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/datagooglecomputehealthcheck"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/datagooglecomputehealthcheck"
 
 datagooglecomputehealthcheck.NewDataGoogleComputeHealthCheckHttp2HealthCheckList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataGoogleComputeHealthCheckHttp2HealthCheckList
 ```
@@ -1680,7 +1680,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataGoogleComputeHealthCheck.DataGoogleComputeHealthCheckHttp2HealthCheckOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/datagooglecomputehealthcheck"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/datagooglecomputehealthcheck"
 
 datagooglecomputehealthcheck.NewDataGoogleComputeHealthCheckHttp2HealthCheckOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataGoogleComputeHealthCheckHttp2HealthCheckOutputReference
 ```
@@ -2024,7 +2024,7 @@ func InternalValue() DataGoogleComputeHealthCheckHttp2HealthCheck
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataGoogleComputeHealthCheck.DataGoogleComputeHealthCheckHttpHealthCheckList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/datagooglecomputehealthcheck"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/datagooglecomputehealthcheck"
 
 datagooglecomputehealthcheck.NewDataGoogleComputeHealthCheckHttpHealthCheckList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataGoogleComputeHealthCheckHttpHealthCheckList
 ```
@@ -2173,7 +2173,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataGoogleComputeHealthCheck.DataGoogleComputeHealthCheckHttpHealthCheckOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/datagooglecomputehealthcheck"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/datagooglecomputehealthcheck"
 
 datagooglecomputehealthcheck.NewDataGoogleComputeHealthCheckHttpHealthCheckOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataGoogleComputeHealthCheckHttpHealthCheckOutputReference
 ```
@@ -2517,7 +2517,7 @@ func InternalValue() DataGoogleComputeHealthCheckHttpHealthCheck
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataGoogleComputeHealthCheck.DataGoogleComputeHealthCheckHttpsHealthCheckList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/datagooglecomputehealthcheck"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/datagooglecomputehealthcheck"
 
 datagooglecomputehealthcheck.NewDataGoogleComputeHealthCheckHttpsHealthCheckList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataGoogleComputeHealthCheckHttpsHealthCheckList
 ```
@@ -2666,7 +2666,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataGoogleComputeHealthCheck.DataGoogleComputeHealthCheckHttpsHealthCheckOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/datagooglecomputehealthcheck"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/datagooglecomputehealthcheck"
 
 datagooglecomputehealthcheck.NewDataGoogleComputeHealthCheckHttpsHealthCheckOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataGoogleComputeHealthCheckHttpsHealthCheckOutputReference
 ```
@@ -3010,7 +3010,7 @@ func InternalValue() DataGoogleComputeHealthCheckHttpsHealthCheck
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataGoogleComputeHealthCheck.DataGoogleComputeHealthCheckLogConfigList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/datagooglecomputehealthcheck"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/datagooglecomputehealthcheck"
 
 datagooglecomputehealthcheck.NewDataGoogleComputeHealthCheckLogConfigList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataGoogleComputeHealthCheckLogConfigList
 ```
@@ -3159,7 +3159,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataGoogleComputeHealthCheck.DataGoogleComputeHealthCheckLogConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/datagooglecomputehealthcheck"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/datagooglecomputehealthcheck"
 
 datagooglecomputehealthcheck.NewDataGoogleComputeHealthCheckLogConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataGoogleComputeHealthCheckLogConfigOutputReference
 ```
@@ -3437,7 +3437,7 @@ func InternalValue() DataGoogleComputeHealthCheckLogConfig
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataGoogleComputeHealthCheck.DataGoogleComputeHealthCheckSslHealthCheckList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/datagooglecomputehealthcheck"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/datagooglecomputehealthcheck"
 
 datagooglecomputehealthcheck.NewDataGoogleComputeHealthCheckSslHealthCheckList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataGoogleComputeHealthCheckSslHealthCheckList
 ```
@@ -3586,7 +3586,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataGoogleComputeHealthCheck.DataGoogleComputeHealthCheckSslHealthCheckOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/datagooglecomputehealthcheck"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/datagooglecomputehealthcheck"
 
 datagooglecomputehealthcheck.NewDataGoogleComputeHealthCheckSslHealthCheckOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataGoogleComputeHealthCheckSslHealthCheckOutputReference
 ```
@@ -3919,7 +3919,7 @@ func InternalValue() DataGoogleComputeHealthCheckSslHealthCheck
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataGoogleComputeHealthCheck.DataGoogleComputeHealthCheckTcpHealthCheckList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/datagooglecomputehealthcheck"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/datagooglecomputehealthcheck"
 
 datagooglecomputehealthcheck.NewDataGoogleComputeHealthCheckTcpHealthCheckList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataGoogleComputeHealthCheckTcpHealthCheckList
 ```
@@ -4068,7 +4068,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataGoogleComputeHealthCheck.DataGoogleComputeHealthCheckTcpHealthCheckOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/datagooglecomputehealthcheck"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/datagooglecomputehealthcheck"
 
 datagooglecomputehealthcheck.NewDataGoogleComputeHealthCheckTcpHealthCheckOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataGoogleComputeHealthCheckTcpHealthCheckOutputReference
 ```

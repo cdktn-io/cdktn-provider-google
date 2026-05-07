@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.5
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.beyondcorpApplication.BeyondcorpApplication.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/beyondcorpapplication"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/beyondcorpapplication"
 
 beyondcorpapplication.NewBeyondcorpApplication(scope Construct, id *string, config BeyondcorpApplicationConfig) BeyondcorpApplication
 ```
@@ -474,7 +474,7 @@ func ResetUpstreams()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-google.beyondcorpApplication.BeyondcorpApplication.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/beyondcorpapplication"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/beyondcorpapplication"
 
 beyondcorpapplication.BeyondcorpApplication_IsConstruct(x interface{}) *bool
 ```
@@ -506,7 +506,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-google.beyondcorpApplication.BeyondcorpApplication.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/beyondcorpapplication"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/beyondcorpapplication"
 
 beyondcorpapplication.BeyondcorpApplication_IsTerraformElement(x interface{}) *bool
 ```
@@ -520,7 +520,7 @@ beyondcorpapplication.BeyondcorpApplication_IsTerraformElement(x interface{}) *b
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-google.beyondcorpApplication.BeyondcorpApplication.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/beyondcorpapplication"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/beyondcorpapplication"
 
 beyondcorpapplication.BeyondcorpApplication_IsTerraformResource(x interface{}) *bool
 ```
@@ -534,7 +534,7 @@ beyondcorpapplication.BeyondcorpApplication_IsTerraformResource(x interface{}) *
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-google.beyondcorpApplication.BeyondcorpApplication.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/beyondcorpapplication"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/beyondcorpapplication"
 
 beyondcorpapplication.BeyondcorpApplication_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -972,7 +972,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.beyondcorpApplication.BeyondcorpApplicationConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/beyondcorpapplication"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/beyondcorpapplication"
 
 &beyondcorpapplication.BeyondcorpApplicationConfig {
 	Connection: interface{},
@@ -988,7 +988,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/beyondcorpapplic
 	DisplayName: *string,
 	Id: *string,
 	Project: *string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-google-go/google/v17.beyondcorpApplication.BeyondcorpApplicationTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-google-go/google/v18.beyondcorpApplication.BeyondcorpApplicationTimeouts,
 	Upstreams: interface{},
 }
 ```
@@ -1207,7 +1207,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.beyondcorpApplication.BeyondcorpApplicationEndpointMatchers.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/beyondcorpapplication"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/beyondcorpapplication"
 
 &beyondcorpapplication.BeyondcorpApplicationEndpointMatchers {
 	Hostname: *string,
@@ -1257,7 +1257,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.beyondcorpApplication.BeyondcorpApplicationTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/beyondcorpapplication"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/beyondcorpapplication"
 
 &beyondcorpapplication.BeyondcorpApplicationTimeouts {
 	Create: *string,
@@ -1317,11 +1317,11 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.beyondcorpApplication.BeyondcorpApplicationUpstreams.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/beyondcorpapplication"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/beyondcorpapplication"
 
 &beyondcorpapplication.BeyondcorpApplicationUpstreams {
-	EgressPolicy: github.com/cdktn-io/cdktn-provider-google-go/google/v17.beyondcorpApplication.BeyondcorpApplicationUpstreamsEgressPolicy,
-	Network: github.com/cdktn-io/cdktn-provider-google-go/google/v17.beyondcorpApplication.BeyondcorpApplicationUpstreamsNetwork,
+	EgressPolicy: github.com/cdktn-io/cdktn-provider-google-go/google/v18.beyondcorpApplication.BeyondcorpApplicationUpstreamsEgressPolicy,
+	Network: github.com/cdktn-io/cdktn-provider-google-go/google/v18.beyondcorpApplication.BeyondcorpApplicationUpstreamsNetwork,
 }
 ```
 
@@ -1367,7 +1367,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.beyondcorpApplication.BeyondcorpApplicationUpstreamsEgressPolicy.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/beyondcorpapplication"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/beyondcorpapplication"
 
 &beyondcorpapplication.BeyondcorpApplicationUpstreamsEgressPolicy {
 	Regions: *[]*string,
@@ -1401,7 +1401,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.beyondcorpApplication.BeyondcorpApplicationUpstreamsNetwork.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/beyondcorpapplication"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/beyondcorpapplication"
 
 &beyondcorpapplication.BeyondcorpApplicationUpstreamsNetwork {
 	Name: *string,
@@ -1437,7 +1437,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.beyondcorpApplication.BeyondcorpApplicationEndpointMatchersList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/beyondcorpapplication"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/beyondcorpapplication"
 
 beyondcorpapplication.NewBeyondcorpApplicationEndpointMatchersList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) BeyondcorpApplicationEndpointMatchersList
 ```
@@ -1597,7 +1597,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.beyondcorpApplication.BeyondcorpApplicationEndpointMatchersOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/beyondcorpapplication"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/beyondcorpapplication"
 
 beyondcorpapplication.NewBeyondcorpApplicationEndpointMatchersOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) BeyondcorpApplicationEndpointMatchersOutputReference
 ```
@@ -1915,7 +1915,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.beyondcorpApplication.BeyondcorpApplicationTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/beyondcorpapplication"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/beyondcorpapplication"
 
 beyondcorpapplication.NewBeyondcorpApplicationTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) BeyondcorpApplicationTimeoutsOutputReference
 ```
@@ -2251,7 +2251,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.beyondcorpApplication.BeyondcorpApplicationUpstreamsEgressPolicyOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/beyondcorpapplication"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/beyondcorpapplication"
 
 beyondcorpapplication.NewBeyondcorpApplicationUpstreamsEgressPolicyOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) BeyondcorpApplicationUpstreamsEgressPolicyOutputReference
 ```
@@ -2522,7 +2522,7 @@ func InternalValue() BeyondcorpApplicationUpstreamsEgressPolicy
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.beyondcorpApplication.BeyondcorpApplicationUpstreamsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/beyondcorpapplication"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/beyondcorpapplication"
 
 beyondcorpapplication.NewBeyondcorpApplicationUpstreamsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) BeyondcorpApplicationUpstreamsList
 ```
@@ -2682,7 +2682,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.beyondcorpApplication.BeyondcorpApplicationUpstreamsNetworkOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/beyondcorpapplication"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/beyondcorpapplication"
 
 beyondcorpapplication.NewBeyondcorpApplicationUpstreamsNetworkOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) BeyondcorpApplicationUpstreamsNetworkOutputReference
 ```
@@ -2953,7 +2953,7 @@ func InternalValue() BeyondcorpApplicationUpstreamsNetwork
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.beyondcorpApplication.BeyondcorpApplicationUpstreamsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/beyondcorpapplication"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/beyondcorpapplication"
 
 beyondcorpapplication.NewBeyondcorpApplicationUpstreamsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) BeyondcorpApplicationUpstreamsOutputReference
 ```

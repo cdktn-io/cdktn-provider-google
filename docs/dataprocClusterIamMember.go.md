@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.5
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataprocClusterIamMember.DataprocClusterIamMember.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/dataprocclusteriammember"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/dataprocclusteriammember"
 
 dataprocclusteriammember.NewDataprocClusterIamMember(scope Construct, id *string, config DataprocClusterIamMemberConfig) DataprocClusterIamMember
 ```
@@ -441,7 +441,7 @@ func ResetRegion()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-google.dataprocClusterIamMember.DataprocClusterIamMember.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/dataprocclusteriammember"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/dataprocclusteriammember"
 
 dataprocclusteriammember.DataprocClusterIamMember_IsConstruct(x interface{}) *bool
 ```
@@ -473,7 +473,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-google.dataprocClusterIamMember.DataprocClusterIamMember.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/dataprocclusteriammember"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/dataprocclusteriammember"
 
 dataprocclusteriammember.DataprocClusterIamMember_IsTerraformElement(x interface{}) *bool
 ```
@@ -487,7 +487,7 @@ dataprocclusteriammember.DataprocClusterIamMember_IsTerraformElement(x interface
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-google.dataprocClusterIamMember.DataprocClusterIamMember.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/dataprocclusteriammember"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/dataprocclusteriammember"
 
 dataprocclusteriammember.DataprocClusterIamMember_IsTerraformResource(x interface{}) *bool
 ```
@@ -501,7 +501,7 @@ dataprocclusteriammember.DataprocClusterIamMember_IsTerraformResource(x interfac
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-google.dataprocClusterIamMember.DataprocClusterIamMember.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/dataprocclusteriammember"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/dataprocclusteriammember"
 
 dataprocclusteriammember.DataprocClusterIamMember_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -895,7 +895,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.dataprocClusterIamMember.DataprocClusterIamMemberCondition.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/dataprocclusteriammember"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/dataprocclusteriammember"
 
 &dataprocclusteriammember.DataprocClusterIamMemberCondition {
 	Expression: *string,
@@ -955,7 +955,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.dataprocClusterIamMember.DataprocClusterIamMemberConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/dataprocclusteriammember"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/dataprocclusteriammember"
 
 &dataprocclusteriammember.DataprocClusterIamMemberConfig {
 	Connection: interface{},
@@ -968,7 +968,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/dataprocclusteri
 	Cluster: *string,
 	Member: *string,
 	Role: *string,
-	Condition: github.com/cdktn-io/cdktn-provider-google-go/google/v17.dataprocClusterIamMember.DataprocClusterIamMemberCondition,
+	Condition: github.com/cdktn-io/cdktn-provider-google-go/google/v18.dataprocClusterIamMember.DataprocClusterIamMemberCondition,
 	Id: *string,
 	Project: *string,
 	Region: *string,
@@ -1162,7 +1162,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataprocClusterIamMember.DataprocClusterIamMemberConditionOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/dataprocclusteriammember"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/dataprocclusteriammember"
 
 dataprocclusteriammember.NewDataprocClusterIamMemberConditionOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataprocClusterIamMemberConditionOutputReference
 ```

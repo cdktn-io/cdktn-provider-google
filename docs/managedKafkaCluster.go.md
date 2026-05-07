@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.5
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.managedKafkaCluster.ManagedKafkaCluster.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/managedkafkacluster"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/managedkafkacluster"
 
 managedkafkacluster.NewManagedKafkaCluster(scope Construct, id *string, config ManagedKafkaClusterConfig) ManagedKafkaCluster
 ```
@@ -507,7 +507,7 @@ func ResetTlsConfig()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-google.managedKafkaCluster.ManagedKafkaCluster.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/managedkafkacluster"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/managedkafkacluster"
 
 managedkafkacluster.ManagedKafkaCluster_IsConstruct(x interface{}) *bool
 ```
@@ -539,7 +539,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-google.managedKafkaCluster.ManagedKafkaCluster.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/managedkafkacluster"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/managedkafkacluster"
 
 managedkafkacluster.ManagedKafkaCluster_IsTerraformElement(x interface{}) *bool
 ```
@@ -553,7 +553,7 @@ managedkafkacluster.ManagedKafkaCluster_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-google.managedKafkaCluster.ManagedKafkaCluster.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/managedkafkacluster"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/managedkafkacluster"
 
 managedkafkacluster.ManagedKafkaCluster_IsTerraformResource(x interface{}) *bool
 ```
@@ -567,7 +567,7 @@ managedkafkacluster.ManagedKafkaCluster_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-google.managedKafkaCluster.ManagedKafkaCluster.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/managedkafkacluster"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/managedkafkacluster"
 
 managedkafkacluster.ManagedKafkaCluster_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -1082,7 +1082,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.managedKafkaCluster.ManagedKafkaClusterCapacityConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/managedkafkacluster"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/managedkafkacluster"
 
 &managedkafkacluster.ManagedKafkaClusterCapacityConfig {
 	MemoryBytes: *string,
@@ -1134,7 +1134,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.managedKafkaCluster.ManagedKafkaClusterConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/managedkafkacluster"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/managedkafkacluster"
 
 &managedkafkacluster.ManagedKafkaClusterConfig {
 	Connection: interface{},
@@ -1144,16 +1144,16 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/managedkafkaclus
 	Lifecycle: github.com/open-constructs/cdk-terrain-go/cdktn.TerraformResourceLifecycle,
 	Provider: github.com/open-constructs/cdk-terrain-go/cdktn.TerraformProvider,
 	Provisioners: *[]interface{},
-	CapacityConfig: github.com/cdktn-io/cdktn-provider-google-go/google/v17.managedKafkaCluster.ManagedKafkaClusterCapacityConfig,
+	CapacityConfig: github.com/cdktn-io/cdktn-provider-google-go/google/v18.managedKafkaCluster.ManagedKafkaClusterCapacityConfig,
 	ClusterId: *string,
-	GcpConfig: github.com/cdktn-io/cdktn-provider-google-go/google/v17.managedKafkaCluster.ManagedKafkaClusterGcpConfig,
+	GcpConfig: github.com/cdktn-io/cdktn-provider-google-go/google/v18.managedKafkaCluster.ManagedKafkaClusterGcpConfig,
 	Location: *string,
 	Id: *string,
 	Labels: *map[string]*string,
 	Project: *string,
-	RebalanceConfig: github.com/cdktn-io/cdktn-provider-google-go/google/v17.managedKafkaCluster.ManagedKafkaClusterRebalanceConfig,
-	Timeouts: github.com/cdktn-io/cdktn-provider-google-go/google/v17.managedKafkaCluster.ManagedKafkaClusterTimeouts,
-	TlsConfig: github.com/cdktn-io/cdktn-provider-google-go/google/v17.managedKafkaCluster.ManagedKafkaClusterTlsConfig,
+	RebalanceConfig: github.com/cdktn-io/cdktn-provider-google-go/google/v18.managedKafkaCluster.ManagedKafkaClusterRebalanceConfig,
+	Timeouts: github.com/cdktn-io/cdktn-provider-google-go/google/v18.managedKafkaCluster.ManagedKafkaClusterTimeouts,
+	TlsConfig: github.com/cdktn-io/cdktn-provider-google-go/google/v18.managedKafkaCluster.ManagedKafkaClusterTlsConfig,
 }
 ```
 
@@ -1402,10 +1402,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.managedKafkaCluster.ManagedKafkaClusterGcpConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/managedkafkacluster"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/managedkafkacluster"
 
 &managedkafkacluster.ManagedKafkaClusterGcpConfig {
-	AccessConfig: github.com/cdktn-io/cdktn-provider-google-go/google/v17.managedKafkaCluster.ManagedKafkaClusterGcpConfigAccessConfig,
+	AccessConfig: github.com/cdktn-io/cdktn-provider-google-go/google/v18.managedKafkaCluster.ManagedKafkaClusterGcpConfigAccessConfig,
 	KmsKey: *string,
 }
 ```
@@ -1454,7 +1454,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.managedKafkaCluster.ManagedKafkaClusterGcpConfigAccessConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/managedkafkacluster"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/managedkafkacluster"
 
 &managedkafkacluster.ManagedKafkaClusterGcpConfigAccessConfig {
 	NetworkConfigs: interface{},
@@ -1488,7 +1488,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.managedKafkaCluster.ManagedKafkaClusterGcpConfigAccessConfigNetworkConfigs.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/managedkafkacluster"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/managedkafkacluster"
 
 &managedkafkacluster.ManagedKafkaClusterGcpConfigAccessConfigNetworkConfigs {
 	Subnet: *string,
@@ -1524,7 +1524,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.managedKafkaCluster.ManagedKafkaClusterRebalanceConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/managedkafkacluster"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/managedkafkacluster"
 
 &managedkafkacluster.ManagedKafkaClusterRebalanceConfig {
 	Mode: *string,
@@ -1558,7 +1558,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.managedKafkaCluster.ManagedKafkaClusterTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/managedkafkacluster"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/managedkafkacluster"
 
 &managedkafkacluster.ManagedKafkaClusterTimeouts {
 	Create: *string,
@@ -1618,11 +1618,11 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.managedKafkaCluster.ManagedKafkaClusterTlsConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/managedkafkacluster"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/managedkafkacluster"
 
 &managedkafkacluster.ManagedKafkaClusterTlsConfig {
 	SslPrincipalMappingRules: *string,
-	TrustConfig: github.com/cdktn-io/cdktn-provider-google-go/google/v17.managedKafkaCluster.ManagedKafkaClusterTlsConfigTrustConfig,
+	TrustConfig: github.com/cdktn-io/cdktn-provider-google-go/google/v18.managedKafkaCluster.ManagedKafkaClusterTlsConfigTrustConfig,
 }
 ```
 
@@ -1670,7 +1670,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.managedKafkaCluster.ManagedKafkaClusterTlsConfigTrustConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/managedkafkacluster"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/managedkafkacluster"
 
 &managedkafkacluster.ManagedKafkaClusterTlsConfigTrustConfig {
 	CasConfigs: interface{},
@@ -1704,7 +1704,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.managedKafkaCluster.ManagedKafkaClusterTlsConfigTrustConfigCasConfigs.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/managedkafkacluster"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/managedkafkacluster"
 
 &managedkafkacluster.ManagedKafkaClusterTlsConfigTrustConfigCasConfigs {
 	CaPool: *string,
@@ -1742,7 +1742,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.managedKafkaCluster.ManagedKafkaClusterCapacityConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/managedkafkacluster"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/managedkafkacluster"
 
 managedkafkacluster.NewManagedKafkaClusterCapacityConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ManagedKafkaClusterCapacityConfigOutputReference
 ```
@@ -2035,7 +2035,7 @@ func InternalValue() ManagedKafkaClusterCapacityConfig
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.managedKafkaCluster.ManagedKafkaClusterGcpConfigAccessConfigNetworkConfigsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/managedkafkacluster"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/managedkafkacluster"
 
 managedkafkacluster.NewManagedKafkaClusterGcpConfigAccessConfigNetworkConfigsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ManagedKafkaClusterGcpConfigAccessConfigNetworkConfigsList
 ```
@@ -2195,7 +2195,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.managedKafkaCluster.ManagedKafkaClusterGcpConfigAccessConfigNetworkConfigsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/managedkafkacluster"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/managedkafkacluster"
 
 managedkafkacluster.NewManagedKafkaClusterGcpConfigAccessConfigNetworkConfigsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ManagedKafkaClusterGcpConfigAccessConfigNetworkConfigsOutputReference
 ```
@@ -2484,7 +2484,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.managedKafkaCluster.ManagedKafkaClusterGcpConfigAccessConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/managedkafkacluster"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/managedkafkacluster"
 
 managedkafkacluster.NewManagedKafkaClusterGcpConfigAccessConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ManagedKafkaClusterGcpConfigAccessConfigOutputReference
 ```
@@ -2768,7 +2768,7 @@ func InternalValue() ManagedKafkaClusterGcpConfigAccessConfig
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.managedKafkaCluster.ManagedKafkaClusterGcpConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/managedkafkacluster"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/managedkafkacluster"
 
 managedkafkacluster.NewManagedKafkaClusterGcpConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ManagedKafkaClusterGcpConfigOutputReference
 ```
@@ -3081,7 +3081,7 @@ func InternalValue() ManagedKafkaClusterGcpConfig
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.managedKafkaCluster.ManagedKafkaClusterRebalanceConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/managedkafkacluster"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/managedkafkacluster"
 
 managedkafkacluster.NewManagedKafkaClusterRebalanceConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ManagedKafkaClusterRebalanceConfigOutputReference
 ```
@@ -3359,7 +3359,7 @@ func InternalValue() ManagedKafkaClusterRebalanceConfig
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.managedKafkaCluster.ManagedKafkaClusterTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/managedkafkacluster"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/managedkafkacluster"
 
 managedkafkacluster.NewManagedKafkaClusterTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ManagedKafkaClusterTimeoutsOutputReference
 ```
@@ -3695,7 +3695,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.managedKafkaCluster.ManagedKafkaClusterTlsConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/managedkafkacluster"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/managedkafkacluster"
 
 managedkafkacluster.NewManagedKafkaClusterTlsConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ManagedKafkaClusterTlsConfigOutputReference
 ```
@@ -4015,7 +4015,7 @@ func InternalValue() ManagedKafkaClusterTlsConfig
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.managedKafkaCluster.ManagedKafkaClusterTlsConfigTrustConfigCasConfigsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/managedkafkacluster"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/managedkafkacluster"
 
 managedkafkacluster.NewManagedKafkaClusterTlsConfigTrustConfigCasConfigsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ManagedKafkaClusterTlsConfigTrustConfigCasConfigsList
 ```
@@ -4175,7 +4175,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.managedKafkaCluster.ManagedKafkaClusterTlsConfigTrustConfigCasConfigsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/managedkafkacluster"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/managedkafkacluster"
 
 managedkafkacluster.NewManagedKafkaClusterTlsConfigTrustConfigCasConfigsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ManagedKafkaClusterTlsConfigTrustConfigCasConfigsOutputReference
 ```
@@ -4464,7 +4464,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.managedKafkaCluster.ManagedKafkaClusterTlsConfigTrustConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/managedkafkacluster"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/managedkafkacluster"
 
 managedkafkacluster.NewManagedKafkaClusterTlsConfigTrustConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ManagedKafkaClusterTlsConfigTrustConfigOutputReference
 ```

@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.5
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.colabSchedule.ColabSchedule.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/colabschedule"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/colabschedule"
 
 colabschedule.NewColabSchedule(scope Construct, id *string, config ColabScheduleConfig) ColabSchedule
 ```
@@ -482,7 +482,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-google.colabSchedule.ColabSchedule.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/colabschedule"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/colabschedule"
 
 colabschedule.ColabSchedule_IsConstruct(x interface{}) *bool
 ```
@@ -514,7 +514,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-google.colabSchedule.ColabSchedule.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/colabschedule"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/colabschedule"
 
 colabschedule.ColabSchedule_IsTerraformElement(x interface{}) *bool
 ```
@@ -528,7 +528,7 @@ colabschedule.ColabSchedule_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-google.colabSchedule.ColabSchedule.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/colabschedule"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/colabschedule"
 
 colabschedule.ColabSchedule_IsTerraformResource(x interface{}) *bool
 ```
@@ -542,7 +542,7 @@ colabschedule.ColabSchedule_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-google.colabSchedule.ColabSchedule.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/colabschedule"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/colabschedule"
 
 colabschedule.ColabSchedule_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -1079,7 +1079,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.colabSchedule.ColabScheduleConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/colabschedule"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/colabschedule"
 
 &colabschedule.ColabScheduleConfig {
 	Connection: interface{},
@@ -1089,7 +1089,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/colabschedule"
 	Lifecycle: github.com/open-constructs/cdk-terrain-go/cdktn.TerraformResourceLifecycle,
 	Provider: github.com/open-constructs/cdk-terrain-go/cdktn.TerraformProvider,
 	Provisioners: *[]interface{},
-	CreateNotebookExecutionJobRequest: github.com/cdktn-io/cdktn-provider-google-go/google/v17.colabSchedule.ColabScheduleCreateNotebookExecutionJobRequest,
+	CreateNotebookExecutionJobRequest: github.com/cdktn-io/cdktn-provider-google-go/google/v18.colabSchedule.ColabScheduleCreateNotebookExecutionJobRequest,
 	Cron: *string,
 	DisplayName: *string,
 	Location: *string,
@@ -1101,7 +1101,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/colabschedule"
 	MaxRunCount: *string,
 	Project: *string,
 	StartTime: *string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-google-go/google/v17.colabSchedule.ColabScheduleTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-google-go/google/v18.colabSchedule.ColabScheduleTimeouts,
 }
 ```
 
@@ -1400,10 +1400,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.colabSchedule.ColabScheduleCreateNotebookExecutionJobRequest.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/colabschedule"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/colabschedule"
 
 &colabschedule.ColabScheduleCreateNotebookExecutionJobRequest {
-	NotebookExecutionJob: github.com/cdktn-io/cdktn-provider-google-go/google/v17.colabSchedule.ColabScheduleCreateNotebookExecutionJobRequestNotebookExecutionJob,
+	NotebookExecutionJob: github.com/cdktn-io/cdktn-provider-google-go/google/v18.colabSchedule.ColabScheduleCreateNotebookExecutionJobRequestNotebookExecutionJob,
 }
 ```
 
@@ -1434,16 +1434,16 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.colabSchedule.ColabScheduleCreateNotebookExecutionJobRequestNotebookExecutionJob.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/colabschedule"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/colabschedule"
 
 &colabschedule.ColabScheduleCreateNotebookExecutionJobRequestNotebookExecutionJob {
 	DisplayName: *string,
 	GcsOutputUri: *string,
 	NotebookRuntimeTemplateResourceName: *string,
-	DataformRepositorySource: github.com/cdktn-io/cdktn-provider-google-go/google/v17.colabSchedule.ColabScheduleCreateNotebookExecutionJobRequestNotebookExecutionJobDataformRepositorySource,
+	DataformRepositorySource: github.com/cdktn-io/cdktn-provider-google-go/google/v18.colabSchedule.ColabScheduleCreateNotebookExecutionJobRequestNotebookExecutionJobDataformRepositorySource,
 	ExecutionTimeout: *string,
 	ExecutionUser: *string,
-	GcsNotebookSource: github.com/cdktn-io/cdktn-provider-google-go/google/v17.colabSchedule.ColabScheduleCreateNotebookExecutionJobRequestNotebookExecutionJobGcsNotebookSource,
+	GcsNotebookSource: github.com/cdktn-io/cdktn-provider-google-go/google/v18.colabSchedule.ColabScheduleCreateNotebookExecutionJobRequestNotebookExecutionJobGcsNotebookSource,
 	ServiceAccount: *string,
 }
 ```
@@ -1582,7 +1582,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.colabSchedule.ColabScheduleCreateNotebookExecutionJobRequestNotebookExecutionJobDataformRepositorySource.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/colabschedule"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/colabschedule"
 
 &colabschedule.ColabScheduleCreateNotebookExecutionJobRequestNotebookExecutionJobDataformRepositorySource {
 	DataformRepositoryResourceName: *string,
@@ -1632,7 +1632,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.colabSchedule.ColabScheduleCreateNotebookExecutionJobRequestNotebookExecutionJobGcsNotebookSource.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/colabschedule"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/colabschedule"
 
 &colabschedule.ColabScheduleCreateNotebookExecutionJobRequestNotebookExecutionJobGcsNotebookSource {
 	Uri: *string,
@@ -1684,7 +1684,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.colabSchedule.ColabScheduleTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/colabschedule"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/colabschedule"
 
 &colabschedule.ColabScheduleTimeouts {
 	Create: *string,
@@ -1746,7 +1746,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.colabSchedule.ColabScheduleCreateNotebookExecutionJobRequestNotebookExecutionJobDataformRepositorySourceOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/colabschedule"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/colabschedule"
 
 colabschedule.NewColabScheduleCreateNotebookExecutionJobRequestNotebookExecutionJobDataformRepositorySourceOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ColabScheduleCreateNotebookExecutionJobRequestNotebookExecutionJobDataformRepositorySourceOutputReference
 ```
@@ -2046,7 +2046,7 @@ func InternalValue() ColabScheduleCreateNotebookExecutionJobRequestNotebookExecu
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.colabSchedule.ColabScheduleCreateNotebookExecutionJobRequestNotebookExecutionJobGcsNotebookSourceOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/colabschedule"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/colabschedule"
 
 colabschedule.NewColabScheduleCreateNotebookExecutionJobRequestNotebookExecutionJobGcsNotebookSourceOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ColabScheduleCreateNotebookExecutionJobRequestNotebookExecutionJobGcsNotebookSourceOutputReference
 ```
@@ -2346,7 +2346,7 @@ func InternalValue() ColabScheduleCreateNotebookExecutionJobRequestNotebookExecu
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.colabSchedule.ColabScheduleCreateNotebookExecutionJobRequestNotebookExecutionJobOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/colabschedule"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/colabschedule"
 
 colabschedule.NewColabScheduleCreateNotebookExecutionJobRequestNotebookExecutionJobOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ColabScheduleCreateNotebookExecutionJobRequestNotebookExecutionJobOutputReference
 ```
@@ -2832,7 +2832,7 @@ func InternalValue() ColabScheduleCreateNotebookExecutionJobRequestNotebookExecu
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.colabSchedule.ColabScheduleCreateNotebookExecutionJobRequestOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/colabschedule"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/colabschedule"
 
 colabschedule.NewColabScheduleCreateNotebookExecutionJobRequestOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ColabScheduleCreateNotebookExecutionJobRequestOutputReference
 ```
@@ -3116,7 +3116,7 @@ func InternalValue() ColabScheduleCreateNotebookExecutionJobRequest
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.colabSchedule.ColabScheduleTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/colabschedule"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/colabschedule"
 
 colabschedule.NewColabScheduleTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ColabScheduleTimeoutsOutputReference
 ```

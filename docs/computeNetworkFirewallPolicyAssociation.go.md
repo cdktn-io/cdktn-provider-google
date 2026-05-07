@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.5
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.computeNetworkFirewallPolicyAssociation.ComputeNetworkFirewallPolicyAssociation.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/computenetworkfirewallpolicyassociation"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/computenetworkfirewallpolicyassociation"
 
 computenetworkfirewallpolicyassociation.NewComputeNetworkFirewallPolicyAssociation(scope Construct, id *string, config ComputeNetworkFirewallPolicyAssociationConfig) ComputeNetworkFirewallPolicyAssociation
 ```
@@ -434,7 +434,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-google.computeNetworkFirewallPolicyAssociation.ComputeNetworkFirewallPolicyAssociation.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/computenetworkfirewallpolicyassociation"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/computenetworkfirewallpolicyassociation"
 
 computenetworkfirewallpolicyassociation.ComputeNetworkFirewallPolicyAssociation_IsConstruct(x interface{}) *bool
 ```
@@ -466,7 +466,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-google.computeNetworkFirewallPolicyAssociation.ComputeNetworkFirewallPolicyAssociation.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/computenetworkfirewallpolicyassociation"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/computenetworkfirewallpolicyassociation"
 
 computenetworkfirewallpolicyassociation.ComputeNetworkFirewallPolicyAssociation_IsTerraformElement(x interface{}) *bool
 ```
@@ -480,7 +480,7 @@ computenetworkfirewallpolicyassociation.ComputeNetworkFirewallPolicyAssociation_
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-google.computeNetworkFirewallPolicyAssociation.ComputeNetworkFirewallPolicyAssociation.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/computenetworkfirewallpolicyassociation"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/computenetworkfirewallpolicyassociation"
 
 computenetworkfirewallpolicyassociation.ComputeNetworkFirewallPolicyAssociation_IsTerraformResource(x interface{}) *bool
 ```
@@ -494,7 +494,7 @@ computenetworkfirewallpolicyassociation.ComputeNetworkFirewallPolicyAssociation_
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-google.computeNetworkFirewallPolicyAssociation.ComputeNetworkFirewallPolicyAssociation.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/computenetworkfirewallpolicyassociation"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/computenetworkfirewallpolicyassociation"
 
 computenetworkfirewallpolicyassociation.ComputeNetworkFirewallPolicyAssociation_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -866,7 +866,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.computeNetworkFirewallPolicyAssociation.ComputeNetworkFirewallPolicyAssociationConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/computenetworkfirewallpolicyassociation"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/computenetworkfirewallpolicyassociation"
 
 &computenetworkfirewallpolicyassociation.ComputeNetworkFirewallPolicyAssociationConfig {
 	Connection: interface{},
@@ -881,7 +881,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/computenetworkfi
 	Name: *string,
 	Id: *string,
 	Project: *string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-google-go/google/v17.computeNetworkFirewallPolicyAssociation.ComputeNetworkFirewallPolicyAssociationTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-google-go/google/v18.computeNetworkFirewallPolicyAssociation.ComputeNetworkFirewallPolicyAssociationTimeouts,
 }
 ```
 
@@ -1063,7 +1063,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.computeNetworkFirewallPolicyAssociation.ComputeNetworkFirewallPolicyAssociationTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/computenetworkfirewallpolicyassociation"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/computenetworkfirewallpolicyassociation"
 
 &computenetworkfirewallpolicyassociation.ComputeNetworkFirewallPolicyAssociationTimeouts {
 	Create: *string,
@@ -1111,7 +1111,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.computeNetworkFirewallPolicyAssociation.ComputeNetworkFirewallPolicyAssociationTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/computenetworkfirewallpolicyassociation"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/computenetworkfirewallpolicyassociation"
 
 computenetworkfirewallpolicyassociation.NewComputeNetworkFirewallPolicyAssociationTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ComputeNetworkFirewallPolicyAssociationTimeoutsOutputReference
 ```

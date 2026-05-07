@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.5
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.discoveryEngineSchema.DiscoveryEngineSchema.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/discoveryengineschema"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/discoveryengineschema"
 
 discoveryengineschema.NewDiscoveryEngineSchema(scope Construct, id *string, config DiscoveryEngineSchemaConfig) DiscoveryEngineSchema
 ```
@@ -441,7 +441,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-google.discoveryEngineSchema.DiscoveryEngineSchema.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/discoveryengineschema"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/discoveryengineschema"
 
 discoveryengineschema.DiscoveryEngineSchema_IsConstruct(x interface{}) *bool
 ```
@@ -473,7 +473,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-google.discoveryEngineSchema.DiscoveryEngineSchema.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/discoveryengineschema"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/discoveryengineschema"
 
 discoveryengineschema.DiscoveryEngineSchema_IsTerraformElement(x interface{}) *bool
 ```
@@ -487,7 +487,7 @@ discoveryengineschema.DiscoveryEngineSchema_IsTerraformElement(x interface{}) *b
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-google.discoveryEngineSchema.DiscoveryEngineSchema.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/discoveryengineschema"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/discoveryengineschema"
 
 discoveryengineschema.DiscoveryEngineSchema_IsTerraformResource(x interface{}) *bool
 ```
@@ -501,7 +501,7 @@ discoveryengineschema.DiscoveryEngineSchema_IsTerraformResource(x interface{}) *
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-google.discoveryEngineSchema.DiscoveryEngineSchema.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/discoveryengineschema"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/discoveryengineschema"
 
 discoveryengineschema.DiscoveryEngineSchema_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -895,7 +895,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.discoveryEngineSchema.DiscoveryEngineSchemaConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/discoveryengineschema"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/discoveryengineschema"
 
 &discoveryengineschema.DiscoveryEngineSchemaConfig {
 	Connection: interface{},
@@ -911,7 +911,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/discoveryengines
 	Id: *string,
 	JsonSchema: *string,
 	Project: *string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-google-go/google/v17.discoveryEngineSchema.DiscoveryEngineSchemaTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-google-go/google/v18.discoveryEngineSchema.DiscoveryEngineSchemaTimeouts,
 }
 ```
 
@@ -1108,7 +1108,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.discoveryEngineSchema.DiscoveryEngineSchemaTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/discoveryengineschema"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/discoveryengineschema"
 
 &discoveryengineschema.DiscoveryEngineSchemaTimeouts {
 	Create: *string,
@@ -1156,7 +1156,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.discoveryEngineSchema.DiscoveryEngineSchemaTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/discoveryengineschema"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/discoveryengineschema"
 
 discoveryengineschema.NewDiscoveryEngineSchemaTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DiscoveryEngineSchemaTimeoutsOutputReference
 ```

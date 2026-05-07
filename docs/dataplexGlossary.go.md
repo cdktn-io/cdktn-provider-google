@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.5
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataplexGlossary.DataplexGlossary.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/dataplexglossary"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/dataplexglossary"
 
 dataplexglossary.NewDataplexGlossary(scope Construct, id *string, config DataplexGlossaryConfig) DataplexGlossary
 ```
@@ -455,7 +455,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-google.dataplexGlossary.DataplexGlossary.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/dataplexglossary"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/dataplexglossary"
 
 dataplexglossary.DataplexGlossary_IsConstruct(x interface{}) *bool
 ```
@@ -487,7 +487,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-google.dataplexGlossary.DataplexGlossary.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/dataplexglossary"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/dataplexglossary"
 
 dataplexglossary.DataplexGlossary_IsTerraformElement(x interface{}) *bool
 ```
@@ -501,7 +501,7 @@ dataplexglossary.DataplexGlossary_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-google.dataplexGlossary.DataplexGlossary.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/dataplexglossary"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/dataplexglossary"
 
 dataplexglossary.DataplexGlossary_IsTerraformResource(x interface{}) *bool
 ```
@@ -515,7 +515,7 @@ dataplexglossary.DataplexGlossary_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-google.dataplexGlossary.DataplexGlossary.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/dataplexglossary"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/dataplexglossary"
 
 dataplexglossary.DataplexGlossary_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -1008,7 +1008,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.dataplexGlossary.DataplexGlossaryConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/dataplexglossary"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/dataplexglossary"
 
 &dataplexglossary.DataplexGlossaryConfig {
 	Connection: interface{},
@@ -1025,7 +1025,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/dataplexglossary
 	Id: *string,
 	Labels: *map[string]*string,
 	Project: *string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-google-go/google/v17.dataplexGlossary.DataplexGlossaryTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-google-go/google/v18.dataplexGlossary.DataplexGlossaryTimeouts,
 }
 ```
 
@@ -1242,7 +1242,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.dataplexGlossary.DataplexGlossaryTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/dataplexglossary"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/dataplexglossary"
 
 &dataplexglossary.DataplexGlossaryTimeouts {
 	Create: *string,
@@ -1304,7 +1304,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataplexGlossary.DataplexGlossaryTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/dataplexglossary"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/dataplexglossary"
 
 dataplexglossary.NewDataplexGlossaryTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataplexGlossaryTimeoutsOutputReference
 ```

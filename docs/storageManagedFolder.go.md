@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.5
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.storageManagedFolder.StorageManagedFolder.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/storagemanagedfolder"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/storagemanagedfolder"
 
 storagemanagedfolder.NewStorageManagedFolder(scope Construct, id *string, config StorageManagedFolderConfig) StorageManagedFolder
 ```
@@ -434,7 +434,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-google.storageManagedFolder.StorageManagedFolder.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/storagemanagedfolder"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/storagemanagedfolder"
 
 storagemanagedfolder.StorageManagedFolder_IsConstruct(x interface{}) *bool
 ```
@@ -466,7 +466,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-google.storageManagedFolder.StorageManagedFolder.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/storagemanagedfolder"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/storagemanagedfolder"
 
 storagemanagedfolder.StorageManagedFolder_IsTerraformElement(x interface{}) *bool
 ```
@@ -480,7 +480,7 @@ storagemanagedfolder.StorageManagedFolder_IsTerraformElement(x interface{}) *boo
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-google.storageManagedFolder.StorageManagedFolder.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/storagemanagedfolder"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/storagemanagedfolder"
 
 storagemanagedfolder.StorageManagedFolder_IsTerraformResource(x interface{}) *bool
 ```
@@ -494,7 +494,7 @@ storagemanagedfolder.StorageManagedFolder_IsTerraformResource(x interface{}) *bo
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-google.storageManagedFolder.StorageManagedFolder.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/storagemanagedfolder"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/storagemanagedfolder"
 
 storagemanagedfolder.StorageManagedFolder_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -877,7 +877,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.storageManagedFolder.StorageManagedFolderConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/storagemanagedfolder"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/storagemanagedfolder"
 
 &storagemanagedfolder.StorageManagedFolderConfig {
 	Connection: interface{},
@@ -891,7 +891,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/storagemanagedfo
 	Name: *string,
 	ForceDestroy: interface{},
 	Id: *string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-google-go/google/v17.storageManagedFolder.StorageManagedFolderTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-google-go/google/v18.storageManagedFolder.StorageManagedFolderTimeouts,
 }
 ```
 
@@ -1064,7 +1064,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.storageManagedFolder.StorageManagedFolderTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/storagemanagedfolder"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/storagemanagedfolder"
 
 &storagemanagedfolder.StorageManagedFolderTimeouts {
 	Create: *string,
@@ -1126,7 +1126,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.storageManagedFolder.StorageManagedFolderTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/storagemanagedfolder"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/storagemanagedfolder"
 
 storagemanagedfolder.NewStorageManagedFolderTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) StorageManagedFolderTimeoutsOutputReference
 ```

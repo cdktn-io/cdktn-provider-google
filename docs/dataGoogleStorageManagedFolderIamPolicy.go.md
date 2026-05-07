@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.5
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataGoogleStorageManagedFolderIamPolicy.DataGoogleStorageManagedFolderIamPolicy.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/datagooglestoragemanagedfolderiampolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/datagooglestoragemanagedfolderiampolicy"
 
 datagooglestoragemanagedfolderiampolicy.NewDataGoogleStorageManagedFolderIamPolicy(scope Construct, id *string, config DataGoogleStorageManagedFolderIamPolicyConfig) DataGoogleStorageManagedFolderIamPolicy
 ```
@@ -305,7 +305,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-google.dataGoogleStorageManagedFolderIamPolicy.DataGoogleStorageManagedFolderIamPolicy.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/datagooglestoragemanagedfolderiampolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/datagooglestoragemanagedfolderiampolicy"
 
 datagooglestoragemanagedfolderiampolicy.DataGoogleStorageManagedFolderIamPolicy_IsConstruct(x interface{}) *bool
 ```
@@ -337,7 +337,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-google.dataGoogleStorageManagedFolderIamPolicy.DataGoogleStorageManagedFolderIamPolicy.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/datagooglestoragemanagedfolderiampolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/datagooglestoragemanagedfolderiampolicy"
 
 datagooglestoragemanagedfolderiampolicy.DataGoogleStorageManagedFolderIamPolicy_IsTerraformElement(x interface{}) *bool
 ```
@@ -351,7 +351,7 @@ datagooglestoragemanagedfolderiampolicy.DataGoogleStorageManagedFolderIamPolicy_
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktn/provider-google.dataGoogleStorageManagedFolderIamPolicy.DataGoogleStorageManagedFolderIamPolicy.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/datagooglestoragemanagedfolderiampolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/datagooglestoragemanagedfolderiampolicy"
 
 datagooglestoragemanagedfolderiampolicy.DataGoogleStorageManagedFolderIamPolicy_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -365,7 +365,7 @@ datagooglestoragemanagedfolderiampolicy.DataGoogleStorageManagedFolderIamPolicy_
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-google.dataGoogleStorageManagedFolderIamPolicy.DataGoogleStorageManagedFolderIamPolicy.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/datagooglestoragemanagedfolderiampolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/datagooglestoragemanagedfolderiampolicy"
 
 datagooglestoragemanagedfolderiampolicy.DataGoogleStorageManagedFolderIamPolicy_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -660,7 +660,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.dataGoogleStorageManagedFolderIamPolicy.DataGoogleStorageManagedFolderIamPolicyConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/datagooglestoragemanagedfolderiampolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/datagooglestoragemanagedfolderiampolicy"
 
 &datagooglestoragemanagedfolderiampolicy.DataGoogleStorageManagedFolderIamPolicyConfig {
 	Connection: interface{},

@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.5
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.containerAzureCluster.ContainerAzureCluster.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/containerazurecluster"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/containerazurecluster"
 
 containerazurecluster.NewContainerAzureCluster(scope Construct, id *string, config ContainerAzureClusterConfig) ContainerAzureCluster
 ```
@@ -527,7 +527,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-google.containerAzureCluster.ContainerAzureCluster.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/containerazurecluster"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/containerazurecluster"
 
 containerazurecluster.ContainerAzureCluster_IsConstruct(x interface{}) *bool
 ```
@@ -559,7 +559,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-google.containerAzureCluster.ContainerAzureCluster.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/containerazurecluster"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/containerazurecluster"
 
 containerazurecluster.ContainerAzureCluster_IsTerraformElement(x interface{}) *bool
 ```
@@ -573,7 +573,7 @@ containerazurecluster.ContainerAzureCluster_IsTerraformElement(x interface{}) *b
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-google.containerAzureCluster.ContainerAzureCluster.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/containerazurecluster"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/containerazurecluster"
 
 containerazurecluster.ContainerAzureCluster_IsTerraformResource(x interface{}) *bool
 ```
@@ -587,7 +587,7 @@ containerazurecluster.ContainerAzureCluster_IsTerraformResource(x interface{}) *
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-google.containerAzureCluster.ContainerAzureCluster.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/containerazurecluster"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/containerazurecluster"
 
 containerazurecluster.ContainerAzureCluster_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -1245,7 +1245,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.containerAzureCluster.ContainerAzureClusterAuthorization.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/containerazurecluster"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/containerazurecluster"
 
 &containerazurecluster.ContainerAzureClusterAuthorization {
 	AdminUsers: interface{},
@@ -1295,7 +1295,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.containerAzureCluster.ContainerAzureClusterAuthorizationAdminGroups.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/containerazurecluster"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/containerazurecluster"
 
 &containerazurecluster.ContainerAzureClusterAuthorizationAdminGroups {
 	Group: *string,
@@ -1329,7 +1329,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.containerAzureCluster.ContainerAzureClusterAuthorizationAdminUsers.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/containerazurecluster"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/containerazurecluster"
 
 &containerazurecluster.ContainerAzureClusterAuthorizationAdminUsers {
 	Username: *string,
@@ -1363,7 +1363,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.containerAzureCluster.ContainerAzureClusterAzureServicesAuthentication.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/containerazurecluster"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/containerazurecluster"
 
 &containerazurecluster.ContainerAzureClusterAzureServicesAuthentication {
 	ApplicationId: *string,
@@ -1413,7 +1413,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.containerAzureCluster.ContainerAzureClusterConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/containerazurecluster"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/containerazurecluster"
 
 &containerazurecluster.ContainerAzureClusterConfig {
 	Connection: interface{},
@@ -1423,21 +1423,21 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/containerazurecl
 	Lifecycle: github.com/open-constructs/cdk-terrain-go/cdktn.TerraformResourceLifecycle,
 	Provider: github.com/open-constructs/cdk-terrain-go/cdktn.TerraformProvider,
 	Provisioners: *[]interface{},
-	Authorization: github.com/cdktn-io/cdktn-provider-google-go/google/v17.containerAzureCluster.ContainerAzureClusterAuthorization,
+	Authorization: github.com/cdktn-io/cdktn-provider-google-go/google/v18.containerAzureCluster.ContainerAzureClusterAuthorization,
 	AzureRegion: *string,
-	ControlPlane: github.com/cdktn-io/cdktn-provider-google-go/google/v17.containerAzureCluster.ContainerAzureClusterControlPlane,
-	Fleet: github.com/cdktn-io/cdktn-provider-google-go/google/v17.containerAzureCluster.ContainerAzureClusterFleet,
+	ControlPlane: github.com/cdktn-io/cdktn-provider-google-go/google/v18.containerAzureCluster.ContainerAzureClusterControlPlane,
+	Fleet: github.com/cdktn-io/cdktn-provider-google-go/google/v18.containerAzureCluster.ContainerAzureClusterFleet,
 	Location: *string,
 	Name: *string,
-	Networking: github.com/cdktn-io/cdktn-provider-google-go/google/v17.containerAzureCluster.ContainerAzureClusterNetworking,
+	Networking: github.com/cdktn-io/cdktn-provider-google-go/google/v18.containerAzureCluster.ContainerAzureClusterNetworking,
 	ResourceGroupId: *string,
 	Annotations: *map[string]*string,
-	AzureServicesAuthentication: github.com/cdktn-io/cdktn-provider-google-go/google/v17.containerAzureCluster.ContainerAzureClusterAzureServicesAuthentication,
+	AzureServicesAuthentication: github.com/cdktn-io/cdktn-provider-google-go/google/v18.containerAzureCluster.ContainerAzureClusterAzureServicesAuthentication,
 	Client: *string,
 	Description: *string,
 	Id: *string,
 	Project: *string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-google-go/google/v17.containerAzureCluster.ContainerAzureClusterTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-google-go/google/v18.containerAzureCluster.ContainerAzureClusterTimeouts,
 }
 ```
 
@@ -1767,17 +1767,17 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.containerAzureCluster.ContainerAzureClusterControlPlane.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/containerazurecluster"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/containerazurecluster"
 
 &containerazurecluster.ContainerAzureClusterControlPlane {
-	SshConfig: github.com/cdktn-io/cdktn-provider-google-go/google/v17.containerAzureCluster.ContainerAzureClusterControlPlaneSshConfig,
+	SshConfig: github.com/cdktn-io/cdktn-provider-google-go/google/v18.containerAzureCluster.ContainerAzureClusterControlPlaneSshConfig,
 	SubnetId: *string,
 	Version: *string,
-	DatabaseEncryption: github.com/cdktn-io/cdktn-provider-google-go/google/v17.containerAzureCluster.ContainerAzureClusterControlPlaneDatabaseEncryption,
-	MainVolume: github.com/cdktn-io/cdktn-provider-google-go/google/v17.containerAzureCluster.ContainerAzureClusterControlPlaneMainVolume,
-	ProxyConfig: github.com/cdktn-io/cdktn-provider-google-go/google/v17.containerAzureCluster.ContainerAzureClusterControlPlaneProxyConfig,
+	DatabaseEncryption: github.com/cdktn-io/cdktn-provider-google-go/google/v18.containerAzureCluster.ContainerAzureClusterControlPlaneDatabaseEncryption,
+	MainVolume: github.com/cdktn-io/cdktn-provider-google-go/google/v18.containerAzureCluster.ContainerAzureClusterControlPlaneMainVolume,
+	ProxyConfig: github.com/cdktn-io/cdktn-provider-google-go/google/v18.containerAzureCluster.ContainerAzureClusterControlPlaneProxyConfig,
 	ReplicaPlacements: interface{},
-	RootVolume: github.com/cdktn-io/cdktn-provider-google-go/google/v17.containerAzureCluster.ContainerAzureClusterControlPlaneRootVolume,
+	RootVolume: github.com/cdktn-io/cdktn-provider-google-go/google/v18.containerAzureCluster.ContainerAzureClusterControlPlaneRootVolume,
 	Tags: *map[string]*string,
 	VmSize: *string,
 }
@@ -1947,7 +1947,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.containerAzureCluster.ContainerAzureClusterControlPlaneDatabaseEncryption.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/containerazurecluster"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/containerazurecluster"
 
 &containerazurecluster.ContainerAzureClusterControlPlaneDatabaseEncryption {
 	KeyId: *string,
@@ -1983,7 +1983,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.containerAzureCluster.ContainerAzureClusterControlPlaneMainVolume.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/containerazurecluster"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/containerazurecluster"
 
 &containerazurecluster.ContainerAzureClusterControlPlaneMainVolume {
 	SizeGib: *f64,
@@ -2019,7 +2019,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.containerAzureCluster.ContainerAzureClusterControlPlaneProxyConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/containerazurecluster"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/containerazurecluster"
 
 &containerazurecluster.ContainerAzureClusterControlPlaneProxyConfig {
 	ResourceGroupId: *string,
@@ -2069,7 +2069,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.containerAzureCluster.ContainerAzureClusterControlPlaneReplicaPlacements.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/containerazurecluster"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/containerazurecluster"
 
 &containerazurecluster.ContainerAzureClusterControlPlaneReplicaPlacements {
 	AzureAvailabilityZone: *string,
@@ -2121,7 +2121,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.containerAzureCluster.ContainerAzureClusterControlPlaneRootVolume.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/containerazurecluster"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/containerazurecluster"
 
 &containerazurecluster.ContainerAzureClusterControlPlaneRootVolume {
 	SizeGib: *f64,
@@ -2157,7 +2157,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.containerAzureCluster.ContainerAzureClusterControlPlaneSshConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/containerazurecluster"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/containerazurecluster"
 
 &containerazurecluster.ContainerAzureClusterControlPlaneSshConfig {
 	AuthorizedKey: *string,
@@ -2193,7 +2193,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.containerAzureCluster.ContainerAzureClusterFleet.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/containerazurecluster"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/containerazurecluster"
 
 &containerazurecluster.ContainerAzureClusterFleet {
 	Project: *string,
@@ -2227,7 +2227,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.containerAzureCluster.ContainerAzureClusterNetworking.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/containerazurecluster"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/containerazurecluster"
 
 &containerazurecluster.ContainerAzureClusterNetworking {
 	PodAddressCidrBlocks: *[]*string,
@@ -2297,7 +2297,7 @@ Note: The above comment contained a comment block ending sequence (* followed by
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.containerAzureCluster.ContainerAzureClusterTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/containerazurecluster"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/containerazurecluster"
 
 &containerazurecluster.ContainerAzureClusterTimeouts {
 	Create: *string,
@@ -2357,7 +2357,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.containerAzureCluster.ContainerAzureClusterWorkloadIdentityConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/containerazurecluster"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/containerazurecluster"
 
 &containerazurecluster.ContainerAzureClusterWorkloadIdentityConfig {
 
@@ -2372,7 +2372,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/containerazurecl
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.containerAzureCluster.ContainerAzureClusterAuthorizationAdminGroupsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/containerazurecluster"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/containerazurecluster"
 
 containerazurecluster.NewContainerAzureClusterAuthorizationAdminGroupsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ContainerAzureClusterAuthorizationAdminGroupsList
 ```
@@ -2532,7 +2532,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.containerAzureCluster.ContainerAzureClusterAuthorizationAdminGroupsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/containerazurecluster"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/containerazurecluster"
 
 containerazurecluster.NewContainerAzureClusterAuthorizationAdminGroupsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ContainerAzureClusterAuthorizationAdminGroupsOutputReference
 ```
@@ -2821,7 +2821,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.containerAzureCluster.ContainerAzureClusterAuthorizationAdminUsersList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/containerazurecluster"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/containerazurecluster"
 
 containerazurecluster.NewContainerAzureClusterAuthorizationAdminUsersList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ContainerAzureClusterAuthorizationAdminUsersList
 ```
@@ -2981,7 +2981,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.containerAzureCluster.ContainerAzureClusterAuthorizationAdminUsersOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/containerazurecluster"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/containerazurecluster"
 
 containerazurecluster.NewContainerAzureClusterAuthorizationAdminUsersOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ContainerAzureClusterAuthorizationAdminUsersOutputReference
 ```
@@ -3270,7 +3270,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.containerAzureCluster.ContainerAzureClusterAuthorizationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/containerazurecluster"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/containerazurecluster"
 
 containerazurecluster.NewContainerAzureClusterAuthorizationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ContainerAzureClusterAuthorizationOutputReference
 ```
@@ -3596,7 +3596,7 @@ func InternalValue() ContainerAzureClusterAuthorization
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.containerAzureCluster.ContainerAzureClusterAzureServicesAuthenticationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/containerazurecluster"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/containerazurecluster"
 
 containerazurecluster.NewContainerAzureClusterAzureServicesAuthenticationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ContainerAzureClusterAzureServicesAuthenticationOutputReference
 ```
@@ -3889,7 +3889,7 @@ func InternalValue() ContainerAzureClusterAzureServicesAuthentication
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.containerAzureCluster.ContainerAzureClusterControlPlaneDatabaseEncryptionOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/containerazurecluster"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/containerazurecluster"
 
 containerazurecluster.NewContainerAzureClusterControlPlaneDatabaseEncryptionOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ContainerAzureClusterControlPlaneDatabaseEncryptionOutputReference
 ```
@@ -4160,7 +4160,7 @@ func InternalValue() ContainerAzureClusterControlPlaneDatabaseEncryption
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.containerAzureCluster.ContainerAzureClusterControlPlaneMainVolumeOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/containerazurecluster"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/containerazurecluster"
 
 containerazurecluster.NewContainerAzureClusterControlPlaneMainVolumeOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ContainerAzureClusterControlPlaneMainVolumeOutputReference
 ```
@@ -4438,7 +4438,7 @@ func InternalValue() ContainerAzureClusterControlPlaneMainVolume
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.containerAzureCluster.ContainerAzureClusterControlPlaneOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/containerazurecluster"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/containerazurecluster"
 
 containerazurecluster.NewContainerAzureClusterControlPlaneOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ContainerAzureClusterControlPlaneOutputReference
 ```
@@ -5034,7 +5034,7 @@ func InternalValue() ContainerAzureClusterControlPlane
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.containerAzureCluster.ContainerAzureClusterControlPlaneProxyConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/containerazurecluster"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/containerazurecluster"
 
 containerazurecluster.NewContainerAzureClusterControlPlaneProxyConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ContainerAzureClusterControlPlaneProxyConfigOutputReference
 ```
@@ -5327,7 +5327,7 @@ func InternalValue() ContainerAzureClusterControlPlaneProxyConfig
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.containerAzureCluster.ContainerAzureClusterControlPlaneReplicaPlacementsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/containerazurecluster"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/containerazurecluster"
 
 containerazurecluster.NewContainerAzureClusterControlPlaneReplicaPlacementsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ContainerAzureClusterControlPlaneReplicaPlacementsList
 ```
@@ -5487,7 +5487,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.containerAzureCluster.ContainerAzureClusterControlPlaneReplicaPlacementsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/containerazurecluster"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/containerazurecluster"
 
 containerazurecluster.NewContainerAzureClusterControlPlaneReplicaPlacementsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ContainerAzureClusterControlPlaneReplicaPlacementsOutputReference
 ```
@@ -5798,7 +5798,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.containerAzureCluster.ContainerAzureClusterControlPlaneRootVolumeOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/containerazurecluster"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/containerazurecluster"
 
 containerazurecluster.NewContainerAzureClusterControlPlaneRootVolumeOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ContainerAzureClusterControlPlaneRootVolumeOutputReference
 ```
@@ -6076,7 +6076,7 @@ func InternalValue() ContainerAzureClusterControlPlaneRootVolume
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.containerAzureCluster.ContainerAzureClusterControlPlaneSshConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/containerazurecluster"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/containerazurecluster"
 
 containerazurecluster.NewContainerAzureClusterControlPlaneSshConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ContainerAzureClusterControlPlaneSshConfigOutputReference
 ```
@@ -6347,7 +6347,7 @@ func InternalValue() ContainerAzureClusterControlPlaneSshConfig
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.containerAzureCluster.ContainerAzureClusterFleetOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/containerazurecluster"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/containerazurecluster"
 
 containerazurecluster.NewContainerAzureClusterFleetOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ContainerAzureClusterFleetOutputReference
 ```
@@ -6636,7 +6636,7 @@ func InternalValue() ContainerAzureClusterFleet
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.containerAzureCluster.ContainerAzureClusterNetworkingOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/containerazurecluster"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/containerazurecluster"
 
 containerazurecluster.NewContainerAzureClusterNetworkingOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ContainerAzureClusterNetworkingOutputReference
 ```
@@ -6951,7 +6951,7 @@ func InternalValue() ContainerAzureClusterNetworking
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.containerAzureCluster.ContainerAzureClusterTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/containerazurecluster"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/containerazurecluster"
 
 containerazurecluster.NewContainerAzureClusterTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ContainerAzureClusterTimeoutsOutputReference
 ```
@@ -7287,7 +7287,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.containerAzureCluster.ContainerAzureClusterWorkloadIdentityConfigList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/containerazurecluster"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/containerazurecluster"
 
 containerazurecluster.NewContainerAzureClusterWorkloadIdentityConfigList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ContainerAzureClusterWorkloadIdentityConfigList
 ```
@@ -7436,7 +7436,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.containerAzureCluster.ContainerAzureClusterWorkloadIdentityConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/containerazurecluster"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/containerazurecluster"
 
 containerazurecluster.NewContainerAzureClusterWorkloadIdentityConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ContainerAzureClusterWorkloadIdentityConfigOutputReference
 ```

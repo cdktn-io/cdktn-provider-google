@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.5
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataprocMetastoreTableIamMember.DataprocMetastoreTableIamMember.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/dataprocmetastoretableiammember"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/dataprocmetastoretableiammember"
 
 dataprocmetastoretableiammember.NewDataprocMetastoreTableIamMember(scope Construct, id *string, config DataprocMetastoreTableIamMemberConfig) DataprocMetastoreTableIamMember
 ```
@@ -441,7 +441,7 @@ func ResetProject()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-google.dataprocMetastoreTableIamMember.DataprocMetastoreTableIamMember.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/dataprocmetastoretableiammember"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/dataprocmetastoretableiammember"
 
 dataprocmetastoretableiammember.DataprocMetastoreTableIamMember_IsConstruct(x interface{}) *bool
 ```
@@ -473,7 +473,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-google.dataprocMetastoreTableIamMember.DataprocMetastoreTableIamMember.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/dataprocmetastoretableiammember"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/dataprocmetastoretableiammember"
 
 dataprocmetastoretableiammember.DataprocMetastoreTableIamMember_IsTerraformElement(x interface{}) *bool
 ```
@@ -487,7 +487,7 @@ dataprocmetastoretableiammember.DataprocMetastoreTableIamMember_IsTerraformEleme
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-google.dataprocMetastoreTableIamMember.DataprocMetastoreTableIamMember.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/dataprocmetastoretableiammember"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/dataprocmetastoretableiammember"
 
 dataprocmetastoretableiammember.DataprocMetastoreTableIamMember_IsTerraformResource(x interface{}) *bool
 ```
@@ -501,7 +501,7 @@ dataprocmetastoretableiammember.DataprocMetastoreTableIamMember_IsTerraformResou
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-google.dataprocMetastoreTableIamMember.DataprocMetastoreTableIamMember.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/dataprocmetastoretableiammember"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/dataprocmetastoretableiammember"
 
 dataprocmetastoretableiammember.DataprocMetastoreTableIamMember_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -939,7 +939,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.dataprocMetastoreTableIamMember.DataprocMetastoreTableIamMemberCondition.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/dataprocmetastoretableiammember"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/dataprocmetastoretableiammember"
 
 &dataprocmetastoretableiammember.DataprocMetastoreTableIamMemberCondition {
 	Expression: *string,
@@ -999,7 +999,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.dataprocMetastoreTableIamMember.DataprocMetastoreTableIamMemberConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/dataprocmetastoretableiammember"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/dataprocmetastoretableiammember"
 
 &dataprocmetastoretableiammember.DataprocMetastoreTableIamMemberConfig {
 	Connection: interface{},
@@ -1014,7 +1014,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/dataprocmetastor
 	Role: *string,
 	ServiceId: *string,
 	Table: *string,
-	Condition: github.com/cdktn-io/cdktn-provider-google-go/google/v17.dataprocMetastoreTableIamMember.DataprocMetastoreTableIamMemberCondition,
+	Condition: github.com/cdktn-io/cdktn-provider-google-go/google/v18.dataprocMetastoreTableIamMember.DataprocMetastoreTableIamMemberCondition,
 	Id: *string,
 	Location: *string,
 	Project: *string,
@@ -1234,7 +1234,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataprocMetastoreTableIamMember.DataprocMetastoreTableIamMemberConditionOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/dataprocmetastoretableiammember"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/dataprocmetastoretableiammember"
 
 dataprocmetastoretableiammember.NewDataprocMetastoreTableIamMemberConditionOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataprocMetastoreTableIamMemberConditionOutputReference
 ```

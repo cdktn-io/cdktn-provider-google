@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.5
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.siteVerificationWebResource.SiteVerificationWebResource.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/siteverificationwebresource"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/siteverificationwebresource"
 
 siteverificationwebresource.NewSiteVerificationWebResource(scope Construct, id *string, config SiteVerificationWebResourceConfig) SiteVerificationWebResource
 ```
@@ -440,7 +440,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-google.siteVerificationWebResource.SiteVerificationWebResource.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/siteverificationwebresource"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/siteverificationwebresource"
 
 siteverificationwebresource.SiteVerificationWebResource_IsConstruct(x interface{}) *bool
 ```
@@ -472,7 +472,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-google.siteVerificationWebResource.SiteVerificationWebResource.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/siteverificationwebresource"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/siteverificationwebresource"
 
 siteverificationwebresource.SiteVerificationWebResource_IsTerraformElement(x interface{}) *bool
 ```
@@ -486,7 +486,7 @@ siteverificationwebresource.SiteVerificationWebResource_IsTerraformElement(x int
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-google.siteVerificationWebResource.SiteVerificationWebResource.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/siteverificationwebresource"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/siteverificationwebresource"
 
 siteverificationwebresource.SiteVerificationWebResource_IsTerraformResource(x interface{}) *bool
 ```
@@ -500,7 +500,7 @@ siteverificationwebresource.SiteVerificationWebResource_IsTerraformResource(x in
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-google.siteVerificationWebResource.SiteVerificationWebResource.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/siteverificationwebresource"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/siteverificationwebresource"
 
 siteverificationwebresource.SiteVerificationWebResource_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -839,7 +839,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.siteVerificationWebResource.SiteVerificationWebResourceConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/siteverificationwebresource"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/siteverificationwebresource"
 
 &siteverificationwebresource.SiteVerificationWebResourceConfig {
 	Connection: interface{},
@@ -849,10 +849,10 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/siteverification
 	Lifecycle: github.com/open-constructs/cdk-terrain-go/cdktn.TerraformResourceLifecycle,
 	Provider: github.com/open-constructs/cdk-terrain-go/cdktn.TerraformProvider,
 	Provisioners: *[]interface{},
-	Site: github.com/cdktn-io/cdktn-provider-google-go/google/v17.siteVerificationWebResource.SiteVerificationWebResourceSite,
+	Site: github.com/cdktn-io/cdktn-provider-google-go/google/v18.siteVerificationWebResource.SiteVerificationWebResourceSite,
 	VerificationMethod: *string,
 	Id: *string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-google-go/google/v17.siteVerificationWebResource.SiteVerificationWebResourceTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-google-go/google/v18.siteVerificationWebResource.SiteVerificationWebResourceTimeouts,
 }
 ```
 
@@ -1008,7 +1008,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.siteVerificationWebResource.SiteVerificationWebResourceSite.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/siteverificationwebresource"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/siteverificationwebresource"
 
 &siteverificationwebresource.SiteVerificationWebResourceSite {
 	Identifier: *string,
@@ -1061,7 +1061,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.siteVerificationWebResource.SiteVerificationWebResourceTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/siteverificationwebresource"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/siteverificationwebresource"
 
 &siteverificationwebresource.SiteVerificationWebResourceTimeouts {
 	Create: *string,
@@ -1109,7 +1109,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.siteVerificationWebResource.SiteVerificationWebResourceSiteOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/siteverificationwebresource"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/siteverificationwebresource"
 
 siteverificationwebresource.NewSiteVerificationWebResourceSiteOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) SiteVerificationWebResourceSiteOutputReference
 ```
@@ -1402,7 +1402,7 @@ func InternalValue() SiteVerificationWebResourceSite
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.siteVerificationWebResource.SiteVerificationWebResourceTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/siteverificationwebresource"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/siteverificationwebresource"
 
 siteverificationwebresource.NewSiteVerificationWebResourceTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) SiteVerificationWebResourceTimeoutsOutputReference
 ```

@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.5
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.netappActiveDirectory.NetappActiveDirectory.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/netappactivedirectory"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/netappactivedirectory"
 
 netappactivedirectory.NewNetappActiveDirectory(scope Construct, id *string, config NetappActiveDirectoryConfig) NetappActiveDirectory
 ```
@@ -525,7 +525,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-google.netappActiveDirectory.NetappActiveDirectory.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/netappactivedirectory"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/netappactivedirectory"
 
 netappactivedirectory.NetappActiveDirectory_IsConstruct(x interface{}) *bool
 ```
@@ -557,7 +557,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-google.netappActiveDirectory.NetappActiveDirectory.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/netappactivedirectory"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/netappactivedirectory"
 
 netappactivedirectory.NetappActiveDirectory_IsTerraformElement(x interface{}) *bool
 ```
@@ -571,7 +571,7 @@ netappactivedirectory.NetappActiveDirectory_IsTerraformElement(x interface{}) *b
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-google.netappActiveDirectory.NetappActiveDirectory.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/netappactivedirectory"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/netappactivedirectory"
 
 netappactivedirectory.NetappActiveDirectory_IsTerraformResource(x interface{}) *bool
 ```
@@ -585,7 +585,7 @@ netappactivedirectory.NetappActiveDirectory_IsTerraformResource(x interface{}) *
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-google.netappActiveDirectory.NetappActiveDirectory.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/netappactivedirectory"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/netappactivedirectory"
 
 netappactivedirectory.NetappActiveDirectory_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -1375,7 +1375,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.netappActiveDirectory.NetappActiveDirectoryConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/netappactivedirectory"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/netappactivedirectory"
 
 &netappactivedirectory.NetappActiveDirectoryConfig {
 	Connection: interface{},
@@ -1407,7 +1407,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/netappactivedire
 	Project: *string,
 	SecurityOperators: *[]*string,
 	Site: *string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-google-go/google/v17.netappActiveDirectory.NetappActiveDirectoryTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-google-go/google/v18.netappActiveDirectory.NetappActiveDirectoryTimeouts,
 }
 ```
 
@@ -1862,7 +1862,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.netappActiveDirectory.NetappActiveDirectoryTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/netappactivedirectory"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/netappactivedirectory"
 
 &netappactivedirectory.NetappActiveDirectoryTimeouts {
 	Create: *string,
@@ -1924,7 +1924,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.netappActiveDirectory.NetappActiveDirectoryTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/netappactivedirectory"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/netappactivedirectory"
 
 netappactivedirectory.NewNetappActiveDirectoryTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) NetappActiveDirectoryTimeoutsOutputReference
 ```

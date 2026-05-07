@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.5
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.apigeeAddonsConfig.ApigeeAddonsConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/apigeeaddonsconfig"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/apigeeaddonsconfig"
 
 apigeeaddonsconfig.NewApigeeAddonsConfig(scope Construct, id *string, config ApigeeAddonsConfigConfig) ApigeeAddonsConfig
 ```
@@ -447,7 +447,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-google.apigeeAddonsConfig.ApigeeAddonsConfig.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/apigeeaddonsconfig"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/apigeeaddonsconfig"
 
 apigeeaddonsconfig.ApigeeAddonsConfig_IsConstruct(x interface{}) *bool
 ```
@@ -479,7 +479,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-google.apigeeAddonsConfig.ApigeeAddonsConfig.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/apigeeaddonsconfig"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/apigeeaddonsconfig"
 
 apigeeaddonsconfig.ApigeeAddonsConfig_IsTerraformElement(x interface{}) *bool
 ```
@@ -493,7 +493,7 @@ apigeeaddonsconfig.ApigeeAddonsConfig_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-google.apigeeAddonsConfig.ApigeeAddonsConfig.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/apigeeaddonsconfig"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/apigeeaddonsconfig"
 
 apigeeaddonsconfig.ApigeeAddonsConfig_IsTerraformResource(x interface{}) *bool
 ```
@@ -507,7 +507,7 @@ apigeeaddonsconfig.ApigeeAddonsConfig_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-google.apigeeAddonsConfig.ApigeeAddonsConfig.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/apigeeaddonsconfig"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/apigeeaddonsconfig"
 
 apigeeaddonsconfig.ApigeeAddonsConfig_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -824,14 +824,14 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.apigeeAddonsConfig.ApigeeAddonsConfigAddonsConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/apigeeaddonsconfig"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/apigeeaddonsconfig"
 
 &apigeeaddonsconfig.ApigeeAddonsConfigAddonsConfig {
-	AdvancedApiOpsConfig: github.com/cdktn-io/cdktn-provider-google-go/google/v17.apigeeAddonsConfig.ApigeeAddonsConfigAddonsConfigAdvancedApiOpsConfig,
-	ApiSecurityConfig: github.com/cdktn-io/cdktn-provider-google-go/google/v17.apigeeAddonsConfig.ApigeeAddonsConfigAddonsConfigApiSecurityConfig,
-	ConnectorsPlatformConfig: github.com/cdktn-io/cdktn-provider-google-go/google/v17.apigeeAddonsConfig.ApigeeAddonsConfigAddonsConfigConnectorsPlatformConfig,
-	IntegrationConfig: github.com/cdktn-io/cdktn-provider-google-go/google/v17.apigeeAddonsConfig.ApigeeAddonsConfigAddonsConfigIntegrationConfig,
-	MonetizationConfig: github.com/cdktn-io/cdktn-provider-google-go/google/v17.apigeeAddonsConfig.ApigeeAddonsConfigAddonsConfigMonetizationConfig,
+	AdvancedApiOpsConfig: github.com/cdktn-io/cdktn-provider-google-go/google/v18.apigeeAddonsConfig.ApigeeAddonsConfigAddonsConfigAdvancedApiOpsConfig,
+	ApiSecurityConfig: github.com/cdktn-io/cdktn-provider-google-go/google/v18.apigeeAddonsConfig.ApigeeAddonsConfigAddonsConfigApiSecurityConfig,
+	ConnectorsPlatformConfig: github.com/cdktn-io/cdktn-provider-google-go/google/v18.apigeeAddonsConfig.ApigeeAddonsConfigAddonsConfigConnectorsPlatformConfig,
+	IntegrationConfig: github.com/cdktn-io/cdktn-provider-google-go/google/v18.apigeeAddonsConfig.ApigeeAddonsConfigAddonsConfigIntegrationConfig,
+	MonetizationConfig: github.com/cdktn-io/cdktn-provider-google-go/google/v18.apigeeAddonsConfig.ApigeeAddonsConfigAddonsConfigMonetizationConfig,
 }
 ```
 
@@ -922,7 +922,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.apigeeAddonsConfig.ApigeeAddonsConfigAddonsConfigAdvancedApiOpsConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/apigeeaddonsconfig"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/apigeeaddonsconfig"
 
 &apigeeaddonsconfig.ApigeeAddonsConfigAddonsConfigAdvancedApiOpsConfig {
 	Enabled: interface{},
@@ -956,7 +956,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.apigeeAddonsConfig.ApigeeAddonsConfigAddonsConfigApiSecurityConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/apigeeaddonsconfig"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/apigeeaddonsconfig"
 
 &apigeeaddonsconfig.ApigeeAddonsConfigAddonsConfigApiSecurityConfig {
 	Enabled: interface{},
@@ -990,7 +990,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.apigeeAddonsConfig.ApigeeAddonsConfigAddonsConfigConnectorsPlatformConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/apigeeaddonsconfig"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/apigeeaddonsconfig"
 
 &apigeeaddonsconfig.ApigeeAddonsConfigAddonsConfigConnectorsPlatformConfig {
 	Enabled: interface{},
@@ -1024,7 +1024,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.apigeeAddonsConfig.ApigeeAddonsConfigAddonsConfigIntegrationConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/apigeeaddonsconfig"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/apigeeaddonsconfig"
 
 &apigeeaddonsconfig.ApigeeAddonsConfigAddonsConfigIntegrationConfig {
 	Enabled: interface{},
@@ -1058,7 +1058,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.apigeeAddonsConfig.ApigeeAddonsConfigAddonsConfigMonetizationConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/apigeeaddonsconfig"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/apigeeaddonsconfig"
 
 &apigeeaddonsconfig.ApigeeAddonsConfigAddonsConfigMonetizationConfig {
 	Enabled: interface{},
@@ -1092,7 +1092,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.apigeeAddonsConfig.ApigeeAddonsConfigConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/apigeeaddonsconfig"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/apigeeaddonsconfig"
 
 &apigeeaddonsconfig.ApigeeAddonsConfigConfig {
 	Connection: interface{},
@@ -1103,9 +1103,9 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/apigeeaddonsconf
 	Provider: github.com/open-constructs/cdk-terrain-go/cdktn.TerraformProvider,
 	Provisioners: *[]interface{},
 	Org: *string,
-	AddonsConfig: github.com/cdktn-io/cdktn-provider-google-go/google/v17.apigeeAddonsConfig.ApigeeAddonsConfigAddonsConfig,
+	AddonsConfig: github.com/cdktn-io/cdktn-provider-google-go/google/v18.apigeeAddonsConfig.ApigeeAddonsConfigAddonsConfig,
 	Id: *string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-google-go/google/v17.apigeeAddonsConfig.ApigeeAddonsConfigTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-google-go/google/v18.apigeeAddonsConfig.ApigeeAddonsConfigTimeouts,
 }
 ```
 
@@ -1259,7 +1259,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.apigeeAddonsConfig.ApigeeAddonsConfigTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/apigeeaddonsconfig"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/apigeeaddonsconfig"
 
 &apigeeaddonsconfig.ApigeeAddonsConfigTimeouts {
 	Create: *string,
@@ -1321,7 +1321,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.apigeeAddonsConfig.ApigeeAddonsConfigAddonsConfigAdvancedApiOpsConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/apigeeaddonsconfig"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/apigeeaddonsconfig"
 
 apigeeaddonsconfig.NewApigeeAddonsConfigAddonsConfigAdvancedApiOpsConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ApigeeAddonsConfigAddonsConfigAdvancedApiOpsConfigOutputReference
 ```
@@ -1599,7 +1599,7 @@ func InternalValue() ApigeeAddonsConfigAddonsConfigAdvancedApiOpsConfig
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.apigeeAddonsConfig.ApigeeAddonsConfigAddonsConfigApiSecurityConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/apigeeaddonsconfig"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/apigeeaddonsconfig"
 
 apigeeaddonsconfig.NewApigeeAddonsConfigAddonsConfigApiSecurityConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ApigeeAddonsConfigAddonsConfigApiSecurityConfigOutputReference
 ```
@@ -1888,7 +1888,7 @@ func InternalValue() ApigeeAddonsConfigAddonsConfigApiSecurityConfig
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.apigeeAddonsConfig.ApigeeAddonsConfigAddonsConfigConnectorsPlatformConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/apigeeaddonsconfig"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/apigeeaddonsconfig"
 
 apigeeaddonsconfig.NewApigeeAddonsConfigAddonsConfigConnectorsPlatformConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ApigeeAddonsConfigAddonsConfigConnectorsPlatformConfigOutputReference
 ```
@@ -2177,7 +2177,7 @@ func InternalValue() ApigeeAddonsConfigAddonsConfigConnectorsPlatformConfig
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.apigeeAddonsConfig.ApigeeAddonsConfigAddonsConfigIntegrationConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/apigeeaddonsconfig"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/apigeeaddonsconfig"
 
 apigeeaddonsconfig.NewApigeeAddonsConfigAddonsConfigIntegrationConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ApigeeAddonsConfigAddonsConfigIntegrationConfigOutputReference
 ```
@@ -2455,7 +2455,7 @@ func InternalValue() ApigeeAddonsConfigAddonsConfigIntegrationConfig
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.apigeeAddonsConfig.ApigeeAddonsConfigAddonsConfigMonetizationConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/apigeeaddonsconfig"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/apigeeaddonsconfig"
 
 apigeeaddonsconfig.NewApigeeAddonsConfigAddonsConfigMonetizationConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ApigeeAddonsConfigAddonsConfigMonetizationConfigOutputReference
 ```
@@ -2733,7 +2733,7 @@ func InternalValue() ApigeeAddonsConfigAddonsConfigMonetizationConfig
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.apigeeAddonsConfig.ApigeeAddonsConfigAddonsConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/apigeeaddonsconfig"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/apigeeaddonsconfig"
 
 apigeeaddonsconfig.NewApigeeAddonsConfigAddonsConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ApigeeAddonsConfigAddonsConfigOutputReference
 ```
@@ -3192,7 +3192,7 @@ func InternalValue() ApigeeAddonsConfigAddonsConfig
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.apigeeAddonsConfig.ApigeeAddonsConfigTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/apigeeaddonsconfig"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/apigeeaddonsconfig"
 
 apigeeaddonsconfig.NewApigeeAddonsConfigTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ApigeeAddonsConfigTimeoutsOutputReference
 ```

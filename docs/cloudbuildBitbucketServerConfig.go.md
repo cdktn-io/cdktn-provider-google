@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.5
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.cloudbuildBitbucketServerConfig.CloudbuildBitbucketServerConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/cloudbuildbitbucketserverconfig"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/cloudbuildbitbucketserverconfig"
 
 cloudbuildbitbucketserverconfig.NewCloudbuildBitbucketServerConfig(scope Construct, id *string, config CloudbuildBitbucketServerConfigConfig) CloudbuildBitbucketServerConfig
 ```
@@ -481,7 +481,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-google.cloudbuildBitbucketServerConfig.CloudbuildBitbucketServerConfig.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/cloudbuildbitbucketserverconfig"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/cloudbuildbitbucketserverconfig"
 
 cloudbuildbitbucketserverconfig.CloudbuildBitbucketServerConfig_IsConstruct(x interface{}) *bool
 ```
@@ -513,7 +513,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-google.cloudbuildBitbucketServerConfig.CloudbuildBitbucketServerConfig.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/cloudbuildbitbucketserverconfig"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/cloudbuildbitbucketserverconfig"
 
 cloudbuildbitbucketserverconfig.CloudbuildBitbucketServerConfig_IsTerraformElement(x interface{}) *bool
 ```
@@ -527,7 +527,7 @@ cloudbuildbitbucketserverconfig.CloudbuildBitbucketServerConfig_IsTerraformEleme
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-google.cloudbuildBitbucketServerConfig.CloudbuildBitbucketServerConfig.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/cloudbuildbitbucketserverconfig"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/cloudbuildbitbucketserverconfig"
 
 cloudbuildbitbucketserverconfig.CloudbuildBitbucketServerConfig_IsTerraformResource(x interface{}) *bool
 ```
@@ -541,7 +541,7 @@ cloudbuildbitbucketserverconfig.CloudbuildBitbucketServerConfig_IsTerraformResou
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-google.cloudbuildBitbucketServerConfig.CloudbuildBitbucketServerConfig.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/cloudbuildbitbucketserverconfig"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/cloudbuildbitbucketserverconfig"
 
 cloudbuildbitbucketserverconfig.CloudbuildBitbucketServerConfig_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -1056,7 +1056,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.cloudbuildBitbucketServerConfig.CloudbuildBitbucketServerConfigConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/cloudbuildbitbucketserverconfig"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/cloudbuildbitbucketserverconfig"
 
 &cloudbuildbitbucketserverconfig.CloudbuildBitbucketServerConfigConfig {
 	Connection: interface{},
@@ -1070,14 +1070,14 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/cloudbuildbitbuc
 	ConfigId: *string,
 	HostUri: *string,
 	Location: *string,
-	Secrets: github.com/cdktn-io/cdktn-provider-google-go/google/v17.cloudbuildBitbucketServerConfig.CloudbuildBitbucketServerConfigSecrets,
+	Secrets: github.com/cdktn-io/cdktn-provider-google-go/google/v18.cloudbuildBitbucketServerConfig.CloudbuildBitbucketServerConfigSecrets,
 	Username: *string,
 	ConnectedRepositories: interface{},
 	Id: *string,
 	PeeredNetwork: *string,
 	Project: *string,
 	SslCa: *string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-google-go/google/v17.cloudbuildBitbucketServerConfig.CloudbuildBitbucketServerConfigTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-google-go/google/v18.cloudbuildBitbucketServerConfig.CloudbuildBitbucketServerConfigTimeouts,
 }
 ```
 
@@ -1362,7 +1362,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.cloudbuildBitbucketServerConfig.CloudbuildBitbucketServerConfigConnectedRepositories.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/cloudbuildbitbucketserverconfig"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/cloudbuildbitbucketserverconfig"
 
 &cloudbuildbitbucketserverconfig.CloudbuildBitbucketServerConfigConnectedRepositories {
 	ProjectKey: *string,
@@ -1412,7 +1412,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.cloudbuildBitbucketServerConfig.CloudbuildBitbucketServerConfigSecrets.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/cloudbuildbitbucketserverconfig"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/cloudbuildbitbucketserverconfig"
 
 &cloudbuildbitbucketserverconfig.CloudbuildBitbucketServerConfigSecrets {
 	AdminAccessTokenVersionName: *string,
@@ -1481,7 +1481,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.cloudbuildBitbucketServerConfig.CloudbuildBitbucketServerConfigTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/cloudbuildbitbucketserverconfig"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/cloudbuildbitbucketserverconfig"
 
 &cloudbuildbitbucketserverconfig.CloudbuildBitbucketServerConfigTimeouts {
 	Create: *string,
@@ -1543,7 +1543,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.cloudbuildBitbucketServerConfig.CloudbuildBitbucketServerConfigConnectedRepositoriesList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/cloudbuildbitbucketserverconfig"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/cloudbuildbitbucketserverconfig"
 
 cloudbuildbitbucketserverconfig.NewCloudbuildBitbucketServerConfigConnectedRepositoriesList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) CloudbuildBitbucketServerConfigConnectedRepositoriesList
 ```
@@ -1703,7 +1703,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.cloudbuildBitbucketServerConfig.CloudbuildBitbucketServerConfigConnectedRepositoriesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/cloudbuildbitbucketserverconfig"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/cloudbuildbitbucketserverconfig"
 
 cloudbuildbitbucketserverconfig.NewCloudbuildBitbucketServerConfigConnectedRepositoriesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) CloudbuildBitbucketServerConfigConnectedRepositoriesOutputReference
 ```
@@ -2014,7 +2014,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.cloudbuildBitbucketServerConfig.CloudbuildBitbucketServerConfigSecretsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/cloudbuildbitbucketserverconfig"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/cloudbuildbitbucketserverconfig"
 
 cloudbuildbitbucketserverconfig.NewCloudbuildBitbucketServerConfigSecretsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) CloudbuildBitbucketServerConfigSecretsOutputReference
 ```
@@ -2329,7 +2329,7 @@ func InternalValue() CloudbuildBitbucketServerConfigSecrets
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.cloudbuildBitbucketServerConfig.CloudbuildBitbucketServerConfigTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/cloudbuildbitbucketserverconfig"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/cloudbuildbitbucketserverconfig"
 
 cloudbuildbitbucketserverconfig.NewCloudbuildBitbucketServerConfigTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) CloudbuildBitbucketServerConfigTimeoutsOutputReference
 ```

@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.5
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.networkConnectivityInternalRange.NetworkConnectivityInternalRange.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/networkconnectivityinternalrange"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/networkconnectivityinternalrange"
 
 networkconnectivityinternalrange.NewNetworkConnectivityInternalRange(scope Construct, id *string, config NetworkConnectivityInternalRangeConfig) NetworkConnectivityInternalRange
 ```
@@ -530,7 +530,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-google.networkConnectivityInternalRange.NetworkConnectivityInternalRange.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/networkconnectivityinternalrange"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/networkconnectivityinternalrange"
 
 networkconnectivityinternalrange.NetworkConnectivityInternalRange_IsConstruct(x interface{}) *bool
 ```
@@ -562,7 +562,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-google.networkConnectivityInternalRange.NetworkConnectivityInternalRange.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/networkconnectivityinternalrange"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/networkconnectivityinternalrange"
 
 networkconnectivityinternalrange.NetworkConnectivityInternalRange_IsTerraformElement(x interface{}) *bool
 ```
@@ -576,7 +576,7 @@ networkconnectivityinternalrange.NetworkConnectivityInternalRange_IsTerraformEle
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-google.networkConnectivityInternalRange.NetworkConnectivityInternalRange.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/networkconnectivityinternalrange"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/networkconnectivityinternalrange"
 
 networkconnectivityinternalrange.NetworkConnectivityInternalRange_IsTerraformResource(x interface{}) *bool
 ```
@@ -590,7 +590,7 @@ networkconnectivityinternalrange.NetworkConnectivityInternalRange_IsTerraformRes
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-google.networkConnectivityInternalRange.NetworkConnectivityInternalRange.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/networkconnectivityinternalrange"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/networkconnectivityinternalrange"
 
 networkconnectivityinternalrange.NetworkConnectivityInternalRange_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -1226,7 +1226,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.networkConnectivityInternalRange.NetworkConnectivityInternalRangeAllocationOptions.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/networkconnectivityinternalrange"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/networkconnectivityinternalrange"
 
 &networkconnectivityinternalrange.NetworkConnectivityInternalRangeAllocationOptions {
 	AllocationStrategy: *string,
@@ -1281,7 +1281,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.networkConnectivityInternalRange.NetworkConnectivityInternalRangeConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/networkconnectivityinternalrange"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/networkconnectivityinternalrange"
 
 &networkconnectivityinternalrange.NetworkConnectivityInternalRangeConfig {
 	Connection: interface{},
@@ -1295,19 +1295,19 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/networkconnectiv
 	Network: *string,
 	Peering: *string,
 	Usage: *string,
-	AllocationOptions: github.com/cdktn-io/cdktn-provider-google-go/google/v17.networkConnectivityInternalRange.NetworkConnectivityInternalRangeAllocationOptions,
+	AllocationOptions: github.com/cdktn-io/cdktn-provider-google-go/google/v18.networkConnectivityInternalRange.NetworkConnectivityInternalRangeAllocationOptions,
 	Description: *string,
 	ExcludeCidrRanges: *[]*string,
 	Id: *string,
 	Immutable: interface{},
 	IpCidrRange: *string,
 	Labels: *map[string]*string,
-	Migration: github.com/cdktn-io/cdktn-provider-google-go/google/v17.networkConnectivityInternalRange.NetworkConnectivityInternalRangeMigration,
+	Migration: github.com/cdktn-io/cdktn-provider-google-go/google/v18.networkConnectivityInternalRange.NetworkConnectivityInternalRangeMigration,
 	Overlaps: *[]*string,
 	PrefixLength: *f64,
 	Project: *string,
 	TargetCidrRange: *[]*string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-google-go/google/v17.networkConnectivityInternalRange.NetworkConnectivityInternalRangeTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-google-go/google/v18.networkConnectivityInternalRange.NetworkConnectivityInternalRangeTimeouts,
 }
 ```
 
@@ -1671,7 +1671,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.networkConnectivityInternalRange.NetworkConnectivityInternalRangeMigration.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/networkconnectivityinternalrange"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/networkconnectivityinternalrange"
 
 &networkconnectivityinternalrange.NetworkConnectivityInternalRangeMigration {
 	Source: *string,
@@ -1730,7 +1730,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.networkConnectivityInternalRange.NetworkConnectivityInternalRangeTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/networkconnectivityinternalrange"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/networkconnectivityinternalrange"
 
 &networkconnectivityinternalrange.NetworkConnectivityInternalRangeTimeouts {
 	Create: *string,
@@ -1792,7 +1792,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.networkConnectivityInternalRange.NetworkConnectivityInternalRangeAllocationOptionsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/networkconnectivityinternalrange"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/networkconnectivityinternalrange"
 
 networkconnectivityinternalrange.NewNetworkConnectivityInternalRangeAllocationOptionsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) NetworkConnectivityInternalRangeAllocationOptionsOutputReference
 ```
@@ -2099,7 +2099,7 @@ func InternalValue() NetworkConnectivityInternalRangeAllocationOptions
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.networkConnectivityInternalRange.NetworkConnectivityInternalRangeMigrationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/networkconnectivityinternalrange"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/networkconnectivityinternalrange"
 
 networkconnectivityinternalrange.NewNetworkConnectivityInternalRangeMigrationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) NetworkConnectivityInternalRangeMigrationOutputReference
 ```
@@ -2392,7 +2392,7 @@ func InternalValue() NetworkConnectivityInternalRangeMigration
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.networkConnectivityInternalRange.NetworkConnectivityInternalRangeTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/networkconnectivityinternalrange"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/networkconnectivityinternalrange"
 
 networkconnectivityinternalrange.NewNetworkConnectivityInternalRangeTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) NetworkConnectivityInternalRangeTimeoutsOutputReference
 ```

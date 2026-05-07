@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.5
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataprocGdcSparkApplication.DataprocGdcSparkApplication.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/dataprocgdcsparkapplication"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/dataprocgdcsparkapplication"
 
 dataprocgdcsparkapplication.NewDataprocGdcSparkApplication(scope Construct, id *string, config DataprocGdcSparkApplicationConfig) DataprocGdcSparkApplication
 ```
@@ -570,7 +570,7 @@ func ResetVersion()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-google.dataprocGdcSparkApplication.DataprocGdcSparkApplication.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/dataprocgdcsparkapplication"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/dataprocgdcsparkapplication"
 
 dataprocgdcsparkapplication.DataprocGdcSparkApplication_IsConstruct(x interface{}) *bool
 ```
@@ -602,7 +602,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-google.dataprocGdcSparkApplication.DataprocGdcSparkApplication.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/dataprocgdcsparkapplication"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/dataprocgdcsparkapplication"
 
 dataprocgdcsparkapplication.DataprocGdcSparkApplication_IsTerraformElement(x interface{}) *bool
 ```
@@ -616,7 +616,7 @@ dataprocgdcsparkapplication.DataprocGdcSparkApplication_IsTerraformElement(x int
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-google.dataprocGdcSparkApplication.DataprocGdcSparkApplication.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/dataprocgdcsparkapplication"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/dataprocgdcsparkapplication"
 
 dataprocgdcsparkapplication.DataprocGdcSparkApplication_IsTerraformResource(x interface{}) *bool
 ```
@@ -630,7 +630,7 @@ dataprocgdcsparkapplication.DataprocGdcSparkApplication_IsTerraformResource(x in
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-google.dataprocGdcSparkApplication.DataprocGdcSparkApplication.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/dataprocgdcsparkapplication"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/dataprocgdcsparkapplication"
 
 dataprocgdcsparkapplication.DataprocGdcSparkApplication_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -1387,7 +1387,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.dataprocGdcSparkApplication.DataprocGdcSparkApplicationConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/dataprocgdcsparkapplication"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/dataprocgdcsparkapplication"
 
 &dataprocgdcsparkapplication.DataprocGdcSparkApplicationConfig {
 	Connection: interface{},
@@ -1409,11 +1409,11 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/dataprocgdcspark
 	Namespace: *string,
 	Project: *string,
 	Properties: *map[string]*string,
-	PysparkApplicationConfig: github.com/cdktn-io/cdktn-provider-google-go/google/v17.dataprocGdcSparkApplication.DataprocGdcSparkApplicationPysparkApplicationConfig,
-	SparkApplicationConfig: github.com/cdktn-io/cdktn-provider-google-go/google/v17.dataprocGdcSparkApplication.DataprocGdcSparkApplicationSparkApplicationConfig,
-	SparkRApplicationConfig: github.com/cdktn-io/cdktn-provider-google-go/google/v17.dataprocGdcSparkApplication.DataprocGdcSparkApplicationSparkRApplicationConfig,
-	SparkSqlApplicationConfig: github.com/cdktn-io/cdktn-provider-google-go/google/v17.dataprocGdcSparkApplication.DataprocGdcSparkApplicationSparkSqlApplicationConfig,
-	Timeouts: github.com/cdktn-io/cdktn-provider-google-go/google/v17.dataprocGdcSparkApplication.DataprocGdcSparkApplicationTimeouts,
+	PysparkApplicationConfig: github.com/cdktn-io/cdktn-provider-google-go/google/v18.dataprocGdcSparkApplication.DataprocGdcSparkApplicationPysparkApplicationConfig,
+	SparkApplicationConfig: github.com/cdktn-io/cdktn-provider-google-go/google/v18.dataprocGdcSparkApplication.DataprocGdcSparkApplicationSparkApplicationConfig,
+	SparkRApplicationConfig: github.com/cdktn-io/cdktn-provider-google-go/google/v18.dataprocGdcSparkApplication.DataprocGdcSparkApplicationSparkRApplicationConfig,
+	SparkSqlApplicationConfig: github.com/cdktn-io/cdktn-provider-google-go/google/v18.dataprocGdcSparkApplication.DataprocGdcSparkApplicationSparkSqlApplicationConfig,
+	Timeouts: github.com/cdktn-io/cdktn-provider-google-go/google/v18.dataprocGdcSparkApplication.DataprocGdcSparkApplicationTimeouts,
 	Version: *string,
 }
 ```
@@ -1786,7 +1786,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.dataprocGdcSparkApplication.DataprocGdcSparkApplicationPysparkApplicationConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/dataprocgdcsparkapplication"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/dataprocgdcsparkapplication"
 
 &dataprocgdcsparkapplication.DataprocGdcSparkApplicationPysparkApplicationConfig {
 	MainPythonFileUri: *string,
@@ -1904,7 +1904,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.dataprocGdcSparkApplication.DataprocGdcSparkApplicationSparkApplicationConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/dataprocgdcsparkapplication"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/dataprocgdcsparkapplication"
 
 &dataprocgdcsparkapplication.DataprocGdcSparkApplicationSparkApplicationConfig {
 	ArchiveUris: *[]*string,
@@ -2024,7 +2024,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.dataprocGdcSparkApplication.DataprocGdcSparkApplicationSparkRApplicationConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/dataprocgdcsparkapplication"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/dataprocgdcsparkapplication"
 
 &dataprocgdcsparkapplication.DataprocGdcSparkApplicationSparkRApplicationConfig {
 	MainRFileUri: *string,
@@ -2110,12 +2110,12 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.dataprocGdcSparkApplication.DataprocGdcSparkApplicationSparkSqlApplicationConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/dataprocgdcsparkapplication"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/dataprocgdcsparkapplication"
 
 &dataprocgdcsparkapplication.DataprocGdcSparkApplicationSparkSqlApplicationConfig {
 	JarFileUris: *[]*string,
 	QueryFileUri: *string,
-	QueryList: github.com/cdktn-io/cdktn-provider-google-go/google/v17.dataprocGdcSparkApplication.DataprocGdcSparkApplicationSparkSqlApplicationConfigQueryListStruct,
+	QueryList: github.com/cdktn-io/cdktn-provider-google-go/google/v18.dataprocGdcSparkApplication.DataprocGdcSparkApplicationSparkSqlApplicationConfigQueryListStruct,
 	ScriptVariables: *map[string]*string,
 }
 ```
@@ -2192,7 +2192,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.dataprocGdcSparkApplication.DataprocGdcSparkApplicationSparkSqlApplicationConfigQueryListStruct.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/dataprocgdcsparkapplication"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/dataprocgdcsparkapplication"
 
 &dataprocgdcsparkapplication.DataprocGdcSparkApplicationSparkSqlApplicationConfigQueryListStruct {
 	Queries: *[]*string,
@@ -2226,7 +2226,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.dataprocGdcSparkApplication.DataprocGdcSparkApplicationTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/dataprocgdcsparkapplication"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/dataprocgdcsparkapplication"
 
 &dataprocgdcsparkapplication.DataprocGdcSparkApplicationTimeouts {
 	Create: *string,
@@ -2288,7 +2288,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataprocGdcSparkApplication.DataprocGdcSparkApplicationPysparkApplicationConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/dataprocgdcsparkapplication"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/dataprocgdcsparkapplication"
 
 dataprocgdcsparkapplication.NewDataprocGdcSparkApplicationPysparkApplicationConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataprocGdcSparkApplicationPysparkApplicationConfigOutputReference
 ```
@@ -2704,7 +2704,7 @@ func InternalValue() DataprocGdcSparkApplicationPysparkApplicationConfig
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataprocGdcSparkApplication.DataprocGdcSparkApplicationSparkApplicationConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/dataprocgdcsparkapplication"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/dataprocgdcsparkapplication"
 
 dataprocgdcsparkapplication.NewDataprocGdcSparkApplicationSparkApplicationConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataprocGdcSparkApplicationSparkApplicationConfigOutputReference
 ```
@@ -3127,7 +3127,7 @@ func InternalValue() DataprocGdcSparkApplicationSparkApplicationConfig
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataprocGdcSparkApplication.DataprocGdcSparkApplicationSparkRApplicationConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/dataprocgdcsparkapplication"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/dataprocgdcsparkapplication"
 
 dataprocgdcsparkapplication.NewDataprocGdcSparkApplicationSparkRApplicationConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataprocGdcSparkApplicationSparkRApplicationConfigOutputReference
 ```
@@ -3485,7 +3485,7 @@ func InternalValue() DataprocGdcSparkApplicationSparkRApplicationConfig
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataprocGdcSparkApplication.DataprocGdcSparkApplicationSparkSqlApplicationConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/dataprocgdcsparkapplication"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/dataprocgdcsparkapplication"
 
 dataprocgdcsparkapplication.NewDataprocGdcSparkApplicationSparkSqlApplicationConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataprocGdcSparkApplicationSparkSqlApplicationConfigOutputReference
 ```
@@ -3863,7 +3863,7 @@ func InternalValue() DataprocGdcSparkApplicationSparkSqlApplicationConfig
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataprocGdcSparkApplication.DataprocGdcSparkApplicationSparkSqlApplicationConfigQueryListStructOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/dataprocgdcsparkapplication"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/dataprocgdcsparkapplication"
 
 dataprocgdcsparkapplication.NewDataprocGdcSparkApplicationSparkSqlApplicationConfigQueryListStructOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataprocGdcSparkApplicationSparkSqlApplicationConfigQueryListStructOutputReference
 ```
@@ -4134,7 +4134,7 @@ func InternalValue() DataprocGdcSparkApplicationSparkSqlApplicationConfigQueryLi
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataprocGdcSparkApplication.DataprocGdcSparkApplicationTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/dataprocgdcsparkapplication"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/dataprocgdcsparkapplication"
 
 dataprocgdcsparkapplication.NewDataprocGdcSparkApplicationTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataprocGdcSparkApplicationTimeoutsOutputReference
 ```

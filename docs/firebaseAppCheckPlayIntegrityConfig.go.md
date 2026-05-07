@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.5
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.firebaseAppCheckPlayIntegrityConfig.FirebaseAppCheckPlayIntegrityConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/firebaseappcheckplayintegrityconfig"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/firebaseappcheckplayintegrityconfig"
 
 firebaseappcheckplayintegrityconfig.NewFirebaseAppCheckPlayIntegrityConfig(scope Construct, id *string, config FirebaseAppCheckPlayIntegrityConfigConfig) FirebaseAppCheckPlayIntegrityConfig
 ```
@@ -441,7 +441,7 @@ func ResetTokenTtl()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-google.firebaseAppCheckPlayIntegrityConfig.FirebaseAppCheckPlayIntegrityConfig.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/firebaseappcheckplayintegrityconfig"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/firebaseappcheckplayintegrityconfig"
 
 firebaseappcheckplayintegrityconfig.FirebaseAppCheckPlayIntegrityConfig_IsConstruct(x interface{}) *bool
 ```
@@ -473,7 +473,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-google.firebaseAppCheckPlayIntegrityConfig.FirebaseAppCheckPlayIntegrityConfig.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/firebaseappcheckplayintegrityconfig"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/firebaseappcheckplayintegrityconfig"
 
 firebaseappcheckplayintegrityconfig.FirebaseAppCheckPlayIntegrityConfig_IsTerraformElement(x interface{}) *bool
 ```
@@ -487,7 +487,7 @@ firebaseappcheckplayintegrityconfig.FirebaseAppCheckPlayIntegrityConfig_IsTerraf
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-google.firebaseAppCheckPlayIntegrityConfig.FirebaseAppCheckPlayIntegrityConfig.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/firebaseappcheckplayintegrityconfig"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/firebaseappcheckplayintegrityconfig"
 
 firebaseappcheckplayintegrityconfig.FirebaseAppCheckPlayIntegrityConfig_IsTerraformResource(x interface{}) *bool
 ```
@@ -501,7 +501,7 @@ firebaseappcheckplayintegrityconfig.FirebaseAppCheckPlayIntegrityConfig_IsTerraf
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-google.firebaseAppCheckPlayIntegrityConfig.FirebaseAppCheckPlayIntegrityConfig.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/firebaseappcheckplayintegrityconfig"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/firebaseappcheckplayintegrityconfig"
 
 firebaseappcheckplayintegrityconfig.FirebaseAppCheckPlayIntegrityConfig_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -851,7 +851,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.firebaseAppCheckPlayIntegrityConfig.FirebaseAppCheckPlayIntegrityConfigConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/firebaseappcheckplayintegrityconfig"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/firebaseappcheckplayintegrityconfig"
 
 &firebaseappcheckplayintegrityconfig.FirebaseAppCheckPlayIntegrityConfigConfig {
 	Connection: interface{},
@@ -864,7 +864,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/firebaseappcheck
 	AppId: *string,
 	Id: *string,
 	Project: *string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-google-go/google/v17.firebaseAppCheckPlayIntegrityConfig.FirebaseAppCheckPlayIntegrityConfigTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-google-go/google/v18.firebaseAppCheckPlayIntegrityConfig.FirebaseAppCheckPlayIntegrityConfigTimeouts,
 	TokenTtl: *string,
 }
 ```
@@ -1036,7 +1036,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.firebaseAppCheckPlayIntegrityConfig.FirebaseAppCheckPlayIntegrityConfigTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/firebaseappcheckplayintegrityconfig"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/firebaseappcheckplayintegrityconfig"
 
 &firebaseappcheckplayintegrityconfig.FirebaseAppCheckPlayIntegrityConfigTimeouts {
 	Create: *string,
@@ -1098,7 +1098,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.firebaseAppCheckPlayIntegrityConfig.FirebaseAppCheckPlayIntegrityConfigTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/firebaseappcheckplayintegrityconfig"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/firebaseappcheckplayintegrityconfig"
 
 firebaseappcheckplayintegrityconfig.NewFirebaseAppCheckPlayIntegrityConfigTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) FirebaseAppCheckPlayIntegrityConfigTimeoutsOutputReference
 ```

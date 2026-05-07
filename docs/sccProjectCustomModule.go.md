@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.5
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.sccProjectCustomModule.SccProjectCustomModule.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/sccprojectcustommodule"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/sccprojectcustommodule"
 
 sccprojectcustommodule.NewSccProjectCustomModule(scope Construct, id *string, config SccProjectCustomModuleConfig) SccProjectCustomModule
 ```
@@ -447,7 +447,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-google.sccProjectCustomModule.SccProjectCustomModule.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/sccprojectcustommodule"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/sccprojectcustommodule"
 
 sccprojectcustommodule.SccProjectCustomModule_IsConstruct(x interface{}) *bool
 ```
@@ -479,7 +479,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-google.sccProjectCustomModule.SccProjectCustomModule.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/sccprojectcustommodule"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/sccprojectcustommodule"
 
 sccprojectcustommodule.SccProjectCustomModule_IsTerraformElement(x interface{}) *bool
 ```
@@ -493,7 +493,7 @@ sccprojectcustommodule.SccProjectCustomModule_IsTerraformElement(x interface{}) 
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-google.sccProjectCustomModule.SccProjectCustomModule.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/sccprojectcustommodule"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/sccprojectcustommodule"
 
 sccprojectcustommodule.SccProjectCustomModule_IsTerraformResource(x interface{}) *bool
 ```
@@ -507,7 +507,7 @@ sccprojectcustommodule.SccProjectCustomModule_IsTerraformResource(x interface{})
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-google.sccProjectCustomModule.SccProjectCustomModule.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/sccprojectcustommodule"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/sccprojectcustommodule"
 
 sccprojectcustommodule.SccProjectCustomModule_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -912,7 +912,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.sccProjectCustomModule.SccProjectCustomModuleConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/sccprojectcustommodule"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/sccprojectcustommodule"
 
 &sccprojectcustommodule.SccProjectCustomModuleConfig {
 	Connection: interface{},
@@ -922,12 +922,12 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/sccprojectcustom
 	Lifecycle: github.com/open-constructs/cdk-terrain-go/cdktn.TerraformResourceLifecycle,
 	Provider: github.com/open-constructs/cdk-terrain-go/cdktn.TerraformProvider,
 	Provisioners: *[]interface{},
-	CustomConfig: github.com/cdktn-io/cdktn-provider-google-go/google/v17.sccProjectCustomModule.SccProjectCustomModuleCustomConfig,
+	CustomConfig: github.com/cdktn-io/cdktn-provider-google-go/google/v18.sccProjectCustomModule.SccProjectCustomModuleCustomConfig,
 	DisplayName: *string,
 	EnablementState: *string,
 	Id: *string,
 	Project: *string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-google-go/google/v17.sccProjectCustomModule.SccProjectCustomModuleTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-google-go/google/v18.sccProjectCustomModule.SccProjectCustomModuleTimeouts,
 }
 ```
 
@@ -1115,14 +1115,14 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.sccProjectCustomModule.SccProjectCustomModuleCustomConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/sccprojectcustommodule"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/sccprojectcustommodule"
 
 &sccprojectcustommodule.SccProjectCustomModuleCustomConfig {
-	Predicate: github.com/cdktn-io/cdktn-provider-google-go/google/v17.sccProjectCustomModule.SccProjectCustomModuleCustomConfigPredicate,
+	Predicate: github.com/cdktn-io/cdktn-provider-google-go/google/v18.sccProjectCustomModule.SccProjectCustomModuleCustomConfigPredicate,
 	Recommendation: *string,
-	ResourceSelector: github.com/cdktn-io/cdktn-provider-google-go/google/v17.sccProjectCustomModule.SccProjectCustomModuleCustomConfigResourceSelector,
+	ResourceSelector: github.com/cdktn-io/cdktn-provider-google-go/google/v18.sccProjectCustomModule.SccProjectCustomModuleCustomConfigResourceSelector,
 	Severity: *string,
-	CustomOutput: github.com/cdktn-io/cdktn-provider-google-go/google/v17.sccProjectCustomModule.SccProjectCustomModuleCustomConfigCustomOutput,
+	CustomOutput: github.com/cdktn-io/cdktn-provider-google-go/google/v18.sccProjectCustomModule.SccProjectCustomModuleCustomConfigCustomOutput,
 	Description: *string,
 }
 ```
@@ -1235,7 +1235,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.sccProjectCustomModule.SccProjectCustomModuleCustomConfigCustomOutput.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/sccprojectcustommodule"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/sccprojectcustommodule"
 
 &sccprojectcustommodule.SccProjectCustomModuleCustomConfigCustomOutput {
 	Properties: interface{},
@@ -1269,11 +1269,11 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.sccProjectCustomModule.SccProjectCustomModuleCustomConfigCustomOutputProperties.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/sccprojectcustommodule"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/sccprojectcustommodule"
 
 &sccprojectcustommodule.SccProjectCustomModuleCustomConfigCustomOutputProperties {
 	Name: *string,
-	ValueExpression: github.com/cdktn-io/cdktn-provider-google-go/google/v17.sccProjectCustomModule.SccProjectCustomModuleCustomConfigCustomOutputPropertiesValueExpression,
+	ValueExpression: github.com/cdktn-io/cdktn-provider-google-go/google/v18.sccProjectCustomModule.SccProjectCustomModuleCustomConfigCustomOutputPropertiesValueExpression,
 }
 ```
 
@@ -1319,7 +1319,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.sccProjectCustomModule.SccProjectCustomModuleCustomConfigCustomOutputPropertiesValueExpression.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/sccprojectcustommodule"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/sccprojectcustommodule"
 
 &sccprojectcustommodule.SccProjectCustomModuleCustomConfigCustomOutputPropertiesValueExpression {
 	Expression: *string,
@@ -1404,7 +1404,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.sccProjectCustomModule.SccProjectCustomModuleCustomConfigPredicate.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/sccprojectcustommodule"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/sccprojectcustommodule"
 
 &sccprojectcustommodule.SccProjectCustomModuleCustomConfigPredicate {
 	Expression: *string,
@@ -1489,7 +1489,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.sccProjectCustomModule.SccProjectCustomModuleCustomConfigResourceSelector.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/sccprojectcustommodule"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/sccprojectcustommodule"
 
 &sccprojectcustommodule.SccProjectCustomModuleCustomConfigResourceSelector {
 	ResourceTypes: *[]*string,
@@ -1523,7 +1523,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.sccProjectCustomModule.SccProjectCustomModuleTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/sccprojectcustommodule"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/sccprojectcustommodule"
 
 &sccprojectcustommodule.SccProjectCustomModuleTimeouts {
 	Create: *string,
@@ -1585,7 +1585,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.sccProjectCustomModule.SccProjectCustomModuleCustomConfigCustomOutputOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/sccprojectcustommodule"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/sccprojectcustommodule"
 
 sccprojectcustommodule.NewSccProjectCustomModuleCustomConfigCustomOutputOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) SccProjectCustomModuleCustomConfigCustomOutputOutputReference
 ```
@@ -1876,7 +1876,7 @@ func InternalValue() SccProjectCustomModuleCustomConfigCustomOutput
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.sccProjectCustomModule.SccProjectCustomModuleCustomConfigCustomOutputPropertiesList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/sccprojectcustommodule"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/sccprojectcustommodule"
 
 sccprojectcustommodule.NewSccProjectCustomModuleCustomConfigCustomOutputPropertiesList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) SccProjectCustomModuleCustomConfigCustomOutputPropertiesList
 ```
@@ -2036,7 +2036,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.sccProjectCustomModule.SccProjectCustomModuleCustomConfigCustomOutputPropertiesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/sccprojectcustommodule"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/sccprojectcustommodule"
 
 sccprojectcustommodule.NewSccProjectCustomModuleCustomConfigCustomOutputPropertiesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) SccProjectCustomModuleCustomConfigCustomOutputPropertiesOutputReference
 ```
@@ -2374,7 +2374,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.sccProjectCustomModule.SccProjectCustomModuleCustomConfigCustomOutputPropertiesValueExpressionOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/sccprojectcustommodule"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/sccprojectcustommodule"
 
 sccprojectcustommodule.NewSccProjectCustomModuleCustomConfigCustomOutputPropertiesValueExpressionOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) SccProjectCustomModuleCustomConfigCustomOutputPropertiesValueExpressionOutputReference
 ```
@@ -2732,7 +2732,7 @@ func InternalValue() SccProjectCustomModuleCustomConfigCustomOutputPropertiesVal
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.sccProjectCustomModule.SccProjectCustomModuleCustomConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/sccprojectcustommodule"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/sccprojectcustommodule"
 
 sccprojectcustommodule.NewSccProjectCustomModuleCustomConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) SccProjectCustomModuleCustomConfigOutputReference
 ```
@@ -3166,7 +3166,7 @@ func InternalValue() SccProjectCustomModuleCustomConfig
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.sccProjectCustomModule.SccProjectCustomModuleCustomConfigPredicateOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/sccprojectcustommodule"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/sccprojectcustommodule"
 
 sccprojectcustommodule.NewSccProjectCustomModuleCustomConfigPredicateOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) SccProjectCustomModuleCustomConfigPredicateOutputReference
 ```
@@ -3524,7 +3524,7 @@ func InternalValue() SccProjectCustomModuleCustomConfigPredicate
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.sccProjectCustomModule.SccProjectCustomModuleCustomConfigResourceSelectorOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/sccprojectcustommodule"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/sccprojectcustommodule"
 
 sccprojectcustommodule.NewSccProjectCustomModuleCustomConfigResourceSelectorOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) SccProjectCustomModuleCustomConfigResourceSelectorOutputReference
 ```
@@ -3795,7 +3795,7 @@ func InternalValue() SccProjectCustomModuleCustomConfigResourceSelector
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.sccProjectCustomModule.SccProjectCustomModuleTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/sccprojectcustommodule"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/sccprojectcustommodule"
 
 sccprojectcustommodule.NewSccProjectCustomModuleTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) SccProjectCustomModuleTimeoutsOutputReference
 ```

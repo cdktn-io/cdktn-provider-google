@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.5
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.computeImage.ComputeImage.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/computeimage"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/computeimage"
 
 computeimage.NewComputeImage(scope Construct, id *string, config ComputeImageConfig) ComputeImage
 ```
@@ -637,7 +637,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-google.computeImage.ComputeImage.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/computeimage"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/computeimage"
 
 computeimage.ComputeImage_IsConstruct(x interface{}) *bool
 ```
@@ -669,7 +669,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-google.computeImage.ComputeImage.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/computeimage"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/computeimage"
 
 computeimage.ComputeImage_IsTerraformElement(x interface{}) *bool
 ```
@@ -683,7 +683,7 @@ computeimage.ComputeImage_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-google.computeImage.ComputeImage.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/computeimage"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/computeimage"
 
 computeimage.ComputeImage_IsTerraformResource(x interface{}) *bool
 ```
@@ -697,7 +697,7 @@ computeimage.ComputeImage_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-google.computeImage.ComputeImage.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/computeimage"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/computeimage"
 
 computeimage.ComputeImage_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -1432,7 +1432,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.computeImage.ComputeImageConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/computeimage"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/computeimage"
 
 &computeimage.ComputeImageConfig {
 	Connection: interface{},
@@ -1448,20 +1448,20 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/computeimage"
 	Family: *string,
 	GuestOsFeatures: interface{},
 	Id: *string,
-	ImageEncryptionKey: github.com/cdktn-io/cdktn-provider-google-go/google/v17.computeImage.ComputeImageImageEncryptionKey,
+	ImageEncryptionKey: github.com/cdktn-io/cdktn-provider-google-go/google/v18.computeImage.ComputeImageImageEncryptionKey,
 	Labels: *map[string]*string,
 	Licenses: *[]*string,
 	Project: *string,
-	RawDisk: github.com/cdktn-io/cdktn-provider-google-go/google/v17.computeImage.ComputeImageRawDisk,
-	ShieldedInstanceInitialState: github.com/cdktn-io/cdktn-provider-google-go/google/v17.computeImage.ComputeImageShieldedInstanceInitialState,
+	RawDisk: github.com/cdktn-io/cdktn-provider-google-go/google/v18.computeImage.ComputeImageRawDisk,
+	ShieldedInstanceInitialState: github.com/cdktn-io/cdktn-provider-google-go/google/v18.computeImage.ComputeImageShieldedInstanceInitialState,
 	SourceDisk: *string,
-	SourceDiskEncryptionKey: github.com/cdktn-io/cdktn-provider-google-go/google/v17.computeImage.ComputeImageSourceDiskEncryptionKey,
+	SourceDiskEncryptionKey: github.com/cdktn-io/cdktn-provider-google-go/google/v18.computeImage.ComputeImageSourceDiskEncryptionKey,
 	SourceImage: *string,
-	SourceImageEncryptionKey: github.com/cdktn-io/cdktn-provider-google-go/google/v17.computeImage.ComputeImageSourceImageEncryptionKey,
+	SourceImageEncryptionKey: github.com/cdktn-io/cdktn-provider-google-go/google/v18.computeImage.ComputeImageSourceImageEncryptionKey,
 	SourceSnapshot: *string,
-	SourceSnapshotEncryptionKey: github.com/cdktn-io/cdktn-provider-google-go/google/v17.computeImage.ComputeImageSourceSnapshotEncryptionKey,
+	SourceSnapshotEncryptionKey: github.com/cdktn-io/cdktn-provider-google-go/google/v18.computeImage.ComputeImageSourceSnapshotEncryptionKey,
 	StorageLocations: *[]*string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-google-go/google/v17.computeImage.ComputeImageTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-google-go/google/v18.computeImage.ComputeImageTimeouts,
 }
 ```
 
@@ -1889,7 +1889,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.computeImage.ComputeImageGuestOsFeatures.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/computeimage"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/computeimage"
 
 &computeimage.ComputeImageGuestOsFeatures {
 	Type: *string,
@@ -1925,7 +1925,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.computeImage.ComputeImageImageEncryptionKey.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/computeimage"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/computeimage"
 
 &computeimage.ComputeImageImageEncryptionKey {
 	KmsKeySelfLink: *string,
@@ -2010,7 +2010,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.computeImage.ComputeImageRawDisk.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/computeimage"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/computeimage"
 
 &computeimage.ComputeImageRawDisk {
 	Source: *string,
@@ -2082,13 +2082,13 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.computeImage.ComputeImageShieldedInstanceInitialState.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/computeimage"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/computeimage"
 
 &computeimage.ComputeImageShieldedInstanceInitialState {
 	Dbs: interface{},
 	Dbxs: interface{},
 	Keks: interface{},
-	Pk: github.com/cdktn-io/cdktn-provider-google-go/google/v17.computeImage.ComputeImageShieldedInstanceInitialStatePk,
+	Pk: github.com/cdktn-io/cdktn-provider-google-go/google/v18.computeImage.ComputeImageShieldedInstanceInitialStatePk,
 }
 ```
 
@@ -2164,7 +2164,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.computeImage.ComputeImageShieldedInstanceInitialStateDbs.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/computeimage"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/computeimage"
 
 &computeimage.ComputeImageShieldedInstanceInitialStateDbs {
 	Content: *string,
@@ -2216,7 +2216,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.computeImage.ComputeImageShieldedInstanceInitialStateDbxs.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/computeimage"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/computeimage"
 
 &computeimage.ComputeImageShieldedInstanceInitialStateDbxs {
 	Content: *string,
@@ -2268,7 +2268,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.computeImage.ComputeImageShieldedInstanceInitialStateKeks.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/computeimage"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/computeimage"
 
 &computeimage.ComputeImageShieldedInstanceInitialStateKeks {
 	Content: *string,
@@ -2320,7 +2320,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.computeImage.ComputeImageShieldedInstanceInitialStatePk.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/computeimage"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/computeimage"
 
 &computeimage.ComputeImageShieldedInstanceInitialStatePk {
 	Content: *string,
@@ -2372,7 +2372,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.computeImage.ComputeImageSourceDiskEncryptionKey.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/computeimage"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/computeimage"
 
 &computeimage.ComputeImageSourceDiskEncryptionKey {
 	KmsKeySelfLink: *string,
@@ -2465,7 +2465,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.computeImage.ComputeImageSourceImageEncryptionKey.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/computeimage"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/computeimage"
 
 &computeimage.ComputeImageSourceImageEncryptionKey {
 	KmsKeySelfLink: *string,
@@ -2558,7 +2558,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.computeImage.ComputeImageSourceSnapshotEncryptionKey.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/computeimage"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/computeimage"
 
 &computeimage.ComputeImageSourceSnapshotEncryptionKey {
 	KmsKeySelfLink: *string,
@@ -2651,7 +2651,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.computeImage.ComputeImageTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/computeimage"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/computeimage"
 
 &computeimage.ComputeImageTimeouts {
 	Create: *string,
@@ -2713,7 +2713,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.computeImage.ComputeImageGuestOsFeaturesList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/computeimage"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/computeimage"
 
 computeimage.NewComputeImageGuestOsFeaturesList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ComputeImageGuestOsFeaturesList
 ```
@@ -2873,7 +2873,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.computeImage.ComputeImageGuestOsFeaturesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/computeimage"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/computeimage"
 
 computeimage.NewComputeImageGuestOsFeaturesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ComputeImageGuestOsFeaturesOutputReference
 ```
@@ -3162,7 +3162,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.computeImage.ComputeImageImageEncryptionKeyOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/computeimage"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/computeimage"
 
 computeimage.NewComputeImageImageEncryptionKeyOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ComputeImageImageEncryptionKeyOutputReference
 ```
@@ -3527,7 +3527,7 @@ func InternalValue() ComputeImageImageEncryptionKey
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.computeImage.ComputeImageRawDiskOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/computeimage"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/computeimage"
 
 computeimage.NewComputeImageRawDiskOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ComputeImageRawDiskOutputReference
 ```
@@ -3856,7 +3856,7 @@ func InternalValue() ComputeImageRawDisk
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.computeImage.ComputeImageShieldedInstanceInitialStateDbsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/computeimage"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/computeimage"
 
 computeimage.NewComputeImageShieldedInstanceInitialStateDbsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ComputeImageShieldedInstanceInitialStateDbsList
 ```
@@ -4016,7 +4016,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.computeImage.ComputeImageShieldedInstanceInitialStateDbsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/computeimage"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/computeimage"
 
 computeimage.NewComputeImageShieldedInstanceInitialStateDbsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ComputeImageShieldedInstanceInitialStateDbsOutputReference
 ```
@@ -4334,7 +4334,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.computeImage.ComputeImageShieldedInstanceInitialStateDbxsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/computeimage"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/computeimage"
 
 computeimage.NewComputeImageShieldedInstanceInitialStateDbxsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ComputeImageShieldedInstanceInitialStateDbxsList
 ```
@@ -4494,7 +4494,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.computeImage.ComputeImageShieldedInstanceInitialStateDbxsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/computeimage"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/computeimage"
 
 computeimage.NewComputeImageShieldedInstanceInitialStateDbxsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ComputeImageShieldedInstanceInitialStateDbxsOutputReference
 ```
@@ -4812,7 +4812,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.computeImage.ComputeImageShieldedInstanceInitialStateKeksList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/computeimage"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/computeimage"
 
 computeimage.NewComputeImageShieldedInstanceInitialStateKeksList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ComputeImageShieldedInstanceInitialStateKeksList
 ```
@@ -4972,7 +4972,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.computeImage.ComputeImageShieldedInstanceInitialStateKeksOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/computeimage"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/computeimage"
 
 computeimage.NewComputeImageShieldedInstanceInitialStateKeksOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ComputeImageShieldedInstanceInitialStateKeksOutputReference
 ```
@@ -5290,7 +5290,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.computeImage.ComputeImageShieldedInstanceInitialStateOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/computeimage"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/computeimage"
 
 computeimage.NewComputeImageShieldedInstanceInitialStateOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ComputeImageShieldedInstanceInitialStateOutputReference
 ```
@@ -5707,7 +5707,7 @@ func InternalValue() ComputeImageShieldedInstanceInitialState
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.computeImage.ComputeImageShieldedInstanceInitialStatePkOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/computeimage"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/computeimage"
 
 computeimage.NewComputeImageShieldedInstanceInitialStatePkOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ComputeImageShieldedInstanceInitialStatePkOutputReference
 ```
@@ -6007,7 +6007,7 @@ func InternalValue() ComputeImageShieldedInstanceInitialStatePk
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.computeImage.ComputeImageSourceDiskEncryptionKeyOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/computeimage"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/computeimage"
 
 computeimage.NewComputeImageSourceDiskEncryptionKeyOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ComputeImageSourceDiskEncryptionKeyOutputReference
 ```
@@ -6372,7 +6372,7 @@ func InternalValue() ComputeImageSourceDiskEncryptionKey
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.computeImage.ComputeImageSourceImageEncryptionKeyOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/computeimage"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/computeimage"
 
 computeimage.NewComputeImageSourceImageEncryptionKeyOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ComputeImageSourceImageEncryptionKeyOutputReference
 ```
@@ -6737,7 +6737,7 @@ func InternalValue() ComputeImageSourceImageEncryptionKey
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.computeImage.ComputeImageSourceSnapshotEncryptionKeyOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/computeimage"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/computeimage"
 
 computeimage.NewComputeImageSourceSnapshotEncryptionKeyOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ComputeImageSourceSnapshotEncryptionKeyOutputReference
 ```
@@ -7102,7 +7102,7 @@ func InternalValue() ComputeImageSourceSnapshotEncryptionKey
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.computeImage.ComputeImageTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/computeimage"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/computeimage"
 
 computeimage.NewComputeImageTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ComputeImageTimeoutsOutputReference
 ```

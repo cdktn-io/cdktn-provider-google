@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.5
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataGoogleBeyondcorpAppConnector.DataGoogleBeyondcorpAppConnector.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/datagooglebeyondcorpappconnector"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/datagooglebeyondcorpappconnector"
 
 datagooglebeyondcorpappconnector.NewDataGoogleBeyondcorpAppConnector(scope Construct, id *string, config DataGoogleBeyondcorpAppConnectorConfig) DataGoogleBeyondcorpAppConnector
 ```
@@ -319,7 +319,7 @@ func ResetRegion()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-google.dataGoogleBeyondcorpAppConnector.DataGoogleBeyondcorpAppConnector.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/datagooglebeyondcorpappconnector"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/datagooglebeyondcorpappconnector"
 
 datagooglebeyondcorpappconnector.DataGoogleBeyondcorpAppConnector_IsConstruct(x interface{}) *bool
 ```
@@ -351,7 +351,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-google.dataGoogleBeyondcorpAppConnector.DataGoogleBeyondcorpAppConnector.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/datagooglebeyondcorpappconnector"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/datagooglebeyondcorpappconnector"
 
 datagooglebeyondcorpappconnector.DataGoogleBeyondcorpAppConnector_IsTerraformElement(x interface{}) *bool
 ```
@@ -365,7 +365,7 @@ datagooglebeyondcorpappconnector.DataGoogleBeyondcorpAppConnector_IsTerraformEle
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktn/provider-google.dataGoogleBeyondcorpAppConnector.DataGoogleBeyondcorpAppConnector.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/datagooglebeyondcorpappconnector"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/datagooglebeyondcorpappconnector"
 
 datagooglebeyondcorpappconnector.DataGoogleBeyondcorpAppConnector_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -379,7 +379,7 @@ datagooglebeyondcorpappconnector.DataGoogleBeyondcorpAppConnector_IsTerraformDat
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-google.dataGoogleBeyondcorpAppConnector.DataGoogleBeyondcorpAppConnector.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/datagooglebeyondcorpappconnector"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/datagooglebeyondcorpappconnector"
 
 datagooglebeyondcorpappconnector.DataGoogleBeyondcorpAppConnector_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -740,7 +740,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.dataGoogleBeyondcorpAppConnector.DataGoogleBeyondcorpAppConnectorConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/datagooglebeyondcorpappconnector"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/datagooglebeyondcorpappconnector"
 
 &datagooglebeyondcorpappconnector.DataGoogleBeyondcorpAppConnectorConfig {
 	Connection: interface{},
@@ -905,7 +905,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.dataGoogleBeyondcorpAppConnector.DataGoogleBeyondcorpAppConnectorPrincipalInfo.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/datagooglebeyondcorpappconnector"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/datagooglebeyondcorpappconnector"
 
 &datagooglebeyondcorpappconnector.DataGoogleBeyondcorpAppConnectorPrincipalInfo {
 
@@ -918,7 +918,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/datagooglebeyond
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.dataGoogleBeyondcorpAppConnector.DataGoogleBeyondcorpAppConnectorPrincipalInfoServiceAccount.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/datagooglebeyondcorpappconnector"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/datagooglebeyondcorpappconnector"
 
 &datagooglebeyondcorpappconnector.DataGoogleBeyondcorpAppConnectorPrincipalInfoServiceAccount {
 
@@ -933,7 +933,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/datagooglebeyond
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataGoogleBeyondcorpAppConnector.DataGoogleBeyondcorpAppConnectorPrincipalInfoList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/datagooglebeyondcorpappconnector"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/datagooglebeyondcorpappconnector"
 
 datagooglebeyondcorpappconnector.NewDataGoogleBeyondcorpAppConnectorPrincipalInfoList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataGoogleBeyondcorpAppConnectorPrincipalInfoList
 ```
@@ -1082,7 +1082,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataGoogleBeyondcorpAppConnector.DataGoogleBeyondcorpAppConnectorPrincipalInfoOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/datagooglebeyondcorpappconnector"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/datagooglebeyondcorpappconnector"
 
 datagooglebeyondcorpappconnector.NewDataGoogleBeyondcorpAppConnectorPrincipalInfoOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataGoogleBeyondcorpAppConnectorPrincipalInfoOutputReference
 ```
@@ -1360,7 +1360,7 @@ func InternalValue() DataGoogleBeyondcorpAppConnectorPrincipalInfo
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataGoogleBeyondcorpAppConnector.DataGoogleBeyondcorpAppConnectorPrincipalInfoServiceAccountList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/datagooglebeyondcorpappconnector"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/datagooglebeyondcorpappconnector"
 
 datagooglebeyondcorpappconnector.NewDataGoogleBeyondcorpAppConnectorPrincipalInfoServiceAccountList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataGoogleBeyondcorpAppConnectorPrincipalInfoServiceAccountList
 ```
@@ -1509,7 +1509,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataGoogleBeyondcorpAppConnector.DataGoogleBeyondcorpAppConnectorPrincipalInfoServiceAccountOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/datagooglebeyondcorpappconnector"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/datagooglebeyondcorpappconnector"
 
 datagooglebeyondcorpappconnector.NewDataGoogleBeyondcorpAppConnectorPrincipalInfoServiceAccountOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataGoogleBeyondcorpAppConnectorPrincipalInfoServiceAccountOutputReference
 ```

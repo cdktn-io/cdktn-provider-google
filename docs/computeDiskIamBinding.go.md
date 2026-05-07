@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.5
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.computeDiskIamBinding.ComputeDiskIamBinding.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/computediskiambinding"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/computediskiambinding"
 
 computediskiambinding.NewComputeDiskIamBinding(scope Construct, id *string, config ComputeDiskIamBindingConfig) ComputeDiskIamBinding
 ```
@@ -441,7 +441,7 @@ func ResetZone()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-google.computeDiskIamBinding.ComputeDiskIamBinding.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/computediskiambinding"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/computediskiambinding"
 
 computediskiambinding.ComputeDiskIamBinding_IsConstruct(x interface{}) *bool
 ```
@@ -473,7 +473,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-google.computeDiskIamBinding.ComputeDiskIamBinding.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/computediskiambinding"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/computediskiambinding"
 
 computediskiambinding.ComputeDiskIamBinding_IsTerraformElement(x interface{}) *bool
 ```
@@ -487,7 +487,7 @@ computediskiambinding.ComputeDiskIamBinding_IsTerraformElement(x interface{}) *b
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-google.computeDiskIamBinding.ComputeDiskIamBinding.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/computediskiambinding"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/computediskiambinding"
 
 computediskiambinding.ComputeDiskIamBinding_IsTerraformResource(x interface{}) *bool
 ```
@@ -501,7 +501,7 @@ computediskiambinding.ComputeDiskIamBinding_IsTerraformResource(x interface{}) *
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-google.computeDiskIamBinding.ComputeDiskIamBinding.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/computediskiambinding"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/computediskiambinding"
 
 computediskiambinding.ComputeDiskIamBinding_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -895,7 +895,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.computeDiskIamBinding.ComputeDiskIamBindingCondition.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/computediskiambinding"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/computediskiambinding"
 
 &computediskiambinding.ComputeDiskIamBindingCondition {
 	Expression: *string,
@@ -955,7 +955,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.computeDiskIamBinding.ComputeDiskIamBindingConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/computediskiambinding"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/computediskiambinding"
 
 &computediskiambinding.ComputeDiskIamBindingConfig {
 	Connection: interface{},
@@ -968,7 +968,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/computediskiambi
 	Members: *[]*string,
 	Name: *string,
 	Role: *string,
-	Condition: github.com/cdktn-io/cdktn-provider-google-go/google/v17.computeDiskIamBinding.ComputeDiskIamBindingCondition,
+	Condition: github.com/cdktn-io/cdktn-provider-google-go/google/v18.computeDiskIamBinding.ComputeDiskIamBindingCondition,
 	Id: *string,
 	Project: *string,
 	Zone: *string,
@@ -1162,7 +1162,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.computeDiskIamBinding.ComputeDiskIamBindingConditionOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/computediskiambinding"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/computediskiambinding"
 
 computediskiambinding.NewComputeDiskIamBindingConditionOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ComputeDiskIamBindingConditionOutputReference
 ```

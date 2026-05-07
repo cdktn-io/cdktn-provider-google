@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.5
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.iapTunnelDestGroupIamBinding.IapTunnelDestGroupIamBinding.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/iaptunneldestgroupiambinding"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/iaptunneldestgroupiambinding"
 
 iaptunneldestgroupiambinding.NewIapTunnelDestGroupIamBinding(scope Construct, id *string, config IapTunnelDestGroupIamBindingConfig) IapTunnelDestGroupIamBinding
 ```
@@ -441,7 +441,7 @@ func ResetRegion()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-google.iapTunnelDestGroupIamBinding.IapTunnelDestGroupIamBinding.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/iaptunneldestgroupiambinding"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/iaptunneldestgroupiambinding"
 
 iaptunneldestgroupiambinding.IapTunnelDestGroupIamBinding_IsConstruct(x interface{}) *bool
 ```
@@ -473,7 +473,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-google.iapTunnelDestGroupIamBinding.IapTunnelDestGroupIamBinding.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/iaptunneldestgroupiambinding"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/iaptunneldestgroupiambinding"
 
 iaptunneldestgroupiambinding.IapTunnelDestGroupIamBinding_IsTerraformElement(x interface{}) *bool
 ```
@@ -487,7 +487,7 @@ iaptunneldestgroupiambinding.IapTunnelDestGroupIamBinding_IsTerraformElement(x i
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-google.iapTunnelDestGroupIamBinding.IapTunnelDestGroupIamBinding.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/iaptunneldestgroupiambinding"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/iaptunneldestgroupiambinding"
 
 iaptunneldestgroupiambinding.IapTunnelDestGroupIamBinding_IsTerraformResource(x interface{}) *bool
 ```
@@ -501,7 +501,7 @@ iaptunneldestgroupiambinding.IapTunnelDestGroupIamBinding_IsTerraformResource(x 
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-google.iapTunnelDestGroupIamBinding.IapTunnelDestGroupIamBinding.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/iaptunneldestgroupiambinding"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/iaptunneldestgroupiambinding"
 
 iaptunneldestgroupiambinding.IapTunnelDestGroupIamBinding_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -895,7 +895,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.iapTunnelDestGroupIamBinding.IapTunnelDestGroupIamBindingCondition.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/iaptunneldestgroupiambinding"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/iaptunneldestgroupiambinding"
 
 &iaptunneldestgroupiambinding.IapTunnelDestGroupIamBindingCondition {
 	Expression: *string,
@@ -955,7 +955,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.iapTunnelDestGroupIamBinding.IapTunnelDestGroupIamBindingConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/iaptunneldestgroupiambinding"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/iaptunneldestgroupiambinding"
 
 &iaptunneldestgroupiambinding.IapTunnelDestGroupIamBindingConfig {
 	Connection: interface{},
@@ -968,7 +968,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/iaptunneldestgro
 	DestGroup: *string,
 	Members: *[]*string,
 	Role: *string,
-	Condition: github.com/cdktn-io/cdktn-provider-google-go/google/v17.iapTunnelDestGroupIamBinding.IapTunnelDestGroupIamBindingCondition,
+	Condition: github.com/cdktn-io/cdktn-provider-google-go/google/v18.iapTunnelDestGroupIamBinding.IapTunnelDestGroupIamBindingCondition,
 	Id: *string,
 	Project: *string,
 	Region: *string,
@@ -1162,7 +1162,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.iapTunnelDestGroupIamBinding.IapTunnelDestGroupIamBindingConditionOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/iaptunneldestgroupiambinding"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/iaptunneldestgroupiambinding"
 
 iaptunneldestgroupiambinding.NewIapTunnelDestGroupIamBindingConditionOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) IapTunnelDestGroupIamBindingConditionOutputReference
 ```

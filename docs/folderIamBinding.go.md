@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.5
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.folderIamBinding.FolderIamBinding.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/folderiambinding"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/folderiambinding"
 
 folderiambinding.NewFolderIamBinding(scope Construct, id *string, config FolderIamBindingConfig) FolderIamBinding
 ```
@@ -427,7 +427,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-google.folderIamBinding.FolderIamBinding.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/folderiambinding"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/folderiambinding"
 
 folderiambinding.FolderIamBinding_IsConstruct(x interface{}) *bool
 ```
@@ -459,7 +459,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-google.folderIamBinding.FolderIamBinding.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/folderiambinding"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/folderiambinding"
 
 folderiambinding.FolderIamBinding_IsTerraformElement(x interface{}) *bool
 ```
@@ -473,7 +473,7 @@ folderiambinding.FolderIamBinding_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-google.folderIamBinding.FolderIamBinding.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/folderiambinding"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/folderiambinding"
 
 folderiambinding.FolderIamBinding_IsTerraformResource(x interface{}) *bool
 ```
@@ -487,7 +487,7 @@ folderiambinding.FolderIamBinding_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-google.folderIamBinding.FolderIamBinding.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/folderiambinding"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/folderiambinding"
 
 folderiambinding.FolderIamBinding_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -837,7 +837,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.folderIamBinding.FolderIamBindingCondition.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/folderiambinding"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/folderiambinding"
 
 &folderiambinding.FolderIamBindingCondition {
 	Expression: *string,
@@ -897,7 +897,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.folderIamBinding.FolderIamBindingConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/folderiambinding"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/folderiambinding"
 
 &folderiambinding.FolderIamBindingConfig {
 	Connection: interface{},
@@ -910,7 +910,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/folderiambinding
 	Folder: *string,
 	Members: *[]*string,
 	Role: *string,
-	Condition: github.com/cdktn-io/cdktn-provider-google-go/google/v17.folderIamBinding.FolderIamBindingCondition,
+	Condition: github.com/cdktn-io/cdktn-provider-google-go/google/v18.folderIamBinding.FolderIamBindingCondition,
 	Id: *string,
 }
 ```
@@ -1076,7 +1076,7 @@ If you experience problems setting this value it might not be settable. Please t
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.folderIamBinding.FolderIamBindingConditionOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/folderiambinding"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/folderiambinding"
 
 folderiambinding.NewFolderIamBindingConditionOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) FolderIamBindingConditionOutputReference
 ```

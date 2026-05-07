@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.5
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.tagsTagValue.TagsTagValue.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/tagstagvalue"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/tagstagvalue"
 
 tagstagvalue.NewTagsTagValue(scope Construct, id *string, config TagsTagValueConfig) TagsTagValue
 ```
@@ -434,7 +434,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-google.tagsTagValue.TagsTagValue.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/tagstagvalue"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/tagstagvalue"
 
 tagstagvalue.TagsTagValue_IsConstruct(x interface{}) *bool
 ```
@@ -466,7 +466,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-google.tagsTagValue.TagsTagValue.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/tagstagvalue"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/tagstagvalue"
 
 tagstagvalue.TagsTagValue_IsTerraformElement(x interface{}) *bool
 ```
@@ -480,7 +480,7 @@ tagstagvalue.TagsTagValue_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-google.tagsTagValue.TagsTagValue.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/tagstagvalue"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/tagstagvalue"
 
 tagstagvalue.TagsTagValue_IsTerraformResource(x interface{}) *bool
 ```
@@ -494,7 +494,7 @@ tagstagvalue.TagsTagValue_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-google.tagsTagValue.TagsTagValue.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/tagstagvalue"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/tagstagvalue"
 
 tagstagvalue.TagsTagValue_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -877,7 +877,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.tagsTagValue.TagsTagValueConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/tagstagvalue"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/tagstagvalue"
 
 &tagstagvalue.TagsTagValueConfig {
 	Connection: interface{},
@@ -891,7 +891,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/tagstagvalue"
 	ShortName: *string,
 	Description: *string,
 	Id: *string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-google-go/google/v17.tagsTagValue.TagsTagValueTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-google-go/google/v18.tagsTagValue.TagsTagValueTimeouts,
 }
 ```
 
@@ -1064,7 +1064,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.tagsTagValue.TagsTagValueTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/tagstagvalue"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/tagstagvalue"
 
 &tagstagvalue.TagsTagValueTimeouts {
 	Create: *string,
@@ -1126,7 +1126,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.tagsTagValue.TagsTagValueTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/tagstagvalue"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/tagstagvalue"
 
 tagstagvalue.NewTagsTagValueTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) TagsTagValueTimeoutsOutputReference
 ```

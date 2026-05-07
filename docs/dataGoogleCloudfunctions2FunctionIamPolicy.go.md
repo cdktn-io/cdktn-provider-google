@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.5
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataGoogleCloudfunctions2FunctionIamPolicy.DataGoogleCloudfunctions2FunctionIamPolicy.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/datagooglecloudfunctions2functioniampolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/datagooglecloudfunctions2functioniampolicy"
 
 datagooglecloudfunctions2functioniampolicy.NewDataGoogleCloudfunctions2FunctionIamPolicy(scope Construct, id *string, config DataGoogleCloudfunctions2FunctionIamPolicyConfig) DataGoogleCloudfunctions2FunctionIamPolicy
 ```
@@ -319,7 +319,7 @@ func ResetProject()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-google.dataGoogleCloudfunctions2FunctionIamPolicy.DataGoogleCloudfunctions2FunctionIamPolicy.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/datagooglecloudfunctions2functioniampolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/datagooglecloudfunctions2functioniampolicy"
 
 datagooglecloudfunctions2functioniampolicy.DataGoogleCloudfunctions2FunctionIamPolicy_IsConstruct(x interface{}) *bool
 ```
@@ -351,7 +351,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-google.dataGoogleCloudfunctions2FunctionIamPolicy.DataGoogleCloudfunctions2FunctionIamPolicy.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/datagooglecloudfunctions2functioniampolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/datagooglecloudfunctions2functioniampolicy"
 
 datagooglecloudfunctions2functioniampolicy.DataGoogleCloudfunctions2FunctionIamPolicy_IsTerraformElement(x interface{}) *bool
 ```
@@ -365,7 +365,7 @@ datagooglecloudfunctions2functioniampolicy.DataGoogleCloudfunctions2FunctionIamP
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktn/provider-google.dataGoogleCloudfunctions2FunctionIamPolicy.DataGoogleCloudfunctions2FunctionIamPolicy.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/datagooglecloudfunctions2functioniampolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/datagooglecloudfunctions2functioniampolicy"
 
 datagooglecloudfunctions2functioniampolicy.DataGoogleCloudfunctions2FunctionIamPolicy_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -379,7 +379,7 @@ datagooglecloudfunctions2functioniampolicy.DataGoogleCloudfunctions2FunctionIamP
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-google.dataGoogleCloudfunctions2FunctionIamPolicy.DataGoogleCloudfunctions2FunctionIamPolicy.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/datagooglecloudfunctions2functioniampolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/datagooglecloudfunctions2functioniampolicy"
 
 datagooglecloudfunctions2functioniampolicy.DataGoogleCloudfunctions2FunctionIamPolicy_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -696,7 +696,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.dataGoogleCloudfunctions2FunctionIamPolicy.DataGoogleCloudfunctions2FunctionIamPolicyConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/datagooglecloudfunctions2functioniampolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/datagooglecloudfunctions2functioniampolicy"
 
 &datagooglecloudfunctions2functioniampolicy.DataGoogleCloudfunctions2FunctionIamPolicyConfig {
 	Connection: interface{},

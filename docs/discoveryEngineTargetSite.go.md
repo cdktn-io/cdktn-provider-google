@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.5
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.discoveryEngineTargetSite.DiscoveryEngineTargetSite.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/discoveryenginetargetsite"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/discoveryenginetargetsite"
 
 discoveryenginetargetsite.NewDiscoveryEngineTargetSite(scope Construct, id *string, config DiscoveryEngineTargetSiteConfig) DiscoveryEngineTargetSite
 ```
@@ -448,7 +448,7 @@ func ResetType()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-google.discoveryEngineTargetSite.DiscoveryEngineTargetSite.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/discoveryenginetargetsite"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/discoveryenginetargetsite"
 
 discoveryenginetargetsite.DiscoveryEngineTargetSite_IsConstruct(x interface{}) *bool
 ```
@@ -480,7 +480,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-google.discoveryEngineTargetSite.DiscoveryEngineTargetSite.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/discoveryenginetargetsite"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/discoveryenginetargetsite"
 
 discoveryenginetargetsite.DiscoveryEngineTargetSite_IsTerraformElement(x interface{}) *bool
 ```
@@ -494,7 +494,7 @@ discoveryenginetargetsite.DiscoveryEngineTargetSite_IsTerraformElement(x interfa
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-google.discoveryEngineTargetSite.DiscoveryEngineTargetSite.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/discoveryenginetargetsite"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/discoveryenginetargetsite"
 
 discoveryenginetargetsite.DiscoveryEngineTargetSite_IsTerraformResource(x interface{}) *bool
 ```
@@ -508,7 +508,7 @@ discoveryenginetargetsite.DiscoveryEngineTargetSite_IsTerraformResource(x interf
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-google.discoveryEngineTargetSite.DiscoveryEngineTargetSite.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/discoveryenginetargetsite"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/discoveryenginetargetsite"
 
 discoveryenginetargetsite.DiscoveryEngineTargetSite_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -1001,7 +1001,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.discoveryEngineTargetSite.DiscoveryEngineTargetSiteConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/discoveryenginetargetsite"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/discoveryenginetargetsite"
 
 &discoveryenginetargetsite.DiscoveryEngineTargetSiteConfig {
 	Connection: interface{},
@@ -1017,7 +1017,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/discoveryenginet
 	ExactMatch: interface{},
 	Id: *string,
 	Project: *string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-google-go/google/v17.discoveryEngineTargetSite.DiscoveryEngineTargetSiteTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-google-go/google/v18.discoveryEngineTargetSite.DiscoveryEngineTargetSiteTimeouts,
 	Type: *string,
 }
 ```
@@ -1236,7 +1236,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.discoveryEngineTargetSite.DiscoveryEngineTargetSiteFailureReason.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/discoveryenginetargetsite"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/discoveryenginetargetsite"
 
 &discoveryenginetargetsite.DiscoveryEngineTargetSiteFailureReason {
 
@@ -1249,7 +1249,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/discoveryenginet
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.discoveryEngineTargetSite.DiscoveryEngineTargetSiteFailureReasonQuotaFailure.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/discoveryenginetargetsite"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/discoveryenginetargetsite"
 
 &discoveryenginetargetsite.DiscoveryEngineTargetSiteFailureReasonQuotaFailure {
 
@@ -1262,7 +1262,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/discoveryenginet
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.discoveryEngineTargetSite.DiscoveryEngineTargetSiteSiteVerificationInfo.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/discoveryenginetargetsite"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/discoveryenginetargetsite"
 
 &discoveryenginetargetsite.DiscoveryEngineTargetSiteSiteVerificationInfo {
 
@@ -1275,7 +1275,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/discoveryenginet
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.discoveryEngineTargetSite.DiscoveryEngineTargetSiteTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/discoveryenginetargetsite"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/discoveryenginetargetsite"
 
 &discoveryenginetargetsite.DiscoveryEngineTargetSiteTimeouts {
 	Create: *string,
@@ -1323,7 +1323,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.discoveryEngineTargetSite.DiscoveryEngineTargetSiteFailureReasonList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/discoveryenginetargetsite"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/discoveryenginetargetsite"
 
 discoveryenginetargetsite.NewDiscoveryEngineTargetSiteFailureReasonList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DiscoveryEngineTargetSiteFailureReasonList
 ```
@@ -1472,7 +1472,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.discoveryEngineTargetSite.DiscoveryEngineTargetSiteFailureReasonOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/discoveryenginetargetsite"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/discoveryenginetargetsite"
 
 discoveryenginetargetsite.NewDiscoveryEngineTargetSiteFailureReasonOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DiscoveryEngineTargetSiteFailureReasonOutputReference
 ```
@@ -1750,7 +1750,7 @@ func InternalValue() DiscoveryEngineTargetSiteFailureReason
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.discoveryEngineTargetSite.DiscoveryEngineTargetSiteFailureReasonQuotaFailureList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/discoveryenginetargetsite"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/discoveryenginetargetsite"
 
 discoveryenginetargetsite.NewDiscoveryEngineTargetSiteFailureReasonQuotaFailureList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DiscoveryEngineTargetSiteFailureReasonQuotaFailureList
 ```
@@ -1899,7 +1899,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.discoveryEngineTargetSite.DiscoveryEngineTargetSiteFailureReasonQuotaFailureOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/discoveryenginetargetsite"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/discoveryenginetargetsite"
 
 discoveryenginetargetsite.NewDiscoveryEngineTargetSiteFailureReasonQuotaFailureOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DiscoveryEngineTargetSiteFailureReasonQuotaFailureOutputReference
 ```
@@ -2177,7 +2177,7 @@ func InternalValue() DiscoveryEngineTargetSiteFailureReasonQuotaFailure
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.discoveryEngineTargetSite.DiscoveryEngineTargetSiteSiteVerificationInfoList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/discoveryenginetargetsite"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/discoveryenginetargetsite"
 
 discoveryenginetargetsite.NewDiscoveryEngineTargetSiteSiteVerificationInfoList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DiscoveryEngineTargetSiteSiteVerificationInfoList
 ```
@@ -2326,7 +2326,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.discoveryEngineTargetSite.DiscoveryEngineTargetSiteSiteVerificationInfoOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/discoveryenginetargetsite"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/discoveryenginetargetsite"
 
 discoveryenginetargetsite.NewDiscoveryEngineTargetSiteSiteVerificationInfoOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DiscoveryEngineTargetSiteSiteVerificationInfoOutputReference
 ```
@@ -2615,7 +2615,7 @@ func InternalValue() DiscoveryEngineTargetSiteSiteVerificationInfo
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.discoveryEngineTargetSite.DiscoveryEngineTargetSiteTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/discoveryenginetargetsite"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/discoveryenginetargetsite"
 
 discoveryenginetargetsite.NewDiscoveryEngineTargetSiteTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DiscoveryEngineTargetSiteTimeoutsOutputReference
 ```

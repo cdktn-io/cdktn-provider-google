@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.5
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.integrationsAuthConfig.IntegrationsAuthConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/integrationsauthconfig"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/integrationsauthconfig"
 
 integrationsauthconfig.NewIntegrationsAuthConfig(scope Construct, id *string, config IntegrationsAuthConfigConfig) IntegrationsAuthConfig
 ```
@@ -502,7 +502,7 @@ func ResetVisibility()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-google.integrationsAuthConfig.IntegrationsAuthConfig.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/integrationsauthconfig"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/integrationsauthconfig"
 
 integrationsauthconfig.IntegrationsAuthConfig_IsConstruct(x interface{}) *bool
 ```
@@ -534,7 +534,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-google.integrationsAuthConfig.IntegrationsAuthConfig.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/integrationsauthconfig"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/integrationsauthconfig"
 
 integrationsauthconfig.IntegrationsAuthConfig_IsTerraformElement(x interface{}) *bool
 ```
@@ -548,7 +548,7 @@ integrationsauthconfig.IntegrationsAuthConfig_IsTerraformElement(x interface{}) 
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-google.integrationsAuthConfig.IntegrationsAuthConfig.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/integrationsauthconfig"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/integrationsauthconfig"
 
 integrationsauthconfig.IntegrationsAuthConfig_IsTerraformResource(x interface{}) *bool
 ```
@@ -562,7 +562,7 @@ integrationsauthconfig.IntegrationsAuthConfig_IsTerraformResource(x interface{})
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-google.integrationsAuthConfig.IntegrationsAuthConfig.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/integrationsauthconfig"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/integrationsauthconfig"
 
 integrationsauthconfig.IntegrationsAuthConfig_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -1154,7 +1154,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.integrationsAuthConfig.IntegrationsAuthConfigClientCertificate.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/integrationsauthconfig"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/integrationsauthconfig"
 
 &integrationsauthconfig.IntegrationsAuthConfigClientCertificate {
 	EncryptedPrivateKey: *string,
@@ -1222,7 +1222,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.integrationsAuthConfig.IntegrationsAuthConfigConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/integrationsauthconfig"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/integrationsauthconfig"
 
 &integrationsauthconfig.IntegrationsAuthConfigConfig {
 	Connection: interface{},
@@ -1234,14 +1234,14 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/integrationsauth
 	Provisioners: *[]interface{},
 	DisplayName: *string,
 	Location: *string,
-	ClientCertificate: github.com/cdktn-io/cdktn-provider-google-go/google/v17.integrationsAuthConfig.IntegrationsAuthConfigClientCertificate,
-	DecryptedCredential: github.com/cdktn-io/cdktn-provider-google-go/google/v17.integrationsAuthConfig.IntegrationsAuthConfigDecryptedCredential,
+	ClientCertificate: github.com/cdktn-io/cdktn-provider-google-go/google/v18.integrationsAuthConfig.IntegrationsAuthConfigClientCertificate,
+	DecryptedCredential: github.com/cdktn-io/cdktn-provider-google-go/google/v18.integrationsAuthConfig.IntegrationsAuthConfigDecryptedCredential,
 	Description: *string,
 	ExpiryNotificationDuration: *[]*string,
 	Id: *string,
 	OverrideValidTime: *string,
 	Project: *string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-google-go/google/v17.integrationsAuthConfig.IntegrationsAuthConfigTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-google-go/google/v18.integrationsAuthConfig.IntegrationsAuthConfigTimeouts,
 	Visibility: *string,
 }
 ```
@@ -1507,17 +1507,17 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.integrationsAuthConfig.IntegrationsAuthConfigDecryptedCredential.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/integrationsauthconfig"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/integrationsauthconfig"
 
 &integrationsauthconfig.IntegrationsAuthConfigDecryptedCredential {
 	CredentialType: *string,
-	AuthToken: github.com/cdktn-io/cdktn-provider-google-go/google/v17.integrationsAuthConfig.IntegrationsAuthConfigDecryptedCredentialAuthToken,
-	Jwt: github.com/cdktn-io/cdktn-provider-google-go/google/v17.integrationsAuthConfig.IntegrationsAuthConfigDecryptedCredentialJwt,
-	Oauth2AuthorizationCode: github.com/cdktn-io/cdktn-provider-google-go/google/v17.integrationsAuthConfig.IntegrationsAuthConfigDecryptedCredentialOauth2AuthorizationCode,
-	Oauth2ClientCredentials: github.com/cdktn-io/cdktn-provider-google-go/google/v17.integrationsAuthConfig.IntegrationsAuthConfigDecryptedCredentialOauth2ClientCredentials,
-	OidcToken: github.com/cdktn-io/cdktn-provider-google-go/google/v17.integrationsAuthConfig.IntegrationsAuthConfigDecryptedCredentialOidcToken,
-	ServiceAccountCredentials: github.com/cdktn-io/cdktn-provider-google-go/google/v17.integrationsAuthConfig.IntegrationsAuthConfigDecryptedCredentialServiceAccountCredentials,
-	UsernameAndPassword: github.com/cdktn-io/cdktn-provider-google-go/google/v17.integrationsAuthConfig.IntegrationsAuthConfigDecryptedCredentialUsernameAndPassword,
+	AuthToken: github.com/cdktn-io/cdktn-provider-google-go/google/v18.integrationsAuthConfig.IntegrationsAuthConfigDecryptedCredentialAuthToken,
+	Jwt: github.com/cdktn-io/cdktn-provider-google-go/google/v18.integrationsAuthConfig.IntegrationsAuthConfigDecryptedCredentialJwt,
+	Oauth2AuthorizationCode: github.com/cdktn-io/cdktn-provider-google-go/google/v18.integrationsAuthConfig.IntegrationsAuthConfigDecryptedCredentialOauth2AuthorizationCode,
+	Oauth2ClientCredentials: github.com/cdktn-io/cdktn-provider-google-go/google/v18.integrationsAuthConfig.IntegrationsAuthConfigDecryptedCredentialOauth2ClientCredentials,
+	OidcToken: github.com/cdktn-io/cdktn-provider-google-go/google/v18.integrationsAuthConfig.IntegrationsAuthConfigDecryptedCredentialOidcToken,
+	ServiceAccountCredentials: github.com/cdktn-io/cdktn-provider-google-go/google/v18.integrationsAuthConfig.IntegrationsAuthConfigDecryptedCredentialServiceAccountCredentials,
+	UsernameAndPassword: github.com/cdktn-io/cdktn-provider-google-go/google/v18.integrationsAuthConfig.IntegrationsAuthConfigDecryptedCredentialUsernameAndPassword,
 }
 ```
 
@@ -1653,7 +1653,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.integrationsAuthConfig.IntegrationsAuthConfigDecryptedCredentialAuthToken.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/integrationsauthconfig"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/integrationsauthconfig"
 
 &integrationsauthconfig.IntegrationsAuthConfigDecryptedCredentialAuthToken {
 	Token: *string,
@@ -1703,7 +1703,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.integrationsAuthConfig.IntegrationsAuthConfigDecryptedCredentialJwt.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/integrationsauthconfig"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/integrationsauthconfig"
 
 &integrationsauthconfig.IntegrationsAuthConfigDecryptedCredentialJwt {
 	JwtHeader: *string,
@@ -1771,7 +1771,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.integrationsAuthConfig.IntegrationsAuthConfigDecryptedCredentialOauth2AuthorizationCode.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/integrationsauthconfig"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/integrationsauthconfig"
 
 &integrationsauthconfig.IntegrationsAuthConfigDecryptedCredentialOauth2AuthorizationCode {
 	AuthEndpoint: *string,
@@ -1869,7 +1869,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.integrationsAuthConfig.IntegrationsAuthConfigDecryptedCredentialOauth2ClientCredentials.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/integrationsauthconfig"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/integrationsauthconfig"
 
 &integrationsauthconfig.IntegrationsAuthConfigDecryptedCredentialOauth2ClientCredentials {
 	ClientId: *string,
@@ -1877,7 +1877,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/integrationsauth
 	RequestType: *string,
 	Scope: *string,
 	TokenEndpoint: *string,
-	TokenParams: github.com/cdktn-io/cdktn-provider-google-go/google/v17.integrationsAuthConfig.IntegrationsAuthConfigDecryptedCredentialOauth2ClientCredentialsTokenParams,
+	TokenParams: github.com/cdktn-io/cdktn-provider-google-go/google/v18.integrationsAuthConfig.IntegrationsAuthConfigDecryptedCredentialOauth2ClientCredentialsTokenParams,
 }
 ```
 
@@ -1983,7 +1983,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.integrationsAuthConfig.IntegrationsAuthConfigDecryptedCredentialOauth2ClientCredentialsTokenParams.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/integrationsauthconfig"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/integrationsauthconfig"
 
 &integrationsauthconfig.IntegrationsAuthConfigDecryptedCredentialOauth2ClientCredentialsTokenParams {
 	Entries: interface{},
@@ -2017,11 +2017,11 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.integrationsAuthConfig.IntegrationsAuthConfigDecryptedCredentialOauth2ClientCredentialsTokenParamsEntries.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/integrationsauthconfig"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/integrationsauthconfig"
 
 &integrationsauthconfig.IntegrationsAuthConfigDecryptedCredentialOauth2ClientCredentialsTokenParamsEntries {
-	Key: github.com/cdktn-io/cdktn-provider-google-go/google/v17.integrationsAuthConfig.IntegrationsAuthConfigDecryptedCredentialOauth2ClientCredentialsTokenParamsEntriesKey,
-	Value: github.com/cdktn-io/cdktn-provider-google-go/google/v17.integrationsAuthConfig.IntegrationsAuthConfigDecryptedCredentialOauth2ClientCredentialsTokenParamsEntriesValue,
+	Key: github.com/cdktn-io/cdktn-provider-google-go/google/v18.integrationsAuthConfig.IntegrationsAuthConfigDecryptedCredentialOauth2ClientCredentialsTokenParamsEntriesKey,
+	Value: github.com/cdktn-io/cdktn-provider-google-go/google/v18.integrationsAuthConfig.IntegrationsAuthConfigDecryptedCredentialOauth2ClientCredentialsTokenParamsEntriesValue,
 }
 ```
 
@@ -2067,10 +2067,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.integrationsAuthConfig.IntegrationsAuthConfigDecryptedCredentialOauth2ClientCredentialsTokenParamsEntriesKey.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/integrationsauthconfig"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/integrationsauthconfig"
 
 &integrationsauthconfig.IntegrationsAuthConfigDecryptedCredentialOauth2ClientCredentialsTokenParamsEntriesKey {
-	LiteralValue: github.com/cdktn-io/cdktn-provider-google-go/google/v17.integrationsAuthConfig.IntegrationsAuthConfigDecryptedCredentialOauth2ClientCredentialsTokenParamsEntriesKeyLiteralValue,
+	LiteralValue: github.com/cdktn-io/cdktn-provider-google-go/google/v18.integrationsAuthConfig.IntegrationsAuthConfigDecryptedCredentialOauth2ClientCredentialsTokenParamsEntriesKeyLiteralValue,
 }
 ```
 
@@ -2101,7 +2101,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.integrationsAuthConfig.IntegrationsAuthConfigDecryptedCredentialOauth2ClientCredentialsTokenParamsEntriesKeyLiteralValue.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/integrationsauthconfig"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/integrationsauthconfig"
 
 &integrationsauthconfig.IntegrationsAuthConfigDecryptedCredentialOauth2ClientCredentialsTokenParamsEntriesKeyLiteralValue {
 	StringValue: *string,
@@ -2135,10 +2135,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.integrationsAuthConfig.IntegrationsAuthConfigDecryptedCredentialOauth2ClientCredentialsTokenParamsEntriesValue.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/integrationsauthconfig"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/integrationsauthconfig"
 
 &integrationsauthconfig.IntegrationsAuthConfigDecryptedCredentialOauth2ClientCredentialsTokenParamsEntriesValue {
-	LiteralValue: github.com/cdktn-io/cdktn-provider-google-go/google/v17.integrationsAuthConfig.IntegrationsAuthConfigDecryptedCredentialOauth2ClientCredentialsTokenParamsEntriesValueLiteralValue,
+	LiteralValue: github.com/cdktn-io/cdktn-provider-google-go/google/v18.integrationsAuthConfig.IntegrationsAuthConfigDecryptedCredentialOauth2ClientCredentialsTokenParamsEntriesValueLiteralValue,
 }
 ```
 
@@ -2169,7 +2169,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.integrationsAuthConfig.IntegrationsAuthConfigDecryptedCredentialOauth2ClientCredentialsTokenParamsEntriesValueLiteralValue.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/integrationsauthconfig"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/integrationsauthconfig"
 
 &integrationsauthconfig.IntegrationsAuthConfigDecryptedCredentialOauth2ClientCredentialsTokenParamsEntriesValueLiteralValue {
 	StringValue: *string,
@@ -2203,7 +2203,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.integrationsAuthConfig.IntegrationsAuthConfigDecryptedCredentialOidcToken.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/integrationsauthconfig"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/integrationsauthconfig"
 
 &integrationsauthconfig.IntegrationsAuthConfigDecryptedCredentialOidcToken {
 	Audience: *string,
@@ -2255,7 +2255,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.integrationsAuthConfig.IntegrationsAuthConfigDecryptedCredentialServiceAccountCredentials.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/integrationsauthconfig"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/integrationsauthconfig"
 
 &integrationsauthconfig.IntegrationsAuthConfigDecryptedCredentialServiceAccountCredentials {
 	Scope: *string,
@@ -2305,7 +2305,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.integrationsAuthConfig.IntegrationsAuthConfigDecryptedCredentialUsernameAndPassword.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/integrationsauthconfig"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/integrationsauthconfig"
 
 &integrationsauthconfig.IntegrationsAuthConfigDecryptedCredentialUsernameAndPassword {
 	Password: *string,
@@ -2355,7 +2355,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.integrationsAuthConfig.IntegrationsAuthConfigTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/integrationsauthconfig"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/integrationsauthconfig"
 
 &integrationsauthconfig.IntegrationsAuthConfigTimeouts {
 	Create: *string,
@@ -2417,7 +2417,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.integrationsAuthConfig.IntegrationsAuthConfigClientCertificateOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/integrationsauthconfig"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/integrationsauthconfig"
 
 integrationsauthconfig.NewIntegrationsAuthConfigClientCertificateOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) IntegrationsAuthConfigClientCertificateOutputReference
 ```
@@ -2739,7 +2739,7 @@ func InternalValue() IntegrationsAuthConfigClientCertificate
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.integrationsAuthConfig.IntegrationsAuthConfigDecryptedCredentialAuthTokenOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/integrationsauthconfig"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/integrationsauthconfig"
 
 integrationsauthconfig.NewIntegrationsAuthConfigDecryptedCredentialAuthTokenOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) IntegrationsAuthConfigDecryptedCredentialAuthTokenOutputReference
 ```
@@ -3046,7 +3046,7 @@ func InternalValue() IntegrationsAuthConfigDecryptedCredentialAuthToken
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.integrationsAuthConfig.IntegrationsAuthConfigDecryptedCredentialJwtOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/integrationsauthconfig"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/integrationsauthconfig"
 
 integrationsauthconfig.NewIntegrationsAuthConfigDecryptedCredentialJwtOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) IntegrationsAuthConfigDecryptedCredentialJwtOutputReference
 ```
@@ -3393,7 +3393,7 @@ func InternalValue() IntegrationsAuthConfigDecryptedCredentialJwt
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.integrationsAuthConfig.IntegrationsAuthConfigDecryptedCredentialOauth2AuthorizationCodeOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/integrationsauthconfig"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/integrationsauthconfig"
 
 integrationsauthconfig.NewIntegrationsAuthConfigDecryptedCredentialOauth2AuthorizationCodeOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) IntegrationsAuthConfigDecryptedCredentialOauth2AuthorizationCodeOutputReference
 ```
@@ -3787,7 +3787,7 @@ func InternalValue() IntegrationsAuthConfigDecryptedCredentialOauth2Authorizatio
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.integrationsAuthConfig.IntegrationsAuthConfigDecryptedCredentialOauth2ClientCredentialsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/integrationsauthconfig"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/integrationsauthconfig"
 
 integrationsauthconfig.NewIntegrationsAuthConfigDecryptedCredentialOauth2ClientCredentialsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) IntegrationsAuthConfigDecryptedCredentialOauth2ClientCredentialsOutputReference
 ```
@@ -4223,7 +4223,7 @@ func InternalValue() IntegrationsAuthConfigDecryptedCredentialOauth2ClientCreden
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.integrationsAuthConfig.IntegrationsAuthConfigDecryptedCredentialOauth2ClientCredentialsTokenParamsEntriesKeyLiteralValueOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/integrationsauthconfig"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/integrationsauthconfig"
 
 integrationsauthconfig.NewIntegrationsAuthConfigDecryptedCredentialOauth2ClientCredentialsTokenParamsEntriesKeyLiteralValueOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) IntegrationsAuthConfigDecryptedCredentialOauth2ClientCredentialsTokenParamsEntriesKeyLiteralValueOutputReference
 ```
@@ -4501,7 +4501,7 @@ func InternalValue() IntegrationsAuthConfigDecryptedCredentialOauth2ClientCreden
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.integrationsAuthConfig.IntegrationsAuthConfigDecryptedCredentialOauth2ClientCredentialsTokenParamsEntriesKeyOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/integrationsauthconfig"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/integrationsauthconfig"
 
 integrationsauthconfig.NewIntegrationsAuthConfigDecryptedCredentialOauth2ClientCredentialsTokenParamsEntriesKeyOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) IntegrationsAuthConfigDecryptedCredentialOauth2ClientCredentialsTokenParamsEntriesKeyOutputReference
 ```
@@ -4792,7 +4792,7 @@ func InternalValue() IntegrationsAuthConfigDecryptedCredentialOauth2ClientCreden
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.integrationsAuthConfig.IntegrationsAuthConfigDecryptedCredentialOauth2ClientCredentialsTokenParamsEntriesList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/integrationsauthconfig"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/integrationsauthconfig"
 
 integrationsauthconfig.NewIntegrationsAuthConfigDecryptedCredentialOauth2ClientCredentialsTokenParamsEntriesList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) IntegrationsAuthConfigDecryptedCredentialOauth2ClientCredentialsTokenParamsEntriesList
 ```
@@ -4952,7 +4952,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.integrationsAuthConfig.IntegrationsAuthConfigDecryptedCredentialOauth2ClientCredentialsTokenParamsEntriesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/integrationsauthconfig"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/integrationsauthconfig"
 
 integrationsauthconfig.NewIntegrationsAuthConfigDecryptedCredentialOauth2ClientCredentialsTokenParamsEntriesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) IntegrationsAuthConfigDecryptedCredentialOauth2ClientCredentialsTokenParamsEntriesOutputReference
 ```
@@ -5303,7 +5303,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.integrationsAuthConfig.IntegrationsAuthConfigDecryptedCredentialOauth2ClientCredentialsTokenParamsEntriesValueLiteralValueOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/integrationsauthconfig"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/integrationsauthconfig"
 
 integrationsauthconfig.NewIntegrationsAuthConfigDecryptedCredentialOauth2ClientCredentialsTokenParamsEntriesValueLiteralValueOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) IntegrationsAuthConfigDecryptedCredentialOauth2ClientCredentialsTokenParamsEntriesValueLiteralValueOutputReference
 ```
@@ -5581,7 +5581,7 @@ func InternalValue() IntegrationsAuthConfigDecryptedCredentialOauth2ClientCreden
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.integrationsAuthConfig.IntegrationsAuthConfigDecryptedCredentialOauth2ClientCredentialsTokenParamsEntriesValueOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/integrationsauthconfig"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/integrationsauthconfig"
 
 integrationsauthconfig.NewIntegrationsAuthConfigDecryptedCredentialOauth2ClientCredentialsTokenParamsEntriesValueOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) IntegrationsAuthConfigDecryptedCredentialOauth2ClientCredentialsTokenParamsEntriesValueOutputReference
 ```
@@ -5872,7 +5872,7 @@ func InternalValue() IntegrationsAuthConfigDecryptedCredentialOauth2ClientCreden
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.integrationsAuthConfig.IntegrationsAuthConfigDecryptedCredentialOauth2ClientCredentialsTokenParamsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/integrationsauthconfig"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/integrationsauthconfig"
 
 integrationsauthconfig.NewIntegrationsAuthConfigDecryptedCredentialOauth2ClientCredentialsTokenParamsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) IntegrationsAuthConfigDecryptedCredentialOauth2ClientCredentialsTokenParamsOutputReference
 ```
@@ -6163,7 +6163,7 @@ func InternalValue() IntegrationsAuthConfigDecryptedCredentialOauth2ClientCreden
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.integrationsAuthConfig.IntegrationsAuthConfigDecryptedCredentialOidcTokenOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/integrationsauthconfig"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/integrationsauthconfig"
 
 integrationsauthconfig.NewIntegrationsAuthConfigDecryptedCredentialOidcTokenOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) IntegrationsAuthConfigDecryptedCredentialOidcTokenOutputReference
 ```
@@ -6492,7 +6492,7 @@ func InternalValue() IntegrationsAuthConfigDecryptedCredentialOidcToken
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.integrationsAuthConfig.IntegrationsAuthConfigDecryptedCredentialOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/integrationsauthconfig"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/integrationsauthconfig"
 
 integrationsauthconfig.NewIntegrationsAuthConfigDecryptedCredentialOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) IntegrationsAuthConfigDecryptedCredentialOutputReference
 ```
@@ -7057,7 +7057,7 @@ func InternalValue() IntegrationsAuthConfigDecryptedCredential
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.integrationsAuthConfig.IntegrationsAuthConfigDecryptedCredentialServiceAccountCredentialsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/integrationsauthconfig"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/integrationsauthconfig"
 
 integrationsauthconfig.NewIntegrationsAuthConfigDecryptedCredentialServiceAccountCredentialsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) IntegrationsAuthConfigDecryptedCredentialServiceAccountCredentialsOutputReference
 ```
@@ -7364,7 +7364,7 @@ func InternalValue() IntegrationsAuthConfigDecryptedCredentialServiceAccountCred
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.integrationsAuthConfig.IntegrationsAuthConfigDecryptedCredentialUsernameAndPasswordOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/integrationsauthconfig"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/integrationsauthconfig"
 
 integrationsauthconfig.NewIntegrationsAuthConfigDecryptedCredentialUsernameAndPasswordOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) IntegrationsAuthConfigDecryptedCredentialUsernameAndPasswordOutputReference
 ```
@@ -7671,7 +7671,7 @@ func InternalValue() IntegrationsAuthConfigDecryptedCredentialUsernameAndPasswor
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.integrationsAuthConfig.IntegrationsAuthConfigTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/integrationsauthconfig"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/integrationsauthconfig"
 
 integrationsauthconfig.NewIntegrationsAuthConfigTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) IntegrationsAuthConfigTimeoutsOutputReference
 ```

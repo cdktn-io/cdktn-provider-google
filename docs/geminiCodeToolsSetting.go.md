@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.5
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.geminiCodeToolsSetting.GeminiCodeToolsSetting.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/geminicodetoolssetting"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/geminicodetoolssetting"
 
 geminicodetoolssetting.NewGeminiCodeToolsSetting(scope Construct, id *string, config GeminiCodeToolsSettingConfig) GeminiCodeToolsSetting
 ```
@@ -461,7 +461,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-google.geminiCodeToolsSetting.GeminiCodeToolsSetting.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/geminicodetoolssetting"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/geminicodetoolssetting"
 
 geminicodetoolssetting.GeminiCodeToolsSetting_IsConstruct(x interface{}) *bool
 ```
@@ -493,7 +493,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-google.geminiCodeToolsSetting.GeminiCodeToolsSetting.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/geminicodetoolssetting"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/geminicodetoolssetting"
 
 geminicodetoolssetting.GeminiCodeToolsSetting_IsTerraformElement(x interface{}) *bool
 ```
@@ -507,7 +507,7 @@ geminicodetoolssetting.GeminiCodeToolsSetting_IsTerraformElement(x interface{}) 
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-google.geminiCodeToolsSetting.GeminiCodeToolsSetting.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/geminicodetoolssetting"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/geminicodetoolssetting"
 
 geminicodetoolssetting.GeminiCodeToolsSetting_IsTerraformResource(x interface{}) *bool
 ```
@@ -521,7 +521,7 @@ geminicodetoolssetting.GeminiCodeToolsSetting_IsTerraformResource(x interface{})
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-google.geminiCodeToolsSetting.GeminiCodeToolsSetting.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/geminicodetoolssetting"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/geminicodetoolssetting"
 
 geminicodetoolssetting.GeminiCodeToolsSetting_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -959,7 +959,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.geminiCodeToolsSetting.GeminiCodeToolsSettingConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/geminicodetoolssetting"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/geminicodetoolssetting"
 
 &geminicodetoolssetting.GeminiCodeToolsSettingConfig {
 	Connection: interface{},
@@ -975,7 +975,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/geminicodetoolss
 	Labels: *map[string]*string,
 	Location: *string,
 	Project: *string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-google-go/google/v17.geminiCodeToolsSetting.GeminiCodeToolsSettingTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-google-go/google/v18.geminiCodeToolsSetting.GeminiCodeToolsSettingTimeouts,
 }
 ```
 
@@ -1175,7 +1175,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.geminiCodeToolsSetting.GeminiCodeToolsSettingEnabledTool.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/geminicodetoolssetting"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/geminicodetoolssetting"
 
 &geminicodetoolssetting.GeminiCodeToolsSettingEnabledTool {
 	Handle: *string,
@@ -1273,7 +1273,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.geminiCodeToolsSetting.GeminiCodeToolsSettingEnabledToolConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/geminicodetoolssetting"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/geminicodetoolssetting"
 
 &geminicodetoolssetting.GeminiCodeToolsSettingEnabledToolConfig {
 	Key: *string,
@@ -1323,7 +1323,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.geminiCodeToolsSetting.GeminiCodeToolsSettingTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/geminicodetoolssetting"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/geminicodetoolssetting"
 
 &geminicodetoolssetting.GeminiCodeToolsSettingTimeouts {
 	Create: *string,
@@ -1385,7 +1385,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.geminiCodeToolsSetting.GeminiCodeToolsSettingEnabledToolConfigList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/geminicodetoolssetting"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/geminicodetoolssetting"
 
 geminicodetoolssetting.NewGeminiCodeToolsSettingEnabledToolConfigList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) GeminiCodeToolsSettingEnabledToolConfigList
 ```
@@ -1545,7 +1545,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.geminiCodeToolsSetting.GeminiCodeToolsSettingEnabledToolConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/geminicodetoolssetting"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/geminicodetoolssetting"
 
 geminicodetoolssetting.NewGeminiCodeToolsSettingEnabledToolConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) GeminiCodeToolsSettingEnabledToolConfigOutputReference
 ```
@@ -1856,7 +1856,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.geminiCodeToolsSetting.GeminiCodeToolsSettingEnabledToolList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/geminicodetoolssetting"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/geminicodetoolssetting"
 
 geminicodetoolssetting.NewGeminiCodeToolsSettingEnabledToolList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) GeminiCodeToolsSettingEnabledToolList
 ```
@@ -2016,7 +2016,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.geminiCodeToolsSetting.GeminiCodeToolsSettingEnabledToolOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/geminicodetoolssetting"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/geminicodetoolssetting"
 
 geminicodetoolssetting.NewGeminiCodeToolsSettingEnabledToolOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) GeminiCodeToolsSettingEnabledToolOutputReference
 ```
@@ -2427,7 +2427,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.geminiCodeToolsSetting.GeminiCodeToolsSettingTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/geminicodetoolssetting"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/geminicodetoolssetting"
 
 geminicodetoolssetting.NewGeminiCodeToolsSettingTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GeminiCodeToolsSettingTimeoutsOutputReference
 ```

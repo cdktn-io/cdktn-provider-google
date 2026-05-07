@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.5
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.alloydbBackup.AlloydbBackup.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/alloydbbackup"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/alloydbbackup"
 
 alloydbbackup.NewAlloydbBackup(scope Construct, id *string, config AlloydbBackupConfig) AlloydbBackup
 ```
@@ -489,7 +489,7 @@ func ResetType()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-google.alloydbBackup.AlloydbBackup.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/alloydbbackup"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/alloydbbackup"
 
 alloydbbackup.AlloydbBackup_IsConstruct(x interface{}) *bool
 ```
@@ -521,7 +521,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-google.alloydbBackup.AlloydbBackup.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/alloydbbackup"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/alloydbbackup"
 
 alloydbbackup.AlloydbBackup_IsTerraformElement(x interface{}) *bool
 ```
@@ -535,7 +535,7 @@ alloydbbackup.AlloydbBackup_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-google.alloydbBackup.AlloydbBackup.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/alloydbbackup"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/alloydbbackup"
 
 alloydbbackup.AlloydbBackup_IsTerraformResource(x interface{}) *bool
 ```
@@ -549,7 +549,7 @@ alloydbbackup.AlloydbBackup_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-google.alloydbBackup.AlloydbBackup.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/alloydbbackup"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/alloydbbackup"
 
 alloydbbackup.AlloydbBackup_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -1218,7 +1218,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.alloydbBackup.AlloydbBackupConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/alloydbbackup"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/alloydbbackup"
 
 &alloydbbackup.AlloydbBackupConfig {
 	Connection: interface{},
@@ -1234,11 +1234,11 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/alloydbbackup"
 	Annotations: *map[string]*string,
 	Description: *string,
 	DisplayName: *string,
-	EncryptionConfig: github.com/cdktn-io/cdktn-provider-google-go/google/v17.alloydbBackup.AlloydbBackupEncryptionConfig,
+	EncryptionConfig: github.com/cdktn-io/cdktn-provider-google-go/google/v18.alloydbBackup.AlloydbBackupEncryptionConfig,
 	Id: *string,
 	Labels: *map[string]*string,
 	Project: *string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-google-go/google/v17.alloydbBackup.AlloydbBackupTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-google-go/google/v18.alloydbBackup.AlloydbBackupTimeouts,
 	Type: *string,
 }
 ```
@@ -1522,7 +1522,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.alloydbBackup.AlloydbBackupEncryptionConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/alloydbbackup"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/alloydbbackup"
 
 &alloydbbackup.AlloydbBackupEncryptionConfig {
 	KmsKeyName: *string,
@@ -1558,7 +1558,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.alloydbBackup.AlloydbBackupEncryptionInfo.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/alloydbbackup"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/alloydbbackup"
 
 &alloydbbackup.AlloydbBackupEncryptionInfo {
 
@@ -1571,7 +1571,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/alloydbbackup"
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.alloydbBackup.AlloydbBackupExpiryQuantity.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/alloydbbackup"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/alloydbbackup"
 
 &alloydbbackup.AlloydbBackupExpiryQuantity {
 
@@ -1584,7 +1584,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/alloydbbackup"
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.alloydbBackup.AlloydbBackupTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/alloydbbackup"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/alloydbbackup"
 
 &alloydbbackup.AlloydbBackupTimeouts {
 	Create: *string,
@@ -1646,7 +1646,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.alloydbBackup.AlloydbBackupEncryptionConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/alloydbbackup"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/alloydbbackup"
 
 alloydbbackup.NewAlloydbBackupEncryptionConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AlloydbBackupEncryptionConfigOutputReference
 ```
@@ -1924,7 +1924,7 @@ func InternalValue() AlloydbBackupEncryptionConfig
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.alloydbBackup.AlloydbBackupEncryptionInfoList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/alloydbbackup"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/alloydbbackup"
 
 alloydbbackup.NewAlloydbBackupEncryptionInfoList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) AlloydbBackupEncryptionInfoList
 ```
@@ -2073,7 +2073,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.alloydbBackup.AlloydbBackupEncryptionInfoOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/alloydbbackup"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/alloydbbackup"
 
 alloydbbackup.NewAlloydbBackupEncryptionInfoOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) AlloydbBackupEncryptionInfoOutputReference
 ```
@@ -2362,7 +2362,7 @@ func InternalValue() AlloydbBackupEncryptionInfo
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.alloydbBackup.AlloydbBackupExpiryQuantityList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/alloydbbackup"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/alloydbbackup"
 
 alloydbbackup.NewAlloydbBackupExpiryQuantityList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) AlloydbBackupExpiryQuantityList
 ```
@@ -2511,7 +2511,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.alloydbBackup.AlloydbBackupExpiryQuantityOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/alloydbbackup"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/alloydbbackup"
 
 alloydbbackup.NewAlloydbBackupExpiryQuantityOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) AlloydbBackupExpiryQuantityOutputReference
 ```
@@ -2800,7 +2800,7 @@ func InternalValue() AlloydbBackupExpiryQuantity
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.alloydbBackup.AlloydbBackupTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/alloydbbackup"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/alloydbbackup"
 
 alloydbbackup.NewAlloydbBackupTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AlloydbBackupTimeoutsOutputReference
 ```

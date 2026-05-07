@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.5
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.chronicleDataAccessScope.ChronicleDataAccessScope.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/chronicledataaccessscope"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/chronicledataaccessscope"
 
 chronicledataaccessscope.NewChronicleDataAccessScope(scope Construct, id *string, config ChronicleDataAccessScopeConfig) ChronicleDataAccessScope
 ```
@@ -488,7 +488,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-google.chronicleDataAccessScope.ChronicleDataAccessScope.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/chronicledataaccessscope"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/chronicledataaccessscope"
 
 chronicledataaccessscope.ChronicleDataAccessScope_IsConstruct(x interface{}) *bool
 ```
@@ -520,7 +520,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-google.chronicleDataAccessScope.ChronicleDataAccessScope.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/chronicledataaccessscope"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/chronicledataaccessscope"
 
 chronicledataaccessscope.ChronicleDataAccessScope_IsTerraformElement(x interface{}) *bool
 ```
@@ -534,7 +534,7 @@ chronicledataaccessscope.ChronicleDataAccessScope_IsTerraformElement(x interface
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-google.chronicleDataAccessScope.ChronicleDataAccessScope.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/chronicledataaccessscope"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/chronicledataaccessscope"
 
 chronicledataaccessscope.ChronicleDataAccessScope_IsTerraformResource(x interface{}) *bool
 ```
@@ -548,7 +548,7 @@ chronicledataaccessscope.ChronicleDataAccessScope_IsTerraformResource(x interfac
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-google.chronicleDataAccessScope.ChronicleDataAccessScope.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/chronicledataaccessscope"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/chronicledataaccessscope"
 
 chronicledataaccessscope.ChronicleDataAccessScope_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -1063,12 +1063,12 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.chronicleDataAccessScope.ChronicleDataAccessScopeAllowedDataAccessLabels.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/chronicledataaccessscope"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/chronicledataaccessscope"
 
 &chronicledataaccessscope.ChronicleDataAccessScopeAllowedDataAccessLabels {
 	AssetNamespace: *string,
 	DataAccessLabel: *string,
-	IngestionLabel: github.com/cdktn-io/cdktn-provider-google-go/google/v17.chronicleDataAccessScope.ChronicleDataAccessScopeAllowedDataAccessLabelsIngestionLabel,
+	IngestionLabel: github.com/cdktn-io/cdktn-provider-google-go/google/v18.chronicleDataAccessScope.ChronicleDataAccessScopeAllowedDataAccessLabelsIngestionLabel,
 	LogType: *string,
 }
 ```
@@ -1145,7 +1145,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.chronicleDataAccessScope.ChronicleDataAccessScopeAllowedDataAccessLabelsIngestionLabel.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/chronicledataaccessscope"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/chronicledataaccessscope"
 
 &chronicledataaccessscope.ChronicleDataAccessScopeAllowedDataAccessLabelsIngestionLabel {
 	IngestionLabelKey: *string,
@@ -1199,7 +1199,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.chronicleDataAccessScope.ChronicleDataAccessScopeConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/chronicledataaccessscope"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/chronicledataaccessscope"
 
 &chronicledataaccessscope.ChronicleDataAccessScopeConfig {
 	Connection: interface{},
@@ -1218,7 +1218,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/chronicledataacc
 	Description: *string,
 	Id: *string,
 	Project: *string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-google-go/google/v17.chronicleDataAccessScope.ChronicleDataAccessScopeTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-google-go/google/v18.chronicleDataAccessScope.ChronicleDataAccessScopeTimeouts,
 }
 ```
 
@@ -1475,12 +1475,12 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.chronicleDataAccessScope.ChronicleDataAccessScopeDeniedDataAccessLabels.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/chronicledataaccessscope"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/chronicledataaccessscope"
 
 &chronicledataaccessscope.ChronicleDataAccessScopeDeniedDataAccessLabels {
 	AssetNamespace: *string,
 	DataAccessLabel: *string,
-	IngestionLabel: github.com/cdktn-io/cdktn-provider-google-go/google/v17.chronicleDataAccessScope.ChronicleDataAccessScopeDeniedDataAccessLabelsIngestionLabel,
+	IngestionLabel: github.com/cdktn-io/cdktn-provider-google-go/google/v18.chronicleDataAccessScope.ChronicleDataAccessScopeDeniedDataAccessLabelsIngestionLabel,
 	LogType: *string,
 }
 ```
@@ -1557,7 +1557,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.chronicleDataAccessScope.ChronicleDataAccessScopeDeniedDataAccessLabelsIngestionLabel.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/chronicledataaccessscope"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/chronicledataaccessscope"
 
 &chronicledataaccessscope.ChronicleDataAccessScopeDeniedDataAccessLabelsIngestionLabel {
 	IngestionLabelKey: *string,
@@ -1611,7 +1611,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.chronicleDataAccessScope.ChronicleDataAccessScopeTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/chronicledataaccessscope"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/chronicledataaccessscope"
 
 &chronicledataaccessscope.ChronicleDataAccessScopeTimeouts {
 	Create: *string,
@@ -1673,7 +1673,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.chronicleDataAccessScope.ChronicleDataAccessScopeAllowedDataAccessLabelsIngestionLabelOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/chronicledataaccessscope"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/chronicledataaccessscope"
 
 chronicledataaccessscope.NewChronicleDataAccessScopeAllowedDataAccessLabelsIngestionLabelOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ChronicleDataAccessScopeAllowedDataAccessLabelsIngestionLabelOutputReference
 ```
@@ -1973,7 +1973,7 @@ func InternalValue() ChronicleDataAccessScopeAllowedDataAccessLabelsIngestionLab
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.chronicleDataAccessScope.ChronicleDataAccessScopeAllowedDataAccessLabelsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/chronicledataaccessscope"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/chronicledataaccessscope"
 
 chronicledataaccessscope.NewChronicleDataAccessScopeAllowedDataAccessLabelsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ChronicleDataAccessScopeAllowedDataAccessLabelsList
 ```
@@ -2133,7 +2133,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.chronicleDataAccessScope.ChronicleDataAccessScopeAllowedDataAccessLabelsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/chronicledataaccessscope"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/chronicledataaccessscope"
 
 chronicledataaccessscope.NewChronicleDataAccessScopeAllowedDataAccessLabelsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ChronicleDataAccessScopeAllowedDataAccessLabelsOutputReference
 ```
@@ -2540,7 +2540,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.chronicleDataAccessScope.ChronicleDataAccessScopeDeniedDataAccessLabelsIngestionLabelOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/chronicledataaccessscope"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/chronicledataaccessscope"
 
 chronicledataaccessscope.NewChronicleDataAccessScopeDeniedDataAccessLabelsIngestionLabelOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ChronicleDataAccessScopeDeniedDataAccessLabelsIngestionLabelOutputReference
 ```
@@ -2840,7 +2840,7 @@ func InternalValue() ChronicleDataAccessScopeDeniedDataAccessLabelsIngestionLabe
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.chronicleDataAccessScope.ChronicleDataAccessScopeDeniedDataAccessLabelsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/chronicledataaccessscope"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/chronicledataaccessscope"
 
 chronicledataaccessscope.NewChronicleDataAccessScopeDeniedDataAccessLabelsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ChronicleDataAccessScopeDeniedDataAccessLabelsList
 ```
@@ -3000,7 +3000,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.chronicleDataAccessScope.ChronicleDataAccessScopeDeniedDataAccessLabelsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/chronicledataaccessscope"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/chronicledataaccessscope"
 
 chronicledataaccessscope.NewChronicleDataAccessScopeDeniedDataAccessLabelsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ChronicleDataAccessScopeDeniedDataAccessLabelsOutputReference
 ```
@@ -3407,7 +3407,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.chronicleDataAccessScope.ChronicleDataAccessScopeTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/chronicledataaccessscope"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/chronicledataaccessscope"
 
 chronicledataaccessscope.NewChronicleDataAccessScopeTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ChronicleDataAccessScopeTimeoutsOutputReference
 ```

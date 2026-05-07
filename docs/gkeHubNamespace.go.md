@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.5
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.gkeHubNamespace.GkeHubNamespace.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/gkehubnamespace"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/gkehubnamespace"
 
 gkehubnamespace.NewGkeHubNamespace(scope Construct, id *string, config GkeHubNamespaceConfig) GkeHubNamespace
 ```
@@ -448,7 +448,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-google.gkeHubNamespace.GkeHubNamespace.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/gkehubnamespace"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/gkehubnamespace"
 
 gkehubnamespace.GkeHubNamespace_IsConstruct(x interface{}) *bool
 ```
@@ -480,7 +480,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-google.gkeHubNamespace.GkeHubNamespace.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/gkehubnamespace"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/gkehubnamespace"
 
 gkehubnamespace.GkeHubNamespace_IsTerraformElement(x interface{}) *bool
 ```
@@ -494,7 +494,7 @@ gkehubnamespace.GkeHubNamespace_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-google.gkeHubNamespace.GkeHubNamespace.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/gkehubnamespace"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/gkehubnamespace"
 
 gkehubnamespace.GkeHubNamespace_IsTerraformResource(x interface{}) *bool
 ```
@@ -508,7 +508,7 @@ gkehubnamespace.GkeHubNamespace_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-google.gkeHubNamespace.GkeHubNamespace.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/gkehubnamespace"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/gkehubnamespace"
 
 gkehubnamespace.GkeHubNamespace_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -1001,7 +1001,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.gkeHubNamespace.GkeHubNamespaceConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/gkehubnamespace"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/gkehubnamespace"
 
 &gkehubnamespace.GkeHubNamespaceConfig {
 	Connection: interface{},
@@ -1018,7 +1018,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/gkehubnamespace"
 	Labels: *map[string]*string,
 	NamespaceLabels: *map[string]*string,
 	Project: *string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-google-go/google/v17.gkeHubNamespace.GkeHubNamespaceTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-google-go/google/v18.gkeHubNamespace.GkeHubNamespaceTimeouts,
 }
 ```
 
@@ -1239,7 +1239,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.gkeHubNamespace.GkeHubNamespaceState.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/gkehubnamespace"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/gkehubnamespace"
 
 &gkehubnamespace.GkeHubNamespaceState {
 
@@ -1252,7 +1252,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/gkehubnamespace"
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.gkeHubNamespace.GkeHubNamespaceTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/gkehubnamespace"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/gkehubnamespace"
 
 &gkehubnamespace.GkeHubNamespaceTimeouts {
 	Create: *string,
@@ -1314,7 +1314,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.gkeHubNamespace.GkeHubNamespaceStateList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/gkehubnamespace"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/gkehubnamespace"
 
 gkehubnamespace.NewGkeHubNamespaceStateList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) GkeHubNamespaceStateList
 ```
@@ -1463,7 +1463,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.gkeHubNamespace.GkeHubNamespaceStateOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/gkehubnamespace"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/gkehubnamespace"
 
 gkehubnamespace.NewGkeHubNamespaceStateOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) GkeHubNamespaceStateOutputReference
 ```
@@ -1741,7 +1741,7 @@ func InternalValue() GkeHubNamespaceState
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.gkeHubNamespace.GkeHubNamespaceTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/gkehubnamespace"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/gkehubnamespace"
 
 gkehubnamespace.NewGkeHubNamespaceTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GkeHubNamespaceTimeoutsOutputReference
 ```

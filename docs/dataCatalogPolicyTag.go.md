@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.5
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataCatalogPolicyTag.DataCatalogPolicyTag.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/datacatalogpolicytag"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/datacatalogpolicytag"
 
 datacatalogpolicytag.NewDataCatalogPolicyTag(scope Construct, id *string, config DataCatalogPolicyTagConfig) DataCatalogPolicyTag
 ```
@@ -441,7 +441,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-google.dataCatalogPolicyTag.DataCatalogPolicyTag.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/datacatalogpolicytag"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/datacatalogpolicytag"
 
 datacatalogpolicytag.DataCatalogPolicyTag_IsConstruct(x interface{}) *bool
 ```
@@ -473,7 +473,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-google.dataCatalogPolicyTag.DataCatalogPolicyTag.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/datacatalogpolicytag"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/datacatalogpolicytag"
 
 datacatalogpolicytag.DataCatalogPolicyTag_IsTerraformElement(x interface{}) *bool
 ```
@@ -487,7 +487,7 @@ datacatalogpolicytag.DataCatalogPolicyTag_IsTerraformElement(x interface{}) *boo
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-google.dataCatalogPolicyTag.DataCatalogPolicyTag.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/datacatalogpolicytag"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/datacatalogpolicytag"
 
 datacatalogpolicytag.DataCatalogPolicyTag_IsTerraformResource(x interface{}) *bool
 ```
@@ -501,7 +501,7 @@ datacatalogpolicytag.DataCatalogPolicyTag_IsTerraformResource(x interface{}) *bo
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-google.dataCatalogPolicyTag.DataCatalogPolicyTag.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/datacatalogpolicytag"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/datacatalogpolicytag"
 
 datacatalogpolicytag.DataCatalogPolicyTag_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -884,7 +884,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.dataCatalogPolicyTag.DataCatalogPolicyTagConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/datacatalogpolicytag"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/datacatalogpolicytag"
 
 &datacatalogpolicytag.DataCatalogPolicyTagConfig {
 	Connection: interface{},
@@ -899,7 +899,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/datacatalogpolic
 	Description: *string,
 	Id: *string,
 	ParentPolicyTag: *string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-google-go/google/v17.dataCatalogPolicyTag.DataCatalogPolicyTagTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-google-go/google/v18.dataCatalogPolicyTag.DataCatalogPolicyTagTimeouts,
 }
 ```
 
@@ -1095,7 +1095,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.dataCatalogPolicyTag.DataCatalogPolicyTagTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/datacatalogpolicytag"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/datacatalogpolicytag"
 
 &datacatalogpolicytag.DataCatalogPolicyTagTimeouts {
 	Create: *string,
@@ -1157,7 +1157,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataCatalogPolicyTag.DataCatalogPolicyTagTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/datacatalogpolicytag"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/datacatalogpolicytag"
 
 datacatalogpolicytag.NewDataCatalogPolicyTagTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataCatalogPolicyTagTimeoutsOutputReference
 ```

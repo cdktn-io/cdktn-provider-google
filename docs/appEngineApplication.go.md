@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.5
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.appEngineApplication.AppEngineApplication.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/appengineapplication"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/appengineapplication"
 
 appengineapplication.NewAppEngineApplication(scope Construct, id *string, config AppEngineApplicationConfig) AppEngineApplication
 ```
@@ -495,7 +495,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-google.appEngineApplication.AppEngineApplication.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/appengineapplication"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/appengineapplication"
 
 appengineapplication.AppEngineApplication_IsConstruct(x interface{}) *bool
 ```
@@ -527,7 +527,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-google.appEngineApplication.AppEngineApplication.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/appengineapplication"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/appengineapplication"
 
 appengineapplication.AppEngineApplication_IsTerraformElement(x interface{}) *bool
 ```
@@ -541,7 +541,7 @@ appengineapplication.AppEngineApplication_IsTerraformElement(x interface{}) *boo
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-google.appEngineApplication.AppEngineApplication.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/appengineapplication"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/appengineapplication"
 
 appengineapplication.AppEngineApplication_IsTerraformResource(x interface{}) *bool
 ```
@@ -555,7 +555,7 @@ appengineapplication.AppEngineApplication_IsTerraformResource(x interface{}) *bo
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-google.appEngineApplication.AppEngineApplication.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/appengineapplication"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/appengineapplication"
 
 appengineapplication.AppEngineApplication_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -1059,7 +1059,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.appEngineApplication.AppEngineApplicationConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/appengineapplication"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/appengineapplication"
 
 &appengineapplication.AppEngineApplicationConfig {
 	Connection: interface{},
@@ -1072,12 +1072,12 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/appengineapplica
 	LocationId: *string,
 	AuthDomain: *string,
 	DatabaseType: *string,
-	FeatureSettings: github.com/cdktn-io/cdktn-provider-google-go/google/v17.appEngineApplication.AppEngineApplicationFeatureSettings,
-	Iap: github.com/cdktn-io/cdktn-provider-google-go/google/v17.appEngineApplication.AppEngineApplicationIap,
+	FeatureSettings: github.com/cdktn-io/cdktn-provider-google-go/google/v18.appEngineApplication.AppEngineApplicationFeatureSettings,
+	Iap: github.com/cdktn-io/cdktn-provider-google-go/google/v18.appEngineApplication.AppEngineApplicationIap,
 	Id: *string,
 	Project: *string,
 	ServingStatus: *string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-google-go/google/v17.appEngineApplication.AppEngineApplicationTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-google-go/google/v18.appEngineApplication.AppEngineApplicationTimeouts,
 }
 ```
 
@@ -1304,7 +1304,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.appEngineApplication.AppEngineApplicationFeatureSettings.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/appengineapplication"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/appengineapplication"
 
 &appengineapplication.AppEngineApplicationFeatureSettings {
 	SplitHealthChecks: interface{},
@@ -1336,7 +1336,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.appEngineApplication.AppEngineApplicationIap.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/appengineapplication"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/appengineapplication"
 
 &appengineapplication.AppEngineApplicationIap {
 	Oauth2ClientId: *string,
@@ -1404,7 +1404,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.appEngineApplication.AppEngineApplicationTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/appengineapplication"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/appengineapplication"
 
 &appengineapplication.AppEngineApplicationTimeouts {
 	Create: *string,
@@ -1450,7 +1450,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.appEngineApplication.AppEngineApplicationUrlDispatchRule.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/appengineapplication"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/appengineapplication"
 
 &appengineapplication.AppEngineApplicationUrlDispatchRule {
 
@@ -1465,7 +1465,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/appengineapplica
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.appEngineApplication.AppEngineApplicationFeatureSettingsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/appengineapplication"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/appengineapplication"
 
 appengineapplication.NewAppEngineApplicationFeatureSettingsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AppEngineApplicationFeatureSettingsOutputReference
 ```
@@ -1736,7 +1736,7 @@ func InternalValue() AppEngineApplicationFeatureSettings
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.appEngineApplication.AppEngineApplicationIapOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/appengineapplication"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/appengineapplication"
 
 appengineapplication.NewAppEngineApplicationIapOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AppEngineApplicationIapOutputReference
 ```
@@ -2069,7 +2069,7 @@ func InternalValue() AppEngineApplicationIap
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.appEngineApplication.AppEngineApplicationTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/appengineapplication"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/appengineapplication"
 
 appengineapplication.NewAppEngineApplicationTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AppEngineApplicationTimeoutsOutputReference
 ```
@@ -2376,7 +2376,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.appEngineApplication.AppEngineApplicationUrlDispatchRuleList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/appengineapplication"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/appengineapplication"
 
 appengineapplication.NewAppEngineApplicationUrlDispatchRuleList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) AppEngineApplicationUrlDispatchRuleList
 ```
@@ -2525,7 +2525,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.appEngineApplication.AppEngineApplicationUrlDispatchRuleOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/appengineapplication"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/appengineapplication"
 
 appengineapplication.NewAppEngineApplicationUrlDispatchRuleOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) AppEngineApplicationUrlDispatchRuleOutputReference
 ```

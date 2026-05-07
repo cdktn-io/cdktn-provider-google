@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.5
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataprocMetastoreFederationIamPolicy.DataprocMetastoreFederationIamPolicy.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/dataprocmetastorefederationiampolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/dataprocmetastorefederationiampolicy"
 
 dataprocmetastorefederationiampolicy.NewDataprocMetastoreFederationIamPolicy(scope Construct, id *string, config DataprocMetastoreFederationIamPolicyConfig) DataprocMetastoreFederationIamPolicy
 ```
@@ -421,7 +421,7 @@ func ResetProject()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-google.dataprocMetastoreFederationIamPolicy.DataprocMetastoreFederationIamPolicy.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/dataprocmetastorefederationiampolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/dataprocmetastorefederationiampolicy"
 
 dataprocmetastorefederationiampolicy.DataprocMetastoreFederationIamPolicy_IsConstruct(x interface{}) *bool
 ```
@@ -453,7 +453,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-google.dataprocMetastoreFederationIamPolicy.DataprocMetastoreFederationIamPolicy.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/dataprocmetastorefederationiampolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/dataprocmetastorefederationiampolicy"
 
 dataprocmetastorefederationiampolicy.DataprocMetastoreFederationIamPolicy_IsTerraformElement(x interface{}) *bool
 ```
@@ -467,7 +467,7 @@ dataprocmetastorefederationiampolicy.DataprocMetastoreFederationIamPolicy_IsTerr
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-google.dataprocMetastoreFederationIamPolicy.DataprocMetastoreFederationIamPolicy.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/dataprocmetastorefederationiampolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/dataprocmetastorefederationiampolicy"
 
 dataprocmetastorefederationiampolicy.DataprocMetastoreFederationIamPolicy_IsTerraformResource(x interface{}) *bool
 ```
@@ -481,7 +481,7 @@ dataprocmetastorefederationiampolicy.DataprocMetastoreFederationIamPolicy_IsTerr
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-google.dataprocMetastoreFederationIamPolicy.DataprocMetastoreFederationIamPolicy.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/dataprocmetastorefederationiampolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/dataprocmetastorefederationiampolicy"
 
 dataprocmetastorefederationiampolicy.DataprocMetastoreFederationIamPolicy_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -831,7 +831,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.dataprocMetastoreFederationIamPolicy.DataprocMetastoreFederationIamPolicyConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/dataprocmetastorefederationiampolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/dataprocmetastorefederationiampolicy"
 
 &dataprocmetastorefederationiampolicy.DataprocMetastoreFederationIamPolicyConfig {
 	Connection: interface{},

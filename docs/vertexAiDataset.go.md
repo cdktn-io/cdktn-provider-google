@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.5
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.vertexAiDataset.VertexAiDataset.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/vertexaidataset"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/vertexaidataset"
 
 vertexaidataset.NewVertexAiDataset(scope Construct, id *string, config VertexAiDatasetConfig) VertexAiDataset
 ```
@@ -468,7 +468,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-google.vertexAiDataset.VertexAiDataset.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/vertexaidataset"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/vertexaidataset"
 
 vertexaidataset.VertexAiDataset_IsConstruct(x interface{}) *bool
 ```
@@ -500,7 +500,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-google.vertexAiDataset.VertexAiDataset.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/vertexaidataset"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/vertexaidataset"
 
 vertexaidataset.VertexAiDataset_IsTerraformElement(x interface{}) *bool
 ```
@@ -514,7 +514,7 @@ vertexaidataset.VertexAiDataset_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-google.vertexAiDataset.VertexAiDataset.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/vertexaidataset"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/vertexaidataset"
 
 vertexaidataset.VertexAiDataset_IsTerraformResource(x interface{}) *bool
 ```
@@ -528,7 +528,7 @@ vertexaidataset.VertexAiDataset_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-google.vertexAiDataset.VertexAiDataset.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/vertexaidataset"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/vertexaidataset"
 
 vertexaidataset.VertexAiDataset_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -988,7 +988,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.vertexAiDataset.VertexAiDatasetConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/vertexaidataset"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/vertexaidataset"
 
 &vertexaidataset.VertexAiDatasetConfig {
 	Connection: interface{},
@@ -1000,12 +1000,12 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/vertexaidataset"
 	Provisioners: *[]interface{},
 	DisplayName: *string,
 	MetadataSchemaUri: *string,
-	EncryptionSpec: github.com/cdktn-io/cdktn-provider-google-go/google/v17.vertexAiDataset.VertexAiDatasetEncryptionSpec,
+	EncryptionSpec: github.com/cdktn-io/cdktn-provider-google-go/google/v18.vertexAiDataset.VertexAiDatasetEncryptionSpec,
 	Id: *string,
 	Labels: *map[string]*string,
 	Project: *string,
 	Region: *string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-google-go/google/v17.vertexAiDataset.VertexAiDatasetTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-google-go/google/v18.vertexAiDataset.VertexAiDatasetTimeouts,
 }
 ```
 
@@ -1224,7 +1224,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.vertexAiDataset.VertexAiDatasetEncryptionSpec.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/vertexaidataset"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/vertexaidataset"
 
 &vertexaidataset.VertexAiDatasetEncryptionSpec {
 	KmsKeyName: *string,
@@ -1261,7 +1261,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.vertexAiDataset.VertexAiDatasetTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/vertexaidataset"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/vertexaidataset"
 
 &vertexaidataset.VertexAiDatasetTimeouts {
 	Create: *string,
@@ -1323,7 +1323,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.vertexAiDataset.VertexAiDatasetEncryptionSpecOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/vertexaidataset"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/vertexaidataset"
 
 vertexaidataset.NewVertexAiDatasetEncryptionSpecOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) VertexAiDatasetEncryptionSpecOutputReference
 ```
@@ -1601,7 +1601,7 @@ func InternalValue() VertexAiDatasetEncryptionSpec
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.vertexAiDataset.VertexAiDatasetTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/vertexaidataset"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/vertexaidataset"
 
 vertexaidataset.NewVertexAiDatasetTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) VertexAiDatasetTimeoutsOutputReference
 ```

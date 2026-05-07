@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.5
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.computeGlobalNetworkEndpointGroup.ComputeGlobalNetworkEndpointGroup.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/computeglobalnetworkendpointgroup"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/computeglobalnetworkendpointgroup"
 
 computeglobalnetworkendpointgroup.NewComputeGlobalNetworkEndpointGroup(scope Construct, id *string, config ComputeGlobalNetworkEndpointGroupConfig) ComputeGlobalNetworkEndpointGroup
 ```
@@ -448,7 +448,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-google.computeGlobalNetworkEndpointGroup.ComputeGlobalNetworkEndpointGroup.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/computeglobalnetworkendpointgroup"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/computeglobalnetworkendpointgroup"
 
 computeglobalnetworkendpointgroup.ComputeGlobalNetworkEndpointGroup_IsConstruct(x interface{}) *bool
 ```
@@ -480,7 +480,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-google.computeGlobalNetworkEndpointGroup.ComputeGlobalNetworkEndpointGroup.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/computeglobalnetworkendpointgroup"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/computeglobalnetworkendpointgroup"
 
 computeglobalnetworkendpointgroup.ComputeGlobalNetworkEndpointGroup_IsTerraformElement(x interface{}) *bool
 ```
@@ -494,7 +494,7 @@ computeglobalnetworkendpointgroup.ComputeGlobalNetworkEndpointGroup_IsTerraformE
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-google.computeGlobalNetworkEndpointGroup.ComputeGlobalNetworkEndpointGroup.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/computeglobalnetworkendpointgroup"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/computeglobalnetworkendpointgroup"
 
 computeglobalnetworkendpointgroup.ComputeGlobalNetworkEndpointGroup_IsTerraformResource(x interface{}) *bool
 ```
@@ -508,7 +508,7 @@ computeglobalnetworkendpointgroup.ComputeGlobalNetworkEndpointGroup_IsTerraformR
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-google.computeGlobalNetworkEndpointGroup.ComputeGlobalNetworkEndpointGroup.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/computeglobalnetworkendpointgroup"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/computeglobalnetworkendpointgroup"
 
 computeglobalnetworkendpointgroup.ComputeGlobalNetworkEndpointGroup_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -902,7 +902,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.computeGlobalNetworkEndpointGroup.ComputeGlobalNetworkEndpointGroupConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/computeglobalnetworkendpointgroup"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/computeglobalnetworkendpointgroup"
 
 &computeglobalnetworkendpointgroup.ComputeGlobalNetworkEndpointGroupConfig {
 	Connection: interface{},
@@ -918,7 +918,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/computeglobalnet
 	Description: *string,
 	Id: *string,
 	Project: *string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-google-go/google/v17.computeGlobalNetworkEndpointGroup.ComputeGlobalNetworkEndpointGroupTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-google-go/google/v18.computeGlobalNetworkEndpointGroup.ComputeGlobalNetworkEndpointGroupTimeouts,
 }
 ```
 
@@ -1123,7 +1123,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.computeGlobalNetworkEndpointGroup.ComputeGlobalNetworkEndpointGroupTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/computeglobalnetworkendpointgroup"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/computeglobalnetworkendpointgroup"
 
 &computeglobalnetworkendpointgroup.ComputeGlobalNetworkEndpointGroupTimeouts {
 	Create: *string,
@@ -1171,7 +1171,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.computeGlobalNetworkEndpointGroup.ComputeGlobalNetworkEndpointGroupTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/computeglobalnetworkendpointgroup"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/computeglobalnetworkendpointgroup"
 
 computeglobalnetworkendpointgroup.NewComputeGlobalNetworkEndpointGroupTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ComputeGlobalNetworkEndpointGroupTimeoutsOutputReference
 ```

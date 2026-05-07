@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.5
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataCatalogTagTemplate.DataCatalogTagTemplate.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/datacatalogtagtemplate"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/datacatalogtagtemplate"
 
 datacatalogtagtemplate.NewDataCatalogTagTemplate(scope Construct, id *string, config DataCatalogTagTemplateConfig) DataCatalogTagTemplate
 ```
@@ -468,7 +468,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-google.dataCatalogTagTemplate.DataCatalogTagTemplate.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/datacatalogtagtemplate"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/datacatalogtagtemplate"
 
 datacatalogtagtemplate.DataCatalogTagTemplate_IsConstruct(x interface{}) *bool
 ```
@@ -500,7 +500,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-google.dataCatalogTagTemplate.DataCatalogTagTemplate.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/datacatalogtagtemplate"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/datacatalogtagtemplate"
 
 datacatalogtagtemplate.DataCatalogTagTemplate_IsTerraformElement(x interface{}) *bool
 ```
@@ -514,7 +514,7 @@ datacatalogtagtemplate.DataCatalogTagTemplate_IsTerraformElement(x interface{}) 
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-google.dataCatalogTagTemplate.DataCatalogTagTemplate.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/datacatalogtagtemplate"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/datacatalogtagtemplate"
 
 datacatalogtagtemplate.DataCatalogTagTemplate_IsTerraformResource(x interface{}) *bool
 ```
@@ -528,7 +528,7 @@ datacatalogtagtemplate.DataCatalogTagTemplate_IsTerraformResource(x interface{})
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-google.dataCatalogTagTemplate.DataCatalogTagTemplate.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/datacatalogtagtemplate"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/datacatalogtagtemplate"
 
 datacatalogtagtemplate.DataCatalogTagTemplate_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -944,7 +944,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.dataCatalogTagTemplate.DataCatalogTagTemplateConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/datacatalogtagtemplate"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/datacatalogtagtemplate"
 
 &datacatalogtagtemplate.DataCatalogTagTemplateConfig {
 	Connection: interface{},
@@ -961,7 +961,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/datacatalogtagte
 	Id: *string,
 	Project: *string,
 	Region: *string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-google-go/google/v17.dataCatalogTagTemplate.DataCatalogTagTemplateTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-google-go/google/v18.dataCatalogTagTemplate.DataCatalogTagTemplateTimeouts,
 }
 ```
 
@@ -1175,11 +1175,11 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.dataCatalogTagTemplate.DataCatalogTagTemplateFields.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/datacatalogtagtemplate"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/datacatalogtagtemplate"
 
 &datacatalogtagtemplate.DataCatalogTagTemplateFields {
 	FieldId: *string,
-	Type: github.com/cdktn-io/cdktn-provider-google-go/google/v17.dataCatalogTagTemplate.DataCatalogTagTemplateFieldsType,
+	Type: github.com/cdktn-io/cdktn-provider-google-go/google/v18.dataCatalogTagTemplate.DataCatalogTagTemplateFieldsType,
 	Description: *string,
 	DisplayName: *string,
 	IsRequired: interface{},
@@ -1290,10 +1290,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.dataCatalogTagTemplate.DataCatalogTagTemplateFieldsType.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/datacatalogtagtemplate"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/datacatalogtagtemplate"
 
 &datacatalogtagtemplate.DataCatalogTagTemplateFieldsType {
-	EnumType: github.com/cdktn-io/cdktn-provider-google-go/google/v17.dataCatalogTagTemplate.DataCatalogTagTemplateFieldsTypeEnumType,
+	EnumType: github.com/cdktn-io/cdktn-provider-google-go/google/v18.dataCatalogTagTemplate.DataCatalogTagTemplateFieldsTypeEnumType,
 	PrimitiveType: *string,
 }
 ```
@@ -1342,7 +1342,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.dataCatalogTagTemplate.DataCatalogTagTemplateFieldsTypeEnumType.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/datacatalogtagtemplate"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/datacatalogtagtemplate"
 
 &datacatalogtagtemplate.DataCatalogTagTemplateFieldsTypeEnumType {
 	AllowedValues: interface{},
@@ -1376,7 +1376,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.dataCatalogTagTemplate.DataCatalogTagTemplateFieldsTypeEnumTypeAllowedValues.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/datacatalogtagtemplate"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/datacatalogtagtemplate"
 
 &datacatalogtagtemplate.DataCatalogTagTemplateFieldsTypeEnumTypeAllowedValues {
 	DisplayName: *string,
@@ -1410,7 +1410,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.dataCatalogTagTemplate.DataCatalogTagTemplateTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/datacatalogtagtemplate"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/datacatalogtagtemplate"
 
 &datacatalogtagtemplate.DataCatalogTagTemplateTimeouts {
 	Create: *string,
@@ -1472,7 +1472,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataCatalogTagTemplate.DataCatalogTagTemplateFieldsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/datacatalogtagtemplate"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/datacatalogtagtemplate"
 
 datacatalogtagtemplate.NewDataCatalogTagTemplateFieldsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataCatalogTagTemplateFieldsList
 ```
@@ -1632,7 +1632,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataCatalogTagTemplate.DataCatalogTagTemplateFieldsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/datacatalogtagtemplate"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/datacatalogtagtemplate"
 
 datacatalogtagtemplate.NewDataCatalogTagTemplateFieldsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataCatalogTagTemplateFieldsOutputReference
 ```
@@ -2083,7 +2083,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataCatalogTagTemplate.DataCatalogTagTemplateFieldsTypeEnumTypeAllowedValuesList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/datacatalogtagtemplate"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/datacatalogtagtemplate"
 
 datacatalogtagtemplate.NewDataCatalogTagTemplateFieldsTypeEnumTypeAllowedValuesList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataCatalogTagTemplateFieldsTypeEnumTypeAllowedValuesList
 ```
@@ -2243,7 +2243,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataCatalogTagTemplate.DataCatalogTagTemplateFieldsTypeEnumTypeAllowedValuesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/datacatalogtagtemplate"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/datacatalogtagtemplate"
 
 datacatalogtagtemplate.NewDataCatalogTagTemplateFieldsTypeEnumTypeAllowedValuesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataCatalogTagTemplateFieldsTypeEnumTypeAllowedValuesOutputReference
 ```
@@ -2532,7 +2532,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataCatalogTagTemplate.DataCatalogTagTemplateFieldsTypeEnumTypeOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/datacatalogtagtemplate"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/datacatalogtagtemplate"
 
 datacatalogtagtemplate.NewDataCatalogTagTemplateFieldsTypeEnumTypeOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataCatalogTagTemplateFieldsTypeEnumTypeOutputReference
 ```
@@ -2816,7 +2816,7 @@ func InternalValue() DataCatalogTagTemplateFieldsTypeEnumType
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataCatalogTagTemplate.DataCatalogTagTemplateFieldsTypeOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/datacatalogtagtemplate"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/datacatalogtagtemplate"
 
 datacatalogtagtemplate.NewDataCatalogTagTemplateFieldsTypeOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataCatalogTagTemplateFieldsTypeOutputReference
 ```
@@ -3136,7 +3136,7 @@ func InternalValue() DataCatalogTagTemplateFieldsType
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataCatalogTagTemplate.DataCatalogTagTemplateTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/datacatalogtagtemplate"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/datacatalogtagtemplate"
 
 datacatalogtagtemplate.NewDataCatalogTagTemplateTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataCatalogTagTemplateTimeoutsOutputReference
 ```

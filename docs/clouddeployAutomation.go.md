@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.5
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.clouddeployAutomation.ClouddeployAutomation.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/clouddeployautomation"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/clouddeployautomation"
 
 clouddeployautomation.NewClouddeployAutomation(scope Construct, id *string, config ClouddeployAutomationConfig) ClouddeployAutomation
 ```
@@ -488,7 +488,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-google.clouddeployAutomation.ClouddeployAutomation.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/clouddeployautomation"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/clouddeployautomation"
 
 clouddeployautomation.ClouddeployAutomation_IsConstruct(x interface{}) *bool
 ```
@@ -520,7 +520,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-google.clouddeployAutomation.ClouddeployAutomation.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/clouddeployautomation"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/clouddeployautomation"
 
 clouddeployautomation.ClouddeployAutomation_IsTerraformElement(x interface{}) *bool
 ```
@@ -534,7 +534,7 @@ clouddeployautomation.ClouddeployAutomation_IsTerraformElement(x interface{}) *b
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-google.clouddeployAutomation.ClouddeployAutomation.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/clouddeployautomation"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/clouddeployautomation"
 
 clouddeployautomation.ClouddeployAutomation_IsTerraformResource(x interface{}) *bool
 ```
@@ -548,7 +548,7 @@ clouddeployautomation.ClouddeployAutomation_IsTerraformResource(x interface{}) *
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-google.clouddeployAutomation.ClouddeployAutomation.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/clouddeployautomation"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/clouddeployautomation"
 
 clouddeployautomation.ClouddeployAutomation_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -1140,7 +1140,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.clouddeployAutomation.ClouddeployAutomationConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/clouddeployautomation"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/clouddeployautomation"
 
 &clouddeployautomation.ClouddeployAutomationConfig {
 	Connection: interface{},
@@ -1154,7 +1154,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/clouddeployautom
 	Location: *string,
 	Name: *string,
 	Rules: interface{},
-	Selector: github.com/cdktn-io/cdktn-provider-google-go/google/v17.clouddeployAutomation.ClouddeployAutomationSelector,
+	Selector: github.com/cdktn-io/cdktn-provider-google-go/google/v18.clouddeployAutomation.ClouddeployAutomationSelector,
 	ServiceAccount: *string,
 	Annotations: *map[string]*string,
 	Description: *string,
@@ -1162,7 +1162,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/clouddeployautom
 	Labels: *map[string]*string,
 	Project: *string,
 	Suspended: interface{},
-	Timeouts: github.com/cdktn-io/cdktn-provider-google-go/google/v17.clouddeployAutomation.ClouddeployAutomationTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-google-go/google/v18.clouddeployAutomation.ClouddeployAutomationTimeouts,
 }
 ```
 
@@ -1459,13 +1459,13 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.clouddeployAutomation.ClouddeployAutomationRules.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/clouddeployautomation"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/clouddeployautomation"
 
 &clouddeployautomation.ClouddeployAutomationRules {
-	AdvanceRolloutRule: github.com/cdktn-io/cdktn-provider-google-go/google/v17.clouddeployAutomation.ClouddeployAutomationRulesAdvanceRolloutRule,
-	PromoteReleaseRule: github.com/cdktn-io/cdktn-provider-google-go/google/v17.clouddeployAutomation.ClouddeployAutomationRulesPromoteReleaseRule,
-	RepairRolloutRule: github.com/cdktn-io/cdktn-provider-google-go/google/v17.clouddeployAutomation.ClouddeployAutomationRulesRepairRolloutRule,
-	TimedPromoteReleaseRule: github.com/cdktn-io/cdktn-provider-google-go/google/v17.clouddeployAutomation.ClouddeployAutomationRulesTimedPromoteReleaseRule,
+	AdvanceRolloutRule: github.com/cdktn-io/cdktn-provider-google-go/google/v18.clouddeployAutomation.ClouddeployAutomationRulesAdvanceRolloutRule,
+	PromoteReleaseRule: github.com/cdktn-io/cdktn-provider-google-go/google/v18.clouddeployAutomation.ClouddeployAutomationRulesPromoteReleaseRule,
+	RepairRolloutRule: github.com/cdktn-io/cdktn-provider-google-go/google/v18.clouddeployAutomation.ClouddeployAutomationRulesRepairRolloutRule,
+	TimedPromoteReleaseRule: github.com/cdktn-io/cdktn-provider-google-go/google/v18.clouddeployAutomation.ClouddeployAutomationRulesTimedPromoteReleaseRule,
 }
 ```
 
@@ -1541,7 +1541,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.clouddeployAutomation.ClouddeployAutomationRulesAdvanceRolloutRule.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/clouddeployautomation"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/clouddeployautomation"
 
 &clouddeployautomation.ClouddeployAutomationRulesAdvanceRolloutRule {
 	Id: *string,
@@ -1614,7 +1614,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.clouddeployAutomation.ClouddeployAutomationRulesPromoteReleaseRule.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/clouddeployautomation"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/clouddeployautomation"
 
 &clouddeployautomation.ClouddeployAutomationRulesPromoteReleaseRule {
 	Id: *string,
@@ -1703,7 +1703,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.clouddeployAutomation.ClouddeployAutomationRulesRepairRolloutRule.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/clouddeployautomation"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/clouddeployautomation"
 
 &clouddeployautomation.ClouddeployAutomationRulesRepairRolloutRule {
 	Id: *string,
@@ -1794,11 +1794,11 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.clouddeployAutomation.ClouddeployAutomationRulesRepairRolloutRuleRepairPhases.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/clouddeployautomation"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/clouddeployautomation"
 
 &clouddeployautomation.ClouddeployAutomationRulesRepairRolloutRuleRepairPhases {
-	Retry: github.com/cdktn-io/cdktn-provider-google-go/google/v17.clouddeployAutomation.ClouddeployAutomationRulesRepairRolloutRuleRepairPhasesRetry,
-	Rollback: github.com/cdktn-io/cdktn-provider-google-go/google/v17.clouddeployAutomation.ClouddeployAutomationRulesRepairRolloutRuleRepairPhasesRollback,
+	Retry: github.com/cdktn-io/cdktn-provider-google-go/google/v18.clouddeployAutomation.ClouddeployAutomationRulesRepairRolloutRuleRepairPhasesRetry,
+	Rollback: github.com/cdktn-io/cdktn-provider-google-go/google/v18.clouddeployAutomation.ClouddeployAutomationRulesRepairRolloutRuleRepairPhasesRollback,
 }
 ```
 
@@ -1844,7 +1844,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.clouddeployAutomation.ClouddeployAutomationRulesRepairRolloutRuleRepairPhasesRetry.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/clouddeployautomation"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/clouddeployautomation"
 
 &clouddeployautomation.ClouddeployAutomationRulesRepairRolloutRuleRepairPhasesRetry {
 	Attempts: *string,
@@ -1916,7 +1916,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.clouddeployAutomation.ClouddeployAutomationRulesRepairRolloutRuleRepairPhasesRollback.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/clouddeployautomation"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/clouddeployautomation"
 
 &clouddeployautomation.ClouddeployAutomationRulesRepairRolloutRuleRepairPhasesRollback {
 	DestinationPhase: *string,
@@ -1966,7 +1966,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.clouddeployAutomation.ClouddeployAutomationRulesTimedPromoteReleaseRule.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/clouddeployautomation"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/clouddeployautomation"
 
 &clouddeployautomation.ClouddeployAutomationRulesTimedPromoteReleaseRule {
 	Id: *string,
@@ -2074,7 +2074,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.clouddeployAutomation.ClouddeployAutomationSelector.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/clouddeployautomation"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/clouddeployautomation"
 
 &clouddeployautomation.ClouddeployAutomationSelector {
 	Targets: interface{},
@@ -2108,7 +2108,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.clouddeployAutomation.ClouddeployAutomationSelectorTargets.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/clouddeployautomation"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/clouddeployautomation"
 
 &clouddeployautomation.ClouddeployAutomationSelectorTargets {
 	Id: *string,
@@ -2163,7 +2163,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.clouddeployAutomation.ClouddeployAutomationTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/clouddeployautomation"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/clouddeployautomation"
 
 &clouddeployautomation.ClouddeployAutomationTimeouts {
 	Create: *string,
@@ -2225,7 +2225,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.clouddeployAutomation.ClouddeployAutomationRulesAdvanceRolloutRuleOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/clouddeployautomation"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/clouddeployautomation"
 
 clouddeployautomation.NewClouddeployAutomationRulesAdvanceRolloutRuleOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ClouddeployAutomationRulesAdvanceRolloutRuleOutputReference
 ```
@@ -2554,7 +2554,7 @@ func InternalValue() ClouddeployAutomationRulesAdvanceRolloutRule
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.clouddeployAutomation.ClouddeployAutomationRulesList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/clouddeployautomation"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/clouddeployautomation"
 
 clouddeployautomation.NewClouddeployAutomationRulesList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ClouddeployAutomationRulesList
 ```
@@ -2714,7 +2714,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.clouddeployAutomation.ClouddeployAutomationRulesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/clouddeployautomation"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/clouddeployautomation"
 
 clouddeployautomation.NewClouddeployAutomationRulesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ClouddeployAutomationRulesOutputReference
 ```
@@ -3149,7 +3149,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.clouddeployAutomation.ClouddeployAutomationRulesPromoteReleaseRuleOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/clouddeployautomation"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/clouddeployautomation"
 
 clouddeployautomation.NewClouddeployAutomationRulesPromoteReleaseRuleOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ClouddeployAutomationRulesPromoteReleaseRuleOutputReference
 ```
@@ -3507,7 +3507,7 @@ func InternalValue() ClouddeployAutomationRulesPromoteReleaseRule
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.clouddeployAutomation.ClouddeployAutomationRulesRepairRolloutRuleOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/clouddeployautomation"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/clouddeployautomation"
 
 clouddeployautomation.NewClouddeployAutomationRulesRepairRolloutRuleOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ClouddeployAutomationRulesRepairRolloutRuleOutputReference
 ```
@@ -3878,7 +3878,7 @@ func InternalValue() ClouddeployAutomationRulesRepairRolloutRule
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.clouddeployAutomation.ClouddeployAutomationRulesRepairRolloutRuleRepairPhasesList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/clouddeployautomation"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/clouddeployautomation"
 
 clouddeployautomation.NewClouddeployAutomationRulesRepairRolloutRuleRepairPhasesList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ClouddeployAutomationRulesRepairRolloutRuleRepairPhasesList
 ```
@@ -4038,7 +4038,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.clouddeployAutomation.ClouddeployAutomationRulesRepairRolloutRuleRepairPhasesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/clouddeployautomation"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/clouddeployautomation"
 
 clouddeployautomation.NewClouddeployAutomationRulesRepairRolloutRuleRepairPhasesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ClouddeployAutomationRulesRepairRolloutRuleRepairPhasesOutputReference
 ```
@@ -4389,7 +4389,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.clouddeployAutomation.ClouddeployAutomationRulesRepairRolloutRuleRepairPhasesRetryOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/clouddeployautomation"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/clouddeployautomation"
 
 clouddeployautomation.NewClouddeployAutomationRulesRepairRolloutRuleRepairPhasesRetryOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ClouddeployAutomationRulesRepairRolloutRuleRepairPhasesRetryOutputReference
 ```
@@ -4718,7 +4718,7 @@ func InternalValue() ClouddeployAutomationRulesRepairRolloutRuleRepairPhasesRetr
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.clouddeployAutomation.ClouddeployAutomationRulesRepairRolloutRuleRepairPhasesRollbackOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/clouddeployautomation"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/clouddeployautomation"
 
 clouddeployautomation.NewClouddeployAutomationRulesRepairRolloutRuleRepairPhasesRollbackOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ClouddeployAutomationRulesRepairRolloutRuleRepairPhasesRollbackOutputReference
 ```
@@ -5025,7 +5025,7 @@ func InternalValue() ClouddeployAutomationRulesRepairRolloutRuleRepairPhasesRoll
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.clouddeployAutomation.ClouddeployAutomationRulesTimedPromoteReleaseRuleOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/clouddeployautomation"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/clouddeployautomation"
 
 clouddeployautomation.NewClouddeployAutomationRulesTimedPromoteReleaseRuleOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ClouddeployAutomationRulesTimedPromoteReleaseRuleOutputReference
 ```
@@ -5398,7 +5398,7 @@ func InternalValue() ClouddeployAutomationRulesTimedPromoteReleaseRule
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.clouddeployAutomation.ClouddeployAutomationSelectorOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/clouddeployautomation"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/clouddeployautomation"
 
 clouddeployautomation.NewClouddeployAutomationSelectorOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ClouddeployAutomationSelectorOutputReference
 ```
@@ -5682,7 +5682,7 @@ func InternalValue() ClouddeployAutomationSelector
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.clouddeployAutomation.ClouddeployAutomationSelectorTargetsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/clouddeployautomation"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/clouddeployautomation"
 
 clouddeployautomation.NewClouddeployAutomationSelectorTargetsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ClouddeployAutomationSelectorTargetsList
 ```
@@ -5842,7 +5842,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.clouddeployAutomation.ClouddeployAutomationSelectorTargetsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/clouddeployautomation"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/clouddeployautomation"
 
 clouddeployautomation.NewClouddeployAutomationSelectorTargetsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ClouddeployAutomationSelectorTargetsOutputReference
 ```
@@ -6167,7 +6167,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.clouddeployAutomation.ClouddeployAutomationTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/clouddeployautomation"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/clouddeployautomation"
 
 clouddeployautomation.NewClouddeployAutomationTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ClouddeployAutomationTimeoutsOutputReference
 ```

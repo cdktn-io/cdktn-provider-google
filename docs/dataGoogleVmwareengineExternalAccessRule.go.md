@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.5
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataGoogleVmwareengineExternalAccessRule.DataGoogleVmwareengineExternalAccessRule.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/datagooglevmwareengineexternalaccessrule"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/datagooglevmwareengineexternalaccessrule"
 
 datagooglevmwareengineexternalaccessrule.NewDataGoogleVmwareengineExternalAccessRule(scope Construct, id *string, config DataGoogleVmwareengineExternalAccessRuleConfig) DataGoogleVmwareengineExternalAccessRule
 ```
@@ -305,7 +305,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-google.dataGoogleVmwareengineExternalAccessRule.DataGoogleVmwareengineExternalAccessRule.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/datagooglevmwareengineexternalaccessrule"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/datagooglevmwareengineexternalaccessrule"
 
 datagooglevmwareengineexternalaccessrule.DataGoogleVmwareengineExternalAccessRule_IsConstruct(x interface{}) *bool
 ```
@@ -337,7 +337,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-google.dataGoogleVmwareengineExternalAccessRule.DataGoogleVmwareengineExternalAccessRule.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/datagooglevmwareengineexternalaccessrule"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/datagooglevmwareengineexternalaccessrule"
 
 datagooglevmwareengineexternalaccessrule.DataGoogleVmwareengineExternalAccessRule_IsTerraformElement(x interface{}) *bool
 ```
@@ -351,7 +351,7 @@ datagooglevmwareengineexternalaccessrule.DataGoogleVmwareengineExternalAccessRul
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktn/provider-google.dataGoogleVmwareengineExternalAccessRule.DataGoogleVmwareengineExternalAccessRule.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/datagooglevmwareengineexternalaccessrule"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/datagooglevmwareengineexternalaccessrule"
 
 datagooglevmwareengineexternalaccessrule.DataGoogleVmwareengineExternalAccessRule_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -365,7 +365,7 @@ datagooglevmwareengineexternalaccessrule.DataGoogleVmwareengineExternalAccessRul
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-google.dataGoogleVmwareengineExternalAccessRule.DataGoogleVmwareengineExternalAccessRule.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/datagooglevmwareengineexternalaccessrule"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/datagooglevmwareengineexternalaccessrule"
 
 datagooglevmwareengineexternalaccessrule.DataGoogleVmwareengineExternalAccessRule_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -770,7 +770,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.dataGoogleVmwareengineExternalAccessRule.DataGoogleVmwareengineExternalAccessRuleConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/datagooglevmwareengineexternalaccessrule"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/datagooglevmwareengineexternalaccessrule"
 
 &datagooglevmwareengineexternalaccessrule.DataGoogleVmwareengineExternalAccessRuleConfig {
 	Connection: interface{},
@@ -921,7 +921,7 @@ If you experience problems setting this value it might not be settable. Please t
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.dataGoogleVmwareengineExternalAccessRule.DataGoogleVmwareengineExternalAccessRuleDestinationIpRanges.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/datagooglevmwareengineexternalaccessrule"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/datagooglevmwareengineexternalaccessrule"
 
 &datagooglevmwareengineexternalaccessrule.DataGoogleVmwareengineExternalAccessRuleDestinationIpRanges {
 
@@ -934,7 +934,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/datagooglevmware
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.dataGoogleVmwareengineExternalAccessRule.DataGoogleVmwareengineExternalAccessRuleSourceIpRanges.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/datagooglevmwareengineexternalaccessrule"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/datagooglevmwareengineexternalaccessrule"
 
 &datagooglevmwareengineexternalaccessrule.DataGoogleVmwareengineExternalAccessRuleSourceIpRanges {
 
@@ -949,7 +949,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/datagooglevmware
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataGoogleVmwareengineExternalAccessRule.DataGoogleVmwareengineExternalAccessRuleDestinationIpRangesList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/datagooglevmwareengineexternalaccessrule"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/datagooglevmwareengineexternalaccessrule"
 
 datagooglevmwareengineexternalaccessrule.NewDataGoogleVmwareengineExternalAccessRuleDestinationIpRangesList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataGoogleVmwareengineExternalAccessRuleDestinationIpRangesList
 ```
@@ -1098,7 +1098,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataGoogleVmwareengineExternalAccessRule.DataGoogleVmwareengineExternalAccessRuleDestinationIpRangesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/datagooglevmwareengineexternalaccessrule"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/datagooglevmwareengineexternalaccessrule"
 
 datagooglevmwareengineexternalaccessrule.NewDataGoogleVmwareengineExternalAccessRuleDestinationIpRangesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataGoogleVmwareengineExternalAccessRuleDestinationIpRangesOutputReference
 ```
@@ -1387,7 +1387,7 @@ func InternalValue() DataGoogleVmwareengineExternalAccessRuleDestinationIpRanges
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataGoogleVmwareengineExternalAccessRule.DataGoogleVmwareengineExternalAccessRuleSourceIpRangesList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/datagooglevmwareengineexternalaccessrule"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/datagooglevmwareengineexternalaccessrule"
 
 datagooglevmwareengineexternalaccessrule.NewDataGoogleVmwareengineExternalAccessRuleSourceIpRangesList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataGoogleVmwareengineExternalAccessRuleSourceIpRangesList
 ```
@@ -1536,7 +1536,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataGoogleVmwareengineExternalAccessRule.DataGoogleVmwareengineExternalAccessRuleSourceIpRangesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/datagooglevmwareengineexternalaccessrule"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/datagooglevmwareengineexternalaccessrule"
 
 datagooglevmwareengineexternalaccessrule.NewDataGoogleVmwareengineExternalAccessRuleSourceIpRangesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataGoogleVmwareengineExternalAccessRuleSourceIpRangesOutputReference
 ```

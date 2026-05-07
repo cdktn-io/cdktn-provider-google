@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.5
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.netappBackup.NetappBackup.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/netappbackup"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/netappbackup"
 
 netappbackup.NewNetappBackup(scope Construct, id *string, config NetappBackupConfig) NetappBackup
 ```
@@ -462,7 +462,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-google.netappBackup.NetappBackup.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/netappbackup"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/netappbackup"
 
 netappbackup.NetappBackup_IsConstruct(x interface{}) *bool
 ```
@@ -494,7 +494,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-google.netappBackup.NetappBackup.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/netappbackup"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/netappbackup"
 
 netappbackup.NetappBackup_IsTerraformElement(x interface{}) *bool
 ```
@@ -508,7 +508,7 @@ netappbackup.NetappBackup_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-google.netappBackup.NetappBackup.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/netappbackup"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/netappbackup"
 
 netappbackup.NetappBackup_IsTerraformResource(x interface{}) *bool
 ```
@@ -522,7 +522,7 @@ netappbackup.NetappBackup_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-google.netappBackup.NetappBackup.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/netappbackup"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/netappbackup"
 
 netappbackup.NetappBackup_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -1070,7 +1070,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.netappBackup.NetappBackupConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/netappbackup"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/netappbackup"
 
 &netappbackup.NetappBackupConfig {
 	Connection: interface{},
@@ -1089,7 +1089,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/netappbackup"
 	Project: *string,
 	SourceSnapshot: *string,
 	SourceVolume: *string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-google-go/google/v17.netappBackup.NetappBackupTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-google-go/google/v18.netappBackup.NetappBackupTimeouts,
 }
 ```
 
@@ -1338,7 +1338,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.netappBackup.NetappBackupTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/netappbackup"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/netappbackup"
 
 &netappbackup.NetappBackupTimeouts {
 	Create: *string,
@@ -1400,7 +1400,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.netappBackup.NetappBackupTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/netappbackup"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/netappbackup"
 
 netappbackup.NewNetappBackupTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) NetappBackupTimeoutsOutputReference
 ```

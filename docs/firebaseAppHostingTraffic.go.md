@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.5
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.firebaseAppHostingTraffic.FirebaseAppHostingTraffic.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/firebaseapphostingtraffic"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/firebaseapphostingtraffic"
 
 firebaseapphostingtraffic.NewFirebaseAppHostingTraffic(scope Construct, id *string, config FirebaseAppHostingTrafficConfig) FirebaseAppHostingTraffic
 ```
@@ -474,7 +474,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-google.firebaseAppHostingTraffic.FirebaseAppHostingTraffic.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/firebaseapphostingtraffic"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/firebaseapphostingtraffic"
 
 firebaseapphostingtraffic.FirebaseAppHostingTraffic_IsConstruct(x interface{}) *bool
 ```
@@ -506,7 +506,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-google.firebaseAppHostingTraffic.FirebaseAppHostingTraffic.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/firebaseapphostingtraffic"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/firebaseapphostingtraffic"
 
 firebaseapphostingtraffic.FirebaseAppHostingTraffic_IsTerraformElement(x interface{}) *bool
 ```
@@ -520,7 +520,7 @@ firebaseapphostingtraffic.FirebaseAppHostingTraffic_IsTerraformElement(x interfa
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-google.firebaseAppHostingTraffic.FirebaseAppHostingTraffic.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/firebaseapphostingtraffic"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/firebaseapphostingtraffic"
 
 firebaseapphostingtraffic.FirebaseAppHostingTraffic_IsTerraformResource(x interface{}) *bool
 ```
@@ -534,7 +534,7 @@ firebaseapphostingtraffic.FirebaseAppHostingTraffic_IsTerraformResource(x interf
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-google.firebaseAppHostingTraffic.FirebaseAppHostingTraffic.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/firebaseapphostingtraffic"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/firebaseapphostingtraffic"
 
 firebaseapphostingtraffic.FirebaseAppHostingTraffic_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -994,7 +994,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.firebaseAppHostingTraffic.FirebaseAppHostingTrafficConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/firebaseapphostingtraffic"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/firebaseapphostingtraffic"
 
 &firebaseapphostingtraffic.FirebaseAppHostingTrafficConfig {
 	Connection: interface{},
@@ -1008,9 +1008,9 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/firebaseapphosti
 	Location: *string,
 	Id: *string,
 	Project: *string,
-	RolloutPolicy: github.com/cdktn-io/cdktn-provider-google-go/google/v17.firebaseAppHostingTraffic.FirebaseAppHostingTrafficRolloutPolicy,
-	Target: github.com/cdktn-io/cdktn-provider-google-go/google/v17.firebaseAppHostingTraffic.FirebaseAppHostingTrafficTarget,
-	Timeouts: github.com/cdktn-io/cdktn-provider-google-go/google/v17.firebaseAppHostingTraffic.FirebaseAppHostingTrafficTimeouts,
+	RolloutPolicy: github.com/cdktn-io/cdktn-provider-google-go/google/v18.firebaseAppHostingTraffic.FirebaseAppHostingTrafficRolloutPolicy,
+	Target: github.com/cdktn-io/cdktn-provider-google-go/google/v18.firebaseAppHostingTraffic.FirebaseAppHostingTrafficTarget,
+	Timeouts: github.com/cdktn-io/cdktn-provider-google-go/google/v18.firebaseAppHostingTraffic.FirebaseAppHostingTrafficTimeouts,
 }
 ```
 
@@ -1207,7 +1207,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.firebaseAppHostingTraffic.FirebaseAppHostingTrafficCurrent.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/firebaseapphostingtraffic"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/firebaseapphostingtraffic"
 
 &firebaseapphostingtraffic.FirebaseAppHostingTrafficCurrent {
 
@@ -1220,7 +1220,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/firebaseapphosti
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.firebaseAppHostingTraffic.FirebaseAppHostingTrafficCurrentSplits.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/firebaseapphostingtraffic"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/firebaseapphostingtraffic"
 
 &firebaseapphostingtraffic.FirebaseAppHostingTrafficCurrentSplits {
 
@@ -1233,7 +1233,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/firebaseapphosti
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.firebaseAppHostingTraffic.FirebaseAppHostingTrafficRolloutPolicy.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/firebaseapphostingtraffic"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/firebaseapphostingtraffic"
 
 &firebaseapphostingtraffic.FirebaseAppHostingTrafficRolloutPolicy {
 	CodebaseBranch: *string,
@@ -1285,7 +1285,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.firebaseAppHostingTraffic.FirebaseAppHostingTrafficTarget.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/firebaseapphostingtraffic"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/firebaseapphostingtraffic"
 
 &firebaseapphostingtraffic.FirebaseAppHostingTrafficTarget {
 	Splits: interface{},
@@ -1319,7 +1319,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.firebaseAppHostingTraffic.FirebaseAppHostingTrafficTargetSplits.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/firebaseapphostingtraffic"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/firebaseapphostingtraffic"
 
 &firebaseapphostingtraffic.FirebaseAppHostingTrafficTargetSplits {
 	BuildAttribute: *string,
@@ -1369,7 +1369,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.firebaseAppHostingTraffic.FirebaseAppHostingTrafficTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/firebaseapphostingtraffic"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/firebaseapphostingtraffic"
 
 &firebaseapphostingtraffic.FirebaseAppHostingTrafficTimeouts {
 	Create: *string,
@@ -1431,7 +1431,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.firebaseAppHostingTraffic.FirebaseAppHostingTrafficCurrentList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/firebaseapphostingtraffic"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/firebaseapphostingtraffic"
 
 firebaseapphostingtraffic.NewFirebaseAppHostingTrafficCurrentList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) FirebaseAppHostingTrafficCurrentList
 ```
@@ -1580,7 +1580,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.firebaseAppHostingTraffic.FirebaseAppHostingTrafficCurrentOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/firebaseapphostingtraffic"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/firebaseapphostingtraffic"
 
 firebaseapphostingtraffic.NewFirebaseAppHostingTrafficCurrentOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) FirebaseAppHostingTrafficCurrentOutputReference
 ```
@@ -1858,7 +1858,7 @@ func InternalValue() FirebaseAppHostingTrafficCurrent
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.firebaseAppHostingTraffic.FirebaseAppHostingTrafficCurrentSplitsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/firebaseapphostingtraffic"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/firebaseapphostingtraffic"
 
 firebaseapphostingtraffic.NewFirebaseAppHostingTrafficCurrentSplitsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) FirebaseAppHostingTrafficCurrentSplitsList
 ```
@@ -2007,7 +2007,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.firebaseAppHostingTraffic.FirebaseAppHostingTrafficCurrentSplitsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/firebaseapphostingtraffic"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/firebaseapphostingtraffic"
 
 firebaseapphostingtraffic.NewFirebaseAppHostingTrafficCurrentSplitsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) FirebaseAppHostingTrafficCurrentSplitsOutputReference
 ```
@@ -2296,7 +2296,7 @@ func InternalValue() FirebaseAppHostingTrafficCurrentSplits
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.firebaseAppHostingTraffic.FirebaseAppHostingTrafficRolloutPolicyOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/firebaseapphostingtraffic"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/firebaseapphostingtraffic"
 
 firebaseapphostingtraffic.NewFirebaseAppHostingTrafficRolloutPolicyOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) FirebaseAppHostingTrafficRolloutPolicyOutputReference
 ```
@@ -2614,7 +2614,7 @@ func InternalValue() FirebaseAppHostingTrafficRolloutPolicy
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.firebaseAppHostingTraffic.FirebaseAppHostingTrafficTargetOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/firebaseapphostingtraffic"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/firebaseapphostingtraffic"
 
 firebaseapphostingtraffic.NewFirebaseAppHostingTrafficTargetOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) FirebaseAppHostingTrafficTargetOutputReference
 ```
@@ -2898,7 +2898,7 @@ func InternalValue() FirebaseAppHostingTrafficTarget
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.firebaseAppHostingTraffic.FirebaseAppHostingTrafficTargetSplitsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/firebaseapphostingtraffic"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/firebaseapphostingtraffic"
 
 firebaseapphostingtraffic.NewFirebaseAppHostingTrafficTargetSplitsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) FirebaseAppHostingTrafficTargetSplitsList
 ```
@@ -3058,7 +3058,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.firebaseAppHostingTraffic.FirebaseAppHostingTrafficTargetSplitsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/firebaseapphostingtraffic"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/firebaseapphostingtraffic"
 
 firebaseapphostingtraffic.NewFirebaseAppHostingTrafficTargetSplitsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) FirebaseAppHostingTrafficTargetSplitsOutputReference
 ```
@@ -3369,7 +3369,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.firebaseAppHostingTraffic.FirebaseAppHostingTrafficTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/firebaseapphostingtraffic"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/firebaseapphostingtraffic"
 
 firebaseapphostingtraffic.NewFirebaseAppHostingTrafficTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) FirebaseAppHostingTrafficTimeoutsOutputReference
 ```

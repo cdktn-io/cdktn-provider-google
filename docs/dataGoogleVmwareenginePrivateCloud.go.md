@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.5
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataGoogleVmwareenginePrivateCloud.DataGoogleVmwareenginePrivateCloud.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/datagooglevmwareengineprivatecloud"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/datagooglevmwareengineprivatecloud"
 
 datagooglevmwareengineprivatecloud.NewDataGoogleVmwareenginePrivateCloud(scope Construct, id *string, config DataGoogleVmwareenginePrivateCloudConfig) DataGoogleVmwareenginePrivateCloud
 ```
@@ -312,7 +312,7 @@ func ResetProject()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-google.dataGoogleVmwareenginePrivateCloud.DataGoogleVmwareenginePrivateCloud.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/datagooglevmwareengineprivatecloud"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/datagooglevmwareengineprivatecloud"
 
 datagooglevmwareengineprivatecloud.DataGoogleVmwareenginePrivateCloud_IsConstruct(x interface{}) *bool
 ```
@@ -344,7 +344,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-google.dataGoogleVmwareenginePrivateCloud.DataGoogleVmwareenginePrivateCloud.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/datagooglevmwareengineprivatecloud"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/datagooglevmwareengineprivatecloud"
 
 datagooglevmwareengineprivatecloud.DataGoogleVmwareenginePrivateCloud_IsTerraformElement(x interface{}) *bool
 ```
@@ -358,7 +358,7 @@ datagooglevmwareengineprivatecloud.DataGoogleVmwareenginePrivateCloud_IsTerrafor
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktn/provider-google.dataGoogleVmwareenginePrivateCloud.DataGoogleVmwareenginePrivateCloud.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/datagooglevmwareengineprivatecloud"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/datagooglevmwareengineprivatecloud"
 
 datagooglevmwareengineprivatecloud.DataGoogleVmwareenginePrivateCloud_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -372,7 +372,7 @@ datagooglevmwareengineprivatecloud.DataGoogleVmwareenginePrivateCloud_IsTerrafor
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-google.dataGoogleVmwareenginePrivateCloud.DataGoogleVmwareenginePrivateCloud.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/datagooglevmwareengineprivatecloud"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/datagooglevmwareengineprivatecloud"
 
 datagooglevmwareengineprivatecloud.DataGoogleVmwareenginePrivateCloud_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -788,7 +788,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.dataGoogleVmwareenginePrivateCloud.DataGoogleVmwareenginePrivateCloudConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/datagooglevmwareengineprivatecloud"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/datagooglevmwareengineprivatecloud"
 
 &datagooglevmwareengineprivatecloud.DataGoogleVmwareenginePrivateCloudConfig {
 	Connection: interface{},
@@ -953,7 +953,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.dataGoogleVmwareenginePrivateCloud.DataGoogleVmwareenginePrivateCloudHcx.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/datagooglevmwareengineprivatecloud"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/datagooglevmwareengineprivatecloud"
 
 &datagooglevmwareengineprivatecloud.DataGoogleVmwareenginePrivateCloudHcx {
 
@@ -966,7 +966,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/datagooglevmware
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.dataGoogleVmwareenginePrivateCloud.DataGoogleVmwareenginePrivateCloudManagementCluster.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/datagooglevmwareengineprivatecloud"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/datagooglevmwareengineprivatecloud"
 
 &datagooglevmwareengineprivatecloud.DataGoogleVmwareenginePrivateCloudManagementCluster {
 
@@ -979,7 +979,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/datagooglevmware
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.dataGoogleVmwareenginePrivateCloud.DataGoogleVmwareenginePrivateCloudManagementClusterAutoscalingSettings.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/datagooglevmwareengineprivatecloud"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/datagooglevmwareengineprivatecloud"
 
 &datagooglevmwareengineprivatecloud.DataGoogleVmwareenginePrivateCloudManagementClusterAutoscalingSettings {
 
@@ -992,7 +992,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/datagooglevmware
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.dataGoogleVmwareenginePrivateCloud.DataGoogleVmwareenginePrivateCloudManagementClusterAutoscalingSettingsAutoscalingPolicies.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/datagooglevmwareengineprivatecloud"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/datagooglevmwareengineprivatecloud"
 
 &datagooglevmwareengineprivatecloud.DataGoogleVmwareenginePrivateCloudManagementClusterAutoscalingSettingsAutoscalingPolicies {
 
@@ -1005,7 +1005,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/datagooglevmware
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.dataGoogleVmwareenginePrivateCloud.DataGoogleVmwareenginePrivateCloudManagementClusterAutoscalingSettingsAutoscalingPoliciesConsumedMemoryThresholds.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/datagooglevmwareengineprivatecloud"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/datagooglevmwareengineprivatecloud"
 
 &datagooglevmwareengineprivatecloud.DataGoogleVmwareenginePrivateCloudManagementClusterAutoscalingSettingsAutoscalingPoliciesConsumedMemoryThresholds {
 
@@ -1018,7 +1018,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/datagooglevmware
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.dataGoogleVmwareenginePrivateCloud.DataGoogleVmwareenginePrivateCloudManagementClusterAutoscalingSettingsAutoscalingPoliciesCpuThresholds.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/datagooglevmwareengineprivatecloud"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/datagooglevmwareengineprivatecloud"
 
 &datagooglevmwareengineprivatecloud.DataGoogleVmwareenginePrivateCloudManagementClusterAutoscalingSettingsAutoscalingPoliciesCpuThresholds {
 
@@ -1031,7 +1031,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/datagooglevmware
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.dataGoogleVmwareenginePrivateCloud.DataGoogleVmwareenginePrivateCloudManagementClusterAutoscalingSettingsAutoscalingPoliciesStorageThresholds.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/datagooglevmwareengineprivatecloud"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/datagooglevmwareengineprivatecloud"
 
 &datagooglevmwareengineprivatecloud.DataGoogleVmwareenginePrivateCloudManagementClusterAutoscalingSettingsAutoscalingPoliciesStorageThresholds {
 
@@ -1044,7 +1044,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/datagooglevmware
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.dataGoogleVmwareenginePrivateCloud.DataGoogleVmwareenginePrivateCloudManagementClusterNodeTypeConfigs.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/datagooglevmwareengineprivatecloud"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/datagooglevmwareengineprivatecloud"
 
 &datagooglevmwareengineprivatecloud.DataGoogleVmwareenginePrivateCloudManagementClusterNodeTypeConfigs {
 
@@ -1057,7 +1057,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/datagooglevmware
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.dataGoogleVmwareenginePrivateCloud.DataGoogleVmwareenginePrivateCloudManagementClusterStretchedClusterConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/datagooglevmwareengineprivatecloud"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/datagooglevmwareengineprivatecloud"
 
 &datagooglevmwareengineprivatecloud.DataGoogleVmwareenginePrivateCloudManagementClusterStretchedClusterConfig {
 
@@ -1070,7 +1070,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/datagooglevmware
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.dataGoogleVmwareenginePrivateCloud.DataGoogleVmwareenginePrivateCloudNetworkConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/datagooglevmwareengineprivatecloud"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/datagooglevmwareengineprivatecloud"
 
 &datagooglevmwareengineprivatecloud.DataGoogleVmwareenginePrivateCloudNetworkConfig {
 
@@ -1083,7 +1083,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/datagooglevmware
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.dataGoogleVmwareenginePrivateCloud.DataGoogleVmwareenginePrivateCloudNsx.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/datagooglevmwareengineprivatecloud"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/datagooglevmwareengineprivatecloud"
 
 &datagooglevmwareengineprivatecloud.DataGoogleVmwareenginePrivateCloudNsx {
 
@@ -1096,7 +1096,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/datagooglevmware
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.dataGoogleVmwareenginePrivateCloud.DataGoogleVmwareenginePrivateCloudVcenter.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/datagooglevmwareengineprivatecloud"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/datagooglevmwareengineprivatecloud"
 
 &datagooglevmwareengineprivatecloud.DataGoogleVmwareenginePrivateCloudVcenter {
 
@@ -1111,7 +1111,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/datagooglevmware
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataGoogleVmwareenginePrivateCloud.DataGoogleVmwareenginePrivateCloudHcxList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/datagooglevmwareengineprivatecloud"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/datagooglevmwareengineprivatecloud"
 
 datagooglevmwareengineprivatecloud.NewDataGoogleVmwareenginePrivateCloudHcxList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataGoogleVmwareenginePrivateCloudHcxList
 ```
@@ -1260,7 +1260,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataGoogleVmwareenginePrivateCloud.DataGoogleVmwareenginePrivateCloudHcxOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/datagooglevmwareengineprivatecloud"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/datagooglevmwareengineprivatecloud"
 
 datagooglevmwareengineprivatecloud.NewDataGoogleVmwareenginePrivateCloudHcxOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataGoogleVmwareenginePrivateCloudHcxOutputReference
 ```
@@ -1571,7 +1571,7 @@ func InternalValue() DataGoogleVmwareenginePrivateCloudHcx
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataGoogleVmwareenginePrivateCloud.DataGoogleVmwareenginePrivateCloudManagementClusterAutoscalingSettingsAutoscalingPoliciesConsumedMemoryThresholdsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/datagooglevmwareengineprivatecloud"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/datagooglevmwareengineprivatecloud"
 
 datagooglevmwareengineprivatecloud.NewDataGoogleVmwareenginePrivateCloudManagementClusterAutoscalingSettingsAutoscalingPoliciesConsumedMemoryThresholdsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataGoogleVmwareenginePrivateCloudManagementClusterAutoscalingSettingsAutoscalingPoliciesConsumedMemoryThresholdsList
 ```
@@ -1720,7 +1720,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataGoogleVmwareenginePrivateCloud.DataGoogleVmwareenginePrivateCloudManagementClusterAutoscalingSettingsAutoscalingPoliciesConsumedMemoryThresholdsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/datagooglevmwareengineprivatecloud"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/datagooglevmwareengineprivatecloud"
 
 datagooglevmwareengineprivatecloud.NewDataGoogleVmwareenginePrivateCloudManagementClusterAutoscalingSettingsAutoscalingPoliciesConsumedMemoryThresholdsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataGoogleVmwareenginePrivateCloudManagementClusterAutoscalingSettingsAutoscalingPoliciesConsumedMemoryThresholdsOutputReference
 ```
@@ -2009,7 +2009,7 @@ func InternalValue() DataGoogleVmwareenginePrivateCloudManagementClusterAutoscal
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataGoogleVmwareenginePrivateCloud.DataGoogleVmwareenginePrivateCloudManagementClusterAutoscalingSettingsAutoscalingPoliciesCpuThresholdsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/datagooglevmwareengineprivatecloud"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/datagooglevmwareengineprivatecloud"
 
 datagooglevmwareengineprivatecloud.NewDataGoogleVmwareenginePrivateCloudManagementClusterAutoscalingSettingsAutoscalingPoliciesCpuThresholdsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataGoogleVmwareenginePrivateCloudManagementClusterAutoscalingSettingsAutoscalingPoliciesCpuThresholdsList
 ```
@@ -2158,7 +2158,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataGoogleVmwareenginePrivateCloud.DataGoogleVmwareenginePrivateCloudManagementClusterAutoscalingSettingsAutoscalingPoliciesCpuThresholdsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/datagooglevmwareengineprivatecloud"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/datagooglevmwareengineprivatecloud"
 
 datagooglevmwareengineprivatecloud.NewDataGoogleVmwareenginePrivateCloudManagementClusterAutoscalingSettingsAutoscalingPoliciesCpuThresholdsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataGoogleVmwareenginePrivateCloudManagementClusterAutoscalingSettingsAutoscalingPoliciesCpuThresholdsOutputReference
 ```
@@ -2447,7 +2447,7 @@ func InternalValue() DataGoogleVmwareenginePrivateCloudManagementClusterAutoscal
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataGoogleVmwareenginePrivateCloud.DataGoogleVmwareenginePrivateCloudManagementClusterAutoscalingSettingsAutoscalingPoliciesList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/datagooglevmwareengineprivatecloud"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/datagooglevmwareengineprivatecloud"
 
 datagooglevmwareengineprivatecloud.NewDataGoogleVmwareenginePrivateCloudManagementClusterAutoscalingSettingsAutoscalingPoliciesList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataGoogleVmwareenginePrivateCloudManagementClusterAutoscalingSettingsAutoscalingPoliciesList
 ```
@@ -2596,7 +2596,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataGoogleVmwareenginePrivateCloud.DataGoogleVmwareenginePrivateCloudManagementClusterAutoscalingSettingsAutoscalingPoliciesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/datagooglevmwareengineprivatecloud"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/datagooglevmwareengineprivatecloud"
 
 datagooglevmwareengineprivatecloud.NewDataGoogleVmwareenginePrivateCloudManagementClusterAutoscalingSettingsAutoscalingPoliciesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataGoogleVmwareenginePrivateCloudManagementClusterAutoscalingSettingsAutoscalingPoliciesOutputReference
 ```
@@ -2929,7 +2929,7 @@ func InternalValue() DataGoogleVmwareenginePrivateCloudManagementClusterAutoscal
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataGoogleVmwareenginePrivateCloud.DataGoogleVmwareenginePrivateCloudManagementClusterAutoscalingSettingsAutoscalingPoliciesStorageThresholdsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/datagooglevmwareengineprivatecloud"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/datagooglevmwareengineprivatecloud"
 
 datagooglevmwareengineprivatecloud.NewDataGoogleVmwareenginePrivateCloudManagementClusterAutoscalingSettingsAutoscalingPoliciesStorageThresholdsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataGoogleVmwareenginePrivateCloudManagementClusterAutoscalingSettingsAutoscalingPoliciesStorageThresholdsList
 ```
@@ -3078,7 +3078,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataGoogleVmwareenginePrivateCloud.DataGoogleVmwareenginePrivateCloudManagementClusterAutoscalingSettingsAutoscalingPoliciesStorageThresholdsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/datagooglevmwareengineprivatecloud"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/datagooglevmwareengineprivatecloud"
 
 datagooglevmwareengineprivatecloud.NewDataGoogleVmwareenginePrivateCloudManagementClusterAutoscalingSettingsAutoscalingPoliciesStorageThresholdsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataGoogleVmwareenginePrivateCloudManagementClusterAutoscalingSettingsAutoscalingPoliciesStorageThresholdsOutputReference
 ```
@@ -3367,7 +3367,7 @@ func InternalValue() DataGoogleVmwareenginePrivateCloudManagementClusterAutoscal
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataGoogleVmwareenginePrivateCloud.DataGoogleVmwareenginePrivateCloudManagementClusterAutoscalingSettingsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/datagooglevmwareengineprivatecloud"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/datagooglevmwareengineprivatecloud"
 
 datagooglevmwareengineprivatecloud.NewDataGoogleVmwareenginePrivateCloudManagementClusterAutoscalingSettingsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataGoogleVmwareenginePrivateCloudManagementClusterAutoscalingSettingsList
 ```
@@ -3516,7 +3516,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataGoogleVmwareenginePrivateCloud.DataGoogleVmwareenginePrivateCloudManagementClusterAutoscalingSettingsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/datagooglevmwareengineprivatecloud"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/datagooglevmwareengineprivatecloud"
 
 datagooglevmwareengineprivatecloud.NewDataGoogleVmwareenginePrivateCloudManagementClusterAutoscalingSettingsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataGoogleVmwareenginePrivateCloudManagementClusterAutoscalingSettingsOutputReference
 ```
@@ -3827,7 +3827,7 @@ func InternalValue() DataGoogleVmwareenginePrivateCloudManagementClusterAutoscal
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataGoogleVmwareenginePrivateCloud.DataGoogleVmwareenginePrivateCloudManagementClusterList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/datagooglevmwareengineprivatecloud"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/datagooglevmwareengineprivatecloud"
 
 datagooglevmwareengineprivatecloud.NewDataGoogleVmwareenginePrivateCloudManagementClusterList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataGoogleVmwareenginePrivateCloudManagementClusterList
 ```
@@ -3976,7 +3976,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataGoogleVmwareenginePrivateCloud.DataGoogleVmwareenginePrivateCloudManagementClusterNodeTypeConfigsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/datagooglevmwareengineprivatecloud"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/datagooglevmwareengineprivatecloud"
 
 datagooglevmwareengineprivatecloud.NewDataGoogleVmwareenginePrivateCloudManagementClusterNodeTypeConfigsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataGoogleVmwareenginePrivateCloudManagementClusterNodeTypeConfigsList
 ```
@@ -4125,7 +4125,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataGoogleVmwareenginePrivateCloud.DataGoogleVmwareenginePrivateCloudManagementClusterNodeTypeConfigsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/datagooglevmwareengineprivatecloud"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/datagooglevmwareengineprivatecloud"
 
 datagooglevmwareengineprivatecloud.NewDataGoogleVmwareenginePrivateCloudManagementClusterNodeTypeConfigsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataGoogleVmwareenginePrivateCloudManagementClusterNodeTypeConfigsOutputReference
 ```
@@ -4425,7 +4425,7 @@ func InternalValue() DataGoogleVmwareenginePrivateCloudManagementClusterNodeType
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataGoogleVmwareenginePrivateCloud.DataGoogleVmwareenginePrivateCloudManagementClusterOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/datagooglevmwareengineprivatecloud"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/datagooglevmwareengineprivatecloud"
 
 datagooglevmwareengineprivatecloud.NewDataGoogleVmwareenginePrivateCloudManagementClusterOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataGoogleVmwareenginePrivateCloudManagementClusterOutputReference
 ```
@@ -4736,7 +4736,7 @@ func InternalValue() DataGoogleVmwareenginePrivateCloudManagementCluster
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataGoogleVmwareenginePrivateCloud.DataGoogleVmwareenginePrivateCloudManagementClusterStretchedClusterConfigList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/datagooglevmwareengineprivatecloud"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/datagooglevmwareengineprivatecloud"
 
 datagooglevmwareengineprivatecloud.NewDataGoogleVmwareenginePrivateCloudManagementClusterStretchedClusterConfigList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataGoogleVmwareenginePrivateCloudManagementClusterStretchedClusterConfigList
 ```
@@ -4885,7 +4885,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataGoogleVmwareenginePrivateCloud.DataGoogleVmwareenginePrivateCloudManagementClusterStretchedClusterConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/datagooglevmwareengineprivatecloud"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/datagooglevmwareengineprivatecloud"
 
 datagooglevmwareengineprivatecloud.NewDataGoogleVmwareenginePrivateCloudManagementClusterStretchedClusterConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataGoogleVmwareenginePrivateCloudManagementClusterStretchedClusterConfigOutputReference
 ```
@@ -5174,7 +5174,7 @@ func InternalValue() DataGoogleVmwareenginePrivateCloudManagementClusterStretche
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataGoogleVmwareenginePrivateCloud.DataGoogleVmwareenginePrivateCloudNetworkConfigList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/datagooglevmwareengineprivatecloud"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/datagooglevmwareengineprivatecloud"
 
 datagooglevmwareengineprivatecloud.NewDataGoogleVmwareenginePrivateCloudNetworkConfigList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataGoogleVmwareenginePrivateCloudNetworkConfigList
 ```
@@ -5323,7 +5323,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataGoogleVmwareenginePrivateCloud.DataGoogleVmwareenginePrivateCloudNetworkConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/datagooglevmwareengineprivatecloud"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/datagooglevmwareengineprivatecloud"
 
 datagooglevmwareengineprivatecloud.NewDataGoogleVmwareenginePrivateCloudNetworkConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataGoogleVmwareenginePrivateCloudNetworkConfigOutputReference
 ```
@@ -5645,7 +5645,7 @@ func InternalValue() DataGoogleVmwareenginePrivateCloudNetworkConfig
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataGoogleVmwareenginePrivateCloud.DataGoogleVmwareenginePrivateCloudNsxList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/datagooglevmwareengineprivatecloud"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/datagooglevmwareengineprivatecloud"
 
 datagooglevmwareengineprivatecloud.NewDataGoogleVmwareenginePrivateCloudNsxList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataGoogleVmwareenginePrivateCloudNsxList
 ```
@@ -5794,7 +5794,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataGoogleVmwareenginePrivateCloud.DataGoogleVmwareenginePrivateCloudNsxOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/datagooglevmwareengineprivatecloud"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/datagooglevmwareengineprivatecloud"
 
 datagooglevmwareengineprivatecloud.NewDataGoogleVmwareenginePrivateCloudNsxOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataGoogleVmwareenginePrivateCloudNsxOutputReference
 ```
@@ -6105,7 +6105,7 @@ func InternalValue() DataGoogleVmwareenginePrivateCloudNsx
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataGoogleVmwareenginePrivateCloud.DataGoogleVmwareenginePrivateCloudVcenterList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/datagooglevmwareengineprivatecloud"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/datagooglevmwareengineprivatecloud"
 
 datagooglevmwareengineprivatecloud.NewDataGoogleVmwareenginePrivateCloudVcenterList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataGoogleVmwareenginePrivateCloudVcenterList
 ```
@@ -6254,7 +6254,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataGoogleVmwareenginePrivateCloud.DataGoogleVmwareenginePrivateCloudVcenterOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/datagooglevmwareengineprivatecloud"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/datagooglevmwareengineprivatecloud"
 
 datagooglevmwareengineprivatecloud.NewDataGoogleVmwareenginePrivateCloudVcenterOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataGoogleVmwareenginePrivateCloudVcenterOutputReference
 ```

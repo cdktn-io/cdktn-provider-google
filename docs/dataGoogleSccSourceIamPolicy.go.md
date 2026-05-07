@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.5
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataGoogleSccSourceIamPolicy.DataGoogleSccSourceIamPolicy.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/datagooglesccsourceiampolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/datagooglesccsourceiampolicy"
 
 datagooglesccsourceiampolicy.NewDataGoogleSccSourceIamPolicy(scope Construct, id *string, config DataGoogleSccSourceIamPolicyConfig) DataGoogleSccSourceIamPolicy
 ```
@@ -305,7 +305,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-google.dataGoogleSccSourceIamPolicy.DataGoogleSccSourceIamPolicy.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/datagooglesccsourceiampolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/datagooglesccsourceiampolicy"
 
 datagooglesccsourceiampolicy.DataGoogleSccSourceIamPolicy_IsConstruct(x interface{}) *bool
 ```
@@ -337,7 +337,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-google.dataGoogleSccSourceIamPolicy.DataGoogleSccSourceIamPolicy.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/datagooglesccsourceiampolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/datagooglesccsourceiampolicy"
 
 datagooglesccsourceiampolicy.DataGoogleSccSourceIamPolicy_IsTerraformElement(x interface{}) *bool
 ```
@@ -351,7 +351,7 @@ datagooglesccsourceiampolicy.DataGoogleSccSourceIamPolicy_IsTerraformElement(x i
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktn/provider-google.dataGoogleSccSourceIamPolicy.DataGoogleSccSourceIamPolicy.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/datagooglesccsourceiampolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/datagooglesccsourceiampolicy"
 
 datagooglesccsourceiampolicy.DataGoogleSccSourceIamPolicy_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -365,7 +365,7 @@ datagooglesccsourceiampolicy.DataGoogleSccSourceIamPolicy_IsTerraformDataSource(
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-google.dataGoogleSccSourceIamPolicy.DataGoogleSccSourceIamPolicy.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/datagooglesccsourceiampolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/datagooglesccsourceiampolicy"
 
 datagooglesccsourceiampolicy.DataGoogleSccSourceIamPolicy_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -660,7 +660,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.dataGoogleSccSourceIamPolicy.DataGoogleSccSourceIamPolicyConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/datagooglesccsourceiampolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/datagooglesccsourceiampolicy"
 
 &datagooglesccsourceiampolicy.DataGoogleSccSourceIamPolicyConfig {
 	Connection: interface{},

@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.5
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.computeInterconnectAttachment.ComputeInterconnectAttachment.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/computeinterconnectattachment"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/computeinterconnectattachment"
 
 computeinterconnectattachment.NewComputeInterconnectAttachment(scope Construct, id *string, config ComputeInterconnectAttachmentConfig) ComputeInterconnectAttachment
 ```
@@ -539,7 +539,7 @@ func ResetVlanTag8021Q()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-google.computeInterconnectAttachment.ComputeInterconnectAttachment.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/computeinterconnectattachment"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/computeinterconnectattachment"
 
 computeinterconnectattachment.ComputeInterconnectAttachment_IsConstruct(x interface{}) *bool
 ```
@@ -571,7 +571,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-google.computeInterconnectAttachment.ComputeInterconnectAttachment.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/computeinterconnectattachment"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/computeinterconnectattachment"
 
 computeinterconnectattachment.ComputeInterconnectAttachment_IsTerraformElement(x interface{}) *bool
 ```
@@ -585,7 +585,7 @@ computeinterconnectattachment.ComputeInterconnectAttachment_IsTerraformElement(x
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-google.computeInterconnectAttachment.ComputeInterconnectAttachment.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/computeinterconnectattachment"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/computeinterconnectattachment"
 
 computeinterconnectattachment.ComputeInterconnectAttachment_IsTerraformResource(x interface{}) *bool
 ```
@@ -599,7 +599,7 @@ computeinterconnectattachment.ComputeInterconnectAttachment_IsTerraformResource(
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-google.computeInterconnectAttachment.ComputeInterconnectAttachment.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/computeinterconnectattachment"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/computeinterconnectattachment"
 
 computeinterconnectattachment.ComputeInterconnectAttachment_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -1433,7 +1433,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.computeInterconnectAttachment.ComputeInterconnectAttachmentConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/computeinterconnectattachment"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/computeinterconnectattachment"
 
 &computeinterconnectattachment.ComputeInterconnectAttachmentConfig {
 	Connection: interface{},
@@ -1460,7 +1460,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/computeinterconn
 	Region: *string,
 	StackType: *string,
 	SubnetLength: *f64,
-	Timeouts: github.com/cdktn-io/cdktn-provider-google-go/google/v17.computeInterconnectAttachment.ComputeInterconnectAttachmentTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-google-go/google/v18.computeInterconnectAttachment.ComputeInterconnectAttachmentTimeouts,
 	Type: *string,
 	VlanTag8021Q: *f64,
 }
@@ -1931,7 +1931,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.computeInterconnectAttachment.ComputeInterconnectAttachmentPrivateInterconnectInfo.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/computeinterconnectattachment"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/computeinterconnectattachment"
 
 &computeinterconnectattachment.ComputeInterconnectAttachmentPrivateInterconnectInfo {
 
@@ -1944,7 +1944,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/computeinterconn
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.computeInterconnectAttachment.ComputeInterconnectAttachmentTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/computeinterconnectattachment"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/computeinterconnectattachment"
 
 &computeinterconnectattachment.ComputeInterconnectAttachmentTimeouts {
 	Create: *string,
@@ -2006,7 +2006,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.computeInterconnectAttachment.ComputeInterconnectAttachmentPrivateInterconnectInfoList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/computeinterconnectattachment"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/computeinterconnectattachment"
 
 computeinterconnectattachment.NewComputeInterconnectAttachmentPrivateInterconnectInfoList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ComputeInterconnectAttachmentPrivateInterconnectInfoList
 ```
@@ -2155,7 +2155,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.computeInterconnectAttachment.ComputeInterconnectAttachmentPrivateInterconnectInfoOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/computeinterconnectattachment"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/computeinterconnectattachment"
 
 computeinterconnectattachment.NewComputeInterconnectAttachmentPrivateInterconnectInfoOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ComputeInterconnectAttachmentPrivateInterconnectInfoOutputReference
 ```
@@ -2433,7 +2433,7 @@ func InternalValue() ComputeInterconnectAttachmentPrivateInterconnectInfo
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.computeInterconnectAttachment.ComputeInterconnectAttachmentTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/computeinterconnectattachment"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/computeinterconnectattachment"
 
 computeinterconnectattachment.NewComputeInterconnectAttachmentTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ComputeInterconnectAttachmentTimeoutsOutputReference
 ```

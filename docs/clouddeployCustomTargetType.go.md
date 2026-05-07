@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.5
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.clouddeployCustomTargetType.ClouddeployCustomTargetType.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/clouddeploycustomtargettype"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/clouddeploycustomtargettype"
 
 clouddeploycustomtargettype.NewClouddeployCustomTargetType(scope Construct, id *string, config ClouddeployCustomTargetTypeConfig) ClouddeployCustomTargetType
 ```
@@ -475,7 +475,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-google.clouddeployCustomTargetType.ClouddeployCustomTargetType.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/clouddeploycustomtargettype"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/clouddeploycustomtargettype"
 
 clouddeploycustomtargettype.ClouddeployCustomTargetType_IsConstruct(x interface{}) *bool
 ```
@@ -507,7 +507,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-google.clouddeployCustomTargetType.ClouddeployCustomTargetType.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/clouddeploycustomtargettype"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/clouddeploycustomtargettype"
 
 clouddeploycustomtargettype.ClouddeployCustomTargetType_IsTerraformElement(x interface{}) *bool
 ```
@@ -521,7 +521,7 @@ clouddeploycustomtargettype.ClouddeployCustomTargetType_IsTerraformElement(x int
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-google.clouddeployCustomTargetType.ClouddeployCustomTargetType.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/clouddeploycustomtargettype"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/clouddeploycustomtargettype"
 
 clouddeploycustomtargettype.ClouddeployCustomTargetType_IsTerraformResource(x interface{}) *bool
 ```
@@ -535,7 +535,7 @@ clouddeploycustomtargettype.ClouddeployCustomTargetType_IsTerraformResource(x in
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-google.clouddeployCustomTargetType.ClouddeployCustomTargetType.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/clouddeploycustomtargettype"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/clouddeploycustomtargettype"
 
 clouddeploycustomtargettype.ClouddeployCustomTargetType_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -1050,7 +1050,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.clouddeployCustomTargetType.ClouddeployCustomTargetTypeConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/clouddeploycustomtargettype"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/clouddeploycustomtargettype"
 
 &clouddeploycustomtargettype.ClouddeployCustomTargetTypeConfig {
 	Connection: interface{},
@@ -1063,12 +1063,12 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/clouddeploycusto
 	Location: *string,
 	Name: *string,
 	Annotations: *map[string]*string,
-	CustomActions: github.com/cdktn-io/cdktn-provider-google-go/google/v17.clouddeployCustomTargetType.ClouddeployCustomTargetTypeCustomActions,
+	CustomActions: github.com/cdktn-io/cdktn-provider-google-go/google/v18.clouddeployCustomTargetType.ClouddeployCustomTargetTypeCustomActions,
 	Description: *string,
 	Id: *string,
 	Labels: *map[string]*string,
 	Project: *string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-google-go/google/v17.clouddeployCustomTargetType.ClouddeployCustomTargetTypeTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-google-go/google/v18.clouddeployCustomTargetType.ClouddeployCustomTargetTypeTimeouts,
 }
 ```
 
@@ -1305,7 +1305,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.clouddeployCustomTargetType.ClouddeployCustomTargetTypeCustomActions.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/clouddeploycustomtargettype"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/clouddeploycustomtargettype"
 
 &clouddeploycustomtargettype.ClouddeployCustomTargetTypeCustomActions {
 	DeployAction: *string,
@@ -1373,13 +1373,13 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.clouddeployCustomTargetType.ClouddeployCustomTargetTypeCustomActionsIncludeSkaffoldModules.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/clouddeploycustomtargettype"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/clouddeploycustomtargettype"
 
 &clouddeploycustomtargettype.ClouddeployCustomTargetTypeCustomActionsIncludeSkaffoldModules {
 	Configs: *[]*string,
-	Git: github.com/cdktn-io/cdktn-provider-google-go/google/v17.clouddeployCustomTargetType.ClouddeployCustomTargetTypeCustomActionsIncludeSkaffoldModulesGit,
-	GoogleCloudBuildRepo: github.com/cdktn-io/cdktn-provider-google-go/google/v17.clouddeployCustomTargetType.ClouddeployCustomTargetTypeCustomActionsIncludeSkaffoldModulesGoogleCloudBuildRepo,
-	GoogleCloudStorage: github.com/cdktn-io/cdktn-provider-google-go/google/v17.clouddeployCustomTargetType.ClouddeployCustomTargetTypeCustomActionsIncludeSkaffoldModulesGoogleCloudStorage,
+	Git: github.com/cdktn-io/cdktn-provider-google-go/google/v18.clouddeployCustomTargetType.ClouddeployCustomTargetTypeCustomActionsIncludeSkaffoldModulesGit,
+	GoogleCloudBuildRepo: github.com/cdktn-io/cdktn-provider-google-go/google/v18.clouddeployCustomTargetType.ClouddeployCustomTargetTypeCustomActionsIncludeSkaffoldModulesGoogleCloudBuildRepo,
+	GoogleCloudStorage: github.com/cdktn-io/cdktn-provider-google-go/google/v18.clouddeployCustomTargetType.ClouddeployCustomTargetTypeCustomActionsIncludeSkaffoldModulesGoogleCloudStorage,
 }
 ```
 
@@ -1455,7 +1455,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.clouddeployCustomTargetType.ClouddeployCustomTargetTypeCustomActionsIncludeSkaffoldModulesGit.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/clouddeploycustomtargettype"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/clouddeploycustomtargettype"
 
 &clouddeploycustomtargettype.ClouddeployCustomTargetTypeCustomActionsIncludeSkaffoldModulesGit {
 	Repo: *string,
@@ -1521,7 +1521,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.clouddeployCustomTargetType.ClouddeployCustomTargetTypeCustomActionsIncludeSkaffoldModulesGoogleCloudBuildRepo.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/clouddeploycustomtargettype"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/clouddeploycustomtargettype"
 
 &clouddeploycustomtargettype.ClouddeployCustomTargetTypeCustomActionsIncludeSkaffoldModulesGoogleCloudBuildRepo {
 	Repository: *string,
@@ -1587,7 +1587,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.clouddeployCustomTargetType.ClouddeployCustomTargetTypeCustomActionsIncludeSkaffoldModulesGoogleCloudStorage.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/clouddeploycustomtargettype"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/clouddeploycustomtargettype"
 
 &clouddeploycustomtargettype.ClouddeployCustomTargetTypeCustomActionsIncludeSkaffoldModulesGoogleCloudStorage {
 	Source: *string,
@@ -1639,7 +1639,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.clouddeployCustomTargetType.ClouddeployCustomTargetTypeTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/clouddeploycustomtargettype"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/clouddeploycustomtargettype"
 
 &clouddeploycustomtargettype.ClouddeployCustomTargetTypeTimeouts {
 	Create: *string,
@@ -1701,7 +1701,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.clouddeployCustomTargetType.ClouddeployCustomTargetTypeCustomActionsIncludeSkaffoldModulesGitOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/clouddeploycustomtargettype"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/clouddeploycustomtargettype"
 
 clouddeploycustomtargettype.NewClouddeployCustomTargetTypeCustomActionsIncludeSkaffoldModulesGitOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ClouddeployCustomTargetTypeCustomActionsIncludeSkaffoldModulesGitOutputReference
 ```
@@ -2030,7 +2030,7 @@ func InternalValue() ClouddeployCustomTargetTypeCustomActionsIncludeSkaffoldModu
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.clouddeployCustomTargetType.ClouddeployCustomTargetTypeCustomActionsIncludeSkaffoldModulesGoogleCloudBuildRepoOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/clouddeploycustomtargettype"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/clouddeploycustomtargettype"
 
 clouddeploycustomtargettype.NewClouddeployCustomTargetTypeCustomActionsIncludeSkaffoldModulesGoogleCloudBuildRepoOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ClouddeployCustomTargetTypeCustomActionsIncludeSkaffoldModulesGoogleCloudBuildRepoOutputReference
 ```
@@ -2359,7 +2359,7 @@ func InternalValue() ClouddeployCustomTargetTypeCustomActionsIncludeSkaffoldModu
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.clouddeployCustomTargetType.ClouddeployCustomTargetTypeCustomActionsIncludeSkaffoldModulesGoogleCloudStorageOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/clouddeploycustomtargettype"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/clouddeploycustomtargettype"
 
 clouddeploycustomtargettype.NewClouddeployCustomTargetTypeCustomActionsIncludeSkaffoldModulesGoogleCloudStorageOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ClouddeployCustomTargetTypeCustomActionsIncludeSkaffoldModulesGoogleCloudStorageOutputReference
 ```
@@ -2659,7 +2659,7 @@ func InternalValue() ClouddeployCustomTargetTypeCustomActionsIncludeSkaffoldModu
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.clouddeployCustomTargetType.ClouddeployCustomTargetTypeCustomActionsIncludeSkaffoldModulesList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/clouddeploycustomtargettype"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/clouddeploycustomtargettype"
 
 clouddeploycustomtargettype.NewClouddeployCustomTargetTypeCustomActionsIncludeSkaffoldModulesList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ClouddeployCustomTargetTypeCustomActionsIncludeSkaffoldModulesList
 ```
@@ -2819,7 +2819,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.clouddeployCustomTargetType.ClouddeployCustomTargetTypeCustomActionsIncludeSkaffoldModulesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/clouddeploycustomtargettype"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/clouddeploycustomtargettype"
 
 clouddeploycustomtargettype.NewClouddeployCustomTargetTypeCustomActionsIncludeSkaffoldModulesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ClouddeployCustomTargetTypeCustomActionsIncludeSkaffoldModulesOutputReference
 ```
@@ -3241,7 +3241,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.clouddeployCustomTargetType.ClouddeployCustomTargetTypeCustomActionsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/clouddeploycustomtargettype"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/clouddeploycustomtargettype"
 
 clouddeploycustomtargettype.NewClouddeployCustomTargetTypeCustomActionsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ClouddeployCustomTargetTypeCustomActionsOutputReference
 ```
@@ -3583,7 +3583,7 @@ func InternalValue() ClouddeployCustomTargetTypeCustomActions
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.clouddeployCustomTargetType.ClouddeployCustomTargetTypeTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/clouddeploycustomtargettype"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/clouddeploycustomtargettype"
 
 clouddeploycustomtargettype.NewClouddeployCustomTargetTypeTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ClouddeployCustomTargetTypeTimeoutsOutputReference
 ```

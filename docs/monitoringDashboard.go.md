@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.5
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.monitoringDashboard.MonitoringDashboard.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/monitoringdashboard"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/monitoringdashboard"
 
 monitoringdashboard.NewMonitoringDashboard(scope Construct, id *string, config MonitoringDashboardConfig) MonitoringDashboard
 ```
@@ -434,7 +434,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-google.monitoringDashboard.MonitoringDashboard.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/monitoringdashboard"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/monitoringdashboard"
 
 monitoringdashboard.MonitoringDashboard_IsConstruct(x interface{}) *bool
 ```
@@ -466,7 +466,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-google.monitoringDashboard.MonitoringDashboard.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/monitoringdashboard"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/monitoringdashboard"
 
 monitoringdashboard.MonitoringDashboard_IsTerraformElement(x interface{}) *bool
 ```
@@ -480,7 +480,7 @@ monitoringdashboard.MonitoringDashboard_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-google.monitoringDashboard.MonitoringDashboard.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/monitoringdashboard"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/monitoringdashboard"
 
 monitoringdashboard.MonitoringDashboard_IsTerraformResource(x interface{}) *bool
 ```
@@ -494,7 +494,7 @@ monitoringdashboard.MonitoringDashboard_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-google.monitoringDashboard.MonitoringDashboard.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/monitoringdashboard"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/monitoringdashboard"
 
 monitoringdashboard.MonitoringDashboard_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -811,7 +811,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.monitoringDashboard.MonitoringDashboardConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/monitoringdashboard"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/monitoringdashboard"
 
 &monitoringdashboard.MonitoringDashboardConfig {
 	Connection: interface{},
@@ -824,7 +824,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/monitoringdashbo
 	DashboardJson: *string,
 	Id: *string,
 	Project: *string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-google-go/google/v17.monitoringDashboard.MonitoringDashboardTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-google-go/google/v18.monitoringDashboard.MonitoringDashboardTimeouts,
 }
 ```
 
@@ -980,7 +980,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.monitoringDashboard.MonitoringDashboardTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/monitoringdashboard"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/monitoringdashboard"
 
 &monitoringdashboard.MonitoringDashboardTimeouts {
 	Create: *string,
@@ -1042,7 +1042,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.monitoringDashboard.MonitoringDashboardTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/monitoringdashboard"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/monitoringdashboard"
 
 monitoringdashboard.NewMonitoringDashboardTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) MonitoringDashboardTimeoutsOutputReference
 ```

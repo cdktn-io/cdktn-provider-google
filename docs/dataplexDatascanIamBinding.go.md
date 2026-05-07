@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.5
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataplexDatascanIamBinding.DataplexDatascanIamBinding.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/dataplexdatascaniambinding"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/dataplexdatascaniambinding"
 
 dataplexdatascaniambinding.NewDataplexDatascanIamBinding(scope Construct, id *string, config DataplexDatascanIamBindingConfig) DataplexDatascanIamBinding
 ```
@@ -441,7 +441,7 @@ func ResetProject()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-google.dataplexDatascanIamBinding.DataplexDatascanIamBinding.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/dataplexdatascaniambinding"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/dataplexdatascaniambinding"
 
 dataplexdatascaniambinding.DataplexDatascanIamBinding_IsConstruct(x interface{}) *bool
 ```
@@ -473,7 +473,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-google.dataplexDatascanIamBinding.DataplexDatascanIamBinding.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/dataplexdatascaniambinding"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/dataplexdatascaniambinding"
 
 dataplexdatascaniambinding.DataplexDatascanIamBinding_IsTerraformElement(x interface{}) *bool
 ```
@@ -487,7 +487,7 @@ dataplexdatascaniambinding.DataplexDatascanIamBinding_IsTerraformElement(x inter
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-google.dataplexDatascanIamBinding.DataplexDatascanIamBinding.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/dataplexdatascaniambinding"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/dataplexdatascaniambinding"
 
 dataplexdatascaniambinding.DataplexDatascanIamBinding_IsTerraformResource(x interface{}) *bool
 ```
@@ -501,7 +501,7 @@ dataplexdatascaniambinding.DataplexDatascanIamBinding_IsTerraformResource(x inte
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-google.dataplexDatascanIamBinding.DataplexDatascanIamBinding.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/dataplexdatascaniambinding"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/dataplexdatascaniambinding"
 
 dataplexdatascaniambinding.DataplexDatascanIamBinding_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -895,7 +895,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.dataplexDatascanIamBinding.DataplexDatascanIamBindingCondition.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/dataplexdatascaniambinding"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/dataplexdatascaniambinding"
 
 &dataplexdatascaniambinding.DataplexDatascanIamBindingCondition {
 	Expression: *string,
@@ -955,7 +955,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.dataplexDatascanIamBinding.DataplexDatascanIamBindingConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/dataplexdatascaniambinding"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/dataplexdatascaniambinding"
 
 &dataplexdatascaniambinding.DataplexDatascanIamBindingConfig {
 	Connection: interface{},
@@ -968,7 +968,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/dataplexdatascan
 	DataScanId: *string,
 	Members: *[]*string,
 	Role: *string,
-	Condition: github.com/cdktn-io/cdktn-provider-google-go/google/v17.dataplexDatascanIamBinding.DataplexDatascanIamBindingCondition,
+	Condition: github.com/cdktn-io/cdktn-provider-google-go/google/v18.dataplexDatascanIamBinding.DataplexDatascanIamBindingCondition,
 	Id: *string,
 	Location: *string,
 	Project: *string,
@@ -1162,7 +1162,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataplexDatascanIamBinding.DataplexDatascanIamBindingConditionOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/dataplexdatascaniambinding"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/dataplexdatascaniambinding"
 
 dataplexdatascaniambinding.NewDataplexDatascanIamBindingConditionOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataplexDatascanIamBindingConditionOutputReference
 ```

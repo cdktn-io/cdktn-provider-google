@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.5
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.accessContextManagerAuthorizedOrgsDesc.AccessContextManagerAuthorizedOrgsDesc.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/accesscontextmanagerauthorizedorgsdesc"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/accesscontextmanagerauthorizedorgsdesc"
 
 accesscontextmanagerauthorizedorgsdesc.NewAccessContextManagerAuthorizedOrgsDesc(scope Construct, id *string, config AccessContextManagerAuthorizedOrgsDescConfig) AccessContextManagerAuthorizedOrgsDesc
 ```
@@ -455,7 +455,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-google.accessContextManagerAuthorizedOrgsDesc.AccessContextManagerAuthorizedOrgsDesc.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/accesscontextmanagerauthorizedorgsdesc"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/accesscontextmanagerauthorizedorgsdesc"
 
 accesscontextmanagerauthorizedorgsdesc.AccessContextManagerAuthorizedOrgsDesc_IsConstruct(x interface{}) *bool
 ```
@@ -487,7 +487,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-google.accessContextManagerAuthorizedOrgsDesc.AccessContextManagerAuthorizedOrgsDesc.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/accesscontextmanagerauthorizedorgsdesc"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/accesscontextmanagerauthorizedorgsdesc"
 
 accesscontextmanagerauthorizedorgsdesc.AccessContextManagerAuthorizedOrgsDesc_IsTerraformElement(x interface{}) *bool
 ```
@@ -501,7 +501,7 @@ accesscontextmanagerauthorizedorgsdesc.AccessContextManagerAuthorizedOrgsDesc_Is
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-google.accessContextManagerAuthorizedOrgsDesc.AccessContextManagerAuthorizedOrgsDesc.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/accesscontextmanagerauthorizedorgsdesc"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/accesscontextmanagerauthorizedorgsdesc"
 
 accesscontextmanagerauthorizedorgsdesc.AccessContextManagerAuthorizedOrgsDesc_IsTerraformResource(x interface{}) *bool
 ```
@@ -515,7 +515,7 @@ accesscontextmanagerauthorizedorgsdesc.AccessContextManagerAuthorizedOrgsDesc_Is
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-google.accessContextManagerAuthorizedOrgsDesc.AccessContextManagerAuthorizedOrgsDesc.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/accesscontextmanagerauthorizedorgsdesc"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/accesscontextmanagerauthorizedorgsdesc"
 
 accesscontextmanagerauthorizedorgsdesc.AccessContextManagerAuthorizedOrgsDesc_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -942,7 +942,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.accessContextManagerAuthorizedOrgsDesc.AccessContextManagerAuthorizedOrgsDescConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/accesscontextmanagerauthorizedorgsdesc"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/accesscontextmanagerauthorizedorgsdesc"
 
 &accesscontextmanagerauthorizedorgsdesc.AccessContextManagerAuthorizedOrgsDescConfig {
 	Connection: interface{},
@@ -959,7 +959,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/accesscontextman
 	AuthorizationType: *string,
 	Id: *string,
 	Orgs: *[]*string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-google-go/google/v17.accessContextManagerAuthorizedOrgsDesc.AccessContextManagerAuthorizedOrgsDescTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-google-go/google/v18.accessContextManagerAuthorizedOrgsDesc.AccessContextManagerAuthorizedOrgsDescTimeouts,
 }
 ```
 
@@ -1199,7 +1199,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.accessContextManagerAuthorizedOrgsDesc.AccessContextManagerAuthorizedOrgsDescTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/accesscontextmanagerauthorizedorgsdesc"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/accesscontextmanagerauthorizedorgsdesc"
 
 &accesscontextmanagerauthorizedorgsdesc.AccessContextManagerAuthorizedOrgsDescTimeouts {
 	Create: *string,
@@ -1261,7 +1261,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.accessContextManagerAuthorizedOrgsDesc.AccessContextManagerAuthorizedOrgsDescTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/accesscontextmanagerauthorizedorgsdesc"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/accesscontextmanagerauthorizedorgsdesc"
 
 accesscontextmanagerauthorizedorgsdesc.NewAccessContextManagerAuthorizedOrgsDescTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AccessContextManagerAuthorizedOrgsDescTimeoutsOutputReference
 ```

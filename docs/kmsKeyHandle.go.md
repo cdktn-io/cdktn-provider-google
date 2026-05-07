@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.5
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.kmsKeyHandle.KmsKeyHandle.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/kmskeyhandle"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/kmskeyhandle"
 
 kmskeyhandle.NewKmsKeyHandle(scope Construct, id *string, config KmsKeyHandleConfig) KmsKeyHandle
 ```
@@ -434,7 +434,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-google.kmsKeyHandle.KmsKeyHandle.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/kmskeyhandle"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/kmskeyhandle"
 
 kmskeyhandle.KmsKeyHandle_IsConstruct(x interface{}) *bool
 ```
@@ -466,7 +466,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-google.kmsKeyHandle.KmsKeyHandle.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/kmskeyhandle"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/kmskeyhandle"
 
 kmskeyhandle.KmsKeyHandle_IsTerraformElement(x interface{}) *bool
 ```
@@ -480,7 +480,7 @@ kmskeyhandle.KmsKeyHandle_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-google.kmsKeyHandle.KmsKeyHandle.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/kmskeyhandle"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/kmskeyhandle"
 
 kmskeyhandle.KmsKeyHandle_IsTerraformResource(x interface{}) *bool
 ```
@@ -494,7 +494,7 @@ kmskeyhandle.KmsKeyHandle_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-google.kmsKeyHandle.KmsKeyHandle.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/kmskeyhandle"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/kmskeyhandle"
 
 kmskeyhandle.KmsKeyHandle_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -866,7 +866,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.kmsKeyHandle.KmsKeyHandleConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/kmskeyhandle"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/kmskeyhandle"
 
 &kmskeyhandle.KmsKeyHandleConfig {
 	Connection: interface{},
@@ -881,7 +881,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/kmskeyhandle"
 	ResourceTypeSelector: *string,
 	Id: *string,
 	Project: *string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-google-go/google/v17.kmsKeyHandle.KmsKeyHandleTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-google-go/google/v18.kmsKeyHandle.KmsKeyHandleTimeouts,
 }
 ```
 
@@ -1063,7 +1063,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.kmsKeyHandle.KmsKeyHandleTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/kmskeyhandle"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/kmskeyhandle"
 
 &kmskeyhandle.KmsKeyHandleTimeouts {
 	Create: *string,
@@ -1111,7 +1111,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.kmsKeyHandle.KmsKeyHandleTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/kmskeyhandle"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/kmskeyhandle"
 
 kmskeyhandle.NewKmsKeyHandleTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) KmsKeyHandleTimeoutsOutputReference
 ```

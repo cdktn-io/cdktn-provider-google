@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.5
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.storageNotification.StorageNotification.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/storagenotification"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/storagenotification"
 
 storagenotification.NewStorageNotification(scope Construct, id *string, config StorageNotificationConfig) StorageNotification
 ```
@@ -428,7 +428,7 @@ func ResetObjectNamePrefix()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-google.storageNotification.StorageNotification.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/storagenotification"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/storagenotification"
 
 storagenotification.StorageNotification_IsConstruct(x interface{}) *bool
 ```
@@ -460,7 +460,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-google.storageNotification.StorageNotification.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/storagenotification"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/storagenotification"
 
 storagenotification.StorageNotification_IsTerraformElement(x interface{}) *bool
 ```
@@ -474,7 +474,7 @@ storagenotification.StorageNotification_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-google.storageNotification.StorageNotification.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/storagenotification"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/storagenotification"
 
 storagenotification.StorageNotification_IsTerraformResource(x interface{}) *bool
 ```
@@ -488,7 +488,7 @@ storagenotification.StorageNotification_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-google.storageNotification.StorageNotification.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/storagenotification"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/storagenotification"
 
 storagenotification.StorageNotification_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -893,7 +893,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.storageNotification.StorageNotificationConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/storagenotification"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/storagenotification"
 
 &storagenotification.StorageNotificationConfig {
 	Connection: interface{},

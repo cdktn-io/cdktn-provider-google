@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.5
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.apigeeApi.ApigeeApi.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/apigeeapi"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/apigeeapi"
 
 apigeeapi.NewApigeeApi(scope Construct, id *string, config ApigeeApiConfig) ApigeeApi
 ```
@@ -434,7 +434,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-google.apigeeApi.ApigeeApi.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/apigeeapi"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/apigeeapi"
 
 apigeeapi.ApigeeApi_IsConstruct(x interface{}) *bool
 ```
@@ -466,7 +466,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-google.apigeeApi.ApigeeApi.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/apigeeapi"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/apigeeapi"
 
 apigeeapi.ApigeeApi_IsTerraformElement(x interface{}) *bool
 ```
@@ -480,7 +480,7 @@ apigeeapi.ApigeeApi_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-google.apigeeApi.ApigeeApi.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/apigeeapi"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/apigeeapi"
 
 apigeeapi.ApigeeApi_IsTerraformResource(x interface{}) *bool
 ```
@@ -494,7 +494,7 @@ apigeeapi.ApigeeApi_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-google.apigeeApi.ApigeeApi.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/apigeeapi"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/apigeeapi"
 
 apigeeapi.ApigeeApi_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -899,7 +899,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.apigeeApi.ApigeeApiConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/apigeeapi"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/apigeeapi"
 
 &apigeeapi.ApigeeApiConfig {
 	Connection: interface{},
@@ -914,7 +914,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/apigeeapi"
 	OrgId: *string,
 	DetectMd5Hash: *string,
 	Id: *string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-google-go/google/v17.apigeeApi.ApigeeApiTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-google-go/google/v18.apigeeApi.ApigeeApiTimeouts,
 }
 ```
 
@@ -1100,7 +1100,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.apigeeApi.ApigeeApiMetaData.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/apigeeapi"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/apigeeapi"
 
 &apigeeapi.ApigeeApiMetaData {
 
@@ -1113,7 +1113,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/apigeeapi"
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.apigeeApi.ApigeeApiTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/apigeeapi"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/apigeeapi"
 
 &apigeeapi.ApigeeApiTimeouts {
 	Create: *string,
@@ -1175,7 +1175,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.apigeeApi.ApigeeApiMetaDataList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/apigeeapi"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/apigeeapi"
 
 apigeeapi.NewApigeeApiMetaDataList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ApigeeApiMetaDataList
 ```
@@ -1324,7 +1324,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.apigeeApi.ApigeeApiMetaDataOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/apigeeapi"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/apigeeapi"
 
 apigeeapi.NewApigeeApiMetaDataOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ApigeeApiMetaDataOutputReference
 ```
@@ -1624,7 +1624,7 @@ func InternalValue() ApigeeApiMetaData
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.apigeeApi.ApigeeApiTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/apigeeapi"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/apigeeapi"
 
 apigeeapi.NewApigeeApiTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ApigeeApiTimeoutsOutputReference
 ```

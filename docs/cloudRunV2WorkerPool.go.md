@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.5
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.cloudRunV2WorkerPool.CloudRunV2WorkerPool.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/cloudrunv2workerpool"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/cloudrunv2workerpool"
 
 cloudrunv2workerpool.NewCloudRunV2WorkerPool(scope Construct, id *string, config CloudRunV2WorkerPoolConfig) CloudRunV2WorkerPool
 ```
@@ -563,7 +563,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-google.cloudRunV2WorkerPool.CloudRunV2WorkerPool.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/cloudrunv2workerpool"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/cloudrunv2workerpool"
 
 cloudrunv2workerpool.CloudRunV2WorkerPool_IsConstruct(x interface{}) *bool
 ```
@@ -595,7 +595,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-google.cloudRunV2WorkerPool.CloudRunV2WorkerPool.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/cloudrunv2workerpool"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/cloudrunv2workerpool"
 
 cloudrunv2workerpool.CloudRunV2WorkerPool_IsTerraformElement(x interface{}) *bool
 ```
@@ -609,7 +609,7 @@ cloudrunv2workerpool.CloudRunV2WorkerPool_IsTerraformElement(x interface{}) *boo
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-google.cloudRunV2WorkerPool.CloudRunV2WorkerPool.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/cloudrunv2workerpool"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/cloudrunv2workerpool"
 
 cloudrunv2workerpool.CloudRunV2WorkerPool_IsTerraformResource(x interface{}) *bool
 ```
@@ -623,7 +623,7 @@ cloudrunv2workerpool.CloudRunV2WorkerPool_IsTerraformResource(x interface{}) *bo
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-google.cloudRunV2WorkerPool.CloudRunV2WorkerPool.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/cloudrunv2workerpool"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/cloudrunv2workerpool"
 
 cloudrunv2workerpool.CloudRunV2WorkerPool_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -1435,7 +1435,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.cloudRunV2WorkerPool.CloudRunV2WorkerPoolBinaryAuthorization.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/cloudrunv2workerpool"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/cloudrunv2workerpool"
 
 &cloudrunv2workerpool.CloudRunV2WorkerPoolBinaryAuthorization {
 	BreakglassJustification: *string,
@@ -1503,7 +1503,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.cloudRunV2WorkerPool.CloudRunV2WorkerPoolConditions.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/cloudrunv2workerpool"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/cloudrunv2workerpool"
 
 &cloudrunv2workerpool.CloudRunV2WorkerPoolConditions {
 
@@ -1516,7 +1516,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/cloudrunv2worker
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.cloudRunV2WorkerPool.CloudRunV2WorkerPoolConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/cloudrunv2workerpool"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/cloudrunv2workerpool"
 
 &cloudrunv2workerpool.CloudRunV2WorkerPoolConfig {
 	Connection: interface{},
@@ -1528,9 +1528,9 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/cloudrunv2worker
 	Provisioners: *[]interface{},
 	Location: *string,
 	Name: *string,
-	Template: github.com/cdktn-io/cdktn-provider-google-go/google/v17.cloudRunV2WorkerPool.CloudRunV2WorkerPoolTemplate,
+	Template: github.com/cdktn-io/cdktn-provider-google-go/google/v18.cloudRunV2WorkerPool.CloudRunV2WorkerPoolTemplate,
 	Annotations: *map[string]*string,
-	BinaryAuthorization: github.com/cdktn-io/cdktn-provider-google-go/google/v17.cloudRunV2WorkerPool.CloudRunV2WorkerPoolBinaryAuthorization,
+	BinaryAuthorization: github.com/cdktn-io/cdktn-provider-google-go/google/v18.cloudRunV2WorkerPool.CloudRunV2WorkerPoolBinaryAuthorization,
 	Client: *string,
 	ClientVersion: *string,
 	CustomAudiences: *[]*string,
@@ -1541,8 +1541,8 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/cloudrunv2worker
 	Labels: *map[string]*string,
 	LaunchStage: *string,
 	Project: *string,
-	Scaling: github.com/cdktn-io/cdktn-provider-google-go/google/v17.cloudRunV2WorkerPool.CloudRunV2WorkerPoolScaling,
-	Timeouts: github.com/cdktn-io/cdktn-provider-google-go/google/v17.cloudRunV2WorkerPool.CloudRunV2WorkerPoolTimeouts,
+	Scaling: github.com/cdktn-io/cdktn-provider-google-go/google/v18.cloudRunV2WorkerPool.CloudRunV2WorkerPoolScaling,
+	Timeouts: github.com/cdktn-io/cdktn-provider-google-go/google/v18.cloudRunV2WorkerPool.CloudRunV2WorkerPoolTimeouts,
 }
 ```
 
@@ -1920,7 +1920,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.cloudRunV2WorkerPool.CloudRunV2WorkerPoolInstanceSplits.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/cloudrunv2workerpool"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/cloudrunv2workerpool"
 
 &cloudrunv2workerpool.CloudRunV2WorkerPoolInstanceSplits {
 	Percent: *f64,
@@ -1986,7 +1986,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.cloudRunV2WorkerPool.CloudRunV2WorkerPoolInstanceSplitStatuses.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/cloudrunv2workerpool"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/cloudrunv2workerpool"
 
 &cloudrunv2workerpool.CloudRunV2WorkerPoolInstanceSplitStatuses {
 
@@ -1999,7 +1999,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/cloudrunv2worker
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.cloudRunV2WorkerPool.CloudRunV2WorkerPoolScaling.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/cloudrunv2workerpool"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/cloudrunv2workerpool"
 
 &cloudrunv2workerpool.CloudRunV2WorkerPoolScaling {
 	ManualInstanceCount: *f64,
@@ -2081,7 +2081,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.cloudRunV2WorkerPool.CloudRunV2WorkerPoolTemplate.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/cloudrunv2workerpool"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/cloudrunv2workerpool"
 
 &cloudrunv2workerpool.CloudRunV2WorkerPoolTemplate {
 	Annotations: *map[string]*string,
@@ -2091,11 +2091,11 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/cloudrunv2worker
 	EncryptionKeyShutdownDuration: *string,
 	GpuZonalRedundancyDisabled: interface{},
 	Labels: *map[string]*string,
-	NodeSelector: github.com/cdktn-io/cdktn-provider-google-go/google/v17.cloudRunV2WorkerPool.CloudRunV2WorkerPoolTemplateNodeSelector,
+	NodeSelector: github.com/cdktn-io/cdktn-provider-google-go/google/v18.cloudRunV2WorkerPool.CloudRunV2WorkerPoolTemplateNodeSelector,
 	Revision: *string,
 	ServiceAccount: *string,
 	Volumes: interface{},
-	VpcAccess: github.com/cdktn-io/cdktn-provider-google-go/google/v17.cloudRunV2WorkerPool.CloudRunV2WorkerPoolTemplateVpcAccess,
+	VpcAccess: github.com/cdktn-io/cdktn-provider-google-go/google/v18.cloudRunV2WorkerPool.CloudRunV2WorkerPoolTemplateVpcAccess,
 }
 ```
 
@@ -2312,7 +2312,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.cloudRunV2WorkerPool.CloudRunV2WorkerPoolTemplateContainers.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/cloudrunv2workerpool"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/cloudrunv2workerpool"
 
 &cloudrunv2workerpool.CloudRunV2WorkerPoolTemplateContainers {
 	Image: *string,
@@ -2321,7 +2321,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/cloudrunv2worker
 	DependsOn: *[]*string,
 	Env: interface{},
 	Name: *string,
-	Resources: github.com/cdktn-io/cdktn-provider-google-go/google/v17.cloudRunV2WorkerPool.CloudRunV2WorkerPoolTemplateContainersResources,
+	Resources: github.com/cdktn-io/cdktn-provider-google-go/google/v18.cloudRunV2WorkerPool.CloudRunV2WorkerPoolTemplateContainersResources,
 	VolumeMounts: interface{},
 	WorkingDir: *string,
 }
@@ -2482,12 +2482,12 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.cloudRunV2WorkerPool.CloudRunV2WorkerPoolTemplateContainersEnv.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/cloudrunv2workerpool"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/cloudrunv2workerpool"
 
 &cloudrunv2workerpool.CloudRunV2WorkerPoolTemplateContainersEnv {
 	Name: *string,
 	Value: *string,
-	ValueSource: github.com/cdktn-io/cdktn-provider-google-go/google/v17.cloudRunV2WorkerPool.CloudRunV2WorkerPoolTemplateContainersEnvValueSource,
+	ValueSource: github.com/cdktn-io/cdktn-provider-google-go/google/v18.cloudRunV2WorkerPool.CloudRunV2WorkerPoolTemplateContainersEnvValueSource,
 }
 ```
 
@@ -2550,10 +2550,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.cloudRunV2WorkerPool.CloudRunV2WorkerPoolTemplateContainersEnvValueSource.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/cloudrunv2workerpool"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/cloudrunv2workerpool"
 
 &cloudrunv2workerpool.CloudRunV2WorkerPoolTemplateContainersEnvValueSource {
-	SecretKeyRef: github.com/cdktn-io/cdktn-provider-google-go/google/v17.cloudRunV2WorkerPool.CloudRunV2WorkerPoolTemplateContainersEnvValueSourceSecretKeyRef,
+	SecretKeyRef: github.com/cdktn-io/cdktn-provider-google-go/google/v18.cloudRunV2WorkerPool.CloudRunV2WorkerPoolTemplateContainersEnvValueSourceSecretKeyRef,
 }
 ```
 
@@ -2584,7 +2584,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.cloudRunV2WorkerPool.CloudRunV2WorkerPoolTemplateContainersEnvValueSourceSecretKeyRef.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/cloudrunv2workerpool"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/cloudrunv2workerpool"
 
 &cloudrunv2workerpool.CloudRunV2WorkerPoolTemplateContainersEnvValueSourceSecretKeyRef {
 	Secret: *string,
@@ -2638,7 +2638,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.cloudRunV2WorkerPool.CloudRunV2WorkerPoolTemplateContainersResources.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/cloudrunv2workerpool"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/cloudrunv2workerpool"
 
 &cloudrunv2workerpool.CloudRunV2WorkerPoolTemplateContainersResources {
 	Limits: *map[string]*string,
@@ -2672,7 +2672,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.cloudRunV2WorkerPool.CloudRunV2WorkerPoolTemplateContainersVolumeMounts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/cloudrunv2workerpool"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/cloudrunv2workerpool"
 
 &cloudrunv2workerpool.CloudRunV2WorkerPoolTemplateContainersVolumeMounts {
 	MountPath: *string,
@@ -2724,7 +2724,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.cloudRunV2WorkerPool.CloudRunV2WorkerPoolTemplateNodeSelector.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/cloudrunv2workerpool"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/cloudrunv2workerpool"
 
 &cloudrunv2workerpool.CloudRunV2WorkerPoolTemplateNodeSelector {
 	Accelerator: *string,
@@ -2758,15 +2758,15 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.cloudRunV2WorkerPool.CloudRunV2WorkerPoolTemplateVolumes.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/cloudrunv2workerpool"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/cloudrunv2workerpool"
 
 &cloudrunv2workerpool.CloudRunV2WorkerPoolTemplateVolumes {
 	Name: *string,
-	CloudSqlInstance: github.com/cdktn-io/cdktn-provider-google-go/google/v17.cloudRunV2WorkerPool.CloudRunV2WorkerPoolTemplateVolumesCloudSqlInstance,
-	EmptyDir: github.com/cdktn-io/cdktn-provider-google-go/google/v17.cloudRunV2WorkerPool.CloudRunV2WorkerPoolTemplateVolumesEmptyDir,
-	Gcs: github.com/cdktn-io/cdktn-provider-google-go/google/v17.cloudRunV2WorkerPool.CloudRunV2WorkerPoolTemplateVolumesGcs,
-	Nfs: github.com/cdktn-io/cdktn-provider-google-go/google/v17.cloudRunV2WorkerPool.CloudRunV2WorkerPoolTemplateVolumesNfs,
-	Secret: github.com/cdktn-io/cdktn-provider-google-go/google/v17.cloudRunV2WorkerPool.CloudRunV2WorkerPoolTemplateVolumesSecret,
+	CloudSqlInstance: github.com/cdktn-io/cdktn-provider-google-go/google/v18.cloudRunV2WorkerPool.CloudRunV2WorkerPoolTemplateVolumesCloudSqlInstance,
+	EmptyDir: github.com/cdktn-io/cdktn-provider-google-go/google/v18.cloudRunV2WorkerPool.CloudRunV2WorkerPoolTemplateVolumesEmptyDir,
+	Gcs: github.com/cdktn-io/cdktn-provider-google-go/google/v18.cloudRunV2WorkerPool.CloudRunV2WorkerPoolTemplateVolumesGcs,
+	Nfs: github.com/cdktn-io/cdktn-provider-google-go/google/v18.cloudRunV2WorkerPool.CloudRunV2WorkerPoolTemplateVolumesNfs,
+	Secret: github.com/cdktn-io/cdktn-provider-google-go/google/v18.cloudRunV2WorkerPool.CloudRunV2WorkerPoolTemplateVolumesSecret,
 }
 ```
 
@@ -2872,7 +2872,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.cloudRunV2WorkerPool.CloudRunV2WorkerPoolTemplateVolumesCloudSqlInstance.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/cloudrunv2workerpool"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/cloudrunv2workerpool"
 
 &cloudrunv2workerpool.CloudRunV2WorkerPoolTemplateVolumesCloudSqlInstance {
 	Instances: *[]*string,
@@ -2906,7 +2906,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.cloudRunV2WorkerPool.CloudRunV2WorkerPoolTemplateVolumesEmptyDir.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/cloudrunv2workerpool"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/cloudrunv2workerpool"
 
 &cloudrunv2workerpool.CloudRunV2WorkerPoolTemplateVolumesEmptyDir {
 	Medium: *string,
@@ -2958,7 +2958,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.cloudRunV2WorkerPool.CloudRunV2WorkerPoolTemplateVolumesGcs.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/cloudrunv2workerpool"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/cloudrunv2workerpool"
 
 &cloudrunv2workerpool.CloudRunV2WorkerPoolTemplateVolumesGcs {
 	Bucket: *string,
@@ -3008,7 +3008,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.cloudRunV2WorkerPool.CloudRunV2WorkerPoolTemplateVolumesNfs.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/cloudrunv2workerpool"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/cloudrunv2workerpool"
 
 &cloudrunv2workerpool.CloudRunV2WorkerPoolTemplateVolumesNfs {
 	Path: *string,
@@ -3074,7 +3074,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.cloudRunV2WorkerPool.CloudRunV2WorkerPoolTemplateVolumesSecret.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/cloudrunv2workerpool"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/cloudrunv2workerpool"
 
 &cloudrunv2workerpool.CloudRunV2WorkerPoolTemplateVolumesSecret {
 	Secret: *string,
@@ -3144,7 +3144,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.cloudRunV2WorkerPool.CloudRunV2WorkerPoolTemplateVolumesSecretItems.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/cloudrunv2workerpool"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/cloudrunv2workerpool"
 
 &cloudrunv2workerpool.CloudRunV2WorkerPoolTemplateVolumesSecretItems {
 	Path: *string,
@@ -3214,7 +3214,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.cloudRunV2WorkerPool.CloudRunV2WorkerPoolTemplateVpcAccess.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/cloudrunv2workerpool"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/cloudrunv2workerpool"
 
 &cloudrunv2workerpool.CloudRunV2WorkerPoolTemplateVpcAccess {
 	Egress: *string,
@@ -3264,7 +3264,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.cloudRunV2WorkerPool.CloudRunV2WorkerPoolTemplateVpcAccessNetworkInterfaces.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/cloudrunv2workerpool"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/cloudrunv2workerpool"
 
 &cloudrunv2workerpool.CloudRunV2WorkerPoolTemplateVpcAccessNetworkInterfaces {
 	Network: *string,
@@ -3338,7 +3338,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.cloudRunV2WorkerPool.CloudRunV2WorkerPoolTerminalCondition.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/cloudrunv2workerpool"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/cloudrunv2workerpool"
 
 &cloudrunv2workerpool.CloudRunV2WorkerPoolTerminalCondition {
 
@@ -3351,7 +3351,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/cloudrunv2worker
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.cloudRunV2WorkerPool.CloudRunV2WorkerPoolTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/cloudrunv2workerpool"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/cloudrunv2workerpool"
 
 &cloudrunv2workerpool.CloudRunV2WorkerPoolTimeouts {
 	Create: *string,
@@ -3413,7 +3413,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.cloudRunV2WorkerPool.CloudRunV2WorkerPoolBinaryAuthorizationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/cloudrunv2workerpool"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/cloudrunv2workerpool"
 
 cloudrunv2workerpool.NewCloudRunV2WorkerPoolBinaryAuthorizationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) CloudRunV2WorkerPoolBinaryAuthorizationOutputReference
 ```
@@ -3749,7 +3749,7 @@ func InternalValue() CloudRunV2WorkerPoolBinaryAuthorization
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.cloudRunV2WorkerPool.CloudRunV2WorkerPoolConditionsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/cloudrunv2workerpool"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/cloudrunv2workerpool"
 
 cloudrunv2workerpool.NewCloudRunV2WorkerPoolConditionsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) CloudRunV2WorkerPoolConditionsList
 ```
@@ -3898,7 +3898,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.cloudRunV2WorkerPool.CloudRunV2WorkerPoolConditionsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/cloudrunv2workerpool"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/cloudrunv2workerpool"
 
 cloudrunv2workerpool.NewCloudRunV2WorkerPoolConditionsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) CloudRunV2WorkerPoolConditionsOutputReference
 ```
@@ -4253,7 +4253,7 @@ func InternalValue() CloudRunV2WorkerPoolConditions
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.cloudRunV2WorkerPool.CloudRunV2WorkerPoolInstanceSplitsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/cloudrunv2workerpool"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/cloudrunv2workerpool"
 
 cloudrunv2workerpool.NewCloudRunV2WorkerPoolInstanceSplitsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) CloudRunV2WorkerPoolInstanceSplitsList
 ```
@@ -4413,7 +4413,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.cloudRunV2WorkerPool.CloudRunV2WorkerPoolInstanceSplitsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/cloudrunv2workerpool"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/cloudrunv2workerpool"
 
 cloudrunv2workerpool.NewCloudRunV2WorkerPoolInstanceSplitsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) CloudRunV2WorkerPoolInstanceSplitsOutputReference
 ```
@@ -4767,7 +4767,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.cloudRunV2WorkerPool.CloudRunV2WorkerPoolInstanceSplitStatusesList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/cloudrunv2workerpool"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/cloudrunv2workerpool"
 
 cloudrunv2workerpool.NewCloudRunV2WorkerPoolInstanceSplitStatusesList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) CloudRunV2WorkerPoolInstanceSplitStatusesList
 ```
@@ -4916,7 +4916,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.cloudRunV2WorkerPool.CloudRunV2WorkerPoolInstanceSplitStatusesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/cloudrunv2workerpool"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/cloudrunv2workerpool"
 
 cloudrunv2workerpool.NewCloudRunV2WorkerPoolInstanceSplitStatusesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) CloudRunV2WorkerPoolInstanceSplitStatusesOutputReference
 ```
@@ -5216,7 +5216,7 @@ func InternalValue() CloudRunV2WorkerPoolInstanceSplitStatuses
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.cloudRunV2WorkerPool.CloudRunV2WorkerPoolScalingOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/cloudrunv2workerpool"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/cloudrunv2workerpool"
 
 cloudrunv2workerpool.NewCloudRunV2WorkerPoolScalingOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) CloudRunV2WorkerPoolScalingOutputReference
 ```
@@ -5581,7 +5581,7 @@ func InternalValue() CloudRunV2WorkerPoolScaling
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.cloudRunV2WorkerPool.CloudRunV2WorkerPoolTemplateContainersEnvList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/cloudrunv2workerpool"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/cloudrunv2workerpool"
 
 cloudrunv2workerpool.NewCloudRunV2WorkerPoolTemplateContainersEnvList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) CloudRunV2WorkerPoolTemplateContainersEnvList
 ```
@@ -5741,7 +5741,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.cloudRunV2WorkerPool.CloudRunV2WorkerPoolTemplateContainersEnvOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/cloudrunv2workerpool"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/cloudrunv2workerpool"
 
 cloudrunv2workerpool.NewCloudRunV2WorkerPoolTemplateContainersEnvOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) CloudRunV2WorkerPoolTemplateContainersEnvOutputReference
 ```
@@ -6101,7 +6101,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.cloudRunV2WorkerPool.CloudRunV2WorkerPoolTemplateContainersEnvValueSourceOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/cloudrunv2workerpool"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/cloudrunv2workerpool"
 
 cloudrunv2workerpool.NewCloudRunV2WorkerPoolTemplateContainersEnvValueSourceOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) CloudRunV2WorkerPoolTemplateContainersEnvValueSourceOutputReference
 ```
@@ -6392,7 +6392,7 @@ func InternalValue() CloudRunV2WorkerPoolTemplateContainersEnvValueSource
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.cloudRunV2WorkerPool.CloudRunV2WorkerPoolTemplateContainersEnvValueSourceSecretKeyRefOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/cloudrunv2workerpool"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/cloudrunv2workerpool"
 
 cloudrunv2workerpool.NewCloudRunV2WorkerPoolTemplateContainersEnvValueSourceSecretKeyRefOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) CloudRunV2WorkerPoolTemplateContainersEnvValueSourceSecretKeyRefOutputReference
 ```
@@ -6692,7 +6692,7 @@ func InternalValue() CloudRunV2WorkerPoolTemplateContainersEnvValueSourceSecretK
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.cloudRunV2WorkerPool.CloudRunV2WorkerPoolTemplateContainersList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/cloudrunv2workerpool"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/cloudrunv2workerpool"
 
 cloudrunv2workerpool.NewCloudRunV2WorkerPoolTemplateContainersList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) CloudRunV2WorkerPoolTemplateContainersList
 ```
@@ -6852,7 +6852,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.cloudRunV2WorkerPool.CloudRunV2WorkerPoolTemplateContainersOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/cloudrunv2workerpool"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/cloudrunv2workerpool"
 
 cloudrunv2workerpool.NewCloudRunV2WorkerPoolTemplateContainersOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) CloudRunV2WorkerPoolTemplateContainersOutputReference
 ```
@@ -7412,7 +7412,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.cloudRunV2WorkerPool.CloudRunV2WorkerPoolTemplateContainersResourcesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/cloudrunv2workerpool"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/cloudrunv2workerpool"
 
 cloudrunv2workerpool.NewCloudRunV2WorkerPoolTemplateContainersResourcesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) CloudRunV2WorkerPoolTemplateContainersResourcesOutputReference
 ```
@@ -7690,7 +7690,7 @@ func InternalValue() CloudRunV2WorkerPoolTemplateContainersResources
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.cloudRunV2WorkerPool.CloudRunV2WorkerPoolTemplateContainersVolumeMountsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/cloudrunv2workerpool"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/cloudrunv2workerpool"
 
 cloudrunv2workerpool.NewCloudRunV2WorkerPoolTemplateContainersVolumeMountsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) CloudRunV2WorkerPoolTemplateContainersVolumeMountsList
 ```
@@ -7850,7 +7850,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.cloudRunV2WorkerPool.CloudRunV2WorkerPoolTemplateContainersVolumeMountsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/cloudrunv2workerpool"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/cloudrunv2workerpool"
 
 cloudrunv2workerpool.NewCloudRunV2WorkerPoolTemplateContainersVolumeMountsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) CloudRunV2WorkerPoolTemplateContainersVolumeMountsOutputReference
 ```
@@ -8161,7 +8161,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.cloudRunV2WorkerPool.CloudRunV2WorkerPoolTemplateNodeSelectorOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/cloudrunv2workerpool"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/cloudrunv2workerpool"
 
 cloudrunv2workerpool.NewCloudRunV2WorkerPoolTemplateNodeSelectorOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) CloudRunV2WorkerPoolTemplateNodeSelectorOutputReference
 ```
@@ -8432,7 +8432,7 @@ func InternalValue() CloudRunV2WorkerPoolTemplateNodeSelector
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.cloudRunV2WorkerPool.CloudRunV2WorkerPoolTemplateOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/cloudrunv2workerpool"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/cloudrunv2workerpool"
 
 cloudrunv2workerpool.NewCloudRunV2WorkerPoolTemplateOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) CloudRunV2WorkerPoolTemplateOutputReference
 ```
@@ -9081,7 +9081,7 @@ func InternalValue() CloudRunV2WorkerPoolTemplate
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.cloudRunV2WorkerPool.CloudRunV2WorkerPoolTemplateVolumesCloudSqlInstanceOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/cloudrunv2workerpool"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/cloudrunv2workerpool"
 
 cloudrunv2workerpool.NewCloudRunV2WorkerPoolTemplateVolumesCloudSqlInstanceOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) CloudRunV2WorkerPoolTemplateVolumesCloudSqlInstanceOutputReference
 ```
@@ -9359,7 +9359,7 @@ func InternalValue() CloudRunV2WorkerPoolTemplateVolumesCloudSqlInstance
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.cloudRunV2WorkerPool.CloudRunV2WorkerPoolTemplateVolumesEmptyDirOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/cloudrunv2workerpool"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/cloudrunv2workerpool"
 
 cloudrunv2workerpool.NewCloudRunV2WorkerPoolTemplateVolumesEmptyDirOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) CloudRunV2WorkerPoolTemplateVolumesEmptyDirOutputReference
 ```
@@ -9666,7 +9666,7 @@ func InternalValue() CloudRunV2WorkerPoolTemplateVolumesEmptyDir
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.cloudRunV2WorkerPool.CloudRunV2WorkerPoolTemplateVolumesGcsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/cloudrunv2workerpool"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/cloudrunv2workerpool"
 
 cloudrunv2workerpool.NewCloudRunV2WorkerPoolTemplateVolumesGcsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) CloudRunV2WorkerPoolTemplateVolumesGcsOutputReference
 ```
@@ -9966,7 +9966,7 @@ func InternalValue() CloudRunV2WorkerPoolTemplateVolumesGcs
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.cloudRunV2WorkerPool.CloudRunV2WorkerPoolTemplateVolumesList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/cloudrunv2workerpool"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/cloudrunv2workerpool"
 
 cloudrunv2workerpool.NewCloudRunV2WorkerPoolTemplateVolumesList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) CloudRunV2WorkerPoolTemplateVolumesList
 ```
@@ -10126,7 +10126,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.cloudRunV2WorkerPool.CloudRunV2WorkerPoolTemplateVolumesNfsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/cloudrunv2workerpool"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/cloudrunv2workerpool"
 
 cloudrunv2workerpool.NewCloudRunV2WorkerPoolTemplateVolumesNfsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) CloudRunV2WorkerPoolTemplateVolumesNfsOutputReference
 ```
@@ -10448,7 +10448,7 @@ func InternalValue() CloudRunV2WorkerPoolTemplateVolumesNfs
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.cloudRunV2WorkerPool.CloudRunV2WorkerPoolTemplateVolumesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/cloudrunv2workerpool"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/cloudrunv2workerpool"
 
 cloudrunv2workerpool.NewCloudRunV2WorkerPoolTemplateVolumesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) CloudRunV2WorkerPoolTemplateVolumesOutputReference
 ```
@@ -10947,7 +10947,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.cloudRunV2WorkerPool.CloudRunV2WorkerPoolTemplateVolumesSecretItemsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/cloudrunv2workerpool"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/cloudrunv2workerpool"
 
 cloudrunv2workerpool.NewCloudRunV2WorkerPoolTemplateVolumesSecretItemsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) CloudRunV2WorkerPoolTemplateVolumesSecretItemsList
 ```
@@ -11107,7 +11107,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.cloudRunV2WorkerPool.CloudRunV2WorkerPoolTemplateVolumesSecretItemsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/cloudrunv2workerpool"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/cloudrunv2workerpool"
 
 cloudrunv2workerpool.NewCloudRunV2WorkerPoolTemplateVolumesSecretItemsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) CloudRunV2WorkerPoolTemplateVolumesSecretItemsOutputReference
 ```
@@ -11454,7 +11454,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.cloudRunV2WorkerPool.CloudRunV2WorkerPoolTemplateVolumesSecretOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/cloudrunv2workerpool"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/cloudrunv2workerpool"
 
 cloudrunv2workerpool.NewCloudRunV2WorkerPoolTemplateVolumesSecretOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) CloudRunV2WorkerPoolTemplateVolumesSecretOutputReference
 ```
@@ -11796,7 +11796,7 @@ func InternalValue() CloudRunV2WorkerPoolTemplateVolumesSecret
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.cloudRunV2WorkerPool.CloudRunV2WorkerPoolTemplateVpcAccessNetworkInterfacesList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/cloudrunv2workerpool"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/cloudrunv2workerpool"
 
 cloudrunv2workerpool.NewCloudRunV2WorkerPoolTemplateVpcAccessNetworkInterfacesList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) CloudRunV2WorkerPoolTemplateVpcAccessNetworkInterfacesList
 ```
@@ -11956,7 +11956,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.cloudRunV2WorkerPool.CloudRunV2WorkerPoolTemplateVpcAccessNetworkInterfacesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/cloudrunv2workerpool"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/cloudrunv2workerpool"
 
 cloudrunv2workerpool.NewCloudRunV2WorkerPoolTemplateVpcAccessNetworkInterfacesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) CloudRunV2WorkerPoolTemplateVpcAccessNetworkInterfacesOutputReference
 ```
@@ -12310,7 +12310,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.cloudRunV2WorkerPool.CloudRunV2WorkerPoolTemplateVpcAccessOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/cloudrunv2workerpool"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/cloudrunv2workerpool"
 
 cloudrunv2workerpool.NewCloudRunV2WorkerPoolTemplateVpcAccessOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) CloudRunV2WorkerPoolTemplateVpcAccessOutputReference
 ```
@@ -12630,7 +12630,7 @@ func InternalValue() CloudRunV2WorkerPoolTemplateVpcAccess
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.cloudRunV2WorkerPool.CloudRunV2WorkerPoolTerminalConditionList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/cloudrunv2workerpool"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/cloudrunv2workerpool"
 
 cloudrunv2workerpool.NewCloudRunV2WorkerPoolTerminalConditionList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) CloudRunV2WorkerPoolTerminalConditionList
 ```
@@ -12779,7 +12779,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.cloudRunV2WorkerPool.CloudRunV2WorkerPoolTerminalConditionOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/cloudrunv2workerpool"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/cloudrunv2workerpool"
 
 cloudrunv2workerpool.NewCloudRunV2WorkerPoolTerminalConditionOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) CloudRunV2WorkerPoolTerminalConditionOutputReference
 ```
@@ -13134,7 +13134,7 @@ func InternalValue() CloudRunV2WorkerPoolTerminalCondition
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.cloudRunV2WorkerPool.CloudRunV2WorkerPoolTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/cloudrunv2workerpool"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/cloudrunv2workerpool"
 
 cloudrunv2workerpool.NewCloudRunV2WorkerPoolTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) CloudRunV2WorkerPoolTimeoutsOutputReference
 ```

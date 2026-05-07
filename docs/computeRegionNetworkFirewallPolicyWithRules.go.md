@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.5
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.computeRegionNetworkFirewallPolicyWithRules.ComputeRegionNetworkFirewallPolicyWithRules.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/computeregionnetworkfirewallpolicywithrules"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/computeregionnetworkfirewallpolicywithrules"
 
 computeregionnetworkfirewallpolicywithrules.NewComputeRegionNetworkFirewallPolicyWithRules(scope Construct, id *string, config ComputeRegionNetworkFirewallPolicyWithRulesConfig) ComputeRegionNetworkFirewallPolicyWithRules
 ```
@@ -461,7 +461,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-google.computeRegionNetworkFirewallPolicyWithRules.ComputeRegionNetworkFirewallPolicyWithRules.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/computeregionnetworkfirewallpolicywithrules"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/computeregionnetworkfirewallpolicywithrules"
 
 computeregionnetworkfirewallpolicywithrules.ComputeRegionNetworkFirewallPolicyWithRules_IsConstruct(x interface{}) *bool
 ```
@@ -493,7 +493,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-google.computeRegionNetworkFirewallPolicyWithRules.ComputeRegionNetworkFirewallPolicyWithRules.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/computeregionnetworkfirewallpolicywithrules"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/computeregionnetworkfirewallpolicywithrules"
 
 computeregionnetworkfirewallpolicywithrules.ComputeRegionNetworkFirewallPolicyWithRules_IsTerraformElement(x interface{}) *bool
 ```
@@ -507,7 +507,7 @@ computeregionnetworkfirewallpolicywithrules.ComputeRegionNetworkFirewallPolicyWi
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-google.computeRegionNetworkFirewallPolicyWithRules.ComputeRegionNetworkFirewallPolicyWithRules.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/computeregionnetworkfirewallpolicywithrules"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/computeregionnetworkfirewallpolicywithrules"
 
 computeregionnetworkfirewallpolicywithrules.ComputeRegionNetworkFirewallPolicyWithRules_IsTerraformResource(x interface{}) *bool
 ```
@@ -521,7 +521,7 @@ computeregionnetworkfirewallpolicywithrules.ComputeRegionNetworkFirewallPolicyWi
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-google.computeRegionNetworkFirewallPolicyWithRules.ComputeRegionNetworkFirewallPolicyWithRules.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/computeregionnetworkfirewallpolicywithrules"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/computeregionnetworkfirewallpolicywithrules"
 
 computeregionnetworkfirewallpolicywithrules.ComputeRegionNetworkFirewallPolicyWithRules_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -981,7 +981,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.computeRegionNetworkFirewallPolicyWithRules.ComputeRegionNetworkFirewallPolicyWithRulesConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/computeregionnetworkfirewallpolicywithrules"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/computeregionnetworkfirewallpolicywithrules"
 
 &computeregionnetworkfirewallpolicywithrules.ComputeRegionNetworkFirewallPolicyWithRulesConfig {
 	Connection: interface{},
@@ -997,7 +997,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/computeregionnet
 	Id: *string,
 	Project: *string,
 	Region: *string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-google-go/google/v17.computeRegionNetworkFirewallPolicyWithRules.ComputeRegionNetworkFirewallPolicyWithRulesTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-google-go/google/v18.computeRegionNetworkFirewallPolicyWithRules.ComputeRegionNetworkFirewallPolicyWithRulesTimeouts,
 }
 ```
 
@@ -1200,7 +1200,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.computeRegionNetworkFirewallPolicyWithRules.ComputeRegionNetworkFirewallPolicyWithRulesPredefinedRules.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/computeregionnetworkfirewallpolicywithrules"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/computeregionnetworkfirewallpolicywithrules"
 
 &computeregionnetworkfirewallpolicywithrules.ComputeRegionNetworkFirewallPolicyWithRulesPredefinedRules {
 
@@ -1213,7 +1213,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/computeregionnet
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.computeRegionNetworkFirewallPolicyWithRules.ComputeRegionNetworkFirewallPolicyWithRulesPredefinedRulesMatch.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/computeregionnetworkfirewallpolicywithrules"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/computeregionnetworkfirewallpolicywithrules"
 
 &computeregionnetworkfirewallpolicywithrules.ComputeRegionNetworkFirewallPolicyWithRulesPredefinedRulesMatch {
 
@@ -1226,7 +1226,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/computeregionnet
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.computeRegionNetworkFirewallPolicyWithRules.ComputeRegionNetworkFirewallPolicyWithRulesPredefinedRulesMatchLayer4Config.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/computeregionnetworkfirewallpolicywithrules"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/computeregionnetworkfirewallpolicywithrules"
 
 &computeregionnetworkfirewallpolicywithrules.ComputeRegionNetworkFirewallPolicyWithRulesPredefinedRulesMatchLayer4Config {
 
@@ -1239,7 +1239,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/computeregionnet
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.computeRegionNetworkFirewallPolicyWithRules.ComputeRegionNetworkFirewallPolicyWithRulesPredefinedRulesMatchSrcSecureTag.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/computeregionnetworkfirewallpolicywithrules"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/computeregionnetworkfirewallpolicywithrules"
 
 &computeregionnetworkfirewallpolicywithrules.ComputeRegionNetworkFirewallPolicyWithRulesPredefinedRulesMatchSrcSecureTag {
 
@@ -1252,7 +1252,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/computeregionnet
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.computeRegionNetworkFirewallPolicyWithRules.ComputeRegionNetworkFirewallPolicyWithRulesPredefinedRulesTargetSecureTag.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/computeregionnetworkfirewallpolicywithrules"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/computeregionnetworkfirewallpolicywithrules"
 
 &computeregionnetworkfirewallpolicywithrules.ComputeRegionNetworkFirewallPolicyWithRulesPredefinedRulesTargetSecureTag {
 
@@ -1265,11 +1265,11 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/computeregionnet
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.computeRegionNetworkFirewallPolicyWithRules.ComputeRegionNetworkFirewallPolicyWithRulesRule.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/computeregionnetworkfirewallpolicywithrules"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/computeregionnetworkfirewallpolicywithrules"
 
 &computeregionnetworkfirewallpolicywithrules.ComputeRegionNetworkFirewallPolicyWithRulesRule {
 	Action: *string,
-	Match: github.com/cdktn-io/cdktn-provider-google-go/google/v17.computeRegionNetworkFirewallPolicyWithRules.ComputeRegionNetworkFirewallPolicyWithRulesRuleMatch,
+	Match: github.com/cdktn-io/cdktn-provider-google-go/google/v18.computeRegionNetworkFirewallPolicyWithRules.ComputeRegionNetworkFirewallPolicyWithRulesRuleMatch,
 	Priority: *f64,
 	Description: *string,
 	Direction: *string,
@@ -1489,7 +1489,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.computeRegionNetworkFirewallPolicyWithRules.ComputeRegionNetworkFirewallPolicyWithRulesRuleMatch.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/computeregionnetworkfirewallpolicywithrules"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/computeregionnetworkfirewallpolicywithrules"
 
 &computeregionnetworkfirewallpolicywithrules.ComputeRegionNetworkFirewallPolicyWithRulesRuleMatch {
 	Layer4Config: interface{},
@@ -1707,7 +1707,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.computeRegionNetworkFirewallPolicyWithRules.ComputeRegionNetworkFirewallPolicyWithRulesRuleMatchLayer4Config.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/computeregionnetworkfirewallpolicywithrules"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/computeregionnetworkfirewallpolicywithrules"
 
 &computeregionnetworkfirewallpolicywithrules.ComputeRegionNetworkFirewallPolicyWithRulesRuleMatchLayer4Config {
 	IpProtocol: *string,
@@ -1770,7 +1770,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.computeRegionNetworkFirewallPolicyWithRules.ComputeRegionNetworkFirewallPolicyWithRulesRuleMatchSrcSecureTag.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/computeregionnetworkfirewallpolicywithrules"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/computeregionnetworkfirewallpolicywithrules"
 
 &computeregionnetworkfirewallpolicywithrules.ComputeRegionNetworkFirewallPolicyWithRulesRuleMatchSrcSecureTag {
 	Name: *string,
@@ -1802,7 +1802,7 @@ Name of the secure tag, created with TagManager's TagValue API.
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.computeRegionNetworkFirewallPolicyWithRules.ComputeRegionNetworkFirewallPolicyWithRulesRuleTargetSecureTag.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/computeregionnetworkfirewallpolicywithrules"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/computeregionnetworkfirewallpolicywithrules"
 
 &computeregionnetworkfirewallpolicywithrules.ComputeRegionNetworkFirewallPolicyWithRulesRuleTargetSecureTag {
 	Name: *string,
@@ -1834,7 +1834,7 @@ Name of the secure tag, created with TagManager's TagValue API.
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.computeRegionNetworkFirewallPolicyWithRules.ComputeRegionNetworkFirewallPolicyWithRulesTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/computeregionnetworkfirewallpolicywithrules"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/computeregionnetworkfirewallpolicywithrules"
 
 &computeregionnetworkfirewallpolicywithrules.ComputeRegionNetworkFirewallPolicyWithRulesTimeouts {
 	Create: *string,
@@ -1896,7 +1896,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.computeRegionNetworkFirewallPolicyWithRules.ComputeRegionNetworkFirewallPolicyWithRulesPredefinedRulesList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/computeregionnetworkfirewallpolicywithrules"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/computeregionnetworkfirewallpolicywithrules"
 
 computeregionnetworkfirewallpolicywithrules.NewComputeRegionNetworkFirewallPolicyWithRulesPredefinedRulesList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ComputeRegionNetworkFirewallPolicyWithRulesPredefinedRulesList
 ```
@@ -2045,7 +2045,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.computeRegionNetworkFirewallPolicyWithRules.ComputeRegionNetworkFirewallPolicyWithRulesPredefinedRulesMatchLayer4ConfigList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/computeregionnetworkfirewallpolicywithrules"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/computeregionnetworkfirewallpolicywithrules"
 
 computeregionnetworkfirewallpolicywithrules.NewComputeRegionNetworkFirewallPolicyWithRulesPredefinedRulesMatchLayer4ConfigList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ComputeRegionNetworkFirewallPolicyWithRulesPredefinedRulesMatchLayer4ConfigList
 ```
@@ -2194,7 +2194,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.computeRegionNetworkFirewallPolicyWithRules.ComputeRegionNetworkFirewallPolicyWithRulesPredefinedRulesMatchLayer4ConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/computeregionnetworkfirewallpolicywithrules"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/computeregionnetworkfirewallpolicywithrules"
 
 computeregionnetworkfirewallpolicywithrules.NewComputeRegionNetworkFirewallPolicyWithRulesPredefinedRulesMatchLayer4ConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ComputeRegionNetworkFirewallPolicyWithRulesPredefinedRulesMatchLayer4ConfigOutputReference
 ```
@@ -2483,7 +2483,7 @@ func InternalValue() ComputeRegionNetworkFirewallPolicyWithRulesPredefinedRulesM
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.computeRegionNetworkFirewallPolicyWithRules.ComputeRegionNetworkFirewallPolicyWithRulesPredefinedRulesMatchList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/computeregionnetworkfirewallpolicywithrules"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/computeregionnetworkfirewallpolicywithrules"
 
 computeregionnetworkfirewallpolicywithrules.NewComputeRegionNetworkFirewallPolicyWithRulesPredefinedRulesMatchList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ComputeRegionNetworkFirewallPolicyWithRulesPredefinedRulesMatchList
 ```
@@ -2632,7 +2632,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.computeRegionNetworkFirewallPolicyWithRules.ComputeRegionNetworkFirewallPolicyWithRulesPredefinedRulesMatchOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/computeregionnetworkfirewallpolicywithrules"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/computeregionnetworkfirewallpolicywithrules"
 
 computeregionnetworkfirewallpolicywithrules.NewComputeRegionNetworkFirewallPolicyWithRulesPredefinedRulesMatchOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ComputeRegionNetworkFirewallPolicyWithRulesPredefinedRulesMatchOutputReference
 ```
@@ -3031,7 +3031,7 @@ func InternalValue() ComputeRegionNetworkFirewallPolicyWithRulesPredefinedRulesM
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.computeRegionNetworkFirewallPolicyWithRules.ComputeRegionNetworkFirewallPolicyWithRulesPredefinedRulesMatchSrcSecureTagList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/computeregionnetworkfirewallpolicywithrules"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/computeregionnetworkfirewallpolicywithrules"
 
 computeregionnetworkfirewallpolicywithrules.NewComputeRegionNetworkFirewallPolicyWithRulesPredefinedRulesMatchSrcSecureTagList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ComputeRegionNetworkFirewallPolicyWithRulesPredefinedRulesMatchSrcSecureTagList
 ```
@@ -3180,7 +3180,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.computeRegionNetworkFirewallPolicyWithRules.ComputeRegionNetworkFirewallPolicyWithRulesPredefinedRulesMatchSrcSecureTagOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/computeregionnetworkfirewallpolicywithrules"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/computeregionnetworkfirewallpolicywithrules"
 
 computeregionnetworkfirewallpolicywithrules.NewComputeRegionNetworkFirewallPolicyWithRulesPredefinedRulesMatchSrcSecureTagOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ComputeRegionNetworkFirewallPolicyWithRulesPredefinedRulesMatchSrcSecureTagOutputReference
 ```
@@ -3469,7 +3469,7 @@ func InternalValue() ComputeRegionNetworkFirewallPolicyWithRulesPredefinedRulesM
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.computeRegionNetworkFirewallPolicyWithRules.ComputeRegionNetworkFirewallPolicyWithRulesPredefinedRulesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/computeregionnetworkfirewallpolicywithrules"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/computeregionnetworkfirewallpolicywithrules"
 
 computeregionnetworkfirewallpolicywithrules.NewComputeRegionNetworkFirewallPolicyWithRulesPredefinedRulesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ComputeRegionNetworkFirewallPolicyWithRulesPredefinedRulesOutputReference
 ```
@@ -3868,7 +3868,7 @@ func InternalValue() ComputeRegionNetworkFirewallPolicyWithRulesPredefinedRules
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.computeRegionNetworkFirewallPolicyWithRules.ComputeRegionNetworkFirewallPolicyWithRulesPredefinedRulesTargetSecureTagList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/computeregionnetworkfirewallpolicywithrules"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/computeregionnetworkfirewallpolicywithrules"
 
 computeregionnetworkfirewallpolicywithrules.NewComputeRegionNetworkFirewallPolicyWithRulesPredefinedRulesTargetSecureTagList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ComputeRegionNetworkFirewallPolicyWithRulesPredefinedRulesTargetSecureTagList
 ```
@@ -4017,7 +4017,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.computeRegionNetworkFirewallPolicyWithRules.ComputeRegionNetworkFirewallPolicyWithRulesPredefinedRulesTargetSecureTagOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/computeregionnetworkfirewallpolicywithrules"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/computeregionnetworkfirewallpolicywithrules"
 
 computeregionnetworkfirewallpolicywithrules.NewComputeRegionNetworkFirewallPolicyWithRulesPredefinedRulesTargetSecureTagOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ComputeRegionNetworkFirewallPolicyWithRulesPredefinedRulesTargetSecureTagOutputReference
 ```
@@ -4306,7 +4306,7 @@ func InternalValue() ComputeRegionNetworkFirewallPolicyWithRulesPredefinedRulesT
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.computeRegionNetworkFirewallPolicyWithRules.ComputeRegionNetworkFirewallPolicyWithRulesRuleList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/computeregionnetworkfirewallpolicywithrules"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/computeregionnetworkfirewallpolicywithrules"
 
 computeregionnetworkfirewallpolicywithrules.NewComputeRegionNetworkFirewallPolicyWithRulesRuleList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ComputeRegionNetworkFirewallPolicyWithRulesRuleList
 ```
@@ -4466,7 +4466,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.computeRegionNetworkFirewallPolicyWithRules.ComputeRegionNetworkFirewallPolicyWithRulesRuleMatchLayer4ConfigList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/computeregionnetworkfirewallpolicywithrules"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/computeregionnetworkfirewallpolicywithrules"
 
 computeregionnetworkfirewallpolicywithrules.NewComputeRegionNetworkFirewallPolicyWithRulesRuleMatchLayer4ConfigList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ComputeRegionNetworkFirewallPolicyWithRulesRuleMatchLayer4ConfigList
 ```
@@ -4626,7 +4626,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.computeRegionNetworkFirewallPolicyWithRules.ComputeRegionNetworkFirewallPolicyWithRulesRuleMatchLayer4ConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/computeregionnetworkfirewallpolicywithrules"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/computeregionnetworkfirewallpolicywithrules"
 
 computeregionnetworkfirewallpolicywithrules.NewComputeRegionNetworkFirewallPolicyWithRulesRuleMatchLayer4ConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ComputeRegionNetworkFirewallPolicyWithRulesRuleMatchLayer4ConfigOutputReference
 ```
@@ -4944,7 +4944,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.computeRegionNetworkFirewallPolicyWithRules.ComputeRegionNetworkFirewallPolicyWithRulesRuleMatchOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/computeregionnetworkfirewallpolicywithrules"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/computeregionnetworkfirewallpolicywithrules"
 
 computeregionnetworkfirewallpolicywithrules.NewComputeRegionNetworkFirewallPolicyWithRulesRuleMatchOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ComputeRegionNetworkFirewallPolicyWithRulesRuleMatchOutputReference
 ```
@@ -5560,7 +5560,7 @@ func InternalValue() ComputeRegionNetworkFirewallPolicyWithRulesRuleMatch
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.computeRegionNetworkFirewallPolicyWithRules.ComputeRegionNetworkFirewallPolicyWithRulesRuleMatchSrcSecureTagList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/computeregionnetworkfirewallpolicywithrules"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/computeregionnetworkfirewallpolicywithrules"
 
 computeregionnetworkfirewallpolicywithrules.NewComputeRegionNetworkFirewallPolicyWithRulesRuleMatchSrcSecureTagList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ComputeRegionNetworkFirewallPolicyWithRulesRuleMatchSrcSecureTagList
 ```
@@ -5720,7 +5720,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.computeRegionNetworkFirewallPolicyWithRules.ComputeRegionNetworkFirewallPolicyWithRulesRuleMatchSrcSecureTagOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/computeregionnetworkfirewallpolicywithrules"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/computeregionnetworkfirewallpolicywithrules"
 
 computeregionnetworkfirewallpolicywithrules.NewComputeRegionNetworkFirewallPolicyWithRulesRuleMatchSrcSecureTagOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ComputeRegionNetworkFirewallPolicyWithRulesRuleMatchSrcSecureTagOutputReference
 ```
@@ -6027,7 +6027,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.computeRegionNetworkFirewallPolicyWithRules.ComputeRegionNetworkFirewallPolicyWithRulesRuleOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/computeregionnetworkfirewallpolicywithrules"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/computeregionnetworkfirewallpolicywithrules"
 
 computeregionnetworkfirewallpolicywithrules.NewComputeRegionNetworkFirewallPolicyWithRulesRuleOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ComputeRegionNetworkFirewallPolicyWithRulesRuleOutputReference
 ```
@@ -6647,7 +6647,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.computeRegionNetworkFirewallPolicyWithRules.ComputeRegionNetworkFirewallPolicyWithRulesRuleTargetSecureTagList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/computeregionnetworkfirewallpolicywithrules"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/computeregionnetworkfirewallpolicywithrules"
 
 computeregionnetworkfirewallpolicywithrules.NewComputeRegionNetworkFirewallPolicyWithRulesRuleTargetSecureTagList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ComputeRegionNetworkFirewallPolicyWithRulesRuleTargetSecureTagList
 ```
@@ -6807,7 +6807,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.computeRegionNetworkFirewallPolicyWithRules.ComputeRegionNetworkFirewallPolicyWithRulesRuleTargetSecureTagOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/computeregionnetworkfirewallpolicywithrules"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/computeregionnetworkfirewallpolicywithrules"
 
 computeregionnetworkfirewallpolicywithrules.NewComputeRegionNetworkFirewallPolicyWithRulesRuleTargetSecureTagOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ComputeRegionNetworkFirewallPolicyWithRulesRuleTargetSecureTagOutputReference
 ```
@@ -7114,7 +7114,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.computeRegionNetworkFirewallPolicyWithRules.ComputeRegionNetworkFirewallPolicyWithRulesTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/computeregionnetworkfirewallpolicywithrules"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/computeregionnetworkfirewallpolicywithrules"
 
 computeregionnetworkfirewallpolicywithrules.NewComputeRegionNetworkFirewallPolicyWithRulesTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ComputeRegionNetworkFirewallPolicyWithRulesTimeoutsOutputReference
 ```

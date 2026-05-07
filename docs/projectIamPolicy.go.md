@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.5
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.projectIamPolicy.ProjectIamPolicy.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/projectiampolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/projectiampolicy"
 
 projectiampolicy.NewProjectIamPolicy(scope Construct, id *string, config ProjectIamPolicyConfig) ProjectIamPolicy
 ```
@@ -407,7 +407,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-google.projectIamPolicy.ProjectIamPolicy.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/projectiampolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/projectiampolicy"
 
 projectiampolicy.ProjectIamPolicy_IsConstruct(x interface{}) *bool
 ```
@@ -439,7 +439,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-google.projectIamPolicy.ProjectIamPolicy.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/projectiampolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/projectiampolicy"
 
 projectiampolicy.ProjectIamPolicy_IsTerraformElement(x interface{}) *bool
 ```
@@ -453,7 +453,7 @@ projectiampolicy.ProjectIamPolicy_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-google.projectIamPolicy.ProjectIamPolicy.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/projectiampolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/projectiampolicy"
 
 projectiampolicy.ProjectIamPolicy_IsTerraformResource(x interface{}) *bool
 ```
@@ -467,7 +467,7 @@ projectiampolicy.ProjectIamPolicy_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-google.projectIamPolicy.ProjectIamPolicy.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/projectiampolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/projectiampolicy"
 
 projectiampolicy.ProjectIamPolicy_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -773,7 +773,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.projectIamPolicy.ProjectIamPolicyConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/projectiampolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/projectiampolicy"
 
 &projectiampolicy.ProjectIamPolicyConfig {
 	Connection: interface{},

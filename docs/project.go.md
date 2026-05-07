@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.5
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.project.Project.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/project"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/project"
 
 project.NewProject(scope Construct, id *string, config ProjectConfig) Project
 ```
@@ -476,7 +476,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-google.project.Project.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/project"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/project"
 
 project.Project_IsConstruct(x interface{}) *bool
 ```
@@ -508,7 +508,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-google.project.Project.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/project"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/project"
 
 project.Project_IsTerraformElement(x interface{}) *bool
 ```
@@ -522,7 +522,7 @@ project.Project_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-google.project.Project.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/project"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/project"
 
 project.Project_IsTerraformResource(x interface{}) *bool
 ```
@@ -536,7 +536,7 @@ project.Project_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-google.project.Project.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/project"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/project"
 
 project.Project_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -1040,7 +1040,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.project.ProjectConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/project"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/project"
 
 &project.ProjectConfig {
 	Connection: interface{},
@@ -1060,7 +1060,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/project"
 	Labels: *map[string]*string,
 	OrgId: *string,
 	Tags: *map[string]*string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-google-go/google/v17.project.ProjectTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-google-go/google/v18.project.ProjectTimeouts,
 }
 ```
 
@@ -1335,7 +1335,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.project.ProjectTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/project"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/project"
 
 &project.ProjectTimeouts {
 	Create: *string,
@@ -1411,7 +1411,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.project.ProjectTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/project"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/project"
 
 project.NewProjectTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ProjectTimeoutsOutputReference
 ```

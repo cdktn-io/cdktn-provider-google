@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.5
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.apigeeApiProduct.ApigeeApiProduct.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/apigeeapiproduct"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/apigeeapiproduct"
 
 apigeeapiproduct.NewApigeeApiProduct(scope Construct, id *string, config ApigeeApiProductConfig) ApigeeApiProduct
 ```
@@ -584,7 +584,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-google.apigeeApiProduct.ApigeeApiProduct.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/apigeeapiproduct"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/apigeeapiproduct"
 
 apigeeapiproduct.ApigeeApiProduct_IsConstruct(x interface{}) *bool
 ```
@@ -616,7 +616,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-google.apigeeApiProduct.ApigeeApiProduct.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/apigeeapiproduct"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/apigeeapiproduct"
 
 apigeeapiproduct.ApigeeApiProduct_IsTerraformElement(x interface{}) *bool
 ```
@@ -630,7 +630,7 @@ apigeeapiproduct.ApigeeApiProduct_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-google.apigeeApiProduct.ApigeeApiProduct.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/apigeeapiproduct"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/apigeeapiproduct"
 
 apigeeapiproduct.ApigeeApiProduct_IsTerraformResource(x interface{}) *bool
 ```
@@ -644,7 +644,7 @@ apigeeapiproduct.ApigeeApiProduct_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-google.apigeeApiProduct.ApigeeApiProduct.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/apigeeapiproduct"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/apigeeapiproduct"
 
 apigeeapiproduct.ApigeeApiProduct_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -1335,7 +1335,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.apigeeApiProduct.ApigeeApiProductAttributes.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/apigeeapiproduct"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/apigeeapiproduct"
 
 &apigeeapiproduct.ApigeeApiProductAttributes {
 	Name: *string,
@@ -1385,7 +1385,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.apigeeApiProduct.ApigeeApiProductConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/apigeeapiproduct"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/apigeeapiproduct"
 
 &apigeeapiproduct.ApigeeApiProductConfig {
 	Connection: interface{},
@@ -1403,10 +1403,10 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/apigeeapiproduct
 	Attributes: interface{},
 	Description: *string,
 	Environments: *[]*string,
-	GraphqlOperationGroup: github.com/cdktn-io/cdktn-provider-google-go/google/v17.apigeeApiProduct.ApigeeApiProductGraphqlOperationGroup,
-	GrpcOperationGroup: github.com/cdktn-io/cdktn-provider-google-go/google/v17.apigeeApiProduct.ApigeeApiProductGrpcOperationGroup,
+	GraphqlOperationGroup: github.com/cdktn-io/cdktn-provider-google-go/google/v18.apigeeApiProduct.ApigeeApiProductGraphqlOperationGroup,
+	GrpcOperationGroup: github.com/cdktn-io/cdktn-provider-google-go/google/v18.apigeeApiProduct.ApigeeApiProductGrpcOperationGroup,
 	Id: *string,
-	OperationGroup: github.com/cdktn-io/cdktn-provider-google-go/google/v17.apigeeApiProduct.ApigeeApiProductOperationGroup,
+	OperationGroup: github.com/cdktn-io/cdktn-provider-google-go/google/v18.apigeeApiProduct.ApigeeApiProductOperationGroup,
 	Proxies: *[]*string,
 	Quota: *string,
 	QuotaCounterScope: *string,
@@ -1414,7 +1414,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/apigeeapiproduct
 	QuotaTimeUnit: *string,
 	Scopes: *[]*string,
 	Space: *string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-google-go/google/v17.apigeeApiProduct.ApigeeApiProductTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-google-go/google/v18.apigeeApiProduct.ApigeeApiProductTimeouts,
 }
 ```
 
@@ -1825,7 +1825,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.apigeeApiProduct.ApigeeApiProductGraphqlOperationGroup.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/apigeeapiproduct"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/apigeeapiproduct"
 
 &apigeeapiproduct.ApigeeApiProductGraphqlOperationGroup {
 	OperationConfigs: interface{},
@@ -1877,13 +1877,13 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.apigeeApiProduct.ApigeeApiProductGraphqlOperationGroupOperationConfigs.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/apigeeapiproduct"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/apigeeapiproduct"
 
 &apigeeapiproduct.ApigeeApiProductGraphqlOperationGroupOperationConfigs {
 	ApiSource: *string,
 	Attributes: interface{},
 	Operations: interface{},
-	Quota: github.com/cdktn-io/cdktn-provider-google-go/google/v17.apigeeApiProduct.ApigeeApiProductGraphqlOperationGroupOperationConfigsQuota,
+	Quota: github.com/cdktn-io/cdktn-provider-google-go/google/v18.apigeeApiProduct.ApigeeApiProductGraphqlOperationGroupOperationConfigsQuota,
 }
 ```
 
@@ -1959,7 +1959,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.apigeeApiProduct.ApigeeApiProductGraphqlOperationGroupOperationConfigsAttributes.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/apigeeapiproduct"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/apigeeapiproduct"
 
 &apigeeapiproduct.ApigeeApiProductGraphqlOperationGroupOperationConfigsAttributes {
 	Name: *string,
@@ -2009,7 +2009,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.apigeeApiProduct.ApigeeApiProductGraphqlOperationGroupOperationConfigsOperations.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/apigeeapiproduct"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/apigeeapiproduct"
 
 &apigeeapiproduct.ApigeeApiProductGraphqlOperationGroupOperationConfigsOperations {
 	Operation: *string,
@@ -2061,7 +2061,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.apigeeApiProduct.ApigeeApiProductGraphqlOperationGroupOperationConfigsQuota.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/apigeeapiproduct"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/apigeeapiproduct"
 
 &apigeeapiproduct.ApigeeApiProductGraphqlOperationGroupOperationConfigsQuota {
 	Interval: *string,
@@ -2129,7 +2129,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.apigeeApiProduct.ApigeeApiProductGrpcOperationGroup.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/apigeeapiproduct"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/apigeeapiproduct"
 
 &apigeeapiproduct.ApigeeApiProductGrpcOperationGroup {
 	OperationConfigs: interface{},
@@ -2163,13 +2163,13 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.apigeeApiProduct.ApigeeApiProductGrpcOperationGroupOperationConfigs.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/apigeeapiproduct"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/apigeeapiproduct"
 
 &apigeeapiproduct.ApigeeApiProductGrpcOperationGroupOperationConfigs {
 	ApiSource: *string,
 	Attributes: interface{},
 	Methods: *[]*string,
-	Quota: github.com/cdktn-io/cdktn-provider-google-go/google/v17.apigeeApiProduct.ApigeeApiProductGrpcOperationGroupOperationConfigsQuota,
+	Quota: github.com/cdktn-io/cdktn-provider-google-go/google/v18.apigeeApiProduct.ApigeeApiProductGrpcOperationGroupOperationConfigsQuota,
 	Service: *string,
 }
 ```
@@ -2269,7 +2269,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.apigeeApiProduct.ApigeeApiProductGrpcOperationGroupOperationConfigsAttributes.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/apigeeapiproduct"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/apigeeapiproduct"
 
 &apigeeapiproduct.ApigeeApiProductGrpcOperationGroupOperationConfigsAttributes {
 	Name: *string,
@@ -2319,7 +2319,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.apigeeApiProduct.ApigeeApiProductGrpcOperationGroupOperationConfigsQuota.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/apigeeapiproduct"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/apigeeapiproduct"
 
 &apigeeapiproduct.ApigeeApiProductGrpcOperationGroupOperationConfigsQuota {
 	Interval: *string,
@@ -2387,7 +2387,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.apigeeApiProduct.ApigeeApiProductOperationGroup.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/apigeeapiproduct"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/apigeeapiproduct"
 
 &apigeeapiproduct.ApigeeApiProductOperationGroup {
 	OperationConfigs: interface{},
@@ -2439,13 +2439,13 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.apigeeApiProduct.ApigeeApiProductOperationGroupOperationConfigs.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/apigeeapiproduct"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/apigeeapiproduct"
 
 &apigeeapiproduct.ApigeeApiProductOperationGroupOperationConfigs {
 	ApiSource: *string,
 	Attributes: interface{},
 	Operations: interface{},
-	Quota: github.com/cdktn-io/cdktn-provider-google-go/google/v17.apigeeApiProduct.ApigeeApiProductOperationGroupOperationConfigsQuota,
+	Quota: github.com/cdktn-io/cdktn-provider-google-go/google/v18.apigeeApiProduct.ApigeeApiProductOperationGroupOperationConfigsQuota,
 }
 ```
 
@@ -2521,7 +2521,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.apigeeApiProduct.ApigeeApiProductOperationGroupOperationConfigsAttributes.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/apigeeapiproduct"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/apigeeapiproduct"
 
 &apigeeapiproduct.ApigeeApiProductOperationGroupOperationConfigsAttributes {
 	Name: *string,
@@ -2571,7 +2571,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.apigeeApiProduct.ApigeeApiProductOperationGroupOperationConfigsOperations.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/apigeeapiproduct"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/apigeeapiproduct"
 
 &apigeeapiproduct.ApigeeApiProductOperationGroupOperationConfigsOperations {
 	Methods: *[]*string,
@@ -2621,7 +2621,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.apigeeApiProduct.ApigeeApiProductOperationGroupOperationConfigsQuota.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/apigeeapiproduct"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/apigeeapiproduct"
 
 &apigeeapiproduct.ApigeeApiProductOperationGroupOperationConfigsQuota {
 	Interval: *string,
@@ -2689,7 +2689,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.apigeeApiProduct.ApigeeApiProductTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/apigeeapiproduct"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/apigeeapiproduct"
 
 &apigeeapiproduct.ApigeeApiProductTimeouts {
 	Create: *string,
@@ -2751,7 +2751,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.apigeeApiProduct.ApigeeApiProductAttributesList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/apigeeapiproduct"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/apigeeapiproduct"
 
 apigeeapiproduct.NewApigeeApiProductAttributesList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ApigeeApiProductAttributesList
 ```
@@ -2911,7 +2911,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.apigeeApiProduct.ApigeeApiProductAttributesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/apigeeapiproduct"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/apigeeapiproduct"
 
 apigeeapiproduct.NewApigeeApiProductAttributesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ApigeeApiProductAttributesOutputReference
 ```
@@ -3236,7 +3236,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.apigeeApiProduct.ApigeeApiProductGraphqlOperationGroupOperationConfigsAttributesList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/apigeeapiproduct"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/apigeeapiproduct"
 
 apigeeapiproduct.NewApigeeApiProductGraphqlOperationGroupOperationConfigsAttributesList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ApigeeApiProductGraphqlOperationGroupOperationConfigsAttributesList
 ```
@@ -3396,7 +3396,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.apigeeApiProduct.ApigeeApiProductGraphqlOperationGroupOperationConfigsAttributesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/apigeeapiproduct"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/apigeeapiproduct"
 
 apigeeapiproduct.NewApigeeApiProductGraphqlOperationGroupOperationConfigsAttributesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ApigeeApiProductGraphqlOperationGroupOperationConfigsAttributesOutputReference
 ```
@@ -3721,7 +3721,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.apigeeApiProduct.ApigeeApiProductGraphqlOperationGroupOperationConfigsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/apigeeapiproduct"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/apigeeapiproduct"
 
 apigeeapiproduct.NewApigeeApiProductGraphqlOperationGroupOperationConfigsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ApigeeApiProductGraphqlOperationGroupOperationConfigsList
 ```
@@ -3881,7 +3881,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.apigeeApiProduct.ApigeeApiProductGraphqlOperationGroupOperationConfigsOperationsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/apigeeapiproduct"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/apigeeapiproduct"
 
 apigeeapiproduct.NewApigeeApiProductGraphqlOperationGroupOperationConfigsOperationsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ApigeeApiProductGraphqlOperationGroupOperationConfigsOperationsList
 ```
@@ -4041,7 +4041,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.apigeeApiProduct.ApigeeApiProductGraphqlOperationGroupOperationConfigsOperationsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/apigeeapiproduct"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/apigeeapiproduct"
 
 apigeeapiproduct.NewApigeeApiProductGraphqlOperationGroupOperationConfigsOperationsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ApigeeApiProductGraphqlOperationGroupOperationConfigsOperationsOutputReference
 ```
@@ -4366,7 +4366,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.apigeeApiProduct.ApigeeApiProductGraphqlOperationGroupOperationConfigsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/apigeeapiproduct"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/apigeeapiproduct"
 
 apigeeapiproduct.NewApigeeApiProductGraphqlOperationGroupOperationConfigsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ApigeeApiProductGraphqlOperationGroupOperationConfigsOutputReference
 ```
@@ -4788,7 +4788,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.apigeeApiProduct.ApigeeApiProductGraphqlOperationGroupOperationConfigsQuotaOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/apigeeapiproduct"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/apigeeapiproduct"
 
 apigeeapiproduct.NewApigeeApiProductGraphqlOperationGroupOperationConfigsQuotaOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ApigeeApiProductGraphqlOperationGroupOperationConfigsQuotaOutputReference
 ```
@@ -5124,7 +5124,7 @@ func InternalValue() ApigeeApiProductGraphqlOperationGroupOperationConfigsQuota
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.apigeeApiProduct.ApigeeApiProductGraphqlOperationGroupOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/apigeeapiproduct"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/apigeeapiproduct"
 
 apigeeapiproduct.NewApigeeApiProductGraphqlOperationGroupOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ApigeeApiProductGraphqlOperationGroupOutputReference
 ```
@@ -5444,7 +5444,7 @@ func InternalValue() ApigeeApiProductGraphqlOperationGroup
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.apigeeApiProduct.ApigeeApiProductGrpcOperationGroupOperationConfigsAttributesList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/apigeeapiproduct"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/apigeeapiproduct"
 
 apigeeapiproduct.NewApigeeApiProductGrpcOperationGroupOperationConfigsAttributesList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ApigeeApiProductGrpcOperationGroupOperationConfigsAttributesList
 ```
@@ -5604,7 +5604,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.apigeeApiProduct.ApigeeApiProductGrpcOperationGroupOperationConfigsAttributesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/apigeeapiproduct"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/apigeeapiproduct"
 
 apigeeapiproduct.NewApigeeApiProductGrpcOperationGroupOperationConfigsAttributesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ApigeeApiProductGrpcOperationGroupOperationConfigsAttributesOutputReference
 ```
@@ -5929,7 +5929,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.apigeeApiProduct.ApigeeApiProductGrpcOperationGroupOperationConfigsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/apigeeapiproduct"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/apigeeapiproduct"
 
 apigeeapiproduct.NewApigeeApiProductGrpcOperationGroupOperationConfigsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ApigeeApiProductGrpcOperationGroupOperationConfigsList
 ```
@@ -6089,7 +6089,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.apigeeApiProduct.ApigeeApiProductGrpcOperationGroupOperationConfigsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/apigeeapiproduct"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/apigeeapiproduct"
 
 apigeeapiproduct.NewApigeeApiProductGrpcOperationGroupOperationConfigsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ApigeeApiProductGrpcOperationGroupOperationConfigsOutputReference
 ```
@@ -6527,7 +6527,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.apigeeApiProduct.ApigeeApiProductGrpcOperationGroupOperationConfigsQuotaOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/apigeeapiproduct"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/apigeeapiproduct"
 
 apigeeapiproduct.NewApigeeApiProductGrpcOperationGroupOperationConfigsQuotaOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ApigeeApiProductGrpcOperationGroupOperationConfigsQuotaOutputReference
 ```
@@ -6863,7 +6863,7 @@ func InternalValue() ApigeeApiProductGrpcOperationGroupOperationConfigsQuota
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.apigeeApiProduct.ApigeeApiProductGrpcOperationGroupOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/apigeeapiproduct"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/apigeeapiproduct"
 
 apigeeapiproduct.NewApigeeApiProductGrpcOperationGroupOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ApigeeApiProductGrpcOperationGroupOutputReference
 ```
@@ -7154,7 +7154,7 @@ func InternalValue() ApigeeApiProductGrpcOperationGroup
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.apigeeApiProduct.ApigeeApiProductOperationGroupOperationConfigsAttributesList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/apigeeapiproduct"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/apigeeapiproduct"
 
 apigeeapiproduct.NewApigeeApiProductOperationGroupOperationConfigsAttributesList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ApigeeApiProductOperationGroupOperationConfigsAttributesList
 ```
@@ -7314,7 +7314,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.apigeeApiProduct.ApigeeApiProductOperationGroupOperationConfigsAttributesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/apigeeapiproduct"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/apigeeapiproduct"
 
 apigeeapiproduct.NewApigeeApiProductOperationGroupOperationConfigsAttributesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ApigeeApiProductOperationGroupOperationConfigsAttributesOutputReference
 ```
@@ -7639,7 +7639,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.apigeeApiProduct.ApigeeApiProductOperationGroupOperationConfigsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/apigeeapiproduct"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/apigeeapiproduct"
 
 apigeeapiproduct.NewApigeeApiProductOperationGroupOperationConfigsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ApigeeApiProductOperationGroupOperationConfigsList
 ```
@@ -7799,7 +7799,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.apigeeApiProduct.ApigeeApiProductOperationGroupOperationConfigsOperationsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/apigeeapiproduct"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/apigeeapiproduct"
 
 apigeeapiproduct.NewApigeeApiProductOperationGroupOperationConfigsOperationsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ApigeeApiProductOperationGroupOperationConfigsOperationsList
 ```
@@ -7959,7 +7959,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.apigeeApiProduct.ApigeeApiProductOperationGroupOperationConfigsOperationsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/apigeeapiproduct"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/apigeeapiproduct"
 
 apigeeapiproduct.NewApigeeApiProductOperationGroupOperationConfigsOperationsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ApigeeApiProductOperationGroupOperationConfigsOperationsOutputReference
 ```
@@ -8284,7 +8284,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.apigeeApiProduct.ApigeeApiProductOperationGroupOperationConfigsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/apigeeapiproduct"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/apigeeapiproduct"
 
 apigeeapiproduct.NewApigeeApiProductOperationGroupOperationConfigsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ApigeeApiProductOperationGroupOperationConfigsOutputReference
 ```
@@ -8706,7 +8706,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.apigeeApiProduct.ApigeeApiProductOperationGroupOperationConfigsQuotaOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/apigeeapiproduct"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/apigeeapiproduct"
 
 apigeeapiproduct.NewApigeeApiProductOperationGroupOperationConfigsQuotaOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ApigeeApiProductOperationGroupOperationConfigsQuotaOutputReference
 ```
@@ -9042,7 +9042,7 @@ func InternalValue() ApigeeApiProductOperationGroupOperationConfigsQuota
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.apigeeApiProduct.ApigeeApiProductOperationGroupOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/apigeeapiproduct"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/apigeeapiproduct"
 
 apigeeapiproduct.NewApigeeApiProductOperationGroupOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ApigeeApiProductOperationGroupOutputReference
 ```
@@ -9362,7 +9362,7 @@ func InternalValue() ApigeeApiProductOperationGroup
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.apigeeApiProduct.ApigeeApiProductTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/apigeeapiproduct"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/apigeeapiproduct"
 
 apigeeapiproduct.NewApigeeApiProductTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ApigeeApiProductTimeoutsOutputReference
 ```

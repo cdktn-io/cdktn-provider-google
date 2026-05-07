@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.5
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.geminiRepositoryGroup.GeminiRepositoryGroup.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/geminirepositorygroup"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/geminirepositorygroup"
 
 geminirepositorygroup.NewGeminiRepositoryGroup(scope Construct, id *string, config GeminiRepositoryGroupConfig) GeminiRepositoryGroup
 ```
@@ -454,7 +454,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-google.geminiRepositoryGroup.GeminiRepositoryGroup.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/geminirepositorygroup"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/geminirepositorygroup"
 
 geminirepositorygroup.GeminiRepositoryGroup_IsConstruct(x interface{}) *bool
 ```
@@ -486,7 +486,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-google.geminiRepositoryGroup.GeminiRepositoryGroup.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/geminirepositorygroup"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/geminirepositorygroup"
 
 geminirepositorygroup.GeminiRepositoryGroup_IsTerraformElement(x interface{}) *bool
 ```
@@ -500,7 +500,7 @@ geminirepositorygroup.GeminiRepositoryGroup_IsTerraformElement(x interface{}) *b
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-google.geminiRepositoryGroup.GeminiRepositoryGroup.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/geminirepositorygroup"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/geminirepositorygroup"
 
 geminirepositorygroup.GeminiRepositoryGroup_IsTerraformResource(x interface{}) *bool
 ```
@@ -514,7 +514,7 @@ geminirepositorygroup.GeminiRepositoryGroup_IsTerraformResource(x interface{}) *
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-google.geminiRepositoryGroup.GeminiRepositoryGroup.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/geminirepositorygroup"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/geminirepositorygroup"
 
 geminirepositorygroup.GeminiRepositoryGroup_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -974,7 +974,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.geminiRepositoryGroup.GeminiRepositoryGroupConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/geminirepositorygroup"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/geminirepositorygroup"
 
 &geminirepositorygroup.GeminiRepositoryGroupConfig {
 	Connection: interface{},
@@ -991,7 +991,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/geminirepository
 	Id: *string,
 	Labels: *map[string]*string,
 	Project: *string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-google-go/google/v17.geminiRepositoryGroup.GeminiRepositoryGroupTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-google-go/google/v18.geminiRepositoryGroup.GeminiRepositoryGroupTimeouts,
 }
 ```
 
@@ -1206,7 +1206,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.geminiRepositoryGroup.GeminiRepositoryGroupRepositories.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/geminirepositorygroup"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/geminirepositorygroup"
 
 &geminirepositorygroup.GeminiRepositoryGroupRepositories {
 	BranchPattern: *string,
@@ -1256,7 +1256,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.geminiRepositoryGroup.GeminiRepositoryGroupTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/geminirepositorygroup"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/geminirepositorygroup"
 
 &geminirepositorygroup.GeminiRepositoryGroupTimeouts {
 	Create: *string,
@@ -1318,7 +1318,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.geminiRepositoryGroup.GeminiRepositoryGroupRepositoriesList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/geminirepositorygroup"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/geminirepositorygroup"
 
 geminirepositorygroup.NewGeminiRepositoryGroupRepositoriesList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) GeminiRepositoryGroupRepositoriesList
 ```
@@ -1478,7 +1478,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.geminiRepositoryGroup.GeminiRepositoryGroupRepositoriesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/geminirepositorygroup"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/geminirepositorygroup"
 
 geminirepositorygroup.NewGeminiRepositoryGroupRepositoriesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) GeminiRepositoryGroupRepositoriesOutputReference
 ```
@@ -1789,7 +1789,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.geminiRepositoryGroup.GeminiRepositoryGroupTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/geminirepositorygroup"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/geminirepositorygroup"
 
 geminirepositorygroup.NewGeminiRepositoryGroupTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GeminiRepositoryGroupTimeoutsOutputReference
 ```

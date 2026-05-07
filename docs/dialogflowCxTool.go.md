@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.5
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dialogflowCxTool.DialogflowCxTool.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/dialogflowcxtool"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/dialogflowcxtool"
 
 dialogflowcxtool.NewDialogflowCxTool(scope Construct, id *string, config DialogflowCxToolConfig) DialogflowCxTool
 ```
@@ -494,7 +494,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-google.dialogflowCxTool.DialogflowCxTool.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/dialogflowcxtool"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/dialogflowcxtool"
 
 dialogflowcxtool.DialogflowCxTool_IsConstruct(x interface{}) *bool
 ```
@@ -526,7 +526,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-google.dialogflowCxTool.DialogflowCxTool.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/dialogflowcxtool"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/dialogflowcxtool"
 
 dialogflowcxtool.DialogflowCxTool_IsTerraformElement(x interface{}) *bool
 ```
@@ -540,7 +540,7 @@ dialogflowcxtool.DialogflowCxTool_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-google.dialogflowCxTool.DialogflowCxTool.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/dialogflowcxtool"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/dialogflowcxtool"
 
 dialogflowcxtool.DialogflowCxTool_IsTerraformResource(x interface{}) *bool
 ```
@@ -554,7 +554,7 @@ dialogflowcxtool.DialogflowCxTool_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-google.dialogflowCxTool.DialogflowCxTool.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/dialogflowcxtool"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/dialogflowcxtool"
 
 dialogflowcxtool.DialogflowCxTool_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -981,7 +981,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.dialogflowCxTool.DialogflowCxToolConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/dialogflowcxtool"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/dialogflowcxtool"
 
 &dialogflowcxtool.DialogflowCxToolConfig {
 	Connection: interface{},
@@ -993,12 +993,12 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/dialogflowcxtool
 	Provisioners: *[]interface{},
 	Description: *string,
 	DisplayName: *string,
-	DataStoreSpec: github.com/cdktn-io/cdktn-provider-google-go/google/v17.dialogflowCxTool.DialogflowCxToolDataStoreSpec,
-	FunctionSpec: github.com/cdktn-io/cdktn-provider-google-go/google/v17.dialogflowCxTool.DialogflowCxToolFunctionSpec,
+	DataStoreSpec: github.com/cdktn-io/cdktn-provider-google-go/google/v18.dialogflowCxTool.DialogflowCxToolDataStoreSpec,
+	FunctionSpec: github.com/cdktn-io/cdktn-provider-google-go/google/v18.dialogflowCxTool.DialogflowCxToolFunctionSpec,
 	Id: *string,
-	OpenApiSpec: github.com/cdktn-io/cdktn-provider-google-go/google/v17.dialogflowCxTool.DialogflowCxToolOpenApiSpec,
+	OpenApiSpec: github.com/cdktn-io/cdktn-provider-google-go/google/v18.dialogflowCxTool.DialogflowCxToolOpenApiSpec,
 	Parent: *string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-google-go/google/v17.dialogflowCxTool.DialogflowCxToolTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-google-go/google/v18.dialogflowCxTool.DialogflowCxToolTimeouts,
 }
 ```
 
@@ -1212,11 +1212,11 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.dialogflowCxTool.DialogflowCxToolDataStoreSpec.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/dialogflowcxtool"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/dialogflowcxtool"
 
 &dialogflowcxtool.DialogflowCxToolDataStoreSpec {
 	DataStoreConnections: interface{},
-	FallbackPrompt: github.com/cdktn-io/cdktn-provider-google-go/google/v17.dialogflowCxTool.DialogflowCxToolDataStoreSpecFallbackPrompt,
+	FallbackPrompt: github.com/cdktn-io/cdktn-provider-google-go/google/v18.dialogflowCxTool.DialogflowCxToolDataStoreSpecFallbackPrompt,
 }
 ```
 
@@ -1262,7 +1262,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.dialogflowCxTool.DialogflowCxToolDataStoreSpecDataStoreConnections.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/dialogflowcxtool"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/dialogflowcxtool"
 
 &dialogflowcxtool.DialogflowCxToolDataStoreSpecDataStoreConnections {
 	DataStore: *string,
@@ -1331,7 +1331,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.dialogflowCxTool.DialogflowCxToolDataStoreSpecFallbackPrompt.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/dialogflowcxtool"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/dialogflowcxtool"
 
 &dialogflowcxtool.DialogflowCxToolDataStoreSpecFallbackPrompt {
 
@@ -1344,7 +1344,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/dialogflowcxtool
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.dialogflowCxTool.DialogflowCxToolFunctionSpec.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/dialogflowcxtool"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/dialogflowcxtool"
 
 &dialogflowcxtool.DialogflowCxToolFunctionSpec {
 	InputSchema: *string,
@@ -1400,13 +1400,13 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.dialogflowCxTool.DialogflowCxToolOpenApiSpec.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/dialogflowcxtool"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/dialogflowcxtool"
 
 &dialogflowcxtool.DialogflowCxToolOpenApiSpec {
 	TextSchema: *string,
-	Authentication: github.com/cdktn-io/cdktn-provider-google-go/google/v17.dialogflowCxTool.DialogflowCxToolOpenApiSpecAuthentication,
-	ServiceDirectoryConfig: github.com/cdktn-io/cdktn-provider-google-go/google/v17.dialogflowCxTool.DialogflowCxToolOpenApiSpecServiceDirectoryConfig,
-	TlsConfig: github.com/cdktn-io/cdktn-provider-google-go/google/v17.dialogflowCxTool.DialogflowCxToolOpenApiSpecTlsConfig,
+	Authentication: github.com/cdktn-io/cdktn-provider-google-go/google/v18.dialogflowCxTool.DialogflowCxToolOpenApiSpecAuthentication,
+	ServiceDirectoryConfig: github.com/cdktn-io/cdktn-provider-google-go/google/v18.dialogflowCxTool.DialogflowCxToolOpenApiSpecServiceDirectoryConfig,
+	TlsConfig: github.com/cdktn-io/cdktn-provider-google-go/google/v18.dialogflowCxTool.DialogflowCxToolOpenApiSpecTlsConfig,
 }
 ```
 
@@ -1484,13 +1484,13 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.dialogflowCxTool.DialogflowCxToolOpenApiSpecAuthentication.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/dialogflowcxtool"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/dialogflowcxtool"
 
 &dialogflowcxtool.DialogflowCxToolOpenApiSpecAuthentication {
-	ApiKeyConfig: github.com/cdktn-io/cdktn-provider-google-go/google/v17.dialogflowCxTool.DialogflowCxToolOpenApiSpecAuthenticationApiKeyConfig,
-	BearerTokenConfig: github.com/cdktn-io/cdktn-provider-google-go/google/v17.dialogflowCxTool.DialogflowCxToolOpenApiSpecAuthenticationBearerTokenConfig,
-	OauthConfig: github.com/cdktn-io/cdktn-provider-google-go/google/v17.dialogflowCxTool.DialogflowCxToolOpenApiSpecAuthenticationOauthConfig,
-	ServiceAgentAuthConfig: github.com/cdktn-io/cdktn-provider-google-go/google/v17.dialogflowCxTool.DialogflowCxToolOpenApiSpecAuthenticationServiceAgentAuthConfig,
+	ApiKeyConfig: github.com/cdktn-io/cdktn-provider-google-go/google/v18.dialogflowCxTool.DialogflowCxToolOpenApiSpecAuthenticationApiKeyConfig,
+	BearerTokenConfig: github.com/cdktn-io/cdktn-provider-google-go/google/v18.dialogflowCxTool.DialogflowCxToolOpenApiSpecAuthenticationBearerTokenConfig,
+	OauthConfig: github.com/cdktn-io/cdktn-provider-google-go/google/v18.dialogflowCxTool.DialogflowCxToolOpenApiSpecAuthenticationOauthConfig,
+	ServiceAgentAuthConfig: github.com/cdktn-io/cdktn-provider-google-go/google/v18.dialogflowCxTool.DialogflowCxToolOpenApiSpecAuthenticationServiceAgentAuthConfig,
 }
 ```
 
@@ -1566,7 +1566,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.dialogflowCxTool.DialogflowCxToolOpenApiSpecAuthenticationApiKeyConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/dialogflowcxtool"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/dialogflowcxtool"
 
 &dialogflowcxtool.DialogflowCxToolOpenApiSpecAuthenticationApiKeyConfig {
 	KeyName: *string,
@@ -1654,7 +1654,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.dialogflowCxTool.DialogflowCxToolOpenApiSpecAuthenticationBearerTokenConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/dialogflowcxtool"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/dialogflowcxtool"
 
 &dialogflowcxtool.DialogflowCxToolOpenApiSpecAuthenticationBearerTokenConfig {
 	SecretVersionForToken: *string,
@@ -1710,7 +1710,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.dialogflowCxTool.DialogflowCxToolOpenApiSpecAuthenticationOauthConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/dialogflowcxtool"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/dialogflowcxtool"
 
 &dialogflowcxtool.DialogflowCxToolOpenApiSpecAuthenticationOauthConfig {
 	ClientId: *string,
@@ -1828,7 +1828,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.dialogflowCxTool.DialogflowCxToolOpenApiSpecAuthenticationServiceAgentAuthConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/dialogflowcxtool"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/dialogflowcxtool"
 
 &dialogflowcxtool.DialogflowCxToolOpenApiSpecAuthenticationServiceAgentAuthConfig {
 	ServiceAgentAuth: *string,
@@ -1866,7 +1866,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.dialogflowCxTool.DialogflowCxToolOpenApiSpecServiceDirectoryConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/dialogflowcxtool"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/dialogflowcxtool"
 
 &dialogflowcxtool.DialogflowCxToolOpenApiSpecServiceDirectoryConfig {
 	Service: *string,
@@ -1900,7 +1900,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.dialogflowCxTool.DialogflowCxToolOpenApiSpecTlsConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/dialogflowcxtool"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/dialogflowcxtool"
 
 &dialogflowcxtool.DialogflowCxToolOpenApiSpecTlsConfig {
 	CaCerts: interface{},
@@ -1934,7 +1934,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.dialogflowCxTool.DialogflowCxToolOpenApiSpecTlsConfigCaCerts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/dialogflowcxtool"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/dialogflowcxtool"
 
 &dialogflowcxtool.DialogflowCxToolOpenApiSpecTlsConfigCaCerts {
 	Cert: *string,
@@ -1998,7 +1998,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.dialogflowCxTool.DialogflowCxToolTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/dialogflowcxtool"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/dialogflowcxtool"
 
 &dialogflowcxtool.DialogflowCxToolTimeouts {
 	Create: *string,
@@ -2060,7 +2060,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dialogflowCxTool.DialogflowCxToolDataStoreSpecDataStoreConnectionsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/dialogflowcxtool"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/dialogflowcxtool"
 
 dialogflowcxtool.NewDialogflowCxToolDataStoreSpecDataStoreConnectionsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DialogflowCxToolDataStoreSpecDataStoreConnectionsList
 ```
@@ -2220,7 +2220,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dialogflowCxTool.DialogflowCxToolDataStoreSpecDataStoreConnectionsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/dialogflowcxtool"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/dialogflowcxtool"
 
 dialogflowcxtool.NewDialogflowCxToolDataStoreSpecDataStoreConnectionsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DialogflowCxToolDataStoreSpecDataStoreConnectionsOutputReference
 ```
@@ -2574,7 +2574,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dialogflowCxTool.DialogflowCxToolDataStoreSpecFallbackPromptOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/dialogflowcxtool"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/dialogflowcxtool"
 
 dialogflowcxtool.NewDialogflowCxToolDataStoreSpecFallbackPromptOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DialogflowCxToolDataStoreSpecFallbackPromptOutputReference
 ```
@@ -2823,7 +2823,7 @@ func InternalValue() DialogflowCxToolDataStoreSpecFallbackPrompt
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dialogflowCxTool.DialogflowCxToolDataStoreSpecOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/dialogflowcxtool"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/dialogflowcxtool"
 
 dialogflowcxtool.NewDialogflowCxToolDataStoreSpecOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DialogflowCxToolDataStoreSpecOutputReference
 ```
@@ -3142,7 +3142,7 @@ func InternalValue() DialogflowCxToolDataStoreSpec
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dialogflowCxTool.DialogflowCxToolFunctionSpecOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/dialogflowcxtool"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/dialogflowcxtool"
 
 dialogflowcxtool.NewDialogflowCxToolFunctionSpecOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DialogflowCxToolFunctionSpecOutputReference
 ```
@@ -3449,7 +3449,7 @@ func InternalValue() DialogflowCxToolFunctionSpec
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dialogflowCxTool.DialogflowCxToolOpenApiSpecAuthenticationApiKeyConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/dialogflowcxtool"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/dialogflowcxtool"
 
 dialogflowcxtool.NewDialogflowCxToolOpenApiSpecAuthenticationApiKeyConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DialogflowCxToolOpenApiSpecAuthenticationApiKeyConfigOutputReference
 ```
@@ -3800,7 +3800,7 @@ func InternalValue() DialogflowCxToolOpenApiSpecAuthenticationApiKeyConfig
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dialogflowCxTool.DialogflowCxToolOpenApiSpecAuthenticationBearerTokenConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/dialogflowcxtool"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/dialogflowcxtool"
 
 dialogflowcxtool.NewDialogflowCxToolOpenApiSpecAuthenticationBearerTokenConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DialogflowCxToolOpenApiSpecAuthenticationBearerTokenConfigOutputReference
 ```
@@ -4107,7 +4107,7 @@ func InternalValue() DialogflowCxToolOpenApiSpecAuthenticationBearerTokenConfig
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dialogflowCxTool.DialogflowCxToolOpenApiSpecAuthenticationOauthConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/dialogflowcxtool"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/dialogflowcxtool"
 
 dialogflowcxtool.NewDialogflowCxToolOpenApiSpecAuthenticationOauthConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DialogflowCxToolOpenApiSpecAuthenticationOauthConfigOutputReference
 ```
@@ -4509,7 +4509,7 @@ func InternalValue() DialogflowCxToolOpenApiSpecAuthenticationOauthConfig
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dialogflowCxTool.DialogflowCxToolOpenApiSpecAuthenticationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/dialogflowcxtool"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/dialogflowcxtool"
 
 dialogflowcxtool.NewDialogflowCxToolOpenApiSpecAuthenticationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DialogflowCxToolOpenApiSpecAuthenticationOutputReference
 ```
@@ -4926,7 +4926,7 @@ func InternalValue() DialogflowCxToolOpenApiSpecAuthentication
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dialogflowCxTool.DialogflowCxToolOpenApiSpecAuthenticationServiceAgentAuthConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/dialogflowcxtool"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/dialogflowcxtool"
 
 dialogflowcxtool.NewDialogflowCxToolOpenApiSpecAuthenticationServiceAgentAuthConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DialogflowCxToolOpenApiSpecAuthenticationServiceAgentAuthConfigOutputReference
 ```
@@ -5204,7 +5204,7 @@ func InternalValue() DialogflowCxToolOpenApiSpecAuthenticationServiceAgentAuthCo
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dialogflowCxTool.DialogflowCxToolOpenApiSpecOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/dialogflowcxtool"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/dialogflowcxtool"
 
 dialogflowcxtool.NewDialogflowCxToolOpenApiSpecOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DialogflowCxToolOpenApiSpecOutputReference
 ```
@@ -5601,7 +5601,7 @@ func InternalValue() DialogflowCxToolOpenApiSpec
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dialogflowCxTool.DialogflowCxToolOpenApiSpecServiceDirectoryConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/dialogflowcxtool"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/dialogflowcxtool"
 
 dialogflowcxtool.NewDialogflowCxToolOpenApiSpecServiceDirectoryConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DialogflowCxToolOpenApiSpecServiceDirectoryConfigOutputReference
 ```
@@ -5872,7 +5872,7 @@ func InternalValue() DialogflowCxToolOpenApiSpecServiceDirectoryConfig
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dialogflowCxTool.DialogflowCxToolOpenApiSpecTlsConfigCaCertsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/dialogflowcxtool"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/dialogflowcxtool"
 
 dialogflowcxtool.NewDialogflowCxToolOpenApiSpecTlsConfigCaCertsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DialogflowCxToolOpenApiSpecTlsConfigCaCertsList
 ```
@@ -6032,7 +6032,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dialogflowCxTool.DialogflowCxToolOpenApiSpecTlsConfigCaCertsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/dialogflowcxtool"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/dialogflowcxtool"
 
 dialogflowcxtool.NewDialogflowCxToolOpenApiSpecTlsConfigCaCertsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DialogflowCxToolOpenApiSpecTlsConfigCaCertsOutputReference
 ```
@@ -6343,7 +6343,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dialogflowCxTool.DialogflowCxToolOpenApiSpecTlsConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/dialogflowcxtool"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/dialogflowcxtool"
 
 dialogflowcxtool.NewDialogflowCxToolOpenApiSpecTlsConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DialogflowCxToolOpenApiSpecTlsConfigOutputReference
 ```
@@ -6627,7 +6627,7 @@ func InternalValue() DialogflowCxToolOpenApiSpecTlsConfig
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dialogflowCxTool.DialogflowCxToolTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/dialogflowcxtool"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/dialogflowcxtool"
 
 dialogflowcxtool.NewDialogflowCxToolTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DialogflowCxToolTimeoutsOutputReference
 ```
