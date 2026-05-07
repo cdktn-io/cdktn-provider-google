@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.5
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataGoogleVmwareengineExternalAddress.DataGoogleVmwareengineExternalAddress.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/datagooglevmwareengineexternaladdress"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/datagooglevmwareengineexternaladdress"
 
 datagooglevmwareengineexternaladdress.NewDataGoogleVmwareengineExternalAddress(scope Construct, id *string, config DataGoogleVmwareengineExternalAddressConfig) DataGoogleVmwareengineExternalAddress
 ```
@@ -305,7 +305,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-google.dataGoogleVmwareengineExternalAddress.DataGoogleVmwareengineExternalAddress.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/datagooglevmwareengineexternaladdress"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/datagooglevmwareengineexternaladdress"
 
 datagooglevmwareengineexternaladdress.DataGoogleVmwareengineExternalAddress_IsConstruct(x interface{}) *bool
 ```
@@ -337,7 +337,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-google.dataGoogleVmwareengineExternalAddress.DataGoogleVmwareengineExternalAddress.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/datagooglevmwareengineexternaladdress"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/datagooglevmwareengineexternaladdress"
 
 datagooglevmwareengineexternaladdress.DataGoogleVmwareengineExternalAddress_IsTerraformElement(x interface{}) *bool
 ```
@@ -351,7 +351,7 @@ datagooglevmwareengineexternaladdress.DataGoogleVmwareengineExternalAddress_IsTe
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktn/provider-google.dataGoogleVmwareengineExternalAddress.DataGoogleVmwareengineExternalAddress.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/datagooglevmwareengineexternaladdress"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/datagooglevmwareengineexternaladdress"
 
 datagooglevmwareengineexternaladdress.DataGoogleVmwareengineExternalAddress_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -365,7 +365,7 @@ datagooglevmwareengineexternaladdress.DataGoogleVmwareengineExternalAddress_IsTe
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-google.dataGoogleVmwareengineExternalAddress.DataGoogleVmwareengineExternalAddress.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/datagooglevmwareengineexternaladdress"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/datagooglevmwareengineexternaladdress"
 
 datagooglevmwareengineexternaladdress.DataGoogleVmwareengineExternalAddress_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -715,7 +715,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.dataGoogleVmwareengineExternalAddress.DataGoogleVmwareengineExternalAddressConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/datagooglevmwareengineexternaladdress"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/datagooglevmwareengineexternaladdress"
 
 &datagooglevmwareengineexternaladdress.DataGoogleVmwareengineExternalAddressConfig {
 	Connection: interface{},

@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.5
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataGoogleDataplexZoneIamPolicy.DataGoogleDataplexZoneIamPolicy.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/datagoogledataplexzoneiampolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/datagoogledataplexzoneiampolicy"
 
 datagoogledataplexzoneiampolicy.NewDataGoogleDataplexZoneIamPolicy(scope Construct, id *string, config DataGoogleDataplexZoneIamPolicyConfig) DataGoogleDataplexZoneIamPolicy
 ```
@@ -319,7 +319,7 @@ func ResetProject()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-google.dataGoogleDataplexZoneIamPolicy.DataGoogleDataplexZoneIamPolicy.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/datagoogledataplexzoneiampolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/datagoogledataplexzoneiampolicy"
 
 datagoogledataplexzoneiampolicy.DataGoogleDataplexZoneIamPolicy_IsConstruct(x interface{}) *bool
 ```
@@ -351,7 +351,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-google.dataGoogleDataplexZoneIamPolicy.DataGoogleDataplexZoneIamPolicy.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/datagoogledataplexzoneiampolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/datagoogledataplexzoneiampolicy"
 
 datagoogledataplexzoneiampolicy.DataGoogleDataplexZoneIamPolicy_IsTerraformElement(x interface{}) *bool
 ```
@@ -365,7 +365,7 @@ datagoogledataplexzoneiampolicy.DataGoogleDataplexZoneIamPolicy_IsTerraformEleme
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktn/provider-google.dataGoogleDataplexZoneIamPolicy.DataGoogleDataplexZoneIamPolicy.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/datagoogledataplexzoneiampolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/datagoogledataplexzoneiampolicy"
 
 datagoogledataplexzoneiampolicy.DataGoogleDataplexZoneIamPolicy_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -379,7 +379,7 @@ datagoogledataplexzoneiampolicy.DataGoogleDataplexZoneIamPolicy_IsTerraformDataS
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-google.dataGoogleDataplexZoneIamPolicy.DataGoogleDataplexZoneIamPolicy.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/datagoogledataplexzoneiampolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/datagoogledataplexzoneiampolicy"
 
 datagoogledataplexzoneiampolicy.DataGoogleDataplexZoneIamPolicy_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -718,7 +718,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.dataGoogleDataplexZoneIamPolicy.DataGoogleDataplexZoneIamPolicyConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/datagoogledataplexzoneiampolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/datagoogledataplexzoneiampolicy"
 
 &datagoogledataplexzoneiampolicy.DataGoogleDataplexZoneIamPolicyConfig {
 	Connection: interface{},

@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.5
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataGoogleCloudRunV2JobIamPolicy.DataGoogleCloudRunV2JobIamPolicy.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/datagooglecloudrunv2jobiampolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/datagooglecloudrunv2jobiampolicy"
 
 datagooglecloudrunv2jobiampolicy.NewDataGoogleCloudRunV2JobIamPolicy(scope Construct, id *string, config DataGoogleCloudRunV2JobIamPolicyConfig) DataGoogleCloudRunV2JobIamPolicy
 ```
@@ -319,7 +319,7 @@ func ResetProject()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-google.dataGoogleCloudRunV2JobIamPolicy.DataGoogleCloudRunV2JobIamPolicy.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/datagooglecloudrunv2jobiampolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/datagooglecloudrunv2jobiampolicy"
 
 datagooglecloudrunv2jobiampolicy.DataGoogleCloudRunV2JobIamPolicy_IsConstruct(x interface{}) *bool
 ```
@@ -351,7 +351,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-google.dataGoogleCloudRunV2JobIamPolicy.DataGoogleCloudRunV2JobIamPolicy.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/datagooglecloudrunv2jobiampolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/datagooglecloudrunv2jobiampolicy"
 
 datagooglecloudrunv2jobiampolicy.DataGoogleCloudRunV2JobIamPolicy_IsTerraformElement(x interface{}) *bool
 ```
@@ -365,7 +365,7 @@ datagooglecloudrunv2jobiampolicy.DataGoogleCloudRunV2JobIamPolicy_IsTerraformEle
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktn/provider-google.dataGoogleCloudRunV2JobIamPolicy.DataGoogleCloudRunV2JobIamPolicy.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/datagooglecloudrunv2jobiampolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/datagooglecloudrunv2jobiampolicy"
 
 datagooglecloudrunv2jobiampolicy.DataGoogleCloudRunV2JobIamPolicy_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -379,7 +379,7 @@ datagooglecloudrunv2jobiampolicy.DataGoogleCloudRunV2JobIamPolicy_IsTerraformDat
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-google.dataGoogleCloudRunV2JobIamPolicy.DataGoogleCloudRunV2JobIamPolicy.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/datagooglecloudrunv2jobiampolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/datagooglecloudrunv2jobiampolicy"
 
 datagooglecloudrunv2jobiampolicy.DataGoogleCloudRunV2JobIamPolicy_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -696,7 +696,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.dataGoogleCloudRunV2JobIamPolicy.DataGoogleCloudRunV2JobIamPolicyConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/datagooglecloudrunv2jobiampolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/datagooglecloudrunv2jobiampolicy"
 
 &datagooglecloudrunv2jobiampolicy.DataGoogleCloudRunV2JobIamPolicyConfig {
 	Connection: interface{},

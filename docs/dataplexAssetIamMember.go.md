@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.5
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataplexAssetIamMember.DataplexAssetIamMember.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/dataplexassetiammember"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/dataplexassetiammember"
 
 dataplexassetiammember.NewDataplexAssetIamMember(scope Construct, id *string, config DataplexAssetIamMemberConfig) DataplexAssetIamMember
 ```
@@ -441,7 +441,7 @@ func ResetProject()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-google.dataplexAssetIamMember.DataplexAssetIamMember.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/dataplexassetiammember"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/dataplexassetiammember"
 
 dataplexassetiammember.DataplexAssetIamMember_IsConstruct(x interface{}) *bool
 ```
@@ -473,7 +473,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-google.dataplexAssetIamMember.DataplexAssetIamMember.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/dataplexassetiammember"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/dataplexassetiammember"
 
 dataplexassetiammember.DataplexAssetIamMember_IsTerraformElement(x interface{}) *bool
 ```
@@ -487,7 +487,7 @@ dataplexassetiammember.DataplexAssetIamMember_IsTerraformElement(x interface{}) 
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-google.dataplexAssetIamMember.DataplexAssetIamMember.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/dataplexassetiammember"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/dataplexassetiammember"
 
 dataplexassetiammember.DataplexAssetIamMember_IsTerraformResource(x interface{}) *bool
 ```
@@ -501,7 +501,7 @@ dataplexassetiammember.DataplexAssetIamMember_IsTerraformResource(x interface{})
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-google.dataplexAssetIamMember.DataplexAssetIamMember.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/dataplexassetiammember"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/dataplexassetiammember"
 
 dataplexassetiammember.DataplexAssetIamMember_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -939,7 +939,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.dataplexAssetIamMember.DataplexAssetIamMemberCondition.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/dataplexassetiammember"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/dataplexassetiammember"
 
 &dataplexassetiammember.DataplexAssetIamMemberCondition {
 	Expression: *string,
@@ -999,7 +999,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.dataplexAssetIamMember.DataplexAssetIamMemberConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/dataplexassetiammember"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/dataplexassetiammember"
 
 &dataplexassetiammember.DataplexAssetIamMemberConfig {
 	Connection: interface{},
@@ -1014,7 +1014,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/dataplexassetiam
 	Lake: *string,
 	Member: *string,
 	Role: *string,
-	Condition: github.com/cdktn-io/cdktn-provider-google-go/google/v17.dataplexAssetIamMember.DataplexAssetIamMemberCondition,
+	Condition: github.com/cdktn-io/cdktn-provider-google-go/google/v18.dataplexAssetIamMember.DataplexAssetIamMemberCondition,
 	Id: *string,
 	Location: *string,
 	Project: *string,
@@ -1234,7 +1234,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataplexAssetIamMember.DataplexAssetIamMemberConditionOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/dataplexassetiammember"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/dataplexassetiammember"
 
 dataplexassetiammember.NewDataplexAssetIamMemberConditionOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataplexAssetIamMemberConditionOutputReference
 ```

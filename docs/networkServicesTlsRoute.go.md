@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.5
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.networkServicesTlsRoute.NetworkServicesTlsRoute.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/networkservicestlsroute"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/networkservicestlsroute"
 
 networkservicestlsroute.NewNetworkServicesTlsRoute(scope Construct, id *string, config NetworkServicesTlsRouteConfig) NetworkServicesTlsRoute
 ```
@@ -468,7 +468,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-google.networkServicesTlsRoute.NetworkServicesTlsRoute.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/networkservicestlsroute"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/networkservicestlsroute"
 
 networkservicestlsroute.NetworkServicesTlsRoute_IsConstruct(x interface{}) *bool
 ```
@@ -500,7 +500,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-google.networkServicesTlsRoute.NetworkServicesTlsRoute.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/networkservicestlsroute"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/networkservicestlsroute"
 
 networkservicestlsroute.NetworkServicesTlsRoute_IsTerraformElement(x interface{}) *bool
 ```
@@ -514,7 +514,7 @@ networkservicestlsroute.NetworkServicesTlsRoute_IsTerraformElement(x interface{}
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-google.networkServicesTlsRoute.NetworkServicesTlsRoute.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/networkservicestlsroute"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/networkservicestlsroute"
 
 networkservicestlsroute.NetworkServicesTlsRoute_IsTerraformResource(x interface{}) *bool
 ```
@@ -528,7 +528,7 @@ networkservicestlsroute.NetworkServicesTlsRoute_IsTerraformResource(x interface{
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-google.networkServicesTlsRoute.NetworkServicesTlsRoute.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/networkservicestlsroute"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/networkservicestlsroute"
 
 networkservicestlsroute.NetworkServicesTlsRoute_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -966,7 +966,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.networkServicesTlsRoute.NetworkServicesTlsRouteConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/networkservicestlsroute"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/networkservicestlsroute"
 
 &networkservicestlsroute.NetworkServicesTlsRouteConfig {
 	Connection: interface{},
@@ -983,7 +983,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/networkservicest
 	Id: *string,
 	Meshes: *[]*string,
 	Project: *string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-google-go/google/v17.networkServicesTlsRoute.NetworkServicesTlsRouteTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-google-go/google/v18.networkServicesTlsRoute.NetworkServicesTlsRouteTimeouts,
 }
 ```
 
@@ -1204,10 +1204,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.networkServicesTlsRoute.NetworkServicesTlsRouteRules.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/networkservicestlsroute"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/networkservicestlsroute"
 
 &networkservicestlsroute.NetworkServicesTlsRouteRules {
-	Action: github.com/cdktn-io/cdktn-provider-google-go/google/v17.networkServicesTlsRoute.NetworkServicesTlsRouteRulesAction,
+	Action: github.com/cdktn-io/cdktn-provider-google-go/google/v18.networkServicesTlsRoute.NetworkServicesTlsRouteRulesAction,
 	Matches: interface{},
 }
 ```
@@ -1254,7 +1254,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.networkServicesTlsRoute.NetworkServicesTlsRouteRulesAction.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/networkservicestlsroute"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/networkservicestlsroute"
 
 &networkservicestlsroute.NetworkServicesTlsRouteRulesAction {
 	Destinations: interface{},
@@ -1288,7 +1288,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.networkServicesTlsRoute.NetworkServicesTlsRouteRulesActionDestinations.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/networkservicestlsroute"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/networkservicestlsroute"
 
 &networkservicestlsroute.NetworkServicesTlsRouteRulesActionDestinations {
 	ServiceName: *string,
@@ -1338,7 +1338,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.networkServicesTlsRoute.NetworkServicesTlsRouteRulesMatches.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/networkservicestlsroute"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/networkservicestlsroute"
 
 &networkservicestlsroute.NetworkServicesTlsRouteRulesMatches {
 	Alpn: *[]*string,
@@ -1393,7 +1393,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.networkServicesTlsRoute.NetworkServicesTlsRouteTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/networkservicestlsroute"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/networkservicestlsroute"
 
 &networkservicestlsroute.NetworkServicesTlsRouteTimeouts {
 	Create: *string,
@@ -1455,7 +1455,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.networkServicesTlsRoute.NetworkServicesTlsRouteRulesActionDestinationsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/networkservicestlsroute"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/networkservicestlsroute"
 
 networkservicestlsroute.NewNetworkServicesTlsRouteRulesActionDestinationsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) NetworkServicesTlsRouteRulesActionDestinationsList
 ```
@@ -1615,7 +1615,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.networkServicesTlsRoute.NetworkServicesTlsRouteRulesActionDestinationsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/networkservicestlsroute"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/networkservicestlsroute"
 
 networkservicestlsroute.NewNetworkServicesTlsRouteRulesActionDestinationsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) NetworkServicesTlsRouteRulesActionDestinationsOutputReference
 ```
@@ -1940,7 +1940,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.networkServicesTlsRoute.NetworkServicesTlsRouteRulesActionOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/networkservicestlsroute"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/networkservicestlsroute"
 
 networkservicestlsroute.NewNetworkServicesTlsRouteRulesActionOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) NetworkServicesTlsRouteRulesActionOutputReference
 ```
@@ -2231,7 +2231,7 @@ func InternalValue() NetworkServicesTlsRouteRulesAction
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.networkServicesTlsRoute.NetworkServicesTlsRouteRulesList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/networkservicestlsroute"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/networkservicestlsroute"
 
 networkservicestlsroute.NewNetworkServicesTlsRouteRulesList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) NetworkServicesTlsRouteRulesList
 ```
@@ -2391,7 +2391,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.networkServicesTlsRoute.NetworkServicesTlsRouteRulesMatchesList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/networkservicestlsroute"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/networkservicestlsroute"
 
 networkservicestlsroute.NewNetworkServicesTlsRouteRulesMatchesList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) NetworkServicesTlsRouteRulesMatchesList
 ```
@@ -2551,7 +2551,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.networkServicesTlsRoute.NetworkServicesTlsRouteRulesMatchesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/networkservicestlsroute"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/networkservicestlsroute"
 
 networkservicestlsroute.NewNetworkServicesTlsRouteRulesMatchesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) NetworkServicesTlsRouteRulesMatchesOutputReference
 ```
@@ -2876,7 +2876,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.networkServicesTlsRoute.NetworkServicesTlsRouteRulesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/networkservicestlsroute"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/networkservicestlsroute"
 
 networkservicestlsroute.NewNetworkServicesTlsRouteRulesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) NetworkServicesTlsRouteRulesOutputReference
 ```
@@ -3213,7 +3213,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.networkServicesTlsRoute.NetworkServicesTlsRouteTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/networkservicestlsroute"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/networkservicestlsroute"
 
 networkservicestlsroute.NewNetworkServicesTlsRouteTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) NetworkServicesTlsRouteTimeoutsOutputReference
 ```

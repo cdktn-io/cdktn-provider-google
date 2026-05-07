@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.5
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataplexAspectTypeIamBinding.DataplexAspectTypeIamBinding.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/dataplexaspecttypeiambinding"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/dataplexaspecttypeiambinding"
 
 dataplexaspecttypeiambinding.NewDataplexAspectTypeIamBinding(scope Construct, id *string, config DataplexAspectTypeIamBindingConfig) DataplexAspectTypeIamBinding
 ```
@@ -441,7 +441,7 @@ func ResetProject()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-google.dataplexAspectTypeIamBinding.DataplexAspectTypeIamBinding.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/dataplexaspecttypeiambinding"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/dataplexaspecttypeiambinding"
 
 dataplexaspecttypeiambinding.DataplexAspectTypeIamBinding_IsConstruct(x interface{}) *bool
 ```
@@ -473,7 +473,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-google.dataplexAspectTypeIamBinding.DataplexAspectTypeIamBinding.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/dataplexaspecttypeiambinding"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/dataplexaspecttypeiambinding"
 
 dataplexaspecttypeiambinding.DataplexAspectTypeIamBinding_IsTerraformElement(x interface{}) *bool
 ```
@@ -487,7 +487,7 @@ dataplexaspecttypeiambinding.DataplexAspectTypeIamBinding_IsTerraformElement(x i
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-google.dataplexAspectTypeIamBinding.DataplexAspectTypeIamBinding.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/dataplexaspecttypeiambinding"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/dataplexaspecttypeiambinding"
 
 dataplexaspecttypeiambinding.DataplexAspectTypeIamBinding_IsTerraformResource(x interface{}) *bool
 ```
@@ -501,7 +501,7 @@ dataplexaspecttypeiambinding.DataplexAspectTypeIamBinding_IsTerraformResource(x 
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-google.dataplexAspectTypeIamBinding.DataplexAspectTypeIamBinding.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/dataplexaspecttypeiambinding"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/dataplexaspecttypeiambinding"
 
 dataplexaspecttypeiambinding.DataplexAspectTypeIamBinding_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -895,7 +895,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.dataplexAspectTypeIamBinding.DataplexAspectTypeIamBindingCondition.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/dataplexaspecttypeiambinding"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/dataplexaspecttypeiambinding"
 
 &dataplexaspecttypeiambinding.DataplexAspectTypeIamBindingCondition {
 	Expression: *string,
@@ -955,7 +955,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.dataplexAspectTypeIamBinding.DataplexAspectTypeIamBindingConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/dataplexaspecttypeiambinding"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/dataplexaspecttypeiambinding"
 
 &dataplexaspecttypeiambinding.DataplexAspectTypeIamBindingConfig {
 	Connection: interface{},
@@ -968,7 +968,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/dataplexaspectty
 	AspectTypeId: *string,
 	Members: *[]*string,
 	Role: *string,
-	Condition: github.com/cdktn-io/cdktn-provider-google-go/google/v17.dataplexAspectTypeIamBinding.DataplexAspectTypeIamBindingCondition,
+	Condition: github.com/cdktn-io/cdktn-provider-google-go/google/v18.dataplexAspectTypeIamBinding.DataplexAspectTypeIamBindingCondition,
 	Id: *string,
 	Location: *string,
 	Project: *string,
@@ -1162,7 +1162,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataplexAspectTypeIamBinding.DataplexAspectTypeIamBindingConditionOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/dataplexaspecttypeiambinding"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/dataplexaspecttypeiambinding"
 
 dataplexaspecttypeiambinding.NewDataplexAspectTypeIamBindingConditionOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataplexAspectTypeIamBindingConditionOutputReference
 ```

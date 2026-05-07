@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.5
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataplexLake.DataplexLake.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/dataplexlake"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/dataplexlake"
 
 dataplexlake.NewDataplexLake(scope Construct, id *string, config DataplexLakeConfig) DataplexLake
 ```
@@ -475,7 +475,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-google.dataplexLake.DataplexLake.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/dataplexlake"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/dataplexlake"
 
 dataplexlake.DataplexLake_IsConstruct(x interface{}) *bool
 ```
@@ -507,7 +507,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-google.dataplexLake.DataplexLake.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/dataplexlake"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/dataplexlake"
 
 dataplexlake.DataplexLake_IsTerraformElement(x interface{}) *bool
 ```
@@ -521,7 +521,7 @@ dataplexlake.DataplexLake_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-google.dataplexLake.DataplexLake.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/dataplexlake"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/dataplexlake"
 
 dataplexlake.DataplexLake_IsTerraformResource(x interface{}) *bool
 ```
@@ -535,7 +535,7 @@ dataplexlake.DataplexLake_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-google.dataplexLake.DataplexLake.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/dataplexlake"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/dataplexlake"
 
 dataplexlake.DataplexLake_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -1061,7 +1061,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.dataplexLake.DataplexLakeAssetStatus.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/dataplexlake"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/dataplexlake"
 
 &dataplexlake.DataplexLakeAssetStatus {
 
@@ -1074,7 +1074,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/dataplexlake"
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.dataplexLake.DataplexLakeConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/dataplexlake"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/dataplexlake"
 
 &dataplexlake.DataplexLakeConfig {
 	Connection: interface{},
@@ -1090,9 +1090,9 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/dataplexlake"
 	DisplayName: *string,
 	Id: *string,
 	Labels: *map[string]*string,
-	Metastore: github.com/cdktn-io/cdktn-provider-google-go/google/v17.dataplexLake.DataplexLakeMetastore,
+	Metastore: github.com/cdktn-io/cdktn-provider-google-go/google/v18.dataplexLake.DataplexLakeMetastore,
 	Project: *string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-google-go/google/v17.dataplexLake.DataplexLakeTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-google-go/google/v18.dataplexLake.DataplexLakeTimeouts,
 }
 ```
 
@@ -1324,7 +1324,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.dataplexLake.DataplexLakeMetastore.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/dataplexlake"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/dataplexlake"
 
 &dataplexlake.DataplexLakeMetastore {
 	Service: *string,
@@ -1358,7 +1358,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.dataplexLake.DataplexLakeMetastoreStatus.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/dataplexlake"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/dataplexlake"
 
 &dataplexlake.DataplexLakeMetastoreStatus {
 
@@ -1371,7 +1371,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/dataplexlake"
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.dataplexLake.DataplexLakeTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/dataplexlake"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/dataplexlake"
 
 &dataplexlake.DataplexLakeTimeouts {
 	Create: *string,
@@ -1433,7 +1433,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataplexLake.DataplexLakeAssetStatusList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/dataplexlake"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/dataplexlake"
 
 dataplexlake.NewDataplexLakeAssetStatusList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataplexLakeAssetStatusList
 ```
@@ -1582,7 +1582,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataplexLake.DataplexLakeAssetStatusOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/dataplexlake"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/dataplexlake"
 
 dataplexlake.NewDataplexLakeAssetStatusOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataplexLakeAssetStatusOutputReference
 ```
@@ -1882,7 +1882,7 @@ func InternalValue() DataplexLakeAssetStatus
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataplexLake.DataplexLakeMetastoreOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/dataplexlake"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/dataplexlake"
 
 dataplexlake.NewDataplexLakeMetastoreOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataplexLakeMetastoreOutputReference
 ```
@@ -2160,7 +2160,7 @@ func InternalValue() DataplexLakeMetastore
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataplexLake.DataplexLakeMetastoreStatusList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/dataplexlake"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/dataplexlake"
 
 dataplexlake.NewDataplexLakeMetastoreStatusList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataplexLakeMetastoreStatusList
 ```
@@ -2309,7 +2309,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataplexLake.DataplexLakeMetastoreStatusOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/dataplexlake"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/dataplexlake"
 
 dataplexlake.NewDataplexLakeMetastoreStatusOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataplexLakeMetastoreStatusOutputReference
 ```
@@ -2620,7 +2620,7 @@ func InternalValue() DataplexLakeMetastoreStatus
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataplexLake.DataplexLakeTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/dataplexlake"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/dataplexlake"
 
 dataplexlake.NewDataplexLakeTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataplexLakeTimeoutsOutputReference
 ```

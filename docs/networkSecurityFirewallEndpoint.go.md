@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.5
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.networkSecurityFirewallEndpoint.NetworkSecurityFirewallEndpoint.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/networksecurityfirewallendpoint"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/networksecurityfirewallendpoint"
 
 networksecurityfirewallendpoint.NewNetworkSecurityFirewallEndpoint(scope Construct, id *string, config NetworkSecurityFirewallEndpointConfig) NetworkSecurityFirewallEndpoint
 ```
@@ -434,7 +434,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-google.networkSecurityFirewallEndpoint.NetworkSecurityFirewallEndpoint.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/networksecurityfirewallendpoint"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/networksecurityfirewallendpoint"
 
 networksecurityfirewallendpoint.NetworkSecurityFirewallEndpoint_IsConstruct(x interface{}) *bool
 ```
@@ -466,7 +466,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-google.networkSecurityFirewallEndpoint.NetworkSecurityFirewallEndpoint.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/networksecurityfirewallendpoint"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/networksecurityfirewallendpoint"
 
 networksecurityfirewallendpoint.NetworkSecurityFirewallEndpoint_IsTerraformElement(x interface{}) *bool
 ```
@@ -480,7 +480,7 @@ networksecurityfirewallendpoint.NetworkSecurityFirewallEndpoint_IsTerraformEleme
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-google.networkSecurityFirewallEndpoint.NetworkSecurityFirewallEndpoint.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/networksecurityfirewallendpoint"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/networksecurityfirewallendpoint"
 
 networksecurityfirewallendpoint.NetworkSecurityFirewallEndpoint_IsTerraformResource(x interface{}) *bool
 ```
@@ -494,7 +494,7 @@ networksecurityfirewallendpoint.NetworkSecurityFirewallEndpoint_IsTerraformResou
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-google.networkSecurityFirewallEndpoint.NetworkSecurityFirewallEndpoint.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/networksecurityfirewallendpoint"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/networksecurityfirewallendpoint"
 
 networksecurityfirewallendpoint.NetworkSecurityFirewallEndpoint_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -965,7 +965,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.networkSecurityFirewallEndpoint.NetworkSecurityFirewallEndpointConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/networksecurityfirewallendpoint"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/networksecurityfirewallendpoint"
 
 &networksecurityfirewallendpoint.NetworkSecurityFirewallEndpointConfig {
 	Connection: interface{},
@@ -981,7 +981,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/networksecurityf
 	Parent: *string,
 	Id: *string,
 	Labels: *map[string]*string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-google-go/google/v17.networkSecurityFirewallEndpoint.NetworkSecurityFirewallEndpointTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-google-go/google/v18.networkSecurityFirewallEndpoint.NetworkSecurityFirewallEndpointTimeouts,
 }
 ```
 
@@ -1183,7 +1183,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.networkSecurityFirewallEndpoint.NetworkSecurityFirewallEndpointTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/networksecurityfirewallendpoint"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/networksecurityfirewallendpoint"
 
 &networksecurityfirewallendpoint.NetworkSecurityFirewallEndpointTimeouts {
 	Create: *string,
@@ -1245,7 +1245,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.networkSecurityFirewallEndpoint.NetworkSecurityFirewallEndpointTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/networksecurityfirewallendpoint"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/networksecurityfirewallendpoint"
 
 networksecurityfirewallendpoint.NewNetworkSecurityFirewallEndpointTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) NetworkSecurityFirewallEndpointTimeoutsOutputReference
 ```

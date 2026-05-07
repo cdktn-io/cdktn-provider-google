@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.5
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dialogflowCxEnvironment.DialogflowCxEnvironment.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/dialogflowcxenvironment"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/dialogflowcxenvironment"
 
 dialogflowcxenvironment.NewDialogflowCxEnvironment(scope Construct, id *string, config DialogflowCxEnvironmentConfig) DialogflowCxEnvironment
 ```
@@ -454,7 +454,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-google.dialogflowCxEnvironment.DialogflowCxEnvironment.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/dialogflowcxenvironment"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/dialogflowcxenvironment"
 
 dialogflowcxenvironment.DialogflowCxEnvironment_IsConstruct(x interface{}) *bool
 ```
@@ -486,7 +486,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-google.dialogflowCxEnvironment.DialogflowCxEnvironment.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/dialogflowcxenvironment"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/dialogflowcxenvironment"
 
 dialogflowcxenvironment.DialogflowCxEnvironment_IsTerraformElement(x interface{}) *bool
 ```
@@ -500,7 +500,7 @@ dialogflowcxenvironment.DialogflowCxEnvironment_IsTerraformElement(x interface{}
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-google.dialogflowCxEnvironment.DialogflowCxEnvironment.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/dialogflowcxenvironment"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/dialogflowcxenvironment"
 
 dialogflowcxenvironment.DialogflowCxEnvironment_IsTerraformResource(x interface{}) *bool
 ```
@@ -514,7 +514,7 @@ dialogflowcxenvironment.DialogflowCxEnvironment_IsTerraformResource(x interface{
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-google.dialogflowCxEnvironment.DialogflowCxEnvironment.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/dialogflowcxenvironment"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/dialogflowcxenvironment"
 
 dialogflowcxenvironment.DialogflowCxEnvironment_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -897,7 +897,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.dialogflowCxEnvironment.DialogflowCxEnvironmentConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/dialogflowcxenvironment"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/dialogflowcxenvironment"
 
 &dialogflowcxenvironment.DialogflowCxEnvironmentConfig {
 	Connection: interface{},
@@ -912,7 +912,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/dialogflowcxenvi
 	Description: *string,
 	Id: *string,
 	Parent: *string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-google-go/google/v17.dialogflowCxEnvironment.DialogflowCxEnvironmentTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-google-go/google/v18.dialogflowCxEnvironment.DialogflowCxEnvironmentTimeouts,
 }
 ```
 
@@ -1096,7 +1096,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.dialogflowCxEnvironment.DialogflowCxEnvironmentTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/dialogflowcxenvironment"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/dialogflowcxenvironment"
 
 &dialogflowcxenvironment.DialogflowCxEnvironmentTimeouts {
 	Create: *string,
@@ -1156,7 +1156,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.dialogflowCxEnvironment.DialogflowCxEnvironmentVersionConfigs.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/dialogflowcxenvironment"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/dialogflowcxenvironment"
 
 &dialogflowcxenvironment.DialogflowCxEnvironmentVersionConfigs {
 	Version: *string,
@@ -1192,7 +1192,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dialogflowCxEnvironment.DialogflowCxEnvironmentTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/dialogflowcxenvironment"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/dialogflowcxenvironment"
 
 dialogflowcxenvironment.NewDialogflowCxEnvironmentTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DialogflowCxEnvironmentTimeoutsOutputReference
 ```
@@ -1528,7 +1528,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dialogflowCxEnvironment.DialogflowCxEnvironmentVersionConfigsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/dialogflowcxenvironment"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/dialogflowcxenvironment"
 
 dialogflowcxenvironment.NewDialogflowCxEnvironmentVersionConfigsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DialogflowCxEnvironmentVersionConfigsList
 ```
@@ -1688,7 +1688,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dialogflowCxEnvironment.DialogflowCxEnvironmentVersionConfigsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/dialogflowcxenvironment"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/dialogflowcxenvironment"
 
 dialogflowcxenvironment.NewDialogflowCxEnvironmentVersionConfigsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DialogflowCxEnvironmentVersionConfigsOutputReference
 ```

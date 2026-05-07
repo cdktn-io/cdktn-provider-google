@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.5
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dnsManagedZoneIamPolicy.DnsManagedZoneIamPolicy.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/dnsmanagedzoneiampolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/dnsmanagedzoneiampolicy"
 
 dnsmanagedzoneiampolicy.NewDnsManagedZoneIamPolicy(scope Construct, id *string, config DnsManagedZoneIamPolicyConfig) DnsManagedZoneIamPolicy
 ```
@@ -414,7 +414,7 @@ func ResetProject()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-google.dnsManagedZoneIamPolicy.DnsManagedZoneIamPolicy.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/dnsmanagedzoneiampolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/dnsmanagedzoneiampolicy"
 
 dnsmanagedzoneiampolicy.DnsManagedZoneIamPolicy_IsConstruct(x interface{}) *bool
 ```
@@ -446,7 +446,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-google.dnsManagedZoneIamPolicy.DnsManagedZoneIamPolicy.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/dnsmanagedzoneiampolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/dnsmanagedzoneiampolicy"
 
 dnsmanagedzoneiampolicy.DnsManagedZoneIamPolicy_IsTerraformElement(x interface{}) *bool
 ```
@@ -460,7 +460,7 @@ dnsmanagedzoneiampolicy.DnsManagedZoneIamPolicy_IsTerraformElement(x interface{}
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-google.dnsManagedZoneIamPolicy.DnsManagedZoneIamPolicy.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/dnsmanagedzoneiampolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/dnsmanagedzoneiampolicy"
 
 dnsmanagedzoneiampolicy.DnsManagedZoneIamPolicy_IsTerraformResource(x interface{}) *bool
 ```
@@ -474,7 +474,7 @@ dnsmanagedzoneiampolicy.DnsManagedZoneIamPolicy_IsTerraformResource(x interface{
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-google.dnsManagedZoneIamPolicy.DnsManagedZoneIamPolicy.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/dnsmanagedzoneiampolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/dnsmanagedzoneiampolicy"
 
 dnsmanagedzoneiampolicy.DnsManagedZoneIamPolicy_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -802,7 +802,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.dnsManagedZoneIamPolicy.DnsManagedZoneIamPolicyConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/dnsmanagedzoneiampolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/dnsmanagedzoneiampolicy"
 
 &dnsmanagedzoneiampolicy.DnsManagedZoneIamPolicyConfig {
 	Connection: interface{},

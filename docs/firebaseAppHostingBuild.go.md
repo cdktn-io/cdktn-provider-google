@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.5
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.firebaseAppHostingBuild.FirebaseAppHostingBuild.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/firebaseapphostingbuild"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/firebaseapphostingbuild"
 
 firebaseapphostingbuild.NewFirebaseAppHostingBuild(scope Construct, id *string, config FirebaseAppHostingBuildConfig) FirebaseAppHostingBuild
 ```
@@ -468,7 +468,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-google.firebaseAppHostingBuild.FirebaseAppHostingBuild.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/firebaseapphostingbuild"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/firebaseapphostingbuild"
 
 firebaseapphostingbuild.FirebaseAppHostingBuild_IsConstruct(x interface{}) *bool
 ```
@@ -500,7 +500,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-google.firebaseAppHostingBuild.FirebaseAppHostingBuild.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/firebaseapphostingbuild"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/firebaseapphostingbuild"
 
 firebaseapphostingbuild.FirebaseAppHostingBuild_IsTerraformElement(x interface{}) *bool
 ```
@@ -514,7 +514,7 @@ firebaseapphostingbuild.FirebaseAppHostingBuild_IsTerraformElement(x interface{}
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-google.firebaseAppHostingBuild.FirebaseAppHostingBuild.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/firebaseapphostingbuild"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/firebaseapphostingbuild"
 
 firebaseapphostingbuild.FirebaseAppHostingBuild_IsTerraformResource(x interface{}) *bool
 ```
@@ -528,7 +528,7 @@ firebaseapphostingbuild.FirebaseAppHostingBuild_IsTerraformResource(x interface{
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-google.firebaseAppHostingBuild.FirebaseAppHostingBuild.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/firebaseapphostingbuild"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/firebaseapphostingbuild"
 
 firebaseapphostingbuild.FirebaseAppHostingBuild_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -1131,7 +1131,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.firebaseAppHostingBuild.FirebaseAppHostingBuildConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/firebaseapphostingbuild"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/firebaseapphostingbuild"
 
 &firebaseapphostingbuild.FirebaseAppHostingBuildConfig {
 	Connection: interface{},
@@ -1144,13 +1144,13 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/firebaseapphosti
 	Backend: *string,
 	BuildId: *string,
 	Location: *string,
-	Source: github.com/cdktn-io/cdktn-provider-google-go/google/v17.firebaseAppHostingBuild.FirebaseAppHostingBuildSource,
+	Source: github.com/cdktn-io/cdktn-provider-google-go/google/v18.firebaseAppHostingBuild.FirebaseAppHostingBuildSource,
 	Annotations: *map[string]*string,
 	DisplayName: *string,
 	Id: *string,
 	Labels: *map[string]*string,
 	Project: *string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-google-go/google/v17.firebaseAppHostingBuild.FirebaseAppHostingBuildTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-google-go/google/v18.firebaseAppHostingBuild.FirebaseAppHostingBuildTimeouts,
 }
 ```
 
@@ -1401,7 +1401,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.firebaseAppHostingBuild.FirebaseAppHostingBuildError.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/firebaseapphostingbuild"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/firebaseapphostingbuild"
 
 &firebaseapphostingbuild.FirebaseAppHostingBuildError {
 
@@ -1414,11 +1414,11 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/firebaseapphosti
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.firebaseAppHostingBuild.FirebaseAppHostingBuildSource.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/firebaseapphostingbuild"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/firebaseapphostingbuild"
 
 &firebaseapphostingbuild.FirebaseAppHostingBuildSource {
-	Codebase: github.com/cdktn-io/cdktn-provider-google-go/google/v17.firebaseAppHostingBuild.FirebaseAppHostingBuildSourceCodebase,
-	Container: github.com/cdktn-io/cdktn-provider-google-go/google/v17.firebaseAppHostingBuild.FirebaseAppHostingBuildSourceContainer,
+	Codebase: github.com/cdktn-io/cdktn-provider-google-go/google/v18.firebaseAppHostingBuild.FirebaseAppHostingBuildSourceCodebase,
+	Container: github.com/cdktn-io/cdktn-provider-google-go/google/v18.firebaseAppHostingBuild.FirebaseAppHostingBuildSourceContainer,
 }
 ```
 
@@ -1464,7 +1464,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.firebaseAppHostingBuild.FirebaseAppHostingBuildSourceCodebase.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/firebaseapphostingbuild"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/firebaseapphostingbuild"
 
 &firebaseapphostingbuild.FirebaseAppHostingBuildSourceCodebase {
 	Branch: *string,
@@ -1514,7 +1514,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.firebaseAppHostingBuild.FirebaseAppHostingBuildSourceCodebaseAuthor.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/firebaseapphostingbuild"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/firebaseapphostingbuild"
 
 &firebaseapphostingbuild.FirebaseAppHostingBuildSourceCodebaseAuthor {
 
@@ -1527,7 +1527,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/firebaseapphosti
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.firebaseAppHostingBuild.FirebaseAppHostingBuildSourceContainer.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/firebaseapphostingbuild"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/firebaseapphostingbuild"
 
 &firebaseapphostingbuild.FirebaseAppHostingBuildSourceContainer {
 	Image: *string,
@@ -1561,7 +1561,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.firebaseAppHostingBuild.FirebaseAppHostingBuildTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/firebaseapphostingbuild"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/firebaseapphostingbuild"
 
 &firebaseapphostingbuild.FirebaseAppHostingBuildTimeouts {
 	Create: *string,
@@ -1623,7 +1623,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.firebaseAppHostingBuild.FirebaseAppHostingBuildErrorList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/firebaseapphostingbuild"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/firebaseapphostingbuild"
 
 firebaseapphostingbuild.NewFirebaseAppHostingBuildErrorList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) FirebaseAppHostingBuildErrorList
 ```
@@ -1772,7 +1772,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.firebaseAppHostingBuild.FirebaseAppHostingBuildErrorOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/firebaseapphostingbuild"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/firebaseapphostingbuild"
 
 firebaseapphostingbuild.NewFirebaseAppHostingBuildErrorOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) FirebaseAppHostingBuildErrorOutputReference
 ```
@@ -2072,7 +2072,7 @@ func InternalValue() FirebaseAppHostingBuildError
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.firebaseAppHostingBuild.FirebaseAppHostingBuildSourceCodebaseAuthorList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/firebaseapphostingbuild"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/firebaseapphostingbuild"
 
 firebaseapphostingbuild.NewFirebaseAppHostingBuildSourceCodebaseAuthorList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) FirebaseAppHostingBuildSourceCodebaseAuthorList
 ```
@@ -2221,7 +2221,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.firebaseAppHostingBuild.FirebaseAppHostingBuildSourceCodebaseAuthorOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/firebaseapphostingbuild"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/firebaseapphostingbuild"
 
 firebaseapphostingbuild.NewFirebaseAppHostingBuildSourceCodebaseAuthorOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) FirebaseAppHostingBuildSourceCodebaseAuthorOutputReference
 ```
@@ -2521,7 +2521,7 @@ func InternalValue() FirebaseAppHostingBuildSourceCodebaseAuthor
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.firebaseAppHostingBuild.FirebaseAppHostingBuildSourceCodebaseOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/firebaseapphostingbuild"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/firebaseapphostingbuild"
 
 firebaseapphostingbuild.NewFirebaseAppHostingBuildSourceCodebaseOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) FirebaseAppHostingBuildSourceCodebaseOutputReference
 ```
@@ -2894,7 +2894,7 @@ func InternalValue() FirebaseAppHostingBuildSourceCodebase
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.firebaseAppHostingBuild.FirebaseAppHostingBuildSourceContainerOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/firebaseapphostingbuild"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/firebaseapphostingbuild"
 
 firebaseapphostingbuild.NewFirebaseAppHostingBuildSourceContainerOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) FirebaseAppHostingBuildSourceContainerOutputReference
 ```
@@ -3165,7 +3165,7 @@ func InternalValue() FirebaseAppHostingBuildSourceContainer
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.firebaseAppHostingBuild.FirebaseAppHostingBuildSourceOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/firebaseapphostingbuild"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/firebaseapphostingbuild"
 
 firebaseapphostingbuild.NewFirebaseAppHostingBuildSourceOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) FirebaseAppHostingBuildSourceOutputReference
 ```
@@ -3498,7 +3498,7 @@ func InternalValue() FirebaseAppHostingBuildSource
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.firebaseAppHostingBuild.FirebaseAppHostingBuildTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/firebaseapphostingbuild"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/firebaseapphostingbuild"
 
 firebaseapphostingbuild.NewFirebaseAppHostingBuildTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) FirebaseAppHostingBuildTimeoutsOutputReference
 ```

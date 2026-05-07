@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.5
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.cloudTasksQueueIamMember.CloudTasksQueueIamMember.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/cloudtasksqueueiammember"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/cloudtasksqueueiammember"
 
 cloudtasksqueueiammember.NewCloudTasksQueueIamMember(scope Construct, id *string, config CloudTasksQueueIamMemberConfig) CloudTasksQueueIamMember
 ```
@@ -441,7 +441,7 @@ func ResetProject()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-google.cloudTasksQueueIamMember.CloudTasksQueueIamMember.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/cloudtasksqueueiammember"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/cloudtasksqueueiammember"
 
 cloudtasksqueueiammember.CloudTasksQueueIamMember_IsConstruct(x interface{}) *bool
 ```
@@ -473,7 +473,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-google.cloudTasksQueueIamMember.CloudTasksQueueIamMember.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/cloudtasksqueueiammember"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/cloudtasksqueueiammember"
 
 cloudtasksqueueiammember.CloudTasksQueueIamMember_IsTerraformElement(x interface{}) *bool
 ```
@@ -487,7 +487,7 @@ cloudtasksqueueiammember.CloudTasksQueueIamMember_IsTerraformElement(x interface
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-google.cloudTasksQueueIamMember.CloudTasksQueueIamMember.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/cloudtasksqueueiammember"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/cloudtasksqueueiammember"
 
 cloudtasksqueueiammember.CloudTasksQueueIamMember_IsTerraformResource(x interface{}) *bool
 ```
@@ -501,7 +501,7 @@ cloudtasksqueueiammember.CloudTasksQueueIamMember_IsTerraformResource(x interfac
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-google.cloudTasksQueueIamMember.CloudTasksQueueIamMember.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/cloudtasksqueueiammember"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/cloudtasksqueueiammember"
 
 cloudtasksqueueiammember.CloudTasksQueueIamMember_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -895,7 +895,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.cloudTasksQueueIamMember.CloudTasksQueueIamMemberCondition.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/cloudtasksqueueiammember"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/cloudtasksqueueiammember"
 
 &cloudtasksqueueiammember.CloudTasksQueueIamMemberCondition {
 	Expression: *string,
@@ -955,7 +955,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.cloudTasksQueueIamMember.CloudTasksQueueIamMemberConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/cloudtasksqueueiammember"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/cloudtasksqueueiammember"
 
 &cloudtasksqueueiammember.CloudTasksQueueIamMemberConfig {
 	Connection: interface{},
@@ -968,7 +968,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/cloudtasksqueuei
 	Member: *string,
 	Name: *string,
 	Role: *string,
-	Condition: github.com/cdktn-io/cdktn-provider-google-go/google/v17.cloudTasksQueueIamMember.CloudTasksQueueIamMemberCondition,
+	Condition: github.com/cdktn-io/cdktn-provider-google-go/google/v18.cloudTasksQueueIamMember.CloudTasksQueueIamMemberCondition,
 	Id: *string,
 	Location: *string,
 	Project: *string,
@@ -1162,7 +1162,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.cloudTasksQueueIamMember.CloudTasksQueueIamMemberConditionOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/cloudtasksqueueiammember"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/cloudtasksqueueiammember"
 
 cloudtasksqueueiammember.NewCloudTasksQueueIamMemberConditionOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) CloudTasksQueueIamMemberConditionOutputReference
 ```

@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.5
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.apigeeKeystoresAliasesSelfSignedCert.ApigeeKeystoresAliasesSelfSignedCert.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/apigeekeystoresaliasesselfsignedcert"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/apigeekeystoresaliasesselfsignedcert"
 
 apigeekeystoresaliasesselfsignedcert.NewApigeeKeystoresAliasesSelfSignedCert(scope Construct, id *string, config ApigeeKeystoresAliasesSelfSignedCertConfig) ApigeeKeystoresAliasesSelfSignedCert
 ```
@@ -474,7 +474,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-google.apigeeKeystoresAliasesSelfSignedCert.ApigeeKeystoresAliasesSelfSignedCert.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/apigeekeystoresaliasesselfsignedcert"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/apigeekeystoresaliasesselfsignedcert"
 
 apigeekeystoresaliasesselfsignedcert.ApigeeKeystoresAliasesSelfSignedCert_IsConstruct(x interface{}) *bool
 ```
@@ -506,7 +506,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-google.apigeeKeystoresAliasesSelfSignedCert.ApigeeKeystoresAliasesSelfSignedCert.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/apigeekeystoresaliasesselfsignedcert"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/apigeekeystoresaliasesselfsignedcert"
 
 apigeekeystoresaliasesselfsignedcert.ApigeeKeystoresAliasesSelfSignedCert_IsTerraformElement(x interface{}) *bool
 ```
@@ -520,7 +520,7 @@ apigeekeystoresaliasesselfsignedcert.ApigeeKeystoresAliasesSelfSignedCert_IsTerr
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-google.apigeeKeystoresAliasesSelfSignedCert.ApigeeKeystoresAliasesSelfSignedCert.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/apigeekeystoresaliasesselfsignedcert"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/apigeekeystoresaliasesselfsignedcert"
 
 apigeekeystoresaliasesselfsignedcert.ApigeeKeystoresAliasesSelfSignedCert_IsTerraformResource(x interface{}) *bool
 ```
@@ -534,7 +534,7 @@ apigeekeystoresaliasesselfsignedcert.ApigeeKeystoresAliasesSelfSignedCert_IsTerr
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-google.apigeeKeystoresAliasesSelfSignedCert.ApigeeKeystoresAliasesSelfSignedCert.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/apigeekeystoresaliasesselfsignedcert"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/apigeekeystoresaliasesselfsignedcert"
 
 apigeekeystoresaliasesselfsignedcert.ApigeeKeystoresAliasesSelfSignedCert_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -1027,7 +1027,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.apigeeKeystoresAliasesSelfSignedCert.ApigeeKeystoresAliasesSelfSignedCertCertsInfo.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/apigeekeystoresaliasesselfsignedcert"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/apigeekeystoresaliasesselfsignedcert"
 
 &apigeekeystoresaliasesselfsignedcert.ApigeeKeystoresAliasesSelfSignedCertCertsInfo {
 
@@ -1040,7 +1040,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/apigeekeystoresa
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.apigeeKeystoresAliasesSelfSignedCert.ApigeeKeystoresAliasesSelfSignedCertCertsInfoCertInfo.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/apigeekeystoresaliasesselfsignedcert"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/apigeekeystoresaliasesselfsignedcert"
 
 &apigeekeystoresaliasesselfsignedcert.ApigeeKeystoresAliasesSelfSignedCertCertsInfoCertInfo {
 
@@ -1053,7 +1053,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/apigeekeystoresa
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.apigeeKeystoresAliasesSelfSignedCert.ApigeeKeystoresAliasesSelfSignedCertConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/apigeekeystoresaliasesselfsignedcert"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/apigeekeystoresaliasesselfsignedcert"
 
 &apigeekeystoresaliasesselfsignedcert.ApigeeKeystoresAliasesSelfSignedCertConfig {
 	Connection: interface{},
@@ -1068,12 +1068,12 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/apigeekeystoresa
 	Keystore: *string,
 	OrgId: *string,
 	SigAlg: *string,
-	Subject: github.com/cdktn-io/cdktn-provider-google-go/google/v17.apigeeKeystoresAliasesSelfSignedCert.ApigeeKeystoresAliasesSelfSignedCertSubject,
+	Subject: github.com/cdktn-io/cdktn-provider-google-go/google/v18.apigeeKeystoresAliasesSelfSignedCert.ApigeeKeystoresAliasesSelfSignedCertSubject,
 	CertValidityInDays: *f64,
 	Id: *string,
 	KeySize: *string,
-	SubjectAlternativeDnsNames: github.com/cdktn-io/cdktn-provider-google-go/google/v17.apigeeKeystoresAliasesSelfSignedCert.ApigeeKeystoresAliasesSelfSignedCertSubjectAlternativeDnsNames,
-	Timeouts: github.com/cdktn-io/cdktn-provider-google-go/google/v17.apigeeKeystoresAliasesSelfSignedCert.ApigeeKeystoresAliasesSelfSignedCertTimeouts,
+	SubjectAlternativeDnsNames: github.com/cdktn-io/cdktn-provider-google-go/google/v18.apigeeKeystoresAliasesSelfSignedCert.ApigeeKeystoresAliasesSelfSignedCertSubjectAlternativeDnsNames,
+	Timeouts: github.com/cdktn-io/cdktn-provider-google-go/google/v18.apigeeKeystoresAliasesSelfSignedCert.ApigeeKeystoresAliasesSelfSignedCertTimeouts,
 }
 ```
 
@@ -1336,7 +1336,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.apigeeKeystoresAliasesSelfSignedCert.ApigeeKeystoresAliasesSelfSignedCertSubject.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/apigeekeystoresaliasesselfsignedcert"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/apigeekeystoresaliasesselfsignedcert"
 
 &apigeekeystoresaliasesselfsignedcert.ApigeeKeystoresAliasesSelfSignedCertSubject {
 	CommonName: *string,
@@ -1466,7 +1466,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.apigeeKeystoresAliasesSelfSignedCert.ApigeeKeystoresAliasesSelfSignedCertSubjectAlternativeDnsNames.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/apigeekeystoresaliasesselfsignedcert"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/apigeekeystoresaliasesselfsignedcert"
 
 &apigeekeystoresaliasesselfsignedcert.ApigeeKeystoresAliasesSelfSignedCertSubjectAlternativeDnsNames {
 	SubjectAlternativeName: *string,
@@ -1500,7 +1500,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.apigeeKeystoresAliasesSelfSignedCert.ApigeeKeystoresAliasesSelfSignedCertTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/apigeekeystoresaliasesselfsignedcert"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/apigeekeystoresaliasesselfsignedcert"
 
 &apigeekeystoresaliasesselfsignedcert.ApigeeKeystoresAliasesSelfSignedCertTimeouts {
 	Create: *string,
@@ -1548,7 +1548,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.apigeeKeystoresAliasesSelfSignedCert.ApigeeKeystoresAliasesSelfSignedCertCertsInfoCertInfoList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/apigeekeystoresaliasesselfsignedcert"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/apigeekeystoresaliasesselfsignedcert"
 
 apigeekeystoresaliasesselfsignedcert.NewApigeeKeystoresAliasesSelfSignedCertCertsInfoCertInfoList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ApigeeKeystoresAliasesSelfSignedCertCertsInfoCertInfoList
 ```
@@ -1697,7 +1697,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.apigeeKeystoresAliasesSelfSignedCert.ApigeeKeystoresAliasesSelfSignedCertCertsInfoCertInfoOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/apigeekeystoresaliasesselfsignedcert"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/apigeekeystoresaliasesselfsignedcert"
 
 apigeekeystoresaliasesselfsignedcert.NewApigeeKeystoresAliasesSelfSignedCertCertsInfoCertInfoOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ApigeeKeystoresAliasesSelfSignedCertCertsInfoCertInfoOutputReference
 ```
@@ -2085,7 +2085,7 @@ func InternalValue() ApigeeKeystoresAliasesSelfSignedCertCertsInfoCertInfo
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.apigeeKeystoresAliasesSelfSignedCert.ApigeeKeystoresAliasesSelfSignedCertCertsInfoList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/apigeekeystoresaliasesselfsignedcert"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/apigeekeystoresaliasesselfsignedcert"
 
 apigeekeystoresaliasesselfsignedcert.NewApigeeKeystoresAliasesSelfSignedCertCertsInfoList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ApigeeKeystoresAliasesSelfSignedCertCertsInfoList
 ```
@@ -2234,7 +2234,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.apigeeKeystoresAliasesSelfSignedCert.ApigeeKeystoresAliasesSelfSignedCertCertsInfoOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/apigeekeystoresaliasesselfsignedcert"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/apigeekeystoresaliasesselfsignedcert"
 
 apigeekeystoresaliasesselfsignedcert.NewApigeeKeystoresAliasesSelfSignedCertCertsInfoOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ApigeeKeystoresAliasesSelfSignedCertCertsInfoOutputReference
 ```
@@ -2512,7 +2512,7 @@ func InternalValue() ApigeeKeystoresAliasesSelfSignedCertCertsInfo
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.apigeeKeystoresAliasesSelfSignedCert.ApigeeKeystoresAliasesSelfSignedCertSubjectAlternativeDnsNamesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/apigeekeystoresaliasesselfsignedcert"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/apigeekeystoresaliasesselfsignedcert"
 
 apigeekeystoresaliasesselfsignedcert.NewApigeeKeystoresAliasesSelfSignedCertSubjectAlternativeDnsNamesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ApigeeKeystoresAliasesSelfSignedCertSubjectAlternativeDnsNamesOutputReference
 ```
@@ -2790,7 +2790,7 @@ func InternalValue() ApigeeKeystoresAliasesSelfSignedCertSubjectAlternativeDnsNa
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.apigeeKeystoresAliasesSelfSignedCert.ApigeeKeystoresAliasesSelfSignedCertSubjectOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/apigeekeystoresaliasesselfsignedcert"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/apigeekeystoresaliasesselfsignedcert"
 
 apigeekeystoresaliasesselfsignedcert.NewApigeeKeystoresAliasesSelfSignedCertSubjectOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ApigeeKeystoresAliasesSelfSignedCertSubjectOutputReference
 ```
@@ -3242,7 +3242,7 @@ func InternalValue() ApigeeKeystoresAliasesSelfSignedCertSubject
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.apigeeKeystoresAliasesSelfSignedCert.ApigeeKeystoresAliasesSelfSignedCertTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/apigeekeystoresaliasesselfsignedcert"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/apigeekeystoresaliasesselfsignedcert"
 
 apigeekeystoresaliasesselfsignedcert.NewApigeeKeystoresAliasesSelfSignedCertTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ApigeeKeystoresAliasesSelfSignedCertTimeoutsOutputReference
 ```

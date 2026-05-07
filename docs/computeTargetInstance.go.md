@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.5
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.computeTargetInstance.ComputeTargetInstance.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/computetargetinstance"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/computetargetinstance"
 
 computetargetinstance.NewComputeTargetInstance(scope Construct, id *string, config ComputeTargetInstanceConfig) ComputeTargetInstance
 ```
@@ -455,7 +455,7 @@ func ResetZone()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-google.computeTargetInstance.ComputeTargetInstance.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/computetargetinstance"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/computetargetinstance"
 
 computetargetinstance.ComputeTargetInstance_IsConstruct(x interface{}) *bool
 ```
@@ -487,7 +487,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-google.computeTargetInstance.ComputeTargetInstance.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/computetargetinstance"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/computetargetinstance"
 
 computetargetinstance.ComputeTargetInstance_IsTerraformElement(x interface{}) *bool
 ```
@@ -501,7 +501,7 @@ computetargetinstance.ComputeTargetInstance_IsTerraformElement(x interface{}) *b
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-google.computeTargetInstance.ComputeTargetInstance.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/computetargetinstance"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/computetargetinstance"
 
 computetargetinstance.ComputeTargetInstance_IsTerraformResource(x interface{}) *bool
 ```
@@ -515,7 +515,7 @@ computetargetinstance.ComputeTargetInstance_IsTerraformResource(x interface{}) *
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-google.computeTargetInstance.ComputeTargetInstance.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/computetargetinstance"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/computetargetinstance"
 
 computetargetinstance.ComputeTargetInstance_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -942,7 +942,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.computeTargetInstance.ComputeTargetInstanceConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/computetargetinstance"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/computetargetinstance"
 
 &computetargetinstance.ComputeTargetInstanceConfig {
 	Connection: interface{},
@@ -958,7 +958,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/computetargetins
 	Id: *string,
 	NatPolicy: *string,
 	Project: *string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-google-go/google/v17.computeTargetInstance.ComputeTargetInstanceTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-google-go/google/v18.computeTargetInstance.ComputeTargetInstanceTimeouts,
 	Zone: *string,
 }
 ```
@@ -1187,7 +1187,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.computeTargetInstance.ComputeTargetInstanceTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/computetargetinstance"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/computetargetinstance"
 
 &computetargetinstance.ComputeTargetInstanceTimeouts {
 	Create: *string,
@@ -1235,7 +1235,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.computeTargetInstance.ComputeTargetInstanceTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/computetargetinstance"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/computetargetinstance"
 
 computetargetinstance.NewComputeTargetInstanceTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ComputeTargetInstanceTimeoutsOutputReference
 ```

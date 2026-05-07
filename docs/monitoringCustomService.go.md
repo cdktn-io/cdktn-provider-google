@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.5
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.monitoringCustomService.MonitoringCustomService.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/monitoringcustomservice"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/monitoringcustomservice"
 
 monitoringcustomservice.NewMonitoringCustomService(scope Construct, id *string, config MonitoringCustomServiceConfig) MonitoringCustomService
 ```
@@ -475,7 +475,7 @@ func ResetUserLabels()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-google.monitoringCustomService.MonitoringCustomService.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/monitoringcustomservice"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/monitoringcustomservice"
 
 monitoringcustomservice.MonitoringCustomService_IsConstruct(x interface{}) *bool
 ```
@@ -507,7 +507,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-google.monitoringCustomService.MonitoringCustomService.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/monitoringcustomservice"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/monitoringcustomservice"
 
 monitoringcustomservice.MonitoringCustomService_IsTerraformElement(x interface{}) *bool
 ```
@@ -521,7 +521,7 @@ monitoringcustomservice.MonitoringCustomService_IsTerraformElement(x interface{}
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-google.monitoringCustomService.MonitoringCustomService.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/monitoringcustomservice"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/monitoringcustomservice"
 
 monitoringcustomservice.MonitoringCustomService_IsTerraformResource(x interface{}) *bool
 ```
@@ -535,7 +535,7 @@ monitoringcustomservice.MonitoringCustomService_IsTerraformResource(x interface{
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-google.monitoringCustomService.MonitoringCustomService.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/monitoringcustomservice"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/monitoringcustomservice"
 
 monitoringcustomservice.MonitoringCustomService_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -929,7 +929,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.monitoringCustomService.MonitoringCustomServiceConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/monitoringcustomservice"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/monitoringcustomservice"
 
 &monitoringcustomservice.MonitoringCustomServiceConfig {
 	Connection: interface{},
@@ -943,8 +943,8 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/monitoringcustom
 	Id: *string,
 	Project: *string,
 	ServiceId: *string,
-	Telemetry: github.com/cdktn-io/cdktn-provider-google-go/google/v17.monitoringCustomService.MonitoringCustomServiceTelemetry,
-	Timeouts: github.com/cdktn-io/cdktn-provider-google-go/google/v17.monitoringCustomService.MonitoringCustomServiceTimeouts,
+	Telemetry: github.com/cdktn-io/cdktn-provider-google-go/google/v18.monitoringCustomService.MonitoringCustomServiceTelemetry,
+	Timeouts: github.com/cdktn-io/cdktn-provider-google-go/google/v18.monitoringCustomService.MonitoringCustomServiceTimeouts,
 	UserLabels: *map[string]*string,
 }
 ```
@@ -1149,7 +1149,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.monitoringCustomService.MonitoringCustomServiceTelemetry.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/monitoringcustomservice"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/monitoringcustomservice"
 
 &monitoringcustomservice.MonitoringCustomServiceTelemetry {
 	ResourceName: *string,
@@ -1183,7 +1183,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.monitoringCustomService.MonitoringCustomServiceTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/monitoringcustomservice"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/monitoringcustomservice"
 
 &monitoringcustomservice.MonitoringCustomServiceTimeouts {
 	Create: *string,
@@ -1245,7 +1245,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.monitoringCustomService.MonitoringCustomServiceTelemetryOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/monitoringcustomservice"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/monitoringcustomservice"
 
 monitoringcustomservice.NewMonitoringCustomServiceTelemetryOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) MonitoringCustomServiceTelemetryOutputReference
 ```
@@ -1523,7 +1523,7 @@ func InternalValue() MonitoringCustomServiceTelemetry
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.monitoringCustomService.MonitoringCustomServiceTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/monitoringcustomservice"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/monitoringcustomservice"
 
 monitoringcustomservice.NewMonitoringCustomServiceTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) MonitoringCustomServiceTimeoutsOutputReference
 ```

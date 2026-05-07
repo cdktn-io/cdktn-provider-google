@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.5
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.computeTargetTcpProxy.ComputeTargetTcpProxy.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/computetargettcpproxy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/computetargettcpproxy"
 
 computetargettcpproxy.NewComputeTargetTcpProxy(scope Construct, id *string, config ComputeTargetTcpProxyConfig) ComputeTargetTcpProxy
 ```
@@ -455,7 +455,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-google.computeTargetTcpProxy.ComputeTargetTcpProxy.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/computetargettcpproxy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/computetargettcpproxy"
 
 computetargettcpproxy.ComputeTargetTcpProxy_IsConstruct(x interface{}) *bool
 ```
@@ -487,7 +487,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-google.computeTargetTcpProxy.ComputeTargetTcpProxy.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/computetargettcpproxy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/computetargettcpproxy"
 
 computetargettcpproxy.ComputeTargetTcpProxy_IsTerraformElement(x interface{}) *bool
 ```
@@ -501,7 +501,7 @@ computetargettcpproxy.ComputeTargetTcpProxy_IsTerraformElement(x interface{}) *b
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-google.computeTargetTcpProxy.ComputeTargetTcpProxy.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/computetargettcpproxy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/computetargettcpproxy"
 
 computetargettcpproxy.ComputeTargetTcpProxy_IsTerraformResource(x interface{}) *bool
 ```
@@ -515,7 +515,7 @@ computetargettcpproxy.ComputeTargetTcpProxy_IsTerraformResource(x interface{}) *
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-google.computeTargetTcpProxy.ComputeTargetTcpProxy.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/computetargettcpproxy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/computetargettcpproxy"
 
 computetargettcpproxy.ComputeTargetTcpProxy_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -953,7 +953,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.computeTargetTcpProxy.ComputeTargetTcpProxyConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/computetargettcpproxy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/computetargettcpproxy"
 
 &computetargettcpproxy.ComputeTargetTcpProxyConfig {
 	Connection: interface{},
@@ -970,7 +970,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/computetargettcp
 	Project: *string,
 	ProxyBind: interface{},
 	ProxyHeader: *string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-google-go/google/v17.computeTargetTcpProxy.ComputeTargetTcpProxyTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-google-go/google/v18.computeTargetTcpProxy.ComputeTargetTcpProxyTimeouts,
 }
 ```
 
@@ -1192,7 +1192,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.computeTargetTcpProxy.ComputeTargetTcpProxyTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/computetargettcpproxy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/computetargettcpproxy"
 
 &computetargettcpproxy.ComputeTargetTcpProxyTimeouts {
 	Create: *string,
@@ -1254,7 +1254,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.computeTargetTcpProxy.ComputeTargetTcpProxyTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/computetargettcpproxy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/computetargettcpproxy"
 
 computetargettcpproxy.NewComputeTargetTcpProxyTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ComputeTargetTcpProxyTimeoutsOutputReference
 ```

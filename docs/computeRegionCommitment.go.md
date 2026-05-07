@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.5
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.computeRegionCommitment.ComputeRegionCommitment.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/computeregioncommitment"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/computeregioncommitment"
 
 computeregioncommitment.NewComputeRegionCommitment(scope Construct, id *string, config ComputeRegionCommitmentConfig) ComputeRegionCommitment
 ```
@@ -516,7 +516,7 @@ func ResetType()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-google.computeRegionCommitment.ComputeRegionCommitment.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/computeregioncommitment"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/computeregioncommitment"
 
 computeregioncommitment.ComputeRegionCommitment_IsConstruct(x interface{}) *bool
 ```
@@ -548,7 +548,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-google.computeRegionCommitment.ComputeRegionCommitment.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/computeregioncommitment"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/computeregioncommitment"
 
 computeregioncommitment.ComputeRegionCommitment_IsTerraformElement(x interface{}) *bool
 ```
@@ -562,7 +562,7 @@ computeregioncommitment.ComputeRegionCommitment_IsTerraformElement(x interface{}
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-google.computeRegionCommitment.ComputeRegionCommitment.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/computeregioncommitment"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/computeregioncommitment"
 
 computeregioncommitment.ComputeRegionCommitment_IsTerraformResource(x interface{}) *bool
 ```
@@ -576,7 +576,7 @@ computeregioncommitment.ComputeRegionCommitment_IsTerraformResource(x interface{
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-google.computeRegionCommitment.ComputeRegionCommitment.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/computeregioncommitment"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/computeregioncommitment"
 
 computeregioncommitment.ComputeRegionCommitment_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -1168,7 +1168,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.computeRegionCommitment.ComputeRegionCommitmentConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/computeregioncommitment"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/computeregioncommitment"
 
 &computeregioncommitment.ComputeRegionCommitmentConfig {
 	Connection: interface{},
@@ -1185,11 +1185,11 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/computeregioncom
 	Description: *string,
 	ExistingReservations: *string,
 	Id: *string,
-	LicenseResource: github.com/cdktn-io/cdktn-provider-google-go/google/v17.computeRegionCommitment.ComputeRegionCommitmentLicenseResource,
+	LicenseResource: github.com/cdktn-io/cdktn-provider-google-go/google/v18.computeRegionCommitment.ComputeRegionCommitmentLicenseResource,
 	Project: *string,
 	Region: *string,
 	Resources: interface{},
-	Timeouts: github.com/cdktn-io/cdktn-provider-google-go/google/v17.computeRegionCommitment.ComputeRegionCommitmentTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-google-go/google/v18.computeRegionCommitment.ComputeRegionCommitmentTimeouts,
 	Type: *string,
 }
 ```
@@ -1499,7 +1499,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.computeRegionCommitment.ComputeRegionCommitmentLicenseResource.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/computeregioncommitment"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/computeregioncommitment"
 
 &computeregioncommitment.ComputeRegionCommitmentLicenseResource {
 	License: *string,
@@ -1565,7 +1565,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.computeRegionCommitment.ComputeRegionCommitmentResources.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/computeregioncommitment"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/computeregioncommitment"
 
 &computeregioncommitment.ComputeRegionCommitmentResources {
 	AcceleratorType: *string,
@@ -1635,7 +1635,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.computeRegionCommitment.ComputeRegionCommitmentTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/computeregioncommitment"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/computeregioncommitment"
 
 &computeregioncommitment.ComputeRegionCommitmentTimeouts {
 	Create: *string,
@@ -1683,7 +1683,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.computeRegionCommitment.ComputeRegionCommitmentLicenseResourceOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/computeregioncommitment"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/computeregioncommitment"
 
 computeregioncommitment.NewComputeRegionCommitmentLicenseResourceOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ComputeRegionCommitmentLicenseResourceOutputReference
 ```
@@ -2012,7 +2012,7 @@ func InternalValue() ComputeRegionCommitmentLicenseResource
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.computeRegionCommitment.ComputeRegionCommitmentResourcesList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/computeregioncommitment"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/computeregioncommitment"
 
 computeregioncommitment.NewComputeRegionCommitmentResourcesList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ComputeRegionCommitmentResourcesList
 ```
@@ -2172,7 +2172,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.computeRegionCommitment.ComputeRegionCommitmentResourcesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/computeregioncommitment"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/computeregioncommitment"
 
 computeregioncommitment.NewComputeRegionCommitmentResourcesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ComputeRegionCommitmentResourcesOutputReference
 ```
@@ -2526,7 +2526,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.computeRegionCommitment.ComputeRegionCommitmentTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/computeregioncommitment"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/computeregioncommitment"
 
 computeregioncommitment.NewComputeRegionCommitmentTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ComputeRegionCommitmentTimeoutsOutputReference
 ```

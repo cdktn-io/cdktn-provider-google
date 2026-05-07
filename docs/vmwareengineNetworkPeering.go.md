@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.5
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.vmwareengineNetworkPeering.VmwareengineNetworkPeering.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/vmwareenginenetworkpeering"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/vmwareenginenetworkpeering"
 
 vmwareenginenetworkpeering.NewVmwareengineNetworkPeering(scope Construct, id *string, config VmwareengineNetworkPeeringConfig) VmwareengineNetworkPeering
 ```
@@ -469,7 +469,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-google.vmwareengineNetworkPeering.VmwareengineNetworkPeering.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/vmwareenginenetworkpeering"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/vmwareenginenetworkpeering"
 
 vmwareenginenetworkpeering.VmwareengineNetworkPeering_IsConstruct(x interface{}) *bool
 ```
@@ -501,7 +501,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-google.vmwareengineNetworkPeering.VmwareengineNetworkPeering.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/vmwareenginenetworkpeering"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/vmwareenginenetworkpeering"
 
 vmwareenginenetworkpeering.VmwareengineNetworkPeering_IsTerraformElement(x interface{}) *bool
 ```
@@ -515,7 +515,7 @@ vmwareenginenetworkpeering.VmwareengineNetworkPeering_IsTerraformElement(x inter
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-google.vmwareengineNetworkPeering.VmwareengineNetworkPeering.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/vmwareenginenetworkpeering"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/vmwareenginenetworkpeering"
 
 vmwareenginenetworkpeering.VmwareengineNetworkPeering_IsTerraformResource(x interface{}) *bool
 ```
@@ -529,7 +529,7 @@ vmwareenginenetworkpeering.VmwareengineNetworkPeering_IsTerraformResource(x inte
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-google.vmwareengineNetworkPeering.VmwareengineNetworkPeering.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/vmwareenginenetworkpeering"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/vmwareenginenetworkpeering"
 
 vmwareenginenetworkpeering.VmwareengineNetworkPeering_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -1088,7 +1088,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.vmwareengineNetworkPeering.VmwareengineNetworkPeeringConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/vmwareenginenetworkpeering"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/vmwareenginenetworkpeering"
 
 &vmwareenginenetworkpeering.VmwareengineNetworkPeeringConfig {
 	Connection: interface{},
@@ -1109,7 +1109,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/vmwareenginenetw
 	ImportCustomRoutes: interface{},
 	ImportCustomRoutesWithPublicIp: interface{},
 	Project: *string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-google-go/google/v17.vmwareengineNetworkPeering.VmwareengineNetworkPeeringTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-google-go/google/v18.vmwareengineNetworkPeering.VmwareengineNetworkPeeringTimeouts,
 }
 ```
 
@@ -1389,7 +1389,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.vmwareengineNetworkPeering.VmwareengineNetworkPeeringTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/vmwareenginenetworkpeering"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/vmwareenginenetworkpeering"
 
 &vmwareenginenetworkpeering.VmwareengineNetworkPeeringTimeouts {
 	Create: *string,
@@ -1451,7 +1451,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.vmwareengineNetworkPeering.VmwareengineNetworkPeeringTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/vmwareenginenetworkpeering"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/vmwareenginenetworkpeering"
 
 vmwareenginenetworkpeering.NewVmwareengineNetworkPeeringTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) VmwareengineNetworkPeeringTimeoutsOutputReference
 ```

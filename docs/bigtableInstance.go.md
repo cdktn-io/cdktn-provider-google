@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.5
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.bigtableInstance.BigtableInstance.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/bigtableinstance"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/bigtableinstance"
 
 bigtableinstance.NewBigtableInstance(scope Construct, id *string, config BigtableInstanceConfig) BigtableInstance
 ```
@@ -489,7 +489,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-google.bigtableInstance.BigtableInstance.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/bigtableinstance"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/bigtableinstance"
 
 bigtableinstance.BigtableInstance_IsConstruct(x interface{}) *bool
 ```
@@ -521,7 +521,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-google.bigtableInstance.BigtableInstance.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/bigtableinstance"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/bigtableinstance"
 
 bigtableinstance.BigtableInstance_IsTerraformElement(x interface{}) *bool
 ```
@@ -535,7 +535,7 @@ bigtableinstance.BigtableInstance_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-google.bigtableInstance.BigtableInstance.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/bigtableinstance"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/bigtableinstance"
 
 bigtableinstance.BigtableInstance_IsTerraformResource(x interface{}) *bool
 ```
@@ -549,7 +549,7 @@ bigtableinstance.BigtableInstance_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-google.bigtableInstance.BigtableInstance.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/bigtableinstance"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/bigtableinstance"
 
 bigtableinstance.BigtableInstance_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -1020,11 +1020,11 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.bigtableInstance.BigtableInstanceCluster.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/bigtableinstance"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/bigtableinstance"
 
 &bigtableinstance.BigtableInstanceCluster {
 	ClusterId: *string,
-	AutoscalingConfig: github.com/cdktn-io/cdktn-provider-google-go/google/v17.bigtableInstance.BigtableInstanceClusterAutoscalingConfig,
+	AutoscalingConfig: github.com/cdktn-io/cdktn-provider-google-go/google/v18.bigtableInstance.BigtableInstanceClusterAutoscalingConfig,
 	KmsKeyName: *string,
 	NodeScalingFactor: *string,
 	NumNodes: *f64,
@@ -1158,7 +1158,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.bigtableInstance.BigtableInstanceClusterAutoscalingConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/bigtableinstance"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/bigtableinstance"
 
 &bigtableinstance.BigtableInstanceClusterAutoscalingConfig {
 	CpuTarget: *f64,
@@ -1242,7 +1242,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.bigtableInstance.BigtableInstanceConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/bigtableinstance"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/bigtableinstance"
 
 &bigtableinstance.BigtableInstanceConfig {
 	Connection: interface{},
@@ -1261,7 +1261,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/bigtableinstance
 	InstanceType: *string,
 	Labels: *map[string]*string,
 	Project: *string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-google-go/google/v17.bigtableInstance.BigtableInstanceTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-google-go/google/v18.bigtableInstance.BigtableInstanceTimeouts,
 }
 ```
 
@@ -1514,7 +1514,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.bigtableInstance.BigtableInstanceTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/bigtableinstance"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/bigtableinstance"
 
 &bigtableinstance.BigtableInstanceTimeouts {
 	Create: *string,
@@ -1576,7 +1576,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.bigtableInstance.BigtableInstanceClusterAutoscalingConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/bigtableinstance"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/bigtableinstance"
 
 bigtableinstance.NewBigtableInstanceClusterAutoscalingConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) BigtableInstanceClusterAutoscalingConfigOutputReference
 ```
@@ -1920,7 +1920,7 @@ func InternalValue() BigtableInstanceClusterAutoscalingConfig
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.bigtableInstance.BigtableInstanceClusterList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/bigtableinstance"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/bigtableinstance"
 
 bigtableinstance.NewBigtableInstanceClusterList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) BigtableInstanceClusterList
 ```
@@ -2080,7 +2080,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.bigtableInstance.BigtableInstanceClusterOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/bigtableinstance"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/bigtableinstance"
 
 bigtableinstance.NewBigtableInstanceClusterOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) BigtableInstanceClusterOutputReference
 ```
@@ -2567,7 +2567,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.bigtableInstance.BigtableInstanceTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/bigtableinstance"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/bigtableinstance"
 
 bigtableinstance.NewBigtableInstanceTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) BigtableInstanceTimeoutsOutputReference
 ```

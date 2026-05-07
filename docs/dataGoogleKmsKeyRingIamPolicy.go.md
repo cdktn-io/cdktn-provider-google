@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.5
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataGoogleKmsKeyRingIamPolicy.DataGoogleKmsKeyRingIamPolicy.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/datagooglekmskeyringiampolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/datagooglekmskeyringiampolicy"
 
 datagooglekmskeyringiampolicy.NewDataGoogleKmsKeyRingIamPolicy(scope Construct, id *string, config DataGoogleKmsKeyRingIamPolicyConfig) DataGoogleKmsKeyRingIamPolicy
 ```
@@ -305,7 +305,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-google.dataGoogleKmsKeyRingIamPolicy.DataGoogleKmsKeyRingIamPolicy.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/datagooglekmskeyringiampolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/datagooglekmskeyringiampolicy"
 
 datagooglekmskeyringiampolicy.DataGoogleKmsKeyRingIamPolicy_IsConstruct(x interface{}) *bool
 ```
@@ -337,7 +337,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-google.dataGoogleKmsKeyRingIamPolicy.DataGoogleKmsKeyRingIamPolicy.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/datagooglekmskeyringiampolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/datagooglekmskeyringiampolicy"
 
 datagooglekmskeyringiampolicy.DataGoogleKmsKeyRingIamPolicy_IsTerraformElement(x interface{}) *bool
 ```
@@ -351,7 +351,7 @@ datagooglekmskeyringiampolicy.DataGoogleKmsKeyRingIamPolicy_IsTerraformElement(x
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktn/provider-google.dataGoogleKmsKeyRingIamPolicy.DataGoogleKmsKeyRingIamPolicy.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/datagooglekmskeyringiampolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/datagooglekmskeyringiampolicy"
 
 datagooglekmskeyringiampolicy.DataGoogleKmsKeyRingIamPolicy_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -365,7 +365,7 @@ datagooglekmskeyringiampolicy.DataGoogleKmsKeyRingIamPolicy_IsTerraformDataSourc
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-google.dataGoogleKmsKeyRingIamPolicy.DataGoogleKmsKeyRingIamPolicy.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/datagooglekmskeyringiampolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/datagooglekmskeyringiampolicy"
 
 datagooglekmskeyringiampolicy.DataGoogleKmsKeyRingIamPolicy_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -638,7 +638,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.dataGoogleKmsKeyRingIamPolicy.DataGoogleKmsKeyRingIamPolicyConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/datagooglekmskeyringiampolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/datagooglekmskeyringiampolicy"
 
 &datagooglekmskeyringiampolicy.DataGoogleKmsKeyRingIamPolicyConfig {
 	Connection: interface{},

@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.5
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.edgenetworkInterconnectAttachment.EdgenetworkInterconnectAttachment.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/edgenetworkinterconnectattachment"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/edgenetworkinterconnectattachment"
 
 edgenetworkinterconnectattachment.NewEdgenetworkInterconnectAttachment(scope Construct, id *string, config EdgenetworkInterconnectAttachmentConfig) EdgenetworkInterconnectAttachment
 ```
@@ -455,7 +455,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-google.edgenetworkInterconnectAttachment.EdgenetworkInterconnectAttachment.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/edgenetworkinterconnectattachment"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/edgenetworkinterconnectattachment"
 
 edgenetworkinterconnectattachment.EdgenetworkInterconnectAttachment_IsConstruct(x interface{}) *bool
 ```
@@ -487,7 +487,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-google.edgenetworkInterconnectAttachment.EdgenetworkInterconnectAttachment.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/edgenetworkinterconnectattachment"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/edgenetworkinterconnectattachment"
 
 edgenetworkinterconnectattachment.EdgenetworkInterconnectAttachment_IsTerraformElement(x interface{}) *bool
 ```
@@ -501,7 +501,7 @@ edgenetworkinterconnectattachment.EdgenetworkInterconnectAttachment_IsTerraformE
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-google.edgenetworkInterconnectAttachment.EdgenetworkInterconnectAttachment.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/edgenetworkinterconnectattachment"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/edgenetworkinterconnectattachment"
 
 edgenetworkinterconnectattachment.EdgenetworkInterconnectAttachment_IsTerraformResource(x interface{}) *bool
 ```
@@ -515,7 +515,7 @@ edgenetworkinterconnectattachment.EdgenetworkInterconnectAttachment_IsTerraformR
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-google.edgenetworkInterconnectAttachment.EdgenetworkInterconnectAttachment.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/edgenetworkinterconnectattachment"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/edgenetworkinterconnectattachment"
 
 edgenetworkinterconnectattachment.EdgenetworkInterconnectAttachment_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -1063,7 +1063,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.edgenetworkInterconnectAttachment.EdgenetworkInterconnectAttachmentConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/edgenetworkinterconnectattachment"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/edgenetworkinterconnectattachment"
 
 &edgenetworkinterconnectattachment.EdgenetworkInterconnectAttachmentConfig {
 	Connection: interface{},
@@ -1084,7 +1084,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/edgenetworkinter
 	Labels: *map[string]*string,
 	Mtu: *f64,
 	Project: *string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-google-go/google/v17.edgenetworkInterconnectAttachment.EdgenetworkInterconnectAttachmentTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-google-go/google/v18.edgenetworkInterconnectAttachment.EdgenetworkInterconnectAttachmentTimeouts,
 }
 ```
 
@@ -1359,7 +1359,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.edgenetworkInterconnectAttachment.EdgenetworkInterconnectAttachmentTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/edgenetworkinterconnectattachment"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/edgenetworkinterconnectattachment"
 
 &edgenetworkinterconnectattachment.EdgenetworkInterconnectAttachmentTimeouts {
 	Create: *string,
@@ -1421,7 +1421,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.edgenetworkInterconnectAttachment.EdgenetworkInterconnectAttachmentTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/edgenetworkinterconnectattachment"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/edgenetworkinterconnectattachment"
 
 edgenetworkinterconnectattachment.NewEdgenetworkInterconnectAttachmentTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) EdgenetworkInterconnectAttachmentTimeoutsOutputReference
 ```

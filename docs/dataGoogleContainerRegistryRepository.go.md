@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.5
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataGoogleContainerRegistryRepository.DataGoogleContainerRegistryRepository.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/datagooglecontainerregistryrepository"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/datagooglecontainerregistryrepository"
 
 datagooglecontainerregistryrepository.NewDataGoogleContainerRegistryRepository(scope Construct, id *string, config DataGoogleContainerRegistryRepositoryConfig) DataGoogleContainerRegistryRepository
 ```
@@ -319,7 +319,7 @@ func ResetRegion()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-google.dataGoogleContainerRegistryRepository.DataGoogleContainerRegistryRepository.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/datagooglecontainerregistryrepository"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/datagooglecontainerregistryrepository"
 
 datagooglecontainerregistryrepository.DataGoogleContainerRegistryRepository_IsConstruct(x interface{}) *bool
 ```
@@ -351,7 +351,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-google.dataGoogleContainerRegistryRepository.DataGoogleContainerRegistryRepository.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/datagooglecontainerregistryrepository"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/datagooglecontainerregistryrepository"
 
 datagooglecontainerregistryrepository.DataGoogleContainerRegistryRepository_IsTerraformElement(x interface{}) *bool
 ```
@@ -365,7 +365,7 @@ datagooglecontainerregistryrepository.DataGoogleContainerRegistryRepository_IsTe
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktn/provider-google.dataGoogleContainerRegistryRepository.DataGoogleContainerRegistryRepository.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/datagooglecontainerregistryrepository"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/datagooglecontainerregistryrepository"
 
 datagooglecontainerregistryrepository.DataGoogleContainerRegistryRepository_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -379,7 +379,7 @@ datagooglecontainerregistryrepository.DataGoogleContainerRegistryRepository_IsTe
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-google.dataGoogleContainerRegistryRepository.DataGoogleContainerRegistryRepository.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/datagooglecontainerregistryrepository"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/datagooglecontainerregistryrepository"
 
 datagooglecontainerregistryrepository.DataGoogleContainerRegistryRepository_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -663,7 +663,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.dataGoogleContainerRegistryRepository.DataGoogleContainerRegistryRepositoryConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/datagooglecontainerregistryrepository"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/datagooglecontainerregistryrepository"
 
 &datagooglecontainerregistryrepository.DataGoogleContainerRegistryRepositoryConfig {
 	Connection: interface{},

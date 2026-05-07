@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.5
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.apigeeInstanceAttachment.ApigeeInstanceAttachment.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/apigeeinstanceattachment"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/apigeeinstanceattachment"
 
 apigeeinstanceattachment.NewApigeeInstanceAttachment(scope Construct, id *string, config ApigeeInstanceAttachmentConfig) ApigeeInstanceAttachment
 ```
@@ -427,7 +427,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-google.apigeeInstanceAttachment.ApigeeInstanceAttachment.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/apigeeinstanceattachment"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/apigeeinstanceattachment"
 
 apigeeinstanceattachment.ApigeeInstanceAttachment_IsConstruct(x interface{}) *bool
 ```
@@ -459,7 +459,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-google.apigeeInstanceAttachment.ApigeeInstanceAttachment.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/apigeeinstanceattachment"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/apigeeinstanceattachment"
 
 apigeeinstanceattachment.ApigeeInstanceAttachment_IsTerraformElement(x interface{}) *bool
 ```
@@ -473,7 +473,7 @@ apigeeinstanceattachment.ApigeeInstanceAttachment_IsTerraformElement(x interface
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-google.apigeeInstanceAttachment.ApigeeInstanceAttachment.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/apigeeinstanceattachment"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/apigeeinstanceattachment"
 
 apigeeinstanceattachment.ApigeeInstanceAttachment_IsTerraformResource(x interface{}) *bool
 ```
@@ -487,7 +487,7 @@ apigeeinstanceattachment.ApigeeInstanceAttachment_IsTerraformResource(x interfac
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-google.apigeeInstanceAttachment.ApigeeInstanceAttachment.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/apigeeinstanceattachment"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/apigeeinstanceattachment"
 
 apigeeinstanceattachment.ApigeeInstanceAttachment_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -815,7 +815,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.apigeeInstanceAttachment.ApigeeInstanceAttachmentConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/apigeeinstanceattachment"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/apigeeinstanceattachment"
 
 &apigeeinstanceattachment.ApigeeInstanceAttachmentConfig {
 	Connection: interface{},
@@ -828,7 +828,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/apigeeinstanceat
 	Environment: *string,
 	InstanceId: *string,
 	Id: *string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-google-go/google/v17.apigeeInstanceAttachment.ApigeeInstanceAttachmentTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-google-go/google/v18.apigeeInstanceAttachment.ApigeeInstanceAttachmentTimeouts,
 }
 ```
 
@@ -982,7 +982,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.apigeeInstanceAttachment.ApigeeInstanceAttachmentTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/apigeeinstanceattachment"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/apigeeinstanceattachment"
 
 &apigeeinstanceattachment.ApigeeInstanceAttachmentTimeouts {
 	Create: *string,
@@ -1030,7 +1030,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.apigeeInstanceAttachment.ApigeeInstanceAttachmentTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/apigeeinstanceattachment"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/apigeeinstanceattachment"
 
 apigeeinstanceattachment.NewApigeeInstanceAttachmentTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ApigeeInstanceAttachmentTimeoutsOutputReference
 ```

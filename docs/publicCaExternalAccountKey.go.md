@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.5
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.publicCaExternalAccountKey.PublicCaExternalAccountKey.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/publiccaexternalaccountkey"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/publiccaexternalaccountkey"
 
 publiccaexternalaccountkey.NewPublicCaExternalAccountKey(scope Construct, id *string, config PublicCaExternalAccountKeyConfig) PublicCaExternalAccountKey
 ```
@@ -441,7 +441,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-google.publicCaExternalAccountKey.PublicCaExternalAccountKey.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/publiccaexternalaccountkey"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/publiccaexternalaccountkey"
 
 publiccaexternalaccountkey.PublicCaExternalAccountKey_IsConstruct(x interface{}) *bool
 ```
@@ -473,7 +473,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-google.publicCaExternalAccountKey.PublicCaExternalAccountKey.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/publiccaexternalaccountkey"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/publiccaexternalaccountkey"
 
 publiccaexternalaccountkey.PublicCaExternalAccountKey_IsTerraformElement(x interface{}) *bool
 ```
@@ -487,7 +487,7 @@ publiccaexternalaccountkey.PublicCaExternalAccountKey_IsTerraformElement(x inter
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-google.publicCaExternalAccountKey.PublicCaExternalAccountKey.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/publiccaexternalaccountkey"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/publiccaexternalaccountkey"
 
 publiccaexternalaccountkey.PublicCaExternalAccountKey_IsTerraformResource(x interface{}) *bool
 ```
@@ -501,7 +501,7 @@ publiccaexternalaccountkey.PublicCaExternalAccountKey_IsTerraformResource(x inte
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-google.publicCaExternalAccountKey.PublicCaExternalAccountKey.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/publiccaexternalaccountkey"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/publiccaexternalaccountkey"
 
 publiccaexternalaccountkey.PublicCaExternalAccountKey_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -862,7 +862,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.publicCaExternalAccountKey.PublicCaExternalAccountKeyConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/publiccaexternalaccountkey"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/publiccaexternalaccountkey"
 
 &publiccaexternalaccountkey.PublicCaExternalAccountKeyConfig {
 	Connection: interface{},
@@ -875,7 +875,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/publiccaexternal
 	Id: *string,
 	Location: *string,
 	Project: *string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-google-go/google/v17.publicCaExternalAccountKey.PublicCaExternalAccountKeyTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-google-go/google/v18.publicCaExternalAccountKey.PublicCaExternalAccountKeyTimeouts,
 }
 ```
 
@@ -1027,7 +1027,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.publicCaExternalAccountKey.PublicCaExternalAccountKeyTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/publiccaexternalaccountkey"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/publiccaexternalaccountkey"
 
 &publiccaexternalaccountkey.PublicCaExternalAccountKeyTimeouts {
 	Create: *string,
@@ -1075,7 +1075,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.publicCaExternalAccountKey.PublicCaExternalAccountKeyTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/publiccaexternalaccountkey"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/publiccaexternalaccountkey"
 
 publiccaexternalaccountkey.NewPublicCaExternalAccountKeyTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) PublicCaExternalAccountKeyTimeoutsOutputReference
 ```

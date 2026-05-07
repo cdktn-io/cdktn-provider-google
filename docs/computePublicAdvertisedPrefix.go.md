@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.5
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.computePublicAdvertisedPrefix.ComputePublicAdvertisedPrefix.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/computepublicadvertisedprefix"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/computepublicadvertisedprefix"
 
 computepublicadvertisedprefix.NewComputePublicAdvertisedPrefix(scope Construct, id *string, config ComputePublicAdvertisedPrefixConfig) ComputePublicAdvertisedPrefix
 ```
@@ -448,7 +448,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-google.computePublicAdvertisedPrefix.ComputePublicAdvertisedPrefix.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/computepublicadvertisedprefix"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/computepublicadvertisedprefix"
 
 computepublicadvertisedprefix.ComputePublicAdvertisedPrefix_IsConstruct(x interface{}) *bool
 ```
@@ -480,7 +480,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-google.computePublicAdvertisedPrefix.ComputePublicAdvertisedPrefix.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/computepublicadvertisedprefix"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/computepublicadvertisedprefix"
 
 computepublicadvertisedprefix.ComputePublicAdvertisedPrefix_IsTerraformElement(x interface{}) *bool
 ```
@@ -494,7 +494,7 @@ computepublicadvertisedprefix.ComputePublicAdvertisedPrefix_IsTerraformElement(x
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-google.computePublicAdvertisedPrefix.ComputePublicAdvertisedPrefix.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/computepublicadvertisedprefix"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/computepublicadvertisedprefix"
 
 computepublicadvertisedprefix.ComputePublicAdvertisedPrefix_IsTerraformResource(x interface{}) *bool
 ```
@@ -508,7 +508,7 @@ computepublicadvertisedprefix.ComputePublicAdvertisedPrefix_IsTerraformResource(
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-google.computePublicAdvertisedPrefix.ComputePublicAdvertisedPrefix.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/computepublicadvertisedprefix"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/computepublicadvertisedprefix"
 
 computepublicadvertisedprefix.ComputePublicAdvertisedPrefix_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -935,7 +935,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.computePublicAdvertisedPrefix.ComputePublicAdvertisedPrefixConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/computepublicadvertisedprefix"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/computepublicadvertisedprefix"
 
 &computepublicadvertisedprefix.ComputePublicAdvertisedPrefixConfig {
 	Connection: interface{},
@@ -952,7 +952,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/computepublicadv
 	Id: *string,
 	PdpScope: *string,
 	Project: *string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-google-go/google/v17.computePublicAdvertisedPrefix.ComputePublicAdvertisedPrefixTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-google-go/google/v18.computePublicAdvertisedPrefix.ComputePublicAdvertisedPrefixTimeouts,
 }
 ```
 
@@ -1179,7 +1179,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.computePublicAdvertisedPrefix.ComputePublicAdvertisedPrefixTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/computepublicadvertisedprefix"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/computepublicadvertisedprefix"
 
 &computepublicadvertisedprefix.ComputePublicAdvertisedPrefixTimeouts {
 	Create: *string,
@@ -1227,7 +1227,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.computePublicAdvertisedPrefix.ComputePublicAdvertisedPrefixTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/computepublicadvertisedprefix"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/computepublicadvertisedprefix"
 
 computepublicadvertisedprefix.NewComputePublicAdvertisedPrefixTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ComputePublicAdvertisedPrefixTimeoutsOutputReference
 ```

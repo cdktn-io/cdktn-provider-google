@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.5
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataGoogleComposerUserWorkloadsSecret.DataGoogleComposerUserWorkloadsSecret.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/datagooglecomposeruserworkloadssecret"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/datagooglecomposeruserworkloadssecret"
 
 datagooglecomposeruserworkloadssecret.NewDataGoogleComposerUserWorkloadsSecret(scope Construct, id *string, config DataGoogleComposerUserWorkloadsSecretConfig) DataGoogleComposerUserWorkloadsSecret
 ```
@@ -319,7 +319,7 @@ func ResetRegion()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-google.dataGoogleComposerUserWorkloadsSecret.DataGoogleComposerUserWorkloadsSecret.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/datagooglecomposeruserworkloadssecret"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/datagooglecomposeruserworkloadssecret"
 
 datagooglecomposeruserworkloadssecret.DataGoogleComposerUserWorkloadsSecret_IsConstruct(x interface{}) *bool
 ```
@@ -351,7 +351,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-google.dataGoogleComposerUserWorkloadsSecret.DataGoogleComposerUserWorkloadsSecret.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/datagooglecomposeruserworkloadssecret"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/datagooglecomposeruserworkloadssecret"
 
 datagooglecomposeruserworkloadssecret.DataGoogleComposerUserWorkloadsSecret_IsTerraformElement(x interface{}) *bool
 ```
@@ -365,7 +365,7 @@ datagooglecomposeruserworkloadssecret.DataGoogleComposerUserWorkloadsSecret_IsTe
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktn/provider-google.dataGoogleComposerUserWorkloadsSecret.DataGoogleComposerUserWorkloadsSecret.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/datagooglecomposeruserworkloadssecret"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/datagooglecomposeruserworkloadssecret"
 
 datagooglecomposeruserworkloadssecret.DataGoogleComposerUserWorkloadsSecret_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -379,7 +379,7 @@ datagooglecomposeruserworkloadssecret.DataGoogleComposerUserWorkloadsSecret_IsTe
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-google.dataGoogleComposerUserWorkloadsSecret.DataGoogleComposerUserWorkloadsSecret.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/datagooglecomposeruserworkloadssecret"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/datagooglecomposeruserworkloadssecret"
 
 datagooglecomposeruserworkloadssecret.DataGoogleComposerUserWorkloadsSecret_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -707,7 +707,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.dataGoogleComposerUserWorkloadsSecret.DataGoogleComposerUserWorkloadsSecretConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/datagooglecomposeruserworkloadssecret"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/datagooglecomposeruserworkloadssecret"
 
 &datagooglecomposeruserworkloadssecret.DataGoogleComposerUserWorkloadsSecretConfig {
 	Connection: interface{},

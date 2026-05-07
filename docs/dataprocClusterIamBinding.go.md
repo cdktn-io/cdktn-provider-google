@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.5
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataprocClusterIamBinding.DataprocClusterIamBinding.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/dataprocclusteriambinding"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/dataprocclusteriambinding"
 
 dataprocclusteriambinding.NewDataprocClusterIamBinding(scope Construct, id *string, config DataprocClusterIamBindingConfig) DataprocClusterIamBinding
 ```
@@ -441,7 +441,7 @@ func ResetRegion()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-google.dataprocClusterIamBinding.DataprocClusterIamBinding.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/dataprocclusteriambinding"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/dataprocclusteriambinding"
 
 dataprocclusteriambinding.DataprocClusterIamBinding_IsConstruct(x interface{}) *bool
 ```
@@ -473,7 +473,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-google.dataprocClusterIamBinding.DataprocClusterIamBinding.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/dataprocclusteriambinding"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/dataprocclusteriambinding"
 
 dataprocclusteriambinding.DataprocClusterIamBinding_IsTerraformElement(x interface{}) *bool
 ```
@@ -487,7 +487,7 @@ dataprocclusteriambinding.DataprocClusterIamBinding_IsTerraformElement(x interfa
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-google.dataprocClusterIamBinding.DataprocClusterIamBinding.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/dataprocclusteriambinding"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/dataprocclusteriambinding"
 
 dataprocclusteriambinding.DataprocClusterIamBinding_IsTerraformResource(x interface{}) *bool
 ```
@@ -501,7 +501,7 @@ dataprocclusteriambinding.DataprocClusterIamBinding_IsTerraformResource(x interf
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-google.dataprocClusterIamBinding.DataprocClusterIamBinding.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/dataprocclusteriambinding"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/dataprocclusteriambinding"
 
 dataprocclusteriambinding.DataprocClusterIamBinding_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -895,7 +895,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.dataprocClusterIamBinding.DataprocClusterIamBindingCondition.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/dataprocclusteriambinding"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/dataprocclusteriambinding"
 
 &dataprocclusteriambinding.DataprocClusterIamBindingCondition {
 	Expression: *string,
@@ -955,7 +955,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.dataprocClusterIamBinding.DataprocClusterIamBindingConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/dataprocclusteriambinding"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/dataprocclusteriambinding"
 
 &dataprocclusteriambinding.DataprocClusterIamBindingConfig {
 	Connection: interface{},
@@ -968,7 +968,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/dataprocclusteri
 	Cluster: *string,
 	Members: *[]*string,
 	Role: *string,
-	Condition: github.com/cdktn-io/cdktn-provider-google-go/google/v17.dataprocClusterIamBinding.DataprocClusterIamBindingCondition,
+	Condition: github.com/cdktn-io/cdktn-provider-google-go/google/v18.dataprocClusterIamBinding.DataprocClusterIamBindingCondition,
 	Id: *string,
 	Project: *string,
 	Region: *string,
@@ -1162,7 +1162,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataprocClusterIamBinding.DataprocClusterIamBindingConditionOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/dataprocclusteriambinding"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/dataprocclusteriambinding"
 
 dataprocclusteriambinding.NewDataprocClusterIamBindingConditionOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataprocClusterIamBindingConditionOutputReference
 ```

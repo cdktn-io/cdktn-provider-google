@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.5
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.computeProjectMetadata.ComputeProjectMetadata.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/computeprojectmetadata"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/computeprojectmetadata"
 
 computeprojectmetadata.NewComputeProjectMetadata(scope Construct, id *string, config ComputeProjectMetadataConfig) ComputeProjectMetadata
 ```
@@ -434,7 +434,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-google.computeProjectMetadata.ComputeProjectMetadata.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/computeprojectmetadata"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/computeprojectmetadata"
 
 computeprojectmetadata.ComputeProjectMetadata_IsConstruct(x interface{}) *bool
 ```
@@ -466,7 +466,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-google.computeProjectMetadata.ComputeProjectMetadata.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/computeprojectmetadata"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/computeprojectmetadata"
 
 computeprojectmetadata.ComputeProjectMetadata_IsTerraformElement(x interface{}) *bool
 ```
@@ -480,7 +480,7 @@ computeprojectmetadata.ComputeProjectMetadata_IsTerraformElement(x interface{}) 
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-google.computeProjectMetadata.ComputeProjectMetadata.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/computeprojectmetadata"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/computeprojectmetadata"
 
 computeprojectmetadata.ComputeProjectMetadata_IsTerraformResource(x interface{}) *bool
 ```
@@ -494,7 +494,7 @@ computeprojectmetadata.ComputeProjectMetadata_IsTerraformResource(x interface{})
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-google.computeProjectMetadata.ComputeProjectMetadata.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/computeprojectmetadata"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/computeprojectmetadata"
 
 computeprojectmetadata.ComputeProjectMetadata_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -811,7 +811,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.computeProjectMetadata.ComputeProjectMetadataConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/computeprojectmetadata"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/computeprojectmetadata"
 
 &computeprojectmetadata.ComputeProjectMetadataConfig {
 	Connection: interface{},
@@ -824,7 +824,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/computeprojectme
 	Metadata: *map[string]*string,
 	Id: *string,
 	Project: *string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-google-go/google/v17.computeProjectMetadata.ComputeProjectMetadataTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-google-go/google/v18.computeProjectMetadata.ComputeProjectMetadataTimeouts,
 }
 ```
 
@@ -980,7 +980,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.computeProjectMetadata.ComputeProjectMetadataTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/computeprojectmetadata"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/computeprojectmetadata"
 
 &computeprojectmetadata.ComputeProjectMetadataTimeouts {
 	Create: *string,
@@ -1028,7 +1028,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.computeProjectMetadata.ComputeProjectMetadataTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/computeprojectmetadata"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/computeprojectmetadata"
 
 computeprojectmetadata.NewComputeProjectMetadataTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ComputeProjectMetadataTimeoutsOutputReference
 ```

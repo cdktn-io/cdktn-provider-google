@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.5
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.bigqueryAnalyticsHubListingIamBinding.BigqueryAnalyticsHubListingIamBinding.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/bigqueryanalyticshublistingiambinding"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/bigqueryanalyticshublistingiambinding"
 
 bigqueryanalyticshublistingiambinding.NewBigqueryAnalyticsHubListingIamBinding(scope Construct, id *string, config BigqueryAnalyticsHubListingIamBindingConfig) BigqueryAnalyticsHubListingIamBinding
 ```
@@ -441,7 +441,7 @@ func ResetProject()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-google.bigqueryAnalyticsHubListingIamBinding.BigqueryAnalyticsHubListingIamBinding.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/bigqueryanalyticshublistingiambinding"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/bigqueryanalyticshublistingiambinding"
 
 bigqueryanalyticshublistingiambinding.BigqueryAnalyticsHubListingIamBinding_IsConstruct(x interface{}) *bool
 ```
@@ -473,7 +473,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-google.bigqueryAnalyticsHubListingIamBinding.BigqueryAnalyticsHubListingIamBinding.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/bigqueryanalyticshublistingiambinding"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/bigqueryanalyticshublistingiambinding"
 
 bigqueryanalyticshublistingiambinding.BigqueryAnalyticsHubListingIamBinding_IsTerraformElement(x interface{}) *bool
 ```
@@ -487,7 +487,7 @@ bigqueryanalyticshublistingiambinding.BigqueryAnalyticsHubListingIamBinding_IsTe
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-google.bigqueryAnalyticsHubListingIamBinding.BigqueryAnalyticsHubListingIamBinding.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/bigqueryanalyticshublistingiambinding"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/bigqueryanalyticshublistingiambinding"
 
 bigqueryanalyticshublistingiambinding.BigqueryAnalyticsHubListingIamBinding_IsTerraformResource(x interface{}) *bool
 ```
@@ -501,7 +501,7 @@ bigqueryanalyticshublistingiambinding.BigqueryAnalyticsHubListingIamBinding_IsTe
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-google.bigqueryAnalyticsHubListingIamBinding.BigqueryAnalyticsHubListingIamBinding.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/bigqueryanalyticshublistingiambinding"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/bigqueryanalyticshublistingiambinding"
 
 bigqueryanalyticshublistingiambinding.BigqueryAnalyticsHubListingIamBinding_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -917,7 +917,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.bigqueryAnalyticsHubListingIamBinding.BigqueryAnalyticsHubListingIamBindingCondition.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/bigqueryanalyticshublistingiambinding"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/bigqueryanalyticshublistingiambinding"
 
 &bigqueryanalyticshublistingiambinding.BigqueryAnalyticsHubListingIamBindingCondition {
 	Expression: *string,
@@ -977,7 +977,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.bigqueryAnalyticsHubListingIamBinding.BigqueryAnalyticsHubListingIamBindingConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/bigqueryanalyticshublistingiambinding"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/bigqueryanalyticshublistingiambinding"
 
 &bigqueryanalyticshublistingiambinding.BigqueryAnalyticsHubListingIamBindingConfig {
 	Connection: interface{},
@@ -991,7 +991,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/bigqueryanalytic
 	ListingId: *string,
 	Members: *[]*string,
 	Role: *string,
-	Condition: github.com/cdktn-io/cdktn-provider-google-go/google/v17.bigqueryAnalyticsHubListingIamBinding.BigqueryAnalyticsHubListingIamBindingCondition,
+	Condition: github.com/cdktn-io/cdktn-provider-google-go/google/v18.bigqueryAnalyticsHubListingIamBinding.BigqueryAnalyticsHubListingIamBindingCondition,
 	Id: *string,
 	Location: *string,
 	Project: *string,
@@ -1198,7 +1198,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.bigqueryAnalyticsHubListingIamBinding.BigqueryAnalyticsHubListingIamBindingConditionOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/bigqueryanalyticshublistingiambinding"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/bigqueryanalyticshublistingiambinding"
 
 bigqueryanalyticshublistingiambinding.NewBigqueryAnalyticsHubListingIamBindingConditionOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) BigqueryAnalyticsHubListingIamBindingConditionOutputReference
 ```

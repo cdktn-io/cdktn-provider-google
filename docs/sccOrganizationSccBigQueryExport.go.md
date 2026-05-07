@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.5
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.sccOrganizationSccBigQueryExport.SccOrganizationSccBigQueryExport.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/sccorganizationsccbigqueryexport"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/sccorganizationsccbigqueryexport"
 
 sccorganizationsccbigqueryexport.NewSccOrganizationSccBigQueryExport(scope Construct, id *string, config SccOrganizationSccBigQueryExportConfig) SccOrganizationSccBigQueryExport
 ```
@@ -448,7 +448,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-google.sccOrganizationSccBigQueryExport.SccOrganizationSccBigQueryExport.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/sccorganizationsccbigqueryexport"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/sccorganizationsccbigqueryexport"
 
 sccorganizationsccbigqueryexport.SccOrganizationSccBigQueryExport_IsConstruct(x interface{}) *bool
 ```
@@ -480,7 +480,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-google.sccOrganizationSccBigQueryExport.SccOrganizationSccBigQueryExport.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/sccorganizationsccbigqueryexport"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/sccorganizationsccbigqueryexport"
 
 sccorganizationsccbigqueryexport.SccOrganizationSccBigQueryExport_IsTerraformElement(x interface{}) *bool
 ```
@@ -494,7 +494,7 @@ sccorganizationsccbigqueryexport.SccOrganizationSccBigQueryExport_IsTerraformEle
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-google.sccOrganizationSccBigQueryExport.SccOrganizationSccBigQueryExport.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/sccorganizationsccbigqueryexport"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/sccorganizationsccbigqueryexport"
 
 sccorganizationsccbigqueryexport.SccOrganizationSccBigQueryExport_IsTerraformResource(x interface{}) *bool
 ```
@@ -508,7 +508,7 @@ sccorganizationsccbigqueryexport.SccOrganizationSccBigQueryExport_IsTerraformRes
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-google.sccOrganizationSccBigQueryExport.SccOrganizationSccBigQueryExport.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/sccorganizationsccbigqueryexport"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/sccorganizationsccbigqueryexport"
 
 sccorganizationsccbigqueryexport.SccOrganizationSccBigQueryExport_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -946,7 +946,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.sccOrganizationSccBigQueryExport.SccOrganizationSccBigQueryExportConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/sccorganizationsccbigqueryexport"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/sccorganizationsccbigqueryexport"
 
 &sccorganizationsccbigqueryexport.SccOrganizationSccBigQueryExportConfig {
 	Connection: interface{},
@@ -962,7 +962,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/sccorganizations
 	Description: *string,
 	Filter: *string,
 	Id: *string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-google-go/google/v17.sccOrganizationSccBigQueryExport.SccOrganizationSccBigQueryExportTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-google-go/google/v18.sccOrganizationSccBigQueryExport.SccOrganizationSccBigQueryExportTimeouts,
 }
 ```
 
@@ -1189,7 +1189,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.sccOrganizationSccBigQueryExport.SccOrganizationSccBigQueryExportTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/sccorganizationsccbigqueryexport"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/sccorganizationsccbigqueryexport"
 
 &sccorganizationsccbigqueryexport.SccOrganizationSccBigQueryExportTimeouts {
 	Create: *string,
@@ -1251,7 +1251,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.sccOrganizationSccBigQueryExport.SccOrganizationSccBigQueryExportTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/sccorganizationsccbigqueryexport"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/sccorganizationsccbigqueryexport"
 
 sccorganizationsccbigqueryexport.NewSccOrganizationSccBigQueryExportTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) SccOrganizationSccBigQueryExportTimeoutsOutputReference
 ```

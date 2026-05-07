@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.5
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.beyondcorpSecurityGatewayIamMember.BeyondcorpSecurityGatewayIamMember.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/beyondcorpsecuritygatewayiammember"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/beyondcorpsecuritygatewayiammember"
 
 beyondcorpsecuritygatewayiammember.NewBeyondcorpSecurityGatewayIamMember(scope Construct, id *string, config BeyondcorpSecurityGatewayIamMemberConfig) BeyondcorpSecurityGatewayIamMember
 ```
@@ -441,7 +441,7 @@ func ResetProject()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-google.beyondcorpSecurityGatewayIamMember.BeyondcorpSecurityGatewayIamMember.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/beyondcorpsecuritygatewayiammember"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/beyondcorpsecuritygatewayiammember"
 
 beyondcorpsecuritygatewayiammember.BeyondcorpSecurityGatewayIamMember_IsConstruct(x interface{}) *bool
 ```
@@ -473,7 +473,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-google.beyondcorpSecurityGatewayIamMember.BeyondcorpSecurityGatewayIamMember.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/beyondcorpsecuritygatewayiammember"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/beyondcorpsecuritygatewayiammember"
 
 beyondcorpsecuritygatewayiammember.BeyondcorpSecurityGatewayIamMember_IsTerraformElement(x interface{}) *bool
 ```
@@ -487,7 +487,7 @@ beyondcorpsecuritygatewayiammember.BeyondcorpSecurityGatewayIamMember_IsTerrafor
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-google.beyondcorpSecurityGatewayIamMember.BeyondcorpSecurityGatewayIamMember.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/beyondcorpsecuritygatewayiammember"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/beyondcorpsecuritygatewayiammember"
 
 beyondcorpsecuritygatewayiammember.BeyondcorpSecurityGatewayIamMember_IsTerraformResource(x interface{}) *bool
 ```
@@ -501,7 +501,7 @@ beyondcorpsecuritygatewayiammember.BeyondcorpSecurityGatewayIamMember_IsTerrafor
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-google.beyondcorpSecurityGatewayIamMember.BeyondcorpSecurityGatewayIamMember.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/beyondcorpsecuritygatewayiammember"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/beyondcorpsecuritygatewayiammember"
 
 beyondcorpsecuritygatewayiammember.BeyondcorpSecurityGatewayIamMember_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -895,7 +895,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.beyondcorpSecurityGatewayIamMember.BeyondcorpSecurityGatewayIamMemberCondition.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/beyondcorpsecuritygatewayiammember"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/beyondcorpsecuritygatewayiammember"
 
 &beyondcorpsecuritygatewayiammember.BeyondcorpSecurityGatewayIamMemberCondition {
 	Expression: *string,
@@ -955,7 +955,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.beyondcorpSecurityGatewayIamMember.BeyondcorpSecurityGatewayIamMemberConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/beyondcorpsecuritygatewayiammember"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/beyondcorpsecuritygatewayiammember"
 
 &beyondcorpsecuritygatewayiammember.BeyondcorpSecurityGatewayIamMemberConfig {
 	Connection: interface{},
@@ -968,7 +968,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/beyondcorpsecuri
 	Member: *string,
 	Role: *string,
 	SecurityGatewayId: *string,
-	Condition: github.com/cdktn-io/cdktn-provider-google-go/google/v17.beyondcorpSecurityGatewayIamMember.BeyondcorpSecurityGatewayIamMemberCondition,
+	Condition: github.com/cdktn-io/cdktn-provider-google-go/google/v18.beyondcorpSecurityGatewayIamMember.BeyondcorpSecurityGatewayIamMemberCondition,
 	Id: *string,
 	Location: *string,
 	Project: *string,
@@ -1162,7 +1162,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.beyondcorpSecurityGatewayIamMember.BeyondcorpSecurityGatewayIamMemberConditionOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/beyondcorpsecuritygatewayiammember"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/beyondcorpsecuritygatewayiammember"
 
 beyondcorpsecuritygatewayiammember.NewBeyondcorpSecurityGatewayIamMemberConditionOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) BeyondcorpSecurityGatewayIamMemberConditionOutputReference
 ```

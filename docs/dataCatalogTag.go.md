@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.5
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataCatalogTag.DataCatalogTag.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/datacatalogtag"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/datacatalogtag"
 
 datacatalogtag.NewDataCatalogTag(scope Construct, id *string, config DataCatalogTagConfig) DataCatalogTag
 ```
@@ -454,7 +454,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-google.dataCatalogTag.DataCatalogTag.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/datacatalogtag"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/datacatalogtag"
 
 datacatalogtag.DataCatalogTag_IsConstruct(x interface{}) *bool
 ```
@@ -486,7 +486,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-google.dataCatalogTag.DataCatalogTag.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/datacatalogtag"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/datacatalogtag"
 
 datacatalogtag.DataCatalogTag_IsTerraformElement(x interface{}) *bool
 ```
@@ -500,7 +500,7 @@ datacatalogtag.DataCatalogTag_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-google.dataCatalogTag.DataCatalogTag.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/datacatalogtag"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/datacatalogtag"
 
 datacatalogtag.DataCatalogTag_IsTerraformResource(x interface{}) *bool
 ```
@@ -514,7 +514,7 @@ datacatalogtag.DataCatalogTag_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-google.dataCatalogTag.DataCatalogTag.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/datacatalogtag"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/datacatalogtag"
 
 datacatalogtag.DataCatalogTag_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -897,7 +897,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.dataCatalogTag.DataCatalogTagConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/datacatalogtag"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/datacatalogtag"
 
 &datacatalogtag.DataCatalogTagConfig {
 	Connection: interface{},
@@ -912,7 +912,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/datacatalogtag"
 	Column: *string,
 	Id: *string,
 	Parent: *string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-google-go/google/v17.dataCatalogTag.DataCatalogTagTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-google-go/google/v18.dataCatalogTag.DataCatalogTagTimeouts,
 }
 ```
 
@@ -1105,7 +1105,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.dataCatalogTag.DataCatalogTagFields.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/datacatalogtag"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/datacatalogtag"
 
 &datacatalogtag.DataCatalogTagFields {
 	FieldName: *string,
@@ -1217,7 +1217,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.dataCatalogTag.DataCatalogTagTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/datacatalogtag"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/datacatalogtag"
 
 &datacatalogtag.DataCatalogTagTimeouts {
 	Create: *string,
@@ -1279,7 +1279,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataCatalogTag.DataCatalogTagFieldsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/datacatalogtag"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/datacatalogtag"
 
 datacatalogtag.NewDataCatalogTagFieldsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataCatalogTagFieldsList
 ```
@@ -1439,7 +1439,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataCatalogTag.DataCatalogTagFieldsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/datacatalogtag"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/datacatalogtag"
 
 datacatalogtag.NewDataCatalogTagFieldsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataCatalogTagFieldsOutputReference
 ```
@@ -1895,7 +1895,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataCatalogTag.DataCatalogTagTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/datacatalogtag"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/datacatalogtag"
 
 datacatalogtag.NewDataCatalogTagTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataCatalogTagTimeoutsOutputReference
 ```

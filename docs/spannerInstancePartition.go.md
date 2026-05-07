@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.5
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.spannerInstancePartition.SpannerInstancePartition.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/spannerinstancepartition"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/spannerinstancepartition"
 
 spannerinstancepartition.NewSpannerInstancePartition(scope Construct, id *string, config SpannerInstancePartitionConfig) SpannerInstancePartition
 ```
@@ -448,7 +448,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-google.spannerInstancePartition.SpannerInstancePartition.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/spannerinstancepartition"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/spannerinstancepartition"
 
 spannerinstancepartition.SpannerInstancePartition_IsConstruct(x interface{}) *bool
 ```
@@ -480,7 +480,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-google.spannerInstancePartition.SpannerInstancePartition.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/spannerinstancepartition"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/spannerinstancepartition"
 
 spannerinstancepartition.SpannerInstancePartition_IsTerraformElement(x interface{}) *bool
 ```
@@ -494,7 +494,7 @@ spannerinstancepartition.SpannerInstancePartition_IsTerraformElement(x interface
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-google.spannerInstancePartition.SpannerInstancePartition.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/spannerinstancepartition"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/spannerinstancepartition"
 
 spannerinstancepartition.SpannerInstancePartition_IsTerraformResource(x interface{}) *bool
 ```
@@ -508,7 +508,7 @@ spannerinstancepartition.SpannerInstancePartition_IsTerraformResource(x interfac
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-google.spannerInstancePartition.SpannerInstancePartition.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/spannerinstancepartition"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/spannerinstancepartition"
 
 spannerinstancepartition.SpannerInstancePartition_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -946,7 +946,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.spannerInstancePartition.SpannerInstancePartitionConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/spannerinstancepartition"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/spannerinstancepartition"
 
 &spannerinstancepartition.SpannerInstancePartitionConfig {
 	Connection: interface{},
@@ -964,7 +964,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/spannerinstancep
 	NodeCount: *f64,
 	ProcessingUnits: *f64,
 	Project: *string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-google-go/google/v17.spannerInstancePartition.SpannerInstancePartitionTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-google-go/google/v18.spannerInstancePartition.SpannerInstancePartitionTimeouts,
 }
 ```
 
@@ -1200,7 +1200,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.spannerInstancePartition.SpannerInstancePartitionTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/spannerinstancepartition"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/spannerinstancepartition"
 
 &spannerinstancepartition.SpannerInstancePartitionTimeouts {
 	Create: *string,
@@ -1262,7 +1262,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.spannerInstancePartition.SpannerInstancePartitionTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/spannerinstancepartition"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/spannerinstancepartition"
 
 spannerinstancepartition.NewSpannerInstancePartitionTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) SpannerInstancePartitionTimeoutsOutputReference
 ```

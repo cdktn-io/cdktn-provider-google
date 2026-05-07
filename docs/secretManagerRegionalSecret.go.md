@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.5
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.secretManagerRegionalSecret.SecretManagerRegionalSecret.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/secretmanagerregionalsecret"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/secretmanagerregionalsecret"
 
 secretmanagerregionalsecret.NewSecretManagerRegionalSecret(scope Construct, id *string, config SecretManagerRegionalSecretConfig) SecretManagerRegionalSecret
 ```
@@ -550,7 +550,7 @@ func ResetVersionDestroyTtl()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-google.secretManagerRegionalSecret.SecretManagerRegionalSecret.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/secretmanagerregionalsecret"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/secretmanagerregionalsecret"
 
 secretmanagerregionalsecret.SecretManagerRegionalSecret_IsConstruct(x interface{}) *bool
 ```
@@ -582,7 +582,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-google.secretManagerRegionalSecret.SecretManagerRegionalSecret.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/secretmanagerregionalsecret"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/secretmanagerregionalsecret"
 
 secretmanagerregionalsecret.SecretManagerRegionalSecret_IsTerraformElement(x interface{}) *bool
 ```
@@ -596,7 +596,7 @@ secretmanagerregionalsecret.SecretManagerRegionalSecret_IsTerraformElement(x int
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-google.secretManagerRegionalSecret.SecretManagerRegionalSecret.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/secretmanagerregionalsecret"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/secretmanagerregionalsecret"
 
 secretmanagerregionalsecret.SecretManagerRegionalSecret_IsTerraformResource(x interface{}) *bool
 ```
@@ -610,7 +610,7 @@ secretmanagerregionalsecret.SecretManagerRegionalSecret_IsTerraformResource(x in
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-google.secretManagerRegionalSecret.SecretManagerRegionalSecret.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/secretmanagerregionalsecret"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/secretmanagerregionalsecret"
 
 secretmanagerregionalsecret.SecretManagerRegionalSecret_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -1246,7 +1246,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.secretManagerRegionalSecret.SecretManagerRegionalSecretConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/secretmanagerregionalsecret"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/secretmanagerregionalsecret"
 
 &secretmanagerregionalsecret.SecretManagerRegionalSecretConfig {
 	Connection: interface{},
@@ -1259,15 +1259,15 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/secretmanagerreg
 	Location: *string,
 	SecretId: *string,
 	Annotations: *map[string]*string,
-	CustomerManagedEncryption: github.com/cdktn-io/cdktn-provider-google-go/google/v17.secretManagerRegionalSecret.SecretManagerRegionalSecretCustomerManagedEncryption,
+	CustomerManagedEncryption: github.com/cdktn-io/cdktn-provider-google-go/google/v18.secretManagerRegionalSecret.SecretManagerRegionalSecretCustomerManagedEncryption,
 	DeletionProtection: interface{},
 	ExpireTime: *string,
 	Id: *string,
 	Labels: *map[string]*string,
 	Project: *string,
-	Rotation: github.com/cdktn-io/cdktn-provider-google-go/google/v17.secretManagerRegionalSecret.SecretManagerRegionalSecretRotation,
+	Rotation: github.com/cdktn-io/cdktn-provider-google-go/google/v18.secretManagerRegionalSecret.SecretManagerRegionalSecretRotation,
 	Tags: *map[string]*string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-google-go/google/v17.secretManagerRegionalSecret.SecretManagerRegionalSecretTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-google-go/google/v18.secretManagerRegionalSecret.SecretManagerRegionalSecretTimeouts,
 	Topics: interface{},
 	Ttl: *string,
 	VersionAliases: *map[string]*string,
@@ -1661,7 +1661,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.secretManagerRegionalSecret.SecretManagerRegionalSecretCustomerManagedEncryption.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/secretmanagerregionalsecret"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/secretmanagerregionalsecret"
 
 &secretmanagerregionalsecret.SecretManagerRegionalSecretCustomerManagedEncryption {
 	KmsKeyName: *string,
@@ -1695,7 +1695,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.secretManagerRegionalSecret.SecretManagerRegionalSecretRotation.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/secretmanagerregionalsecret"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/secretmanagerregionalsecret"
 
 &secretmanagerregionalsecret.SecretManagerRegionalSecretRotation {
 	NextRotationTime: *string,
@@ -1753,7 +1753,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.secretManagerRegionalSecret.SecretManagerRegionalSecretTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/secretmanagerregionalsecret"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/secretmanagerregionalsecret"
 
 &secretmanagerregionalsecret.SecretManagerRegionalSecretTimeouts {
 	Create: *string,
@@ -1813,7 +1813,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.secretManagerRegionalSecret.SecretManagerRegionalSecretTopics.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/secretmanagerregionalsecret"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/secretmanagerregionalsecret"
 
 &secretmanagerregionalsecret.SecretManagerRegionalSecretTopics {
 	Name: *string,
@@ -1854,7 +1854,7 @@ Note: The above comment contained a comment block ending sequence (* followed by
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.secretManagerRegionalSecret.SecretManagerRegionalSecretCustomerManagedEncryptionOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/secretmanagerregionalsecret"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/secretmanagerregionalsecret"
 
 secretmanagerregionalsecret.NewSecretManagerRegionalSecretCustomerManagedEncryptionOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) SecretManagerRegionalSecretCustomerManagedEncryptionOutputReference
 ```
@@ -2125,7 +2125,7 @@ func InternalValue() SecretManagerRegionalSecretCustomerManagedEncryption
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.secretManagerRegionalSecret.SecretManagerRegionalSecretRotationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/secretmanagerregionalsecret"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/secretmanagerregionalsecret"
 
 secretmanagerregionalsecret.NewSecretManagerRegionalSecretRotationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) SecretManagerRegionalSecretRotationOutputReference
 ```
@@ -2432,7 +2432,7 @@ func InternalValue() SecretManagerRegionalSecretRotation
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.secretManagerRegionalSecret.SecretManagerRegionalSecretTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/secretmanagerregionalsecret"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/secretmanagerregionalsecret"
 
 secretmanagerregionalsecret.NewSecretManagerRegionalSecretTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) SecretManagerRegionalSecretTimeoutsOutputReference
 ```
@@ -2768,7 +2768,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.secretManagerRegionalSecret.SecretManagerRegionalSecretTopicsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/secretmanagerregionalsecret"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/secretmanagerregionalsecret"
 
 secretmanagerregionalsecret.NewSecretManagerRegionalSecretTopicsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) SecretManagerRegionalSecretTopicsList
 ```
@@ -2928,7 +2928,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.secretManagerRegionalSecret.SecretManagerRegionalSecretTopicsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/secretmanagerregionalsecret"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/secretmanagerregionalsecret"
 
 secretmanagerregionalsecret.NewSecretManagerRegionalSecretTopicsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) SecretManagerRegionalSecretTopicsOutputReference
 ```

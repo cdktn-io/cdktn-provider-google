@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.5
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.computeRouterNatAddress.ComputeRouterNatAddress.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/computerouternataddress"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/computerouternataddress"
 
 computerouternataddress.NewComputeRouterNatAddress(scope Construct, id *string, config ComputeRouterNatAddressConfig) ComputeRouterNatAddress
 ```
@@ -448,7 +448,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-google.computeRouterNatAddress.ComputeRouterNatAddress.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/computerouternataddress"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/computerouternataddress"
 
 computerouternataddress.ComputeRouterNatAddress_IsConstruct(x interface{}) *bool
 ```
@@ -480,7 +480,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-google.computeRouterNatAddress.ComputeRouterNatAddress.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/computerouternataddress"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/computerouternataddress"
 
 computerouternataddress.ComputeRouterNatAddress_IsTerraformElement(x interface{}) *bool
 ```
@@ -494,7 +494,7 @@ computerouternataddress.ComputeRouterNatAddress_IsTerraformElement(x interface{}
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-google.computeRouterNatAddress.ComputeRouterNatAddress.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/computerouternataddress"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/computerouternataddress"
 
 computerouternataddress.ComputeRouterNatAddress_IsTerraformResource(x interface{}) *bool
 ```
@@ -508,7 +508,7 @@ computerouternataddress.ComputeRouterNatAddress_IsTerraformResource(x interface{
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-google.computeRouterNatAddress.ComputeRouterNatAddress.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/computerouternataddress"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/computerouternataddress"
 
 computerouternataddress.ComputeRouterNatAddress_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -913,7 +913,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.computeRouterNatAddress.ComputeRouterNatAddressConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/computerouternataddress"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/computerouternataddress"
 
 &computerouternataddress.ComputeRouterNatAddressConfig {
 	Connection: interface{},
@@ -930,7 +930,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/computerouternat
 	Id: *string,
 	Project: *string,
 	Region: *string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-google-go/google/v17.computeRouterNatAddress.ComputeRouterNatAddressTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-google-go/google/v18.computeRouterNatAddress.ComputeRouterNatAddressTimeouts,
 }
 ```
 
@@ -1148,7 +1148,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.computeRouterNatAddress.ComputeRouterNatAddressTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/computerouternataddress"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/computerouternataddress"
 
 &computerouternataddress.ComputeRouterNatAddressTimeouts {
 	Create: *string,
@@ -1210,7 +1210,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.computeRouterNatAddress.ComputeRouterNatAddressTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/computerouternataddress"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/computerouternataddress"
 
 computerouternataddress.NewComputeRouterNatAddressTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ComputeRouterNatAddressTimeoutsOutputReference
 ```

@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.5
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataLossPreventionDiscoveryConfig.DataLossPreventionDiscoveryConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/datalosspreventiondiscoveryconfig"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/datalosspreventiondiscoveryconfig"
 
 datalosspreventiondiscoveryconfig.NewDataLossPreventionDiscoveryConfig(scope Construct, id *string, config DataLossPreventionDiscoveryConfigConfig) DataLossPreventionDiscoveryConfig
 ```
@@ -508,7 +508,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-google.dataLossPreventionDiscoveryConfig.DataLossPreventionDiscoveryConfig.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/datalosspreventiondiscoveryconfig"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/datalosspreventiondiscoveryconfig"
 
 datalosspreventiondiscoveryconfig.DataLossPreventionDiscoveryConfig_IsConstruct(x interface{}) *bool
 ```
@@ -540,7 +540,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-google.dataLossPreventionDiscoveryConfig.DataLossPreventionDiscoveryConfig.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/datalosspreventiondiscoveryconfig"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/datalosspreventiondiscoveryconfig"
 
 datalosspreventiondiscoveryconfig.DataLossPreventionDiscoveryConfig_IsTerraformElement(x interface{}) *bool
 ```
@@ -554,7 +554,7 @@ datalosspreventiondiscoveryconfig.DataLossPreventionDiscoveryConfig_IsTerraformE
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-google.dataLossPreventionDiscoveryConfig.DataLossPreventionDiscoveryConfig.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/datalosspreventiondiscoveryconfig"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/datalosspreventiondiscoveryconfig"
 
 datalosspreventiondiscoveryconfig.DataLossPreventionDiscoveryConfig_IsTerraformResource(x interface{}) *bool
 ```
@@ -568,7 +568,7 @@ datalosspreventiondiscoveryconfig.DataLossPreventionDiscoveryConfig_IsTerraformR
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-google.dataLossPreventionDiscoveryConfig.DataLossPreventionDiscoveryConfig.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/datalosspreventiondiscoveryconfig"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/datalosspreventiondiscoveryconfig"
 
 datalosspreventiondiscoveryconfig.DataLossPreventionDiscoveryConfig_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -1072,12 +1072,12 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.dataLossPreventionDiscoveryConfig.DataLossPreventionDiscoveryConfigActions.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/datalosspreventiondiscoveryconfig"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/datalosspreventiondiscoveryconfig"
 
 &datalosspreventiondiscoveryconfig.DataLossPreventionDiscoveryConfigActions {
-	ExportData: github.com/cdktn-io/cdktn-provider-google-go/google/v17.dataLossPreventionDiscoveryConfig.DataLossPreventionDiscoveryConfigActionsExportData,
-	PubSubNotification: github.com/cdktn-io/cdktn-provider-google-go/google/v17.dataLossPreventionDiscoveryConfig.DataLossPreventionDiscoveryConfigActionsPubSubNotification,
-	TagResources: github.com/cdktn-io/cdktn-provider-google-go/google/v17.dataLossPreventionDiscoveryConfig.DataLossPreventionDiscoveryConfigActionsTagResources,
+	ExportData: github.com/cdktn-io/cdktn-provider-google-go/google/v18.dataLossPreventionDiscoveryConfig.DataLossPreventionDiscoveryConfigActionsExportData,
+	PubSubNotification: github.com/cdktn-io/cdktn-provider-google-go/google/v18.dataLossPreventionDiscoveryConfig.DataLossPreventionDiscoveryConfigActionsPubSubNotification,
+	TagResources: github.com/cdktn-io/cdktn-provider-google-go/google/v18.dataLossPreventionDiscoveryConfig.DataLossPreventionDiscoveryConfigActionsTagResources,
 }
 ```
 
@@ -1138,10 +1138,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.dataLossPreventionDiscoveryConfig.DataLossPreventionDiscoveryConfigActionsExportData.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/datalosspreventiondiscoveryconfig"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/datalosspreventiondiscoveryconfig"
 
 &datalosspreventiondiscoveryconfig.DataLossPreventionDiscoveryConfigActionsExportData {
-	ProfileTable: github.com/cdktn-io/cdktn-provider-google-go/google/v17.dataLossPreventionDiscoveryConfig.DataLossPreventionDiscoveryConfigActionsExportDataProfileTable,
+	ProfileTable: github.com/cdktn-io/cdktn-provider-google-go/google/v18.dataLossPreventionDiscoveryConfig.DataLossPreventionDiscoveryConfigActionsExportDataProfileTable,
 }
 ```
 
@@ -1172,7 +1172,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.dataLossPreventionDiscoveryConfig.DataLossPreventionDiscoveryConfigActionsExportDataProfileTable.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/datalosspreventiondiscoveryconfig"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/datalosspreventiondiscoveryconfig"
 
 &datalosspreventiondiscoveryconfig.DataLossPreventionDiscoveryConfigActionsExportDataProfileTable {
 	DatasetId: *string,
@@ -1240,12 +1240,12 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.dataLossPreventionDiscoveryConfig.DataLossPreventionDiscoveryConfigActionsPubSubNotification.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/datalosspreventiondiscoveryconfig"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/datalosspreventiondiscoveryconfig"
 
 &datalosspreventiondiscoveryconfig.DataLossPreventionDiscoveryConfigActionsPubSubNotification {
 	DetailOfMessage: *string,
 	Event: *string,
-	PubsubCondition: github.com/cdktn-io/cdktn-provider-google-go/google/v17.dataLossPreventionDiscoveryConfig.DataLossPreventionDiscoveryConfigActionsPubSubNotificationPubsubCondition,
+	PubsubCondition: github.com/cdktn-io/cdktn-provider-google-go/google/v18.dataLossPreventionDiscoveryConfig.DataLossPreventionDiscoveryConfigActionsPubSubNotificationPubsubCondition,
 	Topic: *string,
 }
 ```
@@ -1324,10 +1324,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.dataLossPreventionDiscoveryConfig.DataLossPreventionDiscoveryConfigActionsPubSubNotificationPubsubCondition.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/datalosspreventiondiscoveryconfig"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/datalosspreventiondiscoveryconfig"
 
 &datalosspreventiondiscoveryconfig.DataLossPreventionDiscoveryConfigActionsPubSubNotificationPubsubCondition {
-	Expressions: github.com/cdktn-io/cdktn-provider-google-go/google/v17.dataLossPreventionDiscoveryConfig.DataLossPreventionDiscoveryConfigActionsPubSubNotificationPubsubConditionExpressions,
+	Expressions: github.com/cdktn-io/cdktn-provider-google-go/google/v18.dataLossPreventionDiscoveryConfig.DataLossPreventionDiscoveryConfigActionsPubSubNotificationPubsubConditionExpressions,
 }
 ```
 
@@ -1358,7 +1358,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.dataLossPreventionDiscoveryConfig.DataLossPreventionDiscoveryConfigActionsPubSubNotificationPubsubConditionExpressions.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/datalosspreventiondiscoveryconfig"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/datalosspreventiondiscoveryconfig"
 
 &datalosspreventiondiscoveryconfig.DataLossPreventionDiscoveryConfigActionsPubSubNotificationPubsubConditionExpressions {
 	Conditions: interface{},
@@ -1408,7 +1408,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.dataLossPreventionDiscoveryConfig.DataLossPreventionDiscoveryConfigActionsPubSubNotificationPubsubConditionExpressionsConditions.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/datalosspreventiondiscoveryconfig"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/datalosspreventiondiscoveryconfig"
 
 &datalosspreventiondiscoveryconfig.DataLossPreventionDiscoveryConfigActionsPubSubNotificationPubsubConditionExpressionsConditions {
 	MinimumRiskScore: *string,
@@ -1458,7 +1458,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.dataLossPreventionDiscoveryConfig.DataLossPreventionDiscoveryConfigActionsTagResources.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/datalosspreventiondiscoveryconfig"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/datalosspreventiondiscoveryconfig"
 
 &datalosspreventiondiscoveryconfig.DataLossPreventionDiscoveryConfigActionsTagResources {
 	LowerDataRiskToLow: interface{},
@@ -1528,11 +1528,11 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.dataLossPreventionDiscoveryConfig.DataLossPreventionDiscoveryConfigActionsTagResourcesTagConditions.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/datalosspreventiondiscoveryconfig"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/datalosspreventiondiscoveryconfig"
 
 &datalosspreventiondiscoveryconfig.DataLossPreventionDiscoveryConfigActionsTagResourcesTagConditions {
-	SensitivityScore: github.com/cdktn-io/cdktn-provider-google-go/google/v17.dataLossPreventionDiscoveryConfig.DataLossPreventionDiscoveryConfigActionsTagResourcesTagConditionsSensitivityScore,
-	Tag: github.com/cdktn-io/cdktn-provider-google-go/google/v17.dataLossPreventionDiscoveryConfig.DataLossPreventionDiscoveryConfigActionsTagResourcesTagConditionsTag,
+	SensitivityScore: github.com/cdktn-io/cdktn-provider-google-go/google/v18.dataLossPreventionDiscoveryConfig.DataLossPreventionDiscoveryConfigActionsTagResourcesTagConditionsSensitivityScore,
+	Tag: github.com/cdktn-io/cdktn-provider-google-go/google/v18.dataLossPreventionDiscoveryConfig.DataLossPreventionDiscoveryConfigActionsTagResourcesTagConditionsTag,
 }
 ```
 
@@ -1578,7 +1578,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.dataLossPreventionDiscoveryConfig.DataLossPreventionDiscoveryConfigActionsTagResourcesTagConditionsSensitivityScore.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/datalosspreventiondiscoveryconfig"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/datalosspreventiondiscoveryconfig"
 
 &datalosspreventiondiscoveryconfig.DataLossPreventionDiscoveryConfigActionsTagResourcesTagConditionsSensitivityScore {
 	Score: *string,
@@ -1612,7 +1612,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.dataLossPreventionDiscoveryConfig.DataLossPreventionDiscoveryConfigActionsTagResourcesTagConditionsTag.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/datalosspreventiondiscoveryconfig"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/datalosspreventiondiscoveryconfig"
 
 &datalosspreventiondiscoveryconfig.DataLossPreventionDiscoveryConfigActionsTagResourcesTagConditionsTag {
 	NamespacedValue: *string,
@@ -1648,7 +1648,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.dataLossPreventionDiscoveryConfig.DataLossPreventionDiscoveryConfigConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/datalosspreventiondiscoveryconfig"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/datalosspreventiondiscoveryconfig"
 
 &datalosspreventiondiscoveryconfig.DataLossPreventionDiscoveryConfigConfig {
 	Connection: interface{},
@@ -1664,10 +1664,10 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/datalosspreventi
 	DisplayName: *string,
 	Id: *string,
 	InspectTemplates: *[]*string,
-	OrgConfig: github.com/cdktn-io/cdktn-provider-google-go/google/v17.dataLossPreventionDiscoveryConfig.DataLossPreventionDiscoveryConfigOrgConfig,
+	OrgConfig: github.com/cdktn-io/cdktn-provider-google-go/google/v18.dataLossPreventionDiscoveryConfig.DataLossPreventionDiscoveryConfigOrgConfig,
 	Status: *string,
 	Targets: interface{},
-	Timeouts: github.com/cdktn-io/cdktn-provider-google-go/google/v17.dataLossPreventionDiscoveryConfig.DataLossPreventionDiscoveryConfigTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-google-go/google/v18.dataLossPreventionDiscoveryConfig.DataLossPreventionDiscoveryConfigTimeouts,
 }
 ```
 
@@ -1914,7 +1914,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.dataLossPreventionDiscoveryConfig.DataLossPreventionDiscoveryConfigErrors.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/datalosspreventiondiscoveryconfig"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/datalosspreventiondiscoveryconfig"
 
 &datalosspreventiondiscoveryconfig.DataLossPreventionDiscoveryConfigErrors {
 
@@ -1927,7 +1927,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/datalosspreventi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.dataLossPreventionDiscoveryConfig.DataLossPreventionDiscoveryConfigErrorsDetails.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/datalosspreventiondiscoveryconfig"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/datalosspreventiondiscoveryconfig"
 
 &datalosspreventiondiscoveryconfig.DataLossPreventionDiscoveryConfigErrorsDetails {
 
@@ -1940,10 +1940,10 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/datalosspreventi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.dataLossPreventionDiscoveryConfig.DataLossPreventionDiscoveryConfigOrgConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/datalosspreventiondiscoveryconfig"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/datalosspreventiondiscoveryconfig"
 
 &datalosspreventiondiscoveryconfig.DataLossPreventionDiscoveryConfigOrgConfig {
-	Location: github.com/cdktn-io/cdktn-provider-google-go/google/v17.dataLossPreventionDiscoveryConfig.DataLossPreventionDiscoveryConfigOrgConfigLocation,
+	Location: github.com/cdktn-io/cdktn-provider-google-go/google/v18.dataLossPreventionDiscoveryConfig.DataLossPreventionDiscoveryConfigOrgConfigLocation,
 	ProjectId: *string,
 }
 ```
@@ -1992,7 +1992,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.dataLossPreventionDiscoveryConfig.DataLossPreventionDiscoveryConfigOrgConfigLocation.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/datalosspreventiondiscoveryconfig"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/datalosspreventiondiscoveryconfig"
 
 &datalosspreventiondiscoveryconfig.DataLossPreventionDiscoveryConfigOrgConfigLocation {
 	FolderId: *string,
@@ -2042,13 +2042,13 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.dataLossPreventionDiscoveryConfig.DataLossPreventionDiscoveryConfigTargets.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/datalosspreventiondiscoveryconfig"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/datalosspreventiondiscoveryconfig"
 
 &datalosspreventiondiscoveryconfig.DataLossPreventionDiscoveryConfigTargets {
-	BigQueryTarget: github.com/cdktn-io/cdktn-provider-google-go/google/v17.dataLossPreventionDiscoveryConfig.DataLossPreventionDiscoveryConfigTargetsBigQueryTarget,
-	CloudSqlTarget: github.com/cdktn-io/cdktn-provider-google-go/google/v17.dataLossPreventionDiscoveryConfig.DataLossPreventionDiscoveryConfigTargetsCloudSqlTarget,
-	CloudStorageTarget: github.com/cdktn-io/cdktn-provider-google-go/google/v17.dataLossPreventionDiscoveryConfig.DataLossPreventionDiscoveryConfigTargetsCloudStorageTarget,
-	SecretsTarget: github.com/cdktn-io/cdktn-provider-google-go/google/v17.dataLossPreventionDiscoveryConfig.DataLossPreventionDiscoveryConfigTargetsSecretsTarget,
+	BigQueryTarget: github.com/cdktn-io/cdktn-provider-google-go/google/v18.dataLossPreventionDiscoveryConfig.DataLossPreventionDiscoveryConfigTargetsBigQueryTarget,
+	CloudSqlTarget: github.com/cdktn-io/cdktn-provider-google-go/google/v18.dataLossPreventionDiscoveryConfig.DataLossPreventionDiscoveryConfigTargetsCloudSqlTarget,
+	CloudStorageTarget: github.com/cdktn-io/cdktn-provider-google-go/google/v18.dataLossPreventionDiscoveryConfig.DataLossPreventionDiscoveryConfigTargetsCloudStorageTarget,
+	SecretsTarget: github.com/cdktn-io/cdktn-provider-google-go/google/v18.dataLossPreventionDiscoveryConfig.DataLossPreventionDiscoveryConfigTargetsSecretsTarget,
 }
 ```
 
@@ -2124,13 +2124,13 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.dataLossPreventionDiscoveryConfig.DataLossPreventionDiscoveryConfigTargetsBigQueryTarget.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/datalosspreventiondiscoveryconfig"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/datalosspreventiondiscoveryconfig"
 
 &datalosspreventiondiscoveryconfig.DataLossPreventionDiscoveryConfigTargetsBigQueryTarget {
-	Cadence: github.com/cdktn-io/cdktn-provider-google-go/google/v17.dataLossPreventionDiscoveryConfig.DataLossPreventionDiscoveryConfigTargetsBigQueryTargetCadence,
-	Conditions: github.com/cdktn-io/cdktn-provider-google-go/google/v17.dataLossPreventionDiscoveryConfig.DataLossPreventionDiscoveryConfigTargetsBigQueryTargetConditions,
-	Disabled: github.com/cdktn-io/cdktn-provider-google-go/google/v17.dataLossPreventionDiscoveryConfig.DataLossPreventionDiscoveryConfigTargetsBigQueryTargetDisabled,
-	Filter: github.com/cdktn-io/cdktn-provider-google-go/google/v17.dataLossPreventionDiscoveryConfig.DataLossPreventionDiscoveryConfigTargetsBigQueryTargetFilter,
+	Cadence: github.com/cdktn-io/cdktn-provider-google-go/google/v18.dataLossPreventionDiscoveryConfig.DataLossPreventionDiscoveryConfigTargetsBigQueryTargetCadence,
+	Conditions: github.com/cdktn-io/cdktn-provider-google-go/google/v18.dataLossPreventionDiscoveryConfig.DataLossPreventionDiscoveryConfigTargetsBigQueryTargetConditions,
+	Disabled: github.com/cdktn-io/cdktn-provider-google-go/google/v18.dataLossPreventionDiscoveryConfig.DataLossPreventionDiscoveryConfigTargetsBigQueryTargetDisabled,
+	Filter: github.com/cdktn-io/cdktn-provider-google-go/google/v18.dataLossPreventionDiscoveryConfig.DataLossPreventionDiscoveryConfigTargetsBigQueryTargetFilter,
 }
 ```
 
@@ -2206,12 +2206,12 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.dataLossPreventionDiscoveryConfig.DataLossPreventionDiscoveryConfigTargetsBigQueryTargetCadence.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/datalosspreventiondiscoveryconfig"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/datalosspreventiondiscoveryconfig"
 
 &datalosspreventiondiscoveryconfig.DataLossPreventionDiscoveryConfigTargetsBigQueryTargetCadence {
-	InspectTemplateModifiedCadence: github.com/cdktn-io/cdktn-provider-google-go/google/v17.dataLossPreventionDiscoveryConfig.DataLossPreventionDiscoveryConfigTargetsBigQueryTargetCadenceInspectTemplateModifiedCadence,
-	SchemaModifiedCadence: github.com/cdktn-io/cdktn-provider-google-go/google/v17.dataLossPreventionDiscoveryConfig.DataLossPreventionDiscoveryConfigTargetsBigQueryTargetCadenceSchemaModifiedCadence,
-	TableModifiedCadence: github.com/cdktn-io/cdktn-provider-google-go/google/v17.dataLossPreventionDiscoveryConfig.DataLossPreventionDiscoveryConfigTargetsBigQueryTargetCadenceTableModifiedCadence,
+	InspectTemplateModifiedCadence: github.com/cdktn-io/cdktn-provider-google-go/google/v18.dataLossPreventionDiscoveryConfig.DataLossPreventionDiscoveryConfigTargetsBigQueryTargetCadenceInspectTemplateModifiedCadence,
+	SchemaModifiedCadence: github.com/cdktn-io/cdktn-provider-google-go/google/v18.dataLossPreventionDiscoveryConfig.DataLossPreventionDiscoveryConfigTargetsBigQueryTargetCadenceSchemaModifiedCadence,
+	TableModifiedCadence: github.com/cdktn-io/cdktn-provider-google-go/google/v18.dataLossPreventionDiscoveryConfig.DataLossPreventionDiscoveryConfigTargetsBigQueryTargetCadenceTableModifiedCadence,
 }
 ```
 
@@ -2272,7 +2272,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.dataLossPreventionDiscoveryConfig.DataLossPreventionDiscoveryConfigTargetsBigQueryTargetCadenceInspectTemplateModifiedCadence.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/datalosspreventiondiscoveryconfig"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/datalosspreventiondiscoveryconfig"
 
 &datalosspreventiondiscoveryconfig.DataLossPreventionDiscoveryConfigTargetsBigQueryTargetCadenceInspectTemplateModifiedCadence {
 	Frequency: *string,
@@ -2308,7 +2308,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.dataLossPreventionDiscoveryConfig.DataLossPreventionDiscoveryConfigTargetsBigQueryTargetCadenceSchemaModifiedCadence.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/datalosspreventiondiscoveryconfig"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/datalosspreventiondiscoveryconfig"
 
 &datalosspreventiondiscoveryconfig.DataLossPreventionDiscoveryConfigTargetsBigQueryTargetCadenceSchemaModifiedCadence {
 	Frequency: *string,
@@ -2360,7 +2360,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.dataLossPreventionDiscoveryConfig.DataLossPreventionDiscoveryConfigTargetsBigQueryTargetCadenceTableModifiedCadence.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/datalosspreventiondiscoveryconfig"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/datalosspreventiondiscoveryconfig"
 
 &datalosspreventiondiscoveryconfig.DataLossPreventionDiscoveryConfigTargetsBigQueryTargetCadenceTableModifiedCadence {
 	Frequency: *string,
@@ -2412,13 +2412,13 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.dataLossPreventionDiscoveryConfig.DataLossPreventionDiscoveryConfigTargetsBigQueryTargetConditions.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/datalosspreventiondiscoveryconfig"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/datalosspreventiondiscoveryconfig"
 
 &datalosspreventiondiscoveryconfig.DataLossPreventionDiscoveryConfigTargetsBigQueryTargetConditions {
 	CreatedAfter: *string,
-	OrConditions: github.com/cdktn-io/cdktn-provider-google-go/google/v17.dataLossPreventionDiscoveryConfig.DataLossPreventionDiscoveryConfigTargetsBigQueryTargetConditionsOrConditions,
+	OrConditions: github.com/cdktn-io/cdktn-provider-google-go/google/v18.dataLossPreventionDiscoveryConfig.DataLossPreventionDiscoveryConfigTargetsBigQueryTargetConditionsOrConditions,
 	TypeCollection: *string,
-	Types: github.com/cdktn-io/cdktn-provider-google-go/google/v17.dataLossPreventionDiscoveryConfig.DataLossPreventionDiscoveryConfigTargetsBigQueryTargetConditionsTypes,
+	Types: github.com/cdktn-io/cdktn-provider-google-go/google/v18.dataLossPreventionDiscoveryConfig.DataLossPreventionDiscoveryConfigTargetsBigQueryTargetConditionsTypes,
 }
 ```
 
@@ -2496,7 +2496,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.dataLossPreventionDiscoveryConfig.DataLossPreventionDiscoveryConfigTargetsBigQueryTargetConditionsOrConditions.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/datalosspreventiondiscoveryconfig"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/datalosspreventiondiscoveryconfig"
 
 &datalosspreventiondiscoveryconfig.DataLossPreventionDiscoveryConfigTargetsBigQueryTargetConditionsOrConditions {
 	MinAge: *string,
@@ -2546,7 +2546,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.dataLossPreventionDiscoveryConfig.DataLossPreventionDiscoveryConfigTargetsBigQueryTargetConditionsTypes.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/datalosspreventiondiscoveryconfig"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/datalosspreventiondiscoveryconfig"
 
 &datalosspreventiondiscoveryconfig.DataLossPreventionDiscoveryConfigTargetsBigQueryTargetConditionsTypes {
 	Types: *[]*string,
@@ -2580,7 +2580,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.dataLossPreventionDiscoveryConfig.DataLossPreventionDiscoveryConfigTargetsBigQueryTargetDisabled.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/datalosspreventiondiscoveryconfig"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/datalosspreventiondiscoveryconfig"
 
 &datalosspreventiondiscoveryconfig.DataLossPreventionDiscoveryConfigTargetsBigQueryTargetDisabled {
 
@@ -2593,12 +2593,12 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/datalosspreventi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.dataLossPreventionDiscoveryConfig.DataLossPreventionDiscoveryConfigTargetsBigQueryTargetFilter.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/datalosspreventiondiscoveryconfig"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/datalosspreventiondiscoveryconfig"
 
 &datalosspreventiondiscoveryconfig.DataLossPreventionDiscoveryConfigTargetsBigQueryTargetFilter {
-	OtherTables: github.com/cdktn-io/cdktn-provider-google-go/google/v17.dataLossPreventionDiscoveryConfig.DataLossPreventionDiscoveryConfigTargetsBigQueryTargetFilterOtherTables,
-	TableReference: github.com/cdktn-io/cdktn-provider-google-go/google/v17.dataLossPreventionDiscoveryConfig.DataLossPreventionDiscoveryConfigTargetsBigQueryTargetFilterTableReference,
-	Tables: github.com/cdktn-io/cdktn-provider-google-go/google/v17.dataLossPreventionDiscoveryConfig.DataLossPreventionDiscoveryConfigTargetsBigQueryTargetFilterTables,
+	OtherTables: github.com/cdktn-io/cdktn-provider-google-go/google/v18.dataLossPreventionDiscoveryConfig.DataLossPreventionDiscoveryConfigTargetsBigQueryTargetFilterOtherTables,
+	TableReference: github.com/cdktn-io/cdktn-provider-google-go/google/v18.dataLossPreventionDiscoveryConfig.DataLossPreventionDiscoveryConfigTargetsBigQueryTargetFilterTableReference,
+	Tables: github.com/cdktn-io/cdktn-provider-google-go/google/v18.dataLossPreventionDiscoveryConfig.DataLossPreventionDiscoveryConfigTargetsBigQueryTargetFilterTables,
 }
 ```
 
@@ -2659,7 +2659,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.dataLossPreventionDiscoveryConfig.DataLossPreventionDiscoveryConfigTargetsBigQueryTargetFilterOtherTables.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/datalosspreventiondiscoveryconfig"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/datalosspreventiondiscoveryconfig"
 
 &datalosspreventiondiscoveryconfig.DataLossPreventionDiscoveryConfigTargetsBigQueryTargetFilterOtherTables {
 
@@ -2672,7 +2672,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/datalosspreventi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.dataLossPreventionDiscoveryConfig.DataLossPreventionDiscoveryConfigTargetsBigQueryTargetFilterTableReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/datalosspreventiondiscoveryconfig"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/datalosspreventiondiscoveryconfig"
 
 &datalosspreventiondiscoveryconfig.DataLossPreventionDiscoveryConfigTargetsBigQueryTargetFilterTableReference {
 	DatasetId: *string,
@@ -2722,10 +2722,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.dataLossPreventionDiscoveryConfig.DataLossPreventionDiscoveryConfigTargetsBigQueryTargetFilterTables.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/datalosspreventiondiscoveryconfig"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/datalosspreventiondiscoveryconfig"
 
 &datalosspreventiondiscoveryconfig.DataLossPreventionDiscoveryConfigTargetsBigQueryTargetFilterTables {
-	IncludeRegexes: github.com/cdktn-io/cdktn-provider-google-go/google/v17.dataLossPreventionDiscoveryConfig.DataLossPreventionDiscoveryConfigTargetsBigQueryTargetFilterTablesIncludeRegexes,
+	IncludeRegexes: github.com/cdktn-io/cdktn-provider-google-go/google/v18.dataLossPreventionDiscoveryConfig.DataLossPreventionDiscoveryConfigTargetsBigQueryTargetFilterTablesIncludeRegexes,
 }
 ```
 
@@ -2756,7 +2756,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.dataLossPreventionDiscoveryConfig.DataLossPreventionDiscoveryConfigTargetsBigQueryTargetFilterTablesIncludeRegexes.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/datalosspreventiondiscoveryconfig"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/datalosspreventiondiscoveryconfig"
 
 &datalosspreventiondiscoveryconfig.DataLossPreventionDiscoveryConfigTargetsBigQueryTargetFilterTablesIncludeRegexes {
 	Patterns: interface{},
@@ -2790,7 +2790,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.dataLossPreventionDiscoveryConfig.DataLossPreventionDiscoveryConfigTargetsBigQueryTargetFilterTablesIncludeRegexesPatterns.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/datalosspreventiondiscoveryconfig"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/datalosspreventiondiscoveryconfig"
 
 &datalosspreventiondiscoveryconfig.DataLossPreventionDiscoveryConfigTargetsBigQueryTargetFilterTablesIncludeRegexesPatterns {
 	DatasetIdRegex: *string,
@@ -2856,13 +2856,13 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.dataLossPreventionDiscoveryConfig.DataLossPreventionDiscoveryConfigTargetsCloudSqlTarget.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/datalosspreventiondiscoveryconfig"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/datalosspreventiondiscoveryconfig"
 
 &datalosspreventiondiscoveryconfig.DataLossPreventionDiscoveryConfigTargetsCloudSqlTarget {
-	Filter: github.com/cdktn-io/cdktn-provider-google-go/google/v17.dataLossPreventionDiscoveryConfig.DataLossPreventionDiscoveryConfigTargetsCloudSqlTargetFilter,
-	Conditions: github.com/cdktn-io/cdktn-provider-google-go/google/v17.dataLossPreventionDiscoveryConfig.DataLossPreventionDiscoveryConfigTargetsCloudSqlTargetConditions,
-	Disabled: github.com/cdktn-io/cdktn-provider-google-go/google/v17.dataLossPreventionDiscoveryConfig.DataLossPreventionDiscoveryConfigTargetsCloudSqlTargetDisabled,
-	GenerationCadence: github.com/cdktn-io/cdktn-provider-google-go/google/v17.dataLossPreventionDiscoveryConfig.DataLossPreventionDiscoveryConfigTargetsCloudSqlTargetGenerationCadence,
+	Filter: github.com/cdktn-io/cdktn-provider-google-go/google/v18.dataLossPreventionDiscoveryConfig.DataLossPreventionDiscoveryConfigTargetsCloudSqlTargetFilter,
+	Conditions: github.com/cdktn-io/cdktn-provider-google-go/google/v18.dataLossPreventionDiscoveryConfig.DataLossPreventionDiscoveryConfigTargetsCloudSqlTargetConditions,
+	Disabled: github.com/cdktn-io/cdktn-provider-google-go/google/v18.dataLossPreventionDiscoveryConfig.DataLossPreventionDiscoveryConfigTargetsCloudSqlTargetDisabled,
+	GenerationCadence: github.com/cdktn-io/cdktn-provider-google-go/google/v18.dataLossPreventionDiscoveryConfig.DataLossPreventionDiscoveryConfigTargetsCloudSqlTargetGenerationCadence,
 }
 ```
 
@@ -2938,7 +2938,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.dataLossPreventionDiscoveryConfig.DataLossPreventionDiscoveryConfigTargetsCloudSqlTargetConditions.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/datalosspreventiondiscoveryconfig"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/datalosspreventiondiscoveryconfig"
 
 &datalosspreventiondiscoveryconfig.DataLossPreventionDiscoveryConfigTargetsCloudSqlTargetConditions {
 	DatabaseEngines: *[]*string,
@@ -2990,7 +2990,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.dataLossPreventionDiscoveryConfig.DataLossPreventionDiscoveryConfigTargetsCloudSqlTargetDisabled.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/datalosspreventiondiscoveryconfig"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/datalosspreventiondiscoveryconfig"
 
 &datalosspreventiondiscoveryconfig.DataLossPreventionDiscoveryConfigTargetsCloudSqlTargetDisabled {
 
@@ -3003,12 +3003,12 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/datalosspreventi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.dataLossPreventionDiscoveryConfig.DataLossPreventionDiscoveryConfigTargetsCloudSqlTargetFilter.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/datalosspreventiondiscoveryconfig"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/datalosspreventiondiscoveryconfig"
 
 &datalosspreventiondiscoveryconfig.DataLossPreventionDiscoveryConfigTargetsCloudSqlTargetFilter {
-	Collection: github.com/cdktn-io/cdktn-provider-google-go/google/v17.dataLossPreventionDiscoveryConfig.DataLossPreventionDiscoveryConfigTargetsCloudSqlTargetFilterCollection,
-	DatabaseResourceReference: github.com/cdktn-io/cdktn-provider-google-go/google/v17.dataLossPreventionDiscoveryConfig.DataLossPreventionDiscoveryConfigTargetsCloudSqlTargetFilterDatabaseResourceReference,
-	Others: github.com/cdktn-io/cdktn-provider-google-go/google/v17.dataLossPreventionDiscoveryConfig.DataLossPreventionDiscoveryConfigTargetsCloudSqlTargetFilterOthers,
+	Collection: github.com/cdktn-io/cdktn-provider-google-go/google/v18.dataLossPreventionDiscoveryConfig.DataLossPreventionDiscoveryConfigTargetsCloudSqlTargetFilterCollection,
+	DatabaseResourceReference: github.com/cdktn-io/cdktn-provider-google-go/google/v18.dataLossPreventionDiscoveryConfig.DataLossPreventionDiscoveryConfigTargetsCloudSqlTargetFilterDatabaseResourceReference,
+	Others: github.com/cdktn-io/cdktn-provider-google-go/google/v18.dataLossPreventionDiscoveryConfig.DataLossPreventionDiscoveryConfigTargetsCloudSqlTargetFilterOthers,
 }
 ```
 
@@ -3069,10 +3069,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.dataLossPreventionDiscoveryConfig.DataLossPreventionDiscoveryConfigTargetsCloudSqlTargetFilterCollection.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/datalosspreventiondiscoveryconfig"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/datalosspreventiondiscoveryconfig"
 
 &datalosspreventiondiscoveryconfig.DataLossPreventionDiscoveryConfigTargetsCloudSqlTargetFilterCollection {
-	IncludeRegexes: github.com/cdktn-io/cdktn-provider-google-go/google/v17.dataLossPreventionDiscoveryConfig.DataLossPreventionDiscoveryConfigTargetsCloudSqlTargetFilterCollectionIncludeRegexes,
+	IncludeRegexes: github.com/cdktn-io/cdktn-provider-google-go/google/v18.dataLossPreventionDiscoveryConfig.DataLossPreventionDiscoveryConfigTargetsCloudSqlTargetFilterCollectionIncludeRegexes,
 }
 ```
 
@@ -3103,7 +3103,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.dataLossPreventionDiscoveryConfig.DataLossPreventionDiscoveryConfigTargetsCloudSqlTargetFilterCollectionIncludeRegexes.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/datalosspreventiondiscoveryconfig"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/datalosspreventiondiscoveryconfig"
 
 &datalosspreventiondiscoveryconfig.DataLossPreventionDiscoveryConfigTargetsCloudSqlTargetFilterCollectionIncludeRegexes {
 	Patterns: interface{},
@@ -3137,7 +3137,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.dataLossPreventionDiscoveryConfig.DataLossPreventionDiscoveryConfigTargetsCloudSqlTargetFilterCollectionIncludeRegexesPatterns.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/datalosspreventiondiscoveryconfig"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/datalosspreventiondiscoveryconfig"
 
 &datalosspreventiondiscoveryconfig.DataLossPreventionDiscoveryConfigTargetsCloudSqlTargetFilterCollectionIncludeRegexesPatterns {
 	DatabaseRegex: *string,
@@ -3221,7 +3221,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.dataLossPreventionDiscoveryConfig.DataLossPreventionDiscoveryConfigTargetsCloudSqlTargetFilterDatabaseResourceReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/datalosspreventiondiscoveryconfig"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/datalosspreventiondiscoveryconfig"
 
 &datalosspreventiondiscoveryconfig.DataLossPreventionDiscoveryConfigTargetsCloudSqlTargetFilterDatabaseResourceReference {
 	Database: *string,
@@ -3303,7 +3303,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.dataLossPreventionDiscoveryConfig.DataLossPreventionDiscoveryConfigTargetsCloudSqlTargetFilterOthers.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/datalosspreventiondiscoveryconfig"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/datalosspreventiondiscoveryconfig"
 
 &datalosspreventiondiscoveryconfig.DataLossPreventionDiscoveryConfigTargetsCloudSqlTargetFilterOthers {
 
@@ -3316,12 +3316,12 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/datalosspreventi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.dataLossPreventionDiscoveryConfig.DataLossPreventionDiscoveryConfigTargetsCloudSqlTargetGenerationCadence.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/datalosspreventiondiscoveryconfig"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/datalosspreventiondiscoveryconfig"
 
 &datalosspreventiondiscoveryconfig.DataLossPreventionDiscoveryConfigTargetsCloudSqlTargetGenerationCadence {
-	InspectTemplateModifiedCadence: github.com/cdktn-io/cdktn-provider-google-go/google/v17.dataLossPreventionDiscoveryConfig.DataLossPreventionDiscoveryConfigTargetsCloudSqlTargetGenerationCadenceInspectTemplateModifiedCadence,
+	InspectTemplateModifiedCadence: github.com/cdktn-io/cdktn-provider-google-go/google/v18.dataLossPreventionDiscoveryConfig.DataLossPreventionDiscoveryConfigTargetsCloudSqlTargetGenerationCadenceInspectTemplateModifiedCadence,
 	RefreshFrequency: *string,
-	SchemaModifiedCadence: github.com/cdktn-io/cdktn-provider-google-go/google/v17.dataLossPreventionDiscoveryConfig.DataLossPreventionDiscoveryConfigTargetsCloudSqlTargetGenerationCadenceSchemaModifiedCadence,
+	SchemaModifiedCadence: github.com/cdktn-io/cdktn-provider-google-go/google/v18.dataLossPreventionDiscoveryConfig.DataLossPreventionDiscoveryConfigTargetsCloudSqlTargetGenerationCadenceSchemaModifiedCadence,
 }
 ```
 
@@ -3384,7 +3384,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.dataLossPreventionDiscoveryConfig.DataLossPreventionDiscoveryConfigTargetsCloudSqlTargetGenerationCadenceInspectTemplateModifiedCadence.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/datalosspreventiondiscoveryconfig"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/datalosspreventiondiscoveryconfig"
 
 &datalosspreventiondiscoveryconfig.DataLossPreventionDiscoveryConfigTargetsCloudSqlTargetGenerationCadenceInspectTemplateModifiedCadence {
 	Frequency: *string,
@@ -3420,7 +3420,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.dataLossPreventionDiscoveryConfig.DataLossPreventionDiscoveryConfigTargetsCloudSqlTargetGenerationCadenceSchemaModifiedCadence.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/datalosspreventiondiscoveryconfig"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/datalosspreventiondiscoveryconfig"
 
 &datalosspreventiondiscoveryconfig.DataLossPreventionDiscoveryConfigTargetsCloudSqlTargetGenerationCadenceSchemaModifiedCadence {
 	Frequency: *string,
@@ -3470,13 +3470,13 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.dataLossPreventionDiscoveryConfig.DataLossPreventionDiscoveryConfigTargetsCloudStorageTarget.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/datalosspreventiondiscoveryconfig"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/datalosspreventiondiscoveryconfig"
 
 &datalosspreventiondiscoveryconfig.DataLossPreventionDiscoveryConfigTargetsCloudStorageTarget {
-	Filter: github.com/cdktn-io/cdktn-provider-google-go/google/v17.dataLossPreventionDiscoveryConfig.DataLossPreventionDiscoveryConfigTargetsCloudStorageTargetFilter,
-	Conditions: github.com/cdktn-io/cdktn-provider-google-go/google/v17.dataLossPreventionDiscoveryConfig.DataLossPreventionDiscoveryConfigTargetsCloudStorageTargetConditions,
-	Disabled: github.com/cdktn-io/cdktn-provider-google-go/google/v17.dataLossPreventionDiscoveryConfig.DataLossPreventionDiscoveryConfigTargetsCloudStorageTargetDisabled,
-	GenerationCadence: github.com/cdktn-io/cdktn-provider-google-go/google/v17.dataLossPreventionDiscoveryConfig.DataLossPreventionDiscoveryConfigTargetsCloudStorageTargetGenerationCadence,
+	Filter: github.com/cdktn-io/cdktn-provider-google-go/google/v18.dataLossPreventionDiscoveryConfig.DataLossPreventionDiscoveryConfigTargetsCloudStorageTargetFilter,
+	Conditions: github.com/cdktn-io/cdktn-provider-google-go/google/v18.dataLossPreventionDiscoveryConfig.DataLossPreventionDiscoveryConfigTargetsCloudStorageTargetConditions,
+	Disabled: github.com/cdktn-io/cdktn-provider-google-go/google/v18.dataLossPreventionDiscoveryConfig.DataLossPreventionDiscoveryConfigTargetsCloudStorageTargetDisabled,
+	GenerationCadence: github.com/cdktn-io/cdktn-provider-google-go/google/v18.dataLossPreventionDiscoveryConfig.DataLossPreventionDiscoveryConfigTargetsCloudStorageTargetGenerationCadence,
 }
 ```
 
@@ -3552,10 +3552,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.dataLossPreventionDiscoveryConfig.DataLossPreventionDiscoveryConfigTargetsCloudStorageTargetConditions.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/datalosspreventiondiscoveryconfig"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/datalosspreventiondiscoveryconfig"
 
 &datalosspreventiondiscoveryconfig.DataLossPreventionDiscoveryConfigTargetsCloudStorageTargetConditions {
-	CloudStorageConditions: github.com/cdktn-io/cdktn-provider-google-go/google/v17.dataLossPreventionDiscoveryConfig.DataLossPreventionDiscoveryConfigTargetsCloudStorageTargetConditionsCloudStorageConditions,
+	CloudStorageConditions: github.com/cdktn-io/cdktn-provider-google-go/google/v18.dataLossPreventionDiscoveryConfig.DataLossPreventionDiscoveryConfigTargetsCloudStorageTargetConditionsCloudStorageConditions,
 	CreatedAfter: *string,
 	MinAge: *string,
 }
@@ -3620,7 +3620,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.dataLossPreventionDiscoveryConfig.DataLossPreventionDiscoveryConfigTargetsCloudStorageTargetConditionsCloudStorageConditions.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/datalosspreventiondiscoveryconfig"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/datalosspreventiondiscoveryconfig"
 
 &datalosspreventiondiscoveryconfig.DataLossPreventionDiscoveryConfigTargetsCloudStorageTargetConditionsCloudStorageConditions {
 	IncludedBucketAttributes: *[]*string,
@@ -3672,7 +3672,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.dataLossPreventionDiscoveryConfig.DataLossPreventionDiscoveryConfigTargetsCloudStorageTargetDisabled.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/datalosspreventiondiscoveryconfig"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/datalosspreventiondiscoveryconfig"
 
 &datalosspreventiondiscoveryconfig.DataLossPreventionDiscoveryConfigTargetsCloudStorageTargetDisabled {
 
@@ -3685,12 +3685,12 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/datalosspreventi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.dataLossPreventionDiscoveryConfig.DataLossPreventionDiscoveryConfigTargetsCloudStorageTargetFilter.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/datalosspreventiondiscoveryconfig"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/datalosspreventiondiscoveryconfig"
 
 &datalosspreventiondiscoveryconfig.DataLossPreventionDiscoveryConfigTargetsCloudStorageTargetFilter {
-	CloudStorageResourceReference: github.com/cdktn-io/cdktn-provider-google-go/google/v17.dataLossPreventionDiscoveryConfig.DataLossPreventionDiscoveryConfigTargetsCloudStorageTargetFilterCloudStorageResourceReference,
-	Collection: github.com/cdktn-io/cdktn-provider-google-go/google/v17.dataLossPreventionDiscoveryConfig.DataLossPreventionDiscoveryConfigTargetsCloudStorageTargetFilterCollection,
-	Others: github.com/cdktn-io/cdktn-provider-google-go/google/v17.dataLossPreventionDiscoveryConfig.DataLossPreventionDiscoveryConfigTargetsCloudStorageTargetFilterOthers,
+	CloudStorageResourceReference: github.com/cdktn-io/cdktn-provider-google-go/google/v18.dataLossPreventionDiscoveryConfig.DataLossPreventionDiscoveryConfigTargetsCloudStorageTargetFilterCloudStorageResourceReference,
+	Collection: github.com/cdktn-io/cdktn-provider-google-go/google/v18.dataLossPreventionDiscoveryConfig.DataLossPreventionDiscoveryConfigTargetsCloudStorageTargetFilterCollection,
+	Others: github.com/cdktn-io/cdktn-provider-google-go/google/v18.dataLossPreventionDiscoveryConfig.DataLossPreventionDiscoveryConfigTargetsCloudStorageTargetFilterOthers,
 }
 ```
 
@@ -3751,7 +3751,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.dataLossPreventionDiscoveryConfig.DataLossPreventionDiscoveryConfigTargetsCloudStorageTargetFilterCloudStorageResourceReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/datalosspreventiondiscoveryconfig"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/datalosspreventiondiscoveryconfig"
 
 &datalosspreventiondiscoveryconfig.DataLossPreventionDiscoveryConfigTargetsCloudStorageTargetFilterCloudStorageResourceReference {
 	BucketName: *string,
@@ -3801,10 +3801,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.dataLossPreventionDiscoveryConfig.DataLossPreventionDiscoveryConfigTargetsCloudStorageTargetFilterCollection.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/datalosspreventiondiscoveryconfig"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/datalosspreventiondiscoveryconfig"
 
 &datalosspreventiondiscoveryconfig.DataLossPreventionDiscoveryConfigTargetsCloudStorageTargetFilterCollection {
-	IncludeRegexes: github.com/cdktn-io/cdktn-provider-google-go/google/v17.dataLossPreventionDiscoveryConfig.DataLossPreventionDiscoveryConfigTargetsCloudStorageTargetFilterCollectionIncludeRegexes,
+	IncludeRegexes: github.com/cdktn-io/cdktn-provider-google-go/google/v18.dataLossPreventionDiscoveryConfig.DataLossPreventionDiscoveryConfigTargetsCloudStorageTargetFilterCollectionIncludeRegexes,
 }
 ```
 
@@ -3835,7 +3835,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.dataLossPreventionDiscoveryConfig.DataLossPreventionDiscoveryConfigTargetsCloudStorageTargetFilterCollectionIncludeRegexes.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/datalosspreventiondiscoveryconfig"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/datalosspreventiondiscoveryconfig"
 
 &datalosspreventiondiscoveryconfig.DataLossPreventionDiscoveryConfigTargetsCloudStorageTargetFilterCollectionIncludeRegexes {
 	Patterns: interface{},
@@ -3869,10 +3869,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.dataLossPreventionDiscoveryConfig.DataLossPreventionDiscoveryConfigTargetsCloudStorageTargetFilterCollectionIncludeRegexesPatterns.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/datalosspreventiondiscoveryconfig"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/datalosspreventiondiscoveryconfig"
 
 &datalosspreventiondiscoveryconfig.DataLossPreventionDiscoveryConfigTargetsCloudStorageTargetFilterCollectionIncludeRegexesPatterns {
-	CloudStorageRegex: github.com/cdktn-io/cdktn-provider-google-go/google/v17.dataLossPreventionDiscoveryConfig.DataLossPreventionDiscoveryConfigTargetsCloudStorageTargetFilterCollectionIncludeRegexesPatternsCloudStorageRegex,
+	CloudStorageRegex: github.com/cdktn-io/cdktn-provider-google-go/google/v18.dataLossPreventionDiscoveryConfig.DataLossPreventionDiscoveryConfigTargetsCloudStorageTargetFilterCollectionIncludeRegexesPatternsCloudStorageRegex,
 }
 ```
 
@@ -3903,7 +3903,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.dataLossPreventionDiscoveryConfig.DataLossPreventionDiscoveryConfigTargetsCloudStorageTargetFilterCollectionIncludeRegexesPatternsCloudStorageRegex.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/datalosspreventiondiscoveryconfig"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/datalosspreventiondiscoveryconfig"
 
 &datalosspreventiondiscoveryconfig.DataLossPreventionDiscoveryConfigTargetsCloudStorageTargetFilterCollectionIncludeRegexesPatternsCloudStorageRegex {
 	BucketNameRegex: *string,
@@ -3955,7 +3955,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.dataLossPreventionDiscoveryConfig.DataLossPreventionDiscoveryConfigTargetsCloudStorageTargetFilterOthers.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/datalosspreventiondiscoveryconfig"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/datalosspreventiondiscoveryconfig"
 
 &datalosspreventiondiscoveryconfig.DataLossPreventionDiscoveryConfigTargetsCloudStorageTargetFilterOthers {
 
@@ -3968,10 +3968,10 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/datalosspreventi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.dataLossPreventionDiscoveryConfig.DataLossPreventionDiscoveryConfigTargetsCloudStorageTargetGenerationCadence.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/datalosspreventiondiscoveryconfig"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/datalosspreventiondiscoveryconfig"
 
 &datalosspreventiondiscoveryconfig.DataLossPreventionDiscoveryConfigTargetsCloudStorageTargetGenerationCadence {
-	InspectTemplateModifiedCadence: github.com/cdktn-io/cdktn-provider-google-go/google/v17.dataLossPreventionDiscoveryConfig.DataLossPreventionDiscoveryConfigTargetsCloudStorageTargetGenerationCadenceInspectTemplateModifiedCadence,
+	InspectTemplateModifiedCadence: github.com/cdktn-io/cdktn-provider-google-go/google/v18.dataLossPreventionDiscoveryConfig.DataLossPreventionDiscoveryConfigTargetsCloudStorageTargetGenerationCadenceInspectTemplateModifiedCadence,
 	RefreshFrequency: *string,
 }
 ```
@@ -4020,7 +4020,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.dataLossPreventionDiscoveryConfig.DataLossPreventionDiscoveryConfigTargetsCloudStorageTargetGenerationCadenceInspectTemplateModifiedCadence.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/datalosspreventiondiscoveryconfig"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/datalosspreventiondiscoveryconfig"
 
 &datalosspreventiondiscoveryconfig.DataLossPreventionDiscoveryConfigTargetsCloudStorageTargetGenerationCadenceInspectTemplateModifiedCadence {
 	Frequency: *string,
@@ -4056,7 +4056,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.dataLossPreventionDiscoveryConfig.DataLossPreventionDiscoveryConfigTargetsSecretsTarget.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/datalosspreventiondiscoveryconfig"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/datalosspreventiondiscoveryconfig"
 
 &datalosspreventiondiscoveryconfig.DataLossPreventionDiscoveryConfigTargetsSecretsTarget {
 
@@ -4069,7 +4069,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/datalosspreventi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.dataLossPreventionDiscoveryConfig.DataLossPreventionDiscoveryConfigTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/datalosspreventiondiscoveryconfig"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/datalosspreventiondiscoveryconfig"
 
 &datalosspreventiondiscoveryconfig.DataLossPreventionDiscoveryConfigTimeouts {
 	Create: *string,
@@ -4131,7 +4131,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataLossPreventionDiscoveryConfig.DataLossPreventionDiscoveryConfigActionsExportDataOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/datalosspreventiondiscoveryconfig"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/datalosspreventiondiscoveryconfig"
 
 datalosspreventiondiscoveryconfig.NewDataLossPreventionDiscoveryConfigActionsExportDataOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataLossPreventionDiscoveryConfigActionsExportDataOutputReference
 ```
@@ -4422,7 +4422,7 @@ func InternalValue() DataLossPreventionDiscoveryConfigActionsExportData
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataLossPreventionDiscoveryConfig.DataLossPreventionDiscoveryConfigActionsExportDataProfileTableOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/datalosspreventiondiscoveryconfig"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/datalosspreventiondiscoveryconfig"
 
 datalosspreventiondiscoveryconfig.NewDataLossPreventionDiscoveryConfigActionsExportDataProfileTableOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataLossPreventionDiscoveryConfigActionsExportDataProfileTableOutputReference
 ```
@@ -4758,7 +4758,7 @@ func InternalValue() DataLossPreventionDiscoveryConfigActionsExportDataProfileTa
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataLossPreventionDiscoveryConfig.DataLossPreventionDiscoveryConfigActionsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/datalosspreventiondiscoveryconfig"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/datalosspreventiondiscoveryconfig"
 
 datalosspreventiondiscoveryconfig.NewDataLossPreventionDiscoveryConfigActionsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataLossPreventionDiscoveryConfigActionsList
 ```
@@ -4918,7 +4918,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataLossPreventionDiscoveryConfig.DataLossPreventionDiscoveryConfigActionsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/datalosspreventiondiscoveryconfig"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/datalosspreventiondiscoveryconfig"
 
 datalosspreventiondiscoveryconfig.NewDataLossPreventionDiscoveryConfigActionsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataLossPreventionDiscoveryConfigActionsOutputReference
 ```
@@ -5311,7 +5311,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataLossPreventionDiscoveryConfig.DataLossPreventionDiscoveryConfigActionsPubSubNotificationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/datalosspreventiondiscoveryconfig"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/datalosspreventiondiscoveryconfig"
 
 datalosspreventiondiscoveryconfig.NewDataLossPreventionDiscoveryConfigActionsPubSubNotificationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataLossPreventionDiscoveryConfigActionsPubSubNotificationOutputReference
 ```
@@ -5689,7 +5689,7 @@ func InternalValue() DataLossPreventionDiscoveryConfigActionsPubSubNotification
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataLossPreventionDiscoveryConfig.DataLossPreventionDiscoveryConfigActionsPubSubNotificationPubsubConditionExpressionsConditionsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/datalosspreventiondiscoveryconfig"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/datalosspreventiondiscoveryconfig"
 
 datalosspreventiondiscoveryconfig.NewDataLossPreventionDiscoveryConfigActionsPubSubNotificationPubsubConditionExpressionsConditionsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataLossPreventionDiscoveryConfigActionsPubSubNotificationPubsubConditionExpressionsConditionsList
 ```
@@ -5849,7 +5849,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataLossPreventionDiscoveryConfig.DataLossPreventionDiscoveryConfigActionsPubSubNotificationPubsubConditionExpressionsConditionsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/datalosspreventiondiscoveryconfig"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/datalosspreventiondiscoveryconfig"
 
 datalosspreventiondiscoveryconfig.NewDataLossPreventionDiscoveryConfigActionsPubSubNotificationPubsubConditionExpressionsConditionsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataLossPreventionDiscoveryConfigActionsPubSubNotificationPubsubConditionExpressionsConditionsOutputReference
 ```
@@ -6174,7 +6174,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataLossPreventionDiscoveryConfig.DataLossPreventionDiscoveryConfigActionsPubSubNotificationPubsubConditionExpressionsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/datalosspreventiondiscoveryconfig"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/datalosspreventiondiscoveryconfig"
 
 datalosspreventiondiscoveryconfig.NewDataLossPreventionDiscoveryConfigActionsPubSubNotificationPubsubConditionExpressionsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataLossPreventionDiscoveryConfigActionsPubSubNotificationPubsubConditionExpressionsOutputReference
 ```
@@ -6494,7 +6494,7 @@ func InternalValue() DataLossPreventionDiscoveryConfigActionsPubSubNotificationP
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataLossPreventionDiscoveryConfig.DataLossPreventionDiscoveryConfigActionsPubSubNotificationPubsubConditionOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/datalosspreventiondiscoveryconfig"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/datalosspreventiondiscoveryconfig"
 
 datalosspreventiondiscoveryconfig.NewDataLossPreventionDiscoveryConfigActionsPubSubNotificationPubsubConditionOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataLossPreventionDiscoveryConfigActionsPubSubNotificationPubsubConditionOutputReference
 ```
@@ -6785,7 +6785,7 @@ func InternalValue() DataLossPreventionDiscoveryConfigActionsPubSubNotificationP
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataLossPreventionDiscoveryConfig.DataLossPreventionDiscoveryConfigActionsTagResourcesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/datalosspreventiondiscoveryconfig"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/datalosspreventiondiscoveryconfig"
 
 datalosspreventiondiscoveryconfig.NewDataLossPreventionDiscoveryConfigActionsTagResourcesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataLossPreventionDiscoveryConfigActionsTagResourcesOutputReference
 ```
@@ -7134,7 +7134,7 @@ func InternalValue() DataLossPreventionDiscoveryConfigActionsTagResources
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataLossPreventionDiscoveryConfig.DataLossPreventionDiscoveryConfigActionsTagResourcesTagConditionsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/datalosspreventiondiscoveryconfig"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/datalosspreventiondiscoveryconfig"
 
 datalosspreventiondiscoveryconfig.NewDataLossPreventionDiscoveryConfigActionsTagResourcesTagConditionsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataLossPreventionDiscoveryConfigActionsTagResourcesTagConditionsList
 ```
@@ -7294,7 +7294,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataLossPreventionDiscoveryConfig.DataLossPreventionDiscoveryConfigActionsTagResourcesTagConditionsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/datalosspreventiondiscoveryconfig"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/datalosspreventiondiscoveryconfig"
 
 datalosspreventiondiscoveryconfig.NewDataLossPreventionDiscoveryConfigActionsTagResourcesTagConditionsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataLossPreventionDiscoveryConfigActionsTagResourcesTagConditionsOutputReference
 ```
@@ -7645,7 +7645,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataLossPreventionDiscoveryConfig.DataLossPreventionDiscoveryConfigActionsTagResourcesTagConditionsSensitivityScoreOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/datalosspreventiondiscoveryconfig"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/datalosspreventiondiscoveryconfig"
 
 datalosspreventiondiscoveryconfig.NewDataLossPreventionDiscoveryConfigActionsTagResourcesTagConditionsSensitivityScoreOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataLossPreventionDiscoveryConfigActionsTagResourcesTagConditionsSensitivityScoreOutputReference
 ```
@@ -7916,7 +7916,7 @@ func InternalValue() DataLossPreventionDiscoveryConfigActionsTagResourcesTagCond
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataLossPreventionDiscoveryConfig.DataLossPreventionDiscoveryConfigActionsTagResourcesTagConditionsTagOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/datalosspreventiondiscoveryconfig"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/datalosspreventiondiscoveryconfig"
 
 datalosspreventiondiscoveryconfig.NewDataLossPreventionDiscoveryConfigActionsTagResourcesTagConditionsTagOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataLossPreventionDiscoveryConfigActionsTagResourcesTagConditionsTagOutputReference
 ```
@@ -8194,7 +8194,7 @@ func InternalValue() DataLossPreventionDiscoveryConfigActionsTagResourcesTagCond
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataLossPreventionDiscoveryConfig.DataLossPreventionDiscoveryConfigErrorsDetailsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/datalosspreventiondiscoveryconfig"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/datalosspreventiondiscoveryconfig"
 
 datalosspreventiondiscoveryconfig.NewDataLossPreventionDiscoveryConfigErrorsDetailsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataLossPreventionDiscoveryConfigErrorsDetailsList
 ```
@@ -8343,7 +8343,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataLossPreventionDiscoveryConfig.DataLossPreventionDiscoveryConfigErrorsDetailsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/datalosspreventiondiscoveryconfig"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/datalosspreventiondiscoveryconfig"
 
 datalosspreventiondiscoveryconfig.NewDataLossPreventionDiscoveryConfigErrorsDetailsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataLossPreventionDiscoveryConfigErrorsDetailsOutputReference
 ```
@@ -8643,7 +8643,7 @@ func InternalValue() DataLossPreventionDiscoveryConfigErrorsDetails
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataLossPreventionDiscoveryConfig.DataLossPreventionDiscoveryConfigErrorsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/datalosspreventiondiscoveryconfig"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/datalosspreventiondiscoveryconfig"
 
 datalosspreventiondiscoveryconfig.NewDataLossPreventionDiscoveryConfigErrorsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataLossPreventionDiscoveryConfigErrorsList
 ```
@@ -8792,7 +8792,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataLossPreventionDiscoveryConfig.DataLossPreventionDiscoveryConfigErrorsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/datalosspreventiondiscoveryconfig"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/datalosspreventiondiscoveryconfig"
 
 datalosspreventiondiscoveryconfig.NewDataLossPreventionDiscoveryConfigErrorsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataLossPreventionDiscoveryConfigErrorsOutputReference
 ```
@@ -9081,7 +9081,7 @@ func InternalValue() DataLossPreventionDiscoveryConfigErrors
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataLossPreventionDiscoveryConfig.DataLossPreventionDiscoveryConfigOrgConfigLocationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/datalosspreventiondiscoveryconfig"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/datalosspreventiondiscoveryconfig"
 
 datalosspreventiondiscoveryconfig.NewDataLossPreventionDiscoveryConfigOrgConfigLocationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataLossPreventionDiscoveryConfigOrgConfigLocationOutputReference
 ```
@@ -9388,7 +9388,7 @@ func InternalValue() DataLossPreventionDiscoveryConfigOrgConfigLocation
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataLossPreventionDiscoveryConfig.DataLossPreventionDiscoveryConfigOrgConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/datalosspreventiondiscoveryconfig"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/datalosspreventiondiscoveryconfig"
 
 datalosspreventiondiscoveryconfig.NewDataLossPreventionDiscoveryConfigOrgConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataLossPreventionDiscoveryConfigOrgConfigOutputReference
 ```
@@ -9708,7 +9708,7 @@ func InternalValue() DataLossPreventionDiscoveryConfigOrgConfig
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataLossPreventionDiscoveryConfig.DataLossPreventionDiscoveryConfigTargetsBigQueryTargetCadenceInspectTemplateModifiedCadenceOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/datalosspreventiondiscoveryconfig"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/datalosspreventiondiscoveryconfig"
 
 datalosspreventiondiscoveryconfig.NewDataLossPreventionDiscoveryConfigTargetsBigQueryTargetCadenceInspectTemplateModifiedCadenceOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataLossPreventionDiscoveryConfigTargetsBigQueryTargetCadenceInspectTemplateModifiedCadenceOutputReference
 ```
@@ -9986,7 +9986,7 @@ func InternalValue() DataLossPreventionDiscoveryConfigTargetsBigQueryTargetCaden
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataLossPreventionDiscoveryConfig.DataLossPreventionDiscoveryConfigTargetsBigQueryTargetCadenceOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/datalosspreventiondiscoveryconfig"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/datalosspreventiondiscoveryconfig"
 
 datalosspreventiondiscoveryconfig.NewDataLossPreventionDiscoveryConfigTargetsBigQueryTargetCadenceOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataLossPreventionDiscoveryConfigTargetsBigQueryTargetCadenceOutputReference
 ```
@@ -10361,7 +10361,7 @@ func InternalValue() DataLossPreventionDiscoveryConfigTargetsBigQueryTargetCaden
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataLossPreventionDiscoveryConfig.DataLossPreventionDiscoveryConfigTargetsBigQueryTargetCadenceSchemaModifiedCadenceOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/datalosspreventiondiscoveryconfig"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/datalosspreventiondiscoveryconfig"
 
 datalosspreventiondiscoveryconfig.NewDataLossPreventionDiscoveryConfigTargetsBigQueryTargetCadenceSchemaModifiedCadenceOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataLossPreventionDiscoveryConfigTargetsBigQueryTargetCadenceSchemaModifiedCadenceOutputReference
 ```
@@ -10668,7 +10668,7 @@ func InternalValue() DataLossPreventionDiscoveryConfigTargetsBigQueryTargetCaden
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataLossPreventionDiscoveryConfig.DataLossPreventionDiscoveryConfigTargetsBigQueryTargetCadenceTableModifiedCadenceOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/datalosspreventiondiscoveryconfig"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/datalosspreventiondiscoveryconfig"
 
 datalosspreventiondiscoveryconfig.NewDataLossPreventionDiscoveryConfigTargetsBigQueryTargetCadenceTableModifiedCadenceOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataLossPreventionDiscoveryConfigTargetsBigQueryTargetCadenceTableModifiedCadenceOutputReference
 ```
@@ -10975,7 +10975,7 @@ func InternalValue() DataLossPreventionDiscoveryConfigTargetsBigQueryTargetCaden
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataLossPreventionDiscoveryConfig.DataLossPreventionDiscoveryConfigTargetsBigQueryTargetConditionsOrConditionsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/datalosspreventiondiscoveryconfig"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/datalosspreventiondiscoveryconfig"
 
 datalosspreventiondiscoveryconfig.NewDataLossPreventionDiscoveryConfigTargetsBigQueryTargetConditionsOrConditionsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataLossPreventionDiscoveryConfigTargetsBigQueryTargetConditionsOrConditionsOutputReference
 ```
@@ -11282,7 +11282,7 @@ func InternalValue() DataLossPreventionDiscoveryConfigTargetsBigQueryTargetCondi
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataLossPreventionDiscoveryConfig.DataLossPreventionDiscoveryConfigTargetsBigQueryTargetConditionsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/datalosspreventiondiscoveryconfig"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/datalosspreventiondiscoveryconfig"
 
 datalosspreventiondiscoveryconfig.NewDataLossPreventionDiscoveryConfigTargetsBigQueryTargetConditionsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataLossPreventionDiscoveryConfigTargetsBigQueryTargetConditionsOutputReference
 ```
@@ -11673,7 +11673,7 @@ func InternalValue() DataLossPreventionDiscoveryConfigTargetsBigQueryTargetCondi
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataLossPreventionDiscoveryConfig.DataLossPreventionDiscoveryConfigTargetsBigQueryTargetConditionsTypesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/datalosspreventiondiscoveryconfig"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/datalosspreventiondiscoveryconfig"
 
 datalosspreventiondiscoveryconfig.NewDataLossPreventionDiscoveryConfigTargetsBigQueryTargetConditionsTypesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataLossPreventionDiscoveryConfigTargetsBigQueryTargetConditionsTypesOutputReference
 ```
@@ -11951,7 +11951,7 @@ func InternalValue() DataLossPreventionDiscoveryConfigTargetsBigQueryTargetCondi
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataLossPreventionDiscoveryConfig.DataLossPreventionDiscoveryConfigTargetsBigQueryTargetDisabledOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/datalosspreventiondiscoveryconfig"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/datalosspreventiondiscoveryconfig"
 
 datalosspreventiondiscoveryconfig.NewDataLossPreventionDiscoveryConfigTargetsBigQueryTargetDisabledOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataLossPreventionDiscoveryConfigTargetsBigQueryTargetDisabledOutputReference
 ```
@@ -12200,7 +12200,7 @@ func InternalValue() DataLossPreventionDiscoveryConfigTargetsBigQueryTargetDisab
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataLossPreventionDiscoveryConfig.DataLossPreventionDiscoveryConfigTargetsBigQueryTargetFilterOtherTablesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/datalosspreventiondiscoveryconfig"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/datalosspreventiondiscoveryconfig"
 
 datalosspreventiondiscoveryconfig.NewDataLossPreventionDiscoveryConfigTargetsBigQueryTargetFilterOtherTablesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataLossPreventionDiscoveryConfigTargetsBigQueryTargetFilterOtherTablesOutputReference
 ```
@@ -12449,7 +12449,7 @@ func InternalValue() DataLossPreventionDiscoveryConfigTargetsBigQueryTargetFilte
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataLossPreventionDiscoveryConfig.DataLossPreventionDiscoveryConfigTargetsBigQueryTargetFilterOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/datalosspreventiondiscoveryconfig"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/datalosspreventiondiscoveryconfig"
 
 datalosspreventiondiscoveryconfig.NewDataLossPreventionDiscoveryConfigTargetsBigQueryTargetFilterOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataLossPreventionDiscoveryConfigTargetsBigQueryTargetFilterOutputReference
 ```
@@ -12824,7 +12824,7 @@ func InternalValue() DataLossPreventionDiscoveryConfigTargetsBigQueryTargetFilte
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataLossPreventionDiscoveryConfig.DataLossPreventionDiscoveryConfigTargetsBigQueryTargetFilterTableReferenceOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/datalosspreventiondiscoveryconfig"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/datalosspreventiondiscoveryconfig"
 
 datalosspreventiondiscoveryconfig.NewDataLossPreventionDiscoveryConfigTargetsBigQueryTargetFilterTableReferenceOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataLossPreventionDiscoveryConfigTargetsBigQueryTargetFilterTableReferenceOutputReference
 ```
@@ -13117,7 +13117,7 @@ func InternalValue() DataLossPreventionDiscoveryConfigTargetsBigQueryTargetFilte
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataLossPreventionDiscoveryConfig.DataLossPreventionDiscoveryConfigTargetsBigQueryTargetFilterTablesIncludeRegexesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/datalosspreventiondiscoveryconfig"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/datalosspreventiondiscoveryconfig"
 
 datalosspreventiondiscoveryconfig.NewDataLossPreventionDiscoveryConfigTargetsBigQueryTargetFilterTablesIncludeRegexesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataLossPreventionDiscoveryConfigTargetsBigQueryTargetFilterTablesIncludeRegexesOutputReference
 ```
@@ -13408,7 +13408,7 @@ func InternalValue() DataLossPreventionDiscoveryConfigTargetsBigQueryTargetFilte
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataLossPreventionDiscoveryConfig.DataLossPreventionDiscoveryConfigTargetsBigQueryTargetFilterTablesIncludeRegexesPatternsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/datalosspreventiondiscoveryconfig"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/datalosspreventiondiscoveryconfig"
 
 datalosspreventiondiscoveryconfig.NewDataLossPreventionDiscoveryConfigTargetsBigQueryTargetFilterTablesIncludeRegexesPatternsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataLossPreventionDiscoveryConfigTargetsBigQueryTargetFilterTablesIncludeRegexesPatternsList
 ```
@@ -13568,7 +13568,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataLossPreventionDiscoveryConfig.DataLossPreventionDiscoveryConfigTargetsBigQueryTargetFilterTablesIncludeRegexesPatternsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/datalosspreventiondiscoveryconfig"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/datalosspreventiondiscoveryconfig"
 
 datalosspreventiondiscoveryconfig.NewDataLossPreventionDiscoveryConfigTargetsBigQueryTargetFilterTablesIncludeRegexesPatternsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataLossPreventionDiscoveryConfigTargetsBigQueryTargetFilterTablesIncludeRegexesPatternsOutputReference
 ```
@@ -13922,7 +13922,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataLossPreventionDiscoveryConfig.DataLossPreventionDiscoveryConfigTargetsBigQueryTargetFilterTablesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/datalosspreventiondiscoveryconfig"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/datalosspreventiondiscoveryconfig"
 
 datalosspreventiondiscoveryconfig.NewDataLossPreventionDiscoveryConfigTargetsBigQueryTargetFilterTablesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataLossPreventionDiscoveryConfigTargetsBigQueryTargetFilterTablesOutputReference
 ```
@@ -14213,7 +14213,7 @@ func InternalValue() DataLossPreventionDiscoveryConfigTargetsBigQueryTargetFilte
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataLossPreventionDiscoveryConfig.DataLossPreventionDiscoveryConfigTargetsBigQueryTargetOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/datalosspreventiondiscoveryconfig"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/datalosspreventiondiscoveryconfig"
 
 datalosspreventiondiscoveryconfig.NewDataLossPreventionDiscoveryConfigTargetsBigQueryTargetOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataLossPreventionDiscoveryConfigTargetsBigQueryTargetOutputReference
 ```
@@ -14630,7 +14630,7 @@ func InternalValue() DataLossPreventionDiscoveryConfigTargetsBigQueryTarget
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataLossPreventionDiscoveryConfig.DataLossPreventionDiscoveryConfigTargetsCloudSqlTargetConditionsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/datalosspreventiondiscoveryconfig"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/datalosspreventiondiscoveryconfig"
 
 datalosspreventiondiscoveryconfig.NewDataLossPreventionDiscoveryConfigTargetsCloudSqlTargetConditionsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataLossPreventionDiscoveryConfigTargetsCloudSqlTargetConditionsOutputReference
 ```
@@ -14937,7 +14937,7 @@ func InternalValue() DataLossPreventionDiscoveryConfigTargetsCloudSqlTargetCondi
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataLossPreventionDiscoveryConfig.DataLossPreventionDiscoveryConfigTargetsCloudSqlTargetDisabledOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/datalosspreventiondiscoveryconfig"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/datalosspreventiondiscoveryconfig"
 
 datalosspreventiondiscoveryconfig.NewDataLossPreventionDiscoveryConfigTargetsCloudSqlTargetDisabledOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataLossPreventionDiscoveryConfigTargetsCloudSqlTargetDisabledOutputReference
 ```
@@ -15186,7 +15186,7 @@ func InternalValue() DataLossPreventionDiscoveryConfigTargetsCloudSqlTargetDisab
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataLossPreventionDiscoveryConfig.DataLossPreventionDiscoveryConfigTargetsCloudSqlTargetFilterCollectionIncludeRegexesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/datalosspreventiondiscoveryconfig"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/datalosspreventiondiscoveryconfig"
 
 datalosspreventiondiscoveryconfig.NewDataLossPreventionDiscoveryConfigTargetsCloudSqlTargetFilterCollectionIncludeRegexesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataLossPreventionDiscoveryConfigTargetsCloudSqlTargetFilterCollectionIncludeRegexesOutputReference
 ```
@@ -15477,7 +15477,7 @@ func InternalValue() DataLossPreventionDiscoveryConfigTargetsCloudSqlTargetFilte
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataLossPreventionDiscoveryConfig.DataLossPreventionDiscoveryConfigTargetsCloudSqlTargetFilterCollectionIncludeRegexesPatternsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/datalosspreventiondiscoveryconfig"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/datalosspreventiondiscoveryconfig"
 
 datalosspreventiondiscoveryconfig.NewDataLossPreventionDiscoveryConfigTargetsCloudSqlTargetFilterCollectionIncludeRegexesPatternsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataLossPreventionDiscoveryConfigTargetsCloudSqlTargetFilterCollectionIncludeRegexesPatternsList
 ```
@@ -15637,7 +15637,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataLossPreventionDiscoveryConfig.DataLossPreventionDiscoveryConfigTargetsCloudSqlTargetFilterCollectionIncludeRegexesPatternsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/datalosspreventiondiscoveryconfig"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/datalosspreventiondiscoveryconfig"
 
 datalosspreventiondiscoveryconfig.NewDataLossPreventionDiscoveryConfigTargetsCloudSqlTargetFilterCollectionIncludeRegexesPatternsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataLossPreventionDiscoveryConfigTargetsCloudSqlTargetFilterCollectionIncludeRegexesPatternsOutputReference
 ```
@@ -16020,7 +16020,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataLossPreventionDiscoveryConfig.DataLossPreventionDiscoveryConfigTargetsCloudSqlTargetFilterCollectionOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/datalosspreventiondiscoveryconfig"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/datalosspreventiondiscoveryconfig"
 
 datalosspreventiondiscoveryconfig.NewDataLossPreventionDiscoveryConfigTargetsCloudSqlTargetFilterCollectionOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataLossPreventionDiscoveryConfigTargetsCloudSqlTargetFilterCollectionOutputReference
 ```
@@ -16311,7 +16311,7 @@ func InternalValue() DataLossPreventionDiscoveryConfigTargetsCloudSqlTargetFilte
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataLossPreventionDiscoveryConfig.DataLossPreventionDiscoveryConfigTargetsCloudSqlTargetFilterDatabaseResourceReferenceOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/datalosspreventiondiscoveryconfig"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/datalosspreventiondiscoveryconfig"
 
 datalosspreventiondiscoveryconfig.NewDataLossPreventionDiscoveryConfigTargetsCloudSqlTargetFilterDatabaseResourceReferenceOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataLossPreventionDiscoveryConfigTargetsCloudSqlTargetFilterDatabaseResourceReferenceOutputReference
 ```
@@ -16648,7 +16648,7 @@ func InternalValue() DataLossPreventionDiscoveryConfigTargetsCloudSqlTargetFilte
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataLossPreventionDiscoveryConfig.DataLossPreventionDiscoveryConfigTargetsCloudSqlTargetFilterOthersOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/datalosspreventiondiscoveryconfig"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/datalosspreventiondiscoveryconfig"
 
 datalosspreventiondiscoveryconfig.NewDataLossPreventionDiscoveryConfigTargetsCloudSqlTargetFilterOthersOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataLossPreventionDiscoveryConfigTargetsCloudSqlTargetFilterOthersOutputReference
 ```
@@ -16897,7 +16897,7 @@ func InternalValue() DataLossPreventionDiscoveryConfigTargetsCloudSqlTargetFilte
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataLossPreventionDiscoveryConfig.DataLossPreventionDiscoveryConfigTargetsCloudSqlTargetFilterOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/datalosspreventiondiscoveryconfig"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/datalosspreventiondiscoveryconfig"
 
 datalosspreventiondiscoveryconfig.NewDataLossPreventionDiscoveryConfigTargetsCloudSqlTargetFilterOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataLossPreventionDiscoveryConfigTargetsCloudSqlTargetFilterOutputReference
 ```
@@ -17272,7 +17272,7 @@ func InternalValue() DataLossPreventionDiscoveryConfigTargetsCloudSqlTargetFilte
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataLossPreventionDiscoveryConfig.DataLossPreventionDiscoveryConfigTargetsCloudSqlTargetGenerationCadenceInspectTemplateModifiedCadenceOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/datalosspreventiondiscoveryconfig"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/datalosspreventiondiscoveryconfig"
 
 datalosspreventiondiscoveryconfig.NewDataLossPreventionDiscoveryConfigTargetsCloudSqlTargetGenerationCadenceInspectTemplateModifiedCadenceOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataLossPreventionDiscoveryConfigTargetsCloudSqlTargetGenerationCadenceInspectTemplateModifiedCadenceOutputReference
 ```
@@ -17543,7 +17543,7 @@ func InternalValue() DataLossPreventionDiscoveryConfigTargetsCloudSqlTargetGener
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataLossPreventionDiscoveryConfig.DataLossPreventionDiscoveryConfigTargetsCloudSqlTargetGenerationCadenceOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/datalosspreventiondiscoveryconfig"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/datalosspreventiondiscoveryconfig"
 
 datalosspreventiondiscoveryconfig.NewDataLossPreventionDiscoveryConfigTargetsCloudSqlTargetGenerationCadenceOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataLossPreventionDiscoveryConfigTargetsCloudSqlTargetGenerationCadenceOutputReference
 ```
@@ -17905,7 +17905,7 @@ func InternalValue() DataLossPreventionDiscoveryConfigTargetsCloudSqlTargetGener
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataLossPreventionDiscoveryConfig.DataLossPreventionDiscoveryConfigTargetsCloudSqlTargetGenerationCadenceSchemaModifiedCadenceOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/datalosspreventiondiscoveryconfig"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/datalosspreventiondiscoveryconfig"
 
 datalosspreventiondiscoveryconfig.NewDataLossPreventionDiscoveryConfigTargetsCloudSqlTargetGenerationCadenceSchemaModifiedCadenceOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataLossPreventionDiscoveryConfigTargetsCloudSqlTargetGenerationCadenceSchemaModifiedCadenceOutputReference
 ```
@@ -18212,7 +18212,7 @@ func InternalValue() DataLossPreventionDiscoveryConfigTargetsCloudSqlTargetGener
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataLossPreventionDiscoveryConfig.DataLossPreventionDiscoveryConfigTargetsCloudSqlTargetOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/datalosspreventiondiscoveryconfig"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/datalosspreventiondiscoveryconfig"
 
 datalosspreventiondiscoveryconfig.NewDataLossPreventionDiscoveryConfigTargetsCloudSqlTargetOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataLossPreventionDiscoveryConfigTargetsCloudSqlTargetOutputReference
 ```
@@ -18622,7 +18622,7 @@ func InternalValue() DataLossPreventionDiscoveryConfigTargetsCloudSqlTarget
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataLossPreventionDiscoveryConfig.DataLossPreventionDiscoveryConfigTargetsCloudStorageTargetConditionsCloudStorageConditionsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/datalosspreventiondiscoveryconfig"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/datalosspreventiondiscoveryconfig"
 
 datalosspreventiondiscoveryconfig.NewDataLossPreventionDiscoveryConfigTargetsCloudStorageTargetConditionsCloudStorageConditionsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataLossPreventionDiscoveryConfigTargetsCloudStorageTargetConditionsCloudStorageConditionsOutputReference
 ```
@@ -18929,7 +18929,7 @@ func InternalValue() DataLossPreventionDiscoveryConfigTargetsCloudStorageTargetC
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataLossPreventionDiscoveryConfig.DataLossPreventionDiscoveryConfigTargetsCloudStorageTargetConditionsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/datalosspreventiondiscoveryconfig"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/datalosspreventiondiscoveryconfig"
 
 datalosspreventiondiscoveryconfig.NewDataLossPreventionDiscoveryConfigTargetsCloudStorageTargetConditionsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataLossPreventionDiscoveryConfigTargetsCloudStorageTargetConditionsOutputReference
 ```
@@ -19278,7 +19278,7 @@ func InternalValue() DataLossPreventionDiscoveryConfigTargetsCloudStorageTargetC
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataLossPreventionDiscoveryConfig.DataLossPreventionDiscoveryConfigTargetsCloudStorageTargetDisabledOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/datalosspreventiondiscoveryconfig"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/datalosspreventiondiscoveryconfig"
 
 datalosspreventiondiscoveryconfig.NewDataLossPreventionDiscoveryConfigTargetsCloudStorageTargetDisabledOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataLossPreventionDiscoveryConfigTargetsCloudStorageTargetDisabledOutputReference
 ```
@@ -19527,7 +19527,7 @@ func InternalValue() DataLossPreventionDiscoveryConfigTargetsCloudStorageTargetD
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataLossPreventionDiscoveryConfig.DataLossPreventionDiscoveryConfigTargetsCloudStorageTargetFilterCloudStorageResourceReferenceOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/datalosspreventiondiscoveryconfig"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/datalosspreventiondiscoveryconfig"
 
 datalosspreventiondiscoveryconfig.NewDataLossPreventionDiscoveryConfigTargetsCloudStorageTargetFilterCloudStorageResourceReferenceOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataLossPreventionDiscoveryConfigTargetsCloudStorageTargetFilterCloudStorageResourceReferenceOutputReference
 ```
@@ -19834,7 +19834,7 @@ func InternalValue() DataLossPreventionDiscoveryConfigTargetsCloudStorageTargetF
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataLossPreventionDiscoveryConfig.DataLossPreventionDiscoveryConfigTargetsCloudStorageTargetFilterCollectionIncludeRegexesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/datalosspreventiondiscoveryconfig"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/datalosspreventiondiscoveryconfig"
 
 datalosspreventiondiscoveryconfig.NewDataLossPreventionDiscoveryConfigTargetsCloudStorageTargetFilterCollectionIncludeRegexesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataLossPreventionDiscoveryConfigTargetsCloudStorageTargetFilterCollectionIncludeRegexesOutputReference
 ```
@@ -20125,7 +20125,7 @@ func InternalValue() DataLossPreventionDiscoveryConfigTargetsCloudStorageTargetF
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataLossPreventionDiscoveryConfig.DataLossPreventionDiscoveryConfigTargetsCloudStorageTargetFilterCollectionIncludeRegexesPatternsCloudStorageRegexOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/datalosspreventiondiscoveryconfig"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/datalosspreventiondiscoveryconfig"
 
 datalosspreventiondiscoveryconfig.NewDataLossPreventionDiscoveryConfigTargetsCloudStorageTargetFilterCollectionIncludeRegexesPatternsCloudStorageRegexOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataLossPreventionDiscoveryConfigTargetsCloudStorageTargetFilterCollectionIncludeRegexesPatternsCloudStorageRegexOutputReference
 ```
@@ -20432,7 +20432,7 @@ func InternalValue() DataLossPreventionDiscoveryConfigTargetsCloudStorageTargetF
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataLossPreventionDiscoveryConfig.DataLossPreventionDiscoveryConfigTargetsCloudStorageTargetFilterCollectionIncludeRegexesPatternsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/datalosspreventiondiscoveryconfig"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/datalosspreventiondiscoveryconfig"
 
 datalosspreventiondiscoveryconfig.NewDataLossPreventionDiscoveryConfigTargetsCloudStorageTargetFilterCollectionIncludeRegexesPatternsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataLossPreventionDiscoveryConfigTargetsCloudStorageTargetFilterCollectionIncludeRegexesPatternsList
 ```
@@ -20592,7 +20592,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataLossPreventionDiscoveryConfig.DataLossPreventionDiscoveryConfigTargetsCloudStorageTargetFilterCollectionIncludeRegexesPatternsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/datalosspreventiondiscoveryconfig"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/datalosspreventiondiscoveryconfig"
 
 datalosspreventiondiscoveryconfig.NewDataLossPreventionDiscoveryConfigTargetsCloudStorageTargetFilterCollectionIncludeRegexesPatternsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataLossPreventionDiscoveryConfigTargetsCloudStorageTargetFilterCollectionIncludeRegexesPatternsOutputReference
 ```
@@ -20901,7 +20901,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataLossPreventionDiscoveryConfig.DataLossPreventionDiscoveryConfigTargetsCloudStorageTargetFilterCollectionOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/datalosspreventiondiscoveryconfig"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/datalosspreventiondiscoveryconfig"
 
 datalosspreventiondiscoveryconfig.NewDataLossPreventionDiscoveryConfigTargetsCloudStorageTargetFilterCollectionOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataLossPreventionDiscoveryConfigTargetsCloudStorageTargetFilterCollectionOutputReference
 ```
@@ -21192,7 +21192,7 @@ func InternalValue() DataLossPreventionDiscoveryConfigTargetsCloudStorageTargetF
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataLossPreventionDiscoveryConfig.DataLossPreventionDiscoveryConfigTargetsCloudStorageTargetFilterOthersOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/datalosspreventiondiscoveryconfig"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/datalosspreventiondiscoveryconfig"
 
 datalosspreventiondiscoveryconfig.NewDataLossPreventionDiscoveryConfigTargetsCloudStorageTargetFilterOthersOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataLossPreventionDiscoveryConfigTargetsCloudStorageTargetFilterOthersOutputReference
 ```
@@ -21441,7 +21441,7 @@ func InternalValue() DataLossPreventionDiscoveryConfigTargetsCloudStorageTargetF
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataLossPreventionDiscoveryConfig.DataLossPreventionDiscoveryConfigTargetsCloudStorageTargetFilterOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/datalosspreventiondiscoveryconfig"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/datalosspreventiondiscoveryconfig"
 
 datalosspreventiondiscoveryconfig.NewDataLossPreventionDiscoveryConfigTargetsCloudStorageTargetFilterOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataLossPreventionDiscoveryConfigTargetsCloudStorageTargetFilterOutputReference
 ```
@@ -21816,7 +21816,7 @@ func InternalValue() DataLossPreventionDiscoveryConfigTargetsCloudStorageTargetF
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataLossPreventionDiscoveryConfig.DataLossPreventionDiscoveryConfigTargetsCloudStorageTargetGenerationCadenceInspectTemplateModifiedCadenceOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/datalosspreventiondiscoveryconfig"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/datalosspreventiondiscoveryconfig"
 
 datalosspreventiondiscoveryconfig.NewDataLossPreventionDiscoveryConfigTargetsCloudStorageTargetGenerationCadenceInspectTemplateModifiedCadenceOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataLossPreventionDiscoveryConfigTargetsCloudStorageTargetGenerationCadenceInspectTemplateModifiedCadenceOutputReference
 ```
@@ -22094,7 +22094,7 @@ func InternalValue() DataLossPreventionDiscoveryConfigTargetsCloudStorageTargetG
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataLossPreventionDiscoveryConfig.DataLossPreventionDiscoveryConfigTargetsCloudStorageTargetGenerationCadenceOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/datalosspreventiondiscoveryconfig"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/datalosspreventiondiscoveryconfig"
 
 datalosspreventiondiscoveryconfig.NewDataLossPreventionDiscoveryConfigTargetsCloudStorageTargetGenerationCadenceOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataLossPreventionDiscoveryConfigTargetsCloudStorageTargetGenerationCadenceOutputReference
 ```
@@ -22414,7 +22414,7 @@ func InternalValue() DataLossPreventionDiscoveryConfigTargetsCloudStorageTargetG
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataLossPreventionDiscoveryConfig.DataLossPreventionDiscoveryConfigTargetsCloudStorageTargetOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/datalosspreventiondiscoveryconfig"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/datalosspreventiondiscoveryconfig"
 
 datalosspreventiondiscoveryconfig.NewDataLossPreventionDiscoveryConfigTargetsCloudStorageTargetOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataLossPreventionDiscoveryConfigTargetsCloudStorageTargetOutputReference
 ```
@@ -22824,7 +22824,7 @@ func InternalValue() DataLossPreventionDiscoveryConfigTargetsCloudStorageTarget
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataLossPreventionDiscoveryConfig.DataLossPreventionDiscoveryConfigTargetsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/datalosspreventiondiscoveryconfig"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/datalosspreventiondiscoveryconfig"
 
 datalosspreventiondiscoveryconfig.NewDataLossPreventionDiscoveryConfigTargetsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataLossPreventionDiscoveryConfigTargetsList
 ```
@@ -22984,7 +22984,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataLossPreventionDiscoveryConfig.DataLossPreventionDiscoveryConfigTargetsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/datalosspreventiondiscoveryconfig"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/datalosspreventiondiscoveryconfig"
 
 datalosspreventiondiscoveryconfig.NewDataLossPreventionDiscoveryConfigTargetsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataLossPreventionDiscoveryConfigTargetsOutputReference
 ```
@@ -23419,7 +23419,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataLossPreventionDiscoveryConfig.DataLossPreventionDiscoveryConfigTargetsSecretsTargetOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/datalosspreventiondiscoveryconfig"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/datalosspreventiondiscoveryconfig"
 
 datalosspreventiondiscoveryconfig.NewDataLossPreventionDiscoveryConfigTargetsSecretsTargetOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataLossPreventionDiscoveryConfigTargetsSecretsTargetOutputReference
 ```
@@ -23668,7 +23668,7 @@ func InternalValue() DataLossPreventionDiscoveryConfigTargetsSecretsTarget
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataLossPreventionDiscoveryConfig.DataLossPreventionDiscoveryConfigTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/datalosspreventiondiscoveryconfig"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/datalosspreventiondiscoveryconfig"
 
 datalosspreventiondiscoveryconfig.NewDataLossPreventionDiscoveryConfigTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataLossPreventionDiscoveryConfigTimeoutsOutputReference
 ```

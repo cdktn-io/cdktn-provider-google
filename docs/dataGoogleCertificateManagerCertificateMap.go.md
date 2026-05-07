@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.5
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataGoogleCertificateManagerCertificateMap.DataGoogleCertificateManagerCertificateMap.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/datagooglecertificatemanagercertificatemap"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/datagooglecertificatemanagercertificatemap"
 
 datagooglecertificatemanagercertificatemap.NewDataGoogleCertificateManagerCertificateMap(scope Construct, id *string, config DataGoogleCertificateManagerCertificateMapConfig) DataGoogleCertificateManagerCertificateMap
 ```
@@ -312,7 +312,7 @@ func ResetProject()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-google.dataGoogleCertificateManagerCertificateMap.DataGoogleCertificateManagerCertificateMap.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/datagooglecertificatemanagercertificatemap"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/datagooglecertificatemanagercertificatemap"
 
 datagooglecertificatemanagercertificatemap.DataGoogleCertificateManagerCertificateMap_IsConstruct(x interface{}) *bool
 ```
@@ -344,7 +344,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-google.dataGoogleCertificateManagerCertificateMap.DataGoogleCertificateManagerCertificateMap.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/datagooglecertificatemanagercertificatemap"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/datagooglecertificatemanagercertificatemap"
 
 datagooglecertificatemanagercertificatemap.DataGoogleCertificateManagerCertificateMap_IsTerraformElement(x interface{}) *bool
 ```
@@ -358,7 +358,7 @@ datagooglecertificatemanagercertificatemap.DataGoogleCertificateManagerCertifica
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktn/provider-google.dataGoogleCertificateManagerCertificateMap.DataGoogleCertificateManagerCertificateMap.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/datagooglecertificatemanagercertificatemap"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/datagooglecertificatemanagercertificatemap"
 
 datagooglecertificatemanagercertificatemap.DataGoogleCertificateManagerCertificateMap_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -372,7 +372,7 @@ datagooglecertificatemanagercertificatemap.DataGoogleCertificateManagerCertifica
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-google.dataGoogleCertificateManagerCertificateMap.DataGoogleCertificateManagerCertificateMap.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/datagooglecertificatemanagercertificatemap"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/datagooglecertificatemanagercertificatemap"
 
 datagooglecertificatemanagercertificatemap.DataGoogleCertificateManagerCertificateMap_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -722,7 +722,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.dataGoogleCertificateManagerCertificateMap.DataGoogleCertificateManagerCertificateMapConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/datagooglecertificatemanagercertificatemap"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/datagooglecertificatemanagercertificatemap"
 
 &datagooglecertificatemanagercertificatemap.DataGoogleCertificateManagerCertificateMapConfig {
 	Connection: interface{},
@@ -876,7 +876,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.dataGoogleCertificateManagerCertificateMap.DataGoogleCertificateManagerCertificateMapGclbTargets.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/datagooglecertificatemanagercertificatemap"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/datagooglecertificatemanagercertificatemap"
 
 &datagooglecertificatemanagercertificatemap.DataGoogleCertificateManagerCertificateMapGclbTargets {
 
@@ -889,7 +889,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/datagooglecertif
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.dataGoogleCertificateManagerCertificateMap.DataGoogleCertificateManagerCertificateMapGclbTargetsIpConfigs.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/datagooglecertificatemanagercertificatemap"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/datagooglecertificatemanagercertificatemap"
 
 &datagooglecertificatemanagercertificatemap.DataGoogleCertificateManagerCertificateMapGclbTargetsIpConfigs {
 
@@ -904,7 +904,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/datagooglecertif
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataGoogleCertificateManagerCertificateMap.DataGoogleCertificateManagerCertificateMapGclbTargetsIpConfigsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/datagooglecertificatemanagercertificatemap"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/datagooglecertificatemanagercertificatemap"
 
 datagooglecertificatemanagercertificatemap.NewDataGoogleCertificateManagerCertificateMapGclbTargetsIpConfigsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataGoogleCertificateManagerCertificateMapGclbTargetsIpConfigsList
 ```
@@ -1053,7 +1053,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataGoogleCertificateManagerCertificateMap.DataGoogleCertificateManagerCertificateMapGclbTargetsIpConfigsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/datagooglecertificatemanagercertificatemap"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/datagooglecertificatemanagercertificatemap"
 
 datagooglecertificatemanagercertificatemap.NewDataGoogleCertificateManagerCertificateMapGclbTargetsIpConfigsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataGoogleCertificateManagerCertificateMapGclbTargetsIpConfigsOutputReference
 ```
@@ -1342,7 +1342,7 @@ func InternalValue() DataGoogleCertificateManagerCertificateMapGclbTargetsIpConf
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataGoogleCertificateManagerCertificateMap.DataGoogleCertificateManagerCertificateMapGclbTargetsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/datagooglecertificatemanagercertificatemap"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/datagooglecertificatemanagercertificatemap"
 
 datagooglecertificatemanagercertificatemap.NewDataGoogleCertificateManagerCertificateMapGclbTargetsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataGoogleCertificateManagerCertificateMapGclbTargetsList
 ```
@@ -1491,7 +1491,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataGoogleCertificateManagerCertificateMap.DataGoogleCertificateManagerCertificateMapGclbTargetsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/datagooglecertificatemanagercertificatemap"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/datagooglecertificatemanagercertificatemap"
 
 datagooglecertificatemanagercertificatemap.NewDataGoogleCertificateManagerCertificateMapGclbTargetsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataGoogleCertificateManagerCertificateMapGclbTargetsOutputReference
 ```

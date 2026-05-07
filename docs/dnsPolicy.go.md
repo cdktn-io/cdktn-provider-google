@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.5
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dnsPolicy.DnsPolicy.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/dnspolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/dnspolicy"
 
 dnspolicy.NewDnsPolicy(scope Construct, id *string, config DnsPolicyConfig) DnsPolicy
 ```
@@ -515,7 +515,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-google.dnsPolicy.DnsPolicy.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/dnspolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/dnspolicy"
 
 dnspolicy.DnsPolicy_IsConstruct(x interface{}) *bool
 ```
@@ -547,7 +547,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-google.dnsPolicy.DnsPolicy.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/dnspolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/dnspolicy"
 
 dnspolicy.DnsPolicy_IsTerraformElement(x interface{}) *bool
 ```
@@ -561,7 +561,7 @@ dnspolicy.DnsPolicy_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-google.dnsPolicy.DnsPolicy.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/dnspolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/dnspolicy"
 
 dnspolicy.DnsPolicy_IsTerraformResource(x interface{}) *bool
 ```
@@ -575,7 +575,7 @@ dnspolicy.DnsPolicy_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-google.dnsPolicy.DnsPolicy.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/dnspolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/dnspolicy"
 
 dnspolicy.DnsPolicy_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -1024,7 +1024,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.dnsPolicy.DnsPolicyAlternativeNameServerConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/dnspolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/dnspolicy"
 
 &dnspolicy.DnsPolicyAlternativeNameServerConfig {
 	TargetNameServers: interface{},
@@ -1058,7 +1058,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.dnsPolicy.DnsPolicyAlternativeNameServerConfigTargetNameServers.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/dnspolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/dnspolicy"
 
 &dnspolicy.DnsPolicyAlternativeNameServerConfigTargetNameServers {
 	Ipv4Address: *string,
@@ -1112,7 +1112,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.dnsPolicy.DnsPolicyConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/dnspolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/dnspolicy"
 
 &dnspolicy.DnsPolicyConfig {
 	Connection: interface{},
@@ -1123,15 +1123,15 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/dnspolicy"
 	Provider: github.com/open-constructs/cdk-terrain-go/cdktn.TerraformProvider,
 	Provisioners: *[]interface{},
 	Name: *string,
-	AlternativeNameServerConfig: github.com/cdktn-io/cdktn-provider-google-go/google/v17.dnsPolicy.DnsPolicyAlternativeNameServerConfig,
+	AlternativeNameServerConfig: github.com/cdktn-io/cdktn-provider-google-go/google/v18.dnsPolicy.DnsPolicyAlternativeNameServerConfig,
 	Description: *string,
-	Dns64Config: github.com/cdktn-io/cdktn-provider-google-go/google/v17.dnsPolicy.DnsPolicyDns64Config,
+	Dns64Config: github.com/cdktn-io/cdktn-provider-google-go/google/v18.dnsPolicy.DnsPolicyDns64Config,
 	EnableInboundForwarding: interface{},
 	EnableLogging: interface{},
 	Id: *string,
 	Networks: interface{},
 	Project: *string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-google-go/google/v17.dnsPolicy.DnsPolicyTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-google-go/google/v18.dnsPolicy.DnsPolicyTimeouts,
 }
 ```
 
@@ -1377,10 +1377,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.dnsPolicy.DnsPolicyDns64Config.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/dnspolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/dnspolicy"
 
 &dnspolicy.DnsPolicyDns64Config {
-	Scope: github.com/cdktn-io/cdktn-provider-google-go/google/v17.dnsPolicy.DnsPolicyDns64ConfigScope,
+	Scope: github.com/cdktn-io/cdktn-provider-google-go/google/v18.dnsPolicy.DnsPolicyDns64ConfigScope,
 }
 ```
 
@@ -1411,7 +1411,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.dnsPolicy.DnsPolicyDns64ConfigScope.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/dnspolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/dnspolicy"
 
 &dnspolicy.DnsPolicyDns64ConfigScope {
 	AllQueries: interface{},
@@ -1445,7 +1445,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.dnsPolicy.DnsPolicyNetworks.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/dnspolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/dnspolicy"
 
 &dnspolicy.DnsPolicyNetworks {
 	NetworkUrl: *string,
@@ -1482,7 +1482,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.dnsPolicy.DnsPolicyTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/dnspolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/dnspolicy"
 
 &dnspolicy.DnsPolicyTimeouts {
 	Create: *string,
@@ -1544,7 +1544,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dnsPolicy.DnsPolicyAlternativeNameServerConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/dnspolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/dnspolicy"
 
 dnspolicy.NewDnsPolicyAlternativeNameServerConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DnsPolicyAlternativeNameServerConfigOutputReference
 ```
@@ -1828,7 +1828,7 @@ func InternalValue() DnsPolicyAlternativeNameServerConfig
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dnsPolicy.DnsPolicyAlternativeNameServerConfigTargetNameServersList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/dnspolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/dnspolicy"
 
 dnspolicy.NewDnsPolicyAlternativeNameServerConfigTargetNameServersList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DnsPolicyAlternativeNameServerConfigTargetNameServersList
 ```
@@ -1988,7 +1988,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dnsPolicy.DnsPolicyAlternativeNameServerConfigTargetNameServersOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/dnspolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/dnspolicy"
 
 dnspolicy.NewDnsPolicyAlternativeNameServerConfigTargetNameServersOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DnsPolicyAlternativeNameServerConfigTargetNameServersOutputReference
 ```
@@ -2306,7 +2306,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dnsPolicy.DnsPolicyDns64ConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/dnspolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/dnspolicy"
 
 dnspolicy.NewDnsPolicyDns64ConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DnsPolicyDns64ConfigOutputReference
 ```
@@ -2590,7 +2590,7 @@ func InternalValue() DnsPolicyDns64Config
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dnsPolicy.DnsPolicyDns64ConfigScopeOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/dnspolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/dnspolicy"
 
 dnspolicy.NewDnsPolicyDns64ConfigScopeOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DnsPolicyDns64ConfigScopeOutputReference
 ```
@@ -2868,7 +2868,7 @@ func InternalValue() DnsPolicyDns64ConfigScope
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dnsPolicy.DnsPolicyNetworksList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/dnspolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/dnspolicy"
 
 dnspolicy.NewDnsPolicyNetworksList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DnsPolicyNetworksList
 ```
@@ -3028,7 +3028,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dnsPolicy.DnsPolicyNetworksOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/dnspolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/dnspolicy"
 
 dnspolicy.NewDnsPolicyNetworksOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DnsPolicyNetworksOutputReference
 ```
@@ -3317,7 +3317,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dnsPolicy.DnsPolicyTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/dnspolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/dnspolicy"
 
 dnspolicy.NewDnsPolicyTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DnsPolicyTimeoutsOutputReference
 ```

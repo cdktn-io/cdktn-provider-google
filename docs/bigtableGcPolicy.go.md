@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.5
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.bigtableGcPolicy.BigtableGcPolicy.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/bigtablegcpolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/bigtablegcpolicy"
 
 bigtablegcpolicy.NewBigtableGcPolicy(scope Construct, id *string, config BigtableGcPolicyConfig) BigtableGcPolicy
 ```
@@ -502,7 +502,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-google.bigtableGcPolicy.BigtableGcPolicy.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/bigtablegcpolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/bigtablegcpolicy"
 
 bigtablegcpolicy.BigtableGcPolicy_IsConstruct(x interface{}) *bool
 ```
@@ -534,7 +534,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-google.bigtableGcPolicy.BigtableGcPolicy.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/bigtablegcpolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/bigtablegcpolicy"
 
 bigtablegcpolicy.BigtableGcPolicy_IsTerraformElement(x interface{}) *bool
 ```
@@ -548,7 +548,7 @@ bigtablegcpolicy.BigtableGcPolicy_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-google.bigtableGcPolicy.BigtableGcPolicy.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/bigtablegcpolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/bigtablegcpolicy"
 
 bigtablegcpolicy.BigtableGcPolicy_IsTerraformResource(x interface{}) *bool
 ```
@@ -562,7 +562,7 @@ bigtablegcpolicy.BigtableGcPolicy_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-google.bigtableGcPolicy.BigtableGcPolicy.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/bigtablegcpolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/bigtablegcpolicy"
 
 bigtablegcpolicy.BigtableGcPolicy_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -1055,7 +1055,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.bigtableGcPolicy.BigtableGcPolicyConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/bigtablegcpolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/bigtablegcpolicy"
 
 &bigtablegcpolicy.BigtableGcPolicyConfig {
 	Connection: interface{},
@@ -1072,11 +1072,11 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/bigtablegcpolicy
 	GcRules: *string,
 	Id: *string,
 	IgnoreWarnings: interface{},
-	MaxAge: github.com/cdktn-io/cdktn-provider-google-go/google/v17.bigtableGcPolicy.BigtableGcPolicyMaxAge,
+	MaxAge: github.com/cdktn-io/cdktn-provider-google-go/google/v18.bigtableGcPolicy.BigtableGcPolicyMaxAge,
 	MaxVersion: interface{},
 	Mode: *string,
 	Project: *string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-google-go/google/v17.bigtableGcPolicy.BigtableGcPolicyTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-google-go/google/v18.bigtableGcPolicy.BigtableGcPolicyTimeouts,
 }
 ```
 
@@ -1363,7 +1363,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.bigtableGcPolicy.BigtableGcPolicyMaxAge.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/bigtablegcpolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/bigtablegcpolicy"
 
 &bigtablegcpolicy.BigtableGcPolicyMaxAge {
 	Days: *f64,
@@ -1413,7 +1413,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.bigtableGcPolicy.BigtableGcPolicyMaxVersion.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/bigtablegcpolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/bigtablegcpolicy"
 
 &bigtablegcpolicy.BigtableGcPolicyMaxVersion {
 	Number: *f64,
@@ -1447,7 +1447,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.bigtableGcPolicy.BigtableGcPolicyTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/bigtablegcpolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/bigtablegcpolicy"
 
 &bigtablegcpolicy.BigtableGcPolicyTimeouts {
 	Create: *string,
@@ -1495,7 +1495,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.bigtableGcPolicy.BigtableGcPolicyMaxAgeOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/bigtablegcpolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/bigtablegcpolicy"
 
 bigtablegcpolicy.NewBigtableGcPolicyMaxAgeOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) BigtableGcPolicyMaxAgeOutputReference
 ```
@@ -1802,7 +1802,7 @@ func InternalValue() BigtableGcPolicyMaxAge
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.bigtableGcPolicy.BigtableGcPolicyMaxVersionList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/bigtablegcpolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/bigtablegcpolicy"
 
 bigtablegcpolicy.NewBigtableGcPolicyMaxVersionList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) BigtableGcPolicyMaxVersionList
 ```
@@ -1962,7 +1962,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.bigtableGcPolicy.BigtableGcPolicyMaxVersionOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/bigtablegcpolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/bigtablegcpolicy"
 
 bigtablegcpolicy.NewBigtableGcPolicyMaxVersionOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) BigtableGcPolicyMaxVersionOutputReference
 ```
@@ -2251,7 +2251,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.bigtableGcPolicy.BigtableGcPolicyTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/bigtablegcpolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/bigtablegcpolicy"
 
 bigtablegcpolicy.NewBigtableGcPolicyTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) BigtableGcPolicyTimeoutsOutputReference
 ```

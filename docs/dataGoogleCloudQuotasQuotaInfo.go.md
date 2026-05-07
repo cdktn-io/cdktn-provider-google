@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.5
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataGoogleCloudQuotasQuotaInfo.DataGoogleCloudQuotasQuotaInfo.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/datagooglecloudquotasquotainfo"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/datagooglecloudquotasquotainfo"
 
 datagooglecloudquotasquotainfo.NewDataGoogleCloudQuotasQuotaInfo(scope Construct, id *string, config DataGoogleCloudQuotasQuotaInfoConfig) DataGoogleCloudQuotasQuotaInfo
 ```
@@ -305,7 +305,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-google.dataGoogleCloudQuotasQuotaInfo.DataGoogleCloudQuotasQuotaInfo.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/datagooglecloudquotasquotainfo"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/datagooglecloudquotasquotainfo"
 
 datagooglecloudquotasquotainfo.DataGoogleCloudQuotasQuotaInfo_IsConstruct(x interface{}) *bool
 ```
@@ -337,7 +337,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-google.dataGoogleCloudQuotasQuotaInfo.DataGoogleCloudQuotasQuotaInfo.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/datagooglecloudquotasquotainfo"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/datagooglecloudquotasquotainfo"
 
 datagooglecloudquotasquotainfo.DataGoogleCloudQuotasQuotaInfo_IsTerraformElement(x interface{}) *bool
 ```
@@ -351,7 +351,7 @@ datagooglecloudquotasquotainfo.DataGoogleCloudQuotasQuotaInfo_IsTerraformElement
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktn/provider-google.dataGoogleCloudQuotasQuotaInfo.DataGoogleCloudQuotasQuotaInfo.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/datagooglecloudquotasquotainfo"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/datagooglecloudquotasquotainfo"
 
 datagooglecloudquotasquotainfo.DataGoogleCloudQuotasQuotaInfo_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -365,7 +365,7 @@ datagooglecloudquotasquotainfo.DataGoogleCloudQuotasQuotaInfo_IsTerraformDataSou
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-google.dataGoogleCloudQuotasQuotaInfo.DataGoogleCloudQuotasQuotaInfo.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/datagooglecloudquotasquotainfo"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/datagooglecloudquotasquotainfo"
 
 datagooglecloudquotasquotainfo.DataGoogleCloudQuotasQuotaInfo_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -814,7 +814,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.dataGoogleCloudQuotasQuotaInfo.DataGoogleCloudQuotasQuotaInfoConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/datagooglecloudquotasquotainfo"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/datagooglecloudquotasquotainfo"
 
 &datagooglecloudquotasquotainfo.DataGoogleCloudQuotasQuotaInfoConfig {
 	Connection: interface{},
@@ -975,7 +975,7 @@ If you experience problems setting this value it might not be settable. Please t
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.dataGoogleCloudQuotasQuotaInfo.DataGoogleCloudQuotasQuotaInfoDimensionsInfos.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/datagooglecloudquotasquotainfo"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/datagooglecloudquotasquotainfo"
 
 &datagooglecloudquotasquotainfo.DataGoogleCloudQuotasQuotaInfoDimensionsInfos {
 
@@ -988,7 +988,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/datagooglecloudq
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.dataGoogleCloudQuotasQuotaInfo.DataGoogleCloudQuotasQuotaInfoDimensionsInfosDetails.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/datagooglecloudquotasquotainfo"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/datagooglecloudquotasquotainfo"
 
 &datagooglecloudquotasquotainfo.DataGoogleCloudQuotasQuotaInfoDimensionsInfosDetails {
 
@@ -1001,7 +1001,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/datagooglecloudq
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.dataGoogleCloudQuotasQuotaInfo.DataGoogleCloudQuotasQuotaInfoQuotaIncreaseEligibility.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/datagooglecloudquotasquotainfo"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/datagooglecloudquotasquotainfo"
 
 &datagooglecloudquotasquotainfo.DataGoogleCloudQuotasQuotaInfoQuotaIncreaseEligibility {
 
@@ -1016,7 +1016,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/datagooglecloudq
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataGoogleCloudQuotasQuotaInfo.DataGoogleCloudQuotasQuotaInfoDimensionsInfosDetailsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/datagooglecloudquotasquotainfo"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/datagooglecloudquotasquotainfo"
 
 datagooglecloudquotasquotainfo.NewDataGoogleCloudQuotasQuotaInfoDimensionsInfosDetailsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataGoogleCloudQuotasQuotaInfoDimensionsInfosDetailsList
 ```
@@ -1165,7 +1165,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataGoogleCloudQuotasQuotaInfo.DataGoogleCloudQuotasQuotaInfoDimensionsInfosDetailsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/datagooglecloudquotasquotainfo"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/datagooglecloudquotasquotainfo"
 
 datagooglecloudquotasquotainfo.NewDataGoogleCloudQuotasQuotaInfoDimensionsInfosDetailsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataGoogleCloudQuotasQuotaInfoDimensionsInfosDetailsOutputReference
 ```
@@ -1443,7 +1443,7 @@ func InternalValue() DataGoogleCloudQuotasQuotaInfoDimensionsInfosDetails
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataGoogleCloudQuotasQuotaInfo.DataGoogleCloudQuotasQuotaInfoDimensionsInfosList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/datagooglecloudquotasquotainfo"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/datagooglecloudquotasquotainfo"
 
 datagooglecloudquotasquotainfo.NewDataGoogleCloudQuotasQuotaInfoDimensionsInfosList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataGoogleCloudQuotasQuotaInfoDimensionsInfosList
 ```
@@ -1592,7 +1592,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataGoogleCloudQuotasQuotaInfo.DataGoogleCloudQuotasQuotaInfoDimensionsInfosOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/datagooglecloudquotasquotainfo"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/datagooglecloudquotasquotainfo"
 
 datagooglecloudquotasquotainfo.NewDataGoogleCloudQuotasQuotaInfoDimensionsInfosOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataGoogleCloudQuotasQuotaInfoDimensionsInfosOutputReference
 ```
@@ -1892,7 +1892,7 @@ func InternalValue() DataGoogleCloudQuotasQuotaInfoDimensionsInfos
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataGoogleCloudQuotasQuotaInfo.DataGoogleCloudQuotasQuotaInfoQuotaIncreaseEligibilityList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/datagooglecloudquotasquotainfo"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/datagooglecloudquotasquotainfo"
 
 datagooglecloudquotasquotainfo.NewDataGoogleCloudQuotasQuotaInfoQuotaIncreaseEligibilityList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataGoogleCloudQuotasQuotaInfoQuotaIncreaseEligibilityList
 ```
@@ -2041,7 +2041,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataGoogleCloudQuotasQuotaInfo.DataGoogleCloudQuotasQuotaInfoQuotaIncreaseEligibilityOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/datagooglecloudquotasquotainfo"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/datagooglecloudquotasquotainfo"
 
 datagooglecloudquotasquotainfo.NewDataGoogleCloudQuotasQuotaInfoQuotaIncreaseEligibilityOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataGoogleCloudQuotasQuotaInfoQuotaIncreaseEligibilityOutputReference
 ```

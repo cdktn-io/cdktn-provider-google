@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.5
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.workflowsWorkflow.WorkflowsWorkflow.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/workflowsworkflow"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/workflowsworkflow"
 
 workflowsworkflow.NewWorkflowsWorkflow(scope Construct, id *string, config WorkflowsWorkflowConfig) WorkflowsWorkflow
 ```
@@ -525,7 +525,7 @@ func ResetUserEnvVars()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-google.workflowsWorkflow.WorkflowsWorkflow.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/workflowsworkflow"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/workflowsworkflow"
 
 workflowsworkflow.WorkflowsWorkflow_IsConstruct(x interface{}) *bool
 ```
@@ -557,7 +557,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-google.workflowsWorkflow.WorkflowsWorkflow.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/workflowsworkflow"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/workflowsworkflow"
 
 workflowsworkflow.WorkflowsWorkflow_IsTerraformElement(x interface{}) *bool
 ```
@@ -571,7 +571,7 @@ workflowsworkflow.WorkflowsWorkflow_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-google.workflowsWorkflow.WorkflowsWorkflow.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/workflowsworkflow"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/workflowsworkflow"
 
 workflowsworkflow.WorkflowsWorkflow_IsTerraformResource(x interface{}) *bool
 ```
@@ -585,7 +585,7 @@ workflowsworkflow.WorkflowsWorkflow_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-google.workflowsWorkflow.WorkflowsWorkflow.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/workflowsworkflow"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/workflowsworkflow"
 
 workflowsworkflow.WorkflowsWorkflow_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -1232,7 +1232,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.workflowsWorkflow.WorkflowsWorkflowConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/workflowsworkflow"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/workflowsworkflow"
 
 &workflowsworkflow.WorkflowsWorkflowConfig {
 	Connection: interface{},
@@ -1256,7 +1256,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/workflowsworkflo
 	ServiceAccount: *string,
 	SourceContents: *string,
 	Tags: *map[string]*string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-google-go/google/v17.workflowsWorkflow.WorkflowsWorkflowTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-google-go/google/v18.workflowsWorkflow.WorkflowsWorkflowTimeouts,
 	UserEnvVars: *map[string]*string,
 }
 ```
@@ -1620,7 +1620,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.workflowsWorkflow.WorkflowsWorkflowTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/workflowsworkflow"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/workflowsworkflow"
 
 &workflowsworkflow.WorkflowsWorkflowTimeouts {
 	Create: *string,
@@ -1682,7 +1682,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.workflowsWorkflow.WorkflowsWorkflowTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/workflowsworkflow"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/workflowsworkflow"
 
 workflowsworkflow.NewWorkflowsWorkflowTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) WorkflowsWorkflowTimeoutsOutputReference
 ```

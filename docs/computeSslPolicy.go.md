@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.5
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.computeSslPolicy.ComputeSslPolicy.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/computesslpolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/computesslpolicy"
 
 computesslpolicy.NewComputeSslPolicy(scope Construct, id *string, config ComputeSslPolicyConfig) ComputeSslPolicy
 ```
@@ -462,7 +462,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-google.computeSslPolicy.ComputeSslPolicy.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/computesslpolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/computesslpolicy"
 
 computesslpolicy.ComputeSslPolicy_IsConstruct(x interface{}) *bool
 ```
@@ -494,7 +494,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-google.computeSslPolicy.ComputeSslPolicy.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/computesslpolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/computesslpolicy"
 
 computesslpolicy.ComputeSslPolicy_IsTerraformElement(x interface{}) *bool
 ```
@@ -508,7 +508,7 @@ computesslpolicy.ComputeSslPolicy_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-google.computeSslPolicy.ComputeSslPolicy.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/computesslpolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/computesslpolicy"
 
 computesslpolicy.ComputeSslPolicy_IsTerraformResource(x interface{}) *bool
 ```
@@ -522,7 +522,7 @@ computesslpolicy.ComputeSslPolicy_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-google.computeSslPolicy.ComputeSslPolicy.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/computesslpolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/computesslpolicy"
 
 computesslpolicy.ComputeSslPolicy_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -971,7 +971,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.computeSslPolicy.ComputeSslPolicyConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/computesslpolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/computesslpolicy"
 
 &computesslpolicy.ComputeSslPolicyConfig {
 	Connection: interface{},
@@ -988,7 +988,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/computesslpolicy
 	MinTlsVersion: *string,
 	Profile: *string,
 	Project: *string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-google-go/google/v17.computeSslPolicy.ComputeSslPolicyTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-google-go/google/v18.computeSslPolicy.ComputeSslPolicyTimeouts,
 }
 ```
 
@@ -1228,7 +1228,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.computeSslPolicy.ComputeSslPolicyTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/computesslpolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/computesslpolicy"
 
 &computesslpolicy.ComputeSslPolicyTimeouts {
 	Create: *string,
@@ -1290,7 +1290,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.computeSslPolicy.ComputeSslPolicyTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/computesslpolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/computesslpolicy"
 
 computesslpolicy.NewComputeSslPolicyTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ComputeSslPolicyTimeoutsOutputReference
 ```

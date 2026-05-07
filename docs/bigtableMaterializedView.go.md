@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.5
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.bigtableMaterializedView.BigtableMaterializedView.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/bigtablematerializedview"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/bigtablematerializedview"
 
 bigtablematerializedview.NewBigtableMaterializedView(scope Construct, id *string, config BigtableMaterializedViewConfig) BigtableMaterializedView
 ```
@@ -448,7 +448,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-google.bigtableMaterializedView.BigtableMaterializedView.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/bigtablematerializedview"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/bigtablematerializedview"
 
 bigtablematerializedview.BigtableMaterializedView_IsConstruct(x interface{}) *bool
 ```
@@ -480,7 +480,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-google.bigtableMaterializedView.BigtableMaterializedView.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/bigtablematerializedview"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/bigtablematerializedview"
 
 bigtablematerializedview.BigtableMaterializedView_IsTerraformElement(x interface{}) *bool
 ```
@@ -494,7 +494,7 @@ bigtablematerializedview.BigtableMaterializedView_IsTerraformElement(x interface
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-google.bigtableMaterializedView.BigtableMaterializedView.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/bigtablematerializedview"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/bigtablematerializedview"
 
 bigtablematerializedview.BigtableMaterializedView_IsTerraformResource(x interface{}) *bool
 ```
@@ -508,7 +508,7 @@ bigtablematerializedview.BigtableMaterializedView_IsTerraformResource(x interfac
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-google.bigtableMaterializedView.BigtableMaterializedView.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/bigtablematerializedview"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/bigtablematerializedview"
 
 bigtablematerializedview.BigtableMaterializedView_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -902,7 +902,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.bigtableMaterializedView.BigtableMaterializedViewConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/bigtablematerializedview"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/bigtablematerializedview"
 
 &bigtablematerializedview.BigtableMaterializedViewConfig {
 	Connection: interface{},
@@ -918,7 +918,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/bigtablematerial
 	Id: *string,
 	Instance: *string,
 	Project: *string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-google-go/google/v17.bigtableMaterializedView.BigtableMaterializedViewTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-google-go/google/v18.bigtableMaterializedView.BigtableMaterializedViewTimeouts,
 }
 ```
 
@@ -1115,7 +1115,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.bigtableMaterializedView.BigtableMaterializedViewTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/bigtablematerializedview"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/bigtablematerializedview"
 
 &bigtablematerializedview.BigtableMaterializedViewTimeouts {
 	Create: *string,
@@ -1177,7 +1177,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.bigtableMaterializedView.BigtableMaterializedViewTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/bigtablematerializedview"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/bigtablematerializedview"
 
 bigtablematerializedview.NewBigtableMaterializedViewTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) BigtableMaterializedViewTimeoutsOutputReference
 ```

@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.5
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.memorystoreInstanceDesiredUserCreatedEndpoints.MemorystoreInstanceDesiredUserCreatedEndpoints.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/memorystoreinstancedesiredusercreatedendpoints"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/memorystoreinstancedesiredusercreatedendpoints"
 
 memorystoreinstancedesiredusercreatedendpoints.NewMemorystoreInstanceDesiredUserCreatedEndpoints(scope Construct, id *string, config MemorystoreInstanceDesiredUserCreatedEndpointsConfig) MemorystoreInstanceDesiredUserCreatedEndpoints
 ```
@@ -454,7 +454,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-google.memorystoreInstanceDesiredUserCreatedEndpoints.MemorystoreInstanceDesiredUserCreatedEndpoints.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/memorystoreinstancedesiredusercreatedendpoints"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/memorystoreinstancedesiredusercreatedendpoints"
 
 memorystoreinstancedesiredusercreatedendpoints.MemorystoreInstanceDesiredUserCreatedEndpoints_IsConstruct(x interface{}) *bool
 ```
@@ -486,7 +486,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-google.memorystoreInstanceDesiredUserCreatedEndpoints.MemorystoreInstanceDesiredUserCreatedEndpoints.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/memorystoreinstancedesiredusercreatedendpoints"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/memorystoreinstancedesiredusercreatedendpoints"
 
 memorystoreinstancedesiredusercreatedendpoints.MemorystoreInstanceDesiredUserCreatedEndpoints_IsTerraformElement(x interface{}) *bool
 ```
@@ -500,7 +500,7 @@ memorystoreinstancedesiredusercreatedendpoints.MemorystoreInstanceDesiredUserCre
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-google.memorystoreInstanceDesiredUserCreatedEndpoints.MemorystoreInstanceDesiredUserCreatedEndpoints.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/memorystoreinstancedesiredusercreatedendpoints"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/memorystoreinstancedesiredusercreatedendpoints"
 
 memorystoreinstancedesiredusercreatedendpoints.MemorystoreInstanceDesiredUserCreatedEndpoints_IsTerraformResource(x interface{}) *bool
 ```
@@ -514,7 +514,7 @@ memorystoreinstancedesiredusercreatedendpoints.MemorystoreInstanceDesiredUserCre
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-google.memorystoreInstanceDesiredUserCreatedEndpoints.MemorystoreInstanceDesiredUserCreatedEndpoints.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/memorystoreinstancedesiredusercreatedendpoints"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/memorystoreinstancedesiredusercreatedendpoints"
 
 memorystoreinstancedesiredusercreatedendpoints.MemorystoreInstanceDesiredUserCreatedEndpoints_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -875,7 +875,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.memorystoreInstanceDesiredUserCreatedEndpoints.MemorystoreInstanceDesiredUserCreatedEndpointsConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/memorystoreinstancedesiredusercreatedendpoints"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/memorystoreinstancedesiredusercreatedendpoints"
 
 &memorystoreinstancedesiredusercreatedendpoints.MemorystoreInstanceDesiredUserCreatedEndpointsConfig {
 	Connection: interface{},
@@ -890,7 +890,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/memorystoreinsta
 	DesiredUserCreatedEndpoints: interface{},
 	Id: *string,
 	Project: *string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-google-go/google/v17.memorystoreInstanceDesiredUserCreatedEndpoints.MemorystoreInstanceDesiredUserCreatedEndpointsTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-google-go/google/v18.memorystoreInstanceDesiredUserCreatedEndpoints.MemorystoreInstanceDesiredUserCreatedEndpointsTimeouts,
 }
 ```
 
@@ -1072,7 +1072,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.memorystoreInstanceDesiredUserCreatedEndpoints.MemorystoreInstanceDesiredUserCreatedEndpointsDesiredUserCreatedEndpoints.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/memorystoreinstancedesiredusercreatedendpoints"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/memorystoreinstancedesiredusercreatedendpoints"
 
 &memorystoreinstancedesiredusercreatedendpoints.MemorystoreInstanceDesiredUserCreatedEndpointsDesiredUserCreatedEndpoints {
 	Connections: interface{},
@@ -1106,10 +1106,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.memorystoreInstanceDesiredUserCreatedEndpoints.MemorystoreInstanceDesiredUserCreatedEndpointsDesiredUserCreatedEndpointsConnections.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/memorystoreinstancedesiredusercreatedendpoints"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/memorystoreinstancedesiredusercreatedendpoints"
 
 &memorystoreinstancedesiredusercreatedendpoints.MemorystoreInstanceDesiredUserCreatedEndpointsDesiredUserCreatedEndpointsConnections {
-	PscConnection: github.com/cdktn-io/cdktn-provider-google-go/google/v17.memorystoreInstanceDesiredUserCreatedEndpoints.MemorystoreInstanceDesiredUserCreatedEndpointsDesiredUserCreatedEndpointsConnectionsPscConnection,
+	PscConnection: github.com/cdktn-io/cdktn-provider-google-go/google/v18.memorystoreInstanceDesiredUserCreatedEndpoints.MemorystoreInstanceDesiredUserCreatedEndpointsDesiredUserCreatedEndpointsConnectionsPscConnection,
 }
 ```
 
@@ -1140,7 +1140,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.memorystoreInstanceDesiredUserCreatedEndpoints.MemorystoreInstanceDesiredUserCreatedEndpointsDesiredUserCreatedEndpointsConnectionsPscConnection.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/memorystoreinstancedesiredusercreatedendpoints"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/memorystoreinstancedesiredusercreatedendpoints"
 
 &memorystoreinstancedesiredusercreatedendpoints.MemorystoreInstanceDesiredUserCreatedEndpointsDesiredUserCreatedEndpointsConnectionsPscConnection {
 	ForwardingRule: *string,
@@ -1254,7 +1254,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.memorystoreInstanceDesiredUserCreatedEndpoints.MemorystoreInstanceDesiredUserCreatedEndpointsTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/memorystoreinstancedesiredusercreatedendpoints"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/memorystoreinstancedesiredusercreatedendpoints"
 
 &memorystoreinstancedesiredusercreatedendpoints.MemorystoreInstanceDesiredUserCreatedEndpointsTimeouts {
 	Create: *string,
@@ -1316,7 +1316,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.memorystoreInstanceDesiredUserCreatedEndpoints.MemorystoreInstanceDesiredUserCreatedEndpointsDesiredUserCreatedEndpointsConnectionsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/memorystoreinstancedesiredusercreatedendpoints"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/memorystoreinstancedesiredusercreatedendpoints"
 
 memorystoreinstancedesiredusercreatedendpoints.NewMemorystoreInstanceDesiredUserCreatedEndpointsDesiredUserCreatedEndpointsConnectionsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) MemorystoreInstanceDesiredUserCreatedEndpointsDesiredUserCreatedEndpointsConnectionsList
 ```
@@ -1476,7 +1476,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.memorystoreInstanceDesiredUserCreatedEndpoints.MemorystoreInstanceDesiredUserCreatedEndpointsDesiredUserCreatedEndpointsConnectionsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/memorystoreinstancedesiredusercreatedendpoints"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/memorystoreinstancedesiredusercreatedendpoints"
 
 memorystoreinstancedesiredusercreatedendpoints.NewMemorystoreInstanceDesiredUserCreatedEndpointsDesiredUserCreatedEndpointsConnectionsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) MemorystoreInstanceDesiredUserCreatedEndpointsDesiredUserCreatedEndpointsConnectionsOutputReference
 ```
@@ -1785,7 +1785,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.memorystoreInstanceDesiredUserCreatedEndpoints.MemorystoreInstanceDesiredUserCreatedEndpointsDesiredUserCreatedEndpointsConnectionsPscConnectionOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/memorystoreinstancedesiredusercreatedendpoints"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/memorystoreinstancedesiredusercreatedendpoints"
 
 memorystoreinstancedesiredusercreatedendpoints.NewMemorystoreInstanceDesiredUserCreatedEndpointsDesiredUserCreatedEndpointsConnectionsPscConnectionOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) MemorystoreInstanceDesiredUserCreatedEndpointsDesiredUserCreatedEndpointsConnectionsPscConnectionOutputReference
 ```
@@ -2195,7 +2195,7 @@ func InternalValue() MemorystoreInstanceDesiredUserCreatedEndpointsDesiredUserCr
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.memorystoreInstanceDesiredUserCreatedEndpoints.MemorystoreInstanceDesiredUserCreatedEndpointsDesiredUserCreatedEndpointsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/memorystoreinstancedesiredusercreatedendpoints"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/memorystoreinstancedesiredusercreatedendpoints"
 
 memorystoreinstancedesiredusercreatedendpoints.NewMemorystoreInstanceDesiredUserCreatedEndpointsDesiredUserCreatedEndpointsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) MemorystoreInstanceDesiredUserCreatedEndpointsDesiredUserCreatedEndpointsList
 ```
@@ -2355,7 +2355,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.memorystoreInstanceDesiredUserCreatedEndpoints.MemorystoreInstanceDesiredUserCreatedEndpointsDesiredUserCreatedEndpointsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/memorystoreinstancedesiredusercreatedendpoints"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/memorystoreinstancedesiredusercreatedendpoints"
 
 memorystoreinstancedesiredusercreatedendpoints.NewMemorystoreInstanceDesiredUserCreatedEndpointsDesiredUserCreatedEndpointsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) MemorystoreInstanceDesiredUserCreatedEndpointsDesiredUserCreatedEndpointsOutputReference
 ```
@@ -2664,7 +2664,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.memorystoreInstanceDesiredUserCreatedEndpoints.MemorystoreInstanceDesiredUserCreatedEndpointsTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/memorystoreinstancedesiredusercreatedendpoints"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/memorystoreinstancedesiredusercreatedendpoints"
 
 memorystoreinstancedesiredusercreatedendpoints.NewMemorystoreInstanceDesiredUserCreatedEndpointsTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) MemorystoreInstanceDesiredUserCreatedEndpointsTimeoutsOutputReference
 ```

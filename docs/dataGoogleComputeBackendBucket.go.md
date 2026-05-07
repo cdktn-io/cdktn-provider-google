@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.5
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataGoogleComputeBackendBucket.DataGoogleComputeBackendBucket.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/datagooglecomputebackendbucket"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/datagooglecomputebackendbucket"
 
 datagooglecomputebackendbucket.NewDataGoogleComputeBackendBucket(scope Construct, id *string, config DataGoogleComputeBackendBucketConfig) DataGoogleComputeBackendBucket
 ```
@@ -312,7 +312,7 @@ func ResetProject()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-google.dataGoogleComputeBackendBucket.DataGoogleComputeBackendBucket.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/datagooglecomputebackendbucket"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/datagooglecomputebackendbucket"
 
 datagooglecomputebackendbucket.DataGoogleComputeBackendBucket_IsConstruct(x interface{}) *bool
 ```
@@ -344,7 +344,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-google.dataGoogleComputeBackendBucket.DataGoogleComputeBackendBucket.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/datagooglecomputebackendbucket"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/datagooglecomputebackendbucket"
 
 datagooglecomputebackendbucket.DataGoogleComputeBackendBucket_IsTerraformElement(x interface{}) *bool
 ```
@@ -358,7 +358,7 @@ datagooglecomputebackendbucket.DataGoogleComputeBackendBucket_IsTerraformElement
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktn/provider-google.dataGoogleComputeBackendBucket.DataGoogleComputeBackendBucket.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/datagooglecomputebackendbucket"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/datagooglecomputebackendbucket"
 
 datagooglecomputebackendbucket.DataGoogleComputeBackendBucket_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -372,7 +372,7 @@ datagooglecomputebackendbucket.DataGoogleComputeBackendBucket_IsTerraformDataSou
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-google.dataGoogleComputeBackendBucket.DataGoogleComputeBackendBucket.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/datagooglecomputebackendbucket"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/datagooglecomputebackendbucket"
 
 datagooglecomputebackendbucket.DataGoogleComputeBackendBucket_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -755,7 +755,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.dataGoogleComputeBackendBucket.DataGoogleComputeBackendBucketCdnPolicy.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/datagooglecomputebackendbucket"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/datagooglecomputebackendbucket"
 
 &datagooglecomputebackendbucket.DataGoogleComputeBackendBucketCdnPolicy {
 
@@ -768,7 +768,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/datagooglecomput
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.dataGoogleComputeBackendBucket.DataGoogleComputeBackendBucketCdnPolicyBypassCacheOnRequestHeaders.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/datagooglecomputebackendbucket"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/datagooglecomputebackendbucket"
 
 &datagooglecomputebackendbucket.DataGoogleComputeBackendBucketCdnPolicyBypassCacheOnRequestHeaders {
 
@@ -781,7 +781,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/datagooglecomput
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.dataGoogleComputeBackendBucket.DataGoogleComputeBackendBucketCdnPolicyCacheKeyPolicy.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/datagooglecomputebackendbucket"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/datagooglecomputebackendbucket"
 
 &datagooglecomputebackendbucket.DataGoogleComputeBackendBucketCdnPolicyCacheKeyPolicy {
 
@@ -794,7 +794,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/datagooglecomput
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.dataGoogleComputeBackendBucket.DataGoogleComputeBackendBucketCdnPolicyNegativeCachingPolicy.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/datagooglecomputebackendbucket"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/datagooglecomputebackendbucket"
 
 &datagooglecomputebackendbucket.DataGoogleComputeBackendBucketCdnPolicyNegativeCachingPolicy {
 
@@ -807,7 +807,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/datagooglecomput
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.dataGoogleComputeBackendBucket.DataGoogleComputeBackendBucketConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/datagooglecomputebackendbucket"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/datagooglecomputebackendbucket"
 
 &datagooglecomputebackendbucket.DataGoogleComputeBackendBucketConfig {
 	Connection: interface{},
@@ -966,7 +966,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataGoogleComputeBackendBucket.DataGoogleComputeBackendBucketCdnPolicyBypassCacheOnRequestHeadersList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/datagooglecomputebackendbucket"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/datagooglecomputebackendbucket"
 
 datagooglecomputebackendbucket.NewDataGoogleComputeBackendBucketCdnPolicyBypassCacheOnRequestHeadersList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataGoogleComputeBackendBucketCdnPolicyBypassCacheOnRequestHeadersList
 ```
@@ -1115,7 +1115,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataGoogleComputeBackendBucket.DataGoogleComputeBackendBucketCdnPolicyBypassCacheOnRequestHeadersOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/datagooglecomputebackendbucket"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/datagooglecomputebackendbucket"
 
 datagooglecomputebackendbucket.NewDataGoogleComputeBackendBucketCdnPolicyBypassCacheOnRequestHeadersOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataGoogleComputeBackendBucketCdnPolicyBypassCacheOnRequestHeadersOutputReference
 ```
@@ -1393,7 +1393,7 @@ func InternalValue() DataGoogleComputeBackendBucketCdnPolicyBypassCacheOnRequest
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataGoogleComputeBackendBucket.DataGoogleComputeBackendBucketCdnPolicyCacheKeyPolicyList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/datagooglecomputebackendbucket"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/datagooglecomputebackendbucket"
 
 datagooglecomputebackendbucket.NewDataGoogleComputeBackendBucketCdnPolicyCacheKeyPolicyList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataGoogleComputeBackendBucketCdnPolicyCacheKeyPolicyList
 ```
@@ -1542,7 +1542,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataGoogleComputeBackendBucket.DataGoogleComputeBackendBucketCdnPolicyCacheKeyPolicyOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/datagooglecomputebackendbucket"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/datagooglecomputebackendbucket"
 
 datagooglecomputebackendbucket.NewDataGoogleComputeBackendBucketCdnPolicyCacheKeyPolicyOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataGoogleComputeBackendBucketCdnPolicyCacheKeyPolicyOutputReference
 ```
@@ -1831,7 +1831,7 @@ func InternalValue() DataGoogleComputeBackendBucketCdnPolicyCacheKeyPolicy
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataGoogleComputeBackendBucket.DataGoogleComputeBackendBucketCdnPolicyList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/datagooglecomputebackendbucket"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/datagooglecomputebackendbucket"
 
 datagooglecomputebackendbucket.NewDataGoogleComputeBackendBucketCdnPolicyList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataGoogleComputeBackendBucketCdnPolicyList
 ```
@@ -1980,7 +1980,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataGoogleComputeBackendBucket.DataGoogleComputeBackendBucketCdnPolicyNegativeCachingPolicyList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/datagooglecomputebackendbucket"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/datagooglecomputebackendbucket"
 
 datagooglecomputebackendbucket.NewDataGoogleComputeBackendBucketCdnPolicyNegativeCachingPolicyList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataGoogleComputeBackendBucketCdnPolicyNegativeCachingPolicyList
 ```
@@ -2129,7 +2129,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataGoogleComputeBackendBucket.DataGoogleComputeBackendBucketCdnPolicyNegativeCachingPolicyOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/datagooglecomputebackendbucket"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/datagooglecomputebackendbucket"
 
 datagooglecomputebackendbucket.NewDataGoogleComputeBackendBucketCdnPolicyNegativeCachingPolicyOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataGoogleComputeBackendBucketCdnPolicyNegativeCachingPolicyOutputReference
 ```
@@ -2418,7 +2418,7 @@ func InternalValue() DataGoogleComputeBackendBucketCdnPolicyNegativeCachingPolic
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataGoogleComputeBackendBucket.DataGoogleComputeBackendBucketCdnPolicyOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/datagooglecomputebackendbucket"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/datagooglecomputebackendbucket"
 
 datagooglecomputebackendbucket.NewDataGoogleComputeBackendBucketCdnPolicyOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataGoogleComputeBackendBucketCdnPolicyOutputReference
 ```

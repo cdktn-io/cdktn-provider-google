@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.5
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataGoogleBigqueryAnalyticsHubDataExchangeIamPolicy.DataGoogleBigqueryAnalyticsHubDataExchangeIamPolicy.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/datagooglebigqueryanalyticshubdataexchangeiampolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/datagooglebigqueryanalyticshubdataexchangeiampolicy"
 
 datagooglebigqueryanalyticshubdataexchangeiampolicy.NewDataGoogleBigqueryAnalyticsHubDataExchangeIamPolicy(scope Construct, id *string, config DataGoogleBigqueryAnalyticsHubDataExchangeIamPolicyConfig) DataGoogleBigqueryAnalyticsHubDataExchangeIamPolicy
 ```
@@ -319,7 +319,7 @@ func ResetProject()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-google.dataGoogleBigqueryAnalyticsHubDataExchangeIamPolicy.DataGoogleBigqueryAnalyticsHubDataExchangeIamPolicy.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/datagooglebigqueryanalyticshubdataexchangeiampolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/datagooglebigqueryanalyticshubdataexchangeiampolicy"
 
 datagooglebigqueryanalyticshubdataexchangeiampolicy.DataGoogleBigqueryAnalyticsHubDataExchangeIamPolicy_IsConstruct(x interface{}) *bool
 ```
@@ -351,7 +351,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-google.dataGoogleBigqueryAnalyticsHubDataExchangeIamPolicy.DataGoogleBigqueryAnalyticsHubDataExchangeIamPolicy.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/datagooglebigqueryanalyticshubdataexchangeiampolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/datagooglebigqueryanalyticshubdataexchangeiampolicy"
 
 datagooglebigqueryanalyticshubdataexchangeiampolicy.DataGoogleBigqueryAnalyticsHubDataExchangeIamPolicy_IsTerraformElement(x interface{}) *bool
 ```
@@ -365,7 +365,7 @@ datagooglebigqueryanalyticshubdataexchangeiampolicy.DataGoogleBigqueryAnalyticsH
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktn/provider-google.dataGoogleBigqueryAnalyticsHubDataExchangeIamPolicy.DataGoogleBigqueryAnalyticsHubDataExchangeIamPolicy.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/datagooglebigqueryanalyticshubdataexchangeiampolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/datagooglebigqueryanalyticshubdataexchangeiampolicy"
 
 datagooglebigqueryanalyticshubdataexchangeiampolicy.DataGoogleBigqueryAnalyticsHubDataExchangeIamPolicy_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -379,7 +379,7 @@ datagooglebigqueryanalyticshubdataexchangeiampolicy.DataGoogleBigqueryAnalyticsH
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-google.dataGoogleBigqueryAnalyticsHubDataExchangeIamPolicy.DataGoogleBigqueryAnalyticsHubDataExchangeIamPolicy.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/datagooglebigqueryanalyticshubdataexchangeiampolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/datagooglebigqueryanalyticshubdataexchangeiampolicy"
 
 datagooglebigqueryanalyticshubdataexchangeiampolicy.DataGoogleBigqueryAnalyticsHubDataExchangeIamPolicy_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -696,7 +696,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.dataGoogleBigqueryAnalyticsHubDataExchangeIamPolicy.DataGoogleBigqueryAnalyticsHubDataExchangeIamPolicyConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/datagooglebigqueryanalyticshubdataexchangeiampolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/datagooglebigqueryanalyticshubdataexchangeiampolicy"
 
 &datagooglebigqueryanalyticshubdataexchangeiampolicy.DataGoogleBigqueryAnalyticsHubDataExchangeIamPolicyConfig {
 	Connection: interface{},

@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.5
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.networkSecuritySecurityProfileGroup.NetworkSecuritySecurityProfileGroup.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/networksecuritysecurityprofilegroup"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/networksecuritysecurityprofilegroup"
 
 networksecuritysecurityprofilegroup.NewNetworkSecuritySecurityProfileGroup(scope Construct, id *string, config NetworkSecuritySecurityProfileGroupConfig) NetworkSecuritySecurityProfileGroup
 ```
@@ -476,7 +476,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-google.networkSecuritySecurityProfileGroup.NetworkSecuritySecurityProfileGroup.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/networksecuritysecurityprofilegroup"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/networksecuritysecurityprofilegroup"
 
 networksecuritysecurityprofilegroup.NetworkSecuritySecurityProfileGroup_IsConstruct(x interface{}) *bool
 ```
@@ -508,7 +508,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-google.networkSecuritySecurityProfileGroup.NetworkSecuritySecurityProfileGroup.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/networksecuritysecurityprofilegroup"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/networksecuritysecurityprofilegroup"
 
 networksecuritysecurityprofilegroup.NetworkSecuritySecurityProfileGroup_IsTerraformElement(x interface{}) *bool
 ```
@@ -522,7 +522,7 @@ networksecuritysecurityprofilegroup.NetworkSecuritySecurityProfileGroup_IsTerraf
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-google.networkSecuritySecurityProfileGroup.NetworkSecuritySecurityProfileGroup.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/networksecuritysecurityprofilegroup"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/networksecuritysecurityprofilegroup"
 
 networksecuritysecurityprofilegroup.NetworkSecuritySecurityProfileGroup_IsTerraformResource(x interface{}) *bool
 ```
@@ -536,7 +536,7 @@ networksecuritysecurityprofilegroup.NetworkSecuritySecurityProfileGroup_IsTerraf
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-google.networkSecuritySecurityProfileGroup.NetworkSecuritySecurityProfileGroup.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/networksecuritysecurityprofilegroup"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/networksecuritysecurityprofilegroup"
 
 networksecuritysecurityprofilegroup.NetworkSecuritySecurityProfileGroup_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -1040,7 +1040,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.networkSecuritySecurityProfileGroup.NetworkSecuritySecurityProfileGroupConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/networksecuritysecurityprofilegroup"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/networksecuritysecurityprofilegroup"
 
 &networksecuritysecurityprofilegroup.NetworkSecuritySecurityProfileGroupConfig {
 	Connection: interface{},
@@ -1059,7 +1059,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/networksecuritys
 	Location: *string,
 	Parent: *string,
 	ThreatPreventionProfile: *string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-google-go/google/v17.networkSecuritySecurityProfileGroup.NetworkSecuritySecurityProfileGroupTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-google-go/google/v18.networkSecuritySecurityProfileGroup.NetworkSecuritySecurityProfileGroupTimeouts,
 }
 ```
 
@@ -1306,7 +1306,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.networkSecuritySecurityProfileGroup.NetworkSecuritySecurityProfileGroupTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/networksecuritysecurityprofilegroup"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/networksecuritysecurityprofilegroup"
 
 &networksecuritysecurityprofilegroup.NetworkSecuritySecurityProfileGroupTimeouts {
 	Create: *string,
@@ -1368,7 +1368,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.networkSecuritySecurityProfileGroup.NetworkSecuritySecurityProfileGroupTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/networksecuritysecurityprofilegroup"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/networksecuritysecurityprofilegroup"
 
 networksecuritysecurityprofilegroup.NewNetworkSecuritySecurityProfileGroupTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) NetworkSecuritySecurityProfileGroupTimeoutsOutputReference
 ```

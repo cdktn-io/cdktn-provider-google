@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.5
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.networkSecurityBackendAuthenticationConfig.NetworkSecurityBackendAuthenticationConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/networksecuritybackendauthenticationconfig"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/networksecuritybackendauthenticationconfig"
 
 networksecuritybackendauthenticationconfig.NewNetworkSecurityBackendAuthenticationConfig(scope Construct, id *string, config NetworkSecurityBackendAuthenticationConfigConfig) NetworkSecurityBackendAuthenticationConfig
 ```
@@ -476,7 +476,7 @@ func ResetWellKnownRoots()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-google.networkSecurityBackendAuthenticationConfig.NetworkSecurityBackendAuthenticationConfig.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/networksecuritybackendauthenticationconfig"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/networksecuritybackendauthenticationconfig"
 
 networksecuritybackendauthenticationconfig.NetworkSecurityBackendAuthenticationConfig_IsConstruct(x interface{}) *bool
 ```
@@ -508,7 +508,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-google.networkSecurityBackendAuthenticationConfig.NetworkSecurityBackendAuthenticationConfig.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/networksecuritybackendauthenticationconfig"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/networksecuritybackendauthenticationconfig"
 
 networksecuritybackendauthenticationconfig.NetworkSecurityBackendAuthenticationConfig_IsTerraformElement(x interface{}) *bool
 ```
@@ -522,7 +522,7 @@ networksecuritybackendauthenticationconfig.NetworkSecurityBackendAuthenticationC
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-google.networkSecurityBackendAuthenticationConfig.NetworkSecurityBackendAuthenticationConfig.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/networksecuritybackendauthenticationconfig"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/networksecuritybackendauthenticationconfig"
 
 networksecuritybackendauthenticationconfig.NetworkSecurityBackendAuthenticationConfig_IsTerraformResource(x interface{}) *bool
 ```
@@ -536,7 +536,7 @@ networksecuritybackendauthenticationconfig.NetworkSecurityBackendAuthenticationC
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-google.networkSecurityBackendAuthenticationConfig.NetworkSecurityBackendAuthenticationConfig.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/networksecuritybackendauthenticationconfig"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/networksecuritybackendauthenticationconfig"
 
 networksecuritybackendauthenticationconfig.NetworkSecurityBackendAuthenticationConfig_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -1029,7 +1029,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.networkSecurityBackendAuthenticationConfig.NetworkSecurityBackendAuthenticationConfigConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/networksecuritybackendauthenticationconfig"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/networksecuritybackendauthenticationconfig"
 
 &networksecuritybackendauthenticationconfig.NetworkSecurityBackendAuthenticationConfigConfig {
 	Connection: interface{},
@@ -1046,7 +1046,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/networksecurityb
 	Labels: *map[string]*string,
 	Location: *string,
 	Project: *string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-google-go/google/v17.networkSecurityBackendAuthenticationConfig.NetworkSecurityBackendAuthenticationConfigTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-google-go/google/v18.networkSecurityBackendAuthenticationConfig.NetworkSecurityBackendAuthenticationConfigTimeouts,
 	TrustConfig: *string,
 	WellKnownRoots: *string,
 }
@@ -1297,7 +1297,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.networkSecurityBackendAuthenticationConfig.NetworkSecurityBackendAuthenticationConfigTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/networksecuritybackendauthenticationconfig"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/networksecuritybackendauthenticationconfig"
 
 &networksecuritybackendauthenticationconfig.NetworkSecurityBackendAuthenticationConfigTimeouts {
 	Create: *string,
@@ -1359,7 +1359,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.networkSecurityBackendAuthenticationConfig.NetworkSecurityBackendAuthenticationConfigTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/networksecuritybackendauthenticationconfig"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/networksecuritybackendauthenticationconfig"
 
 networksecuritybackendauthenticationconfig.NewNetworkSecurityBackendAuthenticationConfigTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) NetworkSecurityBackendAuthenticationConfigTimeoutsOutputReference
 ```

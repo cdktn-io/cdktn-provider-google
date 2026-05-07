@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.5
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.bigtableInstanceIamBinding.BigtableInstanceIamBinding.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/bigtableinstanceiambinding"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/bigtableinstanceiambinding"
 
 bigtableinstanceiambinding.NewBigtableInstanceIamBinding(scope Construct, id *string, config BigtableInstanceIamBindingConfig) BigtableInstanceIamBinding
 ```
@@ -434,7 +434,7 @@ func ResetProject()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-google.bigtableInstanceIamBinding.BigtableInstanceIamBinding.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/bigtableinstanceiambinding"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/bigtableinstanceiambinding"
 
 bigtableinstanceiambinding.BigtableInstanceIamBinding_IsConstruct(x interface{}) *bool
 ```
@@ -466,7 +466,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-google.bigtableInstanceIamBinding.BigtableInstanceIamBinding.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/bigtableinstanceiambinding"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/bigtableinstanceiambinding"
 
 bigtableinstanceiambinding.BigtableInstanceIamBinding_IsTerraformElement(x interface{}) *bool
 ```
@@ -480,7 +480,7 @@ bigtableinstanceiambinding.BigtableInstanceIamBinding_IsTerraformElement(x inter
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-google.bigtableInstanceIamBinding.BigtableInstanceIamBinding.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/bigtableinstanceiambinding"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/bigtableinstanceiambinding"
 
 bigtableinstanceiambinding.BigtableInstanceIamBinding_IsTerraformResource(x interface{}) *bool
 ```
@@ -494,7 +494,7 @@ bigtableinstanceiambinding.BigtableInstanceIamBinding_IsTerraformResource(x inte
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-google.bigtableInstanceIamBinding.BigtableInstanceIamBinding.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/bigtableinstanceiambinding"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/bigtableinstanceiambinding"
 
 bigtableinstanceiambinding.BigtableInstanceIamBinding_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -866,7 +866,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.bigtableInstanceIamBinding.BigtableInstanceIamBindingCondition.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/bigtableinstanceiambinding"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/bigtableinstanceiambinding"
 
 &bigtableinstanceiambinding.BigtableInstanceIamBindingCondition {
 	Expression: *string,
@@ -926,7 +926,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.bigtableInstanceIamBinding.BigtableInstanceIamBindingConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/bigtableinstanceiambinding"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/bigtableinstanceiambinding"
 
 &bigtableinstanceiambinding.BigtableInstanceIamBindingConfig {
 	Connection: interface{},
@@ -939,7 +939,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/bigtableinstance
 	Instance: *string,
 	Members: *[]*string,
 	Role: *string,
-	Condition: github.com/cdktn-io/cdktn-provider-google-go/google/v17.bigtableInstanceIamBinding.BigtableInstanceIamBindingCondition,
+	Condition: github.com/cdktn-io/cdktn-provider-google-go/google/v18.bigtableInstanceIamBinding.BigtableInstanceIamBindingCondition,
 	Id: *string,
 	Project: *string,
 }
@@ -1119,7 +1119,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.bigtableInstanceIamBinding.BigtableInstanceIamBindingConditionOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/bigtableinstanceiambinding"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/bigtableinstanceiambinding"
 
 bigtableinstanceiambinding.NewBigtableInstanceIamBindingConditionOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) BigtableInstanceIamBindingConditionOutputReference
 ```

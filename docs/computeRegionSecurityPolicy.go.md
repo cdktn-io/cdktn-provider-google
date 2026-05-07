@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.5
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.computeRegionSecurityPolicy.ComputeRegionSecurityPolicy.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/computeregionsecuritypolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/computeregionsecuritypolicy"
 
 computeregionsecuritypolicy.NewComputeRegionSecurityPolicy(scope Construct, id *string, config ComputeRegionSecurityPolicyConfig) ComputeRegionSecurityPolicy
 ```
@@ -535,7 +535,7 @@ func ResetUserDefinedFields()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-google.computeRegionSecurityPolicy.ComputeRegionSecurityPolicy.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/computeregionsecuritypolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/computeregionsecuritypolicy"
 
 computeregionsecuritypolicy.ComputeRegionSecurityPolicy_IsConstruct(x interface{}) *bool
 ```
@@ -567,7 +567,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-google.computeRegionSecurityPolicy.ComputeRegionSecurityPolicy.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/computeregionsecuritypolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/computeregionsecuritypolicy"
 
 computeregionsecuritypolicy.ComputeRegionSecurityPolicy_IsTerraformElement(x interface{}) *bool
 ```
@@ -581,7 +581,7 @@ computeregionsecuritypolicy.ComputeRegionSecurityPolicy_IsTerraformElement(x int
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-google.computeRegionSecurityPolicy.ComputeRegionSecurityPolicy.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/computeregionsecuritypolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/computeregionsecuritypolicy"
 
 computeregionsecuritypolicy.ComputeRegionSecurityPolicy_IsTerraformResource(x interface{}) *bool
 ```
@@ -595,7 +595,7 @@ computeregionsecuritypolicy.ComputeRegionSecurityPolicy_IsTerraformResource(x in
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-google.computeRegionSecurityPolicy.ComputeRegionSecurityPolicy.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/computeregionsecuritypolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/computeregionsecuritypolicy"
 
 computeregionsecuritypolicy.ComputeRegionSecurityPolicy_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -1110,10 +1110,10 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.computeRegionSecurityPolicy.ComputeRegionSecurityPolicyAdvancedOptionsConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/computeregionsecuritypolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/computeregionsecuritypolicy"
 
 &computeregionsecuritypolicy.ComputeRegionSecurityPolicyAdvancedOptionsConfig {
-	JsonCustomConfig: github.com/cdktn-io/cdktn-provider-google-go/google/v17.computeRegionSecurityPolicy.ComputeRegionSecurityPolicyAdvancedOptionsConfigJsonCustomConfig,
+	JsonCustomConfig: github.com/cdktn-io/cdktn-provider-google-go/google/v18.computeRegionSecurityPolicy.ComputeRegionSecurityPolicyAdvancedOptionsConfigJsonCustomConfig,
 	JsonParsing: *string,
 	LogLevel: *string,
 	UserIpRequestHeaders: *[]*string,
@@ -1192,7 +1192,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.computeRegionSecurityPolicy.ComputeRegionSecurityPolicyAdvancedOptionsConfigJsonCustomConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/computeregionsecuritypolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/computeregionsecuritypolicy"
 
 &computeregionsecuritypolicy.ComputeRegionSecurityPolicyAdvancedOptionsConfigJsonCustomConfig {
 	ContentTypes: *[]*string,
@@ -1226,7 +1226,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.computeRegionSecurityPolicy.ComputeRegionSecurityPolicyConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/computeregionsecuritypolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/computeregionsecuritypolicy"
 
 &computeregionsecuritypolicy.ComputeRegionSecurityPolicyConfig {
 	Connection: interface{},
@@ -1237,14 +1237,14 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/computeregionsec
 	Provider: github.com/open-constructs/cdk-terrain-go/cdktn.TerraformProvider,
 	Provisioners: *[]interface{},
 	Name: *string,
-	AdvancedOptionsConfig: github.com/cdktn-io/cdktn-provider-google-go/google/v17.computeRegionSecurityPolicy.ComputeRegionSecurityPolicyAdvancedOptionsConfig,
-	DdosProtectionConfig: github.com/cdktn-io/cdktn-provider-google-go/google/v17.computeRegionSecurityPolicy.ComputeRegionSecurityPolicyDdosProtectionConfig,
+	AdvancedOptionsConfig: github.com/cdktn-io/cdktn-provider-google-go/google/v18.computeRegionSecurityPolicy.ComputeRegionSecurityPolicyAdvancedOptionsConfig,
+	DdosProtectionConfig: github.com/cdktn-io/cdktn-provider-google-go/google/v18.computeRegionSecurityPolicy.ComputeRegionSecurityPolicyDdosProtectionConfig,
 	Description: *string,
 	Id: *string,
 	Project: *string,
 	Region: *string,
 	Rules: interface{},
-	Timeouts: github.com/cdktn-io/cdktn-provider-google-go/google/v17.computeRegionSecurityPolicy.ComputeRegionSecurityPolicyTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-google-go/google/v18.computeRegionSecurityPolicy.ComputeRegionSecurityPolicyTimeouts,
 	Type: *string,
 	UserDefinedFields: interface{},
 }
@@ -1513,7 +1513,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.computeRegionSecurityPolicy.ComputeRegionSecurityPolicyDdosProtectionConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/computeregionsecuritypolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/computeregionsecuritypolicy"
 
 &computeregionsecuritypolicy.ComputeRegionSecurityPolicyDdosProtectionConfig {
 	DdosProtection: *string,
@@ -1550,17 +1550,17 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.computeRegionSecurityPolicy.ComputeRegionSecurityPolicyRules.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/computeregionsecuritypolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/computeregionsecuritypolicy"
 
 &computeregionsecuritypolicy.ComputeRegionSecurityPolicyRules {
 	Action: *string,
 	Priority: *f64,
 	Description: *string,
-	Match: github.com/cdktn-io/cdktn-provider-google-go/google/v17.computeRegionSecurityPolicy.ComputeRegionSecurityPolicyRulesMatch,
-	NetworkMatch: github.com/cdktn-io/cdktn-provider-google-go/google/v17.computeRegionSecurityPolicy.ComputeRegionSecurityPolicyRulesNetworkMatch,
-	PreconfiguredWafConfig: github.com/cdktn-io/cdktn-provider-google-go/google/v17.computeRegionSecurityPolicy.ComputeRegionSecurityPolicyRulesPreconfiguredWafConfig,
+	Match: github.com/cdktn-io/cdktn-provider-google-go/google/v18.computeRegionSecurityPolicy.ComputeRegionSecurityPolicyRulesMatch,
+	NetworkMatch: github.com/cdktn-io/cdktn-provider-google-go/google/v18.computeRegionSecurityPolicy.ComputeRegionSecurityPolicyRulesNetworkMatch,
+	PreconfiguredWafConfig: github.com/cdktn-io/cdktn-provider-google-go/google/v18.computeRegionSecurityPolicy.ComputeRegionSecurityPolicyRulesPreconfiguredWafConfig,
 	Preview: interface{},
-	RateLimitOptions: github.com/cdktn-io/cdktn-provider-google-go/google/v17.computeRegionSecurityPolicy.ComputeRegionSecurityPolicyRulesRateLimitOptions,
+	RateLimitOptions: github.com/cdktn-io/cdktn-provider-google-go/google/v18.computeRegionSecurityPolicy.ComputeRegionSecurityPolicyRulesRateLimitOptions,
 }
 ```
 
@@ -1705,11 +1705,11 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.computeRegionSecurityPolicy.ComputeRegionSecurityPolicyRulesMatch.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/computeregionsecuritypolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/computeregionsecuritypolicy"
 
 &computeregionsecuritypolicy.ComputeRegionSecurityPolicyRulesMatch {
-	Config: github.com/cdktn-io/cdktn-provider-google-go/google/v17.computeRegionSecurityPolicy.ComputeRegionSecurityPolicyRulesMatchConfig,
-	Expr: github.com/cdktn-io/cdktn-provider-google-go/google/v17.computeRegionSecurityPolicy.ComputeRegionSecurityPolicyRulesMatchExpr,
+	Config: github.com/cdktn-io/cdktn-provider-google-go/google/v18.computeRegionSecurityPolicy.ComputeRegionSecurityPolicyRulesMatchConfig,
+	Expr: github.com/cdktn-io/cdktn-provider-google-go/google/v18.computeRegionSecurityPolicy.ComputeRegionSecurityPolicyRulesMatchExpr,
 	VersionedExpr: *string,
 }
 ```
@@ -1774,7 +1774,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.computeRegionSecurityPolicy.ComputeRegionSecurityPolicyRulesMatchConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/computeregionsecuritypolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/computeregionsecuritypolicy"
 
 &computeregionsecuritypolicy.ComputeRegionSecurityPolicyRulesMatchConfig {
 	SrcIpRanges: *[]*string,
@@ -1808,7 +1808,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.computeRegionSecurityPolicy.ComputeRegionSecurityPolicyRulesMatchExpr.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/computeregionsecuritypolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/computeregionsecuritypolicy"
 
 &computeregionsecuritypolicy.ComputeRegionSecurityPolicyRulesMatchExpr {
 	Expression: *string,
@@ -1844,7 +1844,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.computeRegionSecurityPolicy.ComputeRegionSecurityPolicyRulesNetworkMatch.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/computeregionsecuritypolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/computeregionsecuritypolicy"
 
 &computeregionsecuritypolicy.ComputeRegionSecurityPolicyRulesNetworkMatch {
 	DestIpRanges: *[]*string,
@@ -1996,7 +1996,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.computeRegionSecurityPolicy.ComputeRegionSecurityPolicyRulesNetworkMatchUserDefinedFields.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/computeregionsecuritypolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/computeregionsecuritypolicy"
 
 &computeregionsecuritypolicy.ComputeRegionSecurityPolicyRulesNetworkMatchUserDefinedFields {
 	Name: *string,
@@ -2048,7 +2048,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.computeRegionSecurityPolicy.ComputeRegionSecurityPolicyRulesPreconfiguredWafConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/computeregionsecuritypolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/computeregionsecuritypolicy"
 
 &computeregionsecuritypolicy.ComputeRegionSecurityPolicyRulesPreconfiguredWafConfig {
 	Exclusion: interface{},
@@ -2082,7 +2082,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.computeRegionSecurityPolicy.ComputeRegionSecurityPolicyRulesPreconfiguredWafConfigExclusion.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/computeregionsecuritypolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/computeregionsecuritypolicy"
 
 &computeregionsecuritypolicy.ComputeRegionSecurityPolicyRulesPreconfiguredWafConfigExclusion {
 	TargetRuleSet: *string,
@@ -2198,7 +2198,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.computeRegionSecurityPolicy.ComputeRegionSecurityPolicyRulesPreconfiguredWafConfigExclusionRequestCookie.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/computeregionsecuritypolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/computeregionsecuritypolicy"
 
 &computeregionsecuritypolicy.ComputeRegionSecurityPolicyRulesPreconfiguredWafConfigExclusionRequestCookie {
 	Operator: *string,
@@ -2257,7 +2257,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.computeRegionSecurityPolicy.ComputeRegionSecurityPolicyRulesPreconfiguredWafConfigExclusionRequestHeader.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/computeregionsecuritypolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/computeregionsecuritypolicy"
 
 &computeregionsecuritypolicy.ComputeRegionSecurityPolicyRulesPreconfiguredWafConfigExclusionRequestHeader {
 	Operator: *string,
@@ -2316,7 +2316,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.computeRegionSecurityPolicy.ComputeRegionSecurityPolicyRulesPreconfiguredWafConfigExclusionRequestQueryParam.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/computeregionsecuritypolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/computeregionsecuritypolicy"
 
 &computeregionsecuritypolicy.ComputeRegionSecurityPolicyRulesPreconfiguredWafConfigExclusionRequestQueryParam {
 	Operator: *string,
@@ -2375,7 +2375,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.computeRegionSecurityPolicy.ComputeRegionSecurityPolicyRulesPreconfiguredWafConfigExclusionRequestUri.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/computeregionsecuritypolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/computeregionsecuritypolicy"
 
 &computeregionsecuritypolicy.ComputeRegionSecurityPolicyRulesPreconfiguredWafConfigExclusionRequestUri {
 	Operator: *string,
@@ -2434,17 +2434,17 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.computeRegionSecurityPolicy.ComputeRegionSecurityPolicyRulesRateLimitOptions.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/computeregionsecuritypolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/computeregionsecuritypolicy"
 
 &computeregionsecuritypolicy.ComputeRegionSecurityPolicyRulesRateLimitOptions {
 	BanDurationSec: *f64,
-	BanThreshold: github.com/cdktn-io/cdktn-provider-google-go/google/v17.computeRegionSecurityPolicy.ComputeRegionSecurityPolicyRulesRateLimitOptionsBanThreshold,
+	BanThreshold: github.com/cdktn-io/cdktn-provider-google-go/google/v18.computeRegionSecurityPolicy.ComputeRegionSecurityPolicyRulesRateLimitOptionsBanThreshold,
 	ConformAction: *string,
 	EnforceOnKey: *string,
 	EnforceOnKeyConfigs: interface{},
 	EnforceOnKeyName: *string,
 	ExceedAction: *string,
-	RateLimitThreshold: github.com/cdktn-io/cdktn-provider-google-go/google/v17.computeRegionSecurityPolicy.ComputeRegionSecurityPolicyRulesRateLimitOptionsRateLimitThreshold,
+	RateLimitThreshold: github.com/cdktn-io/cdktn-provider-google-go/google/v18.computeRegionSecurityPolicy.ComputeRegionSecurityPolicyRulesRateLimitOptionsRateLimitThreshold,
 }
 ```
 
@@ -2600,7 +2600,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.computeRegionSecurityPolicy.ComputeRegionSecurityPolicyRulesRateLimitOptionsBanThreshold.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/computeregionsecuritypolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/computeregionsecuritypolicy"
 
 &computeregionsecuritypolicy.ComputeRegionSecurityPolicyRulesRateLimitOptionsBanThreshold {
 	Count: *f64,
@@ -2650,7 +2650,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.computeRegionSecurityPolicy.ComputeRegionSecurityPolicyRulesRateLimitOptionsEnforceOnKeyConfigs.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/computeregionsecuritypolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/computeregionsecuritypolicy"
 
 &computeregionsecuritypolicy.ComputeRegionSecurityPolicyRulesRateLimitOptionsEnforceOnKeyConfigs {
 	EnforceOnKeyName: *string,
@@ -2716,7 +2716,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.computeRegionSecurityPolicy.ComputeRegionSecurityPolicyRulesRateLimitOptionsRateLimitThreshold.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/computeregionsecuritypolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/computeregionsecuritypolicy"
 
 &computeregionsecuritypolicy.ComputeRegionSecurityPolicyRulesRateLimitOptionsRateLimitThreshold {
 	Count: *f64,
@@ -2766,7 +2766,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.computeRegionSecurityPolicy.ComputeRegionSecurityPolicyTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/computeregionsecuritypolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/computeregionsecuritypolicy"
 
 &computeregionsecuritypolicy.ComputeRegionSecurityPolicyTimeouts {
 	Create: *string,
@@ -2826,7 +2826,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.computeRegionSecurityPolicy.ComputeRegionSecurityPolicyUserDefinedFields.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/computeregionsecuritypolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/computeregionsecuritypolicy"
 
 &computeregionsecuritypolicy.ComputeRegionSecurityPolicyUserDefinedFields {
 	Base: *string,
@@ -2936,7 +2936,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.computeRegionSecurityPolicy.ComputeRegionSecurityPolicyAdvancedOptionsConfigJsonCustomConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/computeregionsecuritypolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/computeregionsecuritypolicy"
 
 computeregionsecuritypolicy.NewComputeRegionSecurityPolicyAdvancedOptionsConfigJsonCustomConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ComputeRegionSecurityPolicyAdvancedOptionsConfigJsonCustomConfigOutputReference
 ```
@@ -3207,7 +3207,7 @@ func InternalValue() ComputeRegionSecurityPolicyAdvancedOptionsConfigJsonCustomC
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.computeRegionSecurityPolicy.ComputeRegionSecurityPolicyAdvancedOptionsConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/computeregionsecuritypolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/computeregionsecuritypolicy"
 
 computeregionsecuritypolicy.NewComputeRegionSecurityPolicyAdvancedOptionsConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ComputeRegionSecurityPolicyAdvancedOptionsConfigOutputReference
 ```
@@ -3585,7 +3585,7 @@ func InternalValue() ComputeRegionSecurityPolicyAdvancedOptionsConfig
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.computeRegionSecurityPolicy.ComputeRegionSecurityPolicyDdosProtectionConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/computeregionsecuritypolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/computeregionsecuritypolicy"
 
 computeregionsecuritypolicy.NewComputeRegionSecurityPolicyDdosProtectionConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ComputeRegionSecurityPolicyDdosProtectionConfigOutputReference
 ```
@@ -3856,7 +3856,7 @@ func InternalValue() ComputeRegionSecurityPolicyDdosProtectionConfig
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.computeRegionSecurityPolicy.ComputeRegionSecurityPolicyRulesList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/computeregionsecuritypolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/computeregionsecuritypolicy"
 
 computeregionsecuritypolicy.NewComputeRegionSecurityPolicyRulesList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ComputeRegionSecurityPolicyRulesList
 ```
@@ -4016,7 +4016,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.computeRegionSecurityPolicy.ComputeRegionSecurityPolicyRulesMatchConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/computeregionsecuritypolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/computeregionsecuritypolicy"
 
 computeregionsecuritypolicy.NewComputeRegionSecurityPolicyRulesMatchConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ComputeRegionSecurityPolicyRulesMatchConfigOutputReference
 ```
@@ -4294,7 +4294,7 @@ func InternalValue() ComputeRegionSecurityPolicyRulesMatchConfig
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.computeRegionSecurityPolicy.ComputeRegionSecurityPolicyRulesMatchExprOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/computeregionsecuritypolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/computeregionsecuritypolicy"
 
 computeregionsecuritypolicy.NewComputeRegionSecurityPolicyRulesMatchExprOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ComputeRegionSecurityPolicyRulesMatchExprOutputReference
 ```
@@ -4565,7 +4565,7 @@ func InternalValue() ComputeRegionSecurityPolicyRulesMatchExpr
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.computeRegionSecurityPolicy.ComputeRegionSecurityPolicyRulesMatchOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/computeregionsecuritypolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/computeregionsecuritypolicy"
 
 computeregionsecuritypolicy.NewComputeRegionSecurityPolicyRulesMatchOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ComputeRegionSecurityPolicyRulesMatchOutputReference
 ```
@@ -4927,7 +4927,7 @@ func InternalValue() ComputeRegionSecurityPolicyRulesMatch
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.computeRegionSecurityPolicy.ComputeRegionSecurityPolicyRulesNetworkMatchOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/computeregionsecuritypolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/computeregionsecuritypolicy"
 
 computeregionsecuritypolicy.NewComputeRegionSecurityPolicyRulesNetworkMatchOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ComputeRegionSecurityPolicyRulesNetworkMatchOutputReference
 ```
@@ -5421,7 +5421,7 @@ func InternalValue() ComputeRegionSecurityPolicyRulesNetworkMatch
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.computeRegionSecurityPolicy.ComputeRegionSecurityPolicyRulesNetworkMatchUserDefinedFieldsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/computeregionsecuritypolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/computeregionsecuritypolicy"
 
 computeregionsecuritypolicy.NewComputeRegionSecurityPolicyRulesNetworkMatchUserDefinedFieldsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ComputeRegionSecurityPolicyRulesNetworkMatchUserDefinedFieldsList
 ```
@@ -5581,7 +5581,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.computeRegionSecurityPolicy.ComputeRegionSecurityPolicyRulesNetworkMatchUserDefinedFieldsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/computeregionsecuritypolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/computeregionsecuritypolicy"
 
 computeregionsecuritypolicy.NewComputeRegionSecurityPolicyRulesNetworkMatchUserDefinedFieldsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ComputeRegionSecurityPolicyRulesNetworkMatchUserDefinedFieldsOutputReference
 ```
@@ -5906,7 +5906,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.computeRegionSecurityPolicy.ComputeRegionSecurityPolicyRulesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/computeregionsecuritypolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/computeregionsecuritypolicy"
 
 computeregionsecuritypolicy.NewComputeRegionSecurityPolicyRulesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ComputeRegionSecurityPolicyRulesOutputReference
 ```
@@ -6443,7 +6443,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.computeRegionSecurityPolicy.ComputeRegionSecurityPolicyRulesPreconfiguredWafConfigExclusionList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/computeregionsecuritypolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/computeregionsecuritypolicy"
 
 computeregionsecuritypolicy.NewComputeRegionSecurityPolicyRulesPreconfiguredWafConfigExclusionList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ComputeRegionSecurityPolicyRulesPreconfiguredWafConfigExclusionList
 ```
@@ -6603,7 +6603,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.computeRegionSecurityPolicy.ComputeRegionSecurityPolicyRulesPreconfiguredWafConfigExclusionOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/computeregionsecuritypolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/computeregionsecuritypolicy"
 
 computeregionsecuritypolicy.NewComputeRegionSecurityPolicyRulesPreconfiguredWafConfigExclusionOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ComputeRegionSecurityPolicyRulesPreconfiguredWafConfigExclusionOutputReference
 ```
@@ -7089,7 +7089,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.computeRegionSecurityPolicy.ComputeRegionSecurityPolicyRulesPreconfiguredWafConfigExclusionRequestCookieList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/computeregionsecuritypolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/computeregionsecuritypolicy"
 
 computeregionsecuritypolicy.NewComputeRegionSecurityPolicyRulesPreconfiguredWafConfigExclusionRequestCookieList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ComputeRegionSecurityPolicyRulesPreconfiguredWafConfigExclusionRequestCookieList
 ```
@@ -7249,7 +7249,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.computeRegionSecurityPolicy.ComputeRegionSecurityPolicyRulesPreconfiguredWafConfigExclusionRequestCookieOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/computeregionsecuritypolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/computeregionsecuritypolicy"
 
 computeregionsecuritypolicy.NewComputeRegionSecurityPolicyRulesPreconfiguredWafConfigExclusionRequestCookieOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ComputeRegionSecurityPolicyRulesPreconfiguredWafConfigExclusionRequestCookieOutputReference
 ```
@@ -7567,7 +7567,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.computeRegionSecurityPolicy.ComputeRegionSecurityPolicyRulesPreconfiguredWafConfigExclusionRequestHeaderList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/computeregionsecuritypolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/computeregionsecuritypolicy"
 
 computeregionsecuritypolicy.NewComputeRegionSecurityPolicyRulesPreconfiguredWafConfigExclusionRequestHeaderList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ComputeRegionSecurityPolicyRulesPreconfiguredWafConfigExclusionRequestHeaderList
 ```
@@ -7727,7 +7727,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.computeRegionSecurityPolicy.ComputeRegionSecurityPolicyRulesPreconfiguredWafConfigExclusionRequestHeaderOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/computeregionsecuritypolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/computeregionsecuritypolicy"
 
 computeregionsecuritypolicy.NewComputeRegionSecurityPolicyRulesPreconfiguredWafConfigExclusionRequestHeaderOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ComputeRegionSecurityPolicyRulesPreconfiguredWafConfigExclusionRequestHeaderOutputReference
 ```
@@ -8045,7 +8045,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.computeRegionSecurityPolicy.ComputeRegionSecurityPolicyRulesPreconfiguredWafConfigExclusionRequestQueryParamList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/computeregionsecuritypolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/computeregionsecuritypolicy"
 
 computeregionsecuritypolicy.NewComputeRegionSecurityPolicyRulesPreconfiguredWafConfigExclusionRequestQueryParamList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ComputeRegionSecurityPolicyRulesPreconfiguredWafConfigExclusionRequestQueryParamList
 ```
@@ -8205,7 +8205,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.computeRegionSecurityPolicy.ComputeRegionSecurityPolicyRulesPreconfiguredWafConfigExclusionRequestQueryParamOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/computeregionsecuritypolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/computeregionsecuritypolicy"
 
 computeregionsecuritypolicy.NewComputeRegionSecurityPolicyRulesPreconfiguredWafConfigExclusionRequestQueryParamOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ComputeRegionSecurityPolicyRulesPreconfiguredWafConfigExclusionRequestQueryParamOutputReference
 ```
@@ -8523,7 +8523,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.computeRegionSecurityPolicy.ComputeRegionSecurityPolicyRulesPreconfiguredWafConfigExclusionRequestUriList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/computeregionsecuritypolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/computeregionsecuritypolicy"
 
 computeregionsecuritypolicy.NewComputeRegionSecurityPolicyRulesPreconfiguredWafConfigExclusionRequestUriList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ComputeRegionSecurityPolicyRulesPreconfiguredWafConfigExclusionRequestUriList
 ```
@@ -8683,7 +8683,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.computeRegionSecurityPolicy.ComputeRegionSecurityPolicyRulesPreconfiguredWafConfigExclusionRequestUriOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/computeregionsecuritypolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/computeregionsecuritypolicy"
 
 computeregionsecuritypolicy.NewComputeRegionSecurityPolicyRulesPreconfiguredWafConfigExclusionRequestUriOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ComputeRegionSecurityPolicyRulesPreconfiguredWafConfigExclusionRequestUriOutputReference
 ```
@@ -9001,7 +9001,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.computeRegionSecurityPolicy.ComputeRegionSecurityPolicyRulesPreconfiguredWafConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/computeregionsecuritypolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/computeregionsecuritypolicy"
 
 computeregionsecuritypolicy.NewComputeRegionSecurityPolicyRulesPreconfiguredWafConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ComputeRegionSecurityPolicyRulesPreconfiguredWafConfigOutputReference
 ```
@@ -9292,7 +9292,7 @@ func InternalValue() ComputeRegionSecurityPolicyRulesPreconfiguredWafConfig
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.computeRegionSecurityPolicy.ComputeRegionSecurityPolicyRulesRateLimitOptionsBanThresholdOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/computeregionsecuritypolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/computeregionsecuritypolicy"
 
 computeregionsecuritypolicy.NewComputeRegionSecurityPolicyRulesRateLimitOptionsBanThresholdOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ComputeRegionSecurityPolicyRulesRateLimitOptionsBanThresholdOutputReference
 ```
@@ -9599,7 +9599,7 @@ func InternalValue() ComputeRegionSecurityPolicyRulesRateLimitOptionsBanThreshol
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.computeRegionSecurityPolicy.ComputeRegionSecurityPolicyRulesRateLimitOptionsEnforceOnKeyConfigsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/computeregionsecuritypolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/computeregionsecuritypolicy"
 
 computeregionsecuritypolicy.NewComputeRegionSecurityPolicyRulesRateLimitOptionsEnforceOnKeyConfigsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ComputeRegionSecurityPolicyRulesRateLimitOptionsEnforceOnKeyConfigsList
 ```
@@ -9759,7 +9759,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.computeRegionSecurityPolicy.ComputeRegionSecurityPolicyRulesRateLimitOptionsEnforceOnKeyConfigsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/computeregionsecuritypolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/computeregionsecuritypolicy"
 
 computeregionsecuritypolicy.NewComputeRegionSecurityPolicyRulesRateLimitOptionsEnforceOnKeyConfigsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ComputeRegionSecurityPolicyRulesRateLimitOptionsEnforceOnKeyConfigsOutputReference
 ```
@@ -10084,7 +10084,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.computeRegionSecurityPolicy.ComputeRegionSecurityPolicyRulesRateLimitOptionsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/computeregionsecuritypolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/computeregionsecuritypolicy"
 
 computeregionsecuritypolicy.NewComputeRegionSecurityPolicyRulesRateLimitOptionsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ComputeRegionSecurityPolicyRulesRateLimitOptionsOutputReference
 ```
@@ -10604,7 +10604,7 @@ func InternalValue() ComputeRegionSecurityPolicyRulesRateLimitOptions
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.computeRegionSecurityPolicy.ComputeRegionSecurityPolicyRulesRateLimitOptionsRateLimitThresholdOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/computeregionsecuritypolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/computeregionsecuritypolicy"
 
 computeregionsecuritypolicy.NewComputeRegionSecurityPolicyRulesRateLimitOptionsRateLimitThresholdOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ComputeRegionSecurityPolicyRulesRateLimitOptionsRateLimitThresholdOutputReference
 ```
@@ -10911,7 +10911,7 @@ func InternalValue() ComputeRegionSecurityPolicyRulesRateLimitOptionsRateLimitTh
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.computeRegionSecurityPolicy.ComputeRegionSecurityPolicyTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/computeregionsecuritypolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/computeregionsecuritypolicy"
 
 computeregionsecuritypolicy.NewComputeRegionSecurityPolicyTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ComputeRegionSecurityPolicyTimeoutsOutputReference
 ```
@@ -11247,7 +11247,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.computeRegionSecurityPolicy.ComputeRegionSecurityPolicyUserDefinedFieldsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/computeregionsecuritypolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/computeregionsecuritypolicy"
 
 computeregionsecuritypolicy.NewComputeRegionSecurityPolicyUserDefinedFieldsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ComputeRegionSecurityPolicyUserDefinedFieldsList
 ```
@@ -11407,7 +11407,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.computeRegionSecurityPolicy.ComputeRegionSecurityPolicyUserDefinedFieldsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/computeregionsecuritypolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/computeregionsecuritypolicy"
 
 computeregionsecuritypolicy.NewComputeRegionSecurityPolicyUserDefinedFieldsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ComputeRegionSecurityPolicyUserDefinedFieldsOutputReference
 ```

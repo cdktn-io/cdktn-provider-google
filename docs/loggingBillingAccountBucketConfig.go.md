@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.5
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.loggingBillingAccountBucketConfig.LoggingBillingAccountBucketConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/loggingbillingaccountbucketconfig"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/loggingbillingaccountbucketconfig"
 
 loggingbillingaccountbucketconfig.NewLoggingBillingAccountBucketConfig(scope Construct, id *string, config LoggingBillingAccountBucketConfigConfig) LoggingBillingAccountBucketConfig
 ```
@@ -461,7 +461,7 @@ func ResetRetentionDays()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-google.loggingBillingAccountBucketConfig.LoggingBillingAccountBucketConfig.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/loggingbillingaccountbucketconfig"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/loggingbillingaccountbucketconfig"
 
 loggingbillingaccountbucketconfig.LoggingBillingAccountBucketConfig_IsConstruct(x interface{}) *bool
 ```
@@ -493,7 +493,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-google.loggingBillingAccountBucketConfig.LoggingBillingAccountBucketConfig.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/loggingbillingaccountbucketconfig"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/loggingbillingaccountbucketconfig"
 
 loggingbillingaccountbucketconfig.LoggingBillingAccountBucketConfig_IsTerraformElement(x interface{}) *bool
 ```
@@ -507,7 +507,7 @@ loggingbillingaccountbucketconfig.LoggingBillingAccountBucketConfig_IsTerraformE
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-google.loggingBillingAccountBucketConfig.LoggingBillingAccountBucketConfig.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/loggingbillingaccountbucketconfig"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/loggingbillingaccountbucketconfig"
 
 loggingbillingaccountbucketconfig.LoggingBillingAccountBucketConfig_IsTerraformResource(x interface{}) *bool
 ```
@@ -521,7 +521,7 @@ loggingbillingaccountbucketconfig.LoggingBillingAccountBucketConfig_IsTerraformR
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-google.loggingBillingAccountBucketConfig.LoggingBillingAccountBucketConfig.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/loggingbillingaccountbucketconfig"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/loggingbillingaccountbucketconfig"
 
 loggingbillingaccountbucketconfig.LoggingBillingAccountBucketConfig_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -948,7 +948,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.loggingBillingAccountBucketConfig.LoggingBillingAccountBucketConfigCmekSettings.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/loggingbillingaccountbucketconfig"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/loggingbillingaccountbucketconfig"
 
 &loggingbillingaccountbucketconfig.LoggingBillingAccountBucketConfigCmekSettings {
 	KmsKeyName: *string,
@@ -988,7 +988,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.loggingBillingAccountBucketConfig.LoggingBillingAccountBucketConfigConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/loggingbillingaccountbucketconfig"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/loggingbillingaccountbucketconfig"
 
 &loggingbillingaccountbucketconfig.LoggingBillingAccountBucketConfigConfig {
 	Connection: interface{},
@@ -1001,7 +1001,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/loggingbillingac
 	BillingAccount: *string,
 	BucketId: *string,
 	Location: *string,
-	CmekSettings: github.com/cdktn-io/cdktn-provider-google-go/google/v17.loggingBillingAccountBucketConfig.LoggingBillingAccountBucketConfigCmekSettings,
+	CmekSettings: github.com/cdktn-io/cdktn-provider-google-go/google/v18.loggingBillingAccountBucketConfig.LoggingBillingAccountBucketConfigCmekSettings,
 	Description: *string,
 	Id: *string,
 	IndexConfigs: interface{},
@@ -1221,7 +1221,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.loggingBillingAccountBucketConfig.LoggingBillingAccountBucketConfigIndexConfigs.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/loggingbillingaccountbucketconfig"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/loggingbillingaccountbucketconfig"
 
 &loggingbillingaccountbucketconfig.LoggingBillingAccountBucketConfigIndexConfigs {
 	FieldPath: *string,
@@ -1276,7 +1276,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.loggingBillingAccountBucketConfig.LoggingBillingAccountBucketConfigCmekSettingsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/loggingbillingaccountbucketconfig"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/loggingbillingaccountbucketconfig"
 
 loggingbillingaccountbucketconfig.NewLoggingBillingAccountBucketConfigCmekSettingsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) LoggingBillingAccountBucketConfigCmekSettingsOutputReference
 ```
@@ -1580,7 +1580,7 @@ func InternalValue() LoggingBillingAccountBucketConfigCmekSettings
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.loggingBillingAccountBucketConfig.LoggingBillingAccountBucketConfigIndexConfigsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/loggingbillingaccountbucketconfig"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/loggingbillingaccountbucketconfig"
 
 loggingbillingaccountbucketconfig.NewLoggingBillingAccountBucketConfigIndexConfigsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) LoggingBillingAccountBucketConfigIndexConfigsList
 ```
@@ -1740,7 +1740,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.loggingBillingAccountBucketConfig.LoggingBillingAccountBucketConfigIndexConfigsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/loggingbillingaccountbucketconfig"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/loggingbillingaccountbucketconfig"
 
 loggingbillingaccountbucketconfig.NewLoggingBillingAccountBucketConfigIndexConfigsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) LoggingBillingAccountBucketConfigIndexConfigsOutputReference
 ```

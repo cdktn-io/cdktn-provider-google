@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.5
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.computeHaVpnGateway.ComputeHaVpnGateway.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/computehavpngateway"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/computehavpngateway"
 
 computehavpngateway.NewComputeHaVpnGateway(scope Construct, id *string, config ComputeHaVpnGatewayConfig) ComputeHaVpnGateway
 ```
@@ -489,7 +489,7 @@ func ResetVpnInterfaces()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-google.computeHaVpnGateway.ComputeHaVpnGateway.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/computehavpngateway"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/computehavpngateway"
 
 computehavpngateway.ComputeHaVpnGateway_IsConstruct(x interface{}) *bool
 ```
@@ -521,7 +521,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-google.computeHaVpnGateway.ComputeHaVpnGateway.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/computehavpngateway"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/computehavpngateway"
 
 computehavpngateway.ComputeHaVpnGateway_IsTerraformElement(x interface{}) *bool
 ```
@@ -535,7 +535,7 @@ computehavpngateway.ComputeHaVpnGateway_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-google.computeHaVpnGateway.ComputeHaVpnGateway.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/computehavpngateway"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/computehavpngateway"
 
 computehavpngateway.ComputeHaVpnGateway_IsTerraformResource(x interface{}) *bool
 ```
@@ -549,7 +549,7 @@ computehavpngateway.ComputeHaVpnGateway_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-google.computeHaVpnGateway.ComputeHaVpnGateway.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/computehavpngateway"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/computehavpngateway"
 
 computehavpngateway.ComputeHaVpnGateway_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -1064,7 +1064,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.computeHaVpnGateway.ComputeHaVpnGatewayConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/computehavpngateway"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/computehavpngateway"
 
 &computehavpngateway.ComputeHaVpnGatewayConfig {
 	Connection: interface{},
@@ -1083,7 +1083,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/computehavpngate
 	Project: *string,
 	Region: *string,
 	StackType: *string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-google-go/google/v17.computeHaVpnGateway.ComputeHaVpnGatewayTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-google-go/google/v18.computeHaVpnGateway.ComputeHaVpnGatewayTimeouts,
 	VpnInterfaces: interface{},
 }
 ```
@@ -1359,7 +1359,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.computeHaVpnGateway.ComputeHaVpnGatewayTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/computehavpngateway"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/computehavpngateway"
 
 &computehavpngateway.ComputeHaVpnGatewayTimeouts {
 	Create: *string,
@@ -1419,7 +1419,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.computeHaVpnGateway.ComputeHaVpnGatewayVpnInterfaces.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/computehavpngateway"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/computehavpngateway"
 
 &computehavpngateway.ComputeHaVpnGatewayVpnInterfaces {
 	Id: *f64,
@@ -1482,7 +1482,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.computeHaVpnGateway.ComputeHaVpnGatewayTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/computehavpngateway"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/computehavpngateway"
 
 computehavpngateway.NewComputeHaVpnGatewayTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ComputeHaVpnGatewayTimeoutsOutputReference
 ```
@@ -1818,7 +1818,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.computeHaVpnGateway.ComputeHaVpnGatewayVpnInterfacesList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/computehavpngateway"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/computehavpngateway"
 
 computehavpngateway.NewComputeHaVpnGatewayVpnInterfacesList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ComputeHaVpnGatewayVpnInterfacesList
 ```
@@ -1978,7 +1978,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.computeHaVpnGateway.ComputeHaVpnGatewayVpnInterfacesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/computehavpngateway"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/computehavpngateway"
 
 computehavpngateway.NewComputeHaVpnGatewayVpnInterfacesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ComputeHaVpnGatewayVpnInterfacesOutputReference
 ```

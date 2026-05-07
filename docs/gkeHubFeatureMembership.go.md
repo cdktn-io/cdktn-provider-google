@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.5
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.gkeHubFeatureMembership.GkeHubFeatureMembership.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/gkehubfeaturemembership"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/gkehubfeaturemembership"
 
 gkehubfeaturemembership.NewGkeHubFeatureMembership(scope Construct, id *string, config GkeHubFeatureMembershipConfig) GkeHubFeatureMembership
 ```
@@ -501,7 +501,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-google.gkeHubFeatureMembership.GkeHubFeatureMembership.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/gkehubfeaturemembership"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/gkehubfeaturemembership"
 
 gkehubfeaturemembership.GkeHubFeatureMembership_IsConstruct(x interface{}) *bool
 ```
@@ -533,7 +533,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-google.gkeHubFeatureMembership.GkeHubFeatureMembership.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/gkehubfeaturemembership"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/gkehubfeaturemembership"
 
 gkehubfeaturemembership.GkeHubFeatureMembership_IsTerraformElement(x interface{}) *bool
 ```
@@ -547,7 +547,7 @@ gkehubfeaturemembership.GkeHubFeatureMembership_IsTerraformElement(x interface{}
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-google.gkeHubFeatureMembership.GkeHubFeatureMembership.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/gkehubfeaturemembership"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/gkehubfeaturemembership"
 
 gkehubfeaturemembership.GkeHubFeatureMembership_IsTerraformResource(x interface{}) *bool
 ```
@@ -561,7 +561,7 @@ gkehubfeaturemembership.GkeHubFeatureMembership_IsTerraformResource(x interface{
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-google.gkeHubFeatureMembership.GkeHubFeatureMembership.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/gkehubfeaturemembership"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/gkehubfeaturemembership"
 
 gkehubfeaturemembership.GkeHubFeatureMembership_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -1010,7 +1010,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.gkeHubFeatureMembership.GkeHubFeatureMembershipConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/gkehubfeaturemembership"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/gkehubfeaturemembership"
 
 &gkehubfeaturemembership.GkeHubFeatureMembershipConfig {
 	Connection: interface{},
@@ -1023,13 +1023,13 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/gkehubfeaturemem
 	Feature: *string,
 	Location: *string,
 	Membership: *string,
-	Configmanagement: github.com/cdktn-io/cdktn-provider-google-go/google/v17.gkeHubFeatureMembership.GkeHubFeatureMembershipConfigmanagement,
+	Configmanagement: github.com/cdktn-io/cdktn-provider-google-go/google/v18.gkeHubFeatureMembership.GkeHubFeatureMembershipConfigmanagement,
 	Id: *string,
 	MembershipLocation: *string,
-	Mesh: github.com/cdktn-io/cdktn-provider-google-go/google/v17.gkeHubFeatureMembership.GkeHubFeatureMembershipMesh,
-	Policycontroller: github.com/cdktn-io/cdktn-provider-google-go/google/v17.gkeHubFeatureMembership.GkeHubFeatureMembershipPolicycontroller,
+	Mesh: github.com/cdktn-io/cdktn-provider-google-go/google/v18.gkeHubFeatureMembership.GkeHubFeatureMembershipMesh,
+	Policycontroller: github.com/cdktn-io/cdktn-provider-google-go/google/v18.gkeHubFeatureMembership.GkeHubFeatureMembershipPolicycontroller,
 	Project: *string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-google-go/google/v17.gkeHubFeatureMembership.GkeHubFeatureMembershipTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-google-go/google/v18.gkeHubFeatureMembership.GkeHubFeatureMembershipTimeouts,
 }
 ```
 
@@ -1273,14 +1273,14 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.gkeHubFeatureMembership.GkeHubFeatureMembershipConfigmanagement.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/gkehubfeaturemembership"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/gkehubfeaturemembership"
 
 &gkehubfeaturemembership.GkeHubFeatureMembershipConfigmanagement {
-	Binauthz: github.com/cdktn-io/cdktn-provider-google-go/google/v17.gkeHubFeatureMembership.GkeHubFeatureMembershipConfigmanagementBinauthz,
-	ConfigSync: github.com/cdktn-io/cdktn-provider-google-go/google/v17.gkeHubFeatureMembership.GkeHubFeatureMembershipConfigmanagementConfigSync,
-	HierarchyController: github.com/cdktn-io/cdktn-provider-google-go/google/v17.gkeHubFeatureMembership.GkeHubFeatureMembershipConfigmanagementHierarchyController,
+	Binauthz: github.com/cdktn-io/cdktn-provider-google-go/google/v18.gkeHubFeatureMembership.GkeHubFeatureMembershipConfigmanagementBinauthz,
+	ConfigSync: github.com/cdktn-io/cdktn-provider-google-go/google/v18.gkeHubFeatureMembership.GkeHubFeatureMembershipConfigmanagementConfigSync,
+	HierarchyController: github.com/cdktn-io/cdktn-provider-google-go/google/v18.gkeHubFeatureMembership.GkeHubFeatureMembershipConfigmanagementHierarchyController,
 	Management: *string,
-	PolicyController: github.com/cdktn-io/cdktn-provider-google-go/google/v17.gkeHubFeatureMembership.GkeHubFeatureMembershipConfigmanagementPolicyController,
+	PolicyController: github.com/cdktn-io/cdktn-provider-google-go/google/v18.gkeHubFeatureMembership.GkeHubFeatureMembershipConfigmanagementPolicyController,
 	Version: *string,
 }
 ```
@@ -1387,7 +1387,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.gkeHubFeatureMembership.GkeHubFeatureMembershipConfigmanagementBinauthz.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/gkehubfeaturemembership"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/gkehubfeaturemembership"
 
 &gkehubfeaturemembership.GkeHubFeatureMembershipConfigmanagementBinauthz {
 	Enabled: interface{},
@@ -1421,14 +1421,14 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.gkeHubFeatureMembership.GkeHubFeatureMembershipConfigmanagementConfigSync.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/gkehubfeaturemembership"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/gkehubfeaturemembership"
 
 &gkehubfeaturemembership.GkeHubFeatureMembershipConfigmanagementConfigSync {
 	DeploymentOverrides: interface{},
 	Enabled: interface{},
-	Git: github.com/cdktn-io/cdktn-provider-google-go/google/v17.gkeHubFeatureMembership.GkeHubFeatureMembershipConfigmanagementConfigSyncGit,
+	Git: github.com/cdktn-io/cdktn-provider-google-go/google/v18.gkeHubFeatureMembership.GkeHubFeatureMembershipConfigmanagementConfigSyncGit,
 	MetricsGcpServiceAccountEmail: *string,
-	Oci: github.com/cdktn-io/cdktn-provider-google-go/google/v17.gkeHubFeatureMembership.GkeHubFeatureMembershipConfigmanagementConfigSyncOci,
+	Oci: github.com/cdktn-io/cdktn-provider-google-go/google/v18.gkeHubFeatureMembership.GkeHubFeatureMembershipConfigmanagementConfigSyncOci,
 	PreventDrift: interface{},
 	SourceFormat: *string,
 	StopSyncing: interface{},
@@ -1571,7 +1571,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.gkeHubFeatureMembership.GkeHubFeatureMembershipConfigmanagementConfigSyncDeploymentOverrides.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/gkehubfeaturemembership"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/gkehubfeaturemembership"
 
 &gkehubfeaturemembership.GkeHubFeatureMembershipConfigmanagementConfigSyncDeploymentOverrides {
 	Containers: interface{},
@@ -1637,7 +1637,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.gkeHubFeatureMembership.GkeHubFeatureMembershipConfigmanagementConfigSyncDeploymentOverridesContainers.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/gkehubfeaturemembership"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/gkehubfeaturemembership"
 
 &gkehubfeaturemembership.GkeHubFeatureMembershipConfigmanagementConfigSyncDeploymentOverridesContainers {
 	ContainerName: *string,
@@ -1735,7 +1735,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.gkeHubFeatureMembership.GkeHubFeatureMembershipConfigmanagementConfigSyncGit.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/gkehubfeaturemembership"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/gkehubfeaturemembership"
 
 &gkehubfeaturemembership.GkeHubFeatureMembershipConfigmanagementConfigSyncGit {
 	GcpServiceAccountEmail: *string,
@@ -1885,7 +1885,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.gkeHubFeatureMembership.GkeHubFeatureMembershipConfigmanagementConfigSyncOci.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/gkehubfeaturemembership"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/gkehubfeaturemembership"
 
 &gkehubfeaturemembership.GkeHubFeatureMembershipConfigmanagementConfigSyncOci {
 	GcpServiceAccountEmail: *string,
@@ -1985,7 +1985,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.gkeHubFeatureMembership.GkeHubFeatureMembershipConfigmanagementHierarchyController.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/gkehubfeaturemembership"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/gkehubfeaturemembership"
 
 &gkehubfeaturemembership.GkeHubFeatureMembershipConfigmanagementHierarchyController {
 	Enabled: interface{},
@@ -2051,14 +2051,14 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.gkeHubFeatureMembership.GkeHubFeatureMembershipConfigmanagementPolicyController.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/gkehubfeaturemembership"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/gkehubfeaturemembership"
 
 &gkehubfeaturemembership.GkeHubFeatureMembershipConfigmanagementPolicyController {
 	AuditIntervalSeconds: *string,
 	Enabled: interface{},
 	ExemptableNamespaces: *[]*string,
 	LogDeniesEnabled: interface{},
-	Monitoring: github.com/cdktn-io/cdktn-provider-google-go/google/v17.gkeHubFeatureMembership.GkeHubFeatureMembershipConfigmanagementPolicyControllerMonitoring,
+	Monitoring: github.com/cdktn-io/cdktn-provider-google-go/google/v18.gkeHubFeatureMembership.GkeHubFeatureMembershipConfigmanagementPolicyControllerMonitoring,
 	MutationEnabled: interface{},
 	ReferentialRulesEnabled: interface{},
 	TemplateLibraryInstalled: interface{},
@@ -2201,7 +2201,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.gkeHubFeatureMembership.GkeHubFeatureMembershipConfigmanagementPolicyControllerMonitoring.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/gkehubfeaturemembership"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/gkehubfeaturemembership"
 
 &gkehubfeaturemembership.GkeHubFeatureMembershipConfigmanagementPolicyControllerMonitoring {
 	Backends: *[]*string,
@@ -2235,7 +2235,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.gkeHubFeatureMembership.GkeHubFeatureMembershipMesh.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/gkehubfeaturemembership"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/gkehubfeaturemembership"
 
 &gkehubfeaturemembership.GkeHubFeatureMembershipMesh {
 	ControlPlane: *string,
@@ -2285,10 +2285,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.gkeHubFeatureMembership.GkeHubFeatureMembershipPolicycontroller.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/gkehubfeaturemembership"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/gkehubfeaturemembership"
 
 &gkehubfeaturemembership.GkeHubFeatureMembershipPolicycontroller {
-	PolicyControllerHubConfig: github.com/cdktn-io/cdktn-provider-google-go/google/v17.gkeHubFeatureMembership.GkeHubFeatureMembershipPolicycontrollerPolicyControllerHubConfig,
+	PolicyControllerHubConfig: github.com/cdktn-io/cdktn-provider-google-go/google/v18.gkeHubFeatureMembership.GkeHubFeatureMembershipPolicycontrollerPolicyControllerHubConfig,
 	Version: *string,
 }
 ```
@@ -2335,7 +2335,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.gkeHubFeatureMembership.GkeHubFeatureMembershipPolicycontrollerPolicyControllerHubConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/gkehubfeaturemembership"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/gkehubfeaturemembership"
 
 &gkehubfeaturemembership.GkeHubFeatureMembershipPolicycontrollerPolicyControllerHubConfig {
 	AuditIntervalSeconds: *f64,
@@ -2344,9 +2344,9 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/gkehubfeaturemem
 	ExemptableNamespaces: *[]*string,
 	InstallSpec: *string,
 	LogDeniesEnabled: interface{},
-	Monitoring: github.com/cdktn-io/cdktn-provider-google-go/google/v17.gkeHubFeatureMembership.GkeHubFeatureMembershipPolicycontrollerPolicyControllerHubConfigMonitoring,
+	Monitoring: github.com/cdktn-io/cdktn-provider-google-go/google/v18.gkeHubFeatureMembership.GkeHubFeatureMembershipPolicycontrollerPolicyControllerHubConfigMonitoring,
 	MutationEnabled: interface{},
-	PolicyContent: github.com/cdktn-io/cdktn-provider-google-go/google/v17.gkeHubFeatureMembership.GkeHubFeatureMembershipPolicycontrollerPolicyControllerHubConfigPolicyContent,
+	PolicyContent: github.com/cdktn-io/cdktn-provider-google-go/google/v18.gkeHubFeatureMembership.GkeHubFeatureMembershipPolicycontrollerPolicyControllerHubConfigPolicyContent,
 	ReferentialRulesEnabled: interface{},
 }
 ```
@@ -2517,11 +2517,11 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.gkeHubFeatureMembership.GkeHubFeatureMembershipPolicycontrollerPolicyControllerHubConfigDeploymentConfigs.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/gkehubfeaturemembership"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/gkehubfeaturemembership"
 
 &gkehubfeaturemembership.GkeHubFeatureMembershipPolicycontrollerPolicyControllerHubConfigDeploymentConfigs {
 	ComponentName: *string,
-	ContainerResources: github.com/cdktn-io/cdktn-provider-google-go/google/v17.gkeHubFeatureMembership.GkeHubFeatureMembershipPolicycontrollerPolicyControllerHubConfigDeploymentConfigsContainerResources,
+	ContainerResources: github.com/cdktn-io/cdktn-provider-google-go/google/v18.gkeHubFeatureMembership.GkeHubFeatureMembershipPolicycontrollerPolicyControllerHubConfigDeploymentConfigsContainerResources,
 	PodAffinity: *string,
 	PodTolerations: interface{},
 	ReplicaCount: *f64,
@@ -2615,11 +2615,11 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.gkeHubFeatureMembership.GkeHubFeatureMembershipPolicycontrollerPolicyControllerHubConfigDeploymentConfigsContainerResources.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/gkehubfeaturemembership"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/gkehubfeaturemembership"
 
 &gkehubfeaturemembership.GkeHubFeatureMembershipPolicycontrollerPolicyControllerHubConfigDeploymentConfigsContainerResources {
-	Limits: github.com/cdktn-io/cdktn-provider-google-go/google/v17.gkeHubFeatureMembership.GkeHubFeatureMembershipPolicycontrollerPolicyControllerHubConfigDeploymentConfigsContainerResourcesLimits,
-	Requests: github.com/cdktn-io/cdktn-provider-google-go/google/v17.gkeHubFeatureMembership.GkeHubFeatureMembershipPolicycontrollerPolicyControllerHubConfigDeploymentConfigsContainerResourcesRequests,
+	Limits: github.com/cdktn-io/cdktn-provider-google-go/google/v18.gkeHubFeatureMembership.GkeHubFeatureMembershipPolicycontrollerPolicyControllerHubConfigDeploymentConfigsContainerResourcesLimits,
+	Requests: github.com/cdktn-io/cdktn-provider-google-go/google/v18.gkeHubFeatureMembership.GkeHubFeatureMembershipPolicycontrollerPolicyControllerHubConfigDeploymentConfigsContainerResourcesRequests,
 }
 ```
 
@@ -2665,7 +2665,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.gkeHubFeatureMembership.GkeHubFeatureMembershipPolicycontrollerPolicyControllerHubConfigDeploymentConfigsContainerResourcesLimits.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/gkehubfeaturemembership"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/gkehubfeaturemembership"
 
 &gkehubfeaturemembership.GkeHubFeatureMembershipPolicycontrollerPolicyControllerHubConfigDeploymentConfigsContainerResourcesLimits {
 	Cpu: *string,
@@ -2715,7 +2715,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.gkeHubFeatureMembership.GkeHubFeatureMembershipPolicycontrollerPolicyControllerHubConfigDeploymentConfigsContainerResourcesRequests.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/gkehubfeaturemembership"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/gkehubfeaturemembership"
 
 &gkehubfeaturemembership.GkeHubFeatureMembershipPolicycontrollerPolicyControllerHubConfigDeploymentConfigsContainerResourcesRequests {
 	Cpu: *string,
@@ -2765,7 +2765,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.gkeHubFeatureMembership.GkeHubFeatureMembershipPolicycontrollerPolicyControllerHubConfigDeploymentConfigsPodTolerations.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/gkehubfeaturemembership"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/gkehubfeaturemembership"
 
 &gkehubfeaturemembership.GkeHubFeatureMembershipPolicycontrollerPolicyControllerHubConfigDeploymentConfigsPodTolerations {
 	Effect: *string,
@@ -2847,7 +2847,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.gkeHubFeatureMembership.GkeHubFeatureMembershipPolicycontrollerPolicyControllerHubConfigMonitoring.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/gkehubfeaturemembership"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/gkehubfeaturemembership"
 
 &gkehubfeaturemembership.GkeHubFeatureMembershipPolicycontrollerPolicyControllerHubConfigMonitoring {
 	Backends: *[]*string,
@@ -2881,11 +2881,11 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.gkeHubFeatureMembership.GkeHubFeatureMembershipPolicycontrollerPolicyControllerHubConfigPolicyContent.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/gkehubfeaturemembership"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/gkehubfeaturemembership"
 
 &gkehubfeaturemembership.GkeHubFeatureMembershipPolicycontrollerPolicyControllerHubConfigPolicyContent {
 	Bundles: interface{},
-	TemplateLibrary: github.com/cdktn-io/cdktn-provider-google-go/google/v17.gkeHubFeatureMembership.GkeHubFeatureMembershipPolicycontrollerPolicyControllerHubConfigPolicyContentTemplateLibrary,
+	TemplateLibrary: github.com/cdktn-io/cdktn-provider-google-go/google/v18.gkeHubFeatureMembership.GkeHubFeatureMembershipPolicycontrollerPolicyControllerHubConfigPolicyContentTemplateLibrary,
 }
 ```
 
@@ -2931,7 +2931,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.gkeHubFeatureMembership.GkeHubFeatureMembershipPolicycontrollerPolicyControllerHubConfigPolicyContentBundles.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/gkehubfeaturemembership"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/gkehubfeaturemembership"
 
 &gkehubfeaturemembership.GkeHubFeatureMembershipPolicycontrollerPolicyControllerHubConfigPolicyContentBundles {
 	BundleName: *string,
@@ -2981,7 +2981,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.gkeHubFeatureMembership.GkeHubFeatureMembershipPolicycontrollerPolicyControllerHubConfigPolicyContentTemplateLibrary.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/gkehubfeaturemembership"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/gkehubfeaturemembership"
 
 &gkehubfeaturemembership.GkeHubFeatureMembershipPolicycontrollerPolicyControllerHubConfigPolicyContentTemplateLibrary {
 	Installation: *string,
@@ -3015,7 +3015,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.gkeHubFeatureMembership.GkeHubFeatureMembershipTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/gkehubfeaturemembership"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/gkehubfeaturemembership"
 
 &gkehubfeaturemembership.GkeHubFeatureMembershipTimeouts {
 	Create: *string,
@@ -3077,7 +3077,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.gkeHubFeatureMembership.GkeHubFeatureMembershipConfigmanagementBinauthzOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/gkehubfeaturemembership"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/gkehubfeaturemembership"
 
 gkehubfeaturemembership.NewGkeHubFeatureMembershipConfigmanagementBinauthzOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GkeHubFeatureMembershipConfigmanagementBinauthzOutputReference
 ```
@@ -3355,7 +3355,7 @@ func InternalValue() GkeHubFeatureMembershipConfigmanagementBinauthz
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.gkeHubFeatureMembership.GkeHubFeatureMembershipConfigmanagementConfigSyncDeploymentOverridesContainersList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/gkehubfeaturemembership"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/gkehubfeaturemembership"
 
 gkehubfeaturemembership.NewGkeHubFeatureMembershipConfigmanagementConfigSyncDeploymentOverridesContainersList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) GkeHubFeatureMembershipConfigmanagementConfigSyncDeploymentOverridesContainersList
 ```
@@ -3515,7 +3515,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.gkeHubFeatureMembership.GkeHubFeatureMembershipConfigmanagementConfigSyncDeploymentOverridesContainersOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/gkehubfeaturemembership"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/gkehubfeaturemembership"
 
 gkehubfeaturemembership.NewGkeHubFeatureMembershipConfigmanagementConfigSyncDeploymentOverridesContainersOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) GkeHubFeatureMembershipConfigmanagementConfigSyncDeploymentOverridesContainersOutputReference
 ```
@@ -3927,7 +3927,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.gkeHubFeatureMembership.GkeHubFeatureMembershipConfigmanagementConfigSyncDeploymentOverridesList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/gkehubfeaturemembership"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/gkehubfeaturemembership"
 
 gkehubfeaturemembership.NewGkeHubFeatureMembershipConfigmanagementConfigSyncDeploymentOverridesList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) GkeHubFeatureMembershipConfigmanagementConfigSyncDeploymentOverridesList
 ```
@@ -4087,7 +4087,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.gkeHubFeatureMembership.GkeHubFeatureMembershipConfigmanagementConfigSyncDeploymentOverridesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/gkehubfeaturemembership"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/gkehubfeaturemembership"
 
 gkehubfeaturemembership.NewGkeHubFeatureMembershipConfigmanagementConfigSyncDeploymentOverridesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) GkeHubFeatureMembershipConfigmanagementConfigSyncDeploymentOverridesOutputReference
 ```
@@ -4454,7 +4454,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.gkeHubFeatureMembership.GkeHubFeatureMembershipConfigmanagementConfigSyncGitOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/gkehubfeaturemembership"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/gkehubfeaturemembership"
 
 gkehubfeaturemembership.NewGkeHubFeatureMembershipConfigmanagementConfigSyncGitOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GkeHubFeatureMembershipConfigmanagementConfigSyncGitOutputReference
 ```
@@ -4935,7 +4935,7 @@ func InternalValue() GkeHubFeatureMembershipConfigmanagementConfigSyncGit
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.gkeHubFeatureMembership.GkeHubFeatureMembershipConfigmanagementConfigSyncOciOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/gkehubfeaturemembership"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/gkehubfeaturemembership"
 
 gkehubfeaturemembership.NewGkeHubFeatureMembershipConfigmanagementConfigSyncOciOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GkeHubFeatureMembershipConfigmanagementConfigSyncOciOutputReference
 ```
@@ -5329,7 +5329,7 @@ func InternalValue() GkeHubFeatureMembershipConfigmanagementConfigSyncOci
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.gkeHubFeatureMembership.GkeHubFeatureMembershipConfigmanagementConfigSyncOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/gkehubfeaturemembership"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/gkehubfeaturemembership"
 
 gkehubfeaturemembership.NewGkeHubFeatureMembershipConfigmanagementConfigSyncOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GkeHubFeatureMembershipConfigmanagementConfigSyncOutputReference
 ```
@@ -5849,7 +5849,7 @@ func InternalValue() GkeHubFeatureMembershipConfigmanagementConfigSync
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.gkeHubFeatureMembership.GkeHubFeatureMembershipConfigmanagementHierarchyControllerOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/gkehubfeaturemembership"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/gkehubfeaturemembership"
 
 gkehubfeaturemembership.NewGkeHubFeatureMembershipConfigmanagementHierarchyControllerOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GkeHubFeatureMembershipConfigmanagementHierarchyControllerOutputReference
 ```
@@ -6185,7 +6185,7 @@ func InternalValue() GkeHubFeatureMembershipConfigmanagementHierarchyController
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.gkeHubFeatureMembership.GkeHubFeatureMembershipConfigmanagementOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/gkehubfeaturemembership"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/gkehubfeaturemembership"
 
 gkehubfeaturemembership.NewGkeHubFeatureMembershipConfigmanagementOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GkeHubFeatureMembershipConfigmanagementOutputReference
 ```
@@ -6660,7 +6660,7 @@ func InternalValue() GkeHubFeatureMembershipConfigmanagement
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.gkeHubFeatureMembership.GkeHubFeatureMembershipConfigmanagementPolicyControllerMonitoringOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/gkehubfeaturemembership"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/gkehubfeaturemembership"
 
 gkehubfeaturemembership.NewGkeHubFeatureMembershipConfigmanagementPolicyControllerMonitoringOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GkeHubFeatureMembershipConfigmanagementPolicyControllerMonitoringOutputReference
 ```
@@ -6938,7 +6938,7 @@ func InternalValue() GkeHubFeatureMembershipConfigmanagementPolicyControllerMoni
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.gkeHubFeatureMembership.GkeHubFeatureMembershipConfigmanagementPolicyControllerOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/gkehubfeaturemembership"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/gkehubfeaturemembership"
 
 gkehubfeaturemembership.NewGkeHubFeatureMembershipConfigmanagementPolicyControllerOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GkeHubFeatureMembershipConfigmanagementPolicyControllerOutputReference
 ```
@@ -7432,7 +7432,7 @@ func InternalValue() GkeHubFeatureMembershipConfigmanagementPolicyController
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.gkeHubFeatureMembership.GkeHubFeatureMembershipMeshOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/gkehubfeaturemembership"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/gkehubfeaturemembership"
 
 gkehubfeaturemembership.NewGkeHubFeatureMembershipMeshOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GkeHubFeatureMembershipMeshOutputReference
 ```
@@ -7739,7 +7739,7 @@ func InternalValue() GkeHubFeatureMembershipMesh
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.gkeHubFeatureMembership.GkeHubFeatureMembershipPolicycontrollerOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/gkehubfeaturemembership"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/gkehubfeaturemembership"
 
 gkehubfeaturemembership.NewGkeHubFeatureMembershipPolicycontrollerOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GkeHubFeatureMembershipPolicycontrollerOutputReference
 ```
@@ -8052,7 +8052,7 @@ func InternalValue() GkeHubFeatureMembershipPolicycontroller
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.gkeHubFeatureMembership.GkeHubFeatureMembershipPolicycontrollerPolicyControllerHubConfigDeploymentConfigsContainerResourcesLimitsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/gkehubfeaturemembership"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/gkehubfeaturemembership"
 
 gkehubfeaturemembership.NewGkeHubFeatureMembershipPolicycontrollerPolicyControllerHubConfigDeploymentConfigsContainerResourcesLimitsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GkeHubFeatureMembershipPolicycontrollerPolicyControllerHubConfigDeploymentConfigsContainerResourcesLimitsOutputReference
 ```
@@ -8359,7 +8359,7 @@ func InternalValue() GkeHubFeatureMembershipPolicycontrollerPolicyControllerHubC
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.gkeHubFeatureMembership.GkeHubFeatureMembershipPolicycontrollerPolicyControllerHubConfigDeploymentConfigsContainerResourcesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/gkehubfeaturemembership"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/gkehubfeaturemembership"
 
 gkehubfeaturemembership.NewGkeHubFeatureMembershipPolicycontrollerPolicyControllerHubConfigDeploymentConfigsContainerResourcesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GkeHubFeatureMembershipPolicycontrollerPolicyControllerHubConfigDeploymentConfigsContainerResourcesOutputReference
 ```
@@ -8692,7 +8692,7 @@ func InternalValue() GkeHubFeatureMembershipPolicycontrollerPolicyControllerHubC
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.gkeHubFeatureMembership.GkeHubFeatureMembershipPolicycontrollerPolicyControllerHubConfigDeploymentConfigsContainerResourcesRequestsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/gkehubfeaturemembership"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/gkehubfeaturemembership"
 
 gkehubfeaturemembership.NewGkeHubFeatureMembershipPolicycontrollerPolicyControllerHubConfigDeploymentConfigsContainerResourcesRequestsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GkeHubFeatureMembershipPolicycontrollerPolicyControllerHubConfigDeploymentConfigsContainerResourcesRequestsOutputReference
 ```
@@ -8999,7 +8999,7 @@ func InternalValue() GkeHubFeatureMembershipPolicycontrollerPolicyControllerHubC
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.gkeHubFeatureMembership.GkeHubFeatureMembershipPolicycontrollerPolicyControllerHubConfigDeploymentConfigsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/gkehubfeaturemembership"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/gkehubfeaturemembership"
 
 gkehubfeaturemembership.NewGkeHubFeatureMembershipPolicycontrollerPolicyControllerHubConfigDeploymentConfigsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) GkeHubFeatureMembershipPolicycontrollerPolicyControllerHubConfigDeploymentConfigsList
 ```
@@ -9159,7 +9159,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.gkeHubFeatureMembership.GkeHubFeatureMembershipPolicycontrollerPolicyControllerHubConfigDeploymentConfigsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/gkehubfeaturemembership"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/gkehubfeaturemembership"
 
 gkehubfeaturemembership.NewGkeHubFeatureMembershipPolicycontrollerPolicyControllerHubConfigDeploymentConfigsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) GkeHubFeatureMembershipPolicycontrollerPolicyControllerHubConfigDeploymentConfigsOutputReference
 ```
@@ -9590,7 +9590,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.gkeHubFeatureMembership.GkeHubFeatureMembershipPolicycontrollerPolicyControllerHubConfigDeploymentConfigsPodTolerationsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/gkehubfeaturemembership"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/gkehubfeaturemembership"
 
 gkehubfeaturemembership.NewGkeHubFeatureMembershipPolicycontrollerPolicyControllerHubConfigDeploymentConfigsPodTolerationsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) GkeHubFeatureMembershipPolicycontrollerPolicyControllerHubConfigDeploymentConfigsPodTolerationsList
 ```
@@ -9750,7 +9750,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.gkeHubFeatureMembership.GkeHubFeatureMembershipPolicycontrollerPolicyControllerHubConfigDeploymentConfigsPodTolerationsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/gkehubfeaturemembership"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/gkehubfeaturemembership"
 
 gkehubfeaturemembership.NewGkeHubFeatureMembershipPolicycontrollerPolicyControllerHubConfigDeploymentConfigsPodTolerationsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) GkeHubFeatureMembershipPolicycontrollerPolicyControllerHubConfigDeploymentConfigsPodTolerationsOutputReference
 ```
@@ -10133,7 +10133,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.gkeHubFeatureMembership.GkeHubFeatureMembershipPolicycontrollerPolicyControllerHubConfigMonitoringOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/gkehubfeaturemembership"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/gkehubfeaturemembership"
 
 gkehubfeaturemembership.NewGkeHubFeatureMembershipPolicycontrollerPolicyControllerHubConfigMonitoringOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GkeHubFeatureMembershipPolicycontrollerPolicyControllerHubConfigMonitoringOutputReference
 ```
@@ -10411,7 +10411,7 @@ func InternalValue() GkeHubFeatureMembershipPolicycontrollerPolicyControllerHubC
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.gkeHubFeatureMembership.GkeHubFeatureMembershipPolicycontrollerPolicyControllerHubConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/gkehubfeaturemembership"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/gkehubfeaturemembership"
 
 gkehubfeaturemembership.NewGkeHubFeatureMembershipPolicycontrollerPolicyControllerHubConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GkeHubFeatureMembershipPolicycontrollerPolicyControllerHubConfigOutputReference
 ```
@@ -10989,7 +10989,7 @@ func InternalValue() GkeHubFeatureMembershipPolicycontrollerPolicyControllerHubC
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.gkeHubFeatureMembership.GkeHubFeatureMembershipPolicycontrollerPolicyControllerHubConfigPolicyContentBundlesList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/gkehubfeaturemembership"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/gkehubfeaturemembership"
 
 gkehubfeaturemembership.NewGkeHubFeatureMembershipPolicycontrollerPolicyControllerHubConfigPolicyContentBundlesList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) GkeHubFeatureMembershipPolicycontrollerPolicyControllerHubConfigPolicyContentBundlesList
 ```
@@ -11149,7 +11149,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.gkeHubFeatureMembership.GkeHubFeatureMembershipPolicycontrollerPolicyControllerHubConfigPolicyContentBundlesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/gkehubfeaturemembership"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/gkehubfeaturemembership"
 
 gkehubfeaturemembership.NewGkeHubFeatureMembershipPolicycontrollerPolicyControllerHubConfigPolicyContentBundlesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) GkeHubFeatureMembershipPolicycontrollerPolicyControllerHubConfigPolicyContentBundlesOutputReference
 ```
@@ -11467,7 +11467,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.gkeHubFeatureMembership.GkeHubFeatureMembershipPolicycontrollerPolicyControllerHubConfigPolicyContentOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/gkehubfeaturemembership"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/gkehubfeaturemembership"
 
 gkehubfeaturemembership.NewGkeHubFeatureMembershipPolicycontrollerPolicyControllerHubConfigPolicyContentOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GkeHubFeatureMembershipPolicycontrollerPolicyControllerHubConfigPolicyContentOutputReference
 ```
@@ -11800,7 +11800,7 @@ func InternalValue() GkeHubFeatureMembershipPolicycontrollerPolicyControllerHubC
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.gkeHubFeatureMembership.GkeHubFeatureMembershipPolicycontrollerPolicyControllerHubConfigPolicyContentTemplateLibraryOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/gkehubfeaturemembership"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/gkehubfeaturemembership"
 
 gkehubfeaturemembership.NewGkeHubFeatureMembershipPolicycontrollerPolicyControllerHubConfigPolicyContentTemplateLibraryOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GkeHubFeatureMembershipPolicycontrollerPolicyControllerHubConfigPolicyContentTemplateLibraryOutputReference
 ```
@@ -12078,7 +12078,7 @@ func InternalValue() GkeHubFeatureMembershipPolicycontrollerPolicyControllerHubC
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.gkeHubFeatureMembership.GkeHubFeatureMembershipTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/gkehubfeaturemembership"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/gkehubfeaturemembership"
 
 gkehubfeaturemembership.NewGkeHubFeatureMembershipTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GkeHubFeatureMembershipTimeoutsOutputReference
 ```

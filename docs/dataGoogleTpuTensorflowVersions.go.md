@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.5
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataGoogleTpuTensorflowVersions.DataGoogleTpuTensorflowVersions.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/datagoogletputensorflowversions"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/datagoogletputensorflowversions"
 
 datagoogletputensorflowversions.NewDataGoogleTpuTensorflowVersions(scope Construct, id *string, config DataGoogleTpuTensorflowVersionsConfig) DataGoogleTpuTensorflowVersions
 ```
@@ -319,7 +319,7 @@ func ResetZone()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-google.dataGoogleTpuTensorflowVersions.DataGoogleTpuTensorflowVersions.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/datagoogletputensorflowversions"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/datagoogletputensorflowversions"
 
 datagoogletputensorflowversions.DataGoogleTpuTensorflowVersions_IsConstruct(x interface{}) *bool
 ```
@@ -351,7 +351,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-google.dataGoogleTpuTensorflowVersions.DataGoogleTpuTensorflowVersions.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/datagoogletputensorflowversions"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/datagoogletputensorflowversions"
 
 datagoogletputensorflowversions.DataGoogleTpuTensorflowVersions_IsTerraformElement(x interface{}) *bool
 ```
@@ -365,7 +365,7 @@ datagoogletputensorflowversions.DataGoogleTpuTensorflowVersions_IsTerraformEleme
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktn/provider-google.dataGoogleTpuTensorflowVersions.DataGoogleTpuTensorflowVersions.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/datagoogletputensorflowversions"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/datagoogletputensorflowversions"
 
 datagoogletputensorflowversions.DataGoogleTpuTensorflowVersions_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -379,7 +379,7 @@ datagoogletputensorflowversions.DataGoogleTpuTensorflowVersions_IsTerraformDataS
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-google.dataGoogleTpuTensorflowVersions.DataGoogleTpuTensorflowVersions.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/datagoogletputensorflowversions"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/datagoogletputensorflowversions"
 
 datagoogletputensorflowversions.DataGoogleTpuTensorflowVersions_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -663,7 +663,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.dataGoogleTpuTensorflowVersions.DataGoogleTpuTensorflowVersionsConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/datagoogletputensorflowversions"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/datagoogletputensorflowversions"
 
 &datagoogletputensorflowversions.DataGoogleTpuTensorflowVersionsConfig {
 	Connection: interface{},

@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.5
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.computeRegionDiskIamPolicy.ComputeRegionDiskIamPolicy.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/computeregiondiskiampolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/computeregiondiskiampolicy"
 
 computeregiondiskiampolicy.NewComputeRegionDiskIamPolicy(scope Construct, id *string, config ComputeRegionDiskIamPolicyConfig) ComputeRegionDiskIamPolicy
 ```
@@ -421,7 +421,7 @@ func ResetRegion()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-google.computeRegionDiskIamPolicy.ComputeRegionDiskIamPolicy.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/computeregiondiskiampolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/computeregiondiskiampolicy"
 
 computeregiondiskiampolicy.ComputeRegionDiskIamPolicy_IsConstruct(x interface{}) *bool
 ```
@@ -453,7 +453,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-google.computeRegionDiskIamPolicy.ComputeRegionDiskIamPolicy.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/computeregiondiskiampolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/computeregiondiskiampolicy"
 
 computeregiondiskiampolicy.ComputeRegionDiskIamPolicy_IsTerraformElement(x interface{}) *bool
 ```
@@ -467,7 +467,7 @@ computeregiondiskiampolicy.ComputeRegionDiskIamPolicy_IsTerraformElement(x inter
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-google.computeRegionDiskIamPolicy.ComputeRegionDiskIamPolicy.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/computeregiondiskiampolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/computeregiondiskiampolicy"
 
 computeregiondiskiampolicy.ComputeRegionDiskIamPolicy_IsTerraformResource(x interface{}) *bool
 ```
@@ -481,7 +481,7 @@ computeregiondiskiampolicy.ComputeRegionDiskIamPolicy_IsTerraformResource(x inte
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-google.computeRegionDiskIamPolicy.ComputeRegionDiskIamPolicy.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/computeregiondiskiampolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/computeregiondiskiampolicy"
 
 computeregiondiskiampolicy.ComputeRegionDiskIamPolicy_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -831,7 +831,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.computeRegionDiskIamPolicy.ComputeRegionDiskIamPolicyConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/computeregiondiskiampolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/computeregiondiskiampolicy"
 
 &computeregiondiskiampolicy.ComputeRegionDiskIamPolicyConfig {
 	Connection: interface{},

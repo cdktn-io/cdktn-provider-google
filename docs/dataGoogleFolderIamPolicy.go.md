@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.5
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataGoogleFolderIamPolicy.DataGoogleFolderIamPolicy.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/datagooglefolderiampolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/datagooglefolderiampolicy"
 
 datagooglefolderiampolicy.NewDataGoogleFolderIamPolicy(scope Construct, id *string, config DataGoogleFolderIamPolicyConfig) DataGoogleFolderIamPolicy
 ```
@@ -305,7 +305,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-google.dataGoogleFolderIamPolicy.DataGoogleFolderIamPolicy.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/datagooglefolderiampolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/datagooglefolderiampolicy"
 
 datagooglefolderiampolicy.DataGoogleFolderIamPolicy_IsConstruct(x interface{}) *bool
 ```
@@ -337,7 +337,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-google.dataGoogleFolderIamPolicy.DataGoogleFolderIamPolicy.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/datagooglefolderiampolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/datagooglefolderiampolicy"
 
 datagooglefolderiampolicy.DataGoogleFolderIamPolicy_IsTerraformElement(x interface{}) *bool
 ```
@@ -351,7 +351,7 @@ datagooglefolderiampolicy.DataGoogleFolderIamPolicy_IsTerraformElement(x interfa
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktn/provider-google.dataGoogleFolderIamPolicy.DataGoogleFolderIamPolicy.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/datagooglefolderiampolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/datagooglefolderiampolicy"
 
 datagooglefolderiampolicy.DataGoogleFolderIamPolicy_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -365,7 +365,7 @@ datagooglefolderiampolicy.DataGoogleFolderIamPolicy_IsTerraformDataSource(x inte
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-google.dataGoogleFolderIamPolicy.DataGoogleFolderIamPolicy.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/datagooglefolderiampolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/datagooglefolderiampolicy"
 
 datagooglefolderiampolicy.DataGoogleFolderIamPolicy_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -638,7 +638,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.dataGoogleFolderIamPolicy.DataGoogleFolderIamPolicyConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/datagooglefolderiampolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/datagooglefolderiampolicy"
 
 &datagooglefolderiampolicy.DataGoogleFolderIamPolicyConfig {
 	Connection: interface{},

@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.5
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.binaryAuthorizationPolicy.BinaryAuthorizationPolicy.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/binaryauthorizationpolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/binaryauthorizationpolicy"
 
 binaryauthorizationpolicy.NewBinaryAuthorizationPolicy(scope Construct, id *string, config BinaryAuthorizationPolicyConfig) BinaryAuthorizationPolicy
 ```
@@ -501,7 +501,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-google.binaryAuthorizationPolicy.BinaryAuthorizationPolicy.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/binaryauthorizationpolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/binaryauthorizationpolicy"
 
 binaryauthorizationpolicy.BinaryAuthorizationPolicy_IsConstruct(x interface{}) *bool
 ```
@@ -533,7 +533,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-google.binaryAuthorizationPolicy.BinaryAuthorizationPolicy.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/binaryauthorizationpolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/binaryauthorizationpolicy"
 
 binaryauthorizationpolicy.BinaryAuthorizationPolicy_IsTerraformElement(x interface{}) *bool
 ```
@@ -547,7 +547,7 @@ binaryauthorizationpolicy.BinaryAuthorizationPolicy_IsTerraformElement(x interfa
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-google.binaryAuthorizationPolicy.BinaryAuthorizationPolicy.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/binaryauthorizationpolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/binaryauthorizationpolicy"
 
 binaryauthorizationpolicy.BinaryAuthorizationPolicy_IsTerraformResource(x interface{}) *bool
 ```
@@ -561,7 +561,7 @@ binaryauthorizationpolicy.BinaryAuthorizationPolicy_IsTerraformResource(x interf
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-google.binaryAuthorizationPolicy.BinaryAuthorizationPolicy.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/binaryauthorizationpolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/binaryauthorizationpolicy"
 
 binaryauthorizationpolicy.BinaryAuthorizationPolicy_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -966,7 +966,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.binaryAuthorizationPolicy.BinaryAuthorizationPolicyAdmissionWhitelistPatterns.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/binaryauthorizationpolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/binaryauthorizationpolicy"
 
 &binaryauthorizationpolicy.BinaryAuthorizationPolicyAdmissionWhitelistPatterns {
 	NamePattern: *string,
@@ -1004,7 +1004,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.binaryAuthorizationPolicy.BinaryAuthorizationPolicyClusterAdmissionRules.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/binaryauthorizationpolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/binaryauthorizationpolicy"
 
 &binaryauthorizationpolicy.BinaryAuthorizationPolicyClusterAdmissionRules {
 	Cluster: *string,
@@ -1095,7 +1095,7 @@ Note: The above comment contained a comment block ending sequence (* followed by
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.binaryAuthorizationPolicy.BinaryAuthorizationPolicyConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/binaryauthorizationpolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/binaryauthorizationpolicy"
 
 &binaryauthorizationpolicy.BinaryAuthorizationPolicyConfig {
 	Connection: interface{},
@@ -1105,14 +1105,14 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/binaryauthorizat
 	Lifecycle: github.com/open-constructs/cdk-terrain-go/cdktn.TerraformResourceLifecycle,
 	Provider: github.com/open-constructs/cdk-terrain-go/cdktn.TerraformProvider,
 	Provisioners: *[]interface{},
-	DefaultAdmissionRule: github.com/cdktn-io/cdktn-provider-google-go/google/v17.binaryAuthorizationPolicy.BinaryAuthorizationPolicyDefaultAdmissionRule,
+	DefaultAdmissionRule: github.com/cdktn-io/cdktn-provider-google-go/google/v18.binaryAuthorizationPolicy.BinaryAuthorizationPolicyDefaultAdmissionRule,
 	AdmissionWhitelistPatterns: interface{},
 	ClusterAdmissionRules: interface{},
 	Description: *string,
 	GlobalPolicyEvaluationMode: *string,
 	Id: *string,
 	Project: *string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-google-go/google/v17.binaryAuthorizationPolicy.BinaryAuthorizationPolicyTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-google-go/google/v18.binaryAuthorizationPolicy.BinaryAuthorizationPolicyTimeouts,
 }
 ```
 
@@ -1327,7 +1327,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.binaryAuthorizationPolicy.BinaryAuthorizationPolicyDefaultAdmissionRule.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/binaryauthorizationpolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/binaryauthorizationpolicy"
 
 &binaryauthorizationpolicy.BinaryAuthorizationPolicyDefaultAdmissionRule {
 	EnforcementMode: *string,
@@ -1404,7 +1404,7 @@ Note: The above comment contained a comment block ending sequence (* followed by
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.binaryAuthorizationPolicy.BinaryAuthorizationPolicyTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/binaryauthorizationpolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/binaryauthorizationpolicy"
 
 &binaryauthorizationpolicy.BinaryAuthorizationPolicyTimeouts {
 	Create: *string,
@@ -1466,7 +1466,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.binaryAuthorizationPolicy.BinaryAuthorizationPolicyAdmissionWhitelistPatternsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/binaryauthorizationpolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/binaryauthorizationpolicy"
 
 binaryauthorizationpolicy.NewBinaryAuthorizationPolicyAdmissionWhitelistPatternsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) BinaryAuthorizationPolicyAdmissionWhitelistPatternsList
 ```
@@ -1626,7 +1626,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.binaryAuthorizationPolicy.BinaryAuthorizationPolicyAdmissionWhitelistPatternsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/binaryauthorizationpolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/binaryauthorizationpolicy"
 
 binaryauthorizationpolicy.NewBinaryAuthorizationPolicyAdmissionWhitelistPatternsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) BinaryAuthorizationPolicyAdmissionWhitelistPatternsOutputReference
 ```
@@ -1915,7 +1915,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.binaryAuthorizationPolicy.BinaryAuthorizationPolicyClusterAdmissionRulesList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/binaryauthorizationpolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/binaryauthorizationpolicy"
 
 binaryauthorizationpolicy.NewBinaryAuthorizationPolicyClusterAdmissionRulesList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) BinaryAuthorizationPolicyClusterAdmissionRulesList
 ```
@@ -2075,7 +2075,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.binaryAuthorizationPolicy.BinaryAuthorizationPolicyClusterAdmissionRulesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/binaryauthorizationpolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/binaryauthorizationpolicy"
 
 binaryauthorizationpolicy.NewBinaryAuthorizationPolicyClusterAdmissionRulesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) BinaryAuthorizationPolicyClusterAdmissionRulesOutputReference
 ```
@@ -2437,7 +2437,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.binaryAuthorizationPolicy.BinaryAuthorizationPolicyDefaultAdmissionRuleOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/binaryauthorizationpolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/binaryauthorizationpolicy"
 
 binaryauthorizationpolicy.NewBinaryAuthorizationPolicyDefaultAdmissionRuleOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) BinaryAuthorizationPolicyDefaultAdmissionRuleOutputReference
 ```
@@ -2759,7 +2759,7 @@ func InternalValue() BinaryAuthorizationPolicyDefaultAdmissionRule
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.binaryAuthorizationPolicy.BinaryAuthorizationPolicyTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/binaryauthorizationpolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/binaryauthorizationpolicy"
 
 binaryauthorizationpolicy.NewBinaryAuthorizationPolicyTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) BinaryAuthorizationPolicyTimeoutsOutputReference
 ```

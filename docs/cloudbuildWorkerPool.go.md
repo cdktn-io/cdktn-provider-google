@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.5
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.cloudbuildWorkerPool.CloudbuildWorkerPool.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/cloudbuildworkerpool"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/cloudbuildworkerpool"
 
 cloudbuildworkerpool.NewCloudbuildWorkerPool(scope Construct, id *string, config CloudbuildWorkerPoolConfig) CloudbuildWorkerPool
 ```
@@ -508,7 +508,7 @@ func ResetWorkerConfig()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-google.cloudbuildWorkerPool.CloudbuildWorkerPool.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/cloudbuildworkerpool"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/cloudbuildworkerpool"
 
 cloudbuildworkerpool.CloudbuildWorkerPool_IsConstruct(x interface{}) *bool
 ```
@@ -540,7 +540,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-google.cloudbuildWorkerPool.CloudbuildWorkerPool.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/cloudbuildworkerpool"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/cloudbuildworkerpool"
 
 cloudbuildworkerpool.CloudbuildWorkerPool_IsTerraformElement(x interface{}) *bool
 ```
@@ -554,7 +554,7 @@ cloudbuildworkerpool.CloudbuildWorkerPool_IsTerraformElement(x interface{}) *boo
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-google.cloudbuildWorkerPool.CloudbuildWorkerPool.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/cloudbuildworkerpool"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/cloudbuildworkerpool"
 
 cloudbuildworkerpool.CloudbuildWorkerPool_IsTerraformResource(x interface{}) *bool
 ```
@@ -568,7 +568,7 @@ cloudbuildworkerpool.CloudbuildWorkerPool_IsTerraformResource(x interface{}) *bo
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-google.cloudbuildWorkerPool.CloudbuildWorkerPool.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/cloudbuildworkerpool"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/cloudbuildworkerpool"
 
 cloudbuildworkerpool.CloudbuildWorkerPool_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -1083,7 +1083,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.cloudbuildWorkerPool.CloudbuildWorkerPoolConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/cloudbuildworkerpool"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/cloudbuildworkerpool"
 
 &cloudbuildworkerpool.CloudbuildWorkerPoolConfig {
 	Connection: interface{},
@@ -1098,11 +1098,11 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/cloudbuildworker
 	Annotations: *map[string]*string,
 	DisplayName: *string,
 	Id: *string,
-	NetworkConfig: github.com/cdktn-io/cdktn-provider-google-go/google/v17.cloudbuildWorkerPool.CloudbuildWorkerPoolNetworkConfig,
-	PrivateServiceConnect: github.com/cdktn-io/cdktn-provider-google-go/google/v17.cloudbuildWorkerPool.CloudbuildWorkerPoolPrivateServiceConnect,
+	NetworkConfig: github.com/cdktn-io/cdktn-provider-google-go/google/v18.cloudbuildWorkerPool.CloudbuildWorkerPoolNetworkConfig,
+	PrivateServiceConnect: github.com/cdktn-io/cdktn-provider-google-go/google/v18.cloudbuildWorkerPool.CloudbuildWorkerPoolPrivateServiceConnect,
 	Project: *string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-google-go/google/v17.cloudbuildWorkerPool.CloudbuildWorkerPoolTimeouts,
-	WorkerConfig: github.com/cdktn-io/cdktn-provider-google-go/google/v17.cloudbuildWorkerPool.CloudbuildWorkerPoolWorkerConfig,
+	Timeouts: github.com/cdktn-io/cdktn-provider-google-go/google/v18.cloudbuildWorkerPool.CloudbuildWorkerPoolTimeouts,
+	WorkerConfig: github.com/cdktn-io/cdktn-provider-google-go/google/v18.cloudbuildWorkerPool.CloudbuildWorkerPoolWorkerConfig,
 }
 ```
 
@@ -1349,7 +1349,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.cloudbuildWorkerPool.CloudbuildWorkerPoolNetworkConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/cloudbuildworkerpool"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/cloudbuildworkerpool"
 
 &cloudbuildworkerpool.CloudbuildWorkerPoolNetworkConfig {
 	PeeredNetwork: *string,
@@ -1403,7 +1403,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.cloudbuildWorkerPool.CloudbuildWorkerPoolPrivateServiceConnect.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/cloudbuildworkerpool"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/cloudbuildworkerpool"
 
 &cloudbuildworkerpool.CloudbuildWorkerPoolPrivateServiceConnect {
 	NetworkAttachment: *string,
@@ -1457,7 +1457,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.cloudbuildWorkerPool.CloudbuildWorkerPoolTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/cloudbuildworkerpool"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/cloudbuildworkerpool"
 
 &cloudbuildworkerpool.CloudbuildWorkerPoolTimeouts {
 	Create: *string,
@@ -1517,7 +1517,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.cloudbuildWorkerPool.CloudbuildWorkerPoolWorkerConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/cloudbuildworkerpool"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/cloudbuildworkerpool"
 
 &cloudbuildworkerpool.CloudbuildWorkerPoolWorkerConfig {
 	DiskSizeGb: *f64,
@@ -1589,7 +1589,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.cloudbuildWorkerPool.CloudbuildWorkerPoolNetworkConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/cloudbuildworkerpool"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/cloudbuildworkerpool"
 
 cloudbuildworkerpool.NewCloudbuildWorkerPoolNetworkConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) CloudbuildWorkerPoolNetworkConfigOutputReference
 ```
@@ -1889,7 +1889,7 @@ func InternalValue() CloudbuildWorkerPoolNetworkConfig
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.cloudbuildWorkerPool.CloudbuildWorkerPoolPrivateServiceConnectOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/cloudbuildworkerpool"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/cloudbuildworkerpool"
 
 cloudbuildworkerpool.NewCloudbuildWorkerPoolPrivateServiceConnectOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) CloudbuildWorkerPoolPrivateServiceConnectOutputReference
 ```
@@ -2189,7 +2189,7 @@ func InternalValue() CloudbuildWorkerPoolPrivateServiceConnect
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.cloudbuildWorkerPool.CloudbuildWorkerPoolTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/cloudbuildworkerpool"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/cloudbuildworkerpool"
 
 cloudbuildworkerpool.NewCloudbuildWorkerPoolTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) CloudbuildWorkerPoolTimeoutsOutputReference
 ```
@@ -2525,7 +2525,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.cloudbuildWorkerPool.CloudbuildWorkerPoolWorkerConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/cloudbuildworkerpool"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/cloudbuildworkerpool"
 
 cloudbuildworkerpool.NewCloudbuildWorkerPoolWorkerConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) CloudbuildWorkerPoolWorkerConfigOutputReference
 ```

@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.5
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.parallelstoreInstance.ParallelstoreInstance.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/parallelstoreinstance"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/parallelstoreinstance"
 
 parallelstoreinstance.NewParallelstoreInstance(scope Construct, id *string, config ParallelstoreInstanceConfig) ParallelstoreInstance
 ```
@@ -483,7 +483,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-google.parallelstoreInstance.ParallelstoreInstance.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/parallelstoreinstance"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/parallelstoreinstance"
 
 parallelstoreinstance.ParallelstoreInstance_IsConstruct(x interface{}) *bool
 ```
@@ -515,7 +515,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-google.parallelstoreInstance.ParallelstoreInstance.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/parallelstoreinstance"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/parallelstoreinstance"
 
 parallelstoreinstance.ParallelstoreInstance_IsTerraformElement(x interface{}) *bool
 ```
@@ -529,7 +529,7 @@ parallelstoreinstance.ParallelstoreInstance_IsTerraformElement(x interface{}) *b
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-google.parallelstoreInstance.ParallelstoreInstance.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/parallelstoreinstance"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/parallelstoreinstance"
 
 parallelstoreinstance.ParallelstoreInstance_IsTerraformResource(x interface{}) *bool
 ```
@@ -543,7 +543,7 @@ parallelstoreinstance.ParallelstoreInstance_IsTerraformResource(x interface{}) *
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-google.parallelstoreInstance.ParallelstoreInstance.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/parallelstoreinstance"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/parallelstoreinstance"
 
 parallelstoreinstance.ParallelstoreInstance_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -1157,7 +1157,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.parallelstoreInstance.ParallelstoreInstanceConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/parallelstoreinstance"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/parallelstoreinstance"
 
 &parallelstoreinstance.ParallelstoreInstanceConfig {
 	Connection: interface{},
@@ -1179,7 +1179,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/parallelstoreins
 	Network: *string,
 	Project: *string,
 	ReservedIpRange: *string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-google-go/google/v17.parallelstoreInstance.ParallelstoreInstanceTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-google-go/google/v18.parallelstoreInstance.ParallelstoreInstanceTimeouts,
 }
 ```
 
@@ -1516,7 +1516,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.parallelstoreInstance.ParallelstoreInstanceTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/parallelstoreinstance"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/parallelstoreinstance"
 
 &parallelstoreinstance.ParallelstoreInstanceTimeouts {
 	Create: *string,
@@ -1578,7 +1578,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.parallelstoreInstance.ParallelstoreInstanceTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/parallelstoreinstance"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/parallelstoreinstance"
 
 parallelstoreinstance.NewParallelstoreInstanceTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ParallelstoreInstanceTimeoutsOutputReference
 ```

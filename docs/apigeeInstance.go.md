@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.5
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.apigeeInstance.ApigeeInstance.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/apigeeinstance"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/apigeeinstance"
 
 apigeeinstance.NewApigeeInstance(scope Construct, id *string, config ApigeeInstanceConfig) ApigeeInstance
 ```
@@ -489,7 +489,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-google.apigeeInstance.ApigeeInstance.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/apigeeinstance"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/apigeeinstance"
 
 apigeeinstance.ApigeeInstance_IsConstruct(x interface{}) *bool
 ```
@@ -521,7 +521,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-google.apigeeInstance.ApigeeInstance.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/apigeeinstance"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/apigeeinstance"
 
 apigeeinstance.ApigeeInstance_IsTerraformElement(x interface{}) *bool
 ```
@@ -535,7 +535,7 @@ apigeeinstance.ApigeeInstance_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-google.apigeeInstance.ApigeeInstance.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/apigeeinstance"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/apigeeinstance"
 
 apigeeinstance.ApigeeInstance_IsTerraformResource(x interface{}) *bool
 ```
@@ -549,7 +549,7 @@ apigeeinstance.ApigeeInstance_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-google.apigeeInstance.ApigeeInstance.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/apigeeinstance"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/apigeeinstance"
 
 apigeeinstance.ApigeeInstance_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -1075,7 +1075,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.apigeeInstance.ApigeeInstanceAccessLoggingConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/apigeeinstance"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/apigeeinstance"
 
 &apigeeinstance.ApigeeInstanceAccessLoggingConfig {
 	Enabled: interface{},
@@ -1129,7 +1129,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.apigeeInstance.ApigeeInstanceConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/apigeeinstance"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/apigeeinstance"
 
 &apigeeinstance.ApigeeInstanceConfig {
 	Connection: interface{},
@@ -1142,7 +1142,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/apigeeinstance"
 	Location: *string,
 	Name: *string,
 	OrgId: *string,
-	AccessLoggingConfig: github.com/cdktn-io/cdktn-provider-google-go/google/v17.apigeeInstance.ApigeeInstanceAccessLoggingConfig,
+	AccessLoggingConfig: github.com/cdktn-io/cdktn-provider-google-go/google/v18.apigeeInstance.ApigeeInstanceAccessLoggingConfig,
 	ConsumerAcceptList: *[]*string,
 	Description: *string,
 	DiskEncryptionKeyName: *string,
@@ -1150,7 +1150,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/apigeeinstance"
 	Id: *string,
 	IpRange: *string,
 	PeeringCidrRange: *string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-google-go/google/v17.apigeeInstance.ApigeeInstanceTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-google-go/google/v18.apigeeInstance.ApigeeInstanceTimeouts,
 }
 ```
 
@@ -1442,7 +1442,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.apigeeInstance.ApigeeInstanceTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/apigeeinstance"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/apigeeinstance"
 
 &apigeeinstance.ApigeeInstanceTimeouts {
 	Create: *string,
@@ -1504,7 +1504,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.apigeeInstance.ApigeeInstanceAccessLoggingConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/apigeeinstance"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/apigeeinstance"
 
 apigeeinstance.NewApigeeInstanceAccessLoggingConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ApigeeInstanceAccessLoggingConfigOutputReference
 ```
@@ -1804,7 +1804,7 @@ func InternalValue() ApigeeInstanceAccessLoggingConfig
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.apigeeInstance.ApigeeInstanceTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/apigeeinstance"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/apigeeinstance"
 
 apigeeinstance.NewApigeeInstanceTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ApigeeInstanceTimeoutsOutputReference
 ```

@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.5
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.vmwareengineNetworkPolicy.VmwareengineNetworkPolicy.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/vmwareenginenetworkpolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/vmwareenginenetworkpolicy"
 
 vmwareenginenetworkpolicy.NewVmwareengineNetworkPolicy(scope Construct, id *string, config VmwareengineNetworkPolicyConfig) VmwareengineNetworkPolicy
 ```
@@ -481,7 +481,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-google.vmwareengineNetworkPolicy.VmwareengineNetworkPolicy.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/vmwareenginenetworkpolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/vmwareenginenetworkpolicy"
 
 vmwareenginenetworkpolicy.VmwareengineNetworkPolicy_IsConstruct(x interface{}) *bool
 ```
@@ -513,7 +513,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-google.vmwareengineNetworkPolicy.VmwareengineNetworkPolicy.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/vmwareenginenetworkpolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/vmwareenginenetworkpolicy"
 
 vmwareenginenetworkpolicy.VmwareengineNetworkPolicy_IsTerraformElement(x interface{}) *bool
 ```
@@ -527,7 +527,7 @@ vmwareenginenetworkpolicy.VmwareengineNetworkPolicy_IsTerraformElement(x interfa
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-google.vmwareengineNetworkPolicy.VmwareengineNetworkPolicy.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/vmwareenginenetworkpolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/vmwareenginenetworkpolicy"
 
 vmwareenginenetworkpolicy.VmwareengineNetworkPolicy_IsTerraformResource(x interface{}) *bool
 ```
@@ -541,7 +541,7 @@ vmwareenginenetworkpolicy.VmwareengineNetworkPolicy_IsTerraformResource(x interf
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-google.vmwareengineNetworkPolicy.VmwareengineNetworkPolicy.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/vmwareenginenetworkpolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/vmwareenginenetworkpolicy"
 
 vmwareenginenetworkpolicy.VmwareengineNetworkPolicy_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -1034,7 +1034,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.vmwareengineNetworkPolicy.VmwareengineNetworkPolicyConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/vmwareenginenetworkpolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/vmwareenginenetworkpolicy"
 
 &vmwareenginenetworkpolicy.VmwareengineNetworkPolicyConfig {
 	Connection: interface{},
@@ -1049,11 +1049,11 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/vmwareenginenetw
 	Name: *string,
 	VmwareEngineNetwork: *string,
 	Description: *string,
-	ExternalIp: github.com/cdktn-io/cdktn-provider-google-go/google/v17.vmwareengineNetworkPolicy.VmwareengineNetworkPolicyExternalIp,
+	ExternalIp: github.com/cdktn-io/cdktn-provider-google-go/google/v18.vmwareengineNetworkPolicy.VmwareengineNetworkPolicyExternalIp,
 	Id: *string,
-	InternetAccess: github.com/cdktn-io/cdktn-provider-google-go/google/v17.vmwareengineNetworkPolicy.VmwareengineNetworkPolicyInternetAccess,
+	InternetAccess: github.com/cdktn-io/cdktn-provider-google-go/google/v18.vmwareengineNetworkPolicy.VmwareengineNetworkPolicyInternetAccess,
 	Project: *string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-google-go/google/v17.vmwareengineNetworkPolicy.VmwareengineNetworkPolicyTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-google-go/google/v18.vmwareengineNetworkPolicy.VmwareengineNetworkPolicyTimeouts,
 }
 ```
 
@@ -1305,7 +1305,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.vmwareengineNetworkPolicy.VmwareengineNetworkPolicyExternalIp.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/vmwareenginenetworkpolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/vmwareenginenetworkpolicy"
 
 &vmwareenginenetworkpolicy.VmwareengineNetworkPolicyExternalIp {
 	Enabled: interface{},
@@ -1339,7 +1339,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.vmwareengineNetworkPolicy.VmwareengineNetworkPolicyInternetAccess.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/vmwareenginenetworkpolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/vmwareenginenetworkpolicy"
 
 &vmwareenginenetworkpolicy.VmwareengineNetworkPolicyInternetAccess {
 	Enabled: interface{},
@@ -1373,7 +1373,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.vmwareengineNetworkPolicy.VmwareengineNetworkPolicyTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/vmwareenginenetworkpolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/vmwareenginenetworkpolicy"
 
 &vmwareenginenetworkpolicy.VmwareengineNetworkPolicyTimeouts {
 	Create: *string,
@@ -1435,7 +1435,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.vmwareengineNetworkPolicy.VmwareengineNetworkPolicyExternalIpOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/vmwareenginenetworkpolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/vmwareenginenetworkpolicy"
 
 vmwareenginenetworkpolicy.NewVmwareengineNetworkPolicyExternalIpOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) VmwareengineNetworkPolicyExternalIpOutputReference
 ```
@@ -1724,7 +1724,7 @@ func InternalValue() VmwareengineNetworkPolicyExternalIp
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.vmwareengineNetworkPolicy.VmwareengineNetworkPolicyInternetAccessOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/vmwareenginenetworkpolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/vmwareenginenetworkpolicy"
 
 vmwareenginenetworkpolicy.NewVmwareengineNetworkPolicyInternetAccessOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) VmwareengineNetworkPolicyInternetAccessOutputReference
 ```
@@ -2013,7 +2013,7 @@ func InternalValue() VmwareengineNetworkPolicyInternetAccess
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.vmwareengineNetworkPolicy.VmwareengineNetworkPolicyTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/vmwareenginenetworkpolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/vmwareenginenetworkpolicy"
 
 vmwareenginenetworkpolicy.NewVmwareengineNetworkPolicyTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) VmwareengineNetworkPolicyTimeoutsOutputReference
 ```

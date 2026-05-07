@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.5
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.developerConnectGitRepositoryLink.DeveloperConnectGitRepositoryLink.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/developerconnectgitrepositorylink"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/developerconnectgitrepositorylink"
 
 developerconnectgitrepositorylink.NewDeveloperConnectGitRepositoryLink(scope Construct, id *string, config DeveloperConnectGitRepositoryLinkConfig) DeveloperConnectGitRepositoryLink
 ```
@@ -455,7 +455,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-google.developerConnectGitRepositoryLink.DeveloperConnectGitRepositoryLink.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/developerconnectgitrepositorylink"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/developerconnectgitrepositorylink"
 
 developerconnectgitrepositorylink.DeveloperConnectGitRepositoryLink_IsConstruct(x interface{}) *bool
 ```
@@ -487,7 +487,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-google.developerConnectGitRepositoryLink.DeveloperConnectGitRepositoryLink.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/developerconnectgitrepositorylink"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/developerconnectgitrepositorylink"
 
 developerconnectgitrepositorylink.DeveloperConnectGitRepositoryLink_IsTerraformElement(x interface{}) *bool
 ```
@@ -501,7 +501,7 @@ developerconnectgitrepositorylink.DeveloperConnectGitRepositoryLink_IsTerraformE
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-google.developerConnectGitRepositoryLink.DeveloperConnectGitRepositoryLink.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/developerconnectgitrepositorylink"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/developerconnectgitrepositorylink"
 
 developerconnectgitrepositorylink.DeveloperConnectGitRepositoryLink_IsTerraformResource(x interface{}) *bool
 ```
@@ -515,7 +515,7 @@ developerconnectgitrepositorylink.DeveloperConnectGitRepositoryLink_IsTerraformR
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-google.developerConnectGitRepositoryLink.DeveloperConnectGitRepositoryLink.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/developerconnectgitrepositorylink"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/developerconnectgitrepositorylink"
 
 developerconnectgitrepositorylink.DeveloperConnectGitRepositoryLink_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -1063,7 +1063,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.developerConnectGitRepositoryLink.DeveloperConnectGitRepositoryLinkConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/developerconnectgitrepositorylink"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/developerconnectgitrepositorylink"
 
 &developerconnectgitrepositorylink.DeveloperConnectGitRepositoryLinkConfig {
 	Connection: interface{},
@@ -1082,7 +1082,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/developerconnect
 	Id: *string,
 	Labels: *map[string]*string,
 	Project: *string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-google-go/google/v17.developerConnectGitRepositoryLink.DeveloperConnectGitRepositoryLinkTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-google-go/google/v18.developerConnectGitRepositoryLink.DeveloperConnectGitRepositoryLinkTimeouts,
 }
 ```
 
@@ -1342,7 +1342,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.developerConnectGitRepositoryLink.DeveloperConnectGitRepositoryLinkTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/developerconnectgitrepositorylink"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/developerconnectgitrepositorylink"
 
 &developerconnectgitrepositorylink.DeveloperConnectGitRepositoryLinkTimeouts {
 	Create: *string,
@@ -1404,7 +1404,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.developerConnectGitRepositoryLink.DeveloperConnectGitRepositoryLinkTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/developerconnectgitrepositorylink"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/developerconnectgitrepositorylink"
 
 developerconnectgitrepositorylink.NewDeveloperConnectGitRepositoryLinkTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DeveloperConnectGitRepositoryLinkTimeoutsOutputReference
 ```
